@@ -3,6 +3,9 @@
 
 const { imgBg, videoBg, txtColor, bgColor, overlay } = Astro.props;
 
+// imgBg e videoBg recebem a url direta (deve ser possível apenas um dos dois)
+// overlay recebe booleano
+
 const imgBgVar = imgBg && `url(${imgBg})`;
 ---
 

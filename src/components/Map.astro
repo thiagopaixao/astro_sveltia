@@ -1,6 +1,11 @@
 ---
 import MapView from "./MapView.astro";
 const { columnAlign, floatingText, txtColor, bgColor, mapView } = Astro.props;
+
+//columnAlign recebe left || right || center
+//floatingText recebe booleano
+//mapView recebe o id da layer do mapa, inserido nas configuracões
+
 ---
 
 <section
@@ -74,7 +79,7 @@ const { columnAlign, floatingText, txtColor, bgColor, mapView } = Astro.props;
       padding-inline: var(--atnl-gutter, 40px);
 
       @include media-break-down(l) {
-        padding-block: var(--spacer-m);
+        padding-block: var(--mt-m);
         position: sticky;
         top: var(--map-height);
         margin-top: calc( var(--map-height) * -1 ) ;
@@ -131,13 +136,16 @@ const { columnAlign, floatingText, txtColor, bgColor, mapView } = Astro.props;
           display: inline;
           background-color: var(--clr-bg);
           padding: 0.2em 0;
+          position: relative;
 
           &:not(:first-child) {
             &::before {
               content: '';
-              height: 30px;
+              height: var(--mt-s);
               white-space: pre;
               display: block;
+              position: relative;
+              z-index: 2;
             }
           }
         }
@@ -145,7 +153,8 @@ const { columnAlign, floatingText, txtColor, bgColor, mapView } = Astro.props;
         :global(body:not(.is-safari)) & :global(> *:not(div)),
         :global(body:not(.is-safari)) & :global(> .text > *) {
           padding: 0.2em .3em;
-          margin: -.3em;
+          margin-left: -.3em;
+          margin-right: -150vw;
           -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
         }

@@ -1,5 +1,6 @@
 ---
 const { hasDropCap } = Astro.props
+//hasDropCap recebe booleano
 ---
 
 <div class:list={["text", hasDropCap && "text--has-dropcap"]}>
@@ -24,13 +25,13 @@ const { hasDropCap } = Astro.props
     }
 
     :global(* + *) {
-      margin-top: var(--spacer-s, 40px);
+      margin-top: var(--mt-s, 40px);
     }
     
     :global(* + h1), 
     :global(* + h2), 
     :global(* + h3) {
-      margin-top: var(--spacer-m, 80px);
+      margin-top: var(--mt-m, 80px);
     }
 
     :global(> p) {
@@ -47,7 +48,7 @@ const { hasDropCap } = Astro.props
       }
 
       :global(+ *) {
-        margin-top: var(--spacer-m, 80px);
+        margin-top: var(--mt-m, 80px);
       }
     }
     
@@ -62,7 +63,7 @@ const { hasDropCap } = Astro.props
       :global(+ h4),
       :global(+ h5),
       :global(+ h6) {
-        margin-top: var(--spacer-s, 40px);
+        margin-top: var(--mt-s, 40px);
       }
     }
     

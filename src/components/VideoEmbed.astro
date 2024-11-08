@@ -2,6 +2,8 @@
 import Caption from "./Caption.astro";
 
 const { wide } = Astro.props;
+//wide recebe booleano
+
 const hasCaption = Astro.slots.has("caption");
 ---
 
@@ -27,7 +29,7 @@ const hasCaption = Astro.slots.has("caption");
     
     &:not(:first-child),
     :global(+ *)  {
-      margin-top: var(--spacer-m);
+      margin-top: var(--mt-m);
     }
 
 
@@ -64,7 +66,7 @@ const hasCaption = Astro.slots.has("caption");
 
     &,
     :global(+ *)  {
-      margin-top: var(--spacer-l);
+      margin-top: var(--mt-l);
     }
   }
 </style>

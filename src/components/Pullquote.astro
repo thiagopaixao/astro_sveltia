@@ -21,10 +21,10 @@ const hasByLine = Astro.slots.has('byline');
   .pullquote {
     @include type('h-m');
     font-weight: 600;
-    margin-top: var(--spacer-m);
+    margin-top: var(--mt-m);
 
     :global(+ *) {
-      margin-top: var(--spacer-m);
+      margin-top: var(--mt-m);
     }
 
     @include media-break-down(l) {

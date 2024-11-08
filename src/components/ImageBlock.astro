@@ -3,6 +3,9 @@ import Caption from "./Caption.astro";
 import Image from "astro/components/Image.astro";
 
 const { src, wide } = Astro.props;
+// src recebe a url direta da imagem
+// wide recebe booleano
+
 const hasCaption = Astro.slots.has('default');
 ---
 
@@ -27,7 +30,7 @@ const hasCaption = Astro.slots.has('default');
     width: 100%;
     &,
     :global(+ *)  {
-      margin-top: var(--spacer-m);
+      margin-top: var(--mt-m);
     }
 
     &--wide {
@@ -75,7 +78,7 @@ const hasCaption = Astro.slots.has('default');
 
     &,
     :global(+ *)  {
-      margin-top: var(--spacer-l);
+      margin-top: var(--mt-l);
     }
   }
 
