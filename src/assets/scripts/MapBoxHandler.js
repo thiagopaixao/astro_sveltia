@@ -9,19 +9,23 @@ class MapBoxHandler {
 
             if (typeof this.views !== 'object' || !this.mapHolder) return;
 
-            this.mapTriggersSel = '[data-map-view]';
             this.mapAnchors = [];
+            this.mapTriggersSel = '[data-map-view]';
             this.mapScreens = document.querySelectorAll('.map')
             this.captionHolder = document.createElement('div')
             this.captionHolder.setAttribute('id', 'captions')
             this.definedLayers = [...window.mapConfig.layers];
-            this.countIntersectionEvents = 0;
-            const {style, ...initView } = window.mapConfig;
+
+            this.countIntersectionEvents = 0; // handles confusions on layout shift and insersection interpolation
+            this.adjustMapWindowRemoveCallback = null; // handles confunsion when coming back to map full mode on mobile.
+
+            const { style, ...initView } = window.mapConfig;
             this.initView = initView;
+            this.initView.duration = Object.values(this.views)[0].duration;
             this.currentView = initView;
-            this.currentMapWindowState = Array.from(this.mapScreens)[0].classList.value.includes('floating') ? 'full' : 'square'; 
-            this.viewObserver = null;
-            this.adjustMapWindowCallback = null;
+            this.currentMapWindowState = Array.from(this.mapScreens)[0]?.classList.value.includes('floating') ? 'full' : 'square';
+
+            this.viewObserver = null; // saves the scroll observer
 
             this.init.bind(this)()
         });
@@ -44,11 +48,13 @@ class MapBoxHandler {
             this.mapHolder.style.opacity = 1;
             this.defineLayers();
             this.displayLayers(window.mapConfig.layers, true);
-            const resizeObserverView = new ResizeObserver(this.observeView.bind(this,this.mapAnchors,this.changeViewByEl.bind(this)));
+            const resizeObserverView = new ResizeObserver(this.observeView.bind(this, this.mapAnchors, this.changeViewByEl.bind(this)));
             resizeObserverView.observe(document.body);
             this.adjustFirstViewOnLoad();
         });
     }
+
+    /* Anchors & Observers */
 
     async setMapAnchors() {
         this.mapTriggers = document.querySelectorAll(this.mapTriggersSel);
@@ -59,7 +65,7 @@ class MapBoxHandler {
         container.style.inset = 0;
         container.style.zIndex = 9999;
         container.style.pointerEvents = 'none';
-        this.mapTriggers && this.mapTriggers.forEach((el,i) => {
+        this.mapTriggers && this.mapTriggers.forEach((el, i) => {
             const anchor = document.createElement('div');
             el.dataset.refId = i;
             anchor.dataset.mapAnchorId = i;
@@ -100,11 +106,40 @@ class MapBoxHandler {
         })
     }
 
-    async setMapWindowDisplacers(){
-        let topMapScreens = Array.from(this.mapScreens).filter( el => !el.querySelector('.map-view:first-child') )
-        topMapScreens.length && topMapScreens.forEach( el => el.querySelector('.map__holder').insertAdjacentHTML('afterbegin','<div class="map-view" data-map-view="__displacer__"></div>'))
+    async setMapWindowDisplacers() {
+        let topMapScreens = Array.from(this.mapScreens).filter(el => !el.querySelector('.map-view:first-child'))
+        topMapScreens.length && topMapScreens.forEach(el => el.querySelector('.map__holder').insertAdjacentHTML('afterbegin', '<div class="map-view" data-map-view="__displacer__"></div>'))
         return topMapScreens.length;
     }
+
+    adjustFirstViewOnLoad() {
+        const isTop = () => {
+            let el = Array.from(this.mapTriggers)[0];
+            let pos = el && el.getBoundingClientRect().top;
+            let ref = el && document.querySelector(`[data-map-anchor-id="${el.dataset.refId}"]`);
+            return el && window.scrollY < pos && pos < window.innerHeight * (this.getScreenTransitionPoint() / 100) && ref;
+        }
+
+        // change to first view if the view is above transition point
+        setTimeout(() => {
+            const isTopEl = isTop();
+            isTopEl && this.changeViewByEl(isTopEl, true)
+        }, 80);
+    }
+
+    observeView(els, callback) {
+        if (!els || !els.length) return;
+        this.viewObserver && this.viewObserver.disconnect();
+        this.viewObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => callback(entry.target, entry.isIntersecting));
+        }, {
+            rootMargin: `${this.getScreenTransitionPoint() * -1}% 0px ${(100 - this.getScreenTransitionPoint()) * -1}% 0px`,
+            threshold: 0,
+        })
+        els.forEach((element) => this.viewObserver.observe(element));
+    };
+
+    /* Layers management */
 
     defineLayers() {
         Object.values(this.views).forEach(view => {
@@ -124,63 +159,53 @@ class MapBoxHandler {
         this.displayLayers(visibleLayers, true)
     }
 
-    observeView(els, callback) {
-        if (!els || !els.length) return;
-        this.viewObserver && this.viewObserver.disconnect();
-        this.viewObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => callback(entry.target, entry.isIntersecting));
-        },{
-            rootMargin: `${this.getScreenTransitionPoint() * -1}% 0px ${(100 - this.getScreenTransitionPoint()) * -1}% 0px`,
-            threshold: 0,
-        })
-        els.forEach((element) => this.viewObserver.observe(element));
-    };
+    /* Map Movement */
+
+    async move(view, refEl = false, fly = true) {
+
+        this.animationStartTime = Date.now();
+
+        const destiny = refEl
+            ? { ...view, center: this.getDisplacedCenter(refEl, view) }
+            : { ...view };
+
+        const isAnimating = this.map.isMoving() || this.map.isZooming();
+
+        if (JSON.stringify(view.center) == JSON.stringify(this.currentView.center) && !isAnimating) {
+            destiny.duration = 1500;
+            fly = false;
+        }
+
+        refEl && setTimeout(() => {
+            this.generateCaptionsHTML(view.captions, refEl.closest('.map'));
+            this.captionHolder.classList.remove('hidden')
+            this.countIntersectionEvents = 0;
+        }, 20);
+
+        this.toggleLayersVisibility(view.layers);
+
+        this.currentView = view;
+        return fly ? this.map.flyTo(destiny) : this.map.easeTo(destiny);
+    }
 
     changeViewByEl(target, intersection) {
         if (!intersection) {
             if (!this.countIntersectionEvents) {
                 this.captionHolder.classList.add('hidden');
-                this.adjustMapWindowCallback = true; 
-                setTimeout(()=>{
-                    this.adjustMapWindowCallback && this.adjustMapWindow(null)
-                }, 500)
+                this.adjustMapWindowRemove();
                 this.maybeBackToInitialView();
                 ++this.countIntersectionEvents;
             }
             return false;
         }
+
         let viewId = target.dataset.mapAnchor;
         let mapTrigger = document.querySelector(`[data-ref-id="${target.dataset.mapAnchorId}"]`)
-        if (this.views.hasOwnProperty(viewId)) {
-            this.currentView = this.views[viewId];
-            this.toggleLayersVisibility(this.views[viewId].layers);
+
+        if (this.views.hasOwnProperty(viewId) || viewId === '__displacer__') {
             this.adjustMapWindow(mapTrigger.closest('.map'))
-            setTimeout(() => {
-                this.map.flyTo({
-                    ...this.views[viewId],
-                    center: this.getDisplacedCenter(mapTrigger,this.views[viewId])
-                })
-            }, 80);
-            setTimeout(() => {
-                this.generateCaptionsHTML(this.views[viewId].captions, mapTrigger.closest('.map'));
-                this.captionHolder.classList.remove('hidden')
-                this.countIntersectionEvents = 0;
-            }, 100);
-            return true;
-        }
-        
-        if(viewId === '__displacer__'){
-            this.adjustMapWindow(mapTrigger.closest('.map'))
-            setTimeout(() => {
-                this.map.flyTo({
-                    ...this.currentView,
-                    center: this.getDisplacedCenter(mapTrigger,this.currentView)
-                })
-            }, 80);
-            setTimeout(() => {
-                this.generateCaptionsHTML(this.currentView.captions, mapTrigger.closest('.map'));
-                this.captionHolder.classList.remove('hidden')
-                this.countIntersectionEvents = 0;
+            setTimeout(() => { 
+                viewId === '__displacer__' ?  this.move(this.currentView, mapTrigger) : this.move(this.views[viewId], mapTrigger) 
             }, 100);
             return true;
         }
@@ -189,96 +214,15 @@ class MapBoxHandler {
         return false;
     }
 
-    changeViewByDisplacer(el, intersection){
+    changeViewByDisplacer(el, intersection) {
         if (!intersection) {
             this.captionHolder.classList.add('hidden');
-            this.adjustMapWindowCallback = true; 
-            setTimeout(()=>{
-                this.adjustMapWindowCallback && this.adjustMapWindow(null)
-            }, 500)
-            return;
+            this.adjustMapWindowRemove();
+            return false;
         }
-        this.map.flyTo({
-            ...this.currentView,
-            center: this.getDisplacedCenter(el,this.currentView)
-        })
-        setTimeout(() => {
-            this.generateCaptionsHTML(this.currentView.captions, el.closest('.map'));
-            this.captionHolder.classList.remove('hidden')
-        }, 100);
-    }
-
-    getDisplacedCenter(el,view){
-        const parent = el.closest('.map');
-        const parentClasses = parent.classList.value;
-        const isMobile  = window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches;
-
-        if( isMobile ) return view.center;
-
-        const old = {
-            zoom: this.map.getZoom(),
-            center: this.map.getCenter(),
-        }
-        let mapContent = parent.querySelector('.map__holder');
-        let mapWCalc = ( mapContent.clientWidth * 1.5 ) / this.map.getCanvas().width;
-        let mapPerc =  parentClasses.includes('alignleft') ? (1 - mapWCalc) : false;
-        mapPerc = parentClasses.includes('alignright') ? (1 + mapWCalc) : mapPerc
-
-        if( !mapPerc ) return view.center
-
-        this.map.setZoom(view.zoom);
-        this.map.setCenter(view.center);
-
-        let projection = this.map.project(view.center);
-        projection.x = projection.x * mapPerc;    
-        let unproject = this.map.unproject(projection);
-        
-        this.map.setZoom(old.zoom)
-        this.map.setCenter(old.center)
-
-        return unproject;
-    }
-
-    getScreenTransitionPoint(){
-        const isMobile  = window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches;
-        const screenPoint = isMobile ? this.transitionScreenPointMobile : this.transitionScreenPoint;
-        return screenPoint;
-    }
-
-    adjustFirstViewOnLoad() {
-        const isTop = () => {
-            let el = Array.from(this.mapTriggers)[0];
-            let pos = el && el.getBoundingClientRect().top;
-            let ref = el && document.querySelector(`[data-map-anchor-id="${el.dataset.refId}"]`);
-            return el && window.scrollY < pos && pos < window.innerHeight * (this.getScreenTransitionPoint() / 100) && ref;
-        }
-
-        // change to first view if above transition point
-        setTimeout(() => {
-            const isTopEl = isTop();
-            if( isTopEl ){
-                this.changeViewByEl(isTopEl, true)
-            }
-        }, 100);
-    }
-
-    adjustMapWindow(el){
-        this.adjustMapWindowCallback = null;
-        let lastState = this.currentMapWindowState;
-        if( !el || el.classList.value.includes('floating') ){
-            this.currentMapWindowState = 'full'
-            this.mapHolder.classList.remove('mobile')
-        }else{
-            this.currentMapWindowState = 'square'
-            this.mapHolder.classList.add('mobile')  
-        }    
-        setTimeout(() => {
-            window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches 
-            && lastState !== this.currentMapWindowState
-            && this.map.resize()
-            && this.map.setCenter(this.currentView.center);
-            return true;
-        }, 10);
+        this.adjustMapWindow(mapTrigger.closest('.map'))
+        setTimeout(() => { this.move(this.currentView, el) }, 100);
+        return true
     }
 
     maybeBackToInitialView() {
@@ -287,19 +231,46 @@ class MapBoxHandler {
             let pos = el.getBoundingClientRect().top;
             return window.scrollY < pos && el;
         }
-
         const isTopEl = isTop();
-
-        if (isTopEl) {
-            this.adjustMapWindow(null);
-            setTimeout(() => {
-                this.currentView = this.initView;
-                this.currentView.duration = this.views[isTopEl.dataset.mapView].duration;
-                this.displayLayers(this.initView.layers, true);
-                this.map.flyTo(this.currentView);
-            }, 80);
+        if (isTopEl){
+            this.adjustMapWindowRemove();
+            setTimeout(() => { this.move(this.initView) }, 100);
         }
     }
+
+    /* Map Window adjustments */
+
+    adjustMapWindow(el) {
+        this.adjustMapWindowRemoveCallback = null;
+        let lastState = this.currentMapWindowState;
+        if (!el || el.classList.value.includes('floating')) {
+            this.currentMapWindowState = 'full'
+            this.mapHolder.classList.remove('mobile')
+        } else {
+            this.currentMapWindowState = 'square'
+            this.mapHolder.classList.add('mobile')
+        }
+        setTimeout(() => {
+            window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches
+                && lastState !== this.currentMapWindowState
+                && this.map.resize()
+                && this.map.stop()
+                && this.map.flyTo({
+                    ...this.currentView,
+                    duration: this.getCurrentAnimationRemaingDuration()
+                });
+            return true;
+        }, 10);
+    }
+
+    adjustMapWindowRemove() {
+        this.adjustMapWindowRemoveCallback = true;
+        setTimeout(() => {
+            this.adjustMapWindowRemoveCallback && this.adjustMapWindow(null)
+        }, 80)
+    }
+
+    /* Captions */
 
     generateCaptionsHTML(captions, holder) {
         if (!captions) {
@@ -335,6 +306,99 @@ class MapBoxHandler {
         }
         this.captionHolder.innerHTML = container.innerHTML;
         holder.insertAdjacentElement('beforeend', this.captionHolder);
+    }
+
+    /* Helpers */
+
+    getDisplacedCenter(el, view) {
+        const parent = el.closest('.map');
+        const parentClasses = parent.classList.value;
+        const isMobile = window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches;
+
+        if (isMobile) return view.center;
+
+        const old = {
+            zoom: this.map.getZoom(),
+            center: this.map.getCenter(),
+        }
+        let mapContent = parent.querySelector('.map__holder');
+        let mapWCalc = (mapContent.clientWidth * 1.5) / this.map.getCanvas().width;
+        let mapPerc = parentClasses.includes('alignleft') ? (1 - mapWCalc) : false;
+        mapPerc = parentClasses.includes('alignright') ? (1 + mapWCalc) : mapPerc
+
+        if (!mapPerc) return view.center
+
+        this.map.setZoom(view.zoom);
+        this.map.setCenter(view.center);
+
+        let projection = this.map.project(view.center);
+        projection.x = projection.x * mapPerc;
+        let unproject = this.map.unproject(projection);
+
+        this.map.setZoom(old.zoom)
+        this.map.setCenter(old.center)
+
+        return unproject;
+    }
+
+    getScreenTransitionPoint() {
+        const isMobile = window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches;
+        const screenPoint = isMobile ? this.transitionScreenPointMobile : this.transitionScreenPoint;
+        return screenPoint;
+    }
+
+    getCurrentAnimationRemaingDuration(){
+        let remainingDuration = this.currentView.duration - (Date.now() - this.animationStartTime)
+        return remainingDuration < 0 ? 0 : remainingDuration;
+    }
+
+    getAnchorInfo(el) {
+        if (!el.dataset.mapAnchor) {
+            console.warn('Not an anchor')
+            return false;
+        }
+        let view = { ...this.views[el.dataset.mapAnchor] };
+        if( view && Object.keys(view).length  ){
+            let trigger = document.querySelector(`[data-ref-id="${el.dataset.mapAnchorId}"]`);
+            let mapWindow = trigger.closest('.map');
+            return {
+                el: el,
+                view: view,
+                viewname:el.dataset.mapAnchor,
+                anchor:el,
+                ref: el.dataset.mapAnchorId,
+                trigger: trigger,
+                mapWindow: mapWindow,
+                mapWindowClasses: mapWindow.classList.value,
+            }
+        }
+        return false;
+    }
+
+    getNextAnchorInfo(el) {
+        if (!el.dataset.mapAnchor) {
+            console.warn('Not an anchor')
+            return false;
+        }
+        let next = false;
+        while (el.nextElementSibling && !next) {
+            el = el.nextElementSibling;
+            next = el.dataset.mapAnchor === '__displacer__' ? false : true;
+        }
+        return next && this.getAnchorInfo(el)
+    }
+
+    getPreviousAnchorInfo(el) {
+        if (!el.dataset.mapAnchor) {
+            console.warn('Not an anchor')
+            return false;
+        }
+        let next = false;
+        while (el.previousElementSibling && !next) {
+            el = el.previousElementSibling;
+            next = el.dataset.mapAnchor === '__displacer__' ? false : true;
+        }
+        return next && this.getAnchorInfo(el)
     }
 }
 
@@ -376,14 +440,14 @@ window.debugMapTransitions = () => {
                     <br>Pitch: ${view.pitch}
                 `;
             }
-            if( viewName === '__displacer__'){
+            if (viewName === '__displacer__') {
                 element.innerHTML = `
                     <strong>Displacer</strong>
                 `;
             }
         });
 
-        const resizeObserver = new ResizeObserver(() => transitionLine.style.top = `${mapBoxHandler.getScreenTransitionPoint()}vh` );
+        const resizeObserver = new ResizeObserver(() => transitionLine.style.top = `${mapBoxHandler.getScreenTransitionPoint()}vh`);
         resizeObserver.observe(document.body);
     }, 500)
 };
