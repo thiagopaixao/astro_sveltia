@@ -1,6 +1,10 @@
 ---
 import MapView from "./MapView.astro";
+
 const { columnAlign, floatingText, txtColor, bgColor, mapView } = Astro.props;
+
+let content = await Astro.slots.render("default");
+content = floatingText ? content.replace(/<br[^>]*>/g, '<b r></b>') : content;
 
 //columnAlign recebe left || right || center
 //floatingText recebe booleano
@@ -17,9 +21,8 @@ const { columnAlign, floatingText, txtColor, bgColor, mapView } = Astro.props;
 >
   <div class="map__holder">
     {mapView && <MapView mapView={mapView} />}
-    <div class="map__content">
-      <slot />
-    </div>
+
+    <div class="map__content" set:html={content}></div>    
   </div>
 </section>
 
@@ -41,7 +44,7 @@ const { columnAlign, floatingText, txtColor, bgColor, mapView } = Astro.props;
       position: relative;
 
       &::after {
-        content: '';
+        content: "";
         display: block;
         min-height: 100vh;
       }
@@ -54,7 +57,7 @@ const { columnAlign, floatingText, txtColor, bgColor, mapView } = Astro.props;
     @include media-break-up(xl) {
       display: block;
     }
-    
+
     &__view {
       position: absolute;
       left: 20px;
@@ -67,7 +70,7 @@ const { columnAlign, floatingText, txtColor, bgColor, mapView } = Astro.props;
       opacity: 0;
       max-width: 200px;
 
-      &.odd{
+      &.odd {
         color: #59ff4d;
       }
     }
@@ -82,8 +85,8 @@ const { columnAlign, floatingText, txtColor, bgColor, mapView } = Astro.props;
         padding-block: var(--mt-m);
         position: sticky;
         top: var(--map-height);
-        margin-top: calc( var(--map-height) * -1 ) ;
-        min-height: calc( 100vh - var(--map-height) );
+        margin-top: calc(var(--map-height) * -1);
+        min-height: calc(100vh - var(--map-height));
       }
 
       @include media-break-up(l) {
@@ -97,28 +100,28 @@ const { columnAlign, floatingText, txtColor, bgColor, mapView } = Astro.props;
 
       #{$self}--alignright & {
         @include media-break-up(l) {
-          grid-column: board-end 8 / full-end;          
+          grid-column: board-end 8 / full-end;
         }
 
         @include media-break-up(xl) {
           margin-left: auto;
         }
       }
-      
+
       #{$self}--alignleft & {
         @include media-break-up(l) {
-          grid-column: full-start 1 / board-start 5;          
-        }        
+          grid-column: full-start 1 / board-start 5;
+        }
       }
-      
+
       #{$self}--aligncenter & {
         @include media-break-up(l) {
-          grid-column: board-full;          
-        }        
+          grid-column: board-full;
+        }
       }
 
       #{$self}--floating-text & {
-       background-color: transparent;
+        background-color: transparent;
       }
 
       #{$self}--aligncenter & {
@@ -129,7 +132,7 @@ const { columnAlign, floatingText, txtColor, bgColor, mapView } = Astro.props;
 
     &__content {
       position: relative;
-      
+
       #{$self}--floating-text & {
         :global(> *:not(div)),
         :global(> .text > *) {
@@ -140,7 +143,7 @@ const { columnAlign, floatingText, txtColor, bgColor, mapView } = Astro.props;
 
           &:not(:first-child) {
             &::before {
-              content: '';
+              content: "";
               height: var(--mt-s);
               white-space: pre;
               display: block;
@@ -148,12 +151,24 @@ const { columnAlign, floatingText, txtColor, bgColor, mapView } = Astro.props;
               z-index: 2;
             }
           }
+
+          :global([r]) {
+            display: block;
+          }
+
+          :global([r] + [r]) {
+            height: 100%;
+          }
+
+          :global([r]:before) {
+            height: 100%;
+          }
         }
 
         :global(body:not(.is-safari)) & :global(> *:not(div)),
         :global(body:not(.is-safari)) & :global(> .text > *) {
-          padding: 0.2em .3em;
-          margin-left: -.3em;
+          padding: 0.2em 5px;
+          margin-left: -5px;
           margin-right: -150vw;
           -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
@@ -169,7 +184,7 @@ const { columnAlign, floatingText, txtColor, bgColor, mapView } = Astro.props;
       background-color: var(--clr-bg);
       padding: 16px;
       border-radius: 3px;
-      
+
       @include media-break-down(l) {
         padding: 12px;
         top: 30px;
@@ -184,9 +199,9 @@ const { columnAlign, floatingText, txtColor, bgColor, mapView } = Astro.props;
 
     :global(.captions__item) {
       display: flex;
-      
+
       gap: 10px;
-      
+
       :global(span:has([class*="material-symbols"])) {
         display: flex;
       }
@@ -218,7 +233,7 @@ const { columnAlign, floatingText, txtColor, bgColor, mapView } = Astro.props;
         fill: var(--clr-txt);
       }
     }
-    
+
     &--aligncenter :global(#captions),
     &--alignleft :global(#captions) {
       @include media-break-up(l) {
@@ -226,5 +241,5 @@ const { columnAlign, floatingText, txtColor, bgColor, mapView } = Astro.props;
         right: 40px;
       }
     }
-  } 
+  }
 </style>
