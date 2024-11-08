@@ -1,4 +1,6 @@
 ---
+import '../assets/styles/main.scss';
+
 interface Props {
 	title: string;
 }
@@ -13,6 +15,10 @@ const { title } = Astro.props;
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preload stylesheet" as="style" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block">
+		<script src="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.css" rel="stylesheet">
+		<script src="/src/assets/scripts/MapBoxHandler.js" is:inline></script>
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
@@ -20,31 +26,31 @@ const { title } = Astro.props;
 		<slot />
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+
+<script>
+	const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+	isSafari && document.body.classList.add('is-safari');
+</script>
+
+<style lang="scss">
+	@use "../assets/styles/config/config" as *;
+
+	:global(:root) {
+		--clr-bg: #F0EAD9;
+		--clr-txt: #006A49;
+		--clr-hl: #FF7967;
+
+		--map-height: 52vh;
+
+		--spacer-s: 40px;
+		--spacer-m: 80px;
+		--spacer-l: 120px;
+		--spacer-vph: 100vh;
+
+		@include media-break-down(xl) {
+			--spacer-s: 30px;
+			--spacer-m: 60px;
+			--spacer-l: 90px;
+		}
 	}
 </style>

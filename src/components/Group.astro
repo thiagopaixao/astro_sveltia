@@ -1,0 +1,131 @@
+---
+//overlay deve ser: dark ou none
+
+const { imgBg, videoBg, txtColor, bgColor, overlay } = Astro.props;
+
+const imgBgVar = imgBg && `url(${imgBg})`;
+---
+
+<section
+  class:list={[
+    "group",
+    `group--overlay-${overlay}`,
+    imgBg && `group--has-bg-image`,
+  ]}
+>
+  {
+    (imgBg || videoBg) && (
+      <div class="group__bg">
+        {videoBg && (
+          <video autoplay muted loop>
+            <source src={videoBg} />
+          </video>
+        )}
+      </div>
+    )
+  }
+  <div class="group__content">
+    <slot />
+  </div>
+</section>
+
+<style lang="scss" define:vars={{ "clr-txt": txtColor, "clr-bg": bgColor, "img-bg": imgBgVar }}>
+  @use "../assets/styles/config/config" as *;
+  
+  .group {
+    $self: &;
+    width: 100%;
+    position: relative;
+    color: var(--clr-txt);
+    background-color: var(--clr-bg);
+    z-index: 100;
+
+    @inclide media-break-down(l) {
+      z-index: 4;
+      position: relative;
+    }
+
+    &__bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+
+      color: var(--clr-bg);
+
+      &::after {
+        mix-blend-mode: color;
+      }
+
+      &::before {
+        color: #4d4d4d;
+        opacity: 0.8;
+      }
+
+      #{$self}--overlay-none & {
+        &::after,
+        &::before {
+          display: none;
+        }
+      }
+
+      #{$self}--overlay-dark & {
+        color: var(--clr-black);
+
+        &::after {
+          opacity: 0.5;
+          mix-blend-mode: unset;
+        }
+
+        &::before {
+          display: none;
+        }
+      }      
+
+      #{$self}--has-bg-image & {
+        height: 100%;
+        background-image: var(--img-bg);
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      &::after,
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: currentColor;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      video {
+        width: 100%;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        object-fit: cover;
+      }
+    }
+
+    &__content {
+      position: relative;
+      z-index: 3;
+      //temp
+      // width: 100%;
+      // height: 100%;
+      // max-width: 600px;
+      // padding: 80px 20px;
+      // margin-inline: auto;
+      // position: relative;
+      // z-index: 3;
+    }
+  }
+</style>

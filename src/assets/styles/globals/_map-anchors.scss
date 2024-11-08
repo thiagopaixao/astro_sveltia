@@ -1,0 +1,25 @@
+[data-map-anchor]{
+  position: absolute;
+  left:20px;
+  opacity: 0;
+  border-bottom: 1px solid;
+  border-left: 1px dashed;
+  color: yellow;
+  max-width: 200px;
+  padding-left: 20px;
+}
+
+[data-map-anchor].odd{
+  color: #59ff4d;
+}
+
+[data-map-displacer]{
+  border-top: 1px solid magenta;
+  height: 1px;
+  opacity: 0;
+}
+
+.debug-map-transitions [data-map-anchor],
+.debug-map-transitions [data-map-displacer]{
+  opacity: 1;
+}

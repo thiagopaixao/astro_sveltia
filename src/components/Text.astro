@@ -1,0 +1,149 @@
+---
+const { hasDropCap } = Astro.props
+---
+
+<div class:list={["text", hasDropCap && "text--has-dropcap"]}>
+  <slot />
+</div>
+
+<style lang="scss">
+  @use "../assets/styles/config/config" as *;
+  @use "../assets/styles/utils/list-styles/list-styles" as *;
+
+  .text {
+    &--has-dropcap {
+      :global(> p:first-of-type:first-letter) {
+        @include type('d-m');
+        font-weight: 500;
+        color: var(--clr-hl);
+        float: left;
+        margin-right: 5px;
+        margin-top: -4px;
+        margin-bottom: -10px;
+      }
+    }
+
+    :global(* + *) {
+      margin-top: var(--spacer-s, 40px);
+    }
+    
+    :global(* + h1), 
+    :global(* + h2), 
+    :global(* + h3) {
+      margin-top: var(--spacer-m, 80px);
+    }
+
+    :global(> p) {
+      :global(+ p) {
+        margin-top: 1.5em;
+      }
+    }
+
+    :global(> h1) {
+      @include type('h-xxl');
+
+      @include media-break-down(l) {
+        @include type('h-l');
+      }
+
+      :global(+ *) {
+        margin-top: var(--spacer-m, 80px);
+      }
+    }
+    
+    :global(> h2) {
+      @include type('h-xl');
+
+      @include media-break-down(l) {
+        @include type('h-m');
+      }
+
+      :global(+ h3),
+      :global(+ h4),
+      :global(+ h5),
+      :global(+ h6) {
+        margin-top: var(--spacer-s, 40px);
+      }
+    }
+    
+    :global(> h3) {
+      @include type('h-l');
+
+      @include media-break-down(l) {
+        @include type('h-s');
+      }
+    }
+    
+    :global(> h4) {
+      @include type('h-m');
+      
+      @include media-break-down(l) {
+        @include type('h-xs');
+      }
+      
+    }
+    
+    :global(> h5) {
+      @include type('h-s');
+      
+      @include media-break-down(l) {
+        @include type('c-m');
+      }
+    }
+    
+    :global(> h6) {
+      @include type('h-xs');
+      @include media-break-down(l) {
+        @include type('c-m');
+      }
+    }
+
+    :global(> ul) {
+      @extend .atnl-ul;
+
+      :global(li + li) {
+        margin-top: 8px;
+      }
+    }
+
+    :global(> ol) {
+      @extend .atnl-ol;
+
+      :global(li + li) {
+        margin-top: 8px;
+      }
+    }
+
+    :global(> blockquote) {
+      margin-inline: 0;
+      margin-bottom: 0;
+      padding-left: 1.5em;
+      position: relative;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 4px;
+        height: calc(100% - 10px);
+        position: absolute;
+        left: 0;
+        top: 5px;
+        background-color: var(--clr-hl);
+      }
+    }
+
+    :global(> iframe) {
+      max-width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      display: block;
+      
+      &,
+      :global(+ *) {
+        margin-top: 80px;
+      }
+    }
+    
+
+  }
+</style>

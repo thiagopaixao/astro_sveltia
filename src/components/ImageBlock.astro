@@ -1,0 +1,82 @@
+---
+import Caption from "./Caption.astro";
+import Image from "astro/components/Image.astro";
+
+const { src, wide } = Astro.props;
+const hasCaption = Astro.slots.has('default');
+---
+
+<figure class:list={["image", { "image--wide": wide }]}>
+  <Image src={src} alt="" />
+  {
+    hasCaption && (
+      <figcaption>
+        <Caption>
+          <slot />
+        </Caption>
+      </figcaption>
+    )
+  }
+</figure>
+
+<style lang="scss">
+  @use "../assets/styles/config/config" as *;
+  @use "../assets/styles/utils/grrr/grrr" as *;
+
+  .image {
+    width: 100%;
+    &,
+    :global(+ *)  {
+      margin-top: var(--spacer-m);
+    }
+
+    &--wide {
+      @include media-break-down(m) {
+        width: calc(100% + var(--atnl-margin) * 2);
+        transform: translateX(calc(-1 * var(--atnl-margin)));
+
+        :global(.caption) {
+          padding-inline: var(--atnl-margin);
+        }
+      }
+    }
+  }
+
+  
+  :global(.columns:not(.columns--33-66) .columns__column-2 .image--wide) {
+    :global(img) {
+      @include media-break-up(m) {
+        width: calc(100% + grrr-cols-size(1,1) + var(--atnl-margin));
+      }
+    }
+  }
+ 
+  :global(.columns--33-66 .columns__column-1 .image--wide) {
+    @include media-break-up(m) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+        
+      :global(img) {
+        width: calc(100% + grrr-cols-size(1,1) + var(--atnl-margin));
+      }
+    }
+  }
+
+  :global(.column .image--wide) {
+    @include media-break-up(m) {
+      width: grrr-cols-size(10);
+      transform: translateX(calc(-1 * ((100vw - 657px) / 2) + grrr-cols-size(1, 1) + var(--atnl-margin)));
+    }
+    
+    @include media-break-up(xl) {
+      transform: translateX(calc(-1 * grrr-cols-size(2, 1)));
+    }
+
+    &,
+    :global(+ *)  {
+      margin-top: var(--spacer-l);
+    }
+  }
+
+</style>

@@ -1,0 +1,108 @@
+---
+const { layout, paddingTop, paddingBottom } = Astro.props;
+
+// layout deve retornar "text-bigger" ou "title-bottom".
+
+---
+
+<header
+  class:list={[
+    "column-sticky",
+    layout && `column-sticky--${layout}`,
+    {
+      'column-sticky--has-pdt': paddingTop,
+      'column-sticky--has-pdb': paddingBottom
+    }
+  ]}
+>
+  <div class="column-sticky__holder">
+    <div class="column-sticky__title">
+      <slot name="title" />
+    </div>
+    <div class="column-sticky__content">
+      <slot />
+    </div>
+  </div>
+</header>
+
+<style lang="scss">
+  @use "../assets/styles/config/config" as *;
+  @use "../assets/styles/globals/grrr" as *;
+
+  .column-sticky {
+    $self: &;
+
+    &__holder {
+      @extend %grrr--board;
+      --padding-block: 120px;
+      padding-top: var(--padding-top, var(--padding-block));
+      padding-bottom: var(--padding-bottom, var(--padding-block));
+
+      @include media-break-down(m) {
+        --padding-block: 40px;
+        display: block;
+        padding-inline: var(--atnl-margin);
+      }
+
+      #{$self}--has-pdt & {
+        --padding-top: 225px;
+
+        @include media-break-down(m) {
+          --padding-top: 90px;
+        }
+      }
+      
+      #{$self}--has-pdb & {
+        --padding-bottom: 225px;
+
+        @include media-break-down(m) {
+          --padding-bottom: 90px;
+        }
+      }
+    }
+
+    &__title {
+      @include type('d-s');
+      font-weight: 600;
+      grid-column: board-start 2 / board-end 7;
+
+      :global(> *) {
+        position: sticky;
+        top: var(--padding-block);
+        font-weight: inherit;
+      }
+
+      #{$self}--text-bigger & {
+        grid-column: board-start 2 / board-end 5;
+        @include type('d-xl');
+        font-weight: 600;
+      }
+      
+      #{$self}--title-bottom & {
+
+      }
+
+      @include media-break-down(l) {
+        #{$self} & {
+          @include type('h-l');
+          font-weight: 600;
+          margin-bottom: 36px;
+        }
+      }
+    }
+
+    &__content {
+      grid-column: board-start 9 / board-end 11;
+
+      #{$self}--text-bigger & {
+        grid-column: board-start 6 / board-end 11;
+      }
+
+      :global(> *:first-child),
+      :global(> .text > *:first-child) {
+        margin-top: 0;
+      }
+    }
+  }
+
+</style>

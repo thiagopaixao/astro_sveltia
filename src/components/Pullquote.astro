@@ -1,0 +1,47 @@
+---
+import Caption from "./Caption.astro";
+
+const hasByLine = Astro.slots.has('byline');
+---
+<div class="pullquote">
+  <slot />
+  {
+    hasByLine && (
+      <Caption>
+        <slot name="byline" />
+      </Caption>
+    )
+  }
+ 
+</div>
+
+<style lang="scss">
+  @use "../assets/styles/config/config" as *;
+
+  .pullquote {
+    @include type('h-m');
+    font-weight: 600;
+    margin-top: var(--spacer-m);
+
+    :global(+ *) {
+      margin-top: var(--spacer-m);
+    }
+
+    @include media-break-down(l) {
+      @include type('h-s');
+      font-weight: 600;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 20px;
+      mask-image: url("data:image/svg+xml,%3Csvg width='24' height='20' viewBox='0 0 24 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_494_4104)'%3E%3Cpath d='M0.0747069 12.4097C0.224121 4.45206 2.08703 0.146326 8.2734 0L9.46553 3.28456C5.96225 3.50405 5.14206 6.05853 5.14206 10.6569H9.76277V20H0C0 17.3724 0 14.7447 0.0747069 12.4082V12.4097ZM14.3104 12.4097C14.4598 4.45206 16.3227 0.146326 22.509 0L23.7012 3.28456C20.1979 3.50405 19.3777 6.05853 19.3777 10.6569H23.9984V20H14.2341C14.2341 17.3724 14.2341 14.7447 14.3088 12.4082L14.3104 12.4097Z' fill='%23FBBAA2'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_494_4104'%3E%3Crect width='24' height='20' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+      mask-repeat: no-repeat;
+      mask-size: contain;
+      background-color: var(--clr-hl, #000000);
+      margin-bottom: 12px;
+    }
+  }
+</style>

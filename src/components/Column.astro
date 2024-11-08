@@ -1,0 +1,54 @@
+---
+const { paddingTop, paddingBottom } = Astro.props;
+---
+
+<section
+  class:list={[
+    "column",
+    {
+      'column--has-pdt': paddingTop,
+      'column--has-pdb': paddingBottom
+    }
+  ]}
+>
+  <div class="column__holder">
+    <slot />
+  </div>
+</section>
+
+<style lang="scss">
+  @use "../assets/styles/config/config" as *;
+  @use "../assets/styles/globals/grrr" as *;
+
+  .column {
+    $self: &;
+    @extend %grrr--content;
+
+    &__holder {
+      --padding-block: 120px;
+      padding-top: var(--padding-top, var(--padding-block));
+      padding-bottom: var(--padding-bottom, var(--padding-block));
+      grid-column: content;
+  
+      @include media-break-down(m) {
+        --padding-block: 40px;
+      }
+  
+      #{$self}--has-pdt & {
+        --padding-top: 225px;
+  
+        @include media-break-down(m) {
+          --padding-top: 90px;
+        }
+      }
+      
+      #{$self}--has-pdb & {
+        --padding-bottom: 225px;
+  
+        @include media-break-down(m) {
+          --padding-bottom: 90px;
+        }
+      }
+    }
+  }
+</style>

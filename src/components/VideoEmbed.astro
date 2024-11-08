@@ -1,0 +1,70 @@
+---
+import Caption from "./Caption.astro";
+
+const { wide } = Astro.props;
+const hasCaption = Astro.slots.has("caption");
+---
+
+<figure class:list={["video-embed", { "video-embed--wide": wide }]}>
+  <slot />
+  {
+    hasCaption && (
+      <figcaption>
+        <Caption>
+          <slot name="caption" />
+        </Caption>
+      </figcaption>
+    )
+  }
+</figure>
+
+<style lang="scss">
+  @use "../assets/styles/config/config" as *;
+  @use "../assets/styles/utils/grrr/grrr" as *;
+
+  .video-embed {
+    position: relative;
+    
+    &:not(:first-child),
+    :global(+ *)  {
+      margin-top: var(--spacer-m);
+    }
+
+
+    :global(iframe) {
+      width: 100%;
+      height: auto;
+      display: block;
+      aspect-ratio: 16 / 9;
+    }
+
+    &__caption {
+      @include type('b-s');
+      display: block;
+      margin-top: 20px;
+    }
+  }
+
+  :global(.column .video-embed--wide) {
+    width: grrr-cols-size(10);
+    transform: translateX(calc(-1 * grrr-cols-size(2, 1)));
+
+    @include media-break-down(xl) {
+      transform: translateX(calc(-1 * ((100vw - 657px) / 2) + grrr-cols-size(1, 1) + var(--atnl-margin)));
+    }
+    
+    @include media-break-down(m) {
+      width: calc(100% + var(--atnl-margin) * 2);
+      transform: translateX(calc(-1 * var(--atnl-margin)));
+
+      :global(.caption) {
+        padding-inline: var(--atnl-margin);
+      }
+    }
+
+    &,
+    :global(+ *)  {
+      margin-top: var(--spacer-l);
+    }
+  }
+</style>

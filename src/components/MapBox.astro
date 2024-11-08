@@ -1,0 +1,184 @@
+---
+import Image from "astro/components/Image.astro";
+import img from "../assets/images/map.png";
+---
+
+<div id="mapbox">
+  <Image src={img} alt="" />
+</div>
+
+<style lang="scss">
+  @use "../assets/styles/config/config" as *;
+
+  #mapbox {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    transition: opacity 1s ease;
+
+    @include media-break-down(l) {
+      position: fixed;
+      z-index: 3;
+      inset: 0 0 auto 0;
+      height: var(--map-height);
+      background-color: aquamarine;
+      font-size: 60px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    :global(#mapbox.mobile .map) {
+      --map-height: 52vh;
+      margin-top: var(--map-height);
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        min-height: 100vh;
+      }
+
+      & + .map::after {
+        display: none;
+      }
+    }
+
+    :global(.mapboxgl-ctrl-bottom-right) {
+      display: none;
+    }
+  }
+</style>
+
+<script is:inline>
+  // window.addEventListener("load", debugMapTransitions);
+  window.mapConfig = {
+    style: "mapbox://styles/comborari/ckr4wi3k80fpl17qo34th6kk2",
+    center: [-54.875, -2.53],
+    zoom: 2,
+    bearing: 0,
+    pitch: 0,
+    layers: [],
+  };
+  window.mapBoxToken =
+    "pk.eyJ1IjoiY29tYm9yYXJpIiwiYSI6ImNrcjR3OWczMjBhaWEyeHIyaWhwMnUzNHcifQ.Yv7o7kj1ImyC9Rn-egF0TQ";
+  window.mapViews = {
+    view_0: {
+      center: [-58.911, -6.315],
+      duration: 4500,
+      zoom: 4,
+      bearing: 0,
+      pitch: 0,
+      layers: ["amazonialegal"],
+      captions: {
+        title: false,
+        notes: false,
+        items: [
+          {
+            icon: '<span class="material-symbols-outlined fill" style="color:white">show_chart</span>',
+            text: "Brazil's Legal Amazon",
+          },
+        ],
+      },
+    },
+    view_1: {
+      center: [-54.708, -2.625],
+      duration: 4000,
+      zoom: 8,
+      bearing: 0,
+      pitch: 0,
+      layers: ["municipios", "amazonas", "foztapajos"],
+      captions: {
+        title: false,
+        notes: false,
+        items: [
+          {
+            icon: '<span class="material-symbols-outlined fill" style="color:white">show_chart</span>',
+            text: "Municipality of Santarém (Pará)",
+          },
+          {
+            icon: '<span class="material-symbols-outlined fill" style="color:#FFF8DC">circle</span>',
+            text: "Amazonas River",
+          },
+          {
+            icon: '<span class="material-symbols-outlined fill" style="color:blue">circle</span>',
+            text: "Tapajós River",
+          },
+        ],
+      },
+    },
+    view_2: {
+      center: [-54.73, -2.597],
+      duration: 3000,
+      zoom: 10,
+      bearing: 0,
+      pitch: 0,
+      layers: ["br163", "amazonas", "foztapajos"],
+      captions: {
+        title: false,
+        notes: false,
+        items: [
+          {
+            icon: '<span class="material-symbols-outlined fill" style="color:white">show_chart</span>',
+            text: "Cuiabá-Santarém Highway (BR-163)",
+          },
+          {
+            icon: '<span class="material-symbols-outlined fill" style="color:#FFF8DC">circle</span>',
+            text: "Amazonas River",
+          },
+          {
+            icon: '<span class="material-symbols-outlined fill" style="color:blue">circle</span>',
+            text: "Tapajós River",
+          },
+        ],
+      },
+    },
+    view_3: {
+      center: [-54.831, -2.457],
+      duration: 4000,
+      zoom: 10.2,
+      bearing: 0,
+      pitch: 0,
+      layers: ["cidade-vila", "pa457"],
+      captions: {
+        title: false,
+        notes: false,
+        items: [
+          {
+            icon: '<span class="material-symbols-outlined fill" style="color:orange">show_chart</span>',
+            text: "Everaldo Martins Highway (PA-457)",
+          },
+          {
+            icon: '<span class="material-symbols-outlined" style="color:yellow">square</span>',
+            text: "Urban areas",
+          },
+        ],
+      },
+    },
+    view_4: {
+      center: [-54.917, -2.529],
+      duration: 2000,
+      zoom: 10,
+      bearing: 0,
+      pitch: 0,
+      layers: ["tiborari"],
+      captions: {
+        title: false,
+        notes: false,
+        items: [
+          {
+            icon: '<span class="material-symbols-outlined fill" style="color:red">square</span>',
+            text: "Borari Territory (preliminary demarcation)",
+          },
+        ],
+      },
+    },
+  };
+</script>

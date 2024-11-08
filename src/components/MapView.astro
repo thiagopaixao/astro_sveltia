@@ -1,0 +1,15 @@
+---
+const { mapView } = Astro.props;
+---
+
+<div class="map-view" data-map-view={mapView}></div>
+
+<style>
+  .map-view{
+    border-top: 1px solid;
+    color: yellow;
+    opacity: 0;
+    height: 1px;
+    max-height: 1px;
+  }
+</style>

@@ -1,0 +1,190 @@
+@use "sass:string";
+
+// basic styles.
+.atnl-ul,
+.atnl-ol,
+.atnl-ul ul,
+.atnl-ol ol {
+	--_li-left: var(--li-left, 2ch);
+	--_li-gutter: var(--li-gutter, .5ch);
+	--_li-marker-sep: var(--li-marker-sep, ".");
+	--_li-marker-sep-end: var(--li-marker-sep-end, "");
+	list-style: none;
+	list-style-type: none !important;
+	margin-inline: 0;
+	margin-bottom: 0;
+	padding: 0;
+
+	ul,
+	ol {
+		padding: 0px;
+	}
+
+	li {
+		position: relative;
+
+		> div.rich-text{
+			display: inline;
+		}
+	}
+}
+
+.atnl-ul,
+.atnl-ul ul,
+.atnl-ol ul {
+	li {
+		padding-left: calc( var(--_li-left) + var(--_li-gutter) );
+	}
+}
+
+//ul bullet
+.atnl-ul > li,
+.atnl-ul ul > li,
+.atnl-ol ul > li{
+	&:before{
+		content: '';
+		background-color: currentColor;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		// use mask to be able to handle any figure.
+		mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><circle cx="5" cy="5" r="4" fill="white"/></svg>');
+		mask-size: 100%;
+		mask-position: center;
+		mask-repeat: no-repeat;
+
+		width: 8px; //control the size of marker
+		height: 26px; //use line height
+	}
+}
+
+
+//ol basic nested style
+.atnl-ol,
+.atnl-ol ol {
+	list-style-type: none !important;
+	& > li {
+		display: table;
+		padding-left: 0;
+		&:before {
+			content: '';
+			min-width: calc( var(--_li-left) + var(--_li-gutter) );
+			padding-right: var(--_li-gutter);
+			display: table-cell;
+		}
+	}
+}
+
+// counter
+@mixin nested-ol($max-level, $current-level: 1) {
+  $current-counter: string.unquote('sublistCounter' + ($current-level - 1));
+  ol {
+    counter-reset: #{$current-counter};
+    & > li {
+      counter-increment: #{$current-counter};
+      &::before {
+        content: #{generate-counter-string($current-level)}
+      }
+			@if $current-level < $max-level {
+				& > {
+					@include nested-ol($max-level, $current-level + 1);
+				}
+			}
+		}
+  }
+}
+
+@function generate-counter-string($level) {
+  $counter-string: "counter(listCounter, var(--ol-counter-style, decimal))";
+  @for $i from 0 through $level - 1 {
+    $counter-string: $counter-string + ' var(--_li-marker-sep) counter(sublistCounter#{$i}, var(--ol-counter-style-sub,var(--ol-counter-style, decimal)))';
+  }
+  @return $counter-string + ' var(--_li-marker-sep-end)';
+}
+
+.atnl-ol {
+	//listCounter is a variabled defined to continue the list from a specific number
+	counter-reset: listCounter calc(var(--listCounter, 1) - 1);
+
+	&[reversed],
+	&.reversed {
+		counter-reset: listCounter calc(var(--listCounter, 1) + 1);
+
+		>li {
+			counter-increment: listCounter -1;
+		}
+	}
+
+	& > li {
+		counter-increment: listCounter;
+		&:before {
+			content: counter(listCounter, var(--ol-counter-style, decimal)) + ' var(--_li-marker-sep-end)';
+		}
+
+		@include nested-ol(6);
+	}
+
+	ul{
+		width: 100%;
+
+		& > li > ol {
+			counter-reset: listCounter calc(var(--listCounter, 1) - 1);
+			& > li {
+				@include nested-ol(6);
+
+				& {
+					counter-increment: listCounter;
+				}
+
+				&::before {
+					content: counter(listCounter, var(--ol-counter-style, decimal));
+				}
+			}
+		}
+	}
+}
+
+// ol list styles
+.atnl-ol{
+	&.upper-alpha,
+	&[style*='list-style-type:upper-alpha'],
+	&[style*='list-style-type: upper-alpha'] {
+		li:before {
+			--ol-counter-style: upper-alpha;
+		}
+		ol li:before{
+			--ol-counter-style-sub: lower-alpha;
+		}
+	}
+
+	&.lower-alpha,
+	&[style*='list-style-type:lower-alpha'],
+	&[style*='list-style-type: lower-alpha'] {
+		li:before {
+			--ol-counter-style: lower-alpha;
+		}
+	}
+
+	&.upper-roman,
+	&[style*='list-style-type:upper-roman'],
+	&[style*='list-style-type: upper-roman'] {
+		li:before {
+			--ol-counter-style: upper-roman;
+		}
+		ol li:before{
+			--ol-counter-style-sub: lower-alpha;
+		}
+	}
+
+	&.lower-roman,
+	&[style*='list-style-type:lower-roman'],
+	&[style*='list-style-type: lower-roman'] {
+		li:before {
+			--ol-counter-style: lower-roman;
+		}
+		ol li:before{
+			--ol-counter-style-sub: lower-alpha;
+		}
+	}
+}

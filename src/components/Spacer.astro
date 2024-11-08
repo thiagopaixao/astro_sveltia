@@ -1,0 +1,24 @@
+---
+const {desktop, tablet, mobile} = Astro.props;
+---
+<div class="spacer"></div>
+
+<style lang="scss" define:vars={{ "spacer-d": desktop, "spacer-t": tablet, "spacer-m": mobile }}>
+  @use "../assets/styles/config/config" as *;
+
+  .spacer {
+    height: var(--spacer-m);
+    
+    @include media-break-up(m) {
+      height: var(--spacer-t);
+    }
+    
+    @include media-break-up(xl) {
+      height: var(--spacer-d);
+    }
+
+    :global(+ *) {
+      margin-top: 0;
+    }
+  }
+</style>

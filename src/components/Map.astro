@@ -1,0 +1,221 @@
+---
+import MapView from "./MapView.astro";
+const { columnAlign, floatingText, txtColor, bgColor, mapView } = Astro.props;
+---
+
+<section
+  class:list={[
+    "map",
+    `map--align${columnAlign}`,
+    floatingText && `map--floating-text`,
+  ]}
+>
+  <div class="map__holder">
+    {mapView && <MapView mapView={mapView} />}
+    <div class="map__content">
+      <slot />
+    </div>
+  </div>
+</section>
+
+<style lang="scss" define:vars={{ "clr-txt": txtColor, "clr-bg": bgColor }}>
+  @use "../assets/styles/globals/grrr" as *;
+  @use "../assets/styles/config/config" as *;
+  @use "../assets/styles/utils/grrr/grrr" as *;
+
+  .map {
+    $self: &;
+    min-height: 100vh;
+    @extend %grrr--board;
+    color: var(--clr-txt);
+
+    @include media-break-down(l) {
+      display: block;
+
+      margin-top: var(--map-height);
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        min-height: 100vh;
+      }
+
+      :global(+ .map::after) {
+        display: none;
+      }
+    }
+
+    @include media-break-up(xl) {
+      display: block;
+    }
+    
+    &__view {
+      position: absolute;
+      left: 20px;
+      z-index: 9999;
+      border-bottom: 1px solid;
+      border-left: 1px dashed;
+      color: yellow;
+      height: 1px;
+      padding-left: 10px;
+      opacity: 0;
+      max-width: 200px;
+
+      &.odd{
+        color: #59ff4d;
+      }
+    }
+
+    &__holder {
+      position: relative;
+      width: 100%;
+      background-color: var(--clr-bg);
+      padding-inline: var(--atnl-gutter, 40px);
+
+      @include media-break-down(l) {
+        padding-block: var(--spacer-m);
+        position: sticky;
+        top: var(--map-height);
+        margin-top: calc( var(--map-height) * -1 ) ;
+        min-height: calc( 100vh - var(--map-height) );
+      }
+
+      @include media-break-up(l) {
+        padding-block: 240px var(--atnl-gutter, 40px);
+      }
+
+      @include media-break-up(xl) {
+        width: 100%;
+        max-width: 507px;
+      }
+
+      #{$self}--alignright & {
+        @include media-break-up(l) {
+          grid-column: board-end 8 / full-end;          
+        }
+
+        @include media-break-up(xl) {
+          margin-left: auto;
+        }
+      }
+      
+      #{$self}--alignleft & {
+        @include media-break-up(l) {
+          grid-column: full-start 1 / board-start 5;          
+        }        
+      }
+      
+      #{$self}--aligncenter & {
+        @include media-break-up(l) {
+          grid-column: board-full;          
+        }        
+      }
+
+      #{$self}--floating-text & {
+       background-color: transparent;
+      }
+
+      #{$self}--aligncenter & {
+        max-width: 664px;
+        margin-inline: auto;
+      }
+    }
+
+    &__content {
+      position: relative;
+      
+      #{$self}--floating-text & {
+        :global(> *:not(div)),
+        :global(> .text > *) {
+          display: inline;
+          background-color: var(--clr-bg);
+          padding: 0.2em 0;
+
+          &:not(:first-child) {
+            &::before {
+              content: '';
+              height: 30px;
+              white-space: pre;
+              display: block;
+            }
+          }
+        }
+
+        :global(body:not(.is-safari)) & :global(> *:not(div)),
+        :global(body:not(.is-safari)) & :global(> .text > *) {
+          padding: 0.2em .3em;
+          margin: -.3em;
+          -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+        }
+      }
+    }
+
+    :global(#captions) {
+      width: 310px;
+      position: fixed;
+      left: 40px;
+      color: var(--clr-txt);
+      background-color: var(--clr-bg);
+      padding: 16px;
+      border-radius: 3px;
+      
+      @include media-break-down(l) {
+        padding: 12px;
+        top: 30px;
+
+        display: none;
+      }
+
+      @include media-break-up(l) {
+        bottom: 33px;
+      }
+    }
+
+    :global(.captions__item) {
+      display: flex;
+      
+      gap: 10px;
+      
+      :global(span:has([class*="material-symbols"])) {
+        display: flex;
+      }
+
+      :global(+ .captions__item) {
+        margin-top: 10px;
+      }
+    }
+
+    :global(button) {
+      padding: 0;
+      border: none;
+      outline: 0;
+      background-color: transparent;
+
+      @include media-break-up(l) {
+        display: none;
+      }
+
+      :global(svg) {
+        display: block;
+      }
+
+      :global(rect) {
+        fill: var(--clr-bg);
+      }
+
+      :global(path) {
+        fill: var(--clr-txt);
+      }
+    }
+    
+    &--aligncenter :global(#captions),
+    &--alignleft :global(#captions) {
+      @include media-break-up(l) {
+        left: auto;
+        right: 40px;
+      }
+    }
+  } 
+</style>

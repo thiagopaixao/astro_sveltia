@@ -1,0 +1,47 @@
+
+// &#{&}--post-type-page{ //Variation Page
+// 	&:not(#{$content}--template-front-page){ 	//when we have further a template grid modification, you must deny it.
+// 		@extend .grrr--fluid;
+// 		--content-area: board-start 5 / board-end 11; //defines the default alignment for content inside the grid.
+// 	}
+// }
+@mixin content{
+	$content: &; 	//use the variable content for nested child.
+	&{
+		@extend .grrr--content;
+		@include type('text');
+		grid-column: 1 / -1;
+		display: grid;
+		background-color: inherit;
+		color: inherit;
+
+		--content-area: content;
+		--content-size: #{grrr-cols-size(8)};
+
+		@include media-break-down('m'){
+			--content-size: calc( ( var(--atnl-col-responsive-size) * 4 ) + ( var(--atnl-gutter) * 3 ) );
+		}
+	}
+
+	.backend &{
+		min-height: 80px;
+	}
+
+	.frontend &{
+		padding-block: 80px;
+	}
+
+	&#{&}--template-front-page{
+		@extend .grrr--board;
+		--content-area: board-start 5 / board-end 11;
+
+		@include media-break-down('m'){
+			--content-area: content;
+
+		}
+	}
+}
+
+.content {
+	@include content;
+}
