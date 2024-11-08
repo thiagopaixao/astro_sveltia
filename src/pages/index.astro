@@ -4,6 +4,7 @@ import MapBox from "../components/MapBox.astro";
 import Group from "../components/Group.astro";
 import Map from "../components/Map.astro";
 import Text from "../components/Text.astro";
+import MapView from "../components/MapView.astro";
 
 import Image from "astro/components/Image.astro";
 import img from "../assets/images/group-bg.png";
@@ -11,7 +12,7 @@ import imgMap from "../assets/images/map.png";
 import Spacer from "../components/Spacer.astro";
 import ColumnSticky from "../components/ColumnSticky.astro";
 import Column from "../components/Column.astro";
-import Columns from "../components/ColumnsBlock.astro";
+import Columns from "../components/Columns.astro";
 import TextPlaceholder from "../components/TextPlaceholder.astro";
 import Pullquote from "../components/Pullquote.astro";
 import VideoEmbed from "../components/VideoEmbed.astro";
@@ -22,6 +23,7 @@ import ImageBlock from "../components/ImageBlock.astro";
   <main>
     <MapBox />
     <!-- MapBox deve ser sempre o primeiro componente -->
+    
     <Group txtColor="#F0EAD9" bgColor="#006949" imgBg={img.src}>
       <ColumnSticky paddingTop paddingBottom layout="text-bigger">
         <h1 slot="title">ALTER DO CHÃO ALSO NEEDS TO BE RECOGNIZED</h1>
@@ -108,69 +110,73 @@ import ImageBlock from "../components/ImageBlock.astro";
       bgColor="#006A49"
       mapView="view_0"
     >
-      <Text>
-        <TextPlaceholder />
-        <Pullquote>
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam
-          </p>
-          <Fragment slot="byline">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium
-          </Fragment>
-        </Pullquote>
-      </Text>
+    <Text>
+      <h4>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium
+      </h4>
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+        quae ab illo inventore veritatis et quasi architecto beatae vitae
+        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+        eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+        est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+        velit, sed quia non numquam eius modi tempora incidunt ut labore
+        et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+        veniam, quis nostrum exercitationem ullam corporis suscipit
+        laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
+        vel eum iure reprehenderit qui in ea voluptate velit esse quam
+        nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+        voluptas. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+        aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+        ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+        dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+      </p>
+    </Text>
+    <MapView mapView="view_2" />
+    <Pullquote>
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam
+      </p>
+      <Fragment slot="byline">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium
+      </Fragment>
+    </Pullquote>
+    <Text>
+      <p>
+        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+        consectetur, adipisci velit, sed quia non numquam eius modi
+        tempora incidunt ut labore et dolore magnam aliquam quaerat
+        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem
+        ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+        consequatur? Quis autem vel eum iure reprehenderit qui in ea
+        voluptate velit esse quam nihil molestiae consequatur, vel illum
+        qui dolorem eum fugiat quo voluptas.
+      </p>
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+        quae ab illo inventore veritatis et quasi architecto beatae vitae
+        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+        eos qui ratione voluptatem sequi nesciunt.
+      </p>
+    </Text>
+      
     </Map>
     <Group txtColor="#364849" bgColor="#F0EAD9">
       <Columns>
         <Fragment slot="column-1">
           <Text>
-            <h4>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium
-            </h4>
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-              velit, sed quia non numquam eius modi tempora incidunt ut labore
-              et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-              veniam, quis nostrum exercitationem ullam corporis suscipit
-              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-              vel eum iure reprehenderit qui in ea voluptate velit esse quam
-              nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-              voluptas. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-              aut odit aut fugit, sed quia consequuntur magni dolores eos qui
-              ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-              dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-            </p>
-            <p>
-              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit, sed quia non numquam eius modi
-              tempora incidunt ut labore et dolore magnam aliquam quaerat
-              voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem
-              ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-              consequatur? Quis autem vel eum iure reprehenderit qui in ea
-              voluptate velit esse quam nihil molestiae consequatur, vel illum
-              qui dolorem eum fugiat quo voluptas.
-            </p>
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt.
-            </p>
+            <TextPlaceholder />
           </Text>
         </Fragment>
         <Fragment slot="column-2">
-          <ImageBlock src={imgMap} wide>
+          <ImageBlock src={imgMap}>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam
           </ImageBlock>
@@ -232,20 +238,21 @@ import ImageBlock from "../components/ImageBlock.astro";
     </Group>
 
     <Map
-      columnAlign="center"
+      columnAlign="left"
       floatingText
       txtColor="#F0EAD9"
       bgColor="#006A49"
       mapView="view_1"
     >
     <Text>
-      <h6>
+      <h4>
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
         accusantium
-      </h6>
+      </h4>
       <p>
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+        accusantium doloremque laudantium,
+        totam rem aperiam, eaque ipsa quae
         ab illo inventore veritatis et quasi architecto beatae vitae dicta
         sunt explicabo nemo enim ipsam voluptatem
       </p>
