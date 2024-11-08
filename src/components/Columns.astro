@@ -1,0 +1,109 @@
+---
+const { paddingTop, paddingBottom, invertOnMobile, alignment } = Astro.props;
+
+//alignment recebe '33-66' (primeira coluna menor) ou false (padrão no css fica para primera coluna maior);
+---
+
+<section
+  class:list={[
+    "columns",
+    {
+      'columns--has-pdt': paddingTop,
+      'columns--has-pdb': paddingBottom,
+      'columns--invert-on-mobile': invertOnMobile,
+    },
+    
+    alignment && `columns--${alignment}`
+  ]}
+>
+  <div class="columns__holder">
+    <div class="columns__column-1">
+      <slot name="column-1" />
+    </div>
+    <div class="columns__column-2">
+      <slot name="column-2" />
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  @use "../assets/styles/config/config" as *;
+  @use "../assets/styles/globals/grrr" as *;
+
+  .columns {
+    $self: &;
+    
+    &__holder {
+      @extend %grrr--board;
+      align-items: start;
+
+      --padding-block: 120px;
+      padding-top: var(--padding-top, var(--padding-block));
+      padding-bottom: var(--padding-bottom, var(--padding-block));
+  
+      @include media-break-down(m) {
+        --padding-block: 40px;
+        row-gap: 60px;
+      }
+
+      #{$self}--has-pdt & {
+        --padding-top: 225px;
+  
+        @include media-break-down(m) {
+          --padding-top: 90px;
+        }
+      }
+      
+      #{$self}--has-pdb & {
+        --padding-bottom: 225px;
+  
+        @include media-break-down(m) {
+          --padding-bottom: 90px;
+        }
+      }
+    }
+
+    &__column-1 {
+      grid-column: board-start 2 / board-end 7;
+      
+      #{$self}--33-66 & {
+        grid-column: board-start 2 / board-end 4;
+        
+        @include media-break-down(m) {
+          grid-column: board-full;
+        }
+      }
+
+      @include media-break-down(m) {
+        grid-column: board-full;
+      }
+    }
+    
+    &__column-2 {
+      grid-column: board-start 9 / board-end 11;
+      
+      #{$self}--33-66 & {
+        grid-column: board-start 6 / board-end 11;
+        
+        @include media-break-down(m) {
+          grid-column: board-full;
+        }
+      }
+
+      @include media-break-down(m) {
+        grid-column: board-full;
+
+        #{$self}--invert-on-mobile & {
+          grid-row: 1;
+        }
+      }
+    }
+
+    &__column-1,
+    &__column-2 {
+      :global(> *:first-child) {
+        margin-top: 0;
+      }
+    }  
+  }
+</style>
