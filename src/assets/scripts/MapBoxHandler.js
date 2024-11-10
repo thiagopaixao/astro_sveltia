@@ -88,15 +88,20 @@ class MapBoxHandler {
             return distance;
         }
 
+        const getMobileAdjustment = (parent, index, top = false) =>{
+            const mobileAdjustment = !parent.classList.value.includes('floating') && window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches && window.innerHeight
+            return (top && index !== 0) || (!top && index === 0) ? mobileAdjustment : 0;
+        }
+
         this.mapScreens && this.mapScreens.forEach(parent => {
             let mapTriggers = parent.querySelectorAll('[data-map-view]')
             mapTriggers.forEach((el, index) => {
                 const nextElement = mapTriggers[index + 1];
                 const anchorRef = document.querySelector(`[data-map-anchor-id="${el.dataset.refId}"]`);
-                anchorRef.style.top = `${getTopDistance(el)}px`;
+                anchorRef.style.top = `${getTopDistance(el) + getMobileAdjustment(parent,index,true)}px`;
                 if (nextElement) {
                     const distanceToNext = getTopDistance(nextElement) - getTopDistance(el);
-                    anchorRef.style.height = `${distanceToNext}px`;
+                    anchorRef.style.height = `${distanceToNext + getMobileAdjustment(parent,index)}px`;
                 } else {
                     const parentBottomDistance = getTopDistance(parent) + parent.offsetHeight;
                     const distanceToParentBottom = parentBottomDistance - getTopDistance(el);
@@ -165,9 +170,11 @@ class MapBoxHandler {
 
         this.animationStartTime = Date.now();
 
+        const viewParameters = this.getViewParameters(view);
+
         const destiny = refEl
-            ? { ...view, center: this.getDisplacedCenter(refEl, view) }
-            : { ...view };
+            ? { ...viewParameters, center: this.getDisplacedCenter(refEl, viewParameters) }
+            : viewParameters;
 
         const isAnimating = this.map.isMoving() || this.map.isZooming();
 
@@ -256,7 +263,7 @@ class MapBoxHandler {
                 && this.map.resize()
                 && this.map.stop()
                 && this.map.flyTo({
-                    ...this.currentView,
+                    ...this.getViewParameters(this.currentView),
                     duration: this.getCurrentAnimationRemaingDuration()
                 });
             return true;
@@ -321,6 +328,12 @@ class MapBoxHandler {
 
     /* Helpers */
 
+    getViewParameters(view){
+        let isMobile = view && window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches && view.hasOwnProperty('mobile') && view.mobile && Object.values(view.mobile).length;
+        let mobileView = isMobile && {...view.mobile};
+        return isMobile ? {...view, ...mobileView } : view
+    }
+
     getDisplacedCenter(el, view) {
         const parent = el.closest('.map');
         const parentClasses = parent.classList.value;
@@ -359,7 +372,7 @@ class MapBoxHandler {
     }
 
     getCurrentAnimationRemaingDuration(){
-        let remainingDuration = this.currentView.duration - (Date.now() - this.animationStartTime)
+        let remainingDuration = this.getViewParameters(this.currentView).duration - (Date.now() - this.animationStartTime)
         return remainingDuration < 0 ? 0 : remainingDuration;
     }
 
