@@ -1,0 +1,102 @@
+<div class="timeline" data-timeline>
+  <slot />
+</div>
+
+<style lang="scss">
+  .timeline {
+    padding-left: 32px;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 2px;
+      min-height: 100vh;
+      height: 120%;
+      display: block;
+      position: absolute;
+      left: 5px;
+      top: 2px;
+      background-color: var(--clr-txt);
+      opacity: 0.2;
+    }
+   
+    // &::after {
+    //   content: '';
+    //   width: 2px;
+    //   min-height: 100vh;
+    //   height: 120%;
+    //   display: block;
+    //   position: absolute;
+    //   left: 5px;
+    //   top: 2px;
+    //   background-color: var(--clr-txt);
+    // }
+  }
+</style>
+<script>
+
+function activeTimelineBullet() {
+    const timelineItems = document.querySelectorAll('[data-timeline-bullet]');
+
+    const observerCallback = (entries) => {
+      entries.forEach(entry => {
+        // Pegar a posição do elemento em relação ao viewport
+        const rect = entry.target.getBoundingClientRect();
+        const viewportHeight = window.innerHeight;
+        
+        // Verificar se o elemento está entre a base e 50% do viewport
+        const isInRange = rect.top <= viewportHeight * 0.7 && rect.bottom >= 0;
+        
+        // Adicionar ou remover a classe active baseado na posição
+        if (isInRange) {
+          entry.target.classList.add('active');
+          // entry.target.style.setProperty('--line-size', )
+        } else {
+          entry.target.classList.remove('active');
+        }
+      });
+    };
+
+
+    const observer = new IntersectionObserver(observerCallback, {
+      // Configurar para observar quando o elemento entra em 50% da viewport
+      threshold: [0, 0.5, 1],
+      rootMargin: `-70% 0px 0px 0px`
+    });
+
+    //Observar cada item da timeline
+    timelineItems.forEach(item => {
+      observer.observe(item);
+    });
+
+    // Cleanup function
+    return () => {
+      timelineItems.forEach(item => {
+        observer.unobserve(item);
+      });
+      
+    };
+  }
+
+
+  function updateTimelineLine() {
+    const timelines = document.querySelectorAll('[data-timeline]');
+    
+    timelines.forEach(timeline => {
+      
+      
+      window.addEventListener('scroll', e => {
+        const rect = timeline.getBoundingClientRect();
+
+        const startingPoint = -1 * (rect.top - window.innerHeight * 0.7);
+        console.log(startingPoint, rect.bottom + 80)
+      })
+    });
+  }
+
+  // Inicializar o observer quando o DOM estiver pronto
+  document.addEventListener('DOMContentLoaded', activeTimelineBullet);
+  document.addEventListener('DOMContentLoaded', updateTimelineLine);
+
+
+</script>

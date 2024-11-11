@@ -1,0 +1,57 @@
+---
+const {text} = Astro.props
+---
+<span class:list={["timeline__bullet", !text && "timeline__bullet--no-text"]} data-timeline-bullet>{text}</span>
+
+<style lang="scss">
+  @use "../assets/styles/config/config" as *;
+
+  .timeline__bullet {
+    @include type('c-s');
+    color: var(--clr-hl);
+    display: block;
+    margin-bottom: 8px;
+    position: relative;
+
+    &:not(:first-child) {
+      margin-top: var(--mt-m);
+    }
+
+    &::before, {
+      content: '';
+      display: block;
+      width: 12px;
+      height: 12px;
+      background-color: currentColor;
+      position: absolute;
+      left: -32px;
+      transform: translateY(2px);
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 4px;
+      height: 4px;
+      background-color: var(--clr-txt);
+      position: absolute;
+      left: -28px;
+      top: 4px;
+      transform: translateY(2px);
+      opacity: 0;
+    }
+
+    &.active {
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &--no-text {
+      &::before,
+      &::after {
+        transform: translateY(5px);
+      }
+    }
+  }
+</style>
