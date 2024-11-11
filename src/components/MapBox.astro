@@ -6,7 +6,7 @@ import img from "../assets/images/map.png";
 ---
 
 <div id="mapbox">
-  <Image src={img} alt="" />
+  <!-- <Image src={img} alt="" /> -->
 </div>
 
 <style lang="scss">
@@ -24,11 +24,14 @@ import img from "../assets/images/map.png";
 
     @include media-break-down(l) {
       position: fixed;
-      z-index: 3;
       inset: 0 0 auto 0;
-      height: var(--map-height-mobile);
       background-color: aquamarine;
       font-size: 60px;
+      
+      &.mobile {
+        z-index: 3;
+        height: var(--map-height-mobile);
+      }
     }
 
     img {

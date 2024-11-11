@@ -39,9 +39,12 @@ content = floatingText ? content.replace(/<br[^>]*>/g, '<b r></b>') : content;
 
     @include media-break-down(l) {
       display: block;
-
       margin-top: var(--map-height-mobile);
       position: relative;
+
+      &--floating-text {
+        z-index: 100;
+      }
 
       &::after {
         content: "";
