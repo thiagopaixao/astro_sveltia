@@ -24,7 +24,7 @@ const { hasDropCap } = Astro.props
       }
     }
 
-    :global(* + *) {
+    :global(> * + *) {
       margin-top: var(--mt-s, 40px);
     }
     
