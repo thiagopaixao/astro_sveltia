@@ -1,0 +1,65 @@
+---
+import Button from "./Button.astro";
+const { link, icon, title, text } = Astro.props;
+---
+
+<div class="card">
+  {icon && <div class="card__icon" set:html={icon} />}
+  {title && <span class="card__title">{title}</span>}
+  {text && <p class="card__text">{text}</p>}
+  {link && <Button link={link} />}
+</div>
+
+<style lang="scss">
+  @use "../assets/styles/config/config" as *;
+
+  .card {
+    color: var(--clr-txt);
+    border: 2px solid currentColor;
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    &__icon {
+      :global(span) {
+        font-size: 26px;
+        display: block;
+        width: fit-content;
+      }
+
+      + * {
+        margin-top: 10px;
+      }
+    }
+
+    &__title {
+      @include type('h-xs');
+      display: block;
+      
+      + * {
+        margin-top: 15px;
+      }
+    }
+
+    &__text {
+      @include type('b-s');
+      :global(+ *) {
+        margin-top: 20px;
+      }
+    }
+
+    :global(.button) {
+      @include type('c-s');
+      line-height: 1;
+      font-weight: 600;
+      margin-bottom: 4px;
+      padding: 4px 5px 3px;
+      gap: 5px;
+
+      :global(span) {
+        line-height: .7;
+      }
+    }
+  }
+</style>
