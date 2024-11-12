@@ -5,8 +5,7 @@ import img from "../assets/images/map.png";
 //coloquei a chamada para as funcões do mapa direto aqui no arquivo. Não sei qual a melhor forma de inserir os objetos com as opcões
 ---
 
-<div id="mapbox">
-</div>
+<div id="mapbox"></div>
 <div id="mapbox-clone"><div></div></div>
 
 <style lang="scss">
@@ -21,18 +20,11 @@ import img from "../assets/images/map.png";
     height: 100%;
     width: 100%;
     transition: opacity 1s ease;
-    opacity: 1;
+    opacity: 0;
+    background-color: black;
 
     @include media-break-down(l) {
-      position: fixed;
-      inset: 0 0 auto 0;
-      background-color: aquamarine;
       font-size: 60px;
-      
-      // &.mobile {
-      //   z-index: 3;
-      //   height: var(--map-height-mobile);
-      // }
     }
 
     img {
@@ -70,9 +62,16 @@ import img from "../assets/images/map.png";
     width: 100%;
     z-index: 3;
     pointer-events: none;
+
+    @include media-break-up(l) {
+      display: none;
+    }
+
     div{
       min-height: 100vh;
-      background-color: yellowgreen;
+      transition: opacity 1s ease;
+      opacity: 0;
+      background-color: black;
     }
   }
   

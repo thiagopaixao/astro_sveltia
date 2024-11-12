@@ -51,8 +51,8 @@ content = floatingText ? content.replace(/<br[^>]*>/g, '<b r></b>') : content;
         display: block;
         min-height: 100vh;
       }
-
-      :global(+ .map::after) {
+      
+      &:not(#{$self}--floating-text) + #{$self}:not(#{$self}--floating-text):after{
         display: none;
       }
     }

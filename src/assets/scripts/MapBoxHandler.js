@@ -3,6 +3,7 @@ class MapBoxHandler {
         window.addEventListener('load', () => {
             this.transitionScreenPoint = 75; // percentage of screen
             this.transitionScreenPointMobile = 65; // percentage of screen
+            this.mapHeight = .52 // 1 is 100%
             this.mobileBreakPoint = 900; // abaixo ou igual é mobile (px)
             this.views = window.mapViews;
             this.mapHolder = document.querySelector('#mapbox')
@@ -18,13 +19,11 @@ class MapBoxHandler {
             this.definedLayers = [...window.mapConfig.layers];
 
             this.countIntersectionEvents = 0; // handles confusions on layout shift and insersection interpolation
-            this.adjustMapWindowRemoveCallback = null; // handles confunsion when coming back to map full mode on mobile.
 
             const { style, ...initView } = window.mapConfig;
             this.initView = initView;
             this.initView.duration = Object.values(this.views)[0].duration;
             this.currentView = initView;
-            this.currentMapWindowState = Array.from(this.mapScreens)[0]?.classList.value.includes('floating') ? 'full' : 'square';
 
             this.viewObserver = null; // saves the scroll observer
 
@@ -44,10 +43,18 @@ class MapBoxHandler {
             container: this.mapHolder,
             ...window.mapConfig
         })
-        this.mapClone = new mapboxgl.Map({
-            container: this.mapHolderClone,
-            ...window.mapConfig
-        })
+        this.mapHolder.style.opacity = 1;
+        this.mapClone = false;
+        if( this.getHistoryType() !== 'floating' ){
+            this.mapClone = new mapboxgl.Map({
+                container: this.mapHolderClone,
+                ...window.mapConfig
+            })
+            this.mapHolderClone.style.opacity = 1;
+        }else{
+            this.mapHolderClone.remove();
+            this.mapHolderClone = false;
+        }
         // Handle transitions.
         this.map.on('load', () => {
             this.mapHolder.style.opacity = 1;
@@ -84,6 +91,8 @@ class MapBoxHandler {
     }
 
     async setPosToMapAnchors() {
+        const scrollPos = window.scrollY;
+        window.scrollTo({ top: 0, behavior: 'instant' });
         const getTopDistance = (el) => {
             let distance = 0;
             while (el) {
@@ -109,11 +118,12 @@ class MapBoxHandler {
                     anchorRef.style.height = `${distanceToNext + getMobileAdjustment(parent,index)}px`;
                 } else {
                     const parentBottomDistance = getTopDistance(parent) + parent.offsetHeight;
-                    const distanceToParentBottom = parentBottomDistance - getTopDistance(el);
+                    const distanceToParentBottom = parentBottomDistance - getTopDistance(el) - getMobileAdjustment(parent,index,true);
                     anchorRef.style.height = `${distanceToParentBottom}px`;
                 }
             });
         })
+        window.scrollTo({ top: scrollPos, behavior: 'instant' });
     }
 
     async setMapWindowDisplacers() {
@@ -160,7 +170,7 @@ class MapBoxHandler {
     displayLayers(layers = [], show = false) {
         layers.forEach(layer => {
             this.map.setLayoutProperty(layer, 'visibility', show ? 'visible' : 'none')
-            this.mapClone.setLayoutProperty(layer, 'visibility', show ? 'visible' : 'none')
+            this.mapClone && this.mapClone.setLayoutProperty(layer, 'visibility', show ? 'visible' : 'none')
         });
     }
 
@@ -198,7 +208,7 @@ class MapBoxHandler {
         this.toggleLayersVisibility(view.layers);
 
         this.currentView = view;
-        fly ? this.mapClone.flyTo(destiny) : this.mapClone.easeTo(destiny);
+        fly ? this.mapClone && this.mapClone.flyTo(destiny) : this.mapClone && this.mapClone.easeTo(destiny);
         return fly ? this.map.flyTo(destiny) : this.map.easeTo(destiny);
     }
 
@@ -224,15 +234,6 @@ class MapBoxHandler {
 
         console.warn('view not found')
         return false;
-    }
-
-    changeViewByDisplacer(el, intersection) {
-        if (!intersection) {
-            this.captionHolder.classList.add('hidden');
-            return false;
-        }
-        setTimeout(() => { this.move(this.currentView, el) }, 100);
-        return true
     }
 
     maybeBackToInitialView() {
@@ -321,16 +322,16 @@ class MapBoxHandler {
         let mapPerc = parentClasses.includes('alignleft') ? (1 - mapWCalc) : false;
         mapPerc = parentClasses.includes('alignright') ? (1 + mapWCalc) : mapPerc
 
-        if (!mapPerc) return view.center
+        if (!mapPerc && !isMobile ) return view.center
 
         this.map.setZoom(view.zoom);
         this.map.setCenter(view.center);
 
         let projection = this.map.project(view.center);
         if( !isMobile ){
-            projection.x = projection.x * mapPerc;
+            projection.x = mapPerc ? projection.x * mapPerc : projection.x;
         }else{
-            projection.y = projection.y + projection.y * .48;
+            projection.y = projection.y + (projection.y * (1 - this.mapHeight));
         }
         let unproject = this.map.unproject(projection);
 
@@ -349,6 +350,12 @@ class MapBoxHandler {
     getCurrentAnimationRemaingDuration(){
         let remainingDuration = this.getViewParameters(this.currentView).duration - (Date.now() - this.animationStartTime)
         return remainingDuration < 0 ? 0 : remainingDuration;
+    }
+
+    getHistoryType(){
+        let columnViews = Array.from(this.mapScreens).filter( el => !el.classList.value.includes('floating')).length
+        let floatingViews = Array.from(this.mapScreens).filter( el => el.classList.value.includes('floating')).length
+        return columnViews && floatingViews ? 'mixed' : columnViews ? 'columns' : 'floating';
     }
 
     getAnchorInfo(el) {
@@ -401,7 +408,6 @@ class MapBoxHandler {
     }
 }
 
-
 window.mapBoxHandler = new MapBoxHandler();
 
 window.debugMapTransitions = () => {
@@ -424,8 +430,10 @@ window.debugMapTransitions = () => {
         transitionLine.textContent = 'Transition Point';
         document.body.appendChild(transitionLine)
 
-        const els = document.querySelectorAll('[data-map-anchor]');
-        els && els.forEach((element, index) => {
+        const anchors = document.querySelectorAll('[data-map-anchor]');
+        const views = document.querySelectorAll('[data-map-view]');
+        views && views.forEach( (element) => element.style.borderTop = '1px solid')
+        anchors && anchors.forEach((element, index) => {
             const viewName = element.dataset.mapAnchor;
             if (window.mapViews.hasOwnProperty(viewName)) {
                 const view = window.mapViews[viewName];
@@ -445,7 +453,6 @@ window.debugMapTransitions = () => {
                 `;
             }
         });
-
         const resizeObserver = new ResizeObserver(() => transitionLine.style.top = `${mapBoxHandler.getScreenTransitionPoint()}vh`);
         resizeObserver.observe(document.body);
     }, 500)
