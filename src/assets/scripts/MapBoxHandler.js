@@ -43,14 +43,12 @@ class MapBoxHandler {
             container: this.mapHolder,
             ...window.mapConfig
         })
-        this.mapHolder.style.opacity = 1;
         this.mapClone = false;
         if( this.getHistoryType() !== 'floating' ){
             this.mapClone = new mapboxgl.Map({
                 container: this.mapHolderClone,
                 ...window.mapConfig
             })
-            this.mapHolderClone.style.opacity = 1;
         }else{
             this.mapHolderClone.remove();
             this.mapHolderClone = false;
@@ -58,6 +56,7 @@ class MapBoxHandler {
         // Handle transitions.
         this.map.on('load', () => {
             this.mapHolder.style.opacity = 1;
+            this.mapHolderClone && ( this.mapHolderClone.style.opacity = 1 );
             this.defineLayers();
             this.displayLayers(window.mapConfig.layers, true);
             const resizeObserverView = new ResizeObserver(this.observeView.bind(this, this.mapAnchors, this.changeViewByEl.bind(this)));
