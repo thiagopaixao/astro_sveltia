@@ -19,7 +19,7 @@ class MapBoxHandler {
             this.captionHolder.setAttribute('id', 'captions')
             this.definedLayers = [...window.mapConfig.layers];
 
-            this.countIntersectionEvents = 0; // handles confusions on layout shift and insersection interpolation
+            this.countIntersectionEvents = 0; // handles confusions on layout shift and intersection interpolation
 
             const { style, ...initView } = window.mapConfig;
             this.initView = initView;
