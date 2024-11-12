@@ -4,7 +4,7 @@ class MapBoxHandler {
             this.transitionScreenPoint = 75; // percentage of screen
             this.transitionScreenPointMobile = 65; // percentage of screen
             this.mapHeight = .52 // 1 is 100%
-            this.mobileBreakPoint = 900; // abaixo ou igual é mobile (px)
+            this.mobileBreakPoint = 992; // abaixo ou igual é mobile (px)
             this.views = window.mapViews;
             this.mapHolder = document.querySelector('#mapbox')
             this.mapHolderClone = document.querySelector('#mapbox-clone div')
