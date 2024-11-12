@@ -6,6 +6,7 @@ class MapBoxHandler {
             this.mobileBreakPoint = 900; // abaixo ou igual é mobile (px)
             this.views = window.mapViews;
             this.mapHolder = document.querySelector('#mapbox')
+            this.mapHolderClone = document.querySelector('#mapbox-clone div')
 
             if (typeof this.views !== 'object' || !this.mapHolder) return;
 
@@ -41,6 +42,10 @@ class MapBoxHandler {
         mapboxgl.accessToken = window.mapBoxToken;
         this.map = new mapboxgl.Map({
             container: this.mapHolder,
+            ...window.mapConfig
+        })
+        this.mapClone = new mapboxgl.Map({
+            container: this.mapHolderClone,
             ...window.mapConfig
         })
         // Handle transitions.
@@ -155,6 +160,7 @@ class MapBoxHandler {
     displayLayers(layers = [], show = false) {
         layers.forEach(layer => {
             this.map.setLayoutProperty(layer, 'visibility', show ? 'visible' : 'none')
+            this.mapClone.setLayoutProperty(layer, 'visibility', show ? 'visible' : 'none')
         });
     }
 
@@ -192,6 +198,7 @@ class MapBoxHandler {
         this.toggleLayersVisibility(view.layers);
 
         this.currentView = view;
+        fly ? this.mapClone.flyTo(destiny) : this.mapClone.easeTo(destiny);
         return fly ? this.map.flyTo(destiny) : this.map.easeTo(destiny);
     }
 
@@ -199,7 +206,6 @@ class MapBoxHandler {
         if (!intersection) {
             if (!this.countIntersectionEvents) {
                 this.captionHolder.classList.add('hidden');
-                this.adjustMapWindowRemove();
                 this.maybeBackToInitialView();
                 ++this.countIntersectionEvents;
             }
@@ -210,7 +216,6 @@ class MapBoxHandler {
         let mapTrigger = document.querySelector(`[data-ref-id="${target.dataset.mapAnchorId}"]`)
 
         if (this.views.hasOwnProperty(viewId) || viewId === '__displacer__') {
-            this.adjustMapWindow(mapTrigger.closest('.map'))
             setTimeout(() => { 
                 viewId === '__displacer__' ?  this.move(this.currentView, mapTrigger) : this.move(this.views[viewId], mapTrigger) 
             }, 100);
@@ -224,10 +229,8 @@ class MapBoxHandler {
     changeViewByDisplacer(el, intersection) {
         if (!intersection) {
             this.captionHolder.classList.add('hidden');
-            this.adjustMapWindowRemove();
             return false;
         }
-        this.adjustMapWindow(mapTrigger.closest('.map'))
         setTimeout(() => { this.move(this.currentView, el) }, 100);
         return true
     }
@@ -240,41 +243,8 @@ class MapBoxHandler {
         }
         const isTopEl = isTop();
         if (isTopEl){
-            this.adjustMapWindowRemove();
             setTimeout(() => { this.move(this.initView) }, 100);
         }
-    }
-
-    /* Map Window adjustments */
-
-    adjustMapWindow(el) {
-        this.adjustMapWindowRemoveCallback = null;
-        let lastState = this.currentMapWindowState;
-        if (!el || el.classList.value.includes('floating')) {
-            this.currentMapWindowState = 'full'
-            this.mapHolder.classList.remove('mobile')
-        } else {
-            this.currentMapWindowState = 'square'
-            this.mapHolder.classList.add('mobile')
-        }
-        setTimeout(() => {
-            window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches
-                && lastState !== this.currentMapWindowState
-                && this.map.resize()
-                && this.map.stop()
-                && this.map.flyTo({
-                    ...this.getViewParameters(this.currentView),
-                    duration: this.getCurrentAnimationRemaingDuration()
-                });
-            return true;
-        }, 10);
-    }
-
-    adjustMapWindowRemove() {
-        this.adjustMapWindowRemoveCallback = true;
-        setTimeout(() => {
-            this.adjustMapWindowRemoveCallback && this.adjustMapWindow(null)
-        }, 80)
     }
 
     /* Captions */
@@ -338,8 +308,9 @@ class MapBoxHandler {
         const parent = el.closest('.map');
         const parentClasses = parent.classList.value;
         const isMobile = window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches;
+        const isFloating = parentClasses.includes('floating');
 
-        if (isMobile) return view.center;
+        if ( isFloating ) return view.center;
 
         const old = {
             zoom: this.map.getZoom(),
@@ -356,7 +327,11 @@ class MapBoxHandler {
         this.map.setCenter(view.center);
 
         let projection = this.map.project(view.center);
-        projection.x = projection.x * mapPerc;
+        if( !isMobile ){
+            projection.x = projection.x * mapPerc;
+        }else{
+            projection.y = projection.y + projection.y * .48;
+        }
         let unproject = this.map.unproject(projection);
 
         this.map.setZoom(old.zoom)

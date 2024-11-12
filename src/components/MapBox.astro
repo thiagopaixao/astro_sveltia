@@ -6,8 +6,8 @@ import img from "../assets/images/map.png";
 ---
 
 <div id="mapbox">
-  <!-- <Image src={img} alt="" /> -->
 </div>
+<div id="mapbox-clone"><div></div></div>
 
 <style lang="scss">
   @use "../assets/styles/config/config" as *;
@@ -21,6 +21,7 @@ import img from "../assets/images/map.png";
     height: 100%;
     width: 100%;
     transition: opacity 1s ease;
+    opacity: 1;
 
     @include media-break-down(l) {
       position: fixed;
@@ -28,10 +29,10 @@ import img from "../assets/images/map.png";
       background-color: aquamarine;
       font-size: 60px;
       
-      &.mobile {
-        z-index: 3;
-        height: var(--map-height-mobile);
-      }
+      // &.mobile {
+      //   z-index: 3;
+      //   height: var(--map-height-mobile);
+      // }
     }
 
     img {
@@ -61,10 +62,24 @@ import img from "../assets/images/map.png";
       display: none;
     }
   }
+
+  #mapbox-clone{
+    position: fixed;
+    height: 52vh;
+    overflow: hidden;
+    width: 100%;
+    z-index: 3;
+    pointer-events: none;
+    div{
+      min-height: 100vh;
+      background-color: yellowgreen;
+    }
+  }
+  
 </style>
 
 <script is:inline>
-  // window.addEventListener("load", debugMapTransitions);
+  window.addEventListener("load", debugMapTransitions);
   window.mapConfig = {
     style: "mapbox://styles/comborari/ckr4wi3k80fpl17qo34th6kk2",
     center: [-54.875, -2.53],
