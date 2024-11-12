@@ -1,0 +1,36 @@
+---
+const { link, icon, size } = Astro.props;
+---
+
+<a
+  class:list={["button", size === "wide" && "button--wide"]}
+  target={link.target}
+  href={link.url}
+>
+  {link.text}
+  {icon ? <Fragment set:html={icon} /> : <span class="material-symbols-outlined">arrow_right_alt</span>}
+</a>
+
+<style lang="scss">
+  @use "../assets/styles/config/config" as *;
+
+  .button {
+    @include type('c-m');
+    font-weight: 600;
+    width: fit-content;
+    color: var(--clr-txt);
+    border: 2px solid currentColor;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 60px;
+    
+    &--wide {
+      width: 100%;
+      justify-content: space-between;
+      padding: 16px;
+    }
+  }
+</style>
