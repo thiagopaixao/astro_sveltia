@@ -20,83 +20,65 @@
       opacity: 0.2;
     }
    
-    // &::after {
-    //   content: '';
-    //   width: 2px;
-    //   min-height: 100vh;
-    //   height: 120%;
-    //   display: block;
-    //   position: absolute;
-    //   left: 5px;
-    //   top: 2px;
-    //   background-color: var(--clr-txt);
-    // }
+    &::after {
+      content: '';
+      width: 2px;
+      height: var(--timeline-height, 0);
+      display: block;
+      position: absolute;
+      left: 5px;
+      top: 2px;
+      background-color: var(--clr-txt);
+    }
   }
 </style>
 <script>
+import ScrollObserver from "../assets/scripts/utils/ScrollObserver";
 
 function activeTimelineBullet() {
-    const timelineItems = document.querySelectorAll('[data-timeline-bullet]');
-
-    const observerCallback = (entries) => {
-      entries.forEach(entry => {
-        // Pegar a posição do elemento em relação ao viewport
-        const rect = entry.target.getBoundingClientRect();
-        const viewportHeight = window.innerHeight;
-        
-        // Verificar se o elemento está entre a base e 50% do viewport
-        const isInRange = rect.top <= viewportHeight * 0.7 && rect.bottom >= 0;
-        
-        // Adicionar ou remover a classe active baseado na posição
-        if (isInRange) {
-          entry.target.classList.add('active');
-          // entry.target.style.setProperty('--line-size', )
-        } else {
-          entry.target.classList.remove('active');
-        }
-      });
-    };
-
-
-    const observer = new IntersectionObserver(observerCallback, {
-      // Configurar para observar quando o elemento entra em 50% da viewport
-      threshold: [0, 0.5, 1],
-      rootMargin: `-70% 0px 0px 0px`
-    });
-
-    //Observar cada item da timeline
-    timelineItems.forEach(item => {
-      observer.observe(item);
-    });
-
-    // Cleanup function
-    return () => {
-      timelineItems.forEach(item => {
-        observer.unobserve(item);
-      });
-      
-    };
-  }
-
-
-  function updateTimelineLine() {
-    const timelines = document.querySelectorAll('[data-timeline]');
+  const timelineItems = document.querySelectorAll('[data-timeline-bullet]');
     
-    timelines.forEach(timeline => {
-      
-      
-      window.addEventListener('scroll', e => {
-        const rect = timeline.getBoundingClientRect();
+  timelineItems.forEach((item, index) => {
+    const scrollObserver = new ScrollObserver();
 
-        const startingPoint = -1 * (rect.top - window.innerHeight * 0.7);
-        console.log(startingPoint, rect.bottom + 80)
-      })
+    scrollObserver.observe(item, (data) => {
+      const { element, isVisible, boundingRect } = data;
+              
+      if(!isVisible) return;
+
+      const windowStartingPoint = window.innerHeight * .52;      
+      const isInRange = boundingRect.top <= windowStartingPoint && boundingRect.bottom >= 0;
+
+      if (isInRange) {
+        element.classList.add('active');
+      } else {
+        element.classList.remove('active');
+      }
     });
-  }
+  });
+}
 
-  // Inicializar o observer quando o DOM estiver pronto
-  document.addEventListener('DOMContentLoaded', activeTimelineBullet);
-  document.addEventListener('DOMContentLoaded', updateTimelineLine);
+function updateTimelineLine() {
+  const timelines = document.querySelectorAll('[data-timeline]');
+  
+  timelines.forEach(timeline => {
+    const scrollObserver = new ScrollObserver();
 
+    scrollObserver.observe(timeline, (data) => {
+      const { element, isVisible, boundingRect, } = data;
+      
+      const boundintTop = boundingRect.top;
+      const windowStartingPoint = window.innerHeight * .52;
+
+      if(!isVisible || boundintTop - 100 > windowStartingPoint) return;
+
+      element.style.setProperty('--timeline-height', Math.max(Math.round(-1 * boundintTop + windowStartingPoint), 0) + 'px');
+    });
+
+  });
+}
+
+document.addEventListener('DOMContentLoaded', activeTimelineBullet);
+document.addEventListener('DOMContentLoaded', updateTimelineLine);
 
 </script>
