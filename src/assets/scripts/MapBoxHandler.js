@@ -3,7 +3,7 @@ class MapBoxHandler {
         window.addEventListener('load', () => {
             this.transitionScreenPoint = 75; // percentage of screen
             this.transitionScreenPointMobile = 65; // percentage of screen
-            this.mapHeight = .52 // 1 is 100%
+            this.mapHeight = 52 // percentage of screen
             this.mobileBreakPoint = 992; // abaixo ou igual é mobile (px)
             this.views = window.mapViews;
             this.mapHolder = document.querySelector('#mapbox')
@@ -330,7 +330,7 @@ class MapBoxHandler {
         if( !isMobile ){
             projection.x = mapPerc ? projection.x * mapPerc : projection.x;
         }else{
-            projection.y = projection.y + (projection.y * (1 - this.mapHeight));
+            projection.y = projection.y + (projection.y * (1 - this.mapHeight * 0.01));
         }
         let unproject = this.map.unproject(projection);
 
