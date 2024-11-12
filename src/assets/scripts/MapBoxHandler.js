@@ -13,6 +13,7 @@ class MapBoxHandler {
 
             this.mapAnchors = [];
             this.mapTriggersSel = '[data-map-view]';
+            this.displacerName = '__displacer__';
             this.mapScreens = document.querySelectorAll('.map')
             this.captionHolder = document.createElement('div')
             this.captionHolder.setAttribute('id', 'captions')
@@ -224,9 +225,9 @@ class MapBoxHandler {
         let viewId = target.dataset.mapAnchor;
         let mapTrigger = document.querySelector(`[data-ref-id="${target.dataset.mapAnchorId}"]`)
 
-        if (this.views.hasOwnProperty(viewId) || viewId === '__displacer__') {
+        if (this.views.hasOwnProperty(viewId) || viewId === this.displacerName ) {
             setTimeout(() => { 
-                viewId === '__displacer__' ?  this.move(this.currentView, mapTrigger) : this.move(this.views[viewId], mapTrigger) 
+                viewId === this.displacerName  ?  this.move(this.currentView, mapTrigger) : this.move(this.views[viewId], mapTrigger) 
             }, 100);
             return true;
         }
@@ -388,7 +389,7 @@ class MapBoxHandler {
         let next = false;
         while (el.nextElementSibling && !next) {
             el = el.nextElementSibling;
-            next = el.dataset.mapAnchor === '__displacer__' ? false : true;
+            next = el.dataset.mapAnchor === this.displacerName  ? false : true;
         }
         return next && this.getAnchorInfo(el)
     }
@@ -401,7 +402,7 @@ class MapBoxHandler {
         let next = false;
         while (el.previousElementSibling && !next) {
             el = el.previousElementSibling;
-            next = el.dataset.mapAnchor === '__displacer__' ? false : true;
+            next = el.dataset.mapAnchor === this.displacerName  ? false : true;
         }
         return next && this.getAnchorInfo(el)
     }
@@ -436,7 +437,7 @@ window.debugMapTransitions = () => {
             const viewName = element.dataset.mapAnchor;
             if (window.mapViews.hasOwnProperty(viewName)) {
                 const view = window.mapViews[viewName];
-                element.innerHTML = `
+                element.innerHTML = `<span>
                     <strong>${viewName}</strong>
                     <br>Layers: ${view.layers.join(', ')}
                     <br>Center: ${view.center}
@@ -444,12 +445,10 @@ window.debugMapTransitions = () => {
                     <br>Zoom: ${view.zoom}
                     <br>Bearing: ${view.bearing}
                     <br>Pitch: ${view.pitch}
-                `;
+                </span>`;
             }
-            if (viewName === '__displacer__') {
-                element.innerHTML = `
-                    <strong>Displacer</strong>
-                `;
+            if (viewName === mapBoxHandler.displacerName ) {
+                element.innerHTML = `<span><strong>Displacer</strong></span>`;
             }
         });
         const resizeObserver = new ResizeObserver(() => transitionLine.style.top = `${mapBoxHandler.getScreenTransitionPoint()}vh`);
