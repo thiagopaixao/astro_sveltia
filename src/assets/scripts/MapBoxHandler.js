@@ -27,6 +27,8 @@ class MapBoxHandler {
             this.currentView = initView;
 
             this.viewObserver = null; // stores the scroll observer
+            this.map = null; // stores the full screen map
+            this.mapClone = null; // stores the mobile smaller map
 
             this.init.bind(this)()
         });
@@ -38,13 +40,12 @@ class MapBoxHandler {
         await this.setMapAnchors();
         const resizeObserver = new ResizeObserver(this.setPosToMapAnchors.bind(this));
         resizeObserver.observe(document.body);
-        // Init map
+        // Init maps
         mapboxgl.accessToken = window.mapBoxToken;
         this.map = new mapboxgl.Map({
             container: this.mapHolder,
             ...window.mapConfig
         })
-        this.mapClone = false;
         if( this.getHistoryType() !== 'floating' ){
             this.mapClone = new mapboxgl.Map({
                 container: this.mapHolderClone,
