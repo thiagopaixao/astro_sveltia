@@ -26,7 +26,7 @@ class MapBoxHandler {
             this.initView.duration = Object.values(this.views)[0].duration;
             this.currentView = initView;
 
-            this.viewObserver = null; // saves the scroll observer
+            this.viewObserver = null; // stores the scroll observer
 
             this.init.bind(this)()
         });
