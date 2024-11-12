@@ -27,6 +27,8 @@ const {text} = Astro.props
       left: -32px;
       transform: translateY(2px);
       z-index: 10;
+      transition: .5s ease;
+      scale: .5;
     }
 
     &::after {
@@ -41,10 +43,16 @@ const {text} = Astro.props
       transform: translateY(2px);
       opacity: 0;
       z-index: 10;
+      transition: .5s ease;
+      scale: .5;
     }
 
     &.active {
+      &::before {
+        scale: 1;
+      }
       &::after {
+        scale: 1;
         opacity: 1;
       }
     }
