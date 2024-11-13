@@ -338,37 +338,40 @@ class MapBoxHandler {
         const parent = el.closest('.map');
         const parentClasses = parent.classList.value;
         const isMobile = window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches;
-        const isFloating = parentClasses.includes('floating');
 
-        if (isFloating) return view.center;
-
-        const old = {
-            zoom: this.map.getZoom(),
-            center: this.map.getCenter(),
+        if ( parentClasses.includes('floating') ) return view.center;
+        
+        const getProjection = (callback) => {
+            const old = { zoom: this.map.getZoom(), center: this.map.getCenter() }
+            this.map.setZoom(view.zoom);
+            this.map.setCenter(view.center);
+            let projection = callback( this.map.project(view.center) );
+            projection = this.map.unproject(projection);
+            this.map.setZoom(old.zoom)
+            this.map.setCenter(old.center)
+            return projection;
         }
+
+        if( isMobile ){
+            return getProjection((projection) => {
+                projection.y = projection.y + (projection.y * (1 - this.mapMobileHeight * 0.01))
+                return projection
+            })
+        }
+
         let mapContent = parent.querySelector('.map__holder');
         let mapWCalc = (mapContent.clientWidth * 1.5) / this.map.getCanvas().width;
         let mapPerc = parentClasses.includes('alignleft') ? (1 - mapWCalc) : false;
         mapPerc = parentClasses.includes('alignright') ? (1 + mapWCalc) : mapPerc
 
-        if (!mapPerc && !isMobile) return view.center
-
-        this.map.setZoom(view.zoom);
-        this.map.setCenter(view.center);
-
-        let projection = this.map.project(view.center);
-        if (!isMobile) {
-            // config
-            projection.x = mapPerc ? projection.x * mapPerc : projection.x;
-        } else {
-            projection.y = projection.y + (projection.y * (1 - this.mapMobileHeight * 0.01));
+        if( mapPerc ){
+            return getProjection((projection) =>{
+                projection.x *= mapPerc;
+                return projection
+            })
         }
-        let unproject = this.map.unproject(projection);
 
-        this.map.setZoom(old.zoom)
-        this.map.setCenter(old.center)
-
-        return unproject;
+        return view.center
     }
 
     getScreenTransitionPoint() {
