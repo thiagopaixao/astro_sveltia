@@ -136,8 +136,8 @@ class MapBoxHandler {
         }
 
         const getMobileAdjustment = (parent, index, top = false) => {
-            // const mobileAdjustment = !parent.classList.value.includes('floating') && window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches && window.innerHeight
-            const mobileAdjustment = window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches && window.innerHeight
+            // const mobileAdjustment = !parent.classList.value.includes('floating') && this.isMobile() && window.innerHeight
+            const mobileAdjustment = this.isMobile() && window.innerHeight
             return (top && index !== 0) || (!top && index === 0) ? mobileAdjustment : 0;
         }
 
@@ -329,8 +329,12 @@ class MapBoxHandler {
 
     /* Helpers */
 
+    isMobile(){
+        return window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches
+    }
+
     getViewParameters(view) {
-        let isMobile = view && window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches && view.hasOwnProperty('mobile') && view.mobile && Object.values(view.mobile).length;
+        let isMobile = view && this.isMobile() && view.hasOwnProperty('mobile') && view.mobile && Object.values(view.mobile).length;
         let mobileView = isMobile && { ...view.mobile };
         return isMobile ? { ...view, ...mobileView } : view
     }
@@ -338,7 +342,7 @@ class MapBoxHandler {
     getDisplacedCenter(el, view) {
         const parent = el.closest('.map');
         const parentClasses = parent.classList.value;
-        const isMobile = window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches;
+        const isMobile = this.isMobile();
 
         if ( parentClasses.includes('floating') ) return view.center;
         
@@ -376,7 +380,7 @@ class MapBoxHandler {
     }
 
     getScreenTransitionPoint() {
-        const isMobile = window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches;
+        const isMobile = this.isMobile();
         const screenPoint = isMobile ? this.transitionScreenPointMobile : this.transitionScreenPoint;
         return screenPoint;
     }
@@ -445,9 +449,9 @@ class MapBoxHandler {
 window.mapBoxHandler = new MapBoxHandler();
 
 window.debugMapTransitions = () => {
-    setTimeout(() => {
+    const debug = () => {
         document.body.classList.add('debug-map-transitions');
-        const transitionLine = document.createElement('div');
+        const transitionLine = document.querySelector('.debug-transition-point') || document.createElement('div');
         transitionLine.className = 'debug-transition-point';
         transitionLine.style.cssText = `
             top: ${mapBoxHandler.getScreenTransitionPoint()}vh; 
@@ -470,7 +474,9 @@ window.debugMapTransitions = () => {
         anchors && anchors.forEach((element, index) => {
             const viewName = element.dataset.mapAnchor;
             if (window.mapViews.hasOwnProperty(viewName)) {
-                const view = window.mapViews[viewName];
+                const view = mapBoxHandler.isMobile() && window.mapViews[viewName].hasOwnProperty('mobile')
+                ? { ...window.mapViews[viewName], ...window.mapViews[viewName].mobile }
+                : window.mapViews[viewName];
                 element.innerHTML = `<span>
                     <strong>${viewName}</strong>
                     <br>Layers: ${view.layers.join(', ')}
@@ -484,8 +490,12 @@ window.debugMapTransitions = () => {
             if (viewName === mapBoxHandler.displacerName) {
                 element.innerHTML = `<span><strong>Displacer</strong></span>`;
             }
+            transitionLine.style.top = `${mapBoxHandler.getScreenTransitionPoint()}vh`
         });
-        const resizeObserver = new ResizeObserver(() => transitionLine.style.top = `${mapBoxHandler.getScreenTransitionPoint()}vh`);
+    }
+    setTimeout(() => {
+        debug()
+        const resizeObserver = new ResizeObserver(debug);
         resizeObserver.observe(document.body);
-    }, 500)
+    }, 500);
 };
