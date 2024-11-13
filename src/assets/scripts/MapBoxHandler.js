@@ -342,8 +342,7 @@ class MapBoxHandler {
     getDisplacedCenter(el, view) {
         const parent = el.closest('.map');
         const parentClasses = parent.classList.value;
-        const isMobile = this.isMobile();
-
+        
         if ( parentClasses.includes('floating') ) return view.center;
         
         const getProjection = (callback) => {
@@ -357,7 +356,7 @@ class MapBoxHandler {
             return projection;
         }
 
-        if( isMobile ){
+        if( this.isMobile() ){
             return getProjection((projection) => {
                 projection.y = projection.y + (projection.y * (1 - this.mapMobileHeight * 0.01))
                 return projection
@@ -380,8 +379,7 @@ class MapBoxHandler {
     }
 
     getScreenTransitionPoint() {
-        const isMobile = this.isMobile();
-        const screenPoint = isMobile ? this.transitionScreenPointMobile : this.transitionScreenPoint;
+        const screenPoint = this.isMobile() ? this.transitionScreenPointMobile : this.transitionScreenPoint;
         return screenPoint;
     }
 
