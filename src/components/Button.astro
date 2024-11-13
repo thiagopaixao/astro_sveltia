@@ -19,13 +19,23 @@ const { link, icon, size } = Astro.props;
     font-weight: 600;
     width: fit-content;
     color: var(--clr-txt);
-    border: 2px solid currentColor;
+    border: 2px solid var(--clr-txt);
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
     padding: 8px 60px;
+    transition: .3s ease;
+
+    :global(+ .button) {
+      margin-top: 16px;
+    }
+
+    &:hover {
+      background-color: var(--clr-txt);
+      color: var(--clr-bg);
+    }
     
     &--wide {
       width: 100%;

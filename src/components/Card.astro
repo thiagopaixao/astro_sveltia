@@ -1,6 +1,6 @@
 ---
 import Button from "./Button.astro";
-const { link, icon, title, text } = Astro.props;
+const { link, title, text, icon = '<span class="material-symbols-outlined">construction</span>' } = Astro.props;
 ---
 
 <div class="card">
@@ -14,6 +14,7 @@ const { link, icon, title, text } = Astro.props;
   @use "../assets/styles/config/config" as *;
 
   .card {
+    width: 100%;
     color: var(--clr-txt);
     border: 2px solid currentColor;
     border-radius: 4px;
@@ -54,11 +55,13 @@ const { link, icon, title, text } = Astro.props;
       line-height: 1;
       font-weight: 600;
       margin-bottom: 4px;
-      padding: 4px 5px 3px;
-      gap: 5px;
-
+      padding: 2px 2px 0px 5px;
+      gap: 3px;
+      display: block;      
+      
       :global(span) {
-        line-height: .7;
+        vertical-align: middle;
+        display: inline-block;
       }
     }
   }

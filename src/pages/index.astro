@@ -20,7 +20,35 @@ import ImageBlock from "../components/ImageBlock.astro";
 import InnerColumns from "../components/InnerColumns.astro";
 import Timeline from "../components/Timeline.astro";
 import TimelineBullet from "../components/TimelineBullet.astro";
-import Card from "../components/Card.astro";
+import Cards from "../components/Cards.astro";
+import Button from "../components/Button.astro";
+
+const cardsArr = [
+  {
+    icon: '<span class="material-symbols-outlined">construction</span>',
+    title: "Open Source",
+    text: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.",
+    link: { text: "Botão", target: "_self", url: "#" },
+  },
+  {
+    icon: '<span class="material-symbols-outlined">construction</span>',
+    title: "Lorem Ipsum",
+    text: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.",
+    link: { text: "Botão", target: "_self", url: "#" },
+  },
+  {
+    icon: '<span class="material-symbols-outlined">construction</span>',
+    title: "Dolor sit",
+    text: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.",
+    link: { text: "Botão", target: "_self", url: "#" },
+  },
+  {
+    icon: '<span class="material-symbols-outlined">construction</span>',
+    title: "Lorem Ipsum",
+    text: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.",
+    link: { text: "Botão", target: "_self", url: "#" },
+  },
+];
 ---
 
 <Layout title="Documental.xyz">
@@ -62,16 +90,51 @@ import Card from "../components/Card.astro";
               SED UT PERSPICIATIS UNDE OMNIS ISTE NATUS ERROR SIT VOLUPTATEM
               ACCUSANTIUM DOLOREMQUE LAUDANTIUM, TOTAM REM APERIAM
             </h6>
+            <Timeline>
+              <TimelineBullet text="Maio de 2020" />
+              <Text>
+                <h6>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium
+                </h6>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                  quae ab illo inventore veritatis et quasi architecto beatae vitae
+                  dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                  aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                  eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                  qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                  sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                  magnam aliquam quaerat voluptatem.
+                </p>
+              </Text>
+      
+              <TimelineBullet />
+              <Text>
+                <h6>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium
+                </h6>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                  quae ab illo inventore veritatis et quasi architecto beatae vitae
+                  dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                  aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                  eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                  qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                  sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                  magnam aliquam quaerat voluptatem.
+                </p>
+              </Text>
+            </Timeline>
           </Text>
+          
         </Fragment>
         <Fragment slot="column-2">
           <Text hasDropCap>
-            <Card
-              icon={'<span class="material-symbols-outlined">construction</span>'}
-              title="Open Source"
-              text="Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt."
-              link={{ text: "Botão", target: "_self"}}
-            />
+            <Cards cards={cardsArr} />
             <p>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
@@ -91,6 +154,17 @@ import Card from "../components/Card.astro";
               ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
               dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
             </p>
+
+            <Button 
+              link={{url: "#", text: "Lorem Ipsum Dolor Sit"}} 
+              icon={'<span class="material-symbols-outlined">north_east</span>'} 
+              size="wide" />
+            
+              <Button 
+              link={{url: "#", text: "Botão sit amet"}} 
+              icon={'<span class="material-symbols-outlined">settings</span>'} 
+              />
+
             <p>
               Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
               consectetur, adipisci velit, sed quia non numquam eius modi

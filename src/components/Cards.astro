@@ -1,0 +1,63 @@
+---
+import Card from "./Card.astro";
+
+const { cards } = Astro.props;
+---
+
+<div class="cards">
+  <div class="cards__holder">
+  {
+    cards &&
+      cards.map((data) => (
+        <Card
+          icon={data.icon}
+          title={data.title}
+          text={data.text}
+          link={data.link}
+        />
+      ))
+  }
+  </div>
+</div>
+
+<style lang="scss">
+  @use "../assets/styles/config/config" as *;
+  @use "../assets/styles/utils/grrr/grrr" as *;
+
+  .cards {
+    $self: &;
+    width: 100%;
+
+    &:not(:first-child),
+    & :global(+ *) {
+      margin-top: var(--atnl-gutter);
+    }
+
+    @include media-break-up(m) {
+      flex-direction: row;
+    }
+
+    :global(.text > * +) & {
+      margin-top: var(--atnl-gutter);
+    }
+    
+    :global(.group__content >) & {
+      padding-top: var(--mt-l);
+    }
+    
+    &__holder {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: var(--atnl-gutter);
+    }
+
+    :global(.group__content >) & {
+      @extend %grrr--board;
+      #{$self}__holder {
+        grid-column: board-full;
+      }
+    }
+    
+  }
+
+</style>
