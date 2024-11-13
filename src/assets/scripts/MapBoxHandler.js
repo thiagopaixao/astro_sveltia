@@ -13,9 +13,9 @@ class MapBoxHandler {
             cloneMap: '#mapbox-clone div',
             captions: '#captions',
         }
-        this.displacerLabel =  '__displacer__',
+        this.displacerLabel = '__displacer__';
 
-        window.addEventListener('load', this.init.bind(this) );
+        window.addEventListener('load', this.init.bind(this));
     }
 
     async init() {
@@ -26,15 +26,15 @@ class MapBoxHandler {
 
         // transition points storage
         this.views = typeof window.mapViews === 'object' ? window.mapViews : false;
-        this.views && Object.keys(this.views).forEach( (k) => this.views[k].id = k )
+        this.views && Object.keys(this.views).forEach((k) => this.views[k].id = k)
         this.mapAnchors = [];
         this.definedLayers = [...window.mapConfig.layers];
 
         // initial view setup
         const { style, ...initView } = window.mapConfig;
         this.initView = {
-            ...initView, 
-            id: '__initview__', 
+            ...initView,
+            id: '__initview__',
             duration: this.views && Object.values(this.views)[0].duration
         };
         this.currentView = initView;
@@ -45,7 +45,7 @@ class MapBoxHandler {
 
         // captions holder
         this.captionHolder = document.createElement('div')
-        this.captionHolder.setAttribute('id',this.sels.captions.replace('#',''))
+        this.captionHolder.setAttribute('id', this.sels.captions.replace('#', ''))
 
         // class storage
         this.viewObserver = null;
@@ -217,29 +217,25 @@ class MapBoxHandler {
     /* Map Movement */
 
     async move(view, refEl = false, fly = true) {
-
         this.animationStartTime = Date.now();
-
+        const isAnimating = this.map.isMoving() || this.map.isZooming();
         const viewParameters = this.getViewParameters(view);
-
         const destiny = refEl
             ? { ...viewParameters, center: this.getDisplacedCenter(refEl, viewParameters) }
             : viewParameters;
 
-        const isAnimating = this.map.isMoving() || this.map.isZooming();
-
-        if ( destiny.id === this.currentView.id && !isAnimating) {
-            destiny.duration = 1500;
-            fly = false;
-        }
 
         refEl && setTimeout(() => {
             this.generateCaptionsHTML(view.captions, refEl.closest('.map'));
             this.captionHolder.classList.remove('hidden')
             this.countIntersectionEvents = 0;
         }, 20);
-
         this.toggleLayersVisibility(view.layers);
+
+        if (destiny.id === this.currentView.id && !isAnimating) {
+            destiny.duration = 1500;
+            fly = false;
+        }
 
         this.currentView = view;
         fly ? this.mapClone && this.mapClone.flyTo(destiny) : this.mapClone && this.mapClone.easeTo(destiny);
@@ -259,9 +255,16 @@ class MapBoxHandler {
         let viewId = target.dataset.mapAnchor;
         let mapTrigger = document.querySelector(`[data-ref-id="${target.dataset.mapAnchorId}"]`)
 
-        if (this.views.hasOwnProperty(viewId) || viewId === this.displacerLabel) {
-            viewId === this.displacerLabel ? this.move(this.currentView, mapTrigger) : this.move(this.views[viewId], mapTrigger)
+        if (this.views.hasOwnProperty(viewId)) {
+            this.move(this.views[viewId], mapTrigger)
             return true;
+        }
+        if (viewId === this.displacerLabel) {
+            const lastAnchor = this.getPreviousAnchorInfo(target);
+            if (lastAnchor) {
+                this.move(lastAnchor.view, mapTrigger)
+                return true
+            }
         }
 
         console.warn('view not found')
@@ -272,7 +275,7 @@ class MapBoxHandler {
         const isTop = () => {
             let el = Array.from(this.mapTriggers)[0];
             let pos = el.getBoundingClientRect().top;
-            return pos > window.innerHeight * (this.getScreenTransitionPoint()*0.01) && el;
+            return pos > window.innerHeight * (this.getScreenTransitionPoint() * 0.01) && el;
         }
         const isTopEl = isTop();
         isTopEl && this.move(this.initView);
@@ -329,7 +332,7 @@ class MapBoxHandler {
 
     /* Helpers */
 
-    isMobile(){
+    isMobile() {
         return window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches
     }
 
@@ -342,21 +345,21 @@ class MapBoxHandler {
     getDisplacedCenter(el, view) {
         const parent = el.closest('.map');
         const parentClasses = parent.classList.value;
-        
-        if ( parentClasses.includes('floating') ) return view.center;
-        
+
+        if (parentClasses.includes('floating')) return view.center;
+
         const getProjection = (callback) => {
             const old = { zoom: this.map.getZoom(), center: this.map.getCenter() }
             this.map.setZoom(view.zoom);
             this.map.setCenter(view.center);
-            let projection = callback( this.map.project(view.center) );
+            let projection = callback(this.map.project(view.center));
             projection = this.map.unproject(projection);
             this.map.setZoom(old.zoom)
             this.map.setCenter(old.center)
             return projection;
         }
 
-        if( this.isMobile() ){
+        if (this.isMobile()) {
             return getProjection((projection) => {
                 projection.y = projection.y + (projection.y * (1 - this.mapMobileHeight * 0.01))
                 return projection
@@ -368,8 +371,8 @@ class MapBoxHandler {
         let mapPerc = parentClasses.includes('alignleft') ? (1 - mapWCalc) : false;
         mapPerc = parentClasses.includes('alignright') ? (1 + mapWCalc) : mapPerc
 
-        if( mapPerc ){
-            return getProjection((projection) =>{
+        if (mapPerc) {
+            return getProjection((projection) => {
                 projection.x *= mapPerc;
                 return projection
             })
@@ -473,8 +476,8 @@ window.debugMapTransitions = () => {
             const viewName = element.dataset.mapAnchor;
             if (window.mapViews.hasOwnProperty(viewName)) {
                 const view = mapBoxHandler.isMobile() && window.mapViews[viewName].hasOwnProperty('mobile')
-                ? { ...window.mapViews[viewName], ...window.mapViews[viewName].mobile }
-                : window.mapViews[viewName];
+                    ? { ...window.mapViews[viewName], ...window.mapViews[viewName].mobile }
+                    : window.mapViews[viewName];
                 element.innerHTML = `<span>
                     <strong>${viewName}</strong>
                     <br>Layers: ${view.layers.join(', ')}
