@@ -9,11 +9,11 @@ class MapBoxHandler {
         // selectors
         this.sels = {
             triggers: '[data-map-view]',
-            displacer: '__displacer__',
             mainMap: '#mapbox',
             cloneMap: '#mapbox-clone div',
-            captions: 'captions',
+            captions: '#captions',
         }
+        this.displacerLabel =  '__displacer__',
 
         window.addEventListener('load', this.init.bind(this) );
     }
@@ -45,7 +45,7 @@ class MapBoxHandler {
 
         // captions holder
         this.captionHolder = document.createElement('div')
-        this.captionHolder.setAttribute('id',this.sels.captions)
+        this.captionHolder.setAttribute('id',this.sels.captions.replace('#',''))
 
         // class storage
         this.viewObserver = null;
@@ -259,8 +259,8 @@ class MapBoxHandler {
         let viewId = target.dataset.mapAnchor;
         let mapTrigger = document.querySelector(`[data-ref-id="${target.dataset.mapAnchorId}"]`)
 
-        if (this.views.hasOwnProperty(viewId) || viewId === this.sels.displacer) {
-            viewId === this.sels.displacer ? this.move(this.currentView, mapTrigger) : this.move(this.views[viewId], mapTrigger)
+        if (this.views.hasOwnProperty(viewId) || viewId === this.displacerLabel) {
+            viewId === this.displacerLabel ? this.move(this.currentView, mapTrigger) : this.move(this.views[viewId], mapTrigger)
             return true;
         }
 
@@ -427,7 +427,7 @@ class MapBoxHandler {
         let next = false;
         while (el.nextElementSibling && !next) {
             el = el.nextElementSibling;
-            next = el.dataset.mapAnchor === this.sels.displacer ? false : true;
+            next = el.dataset.mapAnchor === this.displacerLabel ? false : true;
         }
         return next && this.getAnchorInfo(el)
     }
@@ -440,7 +440,7 @@ class MapBoxHandler {
         let next = false;
         while (el.previousElementSibling && !next) {
             el = el.previousElementSibling;
-            next = el.dataset.mapAnchor === this.sels.displacer ? false : true;
+            next = el.dataset.mapAnchor === this.displacerLabel ? false : true;
         }
         return next && this.getAnchorInfo(el)
     }
@@ -487,7 +487,7 @@ window.debugMapTransitions = () => {
                     <br>Pitch: ${view.pitch}
                 </span>`;
             }
-            if (viewName === mapBoxHandler.displacerName) {
+            if (viewName === mapBoxHandler.displacerLabel) {
                 element.innerHTML = `<span><strong>Displacer</strong></span>`;
             }
             transitionLine.style.top = `${mapBoxHandler.getScreenTransitionPoint()}vh`
