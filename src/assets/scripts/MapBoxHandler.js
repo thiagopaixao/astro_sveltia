@@ -136,7 +136,8 @@ class MapBoxHandler {
         }
 
         const getMobileAdjustment = (parent, index, top = false) => {
-            const mobileAdjustment = !parent.classList.value.includes('floating') && window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches && window.innerHeight
+            // const mobileAdjustment = !parent.classList.value.includes('floating') && window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches && window.innerHeight
+            const mobileAdjustment = window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches && window.innerHeight
             return (top && index !== 0) || (!top && index === 0) ? mobileAdjustment : 0;
         }
 
