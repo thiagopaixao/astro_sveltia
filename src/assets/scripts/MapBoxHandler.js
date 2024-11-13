@@ -221,7 +221,7 @@ class MapBoxHandler {
         const isAnimating = this.map.isMoving() || this.map.isZooming();
         const viewParameters = this.getViewParameters(view);
         const destiny = refEl
-            ? { ...viewParameters, center: this.getDisplacedCenter(refEl, viewParameters) }
+            ? { ...viewParameters, offset: this.getDiplacedOffset(refEl) }
             : viewParameters;
 
 
@@ -261,10 +261,10 @@ class MapBoxHandler {
         }
         if (viewId === this.displacerLabel) {
             const lastAnchor = this.getPreviousAnchorInfo(target);
-            if (lastAnchor) {
-                this.move(lastAnchor.view, mapTrigger)
-                return true
-            }
+            lastAnchor
+            ? this.move(lastAnchor.view, mapTrigger)
+            : this.move(this.initView)
+            return true
         }
 
         console.warn('view not found')
@@ -342,43 +342,21 @@ class MapBoxHandler {
         return isMobile ? { ...view, ...mobileView } : view
     }
 
-    getDisplacedCenter(el, view) {
+    getDiplacedOffset(el) {
         const parent = el.closest('.map');
         const parentClasses = parent.classList.value;
+        const offset = { x: 0, y: 0 }
 
-        if (parentClasses.includes('floating')) return view.center;
-
-        const getProjection = (callback) => {
-            const old = { zoom: this.map.getZoom(), center: this.map.getCenter() }
-            this.map.setZoom(view.zoom);
-            this.map.setCenter(view.center);
-            let projection = callback(this.map.project(view.center));
-            projection = this.map.unproject(projection);
-            this.map.setZoom(old.zoom)
-            this.map.setCenter(old.center)
-            return projection;
-        }
+        if (parentClasses.includes('floating')) return Object.values(offset);
 
         if (this.isMobile()) {
-            return getProjection((projection) => {
-                projection.y = projection.y + (projection.y * (1 - this.mapMobileHeight * 0.01))
-                return projection
-            })
+            offset.y = this.isMobile() ? window.innerHeight * ((1 - this.mapMobileHeight) * 0.005) : 0;
+        } else {
+            offset.x = parent.querySelector('.map__holder').getBoundingClientRect().width;
+            offset.x *= parentClasses.includes('alignleft') ? .5 : parentClasses.includes('alignright') ? -.5 : 0;
         }
 
-        let mapContent = parent.querySelector('.map__holder');
-        let mapWCalc = (mapContent.clientWidth * 1.5) / this.map.getCanvas().width;
-        let mapPerc = parentClasses.includes('alignleft') ? (1 - mapWCalc) : false;
-        mapPerc = parentClasses.includes('alignright') ? (1 + mapWCalc) : mapPerc
-
-        if (mapPerc) {
-            return getProjection((projection) => {
-                projection.x *= mapPerc;
-                return projection
-            })
-        }
-
-        return view.center
+        return Object.values(offset);
     }
 
     getScreenTransitionPoint() {
