@@ -162,7 +162,7 @@ class MapBoxHandler {
 
     async setMapWindowDisplacers() {
         let topMapWindows = Array.from(this.mapWindows).filter(el => !el.querySelector('.map-view:first-child'))
-        topMapWindows.length && topMapWindows.forEach(el => el.querySelector('.map__holder').insertAdjacentHTML('afterbegin', '<div class="map-view" data-map-view="__displacer__"></div>'))
+        topMapWindows.length && topMapWindows.forEach(el => el.querySelector('.map__holder').insertAdjacentHTML('afterbegin', `<div class="map-view" data-map-view="${this.displacerLabel}"></div>`))
         return topMapWindows.length;
     }
 
