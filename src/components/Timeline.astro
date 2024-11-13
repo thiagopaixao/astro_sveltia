@@ -11,12 +11,18 @@
       content: '';
       width: 2px;
       min-height: 100vh;
-      height: 120%;
+      height: 100%;
       display: block;
       position: absolute;
       left: 5px;
       top: 5px;
       background-color: var(--clr-txt);
+    }
+
+    :global(.map__content) &:last-child {
+      &::after {
+        height: 120%;
+      }
     }
   }
 </style>
