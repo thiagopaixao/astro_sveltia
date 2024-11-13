@@ -1,76 +1,108 @@
 class MapBoxHandler {
     constructor() {
-        window.addEventListener('load', () => {
-            this.transitionScreenPoint = 75; // percentage of screen
-            this.transitionScreenPointMobile = 65; // percentage of screen
-            this.mapHeight = 52 // percentage of screen
-            this.mobileBreakPoint = 992; // abaixo ou igual é mobile (px)
-            this.views = window.mapViews;
-            this.mapHolder = document.querySelector('#mapbox')
-            this.mapHolderClone = document.querySelector('#mapbox-clone div')
+        // config
+        this.transitionScreenPoint = 75; // percentage of screen
+        this.transitionScreenPointMobile = 65; // percentage of screen
+        this.mapMobileHeight = 52 // percentage of screen
+        this.mobileBreakPoint = 992; // below or equal is mobile
 
-            if (typeof this.views !== 'object' || !this.mapHolder) return;
+        // selectors
+        this.sels = {
+            triggers: '[data-map-view]',
+            displacer: '__displacer__',
+            mainMap: '#mapbox',
+            cloneMap: '#mapbox-clone div',
+            captions: 'captions',
+        }
 
-            this.mapAnchors = [];
-            this.mapTriggersSel = '[data-map-view]';
-            this.displacerName = '__displacer__';
-            this.mapScreens = document.querySelectorAll('.map')
-            this.captionHolder = document.createElement('div')
-            this.captionHolder.setAttribute('id', 'captions')
-            this.definedLayers = [...window.mapConfig.layers];
-
-            this.countIntersectionEvents = 0; // handles confusions on layout shift and intersection interpolation
-
-            const { style, ...initView } = window.mapConfig;
-            this.initView = initView;
-            this.initView.duration = Object.values(this.views)[0].duration;
-            this.currentView = initView;
-
-            this.viewObserver = null; // stores the scroll observer
-            this.map = null; // stores the full screen map
-            this.mapClone = null; // stores the mobile smaller map
-
-            this.init.bind(this)()
-        });
+        window.addEventListener('load', this.init.bind(this) );
     }
 
     async init() {
-        // Handle anchors.
+        // map windows
+        this.mapWindows = document.querySelectorAll('.map')
+
+        if (typeof window.mapConfig !== 'object' || !window.mapBoxToken || !this.mapWindows.length) return;
+
+        // transition points storage
+        this.views = typeof window.mapViews === 'object' ? window.mapViews : false;
+        this.views && Object.keys(this.views).forEach( (k) => this.views[k].id = k )
+        this.mapAnchors = [];
+        this.definedLayers = [...window.mapConfig.layers];
+
+        // initial view setup
+        const { style, ...initView } = window.mapConfig;
+        this.initView = {
+            ...initView, 
+            id: '__initview__', 
+            duration: this.views && Object.values(this.views)[0].duration
+        };
+        this.currentView = initView;
+
+        // mapbox areas
+        this.mapHolder = document.querySelector(this.sels.mainMap)
+        this.mapHolderClone = document.querySelector(this.sels.cloneMap)
+
+        // captions holder
+        this.captionHolder = document.createElement('div')
+        this.captionHolder.setAttribute('id',this.sels.captions)
+
+        // class storage
+        this.viewObserver = null;
+        this.map = null;
+        this.mapClone = null;
+
+        // handles confusions on layout shift and intersection interpolation
+        this.countIntersectionEvents = 0;
+
+        // starts
+        await this.initViewAnchors();
+        await this.initMaps()
+        this.map.on('load', this.mapsOnLoad.bind(this));
+    }
+
+    async initViewAnchors() {
         await this.setMapWindowDisplacers();
         await this.setMapAnchors();
         const resizeObserver = new ResizeObserver(this.setPosToMapAnchors.bind(this));
         resizeObserver.observe(document.body);
-        // Init maps
+        return true;
+    }
+
+    async initMaps() {
         mapboxgl.accessToken = window.mapBoxToken;
         this.map = new mapboxgl.Map({
             container: this.mapHolder,
             ...window.mapConfig
         })
-        if( this.getHistoryType() !== 'floating' ){
+        if (this.getHistoryType() !== 'floating') {
             this.mapClone = new mapboxgl.Map({
                 container: this.mapHolderClone,
                 ...window.mapConfig
             })
-        }else{
+        } else {
             this.mapHolderClone.remove();
             this.mapHolderClone = false;
         }
-        // Handle transitions.
-        this.map.on('load', () => {
-            this.mapHolder.style.opacity = 1;
-            this.mapHolderClone && ( this.mapHolderClone.style.opacity = 1 );
-            this.defineLayers();
-            this.displayLayers(window.mapConfig.layers, true);
-            const resizeObserverView = new ResizeObserver(this.observeView.bind(this, this.mapAnchors, this.changeViewByEl.bind(this)));
-            resizeObserverView.observe(document.body);
-            this.adjustFirstViewOnLoad();
-        });
+        return true;
+    }
+
+    async mapsOnLoad() {
+        this.mapHolder.style.opacity = 1;
+        this.mapHolderClone && (this.mapHolderClone.style.opacity = 1);
+        this.defineLayers();
+        this.displayLayers(this.initView.layers, true);
+        this.adjustFirstViewOnLoad();
+        const resizeObserverView = new ResizeObserver(
+            this.observeView.bind(this, this.mapAnchors, this.changeViewByEl.bind(this))
+        );
+        resizeObserverView.observe(document.body);
     }
 
     /* Anchors & Observers */
 
     async setMapAnchors() {
-        this.mapTriggers = document.querySelectorAll(this.mapTriggersSel);
+        this.mapTriggers = document.querySelectorAll(this.sels.triggers);
         const container = document.createElement('div')
         container.setAttribute('id', 'map-anchors');
         container.setAttribute('aria-hidden', true);
@@ -103,23 +135,23 @@ class MapBoxHandler {
             return distance;
         }
 
-        const getMobileAdjustment = (parent, index, top = false) =>{
+        const getMobileAdjustment = (parent, index, top = false) => {
             const mobileAdjustment = !parent.classList.value.includes('floating') && window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches && window.innerHeight
             return (top && index !== 0) || (!top && index === 0) ? mobileAdjustment : 0;
         }
 
-        this.mapScreens && this.mapScreens.forEach(parent => {
+        this.mapWindows && this.mapWindows.forEach(parent => {
             let mapTriggers = parent.querySelectorAll('[data-map-view]')
             mapTriggers.forEach((el, index) => {
                 const nextElement = mapTriggers[index + 1];
                 const anchorRef = document.querySelector(`[data-map-anchor-id="${el.dataset.refId}"]`);
-                anchorRef.style.top = `${getTopDistance(el) + getMobileAdjustment(parent,index,true)}px`;
+                anchorRef.style.top = `${getTopDistance(el) + getMobileAdjustment(parent, index, true)}px`;
                 if (nextElement) {
                     const distanceToNext = getTopDistance(nextElement) - getTopDistance(el);
-                    anchorRef.style.height = `${distanceToNext + getMobileAdjustment(parent,index)}px`;
+                    anchorRef.style.height = `${distanceToNext + getMobileAdjustment(parent, index)}px`;
                 } else {
                     const parentBottomDistance = getTopDistance(parent) + parent.offsetHeight;
-                    const distanceToParentBottom = parentBottomDistance - getTopDistance(el) - getMobileAdjustment(parent,index,true);
+                    const distanceToParentBottom = parentBottomDistance - getTopDistance(el) - getMobileAdjustment(parent, index, true);
                     anchorRef.style.height = `${distanceToParentBottom}px`;
                 }
             });
@@ -128,9 +160,9 @@ class MapBoxHandler {
     }
 
     async setMapWindowDisplacers() {
-        let topMapScreens = Array.from(this.mapScreens).filter(el => !el.querySelector('.map-view:first-child'))
-        topMapScreens.length && topMapScreens.forEach(el => el.querySelector('.map__holder').insertAdjacentHTML('afterbegin', '<div class="map-view" data-map-view="__displacer__"></div>'))
-        return topMapScreens.length;
+        let topMapWindows = Array.from(this.mapWindows).filter(el => !el.querySelector('.map-view:first-child'))
+        topMapWindows.length && topMapWindows.forEach(el => el.querySelector('.map__holder').insertAdjacentHTML('afterbegin', '<div class="map-view" data-map-view="__displacer__"></div>'))
+        return topMapWindows.length;
     }
 
     adjustFirstViewOnLoad() {
@@ -195,7 +227,7 @@ class MapBoxHandler {
 
         const isAnimating = this.map.isMoving() || this.map.isZooming();
 
-        if (JSON.stringify(view.center) == JSON.stringify(this.currentView.center) && !isAnimating) {
+        if ( destiny.id === this.currentView.id && !isAnimating) {
             destiny.duration = 1500;
             fly = false;
         }
@@ -226,10 +258,8 @@ class MapBoxHandler {
         let viewId = target.dataset.mapAnchor;
         let mapTrigger = document.querySelector(`[data-ref-id="${target.dataset.mapAnchorId}"]`)
 
-        if (this.views.hasOwnProperty(viewId) || viewId === this.displacerName ) {
-            setTimeout(() => { 
-                viewId === this.displacerName  ?  this.move(this.currentView, mapTrigger) : this.move(this.views[viewId], mapTrigger) 
-            }, 100);
+        if (this.views.hasOwnProperty(viewId) || viewId === this.sels.displacer) {
+            viewId === this.sels.displacer ? this.move(this.currentView, mapTrigger) : this.move(this.views[viewId], mapTrigger)
             return true;
         }
 
@@ -241,12 +271,10 @@ class MapBoxHandler {
         const isTop = () => {
             let el = Array.from(this.mapTriggers)[0];
             let pos = el.getBoundingClientRect().top;
-            return window.scrollY < pos && el;
+            return pos > window.innerHeight * (this.getScreenTransitionPoint()*0.01) && el;
         }
         const isTopEl = isTop();
-        if (isTopEl){
-            setTimeout(() => { this.move(this.initView) }, 100);
-        }
+        isTopEl && this.move(this.initView);
     }
 
     /* Captions */
@@ -300,10 +328,10 @@ class MapBoxHandler {
 
     /* Helpers */
 
-    getViewParameters(view){
+    getViewParameters(view) {
         let isMobile = view && window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches && view.hasOwnProperty('mobile') && view.mobile && Object.values(view.mobile).length;
-        let mobileView = isMobile && {...view.mobile};
-        return isMobile ? {...view, ...mobileView } : view
+        let mobileView = isMobile && { ...view.mobile };
+        return isMobile ? { ...view, ...mobileView } : view
     }
 
     getDisplacedCenter(el, view) {
@@ -312,7 +340,7 @@ class MapBoxHandler {
         const isMobile = window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches;
         const isFloating = parentClasses.includes('floating');
 
-        if ( isFloating ) return view.center;
+        if (isFloating) return view.center;
 
         const old = {
             zoom: this.map.getZoom(),
@@ -323,16 +351,17 @@ class MapBoxHandler {
         let mapPerc = parentClasses.includes('alignleft') ? (1 - mapWCalc) : false;
         mapPerc = parentClasses.includes('alignright') ? (1 + mapWCalc) : mapPerc
 
-        if (!mapPerc && !isMobile ) return view.center
+        if (!mapPerc && !isMobile) return view.center
 
         this.map.setZoom(view.zoom);
         this.map.setCenter(view.center);
 
         let projection = this.map.project(view.center);
-        if( !isMobile ){
+        if (!isMobile) {
+            // config
             projection.x = mapPerc ? projection.x * mapPerc : projection.x;
-        }else{
-            projection.y = projection.y + (projection.y * (1 - this.mapHeight * 0.01));
+        } else {
+            projection.y = projection.y + (projection.y * (1 - this.mapMobileHeight * 0.01));
         }
         let unproject = this.map.unproject(projection);
 
@@ -348,14 +377,14 @@ class MapBoxHandler {
         return screenPoint;
     }
 
-    getCurrentAnimationRemaingDuration(){
+    getCurrentAnimationRemaingDuration() {
         let remainingDuration = this.getViewParameters(this.currentView).duration - (Date.now() - this.animationStartTime)
         return remainingDuration < 0 ? 0 : remainingDuration;
     }
 
-    getHistoryType(){
-        let columnViews = Array.from(this.mapScreens).filter( el => !el.classList.value.includes('floating')).length
-        let floatingViews = Array.from(this.mapScreens).filter( el => el.classList.value.includes('floating')).length
+    getHistoryType() {
+        let columnViews = Array.from(this.mapWindows).filter(el => !el.classList.value.includes('floating')).length
+        let floatingViews = Array.from(this.mapWindows).filter(el => el.classList.value.includes('floating')).length
         return columnViews && floatingViews ? 'mixed' : columnViews ? 'columns' : 'floating';
     }
 
@@ -365,14 +394,14 @@ class MapBoxHandler {
             return false;
         }
         let view = { ...this.views[el.dataset.mapAnchor] };
-        if( view && Object.keys(view).length  ){
+        if (view && Object.keys(view).length) {
             let trigger = document.querySelector(`[data-ref-id="${el.dataset.mapAnchorId}"]`);
             let mapWindow = trigger.closest('.map');
             return {
                 el: el,
                 view: view,
-                viewname:el.dataset.mapAnchor,
-                anchor:el,
+                viewname: el.dataset.mapAnchor,
+                anchor: el,
                 ref: el.dataset.mapAnchorId,
                 trigger: trigger,
                 mapWindow: mapWindow,
@@ -390,7 +419,7 @@ class MapBoxHandler {
         let next = false;
         while (el.nextElementSibling && !next) {
             el = el.nextElementSibling;
-            next = el.dataset.mapAnchor === this.displacerName  ? false : true;
+            next = el.dataset.mapAnchor === this.sels.displacer ? false : true;
         }
         return next && this.getAnchorInfo(el)
     }
@@ -403,7 +432,7 @@ class MapBoxHandler {
         let next = false;
         while (el.previousElementSibling && !next) {
             el = el.previousElementSibling;
-            next = el.dataset.mapAnchor === this.displacerName  ? false : true;
+            next = el.dataset.mapAnchor === this.sels.displacer ? false : true;
         }
         return next && this.getAnchorInfo(el)
     }
@@ -433,7 +462,7 @@ window.debugMapTransitions = () => {
 
         const anchors = document.querySelectorAll('[data-map-anchor]');
         const views = document.querySelectorAll('[data-map-view]');
-        views && views.forEach( (element) => element.style.borderTop = '1px solid')
+        views && views.forEach((element) => element.style.borderTop = '1px solid')
         anchors && anchors.forEach((element, index) => {
             const viewName = element.dataset.mapAnchor;
             if (window.mapViews.hasOwnProperty(viewName)) {
@@ -448,7 +477,7 @@ window.debugMapTransitions = () => {
                     <br>Pitch: ${view.pitch}
                 </span>`;
             }
-            if (viewName === mapBoxHandler.displacerName ) {
+            if (viewName === mapBoxHandler.displacerName) {
                 element.innerHTML = `<span><strong>Displacer</strong></span>`;
             }
         });
