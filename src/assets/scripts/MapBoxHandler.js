@@ -9,18 +9,34 @@ class MapBoxHandler {
         // selectors
         this.sels = {
             triggers: '[data-map-view]',
+            triggersClass: '.map-view',
+            anchors: '[data-map-anchor]',
+            anchorsHolder: '#map-anchors',
+            mapWindows: '.map',
+            mapContent: '.map__holder',
             mainMap: '#mapbox',
             cloneMap: '#mapbox-clone div',
             captions: '#captions',
         }
-        this.displacerLabel = '__displacer__';
+        // labels
+        this.labels = {
+            displacer: '__displacer__',
+            initView: '__initview__',
+        }
+        // references
+        this.refs = {
+            anchorId: (id = false) => id ? `[${this.sels.anchors.replace(/[\[\]]/g, '')}-id="${id}"]` : `${this.sels.anchors.replace(/[\[\]]/g, '')}-id`,
+            anchorView: (id = false) => id ? `[${this.sels.anchors.replace(/[\[\]]/g, '')}="${id}"]` : this.sels.anchors.replace(/[\[\]]/g, ''),
+            triggerRef: (id = false) => id ? `[data-ref-id="${id}"]` : 'data-ref-id',
+            triggerView: (id = false) => id ? `[${this.sels.triggers.replace(/[\[\]]/g, '')}="${id}"]` : this.sels.triggers.replace(/[\[\]]/g, ''),
+        }
 
         window.addEventListener('load', this.init.bind(this));
     }
 
     async init() {
         // map windows
-        this.mapWindows = document.querySelectorAll('.map')
+        this.mapWindows = document.querySelectorAll(this.sels.mapWindows)
 
         if (typeof window.mapConfig !== 'object' || !window.mapBoxToken || !this.mapWindows.length) return;
 
@@ -34,7 +50,7 @@ class MapBoxHandler {
         const { style, ...initView } = window.mapConfig;
         this.initView = {
             ...initView,
-            id: '__initview__',
+            id: this.labels.initView,
             duration: this.views && Object.values(this.views)[0].duration
         };
         this.currentView = initView;
@@ -104,7 +120,7 @@ class MapBoxHandler {
     async setMapAnchors() {
         this.mapTriggers = document.querySelectorAll(this.sels.triggers);
         const container = document.createElement('div')
-        container.setAttribute('id', 'map-anchors');
+        container.setAttribute('id', this.sels.anchorsHolder.replace('#',''));
         container.setAttribute('aria-hidden', true);
         container.style.position = 'absolute';
         container.style.inset = 0;
@@ -112,9 +128,9 @@ class MapBoxHandler {
         container.style.pointerEvents = 'none';
         this.mapTriggers && this.mapTriggers.forEach((el, i) => {
             const anchor = document.createElement('div');
-            el.dataset.refId = i;
-            anchor.dataset.mapAnchorId = i;
-            anchor.dataset.mapAnchor = el.dataset.mapView;
+            el.setAttribute(this.refs.triggerRef(),i);
+            anchor.setAttribute(this.refs.anchorId(),i);
+            anchor.setAttribute(this.refs.anchorView(),el.getAttribute(this.refs.triggerView()));
             i % 2 === 0 && anchor.classList.add('odd')
             container.appendChild(anchor);
             this.mapAnchors.push(anchor);
@@ -125,7 +141,9 @@ class MapBoxHandler {
 
     async setPosToMapAnchors() {
         const scrollPos = window.scrollY;
+        document.documentElement.style.scrollBehavior = 'unset';
         window.scrollTo({ top: 0, behavior: 'instant' });
+
         const getTopDistance = (el) => {
             let distance = 0;
             while (el) {
@@ -142,10 +160,10 @@ class MapBoxHandler {
         }
 
         this.mapWindows && this.mapWindows.forEach(parent => {
-            let mapTriggers = parent.querySelectorAll('[data-map-view]')
-            mapTriggers.forEach((el, index) => {
+            let mapTriggers = parent.querySelectorAll(this.sels.triggers)
+            mapTriggers && mapTriggers.forEach((el, index) => {
                 const nextElement = mapTriggers[index + 1];
-                const anchorRef = document.querySelector(`[data-map-anchor-id="${el.dataset.refId}"]`);
+                const anchorRef = document.querySelector(this.refs.anchorId(el.getAttribute(this.refs.triggerRef())));
                 anchorRef.style.top = `${getTopDistance(el) + getMobileAdjustment(parent, index, true)}px`;
                 if (nextElement) {
                     const distanceToNext = getTopDistance(nextElement) - getTopDistance(el);
@@ -158,11 +176,12 @@ class MapBoxHandler {
             });
         })
         window.scrollTo({ top: scrollPos, behavior: 'instant' });
+        document.documentElement.style.scrollBehavior = null;
     }
 
     async setMapWindowDisplacers() {
-        let topMapWindows = Array.from(this.mapWindows).filter(el => !el.querySelector('.map-view:first-child'))
-        topMapWindows.length && topMapWindows.forEach(el => el.querySelector('.map__holder').insertAdjacentHTML('afterbegin', `<div class="map-view" data-map-view="${this.displacerLabel}"></div>`))
+        let topMapWindows = Array.from(this.mapWindows).filter(el => !el.querySelector(`${this.sels.triggersClass}:first-child`))
+        topMapWindows.length && topMapWindows.forEach(el => el.querySelector(this.sels.mapContent).insertAdjacentHTML('afterbegin', `<div class="${this.sels.triggersClass.replace('.','')}" ${this.refs.triggerView()}="${this.labels.displacer}"></div>`))
         return topMapWindows.length;
     }
 
@@ -170,7 +189,7 @@ class MapBoxHandler {
         const isTop = () => {
             let el = Array.from(this.mapTriggers)[0];
             let pos = el && el.getBoundingClientRect().top;
-            let ref = el && document.querySelector(`[data-map-anchor-id="${el.dataset.refId}"]`);
+            let ref = el && document.querySelector(this.refs.anchorId(el.getAttribute(this.refs.triggerRef())));
             return el && window.scrollY < pos && pos < window.innerHeight * (this.getScreenTransitionPoint() / 100) && ref;
         }
 
@@ -226,7 +245,7 @@ class MapBoxHandler {
 
 
         refEl && setTimeout(() => {
-            this.generateCaptionsHTML(view.captions, refEl.closest('.map'));
+            this.generateCaptionsHTML(view.captions, refEl.closest(this.sels.mapWindows));
             this.captionHolder.classList.remove('hidden')
             this.countIntersectionEvents = 0;
         }, 20);
@@ -252,14 +271,14 @@ class MapBoxHandler {
             return false;
         }
 
-        let viewId = target.dataset.mapAnchor;
-        let mapTrigger = document.querySelector(`[data-ref-id="${target.dataset.mapAnchorId}"]`)
+        let viewId = target.getAttribute(this.refs.anchorView());
+        let mapTrigger = document.querySelector(this.refs.triggerRef(target.getAttribute(this.refs.anchorId())))
 
         if (this.views.hasOwnProperty(viewId)) {
             this.move(this.views[viewId], mapTrigger)
             return true;
         }
-        if (viewId === this.displacerLabel) {
+        if (viewId === this.labels.displacer) {
             const lastAnchor = this.getPreviousAnchorInfo(target);
             lastAnchor
                 ? this.move(lastAnchor.view, mapTrigger)
@@ -343,7 +362,7 @@ class MapBoxHandler {
     }
 
     getDiplacedOffset(el) {
-        const parent = el.closest('.map');
+        const parent = el.closest(this.sels.mapWindows);
         const parentClasses = parent.classList.value;
         const offset = { x: 0, y: 0 }
 
@@ -352,7 +371,7 @@ class MapBoxHandler {
         if (this.isMobile()) {
             offset.y = this.isMobile() ? window.innerHeight * ((1 - this.mapMobileHeight) * 0.005) : 0;
         } else {
-            offset.x = parent.querySelector('.map__holder').getBoundingClientRect().width;
+            offset.x = parent.querySelector(this.sels.mapContent).getBoundingClientRect().width;
             offset.x *= parentClasses.includes('alignleft') ? .5 : parentClasses.includes('alignright') ? -.5 : 0;
         }
 
@@ -376,20 +395,20 @@ class MapBoxHandler {
     }
 
     getAnchorInfo(el) {
-        if (!el.dataset.mapAnchor) {
+        if (!el.getAttribute(this.refs.anchorView())) {
             console.warn('Not an anchor')
             return false;
         }
-        let view = { ...this.views[el.dataset.mapAnchor] };
+        let view = { ...this.views[el.getAttribute(this.refs.anchorView())] };
         if (view && Object.keys(view).length) {
-            let trigger = document.querySelector(`[data-ref-id="${el.dataset.mapAnchorId}"]`);
-            let mapWindow = trigger.closest('.map');
+            let trigger = document.querySelector(this.refs.triggerRef(el.getAttribute(this.refs.anchorId())));
+            let mapWindow = trigger.closest(this.sels.mapWindows);
             return {
                 el: el,
                 view: view,
-                viewname: el.dataset.mapAnchor,
+                viewname: el.getAttribute(this.refs.anchorView()),
                 anchor: el,
-                ref: el.dataset.mapAnchorId,
+                ref: el.getAttribute(this.refs.anchorId()),
                 trigger: trigger,
                 mapWindow: mapWindow,
                 mapWindowClasses: mapWindow.classList.value,
@@ -399,27 +418,27 @@ class MapBoxHandler {
     }
 
     getNextAnchorInfo(el) {
-        if (!el.dataset.mapAnchor) {
+        if (!el.getAttribute(this.refs.anchorView())) {
             console.warn('Not an anchor')
             return false;
         }
         let next = false;
         while (el.nextElementSibling && !next) {
             el = el.nextElementSibling;
-            next = el.dataset.mapAnchor === this.displacerLabel ? false : true;
+            next = el.getAttribute(this.refs.anchorView()) === this.labels.displacer ? false : true;
         }
         return next && this.getAnchorInfo(el)
     }
 
     getPreviousAnchorInfo(el) {
-        if (!el.dataset.mapAnchor) {
+        if (!el.getAttribute(this.refs.anchorView())) {
             console.warn('Not an anchor')
             return false;
         }
         let next = false;
         while (el.previousElementSibling && !next) {
             el = el.previousElementSibling;
-            next = el.dataset.mapAnchor === this.displacerLabel ? false : true;
+            next = el.getAttribute(this.refs.anchorView()) === this.labels.displacer ? false : true;
         }
         return next && this.getAnchorInfo(el)
     }
@@ -447,11 +466,11 @@ window.debugMapTransitions = () => {
         transitionLine.textContent = 'Transition Point';
         document.body.appendChild(transitionLine)
 
-        const anchors = document.querySelectorAll('[data-map-anchor]');
-        const views = document.querySelectorAll('[data-map-view]');
+        const anchors = document.querySelectorAll(mapBoxHandler.sels.anchors);
+        const views = document.querySelectorAll(mapBoxHandler.sels.triggers);
         views && views.forEach((element) => element.style.borderTop = '1px solid')
         anchors && anchors.forEach((element, index) => {
-            const viewName = element.dataset.mapAnchor;
+            const viewName = element.getAttribute(mapBoxHandler.refs.anchorView());
             if (window.mapViews.hasOwnProperty(viewName)) {
                 const view = mapBoxHandler.isMobile() && window.mapViews[viewName].hasOwnProperty('mobile')
                     ? { ...window.mapViews[viewName], ...window.mapViews[viewName].mobile }
@@ -466,7 +485,7 @@ window.debugMapTransitions = () => {
                     <br>Pitch: ${view.pitch}
                 </span>`;
             }
-            if (viewName === mapBoxHandler.displacerLabel) {
+            if (viewName === mapBoxHandler.labels.displacer) {
                 element.innerHTML = `<span><strong>Displacer</strong></span>`;
             }
             transitionLine.style.top = `${mapBoxHandler.getScreenTransitionPoint()}vh`
