@@ -8,6 +8,7 @@ import MapView from "../components/MapView.astro";
 
 import Image from "astro/components/Image.astro";
 import img from "../assets/images/group-bg.png";
+import thumb from "../assets/images/thumb.png";
 import imgMap from "../assets/images/map.png";
 import Spacer from "../components/Spacer.astro";
 import ColumnSticky from "../components/ColumnSticky.astro";
@@ -23,6 +24,7 @@ import TimelineBullet from "../components/TimelineBullet.astro";
 import Cards from "../components/Cards.astro";
 import Button from "../components/Button.astro";
 import CTA from "../components/CTA.astro";
+import CardsCall from "../components/CardsCall.astro";
 
 const cardsArr = [
   {
@@ -50,6 +52,28 @@ const cardsArr = [
     link: { text: "Botão", target: "_self", url: "#" },
   },
 ];
+
+
+const cardsCallArr = [ 
+  {
+    link:{url: '#'},
+    img: {src: thumb},
+    title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque ",
+    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"
+  },
+  {
+    link:{url: '#'},
+    img: {src: thumb},
+    title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque ",
+    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"
+  },
+  {
+    link:{url: '#'},
+    img: {src: thumb},
+    title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque ",
+    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"
+  },
+]
 ---
 
 <Layout title="Documental.xyz">
@@ -141,20 +165,9 @@ const cardsArr = [
       imgBg={img.src}
       
     />
-
-    <!-- <CTA
-      layout="media"
-      media={img.src}
-      mediaType="image"
-      highlightedText={}
-      text={}
-      link={}
-      imgBg={}
-      videoBg={}
-      overlay={}
-      txtColor={}
-      bgColor={}
-    /> -->
+    <Group txtColor="#364849" bgColor="#F0EAD9">
+      <CardsCall cards={cardsCallArr} />
+    </Group>
     <Group txtColor="#364849" bgColor="#F0EAD9">
       <Columns alignment="33-66">
         <Fragment slot="column-1">
@@ -207,6 +220,8 @@ const cardsArr = [
           </Text>
         </Fragment>
         <Fragment slot="column-2">
+          <CardsCall cards={cardsCallArr} />
+          <CardsCall cards={[cardsCallArr[0]]} />
           <Text hasDropCap>
             <Cards cards={cardsArr} />
             <p>

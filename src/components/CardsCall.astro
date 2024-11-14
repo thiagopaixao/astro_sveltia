@@ -1,0 +1,119 @@
+---
+import Image from "astro/components/Image.astro";
+import Caption from "./Caption.astro";
+
+const { cards } = Astro.props;
+// cards recebe um array com os objetos de cada, com os itens:
+// img: objeto da imagem { src, alt }
+// title: string
+// text: string
+// link: objeto do link {url:..., target:..., title:... }
+---
+
+<div class="cards-call">
+  <div class="cards-call__holder">
+  {
+    cards &&
+      cards.map((data) => (
+        <a
+          class="cards-call__item"
+          href={data.link.url}
+          title={data.link.title ? data.link.title : data?.title}
+          target={data.link?.target}
+        >
+          <div class="cards-call__thumb">
+            {data.img.src && (
+              <Image
+                src={data.img.src}
+                alt={data.img.alt ? data.img.alt : data?.title}
+              />
+            )}
+          </div>
+          {data.title && <span class="cards-call__title">{data.title}</span>}
+          {data.text && (
+            <div class="card-caption">
+              <Caption>{data.text}</Caption>
+            </div>
+          )}
+        </a>
+      ))
+  }
+  </div>
+</div>
+
+<style lang="scss">
+  @use "../assets/styles/config/config" as *;
+  @use "../assets/styles/utils/grrr/grrr" as *;
+
+  .cards-call {
+    $self: &;
+
+    &:not(:first-child),
+    & :global(+ *) {
+      margin-top: var(--atnl-gutter);
+    }
+
+    :global(.group__content) > & {
+      @extend %grrr--board;
+    }
+
+    &__holder {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--atnl-gutter);
+      
+      :global(.group__content) > #{$self} & {
+        grid-column: board-full;
+        
+        @include media-break-up(l) {
+          grid-column: board-start 1 / board-end 12;
+        }
+        
+        @include media-break-up(x) {
+          grid-column: board-start 2 / board-end 11;
+        }
+      }
+    }
+
+    a {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      &:hover {
+        img {
+          opacity: .8;
+        }
+      }
+    }
+
+    &__item {
+      container-name: card-grid;
+      container-type: inline-size;
+    }
+
+    &__thumb {
+      background-color: var(--clr-txt);
+      
+      img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / .6;
+        transition: .3s ease;
+        display: block;
+      }
+    }
+
+    &__title {
+      @include type("h-s");
+
+      @container card-grid (width < 350px) {
+        @include type("h-xs");
+      } 
+    }
+
+    :global(.caption) {
+      margin-top: 0;
+    }
+  }
+</style>
