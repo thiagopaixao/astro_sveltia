@@ -22,6 +22,7 @@ import Timeline from "../components/Timeline.astro";
 import TimelineBullet from "../components/TimelineBullet.astro";
 import Cards from "../components/Cards.astro";
 import Button from "../components/Button.astro";
+import CTA from "../components/CTA.astro";
 
 const cardsArr = [
   {
@@ -81,7 +82,79 @@ const cardsArr = [
           </p>
         </Text>
       </ColumnSticky>
+      
+      <ColumnSticky paddingTop paddingBottom>
+        <h1 slot="title">ALTER DO CHÃO ALSO NEEDS TO BE RECOGNIZED</h1>
+        <Text>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+            sed quia non numquam eius modi tempora incidunt ut labore et dolore
+            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+            aliquid ex ea commodi consequatur? Quis autem vel eum iure
+            reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem eum fugiat quo voluptas. Nemo
+            enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+            fugit, sed quia consequuntur magni dolores eos qui ratione
+            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+            ipsum quia dolor sit amet, consectetur, adipisci velit.
+          </p>
+        </Text>
+      </ColumnSticky>
     </Group>
+    <CTA
+      layout="media"
+      media={img}
+      mediaType="image"
+      text={`
+      <h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </h3>
+      <p>
+        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+      </p>
+      `}
+      link={cardsArr[0].link}
+      txtColor="yellow"
+      bgColor="grey"
+    />
+
+    <CTA
+      layout="text"
+      highlightedText="ALTER DO CHÃO ALSO NEEDS TO BE RECOGNIZED"
+      text={`
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
+        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+      </p>
+      `}
+      link={cardsArr[0].link}
+      txtColor="yellow"
+      bgColor="grey"
+      imgBg={img.src}
+      
+    />
+
+    <!-- <CTA
+      layout="media"
+      media={img.src}
+      mediaType="image"
+      highlightedText={}
+      text={}
+      link={}
+      imgBg={}
+      videoBg={}
+      overlay={}
+      txtColor={}
+      bgColor={}
+    /> -->
     <Group txtColor="#364849" bgColor="#F0EAD9">
       <Columns alignment="33-66">
         <Fragment slot="column-1">
@@ -99,17 +172,18 @@ const cardsArr = [
                 </h6>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                  quae ab illo inventore veritatis et quasi architecto beatae vitae
-                  dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                  aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-                  eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-                  qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                  sed quia non numquam eius modi tempora incidunt ut labore et dolore
-                  magnam aliquam quaerat voluptatem.
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                  consequuntur magni dolores eos qui ratione voluptatem sequi
+                  nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                  dolor sit amet, consectetur, adipisci velit, sed quia non
+                  numquam eius modi tempora incidunt ut labore et dolore magnam
+                  aliquam quaerat voluptatem.
                 </p>
               </Text>
-      
+
               <TimelineBullet />
               <Text>
                 <h6>
@@ -118,19 +192,19 @@ const cardsArr = [
                 </h6>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                  quae ab illo inventore veritatis et quasi architecto beatae vitae
-                  dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                  aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-                  eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-                  qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                  sed quia non numquam eius modi tempora incidunt ut labore et dolore
-                  magnam aliquam quaerat voluptatem.
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                  consequuntur magni dolores eos qui ratione voluptatem sequi
+                  nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                  dolor sit amet, consectetur, adipisci velit, sed quia non
+                  numquam eius modi tempora incidunt ut labore et dolore magnam
+                  aliquam quaerat voluptatem.
                 </p>
               </Text>
             </Timeline>
           </Text>
-          
         </Fragment>
         <Fragment slot="column-2">
           <Text hasDropCap>
@@ -155,15 +229,16 @@ const cardsArr = [
               dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
             </p>
 
-            <Button 
-              link={{url: "#", text: "Lorem Ipsum Dolor Sit"}} 
-              icon={'<span class="material-symbols-outlined">north_east</span>'} 
-              size="wide" />
-            
-              <Button 
-              link={{url: "#", text: "Botão sit amet"}} 
-              icon={'<span class="material-symbols-outlined">settings</span>'} 
-              />
+            <Button
+              link={{ url: "#", text: "Lorem Ipsum Dolor Sit" }}
+              icon={'<span class="material-symbols-outlined">north_east</span>'}
+              size="wide"
+            />
+
+            <Button
+              link={{ url: "#", text: "Botão sit amet" }}
+              icon={'<span class="material-symbols-outlined">settings</span>'}
+            />
 
             <p>
               Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,

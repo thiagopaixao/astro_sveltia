@@ -1,0 +1,221 @@
+---
+import Image from "astro/components/Image.astro";
+import Text from "./Text.astro";
+import Button from "./Button.astro";
+import Group from "./Group.astro";
+
+const {
+  layout,
+  media,
+  mediaType,
+  highlightedText,
+  text,
+  link,
+  imgBg,
+  videoBg,
+  overlay,
+  txtColor,
+  bgColor,
+} = Astro.props;
+
+// layout revebe 'media' ou 'text'
+// mediaType recebe 'image' ou 'video'
+// media recebe url da imagem ou vídeo
+// overlay deve ser: dark ou none
+// imgBg e videoBg recebem a url direta (deve ser possível apenas um dos dois)
+---
+
+<div
+  class:list={[
+    "cta",
+    {
+      "cta--media": layout === "media",
+    },
+  ]}
+>
+  <div class="cta__holder">
+    <Group
+      txtColor={txtColor}
+      bgColor={bgColor}
+      imgBg={imgBg}
+      videoBg={videoBg}
+      overlay={overlay}
+    >
+      <div class="cta__feat">
+        {
+          layout === "media" ? (
+            mediaType === "image" ? (
+              <Image src={media} alt="" />
+            ) : mediaType === "video" ? (
+              <video autoplay muted loop>
+                <source src={media} />
+              </video>
+            ) : null
+          ) : layout === "text" && highlightedText ? (
+            <span class="cta__feat__text">{highlightedText}</span>
+          ) : null
+        }
+      </div>
+      <div class="cta__text">
+        {
+          text && (
+            <Text>
+              <Fragment set:html={text} />
+            </Text>
+          )
+        }
+        {link && <Button link={{ url: link.url, text: link.text }} />}
+      </div>
+    </Group>
+  </div>
+</div>
+
+<style lang="scss">
+  @use "../assets/styles/config/config" as *;
+  @use "../assets/styles/globals/grrr" as *;
+  @use "../assets/styles/utils/grrr/grrr" as *;
+
+  .cta {
+    $self: &;
+    width: 100%;
+    @extend %grrr--board;
+    background-color: inherit;
+    position: relative;
+
+    @include media-break-down(m) {
+      padding-top: 20px;
+    }
+
+    &--media {
+      padding-bottom: 40px;
+    }
+
+    &:not(#{$self}--media) {
+      :global(.group__content) {
+        @include media-break-up(m) {
+          padding-block: 80px 60px;
+        }
+        
+        @include media-break-up(l) {
+          padding-block: 190px 140px;
+        }
+      }
+    }
+
+    &__holder {
+      grid-column: full;
+      z-index: 3;
+
+      @include media-break-up(l) {
+        grid-column: board-full;
+      }
+    }
+
+    &__feat {
+      position: relative;
+      grid-column: board-full;
+
+      @include media-break-down(m) {
+        img,
+        video {
+          width: 100%;
+          height: auto;
+          aspect-ratio: 1 / 0.73;
+          object-fit: cover;
+          transform: translateY(-60px);
+          margin-bottom: -20px;
+        }
+
+        #{$self}:not(#{$self}--media) & {
+          margin-bottom: 40px;
+        }
+      }
+
+      @include media-break-up(m) {
+        grid-column: board-start 1 / board-end 6;
+       
+        img,
+        video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transform: translateY(40px);
+        }
+      }
+
+      @include media-break-up(l) {
+        grid-column: board-start 2 / board-end 6;     
+      }
+      
+      @include media-break-up(x) {
+        #{$self}--media & {
+          grid-column: board-start 2 / board-end 7;
+        }        
+      }
+
+      &__text {
+        @include type('h-xl');
+
+        @include media-break-up(l) {
+          @include type('d-l');
+        }
+        
+        @include media-break-up(x) {
+          @include type('d-xl');
+        }
+      }
+    }
+
+    &__text {
+      --mt-s: 20px;
+      grid-column: board-full;
+
+      @include media-break-up(m) {
+        grid-column: board-start 7 / board-end 11;
+        
+        #{$self}--media & {
+          padding-block: 60px;
+        }
+      }
+
+      @include media-break-up(x) {
+        grid-column: board-start 8 / board-end 11;
+
+        #{$self}--media & {
+          padding-block: 90px;
+        }
+      }
+
+      :global(.button) {
+        margin-top: 40px;
+
+        @include media-break-down(m) {
+          width: 100%;
+        }
+      }
+    }
+
+    :global(.group) {
+      @include media-break-down(m) {
+        padding-block: 40px 60px;
+      }
+      
+      @include media-break-down(l) {
+        padding-inline: var(--atnl-margin);
+      }
+      
+      @include media-break-up(m) {
+        @include grrr("board", 2, 11, false);
+        grid-column: board-full;
+      }
+
+    }
+
+    :global(.group__content) {
+      @include media-break-up(m) {
+        grid-column: board-full;
+        @include grrr("board", 1, 12, false);
+      }
+    }
+  }
+</style>
