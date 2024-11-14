@@ -65,11 +65,12 @@ const { layout, paddingTop, paddingBottom } = Astro.props;
       @include type('d-s');
       font-weight: 600;
       grid-column: board-start 1 / board-end 6;
+      text-wrap: balance;
       
       @include media-break-up(l) {
         grid-column: board-start 2 / board-end 7;
       }
-
+      
       :global(> *) {
         position: sticky;
         top: var(--padding-block);
