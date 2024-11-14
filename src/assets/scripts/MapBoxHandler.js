@@ -14,6 +14,7 @@ class MapBoxHandler {
             anchorsHolder: '#map-anchors',
             mapWindows: '.map',
             mapContent: '.map__holder',
+            mapFloating: '.map--floating-text',
             mainMap: '#mapbox',
             cloneMap: '#mapbox-clone div',
             captions: '#captions',
@@ -154,8 +155,7 @@ class MapBoxHandler {
         }
 
         const getMobileAdjustment = (parent, index, top = false) => {
-            // const mobileAdjustment = !parent.classList.value.includes('floating') && this.isMobile() && window.innerHeight
-            const mobileAdjustment = this.isMobile() && window.innerHeight
+            const mobileAdjustment = !parent.classList.value.includes(this.sels.mapFloating.replace('.','')) && this.isMobile() && !parent.previousElementSibling.closest(`${this.sels.mapWindows}:not(${this.sels.mapFloating})`) && window.innerHeight
             return (top && index !== 0) || (!top && index === 0) ? mobileAdjustment : 0;
         }
 
@@ -315,19 +315,19 @@ class MapBoxHandler {
                 <path d="M11.3032 17.8065C11.1926 17.8065 11.0986 17.7666 11.0212 17.687C10.9438 17.6074 10.9051 17.5107 10.9051 17.397V9.34364C10.9051 9.22989 10.9438 9.13321 11.0212 9.05359C11.0986 8.97396 11.1926 8.93415 11.3032 8.93415H12.6802C12.8018 8.93415 12.8959 8.97396 12.9622 9.05359C13.0396 9.13321 13.0783 9.22989 13.0783 9.34364V17.397C13.0783 17.5107 13.0396 17.6074 12.9622 17.687C12.8959 17.7666 12.8018 17.8065 12.6802 17.8065H11.3032ZM11.2369 7.46681C11.1263 7.46681 11.0323 7.427 10.9548 7.34737C10.8774 7.26775 10.8387 7.17107 10.8387 7.05732V5.82885C10.8387 5.7151 10.8774 5.61841 10.9548 5.53879C11.0323 5.45917 11.1263 5.41935 11.2369 5.41935H12.7465C12.8682 5.41935 12.9677 5.45917 13.0452 5.53879C13.1226 5.61841 13.1613 5.7151 13.1613 5.82885V7.05732C13.1613 7.17107 13.1226 7.26775 13.0452 7.34737C12.9677 7.427 12.8682 7.46681 12.7465 7.46681H11.2369Z" fill="#FFFFFF"/>
             </svg>
         </button>`
-
+        this.captionsId = this.sels.captions.replace('#', '');
         this.captionHolder.innerHTML = infoSvg;
 
         let container = document.createElement('div');
         if (captions.title) {
             let title = document.createElement('span');
-            title.className = 'captions__title';
+            title.className = `${this.captionsId}__title`;
             title.innerText = captions.title || 'Legenda:';
             container.appendChild(title);
         }
         captions.items && captions.items.length && captions.items.forEach(item => {
             let itemContainer = document.createElement('span');
-            itemContainer.className = 'captions__item';
+            itemContainer.className = `${this.captionsId}__item`;
 
             let iconContainer = document.createElement('span');
             iconContainer.innerHTML = item.icon;
@@ -341,7 +341,7 @@ class MapBoxHandler {
         });
         if (captions.notes) {
             let notes = document.createElement('span');
-            notes.className = 'captions__notes';
+            notes.className = `${this.captionsId}__notes`;
             notes.innerText = captions.notes;
             container.appendChild(notes);
         }
@@ -366,7 +366,7 @@ class MapBoxHandler {
         const parentClasses = parent.classList.value;
         const offset = { x: 0, y: 0 }
 
-        if (parentClasses.includes('floating')) return Object.values(offset);
+        if ( (parentClasses.includes(this.sels.mapFloating.replace('.','')) && this.isMobile() ) || parentClasses.includes('center') ) return Object.values(offset);
 
         if (this.isMobile()) {
             offset.y = this.isMobile() ? window.innerHeight * ((1 - this.mapMobileHeight) * 0.005) : 0;
@@ -389,8 +389,8 @@ class MapBoxHandler {
     }
 
     getHistoryType() {
-        let columnViews = Array.from(this.mapWindows).filter(el => !el.classList.value.includes('floating')).length
-        let floatingViews = Array.from(this.mapWindows).filter(el => el.classList.value.includes('floating')).length
+        let columnViews = Array.from(this.mapWindows).filter(el => !el.classList.value.includes(this.sels.mapFloating.replace('.',''))).length
+        let floatingViews = Array.from(this.mapWindows).filter(el => el.classList.value.includes(this.sels.mapFloating.replace('.',''))).length
         return columnViews && floatingViews ? 'mixed' : columnViews ? 'columns' : 'floating';
     }
 

@@ -42,17 +42,22 @@ content = floatingText ? content.replace(/<br[^>]*>/g, '<b r></b>') : content;
       margin-top: var(--map-height-mobile);
       position: relative;
 
-      &--floating-text{
-        z-index: 100;
-      }
-
       &::after {
         content: "";
         display: block;
         min-height: 100vh;
       }
       
-      &:not(#{$self}--floating-text) + #{$self}:not(#{$self}--floating-text):after{
+      
+      &--floating-text{
+        z-index: 100;
+        margin-top: 0;
+        &::after{
+          display: none;
+        }
+      }
+
+      &:not(#{$self}--floating-text) + #{$self}:after{
         display: none;
       }
     }
@@ -86,10 +91,12 @@ content = floatingText ? content.replace(/<br[^>]*>/g, '<b r></b>') : content;
 
       @include media-break-down(l) {
         padding-block: var(--mt-m);
-        position: sticky;
-        top: var(--map-height-mobile);
-        margin-top: calc(var(--map-height-mobile) * -1);
-        min-height: calc(100vh - var(--map-height-mobile));
+        &:not(#{$self}--floating-text &){
+          position: sticky;
+          top: var(--map-height-mobile);
+          margin-top: calc(var(--map-height-mobile) * -1);
+          min-height: calc(100vh - var(--map-height-mobile));
+        }
       }
 
       @include media-break-up(l) {
@@ -210,7 +217,6 @@ content = floatingText ? content.replace(/<br[^>]*>/g, '<b r></b>') : content;
           width: 100%;
           display: block;
           background-color: var(--clr-bg);
-          position: sticky;
           position: sticky;
           top: 0;
           left: 0;
