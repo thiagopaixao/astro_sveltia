@@ -2,15 +2,22 @@
   position: absolute;
   left:20px;
   opacity: 0;
-  border-bottom: 1px solid;
-  border-left: 1px dashed;
-  color: yellow;
+  border-bottom: 1px solid yellow;
+  border-left: 1px dashed yellow;
+  color: black;
   max-width: 200px;
-  padding-left: 20px;
+  font-size: 12px;
+  line-height: 14px;
+  span{
+    background-color: rgba(255, 255, 0, 0.9);
+  }
 }
 
 [data-map-anchor].odd{
-  color: #59ff4d;
+  border-color: yellowgreen;
+  span{
+    background-color: rgba(153, 205, 50, 0.9);;
+  }
 }
 
 [data-map-displacer]{

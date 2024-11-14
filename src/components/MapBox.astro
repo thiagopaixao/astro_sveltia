@@ -5,9 +5,8 @@ import img from "../assets/images/map.png";
 //coloquei a chamada para as funcões do mapa direto aqui no arquivo. Não sei qual a melhor forma de inserir os objetos com as opcões
 ---
 
-<div id="mapbox">
-  <Image src={img} alt="" />
-</div>
+<div id="mapbox"></div>
+<div id="mapbox-clone"><div></div></div>
 
 <style lang="scss">
   @use "../assets/styles/config/config" as *;
@@ -21,17 +20,11 @@ import img from "../assets/images/map.png";
     height: 100%;
     width: 100%;
     transition: opacity 1s ease;
+    opacity: 0;
+    background-color: black;
 
     @include media-break-down(l) {
-      position: fixed;
-      inset: 0 0 auto 0;
-      background-color: aquamarine;
       font-size: 60px;
-      
-      &.mobile {
-        z-index: 3;
-        height: var(--map-height-mobile);
-      }
     }
 
     img {
@@ -61,130 +54,154 @@ import img from "../assets/images/map.png";
       display: none;
     }
   }
+
+  #mapbox-clone{
+    position: fixed;
+    height: var(--map-height-mobile);
+    overflow: hidden;
+    width: 100%;
+    z-index: 3;
+    pointer-events: none;
+
+    @include media-break-up(l) {
+      display: none;
+    }
+
+    div{
+      min-height: 100vh;
+      transition: opacity 1s ease;
+      opacity: 0;
+      background-color: black;
+    }
+  }
+  
 </style>
 
 <script is:inline>
-  // window.addEventListener("load", debugMapTransitions);
-  // window.mapConfig = {
-  //   style: "mapbox://styles/comborari/ckr4wi3k80fpl17qo34th6kk2",
-  //   center: [-54.875, -2.53],
-  //   zoom: 2,
-  //   bearing: 0,
-  //   pitch: 0,
-  //   layers: [],
-  // };
-  // window.mapBoxToken =
-  //   "pk.eyJ1IjoiY29tYm9yYXJpIiwiYSI6ImNrcjR3OWczMjBhaWEyeHIyaWhwMnUzNHcifQ.Yv7o7kj1ImyC9Rn-egF0TQ";
-  // window.mapViews = {
-  //   view_0: {
-  //     center: [-58.911, -6.315],
-  //     duration: 4500,
-  //     zoom: 4,
-  //     bearing: 0,
-  //     pitch: 0,
-  //     layers: ["amazonialegal"],
-  //     captions: {
-  //       title: false,
-  //       notes: false,
-  //       items: [
-  //         {
-  //           icon: '<span class="material-symbols-outlined fill" style="color:white">show_chart</span>',
-  //           text: "Brazil's Legal Amazon",
-  //         },
-  //       ],
-  //     },
-  //   },
-  //   view_1: {
-  //     center: [-54.708, -2.625],
-  //     duration: 4000,
-  //     zoom: 8,
-  //     bearing: 0,
-  //     pitch: 0,
-  //     layers: ["municipios", "amazonas", "foztapajos"],
-  //     captions: {
-  //       title: false,
-  //       notes: false,
-  //       items: [
-  //         {
-  //           icon: '<span class="material-symbols-outlined fill" style="color:white">show_chart</span>',
-  //           text: "Municipality of Santarém (Pará)",
-  //         },
-  //         {
-  //           icon: '<span class="material-symbols-outlined fill" style="color:#FFF8DC">circle</span>',
-  //           text: "Amazonas River",
-  //         },
-  //         {
-  //           icon: '<span class="material-symbols-outlined fill" style="color:blue">circle</span>',
-  //           text: "Tapajós River",
-  //         },
-  //       ],
-  //     },
-  //   },
-  //   view_2: {
-  //     center: [-54.73, -2.597],
-  //     duration: 3000,
-  //     zoom: 10,
-  //     bearing: 0,
-  //     pitch: 0,
-  //     layers: ["br163", "amazonas", "foztapajos"],
-  //     captions: {
-  //       title: false,
-  //       notes: false,
-  //       items: [
-  //         {
-  //           icon: '<span class="material-symbols-outlined fill" style="color:white">show_chart</span>',
-  //           text: "Cuiabá-Santarém Highway (BR-163)",
-  //         },
-  //         {
-  //           icon: '<span class="material-symbols-outlined fill" style="color:#FFF8DC">circle</span>',
-  //           text: "Amazonas River",
-  //         },
-  //         {
-  //           icon: '<span class="material-symbols-outlined fill" style="color:blue">circle</span>',
-  //           text: "Tapajós River",
-  //         },
-  //       ],
-  //     },
-  //   },
-  //   view_3: {
-  //     center: [-54.831, -2.457],
-  //     duration: 4000,
-  //     zoom: 10.2,
-  //     bearing: 0,
-  //     pitch: 0,
-  //     layers: ["cidade-vila", "pa457"],
-  //     captions: {
-  //       title: false,
-  //       notes: false,
-  //       items: [
-  //         {
-  //           icon: '<span class="material-symbols-outlined fill" style="color:orange">show_chart</span>',
-  //           text: "Everaldo Martins Highway (PA-457)",
-  //         },
-  //         {
-  //           icon: '<span class="material-symbols-outlined" style="color:yellow">square</span>',
-  //           text: "Urban areas",
-  //         },
-  //       ],
-  //     },
-  //   },
-  //   view_4: {
-  //     center: [-54.917, -2.529],
-  //     duration: 2000,
-  //     zoom: 10,
-  //     bearing: 0,
-  //     pitch: 0,
-  //     layers: ["tiborari"],
-  //     captions: {
-  //       title: false,
-  //       notes: false,
-  //       items: [
-  //         {
-  //           icon: '<span class="material-symbols-outlined fill" style="color:red">square</span>',
-  //           text: "Borari Territory (preliminary demarcation)",
-  //         },
-  //       ],
-  //     },
-  //   },
-  // };
+  window.addEventListener("load", debugMapTransitions);
+  window.mapConfig = {
+    style: "mapbox://styles/comborari/ckr4wi3k80fpl17qo34th6kk2",
+    center: [-54.875, -2.53],
+    zoom: 2,
+    bearing: 0,
+    pitch: 0,
+    layers: [],
+  };
+  window.mapBoxToken =
+    "pk.eyJ1IjoiY29tYm9yYXJpIiwiYSI6ImNrcjR3OWczMjBhaWEyeHIyaWhwMnUzNHcifQ.Yv7o7kj1ImyC9Rn-egF0TQ";
+  window.mapViews = {
+    view_0: {
+      center: [-58.911, -6.315],
+      duration: 4500,
+      zoom: 4,
+      bearing: 0,
+      pitch: 0,
+      layers: ["amazonialegal"],
+      mobile: {
+        zoom: 3.5,
+      },
+      captions: {
+        title: false,
+        notes: false,
+        items: [
+          {
+            icon: '<span class="material-symbols-outlined fill" style="color:white">show_chart</span>',
+            text: "Brazil's Legal Amazon",
+          },
+        ],
+      },
+    },
+    view_1: {
+      center: [-54.708, -2.625],
+      duration: 4000,
+      zoom: 8,
+      bearing: 0,
+      pitch: 0,
+      layers: ["municipios", "amazonas", "foztapajos"],
+      captions: {
+        title: 'Meu título',
+        notes: '* Minha nota',
+        items: [
+          {
+            icon: '<span class="material-symbols-outlined fill" style="color:white">show_chart</span>',
+            text: "Municipality of Santarém (Pará)",
+          },
+          {
+            icon: '<span class="material-symbols-outlined fill" style="color:#FFF8DC">circle</span>',
+            text: "Amazonas River",
+          },
+          {
+            icon: '<span class="material-symbols-outlined fill" style="color:blue">circle</span>',
+            text: "Tapajós River",
+          },
+        ],
+      },
+    },
+    view_2: {
+      center: [-54.73, -2.597],
+      duration: 3000,
+      zoom: 10,
+      bearing: 0,
+      pitch: 0,
+      layers: ["br163", "amazonas", "foztapajos"],
+      captions: {
+        title: false,
+        notes: false,
+        items: [
+          {
+            icon: '<span class="material-symbols-outlined fill" style="color:white">show_chart</span>',
+            text: "Cuiabá-Santarém Highway (BR-163)",
+          },
+          {
+            icon: '<span class="material-symbols-outlined fill" style="color:#FFF8DC">circle</span>',
+            text: "Amazonas River",
+          },
+          {
+            icon: '<span class="material-symbols-outlined fill" style="color:blue">circle</span>',
+            text: "Tapajós River",
+          },
+        ],
+      },
+    },
+    view_3: {
+      center: [-54.831, -2.457],
+      duration: 4000,
+      zoom: 10.2,
+      bearing: 0,
+      pitch: 0,
+      layers: ["cidade-vila", "pa457"],
+      captions: {
+        title: false,
+        notes: false,
+        items: [
+          {
+            icon: '<span class="material-symbols-outlined fill" style="color:orange">show_chart</span>',
+            text: "Everaldo Martins Highway (PA-457)",
+          },
+          {
+            icon: '<span class="material-symbols-outlined" style="color:yellow">square</span>',
+            text: "Urban areas",
+          },
+        ],
+      },
+    },
+    view_4: {
+      center: [-54.917, -2.529],
+      duration: 2000,
+      zoom: 10,
+      bearing: 0,
+      pitch: 0,
+      layers: ["tiborari"],
+      captions: {
+        title: false,
+        notes: false,
+        items: [
+          {
+            icon: '<span class="material-symbols-outlined fill" style="color:red">square</span>',
+            text: "Borari Territory (preliminary demarcation)",
+          },
+        ],
+      },
+    },
+  };
 </script>
