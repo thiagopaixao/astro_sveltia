@@ -65,29 +65,41 @@ const { paddingTop, paddingBottom, invertOnMobile, alignment } = Astro.props;
 
     &__column-1 {
       grid-column: board-start 2 / board-end 7;
-      
-      #{$self}--33-66 & {
-        grid-column: board-start 2 / board-end 4;
-        
-        @include media-break-down(m) {
-          grid-column: board-full;
-        }
+
+      @include media-break-down(x) {
+        grid-column: board-start 1 / board-end 7;
       }
 
       @include media-break-down(m) {
         grid-column: board-full;
       }
+      
+      #{$self}--33-66 & {
+        grid-column: board-start 2 / board-end 4;
+        
+        @include media-break-down(x) {
+          grid-column: board-start 1 / board-end 4;
+        }
+
+        @include media-break-down(l) {
+          grid-column: board-start 1 / board-end 5;
+        }
+      
+        @include media-break-down(m) {
+          grid-column: board-full;
+        }
+      }
     }
     
     &__column-2 {
       grid-column: board-start 9 / board-end 11;
-      
-      #{$self}--33-66 & {
-        grid-column: board-start 6 / board-end 11;
-        
-        @include media-break-down(m) {
-          grid-column: board-full;
-        }
+
+      @include media-break-down(x) {
+        grid-column: board-start 9 / board-end 12;
+      }
+     
+      @include media-break-down(l) {
+        grid-column: board-start 8 / board-end 12;
       }
 
       @include media-break-down(m) {
@@ -95,6 +107,18 @@ const { paddingTop, paddingBottom, invertOnMobile, alignment } = Astro.props;
 
         #{$self}--invert-on-mobile & {
           grid-row: 1;
+        }
+      }
+      
+      #{$self}--33-66 & {
+        grid-column: board-start 6 / board-end 11;
+
+        @include media-break-down(x) {
+          grid-column: board-start 6 / board-end 12;
+        }
+        
+        @include media-break-down(m) {
+          grid-column: board-full;
         }
       }
     }
