@@ -262,8 +262,8 @@ class MapBoxHandler {
         if (viewId === this.displacerLabel) {
             const lastAnchor = this.getPreviousAnchorInfo(target);
             lastAnchor
-            ? this.move(lastAnchor.view, mapTrigger)
-            : this.move(this.initView)
+                ? this.move(lastAnchor.view, mapTrigger)
+                : this.move(this.initView)
             return true
         }
 
