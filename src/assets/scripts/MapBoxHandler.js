@@ -29,7 +29,7 @@ class MapBoxHandler {
             anchorId: (id = false) => id ? `[data-map-anchor-id="${id}"]` : `data-map-anchor-id`,
             anchorView: (id = false) => id ? `[data-map-anchor="${id}"]` : 'data-map-anchor',
             triggerRef: (id = false) => id ? `[data-ref-id="${id}"]` : 'data-ref-id',
-            triggerView: (id = false) => id ? `[data-map-view}="${id}"]` : 'data-map-view',
+            triggerView: (id = false) => id ? `[data-map-view="${id}"]` : 'data-map-view',
         }
 
         window.addEventListener('load', this.init.bind(this));
