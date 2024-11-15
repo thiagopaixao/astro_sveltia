@@ -26,10 +26,10 @@ class MapBoxHandler {
         }
         // references
         this.refs = {
-            anchorId: (id = false) => id ? `[${this.sels.anchors.replace(/[\[\]]/g, '')}-id="${id}"]` : `${this.sels.anchors.replace(/[\[\]]/g, '')}-id`,
-            anchorView: (id = false) => id ? `[${this.sels.anchors.replace(/[\[\]]/g, '')}="${id}"]` : this.sels.anchors.replace(/[\[\]]/g, ''),
+            anchorId: (id = false) => id ? `[data-map-anchor-id="${id}"]` : `data-map-anchor-id`,
+            anchorView: (id = false) => id ? `[data-map-anchor="${id}"]` : 'data-map-anchor',
             triggerRef: (id = false) => id ? `[data-ref-id="${id}"]` : 'data-ref-id',
-            triggerView: (id = false) => id ? `[${this.sels.triggers.replace(/[\[\]]/g, '')}="${id}"]` : this.sels.triggers.replace(/[\[\]]/g, ''),
+            triggerView: (id = false) => id ? `[data-map-view}="${id}"]` : 'data-map-view',
         }
 
         window.addEventListener('load', this.init.bind(this));
@@ -190,7 +190,7 @@ class MapBoxHandler {
             let el = Array.from(this.mapTriggers)[0];
             let pos = el && el.getBoundingClientRect().top;
             let ref = el && document.querySelector(this.refs.anchorId(el.getAttribute(this.refs.triggerRef())));
-            return el && window.scrollY < pos && pos < window.innerHeight * (this.getScreenTransitionPoint() / 100) && ref;
+            return el && window.scrollY < pos && pos < window.innerHeight * (this.getScreenTransitionPoint() * .01) && ref;
         }
 
         // change to first view if the view is above transition point
@@ -447,34 +447,39 @@ class MapBoxHandler {
 window.mapBoxHandler = new MapBoxHandler();
 
 window.debugMapTransitions = () => {
+
     const debug = () => {
         document.body.classList.add('debug-map-transitions');
-        const transitionLine = document.querySelector('.debug-transition-point') || document.createElement('div');
-        transitionLine.className = 'debug-transition-point';
-        transitionLine.style.cssText = `
-            top: ${mapBoxHandler.getScreenTransitionPoint()}vh; 
-            left: 0; 
-            right: 0; 
-            border-top: 1px solid aqua; 
-            position: fixed; 
-            z-index: 9999; 
-            text-align: right; 
-            color: aqua; 
-            padding-inline: 20px;
-            transition: ease .5s top;
-        `;
-        transitionLine.textContent = 'Transition Point';
-        document.body.appendChild(transitionLine)
+        var transitionLine = document.querySelector('.debug-transition-point');
+
+        if( !transitionLine ){
+            transitionLine = document.createElement('div');
+            transitionLine.className = 'debug-transition-point';
+            transitionLine.style.cssText = `
+                left: 0; 
+                right: 0; 
+                border-top: 1px solid aqua; 
+                position: fixed; 
+                z-index: 9999; 
+                text-align: right; 
+                color: aqua; 
+                padding-inline: 20px;
+                transition: ease .5s top;
+            `;
+            transitionLine.textContent = 'Transition Point';
+            document.body.appendChild(transitionLine)
+        }
+        transitionLine.style.top = `${mapBoxHandler.getScreenTransitionPoint()}vh`
 
         const anchors = document.querySelectorAll(mapBoxHandler.sels.anchors);
         const views = document.querySelectorAll(mapBoxHandler.sels.triggers);
-        views && views.forEach((element) => element.style.borderTop = '1px solid')
+
+        views && views.forEach((element) => element.style.borderTop = '1px dotted')
+
         anchors && anchors.forEach((element, index) => {
             const viewName = element.getAttribute(mapBoxHandler.refs.anchorView());
-            if (window.mapViews.hasOwnProperty(viewName)) {
-                const view = mapBoxHandler.isMobile() && window.mapViews[viewName].hasOwnProperty('mobile')
-                    ? { ...window.mapViews[viewName], ...window.mapViews[viewName].mobile }
-                    : window.mapViews[viewName];
+            if (mapBoxHandler.views.hasOwnProperty(viewName)) {
+                const view = mapBoxHandler.getViewParameters(mapBoxHandler.views[viewName])
                 element.innerHTML = `<span>
                     <strong>${viewName}</strong>
                     <br>Layers: ${view.layers.join(', ')}
@@ -484,11 +489,11 @@ window.debugMapTransitions = () => {
                     <br>Bearing: ${view.bearing}
                     <br>Pitch: ${view.pitch}
                 </span>`;
+            }else{
+                element.innerHTML = viewName === mapBoxHandler.labels.displacer 
+                    ? `<span><strong>Displacer</strong></span>`
+                    : `<span><strong>Error: view not found</strong></span>`
             }
-            if (viewName === mapBoxHandler.labels.displacer) {
-                element.innerHTML = `<span><strong>Displacer</strong></span>`;
-            }
-            transitionLine.style.top = `${mapBoxHandler.getScreenTransitionPoint()}vh`
         });
     }
     setTimeout(() => {
