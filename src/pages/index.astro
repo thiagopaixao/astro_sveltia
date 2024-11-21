@@ -25,6 +25,7 @@ import Cards from "../components/Cards.astro";
 import Button from "../components/Button.astro";
 import CTA from "../components/CTA.astro";
 import CardsCall from "../components/CardsCall.astro";
+import ChartBar from "../components/ChartBar.astro";
 
 const cardsArr = [
   {
@@ -53,27 +54,79 @@ const cardsArr = [
   },
 ];
 
+const cardsCallArr = [
+  {
+    link: { url: "#" },
+    img: { src: thumb },
+    title:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque ",
+    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+  },
+  {
+    link: { url: "#" },
+    img: { src: thumb },
+    title:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque ",
+    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+  },
+  {
+    link: { url: "#" },
+    img: { src: thumb },
+    title:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque ",
+    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+  },
+];
 
-const cardsCallArr = [ 
+const chartBars = [
   {
-    link:{url: '#'},
-    img: {src: thumb},
-    title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque ",
-    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"
+    color: "#FF7967",
+    number: 231,
+    numberPercent: 45.1171875,
+    label: 2016,
   },
   {
-    link:{url: '#'},
-    img: {src: thumb},
-    title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque ",
-    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"
+    color: "#FF7967",
+    number: 512,
+    numberPercent: 100,
+    label: 2015,
+  },
+
+  {
+    color: "#FF7967",
+    number: 342, //342
+    numberPercent: 66.796875, //342
+    label: 2017,
+  },
+];
+
+const chartPerc = [
+  {
+    color: "#FF7967",
+    number: "45%",
+    numberPercent: 45,
+    label: "Flexible standing requirement",
   },
   {
-    link:{url: '#'},
-    img: {src: thumb},
-    title: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque ",
-    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"
+    color: "#FF7967",
+    number: "95%",
+    numberPercent: 95,
+    label: "Reducing barriers to proving causation",
   },
-]
+
+  {
+    color: "#FF7967",
+    number: "20%",
+    numberPercent: 20,
+    label: "Methods for ensuring baseline protections",
+  },
+  {
+    color: "#FF7967",
+    number: "100%",
+    numberPercent: 100,
+    label: "Providing remedies",
+  },
+];
 ---
 
 <Layout title="Documental.xyz">
@@ -106,125 +159,17 @@ const cardsCallArr = [
           </p>
         </Text>
       </ColumnSticky>
-      
-      <ColumnSticky paddingTop paddingBottom>
-        <h1 slot="title">ALTER DO CHÃO ALSO NEEDS TO BE RECOGNIZED AS AN INDIGENOUS LAND (TI) WITH THE MILLENNIAL PRESENCE OF THE BORARI PEOPLE</h1>
-        <Text>
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
-            </p>
-            <p>
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore
-            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-            aliquid ex ea commodi consequatur? Quis autem vel eum iure
-            reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-            consequatur, vel illum qui dolorem eum fugiat quo voluptas. Nemo
-            enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-            fugit, sed quia consequuntur magni dolores eos qui ratione
-            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-            ipsum quia dolor sit amet, consectetur, adipisci velit.
-          </p>
-        </Text>
-      </ColumnSticky>
-    </Group>
-    <CTA
-      layout="media"
-      media={img}
-      mediaType="image"
-      text={`
-      <h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </h3>
-      <p>
-        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-      </p>
-      `}
-      link={cardsArr[0].link}
-      txtColor="yellow"
-      bgColor="grey"
-    />
-
-    <CTA
-      layout="text"
-      highlightedText="ALTER DO CHÃO ALSO NEEDS TO BE RECOGNIZED"
-      text={`
-      <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-      </p>
-      `}
-      link={cardsArr[0].link}
-      txtColor="yellow"
-      bgColor="grey"
-      imgBg={img.src}
-      
-    />
-    <Group txtColor="#364849" bgColor="#F0EAD9">
-      <CardsCall cards={cardsCallArr} />
     </Group>
     <Group txtColor="#364849" bgColor="#F0EAD9">
-      <Columns alignment="33-66">
+      <Columns>
         <Fragment slot="column-1">
-          <Text>
-            <h6>
-              SED UT PERSPICIATIS UNDE OMNIS ISTE NATUS ERROR SIT VOLUPTATEM
-              ACCUSANTIUM DOLOREMQUE LAUDANTIUM, TOTAM REM APERIAM
-            </h6>
-            <Timeline>
-              <TimelineBullet text="Maio de 2020" />
-              <Text>
-                <h6>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium
-                </h6>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                  consequuntur magni dolores eos qui ratione voluptatem sequi
-                  nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
-                  dolor sit amet, consectetur, adipisci velit, sed quia non
-                  numquam eius modi tempora incidunt ut labore et dolore magnam
-                  aliquam quaerat voluptatem.
-                </p>
-              </Text>
-
-              <TimelineBullet />
-              <Text>
-                <h6>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium
-                </h6>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                  consequuntur magni dolores eos qui ratione voluptatem sequi
-                  nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
-                  dolor sit amet, consectetur, adipisci velit, sed quia non
-                  numquam eius modi tempora incidunt ut labore et dolore magnam
-                  aliquam quaerat voluptatem.
-                </p>
-              </Text>
-            </Timeline>
-          </Text>
-        </Fragment>
-        <Fragment slot="column-2">
-          <CardsCall cards={cardsCallArr} />
-          <CardsCall cards={[cardsCallArr[0]]} />
           <Text hasDropCap>
+            <ChartBar
+              title="Sed ut perspiciatis unde omnis iste natus"
+              notes="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+              values={chartPerc}
+              type="proportion"
+            />
             <Cards cards={cardsArr} />
             <p>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -303,8 +248,98 @@ const cardsCallArr = [
             </p>
           </Text>
         </Fragment>
+        <Fragment slot="column-2">
+          <ChartBar
+            title="Sed ut perspiciatis unde omnis iste natus"
+            notes="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+            values={chartBars}
+          />
+          <Text>
+            <h6>
+              SED UT PERSPICIATIS UNDE OMNIS ISTE NATUS ERROR SIT VOLUPTATEM
+              ACCUSANTIUM DOLOREMQUE LAUDANTIUM, TOTAM REM APERIAM
+            </h6>
+            <Timeline>
+              <TimelineBullet text="Maio de 2020" />
+              <Text>
+                <h6>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium
+                </h6>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                  consequuntur magni dolores eos qui ratione voluptatem sequi
+                  nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                  dolor sit amet, consectetur, adipisci velit, sed quia non
+                  numquam eius modi tempora incidunt ut labore et dolore magnam
+                  aliquam quaerat voluptatem.
+                </p>
+              </Text>
+
+              <TimelineBullet />
+              <Text>
+                <h6>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium
+                </h6>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                  consequuntur magni dolores eos qui ratione voluptatem sequi
+                  nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                  dolor sit amet, consectetur, adipisci velit, sed quia non
+                  numquam eius modi tempora incidunt ut labore et dolore magnam
+                  aliquam quaerat voluptatem.
+                </p>
+              </Text>
+            </Timeline>
+          </Text>
+        </Fragment>
       </Columns>
     </Group>
+    <CTA
+      layout="media"
+      media={img}
+      mediaType="image"
+      text={`
+      <h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </h3>
+      <p>
+        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+      </p>
+      `}
+      link={cardsArr[0].link}
+      txtColor="yellow"
+      bgColor="grey"
+    />
+
+    <CTA
+      layout="text"
+      highlightedText="ALTER DO CHÃO ALSO NEEDS TO BE RECOGNIZED"
+      text={`
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
+        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+      </p>
+      `}
+      link={cardsArr[0].link}
+      txtColor="yellow"
+      bgColor="grey"
+      imgBg={img.src}
+    />
+    <Group txtColor="#364849" bgColor="#F0EAD9">
+      <CardsCall cards={cardsCallArr} />
+    </Group>
+
     <Map
       columnAlign="right"
       floatingText={false}
@@ -467,6 +502,11 @@ const cardsCallArr = [
 
     <Group txtColor="#F0EAD9" overlay="dark" bgColor="#006949" imgBg={img.src}>
       <Column>
+        <ChartBar
+          title="Sed ut perspiciatis unde omnis iste natus"
+          notes="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+          values={chartBars}
+        />
         <VideoEmbed wide>
           <iframe
             width="560"
@@ -583,58 +623,56 @@ const cardsCallArr = [
       </Text>
     </Map>
     <Map
-    columnAlign="left"
-    floatingText={false}
-    txtColor="#F0EAD9"
-    bgColor="#000000"
-  >
-  <Text>
-    <TextPlaceholder />
-  </Text>
-  <MapView mapView="view_3" />
-    <Text>
-      <TextPlaceholder />
-    </Text>
+      columnAlign="left"
+      floatingText={false}
+      txtColor="#F0EAD9"
+      bgColor="#000000"
+    >
+      <Text>
+        <TextPlaceholder />
+      </Text>
+      <MapView mapView="view_3" />
+      <Text>
+        <TextPlaceholder />
+      </Text>
     </Map>
     <Map
-    columnAlign="left"
-    floatingText={false}
-    txtColor="#F0EAD9"
-    bgColor="#000000"
-  >
-  <MapView mapView="view_2" />
-    <Text>
-      <TextPlaceholder />
-    </Text>
-    <MapView mapView="view_2" />
-    <Text>
-      <TextPlaceholder />
-    </Text>
+      columnAlign="left"
+      floatingText={false}
+      txtColor="#F0EAD9"
+      bgColor="#000000"
+    >
+      <MapView mapView="view_2" />
+      <Text>
+        <TextPlaceholder />
+      </Text>
+      <MapView mapView="view_2" />
+      <Text>
+        <TextPlaceholder />
+      </Text>
     </Map>
-  <Map
-    columnAlign="left"
-    floatingText={true}
-    txtColor="#F0EAD9"
-    bgColor="#000000"
-  >
-    <MapView mapView="view_4" />
-    <Text>
-      <TextPlaceholder />
-    </Text>
-    <MapView mapView="view_3" />
-    <Text>
-      <TextPlaceholder />
-    </Text>
-  </Map>
-  <Map
-    columnAlign="left"
-    floatingText={false}
-    txtColor="#F0EAD9"
-    bgColor="#000000"
-  >
-    
-
-    <!-- <Group txtColor="#F0EAD9" bgColor="#006949">
+    <Map
+      columnAlign="left"
+      floatingText={true}
+      txtColor="#F0EAD9"
+      bgColor="#000000"
+    >
+      <MapView mapView="view_4" />
+      <Text>
+        <TextPlaceholder />
+      </Text>
+      <MapView mapView="view_3" />
+      <Text>
+        <TextPlaceholder />
+      </Text>
+    </Map>
+    <Map
+      columnAlign="left"
+      floatingText={false}
+      txtColor="#F0EAD9"
+      bgColor="#000000"
+    >
+      <!-- <Group txtColor="#F0EAD9" bgColor="#006949">
       <ColumnSticky paddingTop paddingBottom>
         <h1 slot="title">
           Voluptate eu et labore ut ea tempor aliqua ipsum enim et aliqua dolor
@@ -677,13 +715,13 @@ const cardsCallArr = [
       </Text>
     </Map> -->
 
-    <!-- <Map columnAlign="right" floatingText={false} txtColor="#F0EAD9" bgColor="#000000" mapView="view_1">
+      <!-- <Map columnAlign="right" floatingText={false} txtColor="#F0EAD9" bgColor="#000000" mapView="view_1">
       <Text>
         <TextPlaceholder />
       </Text>
     </Map> -->
 
-    <!-- <Group txtColor="#F0EAD9" overlay="dark" bgColor="#006949" imgBg={img.src} >
+      <!-- <Group txtColor="#F0EAD9" overlay="dark" bgColor="#006949" imgBg={img.src} >
       <Columns invertOnMobile alignment="33-66">
         <Fragment slot="column-2">
           <VideoEmbed wide>
@@ -754,16 +792,17 @@ const cardsCallArr = [
         </Text>
       </Column>
     </Group> -->
+    </Map>
   </main>
-</Layout>
 
-<style lang="scss">
-  main {
-    background-color: var(--clr-bg, transparent);
+  <style lang="scss">
+    main {
+      background-color: var(--clr-bg, transparent);
 
-    :global(> .spacer) {
-      position: relative;
-      background-color: inherit;
+      :global(> .spacer) {
+        position: relative;
+        background-color: inherit;
+      }
     }
-  }
-</style>
+  </style>
+</Layout>

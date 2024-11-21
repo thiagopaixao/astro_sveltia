@@ -30,7 +30,7 @@ const { cards } = Astro.props;
 
     &:not(:first-child),
     & :global(+ *) {
-      margin-top: var(--atnl-gutter);
+      margin-top: var(--mt-m);
     }
 
     @include media-break-up(m) {
@@ -38,7 +38,7 @@ const { cards } = Astro.props;
     }
 
     :global(.text > * +) & {
-      margin-top: var(--atnl-gutter);
+      margin-top: var(--mt-m);
     }
     
     :global(.group__content >) & {

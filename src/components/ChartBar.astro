@@ -1,0 +1,149 @@
+---
+const { title, notes, type, values } = Astro.props;
+---
+
+<div class:list={["chart-bar", type && `chart-bar--${type}`]}>
+  <span class="chart-bar__title">{title}</span>
+
+  <div class="chart-bar__values">
+    <div class="chart-bar__bars">
+      {
+        values &&
+          values.map((data) => (
+            //valores:
+            //data.color
+            //data.number
+            //data.numberPercent
+            //data.label
+            <div
+              class="chart-bar__item"
+              style={`--clr-chart:${data.color}; --data-perc:${data.numberPercent}%`}
+            >
+              <span class="chart-bar__label">{data.label}</span>
+              <div class="chart-bar__bar">
+                <span class="chart-bar__number">{data.number}</span>
+              </div>
+            </div>
+          ))
+      }
+    </div>
+    <div class="chart-bar__ghost-values">
+      {values && values.map((data) => <span class="chart-bar__number">{data.number}</span>)}
+    </div>
+  </div>
+
+  <span class="chart-bar__notes">{notes}</span>
+</div>
+
+<style lang="scss">
+  @use "../assets/styles/config/config" as *;
+
+  .chart-bar {
+    $self: &;
+    &:not(:first-child),
+    & :global(+ *) {
+      margin-top: var(--mt-m);
+    }
+
+    &__title {
+      @include type('h-m');
+      display: block;
+      margin-bottom: 40px;
+    }
+
+    &__values {
+      display: flex;
+    }
+
+    &__number {
+      @include type('h-xs');
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: var(--data-perc);
+      transform: translate(10px, -50%);
+
+      #{$self}--proportion & {
+        width: 4ch;
+        text-align: right;
+        left: 100%;
+      }
+    }
+
+    &__bars {
+      flex: 1;
+      padding-right: 10px;
+    }
+
+    &__ghost-values {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+
+      > span {
+        position: static;
+      }
+    }
+
+    &__item {
+      + .chart-bar__item {
+        margin-top: 24px;
+      }
+    }
+
+    &__label {
+      @include type('h-xs');
+      font-weight: 400;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    &__bar {
+      width: 100%;
+      height: 20px;
+      position: relative;
+      
+      &::after {
+        content: '';
+        width: var(--data-perc);
+        height: 100%;
+        display: block;
+        background-color: var(--clr-chart, #000);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      
+     
+      &::after {
+        content: '';
+        width: var(--data-perc);
+        height: 100%;
+        display: block;
+        background-color: var(--clr-chart, #000);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      #{$self}--proportion & {
+        &::before {
+          content: '';
+          width: 100%;
+          height: 100%;
+          display: block;
+          background-color: color-mix(in srgb, var(--clr-chart, #000) 60%, #ffffff 40%);
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+
+    &__notes {
+      @include type('b-s');
+      margin-top: 40px;
+      display: block;
+    }
+  }
+</style>
