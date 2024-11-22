@@ -48,6 +48,11 @@ const { title, notes, values } = Astro.props;
   @use "../assets/styles/config/config" as *;
 
   .chart-percentage {
+    &:not(:first-child),
+    & :global(+ *) {
+      margin-top: var(--mt-m);
+    }
+
     &__title {
       @include type("h-m");
       display: block;

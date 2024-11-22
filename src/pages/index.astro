@@ -9,6 +9,9 @@ import MapView from "../components/MapView.astro";
 import Image from "astro/components/Image.astro";
 import img from "../assets/images/group-bg.png";
 import thumb from "../assets/images/thumb.png";
+import logo from "../assets/images/logo-1.jpg";
+import logo2 from "../assets/images/logo-2.png";
+import logo3 from "../assets/images/logo-3.png";
 import imgMap from "../assets/images/map.png";
 import Spacer from "../components/Spacer.astro";
 import ColumnSticky from "../components/ColumnSticky.astro";
@@ -27,6 +30,7 @@ import CTA from "../components/CTA.astro";
 import CardsCall from "../components/CardsCall.astro";
 import ChartBar from "../components/ChartBar.astro";
 import ChartPercentage from "../components/ChartPercentage.astro";
+import LogosGroup from "../components/LogosGroup.astro";
 
 const cardsArr = [
   {
@@ -146,6 +150,82 @@ const chartPerc = [
     label: "Outros",
   },
 ];
+
+const logos = [
+  {
+    image: logo,
+    link: {
+      url: '#',
+      target: '_blank',
+      title: 'Lorem Logo'
+    },
+  },
+  {
+    image: logo2,
+    link: {
+      url: '#',
+      target: '_self',
+      title: 'Ipsum dolor logo'
+    },
+  },
+  {
+    image: logo3,
+    link: {
+      url: '#',
+      target: '_blank',
+      title: 'Sit amet lorem logo'
+    },
+  },
+  {
+    image: logo,
+    link: {
+      url: '#',
+      target: '_blank',
+      title: 'Lorem Logo'
+    },
+  },
+  {
+    image: logo2,
+    link: {
+      url: '#',
+      target: '_self',
+      title: 'Ipsum dolor logo'
+    },
+  },
+  {
+    image: logo3,
+    link: {
+      url: '#',
+      target: '_blank',
+      title: 'Sit amet lorem logo'
+    },
+  },
+  {
+    image: logo,
+    link: {
+      url: '#',
+      target: '_blank',
+      title: 'Lorem Logo'
+    },
+  },
+  {
+    image: logo2,
+    link: {
+      url: '#',
+      target: '_self',
+      title: 'Ipsum dolor logo'
+    },
+  },
+  {
+    image: logo3,
+    link: {
+      url: '#',
+      target: '_blank',
+      title: 'Sit amet lorem logo'
+    },
+  },
+  
+];
 ---
 
 <Layout title="Documental.xyz">
@@ -180,19 +260,20 @@ const chartPerc = [
       </ColumnSticky>
     </Group>
     <Group txtColor="#364849" bgColor="#F0EAD9">
+      <LogosGroup title="Apoio" logos={logos} />
       <Columns>
         <Fragment slot="column-1">
           <Text hasDropCap>
-            <ChartPercentage 
-              title="Autem vel eum iure reprehenderit qui in ea "
-              notes="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
-              values={chartPerc}
-            />
             <ChartBar
               title="Sed ut perspiciatis unde omnis iste natus"
               notes="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
               values={chart2}
               type="proportion"
+            />
+            <ChartPercentage 
+              title="Autem vel eum iure reprehenderit qui in ea "
+              notes="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+              values={chartPerc}
             />
             <Cards cards={cardsArr} />
             <p>
@@ -531,6 +612,8 @@ const chartPerc = [
 
     <Group txtColor="#F0EAD9" overlay="dark" bgColor="#006949" imgBg={img.src}>
       <Column>
+        <LogosGroup title="Apoio" logos={logos} />
+
         <ChartBar
           title="Sed ut perspiciatis unde omnis iste natus"
           notes="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
