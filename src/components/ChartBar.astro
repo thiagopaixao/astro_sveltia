@@ -1,4 +1,5 @@
 ---
+import Caption from "./Caption.astro";
 const { title, notes, type, values } = Astro.props;
 ---
 
@@ -28,11 +29,20 @@ const { title, notes, type, values } = Astro.props;
       }
     </div>
     <div class="chart-bar__ghost-values">
-      {values && values.map((data) => <span class="chart-bar__number">{data.number}</span>)}
+      {
+        values &&
+          values.map((data) => (
+            <span class="chart-bar__number">{data.number}</span>
+          ))
+      }
     </div>
   </div>
 
-  <span class="chart-bar__notes">{notes}</span>
+  <div class="chart-bar__notes">
+    <Caption>
+      {notes}
+    </Caption>
+  </div>
 </div>
 
 <style lang="scss">
@@ -46,7 +56,7 @@ const { title, notes, type, values } = Astro.props;
     }
 
     &__title {
-      @include type('h-m');
+      @include type("h-m");
       display: block;
       margin-bottom: 40px;
     }
@@ -56,7 +66,7 @@ const { title, notes, type, values } = Astro.props;
     }
 
     &__number {
-      @include type('h-xs');
+      @include type("h-xs");
       display: block;
       position: absolute;
       top: 50%;
@@ -92,7 +102,7 @@ const { title, notes, type, values } = Astro.props;
     }
 
     &__label {
-      @include type('h-xs');
+      @include type("h-xs");
       font-weight: 400;
       display: block;
       margin-bottom: 10px;
@@ -102,9 +112,9 @@ const { title, notes, type, values } = Astro.props;
       width: 100%;
       height: 20px;
       position: relative;
-      
+
       &::after {
-        content: '';
+        content: "";
         width: var(--data-perc);
         height: 100%;
         display: block;
@@ -113,10 +123,9 @@ const { title, notes, type, values } = Astro.props;
         top: 0;
         left: 0;
       }
-      
-     
+
       &::after {
-        content: '';
+        content: "";
         width: var(--data-perc);
         height: 100%;
         display: block;
@@ -128,11 +137,15 @@ const { title, notes, type, values } = Astro.props;
 
       #{$self}--proportion & {
         &::before {
-          content: '';
+          content: "";
           width: 100%;
           height: 100%;
           display: block;
-          background-color: color-mix(in srgb, var(--clr-chart, #000) 60%, #ffffff 40%);
+          background-color: color-mix(
+            in srgb,
+            var(--clr-chart, #000) 60%,
+            #ffffff 40%
+          );
           position: absolute;
           top: 0;
           left: 0;
@@ -141,7 +154,6 @@ const { title, notes, type, values } = Astro.props;
     }
 
     &__notes {
-      @include type('b-s');
       margin-top: 40px;
       display: block;
     }
