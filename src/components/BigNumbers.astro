@@ -65,8 +65,11 @@ const { alignment = "caption-bottom", items } = Astro.props;
 
       #{$self}__holder {
         grid-column: board-full;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+
+        @include media-break-up(l) {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+        }
       }
     }
   }
