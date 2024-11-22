@@ -32,6 +32,7 @@ import ChartBar from "../components/ChartBar.astro";
 import ChartPercentage from "../components/ChartPercentage.astro";
 import LogosGroup from "../components/LogosGroup.astro";
 import BigNumbers from "../components/BigNumbers.astro";
+import Compare from "../components/Compare.astro";
 
 const cardsArr = [
   {
@@ -260,6 +261,11 @@ const logos = [
       </ColumnSticky>
     </Group>
     <Group txtColor="#364849" bgColor="#F0EAD9">
+      <Compare
+        caption="Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis"
+        imageLeft="https://documental.xyz/assets/main/expulsion/toxicriver_before2.png"
+        imageRight="https://documental.xyz/assets/main/expulsion/toxicriver_after2.png"
+      />
       <LogosGroup title="Apoio" logos={logos} />
       <BigNumbers
         items={[
@@ -269,7 +275,8 @@ const logos = [
           },
           {
             number: "100 km",
-            caption: "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
+            caption:
+              "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
           },
           {
             number: "R$ 7.000.000",
@@ -277,7 +284,8 @@ const logos = [
           },
           {
             number: "100 km",
-            caption: "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
+            caption:
+              "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
           },
           {
             number: "300.000",
@@ -285,13 +293,18 @@ const logos = [
           },
           {
             number: "R$ 7.000.000",
-            caption: "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
+            caption:
+              "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
           },
         ]}
       />
       <Columns>
         <Fragment slot="column-1">
-          
+          <Compare
+            caption="Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis"
+            imageLeft="https://documental.xyz/assets/main/expulsion/toxicriver_before2.png"
+            imageRight="https://documental.xyz/assets/main/expulsion/toxicriver_after2.png"
+          />
           <Text hasDropCap>
             <ChartBar
               title="Sed ut perspiciatis unde omnis iste natus"
@@ -391,7 +404,8 @@ const logos = [
               },
               {
                 number: "100 km",
-                caption: "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
+                caption:
+                  "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
               },
               {
                 number: "R$ 7.000.000",
@@ -399,7 +413,8 @@ const logos = [
               },
               {
                 number: "100 km",
-                caption: "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
+                caption:
+                  "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
               },
               {
                 number: "300.000",
@@ -407,7 +422,8 @@ const logos = [
               },
               {
                 number: "R$ 7.000.000",
-                caption: "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
+                caption:
+                  "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
               },
             ]}
           />

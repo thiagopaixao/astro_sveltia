@@ -1,0 +1,257 @@
+---
+import { Image } from "astro:assets";
+import Caption from "./Caption.astro";
+
+const { caption, imageLeft, imageRight } = Astro.props;
+---
+
+<figure class="compare">
+  <div class="compare__holder">
+    <div class="compare-controller">
+      <div class="compare-controller__center"></div>
+    </div>
+    <div class="compare__images">
+      <div class="compare__image -left">
+        <Image src={imageLeft} alt="" width="100" height="100" />
+      </div>
+      <div class="compare__image -right">
+        <Image src={imageRight} alt="" width="100" height="100" />
+      </div>
+    </div>
+  </div>
+  {
+    caption && (
+      <figcaption class="compare__caption">
+        <Caption>{caption}</Caption>
+      </figcaption>
+    )
+  }
+</figure>
+
+<style lang="scss">
+  @use "../assets/styles/config/config" as *;
+  @use "../assets/styles/utils/grrr/grrr" as *;
+  @use "../assets/styles/globals/grrr" as *;
+
+  .compare {
+    --compare-width: 50%;
+    $self: &;
+    position: relative;
+
+    :global(.group__content) > & {
+      @extend %grrr--board;
+    }
+
+    &__holder {
+      position: relative;
+      overflow: hidden;
+
+      :global(.group__content) > #{$self} & {
+        grid-column: board-start 2 / board-end 11;
+
+        @include media-break-down(x) {
+          grid-column: board-start 1 / board-end 12;
+        }
+
+        @include media-break-down(m) {
+          grid-column: full;
+        }
+      }
+    }
+
+    &__images {
+      position: relative;
+      cursor: pointer;
+    }
+
+    &__image {
+      overflow: hidden;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 center;
+        pointer-events: none;
+        user-select: none;
+      }
+
+      &.-left {
+        width: var(--compare-width, 50%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: .3s ease;
+
+        .-dragging & {
+          transition: none;
+        }
+      }
+    }
+
+    &__caption {
+      :global(.group__content) > #{$self} & {
+        grid-column: board-start 2 / board-end 11;
+
+        @include media-break-down(x) {
+          grid-column: board-start 1 / board-end 12;
+        }
+
+        @include media-break-down(m) {
+          grid-column: board-full;
+        }
+      }
+    }
+  }
+
+  .compare-controller {
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: var(--compare-width, 50%);
+    z-index: 2;
+    transform: translateX(-50%);
+    pointer-events: all;
+    will-change: left;
+    transition: .3s ease;
+    cursor: pointer;
+
+    .-dragging & {
+      transition: none;
+    }
+
+    &::after {
+      content: "";
+      width: 4px;
+      height: 100%;
+      display: block;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &:hover {
+      .compare-controller__center::before {
+        transform: translate(-5px, -50%);
+      }
+
+      .compare-controller__center::after {
+        transform: translate(5px, -50%);
+      }
+    }
+
+    &__center {
+      width: 20px;
+      height: 90px;
+      border-radius: 1px;
+      background-image: url("data:image/svg+xml,%3Csvg width='16' height='86' viewBox='0 0 16 86' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='2' fill='%23D9D9D9'/%3E%3Crect y='4' width='16' height='2' fill='%23D9D9D9'/%3E%3Crect y='8' width='16' height='2' fill='%23D9D9D9'/%3E%3Crect y='12' width='16' height='2' fill='%23D9D9D9'/%3E%3Crect y='16' width='16' height='2' fill='%23D9D9D9'/%3E%3Crect y='20' width='16' height='2' fill='%23D9D9D9'/%3E%3Crect y='24' width='16' height='2' fill='%23D9D9D9'/%3E%3Crect y='28' width='16' height='2' fill='%23D9D9D9'/%3E%3Crect y='32' width='16' height='2' fill='%23D9D9D9'/%3E%3Crect y='36' width='16' height='2' fill='%23D9D9D9'/%3E%3Crect y='40' width='16' height='2' fill='%23D9D9D9'/%3E%3Crect y='44' width='16' height='2' fill='%23D9D9D9'/%3E%3Crect y='48' width='16' height='2' fill='%23D9D9D9'/%3E%3Crect y='52' width='16' height='2' fill='%23D9D9D9'/%3E%3Crect y='56' width='16' height='2' fill='%23D9D9D9'/%3E%3Crect y='60' width='16' height='2' fill='%23D9D9D9'/%3E%3Crect y='64' width='16' height='2' fill='%23D9D9D9'/%3E%3Crect y='68' width='16' height='2' fill='%23D9D9D9'/%3E%3Crect y='72' width='16' height='2' fill='%23D9D9D9'/%3E%3Crect y='76' width='16' height='2' fill='%23D9D9D9'/%3E%3Crect y='80' width='16' height='2' fill='%23D9D9D9'/%3E%3Crect y='84' width='16' height='2' fill='%23D9D9D9'/%3E%3C/svg%3E%0A");
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+
+      &::before,
+      &::after {
+        content: "";
+        width: 36px;
+        height: 100%;
+        display: block;
+        background-image: url("data:image/svg+xml,%3Csvg width='16' height='19' viewBox='0 0 16 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 9.23761L16 0V18.4752L0 9.23761Z' fill='white'/%3E%3C/svg%3E%0A");
+        background-position: 0 center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        transform: translate(0, -50%);
+        transition: 0.3s ease;
+      }
+
+      &::after {
+        left: 12px;
+        transform: translate(0, -50%);
+        background-image: url("data:image/svg+xml,%3Csvg width='16' height='19' viewBox='0 0 16 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 9.23749L0 18.4751L-1.61515e-06 -0.000111135L16 9.23749Z' fill='white'/%3E%3C/svg%3E%0A");
+        background-position: 100% center;
+      }
+    }
+  }
+</style>
+
+<script>
+  function initImageComparison(containerElement) {
+    const resizeHandle = containerElement.querySelector(".compare-controller");
+    const compareContainer = containerElement;
+
+    function handleMove(event) {
+      event.preventDefault();
+
+      const containerRect = compareContainer.getBoundingClientRect();
+      let x;
+
+      if (event.touches) {
+        x = event.touches[0].clientX - containerRect.left;
+      } else {
+        x = event.clientX - containerRect.left;
+      }
+      
+      toggleDraggableActive(true);
+      setXPosition(x, containerRect);
+    }
+
+    function setXPosition(x, containerRect) {
+      const percentage = (x / containerRect.width) * 100;
+      const clampedPercentage = Math.min(Math.max(percentage, 0), 100);
+
+      compareContainer.style.setProperty('--compare-width', `${clampedPercentage}%`);
+    }
+
+    function handleClick(event) {
+      event.preventDefault();
+
+      const containerRect = compareContainer.getBoundingClientRect();
+      const x = event.clientX - containerRect.left;
+
+      setXPosition(x, containerRect);
+    }
+
+    function toggleDraggableActive(add = false) {
+      compareContainer.classList.toggle('-dragging', add);
+    }
+
+    function addEventListeners() {
+      resizeHandle.addEventListener("mousedown", (e) => {
+        e.preventDefault();
+        document.addEventListener("mousemove", handleMove);
+        document.addEventListener("mouseup", removeEventListeners);
+      });
+      
+      compareContainer.addEventListener("click", handleClick);
+
+      resizeHandle.addEventListener("touchstart", (e) => {
+        e.preventDefault();
+        document.addEventListener("touchmove", handleMove);
+        document.addEventListener("touchend", removeEventListeners);
+      });
+    }
+
+    function removeEventListeners() {
+      document.removeEventListener("mousemove", handleMove);
+      document.removeEventListener("mouseup", removeEventListeners);
+      document.removeEventListener("touchmove", handleMove);
+      document.removeEventListener("click", handleClick);
+      document.removeEventListener("touchend", removeEventListeners);
+      toggleDraggableActive();
+    }
+
+    addEventListeners();
+  }
+
+  document.querySelectorAll(".compare__holder").forEach(initImageComparison);
+</script>
