@@ -26,6 +26,7 @@ import Button from "../components/Button.astro";
 import CTA from "../components/CTA.astro";
 import CardsCall from "../components/CardsCall.astro";
 import ChartBar from "../components/ChartBar.astro";
+import ChartPercentage from "../components/ChartPercentage.astro";
 
 const cardsArr = [
   {
@@ -100,7 +101,7 @@ const chartBars = [
   },
 ];
 
-const chartPerc = [
+const chart2 = [
   {
     color: "#FF7967",
     number: "45%",
@@ -125,6 +126,24 @@ const chartPerc = [
     number: "100%",
     numberPercent: 100,
     label: "Providing remedies",
+  },
+];
+
+const chartPerc = [
+  {
+    color: "#DDCE27",
+    number: 25,
+    label: "Governo",
+  },
+  {
+    color: "#006949",
+    number: 40,
+    label: "Empresa",
+  },
+  {
+    color: "#FF7967",
+    number: 35,
+    label: "Outros",
   },
 ];
 ---
@@ -164,10 +183,15 @@ const chartPerc = [
       <Columns>
         <Fragment slot="column-1">
           <Text hasDropCap>
+            <ChartPercentage 
+              title="Autem vel eum iure reprehenderit qui in ea "
+              notes="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+              values={chartPerc}
+            />
             <ChartBar
               title="Sed ut perspiciatis unde omnis iste natus"
               notes="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
-              values={chartPerc}
+              values={chart2}
               type="proportion"
             />
             <Cards cards={cardsArr} />
@@ -249,6 +273,11 @@ const chartPerc = [
           </Text>
         </Fragment>
         <Fragment slot="column-2">
+          <ChartPercentage 
+              title="Autem vel eum iure reprehenderit qui in ea "
+              notes="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+              values={chartPerc}
+            />
           <ChartBar
             title="Sed ut perspiciatis unde omnis iste natus"
             notes="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"

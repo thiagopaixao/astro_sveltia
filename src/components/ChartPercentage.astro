@@ -1,0 +1,97 @@
+---
+import Caption from "./Caption.astro";
+
+const { title, notes, values } = Astro.props;
+---
+
+<div class="chart-percentage">
+  <span class="chart-percentage__title">{title}</span>
+  <div class="chart-percentage__bars">
+    {
+      values &&
+        values.map((data) => (
+          //valores:
+          //data.color
+          //data.number
+          //data.label
+          <div
+            class="chart-percentage__bar"
+            style={`--clr-chart:${data.color}; --data-perc:${data.number}%`}
+          />
+        ))
+    }
+  </div>
+  <div class="chart-percentage__captions">
+    {
+      values &&
+        values.map((data) => (
+          <div
+            class="chart-percentage__caption"
+            style={`--clr-chart:${data.color};`}
+          >
+            <span class="chart-percentage__label">
+              {data?.label ? data.label + " - " : ""}
+              <strong>{data.number + "%"}</strong>
+            </span>
+          </div>
+        ))
+    }
+  </div>
+  <div class="chart-percentage__notes">
+    <Caption>
+      {notes}
+    </Caption>
+  </div>
+</div>
+
+<style lang="scss">
+  @use "../assets/styles/config/config" as *;
+
+  .chart-percentage {
+    &__title {
+      @include type("h-m");
+      display: block;
+      margin-bottom: 40px;
+    }
+
+    &__bars {
+      display: flex;
+    }
+
+    &__bar {
+      flex-basis: var(--data-perc);
+      height: 100px;
+      background-color: var(--clr-chart);
+    }
+
+    &__captions {
+      margin-top: 24px;
+     
+    }
+
+    &__caption {
+      @include type("c-m");
+      margin-right: 32px;
+      display: inline-block;
+      vertical-align: middle;
+
+      &::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        background-color: var(--clr-chart);
+        margin-right: 8px;
+        transform: translateY(2px);
+      }
+    }
+
+    &__label {
+      display: inline-block;
+    }
+
+    &__notes {
+      margin-top: 40px;
+    }
+  }
+</style>
