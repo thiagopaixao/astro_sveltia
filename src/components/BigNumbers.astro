@@ -1,0 +1,74 @@
+---
+import Caption from "./Caption.astro";
+const { alignment = "caption-bottom", items } = Astro.props;
+//alignment recebe caption-bottom ou caption-top
+---
+
+<div class:list={["big-numbers", `big-numbers--${alignment}`]}>
+  <div class="big-numbers__holder">
+    {
+      items &&
+        items.map((item) => (
+          //item.number
+          //item.caption
+          <div class="big-numbers__item">
+            {item?.number && (
+              <span class="big-numbers__number">{item.number}</span>
+            )}
+            {item?.caption && <Caption>{item.caption}</Caption>}
+          </div>
+        ))
+    }
+  </div>
+</div>
+<style lang="scss">
+  @use "../assets/styles/config/config" as *;
+  @use "../assets/styles/utils/grrr/grrr" as *;
+  @use "../assets/styles/globals/grrr" as *;
+
+  .big-numbers {
+    $self: &;
+    color: var(--clr-text);
+    @extend %grrr--board;
+    display: block;
+    
+    &__holder {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      row-gap: 48px;
+      column-gap: var(--atnl-gutter);
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      border-top: 5px solid currentColor;
+      padding-top: 16px;   
+      
+      #{$self}--caption-top & {
+        flex-direction: column-reverse;
+      }
+    }
+
+    &__number {
+      @include type('d-xs');
+      font-weight: 500;
+    }
+
+    :global(.caption) {
+      margin-top: 0;
+    }
+    
+    :global(.group__content) > & {
+      @extend %grrr--board;
+
+      #{$self}__holder {
+        grid-column: board-full;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+
+</style>

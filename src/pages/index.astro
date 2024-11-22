@@ -31,6 +31,7 @@ import CardsCall from "../components/CardsCall.astro";
 import ChartBar from "../components/ChartBar.astro";
 import ChartPercentage from "../components/ChartPercentage.astro";
 import LogosGroup from "../components/LogosGroup.astro";
+import BigNumbers from "../components/BigNumbers.astro";
 
 const cardsArr = [
   {
@@ -155,76 +156,75 @@ const logos = [
   {
     image: logo,
     link: {
-      url: '#',
-      target: '_blank',
-      title: 'Lorem Logo'
+      url: "#",
+      target: "_blank",
+      title: "Lorem Logo",
     },
   },
   {
     image: logo2,
     link: {
-      url: '#',
-      target: '_self',
-      title: 'Ipsum dolor logo'
+      url: "#",
+      target: "_self",
+      title: "Ipsum dolor logo",
     },
   },
   {
     image: logo3,
     link: {
-      url: '#',
-      target: '_blank',
-      title: 'Sit amet lorem logo'
+      url: "#",
+      target: "_blank",
+      title: "Sit amet lorem logo",
     },
   },
   {
     image: logo,
     link: {
-      url: '#',
-      target: '_blank',
-      title: 'Lorem Logo'
+      url: "#",
+      target: "_blank",
+      title: "Lorem Logo",
     },
   },
   {
     image: logo2,
     link: {
-      url: '#',
-      target: '_self',
-      title: 'Ipsum dolor logo'
+      url: "#",
+      target: "_self",
+      title: "Ipsum dolor logo",
     },
   },
   {
     image: logo3,
     link: {
-      url: '#',
-      target: '_blank',
-      title: 'Sit amet lorem logo'
+      url: "#",
+      target: "_blank",
+      title: "Sit amet lorem logo",
     },
   },
   {
     image: logo,
     link: {
-      url: '#',
-      target: '_blank',
-      title: 'Lorem Logo'
+      url: "#",
+      target: "_blank",
+      title: "Lorem Logo",
     },
   },
   {
     image: logo2,
     link: {
-      url: '#',
-      target: '_self',
-      title: 'Ipsum dolor logo'
+      url: "#",
+      target: "_self",
+      title: "Ipsum dolor logo",
     },
   },
   {
     image: logo3,
     link: {
-      url: '#',
-      target: '_blank',
-      title: 'Sit amet lorem logo'
+      url: "#",
+      target: "_blank",
+      title: "Sit amet lorem logo",
     },
   },
-  
 ];
 ---
 
@@ -261,8 +261,37 @@ const logos = [
     </Group>
     <Group txtColor="#364849" bgColor="#F0EAD9">
       <LogosGroup title="Apoio" logos={logos} />
+      <BigNumbers
+        items={[
+          {
+            number: "300.000",
+            caption: "Sed ut perspiciatis unde omnis iste natus",
+          },
+          {
+            number: "100 km",
+            caption: "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
+          },
+          {
+            number: "R$ 7.000.000",
+            caption: "Sed ut perspiciatis unde omnis iste natus",
+          },
+          {
+            number: "100 km",
+            caption: "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
+          },
+          {
+            number: "300.000",
+            caption: "Sed ut perspiciatis unde omnis iste natus",
+          },
+          {
+            number: "R$ 7.000.000",
+            caption: "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
+          },
+        ]}
+      />
       <Columns>
         <Fragment slot="column-1">
+          
           <Text hasDropCap>
             <ChartBar
               title="Sed ut perspiciatis unde omnis iste natus"
@@ -270,7 +299,7 @@ const logos = [
               values={chart2}
               type="proportion"
             />
-            <ChartPercentage 
+            <ChartPercentage
               title="Autem vel eum iure reprehenderit qui in ea "
               notes="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
               values={chartPerc}
@@ -354,11 +383,39 @@ const logos = [
           </Text>
         </Fragment>
         <Fragment slot="column-2">
-          <ChartPercentage 
-              title="Autem vel eum iure reprehenderit qui in ea "
-              notes="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
-              values={chartPerc}
-            />
+          <BigNumbers
+            items={[
+              {
+                number: "300.000",
+                caption: "Sed ut perspiciatis unde omnis iste natus",
+              },
+              {
+                number: "100 km",
+                caption: "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
+              },
+              {
+                number: "R$ 7.000.000",
+                caption: "Sed ut perspiciatis unde omnis iste natus",
+              },
+              {
+                number: "100 km",
+                caption: "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
+              },
+              {
+                number: "300.000",
+                caption: "Sed ut perspiciatis unde omnis iste natus",
+              },
+              {
+                number: "R$ 7.000.000",
+                caption: "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
+              },
+            ]}
+          />
+          <ChartPercentage
+            title="Autem vel eum iure reprehenderit qui in ea "
+            notes="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+            values={chartPerc}
+          />
           <ChartBar
             title="Sed ut perspiciatis unde omnis iste natus"
             notes="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
