@@ -33,6 +33,6 @@ export default defineConfig({
     },
   },
   routes: {
-    '/': '/home/',
+    '/documental-frontend': '/home/',
   },
 });
