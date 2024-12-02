@@ -1,0 +1,56 @@
+---
+import Layout from "../layouts/Layout.astro";
+import MapBox from "../components/MapBox.astro";
+import IntroductionSection from "./IntroductionSection.astro";
+import MainContentSection from "./MainContentSection.astro";
+import CallToActionSection from "./CallToActionSection.astro";
+import CardsCallSection from "./CardsCallSection.astro";
+import MapTimelineSection from "./MapTimelineSection.astro";
+import AdditionalCTASection from "./AdditionalCTASection.astro";
+import AdditionalMapSection from "./AdditionalMapSection.astro";
+import SupportSection from "./SupportSection.astro";
+import MapSection from "./MapSection.astro";
+---
+
+<Layout title="Documental.xyz">
+    <main>
+        {/* MapBox section (always at the top) */}
+        <MapBox />
+
+        {/* Introduction section */}
+        <IntroductionSection />
+
+        {/* Main content section */}
+        <MainContentSection />
+
+        {/* Call to Action (CTA) section */}
+        <CallToActionSection /> 
+
+        {/* Additional CTA section with highlight */}
+        <AdditionalCTASection />
+
+        {/* Cards call section */}
+        <CardsCallSection />
+
+        {/* Map timeline section */}
+        <MapTimelineSection />
+
+        {/* Additional map section */}
+        <AdditionalMapSection />
+
+        <SupportSection />
+
+        <MapSection />
+    </main>
+
+    <style lang="scss">
+        main {
+            background-color: var(--clr-bg, transparent);
+
+            :global(> .spacer) {
+                position: relative;
+                background-color: inherit;
+            }
+        }
+    </style>
+</Layout>
