@@ -1,0 +1,448 @@
+---
+import Group from "../../components/Group.astro";
+import Compare from "../../components/Compare.astro";
+import LogosGroup from "../../components/LogosGroup.astro";
+import BigNumbers from "../../components/BigNumbers.astro";
+import logo from "../../assets/images/logo-1.jpg";
+import logo2 from "../../assets/images/logo-2.png";
+import logo3 from "../../assets/images/logo-3.png";
+import Columns from "../../components/Columns.astro";
+import Text from "../../components/Text.astro";
+import ChartBar from "../../components/ChartBar.astro";
+import ChartPercentage from "../../components/ChartPercentage.astro";
+import Cards from "../../components/Cards.astro";
+import Button from "../../components/Button.astro";
+import InnerColumns from "../../components/InnerColumns.astro";
+import Timeline from "../../components/Timeline.astro";
+import TimelineBullet from "../../components/TimelineBullet.astro";
+
+
+  const bigNumbersItems = [
+    {
+      number: "300.000",
+      caption: "Sed ut perspiciatis unde omnis iste natus",
+    },
+    {
+      number: "100 km",
+      caption: "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
+    },
+    {
+      number: "R$ 7.000.000",
+      caption: "Sed ut perspiciatis unde omnis iste natus",
+    },
+    {
+      number: "100 km",
+      caption: "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
+    },
+    {
+      number: "300.000",
+      caption: "Sed ut perspiciatis unde omnis iste natus",
+    },
+    {
+      number: "R$ 7.000.000",
+      caption: "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
+    },
+  ];
+
+  const logos = [
+    {
+      image: logo,
+      link: {
+        url: "#",
+        target: "_blank",
+        title: "Lorem Logo",
+      },
+    },
+    {
+      image: logo2,
+      link: {
+        url: "#",
+        target: "_self",
+        title: "Ipsum dolor logo",
+      },
+    },
+    {
+      image: logo3,
+      link: {
+        url: "#",
+        target: "_blank",
+        title: "Sit amet lorem logo",
+      },
+    },
+    {
+      image: logo,
+      link: {
+        url: "#",
+        target: "_blank",
+        title: "Dolor Sit Amet Logo",
+      },
+    },
+    {
+      image: logo2,
+      link: {
+        url: "#",
+        target: "_self",
+        title: "Consectetur Logo",
+      },
+    },
+    {
+      image: logo3,
+      link: {
+        url: "#",
+        target: "_blank",
+        title: "Adipisci Logo",
+      },
+    },
+    {
+      image: logo,
+      link: {
+        url: "#",
+        target: "_blank",
+        title: "Dolor Sit Amet Logo",
+      },
+    },
+    {
+      image: logo2,
+      link: {
+        url: "#",
+        target: "_self",
+        title: "Consectetur Logo",
+      },
+    },
+    {
+      image: logo3,
+      link: {
+        url: "#",
+        target: "_blank",
+        title: "Adipisci Logo",
+      },
+    },
+  ];
+
+  const chart2 = [
+  {
+    color: "#FF7967",
+    number: "45%",
+    numberPercent: 45,
+    label: "Flexible standing requirement",
+  },
+  {
+    color: "#FF7967",
+    number: "95%",
+    numberPercent: 95,
+    label: "Reducing barriers to proving causation",
+  },
+
+  {
+    color: "#FF7967",
+    number: "20%",
+    numberPercent: 20,
+    label: "Methods for ensuring baseline protections",
+  },
+  {
+    color: "#FF7967",
+    number: "100%",
+    numberPercent: 100,
+    label: "Providing remedies",
+  },
+];
+
+
+const chartPerc = [
+  {
+    color: "#DDCE27",
+    number: 25,
+    label: "Governo",
+  },
+  {
+    color: "#006949",
+    number: 40,
+    label: "Empresa",
+  },
+  {
+    color: "#FF7967",
+    number: 35,
+    label: "Outros",
+  },
+];
+
+const cardsArr = [
+  {
+    icon: '<span class="material-symbols-outlined">construction</span>',
+    title: "Open Source",
+    text: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.",
+    link: { text: "Botão", target: "_self", url: "#" },
+  },
+  {
+    icon: '<span class="material-symbols-outlined">construction</span>',
+    title: "Lorem Ipsum",
+    text: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.",
+    link: { text: "Botão", target: "_self", url: "#" },
+  },
+  {
+    icon: '<span class="material-symbols-outlined">construction</span>',
+    title: "Dolor sit",
+    text: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.",
+    link: { text: "Botão", target: "_self", url: "#" },
+  },
+  {
+    icon: '<span class="material-symbols-outlined">construction</span>',
+    title: "Lorem Ipsum",
+    text: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.",
+    link: { text: "Botão", target: "_self", url: "#" },
+  },
+];
+
+const chartBars = [
+  {
+    color: "#FF7967",
+    number: 231,
+    numberPercent: 45.1171875,
+    label: 2016,
+  },
+  {
+    color: "#FF7967",
+    number: 512,
+    numberPercent: 100,
+    label: 2015,
+  },
+
+  {
+    color: "#FF7967",
+    number: 342, //342
+    numberPercent: 66.796875, //342
+    label: 2017,
+  },
+];
+
+---
+
+</Group>
+<Group txtColor="#364849" bgColor="#F0EAD9">
+  <Compare
+    caption="Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis"
+    imageLeft="https://documental.xyz/assets/main/expulsion/toxicriver_before2.png"
+    imageRight="https://documental.xyz/assets/main/expulsion/toxicriver_after2.png"
+  />
+  <LogosGroup title="Apoio" logos={logos} />
+  <BigNumbers
+    items={[
+      {
+        number: "300.000",
+        caption: "Sed ut perspiciatis unde omnis iste natus",
+      },
+      {
+        number: "100 km",
+        caption:
+          "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
+      },
+      {
+        number: "R$ 7.000.000",
+        caption: "Sed ut perspiciatis unde omnis iste natus",
+      },
+      {
+        number: "100 km",
+        caption:
+          "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
+      },
+      {
+        number: "300.000",
+        caption: "Sed ut perspiciatis unde omnis iste natus",
+      },
+      {
+        number: "R$ 7.000.000",
+        caption:
+          "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
+      },
+    ]}
+  />
+  <Columns>
+    <Fragment slot="column-1">
+      <Compare
+        caption="Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis"
+        imageLeft="https://documental.xyz/assets/main/expulsion/toxicriver_before2.png"
+        imageRight="https://documental.xyz/assets/main/expulsion/toxicriver_after2.png"
+      />
+      <Text hasDropCap>
+        <ChartBar
+          title="Sed ut perspiciatis unde omnis iste natus"
+          notes="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+          values={chart2}
+          type="proportion"
+        />
+        <ChartPercentage
+          title="Autem vel eum iure reprehenderit qui in ea "
+          notes="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+          values={chartPerc}
+        />
+        <Cards cards={cardsArr} />
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+          quae ab illo inventore veritatis et quasi architecto beatae vitae
+          dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+          eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+          est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+          velit, sed quia non numquam eius modi tempora incidunt ut labore
+          et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+          veniam, quis nostrum exercitationem ullam corporis suscipit
+          laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
+          vel eum iure reprehenderit qui in ea voluptate velit esse quam
+          nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+          voluptas. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+          aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+          ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+          dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+        </p>
+
+        <Button
+          link={{ url: "#", text: "Lorem Ipsum Dolor Sit" }}
+          icon={'<span class="material-symbols-outlined">north_east</span>'}
+          size="wide"
+        />
+
+        <Button
+          link={{ url: "#", text: "Botão sit amet" }}
+          icon={'<span class="material-symbols-outlined">settings</span>'}
+        />
+
+        <p>
+          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+          consectetur, adipisci velit, sed quia non numquam eius modi
+          tempora incidunt ut labore et dolore magnam aliquam quaerat
+          voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem
+          ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+          consequatur? Quis autem vel eum iure reprehenderit qui in ea
+          voluptate velit esse quam nihil molestiae consequatur, vel illum
+          qui dolorem eum fugiat quo voluptas.
+        </p>
+        <InnerColumns>
+          <Fragment slot="column-1">
+            <p>
+              Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+              amet, consectetur, adipisci velit, sed quia non numquam eius
+              modi tempora incidunt ut labore et dolore magnam aliquam
+              quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+              exercitationem ullam corporis suscipit laboriosam, nisi ut
+              aliquid ex ea commodi consequatur? Quis autem vel eum iure
+              reprehenderit qui in ea voluptate velit esse quam nihil
+              molestiae consequatur, vel illum qui dolorem eum fugiat quo
+              voluptas.
+            </p>
+          </Fragment>
+          <Fragment slot="column-2">
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque
+              ipsa quae ab illo inventore veritatis et quasi architecto
+              beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+              quia voluptas sit aspernatur aut odit aut fugit, sed quia
+              consequuntur magni dolores eos qui ratione voluptatem sequi
+              nesciunt.
+            </p>
+          </Fragment>
+        </InnerColumns>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+          quae ab illo inventore veritatis et quasi architecto beatae vitae
+          dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+          eos qui ratione voluptatem sequi nesciunt.
+        </p>
+      </Text>
+    </Fragment>
+    <Fragment slot="column-2">
+      <BigNumbers
+        items={[
+          {
+            number: "300.000",
+            caption: "Sed ut perspiciatis unde omnis iste natus",
+          },
+          {
+            number: "100 km",
+            caption:
+              "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
+          },
+          {
+            number: "R$ 7.000.000",
+            caption: "Sed ut perspiciatis unde omnis iste natus",
+          },
+          {
+            number: "100 km",
+            caption:
+              "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
+          },
+          {
+            number: "300.000",
+            caption: "Sed ut perspiciatis unde omnis iste natus",
+          },
+          {
+            number: "R$ 7.000.000",
+            caption:
+              "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
+          },
+        ]}
+      />
+      <ChartPercentage
+        title="Autem vel eum iure reprehenderit qui in ea "
+        notes="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+        values={chartPerc}
+      />
+      <ChartBar
+        title="Sed ut perspiciatis unde omnis iste natus"
+        notes="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+        values={chartBars}
+      />
+      <Text>
+        <h6>
+          SED UT PERSPICIATIS UNDE OMNIS ISTE NATUS ERROR SIT VOLUPTATEM
+          ACCUSANTIUM DOLOREMQUE LAUDANTIUM, TOTAM REM APERIAM
+        </h6>
+        <Timeline>
+          <TimelineBullet text="Maio de 2020" />
+          <Text>
+            <h6>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium
+            </h6>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque
+              ipsa quae ab illo inventore veritatis et quasi architecto
+              beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+              quia voluptas sit aspernatur aut odit aut fugit, sed quia
+              consequuntur magni dolores eos qui ratione voluptatem sequi
+              nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+              dolor sit amet, consectetur, adipisci velit, sed quia non
+              numquam eius modi tempora incidunt ut labore et dolore magnam
+              aliquam quaerat voluptatem.
+            </p>
+          </Text>
+
+          <TimelineBullet />
+          <Text>
+            <h6>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium
+            </h6>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque
+              ipsa quae ab illo inventore veritatis et quasi architecto
+              beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+              quia voluptas sit aspernatur aut odit aut fugit, sed quia
+              consequuntur magni dolores eos qui ratione voluptatem sequi
+              nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+              dolor sit amet, consectetur, adipisci velit, sed quia non
+              numquam eius modi tempora incidunt ut labore et dolore magnam
+              aliquam quaerat voluptatem.
+            </p>
+          </Text>
+        </Timeline>
+      </Text>
+    </Fragment>
+  </Columns>
+</Group>
+
