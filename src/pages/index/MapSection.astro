@@ -10,32 +10,41 @@ const content = await getEntry('index', 'MapSection');
 ---
 
 {content && content.data && content.data.sections ? (
-  content.data.sections.map((section) => (
+  content.data.sections.map((section, sectionIndex) => (
     <Map
+      key={`map-section-${sectionIndex}`}
       columnAlign={section.columnAlign}
       floatingText={section.floatingText ?? false}
       txtColor={section.txtColor}
       bgColor={section.bgColor}
       mapView={section.mapView}
     >
-      {section.content && section.content.map((item) => {
+      {section.content && section.content.map((item, itemIndex) => {
         switch (item.type) {
           case 'text':
             return (
-              <Text>
+              <Text key={`text-${sectionIndex}-${itemIndex}`}>
                 {item.data.heading && <h4>{item.data.heading}</h4>}
-                {item.data.paragraphs?.map((p, index) => <p key={index}>{p}</p>)}
+                {item.data.paragraphs?.map((p, pIndex) => (
+                  <p key={`p-${sectionIndex}-${itemIndex}-${pIndex}`}>{p}</p>
+                ))}
                 {item.data.subheading && <h6>{item.data.subheading}</h6>}
-                {item.data.additionalParagraphs?.map((p, index) => <p key={index}>{p}</p>)}
+                {item.data.additionalParagraphs?.map((p, pIndex) => (
+                  <p key={`additional-p-${sectionIndex}-${itemIndex}-${pIndex}`}>{p}</p>
+                ))}
                 {item.data.additionalSubheading && <h6>{item.data.additionalSubheading}</h6>}
               </Text>
             );
           case 'spacer':
-            return <Spacer desktop={item.desktop} />;
+            return <Spacer key={`spacer-${sectionIndex}-${itemIndex}`} desktop={item.desktop} />;
           case 'textPlaceholder':
-            return <Text><TextPlaceholder /></Text>;
+            return (
+              <Text key={`text-placeholder-${sectionIndex}-${itemIndex}`}>
+                <TextPlaceholder />
+              </Text>
+            );
           case 'mapView':
-            return <MapView mapView={item.mapView} />;
+            return <MapView key={`map-view-${sectionIndex}-${itemIndex}`} mapView={item.mapView} />;
           default:
             return null;
         }
