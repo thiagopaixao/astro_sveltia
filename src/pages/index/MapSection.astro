@@ -5,61 +5,94 @@ import Text from '../../components/Text.astro';
 import MapView from '../../components/MapView.astro';
 import Spacer from '../../components/Spacer.astro';
 import TextPlaceholder from '../../components/TextPlaceholder.astro';
-
-const content = await getEntry('index', 'MapSection');
 ---
 
-{content && content.data && content.data.sections ? (
-  content.data.sections.map((section, sectionIndex) => (
     <Map
-      key={`map-section-${sectionIndex}`}
-      columnAlign={section.columnAlign}
-      floatingText={section.floatingText ?? false}
-      txtColor={section.txtColor}
-      bgColor={section.bgColor}
-      mapView={section.mapView}
+      columnAlign="left"
+      floatingText
+      txtColor="#F0EAD9"
+      bgColor="#006A49"
+      mapView="view_1"
     >
-      {section.content && section.content.map((item, itemIndex) => {
-        switch (item.type) {
-          case 'text':
-            return (
-              <Text key={`text-${sectionIndex}-${itemIndex}`}>
-                {item.data.heading && <h4>{item.data.heading}</h4>}
-                {item.data.paragraphs?.map((p, pIndex) => (
-                  <p key={`p-${sectionIndex}-${itemIndex}-${pIndex}`}>{p}</p>
-                ))}
-                {item.data.subheading && <h6>{item.data.subheading}</h6>}
-                {item.data.additionalParagraphs?.map((p, pIndex) => (
-                  <p key={`additional-p-${sectionIndex}-${itemIndex}-${pIndex}`}>{p}</p>
-                ))}
-                {item.data.additionalSubheading && <h6>{item.data.additionalSubheading}</h6>}
-              </Text>
-            );
-          case 'spacer':
-            return <Spacer key={`spacer-${sectionIndex}-${itemIndex}`} desktop={item.desktop} />;
-          case 'textPlaceholder':
-            return (
-              <Text key={`text-placeholder-${sectionIndex}-${itemIndex}`}>
-                <TextPlaceholder />
-              </Text>
-            );
-          case 'mapView':
-            return <MapView key={`map-view-${sectionIndex}-${itemIndex}`} mapView={item.mapView} />;
-          case 'pullquote':
-            return (
-              <Pullquote key={`pullquote-${sectionIndex}-${itemIndex}`}>
-                <p>{item.data.quote}</p>
-                {item.data.byline && (
-                  <Fragment slot="byline">{item.data.byline}</Fragment>
-                )}
-              </Pullquote>
-            );
-          default:
-            return null;
-        }
-      })}
+      <Text>
+        <h4>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium
+        </h4>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium,
+          <br /><br />
+          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+          architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
+        </p>
+      </Text>
+      <Spacer desktop="160px" />
+      <Text>
+        <h6>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium
+        </h6>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt explicabo nemo enim ipsam voluptatem
+        </p>
+        <h6>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium
+        </h6>
+      </Text>
     </Map>
-  ))
-) : (
-  <div>No map section content available</div>
-)}
+    <Map
+      columnAlign="left"
+      floatingText={false}
+      txtColor="#F0EAD9"
+      bgColor="#000000"
+    >
+      <Text>
+        <TextPlaceholder />
+      </Text>
+      <MapView mapView="view_3" />
+      <Text>
+        <TextPlaceholder />
+      </Text>
+    </Map>
+    <Map
+      columnAlign="left"
+      floatingText={false}
+      txtColor="#F0EAD9"
+      bgColor="#000000"
+    >
+      <MapView mapView="view_2" />
+      <Text>
+        <TextPlaceholder />
+      </Text>
+      <MapView mapView="view_2" />
+      <Text>
+        <TextPlaceholder />
+      </Text>
+    </Map>
+    <Map
+      columnAlign="left"
+      floatingText={true}
+      txtColor="#F0EAD9"
+      bgColor="#000000"
+    >
+      <MapView mapView="view_4" />
+      <Text>
+        <TextPlaceholder />
+      </Text>
+      <MapView mapView="view_3" />
+      <Text>
+        <TextPlaceholder />
+      </Text>
+    </Map>
+    <Map
+      columnAlign="left"
+      floatingText={false}
+      txtColor="#F0EAD9"
+      bgColor="#000000"
+    >
+</Map>
