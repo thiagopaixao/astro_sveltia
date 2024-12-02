@@ -33,7 +33,7 @@ const content = await import('../../contents/index/IntroductionSection.md');
         </h1>
         
         <Text>
-            {content.default.split('\n\n').map(paragraph => (
+            {content.compiledContent().split('\n\n').map(paragraph => (
                 <p>{paragraph}</p>
             ))}
         </Text>
