@@ -4,32 +4,15 @@ import Group from '../../components/Group.astro';
 import CardsCall from '../../components/CardsCall.astro';
 import thumb from '../../assets/images/thumb.png';
 
-// Define array of cards with consistent structure
-const cardsCallArr = [
-    {
-        link: { url: '#' },
-        img: { src: thumb },
-        title: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque',
-        text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam',
-    },
-    {
-        link: { url: '#' },
-        img: { src: thumb },
-        title: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque',
-        text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam',
-    },
-    {
-        link: { url: '#' },
-        img: { src: thumb },
-        title: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque',
-        text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam',
-    },
-];
+// Import markdown content
+const content = await import('../../contents/index/CardsCallSection.md');
+const { txtColor, bgColor, cardsCallArr } = content.frontmatter;
 ---
 
 <Group 
-    txtColor="#364849" 
-    bgColor="#F0EAD9"
+    txtColor={txtColor} 
+    bgColor={bgColor}
 >
     <CardsCall cards={cardsCallArr} />
+    <Fragment set:html={content.compiledContent()} />
 </Group>
