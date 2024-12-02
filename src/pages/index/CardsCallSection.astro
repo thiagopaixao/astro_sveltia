@@ -1,18 +1,29 @@
 ---
 // Import necessary components and assets
+import { getCollection } from 'astro:content';
 import Group from '../../components/Group.astro';
 import CardsCall from '../../components/CardsCall.astro';
-import thumb from '../../assets/images/thumb.png';
 
 // Import markdown content
-const content = await import('../../contents/index/CardsCallSection.md');
+const contents = await getCollection('index');
+const content = contents.length > 0 ? contents[0] : null; 
+
 const { txtColor, bgColor, cardsCallArr } = content.frontmatter;
+
+// Update image paths to use the `import.meta.env.BASE_URL`
+const updatedCardsCallArr = cardsCallArr.map(card => ({
+  ...card,
+  img: {
+    ...card.img,
+    src: {content.data.cardsCallArr.map(img =>`${import.meta.env.BASE_URL}${card.img.src}`}
+  }
+}));
 ---
 
 <Group 
     txtColor={txtColor} 
     bgColor={bgColor}
 >
-    <CardsCall cards={cardsCallArr} />
+    <CardsCall cards={updatedCardsCallArr} />
     <Fragment set:html={content.compiledContent()} />
 </Group>
