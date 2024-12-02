@@ -3,18 +3,14 @@
 import CTA from '../../components/CTA.astro';
 import img from '../../assets/images/group-bg.png';
 
-// Define CTA text with HTML content
-const ctaText = `
-    <h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</h3>
-    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-`;
-
-// Define CTA link properties
-const link = {
-    url: '#',
-    target: '_self',
-    text: 'Botão'
-};
+// Import markdown content
+const content = await import('../../contents/index/CallToActionSection.md');
+const { 
+    ctaText, 
+    link, 
+    txtColor, 
+    bgColor 
+} = content.frontmatter;
 ---
 
 <CTA
@@ -23,7 +19,9 @@ const link = {
     mediaType="image"
     text={ctaText}
     link={link}
-    txtColor="yellow"
-    bgColor="grey"
-/>
+    txtColor={txtColor}
+    bgColor={bgColor}
+>
+    <Fragment set:html={content.compiledContent()} />
+</CTA>
 
