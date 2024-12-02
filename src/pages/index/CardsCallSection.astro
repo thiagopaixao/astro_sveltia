@@ -1,30 +1,35 @@
 ---
+// Import necessary components and assets
 import Group from '../../components/Group.astro';
 import CardsCall from '../../components/CardsCall.astro';
 import thumb from '../../assets/images/thumb.png';
 
-  const cardsCallArr = [
+// Define array of cards with consistent structure
+const cardsCallArr = [
     {
-      link: { url: '#' },
-      img: { src: thumb },
-      title: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque',
-      text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam',
+        link: { url: '#' },
+        img: { src: thumb },
+        title: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque',
+        text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam',
     },
     {
-      link: { url: '#' },
-      img: { src: thumb },
-      title: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque',
-      text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam',
+        link: { url: '#' },
+        img: { src: thumb },
+        title: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque',
+        text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam',
     },
     {
-      link: { url: '#' },
-      img: { src: thumb },
-      title: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque',
-      text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam',
+        link: { url: '#' },
+        img: { src: thumb },
+        title: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque',
+        text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam',
     },
-  ];
+];
 ---
 
-<Group txtColor="#364849" bgColor="#F0EAD9">
-  <CardsCall cards={cardsCallArr} />
+<Group 
+    txtColor="#364849" 
+    bgColor="#F0EAD9"
+>
+    <CardsCall cards={cardsCallArr} />
 </Group>
