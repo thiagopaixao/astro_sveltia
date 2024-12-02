@@ -32,7 +32,7 @@ export default defineConfig({
       },
     },
   },
-  redirects: {
-    '/': '/home',
+  routes: {
+    '/': '/home/index.astro',
   },
 });
