@@ -22,9 +22,12 @@ const {
         <h1 slot="title">{title}</h1>
         
         <Text>
-            {content.compiledContent().split('\n').map((paragraph) => (
-                <p set:html={paragraph} />
-            ))}
+            {content.compiledContent().split('\n')
+                .filter(paragraph => paragraph.trim() !== '')
+                .map((paragraph) => (
+                    <p set:html={paragraph} />
+                ))
+            }
         </Text>
     </ColumnSticky>
 </Group>
