@@ -14,5 +14,6 @@ sections:
     path: AdditionalMapSection.md
   - name: SupportSection
     path: SupportSection.md
-  # Adicione outras seções aqui conforme forem sendo criadas
+  - name: MapSection
+    path: MapSection.md
 ---
