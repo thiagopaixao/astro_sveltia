@@ -3,43 +3,12 @@
 import CTA from '../../components/CTA.astro';
 import img from '../../assets/images/group-bg.png';
 
-// Define card array with consistent structure and icons
-const cardsArr = [
-    {
-        icon: '<span class="material-symbols-outlined">construction</span>',
-        title: 'Open Source',
-        text: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.',
-        link: { text: 'Botão', target: '_self', url: '#' },
-    },
-    {
-        icon: '<span class="material-symbols-outlined">construction</span>',
-        title: 'Lorem Ipsum',
-        text: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.',
-        link: { text: 'Botão', target: '_self', url: '#' },
-    },
-    {
-        icon: '<span class="material-symbols-outlined">construction</span>',
-        title: 'Dolor sit',
-        text: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.',
-        link: { text: 'Botão', target: '_self', url: '#' },
-    },
-    {
-        icon: '<span class="material-symbols-outlined">construction</span>',
-        title: 'Lorem Ipsum',
-        text: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.',
-        link: { text: 'Botão', target: '_self', url: '#' },
-    },
-];
-
-// Define CTA text content
-const ctaText = `
-<p>
-    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-</p>
-`;
+// Import markdown content
+const content = await import('../../contents/index/AdditionalCTASection.md');
+const { 
+    ctaText, 
+    cardsArr 
+} = content.frontmatter;
 ---
 
 {/* Call to Action section with highlighted text and background image */}
@@ -51,4 +20,6 @@ const ctaText = `
     txtColor="yellow"
     bgColor="grey"
     imgBg={img.src}
-/>
+>
+    <Fragment set:html={content.compiledContent()} />
+</CTA>
