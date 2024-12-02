@@ -1,23 +1,27 @@
 ---
 // Import necessary components and assets
 import { getCollection } from 'astro:content';
+
 import Group from '../../components/Group.astro';
 import CardsCall from '../../components/CardsCall.astro';
-
 // Import markdown content
-const contents = await getCollection('index');
-const content = contents.length > 0 ? contents[0] : null; 
-
+const content = await import('../../contents/index/CardsCallSection.md');
 const { txtColor, bgColor, cardsCallArr } = content.frontmatter;
 
+const pages = await getCollection('page');
+const page = pages.length > 0 ? pages[0] : null; // Verifica se há páginas na coleção
+
+{page ? (
+    page.data.map((section, index) => {
+
 // Update image paths to use the `import.meta.env.BASE_URL`
-const updatedCardsCallArr = cardsCallArr.map(card => ({
+const updatedCardsCallArr = page.data.map.cardsCallArr.map(card => ({
   ...card,
   img: {
     ...card.img,
-    src: {content.data.cardsCallArr.map(img =>`${import.meta.env.BASE_URL}${card.img.src}`}
+    src: `${import.meta.env.BASE_URL}${card.img.src}`
   }
-}));
+}));}
 ---
 
 <Group 
