@@ -10,5 +10,7 @@ sections:
     path: CardsCallSection.md
   - name: MapTimelineSection
     path: MapTimelineSection.md
+  - name: AdditionalMapSection
+    path: AdditionalMapSection.md
   # Adicione outras seções aqui conforme forem sendo criadas
 ---

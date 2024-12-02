@@ -9,11 +9,15 @@ import Spacer from "../../components/Spacer.astro";
 import Text from "../../components/Text.astro";
 import TextPlaceholder from "../../components/TextPlaceholder.astro";
 
-// Keep image import at the end
-import imgMap from "../../assets/images/map.png";
+// Import markdown content
+const content = await import('../../contents/index/AdditionalMapSection.md');
+const { txtColor, bgColor, imageMapSrc } = content.frontmatter;
+
+// Import image dynamically
+const imgMap = await import(`../../assets/images/${imageMapSrc}`);
 ---
 
-<Group txtColor="#364849" bgColor="#F0EAD9">
+<Group txtColor={txtColor} bgColor={bgColor}>
     <Columns>
         <Fragment slot="column-1">
             <Text>
@@ -21,7 +25,7 @@ import imgMap from "../../assets/images/map.png";
             </Text>
         </Fragment>
         <Fragment slot="column-2">
-            <ImageBlock src={imgMap}>
+            <ImageBlock src={imgMap.default}>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam
             </ImageBlock>
@@ -69,3 +73,5 @@ import imgMap from "../../assets/images/map.png";
         </h6>
     </Text>
 </Map>
+
+<Fragment set:html={content.compiledContent()} />
