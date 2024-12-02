@@ -13,27 +13,16 @@ const {
     title, 
     txtColor, 
     bgColor, 
-    backgroundImage 
 } = content.frontmatter;
 ---
 
-<Group 
-    txtColor={txtColor} 
-    bgColor={bgColor} 
-    imgBg={img.src}
->
-    <ColumnSticky 
-        paddingTop 
-        paddingBottom 
-        layout="text-bigger"
-    >
+<Group txtColor={txtColor} bgColor={bgColor} imgBg={img.src}>
+    <ColumnSticky paddingTop paddingBottom layout="text-bigger">
         {/* Main title highlighting the importance of Alter do Chão */}
-        <h1 slot="title">
-            {title}
-        </h1>
+        <h1 slot="title">{title}</h1>
         
         <Text>
-            {content.compiledContent().split('\n\n').map((paragraph, index) => (
+            {content.compiledContent().split('\n').map((paragraph, index) => (
                 <p key={index} set:html={paragraph} />
             ))}
         </Text>
