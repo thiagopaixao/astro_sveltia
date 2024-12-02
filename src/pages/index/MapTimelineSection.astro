@@ -4,6 +4,10 @@ import Map from '../../components/Map.astro';
 import Timeline from '../../components/Timeline.astro';
 import TimelineBullet from '../../components/TimelineBullet.astro';
 import Text from '../../components/Text.astro';
+
+// Import markdown content
+const content = await import('../../contents/index/MapTimelineSection.md');
+const { timelineItems } = content.frontmatter;
 ---
 
 <Map
@@ -13,49 +17,18 @@ import Text from '../../components/Text.astro';
     bgColor="#006A49"
 >
     <Timeline>
-        <TimelineBullet text="Maio de 2020" />
-        <Text>
-            <h6>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium
-            </h6>
-            <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae vitae
-                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-                qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                sed quia non numquam eius modi tempora incidunt ut labore et dolore
-                magnam aliquam quaerat voluptatem.
-            </p>
-        </Text>
-
-        <TimelineBullet />
-        <Text>
-            <h6>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium
-            </h6>
-            <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae vitae
-                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-                eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-                qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                sed quia non numquam eius modi tempora incidunt ut labore et dolore
-                magnam aliquam quaerat voluptatem.
-            </p>
-        </Text>
+        {timelineItems.map((item, index) => (
+            <>
+                <TimelineBullet text={item.date} />
+                <Text>
+                    {item.title && (
+                        <h6>{item.title}</h6>
+                    )}
+                    <p>{item.content}</p>
+                </Text>
+            </>
+        ))}
     </Timeline>
 
-    {/* Commented out code preserved for potential future use */}
-    {/* 
-    <Text>
-        ... (existing commented code)
-    </Text> 
-    */}
+    <Fragment set:html={content.compiledContent()} />
 </Map>

@@ -8,5 +8,7 @@ sections:
     path: AdditionalCTASection.md
   - name: CardsCallSection
     path: CardsCallSection.md
+  - name: MapTimelineSection
+    path: MapTimelineSection.md
   # Adicione outras seções aqui conforme forem sendo criadas
 ---
