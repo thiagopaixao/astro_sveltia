@@ -12,5 +12,7 @@ sections:
     path: MapTimelineSection.md
   - name: AdditionalMapSection
     path: AdditionalMapSection.md
+  - name: SupportSection
+    path: SupportSection.md
   # Adicione outras seções aqui conforme forem sendo criadas
 ---
