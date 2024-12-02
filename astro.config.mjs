@@ -33,7 +33,7 @@ export default defineConfig({
     },
   },
   routes: {
-    [`${BASE_PATH}`]: '/home/index.astro',
+    '/': '/home/',
   },
   output: 'static',
 });
