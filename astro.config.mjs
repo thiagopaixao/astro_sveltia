@@ -33,6 +33,6 @@ export default defineConfig({
     },
   },
   routes: {
-    '/documental-frontend': '/home/',
+    [`${BASE_PATH}`]: '/home/',
   },
 });
