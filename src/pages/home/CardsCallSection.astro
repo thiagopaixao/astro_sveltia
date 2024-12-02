@@ -6,7 +6,7 @@ import CardsCall from '../../components/CardsCall.astro';
 import thumb from '../../assets/images/thumb.png';
 
 // Import markdown content
-const content = await import('../../contents/index/CardsCallSection.md');
+const content = await import('../../contents/home/CardsCallSection.md');
 const { txtColor, bgColor, cardsCallArr } = content.frontmatter;
 
 // Update image paths to use the `import.meta.env.BASE_URL`
