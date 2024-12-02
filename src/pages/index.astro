@@ -13,45 +13,44 @@ import MapSection from "./index/MapSection.astro";
 ---
 
 <Layout title="Documental.xyz">
-  <main>
-    <!-- Chamada da Seção MapBox (sempre no topo) -->
-    <MapBox />
+    <main>
+        {/* MapBox section (always at the top) */}
+        <MapBox />
 
-    <!-- Chamada da Seção de Introdução -->
-    <IntroductionSection />
+        {/* Introduction section */}
+        <IntroductionSection />
 
-    <!-- Chamada da Seção de Conteúdo Principal -->
-    <MainContentSection />
+        {/* Main content section */}
+        <MainContentSection />
 
-    <!-- Chamada da Seção de Chamadas para Ação (CTA) -->
-    <CallToActionSection /> 
+        {/* Call to Action (CTA) section */}
+        <CallToActionSection /> 
 
-    <!-- Chamada da Seção Adicional de CTA com Destaque -->
-    <AdditionalCTASection />
+        {/* Additional CTA section with highlight */}
+        <AdditionalCTASection />
 
-    <!-- Chamada da Seção de Cards Call -->
-    <CardsCallSection />
+        {/* Cards call section */}
+        <CardsCallSection />
 
-    <!-- Chamada da Seção de Mapa com Timeline -->
-    <MapTimelineSection />
+        {/* Map timeline section */}
+        <MapTimelineSection />
 
-    <!-- Chamada da Seção Adicional de Mapa -->
-    <AdditionalMapSection />
+        {/* Additional map section */}
+        <AdditionalMapSection />
 
-    <SupportSection />
+        <SupportSection />
 
-    <MapSection />
+        <MapSection />
+    </main>
 
-  </main>
+    <style lang="scss">
+        main {
+            background-color: var(--clr-bg, transparent);
 
-  <style lang="scss">
-    main {
-      background-color: var(--clr-bg, transparent);
-
-      :global(> .spacer) {
-        position: relative;
-        background-color: inherit;
-      }
-    }
-  </style>
+            :global(> .spacer) {
+                position: relative;
+                background-color: inherit;
+            }
+        }
+    </style>
 </Layout>
