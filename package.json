@@ -12,7 +12,13 @@
   "dependencies": {
     "astro": "^4.16.8",
     "sass": "^1.80.5",
-    "swiper": "^11.1.14"
+    "swiper": "^11.1.14",
+    "@astrojs/netlify": "^4.0.0",
+    "astro-icon": "^0.8.1",
+    "marked": ">=5.0.2",
+    "marked-gfm-heading-id": ">=3.1.2",
+    "marked-mangle": ">=1.1.6",
+    "svelte": ">=4.0.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.16.0",

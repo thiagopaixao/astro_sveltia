@@ -1,0 +1,61 @@
+backend:
+  name: github
+  repo: thiagopaixao/teste_astro_leaflet
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "page"
+    label: "Página"
+    folder: "src/content/page"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - label: "Seções"
+        name: "sections"
+        widget: "list"
+        types:
+          - label: "Cabeçalho"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "Imagem de Fundo", name: "backgroundImage", widget: "image" }
+              - { label: "Título", name: "title", widget: "string" }
+          - label: "Texto"
+            name: "text"
+            widget: "object"
+            fields:
+              - { label: "Conteúdo", name: "content", widget: "markdown" }
+          - label: "Galeria"
+            name: "gallery"
+            widget: "object"
+            fields:
+              - label: "Imagens"
+                name: "images"
+                widget: "list"
+                field: { label: "Imagem", name: "image", widget: "image" }
+          - label: "Mapa"
+            name: "map"
+            widget: "object"
+            fields:
+              - { label: "Latitude", name: "latitude", widget: "number", valueType: "float" }
+              - { label: "Longitude", name: "longitude", widget: "number", valueType: "float" }
+              - { label: "Zoom", name: "zoom", widget: "number", valueType: "int" }
+              - { label: "Tipo de Camada", name: "typelayer", widget: "select", options: ["map", "topology", "satellite"]}
+              - label: "GeoJSONs"
+                name: "geojsons"
+                widget: "list"
+                fields:
+                  - { label: "GeoJSON", name: "geojson", widget: "text", required: false, default: "{}", hint: "Insira o GeoJSON manualmente se necessário" }
+                allow_add: true
+                add_to_top: false
+          - label: "Rodapé"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Conteúdo", name: "content", widget: "markdown" }
+
+local_backend: true
