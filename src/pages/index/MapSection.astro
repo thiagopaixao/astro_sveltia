@@ -45,6 +45,15 @@ const content = await getEntry('index', 'MapSection');
             );
           case 'mapView':
             return <MapView key={`map-view-${sectionIndex}-${itemIndex}`} mapView={item.mapView} />;
+          case 'pullquote':
+            return (
+              <Pullquote key={`pullquote-${sectionIndex}-${itemIndex}`}>
+                <p>{item.data.quote}</p>
+                {item.data.byline && (
+                  <Fragment slot="byline">{item.data.byline}</Fragment>
+                )}
+              </Pullquote>
+            );
           default:
             return null;
         }
