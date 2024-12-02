@@ -24,9 +24,9 @@ const content = await getEntry('index', 'MapSection');
             return (
               <Text>
                 {item.data.heading && <h4>{item.data.heading}</h4>}
-                {item.data.paragraphs?.map((p) => <p>{p}</p>)}
+                {item.data.paragraphs?.map((p, index) => <p key={index}>{p}</p>)}
                 {item.data.subheading && <h6>{item.data.subheading}</h6>}
-                {item.data.paragraphs?.map((p) => <p>{p}</p>)}
+                {item.data.additionalParagraphs?.map((p, index) => <p key={index}>{p}</p>)}
                 {item.data.additionalSubheading && <h6>{item.data.additionalSubheading}</h6>}
               </Text>
             );
