@@ -33,6 +33,7 @@ import ChartPercentage from "../components/ChartPercentage.astro";
 import LogosGroup from "../components/LogosGroup.astro";
 import BigNumbers from "../components/BigNumbers.astro";
 import Compare from "../components/Compare.astro";
+import Slider from "../components/Slider.astro";
 
 const cardsArr = [
   {
@@ -227,6 +228,25 @@ const logos = [
     },
   },
 ];
+
+const slider = [
+  {
+    image: img,
+    caption: "Aliquip dolor veniam esse ut non sit quis ipsum.",
+  },
+  {
+    image: imgMap,
+    caption: "Est eiusmod eu pariatur enim laborum adipisicing excepteur aute incididunt consectetur aliquip.",
+  },
+  {
+    image: img,
+    caption: "Enim deserunt exercitation dolore elit veniam ex culpa ad laboris tempor culpa.",
+  },
+  {
+    image: imgMap,
+    caption: "Commodo aliquip duis laboris ex Lorem culpa commodo.",
+  },
+];
 ---
 
 <Layout title="Documental.xyz">
@@ -261,6 +281,8 @@ const logos = [
       </ColumnSticky>
     </Group>
     <Group txtColor="#364849" bgColor="#F0EAD9">
+      <Slider slides={slider} />
+
       <Compare
         caption="Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis"
         imageLeft="https://documental.xyz/assets/main/expulsion/toxicriver_before2.png"
