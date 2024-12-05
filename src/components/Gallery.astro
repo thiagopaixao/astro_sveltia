@@ -1,0 +1,68 @@
+---
+import Image from "astro/components/Image.astro";
+const { uniqid, description, images } = Astro.props;
+---
+
+<div class="gallery-card" aria-controls={`gallery-${uniqid}`}>
+  {images && images.map((img, index) => index <= 2 && <Image src={img.image} alt="" />)}
+  {description && <div class="gallery-card__description">{description}</div>}
+</div>
+
+<div
+  id={`gallery-${uniqid}`}
+  class="gallery-modal"
+  aria-modal="true"
+  aria-hidden="true"
+>
+  <div class="gallery-modal__holder">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        {
+          images &&
+            images.map(img => {
+              return (
+                <div class="swiper-slider">
+                  <div class="gallery-modal__item">
+                    <figure>
+                      <Image src={img.image.url} alt="" />
+                    </figure>
+                    <div class="gallery-modal__description">
+                      {img.description}
+                    </div>
+                  </div>
+                </div>
+              );
+            })
+        }
+      </div>
+      <div class="gallery-modal__controls">
+        <div class="swiper-button-prev">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.3599 34.375L24.6293 32.2359L18.6722 26.5718H37.5V23.4282L18.6722 23.4282L24.6293 17.7734L22.3599 15.625L12.5 25L22.3599 34.375Z" fill="#424242"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M25 46.875C12.9188 46.875 3.125 37.0812 3.125 25C3.125 12.9188 12.9188 3.125 25 3.125C37.0812 3.125 46.875 12.9188 46.875 25C46.875 37.0812 37.0812 46.875 25 46.875ZM25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25C50 38.8071 38.8071 50 25 50Z" fill="#424242"/>
+          </svg>
+        </div>
+        <span class="slider__pagination"></span>
+        <div class="swiper-button-next">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.6401 34.375L25.3707 32.2359L31.3278 26.5718H12.5V23.4282L31.3278 23.4282L25.3707 17.7734L27.6401 15.625L37.5 25L27.6401 34.375Z" fill="#424242"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M25 46.875C37.0812 46.875 46.875 37.0812 46.875 25C46.875 12.9188 37.0812 3.125 25 3.125C12.9188 3.125 3.125 12.9188 3.125 25C3.125 37.0812 12.9188 46.875 25 46.875ZM25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z" fill="#424242"/>
+          </svg>          
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="gallery-modal__top">
+    <svg width="37" height="25" viewBox="0 0 37 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14.4167 12.4998C14.4167 13.5165 14.8206 14.4915 15.5395 15.2104C16.2584 15.9293 17.2334 16.3332 18.2501 16.3332C19.2667 16.3332 20.2418 15.9293 20.9607 15.2104C21.6795 14.4915 22.0834 13.5165 22.0834 12.4998C22.0834 11.4832 21.6795 10.5082 20.9607 9.78926C20.2418 9.07037 19.2667 8.6665 18.2501 8.6665C17.2334 8.6665 16.2584 9.07037 15.5395 9.78926C14.8206 10.5082 14.4167 11.4832 14.4167 12.4998Z" stroke="#F0EAD9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M35.5 12.5C30.9 20.1667 25.15 24 18.25 24C11.35 24 5.6 20.1667 1 12.5C5.6 4.83333 11.35 1 18.25 1C25.15 1 30.9 4.83333 35.5 12.5Z" stroke="#F0EAD9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <button class="gallery-modal__close">
+      <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.372583 1.41421L21.5858 22.6274L23 21.2132L1.7868 0L0.372583 1.41421Z" fill="#F0EAD9"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.6274 1.41421L1.41421 22.6274L0 21.2132L21.2132 0L22.6274 1.41421Z" fill="#F0EAD9"/>
+      </svg>      
+    </button>
+  </div>
+</div>
