@@ -3,11 +3,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Image from "astro/components/Image.astro";
 const { slides } = Astro.props;
+const id = Math.random().toString(36).slice(2, 11)
 ---
 
-<div class="slider">
+<div id={id} class="slider">
   <div class="slider__holder">
-    <div class="swiper">
+    <div class="swiper slider__swiper">
       <div class="swiper-wrapper">
         {
           slides &&
@@ -35,6 +36,7 @@ const { slides } = Astro.props;
           <path fill-rule="evenodd" clip-rule="evenodd" d="M25 46.875C37.0812 46.875 46.875 37.0812 46.875 25C46.875 12.9188 37.0812 3.125 25 3.125C12.9188 3.125 3.125 12.9188 3.125 25C3.125 37.0812 12.9188 46.875 25 46.875ZM25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z" fill="#424242"/>
         </svg>          
       </div>
+      <span class="swiper-pagination"></span>
     </div>
     <div class="slider__footer">
       <span class="slider__pagination"></span>
@@ -66,6 +68,10 @@ const { slides } = Astro.props;
       height: 100%;
       max-height: 85vh;
       aspect-ratio: 1 / 0.6;
+    }
+
+    .swiper-pagination {
+      display: none;
     }
 
     &__holder {
@@ -154,6 +160,7 @@ const { slides } = Astro.props;
     }
 
     &__pagination {
+      font-variant-numeric: tabular-nums;
       font-weight: 700;
     }
   }
@@ -163,7 +170,7 @@ const { slides } = Astro.props;
   import Swiper from "swiper";
   import { Navigation, Pagination } from "swiper/modules";
 
-  const swiper = new Swiper(".swiper", {
+  const swiper = new Swiper(".slider__swiper", {
     spaceBetween: 10,
     modules: [Navigation, Pagination],
     navigation: {
@@ -171,7 +178,7 @@ const { slides } = Astro.props;
       nextEl: ".swiper-button-next"
     },
     pagination: {
-      el: ".slider__pagination",
+      el: ".swiper-pagination",
       type: "fraction",
       renderFraction: function (currentClass, totalClass) {
         return (
@@ -186,8 +193,8 @@ const { slides } = Astro.props;
       },
     },
     on: {
-      slideChange: setCaption,
-      init: setCaption,
+      slideChange: updateCaption,
+      init: updateCaption,
     },
     breakpoints: {
       991: {
@@ -196,19 +203,20 @@ const { slides } = Astro.props;
     }
   });
 
-  function setCaption(swiper) {
+  function updateCaption(swiper) {
     const slider = swiper.el.closest(".slider");
 
-    let captions = slider.querySelectorAll("figcaption");
-    captions.forEach((el) => {
-      el.classList.add("hidden");
-    });
+    let sliderPagination = slider.querySelector(".swiper-pagination");
+    
 
     setTimeout(() => {
+      let pagination = slider.querySelector(".slider__pagination");
       let caption = slider.querySelector(".slider__caption");
       caption.innerHTML = " – " + slider.querySelector(
         ".swiper-slide-active figcaption"
       ).innerHTML;
+
+      pagination.innerText = sliderPagination.innerText;
     }, 250);
   }
 </script>
