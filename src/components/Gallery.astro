@@ -527,7 +527,7 @@ const amountLabel = `${images.length} imagens`; // prever que o termo "imagens" 
 
   //modal
   function handleModal() {
-    const triggers = document.querySelectorAll('[aria-controls]');
+    const triggers = document.querySelectorAll('[aria-controls*="gallery"]');
 
     triggers.forEach(trigger => {
       trigger.addEventListener('click', e => {

@@ -1,0 +1,205 @@
+---
+const { languages, menu, sideLink } = Astro.props;
+---
+
+<div class="topbar">
+  <div class="topbar__holder">
+    <button class="topbar__menu-btn" aria-controls="menu">
+      <span></span>
+    </button>
+  </div>
+  
+  <nav id="menu" class="menu" aria-hidden="true">
+    {languages && (
+      <ul class="menu__top">
+        {languages.map(lang => <li><a href={lang.url}>{lang.slug}</a></li>)}
+      </ul>
+    )}
+    {menu && (
+      <ul class="menu__main">
+        {menu.map(item => <li><a href={item.url} target={item.target}>{item.text}</a></li>)}
+      </ul>
+    )}
+
+    {sideLink && <a href={sideLink.url} class="menu__side-link">DOCUMENTAL.XYZ</a>}
+
+    <button class="menu__close" aria-controls="menu">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="28.2842" width="40" height="4" transform="rotate(-45 0 28.2842)" fill="#F0EAD9"/>
+        <rect width="40" height="4" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 31.1133 28.2842)" fill="#F0EAD9"/>
+      </svg>        
+    </button>
+  </nav>
+</div>
+
+<style lang="scss">
+  @use "../assets/styles/config/config" as *;
+  @use "../assets/styles/utils/grrr/grrr" as *;
+
+  
+  .topbar {
+    @extend %grrr--board;
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    z-index: 200;
+    
+    :global(body:has(.gallery-modal[aria-hidden="false"])) & {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    @include media-break-up(l) {
+      padding-top: 50px;
+    }
+
+    &__menu-btn {
+      width: 40px;
+      height: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: absolute;
+      right: var(--atnl-margin);
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      margin: 0;
+
+      &:hover {
+        &::before {
+          width: 38px;
+        }
+        
+        &::after {
+          width: 100%;
+        }
+        
+        span {
+          width: 30px;
+        }
+      }
+
+      &::before, &::after, span {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: currentColor;
+        transition: width .3s ease;
+      }
+
+      &::before {
+        width: 36px;
+      }
+      
+      &::after {
+        width: 28px;
+      }
+    }
+  }
+
+  .menu {
+    @include type('h-xs');
+    width: 100%;
+    height: 100dvh;
+    max-width: 470px;
+    background-color: var(--clr-hl);
+    padding: var(--atnl-margin);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: .8s ease;
+    text-transform: uppercase;
+
+    a, button {
+      @media (hover: "hover") {
+        &:hover {
+          opacity: .7;
+        }
+      }
+    }
+
+    &[aria-hidden="false"] {
+      transform: translateX(0);
+    }
+
+    &__top {
+      display: flex;
+      gap: 30px;
+    }
+
+    &__main {
+      width: calc(100% - 70px);
+      max-height: calc(100% - 40px);
+      padding-bottom: 40px;
+      padding-top: 56px;
+      padding-right: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      text-wrap: balance;
+      overflow: auto;
+      mask-image: linear-gradient(to top, transparent 0%, black 40px);
+    }
+
+    &__close {
+      position: absolute;
+      top: 30px;
+      right: var(--atnl-margin);
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      margin: 0;
+
+      rect {
+        fill: currentColor;
+      }
+    }
+
+    &__side-link {
+      width: fit-content;
+      @include type('c-m');
+      font-weight: 700;
+      display: block;
+      position: absolute;
+      top: 120px;
+      right: 40px;
+      transform-origin: right center;
+      transform: rotate(-90deg) translateY(-65%);
+    }
+  }
+</style>
+
+<script>
+  //modal
+  function toggleMenu() {
+    const triggers = document.querySelectorAll('[aria-controls="menu"]');
+
+    triggers.forEach(trigger => {
+      trigger.addEventListener('click', e => {
+        e.preventDefault();
+
+        const targetId = trigger.getAttribute('aria-controls');
+        const target = document.querySelector(`#${targetId}`);
+        const targetState = target.getAttribute('aria-hidden')
+        
+        target.setAttribute('aria-hidden', targetState === "true" ? "false" : "true");
+
+        if(document.body.hasAttribute('menu-open')) {
+          document.body.removeAttribute('menu-open');
+        } else {
+          document.body.setAttribute('menu-open', '');
+        }
+      })
+    })
+  }
+
+  toggleMenu();
+</script>
