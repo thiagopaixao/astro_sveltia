@@ -196,7 +196,10 @@ const amountLabel = `${images.length} imagens`; // prever que o termo "imagens" 
         height: 20px;
         display: block;
         position: absolute;
-        background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.00006 9.99976C8.00006 10.5302 8.21078 11.0389 8.58585 11.414C8.96092 11.789 9.46963 11.9998 10.0001 11.9998C10.5305 11.9998 11.0392 11.789 11.4143 11.414C11.7893 11.0389 12.0001 10.5302 12.0001 9.99976C12.0001 9.46932 11.7893 8.96062 11.4143 8.58554C11.0392 8.21047 10.5305 7.99976 10.0001 7.99976C9.46963 7.99976 8.96092 8.21047 8.58585 8.58554C8.21078 8.96062 8.00006 9.46932 8.00006 9.99976Z' stroke='%23364849' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M19 10C16.6 14 13.6 16 10 16C6.4 16 3.4 14 1 10C3.4 6 6.4 4 10 4C13.6 4 16.6 6 19 10Z' stroke='%23364849' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        mask-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.00006 9.99976C8.00006 10.5302 8.21078 11.0389 8.58585 11.414C8.96092 11.789 9.46963 11.9998 10.0001 11.9998C10.5305 11.9998 11.0392 11.789 11.4143 11.414C11.7893 11.0389 12.0001 10.5302 12.0001 9.99976C12.0001 9.46932 11.7893 8.96062 11.4143 8.58554C11.0392 8.21047 10.5305 7.99976 10.0001 7.99976C9.46963 7.99976 8.96092 8.21047 8.58585 8.58554C8.21078 8.96062 8.00006 9.46932 8.00006 9.99976Z' stroke='%23364849' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M19 10C16.6 14 13.6 16 10 16C6.4 16 3.4 14 1 10C3.4 6 6.4 4 10 4C13.6 4 16.6 6 19 10Z' stroke='%23364849' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        background-color: var(--clr-txt);
         top: 0;
         left: -16px;
         transform: translateX(-100%);
@@ -264,6 +267,12 @@ const amountLabel = `${images.length} imagens`; // prever que o termo "imagens" 
       z-index: 5;
       grid-row: 1;
       pointer-events: none;
+
+      > svg {
+        path {
+          stroke: currentColor;
+        }
+      }
       
       @include media-break-down(l) {
         height: 80px;
@@ -290,6 +299,10 @@ const amountLabel = `${images.length} imagens`; // prever que o termo "imagens" 
 
       svg {
         display: block;
+        
+        path {
+          fill: currentColor;
+        }
       }
 
       @media (hover: 'hover') {
@@ -329,6 +342,10 @@ const amountLabel = `${images.length} imagens`; // prever que o termo "imagens" 
       .swiper-button-prev, .swiper-button-next {
         pointer-events: all;
         cursor: pointer;
+
+        path {
+          fill: currentColor;
+        }
 
         @media (hover: 'hover') {
           &:hover {
