@@ -34,6 +34,7 @@ import LogosGroup from "../components/LogosGroup.astro";
 import BigNumbers from "../components/BigNumbers.astro";
 import Compare from "../components/Compare.astro";
 import Slider from "../components/Slider.astro";
+import Gallery from "../components/Gallery.astro";
 
 const cardsArr = [
   {
@@ -247,6 +248,46 @@ const slider = [
     caption: "Commodo aliquip duis laboris ex Lorem culpa commodo.",
   },
 ];
+
+const galllery = {
+    uniqid: 1,
+    description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem laudantium, totam rem aperiam",
+    images: [
+      {
+        image: imgMap,
+        caption: "<h4>Perspiciatis unde omnis iste natus error</h4><p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>",
+      },
+      {
+        image: img,
+        caption: "<p>Aliquip dolor veniam esse ut non sit quis ipsum.</p>",
+      }, 
+      
+      {
+        image: img,
+        caption: "<p>Occaecat culpa minim quis adipisicing fugiat voluptate occaecat mollit eu aliquip velit Lorem nulla minim.</p>",
+      }, 
+      {
+        image: imgMap,
+        caption: "<h2>Fugiat voluptate occaecat mollit eu aliquip</h2><p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>",
+      },
+      {
+        image: img,
+        caption: "<p>Aliquip dolor veniam esse ut non sit quis ipsum.</p>",
+      }, 
+      {
+        image: imgMap,
+        caption: "<h2>Perspiciatis unde omnis iste natus error</h2><p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>",
+      },
+      {
+        image: img,
+        caption: "<p>Occaecat culpa minim quis adipisicing fugiat voluptate occaecat mollit eu aliquip velit Lorem nulla minim.</p>",
+      }, 
+      {
+        image: imgMap,
+        caption: "<h2>Fugiat voluptate occaecat mollit eu aliquip</h2><p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>",
+      },
+    ]
+  };
 ---
 
 <Layout title="Documental.xyz">
@@ -282,46 +323,9 @@ const slider = [
     </Group>
     <Group txtColor="#364849" bgColor="#F0EAD9">
       <Slider slides={slider} />
-
-      <Compare
-        caption="Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis"
-        imageLeft="https://documental.xyz/assets/main/expulsion/toxicriver_before2.png"
-        imageRight="https://documental.xyz/assets/main/expulsion/toxicriver_after2.png"
-      />
-      <LogosGroup title="Apoio" logos={logos} />
-      <BigNumbers
-        items={[
-          {
-            number: "300.000",
-            caption: "Sed ut perspiciatis unde omnis iste natus",
-          },
-          {
-            number: "100 km",
-            caption:
-              "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
-          },
-          {
-            number: "R$ 7.000.000",
-            caption: "Sed ut perspiciatis unde omnis iste natus",
-          },
-          {
-            number: "100 km",
-            caption:
-              "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
-          },
-          {
-            number: "300.000",
-            caption: "Sed ut perspiciatis unde omnis iste natus",
-          },
-          {
-            number: "R$ 7.000.000",
-            caption:
-              "Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis",
-          },
-        ]}
-      />
       <Columns>
         <Fragment slot="column-1">
+          <Gallery images={galllery.images} uniqid={galllery.uniqid} description={galllery.description} />
           <Compare
             caption="Sed ut perspiciatis unde omnis iste natus Sed ut perspiciatis"
             imageLeft="https://documental.xyz/assets/main/expulsion/toxicriver_before2.png"

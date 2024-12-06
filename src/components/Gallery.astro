@@ -1,11 +1,27 @@
 ---
+import "swiper/css";
+// import "swiper/css/pagination";
 import Image from "astro/components/Image.astro";
+import Text from "./Text.astro";
 const { uniqid, description, images } = Astro.props;
+const amountLabel = `${images.length} imagens`; // prever que o termo "imagens" deve ser traduzido nas versões de outras línguas
 ---
 
 <div class="gallery-card" aria-controls={`gallery-${uniqid}`}>
-  {images && images.map((img, index) => index <= 2 && <Image src={img.image} alt="" />)}
-  {description && <div class="gallery-card__description">{description}</div>}
+  <div class="gallery-card__thumbs">
+    {
+      images &&
+        images.map((img, index) => {return index <= 2 && <Image src={img.image} alt="" />;})
+    }
+  </div>
+  {
+    description && (
+      <div class="gallery-card__description">
+        <span class="gallery-card__amount-label">{amountLabel}</span>
+        {description}
+      </div>
+    )
+  }
 </div>
 
 <div
@@ -14,20 +30,62 @@ const { uniqid, description, images } = Astro.props;
   aria-modal="true"
   aria-hidden="true"
 >
+  <div class="gallery-modal__top">
+    <svg
+      width="37"
+      height="25"
+      viewBox="0 0 37 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M14.4167 12.4998C14.4167 13.5165 14.8206 14.4915 15.5395 15.2104C16.2584 15.9293 17.2334 16.3332 18.2501 16.3332C19.2667 16.3332 20.2418 15.9293 20.9607 15.2104C21.6795 14.4915 22.0834 13.5165 22.0834 12.4998C22.0834 11.4832 21.6795 10.5082 20.9607 9.78926C20.2418 9.07037 19.2667 8.6665 18.2501 8.6665C17.2334 8.6665 16.2584 9.07037 15.5395 9.78926C14.8206 10.5082 14.4167 11.4832 14.4167 12.4998Z"
+        stroke="#F0EAD9"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+      <path
+        d="M35.5 12.5C30.9 20.1667 25.15 24 18.25 24C11.35 24 5.6 20.1667 1 12.5C5.6 4.83333 11.35 1 18.25 1C25.15 1 30.9 4.83333 35.5 12.5Z"
+        stroke="#F0EAD9"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+    </svg>
+    <button class="gallery-modal__close" aria-controls={`gallery-${uniqid}`}>
+      <svg
+        width="23"
+        height="23"
+        viewBox="0 0 23 23"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0.372583 1.41421L21.5858 22.6274L23 21.2132L1.7868 0L0.372583 1.41421Z"
+          fill="#F0EAD9"></path>
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M22.6274 1.41421L1.41421 22.6274L0 21.2132L21.2132 0L22.6274 1.41421Z"
+          fill="#F0EAD9"></path>
+      </svg>
+    </button>
+  </div>
   <div class="gallery-modal__holder">
-    <div class="swiper">
+    <div class="swiper gallery-modal__swiper">
       <div class="swiper-wrapper">
         {
           images &&
-            images.map(img => {
+            images.map((img) => {
               return (
-                <div class="swiper-slider">
+                <div class="swiper-slide">
                   <div class="gallery-modal__item">
                     <figure>
-                      <Image src={img.image.url} alt="" />
+                      <Image src={img.image} alt="" />
                     </figure>
                     <div class="gallery-modal__description">
-                      {img.description}
+                      <Text set:html={img.caption} />
                     </div>
                   </div>
                 </div>
@@ -35,34 +93,413 @@ const { uniqid, description, images } = Astro.props;
             })
         }
       </div>
-      <div class="gallery-modal__controls">
-        <div class="swiper-button-prev">
-          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22.3599 34.375L24.6293 32.2359L18.6722 26.5718H37.5V23.4282L18.6722 23.4282L24.6293 17.7734L22.3599 15.625L12.5 25L22.3599 34.375Z" fill="#424242"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M25 46.875C12.9188 46.875 3.125 37.0812 3.125 25C3.125 12.9188 12.9188 3.125 25 3.125C37.0812 3.125 46.875 12.9188 46.875 25C46.875 37.0812 37.0812 46.875 25 46.875ZM25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25C50 38.8071 38.8071 50 25 50Z" fill="#424242"/>
-          </svg>
-        </div>
-        <span class="slider__pagination"></span>
-        <div class="swiper-button-next">
-          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M27.6401 34.375L25.3707 32.2359L31.3278 26.5718H12.5V23.4282L31.3278 23.4282L25.3707 17.7734L27.6401 15.625L37.5 25L27.6401 34.375Z" fill="#424242"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M25 46.875C37.0812 46.875 46.875 37.0812 46.875 25C46.875 12.9188 37.0812 3.125 25 3.125C12.9188 3.125 3.125 12.9188 3.125 25C3.125 37.0812 12.9188 46.875 25 46.875ZM25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z" fill="#424242"/>
-          </svg>          
+      <div class="gallery-modal__footer">
+        <div class="gallery-modal__footer-holder">
+          <div class="swiper-button-prev">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.0991 24.75L17.7331 23.2098L13.444 19.1317H27V16.8683L13.444 16.8683L17.7331 12.7969L16.0991 11.25L9 18L16.0991 24.75Z" fill="#F0EAD9"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M18 33.75C9.30151 33.75 2.25 26.6985 2.25 18C2.25 9.30151 9.30151 2.25 18 2.25C26.6985 2.25 33.75 9.30151 33.75 18C33.75 26.6985 26.6985 33.75 18 33.75ZM18 36C8.05888 36 0 27.9411 0 18C0 8.05887 8.05888 0 18 0C27.9411 0 36 8.05887 36 18C36 27.9411 27.9411 36 18 36Z" fill="#F0EAD9"/>
+            </svg>              
+          </div>
+          <span class="gallery-modal__pagination"></span>
+          <div class="swiper-button-next">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.9009 24.75L18.2669 23.2098L22.556 19.1317H9V16.8683L22.556 16.8683L18.2669 12.7969L19.9009 11.25L27 18L19.9009 24.75Z" fill="#F0EAD9"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M18 33.75C26.6985 33.75 33.75 26.6985 33.75 18C33.75 9.30151 26.6985 2.25 18 2.25C9.30151 2.25 2.25 9.30151 2.25 18C2.25 26.6985 9.30151 33.75 18 33.75ZM18 36C27.9411 36 36 27.9411 36 18C36 8.05887 27.9411 0 18 0C8.05887 0 0 8.05887 0 18C0 27.9411 8.05887 36 18 36Z" fill="#F0EAD9"/>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
-    </div>
-  </div>
-  <div class="gallery-modal__top">
-    <svg width="37" height="25" viewBox="0 0 37 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M14.4167 12.4998C14.4167 13.5165 14.8206 14.4915 15.5395 15.2104C16.2584 15.9293 17.2334 16.3332 18.2501 16.3332C19.2667 16.3332 20.2418 15.9293 20.9607 15.2104C21.6795 14.4915 22.0834 13.5165 22.0834 12.4998C22.0834 11.4832 21.6795 10.5082 20.9607 9.78926C20.2418 9.07037 19.2667 8.6665 18.2501 8.6665C17.2334 8.6665 16.2584 9.07037 15.5395 9.78926C14.8206 10.5082 14.4167 11.4832 14.4167 12.4998Z" stroke="#F0EAD9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M35.5 12.5C30.9 20.1667 25.15 24 18.25 24C11.35 24 5.6 20.1667 1 12.5C5.6 4.83333 11.35 1 18.25 1C25.15 1 30.9 4.83333 35.5 12.5Z" stroke="#F0EAD9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-    <button class="gallery-modal__close">
-      <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.372583 1.41421L21.5858 22.6274L23 21.2132L1.7868 0L0.372583 1.41421Z" fill="#F0EAD9"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.6274 1.41421L1.41421 22.6274L0 21.2132L21.2132 0L22.6274 1.41421Z" fill="#F0EAD9"/>
-      </svg>      
-    </button>
   </div>
 </div>
+
+<style lang="scss">
+  @use "../assets/styles/config/config" as *;
+  @use "../assets/styles/utils/grrr/grrr" as *;
+
+  //card
+  .gallery-card {
+    cursor: pointer;
+    container-name: gallery-card;
+    container-type: inline-size;
+
+    &:not(:first-child),
+    & :global(+ *) {
+      margin-top: var(--mt-m);
+    }
+
+    @media (hover: "hover") {
+      &:hover {
+        img {
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.37);
+        }
+  
+        img:nth-child(1) {
+          transform: rotate(-5deg) translate(-10px, -40px);
+        }
+  
+        img:nth-child(2) {
+          transform: rotate(8deg) translate(15px, -40px);
+        }
+      }
+    }
+
+    &__thumbs {
+      width: 100%;
+      aspect-ratio: 1 / 0.5902;
+      position: relative;
+
+      @container gallery-card (width < 440px) {
+        aspect-ratio: 1 / 1.258;
+      } 
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform-origin: center bottom;
+        transition: 0.5s ease;
+
+        img:nth-child(3) {
+          z-index: 2;
+        }
+      }
+    }
+
+    &__description {
+      @include type("c-s");
+
+      display: block;
+      padding: 16px;
+      padding-left: 50px;
+      display: block;
+      border: 2px solid var(--clr-txt);
+      border-radius: 0 0 4px 4px;
+      position: relative;
+      z-index: 5;
+      background-color: var(--clr-bg);
+    }
+
+    &__amount-label {
+      display: block;
+      font-weight: 600;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: absolute;
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.00006 9.99976C8.00006 10.5302 8.21078 11.0389 8.58585 11.414C8.96092 11.789 9.46963 11.9998 10.0001 11.9998C10.5305 11.9998 11.0392 11.789 11.4143 11.414C11.7893 11.0389 12.0001 10.5302 12.0001 9.99976C12.0001 9.46932 11.7893 8.96062 11.4143 8.58554C11.0392 8.21047 10.5305 7.99976 10.0001 7.99976C9.46963 7.99976 8.96092 8.21047 8.58585 8.58554C8.21078 8.96062 8.00006 9.46932 8.00006 9.99976Z' stroke='%23364849' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M19 10C16.6 14 13.6 16 10 16C6.4 16 3.4 14 1 10C3.4 6 6.4 4 10 4C13.6 4 16.6 6 19 10Z' stroke='%23364849' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        top: 0;
+        left: -16px;
+        transform: translateX(-100%);
+      }
+    }
+  }
+
+  //modal
+  .gallery-modal {
+    $self: &;
+    --padding-block: 30px;
+    width: 100%;
+    height: 100dvh;
+    color: var(--clr-bg);
+    background-color: var(--clr-txt);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 900;
+    @extend %grrr--board;
+    transition: .8s ease;
+    overscroll-behavior: contain;
+
+    &:not(:first-child),
+    & :global(+ *) {
+      margin-top: var(--mt-m);
+    }
+    
+    &[aria-hidden="true"] {
+      height: 0;
+      padding-block: 0;
+      transition: .3s ease;
+
+      #{$self}__holder {
+        transition: .2s ease;
+        opacity: 0;
+      }
+    }
+    
+    @include media-break-up(l) {
+      --padding-block: 80px;
+      padding-block: var(--padding-block);
+      grid-template-rows: 100%;
+    }
+
+    &__holder {
+      grid-column: board-full;
+      transition: 1.2s ease; 
+      
+      @include media-break-up(l) {
+        grid-row: 1;
+        height: 100%;
+      }
+    }
+
+    &__top {
+      grid-column: board-full;
+      align-self: start;
+      width: grrr-cols-size(3);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      z-index: 5;
+      grid-row: 1;
+      pointer-events: none;
+      
+      @include media-break-down(l) {
+        height: 80px;
+        top: 0;
+        position: absolute;
+
+        > svg {
+          display: none;
+        }
+      }
+
+      @include media-break-up(l) {
+        grid-column: board-start 10 / board-end 12;
+      }
+    }
+
+    &__close {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      margin: 0;
+      pointer-events: all;
+      cursor: pointer;
+
+      svg {
+        display: block;
+      }
+
+      @media (hover: 'hover') {
+        &:hover {
+          opacity: .7;
+        }
+      }
+    }
+
+    &__footer {
+      position: relative;
+      z-index: 10;
+      pointer-events: none;
+      
+      @include grrr("board", 1, 4, false);
+     
+      @include media-break-down(l) {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0;
+
+        svg {
+          width: 24px;
+          height: 24px;
+          display: block;
+        }
+      }
+
+      @include media-break-up(l) {
+        @include grrr("board", 1, 12, false);
+        transform: translateY(-100%);
+      }
+
+      .swiper-button-prev, .swiper-button-next {
+        pointer-events: all;
+        cursor: pointer;
+
+        @media (hover: 'hover') {
+          &:hover {
+            opacity: .7;
+          }
+        }
+      }
+    }
+
+    &__footer-holder {
+      grid-column: board-full;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include media-break-down(l) {
+        width: 100%;
+        justify-content: flex-end;
+        gap: 9px;
+      }
+      
+      @include media-break-up(l) {
+        grid-column: board-start 10 / board-end 12;
+      }
+    }
+
+    &__swiper {
+      max-width: 100vw;
+      height: 100%;
+
+      @include media-break-down(l) {
+        padding-block: 80px;
+      }
+
+      .swiper-wrapper {
+        height: 100%;
+      }
+    }
+
+    &__pagination {
+      text-align: center;
+      @include type('h-xs');
+
+      @include media-break-down(l) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      @include media-break-up(l) {
+        @include type('h-m');
+      }
+    }
+
+    &__item {
+      @include grrr("board", 1, 4, false);
+      
+      @include media-break-down(l) {
+        max-height: calc(100vh - 90px);
+        overflow: auto;
+      }
+
+      @include media-break-up(l) {
+        @include grrr("board", 1, 12, false);
+        
+        grid-template-rows: 100%;
+        min-height: 100%;       
+      }
+
+      figure {
+        height: 100%;
+        grid-column: board-full;
+        background-color: rgba(0,0,0,.05);
+        
+        @include media-break-down(l) {
+          aspect-ratio: 1 / 1.238;
+        }
+
+        @include media-break-up(l) {
+          grid-column: board-start 1 / board-end 9;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &__description {
+      grid-column: board-full;
+      padding-top: 20px;
+      padding-bottom: 56px;
+      transition: .5s ease .3s;
+      
+      .swiper-slide:not(.swiper-slide-active) & {
+        transition: .2s ease;
+        transform: translateX(-50px);
+        opacity: 0;
+      }
+
+      :global(.text > h1),
+      :global(.text > h2),
+      :global(.text > h3),
+      :global(.text > h4),
+      :global(.text > h5),
+      :global(.text > h6) {
+        @include type('h-xs');
+        @include media-break-up(l) {
+          @include type('h-m');
+        }
+      }
+
+      @include media-break-up(l) {
+        padding-top: 130px;
+        grid-column: board-start 10 / board-end 12;
+      }
+    }
+  }
+</style>
+
+<script>
+  import Swiper from "swiper";
+  import { Navigation, Pagination } from "swiper/modules";
+
+  const swiper = new Swiper(".gallery-modal__swiper", {
+    spaceBetween: 40,
+    modules: [Navigation, Pagination],
+    loop: true,
+    navigation: {
+      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next",
+    },
+    pagination: {
+      el: ".gallery-modal__pagination",
+      type: "fraction",
+      renderFraction: function (currentClass, totalClass) {
+        return (
+          '<span class="' +
+          currentClass +
+          '"></span>' +
+          " / " +
+          '<span class="' +
+          totalClass +
+          '"></span>'
+        );
+      },
+    },
+  });
+
+  //modal
+  function handleModal() {
+    const triggers = document.querySelectorAll('[aria-controls]');
+
+    triggers.forEach(trigger => {
+      trigger.addEventListener('click', e => {
+        e.preventDefault();
+
+        const targetId = trigger.getAttribute('aria-controls');
+        const target = document.querySelector(`#${targetId}`);
+        const targetState = target.getAttribute('aria-hidden')
+        
+        target.setAttribute('aria-hidden', targetState === "true" ? "false" : "true");
+      })
+    })
+  }
+
+  handleModal();
+
+</script>
