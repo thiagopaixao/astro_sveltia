@@ -1,6 +1,5 @@
 ---
 import "swiper/css";
-// import "swiper/css/pagination";
 import Image from "astro/components/Image.astro";
 import Text from "./Text.astro";
 const { uniqid, description, images } = Astro.props;
@@ -85,7 +84,9 @@ const amountLabel = `${images.length} imagens`; // prever que o termo "imagens" 
                       <Image src={img.image} alt="" />
                     </figure>
                     <div class="gallery-modal__description">
-                      <Text set:html={img.caption} />
+                      <div class="gallery-modal__description-holder">
+                        <Text set:html={img.caption} />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -447,8 +448,32 @@ const amountLabel = `${images.length} imagens`; // prever que o termo "imagens" 
       }
 
       @include media-break-up(l) {
-        padding-top: 130px;
+        height: 100%;
+        padding-top: 90px;
         grid-column: board-start 10 / board-end 12;
+      }
+    }
+
+    &__description-holder {
+      position: relative;
+      mask-image: linear-gradient(to bottom, transparent 0%, black 10%);
+
+      @include media-break-up(l) {
+        height: 100%;
+        :global(.text) {
+          max-height: 100%;
+          overflow: auto;
+          position: absolute;
+          padding-block: 40px;
+          mask-image: linear-gradient(to top, transparent 0%, black 10%);
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+          overscroll-behavior: contain;
+          
+            &::-webkit-scrollbar {
+            display: none;
+          }
+        }
       }
     }
   }
