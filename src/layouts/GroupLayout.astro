@@ -1,0 +1,15 @@
+---
+const { Component, props } = Astro.props;
+const { txtColor, bgColor, backgroundImage } = props;
+
+let imgSrc;
+if (backgroundImage) {
+    const imgPath = `../assets/images/${backgroundImage}`;
+    const { default: img } = await import(imgPath, { assert: { type: 'image' } });
+    imgSrc = img.src;
+}
+---
+
+<Component txtColor={txtColor} bgColor={bgColor} imgBg={imgSrc} >
+  <slot />
+</Component>

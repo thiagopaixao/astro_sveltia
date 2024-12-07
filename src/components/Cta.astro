@@ -4,6 +4,9 @@ import Text from "./Text.astro";
 import Button from "./Button.astro";
 import Group from "./Group.astro";
 
+
+
+
 const {
   layout,
   media,
@@ -18,13 +21,14 @@ const {
   bgColor,
 } = Astro.props;
 
+console.log('CTA props:', Astro.props);
+
 // layout revebe 'media' ou 'text'
 // mediaType recebe 'image' ou 'video'
 // media recebe url da imagem ou vídeo
 // overlay deve ser: dark ou none
 // imgBg e videoBg recebem a url direta (deve ser possível apenas um dos dois)
 ---
-
 <div
   class:list={[
     "cta",

@@ -1,28 +1,37 @@
-import { z, defineCollection } from 'astro:content';
+import { defineCollection, z } from 'astro:content';
+
+const linkSchema = z.object({
+  url: z.string(),
+  target: z.string().optional(),
+  text: z.string().optional(),
+});
+
+const componentSchema = z.object({
+  type: z.string(),
+  layout: z.string().optional(),
+  txtColor: z.string().optional(),
+  bgColor: z.string().optional(),
+  backgroundImage: z.string().optional(),
+  content: z.string().optional(),
+  title: z.string().optional(),
+  body: z.string().optional(),
+  paddingTop: z.boolean().optional(),
+  paddingBottom: z.boolean().optional(),
+  // Atributos específicos do CTA
+  media: z.string().optional(),
+  mediaType: z.string().optional(),
+  ctaText: z.string().optional(),
+  link: linkSchema.optional(),
+  // Caso possua subcomponentes
+  components: z.array(z.any()).optional(),
+});
 
 const pagesCollection = defineCollection({
   type: 'content',
   schema: z.object({
-    title: z.string(),
-    sections: z.array(
-      z.object({
-        section: z.string(),
-        title: z.string().optional(),
-        txtColor: z.string().optional(),
-        bgColor: z.string().optional(),
-        backgroundImage: z.string().optional(),
-        body: z.string().optional(),
-        media: z.string().optional(),
-        mediaType: z.string().optional(),
-        ctaText: z.string().optional(),
-        link: z.object({
-          url: z.string(),
-          target: z.string(),
-          text: z.string()
-        }).optional()
-      })
-    )
-  })
+    title: z.string().optional(),
+    components: z.array(componentSchema).optional(),
+  }),
 });
 
 export const collections = {

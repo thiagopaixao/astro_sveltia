@@ -1,0 +1,33 @@
+---
+const { Component, props } = Astro.props;
+const {
+  layout,
+  mediaType,
+  media,
+  txtColor,
+  bgColor,
+  ctaText,
+  link,
+  body
+} = props;
+
+// Se `media` for uma imagem, importamos dinamicamente
+let img;
+if (media && mediaType === 'image') {
+  const imgModule = await import(`../assets/images/${media}`, { assert: { type: 'image' } });
+  img = imgModule.default;
+}
+---
+
+<Component
+  layout={layout}
+  media={img}
+  mediaType={mediaType}
+  text={ctaText}
+  link={link}
+  txtColor={txtColor}
+  bgColor={bgColor}
+>
+  {body && <Fragment set:html={body} />}
+  <slot />
+</Component>
