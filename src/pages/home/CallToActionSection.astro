@@ -1,12 +1,10 @@
 ---
 // Import necessary components
 import CTA from '../../components/CTA.astro';
-import { Image } from 'astro:assets';
-import { getImage } from 'astro:assets';
 
 interface Props {
     sectionData: {
-        backgroundImage: string;
+        media: string;
         txtColor: string;
         bgColor: string;
         ctaText: string;
@@ -21,7 +19,7 @@ interface Props {
 
 const { sectionData } = Astro.props;
 const { 
-    backgroundImage,
+    media,
     txtColor, 
     bgColor,
     ctaText,
@@ -30,14 +28,13 @@ const {
 } = sectionData;
 
 // Get background image
-const backgroundImagePath = `/src/assets/images/${backgroundImage}`;
-const imageImport = await import(backgroundImagePath);
-const optimizedBackground = await getImage({src: imageImport.default});
+const imgPath = `../../assets/images/${media}`;
+const { default: img } = await import(imgPath, { assert: { type: 'image' } });
 ---
 
 <CTA
     layout="media"
-    media={optimizedBackground.src}
+    media={img}
     mediaType="image"
     text={ctaText}
     link={link}
