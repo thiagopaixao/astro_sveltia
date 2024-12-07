@@ -13,10 +13,10 @@ import MapSection from "./MapSection.astro";
 
 // Import markdown content
 const content = await import('../../content/pages/home/index.md');
-const { sections } = content.frontmatter;
+const { components } = content.frontmatter;
 
 // Find all IntroductionSection occurrences
-const introSections = sections.filter(section => section.section === 'IntroductionSection');
+const introSections = components.filter(component => component.type === 'IntroductionSection');
 ---
 
 <Layout title="Documental.xyz">
@@ -24,12 +24,12 @@ const introSections = sections.filter(section => section.section === 'Introducti
         {/* MapBox section (always at the top) */}
         <MapBox />
 
-        {sections.map((section, index) => {
-            switch (section.section) {
+        {components.map((component, index) => {
+            switch (component.type) {
                 case 'IntroductionSection':
-                    return <IntroductionSection key={index} sectionData={section} />;
+                    return <IntroductionSection key={index} sectionData={component} />;
                 case 'CallToActionSection':
-                    return <CallToActionSection key={index} sectionData={section} />;
+                    return <CallToActionSection key={index} sectionData={component} />;
                 default:
                     return null;
             }
