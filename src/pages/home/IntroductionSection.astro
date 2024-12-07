@@ -1,16 +1,11 @@
 ---
+import { type IntroductionSectionProps } from '../../types/introduction-section';
 import Group from '../../components/Group.astro';
 import ColumnSticky from '../../components/ColumnSticky.astro';
 import Text from '../../components/Text.astro';
 
 interface Props {
-    sectionData: {
-        title: string;
-        txtColor: string;
-        bgColor: string;
-        backgroundImage: string;
-        body: string;
-    }
+    sectionData: IntroductionSectionProps;
 }
 
 const { sectionData } = Astro.props;
