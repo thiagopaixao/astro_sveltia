@@ -1,5 +1,5 @@
 ---
-titl: Home
+title: Home
 sections:
   - section: IntroductionSection
     title: 'ALTER DO CHÃO ALSO NEEDS TO BE RECOGNIZED'
