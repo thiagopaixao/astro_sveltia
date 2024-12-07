@@ -8,12 +8,19 @@ import Text from '../../components/Text.astro';
 import img from '../../assets/images/group-bg.png';
 
 // Import markdown content
-const content = await import('../../contents/home/IntroductionSection.md');
+const content = await import('../../content/pages/home/index.md');
+const { 
+    title: page_title, 
+    sections 
+} = content.frontmatter;
+
+const section = sections[0];
 const { 
     title, 
     txtColor, 
     bgColor, 
-} = content.frontmatter;
+    body 
+} = section;
 ---
 
 <Group txtColor={txtColor} bgColor={bgColor} imgBg={img.src}>
@@ -22,7 +29,7 @@ const {
         <h1 slot="title">{title}</h1>
         
         <Text>
-            <Fragment set:html={content.compiledContent()} />
+            <Fragment set:html={body} />
         </Text>
     </ColumnSticky>
 </Group>
