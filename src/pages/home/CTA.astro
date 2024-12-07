@@ -1,9 +1,12 @@
 ---
 // Import necessary components
+import type { string } from 'astro:schema';
 import CTA from '../../components/CTA.astro';
 
 interface Props {
     sectionData: {
+        layout: string;
+        mediaType: string;
         media: string;
         txtColor: string;
         bgColor: string;
@@ -19,6 +22,8 @@ interface Props {
 
 const { sectionData } = Astro.props;
 const { 
+    layout,
+    mediaType,
     media,
     txtColor, 
     bgColor,
@@ -33,9 +38,9 @@ const { default: img } = await import(imgPath, { assert: { type: 'image' } });
 ---
 
 <CTA
-    layout="media"
+    layout={layout}
     media={img}
-    mediaType="image"
+    mediaType={mediaType}
     text={ctaText}
     link={link}
     txtColor={txtColor}
