@@ -1,27 +1,49 @@
 ---
-// Import necessary components and assets
+// Import necessary components
 import CTA from '../../components/CTA.astro';
-import img from '../../assets/images/group-bg.png';
+import { Image } from 'astro:assets';
+import { getImage } from 'astro:assets';
 
-// Import markdown content
-const content = await import('../../content/pages/home/CallToActionSection.md');
+interface Props {
+    sectionData: {
+        backgroundImage: string;
+        txtColor: string;
+        bgColor: string;
+        ctaText: string;
+        link: {
+            url: string;
+            target: string;
+            text: string;
+        };
+        body: string;
+    }
+}
+
+const { sectionData } = Astro.props;
 const { 
-    ctaText, 
-    link, 
+    backgroundImage,
     txtColor, 
-    bgColor 
-} = content.frontmatter;
+    bgColor,
+    ctaText,
+    link,
+    body
+} = sectionData;
+
+// Get background image
+const backgroundImagePath = `/src/assets/images/${backgroundImage}`;
+const imageImport = await import(backgroundImagePath);
+const optimizedBackground = await getImage({src: imageImport.default});
 ---
 
 <CTA
     layout="media"
-    media={img}
+    media={optimizedBackground.src}
     mediaType="image"
     text={ctaText}
     link={link}
     txtColor={txtColor}
     bgColor={bgColor}
 >
-    <Fragment set:html={content.compiledContent()} />
+    <Fragment set:html={body} />
 </CTA>
 

@@ -32,8 +32,13 @@ const introSections = sections.filter(section => section.section === 'Introducti
         {/* Main content section */}
         <MainContentSection />
 
-        {/* Call to Action (CTA) section */}
-        <CallToActionSection /> 
+        {/* Call to Action sections */}
+        {sections
+            .filter(section => section.section === 'CallToActionSection')
+            .map((section, index) => (
+                <CallToActionSection key={index} sectionData={section} />
+            ))
+        }
 
         {/* Additional CTA section with highlight */}
         <AdditionalCTASection />
