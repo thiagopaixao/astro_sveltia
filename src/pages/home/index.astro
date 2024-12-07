@@ -10,6 +10,13 @@ import AdditionalCTASection from "./AdditionalCTASection.astro";
 import AdditionalMapSection from "./AdditionalMapSection.astro";
 import SupportSection from "./SupportSection.astro";
 import MapSection from "./MapSection.astro";
+
+// Import markdown content
+const content = await import('../../content/pages/home/index.md');
+const { sections } = content.frontmatter;
+
+// Find all IntroductionSection occurrences
+const introSections = sections.filter(section => section.section === 'IntroductionSection');
 ---
 
 <Layout title="Documental.xyz">
@@ -17,8 +24,10 @@ import MapSection from "./MapSection.astro";
         {/* MapBox section (always at the top) */}
         <MapBox />
 
-        {/* Introduction section */}
-        <IntroductionSection />
+        {/* Introduction sections */}
+        {introSections.map((section, index) => (
+            <IntroductionSection key={index} sectionData={section} />
+        ))}
 
         {/* Main content section */}
         <MainContentSection />
