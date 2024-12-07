@@ -9,9 +9,7 @@ interface Props {
         txtColor: string;
         bgColor: string;
         backgroundImage: string;
-        body: {
-            children?: any[];
-        };
+        components?: any[];
     }
 }
 
@@ -21,9 +19,8 @@ const {
     txtColor,
     bgColor,
     backgroundImage,
-    body
+    components
 } = sectionData;
-const { children } = body;
 ---
 
 <Group
@@ -32,7 +29,7 @@ const { children } = body;
     bgColor={bgColor}
     backgroundImage={backgroundImage}
 >
-    {children && children.map((child, index) => {
+    {components && components.map((child, index) => {
         switch (child.type) {
             case 'Text':
                 return <Text key={index} sectionData={child} />;
