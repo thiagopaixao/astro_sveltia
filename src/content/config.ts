@@ -18,10 +18,14 @@ const componentSchema = z.object({
   paddingTop: z.boolean().optional(),
   paddingBottom: z.boolean().optional(),
   // Atributos específicos do CTA
+  highlightedText: z.string().optional(),
   media: z.string().optional(),
   mediaType: z.string().optional(),
   ctaText: z.string().optional(),
   link: linkSchema.optional(),
+  imgBg: z.string().optional(),
+  overlay: z.string().optional(),
+  videoBg: z.string().optional(),
   // Caso possua subcomponentes
   components: z.array(z.any()).optional(),
 });

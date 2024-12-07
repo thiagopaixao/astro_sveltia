@@ -2,12 +2,16 @@
 const { Component, props } = Astro.props;
 const {
   layout,
+  highlightedText,
   mediaType,
   media,
   txtColor,
   bgColor,
   ctaText,
   link,
+  imgBg,
+  overlay,
+  videoBg,
   body
 } = props;
 
@@ -17,16 +21,29 @@ if (media && mediaType === 'image') {
   const imgModule = await import(`../assets/images/${media}`, { assert: { type: 'image' } });
   img = imgModule.default;
 }
+
+let imgSrc;
+if (imgBg) {
+    const imgPath = `../assets/images/${imgBg}`;
+    const { default: img } = await import(imgPath, { assert: { type: 'image' } });
+    imgSrc = img.src;
+}
+
+
 ---
 
 <Component
   layout={layout}
+  highlightedText={highlightedText}
   media={img}
   mediaType={mediaType}
   text={ctaText}
   link={link}
+  imgBg={imgSrc}
+  videoBg={videoBg}
   txtColor={txtColor}
   bgColor={bgColor}
+  overlay={overlay}
 >
   {body && <Fragment set:html={body} />}
   <slot />

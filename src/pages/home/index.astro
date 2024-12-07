@@ -26,6 +26,18 @@ const componentMap = {
   <head>
     <meta charset="UTF-8" />
     <title>{title}</title>
+
+    <style lang="scss">
+      main {
+        background-color: var(--clr-bg, transparent);
+  
+        :global(> .spacer) {
+          position: relative;
+          background-color: inherit;
+        }
+      }
+    </style>
+
   </head>
   <body>
     {
