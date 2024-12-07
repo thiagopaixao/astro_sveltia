@@ -24,21 +24,16 @@ const introSections = sections.filter(section => section.section === 'Introducti
         {/* MapBox section (always at the top) */}
         <MapBox />
 
-        {/* Introduction sections */}
-        {introSections.map((section, index) => (
-            <IntroductionSection key={index} sectionData={section} />
-        ))}
-
-        {/* Main content section */}
-        <MainContentSection />
-
-        {/* Call to Action sections */}
-        {sections
-            .filter(section => section.section === 'CallToActionSection')
-            .map((section, index) => (
-                <CallToActionSection key={index} sectionData={section} />
-            ))
-        }
+        {sections.map((section, index) => {
+            switch (section.section) {
+                case 'IntroductionSection':
+                    return <IntroductionSection key={index} sectionData={section} />;
+                case 'CallToActionSection':
+                    return <CallToActionSection key={index} sectionData={section} />;
+                default:
+                    return null;
+            }
+        })}
 
         {/* Additional CTA section with highlight */}
         <AdditionalCTASection />

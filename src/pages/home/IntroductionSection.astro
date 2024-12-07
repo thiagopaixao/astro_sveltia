@@ -5,30 +5,58 @@ import ColumnSticky from '../../components/ColumnSticky.astro';
 import Text from '../../components/Text.astro';
 
 interface Props {
-    sectionData: IntroductionSectionProps;
+    title?: string;
+    txtColor?: string;
+    bgColor?: string;
+    backgroundImage?: string;
+    body?: string;
+    sectionData?: IntroductionSectionProps;
+    class?: string;
 }
 
-const { sectionData } = Astro.props;
 const { 
-    title, 
-    txtColor, 
-    bgColor, 
-    backgroundImage,
-    body 
-} = sectionData;
+    sectionData,
+    title: propTitle, 
+    txtColor: propTxtColor, 
+    bgColor: propBgColor,
+    backgroundImage: propBgImage,
+    body: propBody,
+    class: className,
+} = Astro.props;
 
-// Dynamically import the background image
-const imgPath = `../../assets/images/${backgroundImage}`;
-const { default: img } = await import(imgPath, { assert: { type: 'image' } });
+// Use either direct props or sectionData
+const title = propTitle || sectionData?.title;
+const txtColor = propTxtColor || sectionData?.txtColor;
+const bgColor = propBgColor || sectionData?.bgColor;
+const backgroundImage = propBgImage || sectionData?.backgroundImage;
+const body = propBody || sectionData?.body;
+
+// Dynamically import the background image if provided
+let imgSrc;
+if (backgroundImage) {
+    const imgPath = `../../assets/images/${backgroundImage}`;
+    const { default: img } = await import(imgPath, { assert: { type: 'image' } });
+    imgSrc = img.src;
+}
 ---
 
-<Group txtColor={txtColor} bgColor={bgColor} imgBg={img.src}>
-    <ColumnSticky paddingTop paddingBottom layout="text-bigger">
-        {/* Main title highlighting the importance of Alter do Chão */}
-        <h1 slot="title">{title}</h1>
-        
-        <Text>
-            <Fragment set:html={body} />
-        </Text>
-    </ColumnSticky>
-</Group>
+<section class:list={['introduction-section', className]}>
+    <Group txtColor={txtColor} bgColor={bgColor} imgBg={imgSrc}>
+        <ColumnSticky paddingTop paddingBottom layout="text-bigger">
+            {title && <h1 slot="title">{title}</h1>}
+            
+            {body && 
+                <Text>
+                    <Fragment set:html={body} />
+                </Text>
+            }
+            <slot />
+        </ColumnSticky>
+    </Group>
+</section>
+
+<style>
+    .introduction-section {
+        width: 100%;
+    }
+</style>
