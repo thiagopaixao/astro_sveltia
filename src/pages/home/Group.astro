@@ -8,9 +8,10 @@ interface Props {
         layout: string;
         txtColor: string;
         bgColor: string;
-        title: string;
-        children?: any[];
-        body: string;
+        backgroundImage: string;
+        body: {
+            children?: any[];
+        };
     }
 }
 
@@ -19,19 +20,18 @@ const {
     layout,
     txtColor,
     bgColor,
-    title,
-    children,
+    backgroundImage,
     body
 } = sectionData;
+const { children } = body;
 ---
 
 <Group
     layout={layout}
     txtColor={txtColor}
     bgColor={bgColor}
-    title={title}
+    backgroundImage={backgroundImage}
 >
-    <Fragment set:html={body} />
     {children && children.map((child, index) => {
         switch (child.type) {
             case 'Text':
