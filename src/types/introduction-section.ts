@@ -1,4 +1,8 @@
-export interface IntroductionSectionProps {
+export interface ComponentBase {
+    type: string;
+}
+
+export interface IntroductionSectionProps extends ComponentBase {
     title: string;
     txtColor: string;
     bgColor: string;
