@@ -4,6 +4,9 @@ import MapBox from "../../components/MapBox.astro";
 import IntroductionSection from "./IntroductionSection.astro";
 import MainContentSection from "./MainContentSection.astro";
 import CTA from "./CTA.astro";
+import Group from "./Group.astro";
+import Text from "./Text.astro";
+import ColumnSticky from "./ColumnSticky.astro";
 import CardsCallSection from "./CardsCallSection.astro";
 import MapTimelineSection from "./MapTimelineSection.astro";
 import AdditionalCTASection from "./AdditionalCTASection.astro";
@@ -30,6 +33,12 @@ const introSections = components.filter(component => component.type === 'Introdu
                     return <IntroductionSection key={index} sectionData={component} />;
                 case 'CallToActionSection':
                     return <CTA key={index} sectionData={component} />;
+                case 'Group':
+                    return <Group key={index} sectionData={component} />;
+                case 'Text':
+                    return <Text key={index} sectionData={component} />;
+                case 'ColumnSticky':
+                    return <ColumnSticky key={index} sectionData={component} />;
                 default:
                     return null;
             }

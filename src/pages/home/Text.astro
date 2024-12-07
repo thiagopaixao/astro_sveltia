@@ -1,0 +1,25 @@
+---
+import Text from '../../components/Text.astro';
+
+interface Props {
+    sectionData: {
+        txtColor: string;
+        bgColor: string;
+        content: string;
+    }
+}
+
+const { sectionData } = Astro.props;
+const { 
+    txtColor,
+    bgColor,
+    content
+} = sectionData;
+---
+
+<Text
+    txtColor={txtColor}
+    bgColor={bgColor}
+>
+    <Fragment set:html={content} />
+</Text>

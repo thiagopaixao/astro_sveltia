@@ -1,6 +1,23 @@
 ---
 title: Home
 components:
+  - type: Group
+    layout: 'default'
+    txtColor: '#000000'
+    bgColor: '#FFFFFF'
+    title: 'Grupo de Exemplo'
+    body: 'Conteúdo principal do grupo'
+    children:
+      - type: Text
+        txtColor: '#000000'
+        bgColor: '#FFFFFF'
+        content: 'Este é um exemplo de texto dentro do grupo'
+      - type: ColumnSticky
+        txtColor: '#000000'
+        bgColor: '#F5F5F5'
+        title: 'Coluna Fixa'
+        content: 'Conteúdo da coluna que ficará fixa ao rolar'
+  
   - type: IntroductionSection
     title: 'ALTER DO CHÃO ALSO NEEDS TO BE RECOGNIZED'
     txtColor: '#F0EAD9'
