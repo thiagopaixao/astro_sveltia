@@ -26,11 +26,38 @@ collections:
             widget: 'object'
             collapsed: true
             fields:
-              - { label: 'Layout', name: 'layout', widget: 'select', options: ['default'], required: false }
-              - { label: 'Cor do Texto', name: 'txtColor', widget: 'color', required: false }
-              - { label: 'Cor de Fundo', name: 'bgColor', widget: 'color', required: false }
-              - { label: 'Imagem de Fundo', name: 'backgroundImage', widget: 'image', required: false }
-              - { label: 'Overlay', name: 'overlay', widget: 'select', options: ['dark', 'light'], required: false }
+              - {
+                  label: 'Layout',
+                  name: 'layout',
+                  widget: 'select',
+                  options: ['default'],
+                  required: false,
+                }
+              - {
+                  label: 'Cor do Texto',
+                  name: 'txtColor',
+                  widget: 'color',
+                  required: false,
+                }
+              - {
+                  label: 'Cor de Fundo',
+                  name: 'bgColor',
+                  widget: 'color',
+                  required: false,
+                }
+              - {
+                  label: 'Imagem de Fundo',
+                  name: 'backgroundImage',
+                  widget: 'image',
+                  required: false,
+                }
+              - {
+                  label: 'Overlay',
+                  name: 'overlay',
+                  widget: 'select',
+                  options: ['dark', 'light'],
+                  required: false,
+                }
               - label: 'Components'
                 name: 'components'
                 widget: 'list'
@@ -42,14 +69,56 @@ collections:
                     widget: 'object'
                     collapsed: true
                     fields:
-                      - { label: 'Cor do Texto', name: 'txtColor', widget: 'color', required: false }
-                      - { label: 'Cor de Fundo', name: 'bgColor', widget: 'color', required: false }
-                      - { label: 'Padding Superior', name: 'paddingTop', widget: 'boolean', required: false }
-                      - { label: 'Padding Inferior', name: 'paddingBottom', widget: 'boolean', required: false }
-                      - { label: 'Layout', name: 'layout', widget: 'select', options: ['text-bigger'], required: false }
-                      - { label: 'Título', name: 'title', widget: 'markdown', required: false }
-                      - { label: 'Corpo', name: 'body', widget: 'markdown', required: false }
-                      - { label: 'Components', name: 'components', widget: 'list', collapsed: true, types: *componentTypes }
+                      - {
+                          label: 'Cor do Texto',
+                          name: 'txtColor',
+                          widget: 'color',
+                          required: false,
+                        }
+                      - {
+                          label: 'Cor de Fundo',
+                          name: 'bgColor',
+                          widget: 'color',
+                          required: false,
+                        }
+                      - {
+                          label: 'Padding Superior',
+                          name: 'paddingTop',
+                          widget: 'boolean',
+                          required: false,
+                        }
+                      - {
+                          label: 'Padding Inferior',
+                          name: 'paddingBottom',
+                          widget: 'boolean',
+                          required: false,
+                        }
+                      - {
+                          label: 'Layout',
+                          name: 'layout',
+                          widget: 'select',
+                          options: ['text-bigger'],
+                          required: false,
+                        }
+                      - {
+                          label: 'Título',
+                          name: 'title',
+                          widget: 'markdown',
+                          required: false,
+                        }
+                      - {
+                          label: 'Corpo',
+                          name: 'body',
+                          widget: 'markdown',
+                          required: false,
+                        }
+                      - {
+                          label: 'Components',
+                          name: 'components',
+                          widget: 'list',
+                          collapsed: true,
+                          types: *componentTypes,
+                        }
 
                   - &text
                     label: 'Texto'
@@ -57,36 +126,24 @@ collections:
                     widget: 'object'
                     collapsed: true
                     fields:
-                      - { label: 'Cor do Texto', name: 'txtColor', widget: 'color', required: false }
-                      - { label: 'Cor de Fundo', name: 'bgColor', widget: 'color', required: false }
-                      - { label: 'Conteúdo', name: 'content', widget: 'markdown', required: false }
-
-                  - &cta
-                    label: 'CTA'
-                    name: 'Cta'
-                    widget: 'object'
-                    collapsed: true
-                    summary: '{{fields.layout}} CTA'
-                    fields:
-                      - { label: 'Tipo', name: 'type', widget: 'hidden', default: 'Cta' }
-                      - { label: 'Layout', name: 'layout', widget: 'select', options: ['media', 'text'], default: 'text', required: true }
-                      - { label: 'Tipo de Mídia', name: 'mediaType', widget: 'select', options: ['image', 'video'], default: 'image', required: false, condition: { field: 'layout', value: 'media' } }
-                      - { label: 'Mídia', name: 'media', widget: 'image', required: false, condition: { field: 'layout', value: 'media' } }
-                      - { label: 'Cor do Texto', name: 'txtColor', widget: 'color', required: true, allowInput: true }
-                      - { label: 'Cor de Fundo', name: 'bgColor', widget: 'color', required: true, allowInput: true }
-                      - { label: 'Texto Destacado', name: 'highlightedText', widget: 'string', required: false, condition: { field: 'layout', value: 'text' } }
-                      - { label: 'Texto CTA', name: 'ctaText', widget: 'markdown', required: true }
-                      - { label: 'Imagem de Fundo', name: 'imgBg', widget: 'image', required: false, condition: { field: 'layout', value: 'text' } }
-                      - { label: 'Overlay', name: 'overlay', widget: 'select', options: ['dark', 'light'], required: false }
-                      - label: 'Link'
-                        name: 'link'
-                        widget: 'object'
-                        collapsed: true
-                        required: true
-                        fields:
-                          - { label: 'URL', name: 'url', widget: 'string', required: true }
-                          - { label: 'Target', name: 'target', widget: 'select', options: ['_self', '_blank'], default: '_self' }
-                          - { label: 'Texto do Botão', name: 'text', widget: 'string', required: true }
+                      - {
+                          label: 'Cor do Texto',
+                          name: 'txtColor',
+                          widget: 'color',
+                          required: false,
+                        }
+                      - {
+                          label: 'Cor de Fundo',
+                          name: 'bgColor',
+                          widget: 'color',
+                          required: false,
+                        }
+                      - {
+                          label: 'Conteúdo',
+                          name: 'content',
+                          widget: 'markdown',
+                          required: false,
+                        }
 
                   - &cardsCall
                     label: 'Cards Call'
@@ -120,15 +177,31 @@ collections:
                     widget: 'object'
                     collapsed: true
                     fields:
-                      - { label: 'Título do Gráfico', name: 'chartTitle', widget: 'string' }
-                      - { label: 'Notas do Gráfico', name: 'chartNotes', widget: 'string' }
+                      - {
+                          label: 'Título do Gráfico',
+                          name: 'chartTitle',
+                          widget: 'string',
+                        }
+                      - {
+                          label: 'Notas do Gráfico',
+                          name: 'chartNotes',
+                          widget: 'string',
+                        }
                       - label: 'Barras'
                         name: 'chartBars'
                         widget: 'list'
                         fields:
                           - { label: 'Cor', name: 'color', widget: 'color' }
-                          - { label: 'Número', name: 'number', widget: 'number' }
-                          - { label: 'Porcentagem', name: 'numberPercent', widget: 'number' }
+                          - {
+                              label: 'Número',
+                              name: 'number',
+                              widget: 'number',
+                            }
+                          - {
+                              label: 'Porcentagem',
+                              name: 'numberPercent',
+                              widget: 'number',
+                            }
                           - { label: 'Rótulo', name: 'label', widget: 'string' }
 
                   - &column
@@ -137,7 +210,13 @@ collections:
                     widget: 'object'
                     collapsed: true
                     fields:
-                      - { label: 'Components', name: 'components', widget: 'list', collapsed: true, types: *componentTypes }
+                      - {
+                          label: 'Components',
+                          name: 'components',
+                          widget: 'list',
+                          collapsed: true,
+                          types: *componentTypes,
+                        }
 
                   - &imageBlock
                     label: 'Bloco de Imagem'
@@ -145,10 +224,25 @@ collections:
                     widget: 'object'
                     collapsed: true
                     fields:
-                      - { label: 'Largura Total', name: 'wide', widget: 'boolean', required: false }
+                      - {
+                          label: 'Largura Total',
+                          name: 'wide',
+                          widget: 'boolean',
+                          required: false,
+                        }
                       - { label: 'Fonte', name: 'src', widget: 'image' }
-                      - { label: 'Texto Alternativo', name: 'alt', widget: 'string', required: false }
-                      - { label: 'Descrição', name: 'description', widget: 'string', required: false }
+                      - {
+                          label: 'Texto Alternativo',
+                          name: 'alt',
+                          widget: 'string',
+                          required: false,
+                        }
+                      - {
+                          label: 'Descrição',
+                          name: 'description',
+                          widget: 'string',
+                          required: false,
+                        }
 
                   - &innerColumns
                     label: 'Colunas Internas'
@@ -156,8 +250,16 @@ collections:
                     widget: 'object'
                     collapsed: true
                     fields:
-                      - { label: 'Coluna 1', name: 'column1', widget: 'markdown' }
-                      - { label: 'Coluna 2', name: 'column2', widget: 'markdown' }
+                      - {
+                          label: 'Coluna 1',
+                          name: 'column1',
+                          widget: 'markdown',
+                        }
+                      - {
+                          label: 'Coluna 2',
+                          name: 'column2',
+                          widget: 'markdown',
+                        }
 
                   - &logosGroup
                     label: 'Grupo de Logos'
@@ -175,7 +277,12 @@ collections:
                             widget: 'object'
                             fields:
                               - { label: 'URL', name: 'url', widget: 'string' }
-                              - { label: 'Target', name: 'target', widget: 'select', options: ['_self', '_blank'] }
+                              - {
+                                  label: 'Target',
+                                  name: 'target',
+                                  widget: 'select',
+                                  options: ['_self', '_blank'],
+                                }
 
                   - &videoEmbed
                     label: 'Vídeo Incorporado'
@@ -183,9 +290,127 @@ collections:
                     widget: 'object'
                     collapsed: true
                     fields:
-                      - { label: 'Largura Total', name: 'wide', widget: 'boolean', required: false }
-                      - { label: 'URL do Vídeo', name: 'videoUrl', widget: 'string' }
-                      - { label: 'Legenda do Vídeo', name: 'videoCaption', widget: 'string', required: false }
+                      - {
+                          label: 'Largura Total',
+                          name: 'wide',
+                          widget: 'boolean',
+                          required: false,
+                        }
+                      - {
+                          label: 'URL do Vídeo',
+                          name: 'videoUrl',
+                          widget: 'string',
+                        }
+                      - {
+                          label: 'Legenda do Vídeo',
+                          name: 'videoCaption',
+                          widget: 'string',
+                          required: false,
+                        }
+
+          - &cta
+            label: 'CTA'
+            name: 'Cta'
+            widget: 'object'
+            collapsed: true
+            summary: '{{fields.layout}} CTA'
+            fields:
+              - {
+                  label: 'Tipo',
+                  name: 'type',
+                  widget: 'hidden',
+                  default: 'Cta',
+                }
+              - {
+                  label: 'Layout',
+                  name: 'layout',
+                  widget: 'select',
+                  options: ['media', 'text'],
+                  default: 'text',
+                  required: true,
+                }
+              - {
+                  label: 'Tipo de Mídia',
+                  name: 'mediaType',
+                  widget: 'select',
+                  options: ['image', 'video'],
+                  default: 'image',
+                  required: false,
+                  condition: { field: 'layout', value: 'media' },
+                }
+              - {
+                  label: 'Mídia',
+                  name: 'media',
+                  widget: 'image',
+                  required: false,
+                  condition: { field: 'layout', value: 'media' },
+                }
+              - {
+                  label: 'Cor do Texto',
+                  name: 'txtColor',
+                  widget: 'color',
+                  required: true,
+                  allowInput: true,
+                }
+              - {
+                  label: 'Cor de Fundo',
+                  name: 'bgColor',
+                  widget: 'color',
+                  required: true,
+                  allowInput: true,
+                }
+              - {
+                  label: 'Texto Destacado',
+                  name: 'highlightedText',
+                  widget: 'string',
+                  required: false,
+                  condition: { field: 'layout', value: 'text' },
+                }
+              - {
+                  label: 'Texto CTA',
+                  name: 'ctaText',
+                  widget: 'markdown',
+                  required: true,
+                }
+              - {
+                  label: 'Imagem de Fundo',
+                  name: 'imgBg',
+                  widget: 'image',
+                  required: false,
+                  condition: { field: 'layout', value: 'text' },
+                }
+              - {
+                  label: 'Overlay',
+                  name: 'overlay',
+                  widget: 'select',
+                  options: ['dark', 'light'],
+                  required: false,
+                }
+              - label: 'Link'
+                name: 'link'
+                widget: 'object'
+                collapsed: true
+                required: true
+                fields:
+                  - {
+                      label: 'URL',
+                      name: 'url',
+                      widget: 'string',
+                      required: true,
+                    }
+                  - {
+                      label: 'Target',
+                      name: 'target',
+                      widget: 'select',
+                      options: ['_self', '_blank'],
+                      default: '_self',
+                    }
+                  - {
+                      label: 'Texto do Botão',
+                      name: 'text',
+                      widget: 'string',
+                      required: true,
+                    }
 
   - name: 'geostorys'
     label: 'GeoHistórias'
