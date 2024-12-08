@@ -49,11 +49,12 @@ const componentSchema = z.object({
   highlightedText: z.string().optional(),
   media: z.string().optional(),
   mediaType: z.string().optional(),
-  ctaText: z.string().optional(),
-  link: linkSchema.optional(),
+  ctaText: z.string(),  // Tornando obrigatório
+  link: linkSchema,     // Tornando obrigatório
   imgBg: z.string().optional(),
   overlay: z.string().optional(),
   videoBg: z.string().optional(),
+  layout: z.enum(['media', 'text']).default('text'),
 
   // Atributos do CardsCall
   cardsCallArr: z.array(cardSchema).optional(),

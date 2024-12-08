@@ -68,15 +68,15 @@ collections:
                     collapsed: true
                     summary: '{{fields.layout}} CTA'
                     fields:
-                      - { label: 'Layout', name: 'type', widget: 'hidden', default: 'Cta' }
-                      - { label: 'Estilo', name: 'layout', widget: 'select', options: ['media', 'text'], default: 'text' }
-                      - { label: 'Tipo de Mídia', name: 'mediaType', widget: 'select', options: ['image', 'video'], default: 'image', required: false }
-                      - { label: 'Mídia', name: 'media', widget: 'image', required: false }
+                      - { label: 'Tipo', name: 'type', widget: 'hidden', default: 'Cta' }
+                      - { label: 'Layout', name: 'layout', widget: 'select', options: ['media', 'text'], default: 'text', required: true }
+                      - { label: 'Tipo de Mídia', name: 'mediaType', widget: 'select', options: ['image', 'video'], default: 'image', required: false, condition: { field: 'layout', value: 'media' } }
+                      - { label: 'Mídia', name: 'media', widget: 'image', required: false, condition: { field: 'layout', value: 'media' } }
                       - { label: 'Cor do Texto', name: 'txtColor', widget: 'color', required: true, allowInput: true }
                       - { label: 'Cor de Fundo', name: 'bgColor', widget: 'color', required: true, allowInput: true }
-                      - { label: 'Texto Destacado', name: 'highlightedText', widget: 'string', required: false }
+                      - { label: 'Texto Destacado', name: 'highlightedText', widget: 'string', required: false, condition: { field: 'layout', value: 'text' } }
                       - { label: 'Texto CTA', name: 'ctaText', widget: 'markdown', required: true }
-                      - { label: 'Imagem de Fundo', name: 'imgBg', widget: 'image', required: false }
+                      - { label: 'Imagem de Fundo', name: 'imgBg', widget: 'image', required: false, condition: { field: 'layout', value: 'text' } }
                       - { label: 'Overlay', name: 'overlay', widget: 'select', options: ['dark', 'light'], required: false }
                       - label: 'Link'
                         name: 'link'
