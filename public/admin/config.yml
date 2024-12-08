@@ -195,7 +195,7 @@ collections:
                         name: 'chartBars'
                         widget: 'list'
                         fields:
-                          - { label: 'Cor', name: 'color', widget: 'color' }
+                          - { label: 'Cor', name: 'color', widget: 'color', allowInput: true }
                           - {
                               label: 'Número',
                               name: 'number',
