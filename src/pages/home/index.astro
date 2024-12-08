@@ -1,6 +1,6 @@
 ---
 import { getEntryBySlug } from 'astro:content';
-
+import Layout from "../../layouts/Layout.astro";
 import Group from '../../components/Group.astro';
 import ColumnSticky from '../../components/ColumnSticky.astro';
 import Text from '../../components/Text.astro';
@@ -54,6 +54,8 @@ const componentMap = {
 
   </head>
   <body>
+  <Layout title="Documental.xyz">
+    <main>
     {
       // Toda a lógica de renderização fica aqui, no template.
       // Não usamos <script> separado, mas a lógica não está no frontmatter.
@@ -100,5 +102,19 @@ const componentMap = {
         return await renderComponents(components);
       })()
     }
+
+</main>
+
+  <style lang="scss">
+    main {
+      background-color: var(--clr-bg, transparent);
+
+      :global(> .spacer) {
+        position: relative;
+        background-color: inherit;
+      }
+    }
+  </style>
+</Layout>
   </body>
 </html>

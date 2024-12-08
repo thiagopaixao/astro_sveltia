@@ -66,6 +66,7 @@ const componentSchema = z.object({
   src: z.string().optional(),
   alt: z.string().optional(),
   wide: z.boolean().optional(),
+  description: z.string().optional(),
 
   // Atributos do LogosGroup
   logos: z.array(logoSchema).optional(),

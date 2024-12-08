@@ -1,16 +1,18 @@
 ---
 const { Component, props } = Astro.props;
+const { column1, column2 } = props;
 
 const componentData = {
-    ...props
+    column1: column1, 
+    column2: column2
 };
 ---
 
 <Component {...componentData}>
     <Fragment slot="column-1">
-        <slot name="column-1" />
+        {column1}
     </Fragment>
     <Fragment slot="column-2">
-        <slot name="column-2" />
+        {column2}
     </Fragment>
 </Component>

@@ -1,14 +1,23 @@
 ---
 const { Component, props } = Astro.props;
-const { src, alt, wide } = props;
+const { src, alt, wide, description } = props;
+
+
+let img;
+if (src) {
+  const imgModule = await import(`../assets/images/${src}`, { assert: { type: 'image' } });
+  img = imgModule.default;
+}
 
 const componentData = {
-    src,
+    src: img,
     alt: alt || "",
-    wide: wide || false
+    wide: wide || false,
+    description
 };
 ---
 
 <Component {...componentData}>
     <slot />
+    {description}
 </Component>
