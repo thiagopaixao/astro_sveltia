@@ -66,22 +66,26 @@ collections:
                     name: 'Cta'
                     widget: 'object'
                     collapsed: true
+                    summary: '{{fields.layout}} CTA'
                     fields:
-                      - { label: 'Layout', name: 'layout', widget: 'select', options: ['media', 'text'], required: false }
-                      - { label: 'Tipo de Mídia', name: 'mediaType', widget: 'select', options: ['image', 'video'], required: false }
+                      - { label: 'Layout', name: 'layout', widget: 'select', options: ['media', 'text'], default: 'text' }
+                      - { label: 'Tipo de Mídia', name: 'mediaType', widget: 'select', options: ['image', 'video'], default: 'image', required: false }
                       - { label: 'Mídia', name: 'media', widget: 'image', required: false }
-                      - { label: 'Cor do Texto', name: 'txtColor', widget: 'color', required: false }
-                      - { label: 'Cor de Fundo', name: 'bgColor', widget: 'color', required: false }
+                      - { label: 'Cor do Texto', name: 'txtColor', widget: 'color', required: false, allowInput: true }
+                      - { label: 'Cor de Fundo', name: 'bgColor', widget: 'color', required: false, allowInput: true }
                       - { label: 'Texto Destacado', name: 'highlightedText', widget: 'string', required: false }
                       - { label: 'Texto CTA', name: 'ctaText', widget: 'markdown', required: false }
+                      - { label: 'Imagem de Fundo', name: 'imgBg', widget: 'image', required: false }
+                      - { label: 'Overlay', name: 'overlay', widget: 'select', options: ['dark', 'light'], required: false }
                       - label: 'Link'
                         name: 'link'
                         widget: 'object'
+                        collapsed: true
                         required: false
                         fields:
-                          - { label: 'URL', name: 'url', widget: 'string' }
-                          - { label: 'Target', name: 'target', widget: 'select', options: ['_self', '_blank'] }
-                          - { label: 'Texto', name: 'text', widget: 'string' }
+                          - { label: 'URL', name: 'url', widget: 'string', required: true }
+                          - { label: 'Target', name: 'target', widget: 'select', options: ['_self', '_blank'], default: '_self' }
+                          - { label: 'Texto', name: 'text', widget: 'string', required: true }
 
                   - &cardsCall
                     label: 'Cards Call'
@@ -96,12 +100,14 @@ collections:
                           - label: 'Link'
                             name: 'link'
                             widget: 'object'
+                            collapsed: true
                             required: false
                             fields:
                               - { label: 'URL', name: 'url', widget: 'string' }
                           - label: 'Imagem'
                             name: 'img'
                             widget: 'object'
+                            collapsed: true
                             fields:
                               - { label: 'Fonte', name: 'src', widget: 'image' }
                           - { label: 'Título', name: 'title', widget: 'string' }
