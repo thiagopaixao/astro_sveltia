@@ -1,0 +1,23 @@
+---
+import Group from '../components/Group.astro';
+import thumb from '../assets/images/thumb.png'; // Importando a imagem estática de exemplo
+
+const { Component, props } = Astro.props;
+const { cardsCallArr = []} = props;
+
+// Atualiza o array de cards substituindo a imagem original por `thumb` importada
+const updatedCardsCallArr = cardsCallArr.map(card => {
+  // Se card.img.src for 'uploads/thumb.png', substituímos por `thumb`
+  let updatedImg = { ...card.img };
+  if (updatedImg.src === 'uploads/thumb.png') {
+    updatedImg.src = thumb;
+  }
+
+  return {
+    ...card,
+    img: updatedImg
+  };
+});
+---
+
+  <Component cards={updatedCardsCallArr} />

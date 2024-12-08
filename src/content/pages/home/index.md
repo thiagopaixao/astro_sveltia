@@ -45,4 +45,31 @@ components:
       url: '#'
       target: '_self'
       text: 'Botão'
+  - type: Group
+    layout: 'default'
+    txtColor: '#000'
+    bgColor: '#FFF'
+    components:
+      - type: CardsCall
+        cardsCallArr:
+          - link:
+              url: '#'
+            img:
+              src: 'uploads/thumb.png'
+            title: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque'
+            text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam'
+
+          - link:
+              url: '#'
+            img:
+              src: 'uploads/thumb.png'
+            title: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque'
+            text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam'
+
+          - link:
+              url: '#'
+            img:
+              src: 'uploads/thumb.png'
+            title: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque'
+            text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam'
 ---

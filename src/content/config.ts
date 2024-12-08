@@ -6,6 +6,18 @@ const linkSchema = z.object({
   text: z.string().optional(),
 });
 
+// Schema para cada card do CardsCall
+const cardSchema = z.object({
+  link: linkSchema.optional(),
+  img: z
+    .object({
+      src: z.string(),
+    })
+    .optional(),
+  title: z.string().optional(),
+  text: z.string().optional(),
+});
+
 const componentSchema = z.object({
   type: z.string(),
   layout: z.string().optional(),
@@ -17,6 +29,7 @@ const componentSchema = z.object({
   body: z.string().optional(),
   paddingTop: z.boolean().optional(),
   paddingBottom: z.boolean().optional(),
+
   // Atributos específicos do CTA
   highlightedText: z.string().optional(),
   media: z.string().optional(),
@@ -26,6 +39,10 @@ const componentSchema = z.object({
   imgBg: z.string().optional(),
   overlay: z.string().optional(),
   videoBg: z.string().optional(),
+
+  // Atributos do CardsCall
+  cardsCallArr: z.array(cardSchema).optional(),
+
   // Caso possua subcomponentes
   components: z.array(z.any()).optional(),
 });
