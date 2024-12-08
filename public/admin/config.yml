@@ -68,24 +68,25 @@ collections:
                     collapsed: true
                     summary: '{{fields.layout}} CTA'
                     fields:
-                      - { label: 'Layout', name: 'layout', widget: 'select', options: ['media', 'text'], default: 'text' }
+                      - { label: 'Layout', name: 'type', widget: 'hidden', default: 'Cta' }
+                      - { label: 'Estilo', name: 'layout', widget: 'select', options: ['media', 'text'], default: 'text' }
                       - { label: 'Tipo de Mídia', name: 'mediaType', widget: 'select', options: ['image', 'video'], default: 'image', required: false }
                       - { label: 'Mídia', name: 'media', widget: 'image', required: false }
-                      - { label: 'Cor do Texto', name: 'txtColor', widget: 'color', required: false, allowInput: true }
-                      - { label: 'Cor de Fundo', name: 'bgColor', widget: 'color', required: false, allowInput: true }
+                      - { label: 'Cor do Texto', name: 'txtColor', widget: 'color', required: true, allowInput: true }
+                      - { label: 'Cor de Fundo', name: 'bgColor', widget: 'color', required: true, allowInput: true }
                       - { label: 'Texto Destacado', name: 'highlightedText', widget: 'string', required: false }
-                      - { label: 'Texto CTA', name: 'ctaText', widget: 'markdown', required: false }
+                      - { label: 'Texto CTA', name: 'ctaText', widget: 'markdown', required: true }
                       - { label: 'Imagem de Fundo', name: 'imgBg', widget: 'image', required: false }
                       - { label: 'Overlay', name: 'overlay', widget: 'select', options: ['dark', 'light'], required: false }
                       - label: 'Link'
                         name: 'link'
                         widget: 'object'
                         collapsed: true
-                        required: false
+                        required: true
                         fields:
                           - { label: 'URL', name: 'url', widget: 'string', required: true }
                           - { label: 'Target', name: 'target', widget: 'select', options: ['_self', '_blank'], default: '_self' }
-                          - { label: 'Texto', name: 'text', widget: 'string', required: true }
+                          - { label: 'Texto do Botão', name: 'text', widget: 'string', required: true }
 
                   - &cardsCall
                     label: 'Cards Call'
