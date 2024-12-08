@@ -35,7 +35,7 @@ const chartBarSchema = z.object({
 
 const componentSchema = z.object({
   type: z.string(),
-  layout: z.string().optional(),
+  layout: z.enum(['default', 'media', 'text', 'text-bigger']).optional(),
   txtColor: z.string().optional(),
   bgColor: z.string().optional(),
   backgroundImage: z.string().optional(),
@@ -49,12 +49,11 @@ const componentSchema = z.object({
   highlightedText: z.string().optional(),
   media: z.string().optional(),
   mediaType: z.string().optional(),
-  ctaText: z.string(),  // Tornando obrigatório
-  link: linkSchema,     // Tornando obrigatório
+  ctaText: z.string().optional(),
+  link: linkSchema.optional(),
   imgBg: z.string().optional(),
   overlay: z.string().optional(),
   videoBg: z.string().optional(),
-  layout: z.enum(['media', 'text']).default('text'),
 
   // Atributos do CardsCall
   cardsCallArr: z.array(cardSchema).optional(),
