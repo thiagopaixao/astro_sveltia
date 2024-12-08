@@ -38,12 +38,14 @@ collections:
                   name: 'txtColor',
                   widget: 'color',
                   required: false,
+                  allowInput: true,
                 }
               - {
                   label: 'Cor de Fundo',
                   name: 'bgColor',
                   widget: 'color',
                   required: false,
+                  allowInput: true,
                 }
               - {
                   label: 'Imagem de Fundo',
@@ -74,12 +76,14 @@ collections:
                           name: 'txtColor',
                           widget: 'color',
                           required: false,
+                          allowInput: true,
                         }
                       - {
                           label: 'Cor de Fundo',
                           name: 'bgColor',
                           widget: 'color',
                           required: false,
+                          allowInput: true,
                         }
                       - {
                           label: 'Padding Superior',
