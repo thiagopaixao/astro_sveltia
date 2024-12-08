@@ -36,16 +36,16 @@ collections:
               - {
                   label: 'Cor do Texto',
                   name: 'txtColor',
-                  widget: 'color',
+                  widget: 'string',
                   required: false,
-                  allowInput: true,
+                  pattern: ['^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$', 'Deve ser um código de cor hexadecimal válido (ex: #FF0000)'],
                 }
               - {
                   label: 'Cor de Fundo',
                   name: 'bgColor',
-                  widget: 'color',
+                  widget: 'string',
                   required: false,
-                  allowInput: true,
+                  pattern: ['^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$', 'Deve ser um código de cor hexadecimal válido (ex: #FF0000)'],
                 }
               - {
                   label: 'Imagem de Fundo',
@@ -74,16 +74,16 @@ collections:
                       - {
                           label: 'Cor do Texto',
                           name: 'txtColor',
-                          widget: 'color',
+                          widget: 'string',
                           required: false,
-                          allowInput: true,
+                          pattern: ['^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$', 'Deve ser um código de cor hexadecimal válido (ex: #FF0000)'],
                         }
                       - {
                           label: 'Cor de Fundo',
                           name: 'bgColor',
-                          widget: 'color',
+                          widget: 'string',
                           required: false,
-                          allowInput: true,
+                          pattern: ['^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$', 'Deve ser um código de cor hexadecimal válido (ex: #FF0000)'],
                         }
                       - {
                           label: 'Padding Superior',
@@ -195,7 +195,12 @@ collections:
                         name: 'chartBars'
                         widget: 'list'
                         fields:
-                          - { label: 'Cor', name: 'color', widget: 'color', allowInput: true }
+                          - { 
+                              label: 'Cor',
+                              name: 'color',
+                              widget: 'string',
+                              pattern: ['^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$', 'Deve ser um código de cor hexadecimal válido (ex: #FF0000)']
+                            }
                           - {
                               label: 'Número',
                               name: 'number',
