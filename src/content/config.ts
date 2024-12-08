@@ -4,6 +4,7 @@ const linkSchema = z.object({
   url: z.string(),
   target: z.string().optional(),
   text: z.string().optional(),
+  title: z.string().optional(),
 });
 
 // Schema para cada card do CardsCall
@@ -16,6 +17,19 @@ const cardSchema = z.object({
     .optional(),
   title: z.string().optional(),
   text: z.string().optional(),
+});
+
+// Schema para logos
+const logoSchema = z.object({
+  image: z.string(),
+  link: linkSchema,
+});
+
+// Schema para barras do gráfico
+const chartBarSchema = z.object({
+  label: z.string(),
+  value: z.number(),
+  color: z.string().optional(),
 });
 
 const componentSchema = z.object({
@@ -42,6 +56,27 @@ const componentSchema = z.object({
 
   // Atributos do CardsCall
   cardsCallArr: z.array(cardSchema).optional(),
+
+  // Atributos do ChartBar
+  chartTitle: z.string().optional(),
+  chartNotes: z.string().optional(),
+  chartBars: z.array(chartBarSchema).optional(),
+
+  // Atributos do ImageBlock
+  src: z.string().optional(),
+  alt: z.string().optional(),
+  wide: z.boolean().optional(),
+
+  // Atributos do LogosGroup
+  logos: z.array(logoSchema).optional(),
+
+  // Atributos do VideoEmbed
+  videoUrl: z.string().optional(),
+  videoCaption: z.string().optional(),
+
+  // Atributos do InnerColumns
+  column1: z.string().optional(),
+  column2: z.string().optional(),
 
   // Caso possua subcomponentes
   components: z.array(z.any()).optional(),
