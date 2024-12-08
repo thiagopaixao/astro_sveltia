@@ -133,14 +133,16 @@ collections:
                       - {
                           label: 'Cor do Texto',
                           name: 'txtColor',
-                          widget: 'color',
+                          widget: 'string',
                           required: false,
+                          pattern: ['^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$', 'Deve ser um código de cor hexadecimal válido (ex: #FF0000)'],
                         }
                       - {
                           label: 'Cor de Fundo',
                           name: 'bgColor',
-                          widget: 'color',
+                          widget: 'string',
                           required: false,
+                          pattern: ['^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$', 'Deve ser um código de cor hexadecimal válido (ex: #FF0000)'],
                         }
                       - {
                           label: 'Conteúdo',
@@ -357,16 +359,16 @@ collections:
               - {
                   label: 'Cor do Texto',
                   name: 'txtColor',
-                  widget: 'color',
+                  widget: 'string',
                   required: true,
-                  allowInput: true,
+                  pattern: ['^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$', 'Deve ser um código de cor hexadecimal válido (ex: #FF0000)'],
                 }
               - {
                   label: 'Cor de Fundo',
                   name: 'bgColor',
-                  widget: 'color',
+                  widget: 'string',
                   required: true,
-                  allowInput: true,
+                  pattern: ['^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$', 'Deve ser um código de cor hexadecimal válido (ex: #FF0000)'],
                 }
               - {
                   label: 'Texto Destacado',
