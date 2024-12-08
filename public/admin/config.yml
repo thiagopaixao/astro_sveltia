@@ -7,3 +7,49 @@ media_folder: 'public/uploads'
 public_folder: '/uploads'
 
 local_backend: true
+
+collections:
+  - name: 'pages'
+    label: 'Páginas'
+    folder: 'src/content/pages'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Título', name: 'title', widget: 'string' }
+      - { label: 'Components', name: 'components', widget: 'list', fields: [
+          { label: 'Tipo', name: 'type', widget: 'string' },
+          { label: 'Layout', name: 'layout', widget: 'string', required: false },
+          { label: 'Cor do Texto', name: 'txtColor', widget: 'string', required: false },
+          { label: 'Cor de Fundo', name: 'bgColor', widget: 'string', required: false },
+          { label: 'Imagem de Fundo', name: 'backgroundImage', widget: 'image', required: false },
+          { label: 'Conteúdo', name: 'content', widget: 'markdown', required: false },
+          { label: 'Título do Componente', name: 'title', widget: 'string', required: false },
+          { label: 'Corpo', name: 'body', widget: 'markdown', required: false }
+        ]}
+
+  - name: 'geostorys'
+    label: 'GeoHistórias'
+    folder: 'src/content/geostorys'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Título', name: 'title', widget: 'string' }
+      - { label: 'Data', name: 'date', widget: 'datetime' }
+      - { label: 'Imagem de Capa', name: 'coverImage', widget: 'image' }
+      - { label: 'Localização', name: 'location', widget: 'map' }
+      - { label: 'Descrição', name: 'description', widget: 'text' }
+      - { label: 'Conteúdo', name: 'body', widget: 'markdown' }
+
+  - name: 'blog'
+    label: 'Blog'
+    folder: 'src/content/blog'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { label: 'Título', name: 'title', widget: 'string' }
+      - { label: 'Data', name: 'date', widget: 'datetime' }
+      - { label: 'Imagem de Capa', name: 'coverImage', widget: 'image' }
+      - { label: 'Descrição', name: 'description', widget: 'text' }
+      - { label: 'Tags', name: 'tags', widget: 'list' }
+      - { label: 'Autor', name: 'author', widget: 'string' }
+      - { label: 'Conteúdo', name: 'body', widget: 'markdown' }

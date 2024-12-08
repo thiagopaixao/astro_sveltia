@@ -1,5 +1,6 @@
 import { defineCollection, z } from 'astro:content';
 
+// Schemas comuns
 const linkSchema = z.object({
   url: z.string(),
   target: z.string().optional(),
@@ -91,6 +92,36 @@ const pagesCollection = defineCollection({
   }),
 });
 
+// Schema para Blog
+const blogSchema = z.object({
+  title: z.string(),
+  date: z.date(),
+  coverImage: z.string(),
+  description: z.string(),
+  tags: z.array(z.string()),
+  author: z.string(),
+});
+
+// Schema para GeoStories
+const geoStorySchema = z.object({
+  title: z.string(),
+  date: z.date(),
+  coverImage: z.string(),
+  location: z.object({
+    lat: z.number(),
+    lng: z.number(),
+  }),
+  description: z.string(),
+});
+
 export const collections = {
   pages: pagesCollection,
+  blog: defineCollection({
+    type: 'content',
+    schema: blogSchema,
+  }),
+  geostorys: defineCollection({
+    type: 'content',
+    schema: geoStorySchema,
+  }),
 };
