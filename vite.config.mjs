@@ -13,7 +13,19 @@ export const mergeYamlConfigs = () => {
       const configFiles = await glob('public/admin/config/**/*.yml');
       let mergedConfig = {};
       
-      for (const file of configFiles) {
+      // Load components first to ensure anchors are available
+      const componentFiles = configFiles.filter(file => file.includes('/components/'));
+      const otherFiles = configFiles.filter(file => !file.includes('/components/'));
+      
+      // Process component files first
+      for (const file of componentFiles) {
+        const content = fs.readFileSync(file, 'utf8');
+        const parsed = yaml.parse(content);
+        mergedConfig = { ...mergedConfig, ...parsed };
+      }
+      
+      // Then process other files
+      for (const file of otherFiles) {
         const content = fs.readFileSync(file, 'utf8');
         const parsed = yaml.parse(content);
         mergedConfig = { ...mergedConfig, ...parsed };

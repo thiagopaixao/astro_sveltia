@@ -1,11 +1,10 @@
-components:
-  -group: &group
-    label: 'Group'
-    name: 'group'
-    widget: 'object'
-    collapsed: true
-    summary: 'Group - {{fields.layout}}'
-    fields:
+group: &group
+  label: 'Group'
+  name: 'group'
+  widget: 'object'
+  collapsed: true
+  summary: 'Group - {{fields.layout}}'
+  fields:
       - { label: 'Type', name: 'type', widget: 'hidden', default: 'Group' }
       - {
           label: 'Layout',
