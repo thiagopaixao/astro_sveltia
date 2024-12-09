@@ -2,7 +2,7 @@ map: &map
   label: 'Map'
   name: 'Map'
   widget: 'object'
-  summary: '{{fields.mapView}}'
+  summary: '{{fields.columnAlign}}'
   fields:
     - label: 'Type'
       name: 'type'
@@ -31,10 +31,6 @@ map: &map
       required: false
       enableAlpha: true
       allowInput: true
-    - label: 'Map View'
-      name: 'mapView'
-      widget: 'string'
-      required: false
     - label: 'Components'
       name: 'components'
       widget: 'list'
