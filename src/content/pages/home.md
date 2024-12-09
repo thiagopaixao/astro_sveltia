@@ -135,7 +135,7 @@ components:
     components:
       - type: Text
         content: |
-          #### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
 
@@ -156,7 +156,17 @@ components:
     bgColor: '#000000'
     components:
       - type: Text
-        content: '[TextPlaceholder]'
+        content: '<h4>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium
+        </h4>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium,
+          <br /><br />
+          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+          architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
+        </p>'
       - type: MapView
         mapView: 'view_3'
       - type: Text
