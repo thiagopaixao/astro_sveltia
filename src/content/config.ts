@@ -1,4 +1,12 @@
 import { defineCollection, z } from 'astro:content';
+import { marked } from 'marked';
+
+// Função para processar markdown e HTML
+function processMarkdown(text: string) {
+  if (!text) return '';
+  // Permite HTML direto e processa markdown
+  return marked.parse(text, { mangle: false, headerIds: false });
+}
 
 // Schemas comuns
 const linkSchema = z.object({
@@ -16,8 +24,8 @@ const cardSchema = z.object({
       src: z.string(),
     })
     .optional(),
-  title: z.string().optional(),
-  text: z.string().optional(),
+  title: z.string().optional().transform(processMarkdown),
+  text: z.string().optional().transform(processMarkdown),
 });
 
 // Schema para logos
@@ -28,7 +36,7 @@ const logoSchema = z.object({
 
 // Schema para barras do gráfico
 const chartBarSchema = z.object({
-  label: z.string(),
+  label: z.string().transform(processMarkdown),
   value: z.number(),
   color: z.string().optional(),
 });
