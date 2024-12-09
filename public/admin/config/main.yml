@@ -14,3 +14,6 @@ imports:
   - ./components/Text.yml
   - ./components/VideoEmbed.yml
   - ./components/ImageBlock.yml
+  - ./components/ChartBar.yml
+  - ./components/Column.yml
+  - ./components/ColumnSticky.yml
