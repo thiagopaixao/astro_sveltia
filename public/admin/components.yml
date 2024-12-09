@@ -4,6 +4,9 @@ components:
   - components/VideoEmbed.yml
   - components/ImageBlock.yml
   - components/ChartBar.yml
+  - components/CardsCall.yml
+  - components/LogosGroup.yml
+  - components/InnerColumns.yml
 
   # Componentes que dependem dos anteriores
   - components/Column.yml

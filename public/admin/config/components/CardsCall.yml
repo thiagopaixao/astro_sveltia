@@ -1,0 +1,41 @@
+cardsCall: &cardsCall
+  label: 'Cards Call'
+  name: 'CardsCall'
+  widget: 'object'
+  summary: '{{fields.cardsCallArr}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'CardsCall'
+    - label: 'Cards'
+      name: 'cardsCallArr'
+      widget: 'list'
+      required: false
+      fields:
+        - label: 'Link'
+          name: 'link'
+          widget: 'object'
+          required: false
+          fields:
+            - label: 'URL'
+              name: 'url'
+              widget: 'string'
+              required: false
+        - label: 'Image'
+          name: 'img'
+          widget: 'object'
+          required: false
+          fields:
+            - label: 'Source'
+              name: 'src'
+              widget: 'image'
+              required: false
+        - label: 'Title'
+          name: 'title'
+          widget: 'string'
+          required: false
+        - label: 'Text'
+          name: 'text'
+          widget: 'string'
+          required: false

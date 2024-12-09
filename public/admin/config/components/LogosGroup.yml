@@ -1,0 +1,10 @@
+logosGroup: &logosGroup
+  label: 'Logos Group'
+  name: 'LogosGroup'
+  widget: 'object'
+  summary: 'Logos Group'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'LogosGroup'
