@@ -47,17 +47,17 @@ const componentSchema = z.object({
   txtColor: z.string().optional(),
   bgColor: z.string().optional(),
   backgroundImage: z.string().optional(),
-  content: z.string().optional(),
-  title: z.string().optional(),
-  body: z.string().optional(),
+  content: z.string().optional().transform(processMarkdown),
+  title: z.string().optional().transform(processMarkdown),
+  body: z.string().optional().transform(processMarkdown),
   paddingTop: z.boolean().optional(),
   paddingBottom: z.boolean().optional(),
 
   // Atributos específicos do CTA
-  highlightedText: z.string().optional(),
+  highlightedText: z.string().optional().transform(processMarkdown),
   media: z.string().optional(),
   mediaType: z.string().optional(),
-  ctaText: z.string().optional(),
+  ctaText: z.string().optional().transform(processMarkdown),
   link: linkSchema.optional(),
   imgBg: z.string().optional(),
   overlay: z.string().optional(),
@@ -67,26 +67,26 @@ const componentSchema = z.object({
   cardsCallArr: z.array(cardSchema).optional(),
 
   // Atributos do ChartBar
-  chartTitle: z.string().optional(),
-  chartNotes: z.string().optional(),
+  chartTitle: z.string().optional().transform(processMarkdown),
+  chartNotes: z.string().optional().transform(processMarkdown),
   chartBars: z.array(chartBarSchema).optional(),
 
   // Atributos do ImageBlock
   src: z.string().optional(),
-  alt: z.string().optional(),
+  alt: z.string().optional().transform(processMarkdown),
   wide: z.boolean().optional(),
-  description: z.string().optional(),
+  description: z.string().optional().transform(processMarkdown),
 
   // Atributos do LogosGroup
   logos: z.array(logoSchema).optional(),
 
   // Atributos do VideoEmbed
   videoUrl: z.string().optional(),
-  videoCaption: z.string().optional(),
+  videoCaption: z.string().optional().transform(processMarkdown),
 
   // Atributos do InnerColumns
-  column1: z.string().optional(),
-  column2: z.string().optional(),
+  column1: z.string().optional().transform(processMarkdown),
+  column2: z.string().optional().transform(processMarkdown),
 
   // Caso possua subcomponentes
   components: z.array(z.any()).optional(),
