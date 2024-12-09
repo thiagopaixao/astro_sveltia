@@ -20,6 +20,7 @@ collections:
         name: 'components'
         widget: 'list'
         collapsed: true
+        required: false
         types:
           - label: 'Group'
             name: 'group'
@@ -27,7 +28,12 @@ collections:
             collapsed: true
             summary: 'Group - {{fields.title}}'
             fields:
-              - { label: 'Tipo', name: 'type', widget: 'hidden', default: 'Group' }
+              - {
+                  label: 'Tipo',
+                  name: 'type',
+                  widget: 'hidden',
+                  default: 'Group',
+                }
               - {
                   label: 'Layout',
                   name: 'layout',
@@ -83,19 +89,30 @@ collections:
                 name: 'components'
                 widget: 'list'
                 collapsed: true
+                required: false
                 types:
                   - label: 'Group'
                     name: 'group'
                     widget: 'object'
                     collapsed: true
                     fields:
-                      - { label: 'Tipo', name: 'type', widget: 'hidden', default: 'Group' }
+                      - {
+                          label: 'Tipo',
+                          name: 'type',
+                          widget: 'hidden',
+                          default: 'Group',
+                        }
                   - label: 'CTA'
                     name: 'cta'
                     widget: 'object'
                     collapsed: true
                     fields:
-                      - { label: 'Tipo', name: 'type', widget: 'hidden', default: 'Cta' }
+                      - {
+                          label: 'Tipo',
+                          name: 'type',
+                          widget: 'hidden',
+                          default: 'Cta',
+                        }
 
           - label: 'CTA'
             name: 'cta'
@@ -103,7 +120,12 @@ collections:
             collapsed: true
             summary: 'CTA - {{fields.title}}'
             fields:
-              - { label: 'Tipo', name: 'type', widget: 'hidden', default: 'Cta' }
+              - {
+                  label: 'Tipo',
+                  name: 'type',
+                  widget: 'hidden',
+                  default: 'Cta',
+                }
               - {
                   label: 'Layout',
                   name: 'layout',
@@ -185,16 +207,27 @@ collections:
                 name: 'components'
                 widget: 'list'
                 collapsed: true
+                required: false
                 types:
                   - label: 'Group'
                     name: 'group'
                     widget: 'object'
                     collapsed: true
                     fields:
-                      - { label: 'Tipo', name: 'type', widget: 'hidden', default: 'Group' }
+                      - {
+                          label: 'Tipo',
+                          name: 'type',
+                          widget: 'hidden',
+                          default: 'Group',
+                        }
                   - label: 'CTA'
                     name: 'cta'
                     widget: 'object'
                     collapsed: true
                     fields:
-                      - { label: 'Tipo', name: 'type', widget: 'hidden', default: 'Cta' }
+                      - {
+                          label: 'Tipo',
+                          name: 'type',
+                          widget: 'hidden',
+                          default: 'Cta',
+                        }
