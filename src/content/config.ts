@@ -98,6 +98,18 @@ const componentSchema = z.object({
   column1: z.string().optional().transform(processMarkdown),
   column2: z.string().optional().transform(processMarkdown),
 
+  // Atributos do Map
+  columnAlign: z.enum(['left', 'right', 'center']).optional(),
+  floatingText: z.boolean().optional(),
+  mapView: z.string().optional(),
+
+  // Atributos do MapView
+  mapView: z.string().optional(),
+
+  // Atributos do Spacer
+  desktop: z.string().optional(),
+  mobile: z.string().optional(),
+
   // Caso possua subcomponentes
   components: z.array(z.any()).optional(),
 });
