@@ -39,4 +39,7 @@ group: &group
       name: 'components'
       widget: 'list'
       required: false
-      types: []
+      types:
+        - *text
+        - *videoEmbed
+        - *imageBlock
