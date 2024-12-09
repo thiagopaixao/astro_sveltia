@@ -6,7 +6,22 @@ import path from 'path';
 async function loadYamlFile(filePath) {
   try {
     const content = fs.readFileSync(filePath, 'utf8');
-    return yaml.load(content);
+    // Primeiro carregamos todos os componentes para resolver as referências
+    const components = {};
+    const componentFiles = await glob('public/admin/config/components/*.yml');
+    
+    for (const file of componentFiles) {
+      const componentContent = fs.readFileSync(file, 'utf8');
+      const parsed = yaml.load(componentContent);
+      if (parsed?.components) {
+        Object.assign(components, parsed.components);
+      }
+    }
+
+    // Agora carregamos o arquivo atual com as referências resolvidas
+    return yaml.load(content, {
+      schema: yaml.DEFAULT_SCHEMA
+    });
   } catch (error) {
     console.error(`Error loading ${filePath}:`, error);
     return null;
@@ -34,40 +49,14 @@ async function buildConfig() {
       }
     }
 
-    // Load collections and other configs
-    const otherFiles = await glob('public/admin/config/collections/*.yml');
+    // Load collections
+    const collectionFiles = await glob('public/admin/config/collections/*.yml');
     const collections = [];
     
-    for (const file of otherFiles) {
+    for (const file of collectionFiles) {
       const content = await loadYamlFile(file);
       if (content?.collections) {
-        const processedCollections = content.collections.map(collection => {
-          const processedCollection = { ...collection };
-          
-          if (processedCollection.fields) {
-            processedCollection.fields = processedCollection.fields.map(field => {
-              if (field.types) {
-                field.types = field.types.map(type => {
-                  // Se for uma referência a um componente (ex: *group)
-                  if (typeof type === 'string' && type.startsWith('*')) {
-                    const componentName = type.substring(1);
-                    const componentDef = components[componentName];
-                    if (componentDef) {
-                      return componentDef;
-                    }
-                    console.warn(`Component reference "${componentName}" not found`);
-                    return type;
-                  }
-                  return type;
-                });
-              }
-              return field;
-            });
-          }
-          return processedCollection;
-        });
-        
-        collections.push(...processedCollections);
+        collections.push(...content.collections);
       }
     }
 
