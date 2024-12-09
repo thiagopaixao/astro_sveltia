@@ -13,7 +13,7 @@ async function buildConfig() {
     // First load all YAML files
     const allFiles = await glob('public/admin/config/**/*.yml');
     
-    // Sort files to ensure components are loaded first, then main.yml, then collections
+    // Sort files to ensure components are loaded first
     const sortedFiles = allFiles.sort((a, b) => {
       if (a.includes('/components/')) return -1;
       if (b.includes('/components/')) return 1;
@@ -23,47 +23,65 @@ async function buildConfig() {
     });
 
     let mergedConfig = {};
-    let components = {};
-
-    // First process component files to build the schema
-    let schema = yaml.DEFAULT_SCHEMA;
     let componentDefs = {};
 
-    // Process component files first
+    // First pass: Load all component definitions
     for (const file of sortedFiles.filter(f => f.includes('/components/'))) {
       const content = fs.readFileSync(file, 'utf8');
       try {
-        const parsed = yaml.load(content, { schema });
-        componentDefs = { ...componentDefs, ...parsed };
+        const parsed = yaml.load(content);
+        if (parsed && parsed.components) {
+          componentDefs = { ...componentDefs, ...parsed.components };
+        }
       } catch (e) {
         console.error(`Error parsing component file ${file}:`, e);
         throw e;
       }
     }
 
-    // Now process all other files with the complete schema
-    for (const file of sortedFiles.filter(f => !f.includes('/components/'))) {
+    // Create schema with component types
+    const types = {};
+    Object.entries(componentDefs).forEach(([key, value]) => {
+      types[key] = new yaml.Type(`!${key}`, {
+        kind: 'mapping',
+        construct: function (data) {
+          return data;
+        }
+      });
+    });
+
+    const CUSTOM_SCHEMA = yaml.DEFAULT_SCHEMA.extend(Object.values(types));
+
+    // Second pass: Process all files with component schema
+    for (const file of sortedFiles) {
       const content = fs.readFileSync(file, 'utf8');
       try {
-        // Load each file with the full schema that includes all components
-        const parsed = yaml.load(content, {
-          schema: yaml.DEFAULT_SCHEMA
-        });
-        
-        // Merge into final config
-        mergedConfig = { ...mergedConfig, ...parsed };
+        const parsed = yaml.load(content, { schema: CUSTOM_SCHEMA });
+        if (parsed) {
+          if (file.includes('/components/')) {
+            // For component files, only merge the non-components part
+            const { components, ...rest } = parsed;
+            mergedConfig = { ...mergedConfig, ...rest };
+          } else {
+            mergedConfig = { ...mergedConfig, ...parsed };
+          }
+        }
       } catch (e) {
         console.error(`Error parsing file ${file}:`, e);
         throw e;
       }
     }
 
+    // Add component definitions to final config
+    mergedConfig.components = componentDefs;
+
     // Write merged config
     const outputYaml = yaml.dump(mergedConfig, {
       indent: 2,
       lineWidth: -1,
       noRefs: true,
-      sortKeys: false
+      sortKeys: false,
+      schema: CUSTOM_SCHEMA
     });
 
     fs.writeFileSync('public/admin/config.yml', outputYaml);
