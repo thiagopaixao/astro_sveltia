@@ -125,5 +125,73 @@ components:
             wide: true
             src: map.png
             alt: ''
-            description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium'
+            description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium'
+  - type: Map
+    columnAlign: 'left'
+    floatingText: true
+    txtColor: '#F0EAD9'
+    bgColor: '#006A49'
+    mapView: 'view_1'
+    components:
+      - type: Text
+        content: |
+          #### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+
+          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
+      - type: Spacer
+        desktop: '160px'
+      - type: Text
+        content: |
+          ###### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
+
+          ###### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+  - type: Map
+    columnAlign: 'left'
+    floatingText: false
+    txtColor: '#F0EAD9'
+    bgColor: '#000000'
+    components:
+      - type: Text
+        content: '[TextPlaceholder]'
+      - type: MapView
+        mapView: 'view_3'
+      - type: Text
+        content: '[TextPlaceholder]'
+  - type: Map
+    columnAlign: 'left'
+    floatingText: false
+    txtColor: '#F0EAD9'
+    bgColor: '#000000'
+    components:
+      - type: MapView
+        mapView: 'view_2'
+      - type: Text
+        content: '[TextPlaceholder]'
+      - type: MapView
+        mapView: 'view_2'
+      - type: Text
+        content: '[TextPlaceholder]'
+  - type: Map
+    columnAlign: 'left'
+    floatingText: true
+    txtColor: '#F0EAD9'
+    bgColor: '#000000'
+    components:
+      - type: MapView
+        mapView: 'view_4'
+      - type: Text
+        content: '[TextPlaceholder]'
+      - type: MapView
+        mapView: 'view_3'
+      - type: Text
+        content: '[TextPlaceholder]'
+  - type: Map
+    columnAlign: 'left'
+    floatingText: false
+    txtColor: '#F0EAD9'
+    bgColor: '#000000'
 ---

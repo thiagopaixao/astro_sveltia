@@ -51,6 +51,9 @@ const chartBarSchema = z.object({
 const componentSchema = z.object({
   type: z.string(),
   layout: z.enum(['default', 'media', 'text', 'text-bigger']).optional(),
+  columnAlign: z.enum(['left', 'right', 'center']).optional(),
+  floatingText: z.boolean().optional(),
+  mapView: z.string().optional(),
   txtColor: z.string().optional(),
   bgColor: z.string().optional(),
   backgroundImage: z.string().optional(),
