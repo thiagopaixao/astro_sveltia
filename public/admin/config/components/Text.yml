@@ -1,0 +1,24 @@
+components:
+  text: &text
+    label: 'Text'
+    name: 'text'
+    widget: 'object'
+    collapsed: true
+    summary: 'Text'
+    fields:
+      - { label: 'Type', name: 'type', widget: 'hidden', default: 'Text' }
+      - { label: 'Conteúdo', name: 'content', widget: 'markdown' }
+      - {
+          label: 'Cor do Texto',
+          name: 'txtColor',
+          widget: 'color',
+          required: false,
+          enableAlpha: true,
+        }
+      - {
+          label: 'Cor de Fundo',
+          name: 'bgColor',
+          widget: 'color',
+          required: false,
+          enableAlpha: true,
+        }

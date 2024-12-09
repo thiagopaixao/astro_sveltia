@@ -1,0 +1,9 @@
+components:
+  logos_group: &logos-group
+    label: 'Logos Group'
+    name: 'logosGroup'
+    widget: 'object'
+    collapsed: true
+    summary: 'Logos Group'
+    fields:
+      - { label: 'Type', name: 'type', widget: 'hidden', default: 'LogosGroup' }

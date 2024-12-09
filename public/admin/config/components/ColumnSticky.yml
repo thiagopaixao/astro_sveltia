@@ -1,19 +1,14 @@
 components:
-  group: &group
-    label: 'Group'
-    name: 'group'
+  column_sticky: &column-sticky
+    label: 'Column Sticky'
+    name: 'columnSticky'
     widget: 'object'
     collapsed: true
-    summary: 'Group - {{fields.layout}}'
+    summary: 'Column Sticky'
     fields:
-      - { label: 'Type', name: 'type', widget: 'hidden', default: 'Group' }
-      - {
-          label: 'Layout',
-          name: 'layout',
-          widget: 'select',
-          options: ['default', 'media', 'text', 'text-bigger'],
-          default: 'default',
-        }
+      - { label: 'Type', name: 'type', widget: 'hidden', default: 'ColumnSticky' }
+      - { label: 'Título', name: 'title', widget: 'string' }
+      - { label: 'Corpo', name: 'body', widget: 'string', required: false }
       - {
           label: 'Cor do Texto',
           name: 'txtColor',
@@ -29,17 +24,11 @@ components:
           enableAlpha: true,
         }
       - {
-          label: 'Imagem de Fundo',
-          name: 'backgroundImage',
-          widget: 'image',
-          required: false,
-        }
-      - {
-          label: 'Overlay',
-          name: 'overlay',
+          label: 'Layout',
+          name: 'layout',
           widget: 'select',
-          options: ['light', 'dark'],
-          required: false,
+          options: ['default', 'text-bigger'],
+          default: 'default',
         }
       - {
           label: 'Padding Superior',
@@ -57,8 +46,5 @@ components:
         name: 'components'
         widget: 'list'
         collapsed: true
-        required: false
         types:
-          - <<: *column
-          - <<: *column-sticky
-          - <<: *cards-call
+          - <<: *text

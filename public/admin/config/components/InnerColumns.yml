@@ -1,0 +1,11 @@
+components:
+  inner_columns: &inner-columns
+    label: 'Inner Columns'
+    name: 'innerColumns'
+    widget: 'object'
+    collapsed: true
+    summary: 'Inner Columns'
+    fields:
+      - { label: 'Type', name: 'type', widget: 'hidden', default: 'InnerColumns' }
+      - { label: 'Coluna 1', name: 'column1', widget: 'markdown' }
+      - { label: 'Coluna 2', name: 'column2', widget: 'markdown' }

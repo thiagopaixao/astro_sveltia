@@ -1,0 +1,12 @@
+components:
+  video_embed: &video-embed
+    label: 'Video Embed'
+    name: 'videoEmbed'
+    widget: 'object'
+    collapsed: true
+    summary: 'Video Embed'
+    fields:
+      - { label: 'Type', name: 'type', widget: 'hidden', default: 'VideoEmbed' }
+      - { label: 'Wide', name: 'wide', widget: 'boolean', required: false }
+      - { label: 'URL do Vídeo', name: 'videoUrl', widget: 'string' }
+      - { label: 'Legenda do Vídeo', name: 'videoCaption', widget: 'string' }
