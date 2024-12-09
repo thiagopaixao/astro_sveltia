@@ -8,6 +8,382 @@ public_folder: '/uploads'
 
 local_backend: true
 
+text: &text
+  label: 'Text'
+  name: 'Text'
+  widget: 'object'
+  summary: '{{fields.content}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Text'
+    - label: 'Text Color'
+      name: 'txtColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Background Color'
+      name: 'bgColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Content'
+      name: 'content'
+      widget: 'markdown'
+      required: false
+
+videoEmbed: &videoEmbed
+  label: 'Video Embed'
+  name: 'VideoEmbed'
+  widget: 'object'
+  summary: '{{fields.videoUrl}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'VideoEmbed'
+    - label: 'Wide'
+      name: 'wide'
+      widget: 'boolean'
+      required: false
+      default: false
+    - label: 'Video URL'
+      name: 'videoUrl'
+      widget: 'string'
+      required: false
+    - label: 'Video Caption'
+      name: 'videoCaption'
+      widget: 'string'
+      required: false
+
+imageBlock: &imageBlock
+  label: 'Image Block'
+  name: 'ImageBlock'
+  widget: 'object'
+  summary: '{{fields.src}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'ImageBlock'
+    - label: 'Wide'
+      name: 'wide'
+      widget: 'boolean'
+      required: false
+      default: false
+    - label: 'Image'
+      name: 'src'
+      widget: 'image'
+      required: false
+      allow_multiple: false
+    - label: 'Alt Text'
+      name: 'alt'
+      widget: 'string'
+      required: false
+    - label: 'Description'
+      name: 'description'
+      widget: 'string'
+      required: false
+
+chartBar: &chartBar
+  label: 'Chart Bar'
+  name: 'ChartBar'
+  widget: 'object'
+  summary: '{{fields.chartTitle}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'ChartBar'
+    - label: 'Chart Title'
+      name: 'chartTitle'
+      widget: 'string'
+      required: false
+    - label: 'Chart Notes'
+      name: 'chartNotes'
+      widget: 'string'
+      required: false
+    - label: 'Chart Bars'
+      name: 'chartBars'
+      widget: 'list'
+      required: false
+      fields:
+        - label: 'Color'
+          name: 'color'
+          widget: 'color'
+          required: false
+          enableAlpha: true
+          allowInput: true
+        - label: 'Number'
+          name: 'number'
+          widget: 'number'
+          required: false
+        - label: 'Number Percent'
+          name: 'numberPercent'
+          widget: 'number'
+          required: false
+          value_type: 'float'
+          min: 0
+          max: 100
+          step: 0.01
+        - label: 'Label'
+          name: 'label'
+          widget: 'string'
+          required: false
+
+cardsCall: &cardsCall
+  label: 'Cards Call'
+  name: 'CardsCall'
+  widget: 'object'
+  summary: '{{fields.cardsCallArr}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'CardsCall'
+    - label: 'Cards'
+      name: 'cardsCallArr'
+      widget: 'list'
+      required: false
+      fields:
+        - label: 'Link'
+          name: 'link'
+          widget: 'object'
+          required: false
+          fields:
+            - label: 'URL'
+              name: 'url'
+              widget: 'string'
+              required: false
+        - label: 'Image'
+          name: 'img'
+          widget: 'object'
+          required: false
+          fields:
+            - label: 'Source'
+              name: 'src'
+              widget: 'image'
+              required: false
+        - label: 'Title'
+          name: 'title'
+          widget: 'string'
+          required: false
+        - label: 'Text'
+          name: 'text'
+          widget: 'string'
+          required: false
+
+logosGroup: &logosGroup
+  label: 'Logos Group'
+  name: 'LogosGroup'
+  widget: 'object'
+  summary: 'Logos Group'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'LogosGroup'
+
+innerColumns: &innerColumns
+  label: 'Inner Columns'
+  name: 'InnerColumns'
+  widget: 'object'
+  summary: 'Inner Columns'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'InnerColumns'
+    - label: 'Column 1'
+      name: 'column1'
+      widget: 'markdown'
+      required: false
+    - label: 'Column 2'
+      name: 'column2'
+      widget: 'markdown'
+      required: false
+
+
+columnSticky: &columnSticky
+  label: 'Column Sticky'
+  name: 'ColumnSticky'
+  widget: 'object'
+  summary: '{{fields.title}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'ColumnSticky'
+    - label: 'Text Color'
+      name: 'txtColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Background Color'
+      name: 'bgColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Padding Top'
+      name: 'paddingTop'
+      widget: 'boolean'
+      required: false
+      default: false
+    - label: 'Padding Bottom'
+      name: 'paddingBottom'
+      widget: 'boolean'
+      required: false
+      default: false
+    - label: 'Layout'
+      name: 'layout'
+      widget: 'select'
+      options: ['text-bigger']
+      default: 'text-bigger'
+    - label: 'Title'
+      name: 'title'
+      widget: 'string'
+      required: false
+    - label: 'Body'
+      name: 'body'
+      widget: 'markdown'
+      required: false
+
+group: &group
+  label: 'Group'
+  name: 'Group'
+  widget: 'object'
+  summary: '{{fields.layout}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Group'
+    - label: 'Layout'
+      name: 'layout'
+      widget: 'select'
+      options: ['default']
+      default: 'default'
+    - label: 'Text Color'
+      name: 'txtColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Background Color'
+      name: 'bgColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Background Image'
+      name: 'backgroundImage'
+      widget: 'image'
+      required: false
+      allow_multiple: false
+    - label: 'Overlay'
+      name: 'overlay'
+      widget: 'select'
+      options: ['dark', 'light']
+      required: false
+    - label: 'Components'
+      name: 'components'
+      widget: 'list'
+      required: false
+      types:
+        - *text
+        - *videoEmbed
+        - *imageBlock
+        - *columnSticky
+        - *chartBar
+        - *cardsCall
+        - *logosGroup
+        - *innerColumns
+
+cta: &cta
+  label: 'CTA'
+  name: 'Cta'
+  widget: 'object'
+  summary: '{{fields.layout}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Cta'
+    - label: 'Layout'
+      name: 'layout'
+      widget: 'select'
+      options: ['media', 'text']
+      default: 'media'
+    - label: 'Text Color'
+      name: 'txtColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Background Color'
+      name: 'bgColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Background Image'
+      name: 'imgBg'
+      widget: 'image'
+      required: false
+      allow_multiple: false
+    - label: 'Media Type'
+      name: 'mediaType'
+      widget: 'select'
+      options: ['image']
+      default: 'image'
+      required: false
+      condition:
+        field: layout
+        value: media
+    - label: 'Media'
+      name: 'media'
+      widget: 'image'
+      required: false
+      allow_multiple: false
+      condition:
+        field: layout
+        value: media
+    - label: 'CTA Text'
+      name: 'ctaText'
+      widget: 'markdown'
+      required: false
+    - label: 'Highlighted Text'
+      name: 'highlightedText'
+      widget: 'string'
+      required: false
+      condition:
+        field: layout
+        value: text
+    - label: 'Link'
+      name: 'link'
+      widget: 'object'
+      required: false
+      fields:
+        - label: 'URL'
+          name: 'url'
+          widget: 'string'
+          required: false
+        - label: 'Target'
+          name: 'target'
+          widget: 'select'
+          options: ['_self', '_blank']
+          default: '_self'
+          required: false
+        - label: 'Text'
+          name: 'text'
+          widget: 'string'
+          required: false
+
 collections:
   - name: 'pages'
     label: 'Páginas'
@@ -24,3 +400,4 @@ collections:
         types:
           - *group
           - *cta
+

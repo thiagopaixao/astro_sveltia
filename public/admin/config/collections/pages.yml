@@ -13,3 +13,4 @@ collections:
         required: false
         types:
           - *group
+          - *cta

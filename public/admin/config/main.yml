@@ -7,13 +7,3 @@ media_folder: 'public/uploads'
 public_folder: '/uploads'
 
 local_backend: true
-
-imports:
-  - ./components/Group.yml
-  - ./components/Cta.yml
-  - ./components/Text.yml
-  - ./components/VideoEmbed.yml
-  - ./components/ImageBlock.yml
-  - ./components/ChartBar.yml
-  - ./components/Column.yml
-  - ./components/ColumnSticky.yml
