@@ -39,6 +39,44 @@ fields:
     widget: 'list'
     required: false
     types:
-      - *text
-      - *mapView
-      - *spacer
+      - label: 'Text'
+        name: 'Text'
+        widget: 'object'
+        fields:
+          - label: 'Type'
+            name: 'type'
+            widget: 'hidden'
+            default: 'Text'
+          - label: 'Content'
+            name: 'content'
+            widget: 'markdown'
+            required: false
+      - label: 'Map View'
+        name: 'MapView'
+        widget: 'object'
+        fields:
+          - label: 'Type'
+            name: 'type'
+            widget: 'hidden'
+            default: 'MapView'
+          - label: 'Map View'
+            name: 'mapView'
+            widget: 'select'
+            options: ['view_1', 'view_2', 'view_3', 'view_4']
+            required: true
+      - label: 'Spacer'
+        name: 'Spacer'
+        widget: 'object'
+        fields:
+          - label: 'Type'
+            name: 'type'
+            widget: 'hidden'
+            default: 'Spacer'
+          - label: 'Desktop Height'
+            name: 'desktop'
+            widget: 'string'
+            required: false
+          - label: 'Mobile Height'
+            name: 'mobile'
+            widget: 'string'
+            required: false

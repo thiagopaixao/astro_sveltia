@@ -12,3 +12,15 @@ fields:
     widget: 'select'
     options: ['view_1', 'view_2', 'view_3', 'view_4']
     required: true
+  - label: 'Text Color'
+    name: 'txtColor'
+    widget: 'color'
+    required: false
+    enableAlpha: true
+    allowInput: true
+  - label: 'Background Color'
+    name: 'bgColor'
+    widget: 'color'
+    required: false
+    enableAlpha: true
+    allowInput: true
