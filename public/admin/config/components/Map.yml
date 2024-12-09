@@ -38,3 +38,4 @@ map: &map
       types:
         - *text
         - *mapView
+        - *spacer
