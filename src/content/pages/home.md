@@ -194,4 +194,44 @@ components:
     floatingText: false
     txtColor: '#F0EAD9'
     bgColor: '#000000'
+    components:
+      - type: Text
+        content: '[TextPlaceholder]'
+      - type: MapView
+        mapView: 'view_3'
+      - type: Text
+        content: '[TextPlaceholder]'
+  - type: Map
+    columnAlign: 'left'
+    floatingText: false
+    txtColor: '#F0EAD9'
+    bgColor: '#000000'
+    components:
+      - type: MapView
+        mapView: 'view_2'
+      - type: Text
+        content: '[TextPlaceholder]'
+      - type: MapView
+        mapView: 'view_2'
+      - type: Text
+        content: '[TextPlaceholder]'
+  - type: Map
+    columnAlign: 'left'
+    floatingText: true
+    txtColor: '#F0EAD9'
+    bgColor: '#000000'
+    components:
+      - type: MapView
+        mapView: 'view_4'
+      - type: Text
+        content: '[TextPlaceholder]'
+      - type: MapView
+        mapView: 'view_3'
+      - type: Text
+        content: '[TextPlaceholder]'
+  - type: Map
+    columnAlign: 'left'
+    floatingText: false
+    txtColor: '#F0EAD9'
+    bgColor: '#000000'
 ---
