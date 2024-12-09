@@ -8,18 +8,6 @@ public_folder: '/uploads'
 
 local_backend: true
 
-imports:
-  - ./components/Group.yml
-  - ./components/Column.yml
-  - ./components/ColumnSticky.yml
-  - ./components/CardsCall.yml
-  - ./components/LogosGroup.yml
-  - ./components/ChartBar.yml
-  - ./components/VideoEmbed.yml
-  - ./components/Text.yml
-  - ./components/InnerColumns.yml
-  - ./components/ImageBlock.yml
-
 collections:
   - name: 'pages'
     label: 'Páginas'

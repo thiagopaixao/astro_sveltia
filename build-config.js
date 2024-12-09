@@ -1,7 +1,6 @@
 import { glob } from 'glob';
 import fs from 'fs';
-
-const yaml = require('js-yaml');
+import yaml from 'js-yaml';
 
 async function buildConfig() {
   try {
@@ -17,7 +16,13 @@ async function buildConfig() {
       fs.readFileSync('public/admin/components.yml', 'utf8')
     );
 
+    // Carrega as configurações principais primeiro
+    console.log('Loading main config...');
+    finalConfig += fs.readFileSync('public/admin/config/main.yml', 'utf8');
+    finalConfig += '\n';
+
     // Carrega os componentes na ordem especificada
+    console.log('Loading components in specified order...');
     for (const componentPath of componentsOrder.components) {
       const fullPath = `public/admin/config/${componentPath}`;
       if (fs.existsSync(fullPath)) {
@@ -26,20 +31,6 @@ async function buildConfig() {
       } else {
         console.warn(`Warning: Component file not found: ${fullPath}`);
       }
-    }
-
-    // Carrega as configurações principais depois dos componentes
-    console.log('Loading main config...');
-    finalConfig += fs.readFileSync('public/admin/config/main.yml', 'utf8');
-    finalConfig += '\n';
-
-    // Load components
-    console.log('Loading components...');
-    const componentFiles = await glob('public/admin/config/components/*.yml');
-    for (const file of componentFiles) {
-      const content = fs.readFileSync(file, 'utf8');
-      finalConfig += content;
-      finalConfig += '\n';
     }
 
     // Load collections
