@@ -4,8 +4,15 @@ import { marked } from 'marked';
 // Função para processar markdown e HTML
 function processMarkdown(text: string) {
   if (!text) return '';
-  // Permite HTML direto e processa markdown
-  return marked.parse(text, { mangle: false, headerIds: false });
+  return marked.parse(text, {
+    mangle: false,
+    headerIds: false,
+    gfm: true,
+    breaks: true,
+    sanitize: false, // Allows HTML
+    smartLists: true,
+    smartypants: true
+  });
 }
 
 // Schemas comuns
