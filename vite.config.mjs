@@ -1,8 +1,10 @@
-import { defineConfig } from 'vite';
+import vite from 'vite';
 import yaml from 'yaml';
 import { glob } from 'glob';
 import * as fs from 'fs';
 import * as path from 'path';
+
+const { defineConfig } = vite;
 
 export const mergeYamlConfigs = () => {
   return {
