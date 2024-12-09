@@ -1,0 +1,15 @@
+collections:
+  - name: 'pages'
+    label: 'Páginas'
+    folder: 'src/content/pages'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Título', name: 'title', widget: 'string', required: false }
+      - label: 'Componentes'
+        name: 'components'
+        widget: 'list'
+        collapsed: true
+        required: false
+        types:
+          - *group
