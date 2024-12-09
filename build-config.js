@@ -1,4 +1,16 @@
-import { build } from 'vite';
+import { createServer } from 'vite';
 
-// Run the Vite build just for YAML processing
-await build();
+async function buildConfig() {
+  const server = await createServer({
+    configFile: 'vite.config.mjs',
+    mode: 'production'
+  });
+  
+  try {
+    await server.pluginContainer.buildStart({});
+  } finally {
+    await server.close();
+  }
+}
+
+buildConfig();

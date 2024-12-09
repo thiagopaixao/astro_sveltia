@@ -31,18 +31,6 @@ const mergeYamlConfigs = () => {
   };
 }
 
-// Custom build configuration that doesn't require an HTML entry
 export default defineConfig({
-  plugins: [mergeYamlConfigs()],
-  build: {
-    // Prevent Vite from looking for an HTML entry
-    lib: {
-      entry: false,
-      formats: []
-    },
-    rollupOptions: {
-      input: undefined
-    },
-    write: false
-  }
+  plugins: [mergeYamlConfigs()]
 });
