@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite';
 import yaml from 'yaml';
 import { glob } from 'glob';
-import fs from 'fs';
-import path from 'path';
+import * as fs from 'fs';
+import * as path from 'path';
 
-function mergeYamlConfigs() {
+const mergeYamlConfigs = () => {
   return {
     name: 'merge-yaml-configs',
     buildStart: async () => {
