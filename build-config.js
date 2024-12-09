@@ -26,20 +26,14 @@ async function buildConfig() {
     }
 
     // Then load main config and collections
-    const otherFiles = await glob('public/admin/config/*.yml');
-    const configFiles = otherFiles.filter(file => !file.includes('/components/'));
-    
-    // Sort to ensure main.yml is first
-    const sortedFiles = configFiles.sort((a, b) => {
-      if (path.basename(a) === 'main.yml') return -1;
-      if (path.basename(b) === 'main.yml') return 1;
-      return a.localeCompare(b);
-    });
+    const mainConfig = yaml.load(fs.readFileSync('public/admin/config/main.yml', 'utf8'));
+    let mergedConfig = { ...mainConfig };
 
-    // Merge configurations
-    let mergedConfig = {};
-    
-    for (const file of sortedFiles) {
+    // Load collection configs
+    const collectionFiles = await glob('public/admin/config/collections/**/*.yml');
+
+    // Merge collection configurations
+    for (const file of collectionFiles) {
       const content = fs.readFileSync(file, 'utf8');
       try {
         const parsed = yaml.load(content, { schema: yaml.DEFAULT_SCHEMA });
