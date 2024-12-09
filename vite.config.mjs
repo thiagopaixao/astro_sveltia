@@ -1,10 +1,10 @@
-import vite from 'vite';
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+const { defineConfig } = require('vite');
 import yaml from 'yaml';
 import { glob } from 'glob';
 import * as fs from 'fs';
 import * as path from 'path';
-
-const { defineConfig } = vite;
 
 export const mergeYamlConfigs = () => {
   return {
@@ -33,6 +33,6 @@ export const mergeYamlConfigs = () => {
   };
 }
 
-export default defineConfig({
+export default {
   plugins: [mergeYamlConfigs()]
-});
+};
