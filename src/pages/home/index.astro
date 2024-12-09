@@ -12,6 +12,9 @@ import ImageBlock from '../../components/ImageBlock.astro';
 import InnerColumns from '../../components/InnerColumns.astro';
 import LogosGroup from '../../components/LogosGroup.astro';
 import VideoEmbed from '../../components/VideoEmbed.astro';
+import Map from '../../components/Map.astro';
+import MapView from '../../components/MapView.astro';
+import Spacer from '../../components/Spacer.astro';
 
 // Apenas carregando dados e definindo variáveis no frontmatter
 const entry = await getEntryBySlug('pages', 'home');
@@ -32,7 +35,10 @@ const componentMap = {
   ImageBlock,
   InnerColumns,
   LogosGroup,
-  VideoEmbed
+  VideoEmbed,
+  Map,
+  MapView,
+  Spacer
 };
 ---
 
