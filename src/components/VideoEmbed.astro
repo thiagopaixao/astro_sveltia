@@ -1,10 +1,10 @@
 ---
 import Caption from "./Caption.astro";
 
-const { wide } = Astro.props;
+const { wide, videoCaption } = Astro.props;
 //wide recebe booleano
 
-const hasCaption = Astro.slots.has("caption");
+const hasCaption = Astro.slots.has("caption") || videoCaption;
 ---
 
 <figure class:list={["video-embed", { "video-embed--wide": wide }]}>
@@ -13,7 +13,11 @@ const hasCaption = Astro.slots.has("caption");
     hasCaption && (
       <figcaption>
         <Caption>
-          <slot name="caption" />
+          {videoCaption ? (
+            <Fragment set:html={videoCaption} />
+          ) : (
+            <slot name="caption" />
+          )}
         </Caption>
       </figcaption>
     )
