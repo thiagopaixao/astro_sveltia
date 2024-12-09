@@ -3,29 +3,36 @@ import { glob } from 'glob';
 import fs from 'fs';
 import path from 'path';
 
-async function loadYamlFile(filePath) {
-  try {
-    const content = fs.readFileSync(filePath, 'utf8');
-    // Primeiro carregamos todos os componentes para resolver as referências
-    const components = {};
-    const componentFiles = await glob('public/admin/config/components/*.yml');
-    
-    for (const file of componentFiles) {
-      const componentContent = fs.readFileSync(file, 'utf8');
-      const parsed = yaml.load(componentContent);
+// Carrega todos os componentes primeiro
+async function loadComponents() {
+  const components = {};
+  const componentFiles = await glob('public/admin/config/components/*.yml');
+  
+  for (const file of componentFiles) {
+    try {
+      const content = fs.readFileSync(file, 'utf8');
+      const schema = yaml.DEFAULT_SCHEMA;
+      const parsed = yaml.load(content, { schema });
       if (parsed?.components) {
         Object.assign(components, parsed.components);
       }
+    } catch (error) {
+      console.error(`Error loading component ${file}:`, error);
     }
-
-    // Agora carregamos o arquivo atual com as referências resolvidas
-    return yaml.load(content, {
-      schema: yaml.DEFAULT_SCHEMA
-    });
-  } catch (error) {
-    console.error(`Error loading ${filePath}:`, error);
-    return null;
   }
+  return components;
+}
+
+// Cria um schema YAML personalizado que inclui as referências aos componentes
+function createSchemaWithComponents(components) {
+  const types = Object.entries(components).map(([name, def]) => {
+    return new yaml.Type(`!${name}`, {
+      kind: 'scalar',
+      construct: () => def
+    });
+  });
+
+  return yaml.DEFAULT_SCHEMA.extend(types);
 }
 
 async function buildConfig() {
@@ -35,33 +42,36 @@ async function buildConfig() {
       fs.mkdirSync('public/admin', { recursive: true });
     }
 
-    // Load main config first
-    const mainConfig = await loadYamlFile('public/admin/config/main.yml') || {};
+    // Carrega componentes e cria schema
+    const components = await loadComponents();
+    const schema = createSchemaWithComponents(components);
     
-    // Load and process component definitions
-    const componentFiles = await glob('public/admin/config/components/*.yml');
-    const components = {};
-    
-    for (const file of componentFiles) {
-      const content = await loadYamlFile(file);
-      if (content?.components) {
-        Object.assign(components, content.components);
-      }
-    }
+    console.log('Components loaded:', Object.keys(components));
 
-    // Load collections
-    const collectionFiles = await glob('public/admin/config/collections/*.yml');
+    // Load main config
+    const mainConfig = yaml.load(
+      fs.readFileSync('public/admin/config/main.yml', 'utf8'),
+      { schema }
+    ) || {};
+
+    // Load collections with component references
     const collections = [];
+    const collectionFiles = await glob('public/admin/config/collections/*.yml');
     
     for (const file of collectionFiles) {
-      const content = await loadYamlFile(file);
-      if (content?.collections) {
-        collections.push(...content.collections);
+      try {
+        const content = fs.readFileSync(file, 'utf8');
+        // Substitui referências *group por !group
+        const processedContent = content.replace(/\*(\w+)/g, '!$1');
+        const parsed = yaml.load(processedContent, { schema });
+        if (parsed?.collections) {
+          collections.push(...parsed.collections);
+        }
+      } catch (error) {
+        console.error(`Error loading collection ${file}:`, error);
       }
     }
 
-    // Log para debug
-    console.log('Components loaded:', Object.keys(components));
     console.log('Collections processed:', collections.length);
 
     // Merge everything together
@@ -76,10 +86,10 @@ async function buildConfig() {
       lineWidth: -1,
       noRefs: true,
       sortKeys: false,
-      skipInvalid: true
+      skipInvalid: true,
+      schema
     });
 
-    // Log para debug
     console.log('Config generated with:');
     console.log('- Collections:', finalConfig.collections?.length || 0);
 
