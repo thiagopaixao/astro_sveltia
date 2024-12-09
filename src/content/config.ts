@@ -61,7 +61,7 @@ const componentSchema = z.object({
   paddingBottom: z.boolean().optional(),
 
   // Atributos específicos do CTA
-  highlightedText: z.string().optional().transform(processMarkdown),
+  highlightedText: z.string().optional(),
   media: z.string().optional(),
   mediaType: z.string().optional(),
   ctaText: z.string().optional().transform(processMarkdown),
