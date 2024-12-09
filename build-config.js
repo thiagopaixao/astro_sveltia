@@ -10,56 +10,55 @@ async function buildConfig() {
       fs.mkdirSync('public/admin', { recursive: true });
     }
 
-    // First, load and process components
-    const componentFiles = await glob('public/admin/config/components/*.yml');
-    let components = {};
+    // First load all YAML files
+    const allFiles = await glob('public/admin/config/**/*.yml');
     
-    for (const file of componentFiles) {
+    // Sort files to ensure components are loaded first, then main.yml, then collections
+    const sortedFiles = allFiles.sort((a, b) => {
+      if (a.includes('/components/')) return -1;
+      if (b.includes('/components/')) return 1;
+      if (path.basename(a) === 'main.yml') return -1;
+      if (path.basename(b) === 'main.yml') return 1;
+      return a.localeCompare(b);
+    });
+
+    let mergedConfig = {};
+    let components = {};
+
+    // Process all files in order
+    for (const file of sortedFiles) {
       const content = fs.readFileSync(file, 'utf8');
       try {
-        const parsed = yaml.load(content, { schema: yaml.DEFAULT_SCHEMA });
-        components = { ...components, ...parsed };
-      } catch (e) {
-        console.error(`Error parsing component file ${file}:`, e);
-        throw e;
-      }
-    }
-
-    // Then load main config and collections
-    const mainConfig = yaml.load(fs.readFileSync('public/admin/config/main.yml', 'utf8'));
-    let mergedConfig = { ...mainConfig };
-
-    // Load collection configs
-    const collectionFiles = await glob('public/admin/config/collections/**/*.yml');
-
-    // Merge collection configurations
-    for (const file of collectionFiles) {
-      const content = fs.readFileSync(file, 'utf8');
-      try {
+        // Use YAML_SCHEMA that includes aliases
         const parsed = yaml.load(content, { schema: yaml.DEFAULT_SCHEMA });
         
-        // Replace component references in collections
-        if (parsed.collections) {
-          parsed.collections = parsed.collections.map(collection => {
-            if (collection.fields) {
-              collection.fields = collection.fields.map(field => {
-                if (field.types) {
-                  field.types = field.types.map(type => {
-                    if (typeof type === 'string' && type.startsWith('*')) {
-                      const componentName = type.substring(1);
-                      return components.components[componentName];
-                    }
-                    return type;
-                  });
-                }
-                return field;
-              });
-            }
-            return collection;
-          });
+        if (file.includes('/components/')) {
+          // Store components separately
+          components = { ...components, ...parsed };
+        } else {
+          // For collections, process component references
+          if (parsed.collections) {
+            parsed.collections = parsed.collections.map(collection => {
+              if (collection.fields) {
+                collection.fields = collection.fields.map(field => {
+                  if (field.types) {
+                    field.types = field.types.map(type => {
+                      if (typeof type === 'string' && type.startsWith('*')) {
+                        const componentName = type.substring(1);
+                        return components.components?.[componentName];
+                      }
+                      return type;
+                    });
+                  }
+                  return field;
+                });
+              }
+              return collection;
+            });
+          }
+          
+          mergedConfig = { ...mergedConfig, ...parsed };
         }
-        
-        mergedConfig = { ...mergedConfig, ...parsed };
       } catch (e) {
         console.error(`Error parsing file ${file}:`, e);
         throw e;
