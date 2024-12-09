@@ -16,3 +16,177 @@ collections:
     slug: '{{slug}}'
     fields:
       - { label: 'Título', name: 'title', widget: 'string' }
+      - label: 'Componentes'
+        name: 'components'
+        widget: 'list'
+        collapsed: true
+        types:
+          - label: 'Group'
+            name: 'group'
+            widget: 'object'
+            collapsed: true
+            summary: 'Group - {{fields.title}}'
+            fields:
+              - { label: 'Tipo', name: 'type', widget: 'hidden', default: 'Group' }
+              - {
+                  label: 'Layout',
+                  name: 'layout',
+                  widget: 'select',
+                  options: ['default', 'media', 'text', 'text-bigger'],
+                  default: 'default',
+                }
+              - {
+                  label: 'Cor do Texto',
+                  name: 'txtColor',
+                  widget: 'color',
+                  enableAlpha: true,
+                  allowInput: true,
+                }
+              - {
+                  label: 'Cor de Fundo',
+                  name: 'bgColor',
+                  widget: 'color',
+                  enableAlpha: true,
+                  allowInput: true,
+                }
+              - {
+                  label: 'Imagem de Fundo',
+                  name: 'backgroundImage',
+                  widget: 'image',
+                  required: false,
+                }
+              - {
+                  label: 'Overlay',
+                  name: 'overlay',
+                  widget: 'select',
+                  options: ['none', 'light', 'dark'],
+                  default: 'none',
+                  required: false,
+                }
+              - {
+                  label: 'Padding Superior',
+                  name: 'paddingTop',
+                  widget: 'boolean',
+                  default: false,
+                }
+              - {
+                  label: 'Padding Inferior',
+                  name: 'paddingBottom',
+                  widget: 'boolean',
+                  default: false,
+                }
+              - label: 'Componentes Filhos'
+                name: 'components'
+                widget: 'list'
+                collapsed: true
+                types:
+                  - label: 'Group'
+                    name: 'group'
+                    widget: 'object'
+                    collapsed: true
+                    fields:
+                      - { label: 'Tipo', name: 'type', widget: 'hidden', default: 'Group' }
+                  - label: 'CTA'
+                    name: 'cta'
+                    widget: 'object'
+                    collapsed: true
+                    fields:
+                      - { label: 'Tipo', name: 'type', widget: 'hidden', default: 'Cta' }
+
+          - label: 'CTA'
+            name: 'cta'
+            widget: 'object'
+            collapsed: true
+            summary: 'CTA - {{fields.title}}'
+            fields:
+              - { label: 'Tipo', name: 'type', widget: 'hidden', default: 'Cta' }
+              - {
+                  label: 'Layout',
+                  name: 'layout',
+                  widget: 'select',
+                  options: ['media', 'text'],
+                  default: 'text',
+                }
+              - {
+                  label: 'Cor do Texto',
+                  name: 'txtColor',
+                  widget: 'color',
+                  enableAlpha: true,
+                  allowInput: true,
+                }
+              - {
+                  label: 'Cor de Fundo',
+                  name: 'bgColor',
+                  widget: 'color',
+                  enableAlpha: true,
+                  allowInput: true,
+                }
+              - {
+                  label: 'Texto Destacado',
+                  name: 'highlightedText',
+                  widget: 'string',
+                  required: false,
+                }
+              - {
+                  label: 'Mídia',
+                  name: 'media',
+                  widget: 'image',
+                  required: false,
+                }
+              - {
+                  label: 'Tipo de Mídia',
+                  name: 'mediaType',
+                  widget: 'select',
+                  options: ['image', 'video'],
+                  default: 'image',
+                  required: false,
+                }
+              - {
+                  label: 'Texto do CTA',
+                  name: 'ctaText',
+                  widget: 'markdown',
+                  required: false,
+                }
+              - label: 'Link'
+                name: 'link'
+                widget: 'object'
+                required: false
+                fields:
+                  - { label: 'URL', name: 'url', widget: 'string' }
+                  - {
+                      label: 'Target',
+                      name: 'target',
+                      widget: 'select',
+                      options: ['_self', '_blank'],
+                      default: '_self',
+                    }
+                  - { label: 'Texto', name: 'text', widget: 'string' }
+              - {
+                  label: 'Imagem de Fundo',
+                  name: 'imgBg',
+                  widget: 'image',
+                  required: false,
+                }
+              - {
+                  label: 'Vídeo de Fundo',
+                  name: 'videoBg',
+                  widget: 'string',
+                  required: false,
+                }
+              - label: 'Componentes Filhos'
+                name: 'components'
+                widget: 'list'
+                collapsed: true
+                types:
+                  - label: 'Group'
+                    name: 'group'
+                    widget: 'object'
+                    collapsed: true
+                    fields:
+                      - { label: 'Tipo', name: 'type', widget: 'hidden', default: 'Group' }
+                  - label: 'CTA'
+                    name: 'cta'
+                    widget: 'object'
+                    collapsed: true
+                    fields:
+                      - { label: 'Tipo', name: 'type', widget: 'hidden', default: 'Cta' }
