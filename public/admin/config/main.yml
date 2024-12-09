@@ -10,3 +10,4 @@ local_backend: true
 
 imports:
   - ./components/Group.yml
+  - ./components/Cta.yml
