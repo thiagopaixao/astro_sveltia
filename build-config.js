@@ -1,16 +1,9 @@
-import { createServer } from 'vite';
+import { build } from 'vite';
+import { mergeYamlConfigs } from './vite.config.mjs';
 
 async function buildConfig() {
-  const server = await createServer({
-    configFile: 'vite.config.mjs',
-    mode: 'production'
-  });
-  
-  try {
-    await server.pluginContainer.buildStart({});
-  } finally {
-    await server.close();
-  }
+  const plugin = mergeYamlConfigs();
+  await plugin.buildStart();
 }
 
-buildConfig();
+buildConfig().catch(console.error);

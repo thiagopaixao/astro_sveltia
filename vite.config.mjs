@@ -4,7 +4,7 @@ import { glob } from 'glob';
 import * as fs from 'fs';
 import * as path from 'path';
 
-const mergeYamlConfigs = () => {
+export const mergeYamlConfigs = () => {
   return {
     name: 'merge-yaml-configs',
     buildStart: async () => {
