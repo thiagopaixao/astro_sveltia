@@ -1,6 +1,8 @@
 ---
 import { getEntryBySlug } from 'astro:content';
+
 import Layout from "../../layouts/Layout.astro";
+
 import Group from '../../components/Group.astro';
 import ColumnSticky from '../../components/ColumnSticky.astro';
 import Text from '../../components/Text.astro';
@@ -15,6 +17,7 @@ import VideoEmbed from '../../components/VideoEmbed.astro';
 import Map from '../../components/Map.astro';
 import MapView from '../../components/MapView.astro';
 import Spacer from '../../components/Spacer.astro';
+import MapSection from "./MapSection.astro";
 
 // Apenas carregando dados e definindo variáveis no frontmatter
 const entry = await getEntryBySlug('pages', 'home');
@@ -63,6 +66,7 @@ const componentMap = {
   <Layout title="Documental.xyz">
     <main>
     {
+      <MapBox />
       // Toda a lógica de renderização fica aqui, no template.
       // Não usamos <script> separado, mas a lógica não está no frontmatter.
       // Ela está após o frontmatter, no corpo do template, o que é permitido.
@@ -103,6 +107,7 @@ const componentMap = {
 
           return results;
         }
+        <MapSection />
 
         // Renderiza os componentes iniciais
         return await renderComponents(components);
