@@ -15,7 +15,7 @@ collections:
     create: true
     slug: '{{slug}}'
     fields:
-      - { label: 'Título', name: 'title', widget: 'string' }
+      - { label: 'Título', name: 'title', widget: 'string', required: false }
       - label: 'Componentes'
         name: 'components'
         widget: 'list'
@@ -41,6 +41,8 @@ collections:
                   widget: 'color',
                   enableAlpha: true,
                   allowInput: true,
+                  default: '#000000',
+                  required: false,
                 }
               - {
                   label: 'Cor de Fundo',
@@ -48,6 +50,8 @@ collections:
                   widget: 'color',
                   enableAlpha: true,
                   allowInput: true,
+                  default: '#FFFFFF',
+                  required: false,
                 }
               - {
                   label: 'Imagem de Fundo',
@@ -113,6 +117,8 @@ collections:
                   widget: 'color',
                   enableAlpha: true,
                   allowInput: true,
+                  default: '#000000',
+                  required: false,
                 }
               - {
                   label: 'Cor de Fundo',
@@ -120,6 +126,8 @@ collections:
                   widget: 'color',
                   enableAlpha: true,
                   allowInput: true,
+                  default: '#FFFFFF',
+                  required: false,
                 }
               - {
                   label: 'Texto Destacado',
