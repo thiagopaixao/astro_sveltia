@@ -25,40 +25,33 @@ async function buildConfig() {
     let mergedConfig = {};
     let components = {};
 
-    // Process all files in order
-    for (const file of sortedFiles) {
+    // First process component files to build the schema
+    let schema = yaml.DEFAULT_SCHEMA;
+    let componentDefs = {};
+
+    // Process component files first
+    for (const file of sortedFiles.filter(f => f.includes('/components/'))) {
       const content = fs.readFileSync(file, 'utf8');
       try {
-        // Use YAML_SCHEMA that includes aliases
-        const parsed = yaml.load(content, { schema: yaml.DEFAULT_SCHEMA });
+        const parsed = yaml.load(content, { schema });
+        componentDefs = { ...componentDefs, ...parsed };
+      } catch (e) {
+        console.error(`Error parsing component file ${file}:`, e);
+        throw e;
+      }
+    }
+
+    // Now process all other files with the complete schema
+    for (const file of sortedFiles.filter(f => !f.includes('/components/'))) {
+      const content = fs.readFileSync(file, 'utf8');
+      try {
+        // Load each file with the full schema that includes all components
+        const parsed = yaml.load(content, {
+          schema: yaml.DEFAULT_SCHEMA
+        });
         
-        if (file.includes('/components/')) {
-          // Store components separately
-          components = { ...components, ...parsed };
-        } else {
-          // For collections, process component references
-          if (parsed.collections) {
-            parsed.collections = parsed.collections.map(collection => {
-              if (collection.fields) {
-                collection.fields = collection.fields.map(field => {
-                  if (field.types) {
-                    field.types = field.types.map(type => {
-                      if (typeof type === 'string' && type.startsWith('*')) {
-                        const componentName = type.substring(1);
-                        return components.components?.[componentName];
-                      }
-                      return type;
-                    });
-                  }
-                  return field;
-                });
-              }
-              return collection;
-            });
-          }
-          
-          mergedConfig = { ...mergedConfig, ...parsed };
-        }
+        // Merge into final config
+        mergedConfig = { ...mergedConfig, ...parsed };
       } catch (e) {
         console.error(`Error parsing file ${file}:`, e);
         throw e;
