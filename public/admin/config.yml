@@ -338,7 +338,7 @@ collections:
                   widget: 'select',
                   options: ['media', 'text'],
                   default: 'text',
-                  required: true,
+                  required: false,
                 }
               - {
                   label: 'Tipo de Mídia',
@@ -360,7 +360,7 @@ collections:
                   label: 'Cor do Texto',
                   name: 'txtColor',
                   widget: 'string',
-                  required: true,
+                  required: false,
                   pattern: ['^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$', 'Deve ser um código de cor hexadecimal válido (ex: #FF0000)'],
                 }
               - {
@@ -381,7 +381,7 @@ collections:
                   label: 'Texto CTA',
                   name: 'ctaText',
                   widget: 'markdown',
-                  required: true,
+                  required: false,
                 }
               - {
                   label: 'Imagem de Fundo',
@@ -401,7 +401,7 @@ collections:
                 name: 'link'
                 widget: 'object'
                 collapsed: true
-                required: true
+                required: false
                 fields:
                   - {
                       label: 'URL',
