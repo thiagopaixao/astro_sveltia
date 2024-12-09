@@ -41,25 +41,39 @@ async function buildConfig() {
     for (const file of otherFiles) {
       const content = await loadYamlFile(file);
       if (content?.collections) {
-        // Replace component references with actual definitions
-        content.collections.forEach(collection => {
-          if (collection.fields) {
-            collection.fields.forEach(field => {
+        const processedCollections = content.collections.map(collection => {
+          const processedCollection = { ...collection };
+          
+          if (processedCollection.fields) {
+            processedCollection.fields = processedCollection.fields.map(field => {
               if (field.types) {
                 field.types = field.types.map(type => {
+                  // Se for uma referência a um componente (ex: *group)
                   if (typeof type === 'string' && type.startsWith('*')) {
                     const componentName = type.substring(1);
-                    return components[componentName] || type;
+                    const componentDef = components[componentName];
+                    if (componentDef) {
+                      return componentDef;
+                    }
+                    console.warn(`Component reference "${componentName}" not found`);
+                    return type;
                   }
                   return type;
                 });
               }
+              return field;
             });
           }
+          return processedCollection;
         });
-        collections.push(...content.collections);
+        
+        collections.push(...processedCollections);
       }
     }
+
+    // Log para debug
+    console.log('Components loaded:', Object.keys(components));
+    console.log('Collections processed:', collections.length);
 
     // Merge everything together
     const finalConfig = {
@@ -72,8 +86,13 @@ async function buildConfig() {
       indent: 2,
       lineWidth: -1,
       noRefs: true,
-      sortKeys: false
+      sortKeys: false,
+      skipInvalid: true
     });
+
+    // Log para debug
+    console.log('Config generated with:');
+    console.log('- Collections:', finalConfig.collections?.length || 0);
 
     fs.writeFileSync('public/admin/config.yml', outputYaml);
     console.log('Successfully generated config.yml');
