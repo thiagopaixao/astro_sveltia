@@ -1,0 +1,44 @@
+label: 'Map'
+name: 'Map'
+widget: 'object'
+summary: '{{fields.mapView}}'
+fields:
+  - label: 'Type'
+    name: 'type'
+    widget: 'hidden'
+    default: 'Map'
+  - label: 'Column Align'
+    name: 'columnAlign'
+    widget: 'select'
+    options: ['left', 'right', 'center']
+    default: 'left'
+    required: false
+  - label: 'Floating Text'
+    name: 'floatingText'
+    widget: 'boolean'
+    required: false
+    default: false
+  - label: 'Text Color'
+    name: 'txtColor'
+    widget: 'color'
+    required: false
+    enableAlpha: true
+    allowInput: true
+  - label: 'Background Color'
+    name: 'bgColor'
+    widget: 'color'
+    required: false
+    enableAlpha: true
+    allowInput: true
+  - label: 'Map View'
+    name: 'mapView'
+    widget: 'string'
+    required: false
+  - label: 'Components'
+    name: 'components'
+    widget: 'list'
+    required: false
+    types:
+      - *text
+      - *mapView
+      - *spacer

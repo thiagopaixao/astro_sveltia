@@ -7,9 +7,12 @@ components:
   - components/CardsCall.yml
   - components/LogosGroup.yml
   - components/InnerColumns.yml
+  - components/MapView.yml
+  - components/Spacer.yml
 
   # Componentes que dependem dos anteriores
   - components/Column.yml
   - components/ColumnSticky.yml
   - components/Group.yml
   - components/Cta.yml
+  - components/Map.yml
