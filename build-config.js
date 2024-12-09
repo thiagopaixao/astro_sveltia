@@ -3,91 +3,82 @@ import { glob } from 'glob';
 import fs from 'fs';
 import path from 'path';
 
+async function loadYamlFile(filePath) {
+  try {
+    const content = fs.readFileSync(filePath, 'utf8');
+    return yaml.load(content);
+  } catch (error) {
+    console.error(`Error loading ${filePath}:`, error);
+    return null;
+  }
+}
+
 async function buildConfig() {
   try {
-    // Ensure directories exist
+    // Ensure output directory exists
     if (!fs.existsSync('public/admin')) {
       fs.mkdirSync('public/admin', { recursive: true });
     }
 
-    // First load all YAML files
-    const allFiles = await glob('public/admin/config/**/*.yml');
+    // Load main config first
+    const mainConfig = await loadYamlFile('public/admin/config/main.yml') || {};
     
-    // Sort files to ensure components are loaded first
-    const sortedFiles = allFiles.sort((a, b) => {
-      if (a.includes('/components/')) return -1;
-      if (b.includes('/components/')) return 1;
-      if (path.basename(a) === 'main.yml') return -1;
-      if (path.basename(b) === 'main.yml') return 1;
-      return a.localeCompare(b);
-    });
-
-    let mergedConfig = {};
-    let componentDefs = {};
-
-    // First pass: Load all component definitions
-    for (const file of sortedFiles.filter(f => f.includes('/components/'))) {
-      const content = fs.readFileSync(file, 'utf8');
-      try {
-        const parsed = yaml.load(content);
-        if (parsed && parsed.components) {
-          componentDefs = { ...componentDefs, ...parsed.components };
-        }
-      } catch (e) {
-        console.error(`Error parsing component file ${file}:`, e);
-        throw e;
+    // Load and process component definitions
+    const componentFiles = await glob('public/admin/config/components/*.yml');
+    const components = {};
+    
+    for (const file of componentFiles) {
+      const content = await loadYamlFile(file);
+      if (content?.components) {
+        Object.assign(components, content.components);
       }
     }
 
-    // Create schema with component types
-    const types = {};
-    Object.entries(componentDefs).forEach(([key, value]) => {
-      types[key] = new yaml.Type(`!${key}`, {
-        kind: 'mapping',
-        construct: function (data) {
-          return data;
-        }
-      });
-    });
-
-    const CUSTOM_SCHEMA = yaml.DEFAULT_SCHEMA.extend(Object.values(types));
-
-    // Second pass: Process all files with component schema
-    for (const file of sortedFiles) {
-      const content = fs.readFileSync(file, 'utf8');
-      try {
-        const parsed = yaml.load(content, { schema: CUSTOM_SCHEMA });
-        if (parsed) {
-          if (file.includes('/components/')) {
-            // For component files, only merge the non-components part
-            const { components, ...rest } = parsed;
-            mergedConfig = { ...mergedConfig, ...rest };
-          } else {
-            mergedConfig = { ...mergedConfig, ...parsed };
+    // Load collections and other configs
+    const otherFiles = await glob('public/admin/config/collections/*.yml');
+    const collections = [];
+    
+    for (const file of otherFiles) {
+      const content = await loadYamlFile(file);
+      if (content?.collections) {
+        // Replace component references with actual definitions
+        content.collections.forEach(collection => {
+          if (collection.fields) {
+            collection.fields.forEach(field => {
+              if (field.types) {
+                field.types = field.types.map(type => {
+                  if (typeof type === 'string' && type.startsWith('*')) {
+                    const componentName = type.substring(1);
+                    return components[componentName] || type;
+                  }
+                  return type;
+                });
+              }
+            });
           }
-        }
-      } catch (e) {
-        console.error(`Error parsing file ${file}:`, e);
-        throw e;
+        });
+        collections.push(...content.collections);
       }
     }
 
-    // Add component definitions to final config
-    mergedConfig.components = componentDefs;
+    // Merge everything together
+    const finalConfig = {
+      ...mainConfig,
+      collections,
+    };
 
-    // Write merged config
-    const outputYaml = yaml.dump(mergedConfig, {
+    // Write the final config
+    const outputYaml = yaml.dump(finalConfig, {
       indent: 2,
       lineWidth: -1,
       noRefs: true,
-      sortKeys: false,
-      schema: CUSTOM_SCHEMA
+      sortKeys: false
     });
 
     fs.writeFileSync('public/admin/config.yml', outputYaml);
-    console.log('Successfully merged YAML configs');
+    console.log('Successfully generated config.yml');
   } catch (error) {
-    console.error('Error merging YAML configs:', error);
+    console.error('Error generating config:', error);
     throw error;
   }
 }
