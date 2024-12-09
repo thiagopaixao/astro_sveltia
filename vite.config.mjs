@@ -11,25 +11,26 @@ export const mergeYamlConfigs = () => {
     name: 'merge-yaml-configs',
     buildStart: async () => {
       const configFiles = await glob('public/admin/config/**/*.yml');
-      let mergedConfig = {};
       
-      // Load components first to ensure anchors are available
+      // Concatenate all YAML content in the correct order
+      let allContent = '';
+      
+      // Components first (for anchors)
       const componentFiles = configFiles.filter(file => file.includes('/components/'));
-      const otherFiles = configFiles.filter(file => !file.includes('/components/'));
-      
-      // Process component files first
       for (const file of componentFiles) {
         const content = fs.readFileSync(file, 'utf8');
-        const parsed = yaml.parse(content);
-        mergedConfig = { ...mergedConfig, ...parsed };
+        allContent += content + '\n';
       }
       
-      // Then process other files
+      // Then other files
+      const otherFiles = configFiles.filter(file => !file.includes('/components/'));
       for (const file of otherFiles) {
         const content = fs.readFileSync(file, 'utf8');
-        const parsed = yaml.parse(content);
-        mergedConfig = { ...mergedConfig, ...parsed };
+        allContent += content + '\n';
       }
+
+      // Parse everything at once to maintain anchor references
+      const doc = yaml.parseDocument(allContent);
 
       // Ensure output directory exists
       if (!fs.existsSync('public/admin')) {
@@ -39,7 +40,7 @@ export const mergeYamlConfigs = () => {
       // Write merged config
       fs.writeFileSync(
         'public/admin/config.yml',
-        yaml.stringify(mergedConfig)
+        doc.toString()
       );
     }
   };
