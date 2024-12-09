@@ -43,6 +43,5 @@ group: &group
         - *text
         - *videoEmbed
         - *imageBlock
-        - *column
         - *columnSticky
         - *chartBar
