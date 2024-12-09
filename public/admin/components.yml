@@ -1,21 +1,10 @@
-- ./components/Group.yml
-- ./components/Column.yml
-- ./components/ColumnSticky.yml
-- ./components/CardsCall.yml
-- ./components/LogosGroup.yml
-- ./components/ChartBar.yml
-- ./components/VideoEmbed.yml
-- ./components/Text.yml
-- ./components/InnerColumns.yml
-- ./components/ImageBlock.yml
-# Lista ordenada de componentes para concatenação
 components:
   # Componentes base (sem dependências)
   - components/Text.yml
   - components/VideoEmbed.yml
   - components/ImageBlock.yml
   - components/ChartBar.yml
-  
+
   # Componentes que dependem dos anteriores
   - components/Column.yml
   - components/ColumnSticky.yml
