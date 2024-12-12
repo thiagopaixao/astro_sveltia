@@ -9,6 +9,8 @@ const updatedCardsCallArr = cardsCallArr.map(card => {
   let updatedImg = { ...card.img };
     if (updatedImg.src === 'uploads/thumb.png') {
         updatedImg.src = '/uploads/thumb.png';
+        updatedImg.width = 100;
+        updatedImg.height = 100;
     }
   return {
     ...card,
