@@ -7,7 +7,7 @@ const { Component, props } = Astro.props;
 
 const logos = [
     {
-        image: logo,
+        image: `${import.meta.env.BASE_URL}/uploads/logo-1.jpg`,
         link: {
             url: '#',
             target: '_blank',
@@ -15,7 +15,7 @@ const logos = [
         },
     },
     {
-        image: logo2,
+        image: `${import.meta.env.BASE_URL}/uploads/logo-2.png`,
         link: {
             url: '#',
             target: '_self',
@@ -23,7 +23,7 @@ const logos = [
         },
     },
     {
-        image: logo3,
+        image: `${import.meta.env.BASE_URL}/uploads/logo-3.png`,
         link: {
             url: '#',
             target: '_blank',

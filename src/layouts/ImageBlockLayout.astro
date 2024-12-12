@@ -5,8 +5,7 @@ const { src, alt, wide, description } = props;
 
 let img;
 if (src) {
-  const imgModule = await import(`../assets/images/${src}`, { assert: { type: 'image' } });
-  img = imgModule.default;
+  img = `${import.meta.env.BASE_URL}/uploads/${src}`;
 }
 
 const componentData = {
