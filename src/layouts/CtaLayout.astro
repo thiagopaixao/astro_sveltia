@@ -18,12 +18,12 @@ const {
 // Se `media` for uma imagem, importamos dinamicamente
 let img;
 if (media && mediaType === 'image' && media) {
-  img = `${Astro.site}${Astro.base}/uploads/${media}`;
+  img = `${import.meta.env.BASE_URL}uploads/${media}`;
 }
 
 let imgSrc;
 if (imgBg) {
-    imgSrc = `${Astro.site}${Astro.base}/uploads/${imgBg}`;
+    imgSrc = `${import.meta.env.BASE_URL}uploads/${imgBg}`;
 }
 
 
