@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: thiagopaixao/teste_astro_leaflet
+  repo: thiagopaixao/astro_sveltia
   branch: main
 
 media_folder: 'public/uploads'
