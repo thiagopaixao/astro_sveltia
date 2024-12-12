@@ -17,16 +17,13 @@ const {
 
 // Se `media` for uma imagem, importamos dinamicamente
 let img;
-if (media && mediaType === 'image') {
-  const imgModule = await import(`../assets/images/${media}`, { assert: { type: 'image' } });
-  img = imgModule.default;
+if (media && mediaType === 'image' && media) {
+  img = `${Astro.site}${Astro.base}/uploads/${media}`;
 }
 
 let imgSrc;
 if (imgBg) {
-    const imgPath = `../assets/images/${imgBg}`;
-    const { default: img } = await import(imgPath, { assert: { type: 'image' } });
-    imgSrc = img.src;
+    imgSrc = `${Astro.site}${Astro.base}/uploads/${imgBg}`;
 }
 
 
@@ -35,7 +32,7 @@ if (imgBg) {
 <Component
   layout={layout}
   highlightedText={highlightedText}
-  media={img}
+  media={mediaType === 'image' ? img : media}
   mediaType={mediaType}
   text={ctaText}
   link={link}
