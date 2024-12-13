@@ -1,0 +1,22 @@
+mapBox: &mapBox
+  label: 'MapBox'
+  name: 'MapBox'
+  widget: 'object'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'MapBox'
+    - label: 'Column Align'
+      name: 'columnAlign'
+      widget: 'select'
+      options: ['left', 'center', 'right']
+      required: false
+    - label: 'Floating Text'
+      name: 'floatingText'
+      widget: 'boolean'
+      required: false
+    - label: 'Map View'
+      name: 'mapView'
+      widget: 'string'
+      required: false
