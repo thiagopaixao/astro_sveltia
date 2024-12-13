@@ -13,15 +13,6 @@ collections:
         fields:
           - label: 'Sessão'
             name: 'session'
-            widget: 'object'
-            fields:
-              - { label: 'ID', name: 'id', widget: 'string', required: true }
-              - label: 'Components'
-                name: 'components'
-                widget: 'list'
-                required: false
-                types:
-                  - *group
-                  - *cta
-                  - *map
+            widget: 'string'
+            required: true
 
