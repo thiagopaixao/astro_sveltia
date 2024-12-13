@@ -12,11 +12,29 @@ innerColumns: &innerColumns
       name: 'column1'
       widget: 'list'
       fields:
-        - { label: 'Component', name: 'component', widget: 'object', fields: [ {label: 'Type', name: 'type', widget: 'select', options: ['Text', 'ImageBlock', 'VideoEmbed']} ] }
-      required: false
+        - label: 'Components'
+          name: 'components'
+          widget: 'list'
+          required: false
+          types:
+            - *text
+            - *chartBar
+            - *imageBlock
+            - *videoEmbed
+            - *logosGroup
+            - *innerColumns
     - label: 'Column 2'
       name: 'column2'
       widget: 'list'
       fields:
-        - { label: 'Component', name: 'component', widget: 'object', fields: [ {label: 'Type', name: 'type', widget: 'select', options: ['Text', 'ImageBlock', 'VideoEmbed']} ] }
-      required: false
+        - label: 'Components'
+          name: 'components'
+          widget: 'list'
+          required: false
+          types:
+            - *text
+            - *chartBar
+            - *imageBlock
+            - *videoEmbed
+            - *logosGroup
+            - *innerColumns
