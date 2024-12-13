@@ -49,6 +49,11 @@ sections:
                 txtColor: "#000000ff"
                 bgColor: ""
                 content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+              - type: ImageBlock
+                wideImage: false
+                src: /uploads/map.png
+                alt: Mapa
+                description: MapMundi
             body: ""
   - section: CTAs
     components:
@@ -194,8 +199,8 @@ sections:
   - section: Mapas
     components:
       - type: Map
-        txtColor: "#F0EAD9"
-        bgColor: "#006a49"
+        txtColor: ""
+        bgColor: "#006a49ff"
         components:
           - type: Text
             txtColor: ""
@@ -221,7 +226,7 @@ sections:
         floatingText: true
         mapView: view_1
       - type: Map
-        txtColor: "#F0EAD9"
+        txtColor: ""
         bgColor: "#000000ff"
         components:
           - type: Text
@@ -249,7 +254,7 @@ sections:
         columnAlign: left
         floatingText: false
       - type: Map
-        txtColor: "#F0EAD9"
+        txtColor: ""
         bgColor: "#000000ff"
         components:
           - type: MapView
@@ -276,7 +281,7 @@ sections:
         columnAlign: left
         floatingText: false
       - type: Map
-        txtColor: "#F0EAD9"
+        txtColor: ""
         bgColor: "#000000ff"
         components:
           - type: MapView
@@ -404,5 +409,22 @@ sections:
         bgColor: "#000000ff"
         columnAlign: left
         floatingText: false
+  - section: Teste
+    components:
+      - type: Group
+        layout: default
+        txtColor: ""
+        bgColor: ""
+        backgroundImage: ""
+        overlay: ""
+        components:
+          - type: Text
+            txtColor: ""
+            bgColor: ""
+            content: ""
+          - type: VideoEmbed
+            wideVideo: false
+            videoUrl: ""
+            videoCaption: ""
 ---
 
