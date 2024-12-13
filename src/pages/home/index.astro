@@ -49,18 +49,6 @@ const componentMap = {
   <head>
     <meta charset="UTF-8" />
     <title>{title}</title>
-
-    <style lang="scss">
-      main {
-        background-color: var(--clr-bg, transparent);
-  
-        :global(> .spacer) {
-          position: relative;
-          background-color: inherit;
-        }
-      }
-    </style>
-
   </head>
   <body>
   <Layout title="Documental.xyz">
@@ -74,7 +62,7 @@ const componentMap = {
         async function renderSections(sectionsList) {
           if (!sectionsList) return [];
 
-          const results = await Promise.all(sectionsList.map(async ({ components: componentList, ...sectionProps }) => {
+          const results = await Promise.all(sectionsList.map(async ({ components: componentList, section, ...sectionProps }) => {
             
             async function renderComponents(componentList) {
               if (!componentList) return [];
@@ -116,7 +104,7 @@ const componentMap = {
             const renderedComponents = await renderComponents(componentList);
 
             return (
-              <section {...sectionProps}>
+              <section id={section} style={{ backgroundColor: 'var(--clr-bg, transparent)' }} {...sectionProps}>
                 {renderedComponents}
               </section>
             );
@@ -132,17 +120,6 @@ const componentMap = {
     }
 
 </main>
-
-  <style lang="scss">
-    main {
-      background-color: var(--clr-bg, transparent);
-
-      :global(> .spacer) {
-        position: relative;
-        background-color: inherit;
-      }
-    }
-  </style>
 </Layout>
   </body>
 </html>
