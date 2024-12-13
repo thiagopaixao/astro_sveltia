@@ -96,6 +96,9 @@ const componentSchema = z.object({
   column2: z.string().optional().transform(processMarkdown),
 
   // Atributos do Map
+  columnAlign: z.enum(['left', 'center', 'right']).optional(),
+  floatingText: z.boolean().optional(),
+  mapView: z.string().optional(),
 
   // Atributos do Spacer
   desktop: z.string().optional(),
@@ -106,11 +109,6 @@ const componentSchema = z.object({
   id: z.string().optional(),
 });
 
-const sessionSchema = z.object({
-  type: z.literal('Session'),
-  id: z.string().optional(),
-  components: z.array(componentSchema).optional(),
-});
 
 const pagesCollection = defineCollection({
   type: 'content',
