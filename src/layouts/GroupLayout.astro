@@ -1,14 +1,14 @@
 ---
 const { Component, props } = Astro.props;
-const { txtColor, bgColor, backgroundImage } = props;
+const { txtColor, bgColor, overlay, backgroundImage } = props;
 
 let imgSrc;
 if (backgroundImage) {
-    imgSrc = `${import.meta.env.BASE_URL}/uploads/${backgroundImage}`;
+    imgSrc = `${import.meta.env.BASE_URL}${backgroundImage}`;
 
 }
 ---
 
-<Component txtColor={txtColor} bgColor={bgColor} imgBg={imgSrc} >
+<Component txtColor={txtColor} bgColor={bgColor} imgBg={imgSrc} overlay={overlay} >
   <slot />
 </Component>

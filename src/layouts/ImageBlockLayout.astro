@@ -5,7 +5,7 @@ const { src, alt, wide, description } = props;
 
 let img;
 if (src) {
-  img = `${import.meta.env.BASE_URL}/uploads/${src}`;
+  img = `${import.meta.env.BASE_URL}${src}`;
 }
 
 const componentData = {

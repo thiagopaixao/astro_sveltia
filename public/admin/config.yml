@@ -295,10 +295,14 @@ columnSticky: &columnSticky
       name: 'title'
       widget: 'string'
       required: false
-    - label: 'Body'
-      name: 'body'
-      widget: 'markdown'
+    - label: 'Components'
+      name: 'components'
+      widget: 'list'
       required: false
+      types:
+        - *text
+        - *videoEmbed
+        - *imageBlock
 
 group: &group
   label: 'Group'
@@ -485,6 +489,7 @@ collections:
         name: 'sections'
         widget: 'list'
         summary: 'Seção: {{fields.section}}'
+        collapsed: true
         required: false
         fields:
           - label: 'Seção'

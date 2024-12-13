@@ -8,10 +8,5 @@ const { txtColor, bgColor, paddingTop, paddingBottom, layout, title, body, ...ot
 <Component paddingTop={paddingTop} paddingBottom={paddingBottom} layout={layout} txtColor={txtColor} bgColor={bgColor} {...otherProps}>
   {title && <h1 slot="title"><Fragment set:html={title} /></h1>}
   
-  {body && (
-      <Fragment set:html={body} />
-
-  )}
-
   <slot />
 </Component>

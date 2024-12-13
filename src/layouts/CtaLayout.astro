@@ -18,12 +18,12 @@ const {
 // Se `media` for uma imagem, importamos dinamicamente
 let img;
 if (media && mediaType === 'image' && media) {
-  img = `${import.meta.env.BASE_URL}/uploads/${media}`;
+  img = `${import.meta.env.BASE_URL}${media}`;
 }
 
 let imgSrc;
 if (imgBg) {
-    imgSrc = `${import.meta.env.BASE_URL}/uploads/${imgBg}`;
+    imgSrc = `${import.meta.env.BASE_URL}${imgBg}`;
 }
 
 
