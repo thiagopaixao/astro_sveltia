@@ -116,7 +116,10 @@ const pagesCollection = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string().optional(),
-    components: z.array(componentSchema).optional(),
+    sections: z.array(z.object({
+      section: z.string().optional(),
+      components: z.array(componentSchema).optional(),
+    })).optional(),
   }),
 });
 

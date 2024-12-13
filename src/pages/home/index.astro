@@ -25,7 +25,7 @@ if (!entry) {
   throw new Error('Nenhuma entrada encontrada para "home".');
 }
 
-const { title, components } = entry.data;
+const { title, sections } = entry.data;
 
 const componentMap = {
   Group,
@@ -71,46 +71,63 @@ const componentMap = {
       // Não usamos <script> separado, mas a lógica não está no frontmatter.
       // Ela está após o frontmatter, no corpo do template, o que é permitido.
       (async function() {
-        async function renderComponents(componentList) {
-          if (!componentList) return [];
+        async function renderSections(sectionsList) {
+          if (!sectionsList) return [];
 
-          const results = await Promise.all(componentList.map(async ({ type, components: childComponents, ...restProps }) => {
-            const Component = componentMap[type];
-            if (!Component) return null;
+          const results = await Promise.all(sectionsList.map(async ({ components: componentList, ...sectionProps }) => {
             
-            let Layout = null;
-            try {
-              const layoutModule = await import(`../../layouts/${type}Layout.astro`);
-              Layout = layoutModule.default;
-            } catch (e) {
-              // Caso não encontre o layout específico, seguirá sem layout.
+            async function renderComponents(componentList) {
+              if (!componentList) return [];
+
+              const results = await Promise.all(componentList.map(async ({ type, components: childComponents, ...restProps }) => {
+                const Component = componentMap[type];
+                if (!Component) return null;
+                
+                let Layout = null;
+                try {
+                  const layoutModule = await import(`../../layouts/${type}Layout.astro`);
+                  Layout = layoutModule.default;
+                } catch (e) {
+                  // Caso não encontre o layout específico, seguirá sem layout.
+                }
+
+                const children = childComponents ? await renderComponents(childComponents) : [];
+
+                if (Layout) {
+                  // Se houver um layout específico, use-o
+                  return (
+                    <Layout Component={Component} props={restProps}>
+                      {children}
+                    </Layout>
+                  );
+                } else {
+                  // Caso contrário, renderize o componente diretamente
+                  return (
+                    <Component {...restProps}>
+                      {children}
+                    </Component>
+                  );
+                }
+              }));
+
+              return results;
             }
 
-            const children = childComponents ? await renderComponents(childComponents) : [];
+            const renderedComponents = await renderComponents(componentList);
 
-            if (Layout) {
-              // Se houver um layout específico, use-o
-              return (
-                <Layout Component={Component} props={restProps}>
-                  {children}
-                </Layout>
-              );
-            } else {
-              // Caso contrário, renderize o componente diretamente
-              return (
-                <Component {...restProps}>
-                  {children}
-                </Component>
-              );
-            }
+            return (
+              <section {...sectionProps}>
+                {renderedComponents}
+              </section>
+            );
           }));
 
           return results;
         }
   
 
-        // Renderiza os componentes iniciais
-        return await renderComponents(components);
+        // Renderiza as seções
+        return await renderSections(sections);
       })()
     }
 
