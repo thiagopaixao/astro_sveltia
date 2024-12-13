@@ -15,4 +15,3 @@ collections:
             name: 'session'
             widget: 'string'
             required: true
-
