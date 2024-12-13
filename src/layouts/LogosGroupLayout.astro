@@ -1,0 +1,19 @@
+---
+const { Component, props } = Astro.props;
+const { logos = []} = props;
+
+// Atualiza o array de logos substituindo a imagem original por `thumb` localizada em public/uploads
+const updatedLogos = logos.map(logo => {
+  let updatedImg = { ...logo.image };
+    if (updatedImg) {
+        updatedImg = `${import.meta.env.BASE_URL}${logo.image}`;
+    }
+  return {
+    ...logo,
+    image: updatedImg
+
+  };
+});
+---
+
+  <Component logos={updatedLogos} />

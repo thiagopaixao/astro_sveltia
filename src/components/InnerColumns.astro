@@ -1,0 +1,52 @@
+---
+
+---
+
+<div class="inner-columns">
+  <div class="inner-columns__holder">
+    <div class="inner-columns__column">
+      <slot name="column-1" />
+    </div>
+    <div class="inner-columns__column">
+      <slot name="column-2" />
+    </div>
+  </div>
+</div>
+
+<style lang="scss">
+  @use "../assets/styles/config/config" as *;
+  @use "../assets/styles/utils/grrr/grrr" as *;
+
+  .inner-columns {
+    :global(+ *) {
+      margin-top: var(--mt-m);
+    }
+
+    &__holder {
+      display: flex;
+      gap: var(--atnl-gutter);
+      margin-top: var(--mt-m);
+
+      @include media-break-down(m) {
+        flex-direction: column;
+        gap: var(--mt-s);
+        margin-top: var(--mt-s);
+      }
+
+     
+    }
+
+    &__column {
+      flex-basis: 50%;
+    }
+
+    :global(.columns) & {
+      &__holder {
+        @include media-grrr-between(7, 10) {
+          flex-direction: column;
+          gap: var(--mt-s);
+        }
+      }
+    }
+  }
+</style>

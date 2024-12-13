@@ -1,0 +1,7 @@
+@use './breakpoints' as *;
+
+$grrr-config: (
+  'name': 'atnl', // id que será usada como prefixo das classes
+  'board-max': 1356px, // tamanho máximo do board,
+  'breakpoints': $breakpoints, //array de breakpoints
+);

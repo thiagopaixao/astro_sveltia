@@ -1,0 +1,90 @@
+@use "sass:color";
+@use "sass:list";
+@use "sass:map";
+
+@use "./colors" as *;
+
+@function pxToRem($px) {
+	$remUnit: 0.0625;
+	$rem: $px * $remUnit * 1rem;
+	@return $rem;
+}
+
+@function pxToVw($px, $viewportWidth: 1440) {
+	@return calc(100vw / $viewportWidth * $px);
+}
+
+@function sqrt($r) {
+	$x0: 1;
+	$x1: $x0;
+	@for $i from 1 through 10 {
+		$x1: $x0 - calc(($x0 * $x0 - abs($r)) / (2 * $x0));
+		$x0: $x1;
+	}
+	@return $x1;
+}
+
+@function strip-unit($number) {
+	@if type-of($number)=='number' and not unitless($number) {
+		$n: $number * 0 + 1;
+		@return calc($number / $n);
+	}
+	@return $number;
+}
+
+@function str-split($string, $separator) {
+	$split-arr: ();
+	$index : str-index($string, $separator);
+	@while $index !=null {
+		$item: str-slice($string, 1, $index - 1);
+		$split-arr: append($split-arr, $item);
+		$string: str-slice($string, $index + 1);
+		$index : str-index($string, $separator);
+	}
+	$split-arr: append($split-arr, $string);
+	@return $split-arr;
+}
+
+@function str-replace($string, $search, $replace: '') {
+	$index: str-index($string, $search);
+	@if $index {
+		@return str-slice($string, 1, $index - 1) + $replace + str-replace( str-slice($string, $index + str-length($search)), $search, $replace);
+	}
+	@return $string;
+}
+
+@function hex_to_rgb_values($hex) {
+  @return #{color.channel($hex, "red", rgb)}, #{color.channel($hex, "green", rgb)}, #{color.channel($hex, "blue", rgb)};
+}
+
+@function color($color, $alpha: 1) {
+  @if not map.get($colors, $color) {
+    @warn '-> "' + #{$color} + '" is not defined in colors configs';
+  }
+  @return rgba(var(--#{$color-var-prefix}-#{$color}-rgb), $alpha);
+}
+
+@function colorHex($color, $index: 1) {
+	@if not map.get($colors, $color) {
+    @warn '-> "' + #{$color} + '" is not defined in colors configs';
+  }
+
+	@return list.nth(map.get($colors, $color), $index);
+}
+
+@function columnsSize($cols, $gridCols: false, $grid-config: $grid-config) {
+  $name: map.get($map: $grid-config, $key: 'name' );
+  $colsSize: calcColumnSize($gridCols, var(--#{$name}-gutter));
+
+  @if($gridCols == false) {
+    $colsSize: var(--#{$name}-col-size);
+  }
+
+  @return calc(($colsSize + var(--#{$name}-gutter)) * $cols);
+}
+
+@function calcColumnSize($gridCols, $gutter, $width: 100%) {
+  $gutter-calc: calc(#{$gutter} * (#{$gridCols} - 1) / #{$gridCols});
+
+  @return calc(#{$width} / #{$gridCols} - #{$gutter-calc});
+}

@@ -1,0 +1,27 @@
+imageBlock: &imageBlock
+  label: 'Image Block'
+  name: 'ImageBlock'
+  widget: 'object'
+  summary: '{{fields.src}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'ImageBlock'
+    - label: 'Wide'
+      name: 'wideImage'
+      widget: 'boolean'
+      required: false
+      default: false
+    - label: 'Image'
+      name: 'src'
+      widget: 'image'
+      required: false
+    - label: 'Alt Text'
+      name: 'alt'
+      widget: 'string'
+      required: false
+    - label: 'Description'
+      name: 'description'
+      widget: 'string'
+      required: false

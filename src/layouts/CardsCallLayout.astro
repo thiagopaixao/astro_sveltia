@@ -1,0 +1,26 @@
+---
+import Group from '../components/Group.astro';
+
+const { Component, props } = Astro.props;
+const { cardsCallArr = []} = props;
+
+// Atualiza o array de cards substituindo a imagem original por `thumb` localizada em public/uploads
+const updatedCardsCallArr = cardsCallArr.map(card => {
+  let updatedImg = { ...card.img };
+    if (updatedImg.src) {
+        updatedImg.src = `${import.meta.env.BASE_URL}${card.img.src}`;
+        updatedImg.alt = `${card.img.alt}`
+        updatedImg.width = '100%';
+        updatedImg.height = '100%';
+    }
+  return {
+    ...card,
+    img: updatedImg
+
+  };
+});
+---
+
+  <Component cards={updatedCardsCallArr} />
+
+  

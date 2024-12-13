@@ -1,0 +1,27 @@
+mapView: &mapView
+  label: 'Map View'
+  name: 'MapView'
+  widget: 'object'
+  summary: '{{fields.mapView}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'MapView'
+    - label: 'Map View'
+      name: 'mapView'
+      widget: 'select'
+      options: ['view_1', 'view_2', 'view_3', 'view_4']
+      required: true
+    - label: 'Text Color'
+      name: 'txtColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Background Color'
+      name: 'bgColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true

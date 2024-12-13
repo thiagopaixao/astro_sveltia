@@ -1,0 +1,20 @@
+components:
+  # Componentes base (sem dependências)
+  - components/MapBox.yml
+  - components/Text.yml
+  - components/VideoEmbed.yml
+  - components/ImageBlock.yml
+  - components/ChartBar.yml
+  - components/CardsCall.yml
+  - components/LogosGroup.yml
+
+  - components/MapView.yml
+  - components/Spacer.yml
+
+  # Componentes que dependem dos anteriores
+  - components/InnerColumns.yml
+  - components/Column.yml
+  - components/ColumnSticky.yml
+  - components/Group.yml
+  - components/Cta.yml
+  - components/Map.yml

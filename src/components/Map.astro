@@ -1,0 +1,318 @@
+---
+import MapView from "./MapView.astro";
+
+const { columnAlign, floatingText, txtColor, bgColor, mapView } = Astro.props;
+
+let content = await Astro.slots.render("default");
+content = floatingText ? content.replace(/<br[^>]*>/g, '<b r></b>') : content;
+
+//columnAlign recebe left || right || center
+//floatingText recebe booleano
+//mapView recebe o id da layer do mapa, inserido nas configuracões
+
+---
+
+<section
+  class:list={[
+    "map",
+    `map--align${columnAlign}`,
+    floatingText && `map--floating-text`,
+  ]}
+>
+  <div class="map__holder">
+    {mapView && <MapView mapView={mapView} />}
+
+    <div class="map__content" set:html={content}></div>    
+  </div>
+</section>
+
+<style lang="scss" define:vars={{ "clr-txt": txtColor, "clr-bg": bgColor }}>
+  @use "../assets/styles/globals/grrr" as *;
+  @use "../assets/styles/config/config" as *;
+  @use "../assets/styles/utils/grrr/grrr" as *;
+
+  .map {
+    $self: &;
+    min-height: 100vh;
+    @extend %grrr--board;
+    color: var(--clr-txt);
+
+    @include media-break-down(l) {
+      display: block;
+      margin-top: var(--map-height-mobile);
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        min-height: 100vh;
+      }
+      
+      
+      &--floating-text{
+        z-index: 100;
+        margin-top: 0;
+        &::after{
+          display: none;
+        }
+      }
+
+      &:not(#{$self}--floating-text) + #{$self}:after{
+        display: none;
+      }
+    }
+
+    @include media-break-up(xl) {
+      display: block;
+    }
+
+    &__view {
+      position: absolute;
+      left: 20px;
+      z-index: 9999;
+      border-bottom: 1px solid;
+      border-left: 1px dashed;
+      color: yellow;
+      height: 1px;
+      padding-left: 10px;
+      opacity: 0;
+      max-width: 200px;
+
+      &.odd {
+        color: #59ff4d;
+      }
+    }
+
+    &__holder {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      background-color: var(--clr-bg);
+      padding-inline: var(--atnl-gutter, 40px);
+
+      @include media-break-down(l) {
+        padding-block: var(--mt-m);
+        &:not(#{$self}--floating-text &){
+          position: sticky;
+          top: var(--map-height-mobile);
+          margin-top: calc(var(--map-height-mobile) * -1);
+          min-height: calc(100vh - var(--map-height-mobile));
+        }
+      }
+
+      @include media-break-up(l) {
+        padding-block: 240px var(--mt-l);
+      }
+
+      @include media-break-up(xl) {
+        width: 100%;
+        max-width: 507px;
+      }
+
+      #{$self}--alignright & {
+        @include media-break-up(l) {
+          grid-column: board-end 8 / full-end;
+        }
+
+        @include media-break-up(xl) {
+          margin-left: auto;
+        }
+      }
+
+      #{$self}--alignleft & {
+        @include media-break-up(l) {
+          grid-column: full-start 1 / board-start 5;
+        }
+      }
+
+      #{$self}--aligncenter & {
+        @include media-break-up(l) {
+          grid-column: board-full;
+        }
+      }
+
+      #{$self}--floating-text & {
+        background-color: transparent;
+      }
+
+      #{$self}--aligncenter & {
+        max-width: 664px;
+        margin-inline: auto;
+      }
+    }
+
+    &__content {
+      position: relative;
+
+      #{$self}--floating-text & {
+        :global(> *:not(div)),
+        :global(> .text > *) {
+          display: inline;
+          background-color: var(--clr-bg);
+          padding: 0.2em 0;
+          position: relative;
+
+          &:not(:first-child) {
+            &::before {
+              content: "";
+              height: var(--mt-s);
+              white-space: pre;
+              display: block;
+              position: relative;
+              z-index: 2;
+            }
+          }
+
+          :global([r]) {
+            display: block;
+          }
+
+          :global([r] + [r]) {
+            height: 100%;
+          }
+
+          :global([r]:before) {
+            height: 100%;
+          }
+        }
+
+        :global(body:not(.is-safari)) & :global(> *:not(div)),
+        :global(body:not(.is-safari)) & :global(> .text > *) {
+          padding: 0.2em 5px;
+          margin-left: -5px;
+          margin-right: -150vw;
+          -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+        }
+      }
+    }
+
+    :global(#captions) {
+      max-width: 310px;
+      position: fixed;
+      left: 40px;
+      color: var(--clr-txt);
+      background-color: var(--clr-bg);
+      padding: 16px;
+      border-radius: 3px;
+      transition: .3s ease;
+
+      &.hidden {
+        opacity: 0;
+      }
+
+      @include media-break-down(l) {
+        width: calc(100% - 90px);
+        max-height: calc(var(--map-height-mobile) - 40px);
+        padding: 12px;
+        top: 20px;
+        left: 20px;
+        z-index: 3;
+        overflow-y: auto;
+        pointer-events: none;
+        background-color: transparent;
+
+        &::before {
+          content: '';
+          height: 45px;
+          width: 100%;
+          display: block;
+          background-color: var(--clr-bg);
+          position: sticky;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          transform: translateY(-12px);
+          transition: .3s ease;
+        }
+
+        &[open] {
+          background-color: var(--clr-bg);
+          pointer-events: all;
+
+          :global(.captions__item) {
+            opacity: 1;
+          }
+
+          &::before {
+            opacity: 1;
+            transition-delay: .3s;
+          }
+        }
+      }
+
+      @include media-break-up(l) {
+        bottom: 33px;
+      }
+    }
+
+    :global(.captions__item) {
+      display: flex;
+      gap: 10px;
+      transition: .3s ease;
+
+      @include media-break-down(l) {
+        opacity: 0;
+      }
+
+      :global(span:has([class*="material-symbols"])) {
+        display: flex;
+      }
+
+      :global(+ .captions__item) {
+        margin-top: 10px;
+      }
+    }
+
+    :global(button) {
+      padding: 0;
+      border: none;
+      outline: 0;
+      background-color: transparent;
+
+      @include media-break-down(l) {
+        position: fixed;
+        top: 32px;
+        left: 32px;
+        pointer-events: all;
+      }
+
+      @include media-break-up(l) {
+        display: none;
+      }
+
+      :global(svg) {
+        pointer-events: none;
+        display: block;
+      }
+
+      :global(rect) {
+        fill: var(--clr-bg);
+      }
+
+      :global(path) {
+        fill: var(--clr-txt);
+      }
+    }
+
+    &--aligncenter :global(#captions),
+    &--alignleft :global(#captions) {
+      @include media-break-up(l) {
+        left: auto;
+        right: 40px;
+      }
+    }
+  }
+</style>
+
+<script>
+  window.addEventListener('click', e => {
+    const target = e.target as HTMLTextAreaElement;
+    if(!target.closest('[data-toggle-caption]')) return;
+
+    const toggleCaptionBtn = target.closest('[data-toggle-caption]');
+    const caption = toggleCaptionBtn.closest('#captions');
+    
+    caption.toggleAttribute('open', !caption.hasAttribute('open'));    
+  });
+</script>

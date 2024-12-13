@@ -1,0 +1,57 @@
+<div class="timeline" data-timeline>
+  <slot />
+</div>
+
+<style lang="scss">
+  .timeline {
+    padding-left: 32px;
+    position: relative;
+   
+    &::after {
+      content: '';
+      width: 2px;
+      // min-height: 100vh;
+      height: 100%;
+      display: block;
+      position: absolute;
+      left: 5px;
+      top: 5px;
+      background-color: var(--clr-txt);
+    }
+
+    :global(.map__content) &:last-child {
+      &::after {
+        height: 120%;
+      }
+    }
+  }
+</style>
+<script>
+import ScrollObserver from "../assets/scripts/utils/ScrollObserver";
+
+function activeTimelineBullet() {
+  const timelineItems = document.querySelectorAll('[data-timeline-bullet]');
+    
+  timelineItems.forEach((item, index) => {
+    const scrollObserver = new ScrollObserver();
+
+    scrollObserver.observe(item, (data) => {
+      const { element, isVisible, boundingRect } = data;
+              
+      if(!isVisible) return;
+
+      const windowStartingPoint = window.innerHeight * .52;      
+      const isInRange = boundingRect.top <= windowStartingPoint && boundingRect.bottom >= 0;
+
+      if (isInRange) {
+        element.classList.add('active');
+      } else {
+        element.classList.remove('active');
+      }
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', activeTimelineBullet);
+
+</script>

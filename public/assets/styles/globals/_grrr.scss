@@ -1,0 +1,18 @@
+@use '../utils/grrr/grrr' as *;
+
+%grrr--board{
+	@include grrr();
+}
+
+%grrr--fluid{
+	@include grrr('fluid');
+}
+
+%grrr--content{
+	@include media-grrr-up(6,true){
+		@include grrr-content('board', $content-start: 4, $content-end: 9);
+	}
+	@include media-grrr-down(6,true){
+		@include grrr();
+	}
+}

@@ -1,0 +1,10 @@
+backend:
+  name: github
+  repo: thiagopaixao/astro_sveltia
+  branch: main
+  base_url: https://sveltia-cms-auth.tap-647.workers.dev
+
+media_folder: 'public/uploads'
+public_folder: '/uploads'
+
+local_backend: true

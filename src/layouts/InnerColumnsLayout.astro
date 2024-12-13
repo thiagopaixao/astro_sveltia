@@ -1,0 +1,18 @@
+---
+const { Component, props } = Astro.props;
+const { column1, column2 } = props;
+
+const componentData = {
+    column1: column1,
+    column2: column2
+};
+---
+
+<Component {...componentData}>
+    <Fragment slot="column-1">
+        {column1 && column1.map(component => <Fragment><Fragment set:html={component.content} /></Fragment>)}
+    </Fragment>
+    <Fragment slot="column-2">
+        {column2 && column2.map(component => <Fragment><Fragment set:html={component.content} /></Fragment>)}
+    </Fragment>
+</Component>
