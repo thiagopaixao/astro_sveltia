@@ -18,7 +18,6 @@ innerColumns: &innerColumns
         - *imageBlock
         - *videoEmbed
         - *logosGroup
-        - *innerColumns
     - label: 'Column 2'
       name: 'column2'
       widget: 'list'
@@ -29,4 +28,3 @@ innerColumns: &innerColumns
         - *imageBlock
         - *videoEmbed
         - *logosGroup
-        - *innerColumns
