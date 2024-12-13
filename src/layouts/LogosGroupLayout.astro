@@ -1,28 +1,23 @@
 ---
+import Group from '../components/Group.astro';
+
 const { Component, props } = Astro.props;
-const { logosGroupArr = []} = props;
+const { logos = []} = props;
 
-const componentData = {
-    title: "Apoio",
-    logos: props.logos
-};
-
-
-// Atualiza o array de cards substituindo a imagem original por `thumb` localizada em public/uploads
-const updatedlogosGroupArr = logosGroupArr.map(logos => {
-  let updatedImg = { ...logos.image };
+// Atualiza o array de logos substituindo a imagem original por `thumb` localizada em public/uploads
+const updatedLogos = logos.map(logo => {
+  let updatedImg = { ...logo.image };
     if (updatedImg.src) {
-        updatedImg.src = `${import.meta.env.BASE_URL}${logos.image.src}`;
+        updatedImg.src = `${import.meta.env.BASE_URL}${logo.image.src}`;
         updatedImg.width = '100%';
         updatedImg.height = '100%';
     }
   return {
-    ...logos,
+    ...logo,
     image: updatedImg
 
   };
+});
 ---
 
-<Component logos={updatedlogosGroupArr}>
-    <slot />
-</Component>
+  <Component logos={updatedLogos} />
