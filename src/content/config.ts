@@ -96,8 +96,8 @@ const componentSchema = z.object({
   wideVideo: z.boolean().optional(),
 
   // Atributos do InnerColumns
-  column1: z.string().optional().transform(processMarkdown),
-  column2: z.string().optional().transform(processMarkdown),
+  column1: z.string().optional(),
+  column2: z.string().optional(),
 
   // Atributos do Map
   columnAlign: z.enum(['left', 'center', 'right']).optional(),
