@@ -47,7 +47,7 @@ videoEmbed: &videoEmbed
       widget: 'hidden'
       default: 'VideoEmbed'
     - label: 'Wide'
-      name: 'wide'
+      name: 'wideVideo'
       widget: 'boolean'
       required: false
       default: false
@@ -290,6 +290,7 @@ column: &column
         - *text
         - *chartBar
         - *imageBlock
+        - *videoEmbed
 
 
 columnSticky: &columnSticky
