@@ -48,3 +48,4 @@ group: &group
         - *cardsCall
         - *logosGroup
         - *innerColumns
+        - *column

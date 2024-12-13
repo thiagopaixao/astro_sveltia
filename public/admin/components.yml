@@ -1,5 +1,6 @@
 components:
   # Componentes base (sem dependências)
+
   - components/Text.yml
   - components/VideoEmbed.yml
   - components/ImageBlock.yml

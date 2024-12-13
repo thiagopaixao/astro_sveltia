@@ -1,6 +1,7 @@
 ---
 const { Component, props } = Astro.props;
-const { chartTitle, chartNotes, chartBars } = props;
+const { chartTitle, chartNotes, chartBars = [] } = props;
+console.log("ChartBar props:", Astro.props.chartBars);
 
 const componentData = {
     title: chartTitle,

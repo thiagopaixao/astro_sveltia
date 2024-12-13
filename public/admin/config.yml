@@ -112,6 +112,10 @@ chartBar: &chartBar
       widget: 'list'
       required: false
       fields:
+        - label: 'Label'
+          name: 'label'
+          widget: 'string'
+          required: false
         - label: 'Color'
           name: 'color'
           widget: 'color'
@@ -130,10 +134,6 @@ chartBar: &chartBar
           min: 0
           max: 100
           step: 0.01
-        - label: 'Label'
-          name: 'label'
-          widget: 'string'
-          required: false
 
 cardsCall: &cardsCall
   label: 'Cards Call'
@@ -159,6 +159,15 @@ cardsCall: &cardsCall
               name: 'url'
               widget: 'string'
               required: false
+            - label: 'Target'
+              name: 'target'
+              widget: 'select'
+              options: ['_blank', '_parent', '_self', 'custom']
+              required: false
+            - label: 'Custom Target'
+              name: 'customTarget'
+              widget: 'string'
+              required: false
         - label: 'Image'
           name: 'img'
           widget: 'object'
@@ -167,6 +176,10 @@ cardsCall: &cardsCall
             - label: 'Source'
               name: 'src'
               widget: 'image'
+              required: false
+            - label: 'Alt'
+              name: 'alt'
+              widget: 'string'
               required: false
         - label: 'Title'
           name: 'title'
@@ -252,6 +265,31 @@ fields:
     name: 'mobile'
     widget: 'string'
     required: false
+
+column: &column
+  label: 'Column'
+  name: 'Column'
+  widget: 'object'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Column'
+    - label: 'Padding Top'
+      name: paddingTop
+      widget: boolean
+      default: false
+    - label: 'Padding Bottom'
+      name: paddingBottom
+      widget: boolean
+      default: false
+    - label: 'Components'
+      name: 'components'
+      widget: 'list'
+      required: false
+      types:
+        - *text
+        - *chartBar
 
 
 columnSticky: &columnSticky
@@ -354,6 +392,7 @@ group: &group
         - *cardsCall
         - *logosGroup
         - *innerColumns
+        - *column
 
 cta: &cta
   label: 'CTA'

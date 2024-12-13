@@ -21,6 +21,10 @@ chartBar: &chartBar
       widget: 'list'
       required: false
       fields:
+        - label: 'Label'
+          name: 'label'
+          widget: 'string'
+          required: false
         - label: 'Color'
           name: 'color'
           widget: 'color'
@@ -39,7 +43,3 @@ chartBar: &chartBar
           min: 0
           max: 100
           step: 0.01
-        - label: 'Label'
-          name: 'label'
-          widget: 'string'
-          required: false
