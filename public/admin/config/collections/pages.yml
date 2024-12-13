@@ -10,6 +10,7 @@ collections:
         name: 'sections'
         widget: 'list'
         summary: 'Seção: {{fields.section}}'
+        collapsed: true
         required: false
         fields:
           - label: 'Seção'
