@@ -19,6 +19,7 @@ function processMarkdown(text: string) {
 const linkSchema = z.object({
   url: z.string(),
   target: z.string().optional(),
+  customTarget: z.string().optional(),
   text: z.string().optional(),
   title: z.string().optional(),
 });
@@ -29,6 +30,7 @@ const cardSchema = z.object({
   img: z
     .object({
       src: z.string(),
+      alt: z.string().optional(),
     })
     .optional(),
   title: z.string().optional().transform(processMarkdown),
