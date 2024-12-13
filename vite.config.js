@@ -32,5 +32,8 @@ const mergeYamlConfigs = () => {
 }
 
 export default defineConfig({
-  plugins: [mergeYamlConfigs()]
+  plugins: [mergeYamlConfigs()],
+  define: {
+    'process.env': process.env,
+  },
 });
