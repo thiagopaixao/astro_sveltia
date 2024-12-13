@@ -98,6 +98,25 @@ sections:
             paddingBottom: false
             components:
               - type: LogosGroup
+                logos:
+                  - image: /uploads/logo-1.jpg
+                    link:
+                      url: '#'
+                      target: ''
+                      customTarget: ''
+                      title: Autonoma
+                  - image: /uploads/logo-2.png
+                    link:
+                      url: '#'
+                      target: ''
+                      customTarget: ''
+                      title: Lavits
+                  - image: /uploads/logo-3.png
+                    link:
+                      url: '#'
+                      target: ''
+                      customTarget: ''
+                      title: Ford Foundation
               - type: ChartBar
                 chartTitle: Sed ut perspiciatis unde omnis iste natus
                 chartNotes: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium

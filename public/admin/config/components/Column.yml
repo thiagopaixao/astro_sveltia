@@ -24,4 +24,5 @@ column: &column
         - *chartBar
         - *imageBlock
         - *videoEmbed
+        - *logosGroup
 
