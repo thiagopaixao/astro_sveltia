@@ -24,6 +24,11 @@ cardsCall: &cardsCall
               required: false
             - label: 'Target'
               name: 'target'
+              widget: 'select'
+              options: ['_blank', '_parent', '_self', 'custom']
+              required: false
+            - label: 'Custom Target'
+              name: 'customTarget'
               widget: 'string'
               required: false
         - label: 'Image'
