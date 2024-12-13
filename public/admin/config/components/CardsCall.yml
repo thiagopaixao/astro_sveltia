@@ -37,5 +37,5 @@ cardsCall: &cardsCall
           required: false
         - label: 'Text'
           name: 'text'
-          widget: 'string'
+          widget: 'markdown'
           required: false

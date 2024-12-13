@@ -16,7 +16,7 @@ sections:
             paddingTop: true
             paddingBottom: true
             layout: text-bigger
-            title: "@ALTER DO CHÃO ALSO NEEDS TO BE RECOGNIZED"
+            title: ALTER DO CHÃO ALSO NEEDS TO BE RECOGNIZED
             components:
               - type: Text
                 txtColor: "#000000ff"
@@ -32,7 +32,7 @@ sections:
         mediaType: image
         media: /uploads/group-bg.png
         ctaText: |-
-          ### Teste! Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+          ### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
           Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
         highlightedText: ""
@@ -44,7 +44,7 @@ sections:
         layout: text
         txtColor: "#ffff00ff"
         bgColor: "#808080ff"
-        imgBg: group-bg.png
+        imgBg: /uploads/group-bg.png
         ctaText: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
         highlightedText: Alter do Chão Also Needs to Be Recognized
         link:
