@@ -11,7 +11,7 @@ function processMarkdown(text: string) {
     breaks: true,
     sanitize: false, // Allows HTML
     smartLists: true,
-    smartypants: true
+    smartypants: true,
   });
 }
 
@@ -112,15 +112,18 @@ const componentSchema = z.object({
   id: z.string().optional(),
 });
 
-
 const pagesCollection = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string().optional(),
-    sections: z.array(z.object({
-      section: z.string().optional(),
-      components: z.array(componentSchema).optional(),
-    })).optional(),
+    sections: z
+      .array(
+        z.object({
+          section: z.string().optional(),
+          components: z.array(componentSchema).optional(),
+        })
+      )
+      .optional(),
   }),
 });
 
