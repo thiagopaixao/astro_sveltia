@@ -1,6 +1,7 @@
 mapBox: &mapBox
   label: 'MapBox'
   name: 'MapBox'
+  collapsed: true
   widget: 'object'
   fields:
     - label: 'Type'
