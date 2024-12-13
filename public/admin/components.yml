@@ -1,6 +1,6 @@
 components:
   # Componentes base (sem dependências)
-
+  - components/MapBox.yml
   - components/Text.yml
   - components/VideoEmbed.yml
   - components/ImageBlock.yml

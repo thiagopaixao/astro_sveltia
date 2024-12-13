@@ -6,6 +6,7 @@ collections:
     slug: '{{slug}}'
     fields:
       - { label: 'Título', name: 'title', widget: 'string', required: false }
+      - *mapBox
       - label: 'Seção'
         name: 'sections'
         widget: 'list'

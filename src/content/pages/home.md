@@ -1,5 +1,32 @@
 ---
 title: Home
+MapBox:
+  columnAlign: ""
+  floatingText: false
+  style: mapbox://styles/comborari/ckr4wi3k80fpl17qo34th6kk2
+  center:
+    - lng: -54
+      lat: 2
+  zoom: 2
+  bearing: 0
+  pitch: 0
+  token: pk.eyJ1IjoiY29tYm9yYXJpIiwiYSI6ImNrcjR3OWczMjBhaWEyeHIyaWhwMnUzNHcifQ.Yv7o7kj1ImyC9Rn-egF0TQ
+  views:
+    - id: view_1
+      center:
+        - lng: -54
+          lat: -2
+      duration: 4000
+      zoom: 8
+      bearing: 0
+      pitch: 0
+      layers:
+        - '"municipios"'
+        - '"amazonas"'
+        - '"foztapajos"'
+      mobile: null
+      captions: null
+  mapView: ""
 sections:
   - section: Introdução
     components:
