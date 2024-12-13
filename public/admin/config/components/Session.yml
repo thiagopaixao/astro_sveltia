@@ -1,18 +1,9 @@
 session: &session
   label: 'Sessão'
   name: 'Session'
-  summary: 'ID: {{fields.id}}'
-  widget: 'object'
+  widget: 'hidden'
   fields:
-    - label: 'ID'
-      name: 'id'
-      widget: 'string'
-      required: true
-    - label: 'Components'
-      name: 'components'
-      widget: 'list'
-      required: false
-      types:
-        - *group
-        - *cta
-        - *map
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Session'
