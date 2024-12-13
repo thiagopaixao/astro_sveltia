@@ -71,7 +71,7 @@ imageBlock: &imageBlock
       widget: 'hidden'
       default: 'ImageBlock'
     - label: 'Wide'
-      name: 'wide'
+      name: 'wideImage'
       widget: 'boolean'
       required: false
       default: false
@@ -79,7 +79,6 @@ imageBlock: &imageBlock
       name: 'src'
       widget: 'image'
       required: false
-      allow_multiple: false
     - label: 'Alt Text'
       name: 'alt'
       widget: 'string'
@@ -290,6 +289,7 @@ column: &column
       types:
         - *text
         - *chartBar
+        - *imageBlock
 
 
 columnSticky: &columnSticky

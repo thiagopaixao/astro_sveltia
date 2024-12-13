@@ -22,4 +22,5 @@ column: &column
       types:
         - *text
         - *chartBar
+        - *imageBlock
 

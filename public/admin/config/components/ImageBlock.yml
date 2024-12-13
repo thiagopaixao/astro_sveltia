@@ -9,7 +9,7 @@ imageBlock: &imageBlock
       widget: 'hidden'
       default: 'ImageBlock'
     - label: 'Wide'
-      name: 'wide'
+      name: 'wideImage'
       widget: 'boolean'
       required: false
       default: false
