@@ -6,18 +6,22 @@ collections:
     slug: '{{slug}}'
     fields:
       - { label: 'Título', name: 'title', widget: 'string', required: false }
-      - label: 'Sessão'
+      - label: 'Sessões'
         name: 'sessions'
-        widget: 'object'
+        widget: 'list'
         required: false
         fields:
-          - { label: 'ID', name: 'session', widget: 'string', required: true }
-          - label: 'Components'
-            name: 'components'
-            widget: 'list'
-            required: false
-            types:
-              - *group
-              - *cta
-              - *map
+          - label: 'Sessão'
+            name: 'session'
+            widget: 'object'
+            fields:
+              - { label: 'ID', name: 'id', widget: 'string', required: true }
+              - label: 'Components'
+                name: 'components'
+                widget: 'list'
+                required: false
+                types:
+                  - *group
+                  - *cta
+                  - *map
 
