@@ -1,16 +1,13 @@
 session: &session
-  label: 'Session'
+  label: 'Sessão'
   name: 'Session'
+  summary: 'ID: {{fields.id}}'
   widget: 'object'
   fields:
-    - label: 'Type'
-      name: 'type'
-      widget: 'hidden'
-      default: 'Session'
     - label: 'ID'
       name: 'id'
       widget: 'string'
-      required: false
+      required: true
     - label: 'Components'
       name: 'components'
       widget: 'list'
