@@ -12,7 +12,7 @@ collections:
         collapsed: true
         required: false
         fields:
-          - { label: 'ID', name: 'id', widget: 'string', required: true }
+          - { label: 'ID', name: 'session', widget: 'string', required: true }
           - label: 'Components'
             name: 'components'
             widget: 'list'
