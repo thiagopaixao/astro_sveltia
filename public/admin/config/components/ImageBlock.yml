@@ -17,7 +17,6 @@ imageBlock: &imageBlock
       name: 'src'
       widget: 'image'
       required: false
-      allow_multiple: false
     - label: 'Alt Text'
       name: 'alt'
       widget: 'string'

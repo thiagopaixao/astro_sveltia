@@ -83,9 +83,9 @@ const componentSchema = z.object({
 
   // Atributos do ImageBlock
   src: z.string().optional(),
-  alt: z.string().optional().transform(processMarkdown),
+  alt: z.string().optional(),
   wide: z.boolean().optional(),
-  description: z.string().optional().transform(processMarkdown),
+  description: z.string().optional(),
 
   // Atributos do LogosGroup
   logos: z.array(logoSchema).optional(),
