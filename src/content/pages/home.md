@@ -33,7 +33,7 @@ sections:
       - type: Group
         layout: default
         txtColor: "#e3e3e3ff"
-        bgColor: "#006949ff"
+        bgColor: "#9c5492ff"
         backgroundImage: /uploads/group-bg.png
         overlay: ""
         components:
