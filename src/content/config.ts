@@ -46,7 +46,8 @@ const logoSchema = z.object({
 // Schema para barras do gráfico
 const chartBarSchema = z.object({
   label: z.string().transform(processMarkdown),
-  value: z.number(),
+  number: z.number().optional().min(0),
+  numberPercent: z.number().optional().min(0).max(100),
   color: z.string().optional(),
 });
 
