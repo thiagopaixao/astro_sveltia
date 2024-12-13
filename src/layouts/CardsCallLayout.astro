@@ -9,12 +9,14 @@ const updatedCardsCallArr = cardsCallArr.map(card => {
   let updatedImg = { ...card.img };
     if (updatedImg.src) {
         updatedImg.src = `${import.meta.env.BASE_URL}/uploads/thumb.png`;
+        updatedImg.alt = card.img.alt
         updatedImg.width = 100;
         updatedImg.height = 100;
     }
   return {
     ...card,
     img: updatedImg
+
   };
 });
 ---
