@@ -231,25 +231,6 @@ logosGroup: &logosGroup
               widget: 'string'
               required: false
 
-innerColumns: &innerColumns
-  label: 'Inner Columns'
-  name: 'InnerColumns'
-  widget: 'object'
-  summary: 'Inner Columns'
-  fields:
-    - label: 'Type'
-      name: 'type'
-      widget: 'hidden'
-      default: 'InnerColumns'
-    - label: 'Column 1'
-      name: 'column1'
-      widget: 'markdown'
-      required: false
-    - label: 'Column 2'
-      name: 'column2'
-      widget: 'markdown'
-      required: false
-
 mapView: &mapView
   label: 'Map View'
   name: 'MapView'
@@ -296,6 +277,37 @@ fields:
     widget: 'string'
     required: false
 
+innerColumns: &innerColumns
+  label: 'Inner Columns'
+  name: 'InnerColumns'
+  widget: 'object'
+  summary: 'Inner Columns'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'InnerColumns'
+    - label: 'Column 1'
+      name: 'column1'
+      widget: 'list'
+      required: false
+      types:
+        - *text
+        - *chartBar
+        - *imageBlock
+        - *videoEmbed
+        - *logosGroup
+    - label: 'Column 2'
+      name: 'column2'
+      widget: 'list'
+      required: false
+      types:
+        - *text
+        - *chartBar
+        - *imageBlock
+        - *videoEmbed
+        - *logosGroup
+
 column: &column
   label: 'Column'
   name: 'Column'
@@ -323,6 +335,7 @@ column: &column
         - *imageBlock
         - *videoEmbed
         - *logosGroup
+        - *innerColumns
 
 
 columnSticky: &columnSticky

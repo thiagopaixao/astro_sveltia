@@ -25,4 +25,5 @@ column: &column
         - *imageBlock
         - *videoEmbed
         - *logosGroup
+        - *innerColumns
 
