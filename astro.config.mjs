@@ -15,6 +15,8 @@ function getRepoName() {
 }
 
 const BASE_PATH = `/${getRepoName()}`;
+//const BASE_PATH = '/';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'http://localhost',
