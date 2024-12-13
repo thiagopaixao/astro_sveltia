@@ -116,7 +116,7 @@ const pagesCollection = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string().optional(),
-    components: z.array(z.union([componentSchema, sessionSchema])).optional(),
+    components: z.array(componentSchema).optional(),
   }),
 });
 
