@@ -6,10 +6,9 @@ collections:
     slug: '{{slug}}'
     fields:
       - { label: 'Título', name: 'title', widget: 'string', required: false }
-      - label: 'Sessões'
+      - label: 'Sessão'
         name: 'sessions'
-        widget: 'list'
-        collapsed: true
+        widget: 'object'
         required: false
         fields:
           - { label: 'ID', name: 'session', widget: 'string', required: true }

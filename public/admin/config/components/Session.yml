@@ -1,9 +1,17 @@
 session: &session
   label: 'Sessão'
   name: 'Session'
-  widget: 'hidden'
+  widget: 'object'
   fields:
     - label: 'Type'
       name: 'type'
       widget: 'hidden'
       default: 'Session'
+    - label: 'Components'
+      name: 'components'
+      widget: 'list'
+      required: false
+      types:
+        - *group
+        - *cta
+        - *map
