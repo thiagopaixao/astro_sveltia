@@ -22,6 +22,10 @@ cardsCall: &cardsCall
               name: 'url'
               widget: 'string'
               required: false
+            - label: 'Target'
+              name: 'target'
+              widget: 'string'
+              required: false
         - label: 'Image'
           name: 'img'
           widget: 'object'
@@ -30,6 +34,10 @@ cardsCall: &cardsCall
             - label: 'Source'
               name: 'src'
               widget: 'image'
+              required: false
+            - label: 'Alt'
+              name: 'alt'
+              widget: 'string'
               required: false
         - label: 'Title'
           name: 'title'
