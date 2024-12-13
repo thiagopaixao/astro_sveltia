@@ -189,6 +189,11 @@ sections:
                   Soluptate est labore sit tempor exercitation nisi eiusmod pariatur magna est aliqua. Magna laborum elit mollit ea occaecat incididunt Lorem Lorem incididunt nisi esse fugiat anim citation. Mollit velit laboris adipisicing enim ad eiusmod deserunt veniam nulla adipisicing amet pariatur nostrud exercitation. Velit laborum occaecat nulla ex nulla esse aborum ex duis duis magna. Ipsum laboris commodo do do eiusmod. Consectetur culpa fugiat ccaecat enim ullamco tempor amet velit duis culpa commodo dolor minim. Ea sunt culpa id ea amet.
               - type: InnerColumns
                 column1:
+                  - type: ImageBlock
+                    wideImage: false
+                    src: /uploads/map.png
+                    alt: ""
+                    description: ""
                   - type: Text
                     txtColor: ""
                     bgColor: ""
