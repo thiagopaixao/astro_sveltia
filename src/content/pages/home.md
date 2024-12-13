@@ -102,8 +102,8 @@ sections:
                   target: _blank
                   customTarget: ""
                 img:
-                  src: /uploads/map.png
-                  alt: Google
+                  src: ""
+                  alt: ""
                 title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                 text: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
               - link:
@@ -154,6 +154,12 @@ sections:
                       target: ""
                       customTarget: ""
                       title: Ford Foundation
+                  - image: /uploads/logo-1.jpg
+                    link:
+                      url: "#"
+                      target: ""
+                      customTarget: ""
+                      title: ""
               - type: ChartBar
                 chartTitle: Sed ut perspiciatis unde omnis iste natus
                 chartNotes: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
@@ -423,13 +429,19 @@ sections:
         backgroundImage: ""
         overlay: ""
         components:
-          - type: Text
-            txtColor: ""
-            bgColor: ""
-            content: ""
-          - type: VideoEmbed
-            wideVideo: false
-            videoUrl: ""
-            videoCaption: ""
+          - type: LogosGroup
+            logos:
+              - image: /uploads/logo-3.png
+                link:
+                  url: "#"
+                  target: ""
+                  customTarget: ""
+                  title: Autonoma
+              - image: /uploads/logo-3.png
+                link:
+                  url: "#"
+                  target: ""
+                  customTarget: ""
+                  title: Ford
 ---
 
