@@ -2,7 +2,7 @@ backend:
   name: github
   repo: thiagopaixao/astro_sveltia
   branch: main
-  base_url: https:// sveltia-cms-auth.tap-647.workers.dev
+  base_url: https://sveltia-cms-auth.tap-647.workers.dev
 
 media_folder: 'public/uploads'
 public_folder: '/uploads'
@@ -253,6 +253,7 @@ fields:
     widget: 'string'
     required: false
 
+
 columnSticky: &columnSticky
   label: 'Column Sticky'
   name: 'ColumnSticky'
@@ -471,6 +472,7 @@ map: &map
         - *text
         - *mapView
 
+
 collections:
   - name: 'pages'
     label: 'Páginas'
@@ -479,12 +481,22 @@ collections:
     slug: '{{slug}}'
     fields:
       - { label: 'Título', name: 'title', widget: 'string', required: false }
-      - label: 'Componentes'
-        name: 'components'
+      - label: 'Seção'
+        name: 'sections'
         widget: 'list'
-        collapsed: true
+        summary: 'Seção: {{fields.section}}'
         required: false
-        types:
-          - *group
-          - *cta
-          - *map
+        fields:
+          - label: 'Seção'
+            name: 'section'
+            widget: 'string'
+            required: true
+          - label: 'Componentes'
+            name: 'components'
+            widget: 'list'
+            required: false
+            types:
+              - *group
+              - *cta
+              - *map
+

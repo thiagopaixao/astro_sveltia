@@ -6,13 +6,14 @@ collections:
     slug: '{{slug}}'
     fields:
       - { label: 'Título', name: 'title', widget: 'string', required: false }
-      - label: 'Sessões'
-        name: 'sessions'
+      - label: 'Seção'
+        name: 'sections'
         widget: 'list'
+        summary: 'Seção: {{fields.section}}'
         required: false
         fields:
-          - label: 'Sessão'
-            name: 'session'
+          - label: 'Seção'
+            name: 'section'
             widget: 'string'
             required: true
           - label: 'Componentes'
@@ -20,6 +21,6 @@ collections:
             widget: 'list'
             required: false
             types:
-              - 'Group'
-              - 'CTA'
-              - 'Map'
+              - *group
+              - *cta
+              - *map

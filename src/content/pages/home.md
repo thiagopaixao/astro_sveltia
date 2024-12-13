@@ -1,143 +1,130 @@
 ---
 title: Home
-sessions:
-  - session:
-      id: session10
-      components:
-        - type: Group
-          layout: default
-          txtColor: ""
-          bgColor: ""
-          backgroundImage: ""
-          overlay: ""
-          components:
-            - type: Text
-              txtColor: ""
-              bgColor: ""
-              content: fsdfsdf
-session:
-  - id: session1
+sections:
+  - section: Introdução
     components:
       - type: Group
         layout: default
-        txtColor: "#e3e3e3ff"
-        bgColor: "#006949ff"
+        txtColor: '#e3e3e3ff'
+        bgColor: '#006949ff'
         backgroundImage: group-bg.png
         components:
           - type: ColumnSticky
-            txtColor: ""
-            bgColor: ""
+            txtColor: ''
+            bgColor: ''
             paddingTop: true
             paddingBottom: true
             layout: text-bigger
-            title: ALTER DO CHÃO ALSO NEEDS TO BE RECOGNIZED
-            body: ""
+            title: '@ALTER DO CHÃO ALSO NEEDS TO BE RECOGNIZED'
+            body: ''
             components:
-              - type: Text
-                txtColor: "#000000"
-                bgColor: "#FFFFFF"
-                content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+              - content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+                bgColor: '#FFFFFF'
+                txtColor: '#000000'
+                type: Text
   - type: Cta
     layout: media
-    txtColor: "#ffff00ff"
-    bgColor: "#808080ff"
+    txtColor: '#ffff00ff'
+    bgColor: '#808080ff'
     mediaType: image
     media: group-bg.png
     ctaText: |-
       ### Teste! Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
       Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-    highlightedText: ""
+    highlightedText: ''
     link:
-      url: "#"
+      url: '#'
       target: _self
       text: Saiba mais
   - type: Cta
     layout: text
-    txtColor: "#ffff00ff"
-    bgColor: "#808080ff"
+    txtColor: '#ffff00ff'
+    bgColor: '#808080ff'
     imgBg: group-bg.png
     ctaText: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
     highlightedText: Alter do Chão Also Needs to Be Recognized
     link:
-      url: "#"
+      url: '#'
       target: _self
       text: Botão
   - type: Group
+    layout: default
+    txtColor: ''
+    bgColor: ''
     components:
       - type: CardsCall
         cardsCallArr:
           - link:
-              url: "#"
+              url: '#'
             img:
               src: uploads/thumb.png
             title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
             text: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
           - link:
-              url: "#"
+              url: '#'
             img:
               src: uploads/thumb.png
             title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
             text: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
           - link:
-              url: "#"
+              url: '#'
             img:
               src: uploads/thumb.png
             title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
             text: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
-    layout: default
-    txtColor: ""
-    bgColor: ""
   - type: Group
+    layout: default
+    txtColor: '#f0ead9'
+    bgColor: '#006949ff'
+    backgroundImage: group-bg.png
+    overlay: dark
     components:
       - type: Column
         components:
           - type: LogosGroup
-          - type: ChartBar
-            chartTitle: Sed ut perspiciatis unde omnis iste natus
-            chartNotes: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
-            chartBars:
-              - color: "#FF7967"
-                number: 231
+          - chartBars:
+              - label: 2016
                 numberPercent: 45.1171875
-                label: 2016
-              - color: "#FF7967"
-                number: 512
+                number: 231
+                color: '#FF7967'
+              - label: 2015
                 numberPercent: 100
-                label: 2015
-              - color: "#FF7967"
-                number: 342
+                number: 512
+                color: '#FF7967'
+              - label: 2017
                 numberPercent: 66.796875
-                label: 2017
-          - type: VideoEmbed
-            wide: true
+                number: 342
+                color: '#FF7967'
+            chartNotes: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+            chartTitle: Sed ut perspiciatis unde omnis iste natus
+            type: ChartBar
+          - videoCaption: Quis do consequat sint commodo excepteur elit mollit officia sint sunt
             videoUrl: https://www.youtube.com/embed/TcJUSMiKQyY?si=hke7RMtO71mJ9wif
-            videoCaption: Quis do consequat sint commodo excepteur elit mollit officia sint sunt
-          - type: Text
-            content: |-
+            wide: true
+            type: VideoEmbed
+          - content: |-
               ## Et voluptate dolor quis qui eiusmod fugiat in Lorem exercitation consequat ex labore quis laboris
 
               Soluptate est labore sit tempor exercitation nisi eiusmod pariatur magna est aliqua. Magna laborum elit mollit ea occaecat incididunt Lorem Lorem incididunt nisi esse fugiat anim citation. Mollit velit laboris adipisicing enim ad eiusmod deserunt veniam nulla adipisicing amet pariatur nostrud exercitation. Velit laborum occaecat nulla ex nulla esse aborum ex duis duis magna. Ipsum laboris commodo do do eiusmod. Consectetur culpa fugiat ccaecat enim ullamco tempor amet velit duis culpa commodo dolor minim. Ea sunt culpa id ea amet.
-          - type: InnerColumns
+            type: Text
+          - column2: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
             column1: Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas.
-            column2: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-          - type: Text
-            content: Voluptate est labore sit tempor exercitation nisi eiusmod pariatur magna est aliqua. Magna laborum elit mollit ea occaecat incididunt Lorem Lorem incididunt nisi esse fugiat anim exercitation. Mollit velit laboris adipisicing enim ad eiusmod deserunt veniam nulla adipisicing amet pariatur nostrud exercitation. Velit laborum occaecat nulla ex nulla esse laborum ex duis duis magna. Ipsum laboris commodo do do eiusmod. Consectetur culpa fugiat occaecat enim ullamco tempor amet velit duis culpa commodo dolor minim. Ea sunt culpa id ea amet.
-          - type: ImageBlock
-            wide: true
+            type: InnerColumns
+          - content: Voluptate est labore sit tempor exercitation nisi eiusmod pariatur magna est aliqua. Magna laborum elit mollit ea occaecat incididunt Lorem Lorem incididunt nisi esse fugiat anim exercitation. Mollit velit laboris adipisicing enim ad eiusmod deserunt veniam nulla adipisicing amet pariatur nostrud exercitation. Velit laborum occaecat nulla ex nulla esse laborum ex duis duis magna. Ipsum laboris commodo do do eiusmod. Consectetur culpa fugiat occaecat enim ullamco tempor amet velit duis culpa commodo dolor minim. Ea sunt culpa id ea amet.
+            type: Text
+          - description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            alt: ''
             src: map.png
-            alt: ""
-            description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-    layout: default
-    txtColor: "#f0ead9"
-    bgColor: "#006949ff"
-    backgroundImage: group-bg.png
-    overlay: dark
+            wide: true
+            type: ImageBlock
   - type: Map
+    txtColor: '#F0EAD9'
+    bgColor: '#006a49'
     components:
       - type: Text
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         content: |-
           # Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
@@ -147,24 +134,24 @@ session:
       - type: Spacer
         desktop: 160px
       - type: Text
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         content: |-
           ###### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
 
           ###### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-    txtColor: "#F0EAD9"
-    bgColor: "#006a49"
     columnAlign: left
     floatingText: true
     mapView: view_1
   - type: Map
+    txtColor: '#F0EAD9'
+    bgColor: '#000000ff'
     components:
       - type: Text
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         content: |-
           #### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
@@ -172,58 +159,58 @@ session:
 
           totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
       - type: MapView
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         mapView: view_3
       - type: Text
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         content: |-
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
 
           totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-    txtColor: "#F0EAD9"
-    bgColor: "#000000ff"
     columnAlign: left
     floatingText: false
   - type: Map
+    txtColor: '#F0EAD9'
+    bgColor: '#000000ff'
     components:
       - type: MapView
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         mapView: view_2
       - type: Text
-        txtColor: ""
-        bgColor: ""
-        content: ""
+        txtColor: ''
+        bgColor: ''
+        content: ''
       - type: MapView
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         mapView: view_2
       - type: Text
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         content: |-
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
 
           totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-    txtColor: "#F0EAD9"
-    bgColor: "#000000ff"
     columnAlign: left
     floatingText: false
   - type: Map
+    txtColor: '#F0EAD9'
+    bgColor: '#000000ff'
     components:
       - type: MapView
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         mapView: view_4
       - type: Text
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         content: |-
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
@@ -231,27 +218,27 @@ session:
 
           totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
       - type: MapView
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         mapView: view_3
       - type: Text
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         content: |-
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
 
           totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-    txtColor: "#F0EAD9"
-    bgColor: "#000000ff"
     columnAlign: left
     floatingText: true
   - type: Map
+    txtColor: ''
+    bgColor: '#000000ff'
     components:
       - type: Text
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         content: |-
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
@@ -259,31 +246,31 @@ session:
 
           totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
       - type: MapView
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         mapView: view_3
       - type: Text
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         content: |-
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
 
           totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-    txtColor: ""
-    bgColor: "#000000ff"
     columnAlign: left
     floatingText: false
   - type: Map
+    txtColor: ''
+    bgColor: '#000000ff'
     components:
       - type: MapView
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         mapView: view_2
       - type: Text
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         content: |-
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
@@ -291,31 +278,31 @@ session:
 
           totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
       - type: MapView
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         mapView: view_2
       - type: Text
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         content: |-
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
 
           totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-    txtColor: ""
-    bgColor: "#000000ff"
     columnAlign: left
     floatingText: false
   - type: Map
+    txtColor: ''
+    bgColor: '#000000ff'
     components:
       - type: MapView
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         mapView: view_4
       - type: Text
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         content: |-
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
@@ -323,50 +310,23 @@ session:
 
           totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
       - type: MapView
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         mapView: view_3
       - type: Text
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         content: |-
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
 
           totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-    txtColor: ""
-    bgColor: "#000000ff"
     columnAlign: left
     floatingText: true
   - type: Map
-    txtColor: ""
-    bgColor: "#000000ff"
+    txtColor: ''
+    bgColor: '#000000ff'
     columnAlign: left
     floatingText: false
-  - type: Session
-    id: session0
-    components:
-      - type: Group
-        layout: default
-        txtColor: ""
-        bgColor: ""
-        backgroundImage: ""
-        overlay: ""
-        components: []
-  - type: Session
-    id: session1
-    components:
-      - type: Group
-        layout: default
-        txtColor: ""
-        bgColor: ""
-        backgroundImage: ""
-        overlay: ""
-        components:
-          - type: Text
-            txtColor: ""
-            bgColor: ""
-            content: dasdsadsadsa
 ---
-
