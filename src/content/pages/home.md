@@ -215,7 +215,7 @@ sections:
   - section: Mapas
     components:
       - type: Map
-        txtColor: ""
+        txtColor: "#e0e0e0ff"
         bgColor: "#006a49ff"
         components:
           - type: Text
