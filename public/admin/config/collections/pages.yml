@@ -12,6 +12,7 @@ collections:
         collapsed: true
         required: false
         types:
+          - *session
           - *group
           - *cta
           - *map

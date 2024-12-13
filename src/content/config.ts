@@ -103,13 +103,20 @@ const componentSchema = z.object({
 
   // Caso possua subcomponentes
   components: z.array(z.any()).optional(),
+  id: z.string().optional(),
+});
+
+const sessionSchema = z.object({
+  type: z.literal('Session'),
+  id: z.string().optional(),
+  components: z.array(componentSchema).optional(),
 });
 
 const pagesCollection = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string().optional(),
-    components: z.array(componentSchema).optional(),
+    components: z.array(z.union([componentSchema, sessionSchema])).optional(),
   }),
 });
 
