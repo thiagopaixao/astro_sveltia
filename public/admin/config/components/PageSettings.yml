@@ -1,0 +1,33 @@
+pageSettings: &pageSettings
+  label: 'Page Settings'
+  name: 'pageSettings'
+  collapsed: true
+  widget: 'object'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'pageSettings'
+    - label: 'Language Direction'
+      name: 'direction'
+      widget: 'select'
+      options: ['ltr', 'rtl']
+      default: 'ltr'
+    - label: 'SEO Title'
+      name: 'seoTitle'
+      widget: 'string'
+      required: false
+    - label: 'SEO Description'
+      name: 'seoDescription'
+      widget: 'string'
+      required: false
+    - label: 'SEO Keywords'
+      name: 'seoKeywords'
+      widget: 'list'
+      required: false
+      fields:
+        - { label: 'Keyword', name: 'keyword', widget: 'string' }
+    - label: 'SEO Image'
+      name: 'seoImage'
+      widget: 'image'
+      required: false
