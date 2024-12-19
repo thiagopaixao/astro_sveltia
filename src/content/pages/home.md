@@ -81,6 +81,71 @@ sections:
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
 
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+  - section: Texto Principal
+    components:
+      - type: Group
+        layout: default
+        txtColor: "#000009ff"
+        bgColor: "#f0ead9ff"
+        backgroundImage: ""
+        overlay: ""
+        components:
+          - type: Column
+            paddingTop: true
+            paddingBottom: true
+            components:
+              - type: InnerColumns
+                column1:
+                  - type: Text
+                    txtColor: ""
+                    bgColor: ""
+                    content: |-
+                      ## Lorem ipsum odor amet, consectetuer adipiscing elit. Mauris urna fusce laoreet vivamus dui ultricies egestas senectus .
+
+                      Tellus rutrum a luctus eleifend dui tincidunt? Porta dolor pulvinar tellus feugiat finibus accumsan, vehicula quam. Posuere viverra erat litora semper pretium porta praesent nisi? Malesuada et nullam, cursus tempus platea purus pellentesque. Risus neque ultricies ex lorem cubilia. Augue eu montes ut consectetur conubia iaculis interdum vehicula eu. Suscipit maximus volutpat rhoncus lobortis sem eu porta fames.
+
+                      Porta felis mollis aliquet rutrum, id dis diam. Tincidunt fringilla blandit, fames magnis commodo nisi. Fames erat morbi nostra sapien potenti. Quam sem erat curabitur ornare efficitur hendrerit porttitor sagittis. Accumsan placerat integer litora ipsum mollis hendrerit ac quis suspendisse. Taciti libero accumsan porta semper diam pharetra. At fermentum mauris ullamcorper inceptos sapien.
+
+                      Leo hendrerit ultricies ultricies eros lorem feugiat. Vulputate torquent odio class ad curae sodales tincidunt efficitur. Eros elementum dolor adipiscing mauris, ipsum conubia. Luctus aenean bibendum fermentum adipiscing tempor maximus purus. Facilisis nascetur adipiscing pretium quisque molestie per. Conubia velit lacus pharetra cras netus. Ante velit diam, et senectus eu eleifend class tempor. Tellus etiam fusce sodales penatibus ac, id aenean.
+                column2:
+                  - type: ImageBlock
+                    wideImage: false
+                    src: /uploads/thumb.png
+                    alt: magem
+                    description: Porta felis mollis aliquet rutrum, id dis diam. Tincidunt fringilla blandit, fames magnis commodo nisi. Fames erat morbi nostra sapien potenti.
+                  - type: Text
+                    txtColor: ""
+                    bgColor: ""
+                    content: Tellus rutrum a luctus eleifend dui tincidunt? Porta dolor pulvinar tellus feugiat finibus accumsan, vehicula quam. Posuere viverra erat litora semper pretium porta praesent nisi? Malesuada et nullam, cursus tempus platea purus pellentesque. Risus neque ultricies ex lorem cubilia. Augue eu montes ut consectetur conubia iaculis interdum vehicula eu. Suscipit maximus volutpat rhoncus lobortis sem eu porta fames.
+  - section: Mapas
+    components:
+      - type: Map
+        txtColor: "#f0ead9ff"
+        bgColor: "#006a49ff"
+        components:
+          - type: Text
+            txtColor: "#f0ead9ff"
+            bgColor: "#006a49ff"
+            content: |-
+              # Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+
+              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
+          - type: Spacer
+            desktop: 160px
+          - type: Text
+            txtColor: ""
+            bgColor: ""
+            content: |-
+              ###### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
+
+              ###### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+        columnAlign: left
+        floatingText: true
+        mapView: view_1
   - section: CTAs
     components:
       - type: Cta
@@ -222,218 +287,5 @@ sections:
                 src: /uploads/map.png
                 alt: MapaMundi
                 description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-  - section: Mapas
-    components:
-      - type: Map
-        txtColor: "#F0EAD9"
-        bgColor: "#006a49"
-        components:
-          - type: Text
-            txtColor: ""
-            bgColor: ""
-            content: |-
-              # Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-
-              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-          - type: Spacer
-            desktop: 160px
-          - type: Text
-            txtColor: ""
-            bgColor: ""
-            content: |-
-              ###### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-
-              ###### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-        columnAlign: left
-        floatingText: true
-        mapView: view_1
-      - type: Map
-        txtColor: "#F0EAD9"
-        bgColor: "#000000ff"
-        components:
-          - type: Text
-            txtColor: ""
-            bgColor: ""
-            content: |-
-              #### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-
-              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-          - type: MapView
-            txtColor: ""
-            bgColor: ""
-            mapView: view_3
-          - type: Text
-            txtColor: ""
-            bgColor: ""
-            content: |-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-
-              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-        columnAlign: left
-        floatingText: false
-      - type: Map
-        txtColor: "#F0EAD9"
-        bgColor: "#000000ff"
-        components:
-          - type: MapView
-            txtColor: ""
-            bgColor: ""
-            mapView: view_2
-          - type: Text
-            txtColor: ""
-            bgColor: ""
-            content: ""
-          - type: MapView
-            txtColor: ""
-            bgColor: ""
-            mapView: view_2
-          - type: Text
-            txtColor: ""
-            bgColor: ""
-            content: |-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-
-              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-        columnAlign: left
-        floatingText: false
-      - type: Map
-        txtColor: "#F0EAD9"
-        bgColor: "#000000ff"
-        components:
-          - type: MapView
-            txtColor: ""
-            bgColor: ""
-            mapView: view_4
-          - type: Text
-            txtColor: ""
-            bgColor: ""
-            content: |-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-
-              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-          - type: MapView
-            txtColor: ""
-            bgColor: ""
-            mapView: view_3
-          - type: Text
-            txtColor: ""
-            bgColor: ""
-            content: |-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-
-              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-        columnAlign: left
-        floatingText: true
-      - type: Map
-        txtColor: ""
-        bgColor: "#000000ff"
-        components:
-          - type: Text
-            txtColor: ""
-            bgColor: ""
-            content: |-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-
-              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-          - type: MapView
-            txtColor: ""
-            bgColor: ""
-            mapView: view_3
-          - type: Text
-            txtColor: ""
-            bgColor: ""
-            content: |-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-
-              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-        columnAlign: left
-        floatingText: false
-      - type: Map
-        txtColor: ""
-        bgColor: "#000000ff"
-        components:
-          - type: MapView
-            txtColor: ""
-            bgColor: ""
-            mapView: view_2
-          - type: Text
-            txtColor: ""
-            bgColor: ""
-            content: |-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-
-              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-          - type: MapView
-            txtColor: ""
-            bgColor: ""
-            mapView: view_2
-          - type: Text
-            txtColor: ""
-            bgColor: ""
-            content: |-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-
-              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-        columnAlign: left
-        floatingText: false
-      - type: Map
-        txtColor: ""
-        bgColor: "#000000ff"
-        components:
-          - type: MapView
-            txtColor: ""
-            bgColor: ""
-            mapView: view_4
-          - type: Text
-            txtColor: ""
-            bgColor: ""
-            content: |-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-
-              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-          - type: MapView
-            txtColor: ""
-            bgColor: ""
-            mapView: view_3
-          - type: Text
-            txtColor: ""
-            bgColor: ""
-            content: |-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-
-              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-        columnAlign: left
-        floatingText: true
-      - type: Map
-        txtColor: ""
-        bgColor: "#000000ff"
-        columnAlign: left
-        floatingText: false
 ---
 
