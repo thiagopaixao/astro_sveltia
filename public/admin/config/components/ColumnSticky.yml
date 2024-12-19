@@ -33,7 +33,7 @@ columnSticky: &columnSticky
     - label: 'Layout'
       name: 'layout'
       widget: 'select'
-      options: ['text-bigger', 'title-bottom', 'has-pdt', 'has-pdb']
+      options: ['text-bigger', 'title-bottom']
       default: 'text-bigger'
     - label: 'Title'
       name: 'title'
