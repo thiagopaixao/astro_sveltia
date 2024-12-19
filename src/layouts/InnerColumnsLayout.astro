@@ -3,18 +3,18 @@ const { Component, props } = Astro.props;
 const { column1, column2 } = props;
 
 const componentData = {
-    column1: column1,
-    column2: column2
+    column1: column1?.components || [],
+    column2: column2?.components || []
 };
 
-console.log('InnterColumn props:', Astro.props);
+console.log('InnerColumn props:', Astro.props);
 ---
 
 <Component {...componentData}>
     <Fragment slot="column-1">
-        {column1 && column1.map(component => <Fragment><Fragment set:html={component.content} /></Fragment>)}
+        {componentData.column1 && componentData.column1.map(component => <Fragment><Fragment set:html={component.content} /></Fragment>)}
     </Fragment>
     <Fragment slot="column-2">
-        {column2 && column2.map(component => <Fragment><Fragment set:html={component.content} /></Fragment>)}
+        {componentData.column2 && componentData.column2.map(component => <Fragment><Fragment set:html={component.content} /></Fragment>)}
     </Fragment>
 </Component>
