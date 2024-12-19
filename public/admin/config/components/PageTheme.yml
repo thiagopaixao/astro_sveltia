@@ -12,18 +12,26 @@ pageTheme: &pageTheme
       name: 'primaryColor'
       widget: 'color'
       required: false
+      allowInput: true
+      allowAlpha: true
     - label: 'Secondary Color'
       name: 'secondaryColor'
       widget: 'color'
       required: false
+      allowInput: true
+      allowAlpha: true
     - label: 'Highlight Color'
       name: 'highlightColor'
       widget: 'color'
       required: false
+      allowInput: true
+      allowAlpha: true
     - label: 'Auxiliary Color'
       name: 'auxiliaryColor'
       widget: 'color'
       required: false
+      allowInput: true
+      allowAlpha: true
     - label: 'Display Font'
       name: 'displayFont'
       widget: 'string'
