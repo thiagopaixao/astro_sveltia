@@ -1,5 +1,7 @@
 components:
   # Componentes base (sem dependências)
+  - components/pageSettings.yml
+  - components/pageTheme.yml
   - components/MapBox.yml
   - components/Text.yml
   - components/VideoEmbed.yml

@@ -696,6 +696,8 @@ collections:
     slug: '{{slug}}'
     fields:
       - { label: 'Título', name: 'title', widget: 'string', required: false }
+      - *pageSettings
+      - *pageTheme
       - *mapBox
       - label: 'Seção'
         name: 'sections'
