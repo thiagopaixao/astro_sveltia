@@ -1,14 +1,14 @@
 ---
 title: Home
 pageTheme:
-  primaryColor: "#f0ead9"
-  secondaryColor: "#ffff00"
-  highlightColor: "#006949"
-  auxiliaryColor: "#ff7967"
-  displayFont: ""
-  textFont: ""
+  primaryColor: '#f0ead9'
+  secondaryColor: '#ffff00'
+  highlightColor: '#006949'
+  auxiliaryColor: '#ff7967'
+  displayFont: ''
+  textFont: ''
 MapBox:
-  columnAlign: ""
+  columnAlign: ''
   floatingText: false
   style: mapbox://styles/comborari/ckr4wi3k80fpl17qo34th6kk2
   center:
@@ -33,48 +33,48 @@ MapBox:
         - '"foztapajos"'
       mobile: null
       captions: null
-  mapView: ""
+  mapView: ''
 sections:
   - section: Introdução
     components:
       - type: Group
         layout: default
-        txtColor: "#e3e3e3ff"
-        bgColor: "#006949ff"
+        txtColor: '#e3e3e3ff'
+        bgColor: '#006949ff'
         backgroundImage: /uploads/group-bg.png
-        overlay: ""
+        overlay: ''
         components:
           - type: ColumnSticky
-            txtColor: ""
-            bgColor: ""
+            txtColor: ''
+            bgColor: ''
             paddingTop: true
             paddingBottom: true
             layout: text-bigger
             title: ALTER DO CHÃO ALSO NEEDS TO BE RECOGNIZED
             components:
               - type: Text
-                txtColor: "#000000ff"
-                bgColor: ""
+                txtColor: '#000000ff'
+                bgColor: ''
                 content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-            body: ""
+            body: ''
       - type: Group
         layout: default
-        txtColor: "#000009ff"
-        bgColor: "#e3e3e3ff"
-        backgroundImage: ""
-        overlay: ""
+        txtColor: '#000009ff'
+        bgColor: '#e3e3e3ff'
+        backgroundImage: ''
+        overlay: ''
         components:
           - type: ColumnSticky
-            txtColor: ""
-            bgColor: ""
+            txtColor: ''
+            bgColor: ''
             paddingTop: false
             paddingBottom: false
             layout: text-bigger
             title: SED UT PERSPICIATIS UNDE OMNIS ISTE NATUS ERROR SIT VOLUPTATEM ACCUSANTIUM DOLREMQUE LAUDANTIUM TOTAM REM APARIAM
             components:
               - type: Text
-                txtColor: ""
-                bgColor: ""
+                txtColor: ''
+                bgColor: ''
                 content: |-
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
 
@@ -85,10 +85,10 @@ sections:
     components:
       - type: Group
         layout: default
-        txtColor: "#000009ff"
-        bgColor: "#f0ead9ff"
-        backgroundImage: ""
-        overlay: ""
+        txtColor: '#000009ff'
+        bgColor: '#f0ead9ff'
+        backgroundImage: ''
+        overlay: ''
         components:
           - type: Column
             paddingTop: true
@@ -96,36 +96,38 @@ sections:
             components:
               - type: InnerColumns
                 column1:
-                  - type: Text
-                    txtColor: ""
-                    bgColor: ""
-                    content: |-
-                      ## Lorem ipsum odor amet, consectetuer adipiscing elit. Mauris urna fusce laoreet vivamus dui ultricies egestas senectus .
+                  components:
+                    - type: Text
+                      txtColor: ''
+                      bgColor: ''
+                      content: |-
+                        ## Lorem ipsum odor amet, consectetuer adipiscing elit. Mauris urna fusce laoreet vivamus dui ultricies egestas senectus .
 
-                      Tellus rutrum a luctus eleifend dui tincidunt? Porta dolor pulvinar tellus feugiat finibus accumsan, vehicula quam. Posuere viverra erat litora semper pretium porta praesent nisi? Malesuada et nullam, cursus tempus platea purus pellentesque. Risus neque ultricies ex lorem cubilia. Augue eu montes ut consectetur conubia iaculis interdum vehicula eu. Suscipit maximus volutpat rhoncus lobortis sem eu porta fames.
+                        Tellus rutrum a luctus eleifend dui tincidunt? Porta dolor pulvinar tellus feugiat finibus accumsan, vehicula quam. Posuere viverra erat litora semper pretium porta praesent nisi? Malesuada et nullam, cursus tempus platea purus pellentesque. Risus neque ultricies ex lorem cubilia. Augue eu montes ut consectetur conubia iaculis interdum vehicula eu. Suscipit maximus volutpat rhoncus lobortis sem eu porta fames.
 
-                      Porta felis mollis aliquet rutrum, id dis diam. Tincidunt fringilla blandit, fames magnis commodo nisi. Fames erat morbi nostra sapien potenti. Quam sem erat curabitur ornare efficitur hendrerit porttitor sagittis. Accumsan placerat integer litora ipsum mollis hendrerit ac quis suspendisse. Taciti libero accumsan porta semper diam pharetra. At fermentum mauris ullamcorper inceptos sapien.
+                        Porta felis mollis aliquet rutrum, id dis diam. Tincidunt fringilla blandit, fames magnis commodo nisi. Fames erat morbi nostra sapien potenti. Quam sem erat curabitur ornare efficitur hendrerit porttitor sagittis. Accumsan placerat integer litora ipsum mollis hendrerit ac quis suspendisse. Taciti libero accumsan porta semper diam pharetra. At fermentum mauris ullamcorper inceptos sapien.
 
-                      Leo hendrerit ultricies ultricies eros lorem feugiat. Vulputate torquent odio class ad curae sodales tincidunt efficitur. Eros elementum dolor adipiscing mauris, ipsum conubia. Luctus aenean bibendum fermentum adipiscing tempor maximus purus. Facilisis nascetur adipiscing pretium quisque molestie per. Conubia velit lacus pharetra cras netus. Ante velit diam, et senectus eu eleifend class tempor. Tellus etiam fusce sodales penatibus ac, id aenean.
+                        Leo hendrerit ultricies ultricies eros lorem feugiat. Vulputate torquent odio class ad curae sodales tincidunt efficitur. Eros elementum dolor adipiscing mauris, ipsum conubia. Luctus aenean bibendum fermentum adipiscing tempor maximus purus. Facilisis nascetur adipiscing pretium quisque molestie per. Conubia velit lacus pharetra cras netus. Ante velit diam, et senectus eu eleifend class tempor. Tellus etiam fusce sodales penatibus ac, id aenean.
                 column2:
-                  - type: ImageBlock
-                    wideImage: false
-                    src: /uploads/thumb.png
-                    alt: magem
-                    description: Porta felis mollis aliquet rutrum, id dis diam. Tincidunt fringilla blandit, fames magnis commodo nisi. Fames erat morbi nostra sapien potenti.
-                  - type: Text
-                    txtColor: ""
-                    bgColor: ""
-                    content: Tellus rutrum a luctus eleifend dui tincidunt? Porta dolor pulvinar tellus feugiat finibus accumsan, vehicula quam. Posuere viverra erat litora semper pretium porta praesent nisi? Malesuada et nullam, cursus tempus platea purus pellentesque. Risus neque ultricies ex lorem cubilia. Augue eu montes ut consectetur conubia iaculis interdum vehicula eu. Suscipit maximus volutpat rhoncus lobortis sem eu porta fames.
+                  components:
+                    - type: ImageBlock
+                      wideImage: false
+                      src: /uploads/thumb.png
+                      alt: magem
+                      description: Porta felis mollis aliquet rutrum, id dis diam. Tincidunt fringilla blandit, fames magnis commodo nisi. Fames erat morbi nostra sapien potenti.
+                    - type: Text
+                      txtColor: ''
+                      bgColor: ''
+                      content: Tellus rutrum a luctus eleifend dui tincidunt? Porta dolor pulvinar tellus feugiat finibus accumsan, vehicula quam. Posuere viverra erat litora semper pretium porta praesent nisi? Malesuada et nullam, cursus tempus platea purus pellentesque. Risus neque ultricies ex lorem cubilia. Augue eu montes ut consectetur conubia iaculis interdum vehicula eu. Suscipit maximus volutpat rhoncus lobortis sem eu porta fames.
   - section: Mapas
     components:
       - type: Map
-        txtColor: "#f0ead9ff"
-        bgColor: "#006a49ff"
+        txtColor: '#f0ead9ff'
+        bgColor: '#006a49ff'
         components:
           - type: Text
-            txtColor: "#f0ead9ff"
-            bgColor: "#006a49ff"
+            txtColor: '#f0ead9ff'
+            bgColor: '#006a49ff'
             content: |-
               # Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
@@ -135,8 +137,8 @@ sections:
           - type: Spacer
             desktop: 160px
           - type: Text
-            txtColor: ""
-            bgColor: ""
+            txtColor: ''
+            bgColor: ''
             content: |-
               ###### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
@@ -150,59 +152,59 @@ sections:
     components:
       - type: Cta
         layout: media
-        txtColor: "#ffff00ff"
-        bgColor: "#808080ff"
+        txtColor: '#ffff00ff'
+        bgColor: '#808080ff'
         mediaType: image
         media: /uploads/group-bg.png
         ctaText: |-
           ### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 
           Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-        highlightedText: ""
+        highlightedText: ''
         link:
-          url: "#"
+          url: '#'
           target: _self
           text: Saiba mais
       - type: Cta
         layout: text
-        txtColor: "#ffff00ff"
-        bgColor: "#808080ff"
+        txtColor: '#ffff00ff'
+        bgColor: '#808080ff'
         imgBg: /uploads/group-bg.png
         ctaText: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
         highlightedText: Alter do Chão Also Needs to Be Recognized
         link:
-          url: "#"
+          url: '#'
           target: _self
           text: Botão
   - section: CardsCall
     components:
       - type: Group
         layout: default
-        txtColor: ""
-        bgColor: ""
+        txtColor: ''
+        bgColor: ''
         components:
           - type: CardsCall
             cardsCallArr:
               - link:
                   url: https://google.com
                   target: _blank
-                  customTarget: ""
+                  customTarget: ''
                 img:
                   src: /uploads/map.png
                   alt: Google
                 title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                 text: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
               - link:
-                  url: "#"
-                  customTarget: ""
+                  url: '#'
+                  customTarget: ''
                 img:
                   src: /uploads/thumb.png
-                  alt: ""
+                  alt: ''
                 title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                 text: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
               - link:
-                  url: "#"
-                  customTarget: ""
+                  url: '#'
+                  customTarget: ''
                 img:
                   src: /uploads/thumb.png
                 title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
@@ -211,8 +213,8 @@ sections:
     components:
       - type: Group
         layout: default
-        txtColor: "#f0ead9ff"
-        bgColor: "#006949ff"
+        txtColor: '#f0ead9ff'
+        bgColor: '#006949ff'
         backgroundImage: /uploads/group-bg.png
         overlay: dark
         components:
@@ -224,36 +226,36 @@ sections:
                 logos:
                   - image: /uploads/logo-1.jpg
                     link:
-                      url: "#"
-                      target: ""
-                      customTarget: ""
+                      url: '#'
+                      target: ''
+                      customTarget: ''
                       title: Autonoma
                   - image: /uploads/logo-2.png
                     link:
-                      url: "#"
-                      target: ""
-                      customTarget: ""
+                      url: '#'
+                      target: ''
+                      customTarget: ''
                       title: Lavits
                   - image: /uploads/logo-3.png
                     link:
-                      url: "#"
-                      target: ""
-                      customTarget: ""
+                      url: '#'
+                      target: ''
+                      customTarget: ''
                       title: Ford Foundation
               - type: ChartBar
                 chartTitle: Sed ut perspiciatis unde omnis iste natus
                 chartNotes: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
                 chartBars:
-                  - label: "2016"
-                    color: "#c34141ff"
+                  - label: '2016'
+                    color: '#c34141ff'
                     number: 229
                     numberPercent: 45.1171875
-                  - label: "2015"
-                    color: "#c34141ff"
+                  - label: '2015'
+                    color: '#c34141ff'
                     number: 511
                     numberPercent: 100
-                  - label: "2017"
-                    color: "#c34141ff"
+                  - label: '2017'
+                    color: '#c34141ff'
                     number: 342
                     numberPercent: 66.796875
               - type: VideoEmbed
@@ -261,8 +263,8 @@ sections:
                 videoUrl: https://www.youtube.com/embed/TcJUSMiKQyY?si=hke7RMtO71mJ9wif
                 videoCaption: Quis do consequat sint commodo excepteur elit mollit officia sint sunt
               - type: Text
-                txtColor: ""
-                bgColor: ""
+                txtColor: ''
+                bgColor: ''
                 content: |-
                   ## Et voluptate dolor quis qui eiusmod fugiat in Lorem exercitation consequat ex labore quis laboris
 
@@ -270,17 +272,17 @@ sections:
               - type: InnerColumns
                 column1:
                   - type: Text
-                    txtColor: ""
-                    bgColor: ""
+                    txtColor: ''
+                    bgColor: ''
                     content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
                 column2:
                   - type: Text
-                    txtColor: ""
-                    bgColor: ""
+                    txtColor: ''
+                    bgColor: ''
                     content: Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas.
               - type: Text
-                txtColor: ""
-                bgColor: ""
+                txtColor: ''
+                bgColor: ''
                 content: Voluptate est labore sit tempor exercitation nisi eiusmod pariatur magna est aliqua. Magna laborum elit mollit ea occaecat incididunt Lorem Lorem incididunt nisi esse fugiat anim exercitation. Mollit velit laboris adipisicing enim ad eiusmod deserunt veniam nulla adipisicing amet pariatur nostrud exercitation. Velit laborum occaecat nulla ex nulla esse laborum ex duis duis magna. Ipsum laboris commodo do do eiusmod. Consectetur culpa fugiat occaecat enim ullamco tempor amet velit duis culpa commodo dolor minim. Ea sunt culpa id ea amet.
               - type: ImageBlock
                 wideImage: true
@@ -288,4 +290,3 @@ sections:
                 alt: MapaMundi
                 description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 ---
-
