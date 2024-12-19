@@ -17,12 +17,12 @@ async function buildConfig() {
     );
 
     // Carrega as configurações principais primeiro
-    console.log('Loading main config...');
+    //console.log('Loading main config...');
     finalConfig += fs.readFileSync('public/admin/config/main.yml', 'utf8');
     finalConfig += '\n';
 
     // Carrega os componentes na ordem especificada
-    console.log('Loading components in specified order...');
+    //console.log('Loading components in specified order...');
     for (const componentPath of componentsOrder.components) {
       const fullPath = `public/admin/config/${componentPath}`;
       if (fs.existsSync(fullPath)) {
@@ -34,7 +34,7 @@ async function buildConfig() {
     }
 
     // Load collections
-    console.log('Loading collections...');
+    //console.log('Loading collections...');
     const collectionFiles = await glob('public/admin/config/collections/*.yml');
     for (const file of collectionFiles) {
       const content = fs.readFileSync(file, 'utf8');
@@ -44,7 +44,7 @@ async function buildConfig() {
 
     // Write the final config
     fs.writeFileSync('public/admin/config.yml', finalConfig);
-    console.log('Successfully generated config.yml');
+    //console.log('Successfully generated config.yml');
   } catch (error) {
     console.error('Error generating config:', error);
     throw error;
