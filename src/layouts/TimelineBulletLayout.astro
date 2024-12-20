@@ -4,7 +4,7 @@ const { text, contentBullet } = props;
 
 console.log("Conteúdo TimelineBullet: ", contentBullet )
 ---
-<Component text={text} >
+<Component text={text} contentBullet={contentBullet} >
     <div set:html={contentBullet} >                                                   
         <slot />                                                                      
     </div>
