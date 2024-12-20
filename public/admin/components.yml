@@ -9,11 +9,12 @@ components:
   - components/ChartBar.yml
   - components/CardsCall.yml
   - components/LogosGroup.yml
-
   - components/MapView.yml
   - components/Spacer.yml
+  - components/TimelineBullet.yml
 
   # Componentes que dependem dos anteriores
+  - components/Timeline.yml
   - components/InnerColumns.yml
   - components/Column.yml
   - components/ColumnSticky.yml

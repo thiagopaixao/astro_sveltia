@@ -1,10 +1,10 @@
 ---
-const {text, contentBullet} = Astro.props
+const {text, content} = Astro.props
 ---
 <span class:list={["timeline__bullet", !text && "timeline__bullet--no-text"]} data-timeline-bullet>
-    {text}
-    <div set:html={contentBullet}></div>
+    {text}   
 </span>
+<div set:html={content}></div>
 
 <style lang="scss">
   @use "../assets/styles/config/config" as *;

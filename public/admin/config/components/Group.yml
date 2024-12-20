@@ -50,3 +50,4 @@ group: &group
         - *innerColumns
         - *column
         - *timeline
+        - *spacer

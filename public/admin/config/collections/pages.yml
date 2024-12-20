@@ -28,3 +28,4 @@ collections:
               - *group
               - *cta
               - *map
+              - *spacer

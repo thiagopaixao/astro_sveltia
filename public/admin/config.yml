@@ -487,23 +487,60 @@ mapView: &mapView
       enableAlpha: true
       allowInput: true
 
-label: 'Spacer'
-name: 'Spacer'
-widget: 'object'
-summary: '{{fields.desktop}}'
-fields:
-  - label: 'Type'
-    name: 'type'
-    widget: 'hidden'
-    default: 'Spacer'
-  - label: 'Desktop Height'
-    name: 'desktop'
-    widget: 'string'
-    required: false
-  - label: 'Mobile Height'
-    name: 'mobile'
-    widget: 'string'
-    required: false
+spacer: &spacer
+  label: 'Spacer'
+  name: 'Spacer'
+  widget: 'object'
+  summary: '{{fields.desktop}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Spacer'
+    - label: 'Desktop Height'
+      name: 'desktop'
+      widget: 'string'
+      required: false
+    - label: 'Mobile Height'
+      name: 'mobile'
+      widget: 'string'
+      required: false
+
+timelineBullet: &timelineBullet
+  label: 'Timeline Bullet'
+  name: 'TimelineBullet'
+  widget: 'object'
+  summary: '{{fields.text}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'TimelineBullet'
+    - label: 'Text'
+      name: 'text'
+      widget: 'string'
+      required: false
+    - label: 'Content'
+      name: 'content'
+      widget: 'markdown'
+      required: false
+
+timeline: &timeline
+  label: 'Timeline'
+  name: 'Timeline'
+  widget: 'object'
+  summary: 'Timeline'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Timeline'
+    - label: 'Components'
+      name: 'components'
+      widget: 'list'
+      required: false
+      types:
+        - *timelineBullet
 
 innerColumns: &innerColumns
   label: 'Inner Columns'
@@ -529,6 +566,7 @@ innerColumns: &innerColumns
             - *imageBlock
             - *videoEmbed
             - *logosGroup
+            - *timeline
     - label: 'Column 2'
       name: 'column2'
       widget: 'object'
@@ -543,6 +581,7 @@ innerColumns: &innerColumns
             - *imageBlock
             - *videoEmbed
             - *logosGroup
+            - *timeline
 
 column: &column
   label: 'Column'
@@ -572,6 +611,7 @@ column: &column
         - *videoEmbed
         - *logosGroup
         - *innerColumns
+        - *cardsCall
 
 
 columnSticky: &columnSticky
@@ -675,6 +715,8 @@ group: &group
         - *logosGroup
         - *innerColumns
         - *column
+        - *timeline
+        - *spacer
 
 cta: &cta
   label: 'CTA'
@@ -828,4 +870,5 @@ collections:
               - *group
               - *cta
               - *map
+              - *spacer
 

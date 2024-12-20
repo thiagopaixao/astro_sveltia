@@ -26,4 +26,5 @@ column: &column
         - *videoEmbed
         - *logosGroup
         - *innerColumns
+        - *cardsCall
 
