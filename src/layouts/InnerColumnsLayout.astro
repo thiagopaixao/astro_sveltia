@@ -2,19 +2,13 @@
 const { Component, props } = Astro.props;
 const { column1, column2 } = props;
 
-const componentData = {
-    column1: column1?.components || [],
-    column2: column2?.components || []
-};
-
-console.log('InnerColumn props:', Astro.props);
 ---
 
-<Component {...componentData}>
+<Component {...props}>
     <Fragment slot="column-1">
-        {componentData.column1 && componentData.column1.map(component => <Fragment><Fragment set:html={component.content} /></Fragment>)}
+      {column1}
     </Fragment>
     <Fragment slot="column-2">
-        {componentData.column2 && componentData.column2.map(component => <Fragment><Fragment set:html={component.content} /></Fragment>)}
+      {column2}
     </Fragment>
-</Component>
+  </Component>

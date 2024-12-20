@@ -1,0 +1,16 @@
+const componentMap = {
+  Group,
+  ColumnSticky,
+  Text,
+  Cta,
+  CardsCall,
+  ChartBar,
+  Column,
+  ImageBlock,
+  InnerColumns,
+  LogosGroup,
+  VideoEmbed,
+  Map,
+  MapView,
+  Spacer,
+};

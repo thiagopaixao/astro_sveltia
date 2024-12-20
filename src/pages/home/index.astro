@@ -70,6 +70,23 @@ const componentMap = {
               const results = await Promise.all(componentList.map(async ({ type, components: childComponents, ...restProps }) => {
                 const Component = componentMap[type];
                 if (!Component) return null;
+
+                if (type === 'InnerColumns') {
+                  const column1 = restProps.column1;
+                  const column2 = restProps.column2;
+
+                  return (
+                    <InnerColumns>
+                      <Fragment slot="column-1">
+                        { renderComponents(column1.components)}
+                      </Fragment>
+                      <Fragment slot="column-2">
+                        {renderComponents(column2.components)}
+                      </Fragment>
+                    </InnerColumns>
+                  );
+                }
+
                 
                 let Layout = null;
                 try {
