@@ -49,3 +49,4 @@ group: &group
         - *logosGroup
         - *innerColumns
         - *column
+        - *timeline

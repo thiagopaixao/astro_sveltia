@@ -1,0 +1,16 @@
+timeline: &timeline
+  label: 'Timeline'
+  name: 'Timeline'
+  widget: 'object'
+  summary: 'Timeline'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Timeline'
+    - label: 'Components'
+      name: 'components'
+      widget: 'list'
+      required: false
+      types:
+        - *timelineBullet

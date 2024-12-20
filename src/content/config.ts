@@ -99,6 +99,9 @@ const componentSchema = z.object({
   column1: z.string().optional(),
   column2: z.string().optional(),
 
+  // Atributos do Timeline
+  // timelineItems: z.array(z.any()).optional(),
+
   // Atributos do Map
   columnAlign: z.enum(['left', 'center', 'right']).optional(),
   floatingText: z.boolean().optional(),
@@ -110,7 +113,8 @@ const componentSchema = z.object({
 
   // Caso possua subcomponentes
   components: z.array(z.any()).optional(),
-  id: z.string().optional(),
+    id: z.string().optional(),
+    text: z.string().optional(),
 });
 
 const pagesCollection = defineCollection({
