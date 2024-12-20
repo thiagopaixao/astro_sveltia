@@ -107,6 +107,17 @@ const componentSchema = z.object({
   floatingText: z.boolean().optional(),
   mapView: z.string().optional(),
 
+  // Atributos do BigNumbers
+  alignment: z.enum(['caption-bottom', 'caption-top']).optional(),
+  items: z
+    .array(
+      z.object({
+        number: z.string().optional(),
+        caption: z.string().optional().transform(processMarkdown),
+      })
+    )
+    .optional(),
+
   // Atributos do Spacer
   desktop: z.string().optional(),
   mobile: z.string().optional(),
