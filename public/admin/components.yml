@@ -1,5 +1,6 @@
 components:
   # Componentes base (sem dependências)
+  - components/BigNumbers.yml
   - components/PageSettings.yml
   - components/PageTheme.yml
   - components/MapBox.yml

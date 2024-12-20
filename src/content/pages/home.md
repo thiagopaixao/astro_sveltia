@@ -209,10 +209,15 @@ sections:
               - type: InnerColumns
                 column1:
                   components:
-                    - type: Text
-                      txtColor: ""
-                      bgColor: ""
-                      content: ""
+                    - type: BigNumbers
+                      alignment: caption-bottom
+                      items:
+                        - number: "300.000"
+                          caption: Sed ut perspiciatis unde omnis iste natus
+                        - number: 100 KM
+                          caption: Sed ut perspiciatis unde omnis iste natus
+                        - number: R$ 7.000.000
+                          caption: Sed ut perspiciatis unde omnis iste natus
                 column2:
                   components:
                     - type: Text
