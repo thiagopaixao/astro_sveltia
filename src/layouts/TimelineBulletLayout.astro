@@ -1,11 +1,11 @@
 ---
 const { Component, props } = Astro.props;
-const { text, contentBullet } = props;
+const { text, content } = props;
 
-console.log("Conteúdo TimelineBullet: ", contentBullet )
+console.log("Conteúdo TimelineBullet: ", content)
 ---
-<Component text={text} contentBullet={contentBullet} >
-    <div set:html={contentBullet} >                                                   
+<Component text={text} content={content} >
+    <div set:html={content} >                                                   
         <slot />                                                                      
     </div>
 
