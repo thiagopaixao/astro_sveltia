@@ -13,6 +13,6 @@ timelineBullet: &timelineBullet
       widget: 'string'
       required: false
     - label: 'Content'
-      name: 'contentBullet'
+      name: 'content'
       widget: 'markdown'
       required: false

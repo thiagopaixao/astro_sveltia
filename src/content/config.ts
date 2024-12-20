@@ -115,7 +115,7 @@ const componentSchema = z.object({
   components: z.array(z.any()).optional(),
     id: z.string().optional(),
     text: z.string().optional(),
-    contentBullet: z.string().optional().transform(processMarkdown),
+    content: z.string().optional().transform(processMarkdown),
 });
 
 const pagesCollection = defineCollection({
