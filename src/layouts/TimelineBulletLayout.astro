@@ -1,0 +1,7 @@
+---
+const { Component, props } = Astro.props;
+const { text } = props;
+---
+<Component text={text}>
+    <slot />
+</Component>
