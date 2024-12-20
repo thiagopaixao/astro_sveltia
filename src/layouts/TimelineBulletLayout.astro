@@ -1,7 +1,9 @@
 ---
 const { Component, props } = Astro.props;
-const { text } = props;
+const { text, contentBullet } = props;
 ---
-<Component text={text}>
-    <slot />
+<Component text={text} >
+    <div set:html={contentBullet} >
+        <slot />
+    </div>
 </Component>
