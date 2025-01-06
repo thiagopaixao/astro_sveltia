@@ -1,0 +1,14 @@
+---
+const { Component, props } = Astro.props;
+const { chartTitle, chartNotes, chartValues = [] } = props;
+
+const componentData = {
+    title: chartTitle,
+    notes: chartNotes,
+    values: chartValues
+};
+---
+
+<Component {...componentData}>
+    <slot />
+</Component>
