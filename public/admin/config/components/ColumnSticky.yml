@@ -45,5 +45,14 @@ columnSticky: &columnSticky
       required: false
       types:
         - *text
-        - *videoEmbed
+        - *chartBar
+        - *chartPercentage
         - *imageBlock
+        - *videoEmbed
+        - *logosGroup
+        - *innerColumns
+        - *card
+        - *cardsCall
+        - *compare
+        - *pullquote
+        - *spacer

@@ -87,14 +87,16 @@ const componentSchema = z.object({
   cardsCallArr: z.array(cardSchema).optional(),
 
   // Atributos do Card
-  cardsArr: z.array(
-    z.object({
-      link: linkSchema.optional(),
-      icon: z.string().optional(),
-      title: z.string().optional().transform(processMarkdown),
-      text: z.string().optional().transform(processMarkdown),
-    })
-  ).optional(),
+  cardsArr: z
+    .array(
+      z.object({
+        link: linkSchema.optional(),
+        icon: z.string().optional(),
+        title: z.string().optional().transform(processMarkdown),
+        text: z.string().optional().transform(processMarkdown),
+      })
+    )
+    .optional(),
 
   // Atributos do ChartBar
   chartTitle: z.string().optional().transform(processMarkdown),
@@ -143,6 +145,7 @@ const componentSchema = z.object({
 
   // Atributos do Spacer
   desktop: z.string().optional(),
+  tablet: z.string().optional(),
   mobile: z.string().optional(),
 
   // Caso possua subcomponentes

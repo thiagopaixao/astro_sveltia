@@ -361,6 +361,41 @@ sections:
             layout: text-bigger
             title: ALTER DO CHÃO ALSO NEEDDS TO BE RECOGNIZED AS AN INDIGENOUS LAND (TI) WITH THE MILLENNIAL PRESENCE OF THE BORARI PEOPLE
             components: []
+  - section: Cards
+    components:
+      - type: Group
+        layout: default
+        txtColor: '#000009ff'
+        bgColor: ''
+        backgroundImage: ''
+        overlay: ''
+        components:
+          - type: ColumnSticky
+            txtColor: ''
+            bgColor: ''
+            paddingTop: false
+            paddingBottom: false
+            layout: title-bottom
+            title: SED UT PERSPICIATIS UNDE OMNIS ISTE NATUS ERROR SIT VOLUPTATEM ACCUSANTIUM, DOLOREMQUE LAUDANTIUM, TOTAM REM APERIAM
+            components:
+              - type: Card
+                title: Open Source
+                text: Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, cosectertur, adipisci velit, sed quia non numquam eius modi tempora incidunt.
+                link:
+                  url: https://documental.xyz
+                  target: _blank
+                  customTarget: ''
+                  text: ''
+                icon: ''
+              - type: Card
+                title: Open Source
+                text: Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, cosectertur, adipisci velit, sed quia non numquam eius modi tempora incidunt.
+                link:
+                  url: https://documental.xyz
+                  target: _blank
+                  customTarget: ''
+                  text: ''
+                icon: ''
   - section: CTAs
     components:
       - type: Cta
@@ -391,6 +426,7 @@ sections:
                 column1:
                   components:
                     - type: Text
+                      hasDropCap: false
                       txtColor: ''
                       bgColor: ''
                       content: |-
@@ -399,13 +435,37 @@ sections:
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
                 column2:
                   components:
-                    - type: Text
+                    - type: Pullquote
                       txtColor: ''
                       bgColor: ''
-                      content: |-
-                        ## "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium."
+                      content: NEQE PORRO QUISQUAM EST QUI DOLOREM IPSUM QUIA DOLOR SIT AMET, CONSECTETUR, ADIPISCI VELIT, SED QUIA NON NUMQUAM EIUS MODI TEMPORA
+                      byline: Sed ut perspiciatis unde iste natus error sit voluptatem accusantium
+                      hasByline: false
+  - section: ReferenciasCreditos
+    components:
+      - type: Group
+        layout: default
+        txtColor: '#f0ead9ff'
+        bgColor: '#006949ff'
+        backgroundImage: ''
+        overlay: ''
+        components:
+          - type: Column
+            paddingTop: false
+            paddingBottom: false
+            components:
+              - type: Text
+                hasDropCap: false
+                txtColor: ''
+                bgColor: ''
+                content: |-
+                  ### REFERENCES
 
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.
+                  Check out the project's repository - Github - in order to access the data and codes used.
+
+                  ### CREDITS
+
+                  The report was produced by the Borari Indigenous Communication Front [comborari@gmail.com] and published in Amazônia Real. The Borari Indigenous Communication Front is formed by Borari women who write about issues involving indigenous rights, culture, and territory.
   - section: Apoio
     components:
       - type: Group
@@ -480,6 +540,7 @@ sections:
             paddingBottom: true
             components:
               - type: Text
+                hasDropCap: false
                 txtColor: ''
                 bgColor: ''
                 content: '### VEJA TAMBÉM'
@@ -503,5 +564,10 @@ sections:
                       alt: Image2
                     title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
                     text: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
+              - type: Text
+                hasDropCap: false
+                txtColor: ''
+                bgColor: ''
+                content: '###### DOCUMENTAL.XYZ - 2024'
 ---
 

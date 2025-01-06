@@ -10,11 +10,13 @@ components:
   - components/ImageBlock.yml
   - components/ChartBar.yml
   - components/ChartPercentage.yml
+  - components/Card.yml
   - components/CardsCall.yml
   - components/LogosGroup.yml
   - components/MapView.yml
   - components/Spacer.yml
   - components/TimelineBullet.yml
+  - components/Pullquote.yml
 
   # Componentes que dependem dos anteriores
   - components/Timeline.yml

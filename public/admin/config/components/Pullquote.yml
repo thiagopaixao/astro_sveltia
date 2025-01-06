@@ -4,10 +4,6 @@ pullquote: &pullquote
   widget: 'object'
   summary: '{{fields.content}}'
   fields:
-    - label: 'Has Byline'
-      name: 'hasByline'
-      widget: 'boolean'
-      required: false
     - label: 'Type'
       name: 'type'
       widget: 'hidden'

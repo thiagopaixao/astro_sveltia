@@ -12,6 +12,10 @@ spacer: &spacer
       name: 'desktop'
       widget: 'string'
       required: false
+    - label: 'Tablet Height'
+      name: 'tablet'
+      widget: 'string'
+      required: false
     - label: 'Mobile Height'
       name: 'mobile'
       widget: 'string'
