@@ -125,9 +125,11 @@ const componentSchema = z.object({
 
   // Caso possua subcomponentes
   components: z.array(z.any()).optional(),
-    id: z.string().optional(),
-    text: z.string().optional(),
-    content: z.string().optional().transform(processMarkdown),
+  id: z.string().optional(),
+  text: z.string().optional(),
+  content: z.string().optional().transform(processMarkdown),
+  imageLeft: z.string().optional(),
+  imageRight: z.string().optional(),
 });
 
 const pagesCollection = defineCollection({

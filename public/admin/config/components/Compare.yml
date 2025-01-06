@@ -1,0 +1,24 @@
+compare: &compare
+  label: 'Compare'
+  name: 'Compare'
+  widget: 'object'
+  summary: '{{fields.caption}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Compare'
+    - label: 'Image Left'
+      name: 'imageLeft'
+      widget: 'image'
+      required: true
+      allow_multiple: false
+    - label: 'Image Right'
+      name: 'imageRight'
+      widget: 'image'
+      required: true
+      allow_multiple: false
+    - label: 'Caption'
+      name: 'caption'
+      widget: 'markdown'
+      required: false
