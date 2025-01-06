@@ -27,4 +27,5 @@ column: &column
         - *logosGroup
         - *innerColumns
         - *cardsCall
+        - *compare
 

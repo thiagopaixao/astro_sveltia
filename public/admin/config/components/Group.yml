@@ -51,3 +51,4 @@ group: &group
         - *column
         - *timeline
         - *spacer
+        - *compare

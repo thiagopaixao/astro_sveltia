@@ -9,6 +9,31 @@ public_folder: '/uploads'
 
 local_backend: true
 
+compare: &compare
+  label: 'Compare'
+  name: 'Compare'
+  widget: 'object'
+  summary: '{{fields.caption}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Compare'
+    - label: 'Image Left'
+      name: 'imageLeft'
+      widget: 'image'
+      required: true
+      allow_multiple: false
+    - label: 'Image Right'
+      name: 'imageRight'
+      widget: 'image'
+      required: true
+      allow_multiple: false
+    - label: 'Caption'
+      name: 'caption'
+      widget: 'markdown'
+      required: false
+
 bigNumbers: &bigNumbers
   label: 'Big Numbers'
   name: 'BigNumbers'
@@ -271,6 +296,10 @@ text: &text
   widget: 'object'
   summary: '{{fields.content}}'
   fields:
+    - label: 'Dropcap'
+      name: 'hasDropCap'
+      widget: 'boolean'
+      required: false
     - label: 'Type'
       name: 'type'
       widget: 'hidden'
@@ -642,6 +671,7 @@ column: &column
         - *logosGroup
         - *innerColumns
         - *cardsCall
+        - *compare
 
 
 columnSticky: &columnSticky
@@ -747,6 +777,7 @@ group: &group
         - *column
         - *timeline
         - *spacer
+        - *compare
 
 cta: &cta
   label: 'CTA'

@@ -1,5 +1,6 @@
 components:
   # Componentes base (sem dependências)
+  - components/Compare.yml
   - components/BigNumbers.yml
   - components/PageSettings.yml
   - components/PageTheme.yml

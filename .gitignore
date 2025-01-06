@@ -26,3 +26,4 @@ pnpm-debug.log*
 # tools
 *.aider*
 PROJECT.md
+.codegpt
