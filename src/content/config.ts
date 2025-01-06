@@ -88,7 +88,9 @@ const componentSchema = z.object({
   chartTitle: z.string().optional().transform(processMarkdown),
   chartNotes: z.string().optional().transform(processMarkdown),
   chartBars: z.array(chartBarSchema).optional(),
-  chartValues: z.array(chartPercentageBarSchema).optional(),
+  chartPercentageTitle: z.string().optional().transform(processMarkdown),
+  chartPercentageNotes: z.string().optional().transform(processMarkdown),
+  chartPercentageValues: z.array(chartPercentageBarSchema).optional(),
 
   // Atributos do ImageBlock
   src: z.string().optional(),
