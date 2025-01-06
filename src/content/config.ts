@@ -52,6 +52,7 @@ const chartBarSchema = z.object({
 });
 
 const componentSchema = z.object({
+  hasDropCap: z.boolean().optional(),
   type: z.string(),
   layout: z.enum(['default', 'media', 'text', 'text-bigger']).optional(),
   txtColor: z.string().optional(),
