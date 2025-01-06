@@ -70,6 +70,8 @@ const componentSchema = z.object({
   body: z.string().optional().transform(processMarkdown),
   paddingTop: z.boolean().optional(),
   paddingBottom: z.boolean().optional(),
+  hasByline: z.boolean().optional(),
+  byline: z.string().optional(),
 
   // Atributos específicos do CTA
   highlightedText: z.string().optional(),
