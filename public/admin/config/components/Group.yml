@@ -45,6 +45,7 @@ group: &group
         - *imageBlock
         - *columnSticky
         - *chartBar
+        - *chartPercentage
         - *cardsCall
         - *logosGroup
         - *innerColumns

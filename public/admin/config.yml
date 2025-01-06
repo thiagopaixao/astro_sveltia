@@ -419,6 +419,44 @@ chartBar: &chartBar
           max: 100
           step: 0.01
 
+chartPercentage: &chartPercentage
+  label: 'Chart Percentage'
+  name: 'ChartPercentage'
+  widget: 'object'
+  summary: '{{fields.chartPercentageTitle}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'ChartPercentage'
+    - label: 'Chart Percentage Title'
+      name: 'chartPercentageTitle'
+      widget: 'string'
+      required: false
+    - label: 'Chart Notes'
+      name: 'chartPercentageNotes'
+      widget: 'string'
+      required: false
+    - label: 'Chart Percentage Values'
+      name: 'chartPercentageValues'
+      widget: 'list'
+      required: false
+      fields:
+        - label: 'Label'
+          name: 'label'
+          widget: 'string'
+          required: true
+        - label: 'Color'
+          name: 'color'
+          widget: 'color'
+          required: false
+          enableAlpha: true
+          allowInput: true
+        - label: 'Number'
+          name: 'number'
+          widget: 'number'
+          required: true
+
 cardsCall: &cardsCall
   label: 'Cards Call'
   name: 'CardsCall'
@@ -620,6 +658,7 @@ innerColumns: &innerColumns
           types:
             - *text
             - *chartBar
+            - *chartPercentage
             - *imageBlock
             - *videoEmbed
             - *logosGroup
@@ -636,6 +675,7 @@ innerColumns: &innerColumns
           types:
             - *text
             - *chartBar
+            - *chartPercentage
             - *imageBlock
             - *videoEmbed
             - *logosGroup
@@ -666,6 +706,7 @@ column: &column
       types:
         - *text
         - *chartBar
+        - *chartPercentage
         - *imageBlock
         - *videoEmbed
         - *logosGroup
@@ -771,6 +812,7 @@ group: &group
         - *imageBlock
         - *columnSticky
         - *chartBar
+        - *chartPercentage
         - *cardsCall
         - *logosGroup
         - *innerColumns

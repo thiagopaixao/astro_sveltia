@@ -22,6 +22,7 @@ column: &column
       types:
         - *text
         - *chartBar
+        - *chartPercentage
         - *imageBlock
         - *videoEmbed
         - *logosGroup

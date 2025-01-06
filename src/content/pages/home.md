@@ -284,6 +284,66 @@ sections:
                     color: '#ff7967ff'
                     number: 230
                     numberPercent: 90
+  - section: Gráficos
+    components:
+      - type: Group
+        layout: default
+        txtColor: '#000009ff'
+        bgColor: '#ffffffff'
+        backgroundImage: ''
+        overlay: ''
+        components:
+          - type: Column
+            paddingTop: false
+            paddingBottom: false
+            components:
+              - type: InnerColumns
+                column1:
+                  components:
+                    - type: Text
+                      hasDropCap: false
+                      txtColor: ''
+                      bgColor: ''
+                      content: |-
+                        #### NEQUE PORRO QUISQUAM EST, QUI DOLOREM IPSUM QUIA DOLOR
+
+                        Tellus rutrum a luctus eleifend dui tincidunt? Porta dolor pulvinar tellus feugiat finibus accumsan, vehicula quam. Posuere viverra erat litora semper pretium porta praesent nisi? Malesuada et nullam, cursus tempus platea purus pellentesque. Risus neque ultricies ex lorem cubilia. Augue eu montes ut consectetur conubia iaculis interdum vehicula eu. Suscipit maximus volutpat rhoncus lobortis sem eu porta fames.
+                    - type: ChartPercentage
+                      chartPercentageTitle: AUTEM VEL EUM IURE REPREHENRERIT QUI IN EA
+                      chartPercentageNotes: Augue eu montes ut consectetur conubia iaculis interdum vehicula eu.
+                      chartPercentageValues:
+                        - label: Governo
+                          color: '#ffff00ff'
+                          number: 25
+                        - label: Empresa
+                          color: '#006949ff'
+                          number: 40
+                        - label: Outros
+                          color: '#ff7967ff'
+                          number: 30
+                    - type: ChartBar
+                      chartTitle: QUIS AUTEM VEL EUM IURE REPREHENDERIT QUI IN EA
+                      chartNotes: Augue eu montes ut consectetur conubia iaculis interdum vehicula eu.
+                      chartBars:
+                        - label: '2015'
+                          color: '#ff7967ff'
+                          number: 231
+                          numberPercent: 50
+                        - label: '2016'
+                          color: '#ff7967ff'
+                          number: 512
+                          numberPercent: 100
+                        - label: '2017'
+                          color: '#ff7967ff'
+                          number: 342
+                          numberPercent: 65
+                column2:
+                  components:
+                    - type: Text
+                      hasDropCap: false
+                      txtColor: ''
+                      bgColor: ''
+                      content: ''
   - section: Destaque
     components:
       - type: Group

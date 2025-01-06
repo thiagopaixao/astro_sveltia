@@ -137,7 +137,6 @@ const componentSchema = z.object({
   components: z.array(z.any()).optional(),
   id: z.string().optional(),
   text: z.string().optional(),
-  content: z.string().optional().transform(processMarkdown),
   imageLeft: z.string().optional(),
   imageRight: z.string().optional(),
 });

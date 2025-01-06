@@ -16,8 +16,8 @@ chartPercentage: &chartPercentage
       name: 'chartPercentageNotes'
       widget: 'string'
       required: false
-    - label: 'Chart Percentage Bars'
-      name: 'chartPercentageBars'
+    - label: 'Chart Percentage Values'
+      name: 'chartPercentageValues'
       widget: 'list'
       required: false
       fields:
@@ -35,36 +35,3 @@ chartPercentage: &chartPercentage
           name: 'number'
           widget: 'number'
           required: true
-label: Chart Percentage
-name: chart-percentage
-widget: object
-fields:
-  - {
-      label: Título,
-      name: chartTitle,
-      widget: string,
-      required: false,
-    }
-  - {
-      label: Notas,
-      name: chartNotes,
-      widget: markdown,
-      required: false,
-    }
-  - {
-      label: Valores,
-      name: chartValues,
-      widget: list,
-      fields:
-        [
-          { label: Cor, name: color, widget: color },
-          {
-            label: Valor,
-            name: number,
-            widget: number,
-            min: 0,
-            max: 100,
-          },
-          { label: Rótulo, name: label, widget: string },
-        ],
-    }

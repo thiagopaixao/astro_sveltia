@@ -19,6 +19,7 @@ innerColumns: &innerColumns
           types:
             - *text
             - *chartBar
+            - *chartPercentage
             - *imageBlock
             - *videoEmbed
             - *logosGroup
@@ -35,6 +36,7 @@ innerColumns: &innerColumns
           types:
             - *text
             - *chartBar
+            - *chartPercentage
             - *imageBlock
             - *videoEmbed
             - *logosGroup

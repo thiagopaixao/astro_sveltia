@@ -9,6 +9,7 @@ import Text from '../../components/Text.astro';
 import Cta from '../../components/Cta.astro';
 import CardsCall from '../../components/CardsCall.astro';
 import ChartBar from '../../components/ChartBar.astro';
+import ChartPercentage from '../../components/ChartPercentage.astro';
 import Column from '../../components/Column.astro';
 import ImageBlock from '../../components/ImageBlock.astro';
 import InnerColumns from '../../components/InnerColumns.astro';
@@ -38,6 +39,7 @@ const componentMap = {
   Cta,
   CardsCall,
   ChartBar,
+  ChartPercentage,
   Column,
   ImageBlock,
   InnerColumns,
@@ -51,6 +53,24 @@ const componentMap = {
   BigNumbers,
   Compare
 };
+
+const chartPerc = [
+  {
+    color: "#DDCE27",
+    number: 25,
+    label: "Governo",
+  },
+  {
+    color: "#006949",
+    number: 40,
+    label: "Empresa",
+  },
+  {
+    color: "#FF7967",
+    number: 35,
+    label: "Outros",
+  },
+];
 ---
 
 <html lang="pt-BR">
@@ -143,6 +163,9 @@ const componentMap = {
         return await renderSections(sections);
       })()
     }
+
+
+
 
 </main>
 </Layout>

@@ -9,6 +9,7 @@ components:
   - components/VideoEmbed.yml
   - components/ImageBlock.yml
   - components/ChartBar.yml
+  - components/ChartPercentage.yml
   - components/CardsCall.yml
   - components/LogosGroup.yml
   - components/MapView.yml
