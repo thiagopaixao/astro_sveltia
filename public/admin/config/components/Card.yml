@@ -2,48 +2,43 @@ card: &card
   label: 'Card'
   name: 'Card'
   widget: 'object'
-  summary: '{{fields.cardsArr}}'
+  summary: '{{fields.title}}'
   fields:
     - label: 'Type'
       name: 'type'
       widget: 'hidden'
       default: 'Card'
-    - label: 'Cards'
-      name: 'cardsArr'
-      widget: 'list'
-      required: true
+    - label: 'Link'
+      name: 'link'
+      widget: 'object'
+      required: false
       fields:
-        - label: 'Link'
-          name: 'link'
-          widget: 'object'
-          required: false
-          fields:
-            - label: 'URL'
-              name: 'url'
-              widget: 'string'
-              required: false
-            - label: 'Target'
-              name: 'target'
-              widget: 'select'
-              options: ['_blank', '_parent', '_self', 'custom']
-              required: false
-            - label: 'Custom Target'
-              name: 'customTarget'
-              widget: 'string'
-              required: false
-            - label: 'Text'
-              name: 'text'
-              widget: 'string'
-              required: false
-        - label: 'Icon'
-          name: 'icon'
+        - label: 'URL'
+          name: 'url'
           widget: 'string'
           required: false
-        - label: 'Title'
-          name: 'title'
+        - label: 'Target'
+          name: 'target'
+          widget: 'select'
+          options: ['_blank', '_parent', '_self', 'custom']
+          required: false
+        - label: 'Custom Target'
+          name: 'customTarget'
           widget: 'string'
           required: false
         - label: 'Text'
           name: 'text'
-          widget: 'markdown'
+          widget: 'string'
           required: false
+    - label: 'Icon'
+      name: 'icon'
+      widget: 'string'
+      required: false
+    - label: 'Title'
+      name: 'title'
+      widget: 'string'
+      required: false
+    - label: 'Text'
+      name: 'text'
+      widget: 'markdown'
+      required: false
