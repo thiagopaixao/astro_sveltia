@@ -1,13 +1,7 @@
 ---
 const { Component, props } = Astro.props;
-const { content, byline, ...otherProps } = props;
-
-
 ---
 
-<Component {...otherProps}>
-  {content}
-  <slot name="byline">
-    {byline}
-  </slot>
+<Component {...props}>
+  <slot />
 </Component>
