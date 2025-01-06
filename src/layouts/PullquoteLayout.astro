@@ -1,7 +1,9 @@
 ---
 const { Component, props } = Astro.props;
+const { content, ...otherProps } = props;
 ---
 
-<Component {...props}>
+<Component {...otherProps}>
+  {content}
   <slot />
 </Component>
