@@ -51,6 +51,13 @@ const chartBarSchema = z.object({
   numberPercent: z.number().min(0).max(100).optional(),
 });
 
+// Schema para barras do gráfico de porcentagem
+const chartPercentageBarSchema = z.object({
+  label: z.string().transform(processMarkdown),
+  color: z.string().optional(),
+  number: z.number().min(0).max(100).optional(),
+});
+
 const componentSchema = z.object({
   hasDropCap: z.boolean().optional(),
   type: z.string(),
@@ -81,6 +88,7 @@ const componentSchema = z.object({
   chartTitle: z.string().optional().transform(processMarkdown),
   chartNotes: z.string().optional().transform(processMarkdown),
   chartBars: z.array(chartBarSchema).optional(),
+  chartValues: z.array(chartPercentageBarSchema).optional(),
 
   // Atributos do ImageBlock
   src: z.string().optional(),
