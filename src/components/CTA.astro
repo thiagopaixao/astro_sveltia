@@ -108,6 +108,10 @@ const {
 
       @include media-break-up(l) {
         grid-column: board-full;
+
+        #{$self}--media & {
+          grid-column: full;
+        }
       }
     }
 
@@ -205,7 +209,6 @@ const {
       }
       
       @include media-break-up(m) {
-        @include grrr("board", 2, 11, false);
         grid-column: board-full;
       }
 
@@ -213,8 +216,21 @@ const {
 
     :global(.group__content) {
       @include media-break-up(m) {
-        grid-column: board-full;
         @include grrr("board", 1, 12, false);
+      }
+    }
+
+    &--media {
+      :global(.group) {
+        @include media-break-up(m) {
+          @include grrr();
+        }
+      }
+
+      :global(.group__content) {
+        @include media-break-up(m) {
+          grid-column: board-full;
+        }
       }
     }
   }
