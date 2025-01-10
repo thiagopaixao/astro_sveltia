@@ -16,10 +16,10 @@ const { layout, paddingTop, paddingBottom } = Astro.props;
   ]}
 >
   <div class="column-sticky__holder">
-    <div class="column-sticky__title">
+    <div class="column-sticky__title reveal--fadeInUp">
       <slot name="title" />
     </div>
-    <div class="column-sticky__content">
+    <div class="column-sticky__content reveal--fadeInUp">
       <slot />
     </div>
   </div>
@@ -102,6 +102,7 @@ const { layout, paddingTop, paddingBottom } = Astro.props;
     }
 
     &__content {
+      animation-delay: .5s;
       grid-column: board-start 7 / board-end 12;
       
       @include media-break-up(l) {

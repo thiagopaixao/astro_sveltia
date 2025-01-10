@@ -17,10 +17,10 @@ const { paddingTop, paddingBottom, invertOnMobile, alignment } = Astro.props;
   ]}
 >
   <div class="columns__holder">
-    <div class="columns__column-1">
+    <div class="columns__column-1 reveal--fadeInUp">
       <slot name="column-1" />
     </div>
-    <div class="columns__column-2">
+    <div class="columns__column-2 reveal--fadeInUp">
       <slot name="column-2" />
     </div>
   </div>
@@ -93,6 +93,7 @@ const { paddingTop, paddingBottom, invertOnMobile, alignment } = Astro.props;
     
     &__column-2 {
       grid-column: board-start 9 / board-end 11;
+      animation-delay: .5s;
 
       @include media-break-down(x) {
         grid-column: board-start 9 / board-end 12;
