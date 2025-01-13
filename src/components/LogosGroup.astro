@@ -16,7 +16,7 @@ const { title, logos } = Astro.props
           //  logo.title
           <div class="logos-group__logo">
             {logo.link && <a href={logo.link?.url} target={logo.link?.target} title={logo.link?.title}></a>}
-            {logo.image && <Image src={logo.image} alt={logo?.link?.title}/>}
+            {logo.image && <Image src={logo.image} alt={logo?.link?.title}  width="100%" height="100%"/>}
           </div>
         ))
       }

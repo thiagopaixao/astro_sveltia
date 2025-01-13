@@ -572,4 +572,3 @@ sections:
                 bgColor: ''
                 content: '###### DOCUMENTAL.XYZ - 2024'
 ---
-
