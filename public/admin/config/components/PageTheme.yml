@@ -1,0 +1,62 @@
+pageTheme: &pageTheme
+  label: 'Page Theme'
+  name: 'pageTheme'
+  collapsed: true
+  widget: 'object'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'pageTheme'
+    - label: 'Primary Color'
+      name: 'primaryColor'
+      widget: 'color'
+      required: false
+      allowInput: true
+      allowAlpha: true
+    - label: 'Secondary Color'
+      name: 'secondaryColor'
+      widget: 'color'
+      required: false
+      allowInput: true
+      allowAlpha: true
+    - label: 'Highlight Color'
+      name: 'highlightColor'
+      widget: 'color'
+      required: false
+      allowInput: true
+      allowAlpha: true
+    - label: 'Auxiliary Color'
+      name: 'auxiliaryColor'
+      widget: 'color'
+      required: false
+      allowInput: true
+      allowAlpha: true
+    - label: 'Display Font'
+      name: 'displayFont'
+      widget: 'string'
+      required: false
+    - label: 'Text Font'
+      name: 'textFont'
+      widget: 'string'
+      required: false
+    - label: 'Spacing Patterns'
+      name: 'spacingPatterns'
+      widget: 'list'
+      fields:
+        - label: 'Pattern Name'
+          name: 'name'
+          widget: 'string'
+          required: true
+        - label: 'Mobile Value'
+          name: 'mobile'
+          widget: 'string'
+          required: true
+        - label: 'Tablet Value'
+          name: 'tablet'
+          widget: 'string'
+          required: true
+        - label: 'Desktop Value'
+          name: 'desktop'
+          widget: 'string'
+          required: true

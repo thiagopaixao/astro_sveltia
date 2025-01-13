@@ -1,0 +1,22 @@
+spacer: &spacer
+  label: 'Spacer'
+  name: 'Spacer'
+  widget: 'object'
+  summary: '{{fields.desktop}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Spacer'
+    - label: 'Desktop Height'
+      name: 'desktop'
+      widget: 'string'
+      required: false
+    - label: 'Tablet Height'
+      name: 'tablet'
+      widget: 'string'
+      required: false
+    - label: 'Mobile Height'
+      name: 'mobile'
+      widget: 'string'
+      required: false

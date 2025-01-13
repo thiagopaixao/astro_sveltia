@@ -1,0 +1,35 @@
+column: &column
+  label: 'Column'
+  name: 'Column'
+  widget: 'object'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Column'
+    - label: 'Padding Top'
+      name: paddingTop
+      widget: boolean
+      default: false
+    - label: 'Padding Bottom'
+      name: paddingBottom
+      widget: boolean
+      default: false
+    - label: 'Components'
+      name: 'components'
+      widget: 'list'
+      required: false
+      types:
+        - *text
+        - *chartBar
+        - *chartPercentage
+        - *imageBlock
+        - *videoEmbed
+        - *logosGroup
+        - *innerColumns
+        - *card
+        - *cardsCall
+        - *compare
+        - *pullquote
+        - *spacer
+

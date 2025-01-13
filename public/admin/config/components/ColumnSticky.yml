@@ -1,0 +1,58 @@
+columnSticky: &columnSticky
+  label: 'Column Sticky'
+  name: 'ColumnSticky'
+  widget: 'object'
+  summary: '{{fields.title}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'ColumnSticky'
+    - label: 'Text Color'
+      name: 'txtColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Background Color'
+      name: 'bgColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Padding Top'
+      name: 'paddingTop'
+      widget: 'boolean'
+      required: false
+      default: false
+    - label: 'Padding Bottom'
+      name: 'paddingBottom'
+      widget: 'boolean'
+      required: false
+      default: false
+    - label: 'Layout'
+      name: 'layout'
+      widget: 'select'
+      options: ['text-bigger', 'title-bottom']
+      default: 'text-bigger'
+    - label: 'Title'
+      name: 'title'
+      widget: 'string'
+      required: false
+    - label: 'Components'
+      name: 'components'
+      widget: 'list'
+      required: false
+      types:
+        - *text
+        - *chartBar
+        - *chartPercentage
+        - *imageBlock
+        - *videoEmbed
+        - *logosGroup
+        - *innerColumns
+        - *card
+        - *cardsCall
+        - *compare
+        - *pullquote
+        - *spacer

@@ -1,0 +1,1076 @@
+backend:
+  name: github
+  repo: thiagopaixao/astro_sveltia
+  branch: main
+  base_url: https://sveltia-cms-auth.tap-647.workers.dev
+
+media_folder: 'public/uploads'
+public_folder: '/uploads'
+
+local_backend: true
+
+compare: &compare
+  label: 'Compare'
+  name: 'Compare'
+  widget: 'object'
+  summary: '{{fields.caption}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Compare'
+    - label: 'Image Left'
+      name: 'imageLeft'
+      widget: 'image'
+      required: true
+      allow_multiple: false
+    - label: 'Image Right'
+      name: 'imageRight'
+      widget: 'image'
+      required: true
+      allow_multiple: false
+    - label: 'Caption'
+      name: 'caption'
+      widget: 'markdown'
+      required: false
+
+bigNumbers: &bigNumbers
+  label: 'Big Numbers'
+  name: 'BigNumbers'
+  widget: 'object'
+  summary: '{{fields.alignment}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'BigNumbers'
+    - label: 'Alignment'
+      name: 'alignment'
+      widget: 'select'
+      options: ['caption-bottom', 'caption-top']
+      default: 'caption-bottom'
+    - label: 'Items'
+      name: 'items'
+      widget: 'list'
+      fields:
+        - label: 'Number'
+          name: 'number'
+          widget: 'string'
+          required: false
+        - label: 'Caption'
+          name: 'caption'
+          widget: 'string'
+          required: false
+
+pageSettings: &pageSettings
+  label: 'Page Settings'
+  name: 'pageSettings'
+  collapsed: true
+  widget: 'object'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'pageSettings'
+    - label: 'Language'
+      name: 'language'
+      widget: 'select'
+      options: ['pt-BR', 'en', 'es']
+      default: 'pt-BR'
+    - label: 'Text Direction'
+      name: 'direction'
+      widget: 'select'
+      options: ['left', 'right']
+      default: 'left'
+    - label: 'SEO Title'
+      name: 'seoTitle'
+      widget: 'string'
+      required: false
+    - label: 'SEO Description'
+      name: 'seoDescription'
+      widget: 'string'
+      required: false
+    - label: 'SEO Keywords'
+      name: 'seoKeywords'
+      widget: 'list'
+      required: false
+      fields:
+        - { label: 'Keyword', name: 'keyword', widget: 'string' }
+    - label: 'SEO Image'
+      name: 'seoImage'
+      widget: 'image'
+      required: false
+
+pageTheme: &pageTheme
+  label: 'Page Theme'
+  name: 'pageTheme'
+  collapsed: true
+  widget: 'object'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'pageTheme'
+    - label: 'Primary Color'
+      name: 'primaryColor'
+      widget: 'color'
+      required: false
+      allowInput: true
+      allowAlpha: true
+    - label: 'Secondary Color'
+      name: 'secondaryColor'
+      widget: 'color'
+      required: false
+      allowInput: true
+      allowAlpha: true
+    - label: 'Highlight Color'
+      name: 'highlightColor'
+      widget: 'color'
+      required: false
+      allowInput: true
+      allowAlpha: true
+    - label: 'Auxiliary Color'
+      name: 'auxiliaryColor'
+      widget: 'color'
+      required: false
+      allowInput: true
+      allowAlpha: true
+    - label: 'Display Font'
+      name: 'displayFont'
+      widget: 'string'
+      required: false
+    - label: 'Text Font'
+      name: 'textFont'
+      widget: 'string'
+      required: false
+    - label: 'Spacing Patterns'
+      name: 'spacingPatterns'
+      widget: 'list'
+      fields:
+        - label: 'Pattern Name'
+          name: 'name'
+          widget: 'string'
+          required: true
+        - label: 'Mobile Value'
+          name: 'mobile'
+          widget: 'string'
+          required: true
+        - label: 'Tablet Value'
+          name: 'tablet'
+          widget: 'string'
+          required: true
+        - label: 'Desktop Value'
+          name: 'desktop'
+          widget: 'string'
+          required: true
+
+mapBox: &mapBox
+  label: 'MapBox'
+  name: 'MapBox'
+  collapsed: true
+  widget: 'object'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'MapBox'
+    - label: 'Column Align'
+      name: 'columnAlign'
+      widget: 'select'
+      options: ['left', 'center', 'right']
+      required: false
+    - label: 'Floating Text'
+      name: 'floatingText'
+      widget: 'boolean'
+      required: false
+    - label: 'Map Style'
+      name: 'style'
+      widget: 'string'
+      required: true
+    - label: 'Map Center'
+      name: 'center'
+      widget: 'list'
+      fields:
+        - { label: 'Longitude', name: 'lng', widget: 'number' }
+        - { label: 'Latitude', name: 'lat', widget: 'number' }
+      required: true
+    - label: 'Map Zoom'
+      name: 'zoom'
+      widget: 'number'
+      required: true
+    - label: 'Map Bearing'
+      name: 'bearing'
+      widget: 'number'
+      required: false
+    - label: 'Map Pitch'
+      name: 'pitch'
+      widget: 'number'
+      required: false
+    - label: 'Map Layers'
+      name: 'layers'
+      widget: 'list'
+      required: false
+    - label: 'Map Token'
+      name: 'token'
+      widget: 'string'
+      required: true
+    - label: 'Map Views'
+      name: 'views'
+      widget: 'list'
+      required: false
+      fields:
+        - label: 'View ID'
+          name: 'id'
+          widget: 'string'
+          required: true
+        - label: 'View Center'
+          name: 'center'
+          widget: 'list'
+          fields:
+            - { label: 'Longitude', name: 'lng', widget: 'number' }
+            - { label: 'Latitude', name: 'lat', widget: 'number' }
+          required: true
+        - label: 'View Duration'
+          name: 'duration'
+          widget: 'number'
+          required: true
+        - label: 'View Zoom'
+          name: 'zoom'
+          widget: 'number'
+          required: true
+        - label: 'View Bearing'
+          name: 'bearing'
+          widget: 'number'
+          required: false
+        - label: 'View Pitch'
+          name: 'pitch'
+          widget: 'number'
+          required: false
+        - label: 'View Layers'
+          name: 'layers'
+          widget: 'list'
+          required: false
+        - label: 'Mobile View'
+          name: 'mobile'
+          widget: 'object'
+          required: false
+          fields:
+            - label: 'Mobile Zoom'
+              name: 'zoom'
+              widget: 'number'
+              required: false
+        - label: 'Captions'
+          name: 'captions'
+          widget: 'object'
+          required: false
+          fields:
+            - label: 'Title'
+              name: 'title'
+              widget: 'string'
+              required: false
+            - label: 'Notes'
+              name: 'notes'
+              widget: 'string'
+              required: false
+            - label: 'Items'
+              name: 'items'
+              widget: 'list'
+              required: false
+              fields:
+                - label: 'Icon'
+                  name: 'icon'
+                  widget: 'string'
+                  required: false
+                - label: 'Text'
+                  name: 'text'
+                  widget: 'string'
+                  required: false
+    - label: 'Map View'
+      name: 'mapView'
+      widget: 'string'
+      required: false
+
+text: &text
+  label: 'Text'
+  name: 'Text'
+  widget: 'object'
+  summary: '{{fields.content}}'
+  fields:
+    - label: 'Dropcap'
+      name: 'hasDropCap'
+      widget: 'boolean'
+      required: false
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Text'
+    - label: 'Text Color'
+      name: 'txtColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Background Color'
+      name: 'bgColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Content'
+      name: 'content'
+      widget: 'markdown'
+      required: false
+
+videoEmbed: &videoEmbed
+  label: 'Video Embed'
+  name: 'VideoEmbed'
+  widget: 'object'
+  summary: '{{fields.videoUrl}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'VideoEmbed'
+    - label: 'Wide'
+      name: 'wideVideo'
+      widget: 'boolean'
+      required: false
+      default: false
+    - label: 'Video URL'
+      name: 'videoUrl'
+      widget: 'string'
+      required: false
+    - label: 'Video Caption'
+      name: 'videoCaption'
+      widget: 'string'
+      required: false
+
+imageBlock: &imageBlock
+  label: 'Image Block'
+  name: 'ImageBlock'
+  widget: 'object'
+  summary: '{{fields.src}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'ImageBlock'
+    - label: 'Wide'
+      name: 'wideImage'
+      widget: 'boolean'
+      required: false
+      default: false
+    - label: 'Image'
+      name: 'src'
+      widget: 'image'
+      required: false
+    - label: 'Alt Text'
+      name: 'alt'
+      widget: 'string'
+      required: false
+    - label: 'Description'
+      name: 'description'
+      widget: 'string'
+      required: false
+
+chartBar: &chartBar
+  label: 'Chart Bar'
+  name: 'ChartBar'
+  widget: 'object'
+  summary: '{{fields.chartTitle}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'ChartBar'
+    - label: 'Chart Title'
+      name: 'chartTitle'
+      widget: 'string'
+      required: false
+    - label: 'Chart Notes'
+      name: 'chartNotes'
+      widget: 'string'
+      required: false
+    - label: 'Chart Bars'
+      name: 'chartBars'
+      widget: 'list'
+      required: false
+      fields:
+        - label: 'Label'
+          name: 'label'
+          widget: 'string'
+          required: false
+        - label: 'Color'
+          name: 'color'
+          widget: 'color'
+          required: false
+          enableAlpha: true
+          allowInput: true
+        - label: 'Number'
+          name: 'number'
+          widget: 'number'
+          required: false
+        - label: 'Number Percent'
+          name: 'numberPercent'
+          widget: 'number'
+          required: false
+          value_type: 'float'
+          min: 0
+          max: 100
+          step: 0.01
+
+chartPercentage: &chartPercentage
+  label: 'Chart Percentage'
+  name: 'ChartPercentage'
+  widget: 'object'
+  summary: '{{fields.chartPercentageTitle}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'ChartPercentage'
+    - label: 'Chart Percentage Title'
+      name: 'chartPercentageTitle'
+      widget: 'string'
+      required: false
+    - label: 'Chart Notes'
+      name: 'chartPercentageNotes'
+      widget: 'string'
+      required: false
+    - label: 'Chart Percentage Values'
+      name: 'chartPercentageValues'
+      widget: 'list'
+      required: false
+      fields:
+        - label: 'Label'
+          name: 'label'
+          widget: 'string'
+          required: true
+        - label: 'Color'
+          name: 'color'
+          widget: 'color'
+          required: false
+          enableAlpha: true
+          allowInput: true
+        - label: 'Number'
+          name: 'number'
+          widget: 'number'
+          required: true
+
+card: &card
+  label: 'Card'
+  name: 'Card'
+  widget: 'object'
+  summary: '{{fields.title}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Card'
+    - label: 'Title'
+      name: 'title'
+      widget: 'string'
+      required: false
+    - label: 'Text'
+      name: 'text'
+      widget: 'markdown'
+      required: false
+    - label: 'Link'
+      name: 'link'
+      widget: 'object'
+      required: false
+      fields:
+        - label: 'URL'
+          name: 'url'
+          widget: 'string'
+          required: false
+        - label: 'Target'
+          name: 'target'
+          widget: 'select'
+          options: ['_blank', '_parent', '_self', 'custom']
+          required: false
+        - label: 'Custom Target'
+          name: 'customTarget'
+          widget: 'string'
+          required: false
+        - label: 'Text'
+          name: 'text'
+          widget: 'string'
+          required: false
+    - label: 'Icon'
+      name: 'icon'
+      widget: 'string'
+      required: false
+
+cardsCall: &cardsCall
+  label: 'Cards Call'
+  name: 'CardsCall'
+  widget: 'object'
+  summary: '{{fields.cardsCallArr}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'CardsCall'
+    - label: 'Cards'
+      name: 'cardsCallArr'
+      widget: 'list'
+      required: false
+      fields:
+        - label: 'Link'
+          name: 'link'
+          widget: 'object'
+          required: false
+          fields:
+            - label: 'URL'
+              name: 'url'
+              widget: 'string'
+              required: false
+            - label: 'Target'
+              name: 'target'
+              widget: 'select'
+              options: ['_blank', '_parent', '_self', 'custom']
+              required: false
+            - label: 'Custom Target'
+              name: 'customTarget'
+              widget: 'string'
+              required: false
+        - label: 'Image'
+          name: 'img'
+          widget: 'object'
+          required: false
+          fields:
+            - label: 'Source'
+              name: 'src'
+              widget: 'image'
+              required: false
+            - label: 'Alt'
+              name: 'alt'
+              widget: 'string'
+              required: false
+        - label: 'Title'
+          name: 'title'
+          widget: 'string'
+          required: false
+        - label: 'Text'
+          name: 'text'
+          widget: 'markdown'
+          required: false
+
+logosGroup: &logosGroup
+  label: 'Logos Group'
+  name: 'LogosGroup'
+  widget: 'object'
+  summary: '{{fields.logos}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'LogosGroup'
+    - label: 'Logos'
+      name: 'logos'
+      widget: 'list'
+      required: false
+      fields:
+        - label: 'Image'
+          name: 'image'
+          widget: 'image'
+          required: true
+        - label: 'Link'
+          name: 'link'
+          widget: 'object'
+          required: true
+          fields:
+            - label: 'URL'
+              name: 'url'
+              widget: 'string'
+              required: true
+            - label: 'Target'
+              name: 'target'
+              widget: 'select'
+              options: ['_blank', '_parent', '_self', 'custom']
+              required: false
+            - label: 'Custom Target'
+              name: 'customTarget'
+              widget: 'string'
+              required: false
+            - label: 'Title'
+              name: 'title'
+              widget: 'string'
+              required: false
+
+mapView: &mapView
+  label: 'Map View'
+  name: 'MapView'
+  widget: 'object'
+  summary: '{{fields.mapView}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'MapView'
+    - label: 'Map View'
+      name: 'mapView'
+      widget: 'select'
+      options: ['view_1', 'view_2', 'view_3', 'view_4']
+      required: true
+    - label: 'Text Color'
+      name: 'txtColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Background Color'
+      name: 'bgColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+
+spacer: &spacer
+  label: 'Spacer'
+  name: 'Spacer'
+  widget: 'object'
+  summary: '{{fields.desktop}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Spacer'
+    - label: 'Desktop Height'
+      name: 'desktop'
+      widget: 'string'
+      required: false
+    - label: 'Tablet Height'
+      name: 'tablet'
+      widget: 'string'
+      required: false
+    - label: 'Mobile Height'
+      name: 'mobile'
+      widget: 'string'
+      required: false
+
+timelineBullet: &timelineBullet
+  label: 'Timeline Bullet'
+  name: 'TimelineBullet'
+  widget: 'object'
+  summary: '{{fields.text}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'TimelineBullet'
+    - label: 'Text'
+      name: 'text'
+      widget: 'string'
+      required: false
+    - label: 'Content'
+      name: 'content'
+      widget: 'markdown'
+      required: false
+
+pullquote: &pullquote
+  label: 'Pullquote'
+  name: 'Pullquote'
+  widget: 'object'
+  summary: '{{fields.content}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Pullquote'
+    - label: 'Text Color'
+      name: 'txtColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Background Color'
+      name: 'bgColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Content'
+      name: 'content'
+      widget: 'markdown'
+      required: false
+    - label: 'Byline'
+      name: 'byline'
+      widget: 'string'
+      required: false
+
+timeline: &timeline
+  label: 'Timeline'
+  name: 'Timeline'
+  widget: 'object'
+  summary: 'Timeline'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Timeline'
+    - label: 'Components'
+      name: 'components'
+      widget: 'list'
+      required: false
+      types:
+        - *timelineBullet
+
+innerColumns: &innerColumns
+  label: 'Inner Columns'
+  name: 'InnerColumns'
+  widget: 'object'
+  summary: 'Inner Columns'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'InnerColumns'
+    - label: 'Column 1'
+      name: 'column1'
+      widget: 'object'
+      required: false
+      fields:
+        - label: 'Components'
+          name: 'components'
+          widget: 'list'
+          types:
+            - *text
+            - *chartBar
+            - *chartPercentage
+            - *imageBlock
+            - *videoEmbed
+            - *logosGroup
+            - *timeline
+            - *bigNumbers
+            - *card
+            - *pullquote
+            - *spacer
+    - label: 'Column 2'
+      name: 'column2'
+      widget: 'object'
+      required: false
+      fields:
+        - label: 'Components'
+          name: 'components'
+          widget: 'list'
+          types:
+            - *text
+            - *chartBar
+            - *chartPercentage
+            - *imageBlock
+            - *videoEmbed
+            - *logosGroup
+            - *timeline
+            - *bigNumbers
+            - *card
+            - *pullquote
+            - *spacer
+
+column: &column
+  label: 'Column'
+  name: 'Column'
+  widget: 'object'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Column'
+    - label: 'Padding Top'
+      name: paddingTop
+      widget: boolean
+      default: false
+    - label: 'Padding Bottom'
+      name: paddingBottom
+      widget: boolean
+      default: false
+    - label: 'Components'
+      name: 'components'
+      widget: 'list'
+      required: false
+      types:
+        - *text
+        - *chartBar
+        - *chartPercentage
+        - *imageBlock
+        - *videoEmbed
+        - *logosGroup
+        - *innerColumns
+        - *card
+        - *cardsCall
+        - *compare
+        - *pullquote
+        - *spacer
+
+
+columnSticky: &columnSticky
+  label: 'Column Sticky'
+  name: 'ColumnSticky'
+  widget: 'object'
+  summary: '{{fields.title}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'ColumnSticky'
+    - label: 'Text Color'
+      name: 'txtColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Background Color'
+      name: 'bgColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Padding Top'
+      name: 'paddingTop'
+      widget: 'boolean'
+      required: false
+      default: false
+    - label: 'Padding Bottom'
+      name: 'paddingBottom'
+      widget: 'boolean'
+      required: false
+      default: false
+    - label: 'Layout'
+      name: 'layout'
+      widget: 'select'
+      options: ['text-bigger', 'title-bottom']
+      default: 'text-bigger'
+    - label: 'Title'
+      name: 'title'
+      widget: 'string'
+      required: false
+    - label: 'Components'
+      name: 'components'
+      widget: 'list'
+      required: false
+      types:
+        - *text
+        - *chartBar
+        - *chartPercentage
+        - *imageBlock
+        - *videoEmbed
+        - *logosGroup
+        - *innerColumns
+        - *card
+        - *cardsCall
+        - *compare
+        - *pullquote
+        - *spacer
+
+group: &group
+  label: 'Group'
+  name: 'Group'
+  widget: 'object'
+  summary: '{{fields.layout}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Group'
+    - label: 'Layout'
+      name: 'layout'
+      widget: 'select'
+      options: ['default']
+      default: 'default'
+    - label: 'Text Color'
+      name: 'txtColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Background Color'
+      name: 'bgColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Background Image'
+      name: 'backgroundImage'
+      widget: 'image'
+      required: false
+      allow_multiple: false
+    - label: 'Overlay'
+      name: 'overlay'
+      widget: 'select'
+      options: ['dark', 'light']
+      required: false
+    - label: 'Components'
+      name: 'components'
+      widget: 'list'
+      required: false
+      types:
+        - *text
+        - *videoEmbed
+        - *imageBlock
+        - *columnSticky
+        - *chartBar
+        - *chartPercentage
+        - *card
+        - *cardsCall
+        - *logosGroup
+        - *innerColumns
+        - *column
+        - *timeline
+        - *spacer
+        - *compare
+
+cta: &cta
+  label: 'CTA'
+  name: 'Cta'
+  widget: 'object'
+  summary: '{{fields.layout}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Cta'
+    - label: 'Layout'
+      name: 'layout'
+      widget: 'select'
+      options: ['media', 'text']
+      default: 'media'
+    - label: 'Text Color'
+      name: 'txtColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Background Color'
+      name: 'bgColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Background Image'
+      name: 'imgBg'
+      widget: 'image'
+      required: false
+      allow_multiple: false
+    - label: 'Media Type'
+      name: 'mediaType'
+      widget: 'select'
+      options: ['image']
+      default: 'image'
+      required: false
+      condition:
+        field: layout
+        value: media
+    - label: 'Media'
+      name: 'media'
+      widget: 'image'
+      required: false
+      allow_multiple: false
+      condition:
+        field: layout
+        value: media
+    - label: 'CTA Text'
+      name: 'ctaText'
+      widget: 'markdown'
+      required: false
+    - label: 'Highlighted Text'
+      name: 'highlightedText'
+      widget: 'string'
+      required: false
+      condition:
+        field: layout
+        value: text
+    - label: 'Link'
+      name: 'link'
+      widget: 'object'
+      required: false
+      fields:
+        - label: 'URL'
+          name: 'url'
+          widget: 'string'
+          required: false
+        - label: 'Target'
+          name: 'target'
+          widget: 'select'
+          options: ['_self', '_blank']
+          default: '_self'
+          required: false
+        - label: 'Text'
+          name: 'text'
+          widget: 'string'
+          required: false
+
+map: &map
+  label: 'Map'
+  name: 'Map'
+  widget: 'object'
+  summary: '{{fields.columnAlign}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Map'
+    - label: 'Column Align'
+      name: 'columnAlign'
+      widget: 'select'
+      options: ['left', 'right', 'center']
+      default: 'left'
+      required: false
+    - label: 'Floating Text'
+      name: 'floatingText'
+      widget: 'boolean'
+      required: false
+      default: false
+    - label: 'Text Color'
+      name: 'txtColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Background Color'
+      name: 'bgColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Components'
+      name: 'components'
+      widget: 'list'
+      required: false
+      types:
+        - *text
+        - *mapView
+
+
+collections:
+  - name: 'pages'
+    label: 'Páginas'
+    folder: 'src/content/pages'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Título', name: 'title', widget: 'string', required: false }
+      - *pageSettings
+      - *pageTheme
+      - *mapBox
+      - label: 'Seção'
+        name: 'sections'
+        widget: 'list'
+        summary: 'Seção: {{fields.section}}'
+        collapsed: true
+        required: false
+        fields:
+          - label: 'Seção'
+            name: 'section'
+            widget: 'string'
+            required: true
+          - label: 'Componentes'
+            name: 'components'
+            widget: 'list'
+            required: false
+            types:
+              - *group
+              - *cta
+              - *map
+              - *spacer
+

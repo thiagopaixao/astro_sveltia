@@ -1,0 +1,28 @@
+components:
+  # Componentes base (sem dependências)
+  - components/Compare.yml
+  - components/BigNumbers.yml
+  - components/PageSettings.yml
+  - components/PageTheme.yml
+  - components/MapBox.yml
+  - components/Text.yml
+  - components/VideoEmbed.yml
+  - components/ImageBlock.yml
+  - components/ChartBar.yml
+  - components/ChartPercentage.yml
+  - components/Card.yml
+  - components/CardsCall.yml
+  - components/LogosGroup.yml
+  - components/MapView.yml
+  - components/Spacer.yml
+  - components/TimelineBullet.yml
+  - components/Pullquote.yml
+
+  # Componentes que dependem dos anteriores
+  - components/Timeline.yml
+  - components/InnerColumns.yml
+  - components/Column.yml
+  - components/ColumnSticky.yml
+  - components/Group.yml
+  - components/Cta.yml
+  - components/Map.yml

@@ -1,0 +1,18 @@
+timelineBullet: &timelineBullet
+  label: 'Timeline Bullet'
+  name: 'TimelineBullet'
+  widget: 'object'
+  summary: '{{fields.text}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'TimelineBullet'
+    - label: 'Text'
+      name: 'text'
+      widget: 'string'
+      required: false
+    - label: 'Content'
+      name: 'content'
+      widget: 'markdown'
+      required: false

@@ -1,0 +1,79 @@
+cta: &cta
+  label: 'CTA'
+  name: 'Cta'
+  widget: 'object'
+  summary: '{{fields.layout}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Cta'
+    - label: 'Layout'
+      name: 'layout'
+      widget: 'select'
+      options: ['media', 'text']
+      default: 'media'
+    - label: 'Text Color'
+      name: 'txtColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Background Color'
+      name: 'bgColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Background Image'
+      name: 'imgBg'
+      widget: 'image'
+      required: false
+      allow_multiple: false
+    - label: 'Media Type'
+      name: 'mediaType'
+      widget: 'select'
+      options: ['image']
+      default: 'image'
+      required: false
+      condition:
+        field: layout
+        value: media
+    - label: 'Media'
+      name: 'media'
+      widget: 'image'
+      required: false
+      allow_multiple: false
+      condition:
+        field: layout
+        value: media
+    - label: 'CTA Text'
+      name: 'ctaText'
+      widget: 'markdown'
+      required: false
+    - label: 'Highlighted Text'
+      name: 'highlightedText'
+      widget: 'string'
+      required: false
+      condition:
+        field: layout
+        value: text
+    - label: 'Link'
+      name: 'link'
+      widget: 'object'
+      required: false
+      fields:
+        - label: 'URL'
+          name: 'url'
+          widget: 'string'
+          required: false
+        - label: 'Target'
+          name: 'target'
+          widget: 'select'
+          options: ['_self', '_blank']
+          default: '_self'
+          required: false
+        - label: 'Text'
+          name: 'text'
+          widget: 'string'
+          required: false

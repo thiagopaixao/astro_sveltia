@@ -1,0 +1,41 @@
+logosGroup: &logosGroup
+  label: 'Logos Group'
+  name: 'LogosGroup'
+  widget: 'object'
+  summary: '{{fields.logos}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'LogosGroup'
+    - label: 'Logos'
+      name: 'logos'
+      widget: 'list'
+      required: false
+      fields:
+        - label: 'Image'
+          name: 'image'
+          widget: 'image'
+          required: true
+        - label: 'Link'
+          name: 'link'
+          widget: 'object'
+          required: true
+          fields:
+            - label: 'URL'
+              name: 'url'
+              widget: 'string'
+              required: true
+            - label: 'Target'
+              name: 'target'
+              widget: 'select'
+              options: ['_blank', '_parent', '_self', 'custom']
+              required: false
+            - label: 'Custom Target'
+              name: 'customTarget'
+              widget: 'string'
+              required: false
+            - label: 'Title'
+              name: 'title'
+              widget: 'string'
+              required: false

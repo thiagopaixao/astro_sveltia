@@ -1,0 +1,45 @@
+chartBar: &chartBar
+  label: 'Chart Bar'
+  name: 'ChartBar'
+  widget: 'object'
+  summary: '{{fields.chartTitle}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'ChartBar'
+    - label: 'Chart Title'
+      name: 'chartTitle'
+      widget: 'string'
+      required: false
+    - label: 'Chart Notes'
+      name: 'chartNotes'
+      widget: 'string'
+      required: false
+    - label: 'Chart Bars'
+      name: 'chartBars'
+      widget: 'list'
+      required: false
+      fields:
+        - label: 'Label'
+          name: 'label'
+          widget: 'string'
+          required: false
+        - label: 'Color'
+          name: 'color'
+          widget: 'color'
+          required: false
+          enableAlpha: true
+          allowInput: true
+        - label: 'Number'
+          name: 'number'
+          widget: 'number'
+          required: false
+        - label: 'Number Percent'
+          name: 'numberPercent'
+          widget: 'number'
+          required: false
+          value_type: 'float'
+          min: 0
+          max: 100
+          step: 0.01

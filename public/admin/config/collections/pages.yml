@@ -1,0 +1,31 @@
+collections:
+  - name: 'pages'
+    label: 'Páginas'
+    folder: 'src/content/pages'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Título', name: 'title', widget: 'string', required: false }
+      - *pageSettings
+      - *pageTheme
+      - *mapBox
+      - label: 'Seção'
+        name: 'sections'
+        widget: 'list'
+        summary: 'Seção: {{fields.section}}'
+        collapsed: true
+        required: false
+        fields:
+          - label: 'Seção'
+            name: 'section'
+            widget: 'string'
+            required: true
+          - label: 'Componentes'
+            name: 'components'
+            widget: 'list'
+            required: false
+            types:
+              - *group
+              - *cta
+              - *map
+              - *spacer

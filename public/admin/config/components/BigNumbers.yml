@@ -1,0 +1,27 @@
+bigNumbers: &bigNumbers
+  label: 'Big Numbers'
+  name: 'BigNumbers'
+  widget: 'object'
+  summary: '{{fields.alignment}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'BigNumbers'
+    - label: 'Alignment'
+      name: 'alignment'
+      widget: 'select'
+      options: ['caption-bottom', 'caption-top']
+      default: 'caption-bottom'
+    - label: 'Items'
+      name: 'items'
+      widget: 'list'
+      fields:
+        - label: 'Number'
+          name: 'number'
+          widget: 'string'
+          required: false
+        - label: 'Caption'
+          name: 'caption'
+          widget: 'string'
+          required: false

@@ -1,0 +1,56 @@
+group: &group
+  label: 'Group'
+  name: 'Group'
+  widget: 'object'
+  summary: '{{fields.layout}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Group'
+    - label: 'Layout'
+      name: 'layout'
+      widget: 'select'
+      options: ['default']
+      default: 'default'
+    - label: 'Text Color'
+      name: 'txtColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Background Color'
+      name: 'bgColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Background Image'
+      name: 'backgroundImage'
+      widget: 'image'
+      required: false
+      allow_multiple: false
+    - label: 'Overlay'
+      name: 'overlay'
+      widget: 'select'
+      options: ['dark', 'light']
+      required: false
+    - label: 'Components'
+      name: 'components'
+      widget: 'list'
+      required: false
+      types:
+        - *text
+        - *videoEmbed
+        - *imageBlock
+        - *columnSticky
+        - *chartBar
+        - *chartPercentage
+        - *card
+        - *cardsCall
+        - *logosGroup
+        - *innerColumns
+        - *column
+        - *timeline
+        - *spacer
+        - *compare

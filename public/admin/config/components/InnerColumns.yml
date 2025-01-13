@@ -1,0 +1,50 @@
+innerColumns: &innerColumns
+  label: 'Inner Columns'
+  name: 'InnerColumns'
+  widget: 'object'
+  summary: 'Inner Columns'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'InnerColumns'
+    - label: 'Column 1'
+      name: 'column1'
+      widget: 'object'
+      required: false
+      fields:
+        - label: 'Components'
+          name: 'components'
+          widget: 'list'
+          types:
+            - *text
+            - *chartBar
+            - *chartPercentage
+            - *imageBlock
+            - *videoEmbed
+            - *logosGroup
+            - *timeline
+            - *bigNumbers
+            - *card
+            - *pullquote
+            - *spacer
+    - label: 'Column 2'
+      name: 'column2'
+      widget: 'object'
+      required: false
+      fields:
+        - label: 'Components'
+          name: 'components'
+          widget: 'list'
+          types:
+            - *text
+            - *chartBar
+            - *chartPercentage
+            - *imageBlock
+            - *videoEmbed
+            - *logosGroup
+            - *timeline
+            - *bigNumbers
+            - *card
+            - *pullquote
+            - *spacer

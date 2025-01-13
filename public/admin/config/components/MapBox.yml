@@ -1,0 +1,125 @@
+mapBox: &mapBox
+  label: 'MapBox'
+  name: 'MapBox'
+  collapsed: true
+  widget: 'object'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'MapBox'
+    - label: 'Column Align'
+      name: 'columnAlign'
+      widget: 'select'
+      options: ['left', 'center', 'right']
+      required: false
+    - label: 'Floating Text'
+      name: 'floatingText'
+      widget: 'boolean'
+      required: false
+    - label: 'Map Style'
+      name: 'style'
+      widget: 'string'
+      required: true
+    - label: 'Map Center'
+      name: 'center'
+      widget: 'list'
+      fields:
+        - { label: 'Longitude', name: 'lng', widget: 'number' }
+        - { label: 'Latitude', name: 'lat', widget: 'number' }
+      required: true
+    - label: 'Map Zoom'
+      name: 'zoom'
+      widget: 'number'
+      required: true
+    - label: 'Map Bearing'
+      name: 'bearing'
+      widget: 'number'
+      required: false
+    - label: 'Map Pitch'
+      name: 'pitch'
+      widget: 'number'
+      required: false
+    - label: 'Map Layers'
+      name: 'layers'
+      widget: 'list'
+      required: false
+    - label: 'Map Token'
+      name: 'token'
+      widget: 'string'
+      required: true
+    - label: 'Map Views'
+      name: 'views'
+      widget: 'list'
+      required: false
+      fields:
+        - label: 'View ID'
+          name: 'id'
+          widget: 'string'
+          required: true
+        - label: 'View Center'
+          name: 'center'
+          widget: 'list'
+          fields:
+            - { label: 'Longitude', name: 'lng', widget: 'number' }
+            - { label: 'Latitude', name: 'lat', widget: 'number' }
+          required: true
+        - label: 'View Duration'
+          name: 'duration'
+          widget: 'number'
+          required: true
+        - label: 'View Zoom'
+          name: 'zoom'
+          widget: 'number'
+          required: true
+        - label: 'View Bearing'
+          name: 'bearing'
+          widget: 'number'
+          required: false
+        - label: 'View Pitch'
+          name: 'pitch'
+          widget: 'number'
+          required: false
+        - label: 'View Layers'
+          name: 'layers'
+          widget: 'list'
+          required: false
+        - label: 'Mobile View'
+          name: 'mobile'
+          widget: 'object'
+          required: false
+          fields:
+            - label: 'Mobile Zoom'
+              name: 'zoom'
+              widget: 'number'
+              required: false
+        - label: 'Captions'
+          name: 'captions'
+          widget: 'object'
+          required: false
+          fields:
+            - label: 'Title'
+              name: 'title'
+              widget: 'string'
+              required: false
+            - label: 'Notes'
+              name: 'notes'
+              widget: 'string'
+              required: false
+            - label: 'Items'
+              name: 'items'
+              widget: 'list'
+              required: false
+              fields:
+                - label: 'Icon'
+                  name: 'icon'
+                  widget: 'string'
+                  required: false
+                - label: 'Text'
+                  name: 'text'
+                  widget: 'string'
+                  required: false
+    - label: 'Map View'
+      name: 'mapView'
+      widget: 'string'
+      required: false

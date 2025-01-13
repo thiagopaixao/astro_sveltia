@@ -1,0 +1,37 @@
+chartPercentage: &chartPercentage
+  label: 'Chart Percentage'
+  name: 'ChartPercentage'
+  widget: 'object'
+  summary: '{{fields.chartPercentageTitle}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'ChartPercentage'
+    - label: 'Chart Percentage Title'
+      name: 'chartPercentageTitle'
+      widget: 'string'
+      required: false
+    - label: 'Chart Notes'
+      name: 'chartPercentageNotes'
+      widget: 'string'
+      required: false
+    - label: 'Chart Percentage Values'
+      name: 'chartPercentageValues'
+      widget: 'list'
+      required: false
+      fields:
+        - label: 'Label'
+          name: 'label'
+          widget: 'string'
+          required: true
+        - label: 'Color'
+          name: 'color'
+          widget: 'color'
+          required: false
+          enableAlpha: true
+          allowInput: true
+        - label: 'Number'
+          name: 'number'
+          widget: 'number'
+          required: true

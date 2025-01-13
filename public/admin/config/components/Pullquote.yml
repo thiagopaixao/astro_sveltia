@@ -1,0 +1,30 @@
+pullquote: &pullquote
+  label: 'Pullquote'
+  name: 'Pullquote'
+  widget: 'object'
+  summary: '{{fields.content}}'
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Pullquote'
+    - label: 'Text Color'
+      name: 'txtColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Background Color'
+      name: 'bgColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
+    - label: 'Content'
+      name: 'content'
+      widget: 'markdown'
+      required: false
+    - label: 'Byline'
+      name: 'byline'
+      widget: 'string'
+      required: false
