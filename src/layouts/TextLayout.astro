@@ -1,0 +1,14 @@
+---
+const { Component, props } = Astro.props;
+const { txtColor, bgColor, content, ...otherProps } = props;
+
+// Adicionando um processador de Markdown (se necessário)
+import { marked } from 'marked';
+
+const htmlContent = content ? marked(content) : null;
+---
+
+<Component txtColor={txtColor} bgColor={bgColor} {...otherProps}>
+  {htmlContent && <Fragment set:html={htmlContent} />}
+  <slot />
+</Component>

@@ -1,0 +1,8 @@
+---
+const { Component, props } = Astro.props;
+const { mapView, ...otherProps } = props;
+---
+
+<Component mapView={mapView} {...otherProps}>
+  <slot />
+</Component>

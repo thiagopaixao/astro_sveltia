@@ -1,0 +1,11 @@
+---
+const { Component, props } = Astro.props;
+
+const componentData = {
+    ...props
+};
+---
+
+<Component {...componentData}>
+    <slot />
+</Component>

@@ -1,0 +1,11 @@
+---
+const { Component, props } = Astro.props;
+const { text, content } = props;
+
+console.log("Conteúdo TimelineBullet: ", content)
+---
+<Component text={text} content={content} >
+    <div set:html={content} >
+        <slot />
+    </div>
+</Component>

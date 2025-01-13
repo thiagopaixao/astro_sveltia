@@ -1,0 +1,10 @@
+---
+const { Component, props } = Astro.props;
+const { txtColor, bgColor, paddingTop, paddingBottom, layout, title, body, ...otherProps } = props;
+---
+
+<Component paddingTop={paddingTop} paddingBottom={paddingBottom} layout={layout} txtColor={txtColor} bgColor={bgColor} {...otherProps}>
+  {title && <h1 slot="title"><Fragment set:html={title} /></h1>}
+  
+  <slot />
+</Component>

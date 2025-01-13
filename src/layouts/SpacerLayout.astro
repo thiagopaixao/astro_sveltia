@@ -1,0 +1,8 @@
+---
+const { Component, props } = Astro.props;
+const { desktop, tablet, mobile, ...otherProps } = props;
+---
+
+<Component desktop={desktop} tablet={tablet} mobile={mobile} {...otherProps}>
+  <slot />
+</Component>

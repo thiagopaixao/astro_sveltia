@@ -1,0 +1,32 @@
+---
+const { Component, props } = Astro.props;
+const { style, center, zoom, bearing, pitch, layers, token, views } = props;
+
+const mapConfig = {
+    style,
+    center: [center[0].lng, center[0].lat],
+    zoom,
+    bearing,
+    pitch,
+    layers,
+};
+
+const mapViews = views ? views.reduce((acc, view) => {
+    acc[view.id] = {
+        center: [view.center[0].lng, view.center[0].lat],
+        duration: view.duration,
+        zoom: view.zoom,
+        bearing: view.bearing,
+        pitch: view.pitch,
+        layers: view.layers,
+        mobile: view.mobile,
+        captions: view.captions,
+    };
+    return acc;
+}, {}) : null;
+
+
+---
+<Component mapConfig={mapConfig} mapViews={mapViews} mapBoxToken={token}>
+    <slot />
+</Component>

@@ -1,0 +1,47 @@
+---
+const { Component, props } = Astro.props;
+const {
+  layout,
+  highlightedText,
+  mediaType,
+  media,
+  txtColor,
+  bgColor,
+  ctaText,
+  link,
+  imgBg,
+  overlay,
+  videoBg,
+  body
+} = props;
+
+// Se `media` for uma imagem, importamos dinamicamente
+let img;
+if (media && mediaType === 'image' && media) {
+  img = `${import.meta.env.BASE_URL}${media}`;
+}
+
+let imgSrc;
+if (imgBg) {
+    imgSrc = `${import.meta.env.BASE_URL}${imgBg}`;
+}
+
+
+---
+
+<Component
+  layout={layout}
+  highlightedText={highlightedText}
+  media={mediaType === 'image' ? img : media}
+  mediaType={mediaType}
+  text={ctaText}
+  link={link}
+  imgBg={imgSrc}
+  videoBg={videoBg}
+  txtColor={txtColor}
+  bgColor={bgColor}
+  overlay={overlay}
+>
+  {body && <Fragment set:html={body} />}
+  <slot />
+</Component>

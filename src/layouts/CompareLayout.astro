@@ -1,0 +1,19 @@
+---
+const { Component, props } = Astro.props;
+const { imageLeft, imageRight, caption } = props;
+
+let imageLeftSrc;
+let imageRightSrc;
+
+if (imageLeft) {
+    imageLeftSrc = `${import.meta.env.BASE_URL}${imageLeft}`;
+}
+
+if (imageRight) {
+    imageRightSrc = `${import.meta.env.BASE_URL}${imageRight}`;
+}
+---
+
+<Component imageLeft={imageLeftSrc} imageRight={imageRightSrc} caption={caption} >
+  <slot />
+</Component>

@@ -1,0 +1,8 @@
+---
+import Card from '../components/Card.astro';
+
+const { Component, props } = Astro.props;
+const { link, title, text, icon } = props;
+---
+
+  <Component link={link} title={title} text={text} icon={icon} />

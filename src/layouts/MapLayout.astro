@@ -1,0 +1,15 @@
+---
+const { Component, props } = Astro.props;
+const { columnAlign, floatingText, txtColor, bgColor, mapView, ...otherProps } = props;
+---
+
+<Component
+  columnAlign={columnAlign}
+  floatingText={floatingText}
+  txtColor={txtColor}
+  bgColor={bgColor}
+  mapView={mapView}
+  {...otherProps}
+>
+  <slot />
+</Component>

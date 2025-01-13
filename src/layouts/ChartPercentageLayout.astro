@@ -1,0 +1,14 @@
+---
+const { Component, props } = Astro.props;
+const { chartPercentageTitle, chartPercentageNotes, chartPercentageValues = [] } = props;
+
+const componentData = {
+    title: chartPercentageTitle,
+    notes: chartPercentageNotes,
+    values: chartPercentageValues
+};
+---
+
+<Component {...componentData}>
+    <slot />
+</Component>
