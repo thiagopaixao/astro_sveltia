@@ -1,0 +1,176 @@
+---
+import { getEntryBySlug } from 'astro:content';
+
+import Layout from "../../layouts/Layout.astro";
+import MapBox from '../../components/MapBox.astro';
+import Group from '../../components/Group.astro';
+import ColumnSticky from '../../components/ColumnSticky.astro';
+import Text from '../../components/Text.astro';
+import Cta from '../../components/Cta.astro';
+import CardsCall from '../../components/CardsCall.astro';
+import Card from '../../components/Card.astro';
+import ChartBar from '../../components/ChartBar.astro';
+import ChartPercentage from '../../components/ChartPercentage.astro';
+import Column from '../../components/Column.astro';
+import ImageBlock from '../../components/ImageBlock.astro';
+import InnerColumns from '../../components/InnerColumns.astro';
+import LogosGroup from '../../components/LogosGroup.astro';
+import VideoEmbed from '../../components/VideoEmbed.astro';
+import Map from '../../components/Map.astro';
+import MapView from '../../components/MapView.astro';
+import Spacer from '../../components/Spacer.astro';
+import Timeline from '../../components/Timeline.astro';
+import TimelineBullet from '../../components/TimelineBullet.astro';
+import BigNumbers from '../../components/BigNumbers.astro';
+import Compare from '../../components/Compare.astro';
+import Pullquote from '../../components/Pullquote.astro';
+
+// Apenas carregando dados e definindo variáveis no frontmatter
+const entry = await getEntryBySlug('pages', 'home');
+if (!entry) {
+  throw new Error('Nenhuma entrada encontrada para "home".');
+}
+
+const { title, sections } = entry.data;
+
+const componentMap = {
+  Group,
+  ColumnSticky,
+  Text,
+  Cta,
+  Card,
+  CardsCall,
+  ChartBar,
+  ChartPercentage,
+  Column,
+  ImageBlock,
+  InnerColumns,
+  LogosGroup,
+  VideoEmbed,
+  Map,
+  MapView,
+  Spacer,
+  Timeline,
+  TimelineBullet,
+  BigNumbers,
+  Compare,
+  Pullquote
+};
+
+const chartPerc = [
+  {
+    color: "#DDCE27",
+    number: 25,
+    label: "Governo",
+  },
+  {
+    color: "#006949",
+    number: 40,
+    label: "Empresa",
+  },
+  {
+    color: "#FF7967",
+    number: 35,
+    label: "Outros",
+  },
+];
+---
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+  </head>
+  <body>
+  <Layout title="Documental.xyz">
+    <main>
+      <MapBox />
+    {
+      // Toda a lógica de renderização fica aqui, no template.
+      // Não usamos <script> separado, mas a lógica não está no frontmatter.
+      // Ela está após o frontmatter, no corpo do template, o que é permitido.
+      (async function() {
+        async function renderSections(sectionsList) {
+          if (!sectionsList) return [];
+
+          const results = await Promise.all(sectionsList.map(async ({ components: componentList, section, ...sectionProps }) => {
+            
+            async function renderComponents(componentList) {
+              if (!componentList) return [];
+
+              const results = await Promise.all(componentList.map(async ({ type, components: childComponents, ...restProps }) => {
+                const Component = componentMap[type];
+                if (!Component) return null;
+
+                if (type === 'InnerColumns') {
+                  const column1 = restProps.column1;
+                  const column2 = restProps.column2;
+
+                  return (
+                    <InnerColumns>
+                      <Fragment slot="column-1">
+                        { renderComponents(column1.components)}
+                      </Fragment>
+                      <Fragment slot="column-2">
+                        {renderComponents(column2.components)}
+                      </Fragment>
+                    </InnerColumns>
+                  );
+                }
+
+                
+                let Layout = null;
+                try {
+                  const layoutModule = await import(`../../layouts/${type}Layout.astro`);
+                  Layout = layoutModule.default;
+                } catch (e) {
+                  // Caso não encontre o layout específico, seguirá sem layout.
+                }
+
+                const children = childComponents ? await renderComponents(childComponents) : [];
+
+                if (Layout) {
+                  // Se houver um layout específico, use-o
+                  return (
+                    <Layout Component={Component} props={restProps}>
+                      {children}
+                    </Layout>
+                  );
+                } else {
+                  // Caso contrário, renderize o componente diretamente
+                  return (
+                    <Component {...restProps}>
+                      {children}
+                    </Component>
+                  );
+                }
+              }));
+
+              return results;
+            }
+
+            const renderedComponents = await renderComponents(componentList);
+
+            return (
+              <section id={section} style={{ backgroundColor: 'var(--clr-bg, transparent)' }} {...sectionProps}>
+                {renderedComponents}
+              </section>
+            );
+          }));
+
+          return results;
+        }
+  
+
+        // Renderiza as seções
+        return await renderSections(sections);
+      })()
+    }
+
+
+
+
+</main>
+</Layout>
+  </body>
+</html>
