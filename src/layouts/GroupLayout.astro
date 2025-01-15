@@ -1,6 +1,6 @@
 ---
 const { Component, props } = Astro.props;
-const { txtColor, bgColor, backgroundImage, overlay } = props;
+const { id, txtColor, bgColor, backgroundImage, overlay } = props;
 
 let imgSrc;
 if (backgroundImage) {
@@ -8,7 +8,8 @@ if (backgroundImage) {
 
 }
 ---
-
-<Component txtColor={txtColor} bgColor={bgColor} imgBg={imgSrc} overlay={overlay} >
-  <slot />
-</Component>
+<section id={id} style={{ backgroundColor: 'var(--clr-bg, transparent)' }}>
+    <Component txtColor={txtColor} bgColor={bgColor} imgBg={imgSrc} overlay={overlay} >
+        <slot />
+    </Component>
+</section>

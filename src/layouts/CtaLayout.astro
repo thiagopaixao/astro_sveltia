@@ -1,6 +1,7 @@
 ---
 const { Component, props } = Astro.props;
 const {
+  id,
   layout,
   highlightedText,
   mediaType,
@@ -28,20 +29,21 @@ if (imgBg) {
 
 
 ---
-
-<Component
-  layout={layout}
-  highlightedText={highlightedText}
-  media={mediaType === 'image' ? img : media}
-  mediaType={mediaType}
-  text={ctaText}
-  link={link}
-  imgBg={imgSrc}
-  videoBg={videoBg}
-  txtColor={txtColor}
-  bgColor={bgColor}
-  overlay={overlay}
->
-  {body && <Fragment set:html={body} />}
-  <slot />
-</Component>
+<section id={id} style={{ backgroundColor: 'var(--clr-bg, transparent)' }}>
+  <Component
+    layout={layout}
+    highlightedText={highlightedText}
+    media={mediaType === 'image' ? img : media}
+    mediaType={mediaType}
+    text={ctaText}
+    link={link}
+    imgBg={imgSrc}
+    videoBg={videoBg}
+    txtColor={txtColor}
+    bgColor={bgColor}
+    overlay={overlay}
+  >
+    {body && <Fragment set:html={body} />}
+    <slot />
+  </Component>
+</section>

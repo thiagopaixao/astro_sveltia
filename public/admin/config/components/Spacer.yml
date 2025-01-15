@@ -3,6 +3,7 @@ spacer: &spacer
   name: 'Spacer'
   widget: 'object'
   summary: '{{fields.desktop}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'

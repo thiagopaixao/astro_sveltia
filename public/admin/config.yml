@@ -632,6 +632,7 @@ spacer: &spacer
   name: 'Spacer'
   widget: 'object'
   summary: '{{fields.desktop}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
@@ -867,12 +868,17 @@ group: &group
   label: 'Group'
   name: 'Group'
   widget: 'object'
-  summary: '{{fields.layout}}'
+  summary: '{{fields.id}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
       widget: 'hidden'
       default: 'Group'
+    - label: 'ID'
+      name: 'id'
+      widget: 'string'
+      required: true
     - label: 'Layout'
       name: 'layout'
       widget: 'select'
@@ -924,12 +930,17 @@ cta: &cta
   label: 'CTA'
   name: 'Cta'
   widget: 'object'
-  summary: '{{fields.layout}}'
+  summary: '{{fields.id}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
       widget: 'hidden'
       default: 'Cta'
+    - label: 'ID'
+      name: 'id'
+      widget: 'string'
+      required: true
     - label: 'Layout'
       name: 'layout'
       widget: 'select'
@@ -1004,12 +1015,17 @@ map: &map
   label: 'Map'
   name: 'Map'
   widget: 'object'
-  summary: '{{fields.columnAlign}}'
+  summary: '{{fields.id}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
       widget: 'hidden'
       default: 'Map'
+    - label: 'ID'
+      name: 'id'
+      widget: 'string'
+      required: true
     - label: 'Column Align'
       name: 'columnAlign'
       widget: 'select'
@@ -1047,30 +1063,22 @@ collections:
     label: 'Páginas'
     folder: 'src/content/pages'
     create: true
+    editor:
+      preview: false
     slug: '{{slug}}'
     fields:
       - { label: 'Título', name: 'title', widget: 'string', required: false }
       - *pageSettings
       - *pageTheme
       - *mapBox
-      - label: 'Seção'
-        name: 'sections'
+      - label: 'Componentes'
+        name: 'components'
         widget: 'list'
-        summary: 'Seção: {{fields.section}}'
-        collapsed: true
         required: false
-        fields:
-          - label: 'Seção'
-            name: 'section'
-            widget: 'string'
-            required: true
-          - label: 'Componentes'
-            name: 'components'
-            widget: 'list'
-            required: false
-            types:
-              - *group
-              - *cta
-              - *map
-              - *spacer
+        collapsed: true
+        types:
+          - *group
+          - *cta
+          - *map
+          - *spacer
 

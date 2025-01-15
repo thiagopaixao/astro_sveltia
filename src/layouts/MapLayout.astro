@@ -1,15 +1,17 @@
 ---
 const { Component, props } = Astro.props;
-const { columnAlign, floatingText, txtColor, bgColor, mapView, ...otherProps } = props;
+const { id, columnAlign, floatingText, txtColor, bgColor, mapView, ...otherProps } = props;
 ---
 
-<Component
-  columnAlign={columnAlign}
-  floatingText={floatingText}
-  txtColor={txtColor}
-  bgColor={bgColor}
-  mapView={mapView}
-  {...otherProps}
->
-  <slot />
-</Component>
+<section id={id} style={{ backgroundColor: 'var(--clr-bg, transparent)' }}>
+  <Component
+    columnAlign={columnAlign}
+    floatingText={floatingText}
+    txtColor={txtColor}
+    bgColor={bgColor}
+    mapView={mapView}
+    {...otherProps}
+  >
+    <slot />
+  </Component>
+</section>

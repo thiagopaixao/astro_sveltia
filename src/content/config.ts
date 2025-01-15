@@ -72,6 +72,7 @@ const componentSchema = z.object({
   paddingBottom: z.boolean().optional(),
   hasByline: z.boolean().optional(),
   byline: z.string().optional(),
+  id: z.string().optional(),
 
   // Atributos específicos do CTA
   highlightedText: z.string().optional(),
@@ -80,7 +81,7 @@ const componentSchema = z.object({
   ctaText: z.string().optional().transform(processMarkdown),
   link: linkSchema.optional(),
   imgBg: z.string().optional(),
-  overlay: z.string().optional(),
+  overlay: z.string().optional().nullable(),
   videoBg: z.string().optional(),
 
   // Atributos do CardsCall
@@ -160,14 +161,7 @@ const pagesCollection = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string().optional(),
-    sections: z
-      .array(
-        z.object({
-          section: z.string().optional(),
-          components: z.array(componentSchema).optional(),
-        })
-      )
-      .optional(),
+    components: z.array(componentSchema).optional(),
   }),
 });
 

@@ -2,12 +2,17 @@ cta: &cta
   label: 'CTA'
   name: 'Cta'
   widget: 'object'
-  summary: '{{fields.layout}}'
+  summary: '{{fields.id}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
       widget: 'hidden'
       default: 'Cta'
+    - label: 'ID'
+      name: 'id'
+      widget: 'string'
+      required: true
     - label: 'Layout'
       name: 'layout'
       widget: 'select'

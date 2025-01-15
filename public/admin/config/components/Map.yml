@@ -2,12 +2,17 @@ map: &map
   label: 'Map'
   name: 'Map'
   widget: 'object'
-  summary: '{{fields.columnAlign}}'
+  summary: '{{fields.id}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
       widget: 'hidden'
       default: 'Map'
+    - label: 'ID'
+      name: 'id'
+      widget: 'string'
+      required: true
     - label: 'Column Align'
       name: 'columnAlign'
       widget: 'select'

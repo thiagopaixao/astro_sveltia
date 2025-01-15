@@ -31,11 +31,11 @@ if (!entry) {
   throw new Error('Nenhuma entrada encontrada para "home".');
 }
 
-const { title, sections } = entry.data;
+const { title, components } = entry.data;
 
 const componentMap = {
-  Group,
-  ColumnSticky,
+    Group,
+    ColumnSticky,
   Text,
   Cta,
   Card,
@@ -90,72 +90,55 @@ const chartPerc = [
       // Não usamos <script> separado, mas a lógica não está no frontmatter.
       // Ela está após o frontmatter, no corpo do template, o que é permitido.
       (async function() {
-        async function renderSections(sectionsList) {
-          if (!sectionsList) return [];
+        async function renderComponents(componentList) {
+          if (!componentList) return [];
 
-          const results = await Promise.all(sectionsList.map(async ({ components: componentList, section, ...sectionProps }) => {
-            
-            async function renderComponents(componentList) {
-              if (!componentList) return [];
+          const results = await Promise.all(componentList.map(async ({ type, components: childComponents, ...restProps }) => {
+            const Component = componentMap[type];
+            if (!Component) return null;
 
-              const results = await Promise.all(componentList.map(async ({ type, components: childComponents, ...restProps }) => {
-                const Component = componentMap[type];
-                if (!Component) return null;
+            if (type === 'InnerColumns') {
+              const column1 = restProps.column1;
+              const column2 = restProps.column2;
 
-                if (type === 'InnerColumns') {
-                  const column1 = restProps.column1;
-                  const column2 = restProps.column2;
-
-                  return (
-                    <InnerColumns>
-                      <Fragment slot="column-1">
-                        { renderComponents(column1.components)}
-                      </Fragment>
-                      <Fragment slot="column-2">
-                        {renderComponents(column2.components)}
-                      </Fragment>
-                    </InnerColumns>
-                  );
-                }
-
-                
-                let Layout = null;
-                try {
-                  const layoutModule = await import(`../../layouts/${type}Layout.astro`);
-                  Layout = layoutModule.default;
-                } catch (e) {
-                  // Caso não encontre o layout específico, seguirá sem layout.
-                }
-
-                const children = childComponents ? await renderComponents(childComponents) : [];
-
-                if (Layout) {
-                  // Se houver um layout específico, use-o
-                  return (
-                    <Layout Component={Component} props={restProps}>
-                      {children}
-                    </Layout>
-                  );
-                } else {
-                  // Caso contrário, renderize o componente diretamente
-                  return (
-                    <Component {...restProps}>
-                      {children}
-                    </Component>
-                  );
-                }
-              }));
-
-              return results;
+              return (
+                <InnerColumns>
+                  <Fragment slot="column-1">
+                    { renderComponents(column1.components)}
+                  </Fragment>
+                  <Fragment slot="column-2">
+                    {renderComponents(column2.components)}
+                  </Fragment>
+                </InnerColumns>
+              );
             }
 
-            const renderedComponents = await renderComponents(componentList);
+            
+            let Layout = null;
+            try {
+              const layoutModule = await import(`../../layouts/${type}Layout.astro`);
+              Layout = layoutModule.default;
+            } catch (e) {
+              // Caso não encontre o layout específico, seguirá sem layout.
+            }
 
-            return (
-              <section id={section} style={{ backgroundColor: 'var(--clr-bg, transparent)' }} {...sectionProps}>
-                {renderedComponents}
-              </section>
-            );
+            const children = childComponents ? await renderComponents(childComponents) : [];
+
+            if (Layout) {
+              // Se houver um layout específico, use-o
+              return (
+                <Layout Component={Component} props={restProps}>
+                  {children}
+                </Layout>
+              );
+            } else {
+              // Caso contrário, renderize o componente diretamente
+              return (
+                <Component {...restProps}>
+                  {children}
+                </Component>
+              );
+            }
           }));
 
           return results;
@@ -163,7 +146,7 @@ const chartPerc = [
   
 
         // Renderiza as seções
-        return await renderSections(sections);
+        return await renderComponents(components);
       })()
     }
 
