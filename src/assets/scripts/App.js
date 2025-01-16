@@ -1,8 +1,9 @@
 import EnteringAnimations from './EnteringAnimations';
+import ScrollProgressionBar from './ScrollProgressionBar';
 import MapBoxHandler from './MapBoxHandler';
 
 new EnteringAnimations();
-
+new ScrollProgressionBar();
 
 //Mapbox
 window.mapBoxHandler = new MapBoxHandler();
