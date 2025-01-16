@@ -6,20 +6,22 @@ const { src, wide } = Astro.props;
 // src recebe a url direta da imagem
 // wide recebe booleano
 
-const hasCaption = Astro.slots.has('default');
+const hasCaption = Astro.slots.has("default");
 ---
 
-<figure class:list={["image reveal--fadeInUp", { "image--wide": wide }]}>
-  <Image src={src} alt="" />
-  {
-    hasCaption && (
-      <figcaption>
-        <Caption>
-          <slot />
-        </Caption>
-      </figcaption>
-    )
-  }
+<figure class:list={["image", { "image--wide": wide }]}>
+  <div class="reveal--fadeInUp">
+    <Image src={src} alt="" />
+    {
+      hasCaption && (
+        <figcaption>
+          <Caption>
+            <slot />
+          </Caption>
+        </figcaption>
+      )
+    }
+  </div>
 </figure>
 
 <style lang="scss">
@@ -29,7 +31,7 @@ const hasCaption = Astro.slots.has('default');
   .image {
     width: 100%;
     &:not(:first-child),
-    :global(+ *)  {
+    :global(+ *) {
       margin-top: var(--mt-m);
     }
 
@@ -45,28 +47,27 @@ const hasCaption = Astro.slots.has('default');
     }
   }
 
-  
   :global(.columns:not(.columns--33-66) .columns__column-2 .image--wide) {
     :global(img) {
       @include media-break-up(m) {
-        width: calc(100% + grrr-cols-size(1,1) + var(--atnl-margin));
+        width: calc(100% + grrr-cols-size(1, 1) + var(--atnl-margin));
       }
     }
   }
- 
+
   :global(.columns--33-66 .columns__column-1 .image--wide) {
     @include media-break-up(m) {
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-end;
-        
+
       :global(img) {
-        width: calc(100% + grrr-cols-size(1,1) + var(--atnl-margin));
+        width: calc(100% + grrr-cols-size(1, 1) + var(--atnl-margin));
       }
     }
   }
 
-  :global(.column .image--wide) {   
+  :global(.column .image--wide) {
     @include media-break-down(l) {
       width: calc(100% + var(--atnl-margin) * 2);
       transform: translateX(calc(-1 * var(--atnl-margin)));
@@ -74,17 +75,20 @@ const hasCaption = Astro.slots.has('default');
 
     @include media-break-up(l) {
       width: grrr-cols-size(10);
-      transform: translateX(calc(-1 * ((100vw - 657px) / 2) + grrr-cols-size(1, 1) + var(--atnl-margin)));
+      transform: translateX(
+        calc(
+          -1 * ((100vw - 657px) / 2) + grrr-cols-size(1, 1) + var(--atnl-margin)
+        )
+      );
     }
-    
+
     @include media-break-up(xl) {
       transform: translateX(calc(-1 * grrr-cols-size(2, 1)));
     }
 
     &,
-    :global(+ *)  {
+    :global(+ *) {
       margin-top: var(--mt-l);
     }
   }
-
 </style>

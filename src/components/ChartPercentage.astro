@@ -5,18 +5,14 @@ const { title, notes, values } = Astro.props;
 ---
 
 <div class="chart-percentage reveal--fadeInUp">
-  <span class="chart-percentage__title">{title}</span>
+  <span class="chart-percentage__title reveal--fadeInUp">{title}</span>
   <div class="chart-percentage__bars">
     {
       values &&
-        values.map((data) => (
-          //valores:
-          //data.color
-          //data.number
-          //data.label
+        values.map((data, index) => (
           <div
             class="chart-percentage__bar"
-            style={`--clr-chart:${data.color}; --data-perc:${data.number}%`}
+            style={`--clr-chart:${data.color}; --data-perc:${data.number}%; --index:${index}`}
           />
         ))
     }
@@ -24,10 +20,10 @@ const { title, notes, values } = Astro.props;
   <div class="chart-percentage__captions">
     {
       values &&
-        values.map((data) => (
+        values.map((data, index) => (
           <div
             class="chart-percentage__caption"
-            style={`--clr-chart:${data.color};`}
+            style={`--clr-chart:${data.color}; --index:${index}`}
           >
             <span class="chart-percentage__label">
               {data?.label ? data.label + " - " : ""}
@@ -37,7 +33,7 @@ const { title, notes, values } = Astro.props;
         ))
     }
   </div>
-  <div class="chart-percentage__notes">
+  <div class="chart-percentage__notes reveal--fadeInUp">
     <Caption>
       {notes}
     </Caption>
@@ -48,6 +44,7 @@ const { title, notes, values } = Astro.props;
   @use "../assets/styles/config/config" as *;
 
   .chart-percentage {
+    $self: &;
     &:not(:first-child),
     & :global(+ *) {
       margin-top: var(--mt-m);
@@ -64,14 +61,18 @@ const { title, notes, values } = Astro.props;
     }
 
     &__bar {
-      flex-basis: var(--data-perc);
+      flex-basis: 0;
       height: 100px;
       background-color: var(--clr-chart);
+      transition: 1s ease .5s;
+
+      #{$self}.reveal & {
+        flex-basis: var(--data-perc);
+      }
     }
 
     &__captions {
       margin-top: 24px;
-     
     }
 
     &__caption {
@@ -79,6 +80,14 @@ const { title, notes, values } = Astro.props;
       margin-right: 32px;
       display: inline-block;
       vertical-align: middle;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: 1s ease .5s;
+
+      #{$self}.reveal & {
+        opacity: 1;
+        transform: translateY(0);
+      }
 
       &::before {
         content: "";
