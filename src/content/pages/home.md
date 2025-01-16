@@ -134,6 +134,7 @@ components:
         paddingTop: false
         paddingBottom: false
         invertOnMobile: false
+        columnsAlign: 66-33
         column1:
           components:
             - type: Text
@@ -155,11 +156,14 @@ components:
               src: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-fe57U1A5yX8%2FTdQcZDWOZfI%2FAAAAAAAAAYU%2FQnk57WOAQ8c%2Fs1600%2Fmontanha.jpg&f=1&nofb=1&ipt=0b81b3d566de6a8fa4c85b3fc1ab4bb16b504c7d93f9307433ddc5d580d50bdd&ipo=images
               alt: magem
               description: Porta felis mollis aliquet rutrum, id dis diam. Tincidunt fringilla blandit, fames magnis commodo nisi. Fames erat morbi nostra sapien potenti.
-            - type: Text
-              hasDropCap: false
-              txtColor: ''
-              bgColor: ''
-              content: ''
+      - type: Slider
+        slides:
+          - image: /uploads/map-1.png
+            caption: Imagem 1
+          - image: /uploads/map.png
+            caption: Imagem 2
+          - image: /uploads/thumb.png
+            caption: Imagem 3
     backgroundImage: ''
   - type: Group
     id: Timeline

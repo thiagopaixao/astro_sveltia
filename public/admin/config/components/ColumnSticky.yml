@@ -57,3 +57,4 @@ columnSticky: &columnSticky
         - *compare
         - *pullquote
         - *spacer
+        - *slider

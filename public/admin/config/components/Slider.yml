@@ -1,0 +1,24 @@
+slider: &slider
+  label: 'Slider'
+  name: 'Slider'
+  widget: 'object'
+  summary: '{{fields.slides}}'
+  collapsed: true
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Slider'
+    - label: 'Slides'
+      name: 'slides'
+      widget: 'list'
+      required: false
+      fields:
+        - label: 'Image'
+          name: 'image'
+          widget: 'image'
+          required: false
+        - label: 'Caption'
+          name: 'caption'
+          widget: 'string'
+          required: false

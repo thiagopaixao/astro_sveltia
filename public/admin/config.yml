@@ -747,6 +747,31 @@ gallery: &gallery
           widget: 'markdown'
           required: false
 
+slider: &slider
+  label: 'Slider'
+  name: 'Slider'
+  widget: 'object'
+  summary: '{{fields.slides}}'
+  collapsed: true
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Slider'
+    - label: 'Slides'
+      name: 'slides'
+      widget: 'list'
+      required: false
+      fields:
+        - label: 'Image'
+          name: 'image'
+          widget: 'image'
+          required: false
+        - label: 'Caption'
+          name: 'caption'
+          widget: 'string'
+          required: false
+
 timeline: &timeline
   label: 'Timeline'
   name: 'Timeline'
@@ -797,6 +822,7 @@ innerColumns: &innerColumns
             - *pullquote
             - *spacer
             - *gallery
+            - *slider
     - label: 'Column 2'
       name: 'column2'
       widget: 'object'
@@ -818,6 +844,7 @@ innerColumns: &innerColumns
             - *pullquote
             - *spacer
             - *gallery
+            - *slider
 
 column: &column
   label: 'Column'
@@ -854,6 +881,7 @@ column: &column
         - *pullquote
         - *spacer
         - *gallery
+        - *slider
 
 
 columns: &columns
@@ -907,6 +935,7 @@ columns: &columns
             - *pullquote
             - *spacer
             - *gallery
+            - *slider
     - label: 'Column 2'
       name: 'column2'
       widget: 'object'
@@ -929,6 +958,7 @@ columns: &columns
             - *pullquote
             - *spacer
             - *gallery
+            - *slider
 columnSticky: &columnSticky
   label: 'Column Sticky'
   name: 'ColumnSticky'
@@ -988,6 +1018,7 @@ columnSticky: &columnSticky
         - *compare
         - *pullquote
         - *spacer
+        - *slider
 
 group: &group
   label: 'Group'
@@ -1070,6 +1101,7 @@ group: &group
         - *spacer
         - *compare
         - *gallery
+        - *slider
 
 cta: &cta
   label: 'CTA'

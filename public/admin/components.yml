@@ -18,6 +18,7 @@ components:
   - components/TimelineBullet.yml
   - components/Pullquote.yml
   - components/Gallery.yml
+  - components/Slider.yml
 
   # Componentes que dependem dos anteriores
   - components/Timeline.yml

@@ -49,6 +49,7 @@ columns: &columns
             - *pullquote
             - *spacer
             - *gallery
+            - *slider
     - label: 'Column 2'
       name: 'column2'
       widget: 'object'
@@ -71,3 +72,4 @@ columns: &columns
             - *pullquote
             - *spacer
             - *gallery
+            - *slider

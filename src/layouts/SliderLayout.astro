@@ -1,0 +1,15 @@
+---
+const { Component, props } = Astro.props;
+const { slides = [] } = props;
+
+// Atualiza o array de slides substituindo a imagem original por `thumb` localizada em public/uploads
+const updatedSlides = slides.map(slide => {
+  let updatedSlide = { ...slide };
+    if (updatedSlide.image) {
+        updatedSlide.image = slide.image.startsWith('http') ? slide.image : `${import.meta.env.BASE_URL}${slide.image}`;
+    }
+  return updatedSlide;
+});
+---
+
+  <Component slides={updatedSlides} />

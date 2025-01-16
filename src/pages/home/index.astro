@@ -26,6 +26,7 @@ import BigNumbers from '../../components/BigNumbers.astro';
 import Compare from '../../components/Compare.astro';
 import Pullquote from '../../components/Pullquote.astro';
 import Gallery from '../../components/Gallery.astro';
+import Slider from '../../components/Slider.astro';
 
 // Apenas carregando dados e definindo variáveis no frontmatter
 const entry = await getEntryBySlug('pages', 'home');
@@ -58,7 +59,8 @@ const componentMap = {
   BigNumbers,
   Compare,
   Pullquote,
-  Gallery
+  Gallery,
+  Slider
 };
 
 const chartPerc = [

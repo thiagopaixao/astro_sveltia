@@ -33,4 +33,5 @@ column: &column
         - *pullquote
         - *spacer
         - *gallery
+        - *slider
 

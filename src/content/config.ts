@@ -179,6 +179,16 @@ const componentSchema = z.object({
     )
     .optional(),
 
+  // Atributos do Slider
+  slides: z
+    .array(
+      z.object({
+        image: z.string().optional(),
+        caption: z.string().optional(),
+      })
+    )
+    .optional(),
+
   // Caso possua subcomponentes
   components: z.array(z.any()).optional(),
   //id: z.string().optional(),

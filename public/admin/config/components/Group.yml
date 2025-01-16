@@ -79,3 +79,4 @@ group: &group
         - *spacer
         - *compare
         - *gallery
+        - *slider
