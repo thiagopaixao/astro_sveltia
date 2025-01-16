@@ -17,6 +17,7 @@ components:
   - components/Spacer.yml
   - components/TimelineBullet.yml
   - components/Pullquote.yml
+  - components/Gallery.yml
 
   # Componentes que dependem dos anteriores
   - components/Timeline.yml

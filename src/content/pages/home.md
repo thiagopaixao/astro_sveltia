@@ -297,6 +297,9 @@ components:
     overlay: ''
     components:
       - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
         columnsAlign: 66-33
         column1:
           components:
@@ -339,11 +342,16 @@ components:
                   numberPercent: 65
         column2:
           components:
-            - type: Text
-              hasDropCap: false
-              txtColor: ''
-              bgColor: ''
-              content: ''
+            - type: Gallery
+              description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+              uniqid: '01'
+              images:
+                - image: /uploads/map.png
+                  caption: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                - image: /uploads/map-1.png
+                  caption: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                - image: /uploads/thumb.png
+                  caption: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
     backgroundImage: ''
   - type: Group
     id: Destaque

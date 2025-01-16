@@ -32,4 +32,5 @@ column: &column
         - *compare
         - *pullquote
         - *spacer
+        - *gallery
 

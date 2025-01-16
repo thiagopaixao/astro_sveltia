@@ -714,6 +714,39 @@ pullquote: &pullquote
       widget: 'string'
       required: false
 
+gallery: &gallery
+  label: 'Gallery'
+  name: 'Gallery'
+  widget: 'object'
+  summary: '{{fields.uniqid}}'
+  collapsed: true
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Gallery'
+    - label: 'Unique ID'
+      name: 'uniqid'
+      widget: 'string'
+      required: true
+    - label: 'Description'
+      name: 'description'
+      widget: 'markdown'
+      required: false
+    - label: 'Images'
+      name: 'images'
+      widget: 'list'
+      required: false
+      fields:
+        - label: 'Image'
+          name: 'image'
+          widget: 'image'
+          required: false
+        - label: 'Caption'
+          name: 'caption'
+          widget: 'markdown'
+          required: false
+
 timeline: &timeline
   label: 'Timeline'
   name: 'Timeline'
@@ -763,6 +796,7 @@ innerColumns: &innerColumns
             - *card
             - *pullquote
             - *spacer
+            - *gallery
     - label: 'Column 2'
       name: 'column2'
       widget: 'object'
@@ -773,6 +807,17 @@ innerColumns: &innerColumns
           widget: 'list'
           types:
             - *text
+            - *chartBar
+            - *chartPercentage
+            - *imageBlock
+            - *videoEmbed
+            - *logosGroup
+            - *timeline
+            - *bigNumbers
+            - *card
+            - *pullquote
+            - *spacer
+            - *gallery
 
 column: &column
   label: 'Column'
@@ -808,6 +853,7 @@ column: &column
         - *compare
         - *pullquote
         - *spacer
+        - *gallery
 
 
 columns: &columns
@@ -860,6 +906,7 @@ columns: &columns
             - *card
             - *pullquote
             - *spacer
+            - *gallery
     - label: 'Column 2'
       name: 'column2'
       widget: 'object'
@@ -881,6 +928,7 @@ columns: &columns
             - *card
             - *pullquote
             - *spacer
+            - *gallery
 columnSticky: &columnSticky
   label: 'Column Sticky'
   name: 'ColumnSticky'
@@ -1021,6 +1069,7 @@ group: &group
         - *timeline
         - *spacer
         - *compare
+        - *gallery
 
 cta: &cta
   label: 'CTA'

@@ -1,0 +1,32 @@
+gallery: &gallery
+  label: 'Gallery'
+  name: 'Gallery'
+  widget: 'object'
+  summary: '{{fields.uniqid}}'
+  collapsed: true
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Gallery'
+    - label: 'Unique ID'
+      name: 'uniqid'
+      widget: 'string'
+      required: true
+    - label: 'Description'
+      name: 'description'
+      widget: 'markdown'
+      required: false
+    - label: 'Images'
+      name: 'images'
+      widget: 'list'
+      required: false
+      fields:
+        - label: 'Image'
+          name: 'image'
+          widget: 'image'
+          required: false
+        - label: 'Caption'
+          name: 'caption'
+          widget: 'markdown'
+          required: false

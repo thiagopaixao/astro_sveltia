@@ -1,0 +1,22 @@
+---
+import Group from '../components/Group.astro';
+
+const { Component, props } = Astro.props;
+const {  ...gallery } = props;
+
+// Atualiza o array de imagens substituindo a imagem original por `thumb` localizada em public/uploads
+let updatedImages = gallery.images.map(img => {
+  let updatedImg = { ...img };
+    if (updatedImg.image) {
+        updatedImg.image = img.image.startsWith('http') ? img.image : `${import.meta.env.BASE_URL}${img.image}`;
+    }
+  return updatedImg;
+});
+
+const updatedGallery = {
+    ...gallery,
+    images: updatedImages
+  };
+---
+
+  <Component {...updatedGallery} />

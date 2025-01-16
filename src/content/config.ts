@@ -167,6 +167,18 @@ const componentSchema = z.object({
   tablet: z.string().optional(),
   mobile: z.string().optional(),
 
+  // Atributos do Gallery
+  uniqid: z.string().optional(),
+  //description: z.string().optional().transform(processMarkdown),
+  images: z
+    .array(
+      z.object({
+        image: z.string().optional(),
+        caption: z.string().optional().transform(processMarkdown),
+      })
+    )
+    .optional(),
+
   // Caso possua subcomponentes
   components: z.array(z.any()).optional(),
   //id: z.string().optional(),

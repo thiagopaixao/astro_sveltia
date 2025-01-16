@@ -10,7 +10,7 @@ const amountLabel = `${images.length} imagens`; // prever que o termo "imagens" 
   <div class="gallery-card__thumbs">
     {
       images &&
-        images.map((img, index) => {return index <= 2 && <Image src={img.image} alt="" />;})
+        images.map((img, index) => {return index <= 2 && <Image src={img.image} alt="" width="100%" height="100%" />;})
     }
   </div>
   {
@@ -81,7 +81,7 @@ const amountLabel = `${images.length} imagens`; // prever que o termo "imagens" 
                 <div class="swiper-slide">
                   <div class="gallery-modal__item">
                     <figure>
-                      <Image src={img.image} alt="" />
+                      <Image src={img.image} alt="" width="100%" height="100%" />
                     </figure>
                     <div class="gallery-modal__description">
                       <div class="gallery-modal__description-holder">
