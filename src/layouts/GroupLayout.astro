@@ -1,15 +1,31 @@
 ---
 const { Component, props } = Astro.props;
-const { id, txtColor, bgColor, backgroundImage, overlay } = props;
+const { id, txtColor, bgColor, backgroundMedia, overlay } = props;
 
-let imgSrc;
-if (backgroundImage) {
-    imgSrc = backgroundImage.startsWith('http') ? backgroundImage : `${import.meta.env.BASE_URL}${backgroundImage}`;
+let imgBg;
+let videoBg;
 
+if (backgroundMedia && backgroundMedia.length > 0) {
+    const media = backgroundMedia[0];
+    if (media.type === 'backgroundImage' && media.imgSrc) {
+        imgBg = media.imgSrc;
+        imgBg = imgBg.startsWith('http') ? imgBg : `${import.meta.env.BASE_URL}${imgBg}`;
+    } else if (media.type === 'backgroundVideo' && media.videoSrc) {
+        videoBg = media.videoSrc;
+        videoBg = videoBg.startsWith('http') ? videoBg : `${import.meta.env.BASE_URL}${videoBg}`;
+    }
 }
+
 ---
-<section id={id} style={{ backgroundColor: 'var(--clr-bg, transparent)' }}>
-    <Component txtColor={txtColor} bgColor={bgColor} imgBg={imgSrc} overlay={overlay} >
+
+<section id={id} style={{ backgroundColor: bgColor || 'transparent', color: txtColor || 'inherit' }}>
+    <Component
+        txtColor={txtColor}
+        bgColor={bgColor}
+        imgBg={imgBg}
+        videoBg={videoBg}
+        overlay={overlay}
+    >
         <slot />
     </Component>
 </section>

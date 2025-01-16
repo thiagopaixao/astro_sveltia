@@ -40,8 +40,10 @@ components:
     layout: default
     txtColor: '#e3e3e3ff'
     bgColor: '#006949ff'
-    backgroundImage: /uploads/group-bg.png
-    overlay: ''
+    backgroundMedia:
+      - type: backgroundVideo
+        videoSrc: https://documental.xyz/themes/documental/video/expulsiones-intro-low.mp4
+    overlay: dark
     components:
       - type: ColumnSticky
         hasDropCap: false
@@ -58,12 +60,12 @@ components:
             bgColor: ''
             content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
         body: ''
+    backgroundImage: /uploads/group-bg.png
   - type: Group
     id: TextoIntrodução
     layout: default
     txtColor: '#000009ff'
     bgColor: '#e3e3e3ff'
-    backgroundImage: ''
     overlay: ''
     components:
       - type: Columns
@@ -90,6 +92,7 @@ components:
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
 
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+    backgroundImage: ''
   - type: Map
     id: Mapas
     txtColor: '#f0ead9ff'
@@ -125,7 +128,6 @@ components:
     layout: default
     txtColor: '#000009ff'
     bgColor: '#f0ead9ff'
-    backgroundImage: ''
     overlay: ''
     components:
       - type: Columns
@@ -158,12 +160,12 @@ components:
               txtColor: ''
               bgColor: ''
               content: ''
+    backgroundImage: ''
   - type: Group
     id: Timeline
     layout: default
     txtColor: '#f0ead9ff'
     bgColor: '#00694900'
-    backgroundImage: ''
     overlay: light
     components:
       - type: InnerColumns
@@ -198,12 +200,12 @@ components:
       - type: Spacer
         desktop: '10'
         mobile: '10'
+    backgroundImage: ''
   - type: Group
     id: Dados
     layout: default
     txtColor: '#000009ff'
     bgColor: '#f0ead9ff'
-    backgroundImage: ''
     overlay: ''
     components:
       - type: Column
@@ -250,12 +252,12 @@ components:
         imageLeft: /uploads/map.png
         imageRight: /uploads/map-1.png
         caption: Imagem de comparação
+    backgroundImage: ''
   - type: Group
     id: Gráficos Destaque
     layout: default
     txtColor: '#f0ead9ff'
     bgColor: '#006949ff'
-    backgroundImage: ''
     overlay: ''
     components:
       - type: Column
@@ -286,12 +288,12 @@ components:
                 color: '#ff7967ff'
                 number: 230
                 numberPercent: 90
+    backgroundImage: ''
   - type: Group
     id: Gráficos
     layout: default
     txtColor: '#000009ff'
     bgColor: '#ffffffff'
-    backgroundImage: ''
     overlay: ''
     components:
       - type: Columns
@@ -342,12 +344,15 @@ components:
               txtColor: ''
               bgColor: ''
               content: ''
+    backgroundImage: ''
   - type: Group
     id: Destaque
     layout: default
     txtColor: '#f0ead9ff'
     bgColor: '#ffffff00'
-    backgroundImage: /uploads/group-bg-2.png
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/group-bg-2.png
     overlay: light
     components:
       - type: ColumnSticky
@@ -358,12 +363,12 @@ components:
         layout: text-bigger
         title: ALTER DO CHÃO ALSO NEEDDS TO BE RECOGNIZED AS AN INDIGENOUS LAND (TI) WITH THE MILLENNIAL PRESENCE OF THE BORARI PEOPLE
         components: []
+    backgroundImage: /uploads/group-bg-2.png
   - type: Group
     id: Cards
     layout: default
     txtColor: '#000009ff'
     bgColor: ''
-    backgroundImage: ''
     overlay: ''
     components:
       - type: Columns
@@ -393,6 +398,7 @@ components:
                 customTarget: ''
                 text: ''
               icon: <span class="material-symbols-outlined">papper</span>
+    backgroundImage: ''
   - type: Cta
     id: CTAs
     layout: text
@@ -410,7 +416,6 @@ components:
     layout: default
     txtColor: '#000009ff'
     bgColor: '#f0ead9ff'
-    backgroundImage: ''
     overlay: ''
     components:
       - type: Columns
@@ -433,12 +438,12 @@ components:
               content: NEQE PORRO QUISQUAM EST QUI DOLOREM IPSUM QUIA DOLOR SIT AMET, CONSECTETUR, ADIPISCI VELIT, SED QUIA NON NUMQUAM EIUS MODI TEMPORA
               byline: Sed ut perspiciatis unde iste natus error sit voluptatem accusantium
               hasByline: false
+    backgroundImage: ''
   - type: Group
     id: ReferenciasCreditos
     layout: default
     txtColor: '#f0ead9ff'
     bgColor: '#006949ff'
-    backgroundImage: ''
     overlay: ''
     components:
       - type: Columns
@@ -513,12 +518,12 @@ components:
                 **Research assistant:** Ingra Maciel e Debora Pio
                 **Web developer:** Marlus Araújo
                 contato@medialabufrj.net
+    backgroundImage: ''
   - type: Group
     id: Apoio
     layout: default
     txtColor: '#000009ff'
     bgColor: '#f0ead9ff'
-    backgroundImage: ''
     overlay: dark
     components:
       - type: Column
@@ -574,6 +579,7 @@ components:
                   target: ''
                   customTarget: ''
                   title: ''
+    backgroundImage: ''
   - type: Group
     id: CardsCall
     layout: default

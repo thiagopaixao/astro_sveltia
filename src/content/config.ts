@@ -81,8 +81,22 @@ const componentSchema = z.object({
   ctaText: z.string().optional().transform(processMarkdown),
   link: linkSchema.optional(),
   imgBg: z.string().optional(),
-  overlay: z.string().optional().nullable(),
   videoBg: z.string().optional(),
+  overlay: z.string().optional().nullable(),
+  backgroundMedia: z
+    .array(
+      z.discriminatedUnion('type', [
+        z.object({
+          type: z.literal('backgroundImage'),
+          imgSrc: z.string().optional(),
+        }),
+        z.object({
+          type: z.literal('backgroundVideo'),
+          videoSrc: z.string().optional(),
+        }),
+      ])
+    )
+    .optional(),
 
   // Atributos do CardsCall
   cardsCallArr: z.array(cardSchema).optional(),

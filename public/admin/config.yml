@@ -973,11 +973,30 @@ group: &group
       required: false
       enableAlpha: true
       allowInput: true
-    - label: 'Background Image'
-      name: 'backgroundImage'
-      widget: 'image'
+    - label: 'Add Background media'
+      name: 'backgroundMedia'
       required: false
-      allow_multiple: false
+      widget: 'list'
+      max: 1
+      types:
+        - label: 'Image'
+          name: 'backgroundImage'
+          widget: 'object'
+          fields:
+            - label: 'Image'
+              name: 'imgSrc'
+              widget: 'image'
+              required: false
+              allow_multiple: false
+        - label: 'Video'
+          name: 'backgroundVideo'
+          widget: 'object'
+          fields:
+            - label: 'Video'
+              name: 'videoSrc'
+              widget: 'file'
+              allow_multiple: false
+              required: false
     - label: 'Overlay'
       name: 'overlay'
       widget: 'select'
