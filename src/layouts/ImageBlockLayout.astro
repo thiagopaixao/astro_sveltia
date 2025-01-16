@@ -3,7 +3,7 @@ const { Component, props } = Astro.props;
 const { src, alt, wideImage, description } = props;
 
 const componentData = {
-    src: src ? `${import.meta.env.BASE_URL}${src}` : null,
+    src: src.startsWith('http') ? src : `${import.meta.env.BASE_URL}${src}`,
     alt: alt || "",
     wide: wideImage || false,
     description: description

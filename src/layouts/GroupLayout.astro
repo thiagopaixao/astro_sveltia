@@ -4,7 +4,7 @@ const { id, txtColor, bgColor, backgroundImage, overlay } = props;
 
 let imgSrc;
 if (backgroundImage) {
-    imgSrc = `${import.meta.env.BASE_URL}${backgroundImage}`;
+    imgSrc = backgroundImage.startsWith('http') ? backgroundImage : `${import.meta.env.BASE_URL}${backgroundImage}`;
 
 }
 ---

@@ -6,7 +6,7 @@ const { logos = []} = props;
 const updatedLogos = logos.map(logo => {
   let updatedImg = { ...logo.image };
     if (updatedImg) {
-        updatedImg = `${import.meta.env.BASE_URL}${logo.image}`;
+        updatedImg = logo.image.startsWith('http') ? logo.image : `${import.meta.env.BASE_URL}${logo.image}`;
     }
   return {
     ...logo,
