@@ -22,6 +22,7 @@ components:
   - components/Timeline.yml
   - components/InnerColumns.yml
   - components/Column.yml
+  - components/Columns.yml
   - components/ColumnSticky.yml
   - components/Group.yml
   - components/Cta.yml

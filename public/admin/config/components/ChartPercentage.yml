@@ -3,6 +3,7 @@ chartPercentage: &chartPercentage
   name: 'ChartPercentage'
   widget: 'object'
   summary: '{{fields.chartPercentageTitle}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'

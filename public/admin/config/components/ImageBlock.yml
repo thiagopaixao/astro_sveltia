@@ -3,6 +3,7 @@ imageBlock: &imageBlock
   name: 'ImageBlock'
   widget: 'object'
   summary: '{{fields.src}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'

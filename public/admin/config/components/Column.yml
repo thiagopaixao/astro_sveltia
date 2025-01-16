@@ -2,6 +2,7 @@ column: &column
   label: 'Column'
   name: 'Column'
   widget: 'object'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
@@ -26,7 +27,6 @@ column: &column
         - *imageBlock
         - *videoEmbed
         - *logosGroup
-        - *innerColumns
         - *card
         - *cardsCall
         - *compare

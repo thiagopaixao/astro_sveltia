@@ -3,6 +3,7 @@ chartBar: &chartBar
   name: 'ChartBar'
   widget: 'object'
   summary: '{{fields.chartTitle}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'

@@ -3,6 +3,7 @@ timeline: &timeline
   name: 'Timeline'
   widget: 'object'
   summary: 'Timeline'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'

@@ -54,8 +54,8 @@ group: &group
         - *card
         - *cardsCall
         - *logosGroup
-        - *innerColumns
         - *column
+        - *columns
         - *timeline
         - *spacer
         - *compare

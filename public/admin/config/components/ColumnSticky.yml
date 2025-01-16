@@ -3,6 +3,7 @@ columnSticky: &columnSticky
   name: 'ColumnSticky'
   widget: 'object'
   summary: '{{fields.title}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'

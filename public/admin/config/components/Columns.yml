@@ -1,0 +1,71 @@
+columns: &columns
+  label: 'Columns'
+  name: 'Columns'
+  widget: 'object'
+  collapsed: true
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Columns'
+    - label: 'Padding Top'
+      name: paddingTop
+      widget: boolean
+      default: false
+    - label: 'Padding Bottom'
+      name: paddingBottom
+      widget: boolean
+      default: false
+    - label: 'Invert on Mobile'
+      name: invertOnMobile
+      widget: boolean
+      default: false
+    - label: 'Alignment'
+      name: 'columnsAlign'
+      widget: 'select'
+      default: 66-33
+      options:
+        - { label: 'Bigger left', value: 66-33 }
+        - { label: 'Bigger right', value: '33-66' }
+    - label: 'Column 1'
+      name: 'column1'
+      widget: 'object'
+      required: false
+      fields:
+        - label: 'Components'
+          name: 'components'
+          widget: 'list'
+          types:
+            - *text
+            - *chartBar
+            - *chartPercentage
+            - *imageBlock
+            - *videoEmbed
+            - *logosGroup
+            - *innerColumns
+            - *timeline
+            - *bigNumbers
+            - *card
+            - *pullquote
+            - *spacer
+    - label: 'Column 2'
+      name: 'column2'
+      widget: 'object'
+      required: false
+      fields:
+        - label: 'Components'
+          name: 'components'
+          widget: 'list'
+          types:
+            - *text
+            - *chartBar
+            - *chartPercentage
+            - *imageBlock
+            - *videoEmbed
+            - *logosGroup
+            - *innerColumns
+            - *timeline
+            - *bigNumbers
+            - *card
+            - *pullquote
+            - *spacer

@@ -122,11 +122,15 @@ const componentSchema = z.object({
   wideVideo: z.boolean().optional(),
 
   // Atributos do InnerColumns
-  column1: z.string().optional(),
-  column2: z.string().optional(),
+  column1: z.any().optional(),
+  column2: z.any().optional(),
 
   // Atributos do Timeline
   // timelineItems: z.array(z.any()).optional(),
+
+  // Atributos do Columns
+  invertOnMobile: z.boolean().optional(),
+  columnsAlign: z.enum(['33-66']).optional(),
 
   // Atributos do Map
   columnAlign: z.enum(['left', 'center', 'right']).optional(),
@@ -151,7 +155,7 @@ const componentSchema = z.object({
 
   // Caso possua subcomponentes
   components: z.array(z.any()).optional(),
-  id: z.string().optional(),
+  //id: z.string().optional(),
   text: z.string().optional(),
   imageLeft: z.string().optional(),
   imageRight: z.string().optional(),

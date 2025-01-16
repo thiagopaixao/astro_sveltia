@@ -3,6 +3,7 @@ innerColumns: &innerColumns
   name: 'InnerColumns'
   widget: 'object'
   summary: 'Inner Columns'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
@@ -38,13 +39,3 @@ innerColumns: &innerColumns
           widget: 'list'
           types:
             - *text
-            - *chartBar
-            - *chartPercentage
-            - *imageBlock
-            - *videoEmbed
-            - *logosGroup
-            - *timeline
-            - *bigNumbers
-            - *card
-            - *pullquote
-            - *spacer

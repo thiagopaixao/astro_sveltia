@@ -3,6 +3,7 @@ bigNumbers: &bigNumbers
   name: 'BigNumbers'
   widget: 'object'
   summary: '{{fields.alignment}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'

@@ -3,6 +3,7 @@ logosGroup: &logosGroup
   name: 'LogosGroup'
   widget: 'object'
   summary: '{{fields.logos}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'

@@ -3,6 +3,7 @@ pullquote: &pullquote
   name: 'Pullquote'
   widget: 'object'
   summary: '{{fields.content}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'

@@ -14,6 +14,7 @@ compare: &compare
   name: 'Compare'
   widget: 'object'
   summary: '{{fields.caption}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
@@ -39,6 +40,7 @@ bigNumbers: &bigNumbers
   name: 'BigNumbers'
   widget: 'object'
   summary: '{{fields.alignment}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
@@ -295,6 +297,7 @@ text: &text
   name: 'Text'
   widget: 'object'
   summary: '{{fields.content}}'
+  collapsed: true
   fields:
     - label: 'Dropcap'
       name: 'hasDropCap'
@@ -326,6 +329,7 @@ videoEmbed: &videoEmbed
   name: 'VideoEmbed'
   widget: 'object'
   summary: '{{fields.videoUrl}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
@@ -350,6 +354,7 @@ imageBlock: &imageBlock
   name: 'ImageBlock'
   widget: 'object'
   summary: '{{fields.src}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
@@ -378,6 +383,7 @@ chartBar: &chartBar
   name: 'ChartBar'
   widget: 'object'
   summary: '{{fields.chartTitle}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
@@ -424,6 +430,7 @@ chartPercentage: &chartPercentage
   name: 'ChartPercentage'
   widget: 'object'
   summary: '{{fields.chartPercentageTitle}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
@@ -462,6 +469,7 @@ card: &card
   name: 'Card'
   widget: 'object'
   summary: '{{fields.title}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
@@ -507,6 +515,7 @@ cardsCall: &cardsCall
   name: 'CardsCall'
   widget: 'object'
   summary: '{{fields.cardsCallArr}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
@@ -562,6 +571,7 @@ logosGroup: &logosGroup
   name: 'LogosGroup'
   widget: 'object'
   summary: '{{fields.logos}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
@@ -604,6 +614,7 @@ mapView: &mapView
   name: 'MapView'
   widget: 'object'
   summary: '{{fields.mapView}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
@@ -656,6 +667,7 @@ timelineBullet: &timelineBullet
   name: 'TimelineBullet'
   widget: 'object'
   summary: '{{fields.text}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
@@ -675,6 +687,7 @@ pullquote: &pullquote
   name: 'Pullquote'
   widget: 'object'
   summary: '{{fields.content}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
@@ -706,6 +719,7 @@ timeline: &timeline
   name: 'Timeline'
   widget: 'object'
   summary: 'Timeline'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
@@ -723,6 +737,7 @@ innerColumns: &innerColumns
   name: 'InnerColumns'
   widget: 'object'
   summary: 'Inner Columns'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
@@ -758,21 +773,12 @@ innerColumns: &innerColumns
           widget: 'list'
           types:
             - *text
-            - *chartBar
-            - *chartPercentage
-            - *imageBlock
-            - *videoEmbed
-            - *logosGroup
-            - *timeline
-            - *bigNumbers
-            - *card
-            - *pullquote
-            - *spacer
 
 column: &column
   label: 'Column'
   name: 'Column'
   widget: 'object'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
@@ -797,7 +803,6 @@ column: &column
         - *imageBlock
         - *videoEmbed
         - *logosGroup
-        - *innerColumns
         - *card
         - *cardsCall
         - *compare
@@ -805,11 +810,83 @@ column: &column
         - *spacer
 
 
+columns: &columns
+  label: 'Columns'
+  name: 'Columns'
+  widget: 'object'
+  collapsed: true
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Columns'
+    - label: 'Padding Top'
+      name: paddingTop
+      widget: boolean
+      default: false
+    - label: 'Padding Bottom'
+      name: paddingBottom
+      widget: boolean
+      default: false
+    - label: 'Invert on Mobile'
+      name: invertOnMobile
+      widget: boolean
+      default: false
+    - label: 'Alignment'
+      name: 'columnsAlign'
+      widget: 'select'
+      default: 66-33
+      options:
+        - { label: 'Bigger left', value: 66-33 }
+        - { label: 'Bigger right', value: '33-66' }
+    - label: 'Column 1'
+      name: 'column1'
+      widget: 'object'
+      required: false
+      fields:
+        - label: 'Components'
+          name: 'components'
+          widget: 'list'
+          types:
+            - *text
+            - *chartBar
+            - *chartPercentage
+            - *imageBlock
+            - *videoEmbed
+            - *logosGroup
+            - *innerColumns
+            - *timeline
+            - *bigNumbers
+            - *card
+            - *pullquote
+            - *spacer
+    - label: 'Column 2'
+      name: 'column2'
+      widget: 'object'
+      required: false
+      fields:
+        - label: 'Components'
+          name: 'components'
+          widget: 'list'
+          types:
+            - *text
+            - *chartBar
+            - *chartPercentage
+            - *imageBlock
+            - *videoEmbed
+            - *logosGroup
+            - *innerColumns
+            - *timeline
+            - *bigNumbers
+            - *card
+            - *pullquote
+            - *spacer
 columnSticky: &columnSticky
   label: 'Column Sticky'
   name: 'ColumnSticky'
   widget: 'object'
   summary: '{{fields.title}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
@@ -920,8 +997,8 @@ group: &group
         - *card
         - *cardsCall
         - *logosGroup
-        - *innerColumns
         - *column
+        - *columns
         - *timeline
         - *spacer
         - *compare

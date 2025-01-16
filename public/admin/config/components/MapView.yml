@@ -3,6 +3,7 @@ mapView: &mapView
   name: 'MapView'
   widget: 'object'
   summary: '{{fields.mapView}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'

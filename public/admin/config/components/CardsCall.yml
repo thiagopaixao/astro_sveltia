@@ -3,6 +3,7 @@ cardsCall: &cardsCall
   name: 'CardsCall'
   widget: 'object'
   summary: '{{fields.cardsCallArr}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'

@@ -3,6 +3,7 @@ videoEmbed: &videoEmbed
   name: 'VideoEmbed'
   widget: 'object'
   summary: '{{fields.videoUrl}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'

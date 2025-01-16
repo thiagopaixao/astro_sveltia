@@ -3,6 +3,7 @@ timelineBullet: &timelineBullet
   name: 'TimelineBullet'
   widget: 'object'
   summary: '{{fields.text}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'

@@ -3,6 +3,7 @@ compare: &compare
   name: 'Compare'
   widget: 'object'
   summary: '{{fields.caption}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'

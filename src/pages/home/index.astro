@@ -12,6 +12,7 @@ import Card from '../../components/Card.astro';
 import ChartBar from '../../components/ChartBar.astro';
 import ChartPercentage from '../../components/ChartPercentage.astro';
 import Column from '../../components/Column.astro';
+import Columns from '../../components/Columns.astro';
 import ImageBlock from '../../components/ImageBlock.astro';
 import InnerColumns from '../../components/InnerColumns.astro';
 import LogosGroup from '../../components/LogosGroup.astro';
@@ -34,8 +35,8 @@ if (!entry) {
 const { title, components } = entry.data;
 
 const componentMap = {
-    Group,
-    ColumnSticky,
+  Group,
+  ColumnSticky,
   Text,
   Cta,
   Card,
@@ -43,6 +44,7 @@ const componentMap = {
   ChartBar,
   ChartPercentage,
   Column,
+  Columns,
   ImageBlock,
   InnerColumns,
   LogosGroup,
@@ -100,7 +102,7 @@ const chartPerc = [
             if (type === 'InnerColumns') {
               const column1 = restProps.column1;
               const column2 = restProps.column2;
-
+              
               return (
                 <InnerColumns>
                   <Fragment slot="column-1">
@@ -112,6 +114,27 @@ const chartPerc = [
                 </InnerColumns>
               );
             }
+
+            if (type === 'Columns') {
+              const column1 = restProps.column1;
+              const column2 = restProps.column2;
+              const paddingTop = restProps.paddingTop;
+              const paddingBottom = restProps.paddingBottom;
+              const invertOnMobile = restProps.invertOnMobile;
+              const alignment = restProps.columnsAlign;
+ 
+              return (
+                <Columns paddingTop={paddingTop} paddingBottom={paddingBottom} invertOnMobile={invertOnMobile} alignment={alignment}>
+                  <Fragment slot="column-1">
+                    { renderComponents(column1.components)}
+                  </Fragment>
+                  <Fragment slot="column-2">
+                    {renderComponents(column2.components)}
+                  </Fragment>
+                </Columns>
+              );
+            }
+
 
             
             let Layout = null;

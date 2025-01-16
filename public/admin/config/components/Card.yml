@@ -3,6 +3,7 @@ card: &card
   name: 'Card'
   widget: 'object'
   summary: '{{fields.title}}'
+  collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
