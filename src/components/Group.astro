@@ -43,6 +43,11 @@ const imgBgVar = imgBg && `url(${imgBg})`;
     background-color: var(--clr-bg);
     z-index: 100;
 
+    &:has(.gallery-modal[aria-hidden="false"]) {
+      position: relative;
+      z-index: 99999;  
+    }
+    
     @include media-break-down(l) {
       z-index: 4;
       position: relative;

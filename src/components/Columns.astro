@@ -17,10 +17,10 @@ const { paddingTop, paddingBottom, invertOnMobile, alignment } = Astro.props;
   ]}
 >
   <div class="columns__holder">
-    <div class="columns__column-1 reveal--fadeInUp">
+    <div class="columns__column-1 reveal--fadeIn">
       <slot name="column-1" />
     </div>
-    <div class="columns__column-2 reveal--fadeInUp">
+    <div class="columns__column-2 reveal--fadeIn">
       <slot name="column-2" />
     </div>
   </div>
@@ -32,6 +32,11 @@ const { paddingTop, paddingBottom, invertOnMobile, alignment } = Astro.props;
 
   .columns {
     $self: &;
+   
+    &:has(.gallery-modal[aria-hidden="false"]) {
+      position: relative;
+      z-index: 99999;  
+    }
     
     &__holder {
       @extend %grrr--board;

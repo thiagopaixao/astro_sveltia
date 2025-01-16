@@ -9,7 +9,7 @@ const { src, wide } = Astro.props;
 const hasCaption = Astro.slots.has('default');
 ---
 
-<figure class:list={["image", { "image--wide": wide }]}>
+<figure class:list={["image reveal--fadeInUp", { "image--wide": wide }]}>
   <Image src={src} alt="" />
   {
     hasCaption && (

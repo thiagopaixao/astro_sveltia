@@ -7,7 +7,7 @@ const { wide } = Astro.props;
 const hasCaption = Astro.slots.has("caption");
 ---
 
-<figure class:list={["video-embed", { "video-embed--wide": wide }]}>
+<figure class:list={["video-embed reveal--fadeInUp", { "video-embed--wide": wide }]}>
   <slot />
   {
     hasCaption && (

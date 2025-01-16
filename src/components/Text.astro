@@ -3,7 +3,7 @@ const { hasDropCap } = Astro.props
 //hasDropCap recebe booleano
 ---
 
-<div class:list={["text", hasDropCap && "text--has-dropcap"]}>
+<div class:list={["text reveal--fadeInUp", hasDropCap && "text--has-dropcap"]}>
   <slot />
 </div>
 

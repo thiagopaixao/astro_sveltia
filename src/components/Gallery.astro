@@ -6,7 +6,7 @@ const { uniqid, description, images } = Astro.props;
 const amountLabel = `${images.length} imagens`; // prever que o termo "imagens" deve ser traduzido nas versões de outras línguas
 ---
 
-<div class="gallery-card" aria-controls={`gallery-${uniqid}`}>
+<div class="gallery-card reveal--fadeIn" aria-controls={`gallery-${uniqid}`}>
   <div class="gallery-card__thumbs">
     {
       images &&

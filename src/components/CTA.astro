@@ -41,7 +41,7 @@ const {
       videoBg={videoBg}
       overlay={overlay}
     >
-      <div class="cta__feat">
+      <div class="cta__feat reveal--fadeInDown">
         {
           layout === "media" ? (
             mediaType === "image" ? (
@@ -56,7 +56,7 @@ const {
           ) : null
         }
       </div>
-      <div class="cta__text">
+      <div class="cta__text reveal--fadeInLeft" style="animation-delay: .3s">
         {
           text && (
             <Text>
