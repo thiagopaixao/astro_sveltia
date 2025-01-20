@@ -6,11 +6,13 @@ const { uniqid, description, images } = Astro.props;
 const amountLabel = `${images.length} imagens`; // prever que o termo "imagens" deve ser traduzido nas versões de outras línguas
 ---
 
-<div class="gallery-card" aria-controls={`gallery-${uniqid}`}>
+<div class="gallery-card reveal--fadeIn" aria-controls={`gallery-${uniqid}`}>
   <div class="gallery-card__thumbs">
     {
       images &&
-        images.map((img, index) => {return index <= 2 && <Image src={img.image} alt="" width="100%" height="100%" />;})
+        images.map((img, index) => {return index <= 2 && <div class="gallery-card__img">
+          <Image src={img.image} alt="" width="100%" height="100%" />
+        </div>;})
     }
   </div>
   {
@@ -121,6 +123,7 @@ const amountLabel = `${images.length} imagens`; // prever que o termo "imagens" 
 
   //card
   .gallery-card {
+    $self: &;
     cursor: pointer;
     container-name: gallery-card;
     container-type: inline-size;
@@ -131,16 +134,16 @@ const amountLabel = `${images.length} imagens`; // prever que o termo "imagens" 
     }
 
     @media (hover: "hover") {
-      &:hover {
+      &:hover #{$self}__img {
         img {
           box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.37);
         }
   
-        img:nth-child(1) {
+        &:nth-child(1) img {
           transform: rotate(-5deg) translate(-10px, -40px);
         }
   
-        img:nth-child(2) {
+        &:nth-child(2) img {
           transform: rotate(8deg) translate(15px, -40px);
         }
       }
@@ -150,6 +153,7 @@ const amountLabel = `${images.length} imagens`; // prever que o termo "imagens" 
       width: 100%;
       aspect-ratio: 1 / 0.5902;
       position: relative;
+      margin-bottom: -1px;
 
       @container gallery-card (width < 440px) {
         aspect-ratio: 1 / 1.258;
@@ -159,15 +163,36 @@ const amountLabel = `${images.length} imagens`; // prever que o termo "imagens" 
         width: 100%;
         height: 100%;
         object-fit: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
         transform-origin: center bottom;
         transition: 0.5s ease;
+      }
+    }
 
-        img:nth-child(3) {
-          z-index: 2;
-        }
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform-origin: center bottom;
+      // transition: 1s ease 1s;
+      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.37);
+
+      &:nth-child(3) {
+        z-index: 2;
+      }
+
+      &:nth-child(1) {
+        transform: rotate(-5deg) translate(-10px, -40px);
+      }
+
+      &:nth-child(2) {
+        transform: rotate(8deg) translate(15px, -40px);
+      }
+
+      #{$self}.reveal & {
+        animation: imgInitial 1s ease forwards .2s;
       }
     }
 
@@ -492,6 +517,13 @@ const amountLabel = `${images.length} imagens`; // prever que o termo "imagens" 
           }
         }
       }
+    }
+  }
+
+  @keyframes imgInitial {
+    to {
+      box-shadow: 0 0 0 0 rgba(0,0,0,0);
+      transform: rotate(0deg) translate(0, 0);
     }
   }
 </style>

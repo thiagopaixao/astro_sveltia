@@ -19,14 +19,14 @@ const chartValues = addNumberPercentToValues(values);
 
 ---
 
-<div class:list={["chart-bar", type && `chart-bar--${type}`]}>
+<div class:list={["chart-bar reveal--fadeInUp", type && `chart-bar--${type}`]}>
   <span class="chart-bar__title">{title}</span>
 
   <div class="chart-bar__values">
     <div class="chart-bar__bars">
       {
         chartValues &&
-          chartValues.map((data) => (
+          chartValues.map((data, index) => (
             //valores:
             //data.color
             //data.number
@@ -34,7 +34,7 @@ const chartValues = addNumberPercentToValues(values);
             //data.label
             <div
               class="chart-bar__item"
-              style={`--clr-chart:${data.color}; --data-perc:${data.numberPercent}%`}
+              style={`--clr-chart:${data.color}; --data-perc:${data.numberPercent}%; --index:${index};`}
             >
               <span class="chart-bar__label">{data.label}</span>
               <div class="chart-bar__bar">
@@ -87,12 +87,19 @@ const chartValues = addNumberPercentToValues(values);
       position: absolute;
       top: 50%;
       left: var(--data-perc);
-      transform: translate(10px, -50%);
+      transform: translate(0, -50%);
+      opacity: 0;
+      transition: 1s ease calc(.3s * (var(--index) + 1));
 
       #{$self}--proportion & {
         width: 4ch;
         text-align: right;
         left: 100%;
+      }
+
+      #{$self}.reveal & {
+        opacity: 1;
+        transform: translate(10px, -50%);
       }
     }
 
@@ -131,24 +138,14 @@ const chartValues = addNumberPercentToValues(values);
 
       &::after {
         content: "";
-        width: var(--data-perc);
+        width: 0;
         height: 100%;
         display: block;
         background-color: var(--clr-chart, #000);
         position: absolute;
         top: 0;
         left: 0;
-      }
-
-      &::after {
-        content: "";
-        width: var(--data-perc);
-        height: 100%;
-        display: block;
-        background-color: var(--clr-chart, #000);
-        position: absolute;
-        top: 0;
-        left: 0;
+        transition: 1s ease-in calc(1s * (var(--index) * .2));
       }
 
       #{$self}--proportion & {
@@ -166,6 +163,10 @@ const chartValues = addNumberPercentToValues(values);
           top: 0;
           left: 0;
         }
+      }
+
+      #{$self}.reveal &::after {
+        width: var(--data-perc);
       }
     }
 

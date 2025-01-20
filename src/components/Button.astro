@@ -6,7 +6,7 @@ const { link, icon, size } = Astro.props;
 ---
 
 <a
-  class:list={["button", size === "wide" && "button--wide"]}
+  class:list={["reveal--fadeInLeft", "button", size === "wide" && "button--wide"]}
   target={link.target}
   href={link.url}
 >

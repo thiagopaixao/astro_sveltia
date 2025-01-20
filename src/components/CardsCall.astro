@@ -14,12 +14,13 @@ const { cards } = Astro.props;
   <div class="cards-call__holder">
   {
     cards &&
-      cards.map((data) => (
+      cards.map((data, index) => (
         <a
-          class="cards-call__item"
+          class="cards-call__item reveal--fadeInUp"
           href={data.link.url}
           title={data.link.title ? data.link.title : data?.title}
           target={data.link?.target}
+          style={`animation-delay:${0.3 * index}s`}
         >
           <div class="cards-call__thumb">
             {data.img.src && (

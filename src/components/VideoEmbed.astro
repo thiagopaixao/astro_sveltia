@@ -8,16 +8,18 @@ const hasCaption = Astro.slots.has("caption");
 ---
 
 <figure class:list={["video-embed", { "video-embed--wide": wide }]}>
-  <slot />
-  {
-    hasCaption && (
-      <figcaption>
-        <Caption>
-          <slot name="caption" />
-        </Caption>
-      </figcaption>
-    )
-  }
+  <div class="reveal--fadeInUp">
+    <slot />
+    {
+      hasCaption && (
+        <figcaption>
+          <Caption>
+            <slot name="caption" />
+          </Caption>
+        </figcaption>
+      )
+    }
+  </div>
 </figure>
 
 <style lang="scss">

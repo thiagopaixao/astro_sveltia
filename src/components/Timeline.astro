@@ -1,4 +1,4 @@
-<div class="timeline" data-timeline>
+<div class="timeline reveal--fadeIn" data-timeline>
   <slot />
 </div>
 
@@ -11,12 +11,17 @@
       content: '';
       width: 2px;
       // min-height: 100vh;
-      height: 100%;
+      height: 0;
       display: block;
       position: absolute;
       left: 5px;
       top: 5px;
       background-color: var(--clr-txt);
+      transition: height 1s ease-out 1s;
+    }
+
+    &.reveal::after {
+      height: 100%;
     }
 
     :global(.map__content) &:last-child {

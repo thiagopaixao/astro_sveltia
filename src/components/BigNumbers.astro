@@ -11,7 +11,7 @@ const { alignment = "caption-bottom", items } = Astro.props;
         items.map((item) => (
           //item.number
           //item.caption
-          <div class="big-numbers__item">
+          <div class="big-numbers__item reveal--fadeInLeft">
             {item?.number && (
               <span class="big-numbers__number">{item.number}</span>
             )}

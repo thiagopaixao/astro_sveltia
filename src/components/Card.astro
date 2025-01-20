@@ -1,12 +1,12 @@
 ---
 import Button from "./Button.astro";
-const { link, title, text, icon } = Astro.props;
+const { link, title, text, icon, index } = Astro.props;
 ---
 
-<div class="card">
-  {icon && <div class="card__icon" set:html={icon} />}
-  {title && <span class="card__title">{title}</span>}
-  {text && <p class="card__text">{text}</p>}
+<div class="card reveal--fadeInLeft">
+  {icon && <div class="card__icon reveal--fadeInLeft" set:html={icon} />}
+  {title && <span class="card__title reveal--fadeInLeft">{title}</span>}
+  {text && <p class="card__text reveal--fadeInLeft">{text}</p>}
   {link && <Button link={link} />}
 </div>
 
