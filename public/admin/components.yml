@@ -22,6 +22,7 @@ components:
 
   # Componentes que dependem dos anteriores
   - components/Timeline.yml
+  - components/Cards.yml
   - components/InnerColumns.yml
   - components/Column.yml
   - components/Columns.yml

@@ -31,11 +31,11 @@ column: &column
         - *imageBlock
         - *videoEmbed
         - *logosGroup
-        - *card
         - *cardsCall
         - *compare
         - *pullquote
         - *spacer
         - *gallery
         - *slider
+        - *cards
 

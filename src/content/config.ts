@@ -25,7 +25,7 @@ const linkSchema = z.object({
 });
 
 // Schema para cada card do CardsCall
-const cardSchema = z.object({
+const cardCallSchema = z.object({
   link: linkSchema.optional(),
   img: z
     .object({
@@ -35,6 +35,14 @@ const cardSchema = z.object({
     .optional(),
   title: z.string().optional().transform(processMarkdown),
   text: z.string().optional().transform(processMarkdown),
+});
+
+// Schema para cada card do Cards
+const cardSchema = z.object({
+  link: linkSchema.optional(),
+  title: z.string().optional().transform(processMarkdown),
+  text: z.string().optional().transform(processMarkdown),
+  icon: z.string().optional(),
 });
 
 // Schema para logos
@@ -99,19 +107,10 @@ const componentSchema = z.object({
     .optional(),
 
   // Atributos do CardsCall
-  cardsCallArr: z.array(cardSchema).optional(),
+  cardsCallArr: z.array(cardCallSchema).optional(),
 
-  // Atributos do Card
-  cardsArr: z
-    .array(
-      z.object({
-        link: linkSchema.optional(),
-        icon: z.string().optional(),
-        title: z.string().optional().transform(processMarkdown),
-        text: z.string().optional().transform(processMarkdown),
-      })
-    )
-    .optional(),
+  // Atributos do Cards
+  cardsArr: z.array(cardSchema).optional(),
 
   // Atributos do ChartBar
   chartTitle: z.string().optional().transform(processMarkdown),

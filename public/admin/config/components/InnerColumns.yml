@@ -29,7 +29,6 @@ innerColumns: &innerColumns
             - *logosGroup
             - *timeline
             - *bigNumbers
-            - *card
             - *pullquote
             - *spacer
             - *gallery
@@ -53,7 +52,6 @@ innerColumns: &innerColumns
             - *logosGroup
             - *timeline
             - *bigNumbers
-            - *card
             - *pullquote
             - *spacer
             - *gallery

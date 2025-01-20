@@ -1,0 +1,12 @@
+---
+import Group from '../components/Group.astro';
+
+const { Component, props } = Astro.props;
+const { cardsArr = []} = props;
+
+const cards = cardsArr.map(cardItem => cardItem.Card || cardItem);
+
+console.log("CardsArr: ", cards[0].text)
+---
+
+  <Component cards={cards} />

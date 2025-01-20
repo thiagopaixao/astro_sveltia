@@ -930,6 +930,26 @@ timeline: &timeline
       types:
         - *timelineBullet
 
+cards: &cards
+  label: 'Cards'
+  name: 'Cards'
+  widget: 'object'
+  summary: '{{fields.cardsArr}}'
+  collapsed: true
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Cards'
+      collapsed: true
+    - label: 'Cards'
+      name: 'cardsArr'
+      widget: 'list'
+      required: false
+      collapsed: true
+      fields:
+        - *card
+
 innerColumns: &innerColumns
   label: 'Inner Columns'
   name: 'InnerColumns'
@@ -961,7 +981,6 @@ innerColumns: &innerColumns
             - *logosGroup
             - *timeline
             - *bigNumbers
-            - *card
             - *pullquote
             - *spacer
             - *gallery
@@ -985,7 +1004,6 @@ innerColumns: &innerColumns
             - *logosGroup
             - *timeline
             - *bigNumbers
-            - *card
             - *pullquote
             - *spacer
             - *gallery
@@ -1024,13 +1042,13 @@ column: &column
         - *imageBlock
         - *videoEmbed
         - *logosGroup
-        - *card
         - *cardsCall
         - *compare
         - *pullquote
         - *spacer
         - *gallery
         - *slider
+        - *cards
 
 
 columns: &columns
@@ -1087,11 +1105,11 @@ columns: &columns
             - *innerColumns
             - *timeline
             - *bigNumbers
-            - *card
             - *pullquote
             - *spacer
             - *gallery
             - *slider
+            - *cards
     - label: 'Column 2'
       name: 'column2'
       widget: 'object'
@@ -1112,11 +1130,11 @@ columns: &columns
             - *innerColumns
             - *timeline
             - *bigNumbers
-            - *card
             - *pullquote
             - *spacer
             - *gallery
             - *slider
+            - *cards
 
 columnSticky: &columnSticky
   label: 'Column Sticky'
@@ -1180,12 +1198,12 @@ columnSticky: &columnSticky
         - *videoEmbed
         - *logosGroup
         - *innerColumns
-        - *card
         - *cardsCall
         - *compare
         - *pullquote
         - *spacer
         - *slider
+        - *cards
 
 group: &group
   label: 'Group'
@@ -1271,7 +1289,7 @@ group: &group
         - *columnSticky
         - *chartBar
         - *chartPercentage
-        - *card
+        - *cards
         - *cardsCall
         - *logosGroup
         - *column

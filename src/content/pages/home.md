@@ -380,37 +380,66 @@ components:
     id: Cards
     layout: default
     txtColor: '#000009ff'
-    bgColor: ''
+    bgColor: '#f0ead9ff'
+    backgroundMedia: []
     overlay: ''
     components:
       - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
         columnsAlign: 33-66
         column1:
           components:
             - type: Text
               hasDropCap: false
+              txtColor: ''
+              bgColor: ''
               content: '###### SED UT PERSPICIATIS UNDE OMNIS ISTE NATUS ERROR SIT VOLUPTATEM ACCUSANTIUM, DOLOREMQUE LAUDANTIUM, TOTAM REM APERIAM'
         column2:
           components:
-            - type: Card
-              title: Open Source
-              text: Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, cosectertur, adipisci velit, sed quia non numquam eius modi tempora incidunt.
-              link:
-                url: https://documental.xyz
-                target: _blank
-                customTarget: ''
-                text: ''
-              icon: ''
-            - type: Card
-              title: Open Source
-              text: Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, cosectertur, adipisci velit, sed quia non numquam eius modi tempora incidunt.
-              link:
-                url: https://documental.xyz
-                target: _blank
-                customTarget: ''
-                text: ''
-              icon: <span class="material-symbols-outlined">papper</span>
-    backgroundImage: ''
+            - type: Cards
+              cardsArr:
+                - Card:
+                    type: Card
+                    title: Open Source
+                    text: Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, cosectertur, adipisci velit, sed quia non numquam eius modi tempora incidunt.
+                    link:
+                      url: https://documental.xyz
+                      target: _blank
+                      customTarget: ''
+                      text: Link
+                    icon: <span class="material-symbols-outlined"> construction </span>
+                - Card:
+                    type: Card
+                    title: Open Source
+                    text: Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, cosectertur, adipisci velit, sed quia non numquam eius modi tempora incidunt.
+                    link:
+                      url: https://documental.xyz
+                      target: _blank
+                      customTarget: ''
+                      text: Link
+                    icon: <span class="material-symbols-outlined"> construction </span>
+                - Card:
+                    type: Card
+                    title: Open Source
+                    text: Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, cosectertur, adipisci velit, sed quia non numquam eius modi tempora incidunt.
+                    link:
+                      url: https://documental.xyz
+                      target: ''
+                      customTarget: ''
+                      text: Link
+                    icon: <span class="material-symbols-outlined"> construction </span>
+                - Card:
+                    type: Card
+                    title: Open Source
+                    text: Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, cosectertur, adipisci velit, sed quia non numquam eius modi tempora incidunt.
+                    link:
+                      url: https://documental.xyz
+                      target: ''
+                      customTarget: ''
+                      text: Link
+                    icon: <span class="material-symbols-outlined"> construction </span>
   - type: Cta
     id: CTAs
     layout: text

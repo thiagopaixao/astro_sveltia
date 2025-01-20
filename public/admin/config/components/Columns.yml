@@ -52,11 +52,11 @@ columns: &columns
             - *innerColumns
             - *timeline
             - *bigNumbers
-            - *card
             - *pullquote
             - *spacer
             - *gallery
             - *slider
+            - *cards
     - label: 'Column 2'
       name: 'column2'
       widget: 'object'
@@ -77,8 +77,8 @@ columns: &columns
             - *innerColumns
             - *timeline
             - *bigNumbers
-            - *card
             - *pullquote
             - *spacer
             - *gallery
             - *slider
+            - *cards

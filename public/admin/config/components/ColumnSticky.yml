@@ -60,9 +60,9 @@ columnSticky: &columnSticky
         - *videoEmbed
         - *logosGroup
         - *innerColumns
-        - *card
         - *cardsCall
         - *compare
         - *pullquote
         - *spacer
         - *slider
+        - *cards

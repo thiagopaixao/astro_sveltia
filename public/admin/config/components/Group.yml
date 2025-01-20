@@ -82,7 +82,7 @@ group: &group
         - *columnSticky
         - *chartBar
         - *chartPercentage
-        - *card
+        - *cards
         - *cardsCall
         - *logosGroup
         - *column

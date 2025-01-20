@@ -1,0 +1,19 @@
+cards: &cards
+  label: 'Cards'
+  name: 'Cards'
+  widget: 'object'
+  summary: '{{fields.cardsArr}}'
+  collapsed: true
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Cards'
+      collapsed: true
+    - label: 'Cards'
+      name: 'cardsArr'
+      widget: 'list'
+      required: false
+      collapsed: true
+      fields:
+        - *card
