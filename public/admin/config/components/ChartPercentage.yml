@@ -9,30 +9,37 @@ chartPercentage: &chartPercentage
       name: 'type'
       widget: 'hidden'
       default: 'ChartPercentage'
+      collapsed: true
     - label: 'Chart Percentage Title'
       name: 'chartPercentageTitle'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Chart Notes'
       name: 'chartPercentageNotes'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Chart Percentage Values'
       name: 'chartPercentageValues'
       widget: 'list'
       required: false
+      collapsed: true
       fields:
         - label: 'Label'
           name: 'label'
           widget: 'string'
           required: true
+          collapsed: true
         - label: 'Color'
           name: 'color'
           widget: 'color'
           required: false
           enableAlpha: true
           allowInput: true
+          collapsed: true
         - label: 'Number'
           name: 'number'
           widget: 'number'
           required: true
+          collapsed: true

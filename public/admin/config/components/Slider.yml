@@ -9,16 +9,20 @@ slider: &slider
       name: 'type'
       widget: 'hidden'
       default: 'Slider'
+      collapsed: true
     - label: 'Slides'
       name: 'slides'
       widget: 'list'
       required: false
+      collapsed: true
       fields:
         - label: 'Image'
           name: 'image'
           widget: 'image'
           required: false
+          collapsed: true
         - label: 'Caption'
           name: 'caption'
           widget: 'string'
           required: false
+          collapsed: true

@@ -9,34 +9,42 @@ logosGroup: &logosGroup
       name: 'type'
       widget: 'hidden'
       default: 'LogosGroup'
+      collapsed: true
     - label: 'Logos'
       name: 'logos'
       widget: 'list'
       required: false
+      collapsed: true
       fields:
         - label: 'Image'
           name: 'image'
           widget: 'image'
           required: true
+          collapsed: true
         - label: 'Link'
           name: 'link'
           widget: 'object'
           required: true
+          collapsed: true
           fields:
             - label: 'URL'
               name: 'url'
               widget: 'string'
               required: true
+              collapsed: true
             - label: 'Target'
               name: 'target'
               widget: 'select'
               options: ['_blank', '_parent', '_self', 'custom']
               required: false
+              collapsed: true
             - label: 'Custom Target'
               name: 'customTarget'
               widget: 'string'
               required: false
+              collapsed: true
             - label: 'Title'
               name: 'title'
               widget: 'string'
               required: false
+              collapsed: true

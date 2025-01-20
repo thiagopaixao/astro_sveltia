@@ -9,14 +9,17 @@ innerColumns: &innerColumns
       name: 'type'
       widget: 'hidden'
       default: 'InnerColumns'
+      collapsed: true
     - label: 'Column 1'
       name: 'column1'
       widget: 'object'
       required: false
+      collapsed: true
       fields:
         - label: 'Components'
           name: 'components'
           widget: 'list'
+          collapsed: true
           types:
             - *text
             - *chartBar
@@ -35,10 +38,12 @@ innerColumns: &innerColumns
       name: 'column2'
       widget: 'object'
       required: false
+      collapsed: true
       fields:
         - label: 'Components'
           name: 'components'
           widget: 'list'
+          collapsed: true
           types:
             - *text
             - *chartBar

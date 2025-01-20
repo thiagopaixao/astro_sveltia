@@ -20,20 +20,24 @@ compare: &compare
       name: 'type'
       widget: 'hidden'
       default: 'Compare'
+      collapsed: true
     - label: 'Image Left'
       name: 'imageLeft'
       widget: 'image'
       required: true
       allow_multiple: false
+      collapsed: true
     - label: 'Image Right'
       name: 'imageRight'
       widget: 'image'
       required: true
       allow_multiple: false
+      collapsed: true
     - label: 'Caption'
       name: 'caption'
       widget: 'markdown'
       required: false
+      collapsed: true
 
 bigNumbers: &bigNumbers
   label: 'Big Numbers'
@@ -46,23 +50,28 @@ bigNumbers: &bigNumbers
       name: 'type'
       widget: 'hidden'
       default: 'BigNumbers'
+      collapsed: true
     - label: 'Alignment'
       name: 'alignment'
       widget: 'select'
       options: ['caption-bottom', 'caption-top']
       default: 'caption-bottom'
+      collapsed: true
     - label: 'Items'
       name: 'items'
       widget: 'list'
+      collapsed: true
       fields:
         - label: 'Number'
           name: 'number'
           widget: 'string'
           required: false
+          collapsed: true
         - label: 'Caption'
           name: 'caption'
           widget: 'string'
           required: false
+          collapsed: true
 
 pageSettings: &pageSettings
   label: 'Page Settings'
@@ -74,34 +83,41 @@ pageSettings: &pageSettings
       name: 'type'
       widget: 'hidden'
       default: 'pageSettings'
+      collapsed: true
     - label: 'Language'
       name: 'language'
       widget: 'select'
       options: ['pt-BR', 'en', 'es']
       default: 'pt-BR'
+      collapsed: true
     - label: 'Text Direction'
       name: 'direction'
       widget: 'select'
       options: ['left', 'right']
       default: 'left'
+      collapsed: true
     - label: 'SEO Title'
       name: 'seoTitle'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'SEO Description'
       name: 'seoDescription'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'SEO Keywords'
       name: 'seoKeywords'
       widget: 'list'
       required: false
+      collapsed: true
       fields:
-        - { label: 'Keyword', name: 'keyword', widget: 'string' }
+        - { label: 'Keyword', name: 'keyword', widget: 'string', collapsed: true }
     - label: 'SEO Image'
       name: 'seoImage'
       widget: 'image'
       required: false
+      collapsed: true
 
 pageTheme: &pageTheme
   label: 'Page Theme'
@@ -113,58 +129,70 @@ pageTheme: &pageTheme
       name: 'type'
       widget: 'hidden'
       default: 'pageTheme'
+      collapsed: true
     - label: 'Primary Color'
       name: 'primaryColor'
       widget: 'color'
       required: false
       allowInput: true
       allowAlpha: true
+      collapsed: true
     - label: 'Secondary Color'
       name: 'secondaryColor'
       widget: 'color'
       required: false
       allowInput: true
       allowAlpha: true
+      collapsed: true
     - label: 'Highlight Color'
       name: 'highlightColor'
       widget: 'color'
       required: false
       allowInput: true
       allowAlpha: true
+      collapsed: true
     - label: 'Auxiliary Color'
       name: 'auxiliaryColor'
       widget: 'color'
       required: false
       allowInput: true
       allowAlpha: true
+      collapsed: true
     - label: 'Display Font'
       name: 'displayFont'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Text Font'
       name: 'textFont'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Spacing Patterns'
       name: 'spacingPatterns'
       widget: 'list'
+      collapsed: true
       fields:
         - label: 'Pattern Name'
           name: 'name'
           widget: 'string'
           required: true
+          collapsed: true
         - label: 'Mobile Value'
           name: 'mobile'
           widget: 'string'
           required: true
+          collapsed: true
         - label: 'Tablet Value'
           name: 'tablet'
           widget: 'string'
           required: true
+          collapsed: true
         - label: 'Desktop Value'
           name: 'desktop'
           widget: 'string'
           required: true
+          collapsed: true
 
 mapBox: &mapBox
   label: 'MapBox'
@@ -176,121 +204,148 @@ mapBox: &mapBox
       name: 'type'
       widget: 'hidden'
       default: 'MapBox'
+      collapsed: true
     - label: 'Column Align'
       name: 'columnAlign'
       widget: 'select'
       options: ['left', 'center', 'right']
       required: false
+      collapsed: true
     - label: 'Floating Text'
       name: 'floatingText'
       widget: 'boolean'
       required: false
+      collapsed: true
     - label: 'Map Style'
       name: 'style'
       widget: 'string'
       required: true
+      collapsed: true
     - label: 'Map Center'
       name: 'center'
       widget: 'list'
       fields:
-        - { label: 'Longitude', name: 'lng', widget: 'number' }
-        - { label: 'Latitude', name: 'lat', widget: 'number' }
+        - { label: 'Longitude', name: 'lng', widget: 'number', collapsed: true }
+        - { label: 'Latitude', name: 'lat', widget: 'number', collapsed: true }
       required: true
+      collapsed: true
     - label: 'Map Zoom'
       name: 'zoom'
       widget: 'number'
       required: true
+      collapsed: true
     - label: 'Map Bearing'
       name: 'bearing'
       widget: 'number'
       required: false
+      collapsed: true
     - label: 'Map Pitch'
       name: 'pitch'
       widget: 'number'
       required: false
+      collapsed: true
     - label: 'Map Layers'
       name: 'layers'
       widget: 'list'
       required: false
+      collapsed: true
     - label: 'Map Token'
       name: 'token'
       widget: 'string'
       required: true
+      collapsed: true
     - label: 'Map Views'
       name: 'views'
       widget: 'list'
       required: false
+      collapsed: true
       fields:
         - label: 'View ID'
           name: 'id'
           widget: 'string'
           required: true
+          collapsed: true
         - label: 'View Center'
           name: 'center'
           widget: 'list'
           fields:
-            - { label: 'Longitude', name: 'lng', widget: 'number' }
-            - { label: 'Latitude', name: 'lat', widget: 'number' }
+            - { label: 'Longitude', name: 'lng', widget: 'number', collapsed: true }
+            - { label: 'Latitude', name: 'lat', widget: 'number', collapsed: true }
           required: true
+          collapsed: true
         - label: 'View Duration'
           name: 'duration'
           widget: 'number'
           required: true
+          collapsed: true
         - label: 'View Zoom'
           name: 'zoom'
           widget: 'number'
           required: true
+          collapsed: true
         - label: 'View Bearing'
           name: 'bearing'
           widget: 'number'
           required: false
+          collapsed: true
         - label: 'View Pitch'
           name: 'pitch'
           widget: 'number'
           required: false
+          collapsed: true
         - label: 'View Layers'
           name: 'layers'
           widget: 'list'
           required: false
+          collapsed: true
         - label: 'Mobile View'
           name: 'mobile'
           widget: 'object'
           required: false
+          collapsed: true
           fields:
             - label: 'Mobile Zoom'
               name: 'zoom'
               widget: 'number'
               required: false
+              collapsed: true
         - label: 'Captions'
           name: 'captions'
           widget: 'object'
           required: false
+          collapsed: true
           fields:
             - label: 'Title'
               name: 'title'
               widget: 'string'
               required: false
+              collapsed: true
             - label: 'Notes'
               name: 'notes'
               widget: 'string'
               required: false
+              collapsed: true
             - label: 'Items'
               name: 'items'
               widget: 'list'
               required: false
+              collapsed: true
               fields:
                 - label: 'Icon'
                   name: 'icon'
                   widget: 'string'
                   required: false
+                  collapsed: true
                 - label: 'Text'
                   name: 'text'
                   widget: 'string'
                   required: false
+                  collapsed: true
     - label: 'Map View'
       name: 'mapView'
       widget: 'string'
       required: false
+      collapsed: true
 
 text: &text
   label: 'Text'
@@ -303,26 +358,31 @@ text: &text
       name: 'hasDropCap'
       widget: 'boolean'
       required: false
+      collapsed: true
     - label: 'Type'
       name: 'type'
       widget: 'hidden'
       default: 'Text'
+      collapsed: true
     - label: 'Text Color'
       name: 'txtColor'
       widget: 'color'
       required: false
       enableAlpha: true
       allowInput: true
+      collapsed: true
     - label: 'Background Color'
       name: 'bgColor'
       widget: 'color'
       required: false
       enableAlpha: true
       allowInput: true
+      collapsed: true
     - label: 'Content'
       name: 'content'
       widget: 'markdown'
       required: false
+      collapsed: true
 
 videoEmbed: &videoEmbed
   label: 'Video Embed'
@@ -335,19 +395,23 @@ videoEmbed: &videoEmbed
       name: 'type'
       widget: 'hidden'
       default: 'VideoEmbed'
+      collapsed: true
     - label: 'Wide'
       name: 'wideVideo'
       widget: 'boolean'
       required: false
       default: false
+      collapsed: true
     - label: 'Video URL'
       name: 'videoUrl'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Video Caption'
       name: 'videoCaption'
       widget: 'string'
       required: false
+      collapsed: true
 
 imageBlock: &imageBlock
   label: 'Image Block'
@@ -360,23 +424,28 @@ imageBlock: &imageBlock
       name: 'type'
       widget: 'hidden'
       default: 'ImageBlock'
+      collapsed: true
     - label: 'Wide'
       name: 'wideImage'
       widget: 'boolean'
       required: false
       default: false
+      collapsed: true
     - label: 'Image'
       name: 'src'
       widget: 'image'
       required: false
+      collapsed: true
     - label: 'Alt Text'
       name: 'alt'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Description'
       name: 'description'
       widget: 'string'
       required: false
+      collapsed: true
 
 chartBar: &chartBar
   label: 'Chart Bar'
@@ -389,33 +458,40 @@ chartBar: &chartBar
       name: 'type'
       widget: 'hidden'
       default: 'ChartBar'
+      collapsed: true
     - label: 'Chart Title'
       name: 'chartTitle'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Chart Notes'
       name: 'chartNotes'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Chart Bars'
       name: 'chartBars'
       widget: 'list'
       required: false
+      collapsed: true
       fields:
         - label: 'Label'
           name: 'label'
           widget: 'string'
           required: false
+          collapsed: true
         - label: 'Color'
           name: 'color'
           widget: 'color'
           required: false
           enableAlpha: true
           allowInput: true
+          collapsed: true
         - label: 'Number'
           name: 'number'
           widget: 'number'
           required: false
+          collapsed: true
         - label: 'Number Percent'
           name: 'numberPercent'
           widget: 'number'
@@ -424,6 +500,7 @@ chartBar: &chartBar
           min: 0
           max: 100
           step: 0.01
+          collapsed: true
 
 chartPercentage: &chartPercentage
   label: 'Chart Percentage'
@@ -436,33 +513,40 @@ chartPercentage: &chartPercentage
       name: 'type'
       widget: 'hidden'
       default: 'ChartPercentage'
+      collapsed: true
     - label: 'Chart Percentage Title'
       name: 'chartPercentageTitle'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Chart Notes'
       name: 'chartPercentageNotes'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Chart Percentage Values'
       name: 'chartPercentageValues'
       widget: 'list'
       required: false
+      collapsed: true
       fields:
         - label: 'Label'
           name: 'label'
           widget: 'string'
           required: true
+          collapsed: true
         - label: 'Color'
           name: 'color'
           widget: 'color'
           required: false
           enableAlpha: true
           allowInput: true
+          collapsed: true
         - label: 'Number'
           name: 'number'
           widget: 'number'
           required: true
+          collapsed: true
 
 card: &card
   label: 'Card'
@@ -475,40 +559,49 @@ card: &card
       name: 'type'
       widget: 'hidden'
       default: 'Card'
+      collapsed: true
     - label: 'Title'
       name: 'title'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Text'
       name: 'text'
       widget: 'markdown'
       required: false
+      collapsed: true
     - label: 'Link'
       name: 'link'
       widget: 'object'
       required: false
+      collapsed: true
       fields:
         - label: 'URL'
           name: 'url'
           widget: 'string'
           required: false
+          collapsed: true
         - label: 'Target'
           name: 'target'
           widget: 'select'
           options: ['_blank', '_parent', '_self', 'custom']
           required: false
+          collapsed: true
         - label: 'Custom Target'
           name: 'customTarget'
           widget: 'string'
           required: false
+          collapsed: true
         - label: 'Text'
           name: 'text'
           widget: 'string'
           required: false
+          collapsed: true
     - label: 'Icon'
       name: 'icon'
       widget: 'string'
       required: false
+      collapsed: true
 
 cardsCall: &cardsCall
   label: 'Cards Call'
@@ -521,50 +614,61 @@ cardsCall: &cardsCall
       name: 'type'
       widget: 'hidden'
       default: 'CardsCall'
+      collapsed: true
     - label: 'Cards'
       name: 'cardsCallArr'
       widget: 'list'
       required: false
+      collapsed: true
       fields:
         - label: 'Link'
           name: 'link'
           widget: 'object'
           required: false
+          collapsed: true
           fields:
             - label: 'URL'
               name: 'url'
               widget: 'string'
               required: false
+              collapsed: true
             - label: 'Target'
               name: 'target'
               widget: 'select'
               options: ['_blank', '_parent', '_self', 'custom']
               required: false
+              collapsed: true
             - label: 'Custom Target'
               name: 'customTarget'
               widget: 'string'
               required: false
+              collapsed: true
         - label: 'Image'
           name: 'img'
           widget: 'object'
           required: false
+          collapsed: true
           fields:
             - label: 'Source'
               name: 'src'
               widget: 'image'
               required: false
+              collapsed: true
             - label: 'Alt'
               name: 'alt'
               widget: 'string'
               required: false
+              collapsed: true
         - label: 'Title'
           name: 'title'
           widget: 'string'
           required: false
+          collapsed: true
         - label: 'Text'
           name: 'text'
           widget: 'markdown'
           required: false
+          collapsed: true
 
 logosGroup: &logosGroup
   label: 'Logos Group'
@@ -577,37 +681,45 @@ logosGroup: &logosGroup
       name: 'type'
       widget: 'hidden'
       default: 'LogosGroup'
+      collapsed: true
     - label: 'Logos'
       name: 'logos'
       widget: 'list'
       required: false
+      collapsed: true
       fields:
         - label: 'Image'
           name: 'image'
           widget: 'image'
           required: true
+          collapsed: true
         - label: 'Link'
           name: 'link'
           widget: 'object'
           required: true
+          collapsed: true
           fields:
             - label: 'URL'
               name: 'url'
               widget: 'string'
               required: true
+              collapsed: true
             - label: 'Target'
               name: 'target'
               widget: 'select'
               options: ['_blank', '_parent', '_self', 'custom']
               required: false
+              collapsed: true
             - label: 'Custom Target'
               name: 'customTarget'
               widget: 'string'
               required: false
+              collapsed: true
             - label: 'Title'
               name: 'title'
               widget: 'string'
               required: false
+              collapsed: true
 
 mapView: &mapView
   label: 'Map View'
@@ -620,23 +732,27 @@ mapView: &mapView
       name: 'type'
       widget: 'hidden'
       default: 'MapView'
+      collapsed: true
     - label: 'Map View'
       name: 'mapView'
       widget: 'select'
       options: ['view_1', 'view_2', 'view_3', 'view_4']
       required: true
+      collapsed: true
     - label: 'Text Color'
       name: 'txtColor'
       widget: 'color'
       required: false
       enableAlpha: true
       allowInput: true
+      collapsed: true
     - label: 'Background Color'
       name: 'bgColor'
       widget: 'color'
       required: false
       enableAlpha: true
       allowInput: true
+      collapsed: true
 
 spacer: &spacer
   label: 'Spacer'
@@ -649,18 +765,22 @@ spacer: &spacer
       name: 'type'
       widget: 'hidden'
       default: 'Spacer'
+      collapsed: true
     - label: 'Desktop Height'
       name: 'desktop'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Tablet Height'
       name: 'tablet'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Mobile Height'
       name: 'mobile'
       widget: 'string'
       required: false
+      collapsed: true
 
 timelineBullet: &timelineBullet
   label: 'Timeline Bullet'
@@ -673,14 +793,17 @@ timelineBullet: &timelineBullet
       name: 'type'
       widget: 'hidden'
       default: 'TimelineBullet'
+      collapsed: true
     - label: 'Text'
       name: 'text'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Content'
       name: 'content'
       widget: 'markdown'
       required: false
+      collapsed: true
 
 pullquote: &pullquote
   label: 'Pullquote'
@@ -693,26 +816,31 @@ pullquote: &pullquote
       name: 'type'
       widget: 'hidden'
       default: 'Pullquote'
+      collapsed: true
     - label: 'Text Color'
       name: 'txtColor'
       widget: 'color'
       required: false
       enableAlpha: true
       allowInput: true
+      collapsed: true
     - label: 'Background Color'
       name: 'bgColor'
       widget: 'color'
       required: false
       enableAlpha: true
       allowInput: true
+      collapsed: true
     - label: 'Content'
       name: 'content'
       widget: 'markdown'
       required: false
+      collapsed: true
     - label: 'Byline'
       name: 'byline'
       widget: 'string'
       required: false
+      collapsed: true
 
 gallery: &gallery
   label: 'Gallery'
@@ -725,27 +853,33 @@ gallery: &gallery
       name: 'type'
       widget: 'hidden'
       default: 'Gallery'
+      collapsed: true
     - label: 'Unique ID'
       name: 'uniqid'
       widget: 'string'
       required: true
+      collapsed: true
     - label: 'Description'
       name: 'description'
       widget: 'markdown'
       required: false
+      collapsed: true
     - label: 'Images'
       name: 'images'
       widget: 'list'
       required: false
+      collapsed: true
       fields:
         - label: 'Image'
           name: 'image'
           widget: 'image'
           required: false
+          collapsed: true
         - label: 'Caption'
           name: 'caption'
           widget: 'markdown'
           required: false
+          collapsed: true
 
 slider: &slider
   label: 'Slider'
@@ -758,19 +892,23 @@ slider: &slider
       name: 'type'
       widget: 'hidden'
       default: 'Slider'
+      collapsed: true
     - label: 'Slides'
       name: 'slides'
       widget: 'list'
       required: false
+      collapsed: true
       fields:
         - label: 'Image'
           name: 'image'
           widget: 'image'
           required: false
+          collapsed: true
         - label: 'Caption'
           name: 'caption'
           widget: 'string'
           required: false
+          collapsed: true
 
 timeline: &timeline
   label: 'Timeline'
@@ -783,10 +921,12 @@ timeline: &timeline
       name: 'type'
       widget: 'hidden'
       default: 'Timeline'
+      collapsed: true
     - label: 'Components'
       name: 'components'
       widget: 'list'
       required: false
+      collapsed: true
       types:
         - *timelineBullet
 
@@ -801,14 +941,17 @@ innerColumns: &innerColumns
       name: 'type'
       widget: 'hidden'
       default: 'InnerColumns'
+      collapsed: true
     - label: 'Column 1'
       name: 'column1'
       widget: 'object'
       required: false
+      collapsed: true
       fields:
         - label: 'Components'
           name: 'components'
           widget: 'list'
+          collapsed: true
           types:
             - *text
             - *chartBar
@@ -827,10 +970,12 @@ innerColumns: &innerColumns
       name: 'column2'
       widget: 'object'
       required: false
+      collapsed: true
       fields:
         - label: 'Components'
           name: 'components'
           widget: 'list'
+          collapsed: true
           types:
             - *text
             - *chartBar
@@ -856,18 +1001,22 @@ column: &column
       name: 'type'
       widget: 'hidden'
       default: 'Column'
+      collapsed: true
     - label: 'Padding Top'
       name: paddingTop
       widget: boolean
       default: false
+      collapsed: true
     - label: 'Padding Bottom'
       name: paddingBottom
       widget: boolean
       default: false
+      collapsed: true
     - label: 'Components'
       name: 'components'
       widget: 'list'
       required: false
+      collapsed: true
       types:
         - *text
         - *chartBar
@@ -894,18 +1043,22 @@ columns: &columns
       name: 'type'
       widget: 'hidden'
       default: 'Columns'
+      collapsed: true
     - label: 'Padding Top'
       name: paddingTop
       widget: boolean
       default: false
+      collapsed: true
     - label: 'Padding Bottom'
       name: paddingBottom
       widget: boolean
       default: false
+      collapsed: true
     - label: 'Invert on Mobile'
       name: invertOnMobile
       widget: boolean
       default: false
+      collapsed: true
     - label: 'Alignment'
       name: 'columnsAlign'
       widget: 'select'
@@ -913,14 +1066,17 @@ columns: &columns
       options:
         - { label: 'Bigger left', value: 66-33 }
         - { label: 'Bigger right', value: '33-66' }
+      collapsed: true
     - label: 'Column 1'
       name: 'column1'
       widget: 'object'
       required: false
+      collapsed: true
       fields:
         - label: 'Components'
           name: 'components'
           widget: 'list'
+          collapsed: true
           types:
             - *text
             - *chartBar
@@ -940,10 +1096,12 @@ columns: &columns
       name: 'column2'
       widget: 'object'
       required: false
+      collapsed: true
       fields:
         - label: 'Components'
           name: 'components'
           widget: 'list'
+          collapsed: true
           types:
             - *text
             - *chartBar
@@ -959,6 +1117,7 @@ columns: &columns
             - *spacer
             - *gallery
             - *slider
+
 columnSticky: &columnSticky
   label: 'Column Sticky'
   name: 'ColumnSticky'
@@ -970,41 +1129,49 @@ columnSticky: &columnSticky
       name: 'type'
       widget: 'hidden'
       default: 'ColumnSticky'
+      collapsed: true
     - label: 'Text Color'
       name: 'txtColor'
       widget: 'color'
       required: false
       enableAlpha: true
       allowInput: true
+      collapsed: true
     - label: 'Background Color'
       name: 'bgColor'
       widget: 'color'
       required: false
       enableAlpha: true
       allowInput: true
+      collapsed: true
     - label: 'Padding Top'
       name: 'paddingTop'
       widget: 'boolean'
       required: false
       default: false
+      collapsed: true
     - label: 'Padding Bottom'
       name: 'paddingBottom'
       widget: 'boolean'
       required: false
       default: false
+      collapsed: true
     - label: 'Layout'
       name: 'layout'
       widget: 'select'
       options: ['text-bigger', 'title-bottom']
       default: 'text-bigger'
+      collapsed: true
     - label: 'Title'
       name: 'title'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Components'
       name: 'components'
       widget: 'list'
       required: false
+      collapsed: true
       types:
         - *text
         - *chartBar
@@ -1031,60 +1198,72 @@ group: &group
       name: 'type'
       widget: 'hidden'
       default: 'Group'
+      collapsed: true
     - label: 'ID'
       name: 'id'
       widget: 'string'
       required: true
+      collapsed: true
     - label: 'Layout'
       name: 'layout'
       widget: 'select'
       options: ['default']
       default: 'default'
+      collapsed: true
     - label: 'Text Color'
       name: 'txtColor'
       widget: 'color'
       required: false
       enableAlpha: true
       allowInput: true
+      collapsed: true
     - label: 'Background Color'
       name: 'bgColor'
       widget: 'color'
       required: false
       enableAlpha: true
       allowInput: true
+      collapsed: true
     - label: 'Add Background media'
       name: 'backgroundMedia'
       required: false
       widget: 'list'
       max: 1
+      collapsed: true
       types:
         - label: 'Image'
           name: 'backgroundImage'
           widget: 'object'
+          collapsed: true
           fields:
             - label: 'Image'
               name: 'imgSrc'
               widget: 'image'
               required: false
               allow_multiple: false
+              collapsed: true
         - label: 'Video'
           name: 'backgroundVideo'
           widget: 'object'
+          collapsed: true
           fields:
             - label: 'Video'
               name: 'videoSrc'
               widget: 'file'
               allow_multiple: false
               required: false
+              collapsed: true
     - label: 'Overlay'
       name: 'overlay'
       widget: 'select'
       options: ['dark', 'light']
       required: false
+      collapsed: true
     - label: 'Components'
       name: 'components'
       widget: 'list'
       required: false
+      collapsed: true
       types:
         - *text
         - *videoEmbed
@@ -1114,32 +1293,38 @@ cta: &cta
       name: 'type'
       widget: 'hidden'
       default: 'Cta'
+      collapsed: true
     - label: 'ID'
       name: 'id'
       widget: 'string'
       required: true
+      collapsed: true
     - label: 'Layout'
       name: 'layout'
       widget: 'select'
       options: ['media', 'text']
       default: 'media'
+      collapsed: true
     - label: 'Text Color'
       name: 'txtColor'
       widget: 'color'
       required: false
       enableAlpha: true
       allowInput: true
+      collapsed: true
     - label: 'Background Color'
       name: 'bgColor'
       widget: 'color'
       required: false
       enableAlpha: true
       allowInput: true
+      collapsed: true
     - label: 'Background Image'
       name: 'imgBg'
       widget: 'image'
       required: false
       allow_multiple: false
+      collapsed: true
     - label: 'Media Type'
       name: 'mediaType'
       widget: 'select'
@@ -1149,6 +1334,7 @@ cta: &cta
       condition:
         field: layout
         value: media
+      collapsed: true
     - label: 'Media'
       name: 'media'
       widget: 'image'
@@ -1157,10 +1343,12 @@ cta: &cta
       condition:
         field: layout
         value: media
+      collapsed: true
     - label: 'CTA Text'
       name: 'ctaText'
       widget: 'markdown'
       required: false
+      collapsed: true
     - label: 'Highlighted Text'
       name: 'highlightedText'
       widget: 'string'
@@ -1168,25 +1356,30 @@ cta: &cta
       condition:
         field: layout
         value: text
+      collapsed: true
     - label: 'Link'
       name: 'link'
       widget: 'object'
       required: false
+      collapsed: true
       fields:
         - label: 'URL'
           name: 'url'
           widget: 'string'
           required: false
+          collapsed: true
         - label: 'Target'
           name: 'target'
           widget: 'select'
           options: ['_self', '_blank']
           default: '_self'
           required: false
+          collapsed: true
         - label: 'Text'
           name: 'text'
           widget: 'string'
           required: false
+          collapsed: true
 
 map: &map
   label: 'Map'
@@ -1199,37 +1392,44 @@ map: &map
       name: 'type'
       widget: 'hidden'
       default: 'Map'
+      collapsed: true
     - label: 'ID'
       name: 'id'
       widget: 'string'
       required: true
+      collapsed: true
     - label: 'Column Align'
       name: 'columnAlign'
       widget: 'select'
       options: ['left', 'right', 'center']
       default: 'left'
       required: false
+      collapsed: true
     - label: 'Floating Text'
       name: 'floatingText'
       widget: 'boolean'
       required: false
       default: false
+      collapsed: true
     - label: 'Text Color'
       name: 'txtColor'
       widget: 'color'
       required: false
       enableAlpha: true
       allowInput: true
+      collapsed: true
     - label: 'Background Color'
       name: 'bgColor'
       widget: 'color'
       required: false
       enableAlpha: true
       allowInput: true
+      collapsed: true
     - label: 'Components'
       name: 'components'
       widget: 'list'
       required: false
+      collapsed: true
       types:
         - *text
         - *mapView

@@ -9,41 +9,49 @@ columnSticky: &columnSticky
       name: 'type'
       widget: 'hidden'
       default: 'ColumnSticky'
+      collapsed: true
     - label: 'Text Color'
       name: 'txtColor'
       widget: 'color'
       required: false
       enableAlpha: true
       allowInput: true
+      collapsed: true
     - label: 'Background Color'
       name: 'bgColor'
       widget: 'color'
       required: false
       enableAlpha: true
       allowInput: true
+      collapsed: true
     - label: 'Padding Top'
       name: 'paddingTop'
       widget: 'boolean'
       required: false
       default: false
+      collapsed: true
     - label: 'Padding Bottom'
       name: 'paddingBottom'
       widget: 'boolean'
       required: false
       default: false
+      collapsed: true
     - label: 'Layout'
       name: 'layout'
       widget: 'select'
       options: ['text-bigger', 'title-bottom']
       default: 'text-bigger'
+      collapsed: true
     - label: 'Title'
       name: 'title'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Components'
       name: 'components'
       widget: 'list'
       required: false
+      collapsed: true
       types:
         - *text
         - *chartBar

@@ -9,11 +9,14 @@ timelineBullet: &timelineBullet
       name: 'type'
       widget: 'hidden'
       default: 'TimelineBullet'
+      collapsed: true
     - label: 'Text'
       name: 'text'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Content'
       name: 'content'
       widget: 'markdown'
       required: false
+      collapsed: true

@@ -9,24 +9,30 @@ gallery: &gallery
       name: 'type'
       widget: 'hidden'
       default: 'Gallery'
+      collapsed: true
     - label: 'Unique ID'
       name: 'uniqid'
       widget: 'string'
       required: true
+      collapsed: true
     - label: 'Description'
       name: 'description'
       widget: 'markdown'
       required: false
+      collapsed: true
     - label: 'Images'
       name: 'images'
       widget: 'list'
       required: false
+      collapsed: true
       fields:
         - label: 'Image'
           name: 'image'
           widget: 'image'
           required: false
+          collapsed: true
         - label: 'Caption'
           name: 'caption'
           widget: 'markdown'
           required: false
+          collapsed: true

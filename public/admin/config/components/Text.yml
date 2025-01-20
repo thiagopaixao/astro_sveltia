@@ -9,23 +9,28 @@ text: &text
       name: 'hasDropCap'
       widget: 'boolean'
       required: false
+      collapsed: true
     - label: 'Type'
       name: 'type'
       widget: 'hidden'
       default: 'Text'
+      collapsed: true
     - label: 'Text Color'
       name: 'txtColor'
       widget: 'color'
       required: false
       enableAlpha: true
       allowInput: true
+      collapsed: true
     - label: 'Background Color'
       name: 'bgColor'
       widget: 'color'
       required: false
       enableAlpha: true
       allowInput: true
+      collapsed: true
     - label: 'Content'
       name: 'content'
       widget: 'markdown'
       required: false
+      collapsed: true

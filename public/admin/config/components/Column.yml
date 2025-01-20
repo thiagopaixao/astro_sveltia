@@ -8,18 +8,22 @@ column: &column
       name: 'type'
       widget: 'hidden'
       default: 'Column'
+      collapsed: true
     - label: 'Padding Top'
       name: paddingTop
       widget: boolean
       default: false
+      collapsed: true
     - label: 'Padding Bottom'
       name: paddingBottom
       widget: boolean
       default: false
+      collapsed: true
     - label: 'Components'
       name: 'components'
       widget: 'list'
       required: false
+      collapsed: true
       types:
         - *text
         - *chartBar

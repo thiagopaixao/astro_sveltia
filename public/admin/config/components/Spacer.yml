@@ -9,15 +9,19 @@ spacer: &spacer
       name: 'type'
       widget: 'hidden'
       default: 'Spacer'
+      collapsed: true
     - label: 'Desktop Height'
       name: 'desktop'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Tablet Height'
       name: 'tablet'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Mobile Height'
       name: 'mobile'
       widget: 'string'
       required: false
+      collapsed: true

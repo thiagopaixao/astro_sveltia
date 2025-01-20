@@ -9,33 +9,40 @@ chartBar: &chartBar
       name: 'type'
       widget: 'hidden'
       default: 'ChartBar'
+      collapsed: true
     - label: 'Chart Title'
       name: 'chartTitle'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Chart Notes'
       name: 'chartNotes'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Chart Bars'
       name: 'chartBars'
       widget: 'list'
       required: false
+      collapsed: true
       fields:
         - label: 'Label'
           name: 'label'
           widget: 'string'
           required: false
+          collapsed: true
         - label: 'Color'
           name: 'color'
           widget: 'color'
           required: false
           enableAlpha: true
           allowInput: true
+          collapsed: true
         - label: 'Number'
           name: 'number'
           widget: 'number'
           required: false
+          collapsed: true
         - label: 'Number Percent'
           name: 'numberPercent'
           widget: 'number'
@@ -44,3 +51,4 @@ chartBar: &chartBar
           min: 0
           max: 100
           step: 0.01
+          collapsed: true

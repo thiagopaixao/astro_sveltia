@@ -8,31 +8,38 @@ pageSettings: &pageSettings
       name: 'type'
       widget: 'hidden'
       default: 'pageSettings'
+      collapsed: true
     - label: 'Language'
       name: 'language'
       widget: 'select'
       options: ['pt-BR', 'en', 'es']
       default: 'pt-BR'
+      collapsed: true
     - label: 'Text Direction'
       name: 'direction'
       widget: 'select'
       options: ['left', 'right']
       default: 'left'
+      collapsed: true
     - label: 'SEO Title'
       name: 'seoTitle'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'SEO Description'
       name: 'seoDescription'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'SEO Keywords'
       name: 'seoKeywords'
       widget: 'list'
       required: false
+      collapsed: true
       fields:
-        - { label: 'Keyword', name: 'keyword', widget: 'string' }
+        - { label: 'Keyword', name: 'keyword', widget: 'string', collapsed: true }
     - label: 'SEO Image'
       name: 'seoImage'
       widget: 'image'
       required: false
+      collapsed: true

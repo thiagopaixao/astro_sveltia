@@ -9,47 +9,58 @@ cardsCall: &cardsCall
       name: 'type'
       widget: 'hidden'
       default: 'CardsCall'
+      collapsed: true
     - label: 'Cards'
       name: 'cardsCallArr'
       widget: 'list'
       required: false
+      collapsed: true
       fields:
         - label: 'Link'
           name: 'link'
           widget: 'object'
           required: false
+          collapsed: true
           fields:
             - label: 'URL'
               name: 'url'
               widget: 'string'
               required: false
+              collapsed: true
             - label: 'Target'
               name: 'target'
               widget: 'select'
               options: ['_blank', '_parent', '_self', 'custom']
               required: false
+              collapsed: true
             - label: 'Custom Target'
               name: 'customTarget'
               widget: 'string'
               required: false
+              collapsed: true
         - label: 'Image'
           name: 'img'
           widget: 'object'
           required: false
+          collapsed: true
           fields:
             - label: 'Source'
               name: 'src'
               widget: 'image'
               required: false
+              collapsed: true
             - label: 'Alt'
               name: 'alt'
               widget: 'string'
               required: false
+              collapsed: true
         - label: 'Title'
           name: 'title'
           widget: 'string'
           required: false
+          collapsed: true
         - label: 'Text'
           name: 'text'
           widget: 'markdown'
           required: false
+          collapsed: true

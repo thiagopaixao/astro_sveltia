@@ -9,23 +9,28 @@ pullquote: &pullquote
       name: 'type'
       widget: 'hidden'
       default: 'Pullquote'
+      collapsed: true
     - label: 'Text Color'
       name: 'txtColor'
       widget: 'color'
       required: false
       enableAlpha: true
       allowInput: true
+      collapsed: true
     - label: 'Background Color'
       name: 'bgColor'
       widget: 'color'
       required: false
       enableAlpha: true
       allowInput: true
+      collapsed: true
     - label: 'Content'
       name: 'content'
       widget: 'markdown'
       required: false
+      collapsed: true
     - label: 'Byline'
       name: 'byline'
       widget: 'string'
       required: false
+      collapsed: true

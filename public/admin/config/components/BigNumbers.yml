@@ -9,20 +9,25 @@ bigNumbers: &bigNumbers
       name: 'type'
       widget: 'hidden'
       default: 'BigNumbers'
+      collapsed: true
     - label: 'Alignment'
       name: 'alignment'
       widget: 'select'
       options: ['caption-bottom', 'caption-top']
       default: 'caption-bottom'
+      collapsed: true
     - label: 'Items'
       name: 'items'
       widget: 'list'
+      collapsed: true
       fields:
         - label: 'Number'
           name: 'number'
           widget: 'string'
           required: false
+          collapsed: true
         - label: 'Caption'
           name: 'caption'
           widget: 'string'
           required: false
+          collapsed: true

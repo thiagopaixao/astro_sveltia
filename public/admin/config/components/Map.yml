@@ -9,37 +9,44 @@ map: &map
       name: 'type'
       widget: 'hidden'
       default: 'Map'
+      collapsed: true
     - label: 'ID'
       name: 'id'
       widget: 'string'
       required: true
+      collapsed: true
     - label: 'Column Align'
       name: 'columnAlign'
       widget: 'select'
       options: ['left', 'right', 'center']
       default: 'left'
       required: false
+      collapsed: true
     - label: 'Floating Text'
       name: 'floatingText'
       widget: 'boolean'
       required: false
       default: false
+      collapsed: true
     - label: 'Text Color'
       name: 'txtColor'
       widget: 'color'
       required: false
       enableAlpha: true
       allowInput: true
+      collapsed: true
     - label: 'Background Color'
       name: 'bgColor'
       widget: 'color'
       required: false
       enableAlpha: true
       allowInput: true
+      collapsed: true
     - label: 'Components'
       name: 'components'
       widget: 'list'
       required: false
+      collapsed: true
       types:
         - *text
         - *mapView

@@ -9,17 +9,21 @@ compare: &compare
       name: 'type'
       widget: 'hidden'
       default: 'Compare'
+      collapsed: true
     - label: 'Image Left'
       name: 'imageLeft'
       widget: 'image'
       required: true
       allow_multiple: false
+      collapsed: true
     - label: 'Image Right'
       name: 'imageRight'
       widget: 'image'
       required: true
       allow_multiple: false
+      collapsed: true
     - label: 'Caption'
       name: 'caption'
       widget: 'markdown'
       required: false
+      collapsed: true

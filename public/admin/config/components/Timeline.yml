@@ -9,9 +9,11 @@ timeline: &timeline
       name: 'type'
       widget: 'hidden'
       default: 'Timeline'
+      collapsed: true
     - label: 'Components'
       name: 'components'
       widget: 'list'
       required: false
+      collapsed: true
       types:
         - *timelineBullet

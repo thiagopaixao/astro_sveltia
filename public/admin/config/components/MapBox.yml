@@ -8,118 +8,145 @@ mapBox: &mapBox
       name: 'type'
       widget: 'hidden'
       default: 'MapBox'
+      collapsed: true
     - label: 'Column Align'
       name: 'columnAlign'
       widget: 'select'
       options: ['left', 'center', 'right']
       required: false
+      collapsed: true
     - label: 'Floating Text'
       name: 'floatingText'
       widget: 'boolean'
       required: false
+      collapsed: true
     - label: 'Map Style'
       name: 'style'
       widget: 'string'
       required: true
+      collapsed: true
     - label: 'Map Center'
       name: 'center'
       widget: 'list'
       fields:
-        - { label: 'Longitude', name: 'lng', widget: 'number' }
-        - { label: 'Latitude', name: 'lat', widget: 'number' }
+        - { label: 'Longitude', name: 'lng', widget: 'number', collapsed: true }
+        - { label: 'Latitude', name: 'lat', widget: 'number', collapsed: true }
       required: true
+      collapsed: true
     - label: 'Map Zoom'
       name: 'zoom'
       widget: 'number'
       required: true
+      collapsed: true
     - label: 'Map Bearing'
       name: 'bearing'
       widget: 'number'
       required: false
+      collapsed: true
     - label: 'Map Pitch'
       name: 'pitch'
       widget: 'number'
       required: false
+      collapsed: true
     - label: 'Map Layers'
       name: 'layers'
       widget: 'list'
       required: false
+      collapsed: true
     - label: 'Map Token'
       name: 'token'
       widget: 'string'
       required: true
+      collapsed: true
     - label: 'Map Views'
       name: 'views'
       widget: 'list'
       required: false
+      collapsed: true
       fields:
         - label: 'View ID'
           name: 'id'
           widget: 'string'
           required: true
+          collapsed: true
         - label: 'View Center'
           name: 'center'
           widget: 'list'
           fields:
-            - { label: 'Longitude', name: 'lng', widget: 'number' }
-            - { label: 'Latitude', name: 'lat', widget: 'number' }
+            - { label: 'Longitude', name: 'lng', widget: 'number', collapsed: true }
+            - { label: 'Latitude', name: 'lat', widget: 'number', collapsed: true }
           required: true
+          collapsed: true
         - label: 'View Duration'
           name: 'duration'
           widget: 'number'
           required: true
+          collapsed: true
         - label: 'View Zoom'
           name: 'zoom'
           widget: 'number'
           required: true
+          collapsed: true
         - label: 'View Bearing'
           name: 'bearing'
           widget: 'number'
           required: false
+          collapsed: true
         - label: 'View Pitch'
           name: 'pitch'
           widget: 'number'
           required: false
+          collapsed: true
         - label: 'View Layers'
           name: 'layers'
           widget: 'list'
           required: false
+          collapsed: true
         - label: 'Mobile View'
           name: 'mobile'
           widget: 'object'
           required: false
+          collapsed: true
           fields:
             - label: 'Mobile Zoom'
               name: 'zoom'
               widget: 'number'
               required: false
+              collapsed: true
         - label: 'Captions'
           name: 'captions'
           widget: 'object'
           required: false
+          collapsed: true
           fields:
             - label: 'Title'
               name: 'title'
               widget: 'string'
               required: false
+              collapsed: true
             - label: 'Notes'
               name: 'notes'
               widget: 'string'
               required: false
+              collapsed: true
             - label: 'Items'
               name: 'items'
               widget: 'list'
               required: false
+              collapsed: true
               fields:
                 - label: 'Icon'
                   name: 'icon'
                   widget: 'string'
                   required: false
+                  collapsed: true
                 - label: 'Text'
                   name: 'text'
                   widget: 'string'
                   required: false
+                  collapsed: true
     - label: 'Map View'
       name: 'mapView'
       widget: 'string'
       required: false
+      collapsed: true

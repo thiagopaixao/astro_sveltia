@@ -9,16 +9,20 @@ videoEmbed: &videoEmbed
       name: 'type'
       widget: 'hidden'
       default: 'VideoEmbed'
+      collapsed: true
     - label: 'Wide'
       name: 'wideVideo'
       widget: 'boolean'
       required: false
       default: false
+      collapsed: true
     - label: 'Video URL'
       name: 'videoUrl'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Video Caption'
       name: 'videoCaption'
       widget: 'string'
       required: false
+      collapsed: true

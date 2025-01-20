@@ -8,55 +8,67 @@ pageTheme: &pageTheme
       name: 'type'
       widget: 'hidden'
       default: 'pageTheme'
+      collapsed: true
     - label: 'Primary Color'
       name: 'primaryColor'
       widget: 'color'
       required: false
       allowInput: true
       allowAlpha: true
+      collapsed: true
     - label: 'Secondary Color'
       name: 'secondaryColor'
       widget: 'color'
       required: false
       allowInput: true
       allowAlpha: true
+      collapsed: true
     - label: 'Highlight Color'
       name: 'highlightColor'
       widget: 'color'
       required: false
       allowInput: true
       allowAlpha: true
+      collapsed: true
     - label: 'Auxiliary Color'
       name: 'auxiliaryColor'
       widget: 'color'
       required: false
       allowInput: true
       allowAlpha: true
+      collapsed: true
     - label: 'Display Font'
       name: 'displayFont'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Text Font'
       name: 'textFont'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Spacing Patterns'
       name: 'spacingPatterns'
       widget: 'list'
+      collapsed: true
       fields:
         - label: 'Pattern Name'
           name: 'name'
           widget: 'string'
           required: true
+          collapsed: true
         - label: 'Mobile Value'
           name: 'mobile'
           widget: 'string'
           required: true
+          collapsed: true
         - label: 'Tablet Value'
           name: 'tablet'
           widget: 'string'
           required: true
+          collapsed: true
         - label: 'Desktop Value'
           name: 'desktop'
           widget: 'string'
           required: true
+          collapsed: true

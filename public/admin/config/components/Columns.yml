@@ -8,18 +8,22 @@ columns: &columns
       name: 'type'
       widget: 'hidden'
       default: 'Columns'
+      collapsed: true
     - label: 'Padding Top'
       name: paddingTop
       widget: boolean
       default: false
+      collapsed: true
     - label: 'Padding Bottom'
       name: paddingBottom
       widget: boolean
       default: false
+      collapsed: true
     - label: 'Invert on Mobile'
       name: invertOnMobile
       widget: boolean
       default: false
+      collapsed: true
     - label: 'Alignment'
       name: 'columnsAlign'
       widget: 'select'
@@ -27,14 +31,17 @@ columns: &columns
       options:
         - { label: 'Bigger left', value: 66-33 }
         - { label: 'Bigger right', value: '33-66' }
+      collapsed: true
     - label: 'Column 1'
       name: 'column1'
       widget: 'object'
       required: false
+      collapsed: true
       fields:
         - label: 'Components'
           name: 'components'
           widget: 'list'
+          collapsed: true
           types:
             - *text
             - *chartBar
@@ -54,10 +61,12 @@ columns: &columns
       name: 'column2'
       widget: 'object'
       required: false
+      collapsed: true
       fields:
         - label: 'Components'
           name: 'components'
           widget: 'list'
+          collapsed: true
           types:
             - *text
             - *chartBar

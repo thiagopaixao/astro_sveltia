@@ -9,20 +9,25 @@ imageBlock: &imageBlock
       name: 'type'
       widget: 'hidden'
       default: 'ImageBlock'
+      collapsed: true
     - label: 'Wide'
       name: 'wideImage'
       widget: 'boolean'
       required: false
       default: false
+      collapsed: true
     - label: 'Image'
       name: 'src'
       widget: 'image'
       required: false
+      collapsed: true
     - label: 'Alt Text'
       name: 'alt'
       widget: 'string'
       required: false
+      collapsed: true
     - label: 'Description'
       name: 'description'
       widget: 'string'
       required: false
+      collapsed: true
