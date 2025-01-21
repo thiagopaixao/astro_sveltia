@@ -1,6 +1,7 @@
 ---
 title: Home
 pageSettings:
+  language: pt-BR
   direction: left
   seoTitle: ''
   seoDescription: ''
@@ -9,8 +10,8 @@ pageTheme:
   secondaryColor: '#f0ead9'
   highlightColor: '#006949'
   auxiliaryColor: '#ff7967'
-  displayFont: ''
-  textFont: ''
+  displayFont: https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap
+  textFont: https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap
   spacingPatterns:
     - name: Teste
       mobile: '10'

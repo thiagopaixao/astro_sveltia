@@ -21,11 +21,24 @@ const textFont = pageTheme?.textFont || '';
 const spacingPatterns = pageTheme?.spacingPatterns || [];
 
 
+
+const getFontName = (url) => {
+  if (!url) return '';
+  const fontName = url.match(/family=([^&:]+)/)?.[1];
+  return fontName ? fontName.replace(/\+/g, ' ') : '';
+};
+
+const displayFontName = getFontName(displayFont);
+const textFontName = getFontName(textFont);
+
+
 const styleString = spacingPatterns.map(pattern => `
   --mt-${pattern.name}-mobile: ${pattern.mobile};
   --mt-${pattern.name}-tablet: ${pattern.tablet};
   --mt-${pattern.name}-desktop: ${pattern.desktop};
 `).join('\n');
+
+console.log("Font text: ", textFontName);
 
 ---
 
@@ -35,15 +48,20 @@ const styleString = spacingPatterns.map(pattern => `
 	--clr-bg: ${secondaryColor};
 	--clr-bg-hl: ${highlightColor};
     --clr-hl: ${auxiliaryColor};
-    ${displayFont ? `--ff-display: ${displayFont};` : ''}
-    ${textFont ? `--ff-text: ${textFont};` : ''}
+
+	${displayFont ? `--ff-display: ${displayFontName};` : ''}
+    ${textFont ? `--ff-text: ${textFontName};` : ''}
+    
     ${styleString}
+	
 `}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href={displayFont} />
+		<link rel="stylesheet" href={textFont} />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 		<script src="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js"></script>
