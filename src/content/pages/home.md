@@ -10,8 +10,8 @@ pageTheme:
   secondaryColor: '#f0ead9'
   highlightColor: '#006949'
   auxiliaryColor: '#ff7967'
-  displayFont: https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap
-  textFont: https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap
+  displayFont: ''
+  textFont: ''
   spacingPatterns:
     - name: Teste
       mobile: '10'
