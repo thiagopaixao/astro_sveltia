@@ -364,20 +364,6 @@ text: &text
       widget: 'hidden'
       default: 'Text'
       collapsed: true
-    - label: 'Text Color'
-      name: 'txtColor'
-      widget: 'color'
-      required: false
-      enableAlpha: true
-      allowInput: true
-      collapsed: true
-    - label: 'Background Color'
-      name: 'bgColor'
-      widget: 'color'
-      required: false
-      enableAlpha: true
-      allowInput: true
-      collapsed: true
     - label: 'Content'
       name: 'content'
       widget: 'markdown'
@@ -1230,17 +1216,23 @@ group: &group
       collapsed: true
     - label: 'Text Color'
       name: 'txtColor'
-      widget: 'color'
+      widget: 'select'
+      options:
+        - { label: 'Primary', value: 'Primary' }
+        - { label: 'Secondary', value: 'Secondary' }
+        - { label: 'Highlight', value: 'Highlight' }
+      default: 'Primary'
       required: false
-      enableAlpha: true
-      allowInput: true
       collapsed: true
     - label: 'Background Color'
       name: 'bgColor'
-      widget: 'color'
+      widget: 'select'
+      options:
+        - { label: 'Primary', value: 'Primary' }
+        - { label: 'Secondary', value: 'Secondary' }
+        - { label: 'Highlight', value: 'Highlight' }
+      default: 'Secundary'
       required: false
-      enableAlpha: true
-      allowInput: true
       collapsed: true
     - label: 'Add Background media'
       name: 'backgroundMedia'
@@ -1325,17 +1317,23 @@ cta: &cta
       collapsed: true
     - label: 'Text Color'
       name: 'txtColor'
-      widget: 'color'
+      widget: 'select'
+      options:
+        - { label: 'Primary', value: 'Primary' }
+        - { label: 'Secondary', value: 'Secondary' }
+        - { label: 'Highlight', value: 'Highlight' }
+      default: 'Primary'
       required: false
-      enableAlpha: true
-      allowInput: true
       collapsed: true
     - label: 'Background Color'
       name: 'bgColor'
-      widget: 'color'
+      widget: 'select'
+      options:
+        - { label: 'Primary', value: 'Primary' }
+        - { label: 'Secondary', value: 'Secondary' }
+        - { label: 'Highlight', value: 'Highlight' }
+      default: 'Secundary'
       required: false
-      enableAlpha: true
-      allowInput: true
       collapsed: true
     - label: 'Background Image'
       name: 'imgBg'
@@ -1431,17 +1429,23 @@ map: &map
       collapsed: true
     - label: 'Text Color'
       name: 'txtColor'
-      widget: 'color'
+      widget: 'select'
+      options:
+        - { label: 'Primary', value: 'Primary' }
+        - { label: 'Secondary', value: 'Secondary' }
+        - { label: 'Highlight', value: 'Highlight' }
+      default: 'Primary'
       required: false
-      enableAlpha: true
-      allowInput: true
       collapsed: true
     - label: 'Background Color'
       name: 'bgColor'
-      widget: 'color'
+      widget: 'select'
+      options:
+        - { label: 'Primary', value: 'Primary' }
+        - { label: 'Secondary', value: 'Secondary' }
+        - { label: 'Highlight', value: 'Highlight' }
+      default: 'Secundary'
       required: false
-      enableAlpha: true
-      allowInput: true
       collapsed: true
     - label: 'Components'
       name: 'components'

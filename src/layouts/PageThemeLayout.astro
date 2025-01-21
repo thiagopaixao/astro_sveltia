@@ -1,0 +1,68 @@
+---
+import '../assets/styles/main.scss';
+
+interface Props {
+	title: string;
+  primaryColor?: string;
+  secondaryColor?: string;
+  highlightColor?: string;
+  auxiliaryColor?: string;
+}
+
+const { title, primaryColor, secondaryColor, highlightColor, auxiliaryColor } = Astro.props;
+
+console.log("Primary: ", secondaryColor)
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<script src="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.css" rel="stylesheet">
+		<script src="/src/assets/scripts/App.js" is:inline type="module"></script>
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body >
+		<slot />
+	</body>
+</html>
+
+<script>
+	const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+	isSafari && document.body.classList.add('is-safari');
+</script>
+
+<style lang="scss">
+	@use "../assets/styles/config/config" as *;
+
+	:global(:root) {
+    	--clr-bg: ${secondaryColor};
+		--clr-txt: ${primaryColor};
+		--clr-hl: ${highlightColor};
+    	--clr-aux: ${auxiliaryColor};
+
+		--map-height-mobile: 52vh;
+
+		--mt-s: 40px;
+		--mt-m: 80px;
+		--mt-l: 120px;
+
+		@include media-break-down(xl) {
+			--mt-s: 30px;
+			--mt-m: 60px;
+			--mt-l: 90px;
+		}
+	}
+
+  :global(body > main) {
+    background-color: var(--clr-bg) !important; 
+	color: var(--clr-txt) !important; 
+  }
+</style>

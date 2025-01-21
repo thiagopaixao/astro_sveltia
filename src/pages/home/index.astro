@@ -99,9 +99,25 @@ const chartPerc = [
         async function renderComponents(componentList) {
           if (!componentList) return [];
 
-          const results = await Promise.all(componentList.map(async ({ type, components: childComponents, ...restProps }) => {
+          const results = await Promise.all(componentList.map(async ({ type, components: childComponents, txtColor, bgColor, ...restProps }) => {
             const Component = componentMap[type];
             if (!Component) return null;
+
+            const themeColors = entry.data?.pageTheme || {};
+
+            const replaceColor = (color) => {
+              if (color === 'Primary') return themeColors?.primaryColor;
+              if (color === 'Secondary') return themeColors?.secondaryColor;
+              if (color === 'Highlight') return themeColors?.highlightColor;
+              if (color === '') return 'transparent';
+              return color;
+            };
+
+            const props = {
+              ...restProps,
+              txtColor: replaceColor(txtColor),
+              bgColor: replaceColor(bgColor),
+            };
 
             if (type === 'InnerColumns') {
               const column1 = restProps.column1;
@@ -154,14 +170,14 @@ const chartPerc = [
             if (Layout) {
               // Se houver um layout específico, use-o
               return (
-                <Layout Component={Component} props={restProps}>
+                <Layout Component={Component} props={props}>
                   {children}
                 </Layout>
               );
             } else {
               // Caso contrário, renderize o componente diretamente
               return (
-                <Component {...restProps}>
+                <Component {...props}>
                   {children}
                 </Component>
               );
@@ -181,6 +197,9 @@ const chartPerc = [
 
 
 </main>
+
+
+</style>
 </Layout>
   </body>
 </html>

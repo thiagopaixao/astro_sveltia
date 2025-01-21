@@ -23,17 +23,23 @@ group: &group
       collapsed: true
     - label: 'Text Color'
       name: 'txtColor'
-      widget: 'color'
+      widget: 'select'
+      options:
+        - { label: 'Primary', value: 'Primary' }
+        - { label: 'Secondary', value: 'Secondary' }
+        - { label: 'Highlight', value: 'Highlight' }
+      default: 'Primary'
       required: false
-      enableAlpha: true
-      allowInput: true
       collapsed: true
     - label: 'Background Color'
       name: 'bgColor'
-      widget: 'color'
+      widget: 'select'
+      options:
+        - { label: 'Primary', value: 'Primary' }
+        - { label: 'Secondary', value: 'Secondary' }
+        - { label: 'Highlight', value: 'Highlight' }
+      default: 'Secundary'
       required: false
-      enableAlpha: true
-      allowInput: true
       collapsed: true
     - label: 'Add Background media'
       name: 'backgroundMedia'

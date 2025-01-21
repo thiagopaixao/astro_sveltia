@@ -1,15 +1,44 @@
 ---
 import '../assets/styles/main.scss';
+import { getEntryBySlug } from 'astro:content';
 
 interface Props {
 	title: string;
 }
 
 const { title } = Astro.props;
+
+// Obtém o frontmatter da página 'home'
+const homeEntry = await getEntryBySlug('pages', 'home');
+const pageTheme = homeEntry?.data?.pageTheme || {};
+
+const primaryColor = pageTheme?.primaryColor || '#000';
+const secondaryColor = pageTheme?.secondaryColor || '';
+const highlightColor = pageTheme?.highlightColor || '';
+const auxiliaryColor = pageTheme?.auxiliaryColor || '';
+const displayFont = pageTheme?.displayFont || '';
+const textFont = pageTheme?.textFont || '';
+const spacingPatterns = pageTheme?.spacingPatterns || [];
+
+
+const styleString = spacingPatterns.map(pattern => `
+  --mt-${pattern.name}-mobile: ${pattern.mobile};
+  --mt-${pattern.name}-tablet: ${pattern.tablet};
+  --mt-${pattern.name}-desktop: ${pattern.desktop};
+`).join('\n');
+
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" style={`
+    --clr-txt: ${primaryColor};
+	--clr-bg: ${secondaryColor};
+	--clr-bg-hl: ${highlightColor};
+    --clr-hl: ${auxiliaryColor};
+    ${displayFont ? `--ff-display: ${displayFont};` : ''}
+    ${textFont ? `--ff-text: ${textFont};` : ''}
+    ${styleString}
+`}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -23,7 +52,7 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body style={`${!secondaryColor ? 'background-color: transparent !important;' : ''}`}>
 		<slot />
 	</body>
 </html>
@@ -37,20 +66,19 @@ const { title } = Astro.props;
 	@use "../assets/styles/config/config" as *;
 
 	:global(:root) {
-		--clr-bg: #F0EAD9;
-		--clr-txt: #006A49;
-		--clr-hl: #FF7967;
-
 		--map-height-mobile: 52vh;
 
-		--mt-s: 40px;
-		--mt-m: 80px;
-		--mt-l: 120px;
+		--mt-s: var(--mt-default-mobile, 40px);
+		--mt-m: var(--mt-default-tablet, 80px);
+		--mt-l: var(--mt-default-desktop, 120px);
 
 		@include media-break-down(xl) {
-			--mt-s: 30px;
-			--mt-m: 60px;
-			--mt-l: 90px;
+			--mt-s: var(--mt-default-mobile, 30px);
+			--mt-m: var(--mt-default-tablet, 60px);
+			--mt-l: var(--mt-default-desktop, 90px);
 		}
 	}
+
+	
+	
 </style>

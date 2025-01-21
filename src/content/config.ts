@@ -143,7 +143,7 @@ const componentSchema = z.object({
 
   // Atributos do Columns
   invertOnMobile: z.boolean().optional(),
-  columnsAlign: z.enum(['33-66']).optional(),
+  columnsAlign: z.enum(['33-66', '66-33']).optional(),
 
   // Atributos do Map
   columnAlign: z.enum(['left', 'center', 'right']).optional(),
@@ -168,7 +168,6 @@ const componentSchema = z.object({
 
   // Atributos do Gallery
   uniqid: z.string().optional(),
-  //description: z.string().optional().transform(processMarkdown),
   images: z
     .array(
       z.object({
@@ -201,6 +200,20 @@ const pagesCollection = defineCollection({
   schema: z.object({
     title: z.string().optional(),
     components: z.array(componentSchema).optional(),
+    pageTheme: z.object({
+      primaryColor: z.string().optional(),
+      secondaryColor: z.string().optional(),
+      highlightColor: z.string().optional(),
+      auxiliaryColor: z.string().optional(),
+      displayFont: z.string().optional(),
+      textFont: z.string().optional(),
+      spacingPatterns: z.array(z.object({
+        name: z.string(),
+        mobile: z.string(),
+        tablet: z.string(),
+        desktop: z.string()
+      })).optional()
+    }).optional(),
   }),
 });
 
