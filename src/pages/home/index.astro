@@ -27,6 +27,8 @@ import Compare from '../../components/Compare.astro';
 import Pullquote from '../../components/Pullquote.astro';
 import Gallery from '../../components/Gallery.astro';
 import Slider from '../../components/Slider.astro';
+import { getEntryBySlug } from 'astro:content';
+import Menu from "../../components/Menu.astro";
 
 // Apenas carregando dados e definindo variáveis no frontmatter
 const entry = await getEntryBySlug('pages', 'home');
@@ -63,33 +65,39 @@ const componentMap = {
   Slider
 };
 
-const chartPerc = [
+const languages = [
   {
-    color: "#DDCE27",
-    number: 25,
-    label: "Governo",
+    slug: "EN",
+    url: "#",
   },
   {
-    color: "#006949",
-    number: 40,
-    label: "Empresa",
+    slug: "ES",
+    url: "#",
   },
   {
-    color: "#FF7967",
-    number: 35,
-    label: "Outros",
+    slug: "PT",
+    url: "#",
   },
 ];
+
+const mainMenu = components
+  ? components
+      .filter(component => component.id)
+      .map(component => ({
+        text: component.id,
+        url: `#${component.id}`,
+      }))
+  : [];
 ---
 
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <title>{title}</title>
-  </head>
-  <body>
   <Layout title="Documental.xyz">
     <main>
+      <!-- MENU -->
+      <Menu
+        languages={languages}
+        menu={mainMenu}
+        sideLink={"https://documental.xyz"}
+      />
       <MapBox />
     {
       // Toda a lógica de renderização fica aqui, no template.
