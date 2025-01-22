@@ -1,6 +1,0 @@
-@use '../config/config' as *;
-
-:root{
-	@include print_colors_vars();
-	@include typeVars();
-}

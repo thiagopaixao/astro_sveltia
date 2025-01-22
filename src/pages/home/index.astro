@@ -27,7 +27,6 @@ import Compare from '../../components/Compare.astro';
 import Pullquote from '../../components/Pullquote.astro';
 import Gallery from '../../components/Gallery.astro';
 import Slider from '../../components/Slider.astro';
-import { getEntryBySlug } from 'astro:content';
 import Menu from "../../components/Menu.astro";
 
 // Apenas carregando dados e definindo variáveis no frontmatter
@@ -90,9 +89,8 @@ const mainMenu = components
   : [];
 ---
 
-  <Layout title="Documental.xyz">
+  <Layout title={title}>
     <main>
-      <!-- MENU -->
       <Menu
         languages={languages}
         menu={mainMenu}
@@ -100,9 +98,6 @@ const mainMenu = components
       />
       <MapBox />
     {
-      // Toda a lógica de renderização fica aqui, no template.
-      // Não usamos <script> separado, mas a lógica não está no frontmatter.
-      // Ela está após o frontmatter, no corpo do template, o que é permitido.
       (async function() {
         async function renderComponents(componentList) {
           if (!componentList) return [];
@@ -163,27 +158,22 @@ const mainMenu = components
               );
             }
 
-
-            
             let Layout = null;
             try {
               const layoutModule = await import(`../../layouts/${type}Layout.astro`);
               Layout = layoutModule.default;
             } catch (e) {
-              // Caso não encontre o layout específico, seguirá sem layout.
             }
 
             const children = childComponents ? await renderComponents(childComponents) : [];
 
             if (Layout) {
-              // Se houver um layout específico, use-o
               return (
                 <Layout Component={Component} props={props}>
                   {children}
                 </Layout>
               );
             } else {
-              // Caso contrário, renderize o componente diretamente
               return (
                 <Component {...props}>
                   {children}
@@ -195,19 +185,8 @@ const mainMenu = components
           return results;
         }
   
-
-        // Renderiza as seções
         return await renderComponents(components);
       })()
     }
-
-
-
-
-</main>
-
-
-</style>
-</Layout>
-  </body>
-</html>
+    </main>
+  </Layout>
