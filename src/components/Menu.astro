@@ -1,9 +1,10 @@
 ---
-const { languages, menu, sideLink } = Astro.props;
+const { languages, menu, sideLink, title } = Astro.props;
 ---
 
 <div class="topbar">
   <div class="topbar__holder">
+    {title && <h1 class="topbar__title">{title}</h1>}
     <button class="topbar__menu-btn" aria-controls="menu">
       <span></span>
     </button>
@@ -36,8 +37,8 @@ const { languages, menu, sideLink } = Astro.props;
   @use "../assets/styles/config/config" as *;
   @use "../assets/styles/utils/grrr/grrr" as *;
 
-  
   .topbar {
+    $self: &;
     @extend %grrr--board;
     display: block;
     width: 100%;
@@ -46,14 +47,51 @@ const { languages, menu, sideLink } = Astro.props;
     left: 0;
     height: 60px;
     z-index: 200;
+    transition: background .3s ease;
     
     :global(body:has(.gallery-modal[aria-hidden="false"])) & {
       opacity: 0;
       pointer-events: none;
     }
 
+    &.-hidden {
+      #{$self}__title {
+        opacity: 0;
+      }
+
+      :global(body[menu-open]) & #{$self}__title {
+        opacity: 1;
+      }
+    }
+    
+    &.-fixed {
+      &:has(#{$self}__title) {
+        background-color: var(--clr-txt);
+        color: var(--clr-bg);
+      }
+
+      #{$self}__title {
+        opacity: 1;
+      }
+    }
+
     @include media-break-up(l) {
       padding-top: 50px;
+    }
+
+    &__title {
+      @include type('h-s');
+      font-weight: 500;
+      position: absolute;
+      left: var(--atnl-margin);
+      top: 50%;
+      transform: translateY(-50%);
+      transition: opacity .3s ease;
+      
+      @include media-break-up(l) {
+        @include type('h-l');
+        font-weight: 500;
+      }
     }
 
     &__menu-btn {
@@ -109,7 +147,8 @@ const { languages, menu, sideLink } = Astro.props;
     width: 100%;
     height: 100dvh;
     max-width: 470px;
-    background-color: var(--clr-hl);
+    color: var(--clr-bg);
+    background-color: var(--clr-txt);
     padding: var(--atnl-margin);
     position: absolute;
     top: 0;
@@ -201,5 +240,36 @@ const { languages, menu, sideLink } = Astro.props;
     })
   }
 
+  function toggleFixedMenu() {
+    let lastScroll = window.scrollY || document.documentElement.scrollTop;
+		const scrollUpThreshold = 5;
+		const offset = 100;
+    const topBar = document.querySelector('.topbar');
+
+		window.addEventListener('scroll', e => {
+			const scrollTop = window.scrollY || document.documentElement.scrollTop;
+			
+
+			if(scrollTop > offset) {
+				topBar.classList.add('-hidden');
+
+				if (lastScroll - scrollTop > scrollUpThreshold) {
+					topBar.classList.add('-fixed');
+				}
+
+				if(scrollTop - lastScroll > scrollUpThreshold) {
+					topBar.classList.remove('-fixed');
+				}
+			} else {
+				topBar.classList.remove('-hidden', '-fixed');
+
+				return;
+			}
+
+			lastScroll = scrollTop <= 0 ? 0 : scrollTop;
+		});
+  }
+
+  toggleFixedMenu();
   toggleMenu();
 </script>
