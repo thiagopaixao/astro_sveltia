@@ -1,15 +1,13 @@
-// src/assets/scripts/App.js
-
 import EnteringAnimations from './EnteringAnimations';
 import ScrollProgressionBar from './ScrollProgressionBar';
 import MapBoxHandler from './MapBoxHandler';
 
-// Inicializações
 new EnteringAnimations();
 new ScrollProgressionBar();
+
+//Mapbox
 window.mapBoxHandler = new MapBoxHandler();
 
-// Função de debug
 window.debugMapTransitions = () => {
   const debug = () => {
     document.body.classList.add('debug-map-transitions');

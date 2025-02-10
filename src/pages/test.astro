@@ -1,0 +1,229 @@
+---
+import Layout from "../layouts/Layout.astro";
+import MapBox from "../components/MapBox.astro";
+import Group from "../components/Group.astro";
+import Map from "../components/Map.astro";
+import MapView from "../components/MapView.astro";
+
+import img from "../assets/images/group-bg.png";
+
+import ColumnSticky from "../components/ColumnSticky.astro";
+
+import Text from "../components/Text.astro";
+import Menu from "../components/Menu.astro";
+import Columns from "../components/Columns.astro";
+import TextPlaceholder from "../components/TextPlaceholder.astro";
+import Spacer from "../components/Spacer.astro";
+
+const languages = [
+  {
+    slug: "EN",
+    url: "#",
+  },
+  {
+    slug: "ES",
+    url: "#",
+  },
+  {
+    slug: "PT",
+    url: "#",
+  },
+];
+
+const mainMenu = [
+  {
+    text: "Territories of Exception",
+    url: "#",
+    target: "_blank",
+  },
+  {
+    text: "June 20, 2018",
+    url: "#",
+  },
+  {
+    text: "GEOGRAPHY OF STATE VIOLENCE",
+    url: "#",
+  },
+  {
+    text: "HELICOPTERS AS A POLITICAL PLATFORM",
+    url: "#",
+  },
+  {
+    text: "TERRITORIES IN DISPUTE",
+    url: "#",
+  },
+  {
+    text: "REFERENCES",
+    url: "#",
+  },
+  {
+    text: "CREDITS",
+    url: "#",
+  },
+  {
+    text: "TERRITORIES IN DISPUTE",
+    url: "#",
+  },
+  {
+    text: "REFERENCES",
+    url: "#",
+  },
+  {
+    text: "CREDITS",
+    url: "#",
+  },
+];
+---
+
+<Layout title="Documental.xyz">
+  <main>
+    <!-- MENU -->
+    <Menu
+      languages={languages}
+      menu={mainMenu}
+      sideLink={"https://documental.xyz"}
+    />
+
+    <!-- MapBox deve ser sempre o primeiro componente -->
+    <MapBox />
+
+    <Group txtColor="#F0EAD9" bgColor="#006949" imgBg={img.src}>
+      <ColumnSticky paddingTop paddingBottom layout="text-bigger">
+        <h1 slot="title">ALTER DO CHÃO ALSO NEEDS TO BE RECOGNIZED</h1>
+        <Text>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+            sed quia non numquam eius modi tempora incidunt ut labore et dolore
+            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+            aliquid ex ea commodi consequatur? Quis autem vel eum iure
+            reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem eum fugiat quo voluptas. Nemo
+            enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+            fugit, sed quia consequuntur magni dolores eos qui ratione
+            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+            ipsum quia dolor sit amet, consectetur, adipisci velit.
+          </p>
+        </Text>
+      </ColumnSticky>
+    </Group>
+
+    <Group>
+      <Columns alignment="33-66">
+        <Text slot="column-1">
+          <h6>
+            SED UT PERSPICIATIS UNDE OMNIS ISTE NATUS ERROR SIT VOLUPTATEM
+            ACCUSANTIUM DOLOREMQUE LAUDANTIUM, TOTAM REM APERIAM
+          </h6>
+        </Text>
+        <Text hasDropCap={true} slot="column-2">
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+            sed quia non numquam eius modi tempora incidunt ut labore et dolore
+            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+            aliquid ex ea commodi consequatur? Quis autem vel eum iure
+            reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem eum fugiat quo voluptas.
+          </p>
+          <p>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+            consectetur, adipisci velit, sed quia non numquam eius modi tempora
+            incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut
+            enim ad minima veniam, quis nostrum exercitationem ullam corporis
+            suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
+            autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+            nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+            voluptas.
+          </p>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt.
+          </p>
+        </Text>
+      </Columns>
+    </Group>
+    <Map
+      columnAlign="left"
+      floatingText={true}
+      txtColor="#F0EAD9"
+      bgColor="#006A49"
+    >
+      <MapView mapView="view_1" />
+      <Text>
+        <h6>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium
+        </h6>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis
+        </p>
+      </Text>
+      <Spacer desktop="106px"/>
+      <Text>
+        <h6>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium
+        </h6>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis
+        </p>
+      </Text>
+      <Spacer desktop="106px"/>
+      <Text>
+        <h6>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium
+        </h6>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis
+        </p>
+      </Text>
+      <Spacer desktop="106px"/>
+      <Text>
+        <h6>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium
+        </h6>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis
+        </p>
+      </Text>
+    </Map>
+  </main>
+
+  <style lang="scss">
+    main {
+      background-color: var(--clr-bg, transparent);
+
+      :global(> .spacer) {
+        position: relative;
+        background-color: inherit;
+      }
+    }
+  </style>
+</Layout>

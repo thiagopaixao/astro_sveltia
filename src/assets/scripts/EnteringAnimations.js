@@ -1,4 +1,4 @@
-import ScrollObserver from './utils/ScrollObserver.js';
+import ScrollObserver from './utils/ScrollObserver';
 
 export default class EnteringAnimations {
   constructor() {
