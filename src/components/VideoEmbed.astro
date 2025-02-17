@@ -30,7 +30,8 @@ const hasCaption = Astro.slots.has("caption");
     position: relative;
     
     &:not(:first-child),
-    :global(+ *)  {
+    :global(+ *),
+    :global(.animation-disabled >) &  {
       margin-top: var(--mt-m);
     }
 

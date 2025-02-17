@@ -52,7 +52,8 @@ const { cards } = Astro.props;
     $self: &;
 
     &:not(:first-child),
-    & :global(+ *) {
+    & :global(+ *),
+    :global(.animation-disabled >) & {
       margin-top: var(--atnl-gutter);
     }
 

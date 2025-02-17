@@ -1,0 +1,19 @@
+---
+const { disabled } = Astro.props;
+---
+
+{
+  disabled ? (
+    <div class='animation-disabled'>
+      <slot />
+    </div>
+  ) : (
+    <slot />
+  )
+}
+
+<style>
+  .animation-disabled {
+    display: contents;
+  }
+</style>

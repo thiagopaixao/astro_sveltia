@@ -55,7 +55,8 @@ const id = Math.random().toString(36).slice(2, 11)
     overflow: hidden;
 
     &:not(:first-child),
-    & :global(+ *) {
+    & :global(+ *),
+    :global(.animation-disabled >) & {
       margin-top: var(--mt-m);
     }
    

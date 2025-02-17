@@ -129,7 +129,8 @@ const amountLabel = `${images.length} imagens`; // prever que o termo "imagens" 
     container-type: inline-size;
 
     &:not(:first-child),
-    & :global(+ *) {
+    & :global(+ *),
+    :global(.animation-disabled >) & {
       margin-top: var(--mt-m);
     }
 
@@ -145,6 +146,13 @@ const amountLabel = `${images.length} imagens`; // prever que o termo "imagens" 
   
         &:nth-child(2) img {
           transform: rotate(8deg) translate(15px, -40px);
+        }
+      }
+
+      :global(.animation-disabled) &:hover {
+        #{$self}__img img {
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+          transform: rotate(0deg) translate(0,0) !important;
         }
       }
     }
@@ -193,6 +201,10 @@ const amountLabel = `${images.length} imagens`; // prever que o termo "imagens" 
 
       #{$self}.reveal & {
         animation: imgInitial 1s ease forwards .2s;
+      }
+      
+      :global(.animation-disabled) & {
+        animation: imgInitial 0s linear forwards;
       }
     }
 

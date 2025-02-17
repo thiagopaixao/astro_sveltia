@@ -1,4 +1,6 @@
 ---
+import AnimationToggle from "../components/AnimationToggle.astro";
+
 const { Component, props } = Astro.props;
 const {
   id,
@@ -29,21 +31,23 @@ if (imgBg) {
 
 
 ---
-<section id={id} style={`background-color: var(--clr-bg);`}>
-  <Component
-    layout={layout}
-    highlightedText={highlightedText}
-    media={mediaType === 'image' ? img : media}
-    mediaType={mediaType}
-    text={ctaText}
-    link={link}
-    imgBg={imgSrc}
-    videoBg={videoBg}
-    txtColor={txtColor}
-    bgColor={bgColor}
-    overlay={overlay}
-  >
-    {body && <Fragment set:html={body} />}
-    <slot />
-  </Component>
-</section>
+<AnimationToggle>
+  <section id={id} style={`background-color: var(--clr-bg);`}>
+    <Component
+      layout={layout}
+      highlightedText={highlightedText}
+      media={mediaType === 'image' ? img : media}
+      mediaType={mediaType}
+      text={ctaText}
+      link={link}
+      imgBg={imgSrc}
+      videoBg={videoBg}
+      txtColor={txtColor}
+      bgColor={bgColor}
+      overlay={overlay}
+    >
+      {body && <Fragment set:html={body} />}
+      <slot />
+    </Component>
+  </section>
+</AnimationToggle>

@@ -1,4 +1,6 @@
 ---
+import AnimationToggle from "../components/AnimationToggle.astro";
+
 const { Component, props } = Astro.props;
 const { chartTitle, chartNotes, chartBars = [] } = props;
 //console.log("ChartBar props:", Astro.props.chartBars);
@@ -9,7 +11,8 @@ const componentData = {
     values: chartBars
 };
 ---
-
-<Component {...componentData}>
-    <slot />
-</Component>
+<AnimationToggle>
+    <Component {...componentData}>
+        <slot />
+    </Component>
+</AnimationToggle>

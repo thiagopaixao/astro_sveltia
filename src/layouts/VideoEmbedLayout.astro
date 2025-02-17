@@ -1,4 +1,6 @@
 ---
+import AnimationToggle from "../components/AnimationToggle.astro";
+
 const { Component, props } = Astro.props;
 const { videoUrl, videoCaption, wideVideo } = props;
 
@@ -6,20 +8,21 @@ const componentData = {
     wide: wideVideo || false
 };
 ---
-
-<Component {...componentData}>
-    <iframe
-        width="560"
-        height="315"
-        src={videoUrl}
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        wide={wideVideo}
-        allowfullscreen
-    ></iframe>
-    <Fragment slot="caption">
-        {videoCaption}
-    </Fragment>
-</Component>
+<AnimationToggle>
+    <Component {...componentData}>
+        <iframe
+            width="560"
+            height="315"
+            src={videoUrl}
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            wide={wideVideo}
+            allowfullscreen
+        ></iframe>
+        <Fragment slot="caption">
+            {videoCaption}
+        </Fragment>
+    </Component>
+</AnimationToggle>

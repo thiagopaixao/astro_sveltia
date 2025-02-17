@@ -10,6 +10,17 @@ $animations: fadeIn, fadeInUp, fadeInDown, fadeInLeft, zoomIn, curtainUp, curtai
       animation-play-state: paused;     
     }
   }
+
+  .animation-disabled {
+    .reveal {
+      &--#{$anim} {
+        opacity: 1;
+        visibility: visible;
+  
+        animation: none;
+      }
+    }
+  }
 }
 
 .reveal {

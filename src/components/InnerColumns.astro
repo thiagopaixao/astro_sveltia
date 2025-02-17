@@ -19,18 +19,20 @@
 
   .inner-columns {
     :global(+ *) {
-      margin-top: var(--mt-m);
+      margin-top: var(--mt-s);
+    }
+
+    &:not(:first-child) &__holder {
+      margin-top: var(--mt-s);
     }
 
     &__holder {
       display: flex;
       gap: var(--atnl-gutter);
-      margin-top: var(--mt-m);
 
       @include media-break-down(m) {
         flex-direction: column;
         gap: var(--mt-s);
-        margin-top: var(--mt-s);
       }
 
      

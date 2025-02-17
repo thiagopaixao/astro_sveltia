@@ -11,6 +11,9 @@ export default class EnteringAnimations {
 
   revealElements() {
     this.elementsToReveal.forEach((item, index) => {
+
+      if(item.closest('.animation-disabled')) return
+
       const scrollObserver = new ScrollObserver();
 
       scrollObserver.observe(item, (data) => {

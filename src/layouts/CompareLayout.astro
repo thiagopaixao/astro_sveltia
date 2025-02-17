@@ -1,4 +1,6 @@
 ---
+import AnimationToggle from "../components/AnimationToggle.astro";
+
 const { Component, props } = Astro.props;
 const { imageLeft, imageRight, caption } = props;
 
@@ -13,7 +15,8 @@ if (imageRight) {
     imageRightSrc = imageRight.startsWith('http') ? imageRight : `${import.meta.env.BASE_URL}${imageRight}`;
 }
 ---
-
-<Component imageLeft={imageLeftSrc} imageRight={imageRightSrc} caption={caption} >
-  <slot />
-</Component>
+<AnimationToggle>
+  <Component imageLeft={imageLeftSrc} imageRight={imageRightSrc} caption={caption} >
+    <slot />
+  </Component>
+</AnimationToggle>
