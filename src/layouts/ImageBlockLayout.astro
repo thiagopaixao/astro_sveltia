@@ -1,4 +1,6 @@
 ---
+import AnimationToggle from "../components/AnimationToggle.astro";
+
 const { Component, props } = Astro.props;
 const { src, alt, wideImage, description } = props;
 
@@ -9,8 +11,9 @@ const componentData = {
     description: description
 };
 ---
-
-<Component {...componentData}>
-    <slot />
-    {description}
-</Component>
+<AnimationToggle>
+    <Component {...componentData}>
+        <slot />
+        {description}
+    </Component>
+</AnimationToggle>

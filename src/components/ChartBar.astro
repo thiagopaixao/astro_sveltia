@@ -64,10 +64,15 @@ const chartValues = addNumberPercentToValues(values);
 <style lang="scss">
   @use "../assets/styles/config/config" as *;
 
+  :global(.animation-disabled:has(.chart-bar) + *) {
+    margin-top: var(--mt-m);
+  }
+
   .chart-bar {
     $self: &;
     &:not(:first-child),
-    & :global(+ *) {
+    & :global(+ *),
+    :global(.animation-disabled > ) & {
       margin-top: var(--mt-m);
     }
 
@@ -96,7 +101,7 @@ const chartValues = addNumberPercentToValues(values);
         text-align: right;
         left: 100%;
       }
-
+      :global(.animation-disabled) &,
       #{$self}.reveal & {
         opacity: 1;
         transform: translate(10px, -50%);
@@ -165,6 +170,7 @@ const chartValues = addNumberPercentToValues(values);
         }
       }
 
+      :global(.animation-disabled) &::after,
       #{$self}.reveal &::after {
         width: var(--data-perc);
       }

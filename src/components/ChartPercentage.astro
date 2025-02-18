@@ -43,10 +43,15 @@ const { title, notes, values } = Astro.props;
 <style lang="scss">
   @use "../assets/styles/config/config" as *;
 
+  :global(.animation-disabled:has(.chart-percentage) + *) {
+    margin-top: var(--mt-m);
+  }
+
   .chart-percentage {
     $self: &;
     &:not(:first-child),
-    & :global(+ *) {
+    & :global(+ *),
+    :global(.animation-disabled > ) & {
       margin-top: var(--mt-m);
     }
 
@@ -66,6 +71,7 @@ const { title, notes, values } = Astro.props;
       background-color: var(--clr-chart);
       transition: 1s ease .5s;
 
+      :global(.animation-disabled) &,
       #{$self}.reveal & {
         flex-basis: var(--data-perc);
       }
@@ -84,6 +90,7 @@ const { title, notes, values } = Astro.props;
       transform: translateY(30px);
       transition: 1s ease .5s;
 
+      :global(.animation-disabled) &,
       #{$self}.reveal & {
         opacity: 1;
         transform: translateY(0);

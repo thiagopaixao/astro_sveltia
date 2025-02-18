@@ -1,10 +1,13 @@
 ---
+import AnimationToggle from "../components/AnimationToggle.astro";
+
 const { Component, props } = Astro.props;
 const { content, byline, ...otherProps } = props;
 ---
-
-<Component {...otherProps}>
-  {content}
-  {byline && <Fragment slot="byline">{byline}</Fragment>}
-  <slot />
-</Component>
+<AnimationToggle>
+  <Component {...otherProps}>
+    {content}
+    {byline && <Fragment slot="byline">{byline}</Fragment>}
+    <slot />
+  </Component>
+</AnimationToggle>

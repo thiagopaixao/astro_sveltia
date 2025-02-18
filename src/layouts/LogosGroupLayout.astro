@@ -1,4 +1,6 @@
 ---
+import AnimationToggle from "../components/AnimationToggle.astro";
+
 const { Component, props } = Astro.props;
 const { logos = []} = props;
 
@@ -15,5 +17,6 @@ const updatedLogos = logos.map(logo => {
   };
 });
 ---
-
+<AnimationToggle>
   <Component logos={updatedLogos} />
+</AnimationToggle>
