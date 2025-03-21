@@ -62,7 +62,7 @@ components:
         paddingTop: true
         paddingBottom: true
         layout: text-bigger
-        title: ALTER DO CHÃO ALSO NEEDS TO BE RECOGNIZED
+        title: ALTER DO CHÃO ALSO NEEDS TO BE RECOGNIZED!
         components:
           - type: Text
             hasDropCap: false
