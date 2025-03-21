@@ -465,6 +465,10 @@ components:
         imgSrc: /uploads/thumb.png
     overlay: light
     components:
+      - type: Spacer
+        desktop: '100'
+        tablet: '100'
+        mobile: '50'
       - type: Columns
         paddingTop: false
         paddingBottom: false
@@ -480,6 +484,10 @@ components:
             - type: Text
               hasDropCap: false
               content: dajsklfslkjfasklfçdkjasiopflçasjasopdflçkjasfioçldaskjf
+      - type: Spacer
+        desktop: '100'
+        tablet: '100'
+        mobile: '50'
   - type: Cta
     id: CTAs
     layout: text
