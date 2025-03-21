@@ -455,6 +455,31 @@ components:
                       customTarget: ''
                       text: Link
                     icon: <span class="material-symbols-outlined"> construction </span>
+  - type: Group
+    id: TextoTexto
+    layout: default
+    txtColor: Secondary
+    bgColor: Primary
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/thumb.png
+    overlay: light
+    components:
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Text
+              hasDropCap: true
+              content: asdfkljafldçs~fkasnfklças~fkçadsjfklaçfkasjflçasdf
+        column2:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: dajsklfslkjfasklfçdkjasiopflçasjasopdflçkjasfioçldaskjf
   - type: Cta
     id: CTAs
     layout: text
