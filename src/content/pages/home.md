@@ -466,9 +466,9 @@ components:
     overlay: light
     components:
       - type: Spacer
-        desktop: '1000'
-        tablet: '1000'
-        mobile: '1000'
+        desktop: '10000'
+        tablet: '10000'
+        mobile: '10000'
       - type: Columns
         paddingTop: false
         paddingBottom: false
@@ -485,9 +485,9 @@ components:
               hasDropCap: false
               content: dajsklfslkjfasklfçdkjasiopflçasjasopdflçkjasfioçldaskjf
       - type: Spacer
-        desktop: '1000'
-        tablet: '1000'
-        mobile: '1000'
+        desktop: '10000'
+        tablet: '10000'
+        mobile: '10000'
   - type: Cta
     id: CTAs
     layout: text
