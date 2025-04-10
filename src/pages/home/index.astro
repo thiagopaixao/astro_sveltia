@@ -118,8 +118,8 @@ const mainMenu = components
 
             const props = {
               ...restProps,
-              txtColor: replaceColor(txtColor),
-              bgColor: replaceColor(bgColor),
+              txtColor: txtColor === 'Custom' ? restProps.customTxtColor : replaceColor(txtColor),
+              bgColor: bgColor === 'Custom' ? restProps.customBgColor : replaceColor(bgColor),
             };
 
             if (type === 'InnerColumns') {
