@@ -1,6 +1,6 @@
 ---
 title: Home 4 Novo
-slug: home3-novo
+slug: home4-novo
 pageSettings:
   language: pt-BR
   direction: left
