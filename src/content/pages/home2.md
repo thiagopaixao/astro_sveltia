@@ -81,8 +81,8 @@ components:
   - type: Group
     id: TextoIntrodução
     layout: default
-    txtColor: Primary
-    customTxtColor: ''
+    txtColor: Custom
+    customTxtColor: '#e1d123ff'
     bgColor: Highlight
     customBgColor: ''
     overlay: ''
