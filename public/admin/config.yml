@@ -1221,8 +1221,16 @@ group: &group
         - { label: 'Primary', value: 'Primary' }
         - { label: 'Secondary', value: 'Secondary' }
         - { label: 'Highlight', value: 'Highlight' }
+        - { label: 'Custom', value: 'Custom' }
       default: 'Primary'
       required: false
+      collapsed: true
+    - label: 'Custom Text Color'
+      name: 'customTxtColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
       collapsed: true
     - label: 'Background Color'
       name: 'bgColor'
@@ -1231,8 +1239,16 @@ group: &group
         - { label: 'Primary', value: 'Primary' }
         - { label: 'Secondary', value: 'Secondary' }
         - { label: 'Highlight', value: 'Highlight' }
+        - { label: 'Custom', value: 'Custom' }
       default: 'Secundary'
       required: false
+      collapsed: true
+    - label: 'Custom Background Color'
+      name: 'customBgColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
       collapsed: true
     - label: 'Add Background media'
       name: 'backgroundMedia'
@@ -1467,6 +1483,7 @@ collections:
     slug: '{{slug}}'
     fields:
       - { label: 'Título', name: 'title', widget: 'string', required: false }
+      - { label: 'Slug', name: 'slug', widget: 'string', required: true }
       - *pageSettings
       - *pageTheme
       - *mapBox
