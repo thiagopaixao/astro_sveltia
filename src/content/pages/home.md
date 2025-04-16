@@ -23,27 +23,114 @@ MapBox:
   floatingText: false
   style: mapbox://styles/comborari/ckr4wi3k80fpl17qo34th6kk2
   center:
-    - lng: -54
-      lat: 2
+    lng: -54.875
+    lat: -2.53
   zoom: 2
   bearing: 0
   pitch: 0
   token: pk.eyJ1IjoiY29tYm9yYXJpIiwiYSI6ImNrcjR3OWczMjBhaWEyeHIyaWhwMnUzNHcifQ.Yv7o7kj1ImyC9Rn-egF0TQ
   views:
+    - id: view_0
+      center:
+        lng: -58.911
+        lat: -6.315
+      duration: 4500
+      zoom: 4
+      bearing: 0
+      pitch: 0
+      layers:
+        - amazonialegal
+      mobile:
+        zoom: 3.5
+      captions:
+        title: false
+        notes: false
+        items:
+          - icon: '<span class="material-symbols-outlined fill" style="color:white">show_chart</span>'
+            text: "Brazil's Legal Amazon"
     - id: view_1
       center:
-        - lng: -54
-          lat: -2
+        lng: -54.708
+        lat: -2.625
       duration: 4000
       zoom: 8
       bearing: 0
       pitch: 0
       layers:
-        - '"municipios"'
-        - '"amazonas"'
-        - '"foztapajos"'
+        - municipios
+        - amazonas
+        - foztapajos
       mobile: null
-      captions: null
+      captions:
+        title: 'Meu título'
+        notes: '* Minha nota'
+        items:
+          - icon: '<span class="material-symbols-outlined fill" style="color:white">show_chart</span>'
+            text: "Municipality of Santarém (Pará)"
+          - icon: '<span class="material-symbols-outlined fill" style="color:#FFF8DC">circle</span>'
+            text: "Amazonas River"
+          - icon: '<span class="material-symbols-outlined fill" style="color:blue">circle</span>'
+            text: "Tapajós River"
+    - id: view_2
+      center:
+        lng: -54.73
+        lat: -2.597
+      duration: 3000
+      zoom: 10
+      bearing: 0
+      pitch: 0
+      layers:
+        - br163
+        - amazonas
+        - foztapajos
+      mobile: null
+      captions:
+        title: false
+        notes: false
+        items:
+          - icon: '<span class="material-symbols-outlined fill" style="color:white">show_chart</span>'
+            text: "Cuiabá-Santarém Highway (BR-163)"
+          - icon: '<span class="material-symbols-outlined fill" style="color:#FFF8DC">circle</span>'
+            text: "Amazonas River"
+          - icon: '<span class="material-symbols-outlined fill" style="color:blue">circle</span>'
+            text: "Tapajós River"
+    - id: view_3
+      center:
+        lng: -54.831
+        lat: -2.457
+      duration: 4000
+      zoom: 10.2
+      bearing: 0
+      pitch: 0
+      layers:
+        - cidade-vila
+        - pa457
+      mobile: null
+      captions:
+        title: false
+        notes: false
+        items:
+          - icon: '<span class="material-symbols-outlined fill" style="color:orange">show_chart</span>'
+            text: "Everaldo Martins Highway (PA-457)"
+          - icon: '<span class="material-symbols-outlined" style="color:yellow">square</span>'
+            text: "Urban areas"
+    - id: view_4
+      center:
+        lng: -54.917
+        lat: -2.529
+      duration: 2000
+      zoom: 10
+      bearing: 0
+      pitch: 0
+      layers:
+        - tiborari
+      mobile: null
+      captions:
+        title: false
+        notes: false
+        items:
+          - icon: '<span class="material-symbols-outlined fill" style="color:red">square</span>'
+            text: "Borari Territory (preliminary demarcation)"
   mapView: ''
 components:
   - type: Group

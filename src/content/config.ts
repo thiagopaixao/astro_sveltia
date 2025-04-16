@@ -151,6 +151,54 @@ const componentSchema = z.object({
   columnAlign: z.enum(['left', 'center', 'right']).optional(),
   floatingText: z.boolean().optional(),
   mapView: z.string().optional(),
+  style: z.string().optional(),
+  center: z
+    .object({
+      lng: z.number(),
+      lat: z.number(),
+    })
+    .optional(),
+  zoom: z.number().optional(),
+  bearing: z.number().optional(),
+  pitch: z.number().optional(),
+  token: z.string().optional(),
+  views: z
+    .array(
+      z.object({
+        id: z.string().optional(),
+        center: z
+          .object({
+            lng: z.number(),
+            lat: z.number(),
+          })
+          .optional(),
+        duration: z.number().optional(),
+        zoom: z.number().optional(),
+        bearing: z.number().optional(),
+        pitch: z.number().optional(),
+        layers: z.array(z.string()).optional(),
+        mobile: z
+          .object({
+            zoom: z.number().optional(),
+          })
+          .optional(),
+        captions: z
+          .object({
+            title: z.string().optional(),
+            notes: z.string().optional(),
+            items: z
+              .array(
+                z.object({
+                  icon: z.string().optional(),
+                  text: z.string().optional(),
+                })
+              )
+              .optional(),
+          })
+          .optional(),
+      })
+    )
+    .optional(),
 
   // Atributos do BigNumbers
   alignment: z.enum(['caption-bottom', 'caption-top']).optional(),
@@ -202,20 +250,26 @@ const pagesCollection = defineCollection({
   schema: z.object({
     title: z.string().optional(),
     components: z.array(componentSchema).optional(),
-    pageTheme: z.object({
-      primaryColor: z.string().optional(),
-      secondaryColor: z.string().optional(),
-      highlightColor: z.string().optional(),
-      auxiliaryColor: z.string().optional(),
-      displayFont: z.string().optional(),
-      textFont: z.string().optional(),
-      spacingPatterns: z.array(z.object({
-        name: z.string(),
-        mobile: z.string(),
-        tablet: z.string(),
-        desktop: z.string()
-      })).optional()
-    }).optional(),
+    pageTheme: z
+      .object({
+        primaryColor: z.string().optional(),
+        secondaryColor: z.string().optional(),
+        highlightColor: z.string().optional(),
+        auxiliaryColor: z.string().optional(),
+        displayFont: z.string().optional(),
+        textFont: z.string().optional(),
+        spacingPatterns: z
+          .array(
+            z.object({
+              name: z.string(),
+              mobile: z.string(),
+              tablet: z.string(),
+              desktop: z.string(),
+            })
+          )
+          .optional(),
+      })
+      .optional(),
   }),
 });
 
