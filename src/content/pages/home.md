@@ -134,7 +134,7 @@ MapBox:
     lat: -2.53
 components:
   - type: Group
-    id: Introduç
+    id: Introdução
     layout: default
     txtColor: Secondary
     customTxtColor: ''
