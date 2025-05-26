@@ -37,6 +37,31 @@ MapBox:
   token: pk.eyJ1IjoibWFybHVzIiwiYSI6IjlmYlhtaEkifQ.vMxORYorRKnueDl3E5itEQ
   views: []
   mapView: ''
-components: []
+components:
+  - type: Group
+    id: Expulsions
+    layout: default
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundVideo
+        videoSrc: https://documental.xyz/assets/main/expulsion/expulsiones-intro-low.mp4
+    overlay: dark
+    components:
+      - type: ColumnSticky
+        txtColor: ''
+        bgColor: ''
+        paddingTop: true
+        paddingBottom: true
+        layout: text-bigger
+        title: EXPULSIONS
+        components:
+          - type: Text
+            hasDropCap: false
+            content: |-
+              ##### **forced displacements and archaeological destruction by**
+              **the mega-mining project Mirador in the Ecuadorian Amazonia.**
 ---
 
