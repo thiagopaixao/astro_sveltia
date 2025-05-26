@@ -51,8 +51,8 @@ components:
     overlay: dark
     components:
       - type: Spacer
-        desktop: '200'
-        tablet: '200'
+        desktop: '2000'
+        tablet: '2000'
         mobile: '100'
       - type: Columns
         paddingTop: true
