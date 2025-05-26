@@ -72,7 +72,6 @@ components:
               content: |-
                 # EXPULSIONS
 
-
                 forced displacements and archaeological destruction by the mega-mining project Mirador in the Ecuadorian Amazonia.
       - type: Spacer
         desktop: '2000'
@@ -82,7 +81,7 @@ components:
         paddingTop: false
         paddingBottom: false
         invertOnMobile: false
-        columnsAlign: 66-33
+        columnsAlign: 33-66
         column1:
           components:
             - type: Spacer
