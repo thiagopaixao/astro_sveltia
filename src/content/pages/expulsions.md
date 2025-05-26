@@ -74,9 +74,9 @@ components:
 
                 forced displacements and archaeological destruction by the mega-mining project Mirador in the Ecuadorian Amazonia.
             - type: Spacer
-              desktop: '40'
-              tablet: '40'
-              mobile: '20'
+              desktop: '100'
+              tablet: '100'
+              mobile: '50'
             - type: Text
               hasDropCap: false
               content: |-
