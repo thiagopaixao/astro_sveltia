@@ -51,8 +51,8 @@ components:
     overlay: dark
     components:
       - type: Columns
-        paddingTop: true
-        paddingBottom: true
+        paddingTop: false
+        paddingBottom: false
         invertOnMobile: false
         columnsAlign: 33-66
         column1: null
@@ -60,9 +60,9 @@ components:
           components:
             - type: Text
               hasDropCap: false
-              content: |-
-                # EXPULSIONS
-
-                forced displacements and archaeological destruction by the mega-mining project Mirador in the Ecuadorian Amazonia
+              content: '# EXPULSIONS'
+            - type: Text
+              hasDropCap: false
+              content: forced displacements and archaeological destruction by the mega-mining project Mirador in the Ecuadorian Amazonia.
 ---
 
