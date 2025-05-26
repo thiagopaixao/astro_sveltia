@@ -64,28 +64,15 @@ components:
         column2:
           components:
             - type: Spacer
-              desktop: '20'
-              tablet: '20'
-              mobile: '10'
+              desktop: '150'
+              tablet: '150'
+              mobile: '75'
             - type: Text
               hasDropCap: false
               content: |-
                 # EXPULSIONS
 
+
                 forced displacements and archaeological destruction by the mega-mining project Mirador in the Ecuadorian Amazonia.
-            - type: Spacer
-              desktop: '100'
-              tablet: '100'
-              mobile: '50'
-            - type: Text
-              hasDropCap: false
-              content: |-
-                There is a war going on over Amazonia. This is a conflict for the appropriation of the forest’s underground territory, which is as rich in mineral commodities as the forest’s aboveground is rich in fauna and flora. This is no even battle. It is disproportionally fought by powerful corporations in collision with state agents against local indigenous and peasant communities who stewardship the land and from the land make their livelihoods.
-
-                This investigation examines the case of Project Mirador, a mega-mine development led by Chinese corporation Ecuacorriente in the region of the Cordillera del Cóndor, Shuar ancestral territory, one of the most biologically rich regions of the Amazon basin.
-
-                For Project Mirador to be implemented, indigenous and peasant communities have been expropriated of their lands and evicted from their homes. Vast swaths of forests and numerous indigenous archaeological sites have been destroyed.
-
-                These multiple forms of violence – social, cultural, ecological – are intimately tied to the ways global extraction industries are appropriating indigenous lands across South America and beyond.
 ---
 
