@@ -54,7 +54,7 @@ components:
         txtColor: ''
         bgColor: ''
         paddingTop: false
-        paddingBottom: false
+        paddingBottom: true
         layout: title-bottom
         title: EXPULSIONS
         components:
