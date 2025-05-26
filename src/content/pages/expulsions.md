@@ -15,7 +15,7 @@ pageTheme:
   secondaryColor: '#f0ead9'
   highlightColor: '#006949'
   auxiliaryColor: '#ff7967'
-  displayFont: <link href="https://fonts.cdnfonts.com/css/impact" rel="stylesheet">
+  displayFont: <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Bytesized&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   textFont: ''
   spacingPatterns:
     - name: Padrão
