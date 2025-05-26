@@ -15,7 +15,7 @@ pageTheme:
   secondaryColor: '#f0ead9'
   highlightColor: '#006949'
   auxiliaryColor: '#ff7967'
-  displayFont: ''
+  displayFont: <link href="https://fonts.cdnfonts.com/css/impact" rel="stylesheet">
   textFont: ''
   spacingPatterns:
     - name: Padrão
