@@ -53,7 +53,7 @@ components:
       - type: ColumnSticky
         txtColor: ''
         bgColor: ''
-        paddingTop: false
+        paddingTop: true
         paddingBottom: true
         layout: title-bottom
         title: EXPULSIONS
