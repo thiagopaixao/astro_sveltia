@@ -50,18 +50,18 @@ components:
         videoSrc: https://documental.xyz/assets/main/expulsion/expulsiones-intro-low.mp4
     overlay: dark
     components:
-      - type: ColumnSticky
-        txtColor: ''
-        bgColor: ''
-        paddingTop: true
-        paddingBottom: true
-        layout: text-bigger
-        title: EXPULSIONS
+      - type: Column
+        paddingTop: false
+        paddingBottom: false
         components:
           - type: Text
             hasDropCap: false
+            content: '# **EXPULSIONS**'
+          - type: Text
+            hasDropCap: false
             content: |-
-              ##### **forced displacements and archaeological destruction by**
-              **the mega-mining project Mirador in the Ecuadorian Amazonia.**
+              ##### forced displacements and archaeological destruction by
+
+              ##### the mega-mining project Mirador in the Ecuadorian Amazonia.
 ---
 
