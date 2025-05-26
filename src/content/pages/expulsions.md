@@ -50,13 +50,14 @@ components:
         videoSrc: https://documental.xyz/assets/main/expulsion/expulsiones-intro-low.mp4
     overlay: dark
     components:
-      - type: Column
+      - type: ColumnSticky
+        txtColor: ''
+        bgColor: ''
         paddingTop: false
         paddingBottom: false
+        layout: title-bottom
+        title: EXPULSIONS
         components:
-          - type: Text
-            hasDropCap: false
-            content: '# **EXPULSIONS**'
           - type: Text
             hasDropCap: false
             content: |-
