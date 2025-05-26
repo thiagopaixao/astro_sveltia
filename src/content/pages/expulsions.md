@@ -64,8 +64,8 @@ components:
         column2:
           components:
             - type: Spacer
-              desktop: '500'
-              tablet: '500'
+              desktop: '2000'
+              tablet: '2000'
               mobile: '75'
             - type: Text
               hasDropCap: false
