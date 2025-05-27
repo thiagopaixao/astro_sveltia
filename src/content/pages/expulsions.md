@@ -146,5 +146,48 @@ components:
             src: /uploads/mapa-concession.jpg
             alt: ''
             description: ''
+  - type: Group
+    id: Texto2
+    layout: default
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Custom
+    customBgColor: '#ffffffff'
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: true
+        paddingBottom: true
+        components:
+          - type: Text
+            hasDropCap: true
+            content: |-
+              Throughout the implementation of Project Mirador, the Ecuadorian government made use of a legal mechanism called \_servidumbre, \_which allows land expropriation in case of projects defined as “public utility” or “national interest.” Under the \_servidumbre \_mechanism, the affected party receives certain financial compensation for the expropriated property, but is obliged to leave the land.
+
+              Testimony of victims show that land acquisitions conducted by Ecuacorriente and its intermediaries, as well as negotiations of \_servidumbre\_with state representatives, were conducted under forms [social, psychological and physical coercion of families who were unwilling to give up their properties](https://investigacionpsicosocial.files.wordpress.com/2017/02/herida-abierta-del-cc3b3ndor.pdf).
+
+              These “forcibly land sales” began in the early 2000s, when the Mirador concession was under control of the Canadian corporation Corriente Resources. By 2010, when the concession was acquired by the Chinese consortium Ecuacorriente, nearly all families that lived in San Marcos, the main village of the parish, had left the area. San Marcos functioned as a sub-center after the town of Tundayme, being equipped with various social services such as a school, a church, a football square, a recreational park and water and electric infrastructures. These common facilities and the community houses were subsequently destroyed.
+  - type: Group
+    id: Video
+    layout: default
+    txtColor: Custom
+    customTxtColor: '#ffffffff'
+    bgColor: Custom
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: false
+        paddingBottom: false
+        components:
+          - type: Text
+            hasDropCap: false
+            content: '# DISPOSSESION BY DECEPTION'
+          - type: VideoEmbed
+            wideVideo: false
+            videoUrl: https://vimeo.com/350133875
+            videoCaption: Testimony of Carlos Cajamarca
 ---
 
