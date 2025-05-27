@@ -487,5 +487,46 @@ components:
                 # DOWNLOAD REPORT
 
                 ###### [Expulsions Report in PDF](https://www.dropbox.com/s/t603x347361vs9n/20200302_Expulsion_Report_ENG.pdf?dl=0)
+  - type: Group
+    id: CREDITS
+    layout: default
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Primary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Columns
+        paddingTop: true
+        paddingBottom: true
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Spacer
+              desktop: '10'
+              tablet: '10'
+              mobile: '10'
+        column2:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                This report was produced under commission of INREDH (Fundación Regional de Asesoría en Derechos Humanos) and CASCOMI – (Comunidad Amazónica de Acción Social Cordillera del Cóndor Mirador), within the framework of a protection action filed against the Ecuadorian State (Ministry of Mining, Ministry of the Interior, Ministry of the Environment, ARCOM - Agencia de Regulación y Control Minero) and the company Ecuacorriente for the violation of collective rights of the communities of the Cordillera del Cóndor. Our research counted on the invaluable collaboration of [Geografia Critica Ecuador](https://geografiacriticaecuador.org/) and [Acción Ecológica.](http://www.accionecologica.org/)
+
+                **Realized by autonoma, MediaLab-UFRJ and Forensic Architecture**
+
+                **Coordinator**: Paulo Tavares
+
+                **Research and Mapping:** Adriano Belisário and Ana Altberg
+
+                **Web Design:** Marlus Araújo
+
+                **Video:** Camara Shuar
+            - type: Spacer
+              desktop: '1000'
+              tablet: '1000'
+              mobile: '500'
 ---
 
