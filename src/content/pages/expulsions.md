@@ -187,7 +187,7 @@ components:
             content: '# DISPOSSESION BY DECEPTION'
           - type: VideoEmbed
             wideVideo: false
-            videoUrl: https://vimeo.com/350133875?share=copy
+            videoUrl: https://vimeo.com/350133875
             videoCaption: Testimony of Carlos Cajamarca
 ---
 
