@@ -282,6 +282,10 @@ components:
             imageLeft: /uploads/smbefore-1581693790.png
             imageRight: /uploads/smafter-1581693796.png
             caption: Before-After satellite view of the village of San Marcos, destroyed in 2015.
+          - type: Spacer
+            desktop: '1000'
+            tablet: '1000'
+            mobile: '500'
           - type: Text
             hasDropCap: false
             content: |-
