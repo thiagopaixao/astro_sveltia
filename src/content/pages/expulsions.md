@@ -15,7 +15,7 @@ pageTheme:
   secondaryColor: '#ffffff'
   highlightColor: '#006949'
   auxiliaryColor: '#000000'
-  displayFont: <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Bytesized&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  displayFont: ''
   textFont: ''
   spacingPatterns:
     - name: Padrão
@@ -43,7 +43,7 @@ components:
     layout: default
     txtColor: Secondary
     customTxtColor: ''
-    bgColor: Highlight
+    bgColor: Secondary
     customBgColor: ''
     backgroundMedia:
       - type: backgroundVideo
@@ -105,8 +105,8 @@ components:
     layout: default
     txtColor: Primary
     customTxtColor: ''
-    bgColor: Custom
-    customBgColor: '#ffffffff'
+    bgColor: Secondary
+    customBgColor: ''
     backgroundMedia: []
     overlay: ''
     components:
@@ -151,8 +151,8 @@ components:
     layout: default
     txtColor: Primary
     customTxtColor: ''
-    bgColor: Custom
-    customBgColor: '#ffffffff'
+    bgColor: Secondary
+    customBgColor: ''
     backgroundMedia: []
     overlay: ''
     components:
@@ -171,10 +171,10 @@ components:
   - type: Group
     id: Video
     layout: default
-    txtColor: Custom
-    customTxtColor: '#ffffffff'
-    bgColor: Custom
-    customBgColor: '#000000ff'
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Primary
+    customBgColor: ''
     backgroundMedia: []
     overlay: ''
     components:
@@ -194,8 +194,8 @@ components:
     layout: default
     txtColor: Primary
     customTxtColor: ''
-    bgColor: Custom
-    customBgColor: '#ffffffff'
+    bgColor: Secondary
+    customBgColor: ''
     backgroundMedia: []
     overlay: ''
     components:
@@ -225,10 +225,10 @@ components:
   - type: Group
     id: Video
     layout: default
-    txtColor: Custom
-    customTxtColor: '#ffffffff'
-    bgColor: Custom
-    customBgColor: '#000000ff'
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Primary
+    customBgColor: ''
     backgroundMedia: []
     overlay: ''
     components:
