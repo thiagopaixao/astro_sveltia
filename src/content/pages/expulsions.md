@@ -105,7 +105,7 @@ components:
     layout: default
     txtColor: Primary
     customTxtColor: ''
-    bgColor: Secundary
+    bgColor: Custom
     customBgColor: '#ffffffff'
     backgroundMedia: []
     overlay: ''
@@ -116,6 +116,9 @@ components:
         components:
           - type: Text
             hasDropCap: true
-            content: Spanning over one million hectares along the border between Ecuador and Peru, the Cordillera del Cóndor is one of the most singular ecological niches of Amazonia. The Cóndor is also unique because of the millenary cultural history of this territory. These mountains sit in the ancestral land of the peoples belonging to the [Jivaroan language](https://www.worldcat.org/search?q=no%3A956353428), which is formed by Shuar, Achuar, Awajún (Aguaruna) and Wampis (Huambisa) peoples. Before colonization these nations had their own geopolitical organization, with different borders and routes of connection and exchange. Today their territory is divided by the border between Ecuador and Peru, with Shuar and Achuar communities living in the Ecuadorian side, and Awajún and Wampis groups living in the Peruvian side.
+            content: |-
+              Spanning over one million hectares along the border between Ecuador and Peru, the Cordillera del Cóndor is one of the most singular ecological niches of Amazonia. The Cóndor is also unique because of the millenary cultural history of this territory. These mountains sit in the ancestral land of the peoples belonging to the [Jivaroan language](https://www.worldcat.org/search?q=no%3A956353428), which is formed by Shuar, Achuar, Awajún (Aguaruna) and Wampis (Huambisa) peoples. Before colonization these nations had their own geopolitical organization, with different borders and routes of connection and exchange. Today their territory is divided by the border between Ecuador and Peru, with Shuar and Achuar communities living in the Ecuadorian side, and Awajún and Wampis groups living in the Peruvian side.
+
+              ![Photo documentation of the bi-lateral commission in charge of demarcating the border between Peru and Ecuador after the War of ’41. Situated to the south of the Ecuadorian Amazon, the border along the Cordillera del Cóndor mountain range remained undefined until the 1990s.](/uploads/expulsion-border-peru-ecuador.jpg)
 ---
 
