@@ -174,7 +174,7 @@ components:
     txtColor: Custom
     customTxtColor: '#ffffffff'
     bgColor: Custom
-    customBgColor: ''
+    customBgColor: '#000000ff'
     backgroundMedia: []
     overlay: ''
     components:
@@ -187,7 +187,7 @@ components:
             content: '# DISPOSSESION BY DECEPTION'
           - type: VideoEmbed
             wideVideo: false
-            videoUrl: https://vimeo.com/350133875
+            videoUrl: https://vimeo.com/350133875?share=copy
             videoCaption: Testimony of Carlos Cajamarca
 ---
 
