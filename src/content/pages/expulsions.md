@@ -340,16 +340,24 @@ components:
 
               The waste products of mining extraction, a kind of highly-toxic mud, are stored in huge tailing dams that are much larger than the crater itself. This mud contains a series of heavy metals that can contaminate freshwater sources through various ways, such as underground infiltration, rain acidification or through direct discharges into the environment that might be necessary to contain overflows or dam collapse. Thus the scale of the Mirador infrastructure involves risk of accidents that can have devastating impacts over the entire region beyond the mining concession area.
           - type: Spacer
-            desktop: '500'
+            desktop: '1000'
             tablet: '500'
             mobile: '500'
           - type: Text
             hasDropCap: false
             content: '##### **Contamination of water streams in the Tundayme River**'
+          - type: Spacer
+            desktop: '1000'
+            tablet: '500'
+            mobile: ''
           - type: Compare
             imageLeft: /uploads/toxicriver_before2.png
             imageRight: /uploads/smafter-1581693796.png
             caption: Before-after condition of the Quimi River during the opening of the Mirador mine (2014-2018). Streams and ground water sources in this region can no longer be used by villagers and farmers because they are contaminated with sediments from earth movements and erosions.
+          - type: Spacer
+            desktop: '1000'
+            tablet: '1000'
+            mobile: '500'
           - type: Text
             hasDropCap: false
             content: |-
