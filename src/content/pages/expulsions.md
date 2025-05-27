@@ -364,5 +364,99 @@ components:
               Mirador includes two large tailing dams. The smaller is under construction and is situated in the former site of the village of San Marcos. The second tailing pool, which has ten times the capacity, is situated above stream on the Tundayme River. 
 
               [The recent catastrophic collapses of the tailing dams in Mariana and Brumadinho in Brazil](https://oglobo.globo.com/brasil/rompimento-de-barragem-em-brumadinho-acontece-tres-anos-depois-de-tragedia-em-mariana-23401732), which released a deadly flow of toxic mud destroying communities and environments downstream, demonstrate the scale of the potential impact involved in mega-mining operations such as Project Mirador. Communities situated downstream the tailing pools – which include the Shuar centers of Etsa, Churubia, and Quimi; communities that live in Valle del Quimi; and the town center of Tundayme – are under threat of facing a similar devastating “disaster.” Furthermore, in a region so ecologically sensitive and important to global climate balance as Amazonia, such risk is not only local, but planetary.
+  - type: Group
+    id: Texto
+    layout: default
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: true
+        paddingBottom: false
+        components:
+          - type: Text
+            hasDropCap: true
+            content: Most of the archaeological sites found in the area of Project Mirador are characterized by anthropogenic earth-movements known as terraces. Terraces are flat planes cut on a slope that were used as platforms for crop cultivation. There are at least 900 terraces in the region, all of which are associated with the occurrence of ceramic and lithic fragments, and often with impressive pottery works such as funeral urns and sculpted objects that may have had ritual functions. This indicates that in the past this region was inhabited by settled cultures that produced substantial transformations in the regional landscape and nurtured sophisticated arts and crafts.
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/arqueological-remains_03.jpg
+            alt: ''
+            description: A large-scale terraza-like structure at archaeological site Z6DIII-04T
+          - type: Text
+            hasDropCap: false
+            content: Studies conducted as part of mining prospecting activities and environmental impact assessments demonstrate the existence of hundreds of archaeological sites distributed throughout the concession area. Given that scientific studies were not exhaustive neither systematic, but rather circumscribed to the context and interests of environmental impact assessments for mining operations, it is likely that this archaeological complex includes a much larger number of sites than already identified, extending over a much wider territory.
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/arqueological-remains_01.jpg
+            alt: ''
+            description: Archaeological Site Z6DIII-098
+  - type: Group
+    id: Video
+    layout: default
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Primary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: true
+        paddingBottom: true
+        components:
+          - type: Text
+            hasDropCap: false
+            content: '# DISPOSSESSION OF HISTORY'
+          - type: VideoEmbed
+            wideVideo: false
+            videoUrl: https://vimeo.com/350129967
+            videoCaption: Testimony by Carlos Tendetza
+  - type: Group
+    id: Texto
+    layout: default
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: true
+        paddingBottom: true
+        components:
+          - type: Text
+            hasDropCap: true
+            content: At the time of this writing, probably all archaeological sites in the Mirador have been completely destroyed. The studies and reports we analyzed also show that some sites have gone through “archaeological rescuing,” and that all material collected remain in possession of Ecuacorriente or the Ecuadorian State. According to the INPC report mentioned above, these archaeological materials are stored in precarious conditions, “without technical standards,” in a deposit at the Socialization and Training Room of the Mirador project. Therefore they are under risk of being irreparably damaged and lost. Further, indigenous communities that inhabit the area, the original owners of these cultural heritage, have not been consulted regarding these archaeological sites nor do they have information about the destination of the rescued objects.
+  - type: Group
+    id: Texto
+    layout: default
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: true
+        paddingBottom: true
+        components:
+          - type: Text
+            hasDropCap: true
+            content: |-
+              The implementation of the mega-mining Project Mirador in the Ecuadorian Amazon has been marked by systematic land and human rights violations of indigenous and peasant communities. Since early stages, project Mirador was conducted without prior, free and informed consultation of local communities, violating basic right principles and international protocols of which Ecuador is signatory. As local people organized and refused to leave their lands, the Ecuadorian state and the mining company Ecuacorriente joined forces to forcibly evict the population to open the area for the mega-mine.
+
+               The implementation of Project Mirador was based on the removal of the entire community that lived in the valleys of the Wawayme, Quimi and Tundayme rivers. This investigation shows the spatial logics of a coordinated strategy of “land clearing” executed by state and private security forces aimed at depopulating the region. Evictions were conducted through destruction of houses, gardens and communal buildings. As such they consist in grave human rights violations and not isolated cases, revealing a pattern of violence directed against the entire community.
+
+              Project Mirador also causes massive environmental destruction. Satellite images show that mining operations accelerated exponentially after the evictions of 2014-2017. Without the presence (and resistance) of the local community, deforestation spread throughout the region. Further, earth movements, erosions and the use of chemicals led to severe contamination of water streams.
+
+              Numerous indigenous archaeological sites were destroyed by Project Mirador. Ignoring protocols of consultancy, archaeological rescue operations have been carried out without informing indigenous communities and official indigenous agencies in Ecuador, configuring a continuous act of cultural dispossession.
+
+               Observed in relation to each other, the processes of expulsion and expropriation narrated here constitute multiple forms of displacement – of land, resources and culture. As such they should be repaired and remedied in multiple dimensions: social-economic, environmental and cultural.
 ---
 
