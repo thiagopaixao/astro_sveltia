@@ -458,5 +458,34 @@ components:
               Numerous indigenous archaeological sites were destroyed by Project Mirador. Ignoring protocols of consultancy, archaeological rescue operations have been carried out without informing indigenous communities and official indigenous agencies in Ecuador, configuring a continuous act of cultural dispossession.
 
                Observed in relation to each other, the processes of expulsion and expropriation narrated here constitute multiple forms of displacement – of land, resources and culture. As such they should be repaired and remedied in multiple dimensions: social-economic, environmental and cultural.
+  - type: Group
+    id: DOWNLOAD REPORT
+    layout: default
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Primary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Columns
+        paddingTop: true
+        paddingBottom: true
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Spacer
+              desktop: '10'
+              tablet: '10'
+              mobile: '10'
+        column2:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                # DOWNLOAD REPORT
+
+                ###### [Expulsions Report in PDF](https://www.dropbox.com/s/t603x347361vs9n/20200302_Expulsion_Report_ENG.pdf?dl=0)
 ---
 
