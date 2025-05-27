@@ -264,5 +264,31 @@ components:
             wideVideo: false
             videoUrl: https://vimeo.com/351215838
             videoCaption: Testimony by Rosa Shiminaicela
+  - type: Group
+    id: Text-Compare
+    layout: default
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: true
+        paddingBottom: true
+        components:
+          - type: Compare
+            imageLeft: /uploads/smbefore-1581693790.png
+            imageRight: /uploads/smafter-1581693796.png
+            caption: Before-After satellite view of the village of San Marcos, destroyed in 2015.
+          - type: Text
+            hasDropCap: false
+            content: |-
+              Evictions were executed according to a similar pattern in that all of them were conducted by state forces and the  company's private security personnel; none of them presented judicial order; and all of them incurred in violations against the physical and psychological integrity of the community.
+
+              They were also similar in the employment of disproportional force. Evictions involved the destruction of houses in front of the families, who lost their herds, crops, working tools, domestic utensils, cash savings and other property. The rubble of the house structures, together with personal belongings that were inside them, were buried on the same plot of land.  Testimonies of victims show that [evictions were conducted without any plan for re-location or sheltering](https://investigacionpsicosocial.files.wordpress.com/2017/02/herida-abierta-del-cc3b3ndor.pdf), leaving families in a vulnerable situation without housing.
+
+              The systematic destruction of property shows that evictions had the intent of not only removing families from the area, but also terrorizing them, thereby preventing their return and eliminating social opposition against the mine. In that sense they were not only grave human rights violations, but also instruments of political repression.
 ---
 
