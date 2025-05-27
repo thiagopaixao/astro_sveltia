@@ -512,6 +512,13 @@ components:
           components:
             - type: Text
               hasDropCap: false
+              content: '# CREDITS'
+            - type: Spacer
+              desktop: '1000'
+              tablet: '1000'
+              mobile: '500'
+            - type: Text
+              hasDropCap: false
               content: |-
                 This report was produced under commission of INREDH (Fundación Regional de Asesoría en Derechos Humanos) and CASCOMI – (Comunidad Amazónica de Acción Social Cordillera del Cóndor Mirador), within the framework of a protection action filed against the Ecuadorian State (Ministry of Mining, Ministry of the Interior, Ministry of the Environment, ARCOM - Agencia de Regulación y Control Minero) and the company Ecuacorriente for the violation of collective rights of the communities of the Cordillera del Cóndor. Our research counted on the invaluable collaboration of [Geografia Critica Ecuador](https://geografiacriticaecuador.org/) and [Acción Ecológica.](http://www.accionecologica.org/)
 
