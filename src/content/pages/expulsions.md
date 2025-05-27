@@ -110,37 +110,12 @@ components:
     backgroundMedia: []
     overlay: ''
     components:
-      - type: Text
-        hasDropCap: true
-        content: Spanning over one million hectares along the border between Ecuador and Peru, the Cordillera del Cóndor is one of the most singular ecological niches of Amazonia. The Cóndor is also unique because of the millenary cultural history of this territory. These mountains sit in the ancestral land of the peoples belonging to the [Jivaroan language](https://www.worldcat.org/search?q=no%3A956353428), which is formed by Shuar, Achuar, Awajún (Aguaruna) and Wampis (Huambisa) peoples. Before colonization these nations had their own geopolitical organization, with different borders and routes of connection and exchange. Today their territory is divided by the border between Ecuador and Peru, with Shuar and Achuar communities living in the Ecuadorian side, and Awajún and Wampis groups living in the Peruvian side.
-      - type: ImageBlock
-        wideImage: false
-        src: /uploads/expulsion-border-peru-ecuador.jpg
-        alt: ''
-        description: Photo documentation of the bi-lateral commission in charge of demarcating the border between Peru and Ecuador after the War of ’41. Situated to the south of the Ecuadorian Amazon, the border along the Cordillera del Cóndor mountain range remained undefined until the 1990s.
-      - type: Text
-        hasDropCap: false
-        content: |-
-          Starting with the War of ’41, until the Cenepa War of 1995, Peru and Ecuador fought for more than fifty years over the Cordillera del Cóndor. In the 1960s and 1970s, when both countries were under military dictatorships, governments sought to secure sovereignty over the disputed territory by fostering occupation through migration and colonization policies. This led to dramatic changes in the social geography of the region as indigenous territories were severely reduced; new villages, towns and roads were built; and forests were rapidly replaced by farm and pasture lands. 
-
-          In the context of the neoliberal adjustments of the 1980s and 1990s, state-led projects of agricultural colonization were replaced by a different doctrine of border security that relied on corporate mining concessions as means to hold ground in the disputed territory. But until this moment, because of the decades-long military conflict, the Cordillera del Cóndor region was practically inaccessible, remaining protected from the encroachment of development projects. 
-
-          The post-war peace agreements drafted in 1998 led to the creation of several reserves and parks across the border area, composing a mosaic of protected jurisdictions known as “peace parks.” Besides, vast areas on both sides of the border have been recognized as indigenous lands. Since the establishment of the Shuar Federation in the late 1960s in Ecuador, the Shuar people have mobilized to recuperate communal territories and sacred sites. Moreover, in the early 1990s Ecuador witnessed the [largest indigenous uprising in its modern history](https://www.youtube.com/watch?v=HVp0Q3B2ans), which resulted in a series of landmark territorial recognitions.
-      - type: ImageBlock
-        wideImage: false
-        src: /uploads/expulsion-shuar-center.jpg
-        alt: ''
-        description: Shuar Center of Kupiamais, Tundayme Parish, Cordillera del Cóndor.
-      - type: Text
-        hasDropCap: false
-        content: |-
-          The Mirador project holds a concession of 2.994 hectares that occupies the entire area between the Tundayme and the Wawayme rivers. The Chinese–consortium led by Ecuacorriente also acquired rights to explore all other adjacent concessions to Mirador, being effectively in control of a territory larger than the urban area of the city of Barcelona. These concessions superimpose shuar territories and ecological protection areas.
-
-          Mega-mining operations like project Mirador require the exploration of vast extensions of land to be economically viable and profitable. This is only possible through massive territorial enclosures, separating entire communities from land and water resources. As the history of the Project Mirador shows, this process of enclosure is conducted by means of various strategies of deception and violence, but not without resistance.
-      - type: ImageBlock
-        wideImage: false
-        src: /uploads/mapa-concession.jpg
-        alt: ''
-        description: ''
+      - type: Column
+        paddingTop: true
+        paddingBottom: true
+        components:
+          - type: Text
+            hasDropCap: true
+            content: Spanning over one million hectares along the border between Ecuador and Peru, the Cordillera del Cóndor is one of the most singular ecological niches of Amazonia. The Cóndor is also unique because of the millenary cultural history of this territory. These mountains sit in the ancestral land of the peoples belonging to the [Jivaroan language](https://www.worldcat.org/search?q=no%3A956353428), which is formed by Shuar, Achuar, Awajún (Aguaruna) and Wampis (Huambisa) peoples. Before colonization these nations had their own geopolitical organization, with different borders and routes of connection and exchange. Today their territory is divided by the border between Ecuador and Peru, with Shuar and Achuar communities living in the Ecuadorian side, and Awajún and Wampis groups living in the Peruvian side.
 ---
 
