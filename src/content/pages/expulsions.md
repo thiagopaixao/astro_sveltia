@@ -243,5 +243,26 @@ components:
             wideVideo: false
             videoUrl: https://vimeo.com/351216210
             videoCaption: Testimony of William Uyawari
+  - type: Group
+    id: Video
+    layout: default
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Primary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: true
+        paddingBottom: true
+        components:
+          - type: Text
+            hasDropCap: false
+            content: '# THE VIOLENCE OF DISPLACEMENTS'
+          - type: VideoEmbed
+            wideVideo: false
+            videoUrl: https://vimeo.com/351215838
+            videoCaption: Testimony by Rosa Shiminaicela
 ---
 
