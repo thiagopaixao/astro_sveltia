@@ -189,5 +189,59 @@ components:
             wideVideo: false
             videoUrl: https://vimeo.com/350133875
             videoCaption: Testimony of Carlos Cajamarca
+  - type: Group
+    id: Texto3
+    layout: default
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Custom
+    customBgColor: '#ffffffff'
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: true
+        paddingBottom: true
+        components:
+          - type: Text
+            hasDropCap: true
+            content: The history of San Marcos is significant because the village eventually became the epicenter of local resistance against the Mirador mega-mine. At least two families refused to leave the site, and in doing so protected the village from complete destruction, salvaging the church and the school. On 12 May 2014, without warning or judicial order, police forces and security guards of Ecuacorriente occupied the village with heavy machinery and evicted the families, razing houses, the church and the school to the ground.
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/expulsion-church.jpg
+            alt: ''
+            description: The church at the center of the San Marcos village before its destruction on May 2014.
+          - type: Text
+            hasDropCap: false
+            content: |-
+              In reaction to this brutal event, some of the evicted families formed the advocacy organization CASCOMI – the Cordillera del Cóndor Amazonian Community for Social Action, initiating a series of legal measures to claim reparations. In early 2015 a farmer transferred to CASCOMI the communal property of the last plot of land in San Marcos that was not under the company’s ownership, and families started to return and built a new village center in there. 
+
+              The re-occupation of San Marcos marked a turning-point in the social mobilization against the Mirador mine, and so it was not allowed to last long. Months latter, on September 2015, state forces evicted the families and the new village was destroyed.
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/expulsion-cascomi-sign.jpg
+            alt: ''
+            description: A sign held by the rights advocacy agency CASCOMI at the house of the Rosario Wari warning the employees of Ecuacorriente to stay out of the area.
+  - type: Group
+    id: Video
+    layout: default
+    txtColor: Custom
+    customTxtColor: '#ffffffff'
+    bgColor: Custom
+    customBgColor: '#000000ff'
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: false
+        paddingBottom: false
+        components:
+          - type: Text
+            hasDropCap: false
+            content: '# THE DESTRUCTION OF SAN MARCOS'
+          - type: VideoEmbed
+            wideVideo: false
+            videoUrl: https://vimeo.com/351216210
+            videoCaption: Testimony of William Uyawari
 ---
 
