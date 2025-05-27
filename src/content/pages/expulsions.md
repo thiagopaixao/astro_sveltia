@@ -294,5 +294,67 @@ components:
               They were also similar in the employment of disproportional force. Evictions involved the destruction of houses in front of the families, who lost their herds, crops, working tools, domestic utensils, cash savings and other property. The rubble of the house structures, together with personal belongings that were inside them, were buried on the same plot of land.  Testimonies of victims show that [evictions were conducted without any plan for re-location or sheltering](https://investigacionpsicosocial.files.wordpress.com/2017/02/herida-abierta-del-cc3b3ndor.pdf), leaving families in a vulnerable situation without housing.
 
               The systematic destruction of property shows that evictions had the intent of not only removing families from the area, but also terrorizing them, thereby preventing their return and eliminating social opposition against the mine. In that sense they were not only grave human rights violations, but also instruments of political repression.
+  - type: Group
+    id: Texto
+    layout: default
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: true
+        paddingBottom: true
+        components:
+          - type: Text
+            hasDropCap: true
+            content: |-
+              According to botanist David Neil, Cordillera del Cóndor may harbor “the richest flora of any similar-sized area anywhere... and it almost certainly has one of the highest concentrations of vascular plant species yet unknown to science of any place on Earth.” The Cordillera del Cóndor is home to various endemic species, that is, animals and plants that are native to this territory and most probably only exist here. Moreover, this region constitutes an important refuge for species in risk of extinction across the continent, including the jaguar, the spider monkey and the Andean bear. 
+
+              Beginning in 2019, the mega-mine Project Mirador will be explored for 30 years, [producing annual averages of 137 million pounds of cooper, 34.000 ounces of gold, and 394.000 ounces of silver](http://www.latinomineria.cl/reportajes/los-principales-proyectos-mineros-ecuador/). Geologically speaking, the Cordillera’s underground holds a giant mining belt, but studies also show that concentrations of metals in the regional soil are rather low. This means that for lucrative levels to be achieved, the extraction crater has to be very large and deep, processing huge quantities of earth on a daily basis. According to the plans presented by Ecuacorriente, [the Mirador mine will process up to 60.000 tons of stone per day](https://therightsofnature.org/the-case-for-rights-of-nature-in-face-of-the-mirador-open-pit-copper-mining-project/), the equivalent to 3.000 load trucks, consuming more than 200 liters of fresh water per second.
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/expulsion-mirador_14_drone_panoramica.jpg
+            alt: ''
+            description: The Mirador mine will have widespread environmental impacts on these fragile ecological system as a whole.
+  - type: Group
+    id: Texto
+    layout: default
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: true
+        paddingBottom: true
+        components:
+          - type: Text
+            hasDropCap: true
+            content: |-
+              Open-pit extraction is an activity extremely harmful to the environment. Industrial scale mining operations require not only the exploration of vast tracts of land to be economically profitable, but also high consumption of water, energy and chemicals. These operations use tons of explosives and chemicals to extract metals from the soil, generating huge craters and large quantities of waste products that are highly toxic for land and rivers, and therefore also for local communities.
+
+              The waste products of mining extraction, a kind of highly-toxic mud, are stored in huge tailing dams that are much larger than the crater itself. This mud contains a series of heavy metals that can contaminate freshwater sources through various ways, such as underground infiltration, rain acidification or through direct discharges into the environment that might be necessary to contain overflows or dam collapse. Thus the scale of the Mirador infrastructure involves risk of accidents that can have devastating impacts over the entire region beyond the mining concession area.
+          - type: Spacer
+            desktop: '500'
+            tablet: '500'
+            mobile: '500'
+          - type: Text
+            hasDropCap: false
+            content: '##### **Contamination of water streams in the Tundayme River**'
+          - type: Compare
+            imageLeft: /uploads/toxicriver_before2.png
+            imageRight: /uploads/smafter-1581693796.png
+            caption: Before-after condition of the Quimi River during the opening of the Mirador mine (2014-2018). Streams and ground water sources in this region can no longer be used by villagers and farmers because they are contaminated with sediments from earth movements and erosions.
+          - type: Text
+            hasDropCap: false
+            content: |-
+              Mirador includes two large tailing dams. The smaller is under construction and is situated in the former site of the village of San Marcos. The second tailing pool, which has ten times the capacity, is situated above stream on the Tundayme River. 
+
+              [The recent catastrophic collapses of the tailing dams in Mariana and Brumadinho in Brazil](https://oglobo.globo.com/brasil/rompimento-de-barragem-em-brumadinho-acontece-tres-anos-depois-de-tragedia-em-mariana-23401732), which released a deadly flow of toxic mud destroying communities and environments downstream, demonstrate the scale of the potential impact involved in mega-mining operations such as Project Mirador. Communities situated downstream the tailing pools – which include the Shuar centers of Etsa, Churubia, and Quimi; communities that live in Valle del Quimi; and the town center of Tundayme – are under threat of facing a similar devastating “disaster.” Furthermore, in a region so ecologically sensitive and important to global climate balance as Amazonia, such risk is not only local, but planetary.
 ---
 
