@@ -528,5 +528,17 @@ components:
               desktop: '1000'
               tablet: '1000'
               mobile: '500'
+            - type: Text
+              hasDropCap: false
+              content: |-
+                **RESEARCH SOURCES**
+
+                Ecuador: La herida abierta del Cóndor Vulneración de derechos, Quito: El Chasqui Ediciones, 2017.
+
+                CEDHU (Comisión Ecuménica de Derechos Humanos) and FIDH (Federación Internacional de Derechos Humanos). Intervención Minera a Gran Escala en Ecuador y Vulneración de Derechos Humanos. Quito: 2010.
+
+                William Sacher and Michelle Báez, ENTRETELONES DE LA MEGAMINERÍA EN EL ECUADOR. Quito: Acción Ecológica, 2015.
+
+                Gloria Chicaiza,El Enclave Minero de la Cordillera del Cóndor. Quito: Acción Ecológica, 2010.
 ---
 
