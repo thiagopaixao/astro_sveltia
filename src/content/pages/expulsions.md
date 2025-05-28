@@ -24,8 +24,8 @@ pageTheme:
       desktop: '12'
 MapBox:
   type: MapBox
-  columnAlign: ''
-  floatingText: false
+  columnAlign: left
+  floatingText: true
   style: mapbox://styles/marlus/cjyt3uyhf15mr1cthc2942wxz
   center:
     - lng: -1
