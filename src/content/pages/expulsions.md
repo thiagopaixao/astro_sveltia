@@ -340,7 +340,7 @@ components:
 
               The waste products of mining extraction, a kind of highly-toxic mud, are stored in huge tailing dams that are much larger than the crater itself. This mud contains a series of heavy metals that can contaminate freshwater sources through various ways, such as underground infiltration, rain acidification or through direct discharges into the environment that might be necessary to contain overflows or dam collapse. Thus the scale of the Mirador infrastructure involves risk of accidents that can have devastating impacts over the entire region beyond the mining concession area.
           - type: Spacer
-            desktop: '1000'
+            desktop: 1000px
             tablet: '500'
             mobile: '500'
           - type: Text
