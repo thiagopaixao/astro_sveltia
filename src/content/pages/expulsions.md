@@ -35,7 +35,20 @@ MapBox:
   pitch: 0
   layers: []
   token: pk.eyJ1IjoibWFybHVzIiwiYSI6IjlmYlhtaEkifQ.vMxORYorRKnueDl3E5itEQ
-  views: []
+  views:
+    - id: view_0
+      center:
+        - lng: -1
+          lat: -58
+      duration: 2000
+      zoom: 3
+      bearing: 0
+      pitch: 0
+      layers:
+        - amazonia-limites
+        - mineracaoamazonia
+      mobile: null
+      captions: null
   mapView: ''
 components:
   - type: Group
