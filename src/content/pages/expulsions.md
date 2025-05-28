@@ -36,7 +36,7 @@ MapBox:
   layers: []
   token: pk.eyJ1IjoibWFybHVzIiwiYSI6IjlmYlhtaEkifQ.vMxORYorRKnueDl3E5itEQ
   views:
-    - id: view_0
+    - id: view_1
       center:
         - lng: -1
           lat: -58
@@ -100,6 +100,17 @@ components:
                 For Project Mirador to be implemented, indigenous and peasant communities have been expropriated of their lands and evicted from their homes. Vast swaths of forests and numerous indigenous archaeological sites have been destroyed.
 
                 These multiple forms of violence – social, cultural, ecological – are intimately tied to the ways global extraction industries are appropriating indigenous lands across South America and beyond.
+  - type: Map
+    id: view_1
+    txtColor: Primary
+    bgColor: Secundary
+    components:
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: view_1
+    columnAlign: left
+    floatingText: false
   - type: Group
     id: Texto
     layout: default
