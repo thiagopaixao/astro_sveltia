@@ -15,7 +15,7 @@ pageTheme:
   secondaryColor: '#ffffff'
   highlightColor: '#006949'
   auxiliaryColor: '#000000'
-  displayFont: ''
+  displayFont: https://fonts.googleapis.com/css2?family=Bytesized&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap
   textFont: ''
   spacingPatterns:
     - name: Padrão
