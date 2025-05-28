@@ -28,8 +28,8 @@ MapBox:
   floatingText: false
   style: mapbox://styles/marlus/cjyt3uyhf15mr1cthc2942wxz
   center:
-    - lng: -78
-      lat: -3
+    - lng: -1
+      lat: -58
   zoom: 2
   bearing: 0
   pitch: 0
