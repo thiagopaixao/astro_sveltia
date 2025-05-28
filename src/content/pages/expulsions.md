@@ -174,7 +174,7 @@ components:
             content: '# DISPOSSESION BY DECEPTION'
           - type: VideoEmbed
             wideVideo: false
-            videoUrl: https://vimeo.com/350133875
+            videoUrl: https://player.vimeo.com/video/350133875?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
             videoCaption: Testimony of Carlos Cajamarca
   - type: Group
     id: Texto3
@@ -228,7 +228,7 @@ components:
             content: '# THE DESTRUCTION OF SAN MARCOS'
           - type: VideoEmbed
             wideVideo: false
-            videoUrl: https://vimeo.com/351216210
+            videoUrl: https://player.vimeo.com/video/351216210?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
             videoCaption: Testimony of William Uyawari
   - type: Group
     id: Video
@@ -249,7 +249,7 @@ components:
             content: '# THE VIOLENCE OF DISPLACEMENTS'
           - type: VideoEmbed
             wideVideo: false
-            videoUrl: https://vimeo.com/351215838
+            videoUrl: https://player.vimeo.com/video/351215838?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
             videoCaption: Testimony by Rosa Shiminaicela
   - type: Group
     id: Text-Compare
