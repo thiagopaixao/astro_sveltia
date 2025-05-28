@@ -43,8 +43,8 @@ MapBox:
           - icon: <span class="material-symbols-outlined fill" style="color:white">show_chart</span>
             text: Brazil's Legal Amazon
       center:
-        lng: -58.911
         lat: -6.315
+        lng: -58.911
     - id: view_1
       duration: 4000
       zoom: 8
@@ -66,8 +66,8 @@ MapBox:
           - icon: <span class="material-symbols-outlined fill" style="color:blue">circle</span>
             text: Tapajós River
       center:
-        lng: -54.708
         lat: -2.625
+        lng: -54.708
     - id: view_2
       duration: 3000
       zoom: 10
@@ -89,8 +89,8 @@ MapBox:
           - icon: <span class="material-symbols-outlined fill" style="color:blue">circle</span>
             text: Tapajós River
       center:
-        lng: -54.73
         lat: -2.597
+        lng: -54.73
     - id: view_3
       duration: 4000
       zoom: 10.2
@@ -109,8 +109,8 @@ MapBox:
           - icon: <span class="material-symbols-outlined" style="color:yellow">square</span>
             text: Urban areas
       center:
-        lng: -54.831
         lat: -2.457
+        lng: -54.831
     - id: view_4
       duration: 2000
       zoom: 10
@@ -126,12 +126,12 @@ MapBox:
           - icon: <span class="material-symbols-outlined fill" style="color:red">square</span>
             text: Borari Territory (preliminary demarcation)
       center:
-        lng: -54.917
         lat: -2.529
+        lng: -54.917
   mapView: ''
   center:
-    lng: -54.875
     lat: -2.53
+    lng: -54.875
 components:
   - type: Group
     id: Introdução
@@ -841,5 +841,19 @@ components:
             bgColor: ''
             customTxtColor: ''
             customBgColor: ''
+  - type: Group
+    id: teste
+    layout: default
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secundary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: VideoEmbed
+        wideVideo: false
+        videoUrl: https://vimeo.com/1058060438
+        videoCaption: teste
 ---
 
