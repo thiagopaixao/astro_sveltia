@@ -50,10 +50,6 @@ components:
         videoSrc: https://documental.xyz/assets/main/expulsion/expulsiones-intro-low.mp4
     overlay: dark
     components:
-      - type: Spacer
-        desktop: '2000'
-        tablet: '2000'
-        mobile: '100'
       - type: Columns
         paddingTop: true
         paddingBottom: true
@@ -67,29 +63,20 @@ components:
               mobile: '10'
         column2:
           components:
+            - type: Spacer
+              desktop: 1000px
+              tablet: 1000px
+              mobile: 500px
             - type: Text
               hasDropCap: false
               content: |-
                 # EXPULSIONS
 
                 forced displacements and archaeological destruction by the mega-mining project Mirador in the Ecuadorian Amazonia.
-      - type: Spacer
-        desktop: '2000'
-        tablet: '2000'
-        mobile: '1000'
-      - type: Columns
-        paddingTop: true
-        paddingBottom: true
-        invertOnMobile: false
-        columnsAlign: 33-66
-        column1:
-          components:
             - type: Spacer
-              desktop: '10'
-              tablet: '10'
-              mobile: '10'
-        column2:
-          components:
+              desktop: 1000px
+              tablet: 1000px
+              mobile: 500px
             - type: Text
               hasDropCap: false
               content: |-
@@ -340,7 +327,7 @@ components:
 
               The waste products of mining extraction, a kind of highly-toxic mud, are stored in huge tailing dams that are much larger than the crater itself. This mud contains a series of heavy metals that can contaminate freshwater sources through various ways, such as underground infiltration, rain acidification or through direct discharges into the environment that might be necessary to contain overflows or dam collapse. Thus the scale of the Mirador infrastructure involves risk of accidents that can have devastating impacts over the entire region beyond the mining concession area.
           - type: Spacer
-            desktop: 1000px
+            desktop: '1000'
             tablet: '500'
             mobile: '500'
           - type: Text
