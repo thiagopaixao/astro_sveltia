@@ -64,8 +64,8 @@ components:
         column2:
           components:
             - type: Spacer
-              desktop: 1000px
-              tablet: 1000px
+              desktop: 500px
+              tablet: 500px
               mobile: 500px
             - type: Text
               hasDropCap: false
@@ -74,8 +74,8 @@ components:
 
                 forced displacements and archaeological destruction by the mega-mining project Mirador in the Ecuadorian Amazonia.
             - type: Spacer
-              desktop: 1000px
-              tablet: 1000px
+              desktop: 500px
+              tablet: 500px
               mobile: 500px
             - type: Text
               hasDropCap: false
