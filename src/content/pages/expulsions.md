@@ -51,7 +51,7 @@ components:
     overlay: dark
     components:
       - type: Columns
-        paddingTop: true
+        paddingTop: false
         paddingBottom: true
         invertOnMobile: false
         columnsAlign: 33-66
@@ -64,9 +64,9 @@ components:
         column2:
           components:
             - type: Spacer
-              desktop: 500px
-              tablet: 500px
-              mobile: 500px
+              desktop: 200px
+              tablet: 200px
+              mobile: 200px
             - type: Text
               hasDropCap: false
               content: |-
