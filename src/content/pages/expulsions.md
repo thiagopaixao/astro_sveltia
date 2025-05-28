@@ -400,7 +400,7 @@ components:
             content: '# DISPOSSESSION OF HISTORY'
           - type: VideoEmbed
             wideVideo: false
-            videoUrl: https://vimeo.com/350129967
+            videoUrl: https://player.vimeo.com/video/350129967?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
             videoCaption: Testimony by Carlos Tendetza
   - type: Group
     id: Texto
