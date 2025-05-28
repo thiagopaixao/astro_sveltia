@@ -853,7 +853,7 @@ components:
     components:
       - type: VideoEmbed
         wideVideo: false
-        videoUrl: https://vimeo.com/1058060438
+        videoUrl: https://vimeo.com/channels/bestofstaffpicks/1058060438
         videoCaption: teste
 ---
 
