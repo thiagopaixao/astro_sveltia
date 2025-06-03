@@ -1,6 +1,6 @@
 ---
-// src/pages/index.astro
-import '../assets/styles/main.scss';
+// src/layouts/Layout.astro
+import '/src/assets/styles/main.scss';
 
 interface Props {
 	title: string;
@@ -57,7 +57,7 @@ const styleString = spacingPatterns.map(pattern => `
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 		<script src="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js"></script>
     	<link href="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.css" rel="stylesheet">
-		<script src="../assets/scripts/App.js"></script>
+		<script src="/src/assets/scripts/App.js"></script>
 
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
@@ -73,7 +73,7 @@ const styleString = spacingPatterns.map(pattern => `
 </script>
 
 <style lang="scss">
-	@use "../assets/styles/config/config" as *;
+	@use "/src/assets/styles/config/config" as *;
 
 	:global(:root) {
 		--map-height-mobile: 52vh;
