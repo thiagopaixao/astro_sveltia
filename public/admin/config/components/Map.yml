@@ -55,5 +55,6 @@ map: &map
       collapsed: true
       types:
         - *text
+        - *spacer
         - *mapView
 
