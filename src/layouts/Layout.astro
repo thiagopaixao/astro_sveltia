@@ -1,17 +1,13 @@
 ---
 // src/pages/index.astro
 import '../assets/styles/main.scss';
-import { getEntryBySlug } from 'astro:content';
 
 interface Props {
 	title: string;
+	pageTheme?: any;
 }
 
-const { title } = Astro.props;
-
-// Obtém o frontmatter da página 'home'
-const homeEntry = await getEntryBySlug('pages', 'home');
-const pageTheme = homeEntry?.data?.pageTheme || {};
+const { title, pageTheme = {} } = Astro.props;
 
 const primaryColor = pageTheme?.primaryColor || '#000';
 const secondaryColor = pageTheme?.secondaryColor || '';
