@@ -1,0 +1,30 @@
+htmlEmbed: &htmlEmbed
+  label: 'HTML Embed'
+  name: 'HtmlEmbed'
+  widget: 'object'
+  summary: 'HTML Embed'
+  collapsed: true
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'HtmlEmbed'
+      collapsed: true
+    - label: 'Wide'
+      name: 'wideHtml'
+      widget: 'boolean'
+      required: false
+      default: false
+      collapsed: true
+    - label: 'HTML Code'
+      name: 'htmlCode'
+      widget: 'code'
+      required: true
+      default_language: 'html'
+      output_code_only: true
+      collapsed: true
+    - label: 'Caption'
+      name: 'htmlCaption'
+      widget: 'string'
+      required: false
+      collapsed: true

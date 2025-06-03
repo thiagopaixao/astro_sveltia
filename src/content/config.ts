@@ -136,6 +136,11 @@ const componentSchema = z.object({
   videoCaption: z.string().optional().transform(processMarkdown),
   wideVideo: z.boolean().optional(),
 
+  // Atributos do HtmlEmbed
+  htmlCode: z.string().optional(),
+  htmlCaption: z.string().optional().transform(processMarkdown),
+  wideHtml: z.boolean().optional(),
+
   // Atributos do InnerColumns
   column1: z.any().optional(),
   column2: z.any().optional(),

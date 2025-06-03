@@ -7,6 +7,7 @@ components:
   - components/MapBox.yml
   - components/Text.yml
   - components/VideoEmbed.yml
+  - components/HtmlEmbed.yml
   - components/ImageBlock.yml
   - components/ChartBar.yml
   - components/ChartPercentage.yml

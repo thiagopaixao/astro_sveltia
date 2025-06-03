@@ -1,0 +1,76 @@
+---
+import Caption from "./Caption.astro";
+
+const { wide } = Astro.props;
+//wide recebe booleano
+
+const hasCaption = Astro.slots.has("caption");
+---
+
+<figure class:list={["html-embed", { "html-embed--wide": wide }]}>
+  <div class="reveal--fadeInUp">
+    <slot />
+    {
+      hasCaption && (
+        <figcaption>
+          <Caption>
+            <slot name="caption" />
+          </Caption>
+        </figcaption>
+      )
+    }
+  </div>
+</figure>
+
+<style lang="scss">
+  @use "/src/assets/styles/config/config" as *;
+  @use "/src/assets/styles/utils/grrr/grrr" as *;
+
+  .html-embed {
+    position: relative;
+    
+    &:not(:first-child),
+    :global(+ *),
+    :global(.animation-disabled >) &  {
+      margin-top: var(--mt-m);
+    }
+
+    :global(iframe) {
+      width: 100%;
+      height: auto;
+      display: block;
+      aspect-ratio: 16 / 9;
+    }
+
+    &__caption {
+      @include type('b-s');
+      display: block;
+      margin-top: 20px;
+    }
+  }
+
+  :global(.column .html-embed--wide) {
+    width: grrr-cols-size(10);
+    transform: translateX(calc(-1 * grrr-cols-size(2, 1)));
+
+    @include media-break-down(xl) {
+      transform: translateX(calc(-1 * ((100vw - 657px) / 2) + grrr-cols-size(1, 1) + var(--atnl-margin)));
+    }
+   
+    @include media-break-down(l) {
+      width: calc(100% + var(--atnl-margin) * 2);
+      transform: translateX(calc(-1 * var(--atnl-margin)));
+    }
+    
+    @include media-break-down(m) {
+      :global(.caption) {
+        padding-inline: var(--atnl-margin);
+      }
+    }
+
+    &,
+    :global(+ *)  {
+      margin-top: var(--mt-l);
+    }
+  }
+</style>

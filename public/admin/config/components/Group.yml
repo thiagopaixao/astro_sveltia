@@ -99,6 +99,7 @@ group: &group
       collapsed: true
       types:
         - *text
+        - *htmlEmbed
         - *videoEmbed
         - *imageBlock
         - *columnSticky

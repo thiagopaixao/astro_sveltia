@@ -1,0 +1,18 @@
+---
+import AnimationToggle from "../components/AnimationToggle.astro";
+
+const { Component, props } = Astro.props;
+const { htmlCode, htmlCaption, wideHtml } = props;
+
+const componentData = {
+    wide: wideHtml || false
+};
+---
+<AnimationToggle>
+    <Component {...componentData}>
+        <div set:html={htmlCode}></div>
+        <Fragment slot="caption">
+            {htmlCaption}
+        </Fragment>
+    </Component>
+</AnimationToggle>
