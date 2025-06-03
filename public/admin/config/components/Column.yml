@@ -29,6 +29,7 @@ column: &column
         - *chartBar
         - *chartPercentage
         - *imageBlock
+        - *htmlEmbed
         - *videoEmbed
         - *logosGroup
         - *cardsCall

@@ -57,6 +57,7 @@ columnSticky: &columnSticky
         - *chartBar
         - *chartPercentage
         - *imageBlock
+        - *htmlEmbed
         - *videoEmbed
         - *logosGroup
         - *innerColumns
