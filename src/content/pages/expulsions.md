@@ -11,12 +11,12 @@ pageSettings:
   seoImage: ''
 pageTheme:
   type: pageTheme
-  primaryColor: '#000009'
+  primaryColor: '#5e5e5e'
   secondaryColor: '#ffffff'
-  highlightColor: '#006949'
+  highlightColor: '#000000'
   auxiliaryColor: '#000000'
-  displayFont: https://fonts.googleapis.com/css2?family=Exile&display=swap
-  textFont: ''
+  displayFont: https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap
+  textFont: https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap
   spacingPatterns:
     - name: Padrão
       mobile: '10'
@@ -52,6 +52,10 @@ MapBox:
   mapView: ''
 components:
   - type: Group
+    shortTitle: EXPULSIONS
+    longTitle: ''
+    description: ''
+    showInMenu: true
     id: EXPULSIONS
     layout: default
     txtColor: Secondary
@@ -83,7 +87,7 @@ components:
             - type: Text
               hasDropCap: false
               content: |-
-                # EXPULSIONS
+                # **EXPULSIONS**
 
                 forced displacements and archaeological destruction by the mega-mining project Mirador in the Ecuadorian Amazonia.
             - type: Spacer
@@ -105,6 +109,10 @@ components:
               tablet: 150px
               mobile: 150px
   - type: Map
+    shortTitle: _map1
+    longTitle: ''
+    description: ''
+    showInMenu: false
     id: _map1
     txtColor: Secondary
     bgColor: Highlight
@@ -116,6 +124,10 @@ components:
     columnAlign: right
     floatingText: true
   - type: Group
+    shortTitle: _text1
+    longTitle: ''
+    description: ''
+    showInMenu: false
     id: _text1
     layout: default
     txtColor: Primary
@@ -161,33 +173,57 @@ components:
             src: /uploads/mapa-concession.jpg
             alt: ''
             description: ''
-  - type: Map
-    id: DISPOSSESION & DISPLACEMENT
-    txtColor: Secondary
-    bgColor: Primary
-    components:
-      - type: MapView
-        txtColor: ''
-        bgColor: '#00000000'
-        mapView: view_1
-      - type: Text
-        hasDropCap: false
-        content: |-
-          # DISPOSSESION & DISPLACEMENT
-
-          enclosures and forced evictions caused by project Mirador
-
-
-
-
-
-
-
-
-          In order to control the territory of the mining concession, the company Ecuacorriente used obscure procedures and intimidating tactics to divide communities and force them to leave their lands. This occurred with the connivance and direct support of the Ecuadorian State, which was instrumental to remove the population in two main ways: on the legal front, by making use of juridical mechanisms to expropriate land and persecute land and nature rights defenders; and on the territory, by deploying security forces to evict families that refused to abandon their land.
-    columnAlign: right
-    floatingText: true
   - type: Group
+    shortTitle: DISPOSSESION & DISPLACEMENT
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    id: DISPOSSESION & DISPLACEMENT
+    layout: default
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/expulsion-tundayme-raul-sanchez_16x9edit.jpg
+    overlay: dark
+    components:
+      - type: Columns
+        paddingTop: true
+        paddingBottom: true
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Spacer
+              desktop: '10'
+              tablet: '10'
+              mobile: '10'
+        column2:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                # DISPOSSESION & DISPLACEMENT
+
+                enclosures and forced evictions caused by project Mirador
+            - type: Spacer
+              desktop: 500px
+              tablet: 500px
+              mobile: 500px
+            - type: Text
+              hasDropCap: false
+              content: 'In order to control the territory of the mining concession, the company Ecuacorriente used obscure procedures and intimidating tactics to divide communities and force them to leave their lands. This occurred with the connivance and direct support of the Ecuadorian State, which was instrumental to remove the population in two main ways: on the legal front, by making use of juridical mechanisms to expropriate land and persecute land and nature rights defenders; and on the territory, by deploying security forces to evict families that refused to abandon their land.'
+            - type: Spacer
+              desktop: 150px
+              tablet: 150px
+              mobile: 150px
+  - type: Group
+    shortTitle: _text2
+    longTitle: ''
+    description: ''
+    showInMenu: false
     id: _text2
     layout: default
     txtColor: Primary
@@ -210,11 +246,15 @@ components:
 
               These “forcibly land sales” began in the early 2000s, when the Mirador concession was under control of the Canadian corporation Corriente Resources. By 2010, when the concession was acquired by the Chinese consortium Ecuacorriente, nearly all families that lived in San Marcos, the main village of the parish, had left the area. San Marcos functioned as a sub-center after the town of Tundayme, being equipped with various social services such as a school, a church, a football square, a recreational park and water and electric infrastructures. These common facilities and the community houses were subsequently destroyed.
   - type: Group
+    shortTitle: _video1
+    longTitle: ''
+    description: ''
+    showInMenu: false
     id: _video1
     layout: default
     txtColor: Secondary
     customTxtColor: ''
-    bgColor: Primary
+    bgColor: Highlight
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
@@ -231,6 +271,10 @@ components:
             videoUrl: https://player.vimeo.com/video/350133875?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
             videoCaption: Testimony of Carlos Cajamarca
   - type: Group
+    shortTitle: _text3
+    longTitle: ''
+    description: ''
+    showInMenu: false
     id: _text3
     layout: default
     txtColor: Primary
@@ -264,11 +308,15 @@ components:
             alt: ''
             description: A sign held by the rights advocacy agency CASCOMI at the house of the Rosario Wari warning the employees of Ecuacorriente to stay out of the area.
   - type: Group
+    shortTitle: _video2
+    longTitle: ''
+    description: ''
+    showInMenu: false
     id: _video2
     layout: default
     txtColor: Secondary
     customTxtColor: ''
-    bgColor: Primary
+    bgColor: Highlight
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
@@ -285,6 +333,10 @@ components:
             videoUrl: https://player.vimeo.com/video/351216210?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
             videoCaption: Testimony of William Uyawari
   - type: Map
+    shortTitle: _map2
+    longTitle: ''
+    description: ''
+    showInMenu: false
     id: _map2
     txtColor: Primary
     bgColor: Secundary
@@ -292,11 +344,15 @@ components:
     columnAlign: left
     floatingText: false
   - type: Group
+    shortTitle: _video3
+    longTitle: ''
+    description: ''
+    showInMenu: false
     id: _video3
     layout: default
     txtColor: Secondary
     customTxtColor: ''
-    bgColor: Primary
+    bgColor: Highlight
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
@@ -313,6 +369,10 @@ components:
             videoUrl: https://player.vimeo.com/video/351215838?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
             videoCaption: Testimony by Rosa Shiminaicela
   - type: Group
+    shortTitle: _text4
+    longTitle: ''
+    description: ''
+    showInMenu: false
     id: _text4
     layout: default
     txtColor: Primary
@@ -338,27 +398,57 @@ components:
               They were also similar in the employment of disproportional force. Evictions involved the destruction of houses in front of the families, who lost their herds, crops, working tools, domestic utensils, cash savings and other property. The rubble of the house structures, together with personal belongings that were inside them, were buried on the same plot of land.  Testimonies of victims show that [evictions were conducted without any plan for re-location or sheltering](https://investigacionpsicosocial.files.wordpress.com/2017/02/herida-abierta-del-cc3b3ndor.pdf), leaving families in a vulnerable situation without housing.
 
               The systematic destruction of property shows that evictions had the intent of not only removing families from the area, but also terrorizing them, thereby preventing their return and eliminating social opposition against the mine. In that sense they were not only grave human rights violations, but also instruments of political repression.
-  - type: Map
-    id: ECOLOGICAL DESTRUCTION
-    txtColor: Secondary
-    bgColor: Primary
-    components:
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: view_1
-      - type: Text
-        hasDropCap: false
-        content: |-
-          # ECOLOGICAL DESTRUCTION
-
-          deforestation and water contamination caused by Project Mirador
-      - type: Text
-        hasDropCap: false
-        content: Sitting at the frontiers between the Andes and Amazonia, the Cordillera del Cóndor region functions as an “ecological bridge” between different highland and lowland climatic ecosystems. This condition gives these montane tropical forests a high degree of species diversity and endemism. The Cordillera del Cóndor is considered one of the planet’s most important yet least-known biological refuges. Given its “mega” dimensions, the Mirador mine will have widespread environmental impacts on these fragile ecological system as a whole.
-    columnAlign: right
-    floatingText: true
   - type: Group
+    shortTitle: ECOLOGICAL DESTRUCTION
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    id: ECOLOGICAL DESTRUCTION
+    layout: default
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/expulsion-dji_0446.jpeg
+    overlay: dark
+    components:
+      - type: Columns
+        paddingTop: true
+        paddingBottom: true
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Spacer
+              desktop: '10'
+              tablet: '10'
+              mobile: '10'
+        column2:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                # ECOLOGICAL DESTRUCTION
+
+                deforestation and water contamination caused by Project Mirador
+            - type: Spacer
+              desktop: 500px
+              tablet: 500px
+              mobile: 500px
+            - type: Text
+              hasDropCap: false
+              content: Sitting at the frontiers between the Andes and Amazonia, the Cordillera del Cóndor region functions as an “ecological bridge” between different highland and lowland climatic ecosystems. This condition gives these montane tropical forests a high degree of species diversity and endemism. The Cordillera del Cóndor is considered one of the planet’s most important yet least-known biological refuges. Given its “mega” dimensions, the Mirador mine will have widespread environmental impacts on these fragile ecological system as a whole.
+            - type: Spacer
+              desktop: 150px
+              tablet: 150px
+              mobile: 150px
+  - type: Group
+    shortTitle: _text5
+    longTitle: ''
+    description: ''
+    showInMenu: false
     id: _text5
     layout: default
     txtColor: Primary
@@ -384,6 +474,10 @@ components:
             alt: ''
             description: The Mirador mine will have widespread environmental impacts on these fragile ecological system as a whole.
   - type: Map
+    shortTitle: _map3
+    longTitle: ''
+    description: ''
+    showInMenu: false
     id: _map3
     txtColor: Primary
     bgColor: Secundary
@@ -395,6 +489,10 @@ components:
     columnAlign: left
     floatingText: false
   - type: Group
+    shortTitle: _text6
+    longTitle: ''
+    description: ''
+    showInMenu: false
     id: _text6
     layout: default
     txtColor: Primary
@@ -427,7 +525,7 @@ components:
             mobile: 25px
           - type: Compare
             imageLeft: /uploads/toxicriver_before2.png
-            imageRight: /uploads/smafter-1581693796.png
+            imageRight: /uploads/toxicriver_after2.png
             caption: Before-after condition of the Quimi River during the opening of the Mirador mine (2014-2018). Streams and ground water sources in this region can no longer be used by villagers and farmers because they are contaminated with sediments from earth movements and erosions.
           - type: Text
             hasDropCap: false
@@ -435,26 +533,64 @@ components:
               Mirador includes two large tailing dams. The smaller is under construction and is situated in the former site of the village of San Marcos. The second tailing pool, which has ten times the capacity, is situated above stream on the Tundayme River. 
 
               [The recent catastrophic collapses of the tailing dams in Mariana and Brumadinho in Brazil](https://oglobo.globo.com/brasil/rompimento-de-barragem-em-brumadinho-acontece-tres-anos-depois-de-tragedia-em-mariana-23401732), which released a deadly flow of toxic mud destroying communities and environments downstream, demonstrate the scale of the potential impact involved in mega-mining operations such as Project Mirador. Communities situated downstream the tailing pools – which include the Shuar centers of Etsa, Churubia, and Quimi; communities that live in Valle del Quimi; and the town center of Tundayme – are under threat of facing a similar devastating “disaster.” Furthermore, in a region so ecologically sensitive and important to global climate balance as Amazonia, such risk is not only local, but planetary.
-  - type: Map
-    id: CULTURAL ERASURE
-    txtColor: Secondary
-    bgColor: Primary
-    components:
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: view_1
-      - type: Text
-        hasDropCap: false
-        content: |-
-          # Cultural Erasure
-
-          destruction of indigenous archaeological heritage
-
-          In addition to the expulsion of local communities and massive deforestation, mega-mining operations are also destroying hundreds of indigenous archaeological sites in the Cordillera del Cóndor region. The geographic mapping of these sites shows that they form a very large and dense archaeological complex that extends throughout valleys of the Wawayme, Tundayme and Quimi rivers. This ancient heritage is now completly gone to open land for extraction.
-    columnAlign: right
-    floatingText: true
+          - type: HtmlEmbed
+            wideHtml: false
+            htmlCode: |-
+              <div class="sketchfab-embed-wrapper">
+                  <iframe title="A 3D model" width="800" height="480" src="https://sketchfab.com/models/91b29121fcf241dd80d13d92a4d157df/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+              </div>
+            htmlCaption: ''
   - type: Group
+    shortTitle: CULTURAL ERASURE
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    id: CULTURAL ERASURE
+    layout: default
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/expulsion-tendetza-antun_16x9edit.jpg
+    overlay: dark
+    components:
+      - type: Columns
+        paddingTop: true
+        paddingBottom: true
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Spacer
+              desktop: '10'
+              tablet: '10'
+              mobile: '10'
+        column2:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                # Cultural Erasure
+
+                destruction of indigenous archaeological heritage
+            - type: Spacer
+              desktop: 500px
+              tablet: 500px
+              mobile: 500px
+            - type: Text
+              hasDropCap: false
+              content: In addition to the expulsion of local communities and massive deforestation, mega-mining operations are also destroying hundreds of indigenous archaeological sites in the Cordillera del Cóndor region. The geographic mapping of these sites shows that they form a very large and dense archaeological complex that extends throughout valleys of the Wawayme, Tundayme and Quimi rivers. This ancient heritage is now completly gone to open land for extraction.
+            - type: Spacer
+              desktop: 150px
+              tablet: 150px
+              mobile: 150px
+  - type: Group
+    shortTitle: _text7
+    longTitle: ''
+    description: ''
+    showInMenu: false
     id: _text7
     layout: default
     txtColor: Primary
@@ -485,6 +621,10 @@ components:
             alt: ''
             description: Archaeological Site Z6DIII-098
   - type: Map
+    shortTitle: _map4
+    longTitle: ''
+    description: ''
+    showInMenu: false
     id: _map4
     txtColor: Primary
     bgColor: Secundary
@@ -496,11 +636,15 @@ components:
     columnAlign: left
     floatingText: false
   - type: Group
+    shortTitle: _video4
+    longTitle: ''
+    description: ''
+    showInMenu: false
     id: _video4
     layout: default
     txtColor: Secondary
     customTxtColor: ''
-    bgColor: Primary
+    bgColor: Highlight
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
@@ -517,6 +661,10 @@ components:
             videoUrl: https://player.vimeo.com/video/350129967?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
             videoCaption: Testimony by Carlos Tendetza
   - type: Group
+    shortTitle: _text8
+    longTitle: ''
+    description: ''
+    showInMenu: false
     id: _text8
     layout: default
     txtColor: Primary
@@ -534,6 +682,10 @@ components:
             hasDropCap: true
             content: At the time of this writing, probably all archaeological sites in the Mirador have been completely destroyed. The studies and reports we analyzed also show that some sites have gone through “archaeological rescuing,” and that all material collected remain in possession of Ecuacorriente or the Ecuadorian State. According to the INPC report mentioned above, these archaeological materials are stored in precarious conditions, “without technical standards,” in a deposit at the Socialization and Training Room of the Mirador project. Therefore they are under risk of being irreparably damaged and lost. Further, indigenous communities that inhabit the area, the original owners of these cultural heritage, have not been consulted regarding these archaeological sites nor do they have information about the destination of the rescued objects.
   - type: Map
+    shortTitle: _map5
+    longTitle: ''
+    description: ''
+    showInMenu: false
     id: _map5
     txtColor: Primary
     bgColor: Secundary
@@ -545,6 +697,10 @@ components:
     columnAlign: left
     floatingText: false
   - type: Group
+    shortTitle: _text9
+    longTitle: ''
+    description: ''
+    showInMenu: false
     id: _text9
     layout: default
     txtColor: Primary
@@ -571,11 +727,15 @@ components:
 
                Observed in relation to each other, the processes of expulsion and expropriation narrated here constitute multiple forms of displacement – of land, resources and culture. As such they should be repaired and remedied in multiple dimensions: social-economic, environmental and cultural.
   - type: Group
+    shortTitle: DOWNLOAD REPORT
+    longTitle: ''
+    description: ''
+    showInMenu: false
     id: DOWNLOAD REPORT
     layout: default
     txtColor: Secondary
     customTxtColor: ''
-    bgColor: Primary
+    bgColor: Highlight
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
@@ -604,11 +764,15 @@ components:
               tablet: 200px
               mobile: 100px
   - type: Group
+    shortTitle: CREDITS
+    longTitle: ''
+    description: ''
+    showInMenu: false
     id: CREDITS
     layout: default
     txtColor: Secondary
     customTxtColor: ''
-    bgColor: Primary
+    bgColor: Highlight
     customBgColor: ''
     backgroundMedia: []
     overlay: ''

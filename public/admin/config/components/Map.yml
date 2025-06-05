@@ -2,13 +2,37 @@ map: &map
   label: 'Map'
   name: 'Map'
   widget: 'object'
-  summary: '{{fields.id}}'
+  summary: '{{fields.shortTitle}}'
   collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
       widget: 'hidden'
       default: 'Map'
+      collapsed: true
+    - label: 'Short Title'
+      name: 'shortTitle'
+      widget: 'string'
+      required: true
+      hint: 'Título curto (obrigatório) - será usado no futuro'
+      collapsed: true
+    - label: 'Long Title'
+      name: 'longTitle'
+      widget: 'string'
+      required: false
+      hint: 'Título longo usado como label no menu (opcional)'
+      collapsed: true
+    - label: 'Description'
+      name: 'description'
+      widget: 'text'
+      required: false
+      hint: 'Descrição do componente (opcional) - será usado no futuro'
+      collapsed: true
+    - label: 'Show in Menu'
+      name: 'showInMenu'
+      widget: 'boolean'
+      default: false
+      hint: 'Ativar para mostrar este componente no menu de navegação'
       collapsed: true
     - label: 'ID'
       name: 'id'
@@ -57,4 +81,3 @@ map: &map
         - *text
         - *spacer
         - *mapView
-

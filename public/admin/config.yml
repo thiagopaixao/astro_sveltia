@@ -399,6 +399,37 @@ videoEmbed: &videoEmbed
       required: false
       collapsed: true
 
+htmlEmbed: &htmlEmbed
+  label: 'HTML Embed'
+  name: 'HtmlEmbed'
+  widget: 'object'
+  summary: 'HTML Embed'
+  collapsed: true
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'HtmlEmbed'
+      collapsed: true
+    - label: 'Wide'
+      name: 'wideHtml'
+      widget: 'boolean'
+      required: false
+      default: false
+      collapsed: true
+    - label: 'HTML Code'
+      name: 'htmlCode'
+      widget: 'code'
+      required: true
+      default_language: 'html'
+      output_code_only: true
+      collapsed: true
+    - label: 'Caption'
+      name: 'htmlCaption'
+      widget: 'string'
+      required: false
+      collapsed: true
+
 imageBlock: &imageBlock
   label: 'Image Block'
   name: 'ImageBlock'
@@ -986,6 +1017,7 @@ innerColumns: &innerColumns
             - *chartBar
             - *chartPercentage
             - *imageBlock
+            - *htmlEmbed
             - *videoEmbed
             - *logosGroup
             - *timeline
@@ -1026,6 +1058,7 @@ column: &column
         - *chartBar
         - *chartPercentage
         - *imageBlock
+        - *htmlEmbed
         - *videoEmbed
         - *logosGroup
         - *cardsCall
@@ -1181,6 +1214,7 @@ columnSticky: &columnSticky
         - *chartBar
         - *chartPercentage
         - *imageBlock
+        - *htmlEmbed
         - *videoEmbed
         - *logosGroup
         - *innerColumns
@@ -1195,13 +1229,37 @@ group: &group
   label: 'Group'
   name: 'Group'
   widget: 'object'
-  summary: '{{fields.id}}'
+  summary: '{{fields.shortTitle}}'
   collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
       widget: 'hidden'
       default: 'Group'
+      collapsed: true
+    - label: 'Short Title'
+      name: 'shortTitle'
+      widget: 'string'
+      required: true
+      hint: 'Título curto (obrigatório) - será usado no futuro'
+      collapsed: true
+    - label: 'Long Title'
+      name: 'longTitle'
+      widget: 'string'
+      required: false
+      hint: 'Título longo usado como label no menu (opcional)'
+      collapsed: true
+    - label: 'Description'
+      name: 'description'
+      widget: 'text'
+      required: false
+      hint: 'Descrição do grupo (opcional) - será usado no futuro'
+      collapsed: true
+    - label: 'Show in Menu'
+      name: 'showInMenu'
+      widget: 'boolean'
+      default: false
+      hint: 'Ativar para mostrar este grupo no menu de navegação'
       collapsed: true
     - label: 'ID'
       name: 'id'
@@ -1292,6 +1350,7 @@ group: &group
       collapsed: true
       types:
         - *text
+        - *htmlEmbed
         - *videoEmbed
         - *imageBlock
         - *columnSticky
@@ -1312,13 +1371,37 @@ cta: &cta
   label: 'CTA'
   name: 'Cta'
   widget: 'object'
-  summary: '{{fields.id}}'
+  summary: '{{fields.shortTitle}}'
   collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
       widget: 'hidden'
       default: 'Cta'
+      collapsed: true
+    - label: 'Short Title'
+      name: 'shortTitle'
+      widget: 'string'
+      required: true
+      hint: 'Título curto (obrigatório) - será usado no futuro'
+      collapsed: true
+    - label: 'Long Title'
+      name: 'longTitle'
+      widget: 'string'
+      required: false
+      hint: 'Título longo usado como label no menu (opcional)'
+      collapsed: true
+    - label: 'Description'
+      name: 'description'
+      widget: 'text'
+      required: false
+      hint: 'Descrição do componente (opcional) - será usado no futuro'
+      collapsed: true
+    - label: 'Show in Menu'
+      name: 'showInMenu'
+      widget: 'boolean'
+      default: false
+      hint: 'Ativar para mostrar este componente no menu de navegação'
       collapsed: true
     - label: 'ID'
       name: 'id'
@@ -1417,13 +1500,37 @@ map: &map
   label: 'Map'
   name: 'Map'
   widget: 'object'
-  summary: '{{fields.id}}'
+  summary: '{{fields.shortTitle}}'
   collapsed: true
   fields:
     - label: 'Type'
       name: 'type'
       widget: 'hidden'
       default: 'Map'
+      collapsed: true
+    - label: 'Short Title'
+      name: 'shortTitle'
+      widget: 'string'
+      required: true
+      hint: 'Título curto (obrigatório) - será usado no futuro'
+      collapsed: true
+    - label: 'Long Title'
+      name: 'longTitle'
+      widget: 'string'
+      required: false
+      hint: 'Título longo usado como label no menu (opcional)'
+      collapsed: true
+    - label: 'Description'
+      name: 'description'
+      widget: 'text'
+      required: false
+      hint: 'Descrição do componente (opcional) - será usado no futuro'
+      collapsed: true
+    - label: 'Show in Menu'
+      name: 'showInMenu'
+      widget: 'boolean'
+      default: false
+      hint: 'Ativar para mostrar este componente no menu de navegação'
       collapsed: true
     - label: 'ID'
       name: 'id'
@@ -1470,8 +1577,8 @@ map: &map
       collapsed: true
       types:
         - *text
+        - *spacer
         - *mapView
-
 
 collections:
   - name: 'pages'

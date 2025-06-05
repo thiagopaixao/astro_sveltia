@@ -83,9 +83,9 @@ const languages = [
 
 const mainMenu = components
   ? components
-      .filter(component => component.id)
+      .filter(component => component.id && component.showInMenu === true)
       .map(component => ({
-        text: component.id,
+        text: component.longTitle || component.shortTitle,
         url: `#${component.id}`,
       }))
   : [];

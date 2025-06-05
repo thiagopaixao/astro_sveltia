@@ -4,15 +4,7 @@ import { marked } from 'marked';
 // Função para processar markdown e HTML
 function processMarkdown(text: string) {
   if (!text) return '';
-  return marked.parse(text, {
-    mangle: false,
-    headerIds: false,
-    gfm: true,
-    breaks: true,
-    sanitize: false, // Allows HTML
-    smartLists: true,
-    smartypants: true,
-  });
+  return marked.parse(text);
 }
 
 // Schemas comuns
@@ -82,6 +74,10 @@ const componentSchema = z.object({
   paddingBottom: z.boolean().optional(),
   hasByline: z.boolean().optional(),
   byline: z.string().optional(),
+  shortTitle: z.string().optional(),
+  longTitle: z.string().optional(),
+  description: z.string().optional(),
+  showInMenu: z.boolean().optional(),
   id: z.string().optional(),
 
   // Atributos específicos do CTA
@@ -126,7 +122,6 @@ const componentSchema = z.object({
   src: z.string().optional(),
   alt: z.string().optional(),
   wideImage: z.boolean().optional(),
-  description: z.string().optional(),
 
   // Atributos do LogosGroup
   logos: z.array(logoSchema).optional(),
@@ -244,7 +239,6 @@ const componentSchema = z.object({
 
   // Caso possua subcomponentes
   components: z.array(z.any()).optional(),
-  //id: z.string().optional(),
   text: z.string().optional(),
   imageLeft: z.string().optional(),
   imageRight: z.string().optional(),
