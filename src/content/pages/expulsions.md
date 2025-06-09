@@ -61,7 +61,7 @@ mapbox:
         lng: -58
         lat: -2
       duration: 2000
-      zoom: 3
+      zoom: 4
       bearing: 0
       pitch: 0
       layers:
@@ -83,64 +83,46 @@ mapbox:
             text: Ecological reserves
     - id: view_2
       center:
-        lng: -54.73
-        lat: -2.597
-      duration: 3000
-      zoom: 10
-      bearing: 0
-      pitch: 0
-      layers:
-        - br163
-        - amazonas
-        - foztapajos
-      mobile: {}
-      captions:
-        title: false
-        notes: false
-        items:
-          - icon: <span class="material-symbols-outlined fill" style="color:white">show_chart</span>
-            text: Cuiabá-Santarém Highway (BR-163)
-          - icon: <span class="material-symbols-outlined fill" style="color:#FFF8DC">circle</span>
-            text: Amazonas River
-          - icon: <span class="material-symbols-outlined fill" style="color:blue">circle</span>
-            text: Tapajós River
-    - id: view_3
-      center:
-        lng: -54.831
-        lat: -2.457
-      duration: 4000
-      zoom: 10.2
-      bearing: 0
-      pitch: 0
-      layers:
-        - cidade-vila
-        - pa457
-      mobile: {}
-      captions:
-        title: false
-        notes: false
-        items:
-          - icon: <span class="material-symbols-outlined fill" style="color:orange">show_chart</span>
-            text: Everaldo Martins Highway (PA-457)
-          - icon: <span class="material-symbols-outlined" style="color:yellow">square</span>
-            text: Urban areas
-    - id: view_4
-      center:
-        lng: -54.917
-        lat: -2.529
+        lng: -77
+        lat: -2
       duration: 2000
-      zoom: 10
+      zoom: 6
       bearing: 0
       pitch: 0
       layers:
-        - tiborari
+        - mineracaoamazonia
+        - amazonia-limites
+        - ecuador-limites
+        - tiamazonia
+        - anpamazonia
+        - ''
       mobile: {}
       captions:
-        title: false
-        notes: false
+        title: ''
+        notes: ''
         items:
           - icon: <span class="material-symbols-outlined fill" style="color:red">square</span>
-            text: Borari Territory (preliminary demarcation)
+            text: Mining Concessions
+          - icon: <span class="material-symbols-outlined fill" style="color:#797429">circle</span>
+            text: Indigenous Territory
+          - icon: <span class="material-symbols-outlined fill" style="color:#b2b520">circle</span>
+            text: Ecological Reserves
+    - id: view_3
+      center:
+        lng: -78
+        lat: -4
+      duration: 2000
+      zoom: 7
+      bearing: 0
+      pitch: 0
+      layers:
+        - mineracaoamazonia
+        - ecuador-limites
+        - expulsion-regions
+        - tiamazonia
+        - anpamazonia
+      mobile: {}
+      captions: null
   mapView: ''
 components:
   - type: Group
@@ -216,10 +198,6 @@ components:
       - type: Text
         hasDropCap: false
         content: Mining, illegal or legal, is widespread throughout Amazonia, happening at both small and large scales. It is estimated that mining concessions [covers 21% of the total surface of the Amazon basin.](https://issuu.com/darperu/docs/megaproyectos_ingles_final) This is equivalent of imagining a territory over twice larger than Spain, predominantly formed by primary forests and innumerable freshwater streams, completely zoned for extraction – a mega-mine operating on planetary scale.
-      - type: Spacer
-        desktop: 800px
-        tablet: ''
-        mobile: ''
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -227,6 +205,20 @@ components:
       - type: Text
         hasDropCap: false
         content: Mining blocks often overlap with demarcated and non-demarcated indigenous territories, communal lands and ecological reserves, generating conflicts over land and water with local communities. According to the project [Environmental Justice Atlas](https://ejatlas.org/), there current exists at least 56 water and land conflicts related to mining in the Amazon basin.
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: view_2
+      - type: Text
+        hasDropCap: false
+        content: Mining concessions cover about 11% of the Ecuadorian territory. They are mainly concentrate in the southern flank of the Amazon region. These concessions are in conflict with indigenous territories and protected ecological reserves.
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: view_3
+      - type: Text
+        hasDropCap: false
+        content: This massive push in the mining frontier in Ecuador is driven by several projects of “mega-mining.” Three of them – Mirador, San Carlos-Panantza, and Frutal del Norte – are situated next to each other in region of the Cordillera del Cóndor mountain range in Shuar ancestral territory, south of the Ecuadorian Amazon.
     columnAlign: right
     floatingText: true
   - type: Group
