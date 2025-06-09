@@ -65,19 +65,22 @@ mapbox:
       bearing: 0
       pitch: 0
       layers:
-        - amazonia-limites;mineracaoamazonia;anpamazonia;tiamazonia
+        - amazonia-limites
+        - mineracaoamazonia
+        - anpamazonia
+        - tiamazonia
         - ''
       mobile: {}
       captions:
-        title: Meu título
-        notes: '* Minha nota'
+        title: ''
+        notes: ''
         items:
-          - icon: <span class="material-symbols-outlined fill" style="color:white">show_chart</span>
-            text: Municipality of Santarém (Pará)
-          - icon: <span class="material-symbols-outlined fill" style="color:#FFF8DC">circle</span>
-            text: Amazonas River
-          - icon: <span class="material-symbols-outlined fill" style="color:blue">circle</span>
-            text: Tapajós River
+          - icon: <span class="material-symbols-outlined fill" style="color:red">square</span>
+            text: Mining concessions
+          - icon: <span class="material-symbols-outlined fill" style="color:#797429">circle</span>
+            text: Indigenous Territory
+          - icon: <span class="material-symbols-outlined fill" style="color:#b2b520">circle</span>
+            text: Ecological reserves
     - id: view_2
       center:
         lng: -54.73
@@ -213,6 +216,13 @@ components:
       - type: Text
         hasDropCap: false
         content: Mining, illegal or legal, is widespread throughout Amazonia, happening at both small and large scales. It is estimated that mining concessions [covers 21% of the total surface of the Amazon basin.](https://issuu.com/darperu/docs/megaproyectos_ingles_final) This is equivalent of imagining a territory over twice larger than Spain, predominantly formed by primary forests and innumerable freshwater streams, completely zoned for extraction – a mega-mine operating on planetary scale.
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: view_1
+      - type: Text
+        hasDropCap: false
+        content: Mining blocks often overlap with demarcated and non-demarcated indigenous territories, communal lands and ecological reserves, generating conflicts over land and water with local communities. According to the project [Environmental Justice Atlas](https://ejatlas.org/), there current exists at least 56 water and land conflicts related to mining in the Amazon basin.
     columnAlign: right
     floatingText: true
   - type: Group
