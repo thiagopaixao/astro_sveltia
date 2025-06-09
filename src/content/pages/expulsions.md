@@ -52,7 +52,7 @@ mapbox:
         title: ''
         notes: ''
         items:
-          - icon: <span class="material-symbols-outlined"> show_chart </span>
+          - icon: <span class="material-symbols-outlined"> show_chart style="color:white">show_chart</span>
             text: Amazon limits
           - icon: ''
             text: Mining concessions
