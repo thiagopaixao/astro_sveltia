@@ -54,7 +54,7 @@ mapbox:
         items:
           - icon: <span class="material-symbols-outlined" style="color:#bffa80">show_chart</span>
             text: Amazon limits
-          - icon: ''
+          - icon: <span class="material-symbols-outlined fill" style="color:red">square</span>
             text: Mining concessions
     - id: view_1
       center:
