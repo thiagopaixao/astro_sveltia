@@ -86,7 +86,7 @@ mapbox:
         lng: -77
         lat: -2
       duration: 2000
-      zoom: 6
+      zoom: 5
       bearing: 0
       pitch: 0
       layers:
@@ -112,7 +112,7 @@ mapbox:
         lng: -78
         lat: -4
       duration: 2000
-      zoom: 7
+      zoom: 4
       bearing: 0
       pitch: 0
       layers:
