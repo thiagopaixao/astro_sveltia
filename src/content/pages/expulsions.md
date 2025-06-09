@@ -44,8 +44,7 @@ mapbox:
       bearing: 0
       pitch: 0
       layers:
-        - amazonia-limites
-        - mineracaoamazonia
+        - amazonia-limites;mineracaoamazonia
       mobile:
         zoom: 3
       captions:
@@ -61,13 +60,12 @@ mapbox:
         lng: -58
         lat: -2
       duration: 2000
-      zoom: 3
+      zoom: 4
       bearing: 0
       pitch: 0
       layers:
-        - municipios
-        - amazonas
-        - foztapajos
+        - amazonia-limites;mineracaoamazonia;anpamazonia;tiamazonia
+        - ''
       mobile: {}
       captions:
         title: Meu título
