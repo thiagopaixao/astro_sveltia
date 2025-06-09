@@ -218,7 +218,7 @@ components:
         mapView: view_3
       - type: Text
         hasDropCap: false
-        content: This massive push in the mining frontier in Ecuador is driven by several projects of “mega-mining.” Three of them – Mirador, San Carlos-Panantza, and Frutal del Norte – are situated next to each other in region of the Cordillera del Cóndor mountain range in Shuar ancestral territory, south of the Ecuadorian Amazon.
+        content: This massive push in the mining frontier in Ecuador is driven by several projects of “mega-mining.” Three ofthem – Mirador, San Carlos-Panantza, and Frutal del Norte – are situated next to each other in region of the Cordillera del Cóndor mountain range in Shuar ancestral territory, south of the Ecuadorian Amazon.
     columnAlign: right
     floatingText: true
   - type: Group
