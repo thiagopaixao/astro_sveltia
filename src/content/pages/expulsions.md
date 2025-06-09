@@ -23,7 +23,7 @@ pageTheme:
       tablet: '11'
       desktop: '12'
 mapbox:
-  columnAlign: left
+  columnAlign: center
   floatingText: false
   style: mapbox://styles/marlus/cjyt3uyhf15mr1cthc2942wxz
   center:
