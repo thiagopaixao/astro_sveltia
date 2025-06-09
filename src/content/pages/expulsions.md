@@ -274,7 +274,7 @@ components:
     shortTitle: DISPOSSESION & DISPLACEMENT
     longTitle: ''
     description: ''
-    showInMenu: false
+    showInMenu: true
     id: DISPOSSESION & DISPLACEMENT
     layout: default
     txtColor: Secondary
@@ -499,7 +499,7 @@ components:
     shortTitle: ECOLOGICAL DESTRUCTION
     longTitle: ''
     description: ''
-    showInMenu: false
+    showInMenu: true
     id: ECOLOGICAL DESTRUCTION
     layout: default
     txtColor: Secondary
@@ -641,7 +641,7 @@ components:
     shortTitle: CULTURAL ERASURE
     longTitle: ''
     description: ''
-    showInMenu: false
+    showInMenu: true
     id: CULTURAL ERASURE
     layout: default
     txtColor: Secondary
@@ -827,7 +827,7 @@ components:
     shortTitle: DOWNLOAD REPORT
     longTitle: ''
     description: ''
-    showInMenu: false
+    showInMenu: true
     id: DOWNLOAD REPORT
     layout: default
     txtColor: Secondary
@@ -864,7 +864,7 @@ components:
     shortTitle: CREDITS
     longTitle: ''
     description: ''
-    showInMenu: false
+    showInMenu: true
     id: CREDITS
     layout: default
     txtColor: Secondary
