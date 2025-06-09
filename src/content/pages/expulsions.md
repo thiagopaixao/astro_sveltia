@@ -52,14 +52,16 @@ mapbox:
         title: ''
         notes: ''
         items:
-          - icon: <span class="material-symbols-outlined fill" style="color:white">show_chart</span>
-            text: Brazil's Legal Amazon
+          - icon: <span class="material-symbols-outlined"> show_chart </span>
+            text: Amazon limits
+          - icon: ''
+            text: Mining concessions
     - id: view_1
       center:
-        lng: -54.708
-        lat: -2.625
-      duration: 4000
-      zoom: 8
+        lng: -58
+        lat: -2
+      duration: 2000
+      zoom: 3
       bearing: 0
       pitch: 0
       layers:
