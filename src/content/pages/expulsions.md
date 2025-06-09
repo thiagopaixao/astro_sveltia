@@ -38,7 +38,7 @@ mapbox:
     - id: view_0
       center:
         lng: -58
-        lat: -6
+        lat: -2
       duration: 2000
       zoom: 3
       bearing: 0
@@ -208,17 +208,10 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: view_1
+        mapView: view_0
       - type: Text
         hasDropCap: false
-        content: |-
-          There is a war going on over Amazonia. This is a conflict for the appropriation of the forest’s underground territory, which is as rich in mineral commodities as the forest’s aboveground is rich in fauna and flora. This is no even battle. It is disproportionally fought by powerful corporations in collision with state agents against local indigenous and peasant communities who stewardship the land and from the land make their livelihoods.
-
-          This investigation examines the case of Project Mirador, a mega-mine development led by Chinese corporation Ecuacorriente in the region of the Cordillera del Cóndor, Shuar ancestral territory, one of the most biologically rich regions of the Amazon basin.
-
-          For Project Mirador to be implemented, indigenous and peasant communities have been expropriated of their lands and evicted from their homes. Vast swaths of forests and numerous indigenous archaeological sites have been destroyed.
-
-          These multiple forms of violence – social, cultural, ecological – are intimately tied to the ways global extraction industries are appropriating indigenous lands across South America and beyond.
+        content: Mining, illegal or legal, is widespread throughout Amazonia, happening at both small and large scales. It is estimated that mining concessions [covers 21% of the total surface of the Amazon basin.](https://issuu.com/darperu/docs/megaproyectos_ingles_final) This is equivalent of imagining a territory over twice larger than Spain, predominantly formed by primary forests and innumerable freshwater streams, completely zoned for extraction – a mega-mine operating on planetary scale.
     columnAlign: right
     floatingText: true
   - type: Group
