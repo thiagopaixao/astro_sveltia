@@ -2,33 +2,33 @@
 import { getEntryBySlug } from 'astro:content';
 
 import Layout from "./Layout.astro";
-import MapBox from '../components/MapBox.astro';
-import Group from '../components/Group.astro';
-import ColumnSticky from '../components/ColumnSticky.astro';
-import Text from '../components/Text.astro';
-import Cta from '../components/Cta.astro';
-import CardsCall from '../components/CardsCall.astro';
-import Cards from '../components/Cards.astro';
-import ChartBar from '../components/ChartBar.astro';
-import ChartPercentage from '../components/ChartPercentage.astro';
-import Column from '../components/Column.astro';
-import Columns from '../components/Columns.astro';
-import ImageBlock from '../components/ImageBlock.astro';
-import InnerColumns from '../components/InnerColumns.astro';
-import LogosGroup from '../components/LogosGroup.astro';
-import VideoEmbed from '../components/VideoEmbed.astro';
-import HtmlEmbed from '../components/HtmlEmbed.astro';
-import Map from '../components/Map.astro';
-import MapView from '../components/MapView.astro';
-import Spacer from '../components/Spacer.astro';
-import Timeline from '../components/Timeline.astro';
-import TimelineBullet from '../components/TimelineBullet.astro';
-import BigNumbers from '../components/BigNumbers.astro';
-import Compare from '../components/Compare.astro';
-import Pullquote from '../components/Pullquote.astro';
-import Gallery from '../components/Gallery.astro';
-import Slider from '../components/Slider.astro';
-import Menu from "../components/Menu.astro";
+import MapBox from '../../components/MapBox.astro';
+import Group from '../../components/Group.astro';
+import ColumnSticky from '../../components/ColumnSticky.astro';
+import Text from '../../components/Text.astro';
+import Cta from '../../components/Cta.astro';
+import CardsCall from '../../components/CardsCall.astro';
+import Cards from '../../components/Cards.astro';
+import ChartBar from '../../components/ChartBar.astro';
+import ChartPercentage from '../../components/ChartPercentage.astro';
+import Column from '../../components/Column.astro';
+import Columns from '../../components/Columns.astro';
+import ImageBlock from '../../components/ImageBlock.astro';
+import InnerColumns from '../../components/InnerColumns.astro';
+import LogosGroup from '../../components/LogosGroup.astro';
+import VideoEmbed from '../../components/VideoEmbed.astro';
+import HtmlEmbed from '../../components/HtmlEmbed.astro';
+import Map from '../../components/Map.astro';
+import MapView from '../../components/MapView.astro';
+import Spacer from '../../components/Spacer.astro';
+import Timeline from '../../components/Timeline.astro';
+import TimelineBullet from '../../components/TimelineBullet.astro';
+import BigNumbers from '../../components/BigNumbers.astro';
+import Compare from '../../components/Compare.astro';
+import Pullquote from '../../components/Pullquote.astro';
+import Gallery from '../../components/Gallery.astro';
+import Slider from '../../components/Slider.astro';
+import Menu from "../../components/Menu.astro";
 
 const { slug } = Astro.props;
 
@@ -167,7 +167,7 @@ const mainMenu = components
 
             let Layout = null;
             try {
-              const layoutModule = await import(`./${type}Layout.astro`);
+              const layoutModule = await import(`../components/${type}Layout.astro`);
               Layout = layoutModule.default;
             } catch (e) {
             }

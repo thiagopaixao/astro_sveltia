@@ -4,7 +4,7 @@ const { txtColor, bgColor, content, ...otherProps } = props;
 
 // Adicionando um processador de Markdown (se necessário)
 import { marked } from 'marked';
-import AnimationToggle from '../components/AnimationToggle.astro';
+import AnimationToggle from '../../components/AnimationToggle.astro';
 
 const htmlContent = content ? marked(content) : null;
 ---

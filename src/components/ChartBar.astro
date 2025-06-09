@@ -3,6 +3,11 @@ import Caption from "./Caption.astro";
 const { title, notes, type, values } = Astro.props;
 
 function addNumberPercentToValues(values) {
+  // Ensure values is always a valid array
+  if (!values || !Array.isArray(values) || values.length === 0) {
+    return [];
+  }
+  
   const numbers = values.map(value => value.number)
   const largest = Math.max(...numbers);
 

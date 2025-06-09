@@ -1,14 +1,17 @@
 ---
-import AnimationToggle from "../components/AnimationToggle.astro";
+import AnimationToggle from "../../components/AnimationToggle.astro";
 
 const { Component, props } = Astro.props;
-const { chartTitle, chartNotes, chartBars = [] } = props;
+const { chartTitle, chartNotes, chartBars } = props;
 //console.log("ChartBar props:", Astro.props.chartBars);
+
+// Ensure chartBars is always a valid array
+const validChartBars = chartBars && Array.isArray(chartBars) ? chartBars : [];
 
 const componentData = {
     title: chartTitle,
     notes: chartNotes,
-    values: chartBars
+    values: validChartBars
 };
 ---
 <AnimationToggle>
