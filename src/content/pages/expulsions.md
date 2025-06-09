@@ -37,19 +37,20 @@ mapbox:
   views:
     - id: view_0
       center:
-        lng: -58.911
-        lat: -6.315
-      duration: 4500
-      zoom: 4
+        lng: -58
+        lat: -6
+      duration: 2000
+      zoom: 3
       bearing: 0
       pitch: 0
       layers:
-        - amazonialegal
+        - amazonia-limites
+        - mineracaoamazonia
       mobile:
-        zoom: 3.5
+        zoom: 3
       captions:
-        title: false
-        notes: false
+        title: ''
+        notes: ''
         items:
           - icon: <span class="material-symbols-outlined fill" style="color:white">show_chart</span>
             text: Brazil's Legal Amazon
