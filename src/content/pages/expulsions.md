@@ -61,7 +61,7 @@ mapbox:
         lng: -58
         lat: -2
       duration: 2000
-      zoom: 4
+      zoom: 3
       bearing: 0
       pitch: 0
       layers:
