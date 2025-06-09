@@ -44,7 +44,8 @@ mapbox:
       bearing: 0
       pitch: 0
       layers:
-        - amazonia-limites;mineracaoamazonia
+        - amazonia-limites
+        - mineracaoamazonia
       mobile:
         zoom: 3
       captions:
