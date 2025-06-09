@@ -25,15 +25,15 @@ pageTheme:
 mapbox:
   columnAlign: left
   floatingText: false
-  style: mapbox://styles/comborari/ckr4wi3k80fpl17qo34th6kk2
+  style: mapbox://styles/marlus/cjyt3uyhf15mr1cthc2942wxz
   center:
-    lng: -54.875
-    lat: -2.53
+    lng: -58
+    lat: -2
   zoom: 2
   bearing: 0
   pitch: 0
   layers: []
-  token: pk.eyJ1IjoiY29tYm9yYXJpIiwiYSI6ImNrcjR3OWczMjBhaWEyeHIyaWhwMnUzNHcifQ.Yv7o7kj1ImyC9Rn-egF0TQ
+  token: pk.eyJ1IjoibWFybHVzIiwiYSI6IjlmYlhtaEkifQ.vMxORYorRKnueDl3E5itEQ
   views:
     - id: view_0
       center:
