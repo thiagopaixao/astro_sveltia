@@ -12,9 +12,9 @@ mapView: &mapView
       collapsed: true
     - label: 'Map View'
       name: 'mapView'
-      widget: 'select'
-      options: ['view_1', 'view_2', 'view_3', 'view_4']
+      widget: 'string'
       required: true
+      hint: 'Digite o ID da view do mapa (ex: view_0, view_12, etc.) - deve corresponder a uma view cadastrada no mapbox'
       collapsed: true
     - label: 'Text Color'
       name: 'txtColor'

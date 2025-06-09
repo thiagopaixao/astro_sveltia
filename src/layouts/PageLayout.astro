@@ -38,7 +38,10 @@ if (!entry) {
   throw new Error(`Nenhuma entrada encontrada para "${slug}".`);
 }
 
-const { title, components } = entry.data;
+const { title, components, mapbox } = entry.data;
+
+// Configuração do MapBox baseada nos dados da página
+const hasMapboxData = mapbox && mapbox.style && mapbox.token;
 
 const componentMap = {
   Group,
@@ -100,7 +103,7 @@ const mainMenu = components
       menu={mainMenu}
       sideLink={"https://documental.xyz"}
     />
-    <MapBox />
+    {hasMapboxData && <MapBox />}
     {
       (async function() {
         async function renderComponents(componentList) {
@@ -194,3 +197,38 @@ const mainMenu = components
     }
   </main>
 </Layout>
+
+{hasMapboxData && (
+  <script is:inline define:vars={{ mapbox }}>
+    // Configuração do MapBox baseada nos dados da página
+    window.mapConfig = {
+      style: mapbox.style,
+      center: [mapbox.center?.lng || 0, mapbox.center?.lat || 0],
+      zoom: mapbox.zoom || 2,
+      bearing: mapbox.bearing || 0,
+      pitch: mapbox.pitch || 0,
+      layers: mapbox.layers || [],
+    };
+    
+    window.mapBoxToken = mapbox.token;
+    
+    // Processamento das views do mapa
+    window.mapViews = {};
+    if (mapbox.views && Array.isArray(mapbox.views)) {
+      mapbox.views.forEach(view => {
+        if (view.id) {
+          window.mapViews[view.id] = {
+            center: [view.center?.lng || 0, view.center?.lat || 0],
+            duration: view.duration || 4000,
+            zoom: view.zoom || 2,
+            bearing: view.bearing || 0,
+            pitch: view.pitch || 0,
+            layers: view.layers || [],
+            mobile: view.mobile || {},
+            captions: view.captions || {},
+          };
+        }
+      });
+    }
+  </script>
+)}

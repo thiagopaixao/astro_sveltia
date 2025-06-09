@@ -1,6 +1,6 @@
 mapBox: &mapBox
   label: 'MapBox'
-  name: 'MapBox'
+  name: 'mapbox'
   collapsed: true
   widget: 'object'
   fields:
@@ -27,7 +27,7 @@ mapBox: &mapBox
       collapsed: true
     - label: 'Map Center'
       name: 'center'
-      widget: 'list'
+      widget: 'object'
       fields:
         - { label: 'Longitude', name: 'lng', widget: 'number', collapsed: true }
         - { label: 'Latitude', name: 'lat', widget: 'number', collapsed: true }
@@ -71,7 +71,7 @@ mapBox: &mapBox
           collapsed: true
         - label: 'View Center'
           name: 'center'
-          widget: 'list'
+          widget: 'object'
           fields:
             - { label: 'Longitude', name: 'lng', widget: 'number', collapsed: true }
             - { label: 'Latitude', name: 'lat', widget: 'number', collapsed: true }

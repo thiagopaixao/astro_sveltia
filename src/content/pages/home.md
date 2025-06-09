@@ -18,16 +18,23 @@ pageTheme:
       mobile: '10'
       tablet: '11'
       desktop: '12'
-MapBox:
-  columnAlign: ''
+mapbox:
+  columnAlign: left
   floatingText: false
   style: mapbox://styles/comborari/ckr4wi3k80fpl17qo34th6kk2
+  center:
+    lng: -54.875
+    lat: -2.53
   zoom: 2
   bearing: 0
   pitch: 0
+  layers: []
   token: pk.eyJ1IjoiY29tYm9yYXJpIiwiYSI6ImNrcjR3OWczMjBhaWEyeHIyaWhwMnUzNHcifQ.Yv7o7kj1ImyC9Rn-egF0TQ
   views:
     - id: view_0
+      center:
+        lng: -58.911
+        lat: -6.315
       duration: 4500
       zoom: 4
       bearing: 0
@@ -42,10 +49,10 @@ MapBox:
         items:
           - icon: <span class="material-symbols-outlined fill" style="color:white">show_chart</span>
             text: Brazil's Legal Amazon
-      center:
-        lng: -58.911
-        lat: -6.315
     - id: view_1
+      center:
+        lng: -54.708
+        lat: -2.625
       duration: 4000
       zoom: 8
       bearing: 0
@@ -54,7 +61,7 @@ MapBox:
         - municipios
         - amazonas
         - foztapajos
-      mobile: null
+      mobile: {}
       captions:
         title: Meu título
         notes: '* Minha nota'
@@ -65,10 +72,10 @@ MapBox:
             text: Amazonas River
           - icon: <span class="material-symbols-outlined fill" style="color:blue">circle</span>
             text: Tapajós River
-      center:
-        lng: -54.708
-        lat: -2.625
     - id: view_2
+      center:
+        lng: -54.73
+        lat: -2.597
       duration: 3000
       zoom: 10
       bearing: 0
@@ -77,7 +84,7 @@ MapBox:
         - br163
         - amazonas
         - foztapajos
-      mobile: null
+      mobile: {}
       captions:
         title: false
         notes: false
@@ -88,10 +95,10 @@ MapBox:
             text: Amazonas River
           - icon: <span class="material-symbols-outlined fill" style="color:blue">circle</span>
             text: Tapajós River
-      center:
-        lng: -54.73
-        lat: -2.597
     - id: view_3
+      center:
+        lng: -54.831
+        lat: -2.457
       duration: 4000
       zoom: 10.2
       bearing: 0
@@ -99,7 +106,7 @@ MapBox:
       layers:
         - cidade-vila
         - pa457
-      mobile: null
+      mobile: {}
       captions:
         title: false
         notes: false
@@ -108,30 +115,24 @@ MapBox:
             text: Everaldo Martins Highway (PA-457)
           - icon: <span class="material-symbols-outlined" style="color:yellow">square</span>
             text: Urban areas
-      center:
-        lng: -54.831
-        lat: -2.457
     - id: view_4
+      center:
+        lng: -54.917
+        lat: -2.529
       duration: 2000
       zoom: 10
       bearing: 0
       pitch: 0
       layers:
         - tiborari
-      mobile: null
+      mobile: {}
       captions:
         title: false
         notes: false
         items:
           - icon: <span class="material-symbols-outlined fill" style="color:red">square</span>
             text: Borari Territory (preliminary demarcation)
-      center:
-        lng: -54.917
-        lat: -2.529
   mapView: ''
-  center:
-    lng: -54.875
-    lat: -2.53
 components:
   - type: Group
     shortTitle: Introdução
@@ -236,6 +237,10 @@ components:
         customBgColor: ''
       - type: Spacer
         desktop: 160px
+      - type: MapView
+        txtColor: '#f0ead9ff'
+        bgColor: '#006a49ff'
+        mapView: view_0
       - type: Text
         hasDropCap: false
         content: |-
@@ -248,9 +253,32 @@ components:
         bgColor: ''
         customTxtColor: ''
         customBgColor: ''
+      - type: MapView
+        txtColor: '#f0ead9ff'
+        bgColor: '#59006bff'
+        mapView: view_1
+      - type: Text
+        hasDropCap: false
+        content: |-
+          ###### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
+
+          ###### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+      - type: MapView
+        txtColor: '#f0ead9ff'
+        bgColor: '#006a49ff'
+        mapView: view_2
+      - type: Text
+        hasDropCap: false
+        content: |-
+          ###### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
+
+          ###### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
     columnAlign: left
     floatingText: true
-    mapView: view_1
   - type: Group
     shortTitle: Texto Principal
     longTitle: ''

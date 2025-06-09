@@ -1,6 +1,6 @@
 ---
 const { Component, props } = Astro.props;
-const { id, columnAlign, floatingText, txtColor, bgColor, mapView, ...otherProps } = props;
+const { id, columnAlign, floatingText, txtColor, bgColor, mapView, components, ...otherProps } = props;
 ---
 
 <section id={id} style={{ backgroundColor: 'var(--clr-bg, transparent)' }}>
@@ -10,6 +10,7 @@ const { id, columnAlign, floatingText, txtColor, bgColor, mapView, ...otherProps
     txtColor={txtColor}
     bgColor={bgColor}
     mapView={mapView}
+    components={components}
     {...otherProps}
   >
     <slot />

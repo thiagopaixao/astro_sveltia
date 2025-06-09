@@ -2,31 +2,46 @@
 const { Component, props } = Astro.props;
 const { style, center, zoom, bearing, pitch, layers, token, views } = props;
 
-const mapConfig = {
-    style,
-    center: [center[0].lng, center[0].lat],
-    zoom,
-    bearing,
-    pitch,
-    layers,
-};
+// Configuração do MapBox quando usado como componente
+const hasComponentData = style && token;
 
-const mapViews = views ? views.reduce((acc, view) => {
-    acc[view.id] = {
-        center: [view.center[0].lng, view.center[0].lat],
-        duration: view.duration,
-        zoom: view.zoom,
-        bearing: view.bearing,
-        pitch: view.pitch,
-        layers: view.layers,
-        mobile: view.mobile,
-        captions: view.captions,
-    };
+const mapConfig = hasComponentData ? {
+    style,
+    center: center ? [center.lng, center.lat] : [0, 0],
+    zoom: zoom || 2,
+    bearing: bearing || 0,
+    pitch: pitch || 0,
+    layers: layers || [],
+} : null;
+
+const mapViews = hasComponentData && views ? views.reduce((acc, view) => {
+    if (view.id) {
+        acc[view.id] = {
+            center: view.center ? [view.center.lng, view.center.lat] : [0, 0],
+            duration: view.duration || 4000,
+            zoom: view.zoom || 2,
+            bearing: view.bearing || 0,
+            pitch: view.pitch || 0,
+            layers: view.layers || [],
+            mobile: view.mobile || {},
+            captions: view.captions || {},
+        };
+    }
     return acc;
 }, {}) : null;
-
-
 ---
-<Component mapConfig={mapConfig} mapViews={mapViews} mapBoxToken={token}>
+
+<Component {...props}>
     <slot />
 </Component>
+
+{hasComponentData && (
+    <script is:inline define:vars={{ mapConfig, mapViews, token }}>
+        // Sobrescreve as variáveis globais quando MapBox é usado como componente
+        window.mapConfig = mapConfig;
+        window.mapBoxToken = token;
+        if (mapViews) {
+            window.mapViews = mapViews;
+        }
+    </script>
+)}

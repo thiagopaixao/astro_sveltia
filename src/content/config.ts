@@ -58,6 +58,60 @@ const chartPercentageBarSchema = z.object({
   number: z.number().min(0).max(100).optional(),
 });
 
+// Schema para MapBox no nível da página
+const mapboxSchema = z.object({
+  columnAlign: z.enum(['left', 'center', 'right']).optional(),
+  floatingText: z.boolean().optional(),
+  style: z.string().optional(),
+  center: z
+    .object({
+      lng: z.number(),
+      lat: z.number(),
+    })
+    .optional(),
+  zoom: z.number().optional(),
+  bearing: z.number().optional(),
+  pitch: z.number().optional(),
+  layers: z.array(z.string()).optional(),
+  token: z.string().optional(),
+  views: z
+    .array(
+      z.object({
+        id: z.string(),
+        center: z.object({
+          lng: z.number(),
+          lat: z.number(),
+        }),
+        duration: z.number().optional(),
+        zoom: z.number().optional(),
+        bearing: z.number().optional(),
+        pitch: z.number().optional(),
+        layers: z.array(z.string()).optional(),
+        mobile: z
+          .object({
+            zoom: z.number().optional(),
+          })
+          .optional(),
+        captions: z
+          .object({
+            title: z.union([z.string(), z.boolean()]).optional(),
+            notes: z.union([z.string(), z.boolean()]).optional(),
+            items: z
+              .array(
+                z.object({
+                  icon: z.string().optional(),
+                  text: z.string().optional(),
+                })
+              )
+              .optional(),
+          })
+          .optional(),
+      })
+    )
+    .optional(),
+  mapView: z.string().optional(),
+});
+
 const componentSchema = z.object({
   hasDropCap: z.boolean().optional(),
   type: z.string(),
@@ -248,6 +302,7 @@ const pagesCollection = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string().optional(),
+    mapbox: mapboxSchema.optional(),
     components: z.array(componentSchema).optional(),
     pageTheme: z
       .object({

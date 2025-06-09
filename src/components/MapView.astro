@@ -1,9 +1,9 @@
 ---
-const { mapView } = Astro.props;
+const { mapView, txtColor, bgColor } = Astro.props;
 //mapView recebe o id da layer
 ---
 
-<div class="map-view" data-map-view={mapView}></div>
+<div class="map-view" data-map-view={mapView} style={{ color: txtColor, backgroundColor: bgColor }}></div>
 
 <style>
   .map-view{
@@ -13,3 +13,18 @@ const { mapView } = Astro.props;
     max-height: 1px;
   }
 </style>
+
+<script>
+  // Validar se a view existe no mapbox quando o componente é carregado
+  document.addEventListener('DOMContentLoaded', () => {
+    const mapViewElement = document.querySelector('[data-map-view]');
+    if (mapViewElement && (window as any).mapViews) {
+      const viewId = mapViewElement.getAttribute('data-map-view');
+      if (!(window as any).mapViews[viewId]) {
+        console.warn(`MapView: View "${viewId}" não encontrada nas views do mapbox disponíveis:`, Object.keys((window as any).mapViews));
+      } else {
+        console.log(`MapView: View "${viewId}" encontrada e válida`);
+      }
+    }
+  });
+</script>

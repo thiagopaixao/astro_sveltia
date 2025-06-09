@@ -1,10 +1,13 @@
 ---
 import MapView from "./MapView.astro";
 
-const { columnAlign, floatingText, txtColor, bgColor, mapView } = Astro.props;
+const { columnAlign, floatingText, txtColor, bgColor, mapView, components } = Astro.props;
 
 let content = await Astro.slots.render("default");
 content = floatingText ? content.replace(/<br[^>]*>/g, '<b r></b>') : content;
+
+// Buscar componentes MapView dentro dos components
+const mapViewComponents = components ? components.filter(comp => comp.type === 'MapView') : [];
 
 //columnAlign recebe left || right || center
 //floatingText recebe booleano
@@ -20,9 +23,7 @@ content = floatingText ? content.replace(/<br[^>]*>/g, '<b r></b>') : content;
   ]}
 >
   <div class="map__holder">
-    {mapView && <MapView mapView={mapView} />}
-
-    <div class="map__content" set:html={content}></div>    
+    <div class="map__content" set:html={content}></div>
   </div>
 </section>
 
