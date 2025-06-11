@@ -304,6 +304,20 @@ const pagesCollection = defineCollection({
     title: z.string().optional(),
     mapbox: mapboxSchema.optional(),
     components: z.array(componentSchema).optional(),
+    pageSettings: z
+      .object({
+        type: z.string().optional(),
+        language: z.enum(['pt-BR', 'en', 'es']).optional(),
+        link_pt_br: z.string().optional(),
+        link_en: z.string().optional(),
+        link_es: z.string().optional(),
+        direction: z.enum(['left', 'right']).optional(),
+        seoTitle: z.string().optional(),
+        seoDescription: z.string().optional(),
+        seoKeywords: z.array(z.object({ keyword: z.string() })).optional(),
+        seoImage: z.string().optional(),
+      })
+      .optional(),
     pageTheme: z
       .object({
         primaryColor: z.string().optional(),

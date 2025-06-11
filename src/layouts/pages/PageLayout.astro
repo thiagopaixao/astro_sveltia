@@ -38,7 +38,7 @@ if (!entry) {
   throw new Error(`Nenhuma entrada encontrada para "${slug}".`);
 }
 
-const { title, components, mapbox } = entry.data;
+const { title, components, mapbox, pageSettings } = entry.data;
 
 // Configuração do MapBox baseada nos dados da página
 const hasMapboxData = mapbox && mapbox.style && mapbox.token;
@@ -73,16 +73,16 @@ const componentMap = {
 
 const languages = [
   {
+    slug: "PT",
+    url: pageSettings?.link_pt_br || "#",
+  },
+  {
     slug: "EN",
-    url: "#",
+    url: pageSettings?.link_en || "#",
   },
   {
     slug: "ES",
-    url: "#",
-  },
-  {
-    slug: "PT",
-    url: "#",
+    url: pageSettings?.link_es || "#",
   },
 ];
 

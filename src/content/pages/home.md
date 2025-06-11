@@ -3,6 +3,9 @@ title: Home
 slug: home
 pageSettings:
   language: pt-BR
+  link_pt_br: '/home'
+  link_en: '/home-en'
+  link_es: '/home-es'
   direction: left
   seoTitle: ''
   seoDescription: ''
@@ -930,4 +933,3 @@ components:
             customTxtColor: ''
             customBgColor: ''
 ---
-

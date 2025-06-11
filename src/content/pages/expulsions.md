@@ -23,119 +23,111 @@ pageTheme:
       tablet: '11'
       desktop: '12'
 mapbox:
-  columnAlign: left
+  columnAlign: center
   floatingText: false
-  style: mapbox://styles/comborari/ckr4wi3k80fpl17qo34th6kk2
+  style: mapbox://styles/marlus/cjyt3uyhf15mr1cthc2942wxz
   center:
-    lng: -54.875
-    lat: -2.53
+    lng: -58
+    lat: -2
   zoom: 2
   bearing: 0
   pitch: 0
   layers: []
-  token: pk.eyJ1IjoiY29tYm9yYXJpIiwiYSI6ImNrcjR3OWczMjBhaWEyeHIyaWhwMnUzNHcifQ.Yv7o7kj1ImyC9Rn-egF0TQ
+  token: pk.eyJ1IjoibWFybHVzIiwiYSI6IjlmYlhtaEkifQ.vMxORYorRKnueDl3E5itEQ
   views:
     - id: view_0
       center:
-        lng: -58.911
-        lat: -6.315
-      duration: 4500
+        lng: -58
+        lat: -2
+      duration: 2000
+      zoom: 3
+      bearing: 0
+      pitch: 0
+      layers:
+        - amazonia-limites
+        - mineracaoamazonia
+      mobile:
+        zoom: 3
+      captions:
+        title: ''
+        notes: ''
+        items:
+          - icon: <span class="material-symbols-outlined" style="color:#bffa80">show_chart</span>
+            text: Amazon limits
+          - icon: <span class="material-symbols-outlined fill" style="color:red">square</span>
+            text: Mining concessions
+    - id: view_1
+      center:
+        lng: -58
+        lat: -2
+      duration: 2000
       zoom: 4
       bearing: 0
       pitch: 0
       layers:
-        - amazonialegal
-      mobile:
-        zoom: 3.5
-      captions:
-        title: false
-        notes: false
-        items:
-          - icon: <span class="material-symbols-outlined fill" style="color:white">show_chart</span>
-            text: Brazil's Legal Amazon
-    - id: view_1
-      center:
-        lng: -54.708
-        lat: -2.625
-      duration: 4000
-      zoom: 8
-      bearing: 0
-      pitch: 0
-      layers:
-        - municipios
-        - amazonas
-        - foztapajos
+        - amazonia-limites
+        - mineracaoamazonia
+        - anpamazonia
+        - tiamazonia
+        - ''
       mobile: {}
       captions:
-        title: Meu título
-        notes: '* Minha nota'
-        items:
-          - icon: <span class="material-symbols-outlined fill" style="color:white">show_chart</span>
-            text: Municipality of Santarém (Pará)
-          - icon: <span class="material-symbols-outlined fill" style="color:#FFF8DC">circle</span>
-            text: Amazonas River
-          - icon: <span class="material-symbols-outlined fill" style="color:blue">circle</span>
-            text: Tapajós River
-    - id: view_2
-      center:
-        lng: -54.73
-        lat: -2.597
-      duration: 3000
-      zoom: 10
-      bearing: 0
-      pitch: 0
-      layers:
-        - br163
-        - amazonas
-        - foztapajos
-      mobile: {}
-      captions:
-        title: false
-        notes: false
-        items:
-          - icon: <span class="material-symbols-outlined fill" style="color:white">show_chart</span>
-            text: Cuiabá-Santarém Highway (BR-163)
-          - icon: <span class="material-symbols-outlined fill" style="color:#FFF8DC">circle</span>
-            text: Amazonas River
-          - icon: <span class="material-symbols-outlined fill" style="color:blue">circle</span>
-            text: Tapajós River
-    - id: view_3
-      center:
-        lng: -54.831
-        lat: -2.457
-      duration: 4000
-      zoom: 10.2
-      bearing: 0
-      pitch: 0
-      layers:
-        - cidade-vila
-        - pa457
-      mobile: {}
-      captions:
-        title: false
-        notes: false
-        items:
-          - icon: <span class="material-symbols-outlined fill" style="color:orange">show_chart</span>
-            text: Everaldo Martins Highway (PA-457)
-          - icon: <span class="material-symbols-outlined" style="color:yellow">square</span>
-            text: Urban areas
-    - id: view_4
-      center:
-        lng: -54.917
-        lat: -2.529
-      duration: 2000
-      zoom: 10
-      bearing: 0
-      pitch: 0
-      layers:
-        - tiborari
-      mobile: {}
-      captions:
-        title: false
-        notes: false
+        title: ''
+        notes: ''
         items:
           - icon: <span class="material-symbols-outlined fill" style="color:red">square</span>
-            text: Borari Territory (preliminary demarcation)
+            text: Mining concessions
+          - icon: <span class="material-symbols-outlined fill" style="color:#797429">circle</span>
+            text: Indigenous Territory
+          - icon: <span class="material-symbols-outlined fill" style="color:#b2b520">circle</span>
+            text: Ecological reserves
+    - id: view_2
+      center:
+        lng: -77
+        lat: -2
+      duration: 2000
+      zoom: 5
+      bearing: 0
+      pitch: 0
+      layers:
+        - mineracaoamazonia
+        - amazonia-limites
+        - ecuador-limites
+        - tiamazonia
+        - anpamazonia
+        - ''
+      mobile: {}
+      captions:
+        title: ''
+        notes: ''
+        items:
+          - icon: <span class="material-symbols-outlined fill" style="color:red">square</span>
+            text: Mining Concessions
+          - icon: <span class="material-symbols-outlined fill" style="color:#797429">circle</span>
+            text: Indigenous Territory
+          - icon: <span class="material-symbols-outlined fill" style="color:#b2b520">circle</span>
+            text: Ecological Reserves
+    - id: view_3
+      center:
+        lng: -78
+        lat: -4
+      duration: 2000
+      zoom: 4
+      bearing: 0
+      pitch: 0
+      layers:
+        - mineracaoamazonia
+        - ecuador-limites
+        - expulsion-regions
+        - tiamazonia
+        - anpamazonia
+      mobile: {}
+      captions:
+        title: ''
+        notes: ''
+        items:
+          - icon: ''
+            text: ''
   mapView: ''
 components:
   - type: Group
@@ -207,17 +199,31 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
+        mapView: view_0
+      - type: Text
+        hasDropCap: false
+        content: Mining, illegal or legal, is widespread throughout Amazonia, happening at both small and large scales. It is estimated that mining concessions [covers 21% of the total surface of the Amazon basin.](https://issuu.com/darperu/docs/megaproyectos_ingles_final) This is equivalent of imagining a territory over twice larger than Spain, predominantly formed by primary forests and innumerable freshwater streams, completely zoned for extraction – a mega-mine operating on planetary scale.
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
         mapView: view_1
       - type: Text
         hasDropCap: false
-        content: |-
-          There is a war going on over Amazonia. This is a conflict for the appropriation of the forest’s underground territory, which is as rich in mineral commodities as the forest’s aboveground is rich in fauna and flora. This is no even battle. It is disproportionally fought by powerful corporations in collision with state agents against local indigenous and peasant communities who stewardship the land and from the land make their livelihoods.
-
-          This investigation examines the case of Project Mirador, a mega-mine development led by Chinese corporation Ecuacorriente in the region of the Cordillera del Cóndor, Shuar ancestral territory, one of the most biologically rich regions of the Amazon basin.
-
-          For Project Mirador to be implemented, indigenous and peasant communities have been expropriated of their lands and evicted from their homes. Vast swaths of forests and numerous indigenous archaeological sites have been destroyed.
-
-          These multiple forms of violence – social, cultural, ecological – are intimately tied to the ways global extraction industries are appropriating indigenous lands across South America and beyond.
+        content: Mining blocks often overlap with demarcated and non-demarcated indigenous territories, communal lands and ecological reserves, generating conflicts over land and water with local communities. According to the project [Environmental Justice Atlas](https://ejatlas.org/), there current exists at least 56 water and land conflicts related to mining in the Amazon basin.
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: view_2
+      - type: Text
+        hasDropCap: false
+        content: Mining concessions cover about 11% of the Ecuadorian territory. They are mainly concentrate in the southern flank of the Amazon region. These concessions are in conflict with indigenous territories and protected ecological reserves.
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: view_3
+      - type: Text
+        hasDropCap: false
+        content: This massive push in the mining frontier in Ecuador is driven by several projects of “mega-mining.” Three ofthem – Mirador, San Carlos-Panantza, and Frutal del Norte – are situated next to each other in region of the Cordillera del Cóndor mountain range in Shuar ancestral territory, south of the Ecuadorian Amazon.
     columnAlign: right
     floatingText: true
   - type: Group
@@ -274,7 +280,7 @@ components:
     shortTitle: DISPOSSESION & DISPLACEMENT
     longTitle: ''
     description: ''
-    showInMenu: false
+    showInMenu: true
     id: DISPOSSESION & DISPLACEMENT
     layout: default
     txtColor: Secondary
@@ -499,7 +505,7 @@ components:
     shortTitle: ECOLOGICAL DESTRUCTION
     longTitle: ''
     description: ''
-    showInMenu: false
+    showInMenu: true
     id: ECOLOGICAL DESTRUCTION
     layout: default
     txtColor: Secondary
@@ -641,7 +647,7 @@ components:
     shortTitle: CULTURAL ERASURE
     longTitle: ''
     description: ''
-    showInMenu: false
+    showInMenu: true
     id: CULTURAL ERASURE
     layout: default
     txtColor: Secondary
@@ -827,7 +833,7 @@ components:
     shortTitle: DOWNLOAD REPORT
     longTitle: ''
     description: ''
-    showInMenu: false
+    showInMenu: true
     id: DOWNLOAD REPORT
     layout: default
     txtColor: Secondary
@@ -864,7 +870,7 @@ components:
     shortTitle: CREDITS
     longTitle: ''
     description: ''
-    showInMenu: false
+    showInMenu: true
     id: CREDITS
     layout: default
     txtColor: Secondary

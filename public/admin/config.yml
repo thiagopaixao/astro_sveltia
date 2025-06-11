@@ -90,6 +90,24 @@ pageSettings: &pageSettings
       options: ['pt-BR', 'en', 'es']
       default: 'pt-BR'
       collapsed: true
+    - label: 'Link pt-br'
+      name: 'link_pt_br'
+      widget: 'string'
+      required: false
+      default: '#'
+      collapsed: true
+    - label: 'Link en'
+      name: 'link_en'
+      widget: 'string'
+      required: false
+      default: '#'
+      collapsed: true
+    - label: 'Link es'
+      name: 'link_es'
+      widget: 'string'
+      required: false
+      default: '#'
+      collapsed: true
     - label: 'Text Direction'
       name: 'direction'
       widget: 'select'
