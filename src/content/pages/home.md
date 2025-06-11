@@ -3,9 +3,9 @@ title: Home
 slug: home
 pageSettings:
   language: pt-BR
-  link_pt_br: '/home'
-  link_en: '/home-en'
-  link_es: '/home-es'
+  link_pt_br: /home
+  link_en: /home-en
+  link_es: /home-es
   direction: left
   seoTitle: ''
   seoDescription: ''
@@ -28,7 +28,7 @@ mapbox:
   center:
     lng: -54.875
     lat: -2.53
-  zoom: 2
+  zoom: 1.1
   bearing: 0
   pitch: 0
   layers: []
@@ -933,3 +933,4 @@ components:
             customTxtColor: ''
             customBgColor: ''
 ---
+

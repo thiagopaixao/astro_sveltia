@@ -29,23 +29,29 @@ mapBox: &mapBox
       name: 'center'
       widget: 'object'
       fields:
-        - { label: 'Longitude', name: 'lng', widget: 'number', collapsed: true }
-        - { label: 'Latitude', name: 'lat', widget: 'number', collapsed: true }
+        - { label: 'Longitude', name: 'lng', widget: 'number', value_type: 'float', step: 0.01, collapsed: true }
+        - { label: 'Latitude', name: 'lat', widget: 'number', value_type: 'float', step: 0.01, collapsed: true }
       required: true
       collapsed: true
     - label: 'Map Zoom'
       name: 'zoom'
       widget: 'number'
+      value_type: 'float'
+      step: 0.01
       required: true
       collapsed: true
     - label: 'Map Bearing'
       name: 'bearing'
       widget: 'number'
+      value_type: 'float'
+      step: 0.01
       required: false
       collapsed: true
     - label: 'Map Pitch'
       name: 'pitch'
       widget: 'number'
+      value_type: 'float'
+      step: 0.01
       required: false
       collapsed: true
     - label: 'Map Layers'
@@ -80,21 +86,29 @@ mapBox: &mapBox
         - label: 'View Duration'
           name: 'duration'
           widget: 'number'
+          value_type: 'float'
+          step: 0.01
           required: true
           collapsed: true
         - label: 'View Zoom'
           name: 'zoom'
           widget: 'number'
+          value_type: 'float'
+          step: 0.01
           required: true
           collapsed: true
         - label: 'View Bearing'
           name: 'bearing'
           widget: 'number'
+          value_type: 'float'
+          step: 0.01
           required: false
           collapsed: true
         - label: 'View Pitch'
           name: 'pitch'
           widget: 'number'
+          value_type: 'float'
+          step: 0.01
           required: false
           collapsed: true
         - label: 'View Layers'
@@ -111,6 +125,8 @@ mapBox: &mapBox
             - label: 'Mobile Zoom'
               name: 'zoom'
               widget: 'number'
+              value_type: 'float'
+              step: 0.01
               required: false
               collapsed: true
         - label: 'Captions'

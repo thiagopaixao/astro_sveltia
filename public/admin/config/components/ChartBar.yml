@@ -41,6 +41,8 @@ chartBar: &chartBar
         - label: 'Number'
           name: 'number'
           widget: 'number'
+          value_type: 'float'
+          step: 0.01
           required: false
           collapsed: true
         - label: 'Number Percent'
