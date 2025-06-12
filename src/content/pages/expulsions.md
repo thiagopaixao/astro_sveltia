@@ -1,16 +1,16 @@
 ---
 title: Expulsions
-slug: expulsions
 pageSettings:
-  type: pageSettings
   language: en
+  link_pt_br: ''
+  link_en: ''
+  link_es: ''
   direction: left
   seoTitle: ''
   seoDescription: ''
   seoKeywords: []
   seoImage: ''
 pageTheme:
-  type: pageTheme
   primaryColor: '#5e5e5e'
   secondaryColor: '#ffffff'
   highlightColor: '#000000'
@@ -25,7 +25,7 @@ pageTheme:
 mapbox:
   columnAlign: center
   floatingText: false
-  style: mapbox://styles/marlus/cjyt3uyhf15mr1cthc2942wxz
+  style: mapbox://styles/marlus/cmbscxuic00y401s6hj2jcvyj
   center:
     lng: -58
     lat: -1
@@ -35,7 +35,7 @@ mapbox:
   layers: []
   token: pk.eyJ1IjoibWFybHVzIiwiYSI6IjlmYlhtaEkifQ.vMxORYorRKnueDl3E5itEQ
   views:
-    - id: view_0
+    - id: map1_view1
       center:
         lng: -58
         lat: -2
@@ -56,7 +56,7 @@ mapbox:
             text: Amazon limits
           - icon: <span class="material-symbols-outlined fill" style="color:red">square</span>
             text: Mining concessions
-    - id: view_1
+    - id: map1_view2
       center:
         lng: -58
         lat: -2
@@ -64,7 +64,12 @@ mapbox:
       zoom: 4
       bearing: 0
       pitch: 0
-      mobile: {}
+      layers:
+        - amazonia-limites
+        - mineracaoamazonia
+        - anpamazonia
+        - tiamazonia
+        - ''
       captions:
         title: ''
         notes: ''
@@ -75,21 +80,21 @@ mapbox:
             text: Indigenous Territory
           - icon: <span class="material-symbols-outlined fill" style="color:#b2b520">circle</span>
             text: Ecological reserves
-      layers:
-        - amazonia-limites
-        - mineracaoamazonia
-        - anpamazonia
-        - tiamazonia
-        - ''
-    - id: view_2
+    - id: map1_view3
       center:
         lng: -77
         lat: -2
       duration: 2000
-      zoom: 5
+      zoom: 6
       bearing: 0
       pitch: 0
-      mobile: {}
+      layers:
+        - mineracaoamazonia
+        - amazonia-limites
+        - ecuador-limites
+        - tiamazonia
+        - anpamazonia
+        - ''
       captions:
         title: ''
         notes: ''
@@ -100,34 +105,110 @@ mapbox:
             text: Indigenous Territory
           - icon: <span class="material-symbols-outlined fill" style="color:#b2b520">circle</span>
             text: Ecological Reserves
-      layers:
-        - mineracaoamazonia
-        - amazonia-limites
-        - ecuador-limites
-        - tiamazonia
-        - anpamazonia
-        - ''
-    - id: view_3
+    - id: map1_view4
       center:
         lng: -78
         lat: -4
       duration: 2000
-      zoom: 4
+      zoom: 7
       bearing: 0
       pitch: 0
-      mobile: {}
-      captions:
-        title: ''
-        notes: ''
-        items:
-          - icon: ''
-            text: ''
       layers:
         - mineracaoamazonia
         - ecuador-limites
         - expulsion-regions
         - tiamazonia
         - anpamazonia
+    - id: map2_view1
+      center:
+        lng: -3
+        lat: -78
+      duration: 4000
+      zoom: 12
+      bearing: 0
+      pitch: 0
+      layers:
+        - sat-2013
+        - expulsion-regions
+        - desajolos-mirador
+      captions:
+        title: ''
+        notes: ''
+        items:
+          - icon: <span class="material-symbols-outlined fill" style="color:#dbce48">circle</span>
+            text: comunity centers
+    - id: map2_view2
+      center:
+        lng: -3
+        lat: -78
+      duration: 4000
+      zoom: 12
+      bearing: 0
+      pitch: 0
+      layers:
+        - desajolos-mirador
+        - expulsion-regions
+        - sat-2013
+      captions:
+        title: ''
+        notes: ''
+        items:
+          - icon: ''
+            text: evicted families
+    - id: map2_view3
+      center:
+        lng: -3
+        lat: -78
+      duration: 4000
+      zoom: 12
+      bearing: 0
+      pitch: 0
+      layers:
+        - desajolos-mirador
+        - expulsion-regions
+        - sat-2013
+      captions:
+        title: ''
+        notes: ''
+        items:
+          - icon: ''
+            text: forced evictions
+    - id: map2_view4
+      center:
+        lng: -3
+        lat: -78
+      duration: 4000
+      zoom: 15
+      bearing: 0
+      pitch: 0
+      layers:
+        - desajolos-mirador
+        - expulsion-regions
+        - sat-2018
+    - id: map2_view5
+      center:
+        lng: -3
+        lat: -78
+      duration: 4000
+      zoom: 12
+      bearing: 0
+      pitch: 0
+      layers:
+        - desajolos-mirador
+        - expulsion-regions
+        - sat-2018
+    - id: map2_view6
+      center:
+        lng: -3
+        lat: -78
+      duration: 4000
+      zoom: 14
+      bearing: 0
+      pitch: 0
+      layers:
+        - desajolos-mirador
+        - expulsion-regions
+        - sat-2018
   mapView: ''
 components:
   - type: Group
@@ -202,9 +283,9 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: view_0
+        mapView: map1_view1
       - type: Spacer
-        desktop: 400px
+        desktop: 500px
         tablet: ''
         mobile: ''
       - type: Text
@@ -213,9 +294,9 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: view_1
+        mapView: map1_view2
       - type: Spacer
-        desktop: 400px
+        desktop: 500px
         tablet: ''
         mobile: ''
       - type: Text
@@ -224,9 +305,9 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: view_2
+        mapView: map1_view3
       - type: Spacer
-        desktop: 400px
+        desktop: 500px
         tablet: ''
         mobile: ''
       - type: Text
@@ -235,7 +316,11 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: view_3
+        mapView: map1_view4
+      - type: Spacer
+        desktop: 500px
+        tablet: ''
+        mobile: ''
     columnAlign: right
     floatingText: true
   - type: Group
@@ -455,7 +540,76 @@ components:
     id: _map2
     txtColor: Primary
     bgColor: Secundary
-    components: []
+    components:
+      - type: Text
+        hasDropCap: false
+        content: Sattelite image of the Mirador mining area in 2013, before the systematic evictions.
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_view1
+      - type: Spacer
+        desktop: 500px
+        tablet: ''
+        mobile: ''
+      - type: Text
+        hasDropCap: false
+        content: Location of forced evictions between 2014 and 2018 (excluding processes of "servidumbre")
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_view2
+      - type: Spacer
+        desktop: 500px
+        tablet: ''
+        mobile: ''
+      - type: Text
+        hasDropCap: false
+        content: |-
+          Satellite image of Mirador mining area in 2019, showing the mining pit and extraction infrastructures over location of forced displacements.
+
+          The destruction of San Marcos was the first of a series of violent evictions conducted by state and private forces between 2014 and 2017, which affected at least 27 families between shuar, kichwa and mestizos throughout the region.
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_view3
+      - type: Spacer
+        desktop: 500px
+        tablet: ''
+        mobile: ''
+      - type: Text
+        hasDropCap: false
+        content: On 30 September 2015, at dawn and without prior notice, police officers and security guards of the company Ecuacorriente carried out an eviction against 13 families in San Marcos and on the El Cóndor road, at the margins of the Tundayme River. Equipped with guns and bulldozers, they destroyed their homes, edible gardens and hen houses, forcing elderly, women and youth to flee without place to go.
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_view4
+      - type: Spacer
+        desktop: 500px
+        tablet: ''
+        mobile: ''
+      - type: Text
+        hasDropCap: false
+        content: Weeks latter, on 16 December 2015, another violent land-clearing operation was conducted across the area. Once again at dawn and without prior notice and judicial order, state and private security forces and evicted more 14 families. Similar to the displacements of September, all the houses were destroyed in front of the families as a way of terrorizing them and preventing their return.
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_view5
+      - type: Spacer
+        desktop: 500px
+        tablet: ''
+        mobile: ''
+      - type: Text
+        hasDropCap: false
+        content: The last evictions took place on 13 May 2016 against the shuar family Tendetza-Antún in the community of Yanua Kim, and latter on 04 February 2017 against Rosario Wari and her son, by that time the last residents of the area.
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_view6
+      - type: Spacer
+        desktop: 500px
+        tablet: ''
+        mobile: ''
     columnAlign: left
     floatingText: false
   - type: Group
@@ -526,7 +680,7 @@ components:
     customBgColor: ''
     backgroundMedia:
       - type: backgroundImage
-        imgSrc: /uploads/expulsion-dji_0446.jpeg
+        imgSrc: /uploads/expulsion-san-marcos.jpg
     overlay: dark
     components:
       - type: Columns
@@ -796,21 +950,42 @@ components:
           - type: Text
             hasDropCap: true
             content: At the time of this writing, probably all archaeological sites in the Mirador have been completely destroyed. The studies and reports we analyzed also show that some sites have gone through “archaeological rescuing,” and that all material collected remain in possession of Ecuacorriente or the Ecuadorian State. According to the INPC report mentioned above, these archaeological materials are stored in precarious conditions, “without technical standards,” in a deposit at the Socialization and Training Room of the Mirador project. Therefore they are under risk of being irreparably damaged and lost. Further, indigenous communities that inhabit the area, the original owners of these cultural heritage, have not been consulted regarding these archaeological sites nor do they have information about the destination of the rescued objects.
-  - type: Map
-    shortTitle: _map5
-    longTitle: ''
+  - type: Group
+    shortTitle: ENVIRONMENTAL DISPOSSESSION AND CULTURAL DESTRUCTION
+    longTitle: ENVIRONMENTAL DISPOSSESSION AND CULTURAL DESTRUCTION
     description: ''
-    showInMenu: false
-    id: _map5
-    txtColor: Primary
-    bgColor: Secundary
+    showInMenu: true
+    id: ENVIRONMENTAL DISPOSSESSION AND CULTURAL DESTRUCTION
+    layout: default
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/expulsion-dji_0446.jpeg
+    overlay: dark
     components:
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: view_1
-    columnAlign: left
-    floatingText: false
+      - type: Columns
+        paddingTop: true
+        paddingBottom: true
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Spacer
+              desktop: '10'
+              tablet: '10'
+              mobile: '10'
+        column2:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: '# ENVIRONMENTAL DISPOSSESSION AND CULTURAL DESTRUCTION'
+            - type: Spacer
+              desktop: 500px
+              tablet: 500px
+              mobile: 500px
   - type: Group
     shortTitle: _text9
     longTitle: ''
@@ -943,4 +1118,3 @@ components:
 
                 Gloria Chicaiza,El Enclave Minero de la Cordillera del Cóndor. Quito: Acción Ecológica, 2010.
 ---
-

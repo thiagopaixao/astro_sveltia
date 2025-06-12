@@ -4,11 +4,6 @@ pageTheme: &pageTheme
   collapsed: true
   widget: 'object'
   fields:
-    - label: 'Type'
-      name: 'type'
-      widget: 'hidden'
-      default: 'pageTheme'
-      collapsed: true
     - label: 'Primary Color'
       name: 'primaryColor'
       widget: 'color'

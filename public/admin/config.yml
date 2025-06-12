@@ -79,11 +79,6 @@ pageSettings: &pageSettings
   collapsed: true
   widget: 'object'
   fields:
-    - label: 'Type'
-      name: 'type'
-      widget: 'hidden'
-      default: 'pageSettings'
-      collapsed: true
     - label: 'Language'
       name: 'language'
       widget: 'select'
@@ -143,11 +138,6 @@ pageTheme: &pageTheme
   collapsed: true
   widget: 'object'
   fields:
-    - label: 'Type'
-      name: 'type'
-      widget: 'hidden'
-      default: 'pageTheme'
-      collapsed: true
     - label: 'Primary Color'
       name: 'primaryColor'
       widget: 'color'
@@ -407,6 +397,7 @@ mapBox: &mapBox
           widget: 'object'
           required: false
           collapsed: true
+          default: null
           fields:
             - label: 'Mobile Zoom'
               name: 'zoom'
@@ -420,6 +411,7 @@ mapBox: &mapBox
           widget: 'object'
           required: false
           collapsed: true
+          default: null
           fields:
             - label: 'Title'
               name: 'title'
@@ -1094,6 +1086,7 @@ innerColumns: &innerColumns
       widget: 'object'
       required: false
       collapsed: true
+      default: null
       fields:
         - label: 'Components'
           name: 'components'
@@ -1117,6 +1110,7 @@ innerColumns: &innerColumns
       widget: 'object'
       required: false
       collapsed: true
+      default: null
       fields:
         - label: 'Components'
           name: 'components'

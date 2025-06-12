@@ -127,7 +127,8 @@ const mapboxSchema = z.object({
           .object({
             zoom: z.number().optional(),
           })
-          .optional(),
+          .optional()
+          .transform((val) => (val === null ? undefined : val)),
         captions: z
           .object({
             title: z.union([z.string(), z.boolean()]).optional(),
@@ -141,7 +142,8 @@ const mapboxSchema = z.object({
               )
               .optional(),
           })
-          .optional(),
+          .optional()
+          .transform((val) => (val === null ? undefined : val)),
       })
     )
     .optional(),
@@ -229,8 +231,14 @@ const componentSchema = z.object({
   wideHtml: z.boolean().optional(),
 
   // Atributos do InnerColumns
-  column1: z.any().optional(),
-  column2: z.any().optional(),
+  column1: z
+    .any()
+    .optional()
+    .transform((val) => (val === null ? undefined : val)),
+  column2: z
+    .any()
+    .optional()
+    .transform((val) => (val === null ? undefined : val)),
 
   // Atributos do Timeline
   // timelineItems: z.array(z.any()).optional(),

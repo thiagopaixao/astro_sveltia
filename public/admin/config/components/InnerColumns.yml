@@ -15,6 +15,7 @@ innerColumns: &innerColumns
       widget: 'object'
       required: false
       collapsed: true
+      default: null
       fields:
         - label: 'Components'
           name: 'components'
@@ -38,6 +39,7 @@ innerColumns: &innerColumns
       widget: 'object'
       required: false
       collapsed: true
+      default: null
       fields:
         - label: 'Components'
           name: 'components'

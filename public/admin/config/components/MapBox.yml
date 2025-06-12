@@ -193,6 +193,7 @@ mapBox: &mapBox
           widget: 'object'
           required: false
           collapsed: true
+          default: null
           fields:
             - label: 'Mobile Zoom'
               name: 'zoom'
@@ -206,6 +207,7 @@ mapBox: &mapBox
           widget: 'object'
           required: false
           collapsed: true
+          default: null
           fields:
             - label: 'Title'
               name: 'title'
