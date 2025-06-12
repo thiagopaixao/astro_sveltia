@@ -55,11 +55,47 @@ const chartBarSchema = z.object({
 const chartPercentageBarSchema = z.object({
   label: z.string().transform(processMarkdown),
   color: z.string().optional(),
-  number: z.number().min(0).max(100).optional(),
+  number: z.number().min(0).optional(),
+});
+
+// Schema para layers do MapBox
+const mapBoxLayerSchema = z.object({
+  name: z.string(),
+  filterKey: z.string().optional(),
+  comparison: z
+    .enum(['==', '!=', '<', '>', '<=', '>=', 'in', '!in', 'has', '!has'])
+    .optional(),
+  filterValue: z.string().optional(),
+});
+
+// Schema para items do BigNumbers
+const bigNumberItemSchema = z.object({
+  number: z.string().optional(),
+  caption: z.string().optional(),
+});
+
+// Schema para slides do Slider
+const slideSchema = z.object({
+  image: z.string().optional(),
+  caption: z.string().optional(),
+});
+
+// Schema para images do Gallery
+const galleryImageSchema = z.object({
+  image: z.string().optional(),
+  caption: z.string().optional().transform(processMarkdown),
+});
+
+// Schema para TimelineBullet
+const timelineBulletSchema = z.object({
+  type: z.literal('TimelineBullet'),
+  text: z.string().optional(),
+  content: z.string().optional().transform(processMarkdown),
 });
 
 // Schema para MapBox no nível da página
 const mapboxSchema = z.object({
+  type: z.literal('MapBox').optional(),
   columnAlign: z.enum(['left', 'center', 'right']).optional(),
   floatingText: z.boolean().optional(),
   style: z.string().optional(),
@@ -72,7 +108,7 @@ const mapboxSchema = z.object({
   zoom: z.number().optional(),
   bearing: z.number().optional(),
   pitch: z.number().optional(),
-  layers: z.array(z.string()).optional(),
+  layers: z.array(z.union([z.string(), mapBoxLayerSchema])).optional(),
   token: z.string().optional(),
   views: z
     .array(
@@ -86,7 +122,7 @@ const mapboxSchema = z.object({
         zoom: z.number().optional(),
         bearing: z.number().optional(),
         pitch: z.number().optional(),
-        layers: z.array(z.string()).optional(),
+        layers: z.array(z.union([z.string(), mapBoxLayerSchema])).optional(),
         mobile: z
           .object({
             zoom: z.number().optional(),
@@ -115,7 +151,9 @@ const mapboxSchema = z.object({
 const componentSchema = z.object({
   hasDropCap: z.boolean().optional(),
   type: z.string(),
-  layout: z.enum(['default', 'media', 'text', 'text-bigger']).optional(),
+  layout: z
+    .enum(['default', 'media', 'text', 'text-bigger', 'title-bottom'])
+    .optional(),
   txtColor: z.string().optional(),
   customTxtColor: z.string().optional(),
   bgColor: z.string().optional(),
@@ -291,9 +329,14 @@ const componentSchema = z.object({
     )
     .optional(),
 
+  // Atributos do Compare
+  caption: z.string().optional().transform(processMarkdown),
+
+  // Atributos do TimelineBullet
+  text: z.string().optional(),
+
   // Caso possua subcomponentes
   components: z.array(z.any()).optional(),
-  text: z.string().optional(),
   imageLeft: z.string().optional(),
   imageRight: z.string().optional(),
 });
