@@ -81,3 +81,5 @@ map: &map
         - *text
         - *spacer
         - *mapView
+        - *imageBlock
+        - *videoEmbed

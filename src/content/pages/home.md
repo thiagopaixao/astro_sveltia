@@ -42,8 +42,6 @@ mapbox:
       zoom: 4
       bearing: 0
       pitch: 0
-      layers:
-        - amazonialegal
       mobile:
         zoom: 3.5
       captions:
@@ -52,6 +50,8 @@ mapbox:
         items:
           - icon: <span class="material-symbols-outlined fill" style="color:white">show_chart</span>
             text: Brazil's Legal Amazon
+      layers:
+        - amazonialegal
     - id: view_1
       center:
         lng: -54.708
@@ -60,10 +60,6 @@ mapbox:
       zoom: 8
       bearing: 0
       pitch: 0
-      layers:
-        - municipios
-        - amazonas
-        - foztapajos
       mobile: {}
       captions:
         title: Meu título
@@ -75,6 +71,10 @@ mapbox:
             text: Amazonas River
           - icon: <span class="material-symbols-outlined fill" style="color:blue">circle</span>
             text: Tapajós River
+      layers:
+        - municipios
+        - amazonas
+        - foztapajos
     - id: view_2
       center:
         lng: -54.73
@@ -83,10 +83,6 @@ mapbox:
       zoom: 10
       bearing: 0
       pitch: 0
-      layers:
-        - br163
-        - amazonas
-        - foztapajos
       mobile: {}
       captions:
         title: false
@@ -98,6 +94,10 @@ mapbox:
             text: Amazonas River
           - icon: <span class="material-symbols-outlined fill" style="color:blue">circle</span>
             text: Tapajós River
+      layers:
+        - br163
+        - amazonas
+        - foztapajos
     - id: view_3
       center:
         lng: -54.831
@@ -106,9 +106,6 @@ mapbox:
       zoom: 10.2
       bearing: 0
       pitch: 0
-      layers:
-        - cidade-vila
-        - pa457
       mobile: {}
       captions:
         title: false
@@ -118,6 +115,9 @@ mapbox:
             text: Everaldo Martins Highway (PA-457)
           - icon: <span class="material-symbols-outlined" style="color:yellow">square</span>
             text: Urban areas
+      layers:
+        - cidade-vila
+        - pa457
     - id: view_4
       center:
         lng: -54.917
@@ -126,8 +126,6 @@ mapbox:
       zoom: 10
       bearing: 0
       pitch: 0
-      layers:
-        - tiborari
       mobile: {}
       captions:
         title: false
@@ -135,6 +133,8 @@ mapbox:
         items:
           - icon: <span class="material-symbols-outlined fill" style="color:red">square</span>
             text: Borari Territory (preliminary demarcation)
+      layers:
+        - tiborari
   mapView: ''
 components:
   - type: Group
@@ -167,11 +167,11 @@ components:
             content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
             txtColor: '#000000ff'
             bgColor: ''
-            customTxtColor: ''
             customBgColor: ''
-        customTxtColor: ''
-        customBgColor: ''
+            customTxtColor: ''
         body: ''
+        customBgColor: ''
+        customTxtColor: ''
     backgroundImage: /uploads/group-bg.png
   - type: Group
     shortTitle: TextoIntrodução
@@ -198,8 +198,8 @@ components:
               content: '##### SED UT PERSPICIATIS UNDE OMNIS ISTE NATUS ERROR SIT VOLUPTATEM ACCUSANTIUM DOLREMQUE LAUDANTIUM TOTAM REM APARIAM'
               txtColor: ''
               bgColor: ''
-              customTxtColor: ''
               customBgColor: ''
+              customTxtColor: ''
         column2:
           components:
             - type: Text
@@ -212,8 +212,8 @@ components:
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
               txtColor: ''
               bgColor: ''
-              customTxtColor: ''
               customBgColor: ''
+              customTxtColor: ''
     backgroundImage: ''
   - type: Map
     shortTitle: Mapas
@@ -236,8 +236,8 @@ components:
           totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
         txtColor: '#f0ead9ff'
         bgColor: '#006a49ff'
-        customTxtColor: ''
         customBgColor: ''
+        customTxtColor: ''
       - type: Spacer
         desktop: 160px
       - type: MapView
@@ -254,8 +254,8 @@ components:
           ###### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
         txtColor: ''
         bgColor: ''
-        customTxtColor: ''
         customBgColor: ''
+        customTxtColor: ''
       - type: MapView
         txtColor: '#f0ead9ff'
         bgColor: '#59006bff'
@@ -280,6 +280,11 @@ components:
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
 
           ###### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/arqueological-remains_01.jpg
+        alt: ''
+        description: ''
     columnAlign: left
     floatingText: true
   - type: Group
@@ -314,8 +319,8 @@ components:
                 Leo hendrerit ultricies ultricies eros lorem feugiat. Vulputate torquent odio class ad curae sodales tincidunt efficitur. Eros elementum dolor adipiscing mauris, ipsum conubia. Luctus aenean bibendum fermentum adipiscing tempor maximus purus. Facilisis nascetur adipiscing pretium quisque molestie per. Conubia velit lacus pharetra cras netus. Ante velit diam, et senectus eu eleifend class tempor. Tellus etiam fusce sodales penatibus ac, id aenean.
               txtColor: ''
               bgColor: ''
-              customTxtColor: ''
               customBgColor: ''
+              customTxtColor: ''
         column2:
           components:
             - type: ImageBlock
@@ -357,8 +362,8 @@ components:
               content: ''
               txtColor: Primary
               bgColor: ''
-              customTxtColor: ''
               customBgColor: ''
+              customTxtColor: ''
         column2:
           components:
             - type: Timeline
@@ -433,8 +438,8 @@ components:
                 oluptate est labore sit tempor exercitation nisi eiusmod pariatur magna est aliqua. Magna laborum elit mollit ea occaecat incididunt Lorem Lorem incididunt nisi esse fugiat anim citation. Mollit velit laboris adipisicing enim ad eiusmod deserunt veniam nulla adipisicing amet pariatur nostrud exercitation. Velit laborum occaecat nulla ex nulla esse aborum ex duis duis magna. Ipsum laboris commodo do do eiusmod. Consectetur culpa fugiat ccaecat enim ullamco tempor amet velit duis culpa commodo dolor minim. Ea sunt culpa id ea amet.
               txtColor: ''
               bgColor: ''
-              customTxtColor: ''
               customBgColor: ''
+              customTxtColor: ''
             - type: ImageBlock
               wideImage: false
               src: /uploads/thumb.png
@@ -515,8 +520,8 @@ components:
                 Tellus rutrum a luctus eleifend dui tincidunt? Porta dolor pulvinar tellus feugiat finibus accumsan, vehicula quam. Posuere viverra erat litora semper pretium porta praesent nisi? Malesuada et nullam, cursus tempus platea purus pellentesque. Risus neque ultricies ex lorem cubilia. Augue eu montes ut consectetur conubia iaculis interdum vehicula eu. Suscipit maximus volutpat rhoncus lobortis sem eu porta fames.
               txtColor: ''
               bgColor: ''
-              customTxtColor: ''
               customBgColor: ''
+              customTxtColor: ''
             - type: ChartPercentage
               chartPercentageTitle: AUTEM VEL EUM IURE REPREHENRERIT QUI IN EA
               chartPercentageNotes: Augue eu montes ut consectetur conubia iaculis interdum vehicula eu.
@@ -583,8 +588,8 @@ components:
         layout: text-bigger
         title: ALTER DO CHÃO ALSO NEEDDS TO BE RECOGNIZED AS AN INDIGENOUS LAND (TI) WITH THE MILLENNIAL PRESENCE OF THE BORARI PEOPLE
         components: []
-        customTxtColor: ''
         customBgColor: ''
+        customTxtColor: ''
     backgroundImage: /uploads/group-bg-2.png
   - type: Group
     shortTitle: Cards
@@ -612,8 +617,8 @@ components:
               content: '###### SED UT PERSPICIATIS UNDE OMNIS ISTE NATUS ERROR SIT VOLUPTATEM ACCUSANTIUM, DOLOREMQUE LAUDANTIUM, TOTAM REM APERIAM'
               txtColor: ''
               bgColor: ''
-              customTxtColor: ''
               customBgColor: ''
+              customTxtColor: ''
         column2:
           components:
             - type: Cards
@@ -701,8 +706,8 @@ components:
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
               txtColor: ''
               bgColor: ''
-              customTxtColor: ''
               customBgColor: ''
+              customTxtColor: ''
         column2:
           components:
             - type: Pullquote
@@ -710,9 +715,9 @@ components:
               txtColor: ''
               bgColor: ''
               byline: Sed ut perspiciatis unde iste natus error sit voluptatem accusantium
-              customTxtColor: ''
-              customBgColor: ''
               hasByline: false
+              customBgColor: ''
+              customTxtColor: ''
     backgroundImage: ''
   - type: Group
     shortTitle: ReferenciasCreditos
@@ -742,8 +747,8 @@ components:
                 Check out the project's repository - Github - in order to access the data and codes used.
               txtColor: ''
               bgColor: ''
-              customTxtColor: ''
               customBgColor: ''
+              customTxtColor: ''
         column2:
           components:
             - type: InnerColumns
@@ -761,8 +766,8 @@ components:
                       - Núcleo de Defesa dos DIreitos Humanos da Defensoria Pública do Estado do Rio de Janeiro
                     txtColor: ''
                     bgColor: ''
-                    customTxtColor: ''
                     customBgColor: ''
+                    customTxtColor: ''
               column2:
                 components:
                   - type: Text
@@ -775,8 +780,8 @@ components:
                       - Polícia Militar do Estado do Rio de Janeiro
                     txtColor: ''
                     bgColor: ''
-                    customTxtColor: ''
                     customBgColor: ''
+                    customTxtColor: ''
       - type: Columns
         paddingTop: false
         paddingBottom: false
@@ -792,8 +797,8 @@ components:
                 The report was produced by the Borari Indigenous Communication Front [comborari@gmail.com] and published in Amazônia Real. The Borari Indigenous Communication Front is formed by Borari women who write about issues involving indigenous rights, culture, and territory.
               txtColor: ''
               bgColor: ''
-              customTxtColor: ''
               customBgColor: ''
+              customTxtColor: ''
         column2:
           components:
             - type: Text
@@ -807,8 +812,8 @@ components:
                 contato@medialabufrj.net
               txtColor: ''
               bgColor: ''
-              customTxtColor: ''
               customBgColor: ''
+              customTxtColor: ''
     backgroundImage: ''
   - type: Group
     shortTitle: Apoio
@@ -834,8 +839,8 @@ components:
               ##
             txtColor: ''
             bgColor: ''
-            customTxtColor: ''
             customBgColor: ''
+            customTxtColor: ''
           - type: LogosGroup
             logos:
               - image: /uploads/logo-1.jpg
@@ -864,8 +869,8 @@ components:
             content: '### PARCEIROS'
             txtColor: ''
             bgColor: ''
-            customTxtColor: ''
             customBgColor: ''
+            customTxtColor: ''
           - type: LogosGroup
             logos:
               - image: /uploads/Captura de Tela-20241220084024-224x105.png
@@ -903,8 +908,8 @@ components:
             content: '### VEJA TAMBÉM'
             txtColor: ''
             bgColor: ''
-            customTxtColor: ''
             customBgColor: ''
+            customTxtColor: ''
           - type: CardsCall
             cardsCallArr:
               - link:
@@ -930,7 +935,7 @@ components:
             content: '###### DOCUMENTAL.XYZ - 2024'
             txtColor: ''
             bgColor: ''
-            customTxtColor: ''
             customBgColor: ''
+            customTxtColor: ''
 ---
 
