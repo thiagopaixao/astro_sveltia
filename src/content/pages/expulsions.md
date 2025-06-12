@@ -64,12 +64,6 @@ mapbox:
       zoom: 4
       bearing: 0
       pitch: 0
-      layers:
-        - amazonia-limites
-        - mineracaoamazonia
-        - anpamazonia
-        - tiamazonia
-        - ''
       mobile: {}
       captions:
         title: ''
@@ -81,6 +75,12 @@ mapbox:
             text: Indigenous Territory
           - icon: <span class="material-symbols-outlined fill" style="color:#b2b520">circle</span>
             text: Ecological reserves
+      layers:
+        - amazonia-limites
+        - mineracaoamazonia
+        - anpamazonia
+        - tiamazonia
+        - ''
     - id: view_2
       center:
         lng: -77
@@ -89,13 +89,6 @@ mapbox:
       zoom: 5
       bearing: 0
       pitch: 0
-      layers:
-        - mineracaoamazonia
-        - amazonia-limites
-        - ecuador-limites
-        - tiamazonia
-        - anpamazonia
-        - ''
       mobile: {}
       captions:
         title: ''
@@ -107,6 +100,13 @@ mapbox:
             text: Indigenous Territory
           - icon: <span class="material-symbols-outlined fill" style="color:#b2b520">circle</span>
             text: Ecological Reserves
+      layers:
+        - mineracaoamazonia
+        - amazonia-limites
+        - ecuador-limites
+        - tiamazonia
+        - anpamazonia
+        - ''
     - id: view_3
       center:
         lng: -78
@@ -115,12 +115,6 @@ mapbox:
       zoom: 4
       bearing: 0
       pitch: 0
-      layers:
-        - mineracaoamazonia
-        - ecuador-limites
-        - expulsion-regions
-        - tiamazonia
-        - anpamazonia
       mobile: {}
       captions:
         title: ''
@@ -128,6 +122,12 @@ mapbox:
         items:
           - icon: ''
             text: ''
+      layers:
+        - mineracaoamazonia
+        - ecuador-limites
+        - expulsion-regions
+        - tiamazonia
+        - anpamazonia
   mapView: ''
 components:
   - type: Group

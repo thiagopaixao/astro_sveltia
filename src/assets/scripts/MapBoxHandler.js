@@ -216,21 +216,47 @@ export default class MapBoxHandler {
 
     defineLayers() {
         Object.values(this.views).forEach(view => {
-            view.layers && view.layers.forEach(el => this.definedLayers.push(el))
-        })
+            view.layers && view.layers.forEach(layer => {
+                const layerName = typeof layer === 'string' ? layer : layer.name;
+                if (layerName) {
+                    this.definedLayers.push(layerName);
+                }
+            });
+        });
     }
 
     displayLayers(layers = [], show = false) {
         layers.forEach(layer => {
-            this.map.setLayoutProperty(layer, 'visibility', show ? 'visible' : 'none')
-            this.mapClone && this.mapClone.setLayoutProperty(layer, 'visibility', show ? 'visible' : 'none')
+            const layerName = typeof layer === 'string' ? layer : layer.name;
+            if (layerName) {
+                this.map.setLayoutProperty(layerName, 'visibility', show ? 'visible' : 'none');
+                this.mapClone && this.mapClone.setLayoutProperty(layerName, 'visibility', show ? 'visible' : 'none');
+                
+                // Aplicar filtro se existir
+                if (typeof layer === 'object' && layer.filter) {
+                    this.map.setFilter(layerName, layer.filter);
+                    this.mapClone && this.mapClone.setFilter(layerName, layer.filter);
+                } else if (typeof layer === 'object' && !layer.filter) {
+                    // Remover filtro se não há filtro definido
+                    this.map.setFilter(layerName, null);
+                    this.mapClone && this.mapClone.setFilter(layerName, null);
+                }
+            }
         });
     }
 
     toggleLayersVisibility(visibleLayers) {
-        let hideLayers = this.definedLayers.filter(entry => !visibleLayers.includes(entry))
-        this.displayLayers(hideLayers, false)
-        this.displayLayers(visibleLayers, true)
+        const visibleLayerNames = visibleLayers.map(layer => typeof layer === 'string' ? layer : layer.name);
+        const hideLayers = this.definedLayers.filter(entry => !visibleLayerNames.includes(entry));
+        
+        // Esconder layers não visíveis
+        hideLayers.forEach(layerName => {
+            this.map.setLayoutProperty(layerName, 'visibility', 'none');
+            this.mapClone && this.mapClone.setLayoutProperty(layerName, 'visibility', 'none');
+        });
+        
+        // Mostrar e aplicar filtros nas layers visíveis
+        this.displayLayers(visibleLayers, true);
     }
 
     /* Map Movement */

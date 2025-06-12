@@ -273,6 +273,42 @@ mapBox: &mapBox
       widget: 'list'
       required: false
       collapsed: true
+      fields:
+        - label: 'Layer Name'
+          name: 'name'
+          widget: 'string'
+          required: true
+          hint: 'Nome da layer no MapBox'
+          collapsed: true
+        - label: 'Filter Key'
+          name: 'filterKey'
+          widget: 'string'
+          required: false
+          hint: 'Propriedade da layer para filtrar (opcional)'
+          collapsed: true
+        - label: 'Comparison'
+          name: 'comparison'
+          widget: 'select'
+          required: false
+          hint: 'Tipo de comparação para o filtro'
+          collapsed: true
+          options:
+            - { label: 'Igual (==)', value: '==' }
+            - { label: 'Diferente (!=)', value: '!=' }
+            - { label: 'Menor que (<)', value: '<' }
+            - { label: 'Maior que (>)', value: '>' }
+            - { label: 'Menor ou igual (<=)', value: '<=' }
+            - { label: 'Maior ou igual (>=)', value: '>=' }
+            - { label: 'Contém (in)', value: 'in' }
+            - { label: 'Não contém (!in)', value: '!in' }
+            - { label: 'Tem propriedade (has)', value: 'has' }
+            - { label: 'Não tem propriedade (!has)', value: '!has' }
+        - label: 'Filter Value'
+          name: 'filterValue'
+          widget: 'string'
+          required: false
+          hint: 'Valor para comparação (opcional)'
+          collapsed: true
     - label: 'Map Token'
       name: 'token'
       widget: 'string'
@@ -330,6 +366,42 @@ mapBox: &mapBox
           widget: 'list'
           required: false
           collapsed: true
+          fields:
+            - label: 'Layer Name'
+              name: 'name'
+              widget: 'string'
+              required: true
+              hint: 'Nome da layer no MapBox'
+              collapsed: true
+            - label: 'Filter Key'
+              name: 'filterKey'
+              widget: 'string'
+              required: false
+              hint: 'Propriedade da layer para filtrar (opcional)'
+              collapsed: true
+            - label: 'Comparison'
+              name: 'comparison'
+              widget: 'select'
+              required: false
+              hint: 'Tipo de comparação para o filtro'
+              collapsed: true
+              options:
+                - { label: 'Igual (==)', value: '==' }
+                - { label: 'Diferente (!=)', value: '!=' }
+                - { label: 'Menor que (<)', value: '<' }
+                - { label: 'Maior que (>)', value: '>' }
+                - { label: 'Menor ou igual (<=)', value: '<=' }
+                - { label: 'Maior ou igual (>=)', value: '>=' }
+                - { label: 'Contém (in)', value: 'in' }
+                - { label: 'Não contém (!in)', value: '!in' }
+                - { label: 'Tem propriedade (has)', value: 'has' }
+                - { label: 'Não tem propriedade (!has)', value: '!has' }
+            - label: 'Filter Value'
+              name: 'filterValue'
+              widget: 'string'
+              required: false
+              hint: 'Valor para comparação (opcional)'
+              collapsed: true
         - label: 'Mobile View'
           name: 'mobile'
           widget: 'object'
