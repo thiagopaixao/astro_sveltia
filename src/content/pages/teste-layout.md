@@ -1,6 +1,6 @@
 ---
 title: Teste Layout
-slug: teste
+slug: test
 pageSettings:
   language: pt-BR
   link_pt_br: /test
