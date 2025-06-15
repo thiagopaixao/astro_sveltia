@@ -59,7 +59,7 @@ components:
         paddingTop: true
         paddingBottom: true
         layout: text-bigger
-        title: TÍTULO COLUMN STICKY - LAYOUT TEXT-BIGGER
+        title: TÍTULO COLUMN STICKY - LAYOUT TEXT-BIGGER - PADDING TOP E BOTTOM
         components:
           - type: Text
             hasDropCap: false
