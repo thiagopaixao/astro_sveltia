@@ -76,6 +76,30 @@ components:
 
               #####
   - type: Group
+    shortTitle: Grupo 3-short title
+    longTitle: Grupo 3-long title
+    description: ''
+    showInMenu: true
+    id: Grupo 3
+    layout: default
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Primary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: true
+        paddingBottom: true
+        components:
+          - type: Text
+            hasDropCap: false
+            content: |-
+              # TÍTULO BLOCO COLUMN HEADING 1
+
+              Bloco Column - Bloco Text - Paragraph - Padding Top e Bottom: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+  - type: Group
     shortTitle: Grupo 2-short title
     longTitle: ''
     description: ''
