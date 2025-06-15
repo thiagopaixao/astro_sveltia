@@ -48,7 +48,7 @@ components:
     layout: default
     txtColor: Secondary
     customTxtColor: ''
-    bgColor: Primary
+    bgColor: Highlight
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
