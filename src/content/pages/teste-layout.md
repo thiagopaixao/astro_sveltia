@@ -40,11 +40,11 @@ mapbox:
   mapView: ''
 components:
   - type: Group
-    shortTitle: Introdução
-    longTitle: Introdução Título
+    shortTitle: Grupo 1-short title
+    longTitle: Grupo 1-long title
     description: ''
     showInMenu: true
-    id: Introdução
+    id: Grupo 1
     layout: default
     txtColor: Secondary
     customTxtColor: ''
@@ -75,5 +75,29 @@ components:
               #### 
 
               #####
+  - type: Group
+    shortTitle: Grupo 2-short title
+    longTitle: ''
+    description: ''
+    showInMenu: true
+    id: Grupo 2
+    layout: default
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: ''
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/expulsion-dji_0446.jpeg
+    overlay: dark
+    components:
+      - type: Text
+        hasDropCap: false
+        content: |-
+          Imagem do background com Overlay dark
+
+          Bloco texto solto sem bloco coluna - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+
+          Trecho parágrafo em Negrito - **Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.&#32;**_Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt._ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
 ---
 
