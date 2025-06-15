@@ -193,5 +193,32 @@ components:
               #### BLOCO COLUMN HEADING 4 
 
               **Paragraph Negrito - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.&#32;**Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+  - type: Group
+    shortTitle: Grupo Vídeo_short title
+    longTitle: ''
+    description: ''
+    showInMenu: true
+    id: Grupo Vídeo
+    layout: default
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: ''
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundVideo
+        videoSrc: https://documental.xyz/assets/main/expulsion/expulsiones-intro-low.mp4
+    overlay: light
+    components:
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1: null
+        column2:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: '# BLOCO COLUMNS - COLUMN 2 - BIGGER RIGHT - BLOCO TEXT - HEADING 1'
 ---
 
