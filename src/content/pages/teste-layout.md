@@ -215,7 +215,7 @@ components:
     backgroundMedia:
       - type: backgroundVideo
         videoSrc: https://documental.xyz/assets/main/expulsion/expulsiones-intro-low.mp4
-    overlay: light
+    overlay: ''
     components:
       - type: Columns
         paddingTop: false
