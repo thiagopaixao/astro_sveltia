@@ -1,18 +1,18 @@
 ---
 title: Teste Layout
-slug: test
+slug: layout
 pageSettings:
   language: pt-BR
-  link_pt_br: /test
-  link_en: /test-en
-  link_es: /test-es
+  link_pt_br: /layout
+  link_en: /layout-en
+  link_es: /layout-es
   direction: left
   seoTitle: ''
   seoDescription: ''
   seoKeywords: []
   seoImage: ''
 pageTheme:
-  primaryColor: ''
+  primaryColor: '#000000'
   secondaryColor: '#ffffff'
   highlightColor: '#922a2a'
   auxiliaryColor: '#3f3899'
@@ -25,7 +25,7 @@ pageTheme:
       desktop: '10'
 mapbox:
   type: MapBox
-  columnAlign: ''
+  columnAlign: left
   floatingText: false
   style: mapbox://styles/comborari/ckr4wi3k80fpl17qo34th6kk2
   center:
