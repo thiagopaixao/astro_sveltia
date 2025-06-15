@@ -82,7 +82,7 @@ components:
     showInMenu: true
     id: Grupo 2
     layout: default
-    txtColor: Primary
+    txtColor: Secondary
     customTxtColor: ''
     bgColor: ''
     customBgColor: ''
