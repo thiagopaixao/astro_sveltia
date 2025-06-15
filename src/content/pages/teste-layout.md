@@ -3,9 +3,9 @@ title: Teste Layout
 slug: teste
 pageSettings:
   language: pt-BR
-  link_pt_br: '#'
-  link_en: '#'
-  link_es: '#'
+  link_pt_br: /test
+  link_en: /test-en
+  link_es: /test-es
   direction: left
   seoTitle: ''
   seoDescription: ''
