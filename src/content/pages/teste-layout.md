@@ -40,11 +40,11 @@ mapbox:
   mapView: ''
 components:
   - type: Group
-    shortTitle: Grupo 1-short title
-    longTitle: Grupo 1-long title
+    shortTitle: Grupo Column Sticky_short title
+    longTitle: Grupo Column Sticky_long title
     description: ''
     showInMenu: true
-    id: Grupo 1
+    id: Grupo Column Sticky
     layout: default
     txtColor: Secondary
     customTxtColor: ''
@@ -76,11 +76,11 @@ components:
 
               #####
   - type: Group
-    shortTitle: Grupo 3-short title
-    longTitle: Grupo 3-long title
+    shortTitle: Grupo Column_short title
+    longTitle: Grupo Column_long title
     description: ''
     showInMenu: true
-    id: Grupo 3
+    id: Grupo Column
     layout: default
     txtColor: Secondary
     customTxtColor: ''
@@ -100,11 +100,11 @@ components:
 
               Bloco Column - Bloco Text - Paragraph - Padding Top e Bottom: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
   - type: Group
-    shortTitle: Grupo 2-short title
+    shortTitle: Grupo Text_short title
     longTitle: ''
     description: ''
     showInMenu: true
-    id: Grupo 2
+    id: Grupo Text
     layout: default
     txtColor: Secondary
     customTxtColor: ''
