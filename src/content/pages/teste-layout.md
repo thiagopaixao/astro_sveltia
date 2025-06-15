@@ -220,7 +220,12 @@ components:
         paddingBottom: false
         invertOnMobile: false
         columnsAlign: 33-66
-        column1: null
+        column1:
+          components:
+            - type: Spacer
+              desktop: '10'
+              tablet: '10'
+              mobile: '10'
         column2:
           components:
             - type: Text
