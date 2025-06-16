@@ -1,10 +1,11 @@
 ---
 title: Expulsions
+slug: expulsions
 pageSettings:
   language: en
-  link_pt_br: ''
-  link_en: ''
-  link_es: ''
+  link_pt_br: /expulsions-pt
+  link_en: /expulsions-en
+  link_es: /expulsions-es
   direction: left
   seoTitle: ''
   seoDescription: ''
@@ -27,8 +28,8 @@ mapbox:
   floatingText: false
   style: mapbox://styles/marlus/cmbscxuic00y401s6hj2jcvyj
   center:
-    lng: -58
-    lat: -1
+    lng: -1.917321274000017
+    lat: -58.569363795000015
   zoom: 2
   bearing: 0
   pitch: 0
@@ -37,8 +38,8 @@ mapbox:
   views:
     - id: map1_view1
       center:
-        lng: -58
-        lat: -2
+        lng: -1
+        lat: -58
       duration: 2000
       zoom: 3
       bearing: 0
@@ -58,10 +59,10 @@ mapbox:
             text: Mining concessions
     - id: map1_view2
       center:
-        lng: -58
-        lat: -2
+        lng: -2
+        lat: -58
       duration: 2000
-      zoom: 4
+      zoom: 3.5
       bearing: 0
       pitch: 0
       layers:
@@ -82,8 +83,8 @@ mapbox:
             text: Ecological reserves
     - id: map1_view3
       center:
-        lng: -77
-        lat: -2
+        lng: -2
+        lat: -77
       duration: 2000
       zoom: 6
       bearing: 0
@@ -107,8 +108,8 @@ mapbox:
             text: Ecological Reserves
     - id: map1_view4
       center:
-        lng: -78
-        lat: -4
+        lng: -4
+        lat: -78
       duration: 2000
       zoom: 7
       bearing: 0
@@ -124,7 +125,7 @@ mapbox:
         lng: -3
         lat: -78
       duration: 4000
-      zoom: 12
+      zoom: 12.2
       bearing: 0
       pitch: 0
       layers:
@@ -142,7 +143,7 @@ mapbox:
         lng: -3
         lat: -78
       duration: 4000
-      zoom: 12
+      zoom: 12.2
       bearing: 0
       pitch: 0
       layers:
@@ -153,14 +154,14 @@ mapbox:
         title: ''
         notes: ''
         items:
-          - icon: ''
+          - icon: <span class="material-symbols-outlined fill" style="color:#f00">close</span>
             text: evicted families
     - id: map2_view3
       center:
         lng: -3
         lat: -78
-      duration: 4000
-      zoom: 12
+      duration: 2000
+      zoom: 12.2
       bearing: 0
       pitch: 0
       layers:
@@ -171,7 +172,7 @@ mapbox:
         title: ''
         notes: ''
         items:
-          - icon: ''
+          - icon: <span class="material-symbols-outlined fill" style="color:red">close</span>
             text: forced evictions
     - id: map2_view4
       center:
@@ -190,7 +191,7 @@ mapbox:
         lng: -3
         lat: -78
       duration: 4000
-      zoom: 12
+      zoom: 12.5
       bearing: 0
       pitch: 0
       layers:
@@ -338,8 +339,8 @@ components:
     overlay: ''
     components:
       - type: Column
-        paddingTop: true
-        paddingBottom: true
+        paddingTop: false
+        paddingBottom: false
         components:
           - type: Text
             hasDropCap: true
@@ -390,8 +391,8 @@ components:
     overlay: dark
     components:
       - type: Columns
-        paddingTop: true
-        paddingBottom: true
+        paddingTop: false
+        paddingBottom: false
         invertOnMobile: false
         columnsAlign: 33-66
         column1:
@@ -434,8 +435,8 @@ components:
     overlay: ''
     components:
       - type: Column
-        paddingTop: true
-        paddingBottom: true
+        paddingTop: false
+        paddingBottom: false
         components:
           - type: Text
             hasDropCap: true
@@ -485,8 +486,8 @@ components:
     overlay: ''
     components:
       - type: Column
-        paddingTop: true
-        paddingBottom: true
+        paddingTop: false
+        paddingBottom: false
         components:
           - type: Text
             hasDropCap: true
@@ -538,8 +539,8 @@ components:
     description: ''
     showInMenu: false
     id: _map2
-    txtColor: Primary
-    bgColor: Secundary
+    txtColor: Secondary
+    bgColor: Highlight
     components:
       - type: Text
         hasDropCap: false
@@ -580,38 +581,64 @@ components:
       - type: Text
         hasDropCap: false
         content: On 30 September 2015, at dawn and without prior notice, police officers and security guards of the company Ecuacorriente carried out an eviction against 13 families in San Marcos and on the El Cóndor road, at the margins of the Tundayme River. Equipped with guns and bulldozers, they destroyed their homes, edible gardens and hen houses, forcing elderly, women and youth to flee without place to go.
-      - type: MapView
+      - type: VideoEmbed
+        wideVideo: false
+        videoUrl: https://www.youtube.com/watch?v=kl5Wq8fW5gQ
+        videoCaption: ''
         txtColor: ''
         bgColor: ''
         mapView: map2_view4
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        desktop: 500px
+        tablet: ''
+        mobile: ''
+        mapView: map2_view4
       - type: Spacer
+        hasDropCap: false
+        content: Weeks latter, on 16 December 2015, another violent land-clearing operation was conducted across the area. Once again at dawn and without prior notice and judicial order, state and private security forces and evicted more 14 families. Similar to the displacements of September, all the houses were destroyed in front of the families as a way of terrorizing them and preventing their return.
         desktop: 500px
         tablet: ''
         mobile: ''
       - type: Text
         hasDropCap: false
         content: Weeks latter, on 16 December 2015, another violent land-clearing operation was conducted across the area. Once again at dawn and without prior notice and judicial order, state and private security forces and evicted more 14 families. Similar to the displacements of September, all the houses were destroyed in front of the families as a way of terrorizing them and preventing their return.
-      - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map2_view5
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        desktop: 500px
+        tablet: ''
+        mobile: ''
+        mapView: map2_view5
       - type: Spacer
+        hasDropCap: false
+        content: The last evictions took place on 13 May 2016 against the shuar family Tendetza-Antún in the community of Yanua Kim, and latter on 04 February 2017 against Rosario Wari and her son, by that time the last residents of the area.
         desktop: 500px
         tablet: ''
         mobile: ''
       - type: Text
         hasDropCap: false
         content: The last evictions took place on 13 May 2016 against the shuar family Tendetza-Antún in the community of Yanua Kim, and latter on 04 February 2017 against Rosario Wari and her son, by that time the last residents of the area.
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_view6
       - type: MapView
         txtColor: ''
         bgColor: ''
+        desktop: 500px
+        tablet: ''
+        mobile: ''
         mapView: map2_view6
       - type: Spacer
         desktop: 500px
         tablet: ''
         mobile: ''
     columnAlign: left
-    floatingText: false
+    floatingText: true
   - type: Group
     shortTitle: _video3
     longTitle: ''
@@ -627,8 +654,8 @@ components:
     overlay: ''
     components:
       - type: Column
-        paddingTop: true
-        paddingBottom: true
+        paddingTop: false
+        paddingBottom: false
         components:
           - type: Text
             hasDropCap: false
@@ -652,8 +679,8 @@ components:
     overlay: ''
     components:
       - type: Column
-        paddingTop: true
-        paddingBottom: true
+        paddingTop: false
+        paddingBottom: false
         components:
           - type: Compare
             imageLeft: /uploads/smbefore-1581693790.png
@@ -684,8 +711,8 @@ components:
     overlay: dark
     components:
       - type: Columns
-        paddingTop: true
-        paddingBottom: true
+        paddingTop: false
+        paddingBottom: false
         invertOnMobile: false
         columnsAlign: 33-66
         column1:
@@ -728,8 +755,8 @@ components:
     overlay: ''
     components:
       - type: Column
-        paddingTop: true
-        paddingBottom: true
+        paddingTop: false
+        paddingBottom: false
         components:
           - type: Text
             hasDropCap: true
@@ -772,8 +799,8 @@ components:
     overlay: ''
     components:
       - type: Column
-        paddingTop: true
-        paddingBottom: true
+        paddingTop: false
+        paddingBottom: false
         components:
           - type: Text
             hasDropCap: true
@@ -826,8 +853,8 @@ components:
     overlay: dark
     components:
       - type: Columns
-        paddingTop: true
-        paddingBottom: true
+        paddingTop: false
+        paddingBottom: false
         invertOnMobile: false
         columnsAlign: 33-66
         column1:
@@ -870,7 +897,7 @@ components:
     overlay: ''
     components:
       - type: Column
-        paddingTop: true
+        paddingTop: false
         paddingBottom: false
         components:
           - type: Text
@@ -919,8 +946,8 @@ components:
     overlay: ''
     components:
       - type: Column
-        paddingTop: true
-        paddingBottom: true
+        paddingTop: false
+        paddingBottom: false
         components:
           - type: Text
             hasDropCap: false
@@ -944,8 +971,8 @@ components:
     overlay: ''
     components:
       - type: Column
-        paddingTop: true
-        paddingBottom: true
+        paddingTop: false
+        paddingBottom: false
         components:
           - type: Text
             hasDropCap: true
@@ -967,8 +994,8 @@ components:
     overlay: dark
     components:
       - type: Columns
-        paddingTop: true
-        paddingBottom: true
+        paddingTop: false
+        paddingBottom: false
         invertOnMobile: false
         columnsAlign: 33-66
         column1:
@@ -1001,8 +1028,8 @@ components:
     overlay: ''
     components:
       - type: Column
-        paddingTop: true
-        paddingBottom: true
+        paddingTop: false
+        paddingBottom: false
         components:
           - type: Text
             hasDropCap: true
@@ -1031,8 +1058,8 @@ components:
     overlay: ''
     components:
       - type: Columns
-        paddingTop: true
-        paddingBottom: true
+        paddingTop: false
+        paddingBottom: false
         invertOnMobile: false
         columnsAlign: 33-66
         column1:
@@ -1068,8 +1095,8 @@ components:
     overlay: ''
     components:
       - type: Columns
-        paddingTop: true
-        paddingBottom: true
+        paddingTop: false
+        paddingBottom: false
         invertOnMobile: false
         columnsAlign: 33-66
         column1:
@@ -1118,3 +1145,4 @@ components:
 
                 Gloria Chicaiza,El Enclave Minero de la Cordillera del Cóndor. Quito: Acción Ecológica, 2010.
 ---
+
