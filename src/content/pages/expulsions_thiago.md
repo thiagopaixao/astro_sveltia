@@ -1,6 +1,6 @@
 ---
 title: Expulsions
-slug: expulsions
+slug: expulsions_thiago
 pageSettings:
   language: en
   link_pt_br: /expulsions-pt
