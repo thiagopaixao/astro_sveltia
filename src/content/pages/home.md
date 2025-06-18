@@ -36,9 +36,9 @@ mapbox:
   views:
     - id: view_0
       center:
-        lng: -58.1
-        lat: -4.1
-      duration: 45.1
+        lng: -58.911
+        lat: -6.315
+      duration: 4500
       zoom: 4
       bearing: 0
       pitch: 0

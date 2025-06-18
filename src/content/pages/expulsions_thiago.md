@@ -24,190 +24,201 @@ pageTheme:
       tablet: '11'
       desktop: '12'
 mapbox:
-  columnAlign: right
+  columnAlign: center
   floatingText: false
-  style: mapbox://styles/marlus/cmbscxuic00y401s6hj2jcvyj
-  center:
-    lng: -58.569363795000015
-    lat: -1.917321274000017
-  zoom: 2
-  bearing: 0
-  pitch: 0
-  layers: []
+  style: mapbox://styles/marlus/cjyt3uyhf15mr1cthc2942wxz
+  centerLng: '-58.569363795'
+  centerLat: '-1.917321274'
+  zoom: '2'
+  bearing: '0'
+  pitch: '0'
+  layers: ''
   token: pk.eyJ1IjoibWFybHVzIiwiYSI6IjlmYlhtaEkifQ.vMxORYorRKnueDl3E5itEQ
   views:
     - id: map1_view1
-      center:
-        lng: -58.569363795
-        lat: -1.917321274
-      duration: 2000
-      zoom: 3
-      bearing: 0
-      pitch: 0
-      layers:
-        - amazonia-limites
-        - mineracaoamazonia
+      centerLng: '-58.569363795'
+      centerLat: '-1.917321274'
+      duration: '2000'
+      zoom: '3'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        amazonia-limites
+        mineracaoamazonia
       mobile:
-        zoom: 3
+        zoom: '3'
       captions:
         title: ''
         notes: ''
         items:
-          - icon: <span class="material-symbols-outlined" style="color:#bffa80">show_chart</span>
+          - icon: show_chart
+            colorIcon: '#bffa80'
+            typeIcon: outlined
             text: Amazon limits
-          - icon: <span class="material-symbols-outlined fill" style="color:red">square</span>
+          - icon: square
+            colorIcon: red
+            typeIcon: outlined
             text: Mining concessions
     - id: map1_view2
-      center:
-        lng: -58.569363795000015
-        lat: -1.917321274000017
-      duration: 2000
-      zoom: 3.5
-      bearing: 0
-      pitch: 0
-      layers:
-        - amazonia-limites
-        - mineracaoamazonia
-        - anpamazonia
-        - tiamazonia
+      centerLng: '-58.569363795000015'
+      centerLat: '-1.917321274000017'
+      duration: '2000'
+      zoom: '3.5'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        amazonia-limites
+        mineracaoamazonia
+        anpamazonia
+        tiamazonia
       captions:
         title: ''
         notes: ''
         items:
-          - icon: <span class="material-symbols-outlined fill" style="color:red">square</span>
+          - icon: square
+            colorIcon: red
+            typeIcon: outlined
             text: Mining concessions
-          - icon: <span class="material-symbols-outlined fill" style="color:#797429">circle</span>
+          - icon: circle
+            colorIcon: '#797429'
+            typeIcon: outlined
             text: Indigenous Territory
-          - icon: <span class="material-symbols-outlined fill" style="color:#b2b520">circle</span>
+          - icon: circle
+            colorIcon: '#b2b520'
+            typeIcon: outlined
             text: Ecological reserves
     - id: map1_view3
-      center:
-        lng: -77.921
-        lat: -2.038
-      duration: 2000
-      zoom: 6
-      bearing: 0
-      pitch: 0
-      layers:
-        - mineracaoamazonia
-        - amazonia-limites
-        - ecuador-limites
-        - tiamazonia
-        - anpamazonia
+      centerLng: '-77.921'
+      centerLat: '-2.038'
+      duration: '2000'
+      zoom: '6'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        mineracaoamazonia
+        amazonia-limites
+        ecuador-limites
+        tiamazonia
+        anpamazonia
       captions:
         title: ''
         notes: ''
         items:
-          - icon: <span class="material-symbols-outlined fill" style="color:red">square</span>
+          - icon: square
+            colorIcon: red
+            typeIcon: outlined
             text: Mining Concessions
-          - icon: <span class="material-symbols-outlined fill" style="color:#797429">circle</span>
+          - icon: circle
+            colorIcon: '#797429'
+            typeIcon: outlined
             text: Indigenous Territory
-          - icon: <span class="material-symbols-outlined fill" style="color:#b2b520">circle</span>
+          - icon: circle
+            colorIcon: '#b2b520'
+            typeIcon: outlined
             text: Ecological Reserves
     - id: map1_view4
-      center:
-        lng: -78.195
-        lat: -3.893
-      duration: 2000
-      zoom: 7
-      bearing: 0
-      pitch: 0
-      layers:
-        - mineracaoamazonia
-        - ecuador-limites
-        - expulsion-regions
-        - tiamazonia
-        - anpamazonia
+      centerLng: '-78.195'
+      centerLat: '-3.893'
+      duration: '2000'
+      zoom: '7'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        mineracaoamazonia[pais==Ecuador]
+        ecuador-limites
+        expulsion-regions
+        tiamazonia[pais==Ecuador]
+        anpamazonia[pais==Ecuador]
     - id: map2_view1
-      center:
-        lng: -78.465
-        lat: -3.584
-      duration: 4000
-      zoom: 12.2
-      bearing: 0
-      pitch: 0
-      layers:
-        - sat-2013
-        - expulsion-regions
-        - desajolos-mirador
+      centerLng: '-78.465'
+      centerLat: '-3.584'
+      duration: '4000'
+      zoom: '12.2'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        sat-2013
+        expulsion-regions
+        desajolos-mirador[Tipo==Comunidad]
       captions:
         title: ''
         notes: ''
         items:
-          - icon: <span class="material-symbols-outlined fill" style="color:#dbce48">circle</span>
+          - icon: circle
+            colorIcon: '#dbce48'
+            typeIcon: outlined
             text: comunity centers
     - id: map2_view2
-      center:
-        lng: -78.465
-        lat: -3.584
-      duration: 4000
-      zoom: 12.2
-      bearing: 0
-      pitch: 0
-      layers:
-        - desajolos-mirador
-        - expulsion-regions
-        - sat-2013
+      centerLng: '-78.465'
+      centerLat: '-3.584'
+      duration: '4000'
+      zoom: '12.2'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        desajolos-mirador
+        expulsion-regions
+        sat-2013
       captions:
         title: ''
         notes: ''
         items:
-          - icon: <span class="material-symbols-outlined fill" style="color:#f00">close</span>
+          - icon: close
+            colorIcon: '#f00'
+            typeIcon: outlined
             text: evicted families
     - id: map2_view3
-      center:
-        lng: -78.465
-        lat: -3.584
-      duration: 2000
-      zoom: 12.2
-      bearing: 0
-      pitch: 0
-      layers:
-        - desajolos-mirador
-        - expulsion-regions
-        - sat-2013
+      centerLng: '-78.465'
+      centerLat: '-3.584'
+      duration: '2000'
+      zoom: '12.2'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        desajolos-mirador
+        expulsion-regions
+        sat-2018
       captions:
         title: ''
         notes: ''
         items:
-          - icon: <span class="material-symbols-outlined fill" style="color:red">close</span>
+          - icon: close
+            colorIcon: red
+            typeIcon: outlined
             text: forced evictions
     - id: map2_view4
-      center:
-        lng: -78.47
-        lat: -3.569
-      duration: 4000
-      zoom: 15
-      bearing: 0
-      pitch: 0
-      layers:
-        - desajolos-mirador
-        - expulsion-regions
-        - sat-2018
+      centerLng: '-78.47'
+      centerLat: '-3.569'
+      duration: '4000'
+      zoom: '15'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        desajolos-mirador[Data<2015-10-01]
+        expulsion-regions
+        sat-2018
     - id: map2_view5
-      center:
-        lng: -78.465
-        lat: -3.584
-      duration: 4000
-      zoom: 12.5
-      bearing: 0
-      pitch: 0
-      layers:
-        - desajolos-mirador
-        - expulsion-regions
-        - sat-2018
+      centerLng: '-78.465'
+      centerLat: '-3.584'
+      duration: '4000'
+      zoom: '12.5'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        desajolos-mirador[Data<2015-12-31]
+        expulsion-regions
+        sat-2018
     - id: map2_view6
-      center:
-        lng: -78.50685
-        lat: -3.57468
-      duration: 4000
-      zoom: 14
-      bearing: 0
-      pitch: 0
-      layers:
-        - desajolos-mirador
-        - expulsion-regions
-        - sat-2018
+      centerLng: '-78.50685'
+      centerLat: '-3.57468'
+      duration: '4000'
+      zoom: '14'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        desajolos-mirador
+        expulsion-regions
+        sat-2018
   mapView: ''
 components:
   - type: Group
@@ -320,7 +331,7 @@ components:
         desktop: 500px
         tablet: ''
         mobile: ''
-    columnAlign: right
+    columnAlign: left
     floatingText: true
   - type: Group
     shortTitle: _text1
@@ -635,7 +646,7 @@ components:
         desktop: 500px
         tablet: ''
         mobile: ''
-    columnAlign: right
+    columnAlign: left
     floatingText: true
   - type: Group
     shortTitle: _video3
@@ -1143,4 +1154,3 @@ components:
 
                 Gloria Chicaiza,El Enclave Minero de la Cordillera del Cóndor. Quito: Acción Ecológica, 2010.
 ---
-
