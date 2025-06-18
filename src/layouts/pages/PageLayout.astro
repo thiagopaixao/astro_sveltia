@@ -181,6 +181,25 @@ if (hasMapboxData) {
         const viewCenterLng = view.centerLng || view.center?.lng || 0;
         const viewCenterLat = view.centerLat || view.center?.lat || 0;
         
+        // Processar captions para gerar HTML dos ícones
+        let processedCaptions = view.captions || {};
+        if (view.captions && view.captions.items) {
+          processedCaptions = {
+            ...view.captions,
+            items: view.captions.items.map(item => {
+              if (item.icon && item.colorIcon && item.typeIcon) {
+                // Gerar HTML do ícone usando os novos campos
+                const iconHtml = `<span class="material-symbols-${item.typeIcon}" style="color: ${item.colorIcon}">${item.icon}</span>`;
+                return {
+                  ...item,
+                  icon: iconHtml
+                };
+              }
+              return item;
+            })
+          };
+        }
+
         mapboxViews[view.id] = {
           center: [parseFloat(viewCenterLng), parseFloat(viewCenterLat)],
           duration: parseFloat(view.duration) || 4000,
@@ -189,7 +208,7 @@ if (hasMapboxData) {
           pitch: parseFloat(view.pitch) || 0,
           layers: processLayers(view.layers),
           mobile: view.mobile || {},
-          captions: view.captions || {},
+          captions: processedCaptions,
         };
       }
     });

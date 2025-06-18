@@ -183,6 +183,8 @@ const mapboxSchema = z.object({
               .array(
                 z.object({
                   icon: z.string().optional(),
+                  colorIcon: z.string().optional(),
+                  typeIcon: z.enum(['outlined', 'rounded', 'sharp']).optional(),
                   text: z.string().optional(),
                 })
               )

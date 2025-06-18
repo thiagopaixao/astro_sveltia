@@ -159,11 +159,23 @@ mapBox: &mapBox
               required: false
               summary: '{{fields.text}}'
               fields:
-                - label: 'Icon HTML'
+                - label: 'Icon'
                   name: 'icon'
-                  widget: 'text'
+                  widget: 'string'
                   required: false
-                  hint: 'HTML do ícone (ex: <span style="color:red">●</span>)'
+                  hint: 'Consulte um ícone no [Google Fonts Icon](https://fonts.google.com/icons)'
+                - label: 'Icon Color'
+                  name: 'colorIcon'
+                  widget: 'color'
+                  required: false
+                  enableAlpha: true
+                  allowInput: true
+                - label: 'Icon Type'
+                  name: 'typeIcon'
+                  widget: 'select'
+                  options: ['outlined', 'rounded', 'sharp']
+                  default: 'outlined'
+                  required: false
                 - label: 'Text'
                   name: 'text'
                   widget: 'string'

@@ -51,9 +51,13 @@ mapbox:
         title: ''
         notes: ''
         items:
-          - icon: <span class="material-symbols-outlined" style="color:#bffa80">show_chart</span>
+          - icon: show_chart
+            colorIcon: '#bffa80'
+            typeIcon: outlined
             text: Amazon limits
-          - icon: <span class="material-symbols-outlined fill" style="color:red">square</span>
+          - icon: square
+            colorIcon: red
+            typeIcon: outlined
             text: Mining concessions
     - id: map1_view2
       centerLng: '-58.569363795000015'
@@ -71,11 +75,17 @@ mapbox:
         title: ''
         notes: ''
         items:
-          - icon: <span class="material-symbols-outlined fill" style="color:red">square</span>
+          - icon: square
+            colorIcon: red
+            typeIcon: outlined
             text: Mining concessions
-          - icon: <span class="material-symbols-outlined fill" style="color:#797429">circle</span>
+          - icon: circle
+            colorIcon: '#797429'
+            typeIcon: outlined
             text: Indigenous Territory
-          - icon: <span class="material-symbols-outlined fill" style="color:#b2b520">circle</span>
+          - icon: circle
+            colorIcon: '#b2b520'
+            typeIcon: outlined
             text: Ecological reserves
     - id: map1_view3
       centerLng: '-77.921'
@@ -94,11 +104,17 @@ mapbox:
         title: ''
         notes: ''
         items:
-          - icon: <span class="material-symbols-outlined fill" style="color:red">square</span>
+          - icon: square
+            colorIcon: red
+            typeIcon: outlined
             text: Mining Concessions
-          - icon: <span class="material-symbols-outlined fill" style="color:#797429">circle</span>
+          - icon: circle
+            colorIcon: '#797429'
+            typeIcon: outlined
             text: Indigenous Territory
-          - icon: <span class="material-symbols-outlined fill" style="color:#b2b520">circle</span>
+          - icon: circle
+            colorIcon: '#b2b520'
+            typeIcon: outlined
             text: Ecological Reserves
     - id: map1_view4
       centerLng: '-78.195'
@@ -128,7 +144,9 @@ mapbox:
         title: ''
         notes: ''
         items:
-          - icon: <span class="material-symbols-outlined fill" style="color:#dbce48">circle</span>
+          - icon: circle
+            colorIcon: '#dbce48'
+            typeIcon: outlined
             text: comunity centers
     - id: map2_view2
       centerLng: '-78.465'
@@ -145,7 +163,9 @@ mapbox:
         title: ''
         notes: ''
         items:
-          - icon: <span class="material-symbols-outlined fill" style="color:#f00">close</span>
+          - icon: close
+            colorIcon: '#f00'
+            typeIcon: outlined
             text: evicted families
     - id: map2_view3
       centerLng: '-78.465'
@@ -162,7 +182,9 @@ mapbox:
         title: ''
         notes: ''
         items:
-          - icon: <span class="material-symbols-outlined fill" style="color:red">close</span>
+          - icon: close
+            colorIcon: red
+            typeIcon: outlined
             text: forced evictions
     - id: map2_view4
       centerLng: '-78.47'
