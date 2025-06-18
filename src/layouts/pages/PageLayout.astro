@@ -43,28 +43,77 @@ const { title, components, mapbox, pageSettings } = entry.data;
 // Configuração do MapBox baseada nos dados da página
 const hasMapboxData = mapbox && mapbox.style && mapbox.token;
 
-// Função para processar layers e seus filtros
-function processLayers(layers) {
-  if (!layers || !Array.isArray(layers)) return [];
+// Função para processar string de filtro no formato "property==value"
+function parseFilterString(filterStr) {
+  if (!filterStr) return null;
   
-  return layers.map(layer => {
-    // Compatibilidade com formato antigo (string) e novo (objeto)
-    if (typeof layer === 'string') {
-      return {
-        name: layer,
-        filter: null
-      };
+  // Operadores suportados (ordem importa - operadores maiores primeiro)
+  const operators = ['==', '!=', '<=', '>=', '<', '>', 'in', '!in', 'has', '!has'];
+  
+  for (const op of operators) {
+    if (filterStr.includes(op)) {
+      const parts = filterStr.split(op);
+      if (parts.length === 2) {
+        const key = parts[0].trim();
+        let value = parts[1].trim();
+        
+        // Operadores que não precisam de valor
+        if (op === 'has' || op === '!has') {
+          return [op, key];
+        }
+        
+        // Operadores 'in' e '!in' esperam arrays
+        if (op === 'in' || op === '!in') {
+          const values = value.split(',').map(v => {
+            v = v.trim();
+            // Converter para número se possível
+            return !isNaN(v) && v !== '' ? parseFloat(v) : v;
+          });
+          return [op, ['get', key], values];
+        }
+        
+        // Converter valor para número se possível
+        if (!isNaN(value) && value !== '') {
+          value = parseFloat(value);
+        }
+        
+        return [op, ['get', key], value];
+      }
+    }
+  }
+  
+  return null;
+}
+
+// Função para processar layers com suporte a formato string e objeto
+function processLayerString(layerInput) {
+  if (typeof layerInput === 'string') {
+    // Novo formato: "layerName[property==value]"
+    if (layerInput.includes('[') && layerInput.includes(']')) {
+      const bracketStart = layerInput.indexOf('[');
+      const bracketEnd = layerInput.indexOf(']');
+      
+      const name = layerInput.substring(0, bracketStart);
+      const filterStr = layerInput.substring(bracketStart + 1, bracketEnd);
+      const filter = parseFilterString(filterStr);
+      
+      return { name, filter };
     }
     
-    // Novo formato com filtros
+    // Formato simples: "layerName"
+    return { name: layerInput, filter: null };
+  }
+  
+  // Formato objeto (compatibilidade com versão anterior)
+  if (typeof layerInput === 'object' && layerInput.name) {
     const processedLayer = {
-      name: layer.name || layer,
+      name: layerInput.name,
       filter: null
     };
     
     // Gerar filtro se todos os campos necessários estão preenchidos
-    if (layer.filterKey && layer.comparison && layer.filterValue !== undefined && layer.filterValue !== '') {
-      let filterValue = layer.filterValue;
+    if (layerInput.filterKey && layerInput.comparison && layerInput.filterValue !== undefined && layerInput.filterValue !== '') {
+      let filterValue = layerInput.filterValue;
       
       // Converter valor para número se possível
       if (!isNaN(filterValue) && filterValue !== '') {
@@ -72,19 +121,39 @@ function processLayers(layers) {
       }
       
       // Construir filtro baseado no tipo de comparação
-      if (layer.comparison === 'has' || layer.comparison === '!has') {
-        processedLayer.filter = [layer.comparison, layer.filterKey];
-      } else if (layer.comparison === 'in' || layer.comparison === '!in') {
+      if (layerInput.comparison === 'has' || layerInput.comparison === '!has') {
+        processedLayer.filter = [layerInput.comparison, layerInput.filterKey];
+      } else if (layerInput.comparison === 'in' || layerInput.comparison === '!in') {
         // Para 'in' e '!in', o valor deve ser um array
         const values = Array.isArray(filterValue) ? filterValue : [filterValue];
-        processedLayer.filter = [layer.comparison, layer.filterKey, values];
+        processedLayer.filter = [layerInput.comparison, ['get', layerInput.filterKey], values];
       } else {
-        processedLayer.filter = [layer.comparison, layer.filterKey, filterValue];
+        processedLayer.filter = [layerInput.comparison, ['get', layerInput.filterKey], filterValue];
       }
     }
     
     return processedLayer;
-  });
+  }
+  
+  return { name: layerInput, filter: null };
+}
+
+// Função para processar layers e seus filtros
+function processLayers(layers) {
+  if (!layers) return [];
+  
+  // Se layers é uma string (formato novo), converter para array
+  if (typeof layers === 'string') {
+    const layerLines = layers.split('\n').map(line => line.trim()).filter(line => line.length > 0);
+    return layerLines.map(processLayerString).filter(layer => layer.name);
+  }
+  
+  // Se layers é um array (formato antigo), processar normalmente
+  if (Array.isArray(layers)) {
+    return layers.map(processLayerString).filter(layer => layer.name);
+  }
+  
+  return [];
 }
 
 // Processar dados do mapbox se existirem
@@ -92,24 +161,32 @@ let mapboxConfig = null;
 let mapboxViews = {};
 
 if (hasMapboxData) {
+  // Suporte para ambos os formatos: novo (centerLng/centerLat) e antigo (center.lng/center.lat)
+  const centerLng = mapbox.centerLng || mapbox.center?.lng || 0;
+  const centerLat = mapbox.centerLat || mapbox.center?.lat || 0;
+  
   mapboxConfig = {
     style: mapbox.style,
-    center: [mapbox.center?.lng || 0, mapbox.center?.lat || 0],
-    zoom: mapbox.zoom || 2,
-    bearing: mapbox.bearing || 0,
-    pitch: mapbox.pitch || 0,
+    center: [parseFloat(centerLng), parseFloat(centerLat)],
+    zoom: parseFloat(mapbox.zoom) || 2,
+    bearing: parseFloat(mapbox.bearing) || 0,
+    pitch: parseFloat(mapbox.pitch) || 0,
     layers: processLayers(mapbox.layers),
   };
   
   if (mapbox.views && Array.isArray(mapbox.views)) {
     mapbox.views.forEach(view => {
       if (view.id) {
+        // Suporte para ambos os formatos nas views também
+        const viewCenterLng = view.centerLng || view.center?.lng || 0;
+        const viewCenterLat = view.centerLat || view.center?.lat || 0;
+        
         mapboxViews[view.id] = {
-          center: [view.center?.lng || 0, view.center?.lat || 0],
-          duration: view.duration || 4000,
-          zoom: view.zoom || 2,
-          bearing: view.bearing || 0,
-          pitch: view.pitch || 0,
+          center: [parseFloat(viewCenterLng), parseFloat(viewCenterLat)],
+          duration: parseFloat(view.duration) || 4000,
+          zoom: parseFloat(view.zoom) || 2,
+          bearing: parseFloat(view.bearing) || 0,
+          pitch: parseFloat(view.pitch) || 0,
           layers: processLayers(view.layers),
           mobile: view.mobile || {},
           captions: view.captions || {},

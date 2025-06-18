@@ -58,15 +58,18 @@ const chartPercentageBarSchema = z.object({
   number: z.number().min(0).optional(),
 });
 
-// Schema para layers do MapBox
-const mapBoxLayerSchema = z.object({
-  name: z.string(),
-  filterKey: z.string().optional(),
-  comparison: z
-    .enum(['==', '!=', '<', '>', '<=', '>=', 'in', '!in', 'has', '!has'])
-    .optional(),
-  filterValue: z.string().optional(),
-});
+// Schema para layers do MapBox - suporte a formato string e objeto
+const mapBoxLayerSchema = z.union([
+  z.string(), // Formato novo: "layerName" ou "layerName[property==value]"
+  z.object({   // Formato antigo (compatibilidade)
+    name: z.string(),
+    filterKey: z.string().optional(),
+    comparison: z
+      .enum(['==', '!=', '<', '>', '<=', '>=', 'in', '!in', 'has', '!has'])
+      .optional(),
+    filterValue: z.string().optional(),
+  }),
+]);
 
 // Schema para items do BigNumbers
 const bigNumberItemSchema = z.object({
@@ -93,39 +96,82 @@ const timelineBulletSchema = z.object({
   content: z.string().optional().transform(processMarkdown),
 });
 
+// Função para converter string para número
+function stringToNumber(val: string | number | undefined): number | undefined {
+  if (val === undefined || val === null) return undefined;
+  if (typeof val === 'number') return val;
+  const parsed = parseFloat(val);
+  return isNaN(parsed) ? undefined : parsed;
+}
+
+// Função para processar layers de texto (uma por linha)
+function processLayersText(text: string | string[] | undefined): string[] | undefined {
+  if (!text) return undefined;
+  if (Array.isArray(text)) return text; // Compatibilidade com formato antigo
+  return text.split('\n').map(line => line.trim()).filter(line => line.length > 0);
+}
+
 // Schema para MapBox no nível da página
 const mapboxSchema = z.object({
   type: z.literal('MapBox').optional(),
   columnAlign: z.enum(['left', 'center', 'right']).optional(),
   floatingText: z.boolean().optional(),
   style: z.string().optional(),
+  // Suporte para formato novo (centerLng/centerLat) e antigo (center.lng/center.lat)
+  centerLng: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
+  centerLat: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
   center: z
     .object({
-      lng: z.number(),
-      lat: z.number(),
+      lng: z.union([z.string(), z.number()]).transform(stringToNumber),
+      lat: z.union([z.string(), z.number()]).transform(stringToNumber),
     })
-    .optional(),
-  zoom: z.number().optional(),
-  bearing: z.number().optional(),
-  pitch: z.number().optional(),
-  layers: z.array(z.union([z.string(), mapBoxLayerSchema])).optional(),
+    .optional()
+    .transform((val, ctx) => {
+      // Se centerLng/centerLat existem, usar eles; senão usar center
+      const parent = ctx.path[0] as any;
+      if (parent?.centerLng !== undefined && parent?.centerLat !== undefined) {
+        return { lng: parent.centerLng, lat: parent.centerLat };
+      }
+      return val;
+    }),
+  zoom: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
+  bearing: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
+  pitch: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
+  layers: z.union([
+    z.string().transform(processLayersText),
+    z.array(z.union([z.string(), mapBoxLayerSchema]))
+  ]).optional(),
   token: z.string().optional(),
   views: z
     .array(
       z.object({
         id: z.string(),
+        // Suporte para formato novo (centerLng/centerLat) e antigo (center.lng/center.lat)
+        centerLng: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
+        centerLat: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
         center: z.object({
-          lng: z.number(),
-          lat: z.number(),
+          lng: z.union([z.string(), z.number()]).transform(stringToNumber),
+          lat: z.union([z.string(), z.number()]).transform(stringToNumber),
+        }).optional()
+        .transform((val, ctx) => {
+          // Se centerLng/centerLat existem, usar eles; senão usar center
+          const parent = ctx.path[0] as any;
+          if (parent?.centerLng !== undefined && parent?.centerLat !== undefined) {
+            return { lng: parent.centerLng, lat: parent.centerLat };
+          }
+          return val;
         }),
-        duration: z.number().optional(),
-        zoom: z.number().optional(),
-        bearing: z.number().optional(),
-        pitch: z.number().optional(),
-        layers: z.array(z.union([z.string(), mapBoxLayerSchema])).optional(),
+        duration: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
+        zoom: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
+        bearing: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
+        pitch: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
+        layers: z.union([
+          z.string().transform(processLayersText),
+          z.array(z.union([z.string(), mapBoxLayerSchema]))
+        ]).optional(),
         mobile: z
           .object({
-            zoom: z.number().optional(),
+            zoom: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
           })
           .optional()
           .transform((val) => (val === null ? undefined : val)),

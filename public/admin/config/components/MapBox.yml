@@ -3,240 +3,168 @@ mapBox: &mapBox
   name: 'mapbox'
   collapsed: true
   widget: 'object'
+  summary: '{{fields.style}}'
   fields:
     - label: 'Type'
       name: 'type'
       widget: 'hidden'
       default: 'MapBox'
+    - label: 'Map Style'
+      name: 'style'
+      widget: 'string'
+      required: true
+      hint: 'URL do estilo do MapBox (ex: mapbox://styles/username/style-id)'
+    - label: 'Map Token'
+      name: 'token'
+      widget: 'string'
+      required: true
+      hint: 'Token de acesso do MapBox'
+    - label: 'Map Center Longitude'
+      name: 'centerLng'
+      widget: 'string'
       collapsed: true
+      hint: 'Ex: -54.875'
+      required: true
+    - label: 'Map Center Latitude'
+      name: 'centerLat'
+      widget: 'string'
+      collapsed: true
+      hint: 'Ex: -2.53'
+      required: true
+    - label: 'Map Zoom'
+      name: 'zoom'
+      widget: 'string'
+      default: '2'
+      collapsed: true
+      hint: 'Valor numérico como string. Ex: 2 ou 2.5'
+      required: true
+    - label: 'Map Bearing'
+      name: 'bearing'
+      widget: 'string'
+      default: '0'
+      collapsed: true
+      hint: 'Valor numérico como string. Ex: 0 ou 45.5'
+      required: false
+    - label: 'Map Pitch'
+      name: 'pitch'
+      widget: 'string'
+      default: '0'
+      collapsed: true
+      hint: 'Valor numérico como string. Ex: 0 ou 30'
+      required: false
+    - label: 'Map Layers'
+      name: 'layers'
+      widget: 'text'
+      required: false
+      collapsed: true
+      hint: 'Uma layer por linha. Formato: "layerName" ou "layerName[property==value]". Ex: mineracao ou mineracao[pais==Brasil]'
     - label: 'Column Align'
       name: 'columnAlign'
       widget: 'select'
       options: ['left', 'center', 'right']
       required: false
-      collapsed: true
+      default: 'left'
     - label: 'Floating Text'
       name: 'floatingText'
       widget: 'boolean'
       required: false
-      collapsed: true
-    - label: 'Map Style'
-      name: 'style'
-      widget: 'string'
-      required: true
-      collapsed: true
-    - label: 'Map Center'
-      name: 'center'
-      widget: 'object'
-      fields:
-        - { label: 'Longitude', name: 'lng', widget: 'number', value_type: 'float', step: 0.01, collapsed: true }
-        - { label: 'Latitude', name: 'lat', widget: 'number', value_type: 'float', step: 0.01, collapsed: true }
-      required: true
-      collapsed: true
-    - label: 'Map Zoom'
-      name: 'zoom'
-      widget: 'number'
-      value_type: 'float'
-      step: 0.01
-      required: true
-      collapsed: true
-    - label: 'Map Bearing'
-      name: 'bearing'
-      widget: 'number'
-      value_type: 'float'
-      step: 0.01
-      required: false
-      collapsed: true
-    - label: 'Map Pitch'
-      name: 'pitch'
-      widget: 'number'
-      value_type: 'float'
-      step: 0.01
-      required: false
-      collapsed: true
-    - label: 'Map Layers'
-      name: 'layers'
-      widget: 'list'
-      required: false
-      collapsed: true
-      fields:
-        - label: 'Layer Name'
-          name: 'name'
-          widget: 'string'
-          required: true
-          hint: 'Nome da layer no MapBox'
-          collapsed: true
-        - label: 'Filter Key'
-          name: 'filterKey'
-          widget: 'string'
-          required: false
-          hint: 'Propriedade da layer para filtrar (opcional)'
-          collapsed: true
-        - label: 'Comparison'
-          name: 'comparison'
-          widget: 'select'
-          required: false
-          hint: 'Tipo de comparação para o filtro'
-          collapsed: true
-          options:
-            - { label: 'Igual (==)', value: '==' }
-            - { label: 'Diferente (!=)', value: '!=' }
-            - { label: 'Menor que (<)', value: '<' }
-            - { label: 'Maior que (>)', value: '>' }
-            - { label: 'Menor ou igual (<=)', value: '<=' }
-            - { label: 'Maior ou igual (>=)', value: '>=' }
-            - { label: 'Contém (in)', value: 'in' }
-            - { label: 'Não contém (!in)', value: '!in' }
-            - { label: 'Tem propriedade (has)', value: 'has' }
-            - { label: 'Não tem propriedade (!has)', value: '!has' }
-        - label: 'Filter Value'
-          name: 'filterValue'
-          widget: 'string'
-          required: false
-          hint: 'Valor para comparação (opcional)'
-          collapsed: true
-    - label: 'Map Token'
-      name: 'token'
-      widget: 'string'
-      required: true
-      collapsed: true
+      default: false
     - label: 'Map Views'
       name: 'views'
       widget: 'list'
-      required: false
       collapsed: true
+      required: false
       fields:
         - label: 'View ID'
           name: 'id'
           widget: 'string'
           required: true
+          hint: 'Identificador único da view'
+        - label: 'View Center Longitude'
+          name: 'centerLng'
+          widget: 'string'
           collapsed: true
-        - label: 'View Center'
-          name: 'center'
-          widget: 'object'
-          fields:
-            - { label: 'Longitude', name: 'lng', widget: 'number', value_type: 'float', step: 0.01, collapsed: true }
-            - { label: 'Latitude', name: 'lat', widget: 'number', value_type: 'float', step: 0.01, collapsed: true }
+          hint: 'Ex: -54.875'
           required: true
+        - label: 'View Center Latitude'
+          name: 'centerLat'
+          widget: 'string'
           collapsed: true
-        - label: 'View Duration'
-          name: 'duration'
-          widget: 'number'
-          value_type: 'float'
-          step: 0.01
+          hint: 'Ex: -2.53'
           required: true
-          collapsed: true
         - label: 'View Zoom'
           name: 'zoom'
-          widget: 'number'
-          value_type: 'float'
-          step: 0.01
-          required: true
+          widget: 'string'
           collapsed: true
+          hint: 'Valor numérico como string. Ex: 8 ou 8.5'
+          required: true
+        - label: 'Duration (ms)'
+          name: 'duration'
+          widget: 'string'
+          default: '2000'
+          collapsed: true
+          hint: 'Duração em milissegundos como string. Ex: 2000'
+          required: false
         - label: 'View Bearing'
           name: 'bearing'
-          widget: 'number'
-          value_type: 'float'
-          step: 0.01
-          required: false
+          widget: 'string'
+          default: '0'
           collapsed: true
+          hint: 'Valor numérico como string. Ex: 0 ou 45'
+          required: false
         - label: 'View Pitch'
           name: 'pitch'
-          widget: 'number'
-          value_type: 'float'
-          step: 0.01
-          required: false
+          widget: 'string'
+          default: '0'
           collapsed: true
+          hint: 'Valor numérico como string. Ex: 0 ou 30'
+          required: false
         - label: 'View Layers'
           name: 'layers'
-          widget: 'list'
+          widget: 'text'
           required: false
           collapsed: true
-          fields:
-            - label: 'Layer Name'
-              name: 'name'
-              widget: 'string'
-              required: true
-              hint: 'Nome da layer no MapBox'
-              collapsed: true
-            - label: 'Filter Key'
-              name: 'filterKey'
-              widget: 'string'
-              required: false
-              hint: 'Propriedade da layer para filtrar (opcional)'
-              collapsed: true
-            - label: 'Comparison'
-              name: 'comparison'
-              widget: 'select'
-              required: false
-              hint: 'Tipo de comparação para o filtro'
-              collapsed: true
-              options:
-                - { label: 'Igual (==)', value: '==' }
-                - { label: 'Diferente (!=)', value: '!=' }
-                - { label: 'Menor que (<)', value: '<' }
-                - { label: 'Maior que (>)', value: '>' }
-                - { label: 'Menor ou igual (<=)', value: '<=' }
-                - { label: 'Maior ou igual (>=)', value: '>=' }
-                - { label: 'Contém (in)', value: 'in' }
-                - { label: 'Não contém (!in)', value: '!in' }
-                - { label: 'Tem propriedade (has)', value: 'has' }
-                - { label: 'Não tem propriedade (!has)', value: '!has' }
-            - label: 'Filter Value'
-              name: 'filterValue'
-              widget: 'string'
-              required: false
-              hint: 'Valor para comparação (opcional)'
-              collapsed: true
-        - label: 'Mobile View'
+          hint: 'Uma layer por linha. Ex: mineracao ou mineracao[pais==Brasil]'
+        - label: 'Mobile Settings'
           name: 'mobile'
           widget: 'object'
-          required: false
           collapsed: true
-          default: null
+          required: false
           fields:
             - label: 'Mobile Zoom'
               name: 'zoom'
-              widget: 'number'
-              value_type: 'float'
-              step: 0.01
-              required: false
+              widget: 'string'
               collapsed: true
+              required: false
+              hint: 'Zoom específico para mobile como string. Ex: 3.5'
         - label: 'Captions'
           name: 'captions'
           widget: 'object'
-          required: false
           collapsed: true
-          default: null
+          required: false
+          summary: '{{fields.title}}'
           fields:
             - label: 'Title'
               name: 'title'
               widget: 'string'
               required: false
-              collapsed: true
             - label: 'Notes'
               name: 'notes'
-              widget: 'string'
+              widget: 'text'
               required: false
-              collapsed: true
-            - label: 'Items'
+            - label: 'Legend Items'
               name: 'items'
               widget: 'list'
-              required: false
               collapsed: true
+              required: false
+              summary: '{{fields.text}}'
               fields:
-                - label: 'Icon'
+                - label: 'Icon HTML'
                   name: 'icon'
-                  widget: 'string'
+                  widget: 'text'
                   required: false
-                  collapsed: true
+                  hint: 'HTML do ícone (ex: <span style="color:red">●</span>)'
                 - label: 'Text'
                   name: 'text'
                   widget: 'string'
                   required: false
-                  collapsed: true
-    - label: 'Map View'
-      name: 'mapView'
-      widget: 'string'
-      required: false
-      collapsed: true

@@ -26,29 +26,27 @@ pageTheme:
 mapbox:
   columnAlign: center
   floatingText: false
-  style: mapbox://styles/marlus/cmbscxuic00y401s6hj2jcvyj
-  center:
-    lng: -1.917321274000017
-    lat: -58.569363795000015
-  zoom: 2
-  bearing: 0
-  pitch: 0
-  layers: []
+  style: mapbox://styles/marlus/cjyt3uyhf15mr1cthc2942wxz
+  centerLng: '-58.569363795'
+  centerLat: '-1.917321274'
+  zoom: '2'
+  bearing: '0'
+  pitch: '0'
+  layers: ''
   token: pk.eyJ1IjoibWFybHVzIiwiYSI6IjlmYlhtaEkifQ.vMxORYorRKnueDl3E5itEQ
   views:
     - id: map1_view1
-      center:
-        lng: -1
-        lat: -58
-      duration: 2000
-      zoom: 3
-      bearing: 0
-      pitch: 0
-      layers:
-        - amazonia-limites
-        - mineracaoamazonia
+      centerLng: '-58.569363795'
+      centerLat: '-1.917321274'
+      duration: '2000'
+      zoom: '3'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        amazonia-limites
+        mineracaoamazonia
       mobile:
-        zoom: 3
+        zoom: '3'
       captions:
         title: ''
         notes: ''
@@ -58,19 +56,17 @@ mapbox:
           - icon: <span class="material-symbols-outlined fill" style="color:red">square</span>
             text: Mining concessions
     - id: map1_view2
-      center:
-        lng: -2
-        lat: -58
-      duration: 2000
-      zoom: 3.5
-      bearing: 0
-      pitch: 0
-      layers:
-        - amazonia-limites
-        - mineracaoamazonia
-        - anpamazonia
-        - tiamazonia
-        - ''
+      centerLng: '-58.569363795000015'
+      centerLat: '-1.917321274000017'
+      duration: '2000'
+      zoom: '3.5'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        amazonia-limites
+        mineracaoamazonia
+        anpamazonia
+        tiamazonia
       captions:
         title: ''
         notes: ''
@@ -82,20 +78,18 @@ mapbox:
           - icon: <span class="material-symbols-outlined fill" style="color:#b2b520">circle</span>
             text: Ecological reserves
     - id: map1_view3
-      center:
-        lng: -2
-        lat: -77
-      duration: 2000
-      zoom: 6
-      bearing: 0
-      pitch: 0
-      layers:
-        - mineracaoamazonia
-        - amazonia-limites
-        - ecuador-limites
-        - tiamazonia
-        - anpamazonia
-        - ''
+      centerLng: '-77.921'
+      centerLat: '-2.038'
+      duration: '2000'
+      zoom: '6'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        mineracaoamazonia
+        amazonia-limites
+        ecuador-limites
+        tiamazonia
+        anpamazonia
       captions:
         title: ''
         notes: ''
@@ -107,31 +101,29 @@ mapbox:
           - icon: <span class="material-symbols-outlined fill" style="color:#b2b520">circle</span>
             text: Ecological Reserves
     - id: map1_view4
-      center:
-        lng: -4
-        lat: -78
-      duration: 2000
-      zoom: 7
-      bearing: 0
-      pitch: 0
-      layers:
-        - mineracaoamazonia
-        - ecuador-limites
-        - expulsion-regions
-        - tiamazonia
-        - anpamazonia
+      centerLng: '-78.195'
+      centerLat: '-3.893'
+      duration: '2000'
+      zoom: '7'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        mineracaoamazonia[pais==Ecuador]
+        ecuador-limites
+        expulsion-regions
+        tiamazonia[pais==Ecuador]
+        anpamazonia[pais==Ecuador]
     - id: map2_view1
-      center:
-        lng: -3
-        lat: -78
-      duration: 4000
-      zoom: 12.2
-      bearing: 0
-      pitch: 0
-      layers:
-        - sat-2013
-        - expulsion-regions
-        - desajolos-mirador
+      centerLng: '-78.465'
+      centerLat: '-3.584'
+      duration: '4000'
+      zoom: '12.2'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        sat-2013
+        expulsion-regions
+        desajolos-mirador[Tipo==Comunidad]
       captions:
         title: ''
         notes: ''
@@ -139,17 +131,16 @@ mapbox:
           - icon: <span class="material-symbols-outlined fill" style="color:#dbce48">circle</span>
             text: comunity centers
     - id: map2_view2
-      center:
-        lng: -3
-        lat: -78
-      duration: 4000
-      zoom: 12.2
-      bearing: 0
-      pitch: 0
-      layers:
-        - desajolos-mirador
-        - expulsion-regions
-        - sat-2013
+      centerLng: '-78.465'
+      centerLat: '-3.584'
+      duration: '4000'
+      zoom: '12.2'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        desajolos-mirador
+        expulsion-regions
+        sat-2013
       captions:
         title: ''
         notes: ''
@@ -157,17 +148,16 @@ mapbox:
           - icon: <span class="material-symbols-outlined fill" style="color:#f00">close</span>
             text: evicted families
     - id: map2_view3
-      center:
-        lng: -3
-        lat: -78
-      duration: 2000
-      zoom: 12.2
-      bearing: 0
-      pitch: 0
-      layers:
-        - desajolos-mirador
-        - expulsion-regions
-        - sat-2013
+      centerLng: '-78.465'
+      centerLat: '-3.584'
+      duration: '2000'
+      zoom: '12.2'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        desajolos-mirador
+        expulsion-regions
+        sat-2018
       captions:
         title: ''
         notes: ''
@@ -175,41 +165,38 @@ mapbox:
           - icon: <span class="material-symbols-outlined fill" style="color:red">close</span>
             text: forced evictions
     - id: map2_view4
-      center:
-        lng: -3
-        lat: -78
-      duration: 4000
-      zoom: 15
-      bearing: 0
-      pitch: 0
-      layers:
-        - desajolos-mirador
-        - expulsion-regions
-        - sat-2018
+      centerLng: '-78.47'
+      centerLat: '-3.569'
+      duration: '4000'
+      zoom: '15'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        desajolos-mirador[Data<2015-10-01]
+        expulsion-regions
+        sat-2018
     - id: map2_view5
-      center:
-        lng: -3
-        lat: -78
-      duration: 4000
-      zoom: 12.5
-      bearing: 0
-      pitch: 0
-      layers:
-        - desajolos-mirador
-        - expulsion-regions
-        - sat-2018
+      centerLng: '-78.465'
+      centerLat: '-3.584'
+      duration: '4000'
+      zoom: '12.5'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        desajolos-mirador[Data<2015-12-31]
+        expulsion-regions
+        sat-2018
     - id: map2_view6
-      center:
-        lng: -3
-        lat: -78
-      duration: 4000
-      zoom: 14
-      bearing: 0
-      pitch: 0
-      layers:
-        - desajolos-mirador
-        - expulsion-regions
-        - sat-2018
+      centerLng: '-78.50685'
+      centerLat: '-3.57468'
+      duration: '4000'
+      zoom: '14'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        desajolos-mirador
+        expulsion-regions
+        sat-2018
   mapView: ''
 components:
   - type: Group
@@ -322,7 +309,7 @@ components:
         desktop: 500px
         tablet: ''
         mobile: ''
-    columnAlign: right
+    columnAlign: left
     floatingText: true
   - type: Group
     shortTitle: _text1
@@ -1145,4 +1132,3 @@ components:
 
                 Gloria Chicaiza,El Enclave Minero de la Cordillera del Cóndor. Quito: Acción Ecológica, 2010.
 ---
-
