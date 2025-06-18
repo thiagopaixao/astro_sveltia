@@ -62,7 +62,7 @@ mapBox: &mapBox
       name: 'columnAlign'
       widget: 'select'
       options: ['left', 'center', 'right']
-      required: false
+      required: true
       default: 'left'
     - label: 'Floating Text'
       name: 'floatingText'
@@ -98,6 +98,12 @@ mapBox: &mapBox
           collapsed: true
           hint: 'Valor numérico como string. Ex: 8 ou 8.5'
           required: true
+        - label: 'Mobile Zoom'
+          name: 'mobileZoom'
+          widget: 'string'
+          collapsed: true
+          required: false
+          hint: 'Zoom específico para mobile como string. Ex: 3.5'
         - label: 'Duration (ms)'
           name: 'duration'
           widget: 'string'
@@ -125,58 +131,39 @@ mapBox: &mapBox
           required: false
           collapsed: true
           hint: 'Uma layer por linha. Ex: mineracao ou mineracao[pais==Brasil]'
-        - label: 'Mobile Settings'
-          name: 'mobile'
-          widget: 'object'
+        - label: 'Caption Title'
+          name: 'title'
+          widget: 'string'
+          required: false
+        - label: 'Notes'
+          name: 'notes'
+          widget: 'text'
+          required: false
+        - label: 'Legend Items'
+          name: 'items'
+          widget: 'list'
           collapsed: true
           required: false
+          summary: '{{fields.text}}'
           fields:
-            - label: 'Mobile Zoom'
-              name: 'zoom'
-              widget: 'string'
-              collapsed: true
-              required: false
-              hint: 'Zoom específico para mobile como string. Ex: 3.5'
-        - label: 'Captions'
-          name: 'captions'
-          widget: 'object'
-          collapsed: true
-          required: false
-          summary: '{{fields.title}}'
-          fields:
-            - label: 'Title'
-              name: 'title'
+            - label: 'Icon'
+              name: 'icon'
               widget: 'string'
               required: false
-            - label: 'Notes'
-              name: 'notes'
-              widget: 'text'
+              hint: 'Consulte um ícone no [Google Fonts Icon](https://fonts.google.com/icons)'
+            - label: 'Icon Color'
+              name: 'colorIcon'
+              widget: 'color'
               required: false
-            - label: 'Legend Items'
-              name: 'items'
-              widget: 'list'
-              collapsed: true
+              enableAlpha: true
+              allowInput: true
+            - label: 'Icon Type'
+              name: 'typeIcon'
+              widget: 'select'
+              options: ['outlined', 'rounded', 'sharp']
+              default: 'outlined'
+              required: true
+            - label: 'Text'
+              name: 'text'
+              widget: 'string'
               required: false
-              summary: '{{fields.text}}'
-              fields:
-                - label: 'Icon'
-                  name: 'icon'
-                  widget: 'string'
-                  required: false
-                  hint: 'Consulte um ícone no [Google Fonts Icon](https://fonts.google.com/icons)'
-                - label: 'Icon Color'
-                  name: 'colorIcon'
-                  widget: 'color'
-                  required: false
-                  enableAlpha: true
-                  allowInput: true
-                - label: 'Icon Type'
-                  name: 'typeIcon'
-                  widget: 'select'
-                  options: ['outlined', 'rounded', 'sharp']
-                  default: 'outlined'
-                  required: false
-                - label: 'Text'
-                  name: 'text'
-                  widget: 'string'
-                  required: false

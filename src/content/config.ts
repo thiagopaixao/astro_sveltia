@@ -61,7 +61,8 @@ const chartPercentageBarSchema = z.object({
 // Schema para layers do MapBox - suporte a formato string e objeto
 const mapBoxLayerSchema = z.union([
   z.string(), // Formato novo: "layerName" ou "layerName[property==value]"
-  z.object({   // Formato antigo (compatibilidade)
+  z.object({
+    // Formato antigo (compatibilidade)
     name: z.string(),
     filterKey: z.string().optional(),
     comparison: z
@@ -105,10 +106,15 @@ function stringToNumber(val: string | number | undefined): number | undefined {
 }
 
 // Função para processar layers de texto (uma por linha)
-function processLayersText(text: string | string[] | undefined): string[] | undefined {
+function processLayersText(
+  text: string | string[] | undefined
+): string[] | undefined {
   if (!text) return undefined;
   if (Array.isArray(text)) return text; // Compatibilidade com formato antigo
-  return text.split('\n').map(line => line.trim()).filter(line => line.length > 0);
+  return text
+    .split('\n')
+    .map((line) => line.trim())
+    .filter((line) => line.length > 0);
 }
 
 // Schema para MapBox no nível da página
@@ -118,8 +124,14 @@ const mapboxSchema = z.object({
   floatingText: z.boolean().optional(),
   style: z.string().optional(),
   // Suporte para formato novo (centerLng/centerLat) e antigo (center.lng/center.lat)
-  centerLng: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
-  centerLat: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
+  centerLng: z
+    .union([z.string(), z.number()])
+    .transform(stringToNumber)
+    .optional(),
+  centerLat: z
+    .union([z.string(), z.number()])
+    .transform(stringToNumber)
+    .optional(),
   center: z
     .object({
       lng: z.union([z.string(), z.number()]).transform(stringToNumber),
@@ -135,63 +147,88 @@ const mapboxSchema = z.object({
       return val;
     }),
   zoom: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
-  bearing: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
+  bearing: z
+    .union([z.string(), z.number()])
+    .transform(stringToNumber)
+    .optional(),
   pitch: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
-  layers: z.union([
-    z.string().transform(processLayersText),
-    z.array(z.union([z.string(), mapBoxLayerSchema]))
-  ]).optional(),
+  layers: z
+    .union([
+      z.string().transform(processLayersText),
+      z.array(z.union([z.string(), mapBoxLayerSchema])),
+    ])
+    .optional(),
   token: z.string().optional(),
   views: z
     .array(
       z.object({
         id: z.string(),
         // Suporte para formato novo (centerLng/centerLat) e antigo (center.lng/center.lat)
-        centerLng: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
-        centerLat: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
-        center: z.object({
-          lng: z.union([z.string(), z.number()]).transform(stringToNumber),
-          lat: z.union([z.string(), z.number()]).transform(stringToNumber),
-        }).optional()
-        .transform((val, ctx) => {
-          // Se centerLng/centerLat existem, usar eles; senão usar center
-          const parent = ctx.path[0] as any;
-          if (parent?.centerLng !== undefined && parent?.centerLat !== undefined) {
-            return { lng: parent.centerLng, lat: parent.centerLat };
-          }
-          return val;
-        }),
-        duration: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
-        zoom: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
-        bearing: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
-        pitch: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
-        layers: z.union([
-          z.string().transform(processLayersText),
-          z.array(z.union([z.string(), mapBoxLayerSchema]))
-        ]).optional(),
-        mobile: z
+        centerLng: z
+          .union([z.string(), z.number()])
+          .transform(stringToNumber)
+          .optional(),
+        centerLat: z
+          .union([z.string(), z.number()])
+          .transform(stringToNumber)
+          .optional(),
+        center: z
           .object({
-            zoom: z.union([z.string(), z.number()]).transform(stringToNumber).optional(),
+            lng: z.union([z.string(), z.number()]).transform(stringToNumber),
+            lat: z.union([z.string(), z.number()]).transform(stringToNumber),
           })
           .optional()
-          .transform((val) => (val === null ? undefined : val)),
-        captions: z
-          .object({
-            title: z.union([z.string(), z.boolean()]).optional(),
-            notes: z.union([z.string(), z.boolean()]).optional(),
-            items: z
-              .array(
-                z.object({
-                  icon: z.string().optional(),
-                  colorIcon: z.string().optional(),
-                  typeIcon: z.enum(['outlined', 'rounded', 'sharp']).optional(),
-                  text: z.string().optional(),
-                })
-              )
-              .optional(),
-          })
-          .optional()
-          .transform((val) => (val === null ? undefined : val)),
+          .transform((val, ctx) => {
+            // Se centerLng/centerLat existem, usar eles; senão usar center
+            const parent = ctx.path[0] as any;
+            if (
+              parent?.centerLng !== undefined &&
+              parent?.centerLat !== undefined
+            ) {
+              return { lng: parent.centerLng, lat: parent.centerLat };
+            }
+            return val;
+          }),
+        duration: z
+          .union([z.string(), z.number()])
+          .transform(stringToNumber)
+          .optional(),
+        zoom: z
+          .union([z.string(), z.number()])
+          .transform(stringToNumber)
+          .optional(),
+        bearing: z
+          .union([z.string(), z.number()])
+          .transform(stringToNumber)
+          .optional(),
+        pitch: z
+          .union([z.string(), z.number()])
+          .transform(stringToNumber)
+          .optional(),
+        layers: z
+          .union([
+            z.string().transform(processLayersText),
+            z.array(z.union([z.string(), mapBoxLayerSchema])),
+          ])
+          .optional(),
+        // Mobile zoom agora é um campo direto
+        mobileZoom: z
+          .union([z.string(), z.number()])
+          .transform(stringToNumber)
+          .optional(),
+        // Campos de caption agora são diretos (não dentro de objeto captions)
+        title: z.string().optional(),
+        notes: z.string().optional(),
+        items: z
+          .array(
+            z.object({
+              icon: z.string().optional(),
+              colorIcon: z.string().optional(),
+              typeIcon: z.enum(['outlined', 'rounded', 'sharp']).optional(),
+              text: z.string().optional(),
+            })
+          )
+          .optional(),
       })
     )
     .optional(),
@@ -325,24 +362,20 @@ const componentSchema = z.object({
         bearing: z.number().optional(),
         pitch: z.number().optional(),
         layers: z.array(z.string()).optional(),
-        mobile: z
-          .object({
-            zoom: z.number().optional(),
-          })
-          .optional(),
-        captions: z
-          .object({
-            title: z.string().optional(),
-            notes: z.string().optional(),
-            items: z
-              .array(
-                z.object({
-                  icon: z.string().optional(),
-                  text: z.string().optional(),
-                })
-              )
-              .optional(),
-          })
+        // Mobile zoom agora é um campo direto
+        mobileZoom: z.number().optional(),
+        // Campos de caption agora são diretos (não dentro de objeto captions)
+        title: z.string().optional(),
+        notes: z.string().optional(),
+        items: z
+          .array(
+            z.object({
+              icon: z.string().optional(),
+              colorIcon: z.string().optional(),
+              typeIcon: z.enum(['outlined', 'rounded', 'sharp']).optional(),
+              text: z.string().optional(),
+            })
+          )
           .optional(),
       })
     )

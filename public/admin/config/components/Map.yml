@@ -44,7 +44,7 @@ map: &map
       widget: 'select'
       options: ['left', 'right', 'center']
       default: 'left'
-      required: false
+      required: true
       collapsed: true
     - label: 'Floating Text'
       name: 'floatingText'

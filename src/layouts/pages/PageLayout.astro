@@ -167,10 +167,10 @@ if (hasMapboxData) {
   
   mapboxConfig = {
     style: mapbox.style,
-    center: [parseFloat(centerLng), parseFloat(centerLat)],
-    zoom: parseFloat(mapbox.zoom) || 2,
-    bearing: parseFloat(mapbox.bearing) || 0,
-    pitch: parseFloat(mapbox.pitch) || 0,
+    center: [parseFloat(String(centerLng)), parseFloat(String(centerLat))],
+    zoom: parseFloat(String(mapbox.zoom || 2)),
+    bearing: parseFloat(String(mapbox.bearing || 0)),
+    pitch: parseFloat(String(mapbox.pitch || 0)),
     layers: processLayers(mapbox.layers),
   };
   
@@ -181,12 +181,13 @@ if (hasMapboxData) {
         const viewCenterLng = view.centerLng || view.center?.lng || 0;
         const viewCenterLat = view.centerLat || view.center?.lat || 0;
         
-        // Processar captions para gerar HTML dos ícones
-        let processedCaptions = view.captions || {};
-        if (view.captions && view.captions.items) {
+        // Processar captions usando a nova estrutura simplificada
+        let processedCaptions = {};
+        if (view.title || view.notes || view.items) {
           processedCaptions = {
-            ...view.captions,
-            items: view.captions.items.map(item => {
+            title: view.title,
+            notes: view.notes,
+            items: view.items ? view.items.map(item => {
               if (item.icon && item.colorIcon && item.typeIcon) {
                 // Gerar HTML do ícone usando os novos campos
                 const iconHtml = `<span class="material-symbols-${item.typeIcon}" style="color: ${item.colorIcon}">${item.icon}</span>`;
@@ -196,18 +197,21 @@ if (hasMapboxData) {
                 };
               }
               return item;
-            })
+            }) : []
           };
         }
 
+        // Processar mobile zoom usando a nova estrutura simplificada
+        const mobileConfig = view.mobileZoom ? { zoom: parseFloat(String(view.mobileZoom)) } : {};
+
         mapboxViews[view.id] = {
-          center: [parseFloat(viewCenterLng), parseFloat(viewCenterLat)],
-          duration: parseFloat(view.duration) || 4000,
-          zoom: parseFloat(view.zoom) || 2,
-          bearing: parseFloat(view.bearing) || 0,
-          pitch: parseFloat(view.pitch) || 0,
+          center: [parseFloat(String(viewCenterLng)), parseFloat(String(viewCenterLat))],
+          duration: parseFloat(String(view.duration || 4000)),
+          zoom: parseFloat(String(view.zoom || 2)),
+          bearing: parseFloat(String(view.bearing || 0)),
+          pitch: parseFloat(String(view.pitch || 0)),
           layers: processLayers(view.layers),
-          mobile: view.mobile || {},
+          mobile: mobileConfig,
           captions: processedCaptions,
         };
       }
