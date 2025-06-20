@@ -9,6 +9,7 @@ pageSettings:
   direction: left
   seoTitle: ''
   seoDescription: ''
+  animations: enable_all
 pageTheme:
   primaryColor: '#000009'
   secondaryColor: '#f0ead9'
@@ -142,6 +143,7 @@ components:
     longTitle: Uma breve introdução
     description: ''
     showInMenu: true
+    animations: true
     id: Introdução
     layout: default
     txtColor: Secondary
@@ -178,6 +180,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: TextoIntrodução
     layout: default
     txtColor: Primary
@@ -220,6 +223,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: true
+    animations: true
     id: Mapas
     txtColor: Secondary
     customTxtColor: ''
@@ -292,6 +296,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: Texto Principal
     layout: default
     txtColor: Primary
@@ -342,6 +347,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: Timeline
     layout: default
     txtColor: Secondary
@@ -395,6 +401,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: Dados
     layout: default
     txtColor: Primary
@@ -455,6 +462,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: true
+    animations: true
     id: Gráficos Destaque
     layout: default
     txtColor: Secondary
@@ -497,6 +505,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: Gráficos
     layout: default
     txtColor: Primary
@@ -569,6 +578,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: true
+    animations: true
     id: Destaque
     layout: default
     txtColor: Secondary
@@ -596,6 +606,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: Cards
     layout: default
     txtColor: Primary
@@ -668,6 +679,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: true
+    animations: true
     id: CTAs
     layout: text
     txtColor: Secondary
@@ -686,6 +698,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: Citação
     layout: default
     txtColor: Primary
@@ -724,6 +737,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: ReferenciasCreditos
     layout: default
     txtColor: Secondary
@@ -820,6 +834,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: Apoio
     layout: default
     txtColor: Primary
@@ -891,6 +906,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: CardsCall
     layout: default
     txtColor: Secondary
@@ -938,4 +954,3 @@ components:
             customBgColor: ''
             customTxtColor: ''
 ---
-

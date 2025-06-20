@@ -6,7 +6,7 @@ pageSettings:
   link_pt_br: /expulsions-pt
   link_en: /expulsions-en
   link_es: /expulsions-es
-  animations: enable_all
+  animations: disable_all
   direction: left
   seoTitle: ''
   seoDescription: ''
@@ -40,6 +40,7 @@ mapbox:
       centerLng: '-58.569363795'
       centerLat: '-1.917321274'
       zoom: '3'
+      mobileZoom: ''
       duration: '2000'
       bearing: '0'
       pitch: '0'
@@ -54,13 +55,26 @@ mapbox:
           typeIcon: outlined
           text: Amazon limits
         - icon: square
-          colorIcon: '#e21212ff'
+          colorIcon: '#e31c1cff'
           typeIcon: outlined
           text: Mining concessions
+      captions:
+        title: ''
+        notes: ''
+        items:
+          - icon: show_chart
+            colorIcon: '#bffa80ff'
+            typeIcon: outlined
+            text: Amazon limits
+          - icon: square
+            colorIcon: '#e21212ff'
+            typeIcon: outlined
+            text: Mining concessions
     - id: map1_view2
       centerLng: '-58.569363795000015'
       centerLat: '-1.917321274000017'
       zoom: '3.5'
+      mobileZoom: ''
       duration: '2000'
       bearing: '0'
       pitch: '0'
@@ -71,23 +85,27 @@ mapbox:
         tiamazonia
       title: ''
       notes: ''
-      items:
-        - icon: square
-          colorIcon: '#e21212ff'
-          typeIcon: outlined
-          text: Mining concessions
-        - icon: circle
-          colorIcon: '#797429ff'
-          typeIcon: outlined
-          text: Indigenous Territory
-        - icon: circle
-          colorIcon: '#b2b520ff'
-          typeIcon: outlined
-          text: Ecological reserves
+      captions:
+        title: ''
+        notes: ''
+        items:
+          - icon: square
+            colorIcon: '#e21212ff'
+            typeIcon: outlined
+            text: Mining concessions
+          - icon: circle
+            colorIcon: '#797429ff'
+            typeIcon: outlined
+            text: Indigenous Territory
+          - icon: circle
+            colorIcon: '#b2b520ff'
+            typeIcon: outlined
+            text: Ecological reserves
     - id: map1_view3
       centerLng: '-77.921'
       centerLat: '-2.038'
       zoom: '6'
+      mobileZoom: ''
       duration: '2000'
       bearing: '0'
       pitch: '0'
@@ -99,23 +117,27 @@ mapbox:
         anpamazonia
       title: ''
       notes: ''
-      items:
-        - icon: square
-          colorIcon: '#e21212ff'
-          typeIcon: outlined
-          text: Mining Concessions
-        - icon: circle
-          colorIcon: '#797429ff'
-          typeIcon: outlined
-          text: Indigenous Territory
-        - icon: circle
-          colorIcon: '#b2b520ff'
-          typeIcon: outlined
-          text: Ecological Reserves
+      captions:
+        title: ''
+        notes: ''
+        items:
+          - icon: square
+            colorIcon: '#e21212ff'
+            typeIcon: outlined
+            text: Mining Concessions
+          - icon: circle
+            colorIcon: '#797429ff'
+            typeIcon: outlined
+            text: Indigenous Territory
+          - icon: circle
+            colorIcon: '#b2b520ff'
+            typeIcon: outlined
+            text: Ecological Reserves
     - id: map1_view4
       centerLng: '-78.195'
       centerLat: '-3.893'
       zoom: '7'
+      mobileZoom: ''
       duration: '2000'
       bearing: '0'
       pitch: '0'
@@ -125,10 +147,13 @@ mapbox:
         expulsion-regions
         tiamazonia[pais==Ecuador]
         anpamazonia[pais==Ecuador]
+      title: ''
+      notes: ''
     - id: map2_view1
       centerLng: '-78.465'
       centerLat: '-3.584'
       zoom: '12.2'
+      mobileZoom: ''
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -138,15 +163,19 @@ mapbox:
         desajolos-mirador[Tipo==Comunidad]
       title: ''
       notes: ''
-      items:
-        - icon: circle
-          colorIcon: '#dbce48ff'
-          typeIcon: outlined
-          text: comunity centers
+      captions:
+        title: ''
+        notes: ''
+        items:
+          - icon: circle
+            colorIcon: '#dbce48ff'
+            typeIcon: outlined
+            text: comunity centers
     - id: map2_view2
       centerLng: '-78.465'
       centerLat: '-3.584'
       zoom: '12.2'
+      mobileZoom: ''
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -156,11 +185,14 @@ mapbox:
         sat-2013
       title: ''
       notes: ''
-      items:
-        - icon: close
-          colorIcon: '#d81313ff'
-          typeIcon: outlined
-          text: evicted families
+      captions:
+        title: ''
+        notes: ''
+        items:
+          - icon: close
+            colorIcon: '#d81313ff'
+            typeIcon: outlined
+            text: evicted families
     - id: map2_view3
       centerLng: '-78.465'
       centerLat: '-3.584'
@@ -172,13 +204,14 @@ mapbox:
         desajolos-mirador
         expulsion-regions
         sat-2018
-      title: ''
-      notes: ''
-      items:
-        - icon: close
-          colorIcon: '#dc1e1eff'
-          typeIcon: outlined
-          text: forced evictions
+      captions:
+        title: ''
+        notes: ''
+        items:
+          - icon: close
+            colorIcon: '#dc1e1eff'
+            typeIcon: outlined
+            text: forced evictions
     - id: map2_view4
       centerLng: '-78.47'
       centerLat: '-3.569'
@@ -213,35 +246,51 @@ mapbox:
         expulsion-regions
         sat-2018
     - id: map3_view1
-      centerLng: '-3.584'
-      centerLat: '-78.465'
+      centerLng: '-78.465'
+      centerLat: '-3.584'
       zoom: '12.5'
+      mobileZoom: ''
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
         sat-2013
         expulsion-regions
+      title: ''
+      notes: ''
     - id: map3_view2
       centerLng: '-78.465'
       centerLat: '-3.584'
       zoom: '12.5'
+      mobileZoom: ''
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
         sat-2018
         sat-2013
+      title: ''
+      notes: ''
+      captions: null
     - id: map4_view1
       centerLng: '-78.465'
       centerLat: '-3.572'
       zoom: '12.2'
+      mobileZoom: ''
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
         sitios-mirador
         sat-2018
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#d37c17ff'
+          typeIcon: outlined
+          text: archaeologic sites
+      captions: null
     - id: map4_view2
       centerLng: '-78.465'
       centerLat: '-3.572'
@@ -338,7 +387,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
-    animations: false
+    animations: true
     txtColor: Secondary
     bgColor: Highlight
     components:
@@ -394,7 +443,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
-    animations: false
+    animations: true
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
@@ -445,6 +494,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: true
+    animations: true
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Secondary
@@ -491,6 +541,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
@@ -517,6 +568,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Highlight
@@ -542,6 +594,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
@@ -579,6 +632,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Highlight
@@ -604,6 +658,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     txtColor: Secondary
     bgColor: Highlight
     components:
@@ -710,6 +765,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Highlight
@@ -735,6 +791,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
@@ -765,6 +822,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: true
+    animations: true
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Secondary
@@ -811,6 +869,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
@@ -840,17 +899,36 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     txtColor: Secondary
     bgColor: Highlight
     components:
+      - type: Text
+        hasDropCap: false
+        content: This satellite image shows the site of Project Mirador in 2013, after the destruction of the village of San Marcos and prior to the forced evictions of 2014-2017. At this moment the company Ecuacorriente was initiating the construction of the extraction complex, and few infrastructural works are visible. Most of the families alongside the Tundayme and Wawayme rivers still lived in the area.
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map3_view1
+      - type: Spacer
+        desktop: 500px
+        tablet: ''
+        mobile: ''
+      - type: Text
+        hasDropCap: false
+        content: This satellite image shows the mining site in 2018, after the violent evictions of 2014-2017 that depopulated the area. The territory changed dramatically as vast tracts of forests were completely destroyed. The mine infrastructure occupies a much larger space, the tailing dams and the crater are in advanced stages of construction.
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map3_view2
+      - type: VideoEmbed
+        wideVideo: false
+        videoUrl: https://www.youtube.com/embed/Fjw2gpkD6fc?si=kTkpYA8RpFDIfsBS
+        videoCaption: ''
+      - type: Spacer
+        desktop: 500px
+        tablet: ''
+        mobile: ''
     columnAlign: right
     floatingText: true
   - type: Group
@@ -859,6 +937,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
@@ -911,6 +990,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: true
+    animations: true
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Secondary
@@ -957,6 +1037,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
@@ -991,25 +1072,84 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     txtColor: Secondary
     bgColor: Highlight
     components:
+      - type: Text
+        hasDropCap: false
+        content: Several archaeological sites are located inside the mining concession area. The few sites that went through carbon tests show a concentration of dates between 800 and 1300 AD. According to one archaeological study, this allows to infer “a period of greater occupation” in this interval, just prior to the invasion of European colonizers. The communities that lived in this region were therefore the near ancestors of the Jivaroan peoples.
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map4_view1
+      - type: Spacer
+        desktop: 500px
+        tablet: ''
+        mobile: ''
+      - type: Text
+        hasDropCap: false
+        content: Documentation of excavation of a terrace structure st an archaeological site located where the village of San Marcos was. (site Z6DIII-04T).
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/arqueological-remains_02.jpg
+        alt: ''
+        description: ''
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/arqueological-remains_05.jpg
+        alt: ''
+        description: ''
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/arqueological-remains_07.jpg
+        alt: ''
+        description: ''
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/arqueological-remains_04.jpg
+        alt: ''
+        description: ''
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map4_view2
+      - type: Spacer
+        desktop: 500px
+        tablet: ''
+        mobile: ''
+      - type: Text
+        hasDropCap: false
+        content: Documentation of funerary urn found during the excavation of a terraza structure in archaeological site Z6C4-010
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/expulsion-arch-4.jpeg
+        alt: ''
+        description: ''
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map4_view3
+      - type: Spacer
+        desktop: 500px
+        tablet: ''
+        mobile: ''
+      - type: Text
+        hasDropCap: false
+        content: Documentation of the petroglyph found in archaeological site Z6DIII-020 before its destruction. An investigation commissioned by Ecuacorriente in 2006 identified a large petroglyph in this area. This study concludes by recommending a modification in the original project of the mine to “avoid the destruction” of the petroglyph and its adjacent archaeological structures, which included more than 30 terraced structures. These recommendations were ignored. In a field inspection conducted by the Ecuadorian National Institute of Cultural Heritage (INPC) in 2017, researchers found that the petroglyph had been “partially destroyed.”
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/expulsion-arch-3.jpeg
+        alt: ''
+        description: ''
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map4_view4
+      - type: Spacer
+        desktop: 500px
+        tablet: ''
+        mobile: ''
     columnAlign: left
     floatingText: true
   - type: Group
@@ -1018,6 +1158,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Highlight
@@ -1043,6 +1184,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
@@ -1064,6 +1206,7 @@ components:
     longTitle: ENVIRONMENTAL DISPOSSESSION AND CULTURAL DESTRUCTION
     description: ''
     showInMenu: true
+    animations: true
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Secondary
@@ -1100,6 +1243,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
@@ -1130,6 +1274,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: true
+    animations: true
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Highlight
@@ -1167,6 +1312,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: true
+    animations: true
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Highlight

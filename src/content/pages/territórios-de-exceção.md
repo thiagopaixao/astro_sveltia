@@ -12,6 +12,7 @@ pageSettings:
   seoKeywords:
     - keyword: Territórios de Exceção
   seoImage: ''
+  animations: enable_all
   type: pageSettings
 pageTheme:
   primaryColor: '#666666'
@@ -32,6 +33,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: true
+    animations: true
     id: TERRITÓRIOS DE EXCEÇÃO
     layout: default
     txtColor: Secondary
@@ -75,6 +77,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: _text1
     layout: default
     txtColor: Primary
@@ -99,6 +102,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: _map1
     txtColor: Secondary
     bgColor: Highlight
@@ -114,6 +118,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: true
+    animations: true
     id: 20 DE JUNHO DE 2018
     layout: default
     txtColor: Secondary
@@ -151,6 +156,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: _text2
     layout: default
     txtColor: Primary
@@ -175,6 +181,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: _map2
     txtColor: Secondary
     bgColor: Highlight
@@ -190,6 +197,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: _video1
     layout: default
     txtColor: Secondary
@@ -204,6 +212,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: _map3
     txtColor: Secondary
     bgColor: Highlight
@@ -219,6 +228,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: _video2
     layout: default
     txtColor: Secondary
@@ -233,6 +243,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: _text3
     layout: default
     txtColor: Primary
@@ -267,6 +278,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: _text4
     layout: default
     txtColor: Secondary
@@ -292,6 +304,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: _map4
     txtColor: Primary
     bgColor: Secundary
@@ -307,6 +320,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: _video3
     layout: default
     txtColor: Secondary
@@ -332,6 +346,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: _text5
     layout: default
     txtColor: Primary
@@ -358,6 +373,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
+    animations: true
     id: _map6
     txtColor: Primary
     bgColor: Secundary
