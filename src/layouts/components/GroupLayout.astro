@@ -1,6 +1,27 @@
 ---
-const { Component, props } = Astro.props;
-const { id, txtColor, bgColor, backgroundMedia, overlay } = props;
+import AnimationToggle from '../../components/AnimationToggle.astro';
+
+const { Component, props, pageSettings } = Astro.props;
+const { id, txtColor, bgColor, backgroundMedia, overlay, animations = true } = props;
+
+// Nova lógica com 3 opções: enable_all, disable_all, custom
+const globalAnimationMode = pageSettings?.animations || 'enable_all';
+
+let shouldDisableAnimations;
+
+switch (globalAnimationMode) {
+  case 'enable_all':
+    shouldDisableAnimations = false; // Sempre habilitado
+    break;
+  case 'disable_all':
+    shouldDisableAnimations = true; // Sempre desabilitado
+    break;
+  case 'custom':
+    shouldDisableAnimations = !animations; // Segue configuração individual
+    break;
+  default:
+    shouldDisableAnimations = false;
+}
 
 let imgBg;
 let videoBg;
@@ -15,19 +36,18 @@ if (backgroundMedia && backgroundMedia.length > 0) {
         videoBg = videoBg.startsWith('http') ? videoBg : `${import.meta.env.BASE_URL}${videoBg}`;
     }
 }
-
-                                         
-                                              
 ---
 
 <section id={id}>
-    <Component
-        txtColor={txtColor}
-        bgColor={bgColor}
-        imgBg={imgBg}
-        videoBg={videoBg}
-        overlay={overlay}
-    >
-        <slot />
-    </Component>
+    <AnimationToggle disabled={shouldDisableAnimations}>
+        <Component
+            txtColor={txtColor}
+            bgColor={bgColor}
+            imgBg={imgBg}
+            videoBg={videoBg}
+            overlay={overlay}
+        >
+            <slot />
+        </Component>
+    </AnimationToggle>
 </section>

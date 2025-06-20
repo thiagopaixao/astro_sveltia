@@ -257,6 +257,7 @@ const componentSchema = z.object({
   longTitle: z.string().optional(),
   description: z.string().optional(),
   showInMenu: z.boolean().optional(),
+  animations: z.boolean().optional().default(true),
   id: z.string().optional(),
 
   // Atributos específicos do CTA
@@ -448,6 +449,7 @@ const pagesCollection = defineCollection({
         seoDescription: z.string().optional(),
         seoKeywords: z.array(z.object({ keyword: z.string() })).optional(),
         seoImage: z.string().optional(),
+        animations: z.enum(['enable_all', 'disable_all', 'custom']).optional().default('enable_all'),
       })
       .optional(),
     pageTheme: z

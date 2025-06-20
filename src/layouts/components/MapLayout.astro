@@ -1,18 +1,41 @@
 ---
-const { Component, props } = Astro.props;
-const { id, columnAlign, floatingText, txtColor, bgColor, mapView, components, ...otherProps } = props;
+import AnimationToggle from '../../components/AnimationToggle.astro';
+
+const { Component, props, pageSettings } = Astro.props;
+const { id, columnAlign, floatingText, txtColor, bgColor, mapView, components, animations = true, ...otherProps } = props;
+
+// Nova lógica com 3 opções: enable_all, disable_all, custom
+const globalAnimationMode = pageSettings?.animations || 'enable_all';
+
+let shouldDisableAnimations;
+
+switch (globalAnimationMode) {
+  case 'enable_all':
+    shouldDisableAnimations = false; // Sempre habilitado
+    break;
+  case 'disable_all':
+    shouldDisableAnimations = true; // Sempre desabilitado
+    break;
+  case 'custom':
+    shouldDisableAnimations = !animations; // Segue configuração individual
+    break;
+  default:
+    shouldDisableAnimations = false;
+}
 ---
 
 <section id={id} style={{ backgroundColor: 'var(--clr-bg, transparent)' }}>
-  <Component
-    columnAlign={columnAlign}
-    floatingText={floatingText}
-    txtColor={txtColor}
-    bgColor={bgColor}
-    mapView={mapView}
-    components={components}
-    {...otherProps}
-  >
-    <slot />
-  </Component>
+  <AnimationToggle disabled={shouldDisableAnimations}>
+    <Component
+      columnAlign={columnAlign}
+      floatingText={floatingText}
+      txtColor={txtColor}
+      bgColor={bgColor}
+      mapView={mapView}
+      components={components}
+      {...otherProps}
+    >
+      <slot />
+    </Component>
+  </AnimationToggle>
 </section>

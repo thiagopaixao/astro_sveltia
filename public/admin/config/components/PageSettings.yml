@@ -28,6 +28,17 @@ pageSettings: &pageSettings
       required: false
       default: '#'
       collapsed: true
+    - label: 'Animations'
+      name: 'animations'
+      widget: 'select'
+      options: 
+        - { label: 'Enable All', value: 'enable_all' }
+        - { label: 'Disable All', value: 'disable_all' }
+        - { label: 'Custom by Components', value: 'custom' }
+      default: 'enable_all'
+      required: true
+      hint: 'Control animation behavior for the entire page'
+      collapsed: true
     - label: 'Text Direction'
       name: 'direction'
       widget: 'select'

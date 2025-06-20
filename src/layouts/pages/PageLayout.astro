@@ -352,7 +352,7 @@ const mainMenu = components
 
             if (Layout) {
               return (
-                <Layout Component={Component} props={props}>
+                <Layout Component={Component} props={props} pageSettings={pageSettings}>
                   {children}
                 </Layout>
               );

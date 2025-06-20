@@ -10,6 +10,11 @@ cta: &cta
       widget: 'hidden'
       default: 'Cta'
       collapsed: true
+    - label: 'ID'
+      name: 'id'
+      widget: 'string'
+      required: true
+      collapsed: true
     - label: 'Short Title'
       name: 'shortTitle'
       widget: 'string'
@@ -34,16 +39,12 @@ cta: &cta
       default: false
       hint: 'Ativar para mostrar este componente no menu de navegação'
       collapsed: true
-    - label: 'ID'
-      name: 'id'
-      widget: 'string'
+    - label: 'Animations'
+      name: 'animations'
+      widget: 'boolean'
+      default: true
       required: true
-      collapsed: true
-    - label: 'Layout'
-      name: 'layout'
-      widget: 'select'
-      options: ['media', 'text']
-      default: 'media'
+      hint: 'Enable/disable animations for this component'
       collapsed: true
     - label: 'Text Color'
       name: 'txtColor'

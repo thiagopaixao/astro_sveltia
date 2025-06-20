@@ -10,6 +10,11 @@ map: &map
       widget: 'hidden'
       default: 'Map'
       collapsed: true
+    - label: 'ID'
+      name: 'id'
+      widget: 'string'
+      required: true
+      collapsed: true
     - label: 'Short Title'
       name: 'shortTitle'
       widget: 'string'
@@ -34,10 +39,12 @@ map: &map
       default: false
       hint: 'Ativar para mostrar este componente no menu de navegação'
       collapsed: true
-    - label: 'ID'
-      name: 'id'
-      widget: 'string'
+    - label: 'Animations'
+      name: 'animations'
+      widget: 'boolean'
+      default: true
       required: true
+      hint: 'Enable/disable animations for this component'
       collapsed: true
     - label: 'Column Align'
       name: 'columnAlign'

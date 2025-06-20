@@ -37,11 +37,13 @@ pageTheme: &pageTheme
       widget: 'string'
       required: false
       collapsed: true
+      hint: 'Consulte uma fonte para títulos em [Google Fonts](https://fonts.google.com/)'
     - label: 'Text Font'
       name: 'textFont'
       widget: 'string'
       required: false
       collapsed: true
+      hint: 'Consulte uma fonte para textos em [Google Fonts](https://fonts.google.com/)'
     - label: 'Spacing Patterns'
       name: 'spacingPatterns'
       widget: 'list'

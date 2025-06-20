@@ -10,6 +10,11 @@ group: &group
       widget: 'hidden'
       default: 'Group'
       collapsed: true
+    - label: 'ID'
+      name: 'id'
+      widget: 'string'
+      required: true
+      collapsed: true
     - label: 'Short Title'
       name: 'shortTitle'
       widget: 'string'
@@ -34,16 +39,12 @@ group: &group
       default: false
       hint: 'Ativar para mostrar este grupo no menu de navegação'
       collapsed: true
-    - label: 'ID'
-      name: 'id'
-      widget: 'string'
+    - label: 'Animations'
+      name: 'animations'
+      widget: 'boolean'
+      default: true
       required: true
-      collapsed: true
-    - label: 'Layout'
-      name: 'layout'
-      widget: 'select'
-      options: ['default']
-      default: 'default'
+      hint: 'Enable/disable animations for this component'
       collapsed: true
     - label: 'Text Color'
       name: 'txtColor'

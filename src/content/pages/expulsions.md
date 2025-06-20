@@ -6,6 +6,7 @@ pageSettings:
   link_pt_br: /expulsions-pt
   link_en: /expulsions-en
   link_es: /expulsions-es
+  animations: enable_all
   direction: left
   seoTitle: ''
   seoDescription: ''
@@ -274,12 +275,12 @@ mapbox:
   mapView: ''
 components:
   - type: Group
+    id: EXPULSIONS
     shortTitle: EXPULSIONS
     longTitle: ''
     description: ''
     showInMenu: true
-    id: EXPULSIONS
-    layout: default
+    animations: true
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Secondary
@@ -330,12 +331,14 @@ components:
               desktop: 150px
               tablet: 150px
               mobile: 150px
+    layout: default
   - type: Map
+    id: _map1
     shortTitle: _map1
     longTitle: ''
     description: ''
     showInMenu: false
-    id: _map1
+    animations: false
     txtColor: Secondary
     bgColor: Highlight
     components:
@@ -386,12 +389,12 @@ components:
     columnAlign: right
     floatingText: true
   - type: Group
+    id: _text1
     shortTitle: _text1
     longTitle: ''
     description: ''
     showInMenu: false
-    id: _text1
-    layout: default
+    animations: false
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
@@ -435,13 +438,13 @@ components:
             src: /uploads/mapa-concession.jpg
             alt: ''
             description: ''
+    layout: default
   - type: Group
+    id: DISPOSSESION & DISPLACEMENT
     shortTitle: DISPOSSESION & DISPLACEMENT
     longTitle: ''
     description: ''
     showInMenu: true
-    id: DISPOSSESION & DISPLACEMENT
-    layout: default
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Secondary
@@ -481,13 +484,13 @@ components:
               desktop: 150px
               tablet: 150px
               mobile: 150px
+    layout: default
   - type: Group
+    id: _text2
     shortTitle: _text2
     longTitle: ''
     description: ''
     showInMenu: false
-    id: _text2
-    layout: default
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
@@ -507,13 +510,13 @@ components:
               Testimony of victims show that land acquisitions conducted by Ecuacorriente and its intermediaries, as well as negotiations of _servidumbre_ with state representatives, were conducted under forms [social, psychological and physical coercion of families who were unwilling to give up their properties](https://investigacionpsicosocial.files.wordpress.com/2017/02/herida-abierta-del-cc3b3ndor.pdf).
 
               These “forcibly land sales” began in the early 2000s, when the Mirador concession was under control of the Canadian corporation Corriente Resources. By 2010, when the concession was acquired by the Chinese consortium Ecuacorriente, nearly all families that lived in San Marcos, the main village of the parish, had left the area. San Marcos functioned as a sub-center after the town of Tundayme, being equipped with various social services such as a school, a church, a football square, a recreational park and water and electric infrastructures. These common facilities and the community houses were subsequently destroyed.
+    layout: default
   - type: Group
+    id: _video1
     shortTitle: _video1
     longTitle: ''
     description: ''
     showInMenu: false
-    id: _video1
-    layout: default
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Highlight
@@ -532,13 +535,13 @@ components:
             wideVideo: false
             videoUrl: https://player.vimeo.com/video/350133875?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
             videoCaption: Testimony of Carlos Cajamarca
+    layout: default
   - type: Group
+    id: _text3
     shortTitle: _text3
     longTitle: ''
     description: ''
     showInMenu: false
-    id: _text3
-    layout: default
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
@@ -569,13 +572,13 @@ components:
             src: /uploads/expulsion-cascomi-sign.jpg
             alt: ''
             description: A sign held by the rights advocacy agency CASCOMI at the house of the Rosario Wari warning the employees of Ecuacorriente to stay out of the area.
+    layout: default
   - type: Group
+    id: _video2
     shortTitle: _video2
     longTitle: ''
     description: ''
     showInMenu: false
-    id: _video2
-    layout: default
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Highlight
@@ -594,12 +597,13 @@ components:
             wideVideo: false
             videoUrl: https://player.vimeo.com/video/351216210?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
             videoCaption: Testimony of William Uyawari
+    layout: default
   - type: Map
+    id: _map2
     shortTitle: _map2
     longTitle: ''
     description: ''
     showInMenu: false
-    id: _map2
     txtColor: Secondary
     bgColor: Highlight
     components:
@@ -701,12 +705,11 @@ components:
     columnAlign: left
     floatingText: true
   - type: Group
+    id: _video3
     shortTitle: _video3
     longTitle: ''
     description: ''
     showInMenu: false
-    id: _video3
-    layout: default
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Highlight
@@ -725,13 +728,13 @@ components:
             wideVideo: false
             videoUrl: https://player.vimeo.com/video/351215838?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
             videoCaption: Testimony by Rosa Shiminaicela
+    layout: default
   - type: Group
+    id: _text4
     shortTitle: _text4
     longTitle: ''
     description: ''
     showInMenu: false
-    id: _text4
-    layout: default
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
@@ -755,13 +758,13 @@ components:
               They were also similar in the employment of disproportional force. Evictions involved the destruction of houses in front of the families, who lost their herds, crops, working tools, domestic utensils, cash savings and other property. The rubble of the house structures, together with personal belongings that were inside them, were buried on the same plot of land.  Testimonies of victims show that [evictions were conducted without any plan for re-location or sheltering](https://investigacionpsicosocial.files.wordpress.com/2017/02/herida-abierta-del-cc3b3ndor.pdf), leaving families in a vulnerable situation without housing.
 
               The systematic destruction of property shows that evictions had the intent of not only removing families from the area, but also terrorizing them, thereby preventing their return and eliminating social opposition against the mine. In that sense they were not only grave human rights violations, but also instruments of political repression.
+    layout: default
   - type: Group
+    id: ECOLOGICAL DESTRUCTION
     shortTitle: ECOLOGICAL DESTRUCTION
     longTitle: ''
     description: ''
     showInMenu: true
-    id: ECOLOGICAL DESTRUCTION
-    layout: default
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Secondary
@@ -801,13 +804,13 @@ components:
               desktop: 150px
               tablet: 150px
               mobile: 150px
+    layout: default
   - type: Group
+    id: _text5
     shortTitle: _text5
     longTitle: ''
     description: ''
     showInMenu: false
-    id: _text5
-    layout: default
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
@@ -830,12 +833,13 @@ components:
             src: /uploads/expulsion-mirador_14_drone_panoramica.jpg
             alt: ''
             description: The Mirador mine will have widespread environmental impacts on these fragile ecological system as a whole.
+    layout: default
   - type: Map
+    id: _map3
     shortTitle: _map3
     longTitle: ''
     description: ''
     showInMenu: false
-    id: _map3
     txtColor: Secondary
     bgColor: Highlight
     components:
@@ -850,12 +854,11 @@ components:
     columnAlign: right
     floatingText: true
   - type: Group
+    id: _text6
     shortTitle: _text6
     longTitle: ''
     description: ''
     showInMenu: false
-    id: _text6
-    layout: default
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
@@ -901,13 +904,13 @@ components:
                   <iframe title="A 3D model" width="800" height="480" src="https://sketchfab.com/models/91b29121fcf241dd80d13d92a4d157df/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
               </div>
             htmlCaption: ''
+    layout: default
   - type: Group
+    id: CULTURAL ERASURE
     shortTitle: CULTURAL ERASURE
     longTitle: ''
     description: ''
     showInMenu: true
-    id: CULTURAL ERASURE
-    layout: default
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Secondary
@@ -947,13 +950,13 @@ components:
               desktop: 150px
               tablet: 150px
               mobile: 150px
+    layout: default
   - type: Group
+    id: _text7
     shortTitle: _text7
     longTitle: ''
     description: ''
     showInMenu: false
-    id: _text7
-    layout: default
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
@@ -981,12 +984,13 @@ components:
             src: /uploads/arqueological-remains_01.jpg
             alt: ''
             description: Archaeological Site Z6DIII-098
+    layout: default
   - type: Map
+    id: _map4
     shortTitle: _map4
     longTitle: ''
     description: ''
     showInMenu: false
-    id: _map4
     txtColor: Secondary
     bgColor: Highlight
     components:
@@ -1009,12 +1013,11 @@ components:
     columnAlign: left
     floatingText: true
   - type: Group
+    id: _video4
     shortTitle: _video4
     longTitle: ''
     description: ''
     showInMenu: false
-    id: _video4
-    layout: default
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Highlight
@@ -1033,13 +1036,13 @@ components:
             wideVideo: false
             videoUrl: https://player.vimeo.com/video/350129967?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
             videoCaption: Testimony by Carlos Tendetza
+    layout: default
   - type: Group
+    id: _text8
     shortTitle: _text8
     longTitle: ''
     description: ''
     showInMenu: false
-    id: _text8
-    layout: default
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
@@ -1054,13 +1057,13 @@ components:
           - type: Text
             hasDropCap: true
             content: At the time of this writing, probably all archaeological sites in the Mirador have been completely destroyed. The studies and reports we analyzed also show that some sites have gone through “archaeological rescuing,” and that all material collected remain in possession of Ecuacorriente or the Ecuadorian State. According to the INPC report mentioned above, these archaeological materials are stored in precarious conditions, “without technical standards,” in a deposit at the Socialization and Training Room of the Mirador project. Therefore they are under risk of being irreparably damaged and lost. Further, indigenous communities that inhabit the area, the original owners of these cultural heritage, have not been consulted regarding these archaeological sites nor do they have information about the destination of the rescued objects.
+    layout: default
   - type: Group
+    id: ENVIRONMENTAL DISPOSSESSION AND CULTURAL DESTRUCTION
     shortTitle: ENVIRONMENTAL DISPOSSESSION AND CULTURAL DESTRUCTION
     longTitle: ENVIRONMENTAL DISPOSSESSION AND CULTURAL DESTRUCTION
     description: ''
     showInMenu: true
-    id: ENVIRONMENTAL DISPOSSESSION AND CULTURAL DESTRUCTION
-    layout: default
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Secondary
@@ -1090,13 +1093,13 @@ components:
               desktop: 500px
               tablet: 500px
               mobile: 500px
+    layout: default
   - type: Group
+    id: _text9
     shortTitle: _text9
     longTitle: ''
     description: ''
     showInMenu: false
-    id: _text9
-    layout: default
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
@@ -1120,13 +1123,13 @@ components:
               Numerous indigenous archaeological sites were destroyed by Project Mirador. Ignoring protocols of consultancy, archaeological rescue operations have been carried out without informing indigenous communities and official indigenous agencies in Ecuador, configuring a continuous act of cultural dispossession.
 
                Observed in relation to each other, the processes of expulsion and expropriation narrated here constitute multiple forms of displacement – of land, resources and culture. As such they should be repaired and remedied in multiple dimensions: social-economic, environmental and cultural.
+    layout: default
   - type: Group
+    id: DOWNLOAD REPORT
     shortTitle: DOWNLOAD REPORT
     longTitle: ''
     description: ''
     showInMenu: true
-    id: DOWNLOAD REPORT
-    layout: default
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Highlight
@@ -1157,13 +1160,13 @@ components:
               desktop: 200px
               tablet: 200px
               mobile: 100px
+    layout: default
   - type: Group
+    id: CREDITS
     shortTitle: CREDITS
     longTitle: ''
     description: ''
     showInMenu: true
-    id: CREDITS
-    layout: default
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Highlight
@@ -1221,4 +1224,6 @@ components:
                 William Sacher and Michelle Báez, ENTRETELONES DE LA MEGAMINERÍA EN EL ECUADOR. Quito: Acción Ecológica, 2015.
 
                 Gloria Chicaiza,El Enclave Minero de la Cordillera del Cóndor. Quito: Acción Ecológica, 2010.
+    layout: default
 ---
+
