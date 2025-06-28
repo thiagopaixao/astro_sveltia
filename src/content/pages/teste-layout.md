@@ -447,16 +447,16 @@ components:
               alt: 'Bloco: Image Block_Wide: On_Alt Text'
               description: 'Bloco: Image Block_Wide: On_Description'
       - type: ImageBlock
-        wideImage: false
+        wideImage: true
         src: /uploads/expulsion-san-marcos.jpg
         alt: ''
-        description: 'Bloco: Image Block_Wide: On_Description'
+        description: 'Bloco: Image Block_Description'
       - type: Column
         paddingTop: false
         paddingBottom: false
         components:
           - type: ImageBlock
-            wideImage: true
+            wideImage: false
             src: /uploads/expulsion-san-marcos.jpg
             alt: 'Bloco: Image Block_Wide: On_Alt Text'
             description: 'Bloco: Image Block_Wide: On_Description'
@@ -646,11 +646,14 @@ components:
         paddingTop: false
         paddingBottom: false
         components:
-          - type: ImageBlock
+          - type: VideoEmbed
             wideImage: true
             src: /uploads/arqueological-remains_07.jpg
             alt: 'Bloco: Column_Bloco: Image Block_Wide: On_Alt Text'
             description: 'Bloco: Column_Bloco: Image Block_Wide: On_Description'
+            wideVideo: true
+            videoUrl: https://player.vimeo.com/video/350133875?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
+            videoCaption: 'Bloco: Video Embed_Wide: On_Video Caption'
           - type: VideoEmbed
             wideVideo: true
             videoUrl: https://player.vimeo.com/video/350133875?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
