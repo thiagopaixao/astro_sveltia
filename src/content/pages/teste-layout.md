@@ -13,7 +13,7 @@ pageSettings:
   seoKeywords: []
   seoImage: ''
 pageTheme:
-  primaryColor: '#766f6f'
+  primaryColor: '#454040'
   secondaryColor: '#ffffff'
   highlightColor: '#bd7575'
   auxiliaryColor: '#3f3899'
