@@ -13,7 +13,7 @@ pageSettings:
   seoKeywords: []
   seoImage: ''
 pageTheme:
-  primaryColor: '#000000'
+  primaryColor: '#766f6f'
   secondaryColor: '#ffffff'
   highlightColor: '#bd7575'
   auxiliaryColor: '#3f3899'
@@ -939,27 +939,9 @@ components:
         paddingBottom: false
         components:
           - type: Cards
-            cardsArr:
-              - Card:
-                  type: Card
-                  title: Cards_Title_1
-                  text: 'Bloco: Column_Bloco: Cards_Text_Fonte: Paragraph_Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, cosectertur, adipisci velit, sed quia non numquam eius modi tempora incidunt.'
-                  link: null
-                  icon: ''
-              - Card:
-                  type: Card
-                  title: Cards_Title_2
-                  text: 'Bloco: Column_Bloco: Cards_Text_Fonte: Paragraph_Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, cosectertur, adipisci velit, sed quia non numquam eius modi tempora incidunt.'
-                  link: null
-                  icon: ''
+            cardsArr: []
           - type: Cards
-            cardsArr:
-              - Card:
-                  type: Card
-                  title: Cards_Title_3
-                  text: 'Bloco: Column_Bloco: Cards_Text_Fonte: Paragraph_Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, cosectertur, adipisci velit, sed quia non numquam eius modi tempora incidunt.'
-                  link: null
-                  icon: ''
+            cardsArr: []
           - type: LogosGroup
             logos:
               - image: /uploads/logo-2.png
