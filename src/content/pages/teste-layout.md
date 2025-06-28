@@ -390,7 +390,7 @@ components:
         paddingTop: false
         paddingBottom: false
         invertOnMobile: false
-        columnsAlign: 66-33
+        columnsAlign: 33-66
         column1:
           components:
             - type: Timeline
