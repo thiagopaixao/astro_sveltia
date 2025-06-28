@@ -444,6 +444,11 @@ components:
               src: /uploads/arqueological-remains_07.jpg
               alt: 'Bloco: Image Block_Wide: On_Alt Text'
               description: 'Bloco: Image Block_Wide: On_Description'
+      - type: ImageBlock
+        wideImage: true
+        src: /uploads/expulsion-dji_0446.jpeg
+        alt: 'Bloco: Image Block_Wide: On_Alt Text'
+        description: 'Bloco: Image Block_Wide: On_Description'
   - type: Group
     id: Grupo 7
     shortTitle: Grupo 7
