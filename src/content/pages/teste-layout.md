@@ -160,8 +160,8 @@ mapbox:
   mapView: ''
 components:
   - type: Group
-    id: Grupo 1 ok
-    shortTitle: Grupo 1 ok
+    id: Grupo 01
+    shortTitle: Grupo 01
     longTitle: ''
     description: ''
     showInMenu: false
@@ -199,8 +199,8 @@ components:
             mobile: ''
     layout: default
   - type: Group
-    id: Grupo 5_2
-    shortTitle: Grupo 5_2
+    id: Grupo 02
+    shortTitle: Grupo 02
     longTitle: ''
     description: ''
     showInMenu: true
@@ -252,8 +252,8 @@ components:
             byline: 'Bloco: Pullquote_Caption'
     layout: default
   - type: Group
-    id: Grupo 1_3
-    shortTitle: Grupo 1_3
+    id: Grupo 03
+    shortTitle: Grupo 03
     longTitle: ''
     description: ''
     showInMenu: true
@@ -289,8 +289,8 @@ components:
               ### Fonte: Heading 3_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
     layout: default
   - type: Group
-    id: Grupo 6_4
-    shortTitle: Grupo 6_4
+    id: Grupo 04
+    shortTitle: Grupo 04
     longTitle: ''
     description: ''
     showInMenu: true
@@ -345,8 +345,8 @@ components:
         mobile: ''
     layout: default
   - type: Group
-    id: Grupo 2
-    shortTitle: Grupo 2
+    id: Grupo 05
+    shortTitle: Grupo 05
     longTitle: ''
     description: ''
     showInMenu: false
@@ -377,77 +377,6 @@ components:
           - type: Text
             hasDropCap: false
             content: 'Bloco: Text_Content_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.'
-    layout: default
-  - type: Group
-    id: Grupo 3
-    shortTitle: Grupo 3
-    longTitle: ''
-    description: ''
-    showInMenu: false
-    animations: true
-    txtColor: Secondary
-    customTxtColor: ''
-    bgColor: Highlight
-    customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/expulsion-san-marcos.jpg
-    overlay: dark
-    components:
-      - type: ColumnSticky
-        txtColor: ''
-        bgColor: ''
-        paddingTop: true
-        paddingBottom: true
-        layout: title-bottom
-        title: 'BLOCO: COLUMN STICKY / TÍTULO: TITLE-BOTTOM'
-        components:
-          - type: Spacer
-            hasDropCap: false
-            content: |-
-              # BLOCO: COLUMN / FONTE: HEADING 1 / SED UT PERSPICIATIS UNDE OMNIS ISTE
-
-              Bloco Column_Bloco Text_Paragraph: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-            desktop: 800px
-            tablet: ''
-            mobile: ''
-          - type: Text
-            hasDropCap: false
-            content: |-
-              Bloco Column Sticky_Background: Image_Overlay: Dark_Padding: Top + Bottom
-
-              Bloco Spacer: 800px
-              Bloco Text
-
-              Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-
-              # Fonte: HEADING 1
-            imageLeft: /uploads/toxicriver_before2.png
-            imageRight: /uploads/toxicriver_after2.png
-            caption: 'Bloco: Compare\_Caption\_Fonte: Paragraph'
-          - type: Text
-            hasDropCap: false
-            content: |-
-              Bloco: Text_Content_Fonte: Paragraph Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-
-              - Bloco: Text_Content_Bulleted list_Sed ut perspiciatis unde omnis
-              - Sed ut perspiciatis unde omnis
-              - Sed ut perspiciatis unde omnis
-
-              1. Bloco: Text_Content_Numbered list_Nemo enim ipsam voluptatem
-              2. Nemo enim ipsam voluptatem
-              3. Nemo enim ipsam voluptatem
-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-
-              > Bloco: Text_Content_Block Quote_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-          - type: Pullquote
-            content: 'Bloco: Pullquote_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.'
-            txtColor: '#f5f5f5ff'
-            bgColor: '#b15959ff'
-            byline: Pullquote_Caption
     layout: default
   - type: Group
     id: Grupo 7
@@ -931,5 +860,51 @@ components:
                   url: https://www.advocacia.autonoma.xyz/
                   customTarget: ''
                   title: ''
+  - type: Group
+    id: Grupo xxx
+    shortTitle: Grupo xxxx
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/expulsion-san-marcos.jpg
+    overlay: dark
+    components:
+      - type: ColumnSticky
+        txtColor: ''
+        bgColor: ''
+        paddingTop: true
+        paddingBottom: true
+        layout: title-bottom
+        title: 'BLOCO: COLUMN STICKY / TÍTULO: TITLE-BOTTOM'
+        components:
+          - type: Spacer
+            hasDropCap: false
+            content: |-
+              # BLOCO: COLUMN / FONTE: HEADING 1 / SED UT PERSPICIATIS UNDE OMNIS ISTE
+
+              Bloco Column_Bloco Text_Paragraph: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+            desktop: 800px
+            tablet: ''
+            mobile: ''
+          - type: Text
+            hasDropCap: false
+            content: |-
+              Bloco Column Sticky_Background: Image_Overlay: Dark_Padding: Top + Bottom
+
+              Bloco Spacer: 800px
+              Bloco Text
+
+              Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+            imageLeft: /uploads/toxicriver_before2.png
+            imageRight: /uploads/toxicriver_after2.png
+            caption: 'Bloco: Compare\_Caption\_Fonte: Paragraph'
+    layout: default
 ---
 
