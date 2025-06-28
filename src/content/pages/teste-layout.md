@@ -317,7 +317,7 @@ components:
               alt: ''
               description: ''
             - type: Spacer
-              desktop: 150px
+              desktop: 50px
               tablet: ''
               mobile: ''
             - type: Pullquote
