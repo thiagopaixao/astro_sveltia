@@ -160,8 +160,8 @@ mapbox:
   mapView: ''
 components:
   - type: Group
-    id: Grupo 4_1
-    shortTitle: Grupo 4_1
+    id: Grupo 1 ok
+    shortTitle: Grupo 1 ok
     longTitle: ''
     description: ''
     showInMenu: false
@@ -354,7 +354,7 @@ components:
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Custom
-    customBgColor: '#a05454ff'
+    customBgColor: '#a05454a1'
     backgroundMedia:
       - type: backgroundImage
         imgSrc: /uploads/expulsion-san-marcos.jpg
@@ -366,38 +366,17 @@ components:
         paddingTop: true
         paddingBottom: true
         layout: title-bottom
-        title: 'BLOCO: COLUMN STICKY / TÍTULO: TITLE-BOTTOM'
+        title: 'BLOCO: COLUMN STICKY _ LAYOUT: TITLE-BOTTOM'
         components:
           - type: Text
             hasDropCap: false
-            content: |-
-              Bloco: Column Sticky\_Padding: On\_Background Color: Custom
-
-              Bloco: Text
-
-              Fonte: Paragraph\_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-
-              ###### 
-
-              ###### Fonte: Heading 6\_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-
-              ##### Fonte: Heading 5\_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-
-              #### Fonte: Heading 4\_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+            content: '###### Bloco: Column Sticky _ Padding: Top + Bottom _ Background Image _ Background Color: Custom _ Bloco: Text _ Content _ Fonte: Heading 6'
             desktop: 800px
             tablet: ''
             mobile: ''
           - type: Text
             hasDropCap: false
-            content: |-
-              Bloco Column Sticky_Background: Image_Overlay: Dark_Padding: Top + Bottom
-
-              Bloco Spacer: 800px
-              Bloco Text
-
-              Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-
-              # Fonte: HEADING 1
+            content: 'Bloco: Text_Content_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.'
     layout: default
   - type: Group
     id: Grupo 3
