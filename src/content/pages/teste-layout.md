@@ -307,32 +307,19 @@ components:
         columnsAlign: 33-66
         column1:
           components:
-            - type: Timeline
-              components:
-                - type: TimelineBullet
-                  text: 'Bloco: Timeline_Timeline Bullet 1_Text'
-                  content: |-
-                    ##### **Timeline Bullet 1_Content_Fonte: Heading 6**
-
-                    Content_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-                - type: TimelineBullet
-                  text: Timeline Bullet 2_Text
-                  content: 'Content_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.'
-                - type: TimelineBullet
-                  text: Timeline Bullet 3_Text
-                  content: ''
-                - type: TimelineBullet
-                  text: Timeline Bullet 4_Text
-                  content: ''
-                - type: TimelineBullet
-                  text: Timeline Bullet 5_Text
-                  content: |-
-                    Content_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium **doloremque laudantium**, totam rem aperiam. 
-
-                    ###### Fonte: Heading 6_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
-                - type: TimelineBullet
-                  text: Timeline Bullet 6_Text
-                  content: ''
+            - type: Spacer
+              desktop: 200px
+              tablet: ''
+              mobile: ''
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/arqueological-remains_05.jpg
+              alt: ''
+              description: ''
+            - type: Spacer
+              desktop: 150px
+              tablet: ''
+              mobile: ''
             - type: Pullquote
               content: 'Bloco: Pullquote _ Content_Fonte: Paragraph _ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.'
               txtColor: ''
