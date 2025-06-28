@@ -316,10 +316,6 @@ components:
               src: /uploads/arqueological-remains_05.jpg
               alt: ''
               description: ''
-            - type: Spacer
-              desktop: 50px
-              tablet: ''
-              mobile: ''
             - type: Pullquote
               content: 'Bloco: Pullquote _ Content_Fonte: Paragraph _ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.'
               txtColor: ''
