@@ -444,6 +444,11 @@ components:
               src: /uploads/arqueological-remains_07.jpg
               alt: 'Bloco: Image Block_Wide: On_Alt Text'
               description: 'Bloco: Image Block_Wide: On_Description'
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/expulsion-san-marcos.jpg
+        alt: ''
+        description: 'Bloco: Image Block_Wide: On_Description'
       - type: Column
         paddingTop: false
         paddingBottom: false
