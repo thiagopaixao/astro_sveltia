@@ -308,7 +308,7 @@ components:
         column1:
           components:
             - type: Spacer
-              desktop: 200px
+              desktop: 190px
               tablet: ''
               mobile: ''
             - type: ImageBlock
