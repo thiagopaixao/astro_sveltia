@@ -1,11 +1,14 @@
 ---
+import { marked } from 'marked';           // ①
+
 const { Component, props } = Astro.props;
 const { text, content } = props;
 
-//console.log("Conteúdo TimelineBullet: ", content)
+const htmlContent = content ? marked(content) : null; 
+//console.log("Conteúdo TimelineBullet: ", htmlContent)
+
 ---
-<Component text={text} content={content} >
-    <div set:html={content} >
-        <slot />
-    </div>
-</Component>
+<div>
+    <Component text={text} />
+    <Fragment set:html={htmlContent} />
+</div>

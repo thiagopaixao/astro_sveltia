@@ -35,12 +35,13 @@ columns: &columns
     - label: 'Column 1'
       name: 'column1'
       widget: 'object'
-      required: false
-      collapsed: true
+      required: true
+      collapsed: false
       fields:
         - label: 'Components'
           name: 'components'
           widget: 'list'
+          required: false
           collapsed: true
           types:
             - *text
@@ -60,12 +61,13 @@ columns: &columns
     - label: 'Column 2'
       name: 'column2'
       widget: 'object'
-      required: false
-      collapsed: true
+      required: true
+      collapsed: false
       fields:
         - label: 'Components'
           name: 'components'
           widget: 'list'
+          required: false
           collapsed: true
           types:
             - *text

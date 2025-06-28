@@ -13,13 +13,14 @@ innerColumns: &innerColumns
     - label: 'Column 1'
       name: 'column1'
       widget: 'object'
-      required: false
+      required: true
       collapsed: true
       default: null
       fields:
         - label: 'Components'
           name: 'components'
           widget: 'list'
+          required: false
           collapsed: true
           types:
             - *text
@@ -37,13 +38,14 @@ innerColumns: &innerColumns
     - label: 'Column 2'
       name: 'column2'
       widget: 'object'
-      required: false
-      collapsed: true
+      required: true
+      collapsed: false
       default: null
       fields:
         - label: 'Components'
           name: 'components'
           widget: 'list'
+          required: false
           collapsed: true
           types:
             - *text

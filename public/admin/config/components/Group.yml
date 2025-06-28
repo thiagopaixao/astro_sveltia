@@ -72,7 +72,7 @@ group: &group
         - { label: 'Secondary', value: 'Secondary' }
         - { label: 'Highlight', value: 'Highlight' }
         - { label: 'Custom', value: 'Custom' }
-      default: 'Secundary'
+      default: 'Secondary'
       required: false
       collapsed: true
     - label: 'Custom Background Color'
@@ -140,3 +140,4 @@ group: &group
         - *compare
         - *gallery
         - *slider
+        - *bigNumbers

@@ -632,7 +632,7 @@ card: &card
     - label: 'Link'
       name: 'link'
       widget: 'object'
-      required: false
+      required: true
       collapsed: true
       fields:
         - label: 'URL'
@@ -1024,13 +1024,14 @@ innerColumns: &innerColumns
     - label: 'Column 1'
       name: 'column1'
       widget: 'object'
-      required: false
+      required: true
       collapsed: true
       default: null
       fields:
         - label: 'Components'
           name: 'components'
           widget: 'list'
+          required: false
           collapsed: true
           types:
             - *text
@@ -1048,13 +1049,14 @@ innerColumns: &innerColumns
     - label: 'Column 2'
       name: 'column2'
       widget: 'object'
-      required: false
-      collapsed: true
+      required: true
+      collapsed: false
       default: null
       fields:
         - label: 'Components'
           name: 'components'
           widget: 'list'
+          required: false
           collapsed: true
           types:
             - *text
@@ -1112,6 +1114,7 @@ column: &column
         - *gallery
         - *slider
         - *cards
+        - *bigNumbers
 
 
 columns: &columns
@@ -1151,12 +1154,13 @@ columns: &columns
     - label: 'Column 1'
       name: 'column1'
       widget: 'object'
-      required: false
-      collapsed: true
+      required: true
+      collapsed: false
       fields:
         - label: 'Components'
           name: 'components'
           widget: 'list'
+          required: false
           collapsed: true
           types:
             - *text
@@ -1176,12 +1180,13 @@ columns: &columns
     - label: 'Column 2'
       name: 'column2'
       widget: 'object'
-      required: false
-      collapsed: true
+      required: true
+      collapsed: false
       fields:
         - label: 'Components'
           name: 'components'
           widget: 'list'
+          required: false
           collapsed: true
           types:
             - *text
@@ -1343,7 +1348,7 @@ group: &group
         - { label: 'Secondary', value: 'Secondary' }
         - { label: 'Highlight', value: 'Highlight' }
         - { label: 'Custom', value: 'Custom' }
-      default: 'Secundary'
+      default: 'Secondary'
       required: false
       collapsed: true
     - label: 'Custom Background Color'
@@ -1411,6 +1416,7 @@ group: &group
         - *compare
         - *gallery
         - *slider
+        - *bigNumbers
 
 cta: &cta
   label: 'CTA'
@@ -1634,6 +1640,7 @@ map: &map
         - *mapView
         - *imageBlock
         - *videoEmbed
+        - *timeline
 
 collections:
   - name: 'pages'

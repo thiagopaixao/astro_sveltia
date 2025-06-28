@@ -39,4 +39,5 @@ column: &column
         - *gallery
         - *slider
         - *cards
+        - *bigNumbers
 

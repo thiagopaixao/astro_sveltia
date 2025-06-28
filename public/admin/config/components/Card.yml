@@ -23,7 +23,7 @@ card: &card
     - label: 'Link'
       name: 'link'
       widget: 'object'
-      required: false
+      required: true
       collapsed: true
       fields:
         - label: 'URL'

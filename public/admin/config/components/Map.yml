@@ -90,3 +90,4 @@ map: &map
         - *mapView
         - *imageBlock
         - *videoEmbed
+        - *timeline
