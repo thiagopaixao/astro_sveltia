@@ -447,7 +447,7 @@ components:
               alt: 'Bloco: Image Block_Wide: On_Alt Text'
               description: 'Bloco: Image Block_Wide: On_Description'
       - type: ImageBlock
-        wideImage: true
+        wideImage: false
         src: /uploads/expulsion-san-marcos.jpg
         alt: ''
         description: 'Bloco: Image Block_Description'
@@ -456,7 +456,7 @@ components:
         paddingBottom: false
         components:
           - type: ImageBlock
-            wideImage: false
+            wideImage: true
             src: /uploads/expulsion-san-marcos.jpg
             alt: 'Bloco: Image Block_Wide: On_Alt Text'
             description: 'Bloco: Image Block_Wide: On_Description'
