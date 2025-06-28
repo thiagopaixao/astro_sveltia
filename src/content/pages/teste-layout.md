@@ -308,14 +308,14 @@ components:
         column1:
           components:
             - type: Spacer
-              desktop: 420px
+              desktop: 400px
               tablet: ''
               mobile: ''
             - type: ImageBlock
               wideImage: true
               src: /uploads/arqueological-remains_05.jpg
               alt: 'Bloco: Image Block_Alt Test'
-              description: 'Bloco: Image Block_Description_Sed ut perspiciatis unde omnis iste natus error'
+              description: 'Bloco: Image Block_Wide: On_Description_Sed ut perspiciatis unde omnis iste natus error'
             - type: Pullquote
               content: 'Bloco: Pullquote _ Content_Fonte: Paragraph _ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.'
               txtColor: ''
