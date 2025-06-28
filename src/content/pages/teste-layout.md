@@ -398,7 +398,7 @@ components:
               content: '##### Bloco: Columns _ Bigger Left _ Bloco: Text _ Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus'
             - type: Text
               hasDropCap: false
-              content: 'Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste'
+              content: 'Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error sit'
             - type: VideoEmbed
               wideVideo: true
               videoUrl: https://player.vimeo.com/video/350133875?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
@@ -423,7 +423,10 @@ components:
                     Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                 - type: TimelineBullet
                   text: Timeline Bullet 2_Text
-                  content: Timeline Bullet 2_Content_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                  content: |-
+                    ###### Timeline Bullet 2_Content_Fonte: Heading 6
+
+                    Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
                 - type: TimelineBullet
                   text: Timeline Bullet 3_Text
                   content: Timeline Bullet 3_Content_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
@@ -432,7 +435,10 @@ components:
                   content: Timeline Bullet 4_Content_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
                 - type: TimelineBullet
                   text: Timeline Bullet 5_Text
-                  content: Timeline Bullet 5_Content_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                  content: |-
+                    ###### Timeline Bullet 5_Content_Fonte: Heading 6
+
+                    Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
             - type: ImageBlock
               wideImage: true
               src: /uploads/arqueological-remains_07.jpg
