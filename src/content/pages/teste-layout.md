@@ -445,7 +445,7 @@ components:
               alt: 'Bloco: Image Block_Wide: On_Alt Text'
               description: 'Bloco: Image Block_Wide: On_Description'
       - type: ImageBlock
-        wideImage: true
+        wideImage: false
         src: /uploads/expulsion-dji_0446.jpeg
         alt: 'Bloco: Image Block_Wide: On_Alt Text'
         description: 'Bloco: Image Block_Wide: On_Description'
