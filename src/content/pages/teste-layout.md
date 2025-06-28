@@ -461,6 +461,28 @@ components:
             alt: 'Bloco: Image Block_Wide: On_Alt Text'
             description: 'Bloco: Image Block_Wide: On_Description'
   - type: Group
+    id: Grupo 07
+    shortTitle: Grupo 07
+    longTitle: ''
+    description: ''
+    showInMenu: true
+    animations: true
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Primary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Slider
+        slides:
+          - image: /uploads/arqueological-remains_03.jpg
+            caption: 'Bloco: Slider_Caption'
+          - image: /uploads/arqueological-remains_07.jpg
+            caption: 'Bloco: Slider_Caption_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+          - image: /uploads/arqueological-remains_02.jpg
+            caption: 'Bloco: Slider_Caption_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium'
+  - type: Group
     id: Grupo 7
     shortTitle: Grupo 7
     longTitle: ''
