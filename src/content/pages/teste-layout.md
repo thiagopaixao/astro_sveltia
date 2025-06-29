@@ -862,24 +862,6 @@ components:
     description: ''
     showInMenu: true
     animations: true
-    txtColor: Secondary
-    customTxtColor: ''
-    bgColor: Primary
-    customBgColor: ''
-    backgroundMedia: []
-    overlay: ''
-    components:
-      - type: VideoEmbed
-        wideVideo: false
-        videoUrl: https://player.vimeo.com/video/350133875?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
-        videoCaption: 'Bloco: Video Embed _ Video Caption'
-  - type: Group
-    id: Grupo 14
-    shortTitle: Grupo 14
-    longTitle: ''
-    description: ''
-    showInMenu: true
-    animations: true
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
