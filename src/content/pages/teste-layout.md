@@ -553,7 +553,7 @@ components:
         column2:
           components:
             - type: Spacer
-              desktop: 700px
+              desktop: 600px
               tablet: ''
               mobile: ''
             - type: Gallery
