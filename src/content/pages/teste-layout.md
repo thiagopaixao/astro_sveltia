@@ -459,7 +459,7 @@ components:
             wideImage: true
             src: /uploads/expulsion-san-marcos.jpg
             alt: 'Bloco: Image Block_Wide: On_Alt Text'
-            description: 'Bloco: Image Block_Wide: On_Description'
+            description: 'Bloco: Column_ Bloco: Image Block_Wide: On_Description'
   - type: Group
     id: Grupo 07
     shortTitle: Grupo 07
