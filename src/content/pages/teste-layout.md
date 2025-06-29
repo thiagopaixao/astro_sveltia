@@ -588,7 +588,7 @@ components:
     shortTitle: Grupo 09
     longTitle: ''
     description: ''
-    showInMenu: false
+    showInMenu: true
     animations: true
     txtColor: Secondary
     customTxtColor: ''
@@ -767,7 +767,7 @@ components:
     shortTitle: Grupo 11
     longTitle: ''
     description: ''
-    showInMenu: false
+    showInMenu: true
     animations: true
     txtColor: Secondary
     customTxtColor: ''
@@ -822,6 +822,57 @@ components:
             color: '#bc9f9fff'
             number: 30
             numberPercent: 30
+  - type: Group
+    id: Grupo 12
+    shortTitle: Grupo 12
+    longTitle: ''
+    description: ''
+    showInMenu: true
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: false
+        paddingBottom: false
+        components:
+          - type: Text
+            hasDropCap: false
+            content: '# Bloco: Columns _ Bloco: Text _ Fonte: Heading 1'
+          - type: Text
+            hasDropCap: false
+            content: |-
+              Bloco: Text _ Fonte: Paragraph _ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          - type: Compare
+            imageLeft: /uploads/smbefore-1581693790.png
+            imageRight: /uploads/smafter-1581693796.png
+            caption: 'Bloco: Compare _ Caption _ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium'
+  - type: Group
+    id: Grupo 13
+    shortTitle: Grupo 13
+    longTitle: ''
+    description: ''
+    showInMenu: true
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: VideoEmbed
+        wideVideo: false
+        videoUrl: ''
+        videoCaption: ''
   - type: Map
     id: Mapa 1
     shortTitle: Mapa 1
@@ -865,8 +916,8 @@ components:
     floatingText: true
     layout: default
   - type: Group
-    id: Grupo 11
-    shortTitle: Grupo 11
+    id: Grupo 111
+    shortTitle: Grupo 111
     longTitle: ''
     description: ''
     showInMenu: false
@@ -923,8 +974,8 @@ components:
     columnAlign: right
     floatingText: false
   - type: Group
-    id: Grupo 12
-    shortTitle: Grupo 12
+    id: Grupo 122
+    shortTitle: Grupo 122
     longTitle: ''
     description: ''
     showInMenu: false
@@ -985,8 +1036,8 @@ components:
     columnAlign: center
     floatingText: true
   - type: Group
-    id: Grupo 13
-    shortTitle: Grupo 13
+    id: Grupo 133
+    shortTitle: Grupo 133
     longTitle: ''
     description: ''
     showInMenu: false
