@@ -483,11 +483,11 @@ components:
           - image: /uploads/arqueological-remains_02.jpg
             caption: 'Bloco: Slider_Caption_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium'
   - type: Group
-    id: Grupo 007
-    shortTitle: Grupo 007
+    id: Grupo  08
+    shortTitle: Grupo 08
     longTitle: ''
     description: ''
-    showInMenu: false
+    showInMenu: true
     animations: true
     txtColor: Primary
     customTxtColor: ''
@@ -496,16 +496,135 @@ components:
     backgroundMedia: []
     overlay: ''
     components:
-      - type: Column
+      - type: Columns
         paddingTop: false
         paddingBottom: false
-        components:
-          - type: Slider
-            slides:
-              - image: /uploads/arqueological-remains_03.jpg
-                caption: 'Bloco: Slider_Caption_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
-              - image: /uploads/arqueological-remains_04.jpg
-                caption: 'Bloco: Slider_Caption_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: InnerColumns
+              column1:
+                components:
+                  - type: Text
+                    hasDropCap: false
+                    content: |-
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              column2:
+                components:
+                  - type: Text
+                    hasDropCap: false
+                    content: |-
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            - type: Timeline
+              components:
+                - type: TimelineBullet
+                  text: 'Bloco: Timeline_Timeline Bullet 1_Text'
+                  content: |-
+                    ###### Timeline Bullet_Content_Fonte: Heading 6_Sed ut perspiciatis unde omnis iste 
+
+                    Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                - type: TimelineBullet
+                  text: Timeline Bullet 2_Text
+                  content: 'Timeline Bullet_Content_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+                - type: TimelineBullet
+                  text: Timeline Bullet 3_Text
+                  content: |-
+                    ###### Timeline Bullet_Content_Fonte: Heading 6_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+
+                    Timeline Bullet_Content_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                - type: TimelineBullet
+                  text: Timeline Bullet 4_Text
+                  content: 'Timeline Bullet_Content_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.'
+              desktop: '10'
+              tablet: '10'
+              mobile: '10'
+        column2:
+          components:
+            - type: Spacer
+              desktop: 400px
+              tablet: ''
+              mobile: ''
+            - type: BigNumbers
+              alignment: caption-bottom
+              items:
+                - number: '500'
+                  caption: 'Bloco: Big Numbers_Caption'
+                - number: '600'
+                  caption: 'Bloco: Big Numbers_Caption'
+                - number: '700'
+                  caption: 'Bloco: Big Numbers_Caption'
+    layout: default
+  - type: Group
+    id: Grupo  8- chart bar
+    shortTitle: Grupo 8- chart bar
+    longTitle: ''
+    description: ''
+    showInMenu: true
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Timeline
+              components:
+                - type: TimelineBullet
+                  text: Timeline Bullet 1_Text
+                  content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                - type: TimelineBullet
+                  text: Timeline Bullet 2_Text
+                  content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                - type: TimelineBullet
+                  text: Timeline Bullet 3_Text
+                  content: ''
+                - type: TimelineBullet
+                  text: Timeline Bullet 4_Text
+                  content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+              desktop: '10'
+              tablet: '10'
+              mobile: '10'
+        column2:
+          components:
+            - type: ChartBar
+              chartTitle: 'Bloco: Columns_Bloco: Chart Bar_Chart Title'
+              chartNotes: Chart Notes_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
+              chartBars:
+                - label: Label 1
+                  color: '#c44545ff'
+                  number: 26
+                  numberPercent: 26
+                - label: Label 2
+                  color: '#7b0a0aff'
+                  number: 52.5
+                  numberPercent: 52
+                - label: Label 3
+                  color: '#cd9d9dff'
+                  number: 78.6
+                  numberPercent: 78
+                - label: Label 4
+                  color: '#5e1212ff'
+                  number: 63.2
+                  numberPercent: 63
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/arqueological-remains_01.jpg
+              alt: 'Bloco: Image Block_Alt Text'
+              description: 'Bloco: Image Block_Description'
+    layout: default
   - type: Group
     id: Grupo 7
     shortTitle: Grupo 7
@@ -576,82 +695,6 @@ components:
                 caption: 'Bloco: Slider_Caption_Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.'
               - image: /uploads/expulsion-arch-4.jpeg
                 caption: ''
-    layout: default
-  - type: Group
-    id: Grupo  8
-    shortTitle: Grupo 8
-    longTitle: ''
-    description: ''
-    showInMenu: true
-    animations: true
-    txtColor: Primary
-    customTxtColor: ''
-    bgColor: Secondary
-    customBgColor: ''
-    backgroundMedia: []
-    overlay: ''
-    components:
-      - type: Columns
-        paddingTop: false
-        paddingBottom: false
-        invertOnMobile: false
-        columnsAlign: 66-33
-        column1:
-          components:
-            - type: Timeline
-              components:
-                - type: TimelineBullet
-                  text: Timeline Bullet 1_Text_Sed ut perspiciatis unde omnis
-                  content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-                - type: TimelineBullet
-                  text: Timeline Bullet 2_Text_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
-                  content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-                - type: TimelineBullet
-                  text: Timeline Bullet 3_Text_
-                  content: ''
-                - type: TimelineBullet
-                  text: Timeline Bullet 4_Text_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. - Fim do texto
-                  content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-              desktop: '10'
-              tablet: '10'
-              mobile: '10'
-            - type: Gallery
-              description: 'Bloco: Gallery_Description_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
-              uniqid: 'Bloco: Gallery_Unique ID'
-              images:
-                - image: /uploads/arqueological-remains_01.jpg
-                  caption: Bloco Gallery_Caption_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                - image: /uploads/arqueological-remains_02.jpg
-                  caption: Bloco Gallery_Caption_
-                - image: /uploads/arqueological-remains_03.jpg
-                  caption: Bloco Gallery_Caption_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-        column2:
-          components:
-            - type: ChartBar
-              chartTitle: 'Bloco: Columns_Bloco: Chart Bar_Chart Title'
-              chartNotes: Chart Notes_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
-              chartBars:
-                - label: Label 1
-                  color: '#c44545ff'
-                  number: 26
-                  numberPercent: 26
-                - label: Label 2
-                  color: '#7b0a0aff'
-                  number: 52.5
-                  numberPercent: 52
-                - label: Label 3
-                  color: '#cd9d9dff'
-                  number: 78.6
-                  numberPercent: 78
-                - label: Label 4
-                  color: '#5e1212ff'
-                  number: 63.2
-                  numberPercent: 63
-            - type: ImageBlock
-              wideImage: true
-              src: /uploads/arqueological-remains_01.jpg
-              alt: 'Bloco: Image Block_Alt Text'
-              description: 'Bloco: Image Block_Description'
     layout: default
   - type: Group
     id: Grupo 9
