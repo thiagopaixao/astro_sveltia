@@ -899,10 +899,7 @@ components:
         components:
           - type: Text
             hasDropCap: false
-            content: |-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+            content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
   - type: Map
     id: Mapa 1
     shortTitle: Mapa 1
@@ -910,9 +907,9 @@ components:
     description: ''
     showInMenu: true
     animations: true
-    txtColor: Primary
+    txtColor: Secondary
     customTxtColor: ''
-    bgColor: Highlight
+    bgColor: Primary
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
@@ -941,7 +938,17 @@ components:
         content: '##### Bloco: Map_Column Align: Left_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error'
       - type: Text
         hasDropCap: false
-        content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        content: 'Fonte: Paragraph _ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+      - type: Spacer
+        desktop: 300px
+        tablet: ''
+        mobile: ''
+      - type: Text
+        hasDropCap: false
+        content: '###### Fonte: Heading 6 _ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium'
+      - type: Text
+        hasDropCap: false
+        content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
     columnAlign: left
     floatingText: true
     layout: default
@@ -1148,8 +1155,8 @@ components:
     columnAlign: right
     floatingText: true
   - type: Group
-    id: Grupo 14
-    shortTitle: Grupo 14
+    id: Grupo 15
+    shortTitle: Grupo 15
     longTitle: ''
     description: ''
     showInMenu: true
