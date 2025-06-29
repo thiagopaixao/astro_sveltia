@@ -852,12 +852,30 @@ components:
 
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
           - type: Compare
-            imageLeft: /uploads/smbefore-1581693790.png
-            imageRight: /uploads/smafter-1581693796.png
+            imageLeft: /uploads/map.png
+            imageRight: /uploads/map-1.png
             caption: 'Bloco: Compare _ Caption _ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium'
   - type: Group
     id: Grupo 13
     shortTitle: Grupo 13
+    longTitle: ''
+    description: ''
+    showInMenu: true
+    animations: true
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Primary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: VideoEmbed
+        wideVideo: false
+        videoUrl: https://player.vimeo.com/video/350133875?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
+        videoCaption: 'Bloco: Video Embed _ Video Caption'
+  - type: Group
+    id: Grupo 14
+    shortTitle: Grupo 14
     longTitle: ''
     description: ''
     showInMenu: true
@@ -869,10 +887,10 @@ components:
     backgroundMedia: []
     overlay: ''
     components:
-      - type: VideoEmbed
-        wideVideo: false
-        videoUrl: ''
-        videoCaption: ''
+      - type: Compare
+        imageLeft: /uploads/map.png
+        imageRight: /uploads/map-1.png
+        caption: 'Bloco: Compare _ Caption _ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium'
   - type: Map
     id: Mapa 1
     shortTitle: Mapa 1
