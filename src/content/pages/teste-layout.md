@@ -882,10 +882,12 @@ components:
     animations: true
     txtColor: Secondary
     customTxtColor: ''
-    bgColor: Primary
+    bgColor: ''
     customBgColor: ''
-    backgroundMedia: []
-    overlay: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/expulsion-san-marcos.jpg
+    overlay: dark
     components:
       - type: ColumnSticky
         txtColor: ''
