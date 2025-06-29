@@ -649,12 +649,28 @@ components:
         invertOnMobile: false
         columnsAlign: 66-33
         column1:
-          components: []
+          components:
+            - type: ChartPercentage
+              chartPercentageTitle: 'Bloco: Columns _ Bloco: Chart Percentage _Title'
+              chartPercentageNotes: 'Bloco: Chart Percentage _ Chart Notes'
+              chartPercentageValues:
+                - label: Value _ Label 1
+                  color: '#b06d6dff'
+                  number: 20
+                - label: Value _ Label 2
+                  color: '#be3c3cff'
+                  number: 30
+                - label: Value _ Label 3
+                  color: '#7c1818ff'
+                  number: 40
+                - label: Value _ Label 4
+                  color: '#4e0808ff'
+                  number: 10
         column2:
           components:
             - type: ChartBar
-              chartTitle: 'Bloco: Columns_Bloco: Chart Bar_Chart Title'
-              chartNotes: Chart Notes_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
+              chartTitle: 'Bloco: Columns _ Bloco: Chart Bar _ Chart Title'
+              chartNotes: Chart Notes_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
               chartBars:
                 - label: Label 1
                   color: '#c44545ff'
