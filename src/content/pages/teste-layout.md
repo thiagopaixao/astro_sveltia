@@ -694,10 +694,6 @@ components:
                   number: 20
                   numberPercent: 40
                 - label: Chart Bar _ Label 4
-                  color: '#b32929ff'
-                  number: 20
-                  numberPercent: 20
-                - label: Chart Bar _ Label 5
                   color: '#650606ff'
                   number: 50
                   numberPercent: 50
@@ -723,6 +719,26 @@ components:
                   color: '#5e1212ff'
                   number: 63.2
                   numberPercent: 63
+            - type: Spacer
+              desktop: 400px
+              tablet: ''
+              mobile: ''
+            - type: Text
+              hasDropCap: false
+              content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            - type: ChartPercentage
+              chartPercentageTitle: 'Bloco: Chart Percentage _ Title'
+              chartPercentageNotes: 'Bloco: Chart Percentage _ Chart Notes'
+              chartPercentageValues:
+                - label: Value _ Label 1
+                  color: '#9c1111ff'
+                  number: 30
+                - label: Value _ Label 2
+                  color: '#c45a5aff'
+                  number: 20
+                - label: Value _ Label 3
+                  color: '#4f0d0dff'
+                  number: 50
     layout: default
   - type: Map
     id: Mapa 1
