@@ -762,6 +762,42 @@ components:
                   color: '#4f0d0dff'
                   number: 50
     layout: default
+  - type: Group
+    id: Grupo 11
+    shortTitle: Grupo 11
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: ChartPercentage
+        chartPercentageTitle: 'Bloco: Chart Percentage _ Title'
+        chartPercentageNotes: 'Bloco: Chart Percentage _ Chart Notes _ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+        chartPercentageValues:
+          - label: Value _ Label 1
+            color: '#baa0a0ff'
+            number: 20
+          - label: Value _ Label 2
+            color: '#9e6161ff'
+            number: 30
+          - label: Value _ Label 3
+            color: '#ed7e7eff'
+            number: 10
+          - label: Value _ Label 4
+            color: '#bb3a3aff'
+            number: 10
+          - label: Value _ Label 5
+            color: '#991a1aff'
+            number: 20
+          - label: Value _ Label 6
+            color: '#570a0aff'
+            number: 10
   - type: Map
     id: Mapa 1
     shortTitle: Mapa 1
