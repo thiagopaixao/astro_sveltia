@@ -556,7 +556,7 @@ components:
         column2:
           components:
             - type: Spacer
-              desktop: 600px
+              desktop: 550px
               tablet: ''
               mobile: ''
             - type: Gallery
@@ -570,7 +570,7 @@ components:
                 - image: /uploads/expulsion-border-peru-ecuador.jpg
                   caption: 'Bloco: Gallery_Image 3_Caption_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
             - type: Spacer
-              desktop: 300px
+              desktop: 400px
               tablet: ''
               mobile: ''
             - type: BigNumbers
