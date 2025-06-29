@@ -719,7 +719,7 @@ components:
                   color: '#5e1212ff'
                   number: 63.2
                   numberPercent: 63
-              desktop: 300px
+              desktop: 250px
               tablet: ''
               mobile: ''
             - type: ChartBar
