@@ -873,6 +873,34 @@ components:
         imageLeft: /uploads/map.png
         imageRight: /uploads/map-1.png
         caption: 'Bloco: Compare _ Caption _ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium'
+  - type: Group
+    id: Grupo 14
+    shortTitle: Grupo 14
+    longTitle: ''
+    description: ''
+    showInMenu: true
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: ColumnSticky
+        txtColor: ''
+        bgColor: ''
+        paddingTop: true
+        paddingBottom: true
+        layout: title-bottom
+        title: 'BLOCO: COLUMN STICKY _ LAYOUT: TITLE-BOTTOM _ TÍTULO _ SED UT PERSPICIATIS UNDE OMNIS ISTE NATUS ERROR SIT VOLUPTATEM'
+        components:
+          - type: Text
+            hasDropCap: false
+            content: |-
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
   - type: Map
     id: Mapa 1
     shortTitle: Mapa 1
