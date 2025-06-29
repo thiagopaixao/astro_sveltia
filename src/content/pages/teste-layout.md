@@ -552,8 +552,12 @@ components:
                   caption: 'Bloco: Gallery_Image 3_Caption_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
         column2:
           components:
+            - type: Spacer
+              desktop: 200px
+              tablet: ''
+              mobile: ''
             - type: Gallery
-              description: 'Bloco: Gallery_Description_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+              description: 'Bloco: Gallery_Description_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium'
               uniqid: 'Bloco: Gallery_Unique ID'
               images:
                 - image: /uploads/expulsion-arch-3.jpeg
