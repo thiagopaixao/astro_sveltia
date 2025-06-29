@@ -798,6 +798,30 @@ components:
           - label: Value _ Label 6
             color: '#570a0aff'
             number: 10
+      - type: ChartBar
+        chartTitle: 'Bloco: Chart Bar_Title'
+        chartNotes: 'Bloco: Chart Bar_Chart Notes_ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+        chartBars:
+          - label: Chart Bar _ Label 1
+            color: '#bc9f9fff'
+            number: 60
+            numberPercent: 60
+          - label: Chart Bar _ Label 2
+            color: '#bc9f9fff'
+            number: 40
+            numberPercent: 40
+          - label: Chart Bar _ Label 3
+            color: '#bc9f9fff'
+            number: 70
+            numberPercent: 70
+          - label: Chart Bar _ Label 4
+            color: '#bc9f9fff'
+            number: 80
+            numberPercent: 80
+          - label: Chart Bar _ Label 5
+            color: '#bc9f9fff'
+            number: 30
+            numberPercent: 30
   - type: Map
     id: Mapa 1
     shortTitle: Mapa 1
