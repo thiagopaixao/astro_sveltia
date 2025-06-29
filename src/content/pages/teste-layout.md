@@ -880,9 +880,9 @@ components:
     description: ''
     showInMenu: true
     animations: true
-    txtColor: Primary
+    txtColor: Secondary
     customTxtColor: ''
-    bgColor: Secondary
+    bgColor: Primary
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
