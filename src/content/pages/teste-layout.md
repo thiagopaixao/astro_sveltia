@@ -666,25 +666,60 @@ components:
                 - label: Value _ Label 4
                   color: '#4e0808ff'
                   number: 10
+            - type: InnerColumns
+              column1:
+                components:
+                  - type: Text
+                    hasDropCap: false
+                    content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              column2:
+                components:
+                  - type: Text
+                    hasDropCap: false
+                    content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            - type: ChartBar
+              chartTitle: 'Bloco: Chart Bar _ Title'
+              chartNotes: 'Bloco: Chart Bar _ Chart Notes _ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium'
+              chartBars:
+                - label: Chart Bar _ Label 1
+                  color: '#ac7272ff'
+                  number: 60
+                  numberPercent: 60
+                - label: Chart Bar _ Label 2
+                  color: '#b14e4eff'
+                  number: 40
+                  numberPercent: 40
+                - label: Chart Bar _ Label 3
+                  color: '#b32929ff'
+                  number: 20
+                  numberPercent: 40
+                - label: Chart Bar _ Label 4
+                  color: '#b32929ff'
+                  number: 20
+                  numberPercent: 20
+                - label: Chart Bar _ Label 5
+                  color: '#650606ff'
+                  number: 50
+                  numberPercent: 50
         column2:
           components:
             - type: ChartBar
-              chartTitle: 'Bloco: Columns _ Bloco: Chart Bar _ Chart Title'
+              chartTitle: 'Bloco: Columns _ Bloco: Chart Bar _ Title'
               chartNotes: Chart Notes_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
               chartBars:
-                - label: Label 1
+                - label: Chart Bart _ Label 1
                   color: '#c44545ff'
                   number: 26
                   numberPercent: 26
-                - label: Label 2
+                - label: Chart Bart _ Label 2
                   color: '#7b0a0aff'
                   number: 52.5
                   numberPercent: 52
-                - label: Label 3
+                - label: Chart Bart _ Label 3
                   color: '#cd9d9dff'
                   number: 78.6
                   numberPercent: 78
-                - label: Label 4
+                - label: Chart Bart _ Label 4
                   color: '#5e1212ff'
                   number: 63.2
                   numberPercent: 63
