@@ -584,8 +584,54 @@ components:
                   caption: 'Bloco: Big Numbers_Caption'
     layout: default
   - type: Group
-    id: Grupo  8- chart bar
-    shortTitle: Grupo 8- chart bar
+    id: Grupo 09
+    shortTitle: Grupo 09
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/expulsion-san-marcos.jpg
+    overlay: dark
+    components:
+      - type: ColumnSticky
+        txtColor: ''
+        bgColor: ''
+        paddingTop: true
+        paddingBottom: true
+        layout: title-bottom
+        title: 'BLOCO: COLUMN STICKY / TÍTULO: TITLE-BOTTOM'
+        components:
+          - type: Spacer
+            hasDropCap: false
+            content: |-
+              # BLOCO: COLUMN / FONTE: HEADING 1 / SED UT PERSPICIATIS UNDE OMNIS ISTE
+
+              Bloco Column_Bloco Text_Paragraph: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+            desktop: 800px
+            tablet: ''
+            mobile: ''
+          - type: Text
+            hasDropCap: false
+            content: |-
+              Bloco Column Sticky_Background: Image_Overlay: Dark_Padding: Top + Bottom
+
+              Bloco Spacer: 800px
+              Bloco Text
+
+              Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+            imageLeft: /uploads/toxicriver_before2.png
+            imageRight: /uploads/toxicriver_after2.png
+            caption: 'Bloco: Compare\_Caption\_Fonte: Paragraph'
+    layout: default
+  - type: Group
+    id: Grupo 10
+    shortTitle: Grupo 10
     longTitle: ''
     description: ''
     showInMenu: true
@@ -603,24 +649,7 @@ components:
         invertOnMobile: false
         columnsAlign: 66-33
         column1:
-          components:
-            - type: Timeline
-              components:
-                - type: TimelineBullet
-                  text: Timeline Bullet 1_Text
-                  content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-                - type: TimelineBullet
-                  text: Timeline Bullet 2_Text
-                  content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-                - type: TimelineBullet
-                  text: Timeline Bullet 3_Text
-                  content: ''
-                - type: TimelineBullet
-                  text: Timeline Bullet 4_Text
-                  content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-              desktop: '10'
-              tablet: '10'
-              mobile: '10'
+          components: []
         column2:
           components:
             - type: ChartBar
@@ -643,119 +672,24 @@ components:
                   color: '#5e1212ff'
                   number: 63.2
                   numberPercent: 63
-            - type: ImageBlock
-              wideImage: true
-              src: /uploads/arqueological-remains_01.jpg
-              alt: 'Bloco: Image Block_Alt Text'
-              description: 'Bloco: Image Block_Description'
     layout: default
-  - type: Group
-    id: Grupo 7
-    shortTitle: Grupo 7
+  - type: Map
+    id: Mapa 1
+    shortTitle: Mapa 1
     longTitle: ''
     description: ''
     showInMenu: true
     animations: true
     txtColor: Primary
     customTxtColor: ''
-    bgColor: Secondary
+    bgColor: Highlight
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
     components:
-      - type: Column
-        hasDropCap: false
-        content: |-
-          Imagem do background com Overlay dark
-
-          Bloco texto solto sem bloco coluna - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-
-          Trecho parágrafo em Negrito - **Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.&#32;**_Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt._ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-        paddingTop: false
-        paddingBottom: false
-        components:
-          - type: ChartPercentage
-            chartPercentageTitle: 'Bloco: Column_Bloco: Chart Percentage_Title'
-            chartPercentageNotes: 'Bloco: Chart Percentage_Chart Notes_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
-            chartPercentageValues:
-              - label: Value Label 1
-                color: '#958e8eff'
-                number: 8
-              - label: Value Label 2
-                color: '#c157a0ff'
-                number: 4
-              - label: Value Label 3
-                color: '#8c1818ff'
-                number: 10
-              - label: Value Label 4
-                color: '#3d1e85ff'
-                number: 50
-              - label: Value Label 5
-                color: '#c3a822ff'
-                number: 5
-              - label: Value Label 6
-                color: '#09c82fff'
-                number: 1
-              - label: Value Label 7
-                color: '#50b2b4ff'
-                number: 3
-              - label: Value Label 8
-                color: '#a2b7d2ff'
-                number: 26
-          - type: Text
-            hasDropCap: false
-            content: '#### Bloco: Column_Bloco: Text_Fonte: Heading 4'
-          - type: Slider
-            slides:
-              - image: /uploads/arqueological-remains_03.jpg
-                caption: 'Bloco: Slider_Caption_Sed ut perspiciatis unde omnis iste natus'
-              - image: /uploads/arqueological-remains_04.jpg
-                caption: 'Bloco: Slider_Caption'
-              - image: /uploads/bWFpbi9leHB1bHNpb24vYXJxdWVvbG9naWNhbC1yZW1haW5zXzAyLmpwZw==.jpeg
-                caption: ''
-              - image: /uploads/expulsion-border-peru-ecuador.jpg
-                caption: 'Bloco: Slider_Caption_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
-              - image: /uploads/expulsion-church.jpg
-                caption: 'Bloco: Slider_Caption_Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.'
-              - image: /uploads/expulsion-arch-4.jpeg
-                caption: ''
-    layout: default
-  - type: Group
-    id: Grupo 9
-    shortTitle: Grupo 9
-    longTitle: ''
-    description: ''
-    showInMenu: true
-    animations: true
-    txtColor: Primary
-    customTxtColor: ''
-    bgColor: Secondary
-    customBgColor: ''
-    backgroundMedia: []
-    overlay: ''
-    components:
-      - type: Slider
-        slides:
-          - image: /uploads/arqueological-remains_01.jpg
-            caption: ''
-          - image: /uploads/arqueological-remains_02.jpg
-            caption: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-    layout: default
-  - type: Group
-    id: Grupo 10
-    shortTitle: Grupo 10
-    longTitle: ''
-    description: ''
-    showInMenu: true
-    animations: true
-    txtColor: Secondary
-    customTxtColor: ''
-    bgColor: Primary
-    customBgColor: ''
-    backgroundMedia: []
-    overlay: ''
-    components:
-      - type: Column
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
         paddingTop: false
         paddingBottom: false
         components:
@@ -771,20 +705,6 @@ components:
             wideVideo: true
             videoUrl: https://player.vimeo.com/video/350133875?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
             videoCaption: 'Bloco: Video Embed_Wide: On_Video Caption'
-    layout: default
-  - type: Map
-    id: Mapa 1
-    shortTitle: Mapa 1
-    longTitle: ''
-    description: ''
-    showInMenu: true
-    animations: true
-    txtColor: Primary
-    bgColor: Highlight
-    components:
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
         mapView: map1_view1
       - type: Text
         hasDropCap: false
@@ -794,6 +714,7 @@ components:
         content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
     columnAlign: left
     floatingText: true
+    layout: default
   - type: Group
     id: Grupo 11
     shortTitle: Grupo 11
@@ -809,9 +730,20 @@ components:
     overlay: ''
     components:
       - type: Spacer
+        txtColor: ''
+        bgColor: ''
         desktop: 500px
         tablet: ''
         mobile: ''
+        mapView: map1_view1
+      - type: Text
+        hasDropCap: false
+        content: '##### Bloco: Map_Column Align: Left_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error'
+      - type: Text
+        hasDropCap: false
+        content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    columnAlign: left
+    floatingText: true
   - type: Map
     id: Mapa 2
     shortTitle: Mapa 2
@@ -820,11 +752,18 @@ components:
     showInMenu: true
     animations: true
     txtColor: Secondary
+    customTxtColor: ''
     bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
     components:
       - type: Text
         hasDropCap: false
         content: '###### Bloco: Map_Column Align: Right_Floating Text: Off_Bloco: Text_Fonte: Heading 6_Sed ut perspiciatis unde omnis iste natus error'
+        desktop: 500px
+        tablet: ''
+        mobile: ''
       - type: Text
         hasDropCap: false
         content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
@@ -849,9 +788,20 @@ components:
     overlay: ''
     components:
       - type: Spacer
+        hasDropCap: false
+        content: '###### Bloco: Map_Column Align: Right_Floating Text: Off_Bloco: Text_Fonte: Heading 6_Sed ut perspiciatis unde omnis iste natus error'
         desktop: 500px
         tablet: ''
         mobile: ''
+      - type: Text
+        hasDropCap: false
+        content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_view1
+    columnAlign: right
+    floatingText: false
   - type: Map
     id: Mapa 3
     shortTitle: Mapa 3
@@ -860,11 +810,18 @@ components:
     showInMenu: true
     animations: true
     txtColor: Secondary
+    customTxtColor: ''
     bgColor: ''
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
     components:
       - type: Text
         hasDropCap: false
         content: '##### Bloco: Map_Column Align: Center_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error'
+        desktop: 500px
+        tablet: ''
+        mobile: ''
       - type: Text
         hasDropCap: false
         content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
@@ -893,9 +850,24 @@ components:
     overlay: ''
     components:
       - type: Spacer
+        hasDropCap: false
+        content: '##### Bloco: Map_Column Align: Center_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error'
         desktop: 500px
         tablet: ''
         mobile: ''
+      - type: Text
+        hasDropCap: false
+        content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+      - type: Spacer
+        desktop: 300px
+        tablet: ''
+        mobile: ''
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_view1
+    columnAlign: center
+    floatingText: true
   - type: Map
     id: Mapa 4
     shortTitle: Mapa 4
@@ -904,11 +876,18 @@ components:
     showInMenu: true
     animations: true
     txtColor: Primary
+    customTxtColor: ''
     bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
     components:
       - type: MapView
         txtColor: ''
         bgColor: ''
+        desktop: 500px
+        tablet: ''
+        mobile: ''
         mapView: map1_view3
       - type: Text
         hasDropCap: false
@@ -954,6 +933,122 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
+        mapView: map2_view1
+      - type: Text
+        hasDropCap: false
+        content: '##### Bloco: Map_Bloco: MapView_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error sit voluptatem'
+      - type: Text
+        hasDropCap: false
+        content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
+      - type: Spacer
+        desktop: 300px
+        tablet: ''
+        mobile: ''
+      - type: Text
+        hasDropCap: false
+        content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
+      - type: Text
+        hasDropCap: false
+        content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
+        desktop: 200px
+        tablet: ''
+        mobile: ''
+      - type: Spacer
+        txtColor: ''
+        bgColor: ''
+        desktop: 300px
+        tablet: ''
+        mobile: ''
+        mapView: map1_view4
+      - type: Text
+        hasDropCap: false
+        content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
+      - type: Spacer
+        wideImage: false
+        src: /uploads/expulsion-tendetza-antun_16x9edit.jpg
+        alt: Image Block_Alt Text
+        description: 'Bloco: Image Block_Description'
+        desktop: 300px
+        tablet: ''
+        mobile: ''
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_view2
+      - type: Text
+        hasDropCap: false
+        content: '##### Bloco: MapView_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error sit voluptatem'
+      - type: Text
+        hasDropCap: false
+        content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
+      - type: Spacer
+        desktop: 300px
+        tablet: ''
+        mobile: ''
+      - type: Text
+        hasDropCap: false
+        content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
+      - type: Spacer
+        desktop: 300px
+        tablet: ''
+        mobile: ''
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_view3
+      - type: Text
+        hasDropCap: false
+        content: '##### Bloco: MapView_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error sit voluptatem'
+      - type: Spacer
+        desktop: 300px
+        tablet: ''
+        mobile: ''
+      - type: Text
+        hasDropCap: false
+        content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
+    columnAlign: right
+    floatingText: true
+  - type: Group
+    id: Grupo 14
+    shortTitle: Grupo 14
+    longTitle: ''
+    description: ''
+    showInMenu: true
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        txtColor: ''
+        bgColor: ''
+        paddingTop: false
+        paddingBottom: false
+        components:
+          - type: Cards
+            cardsArr: []
+          - type: Cards
+            cardsArr: []
+          - type: LogosGroup
+            logos:
+              - image: /uploads/logo-2.png
+                link:
+                  url: https://thiagopaixao.github.io/astro_sveltia/home/#
+                  customTarget: ''
+                  title: ''
+              - image: /uploads/Captura de Tela-20241220084024-224x105.png
+                link:
+                  url: https://thiagopaixao.github.io/astro_sveltia/home/#
+                  customTarget: ''
+                  title: ''
+              - image: /uploads/logo-1.jpg
+                link:
+                  url: https://www.advocacia.autonoma.xyz/
+                  customTarget: ''
+                  title: ''
         mapView: map2_view1
       - type: Text
         hasDropCap: false
@@ -1020,45 +1115,6 @@ components:
     columnAlign: right
     floatingText: true
   - type: Group
-    id: Grupo 14
-    shortTitle: Grupo 14
-    longTitle: ''
-    description: ''
-    showInMenu: true
-    animations: true
-    txtColor: Primary
-    customTxtColor: ''
-    bgColor: Highlight
-    customBgColor: ''
-    backgroundMedia: []
-    overlay: ''
-    components:
-      - type: Column
-        paddingTop: false
-        paddingBottom: false
-        components:
-          - type: Cards
-            cardsArr: []
-          - type: Cards
-            cardsArr: []
-          - type: LogosGroup
-            logos:
-              - image: /uploads/logo-2.png
-                link:
-                  url: https://thiagopaixao.github.io/astro_sveltia/home/#
-                  customTarget: ''
-                  title: ''
-              - image: /uploads/Captura de Tela-20241220084024-224x105.png
-                link:
-                  url: https://thiagopaixao.github.io/astro_sveltia/home/#
-                  customTarget: ''
-                  title: ''
-              - image: /uploads/logo-1.jpg
-                link:
-                  url: https://www.advocacia.autonoma.xyz/
-                  customTarget: ''
-                  title: ''
-  - type: Group
     id: Grupo xxx
     shortTitle: Grupo xxxx
     longTitle: ''
@@ -1091,6 +1147,7 @@ components:
             desktop: 800px
             tablet: ''
             mobile: ''
+            cardsArr: []
           - type: Text
             hasDropCap: false
             content: |-
@@ -1103,6 +1160,24 @@ components:
             imageLeft: /uploads/toxicriver_before2.png
             imageRight: /uploads/toxicriver_after2.png
             caption: 'Bloco: Compare\_Caption\_Fonte: Paragraph'
+            cardsArr: []
+          - type: LogosGroup
+            logos:
+              - image: /uploads/logo-2.png
+                link:
+                  url: https://thiagopaixao.github.io/astro_sveltia/home/#
+                  customTarget: ''
+                  title: ''
+              - image: /uploads/Captura de Tela-20241220084024-224x105.png
+                link:
+                  url: https://thiagopaixao.github.io/astro_sveltia/home/#
+                  customTarget: ''
+                  title: ''
+              - image: /uploads/logo-1.jpg
+                link:
+                  url: https://www.advocacia.autonoma.xyz/
+                  customTarget: ''
+                  title: ''
     layout: default
 ---
 
