@@ -406,35 +406,35 @@ components:
         desktop: 500px
         tablet: ''
         mobile: ''
-      - type: Text
-        hasDropCap: false
-        content: Mining blocks often overlap with demarcated and non-demarcated indigenous territories, communal lands and ecological reserves, generating conflicts over land and water with local communities. According to the project [Environmental Justice Atlas](https://ejatlas.org/), there current exists at least 56 water and land conflicts related to mining in the Amazon basin.
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map1_view2
+      - type: Text
+        hasDropCap: false
+        content: Mining blocks often overlap with demarcated and non-demarcated indigenous territories, communal lands and ecological reserves, generating conflicts over land and water with local communities. According to the project [Environmental Justice Atlas](https://ejatlas.org/), there current exists at least 56 water and land conflicts related to mining in the Amazon basin.
       - type: Spacer
         desktop: 500px
         tablet: ''
         mobile: ''
-      - type: Text
-        hasDropCap: false
-        content: Mining concessions cover about 11% of the Ecuadorian territory. They are mainly concentrate in the southern flank of the Amazon region. These concessions are in conflict with indigenous territories and protected ecological reserves.
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map1_view3
+      - type: Text
+        hasDropCap: false
+        content: Mining concessions cover about 11% of the Ecuadorian territory. They are mainly concentrate in the southern flank of the Amazon region. These concessions are in conflict with indigenous territories and protected ecological reserves.
       - type: Spacer
         desktop: 500px
         tablet: ''
         mobile: ''
-      - type: Text
-        hasDropCap: false
-        content: This massive push in the mining frontier in Ecuador is driven by several projects of “mega-mining.” Three ofthem – Mirador, San Carlos-Panantza, and Frutal del Norte – are situated next to each other in region of the Cordillera del Cóndor mountain range in Shuar ancestral territory, south of the Ecuadorian Amazon.
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map1_view4
+      - type: Text
+        hasDropCap: false
+        content: This massive push in the mining frontier in Ecuador is driven by several projects of “mega-mining.” Three ofthem – Mirador, San Carlos-Panantza, and Frutal del Norte – are situated next to each other in region of the Cordillera del Cóndor mountain range in Shuar ancestral territory, south of the Ecuadorian Amazon.
       - type: Spacer
         desktop: 500px
         tablet: ''
