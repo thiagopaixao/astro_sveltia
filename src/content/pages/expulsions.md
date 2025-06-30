@@ -164,7 +164,7 @@ mapbox:
       title: ''
       notes: ''
       items:
-        - icon: brightness_1
+        - icon: circle
           colorIcon: '#dbce48ff'
           typeIcon: outlined
           text: comunity centers
@@ -190,6 +190,11 @@ mapbox:
         sat-2013
       title: ''
       notes: ''
+      items:
+        - icon: close
+          colorIcon: '#d11515ff'
+          typeIcon: outlined
+          text: evicted families
       captions:
         title: ''
         notes: ''
@@ -202,6 +207,7 @@ mapbox:
       centerLng: '-78.465'
       centerLat: '-3.584'
       zoom: '12.2'
+      mobileZoom: ''
       duration: '2000'
       bearing: '0'
       pitch: '0'
@@ -209,6 +215,13 @@ mapbox:
         desajolos-mirador
         expulsion-regions
         sat-2018
+      title: ''
+      notes: ''
+      items:
+        - icon: close
+          colorIcon: '#d11515ff'
+          typeIcon: outlined
+          text: forced evictions
       captions:
         title: ''
         notes: ''
@@ -218,9 +231,10 @@ mapbox:
             typeIcon: outlined
             text: forced evictions
     - id: map2_view4
-      centerLng: '-78.47'
+      centerLng: '-78.470'
       centerLat: '-3.569'
       zoom: '15'
+      mobileZoom: ''
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -228,10 +242,13 @@ mapbox:
         desajolos-mirador[Data<2015-10-01]
         expulsion-regions
         sat-2018
+      title: ''
+      notes: ''
     - id: map2_view5
       centerLng: '-78.465'
       centerLat: '-3.584'
       zoom: '12.5'
+      mobileZoom: ''
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -239,10 +256,13 @@ mapbox:
         desajolos-mirador[Data<2015-12-31]
         expulsion-regions
         sat-2018
+      title: ''
+      notes: ''
     - id: map2_view6
       centerLng: '-78.50685'
       centerLat: '-3.57468'
       zoom: '14'
+      mobileZoom: ''
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -250,6 +270,8 @@ mapbox:
         desajolos-mirador
         expulsion-regions
         sat-2018
+      title: ''
+      notes: ''
     - id: map3_view1
       centerLng: '-78.465'
       centerLat: '-3.584'
