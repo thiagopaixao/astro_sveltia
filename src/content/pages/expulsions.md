@@ -392,7 +392,7 @@ components:
             - type: Spacer
               desktop: 500px
               tablet: 500px
-              mobile: 50px
+              mobile: 200px
             - type: Text
               hasDropCap: false
               content: |-
