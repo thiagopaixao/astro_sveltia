@@ -163,6 +163,11 @@ mapbox:
         desajolos-mirador[Tipo==Comunidad]
       title: ''
       notes: ''
+      items:
+        - icon: brightness_1
+          colorIcon: '#dbce48ff'
+          typeIcon: outlined
+          text: comunity centers
       captions:
         title: ''
         notes: ''
