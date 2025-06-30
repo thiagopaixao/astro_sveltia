@@ -391,17 +391,17 @@ components:
     txtColor: Secondary
     bgColor: Highlight
     components:
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_view1
       - type: Spacer
-        desktop: 500px
+        desktop: 600px
         tablet: ''
         mobile: ''
       - type: Text
         hasDropCap: false
         content: Mining, illegal or legal, is widespread throughout Amazonia, happening at both small and large scales. It is estimated that mining concessions [covers 21% of the total surface of the Amazon basin.](https://issuu.com/darperu/docs/megaproyectos_ingles_final) This is equivalent of imagining a territory over twice larger than Spain, predominantly formed by primary forests and innumerable freshwater streams, completely zoned for extraction – a mega-mine operating on planetary scale.
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map1_view1
       - type: Spacer
         desktop: 500px
         tablet: ''
