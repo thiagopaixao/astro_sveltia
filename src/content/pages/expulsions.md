@@ -670,7 +670,7 @@ components:
         bgColor: ''
         mapView: map2_view1
       - type: Spacer
-        desktop: 500px
+        desktop: 600px
         tablet: ''
         mobile: ''
       - type: Text
@@ -681,7 +681,7 @@ components:
         bgColor: ''
         mapView: map2_view2
       - type: Spacer
-        desktop: 500px
+        desktop: 600px
         tablet: ''
         mobile: ''
       - type: Text
@@ -695,7 +695,7 @@ components:
         bgColor: ''
         mapView: map2_view3
       - type: Spacer
-        desktop: 500px
+        desktop: 600px
         tablet: ''
         mobile: ''
       - type: Text
