@@ -1028,61 +1028,53 @@ components:
         desktop: 300px
         tablet: ''
         mobile: ''
-      - type: Text
-        hasDropCap: false
-        content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
-      - type: Text
-        hasDropCap: false
-        content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
-        desktop: 200px
-        tablet: ''
-        mobile: ''
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        desktop: 300px
-        tablet: ''
-        mobile: ''
-        mapView: map1_view4
-      - type: Text
-        hasDropCap: false
-        content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
-      - type: Spacer
-        wideImage: false
-        src: /uploads/expulsion-tendetza-antun_16x9edit.jpg
-        alt: Image Block_Alt Text
-        description: 'Bloco: Image Block_Description'
-        desktop: 400px
-        tablet: ''
-        mobile: ''
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: |-
+              ###### Bloco: Timeline_Content_Fonte: Heading 6_Sed ut perspiciatis unde omnis iste natus error 
+
+              Fonte: Paragraph_sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            text: 'Bloco: Timeline_Timeline Bullet 1_Text'
+          - type: TimelineBullet
+            content: 'Bloco: Timeline_Content_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium'
+            text: 'Bloco: Timeline_Timeline Bullet 2_Text'
+          - type: TimelineBullet
+            content: 'Bloco: Timeline_Content_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+            text: 'Bloco: Timeline_Timeline Bullet 3_Text'
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map2_view2
-      - type: Text
-        hasDropCap: false
-        content: '##### Bloco: MapView 2_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error sit voluptatem'
-      - type: Text
-        hasDropCap: false
-        content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
-      - type: Spacer
-        desktop: 400px
-        tablet: ''
-        mobile: ''
-      - type: Text
-        hasDropCap: false
-        content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
-      - type: Spacer
-        desktop: 400px
-        tablet: ''
-        mobile: ''
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: 'Bloco: Timeline_Content_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium'
+            text: 'Bloco: Timeline_Timeline Bullet 4_Text'
+          - type: TimelineBullet
+            content: 'Bloco: Timeline_Content_Fonte: Paragraph_Sed ut perspiciatis unde'
+            text: 'Bloco: Timeline_Timeline Bullet 5_Text'
+          - type: TimelineBullet
+            content: 'Bloco: Timeline_Content_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium'
+            text: 'Bloco: Timeline_Timeline Bullet 6_Text'
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map2_view3
-      - type: Text
-        hasDropCap: false
-        content: '##### Bloco: MapView 3_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error sit voluptatem'
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: |-
+              ###### Bloco: Timeline_Content_Fonte: Heading 6_Sed ut perspiciatis unde omnis iste natus error 
+
+              Fonte: Paragraph_sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            text: 'Bloco: Timeline_Timeline Bullet 7_Text'
+          - type: TimelineBullet
+            content: 'Bloco: Timeline_Content_Fonte: Paragraph_Sed ut perspiciatis unde'
+            text: 'Bloco: Timeline_Timeline Bullet 8_Text'
+          - type: TimelineBullet
+            content: 'Bloco: Timeline_Content_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium'
+            text: 'Bloco: Timeline_Timeline Bullet 9_Text'
       - type: Spacer
         desktop: 400px
         tablet: ''
