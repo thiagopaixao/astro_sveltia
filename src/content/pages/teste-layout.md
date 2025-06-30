@@ -935,7 +935,7 @@ components:
         mapView: map1_view1
       - type: Text
         hasDropCap: false
-        content: '##### Bloco: Map_Column Align: Left_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error'
+        content: '##### Bloco: Map_Column Align: Left_Bloco: MapView 1_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error'
       - type: Text
         hasDropCap: false
         content: 'Fonte: Paragraph _ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
@@ -975,7 +975,7 @@ components:
         mapView: map1_view3
       - type: Text
         hasDropCap: false
-        content: '##### Bloco: Map_Column Align_Right_Bloco: MapView_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error sit voluptatem'
+        content: '##### Bloco: Map_Column Align: Right_Bloco: MapView 3_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error sit voluptatem'
       - type: Text
         hasDropCap: false
         content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
@@ -996,7 +996,7 @@ components:
         mapView: map1_view4
       - type: Text
         hasDropCap: false
-        content: 'Bloco: MapView_Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+        content: 'Bloco: MapView 4_Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
       - type: ImageBlock
         wideImage: false
         src: /uploads/expulsion-tendetza-antun_16x9edit.jpg
