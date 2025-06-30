@@ -1110,6 +1110,10 @@ components:
     backgroundMedia: []
     overlay: ''
     components:
+      - type: Spacer
+        desktop: 600px
+        tablet: ''
+        mobile: ''
       - type: Text
         hasDropCap: false
         content: '##### Bloco: Map_Column Align: Center_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error'
