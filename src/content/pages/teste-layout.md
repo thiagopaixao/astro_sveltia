@@ -1066,14 +1066,14 @@ components:
         hasDropCap: false
         content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
       - type: Spacer
-        desktop: 300px
+        desktop: 400px
         tablet: ''
         mobile: ''
       - type: Text
         hasDropCap: false
         content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
       - type: Spacer
-        desktop: 300px
+        desktop: 400px
         tablet: ''
         mobile: ''
       - type: MapView
@@ -1084,41 +1084,12 @@ components:
         hasDropCap: false
         content: '##### Bloco: MapView 3_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error sit voluptatem'
       - type: Spacer
-        desktop: 300px
+        desktop: 400px
         tablet: ''
         mobile: ''
       - type: Text
         hasDropCap: false
         content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
-    columnAlign: right
-    floatingText: false
-  - type: Map
-    id: Mapa 2_floating text
-    shortTitle: Mapa 2_floating text
-    longTitle: ''
-    description: ''
-    showInMenu: true
-    animations: true
-    txtColor: Secondary
-    customTxtColor: ''
-    bgColor: Highlight
-    customBgColor: ''
-    backgroundMedia: []
-    overlay: ''
-    components:
-      - type: Text
-        hasDropCap: false
-        content: '###### Bloco: Map_Column Align: Right_Floating Text: Off_Bloco: Text_Fonte: Heading 6_Sed ut perspiciatis unde omnis iste natus error'
-        desktop: 500px
-        tablet: ''
-        mobile: ''
-      - type: Text
-        hasDropCap: false
-        content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map1_view1
     columnAlign: right
     floatingText: false
   - type: Map
@@ -1141,17 +1112,17 @@ components:
         desktop: 500px
         tablet: ''
         mobile: ''
-      - type: Text
-        hasDropCap: false
-        content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
-      - type: Spacer
-        desktop: 300px
-        tablet: ''
-        mobile: ''
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map1_view1
+        mapView: map2_view3
+      - type: Spacer
+        desktop: 600px
+        tablet: ''
+        mobile: ''
+      - type: Text
+        hasDropCap: false
+        content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
     columnAlign: center
     floatingText: true
   - type: Group
