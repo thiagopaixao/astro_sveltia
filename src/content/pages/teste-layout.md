@@ -1097,8 +1097,8 @@ components:
     columnAlign: right
     floatingText: false
   - type: Map
-    id: Mapa 3_textono meio
-    shortTitle: Mapa 3_texto no meio
+    id: Mapa 4
+    shortTitle: Mapa 4
     longTitle: ''
     description: ''
     showInMenu: true
@@ -1131,6 +1131,10 @@ components:
       - type: Text
         hasDropCap: false
         content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+      - type: Spacer
+        desktop: 600px
+        tablet: ''
+        mobile: ''
     columnAlign: center
     floatingText: true
   - type: Group
