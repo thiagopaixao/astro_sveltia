@@ -233,7 +233,7 @@ mapbox:
     - id: map2_view4
       centerLng: '-78.470'
       centerLat: '-3.569'
-      zoom: '15'
+      zoom: '15.1'
       mobileZoom: ''
       duration: '4000'
       bearing: '0'
