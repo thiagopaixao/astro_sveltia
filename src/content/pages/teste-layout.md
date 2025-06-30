@@ -726,19 +726,19 @@ components:
               chartTitle: 'Bloco: Columns _ Bloco: Chart Bar _ Title'
               chartNotes: Chart Notes_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
               chartBars:
-                - label: Chart Bart _ Label 1
+                - label: Chart Bar _ Label 1
                   color: '#c44545ff'
                   number: 26
                   numberPercent: 26
-                - label: Chart Bart _ Label 2
+                - label: Chart Bar _ Label 2
                   color: '#7b0a0aff'
                   number: 52.5
                   numberPercent: 52
-                - label: Chart Bart _ Label 3
+                - label: Chart Bar _ Label 3
                   color: '#cd9d9dff'
                   number: 78.6
                   numberPercent: 78
-                - label: Chart Bart _ Label 4
+                - label: Chart Bar _ Label 4
                   color: '#5e1212ff'
                   number: 63.2
                   numberPercent: 63
