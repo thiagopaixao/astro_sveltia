@@ -1131,17 +1131,25 @@ components:
     txtColor: Secondary
     bgColor: Highlight
     components:
-      - type: Text
-        hasDropCap: false
-        content: Several archaeological sites are located inside the mining concession area. The few sites that went through carbon tests show a concentration of dates between 800 and 1300 AD. According to one archaeological study, this allows to infer “a period of greater occupation” in this interval, just prior to the invasion of European colonizers. The communities that lived in this region were therefore the near ancestors of the Jivaroan peoples.
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map4_view1
       - type: Spacer
+        desktop: 600px
+        tablet: ''
+        mobile: ''
+      - type: Text
+        hasDropCap: false
+        content: Several archaeological sites are located inside the mining concession area. The few sites that went through carbon tests show a concentration of dates between 800 and 1300 AD. According to one archaeological study, this allows to infer “a period of greater occupation” in this interval, just prior to the invasion of European colonizers. The communities that lived in this region were therefore the near ancestors of the Jivaroan peoples.
+      - type: Spacer
         desktop: 500px
         tablet: ''
         mobile: ''
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map4_view2
       - type: Text
         hasDropCap: false
         content: Documentation of excavation of a terrace structure st an archaeological site located where the village of San Marcos was. (site Z6DIII-04T).
@@ -1165,14 +1173,14 @@ components:
         src: /uploads/arqueological-remains_04.jpg
         alt: ''
         description: ''
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map4_view2
       - type: Spacer
         desktop: 500px
         tablet: ''
         mobile: ''
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map4_view3
       - type: Text
         hasDropCap: false
         content: Documentation of funerary urn found during the excavation of a terraza structure in archaeological site Z6C4-010
@@ -1181,14 +1189,14 @@ components:
         src: /uploads/expulsion-arch-4.jpeg
         alt: ''
         description: ''
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map4_view3
       - type: Spacer
         desktop: 500px
         tablet: ''
         mobile: ''
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map4_view4
       - type: Text
         hasDropCap: false
         content: Documentation of the petroglyph found in archaeological site Z6DIII-020 before its destruction. An investigation commissioned by Ecuacorriente in 2006 identified a large petroglyph in this area. This study concludes by recommending a modification in the original project of the mine to “avoid the destruction” of the petroglyph and its adjacent archaeological structures, which included more than 30 terraced structures. These recommendations were ignored. In a field inspection conducted by the Ecuadorian National Institute of Cultural Heritage (INPC) in 2017, researchers found that the petroglyph had been “partially destroyed.”
@@ -1197,15 +1205,11 @@ components:
         src: /uploads/expulsion-arch-3.jpeg
         alt: ''
         description: ''
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map4_view4
       - type: Spacer
-        desktop: 500px
+        desktop: 600px
         tablet: ''
         mobile: ''
-    columnAlign: left
+    columnAlign: right
     floatingText: true
   - type: Group
     id: _video4
