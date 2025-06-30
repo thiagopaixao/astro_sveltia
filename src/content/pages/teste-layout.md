@@ -164,7 +164,7 @@ components:
     shortTitle: Grupo 01
     longTitle: ''
     description: ''
-    showInMenu: false
+    showInMenu: true
     animations: true
     txtColor: Primary
     customTxtColor: ''
