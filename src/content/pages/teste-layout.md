@@ -1144,12 +1144,106 @@ components:
     description: ''
     showInMenu: true
     animations: true
-    txtColor: Primary
+    txtColor: Secondary
     customTxtColor: ''
-    bgColor: Secondary
+    bgColor: Primary
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
-    components: []
+    components:
+      - type: Columns
+        paddingTop: true
+        paddingBottom: true
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: '### Bloco: Columns _ Bigger Right _ Bloco: Text _ Fonte: Heading 3'
+            - type: Text
+              hasDropCap: false
+              content: |-
+                Fonte: Paragraph _ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+                Sed ut perspiciatis unde omnis 
+
+                Sed ut perspiciatis unde omnis 
+
+                Sed ut perspiciatis unde omnis 
+
+                Sed ut perspiciatis unde omnis 
+
+                Sed ut perspiciatis unde omnis 
+
+                Sed ut perspiciatis unde omnis
+            - type: Spacer
+              desktop: 300px
+              tablet: ''
+              mobile: ''
+            - type: Text
+              hasDropCap: false
+              content: '#### Bloco: Text _ Fonte: Heading 4'
+            - type: LogosGroup
+              logos:
+                - image: /uploads/logo-1.jpg
+                  link:
+                    url: https://documental.xyz/
+                    target: _blank
+                    customTarget: ''
+                    title: ''
+                - image: /uploads/logo-2.png
+                  link:
+                    url: https://documental.xyz/
+                    target: _blank
+                    customTarget: ''
+                    title: ''
+                - image: /uploads/favicon.svg
+                  link:
+                    url: https://documental.xyz/
+                    target: _blank
+                    customTarget: ''
+                    title: ''
+            - type: Text
+              hasDropCap: false
+              content: '#### Bloco: Text _ Fonte: Heading 4'
+            - type: LogosGroup
+              logos:
+                - image: /uploads/Captura de Tela-20241220084110-267x93.png
+                  link:
+                    url: https://documental.xyz/
+                    target: _blank
+                    customTarget: ''
+                    title: ''
+                - image: /uploads/logo-3.png
+                  link:
+                    url: https://documental.xyz/
+                    target: _blank
+                    customTarget: ''
+                    title: ''
+                - image: /uploads/Captura de Tela-20241220084110-267x93.png
+                  link:
+                    url: https://documental.xyz/
+                    target: _blank
+                    customTarget: ''
+                    title: ''
+                - image: /uploads/logo-3.png
+                  link:
+                    url: https://documental.xyz/
+                    target: _blank
+                    customTarget: ''
+                    title: ''
+                - image: /uploads/Captura de Tela-20241220084110-267x93.png
+                  link:
+                    url: https://documental.xyz/
+                    target: _blank
+                    customTarget: ''
+                    title: ''
+        column2:
+          components:
+            - type: Spacer
+              desktop: '10'
+              tablet: ''
+              mobile: ''
 ---
 
