@@ -1144,9 +1144,9 @@ components:
     description: ''
     showInMenu: true
     animations: true
-    txtColor: Secondary
+    txtColor: Primary
     customTxtColor: ''
-    bgColor: Primary
+    bgColor: Secondary
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
