@@ -708,31 +708,38 @@ components:
         desktop: 600px
         tablet: ''
         mobile: ''
-      - type: Text
-        hasDropCap: false
-        content: Location of forced evictions between 2014 and 2018 (excluding processes of "servidumbre")
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map2_view2
+      - type: Text
+        hasDropCap: false
+        content: Location of forced evictions between 2014 and 2018 (excluding processes of "servidumbre")
       - type: Spacer
         desktop: 600px
         tablet: ''
         mobile: ''
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_view3
       - type: Text
         hasDropCap: false
         content: |-
           Satellite image of Mirador mining area in 2019, showing the mining pit and extraction infrastructures over location of forced displacements.
 
           The destruction of San Marcos was the first of a series of violent evictions conducted by state and private forces between 2014 and 2017, which affected at least 27 families between shuar, kichwa and mestizos throughout the region.
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map2_view3
       - type: Spacer
         desktop: 600px
         tablet: ''
         mobile: ''
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        desktop: 500px
+        tablet: ''
+        mobile: ''
+        mapView: map2_view4
       - type: Text
         hasDropCap: false
         content: On 30 September 2015, at dawn and without prior notice, police officers and security guards of the company Ecuacorriente carried out an eviction against 13 families in San Marcos and on the El Cóndor road, at the margins of the Tundayme River. Equipped with guns and bulldozers, they destroyed their homes, edible gardens and hen houses, forcing elderly, women and youth to flee without place to go.
@@ -743,25 +750,12 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: map2_view4
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        desktop: 500px
-        tablet: ''
-        mobile: ''
-        mapView: map2_view4
       - type: Spacer
         hasDropCap: false
         content: Weeks latter, on 16 December 2015, another violent land-clearing operation was conducted across the area. Once again at dawn and without prior notice and judicial order, state and private security forces and evicted more 14 families. Similar to the displacements of September, all the houses were destroyed in front of the families as a way of terrorizing them and preventing their return.
         desktop: 500px
         tablet: ''
         mobile: ''
-      - type: Text
-        hasDropCap: false
-        content: Weeks latter, on 16 December 2015, another violent land-clearing operation was conducted across the area. Once again at dawn and without prior notice and judicial order, state and private security forces and evicted more 14 families. Similar to the displacements of September, all the houses were destroyed in front of the families as a way of terrorizing them and preventing their return.
-        txtColor: ''
-        bgColor: ''
-        mapView: map2_view5
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -769,24 +763,30 @@ components:
         tablet: ''
         mobile: ''
         mapView: map2_view5
+      - type: Text
+        hasDropCap: false
+        content: Weeks latter, on 16 December 2015, another violent land-clearing operation was conducted across the area. Once again at dawn and without prior notice and judicial order, state and private security forces and evicted more 14 families. Similar to the displacements of September, all the houses were destroyed in front of the families as a way of terrorizing them and preventing their return.
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_view5
       - type: Spacer
         hasDropCap: false
         content: The last evictions took place on 13 May 2016 against the shuar family Tendetza-Antún in the community of Yanua Kim, and latter on 04 February 2017 against Rosario Wari and her son, by that time the last residents of the area.
         desktop: 500px
         tablet: ''
         mobile: ''
-      - type: Text
-        hasDropCap: false
-        content: The last evictions took place on 13 May 2016 against the shuar family Tendetza-Antún in the community of Yanua Kim, and latter on 04 February 2017 against Rosario Wari and her son, by that time the last residents of the area.
+      - type: MapView
         txtColor: ''
         bgColor: ''
+        desktop: 500px
+        tablet: ''
+        mobile: ''
         mapView: map2_view6
-      - type: MapView
+      - type: Text
+        hasDropCap: false
+        content: The last evictions took place on 13 May 2016 against the shuar family Tendetza-Antún in the community of Yanua Kim, and latter on 04 February 2017 against Rosario Wari and her son, by that time the last residents of the area.
         txtColor: ''
         bgColor: ''
-        desktop: 500px
-        tablet: ''
-        mobile: ''
         mapView: map2_view6
       - type: Spacer
         desktop: 500px
