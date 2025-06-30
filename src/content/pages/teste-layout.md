@@ -1043,7 +1043,7 @@ components:
             content: 'Bloco: Timeline_Content_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
             text: 'Bloco: Timeline_Timeline Bullet 3_Text'
       - type: Spacer
-        desktop: 300px
+        desktop: 400px
         tablet: ''
         mobile: ''
       - type: MapView
@@ -1062,7 +1062,7 @@ components:
             content: 'Bloco: Timeline_Content_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium'
             text: 'Bloco: Timeline_Timeline Bullet 6_Text'
       - type: Spacer
-        desktop: 300px
+        desktop: 400px
         tablet: ''
         mobile: ''
       - type: MapView
@@ -1090,6 +1090,10 @@ components:
       - type: Text
         hasDropCap: false
         content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
+      - type: Spacer
+        desktop: 400px
+        tablet: ''
+        mobile: ''
     columnAlign: right
     floatingText: false
   - type: Map
