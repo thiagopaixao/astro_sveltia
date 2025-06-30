@@ -666,13 +666,17 @@ components:
     txtColor: Secondary
     bgColor: Highlight
     components:
-      - type: Text
-        hasDropCap: false
-        content: Sattelite image of the Mirador mining area in 2013, before the systematic evictions.
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map2_view1
+      - type: Spacer
+        desktop: 700px
+        tablet: ''
+        mobile: ''
+      - type: Text
+        hasDropCap: false
+        content: Sattelite image of the Mirador mining area in 2013, before the systematic evictions.
       - type: Spacer
         desktop: 600px
         tablet: ''
@@ -761,7 +765,7 @@ components:
         desktop: 500px
         tablet: ''
         mobile: ''
-    columnAlign: left
+    columnAlign: right
     floatingText: true
   - type: Group
     id: _video3
