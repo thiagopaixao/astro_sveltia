@@ -1011,8 +1011,8 @@ components:
     description: ''
     showInMenu: true
     animations: true
-    txtColor: Secondary
-    bgColor: Primary
+    txtColor: Primary
+    bgColor: Secondary
     components:
       - type: MapView
         txtColor: ''
@@ -1042,6 +1042,10 @@ components:
           - type: TimelineBullet
             content: 'Bloco: Timeline_Content_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
             text: 'Bloco: Timeline_Timeline Bullet 3_Text'
+      - type: Spacer
+        desktop: 300px
+        tablet: ''
+        mobile: ''
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1057,6 +1061,10 @@ components:
           - type: TimelineBullet
             content: 'Bloco: Timeline_Content_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium'
             text: 'Bloco: Timeline_Timeline Bullet 6_Text'
+      - type: Spacer
+        desktop: 300px
+        tablet: ''
+        mobile: ''
       - type: MapView
         txtColor: ''
         bgColor: ''
