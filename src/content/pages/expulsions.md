@@ -396,7 +396,7 @@ components:
         bgColor: ''
         mapView: map1_view1
       - type: Spacer
-        desktop: 600px
+        desktop: 700px
         tablet: ''
         mobile: ''
       - type: Text
