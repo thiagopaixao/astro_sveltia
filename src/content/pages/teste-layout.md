@@ -605,7 +605,7 @@ components:
         paddingTop: true
         paddingBottom: true
         layout: title-bottom
-        title: 'BLOCO: COLUMN STICKY / TÍTULO: TITLE-BOTTOM'
+        title: 'BLOCO: COLUMN STICKY _ LAYOUT: TITLE-BOTTOM _ TITLE'
         components:
           - type: Spacer
             hasDropCap: false
@@ -622,9 +622,9 @@ components:
               Bloco Column Sticky_Background: Image_Overlay: Dark_Padding: Top + Bottom
 
               Bloco Spacer: 800px
-              Bloco Text
 
-              Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+
+              Bloco Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
             imageLeft: /uploads/toxicriver_before2.png
             imageRight: /uploads/toxicriver_after2.png
             caption: 'Bloco: Compare\_Caption\_Fonte: Paragraph'
