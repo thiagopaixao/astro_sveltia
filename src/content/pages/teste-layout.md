@@ -953,15 +953,15 @@ components:
     floatingText: true
     layout: default
   - type: Map
-    id: Mapa 4
-    shortTitle: Mapa 4
+    id: Mapa 2
+    shortTitle: Mapa 2
     longTitle: ''
     description: ''
     showInMenu: true
     animations: true
-    txtColor: Primary
+    txtColor: Secondary
     customTxtColor: ''
-    bgColor: Highlight
+    bgColor: Primary
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
@@ -975,19 +975,19 @@ components:
         mapView: map1_view3
       - type: Text
         hasDropCap: false
-        content: '##### Bloco: Map_Column Align_Left_Bloco: MapView_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error sit voluptatem'
+        content: '##### Bloco: Map_Column Align_Right_Bloco: MapView_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error sit voluptatem'
       - type: Text
         hasDropCap: false
         content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
       - type: Spacer
-        desktop: 200px
+        desktop: 300px
         tablet: ''
         mobile: ''
       - type: Text
         hasDropCap: false
         content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
       - type: Spacer
-        desktop: 200px
+        desktop: 300px
         tablet: ''
         mobile: ''
       - type: MapView
@@ -1002,11 +1002,11 @@ components:
         src: /uploads/expulsion-tendetza-antun_16x9edit.jpg
         alt: Image Block_Alt Text
         description: 'Bloco: Image Block_Description'
-    columnAlign: left
+    columnAlign: right
     floatingText: true
   - type: Map
-    id: Mapa 5
-    shortTitle: Mapa 5
+    id: Mapa 3
+    shortTitle: Mapa 3
     longTitle: ''
     description: ''
     showInMenu: true
@@ -1020,7 +1020,7 @@ components:
         mapView: map2_view1
       - type: Text
         hasDropCap: false
-        content: '##### Bloco: Map_Bloco: MapView_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error sit voluptatem'
+        content: '##### Bloco: Map_Bloco: MapView 1_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error sit voluptatem'
       - type: Text
         hasDropCap: false
         content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
@@ -1052,7 +1052,7 @@ components:
         src: /uploads/expulsion-tendetza-antun_16x9edit.jpg
         alt: Image Block_Alt Text
         description: 'Bloco: Image Block_Description'
-        desktop: 300px
+        desktop: 400px
         tablet: ''
         mobile: ''
       - type: MapView
@@ -1061,7 +1061,7 @@ components:
         mapView: map2_view2
       - type: Text
         hasDropCap: false
-        content: '##### Bloco: MapView_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error sit voluptatem'
+        content: '##### Bloco: MapView 2_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error sit voluptatem'
       - type: Text
         hasDropCap: false
         content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
@@ -1082,7 +1082,7 @@ components:
         mapView: map2_view3
       - type: Text
         hasDropCap: false
-        content: '##### Bloco: MapView_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error sit voluptatem'
+        content: '##### Bloco: MapView 3_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error sit voluptatem'
       - type: Spacer
         desktop: 300px
         tablet: ''
@@ -1091,7 +1091,7 @@ components:
         hasDropCap: false
         content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
     columnAlign: right
-    floatingText: true
+    floatingText: false
   - type: Map
     id: Mapa 2_floating text
     shortTitle: Mapa 2_floating text
