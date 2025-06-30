@@ -938,28 +938,48 @@ components:
     txtColor: Secondary
     bgColor: Highlight
     components:
-      - type: Text
+      - type: MapView
         hasDropCap: false
         content: This satellite image shows the site of Project Mirador in 2013, after the destruction of the village of San Marcos and prior to the forced evictions of 2014-2017. At this moment the company Ecuacorriente was initiating the construction of the extraction complex, and few infrastructural works are visible. Most of the families alongside the Tundayme and Wawayme rivers still lived in the area.
-      - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map3_view1
       - type: Spacer
+        txtColor: ''
+        bgColor: ''
+        desktop: 700px
+        tablet: ''
+        mobile: ''
+        mapView: map3_view1
+      - type: Text
+        hasDropCap: false
+        content: This satellite image shows the site of Project Mirador in 2013, after the destruction of the village of San Marcos and prior to the forced evictions of 2014-2017. At this moment the company Ecuacorriente was initiating the construction of the extraction complex, and few infrastructural works are visible. Most of the families alongside the Tundayme and Wawayme rivers still lived in the area.
         desktop: 500px
         tablet: ''
         mobile: ''
-      - type: Text
+      - type: Spacer
         hasDropCap: false
         content: This satellite image shows the mining site in 2018, after the violent evictions of 2014-2017 that depopulated the area. The territory changed dramatically as vast tracts of forests were completely destroyed. The mine infrastructure occupies a much larger space, the tailing dams and the crater are in advanced stages of construction.
+        desktop: 500px
+        tablet: ''
+        mobile: ''
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map3_view2
+      - type: Text
+        hasDropCap: false
+        content: This satellite image shows the mining site in 2018, after the violent evictions of 2014-2017 that depopulated the area. The territory changed dramatically as vast tracts of forests were completely destroyed. The mine infrastructure occupies a much larger space, the tailing dams and the crater are in advanced stages of construction.
+        wideVideo: false
+        videoUrl: https://www.youtube.com/embed/Fjw2gpkD6fc?si=kTkpYA8RpFDIfsBS
+        videoCaption: ''
       - type: VideoEmbed
         wideVideo: false
         videoUrl: https://www.youtube.com/embed/Fjw2gpkD6fc?si=kTkpYA8RpFDIfsBS
         videoCaption: ''
+        desktop: 500px
+        tablet: ''
+        mobile: ''
       - type: Spacer
         desktop: 500px
         tablet: ''
