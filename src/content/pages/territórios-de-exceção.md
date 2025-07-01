@@ -30,7 +30,7 @@ pageTheme:
 mapbox:
   style: mapbox://styles/medialabufrj/cl1fupuh7001j15rucb3rc4qd
   token: pk.eyJ1IjoibWVkaWFsYWJ1ZnJqIiwiYSI6ImNsMWVheGZscTBwaXAzb2xndDBzdDBuN20ifQ.K-OyBzLTY80PjEmrSxrErQ
-  centerLng: '-43.2096'
+  centerLng: '-43.1943'
   centerLat: '-22.9035'
   zoom: '3'
   bearing: '0'
