@@ -83,15 +83,15 @@ mapbox:
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#ffffffff'
+          colorIcon: '#fc0303ff'
           typeIcon: outlined
           text: 1 operação
         - icon: circle
-          colorIcon: '#ffffffff'
+          colorIcon: '#fc0303ff'
           typeIcon: outlined
           text: 8 operações
     - id: map1_view4
-      centerLng: '-43.441'
+      centerLng: '-43.241'
       centerLat: '-22.851'
       zoom: '12'
       mobileZoom: '12'
@@ -110,7 +110,7 @@ mapbox:
           typeIcon: outlined
           text: Comunidades da Maré
     - id: map1_view5
-      centerLng: '-43.441'
+      centerLng: '-43.241'
       centerLat: '-22.851'
       zoom: '12'
       mobileZoom: '12'
@@ -136,7 +136,7 @@ mapbox:
           typeIcon: outlined
           text: Avenida Brasil
     - id: map1_view6
-      centerLng: '-43.441'
+      centerLng: '-43.241'
       centerLat: '-22.851'
       zoom: '13.7'
       mobileZoom: '13.7'
