@@ -64,7 +64,7 @@ mapbox:
       title: ''
       notes: ''
       items:
-        - icon: line
+        - icon: show chart
           colorIcon: '#ffffffff'
           typeIcon: outlined
           text: Cidade do Rio de Janeiro
@@ -105,7 +105,7 @@ mapbox:
       title: ''
       notes: ''
       items:
-        - icon: line
+        - icon: show chart
           colorIcon: '#ffffffff'
           typeIcon: outlined
           text: Comunidades da Maré
@@ -123,15 +123,15 @@ mapbox:
       title: ''
       notes: ''
       items:
-        - icon: line
+        - icon: show chart
           colorIcon: '#ff0000ff'
           typeIcon: outlined
           text: Rodovia Linha Vermelha
-        - icon: line
+        - icon: show chart
           colorIcon: '#fbff00ff'
           typeIcon: outlined
           text: Rodovia Linha Amarela
-        - icon: line
+        - icon: show chart
           colorIcon: '#00ff2aff'
           typeIcon: outlined
           text: Avenida Brasil
