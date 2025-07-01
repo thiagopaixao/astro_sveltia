@@ -39,7 +39,7 @@ mapbox:
   columnAlign: center
   views:
     - id: map1_view1
-      centerLng: '-43.1943'
+      centerLng: '-43.2196'
       centerLat: '-22.9035'
       zoom: '2.5'
       mobileZoom: '2.5'
