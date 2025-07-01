@@ -110,7 +110,7 @@ mapbox:
           typeIcon: outlined
           text: Comunidades da Maré
     - id: map1_view5
-      centerLng: '-43.241'
+      centerLng: '-43.281'
       centerLat: '-22.851'
       zoom: '12'
       mobileZoom: '12'
