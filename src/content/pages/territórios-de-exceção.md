@@ -335,8 +335,8 @@ components:
     overlay: dark
     components:
       - type: Columns
-        paddingTop: false
-        paddingBottom: false
+        paddingTop: true
+        paddingBottom: true
         invertOnMobile: false
         columnsAlign: 33-66
         column1:
@@ -357,6 +357,10 @@ components:
             - type: Text
               hasDropCap: false
               content: Uma operação, muitos impactos
+            - type: Spacer
+              desktop: 500px
+              tablet: ''
+              mobile: ''
     layout: default
   - type: Group
     id: _text2
