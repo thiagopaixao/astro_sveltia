@@ -30,7 +30,7 @@ pageTheme:
 mapbox:
   style: mapbox://styles/medialabufrj/cl1fupuh7001j15rucb3rc4qd
   token: pk.eyJ1IjoibWVkaWFsYWJ1ZnJqIiwiYSI6ImNsMWVheGZscTBwaXAzb2xndDBzdDBuN20ifQ.K-OyBzLTY80PjEmrSxrErQ
-  centerLng: '-43.1943'
+  centerLng: '-43.4096'
   centerLat: '-22.9035'
   zoom: '3'
   bearing: '0'
@@ -69,7 +69,7 @@ mapbox:
           typeIcon: outlined
           text: Cidade do Rio de Janeiro
     - id: map1_view3
-      centerLng: '-43.2096'
+      centerLng: '-43.4096'
       centerLat: '-22.9035'
       zoom: '10'
       mobileZoom: '10'
@@ -91,7 +91,7 @@ mapbox:
           typeIcon: outlined
           text: 8 operações
     - id: map1_view4
-      centerLng: '-43.241'
+      centerLng: '-43.441'
       centerLat: '-22.851'
       zoom: '12'
       mobileZoom: '12'
@@ -110,7 +110,7 @@ mapbox:
           typeIcon: outlined
           text: Comunidades da Maré
     - id: map1_view5
-      centerLng: '-43.241'
+      centerLng: '-43.441'
       centerLat: '-22.851'
       zoom: '12'
       mobileZoom: '12'
@@ -136,7 +136,7 @@ mapbox:
           typeIcon: outlined
           text: Avenida Brasil
     - id: map1_view6
-      centerLng: '-43.241'
+      centerLng: '-43.441'
       centerLat: '-22.851'
       zoom: '13.7'
       mobileZoom: '13.7'
