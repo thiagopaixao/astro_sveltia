@@ -36,7 +36,7 @@ mapbox:
   bearing: '0'
   pitch: '0'
   layers: ''
-  columnAlign: right
+  columnAlign: center
   views:
     - id: map1_view1
       centerLng: '-43.2096'
