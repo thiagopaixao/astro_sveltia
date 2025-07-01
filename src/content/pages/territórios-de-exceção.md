@@ -182,7 +182,7 @@ mapbox:
           text: Conjunto Salsa e Merengue
     - id: map2_view2
       centerLng: '-43.2345'
-      centerLat: '-22.8705'
+      centerLat: '-22.87058'
       zoom: '18.5'
       mobileZoom: '18.5'
       duration: '6000'
