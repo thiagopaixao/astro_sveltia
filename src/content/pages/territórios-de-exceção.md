@@ -257,8 +257,8 @@ components:
     overlay: dark
     components:
       - type: Columns
-        paddingTop: false
-        paddingBottom: false
+        paddingTop: true
+        paddingBottom: true
         invertOnMobile: false
         columnsAlign: 33-66
         column1:
@@ -511,8 +511,8 @@ components:
         desktop: 500px
         tablet: 500px
         mobile: 500px
-    columnAlign: left
-    floatingText: false
+    columnAlign: right
+    floatingText: true
   - type: Group
     id: _video1
     shortTitle: _video1
