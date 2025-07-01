@@ -526,7 +526,11 @@ components:
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
-    components: []
+    components:
+      - type: VideoEmbed
+        wideVideo: false
+        videoUrl: https://player.vimeo.com/video/1098007479?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
+        videoCaption: ''
     layout: default
   - type: Map
     id: _map3
