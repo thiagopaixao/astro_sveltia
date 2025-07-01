@@ -478,7 +478,39 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: view_1
+        mapView: map2_view1
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: Text
+        hasDropCap: false
+        content: Na manhã do dia 20 de junho de 2018, helicópteros realizaram disparos próximos a escolas e em ruas que costumam ser bastante movimentadas ao longo do dia. No mapa, veremos evidências coletadas pela Redes da Maré no dia da operação, na comunidade conhecida como Conjunto Salsa e Merengue.
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_view2
+      - type: Text
+        hasDropCap: false
+        content: Os pontos amarelos indicam a localização das escolas, enquanto o ponto vermelho representa a localização aproximada das fotos, onde é possível ver o impacto dos disparos no solo e a escola ao fundo. No dia, a equipe da Redes da Maré registrou dezenas de marcas de tiros no chão.
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/img-20180625-wa0019.jpg
+        alt: ''
+        description: ''
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/img-20180625-wa0020.jpg
+        alt: ''
+        description: ''
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
     columnAlign: left
     floatingText: false
   - type: Group
