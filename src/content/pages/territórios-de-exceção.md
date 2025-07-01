@@ -259,6 +259,10 @@ components:
       - type: Text
         hasDropCap: false
         content: 'A polícia brasileira é conhecida globalmente por sua letalidade e as forças policiais do estado do Rio de Janeiro destacam-se no país pela mesma razão. Em 2018, foram 1.534 mortes em decorrência de intervenção de agentes do Estado. Em 2019, novos recordes: 1.814 mortes ao longo do ano - 5 pessoas por dia, em média. Destas vítimas, 78% eram jovens, pretos e pardos.'
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
       - type: MapView
         txtColor: ''
         bgColor: ''
