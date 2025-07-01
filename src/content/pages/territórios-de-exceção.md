@@ -161,6 +161,84 @@ mapbox:
           colorIcon: '#33a02cff'
           typeIcon: outlined
           text: Religiosos e lazer
+    - id: map2_view1
+      centerLng: '-43.241'
+      centerLat: '-22.869'
+      zoom: '15'
+      mobileZoom: '15'
+      duration: '2000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        equipamentos
+        mare-fronteiras[Name==Conjunto Salsa e Merengue]
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#fd1c1cff'
+          typeIcon: outlined
+          text: Conjunto Salsa e Merengue
+    - id: map2_view2
+      centerLng: '-43.234'
+      centerLat: '-22.871'
+      zoom: '18.5'
+      mobileZoom: '18.5'
+      duration: '6000'
+      bearing: '25'
+      pitch: '20'
+      layers: |-
+        tiros-200818[Name==tiros_em1]
+        equipamentos
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#f83f3fff'
+          typeIcon: outlined
+          text: Localização aprox. das fotos
+        - icon: circle
+          colorIcon: '#def278ff'
+          typeIcon: outlined
+          text: Escolas do Amanhã
+    - id: map3_view1
+      centerLng: '-43.235424'
+      centerLat: '-22.870295'
+      zoom: '18'
+      mobileZoom: '18'
+      duration: '5000'
+      bearing: '115'
+      pitch: '10'
+      layers: |-
+        mapbox-satellite
+        tiros-200818[Name==rajada3]
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#f90b0bff'
+          typeIcon: outlined
+          text: Local aprox. do registro dos disparos
+    - id: map4_view1
+      centerLng: '-43.235424'
+      centerLat: '-22.869984'
+      zoom: '16.27'
+      mobileZoom: '16.27'
+      duration: '2000'
+      bearing: '110'
+      pitch: '50'
+      layers: |-
+        mapbox-satellite
+        200618-execucoes[Name==Local execucao 5 jovens]
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#f83f3fff'
+          typeIcon: outlined
+          text: Local de execuções
 components:
   - type: Group
     id: TERRITÓRIOS DE EXCEÇÃO
