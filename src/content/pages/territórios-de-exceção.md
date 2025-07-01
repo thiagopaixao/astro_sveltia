@@ -37,6 +37,130 @@ mapbox:
   pitch: '0'
   layers: ''
   columnAlign: right
+  views:
+    - id: map1_view1
+      centerLng: '-43.2096'
+      centerLat: '-22.9035'
+      zoom: '2.5'
+      mobileZoom: '2.5'
+      duration: '2000'
+      bearing: '0'
+      pitch: '0'
+      layers: mapbox-satellite
+      title: ''
+      notes: ''
+      items: []
+    - id: map1_view2
+      centerLng: '-43.2096'
+      centerLat: '-22.9035'
+      zoom: '10'
+      mobileZoom: '10'
+      duration: '6000'
+      bearing: '2'
+      pitch: '0'
+      layers: |-
+        contorno-rio
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: line
+          colorIcon: '#ffffffff'
+          typeIcon: outlined
+          text: Cidade do Rio de Janeiro
+    - id: map1_view3
+      centerLng: '-43.2096'
+      centerLat: '-22.9035'
+      zoom: '10'
+      mobileZoom: '10'
+      duration: '2000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        operacoes-disparo
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#ffffffff'
+          typeIcon: outlined
+          text: 1 operação
+        - icon: circle
+          colorIcon: '#ffffffff'
+          typeIcon: outlined
+          text: 8 operações
+    - id: map1_view4
+      centerLng: '-43.241'
+      centerLat: '-22.851'
+      zoom: '12'
+      mobileZoom: '12'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        rotulos-bairros
+        mare-fronteiras-geral
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: line
+          colorIcon: '#ffffffff'
+          typeIcon: outlined
+          text: Comunidades da Maré
+    - id: map1_view5
+      centerLng: '-43.241'
+      centerLat: '-22.851'
+      zoom: '12'
+      mobileZoom: '12'
+      duration: '2000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        viasrj
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: line
+          colorIcon: '#ff0000ff'
+          typeIcon: outlined
+          text: Rodovia Linha Vermelha
+        - icon: line
+          colorIcon: '#fbff00ff'
+          typeIcon: outlined
+          text: Rodovia Linha Amarela
+        - icon: line
+          colorIcon: '#00ff2aff'
+          typeIcon: outlined
+          text: Avenida Brasil
+    - id: map1_view6
+      centerLng: '-43.241'
+      centerLat: '-22.851'
+      zoom: '13.7'
+      mobileZoom: '13.7'
+      duration: '2000'
+      bearing: '70'
+      pitch: '0'
+      layers: |-
+        equipamentos
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#def278ff'
+          typeIcon: outlined
+          text: Culturais e educacionais
+        - icon: circle
+          colorIcon: '#3f75fdff'
+          typeIcon: outlined
+          text: Saúde
+        - icon: circle
+          colorIcon: '#33a02cff'
+          typeIcon: outlined
+          text: Religiosos e lazer
 components:
   - type: Group
     id: TERRITÓRIOS DE EXCEÇÃO
@@ -127,9 +251,71 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: view_1
-    columnAlign: left
-    floatingText: false
+        mapView: map1_view1
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: Text
+        hasDropCap: false
+        content: 'A polícia brasileira é conhecida globalmente por sua letalidade e as forças policiais do estado do Rio de Janeiro destacam-se no país pela mesma razão. Em 2018, foram 1.534 mortes em decorrência de intervenção de agentes do Estado. Em 2019, novos recordes: 1.814 mortes ao longo do ano - 5 pessoas por dia, em média. Destas vítimas, 78% eram jovens, pretos e pardos.'
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_view2
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: Text
+        hasDropCap: false
+        content: Neste contexto de acirramento da violência policial, houve uma intensificação do uso de helicópteros em operações policiais na cidade do Rio de Janeiro. Além de aumentarem o pânico durante as operações, os disparos feitos de helicópteros envolvem altos riscos para as pessoas moradoras destes territórios, que em geral são densamente povoados.
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_view3
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: Text
+        hasDropCap: false
+        content: Nos anos de 2018 e 2019, identificamos 415 utilizações de aeronaves pelas forças policiais na cidade do Rio de Janeiro, a maior parte delas em favelas. Em 60 casos encontramos indícios de disparos a partir dos helicópteros. No mapa, é possível ver os locais com mais ocorrência. O círculo grande em destaque na direita cobre o Complexo da Maré, o local com mais disparos.
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_view4
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: Text
+        hasDropCap: false
+        content: A Maré é a localidade com mais registros identificados de operações e disparos a partir de aeronaves. O Complexo da Maré reúne 16 comunidades e tem uma intensa vida social, com 139 mil residentes em um território de cerca de 5 km²
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_view5
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: Text
+        hasDropCap: false
+        content: A Maré também tem uma localização estratégica na cidade. Além de estar às margens da Baía de Guanabara, ali encontram-se os principais troncos rodoviários da cidade. A região ainda está situada na rota preferencial de quem chega na cidade pelo aeroporto internacional e precisa se deslocar até o Centro, a zona sul ou zona oeste.
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_view6
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: Text
+        hasDropCap: false
+        content: No total, a Maré abriga mais de 3 mil estabelecimentos comerciais e diversas outras instalações. No mapa, é possível ver uma parte das muitas escolas, organizações culturais, unidades de saúde, espaços de lazer, praças, quadras esportivas e igrejas. Todo este cotidiano é frequentemente atingido por violentas operações policiais. Uma das mais letais ocorreu no dia 20 de junho de 2018
+    columnAlign: right
+    floatingText: true
   - type: Group
     id: 20 DE JUNHO DE 2018
     shortTitle: 20 DE JUNHO DE 2018
