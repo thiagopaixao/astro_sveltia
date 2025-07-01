@@ -267,57 +267,57 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: map1_view2
+      - type: Text
+        hasDropCap: false
+        content: Neste contexto de acirramento da violência policial, houve uma intensificação do uso de helicópteros em operações policiais na cidade do Rio de Janeiro. Além de aumentarem o pânico durante as operações, os disparos feitos de helicópteros envolvem altos riscos para as pessoas moradoras destes territórios, que em geral são densamente povoados.
       - type: Spacer
         desktop: 600px
         tablet: 600px
         mobile: 600px
-      - type: Text
-        hasDropCap: false
-        content: Neste contexto de acirramento da violência policial, houve uma intensificação do uso de helicópteros em operações policiais na cidade do Rio de Janeiro. Além de aumentarem o pânico durante as operações, os disparos feitos de helicópteros envolvem altos riscos para as pessoas moradoras destes territórios, que em geral são densamente povoados.
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map1_view3
+      - type: Text
+        hasDropCap: false
+        content: Nos anos de 2018 e 2019, identificamos 415 utilizações de aeronaves pelas forças policiais na cidade do Rio de Janeiro, a maior parte delas em favelas. Em 60 casos encontramos indícios de disparos a partir dos helicópteros. No mapa, é possível ver os locais com mais ocorrência. O círculo grande em destaque na direita cobre o Complexo da Maré, o local com mais disparos.
       - type: Spacer
         desktop: 600px
         tablet: 600px
         mobile: 600px
-      - type: Text
-        hasDropCap: false
-        content: Nos anos de 2018 e 2019, identificamos 415 utilizações de aeronaves pelas forças policiais na cidade do Rio de Janeiro, a maior parte delas em favelas. Em 60 casos encontramos indícios de disparos a partir dos helicópteros. No mapa, é possível ver os locais com mais ocorrência. O círculo grande em destaque na direita cobre o Complexo da Maré, o local com mais disparos.
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map1_view4
+      - type: Text
+        hasDropCap: false
+        content: A Maré é a localidade com mais registros identificados de operações e disparos a partir de aeronaves. O Complexo da Maré reúne 16 comunidades e tem uma intensa vida social, com 139 mil residentes em um território de cerca de 5 km²
       - type: Spacer
         desktop: 600px
         tablet: 600px
         mobile: 600px
-      - type: Text
-        hasDropCap: false
-        content: A Maré é a localidade com mais registros identificados de operações e disparos a partir de aeronaves. O Complexo da Maré reúne 16 comunidades e tem uma intensa vida social, com 139 mil residentes em um território de cerca de 5 km²
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map1_view5
+      - type: Text
+        hasDropCap: false
+        content: A Maré também tem uma localização estratégica na cidade. Além de estar às margens da Baía de Guanabara, ali encontram-se os principais troncos rodoviários da cidade. A região ainda está situada na rota preferencial de quem chega na cidade pelo aeroporto internacional e precisa se deslocar até o Centro, a zona sul ou zona oeste.
       - type: Spacer
         desktop: 600px
         tablet: 600px
         mobile: 600px
-      - type: Text
-        hasDropCap: false
-        content: A Maré também tem uma localização estratégica na cidade. Além de estar às margens da Baía de Guanabara, ali encontram-se os principais troncos rodoviários da cidade. A região ainda está situada na rota preferencial de quem chega na cidade pelo aeroporto internacional e precisa se deslocar até o Centro, a zona sul ou zona oeste.
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map1_view6
+      - type: Text
+        hasDropCap: false
+        content: No total, a Maré abriga mais de 3 mil estabelecimentos comerciais e diversas outras instalações. No mapa, é possível ver uma parte das muitas escolas, organizações culturais, unidades de saúde, espaços de lazer, praças, quadras esportivas e igrejas. Todo este cotidiano é frequentemente atingido por violentas operações policiais. Uma das mais letais ocorreu no dia 20 de junho de 2018
       - type: Spacer
         desktop: 600px
         tablet: 600px
         mobile: 600px
-      - type: Text
-        hasDropCap: false
-        content: No total, a Maré abriga mais de 3 mil estabelecimentos comerciais e diversas outras instalações. No mapa, é possível ver uma parte das muitas escolas, organizações culturais, unidades de saúde, espaços de lazer, praças, quadras esportivas e igrejas. Todo este cotidiano é frequentemente atingido por violentas operações policiais. Uma das mais letais ocorreu no dia 20 de junho de 2018
     columnAlign: right
     floatingText: true
   - type: Group
