@@ -311,8 +311,8 @@ components:
           components:
             - type: Spacer
               desktop: 390px
-              tablet: ''
-              mobile: ''
+              tablet: 390px
+              mobile: 390px
             - type: ImageBlock
               wideImage: true
               src: /uploads/arqueological-remains_05.jpg
@@ -557,8 +557,8 @@ components:
           components:
             - type: Spacer
               desktop: 550px
-              tablet: ''
-              mobile: ''
+              tablet: 550px
+              mobile: 550px
             - type: Gallery
               description: 'Bloco: Gallery_Description_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium'
               uniqid: Bloco Gallery Unique ID 2
@@ -571,8 +571,8 @@ components:
                   caption: 'Bloco: Gallery_Image 3_Caption_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
             - type: Spacer
               desktop: 400px
-              tablet: ''
-              mobile: ''
+              tablet: 400px
+              mobile: 400px
             - type: BigNumbers
               alignment: caption-bottom
               items:
@@ -614,8 +614,8 @@ components:
 
               Bloco Column_Bloco Text_Paragraph: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
             desktop: 800px
-            tablet: ''
-            mobile: ''
+            tablet: 800px
+            mobile: 800px
           - type: Text
             hasDropCap: false
             content: |-
@@ -720,8 +720,8 @@ components:
                   number: 63.2
                   numberPercent: 63
               desktop: 250px
-              tablet: ''
-              mobile: ''
+              tablet: 250px
+              mobile: 250px
             - type: ChartBar
               chartTitle: 'Bloco: Columns _ Bloco: Chart Bar _ Title'
               chartNotes: Chart Notes_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
@@ -941,8 +941,8 @@ components:
         content: 'Fonte: Paragraph _ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
       - type: Spacer
         desktop: 300px
-        tablet: ''
-        mobile: ''
+        tablet: 300px
+        mobile: 300px
       - type: Text
         hasDropCap: false
         content: '###### Fonte: Heading 6 _ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium'
@@ -981,15 +981,15 @@ components:
         content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
       - type: Spacer
         desktop: 300px
-        tablet: ''
-        mobile: ''
+        tablet: 300px
+        mobile: 300px
       - type: Text
         hasDropCap: false
         content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
       - type: Spacer
         desktop: 300px
-        tablet: ''
-        mobile: ''
+        tablet: 300px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1026,8 +1026,8 @@ components:
         content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
       - type: Spacer
         desktop: 300px
-        tablet: ''
-        mobile: ''
+        tablet: 300px
+        mobile: 300px
       - type: Timeline
         components:
           - type: TimelineBullet
@@ -1044,8 +1044,8 @@ components:
             text: 'Bloco: Timeline_Timeline Bullet 3_Text'
       - type: Spacer
         desktop: 400px
-        tablet: ''
-        mobile: ''
+        tablet: 400px
+        mobile: 400px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1063,8 +1063,8 @@ components:
             text: 'Bloco: Timeline_Timeline Bullet 6_Text'
       - type: Spacer
         desktop: 400px
-        tablet: ''
-        mobile: ''
+        tablet: 400px
+        mobile: 400px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1085,15 +1085,15 @@ components:
             text: 'Bloco: Timeline_Timeline Bullet 9_Text'
       - type: Spacer
         desktop: 400px
-        tablet: ''
-        mobile: ''
+        tablet: 400px
+        mobile: 400px
       - type: Text
         hasDropCap: false
         content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
       - type: Spacer
         desktop: 400px
-        tablet: ''
-        mobile: ''
+        tablet: 400px
+        mobile: 400px
     columnAlign: right
     floatingText: false
   - type: Map
@@ -1112,8 +1112,8 @@ components:
     components:
       - type: Spacer
         desktop: 600px
-        tablet: ''
-        mobile: ''
+        tablet: 600px
+        mobile: 600px
       - type: Text
         hasDropCap: false
         content: '##### Bloco: Map_Column Align: Center_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error'
@@ -1126,15 +1126,15 @@ components:
         mapView: map2_view3
       - type: Spacer
         desktop: 600px
-        tablet: ''
-        mobile: ''
+        tablet: 600px
+        mobile: 600px
       - type: Text
         hasDropCap: false
         content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
       - type: Spacer
         desktop: 600px
-        tablet: ''
-        mobile: ''
+        tablet: 600px
+        mobile: 600px
     columnAlign: center
     floatingText: true
   - type: Cta
@@ -1197,8 +1197,8 @@ components:
                 Sed ut perspiciatis unde omnis
             - type: Spacer
               desktop: 300px
-              tablet: ''
-              mobile: ''
+              tablet: 300px
+              mobile: 300px
             - type: Text
               hasDropCap: false
               content: '#### Bloco: Text _ Fonte: Heading 4'
