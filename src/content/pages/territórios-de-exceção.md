@@ -336,6 +336,124 @@ mapbox:
           colorIcon: '#cc4c02ff'
           typeIcon: outlined
           text: 30 ou mais
+    - id: map7_view1
+      centerLng: '-43.24'
+      centerLat: '-22.867'
+      zoom: '10'
+      mobileZoom: '10'
+      duration: '5000'
+      bearing: '5'
+      pitch: '30'
+      layers: |-
+        contorno-rio
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items: []
+    - id: map7_view2
+      centerLng: '-43.245'
+      centerLat: '-22.88'
+      zoom: '10.2'
+      mobileZoom: '10.2'
+      duration: '2000'
+      bearing: '5'
+      pitch: '30'
+      layers: |-
+        faccoes
+        contorno-rio
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: square
+          colorIcon: '#3967dbff'
+          typeIcon: outlined
+          text: Milícia
+        - icon: square
+          colorIcon: '#f83535ff'
+          typeIcon: outlined
+          text: Comando Vermelho
+        - icon: square
+          colorIcon: '#33c00cff'
+          typeIcon: outlined
+          text: TCP
+        - icon: square
+          colorIcon: '#f8db72ff'
+          typeIcon: outlined
+          text: ADA
+    - id: map7_view3
+      centerLng: '-43.245'
+      centerLat: '-22.88'
+      zoom: '10'
+      mobileZoom: '10'
+      duration: '3000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        op-policial
+        faccoes
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items: []
+    - id: map7_view4
+      centerLng: '-43.245'
+      centerLat: '-22.88'
+      zoom: '10.2'
+      mobileZoom: '10.2'
+      duration: '2000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        op-policial
+        faccoes
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#f50000ff'
+          typeIcon: outlined
+          text: 1-9 casos
+        - icon: circle
+          colorIcon: '#f50000ff'
+          typeIcon: outlined
+          text: 10-19 casos
+        - icon: circle
+          colorIcon: '#f50000ff'
+          typeIcon: outlined
+          text: 20-42 casos
+        - icon: square
+          colorIcon: '#3967dbff'
+          typeIcon: outlined
+          text: Milícias
+        - icon: square
+          colorIcon: '#f83535ff'
+          typeIcon: outlined
+          text: Comando Vermelho
+        - icon: square
+          colorIcon: '#f8db72ff'
+          typeIcon: outlined
+          text: Amigo dos Amigos
+        - icon: square
+          colorIcon: '#33c00cff'
+          typeIcon: outlined
+          text: Terceiro Comando Puro
+    - id: map7_view5
+      centerLng: '-43.245'
+      centerLat: '-22.88'
+      zoom: '11'
+      mobileZoom: '11'
+      duration: '5000'
+      bearing: '5'
+      pitch: '30'
+      layers: |-
+        op-policial
+        faccoes
+        mapbox-satellite
+        rotulos-bairros
+      title: ''
+      notes: ''
+      items: []
 components:
   - type: Group
     id: TERRITÓRIOS DE EXCEÇÃO
