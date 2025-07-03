@@ -2097,6 +2097,126 @@ components:
             src: /uploads/carta2.jpeg
             alt: ''
             description: Carta escrita por uma das crianças e coletada pela Redes da Maré
+  - type: Group
+    id: REFERÊNCIAS
+    shortTitle: REFERÊNCIAS
+    longTitle: ''
+    description: ''
+    showInMenu: true
+    animations: true
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Columns
+        paddingTop: true
+        paddingBottom: true
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Spacer
+              desktop: '10'
+              tablet: ''
+              mobile: ''
+        column2:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: '# REFERÊNCIAS'
+            - type: Spacer
+              desktop: 150px
+              tablet: 150px
+              mobile: 150px
+            - type: Text
+              hasDropCap: false
+              content: |-
+                Acesse o [Github do projeto](https://github.com/medialabufrj/territorios-de-excecao) para acesso aos dados e códigos utilizados.
+
+                Esta é a primeira edição deste relatório web, finalizada em 14 de abril de 2021.
+
+                Em breve, a versão em PDF do relatório será compartilhada aqui.
+
+                **Fontes dos dados**
+
+                Agência Nacional de Aviação Civil (ANAC)
+
+                Defezap
+
+                Fogo Cruzado
+
+                Instituto Brasileiro de Geografia e Estatística
+
+                Núcleo de Defesa dos Direitos Humanos da Defensoria Pública do Estado do Rio de Janeiro
+
+                Observatório da Intervenção
+
+                Pista News
+
+                Polícia Civil do Estado do Rio de Janeiro
+
+                Polícia Militar do Estado do Rio de Janeiro
+
+                Redes da Maré
+
+                Twitter
+            - type: Spacer
+              desktop: 150px
+              tablet: 150px
+              mobile: 150px
+  - type: Group
+    id: CRÉDITOS
+    shortTitle: CRÉDITOS
+    longTitle: ''
+    description: ''
+    showInMenu: true
+    animations: true
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Columns
+        paddingTop: true
+        paddingBottom: true
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Spacer
+              desktop: '10'
+              tablet: ''
+              mobile: ''
+        column2:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: '# CRÉDITOS'
+            - type: Spacer
+              desktop: 150px
+              tablet: 150px
+              mobile: 150px
+            - type: Text
+              hasDropCap: false
+              content: |-
+                _Este projeto foi idealizado em 2017 pelo MediaLab.UFRJ e a Agência Autônoma como parte das colaborações envolvendo investigações guiadas por dados inspirado em metodologias da arquitetura forense. O trabalho contou com apoio da Fundação de Amparo à Pesquisa do Estado do Rio de Janeiro (FAPERJ) e da Fundação Ford._
+
+                Realizado por [MediaLab.UFRJ](https://medialabufrj.net/) e [Agência Autônoma](https://www.advocacia.autonoma.xyz/), em parceria com Redes da Maré, Fogo Cruzado, Pista News, Witness e Rede LAVITS.
+
+                **Coordenação**: Fernanda Bruno, Adriano Belisário e Paulo Tavares
+
+                **Análise e visualização de dados**: Adriano Belisário
+
+                **Assistência de pesquisa**: Ingra Maciel e Debora Pio
+
+                **Desenvolvedor web**: Marlus Araújo
+
+                Email de contato: contato@medialabufrj.net
 MapBox:
   type: MapBox
   columnAlign: ''
