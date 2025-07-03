@@ -545,7 +545,7 @@ components:
               mobile: '10'
             - type: Gallery
               description: 'Bloco: Gallery_Description_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.'
-              uniqid: Bloco Gallery Unique ID 1
+              uniqid: BlocoGalleryUniqueID1
               images:
                 - image: /uploads/arqueological-remains_03.jpg
                   caption: 'Bloco: Gallery_Image 1_Caption_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
@@ -561,7 +561,7 @@ components:
               mobile: 550px
             - type: Gallery
               description: 'Bloco: Gallery_Description_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium'
-              uniqid: Bloco Gallery Unique ID 2
+              uniqid: BlocoGalleryUniqueID2
               images:
                 - image: /uploads/expulsion-arch-3.jpeg
                   caption: 'Bloco: Gallery_Image 1_Caption_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
