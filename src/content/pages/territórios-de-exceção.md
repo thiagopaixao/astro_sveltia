@@ -1808,7 +1808,9 @@ components:
     backgroundMedia: []
     overlay: ''
     components:
-      - type: Column
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
         paddingTop: false
         paddingBottom: false
         components:
@@ -1865,6 +1867,93 @@ components:
             src: /uploads/carta2.jpeg
             alt: ''
             description: Carta escrita por uma das crianças e coletada pela Redes da Maré
+        mapView: map7_view1
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: Text
+        hasDropCap: false
+        content: O uso de helicópteros está atrelado a um contexto mais amplo de conflitos e confrontos envolvendo disputa territorial entre policiais e grupos armados na cidade do Rio de Janeiro. Especializado na cobertura de conflitos desse tipo na cidade, o canal Pista News realizou um mapeamento dos territórios controlados por facções.
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map7_view2
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: Text
+        hasDropCap: false
+        content: À esquerda do mapa, é possível ver o amplo poder territorial da milícia na zona oeste da cidade. À direita do mapa, onde encontra-se a zona sul, centro e zona norte do Rio de Janeiro, observa-se, por sua vez, diversos territórios controlados pelo Comando Vermelho (CV), hoje o principal rival das milícias na cidade. Sobrepondo o mapeamento realizado pelo Pista News e dados produzidos pelo Fogo Cruzado, foi possível perceber que os tiroteios com a presença de agentes de segurança (não necessariamente com uso de helicópteros) também possuem um padrão próprio. A seguir, veremos como os tiroteios ocasionados pela polícia concentram-se principalmente nas regiões controladas pelo Comando Vermelho.
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map7_view3
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: Text
+        hasDropCap: false
+        content: A maioria dos tiroteios com presença de agentes oficiais acontecem em localidades dominadas pelo Comando Vermelho (CV). O tamanho dos círculos representam a quantidade de tiroteios com presença de agentes oficiais ao longo de 2018 e 2019, de acordo com o Fogo Cruzado. As áreas coloridas representam as regiões dominadas por facções, segundo o Pista News.
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map7_view4
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: Text
+        hasDropCap: false
+        content: Em média, entre 2018 e 2019, foram identificadas 23 tiroteios com presença de agentes oficiais por quilômetro quadrado em áreas do CV. Em comparação, em áreas de milícia esta taxa foi de 0,5 por quilômetro quadrado. Ou seja, apesar da milícia ter um domínio territorial muito maior, os agentes oficiais entram em confronto principalmente em regiões comandadas pelo Comando Vermelho.
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map7_view5
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: Text
+        hasDropCap: false
+        content: Veremos agora o caso da Cidade de Deus, o segundo bairro com mais registros de utilização de helicópteros durante operações, localizado na zona oeste da cidade.
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map7_view6
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: Text
+        hasDropCap: false
+        content: Na Cidade de Deus, identificamos 32 casos de ações policiais com uso de helicópteros nos anos de 2018 e 2019, sendo que em 7 há indícios de seu uso como plataforma de tiro. No dia 20 de agosto de 2019, um helicóptero da polícia jogou uma bomba de efeito moral em uma área residencial, de acordo com denúncias e vídeos registrados por moradores em redes sociais e amplamente repercutidos na imprensa.
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
     columnAlign: right
     floatingText: true
     layout: default
