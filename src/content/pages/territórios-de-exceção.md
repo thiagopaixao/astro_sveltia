@@ -712,12 +712,35 @@ components:
         paddingTop: false
         paddingBottom: false
         components:
+          - type: VideoEmbed
+            wideVideo: false
+            videoUrl: https://player.vimeo.com/video/1098604017?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
+            videoCaption: ''
+    layout: default
+  - type: Group
+    id: _video5
+    shortTitle: _video5
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: false
+        paddingBottom: false
+        components:
           - type: Text
             hasDropCap: false
             content: '# OPERAÇÃO VINGANÇA'
           - type: VideoEmbed
             wideVideo: false
-            videoUrl: https://documental.xyz/pt/intervencao
+            videoUrl: https://www.youtube.com/embed/5vhaEOJk-5U?si=Zt_cI0-5jh4u5L-N
             videoCaption: Delegado da Polícia Civil anuncia "caça" a acusados de envolvimento na morte de um policial
     layout: default
   - type: Group
