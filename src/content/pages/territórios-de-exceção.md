@@ -680,9 +680,20 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: view_1
+        mapView: map4_view1
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: Text
+        hasDropCap: false
+        content: No vídeo a seguir veremos imagens da Maré a partir desta perspectiva. Reconstruímos parcialmente a trajetória do helicóptero, onde é possível ver indícios do seu movimento de cerco. O ponto no mapa mostra o local aproximado onde seis jovens foram executados pelas forças policiais terrestres no dia 20 de junho.
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
     columnAlign: left
-    floatingText: false
+    floatingText: true
   - type: Group
     id: _video4
     shortTitle: _video4
