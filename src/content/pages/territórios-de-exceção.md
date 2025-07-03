@@ -275,7 +275,7 @@ components:
               mobile: ''
             - type: Text
               hasDropCap: false
-              content: '# TERRITÓRIOS DA EXCEÇÃO'
+              content: '# TERRITÓRIOS DE EXCEÇÃO'
             - type: Spacer
               desktop: 30px
               tablet: ''
@@ -565,7 +565,15 @@ components:
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
-    components: []
+    components:
+      - type: Column
+        paddingTop: false
+        paddingBottom: false
+        components:
+          - type: VideoEmbed
+            wideVideo: true
+            videoUrl: https://player.vimeo.com/video/1098008042?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
+            videoCaption: ''
     layout: default
   - type: Group
     id: _text3
