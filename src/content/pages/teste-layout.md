@@ -1137,9 +1137,27 @@ components:
         mobile: ''
     columnAlign: center
     floatingText: true
-  - type: Group
+  - type: Cta
     id: Grupo 15
     shortTitle: Grupo 15
+    longTitle: ''
+    description: ''
+    showInMenu: true
+    animations: true
+    txtColor: Primary
+    bgColor: Secondary
+    imgBg: /uploads/arqueological-remains_03.jpg
+    mediaType: image
+    media: ''
+    ctaText: 'Bloco: CTA_CTA Text_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.'
+    highlightedText: 'Bloco: CTA_Highlighted Text_Sed ut perspiciatis unde omnis iste'
+    link:
+      url: '#'
+      target: _self
+      text: Link_Text_Sed ut perspiciatis unde omnis iste
+  - type: Group
+    id: Grupo 16
+    shortTitle: Grupo 16
     longTitle: ''
     description: ''
     showInMenu: true
