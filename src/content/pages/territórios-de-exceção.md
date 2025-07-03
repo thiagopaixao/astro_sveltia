@@ -642,8 +642,8 @@ components:
             description: O cálculo da altura do helicóptero é aproximado.
     layout: default
   - type: Group
-    id: _text4
-    shortTitle: _video
+    id: _vídeo3
+    shortTitle: _vídeo3
     longTitle: ''
     description: ''
     showInMenu: false
@@ -658,14 +658,14 @@ components:
       - type: Column
         paddingTop: false
         paddingBottom: false
-        components: []
-      - type: Text
-        hasDropCap: false
-        content: '# CERCO NO AR'
-      - type: VideoEmbed
-        wideVideo: false
-        videoUrl: https://youtu.be/zVVD2s6A2RI
-        videoCaption: Em outra operação na Maré, no ano de 2019, observa-se o mesmo padrão de sobrevôo.
+        components:
+          - type: Text
+            hasDropCap: false
+            content: '# CERCO NO AR'
+          - type: VideoEmbed
+            wideVideo: false
+            videoUrl: https://www.youtube.com/embed/zVVD2s6A2RI?si=hz-22nuaGZsFejGy
+            videoCaption: Em outra operação na Maré, no ano de 2019, observa-se o mesmo padrão de sobrevôo.
     layout: default
   - type: Map
     id: _map4
@@ -684,8 +684,8 @@ components:
     columnAlign: left
     floatingText: false
   - type: Group
-    id: _video3
-    shortTitle: _video3
+    id: _video4
+    shortTitle: _video4
     longTitle: ''
     description: ''
     showInMenu: false
