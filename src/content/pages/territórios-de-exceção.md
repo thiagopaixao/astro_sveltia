@@ -850,6 +850,146 @@ components:
         mobile: 500px
     columnAlign: right
     floatingText: true
+  - type: Group
+    id: _text6
+    shortTitle: _text6
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: false
+        paddingBottom: false
+        components:
+          - type: Text
+            hasDropCap: false
+            content: '### IMPACTO PSICOLÓGICO'
+          - type: Text
+            hasDropCap: false
+            content: |-
+              A vivência de episódios violentos deixa marcas na memória. Operações policiais violentas e frequentes produzem múltiplos traumas na vida cotidiana dos moradores das favelas da cidade, gerando danos psicológicos e emocionais. A presença de helicópteros nas operações aumenta fortemente o terror, o medo e a carga traumática sobre a população.
+
+              Coletamos e analisamos postagens públicas em redes sociais, buscando tornar visíveis os impactos psicológicos e emocionais de operações policiais envolvendo helicópteros. A coleta dos dados foi feita em perfis, páginas e grupos públicos. Numa análise preliminar de 17 mil tweets contendo palavras que remetiam a operações com helicópteros entre 2018 e 2019, notamos que, além das constantes referências aos tiros e ao próprio helicóptero, as postagens falam frequentemente de temas como casas, escolas e crianças.
+
+              O mesmo acontece com postagens e comentários em páginas e grupos públicos no Facebook, onde o medo e a preocupação com familiares e com as crianças que estão na escola também são recorrentes. Boa parte dessas postagens é feita no momento da operação, expressando medo, revolta e preocupação.
+
+              Na operação do dia 20 de junho de 2018 no Complexo da Maré, a página de Facebook do Coletivo Maré Vive faz sua primeira postagem às 06h00 da manhã, saudando a favela.
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/captura-de-tela-de-2020-12-02-00-08-09.png
+            alt: ''
+            description: ''
+          - type: Text
+            hasDropCap: false
+            content: |-
+              Poucas horas depois, inicia-se uma sequência de comentários que dura o resto do dia, relatando sob diversas perspectivas a operação policial que resultou na morte do estudante Marcus Vinicius, 14 anos, e de mais seis jovens, como vimos, além de diversos outros impactos narrados abaixo.
+
+              Reproduzimos abaixo alguns comentários, respeitando a escrita original e a ordem em que se sucederam. Incluímos apenas informações entre colchetes, para auxiliar no entendimento de certos termos.
+
+              > _"Bala comendo solta na comunidade"_
+
+              > _"Polícia no Pinheiro, helicóptero atirando muito pra baixo"_
+
+              > _"Uma adolescente foi baleado aqui em frente a linha vermelha estava com roupa de escola"_
+
+              > _"Helicóptero deu tiro DENTRO do Ciep [escola]. Temos professores e 600 crianças aqui, pelo amor de Deus!!!!"_
+
+              > _"E sempre na hora que nossas crianças estão na escola . Muito triste isso"_
+
+              > _"eles voltaram de novo dando muito tiro aqui na frente da minha casa meu filho de 1 ano acordou gritando com um tiro q pegou na laje aqui de casa"_
+
+              > _"Estou em SP muito preocupado meu filho está na escola próximo ao pontilhão na baixa"_
+
+              > _"To de frente o Brizolao do Pinheiro, é desesperador os gritos das crianças..."_
+
+              > _"Uma criança baleada tá sendo atendida aqui na vila do João"_
+
+              > _"Nossa o caveirao aéreo dando muito tiro meu deus moro perto do Colégio as crianças bricando na quadra quando ouviram foi muita gritaria que Deus proteja elas. Escola do amanhã"_
+
+              > _"E sempre assim,e que se foda que está em baixo! Meu filho e da creche menino maluquinho,que por sinal e de telha como muitas casas aqui na maré! Que proteção e essa que eles dizem da pra sociedade?como estão essas crianças essa momento no meio do tiroteio?e como ficamos nos mães que não conseguimos nem sair de casa pra tentar tirar nossos filhos dessa chuva de bala."_
+
+              > _"n recomendo sair... Aqui na b1 [uma das principais ruas da Maré] mt tiro ainda... Helicoptero sem piedade..... Algumas maes buscaram as crianças na escola do salsa..mas ainda e mt perigoso"_
+
+              > _"O chão da b1 tá todo furado eles atiraram pra baixo sem pensar em ngm esses fdp"_
+
+              > _"Aqui nos prédios do Pinheiro eles passam atirando e o povo gritando pra saírem das ruas e janelas. Ta um desespero, na clínica da família todos no chão, as crianças e idosos"_
+
+              > _"estava domindo com meu esposo estou grávida de 3 messes tomei um grande susto pos so vie eles já dento do meu quarto pediram pra tirá tudo do luga minhas roupas o colchão está duto revirado ainda foi um susto muito grande pois nunca tinha passado por isso"_
+
+              > _"Eu tô na escola com as crianças no chao"_
+
+              > _"Acabei de receber um áudio de uma mulher que se encontra no UPA e relatou que chegou uma criança baleada na barriga , e um moto táxi , os “ canas “ não deixam a ambulância chegar ao local para transferir a criança."_
+
+              > _"Assustador ver os buracos de rajada no chão! Fui buscar minha irmã na creche e fiquei super nervosa de ver as marcas de tiro, que n estavam direcionados pra boca não. Era no meio da rua!! Que Deus nos proteja e conforte às famílias de vítimas, mto doloroso tudo isso. Estão nos matando todo dia"._
+
+              O terror causado pelos tiros que vêm do alto, pelo barulho e pelos voos rasantes dos helicópteros são frequentes nas postagens. Além de voarem baixo e próximo às casas, o helicóptero conhecido como “Caveirão aéreo”, “Águia” ou “Sapão” faz um barulho intenso e perturbador, que se tornou tragicamente icônico no filme _Apocalipse Now_, de Francis Ford Coppola.
+
+              Notamos, na análise das postagens das redes sociais que inúmeras referências ao barulho do helicóptero estão associadas ao sono e ao despertar. Além das menções de moradores no Twitter, o tema também é abordado nas postagens de policiais envolvidos nas operações aéreas, que compartilham vídeos ostentando as armas durante os voos (como as que acompanham esta investigações) e postam memes sobre o tema.
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/acorda_morador_print_instagram2.png
+            alt: ''
+            description: Postagem de um policial envolvido nas operações com helicópteros no Rio de Janeiro, compartilhada abertamente em redes sociais.
+          - type: Text
+            hasDropCap: false
+            content: |-
+              Abaixo, alguns exemplos dos relatos de moradores no Twitter, selecionados entre centenas de mensagens. Nas mensagens, foram realizados pequenos ajustes ortográficos e de escrita e optamos por não revelar a identidade dos autores, que postaram as mensagens em perfis pessoais.
+
+              > _-- Inferno de cidade na qual você acorda com helicóptero dando rasante e tiros! Parabéns aos envolvidos! O governador genocida está dando show._
+              > 
+
+              > _-- Pior forma de acordar é com helicóptero sobrevoando e dando tiros na frente da sua janela. Já acordei me tacando no chão, porque para ele me acertar não é difícil._
+
+              > _-- Às 5:40, acordei com o caveirão aéreo e, desde então, é tiro, caveirão, Bope, Choque, soldado com arma pela rua na frente do caveirão e jipes com exército. [...] Só o que helicóptero gasta de combustível dava para pagar professor._
+
+              > _-- Bom dia para quem dorme e acorda tranquilo. Porque, para nós que acordamos com barulho do águia, caveirão e dos tiros, NÃO TEM BOM DIA!_
+              > 
+
+              > _-- Hoje cedo acordei no susto com barulho do águia da polícia. Parecia que estava caindo aqui em casa. Agora, com barulho de tiro. Difícil..._
+              > 
+
+              > _-- Privilégio de morar em favela é ser acordado por helicóptero e tiros_
+              > 
+
+              > _-- Despertador de pobre é acordar com tiro ou helicóptero tremendo tudo 😴_
+
+              > _-- Despertador no celular é para os fracos. Os fortes acordam 1 hora antes com tiros e barulho de helicóptero._
+              > 
+
+              > _-- Eu tava sonhando e tinha perguntado uma coisa no sonho. E na hora que a pessoa ia responder, começaram vários tiros, helicóptero e não vi a resposta. Rio de Janeiro continua lindo._
+
+              > _-- Estava sonhando com polícia entrando na minha casa. E me acordo com barulho do águia. Não acredito 😟_
+
+              > _-- Acabei de sonhar com helicóptero e tiro. Aí acordo com esses tiros estranhos._
+
+              > _-- Eu sonhei que tomava tiro do helicóptero da PM e acordei todo travado, cheio de dor onde tinha levado os tiros._
+
+              A força policial do Estado, exercida sem respeito aos direitos dos moradores, transforma a favela num território de exceção. Os relatos mostram os impactos psicológicos e emocionais gerados por esta condição de viver em um lugar sem abrigo, que pode ser violado e invadido de forma violenta a qualquer momento. O bairro e a rua, mas também a escola e a própria casa ficam vulneráveis. Até mesmo o que seria mais íntimo e restaurador, como o sono e o sonho, é invadido pelo medo e pelo horror que atravessa a vigília. A violência psicológica dessa condição se expressa nos relatos em que os moradores narram o quanto estão embaralhadas as próprias fronteiras entre sono e vigília, entre sonho (ou pesadelo) e realidade. 
+
+              Abaixo, destacamos algumas mensagens identificadas em redes sociais.
+
+              > _-- Hoje seis da manhã começou a dar muito tiro e do nada veio o helicóptero. Achei que estava sonhando mas era real mesmo. O c\* trancou quando ouvi o helicóptero em cima da minha casa._
+
+              > _-- Helicóptero está baixinho... uma hora dessa meu sono estava gostosinho. Estava até acreditando que os tiros eram no meu sonho._
+              > 
+
+              > _-- Eu estava sonhando que estava no helicóptero. Acordei quando deu tiro, aí que eu vi que não é nada disso._
+
+              > _-- Eu estava sonhando que tinha acontecido um roubo perto do meu curso e acordei com barulho de tiro e helicóptero. Mais um dia no Rio de Janeiro._
+
+              > _-- Eu sonhei que estava em um tiroteio. Fui acordado com barulho de tiros e um helicóptero sobrevoando._
+              > 
+
+              > _-- Estava mesmo sonhando com tiro e guerra... aí passa esse helicóptero, eu achei que estava fazendo parte do meu sonho... agora perdi o sono&#160;_
+
+              A interrupção e invasão do sono e do sonho pela violência cotidiana do Estado converte a capacidade restauradora e libertadora do sonho em um pesadelo sem trégua, terrivelmente similar à realidade cotidiana. É importante lembrar que interromper o sono e o sonho significa interromper as funções essenciais de restauração do organismo e do psiquismo, envolvendo a elaboração de memórias e acontecimentos traumáticos, fundamentais para a saúde física e mental.
 MapBox:
   type: MapBox
   columnAlign: ''
