@@ -1144,8 +1144,8 @@ components:
     description: ''
     showInMenu: true
     animations: true
-    txtColor: Primary
-    bgColor: Secondary
+    txtColor: Secondary
+    bgColor: ''
     imgBg: /uploads/arqueological-remains_03.jpg
     mediaType: image
     media: ''
