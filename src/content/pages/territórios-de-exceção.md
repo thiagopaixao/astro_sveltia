@@ -549,9 +549,40 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: view_1
+        mapView: map3_view1
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: Text
+        hasDropCap: false
+        content: Próximo dali, a Redes da Maré também registrou os impactos das sequências de tiros no chão, trazendo evidências de que os disparos dos helicópteros ocorrem em forma de rajadas. Nas fotos e no vídeo abaixo, é possível ver a localização e proximidade destes disparos.
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/img-20180620-wa0081.jpg
+        alt: ''
+        description: ''
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/img-20180620-wa0085.jpg
+        alt: ''
+        description: ''
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/img-20180620-wa0089.jpg
+        alt: ''
+        description: ''
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/img-20180625-wa0007.jpg
+        alt: ''
+        description: ''
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
     columnAlign: left
-    floatingText: false
+    floatingText: true
   - type: Group
     id: _video2
     shortTitle: _video2
