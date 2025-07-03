@@ -1403,11 +1403,216 @@ components:
     description: ''
     showInMenu: false
     animations: true
+    txtColor: Secondary
+    bgColor: Highlight
+    components:
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map6_view1
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: Text
+        hasDropCap: false
+        content: Com base nos dados coletados, identificamos 415 ocasiões nos quais os helicópteros da Polícia Civil ou Militar do Rio de Janeiro foram utilizados entre 2018 e 2019. O Complexo da Maré é o bairro com mais registros (35), seguido da Cidade de Deus (32).
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: Text
+        hasDropCap: false
+        content: O uso das aeronaves não acontece de forma homogênea. Ela concentra-se em alguns bairros da cidade. No mapa, vemos que os bairros com mais casos registrados estão situados nas zonas norte e oeste da cidade.
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+    columnAlign: right
+    floatingText: true
+  - type: Group
+    id: POLÍCIA NO AR
+    shortTitle: POLÍCIA NO AR
+    longTitle: ''
+    description: ''
+    showInMenu: true
+    animations: true
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: dark
+    components:
+      - type: Columns
+        paddingTop: true
+        paddingBottom: true
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Spacer
+              desktop: '10'
+              tablet: ''
+              mobile: ''
+        column2:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: '# POLÍCIA NO AR'
+            - type: Spacer
+              desktop: 30px
+              tablet: ''
+              mobile: ''
+            - type: Text
+              hasDropCap: false
+              content: Sobre o uso de helicópteros policiais no Rio de Janeiro
+            - type: Spacer
+              desktop: 500px
+              tablet: ''
+              mobile: ''
+    layout: default
+  - type: Group
+    id: _text8
+    shortTitle: _text8
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
     txtColor: Primary
-    bgColor: Secundary
-    components: []
-    columnAlign: left
-    floatingText: false
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: false
+        paddingBottom: false
+        components:
+          - type: Text
+            hasDropCap: true
+            content: |-
+              O uso de helicópteros na Polícia Civil remonta ao início dos anos 1970. Já na Polícia Militar, ele é mais recente, começando a partir de 2008. Juntas, as duas polícias concentram a maior parte da frota de aeronaves do Estado.
+
+              Em 2016, o governo do Rio de Janeiro dispunha de um total de 21 aeronaves e a maioria delas era utilizada pelas forças de segurança do Estado. Segundo reportagem do Jornal O Globo, "nove são da PM, três da Polícia Civil, quatro pertencem à Casa Civil, quatro ao Corpo de Bombeiros uma à Secretaria Estadual de Saúde".
+
+              Segundo o inspetor policial e ex-chefe de gabinete da Secretaria Nacional de Segurança Pública do Ministério da Justiça, Marcello Barros, em artigo publicado em site especializado, o helicóptero Bell Huey - hoje em operação nos céus do Rio de Janeiro e conhecido como Caveirão Aéreo - foi construído em 1967 e foi comprado inicialmente pelo exército norte-americano, sendo utilizado durante a Guerra no Vietnã entre 1968 e 1971 e tendo acumulado mais de 2 mil horas de vôo. Décadas depois, a aeronave foi modernizada e hoje está sob comando da Polícia Civil, com prefixo PR-FEC.
+          - type: Text
+            hasDropCap: false
+            content: '### RISCO PARA OS POLICIAIS'
+          - type: Text
+            hasDropCap: false
+            content: |-
+              Atualmente, tanto a Polícia Civil, quanto a PMERJ possuem um helicóptero modelo Bell Huey. A Polícia Civil adquiriu este modelo de aeronave em novembro de 2008 por R$ 8 milhões, em resposta à morte do policial Eduardo Mattos, que estava a bordo de um helicóptero da Polícia Civil e faleceu ao ser atingido por um disparo na cabeça, durante uma operação no Morro do Adeus.
+
+              Como se vê, embora os helicópteros sejam compreendidos como uma ferramenta "imbatível", sua utilização também pode colocar a própria tripulação em risco, não sendo raro casos de acidentes, alguns inclusive fora de confronto. Na última década, pelo menos oito policiais faleceram em decorrência de quedas de helicópteros policiais no Rio de Janeiro. 
+
+              Um caso que se tornou emblemático, ocorreu em 17 de outubro de 2009, quando pela primeira vez um helicóptero da Polícia Militar foi abatido, enquanto sobrevoava o Morro São João, no Engenho Novo, Zona Norte da cidade. Três agentes faleceram: Marcos Stadler Macedo, Edney Canazaro de Oliveira e o cabo Izo Gomes Patrício.
+
+              Em 2013, um helicóptero da Polícia Civil caiu na Zona Portuária durante um treinamento de rotina e cinco policiais ficaram feridos. Em 2016, houve uma segunda queda de um helicóptero Esquilo da PMERJ durante uma operação na Cidade de Deus, zona oeste da cidade. O helicóptero estava com o pagamento da manutenção atrasado há mais de um ano e no acidente quatro policiais faleceram. Por fim, em 14 de janeiro de 2019, a terceira queda de um Esquilo ocorreu na Baía de Guanabara, causando a morte de um piloto.
+          - type: Text
+            hasDropCap: false
+            content: '### MECANISMOS DE SEGURANÇA IGNORADOS'
+          - type: Text
+            hasDropCap: false
+            content: |-
+              Em entrevista a uma revista especializada em fevereiro de 2016, atiradores da Polícia Civil admitiram não usar mecanismos de estabilização para disparos com certos armamentos embarcados em aeronaves.
+
+              O mecanismo em questão é uma corda elástica ("bungee cord") que prende o armamento à aeronave, estabilizando assim os disparos e reduzindo danos colaterais aos objetivos oficiais da operação.
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/free_door_gunner.jpg
+            alt: ''
+            description: Imagem da corda elástica para estabilização dos disparos, que é ignorada pelos policiais no Rio de Janeiro
+          - type: Text
+            hasDropCap: false
+            content: |-
+              Reproduzimos abaixo o trecho da página 39 da revista Warriors, com grifo nosso, que trata da não utilização da Bungee cord pela Polícia Civil do Rio de Janeiro no Caveirão Aéreo:
+
+              > "Tendo por base a observação do modus operandi de outras unidades estrangeiras, foi colocada a questão referente à utilização ou não do Bungeecord para estabilizar as armas. Ao que os atiradores responderam que apenas usam este sistema para as armas mais pesadas do tipo FAP-IMBEL. Nas restantes **armas mais ligeiras como o Armalite AR10 e Imbel M964, dois tipos de fuzis, são utilizadas de forma livre sem qualquer sistema de retenção e apoio**, isto porque os atiradores embarcados necessitam de mobilidade e muitas das vezes pode haver a necessidade, por alguma razão, de mudar rapidamente de lado do helicóptero e a prisão da arma a um sistema fixo iria dificultar e/ou atrasar esta manobra, bem como os alvos em terra efetuam movimentos rápidos e imprevisíveis e o atirador necessita de ser flexível e ter disponibilidade física assim como da arma."
+  - type: Group
+    id: HELICÓPTEROS COMO PLATAFORMA POLÍTICA
+    shortTitle: HELICÓPTEROS COMO PLATAFORMA POLÍTICA
+    longTitle: ''
+    description: ''
+    showInMenu: true
+    animations: true
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: ''
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundVideo
+        videoSrc: /uploads/cmdtadonis.mp4
+    overlay: dark
+    components:
+      - type: Columns
+        txtColor: ''
+        bgColor: ''
+        paddingTop: true
+        paddingBottom: true
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Spacer
+              desktop: '10'
+              tablet: '10'
+              mobile: '10'
+        column2:
+          components:
+            - type: Spacer
+              desktop: 800px
+              tablet: 800px
+              mobile: 800px
+            - type: Text
+              hasDropCap: false
+              content: '# HELICÓPTEROS COMO PLATAFORMA POLÍTICA'
+            - type: Spacer
+              desktop: 30px
+              tablet: ''
+              mobile: ''
+            - type: Text
+              hasDropCap: false
+              content: O uso político e eleitoral das aeronaves policiais
+        mapView: map2_view1
+    columnAlign: right
+    floatingText: true
+    layout: default
+  - type: Group
+    id: _text9
+    shortTitle: _text9
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: false
+        paddingBottom: false
+        components:
+          - type: Text
+            hasDropCap: true
+            content: |-
+              O "caveirão aéreo" já faz parte do imaginário da população carioca, especialmente entre moradores de favelas. Esse dispositivo bélico, junto com os caveirões terrestres, faz parte de uma demonstração de força do aparato governamental, que ganhou ainda mais destaque no contexto da eleição do Presidente Jair Bolsonaro, com suas bandeiras de flexibilização do uso de armas. Porém, antes mesmo disso, os helicópteros policiais serviram de plataforma política para policiais.
+
+              O Comandante Adonis se tornou conhecido quando foram veiculadas imagens de uma operação sob sua responsabilidade, na Favela da Coreia em 2012. O episódio se tornou conhecido como "Caçada ao Matemático", por conta do codinome de um dos traficantes mais procurados do estado à época. Os vídeos do helicóptero disparando a esmo em uma área densamente povoada, mesmo sem visibilidade adequada, levaram ao afastamento do Comandante.
+
+              O fato não tirou Adonis da cena pública. Pelo contrário. Em 2014, ele se apresentou como candidato a deputado federal pelo Partido Social Democrático (PSD) e durante a campanha usou miniaturas dos helicópteros oficiais para se promover (veja o vídeo acima). Com 4.353 votos, o comandante não foi eleito.
+
+              Mais recentemente, em 2018, quem surfou nessa onda, foi o então candidato a governador Wilson Witzel, cujas palavras de ordem eram "acabar com a corrupção" e "atirar na cabecinha" de criminosos. Já no primeiro ano de seu mandato, em 2019, participou de uma operação da Polícia Civil em Angra dos Reis, que fez uso de helicópteros. Com a presença do governador na aeronave, os policiais buscavam traficantes de drogas em uma mata. Nada acharam, porém, durante a empreitada, atiraram em uma tenda colocada por uma igreja evangélica.
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/witzel.png
+            alt: ''
+            description: O ex-governador Wilson Witzel em helicóptero durante uma operação policial.
 MapBox:
   type: MapBox
   columnAlign: ''
