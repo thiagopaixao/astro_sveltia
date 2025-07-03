@@ -1794,6 +1794,80 @@ components:
               Os tiros vindo de helicópteros, como dito, não ocorrem de forma homogênea em todo o Estado. Nenhum dos 881 autos de resistência registrados no primeiro semestre de 2019 no Estado Rio de Janeiro aconteceu em áreas dominadas por paramilitares.
 
               Em 2019, o Rio de Janeiro bateu recorde de mortes causadas por policiais, desde o início da contagem oficial, em 1998.
+  - type: Map
+    id: _map7
+    shortTitle: _map7
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Secundary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: false
+        paddingBottom: false
+        components:
+          - type: Text
+            hasDropCap: false
+            content: '# LANÇAMENTO DE BOMBAS'
+          - type: VideoEmbed
+            hasDropCap: false
+            content: |-
+              Em 2016, após a realização de uma operação policial na Maré com mais de 12 horas de duração e diversas violações de direitos humanos, representantes da Associação de Moradores da região, organizações locais e a Defensoria Pública deram entrada em uma Ação Civil Pública (ACP) para garantir a vida e os direitos básicos dos moradores durante as ações das forças de segurança na Maré. Naquela noite, a juíza concedeu uma liminar judicial determinando o fim da operação e proibindo a realização de operações policiais no turno da noite.
+
+              A partir daquela liminar, a Defensoria Pública moveu uma ação mais ampla. Graças a ela, em julho de 2017, houve uma decisão do juiz da 6ª Vara da Fazenda Pública, que solicitou à Seseg (Secretaria de Segurança do Estado) um plano de redução de riscos e danos para o enfrentamento a violações de direitos humanos decorrentes de intervenções policiais na Maré.
+
+              A Defensoria pretendia que a medida funcionasse como um "projeto piloto", a ser expandido posteriormente, mas em fevereiro de 2018, a intervenção federal na segurança pública foi decretada e durou até o fim daquele ano e inviabilizou que o piloto fosse pra frente, mas não anulou o que havia sido sancionado pela ACP. 
+
+              Depois da morte de Marcos Vinícius, em junho de 2018 na Maré, a Defensoria Pública pediu à Justiça a proibição do uso de helicópteros em operações. O defensor público Daniel Lozoya, do Núcleo de Defesa dos Direitos Humanos (Nudedh) da Defensoria Pública, descreveu assim o contexto da petição: “Essa situação da utilização de um helicóptero para efetuar disparos de arma de fogo a esmo, em locais urbanos densamente povoados, enquanto se movimenta em alta velocidade é absurdamente temerária, não se tem notícia de algo parecido em qualquer lugar do mundo. A probabilidade de atingir pessoas inocentes é imensa, além do terror psicológico que causa aos moradores e interrupção das atividades na comunidade e prejuízos materiais”. O pedido foi negado. 
+
+              Somente em outubro de 2018, por conta de outra decisão judicial no contexto da Ação Civil Pública, a extinta Secretaria de Segurança do Governo do Estado baixou uma norma com protocolos de atuação para operações policiais. Entre as normas estabelecidas, estava a proibição do disparo a partir de helicópteros em modo rajada. A ACP também estabeleceu protocolos de atuação para as forças terrestres, tais como 
+
+              1. os militares estarem identificados e não entrar nas casas dos moradores sem mandado judicial;
+              2. as operações não poderiam ocorrer em horário de entrada e saída das escolas; 
+              3. as operações deveriam ser acompanhadas por uma ambulância; 
+              4. e, por fim, mas não menos importante, a Secretaria de Estado de Segurança Pública deveria elaborar, com a colaboração de especialistas e de organizações da sociedade civil, um plano de redução de danos. 
+
+              Em outubro de 2018 foi elaborada uma Instrução Normativa da Secretaria de Estado de Segurança Pública que estabeleceu as diretrizes para uso de aeronaves, enfatizando seu uso prioritário para "suporte e apoio das operações" nas seguintes circunstâncias:
+
+              "I- para utilização do sistema de imageamento aéreo com intuito de fornecer detalhamento em tempo real da situação operacional através de rádio e imagem visando identificar antecipadamente as características de envolvidos e suspeitos durante a operação;
+
+              II- transporte de equipe especializada; 
+
+              III - resgate e salvamento; 
+
+              IV - em apoio às equipes terrestres, visando garantir sua segurança no local da operação". 
+
+              O artigo sétimo trata do emprego de disparos a partir das aeronaves. Os capítulos do artigo que deixam mais evidentes sobre como os militares podem operar estão descritos abaixo: 
+
+               "II - que o emprego de arma de fogo embarcado em aeronave somente seja utilizado quando estritamente necessário para legítima defesa dos tripulantes, equipes terrestres e população civil; (...) 
+
+              IV - em caso de emprego de arma de fogo embarcado, seja utilizada apenas arma de fogo longa e calibre que respeite as normas técnicas dos órgãos reguladores; 
+
+              V- no disparo de arma de fogo efetuado pela tripulação do interior de aeronave, sejam efetuados no modo intermitente, observando o número mínimo de disparos para o atingimento do objetivo almejado."
+
+              Em 2019, a Justiça suspendeu a Ação Civil Pública que estabelecia medidas para atuação das forças policiais na Maré. Depois disso e de mais um episódio de violência de Estado no Complexo da Maré a organização Redes da Maré realizou uma ação para visibilizar o terror vivido por moradores e trabalhadores do Complexo da Maré. Mais de 1000 cartas escritas  por moradores da Maré foram entregues ao Tribunal de Justiça do Rio de Janeiro (TJ-RJ). Neles os moradores, entre eles muitas crianças, relatavam através de desenhos e textos o horror e as violações ocorridas em decorrência das operações policiais. Estes relatos foram anexados ao processo que serviu de base para cobrar o restabelecimento de protocolos mínimos para a atuação policial no local, conquistados com a ACP.
+            wideVideo: false
+            videoUrl: https://www.youtube.com/embed/3pM9YLI1gN0?si=RDbbd_OqIhwt1Ada
+            videoCaption: Na Cidade de Deus, moradores registraram o lançamento de bombas a partir do helicóptero
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/desenho.jpg
+            alt: ''
+            description: Desenho realizado por crianças moradoras da Maré, em cartas coletivas à Justiça, pedindo a interrupção do uso das aeronaves.
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/carta2.jpeg
+            alt: ''
+            description: Carta escrita por uma das crianças e coletada pela Redes da Maré
+    columnAlign: right
+    floatingText: true
+    layout: default
   - type: Group
     id: _video6
     shortTitle: _video6
