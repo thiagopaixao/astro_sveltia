@@ -239,6 +239,42 @@ mapbox:
           colorIcon: '#f83f3fff'
           typeIcon: outlined
           text: Local de execuções
+    - id: map5_view1
+      centerLng: '-43.235'
+      centerLat: '-22.867'
+      zoom: '16.5'
+      mobileZoom: '16.5'
+      duration: '8000'
+      bearing: '0'
+      pitch: '20'
+      layers: |-
+        mapbox-satellite
+        200618-execucoes[Name==Marcus Vincius]
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#f83f3fff'
+          typeIcon: outlined
+          text: Execução de Marcus Vinícius
+    - id: map5_view2
+      centerLng: '-43.2394604'
+      centerLat: '-22.8601087'
+      zoom: '18.5'
+      mobileZoom: '18.5'
+      duration: '6000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        mapbox-satellite
+        equipamentos[name==Projeto Uere]
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#def278ff'
+          typeIcon: outlined
+          text: Projeto Uerê
 components:
   - type: Group
     id: TERRITÓRIOS DE EXCEÇÃO
@@ -674,8 +710,8 @@ components:
     description: ''
     showInMenu: false
     animations: true
-    txtColor: Primary
-    bgColor: Secundary
+    txtColor: Secondary
+    bgColor: Highlight
     components:
       - type: MapView
         txtColor: ''
@@ -713,7 +749,7 @@ components:
         paddingBottom: false
         components:
           - type: VideoEmbed
-            wideVideo: false
+            wideVideo: true
             videoUrl: https://player.vimeo.com/video/1098604017?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
             videoCaption: ''
     layout: default
@@ -771,21 +807,49 @@ components:
               O uso de helicópteros como plataforma de tiro é um dos elementos do uso extremo da força presente nesse tipo de operação. Nos anos de 2018 e 2019, identificamos pelo menos nove casos onde helicópteros foram utilizados como plataforma de disparo em áreas residenciais durante ações policiais com características evidentes de uma "operação vingança".
     layout: default
   - type: Map
-    id: _map6
-    shortTitle: _map6
+    id: _map5
+    shortTitle: _map5
     longTitle: ''
     description: ''
     showInMenu: false
     animations: true
-    txtColor: Primary
-    bgColor: Secundary
+    txtColor: Secondary
+    bgColor: Highlight
     components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: view_1
-    columnAlign: left
-    floatingText: false
+        mapView: map5_view1
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: Text
+        hasDropCap: false
+        content: Entre as vítimas do dia 20 de junho, estava Marcus Vinicius, que usava uniforme escolar e mochila quando foi baleado. Depois de se abrigar dos tiros disparados a partir dos helicópteros, ele contou à equipe médica que o socorreu que foi alvejado por um carro blindado da Polícia Civil. O caso evidencia um modus operandi das forças de segurança pública baseado no extermínio. O uniforme escolar furado e manchado de sangue virou um símbolo dessa violência contra moradores de favelas e gerou diversas reações, mas até hoje a morte não foi esclarecida e sua família segue lutando por justiça.
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/camisa-tiro-estudante-assassinado.jpg
+        alt: ''
+        description: ''
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: Text
+        hasDropCap: false
+        content: 'Os disparos realizados a partir de helicópteros em horário escolar no dia 20 de junho não foram um caso isolado. De um total de 84 operações da Polícia Civil entre 2017 e 2019 com horário de início e término identificados, 49 delas (58%) ocorreram antes do meio-dia e 24 (29%) antes das 07h da manhã, coincidindo muitas vezes com o período em que estudantes estão indo ou voltando da escola. A arquitetura da favela inscreveu em seus telhados meios de se proteger dos tiros vindos do alto. Um sintoma claro de que esse tipo de violência se tornou rotina é a placa colocada no teto do Projeto Uerê, organização educacional da Maré, após ter sido atingida por balas vindas das aeronaves: "Escola. Não atire"'
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/placa-escola-nao-atire.jpg
+        alt: ''
+        description: ''
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+    columnAlign: right
+    floatingText: true
 MapBox:
   type: MapBox
   columnAlign: ''
