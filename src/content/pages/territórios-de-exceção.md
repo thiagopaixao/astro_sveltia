@@ -275,6 +275,67 @@ mapbox:
           colorIcon: '#def278ff'
           typeIcon: outlined
           text: Projeto Uerê
+    - id: map6_view1
+      centerLng: '-43.235'
+      centerLat: '-22.867'
+      zoom: '13'
+      mobileZoom: '13'
+      duration: '4000'
+      bearing: '1'
+      pitch: '15'
+      layers: |-
+        op-helicoptero
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: square
+          colorIcon: '#ffffd4ff'
+          typeIcon: outlined
+          text: 1-10 operações
+        - icon: square
+          colorIcon: '#fed98eff'
+          typeIcon: outlined
+          text: 11-20
+        - icon: square
+          colorIcon: '#fe9929ff'
+          typeIcon: outlined
+          text: 21-30
+        - icon: square
+          colorIcon: '#cc4c02ff'
+          typeIcon: outlined
+          text: 30 ou mais
+    - id: map6_view2
+      centerLng: '-43.4'
+      centerLat: '-22.98'
+      zoom: '11'
+      mobileZoom: '11'
+      duration: '5000'
+      bearing: '5'
+      pitch: '25'
+      layers: |-
+        rotulos-bairros
+        op-helicoptero
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: square
+          colorIcon: '#ffffd4ff'
+          typeIcon: outlined
+          text: 1-10 operações
+        - icon: square
+          colorIcon: '#fed98eff'
+          typeIcon: outlined
+          text: 11-20
+        - icon: square
+          colorIcon: '#fe9929ff'
+          typeIcon: outlined
+          text: 21-30
+        - icon: square
+          colorIcon: '#cc4c02ff'
+          typeIcon: outlined
+          text: 30 ou mais
 components:
   - type: Group
     id: TERRITÓRIOS DE EXCEÇÃO
@@ -1301,6 +1362,52 @@ components:
     columnAlign: right
     floatingText: true
     layout: default
+  - type: Group
+    id: _text7
+    shortTitle: _text7
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Text
+        hasDropCap: true
+        content: |-
+          As informações sobre o uso de helicópteros em operações policiais não são públicas. Porém, por meio de registros obtidos via Lei de Acesso à Informação (LAI), análise de material publicado na imprensa, informações coletadas por organizações sociais e raspagem de dados de redes sociais, foi possível levantar dados sobre o uso das aeronaves.
+
+          Em abril de 2019, solicitamos à Polícia Civil e a à Polícia Militar a listagem de operações de combate ao tráfico de drogas realizadas nos anos de 2018 e 2019 que tiveram apoio de helicópteros. A resposta da Polícia Civil chegou em junho, com um documento em formato PDF que veio incompleto. Neste material de 16 páginas, que estava todo numerado, faltava a página de  número 15 que, aparentemente compreendia os dados referentes ao período entre novembro de 2018 e março de 2019. 
+
+          Abrimos um novo pedido solicitando as informações da página ausente e enquanto este trâmite acontecia, no dia 9 de agosto de 2019, o Governo do Estado publicou uma resolução que coloca sob sigilo por 15 anos, o manual que detalha de que forma os helicópteros poderão ser usados em operações. Mesmo sem relação com o pedido em questão, este fato foi citado entre as justificativas para as subsequentes recusas da Polícia Civil em fornecer informações.
+
+          Em reação aos pedidos de LAI realizados pela pesquisa, o governo do estado classificou como sigilosas dados básicos sobre operações da Polícia Civil realizadas com helicóptero até novembro de 2024.
+
+          Tudo isso demonstra que, apesar de haver mecanismos legais de acesso a informações, quando se trata de dados referentes a atuações mais específicas das forças de segurança, os tomadores de decisão podem não somente negar os dados de maneira arbitrária, como também tornar ainda mais opacos todos os processos, mesmo que estas informações sejam de interesse público.
+      - type: ImageBlock
+        wideImage: true
+        src: /uploads/captura-de-tela-de-2020-12-02-01-13-10.png
+        alt: ''
+        description: ''
+      - type: Text
+        hasDropCap: false
+        content: Curiosamente, porém, em julho de 2020, a Polícia Militar respondeu os pedidos de acesso à informação protocolados em agosto de 2019. Tais dados foram incoporados na pesquisa, que se valeu de levantamentos em outras fontes para preencher as lacunas das informações oficiais.
+  - type: Map
+    id: _map6
+    shortTitle: _map6
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    bgColor: Secundary
+    components: []
+    columnAlign: left
+    floatingText: false
 MapBox:
   type: MapBox
   columnAlign: ''
