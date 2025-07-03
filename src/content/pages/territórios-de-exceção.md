@@ -581,7 +581,7 @@ components:
         desktop: 500px
         tablet: 500px
         mobile: 500px
-    columnAlign: left
+    columnAlign: right
     floatingText: true
   - type: Group
     id: _video2
@@ -692,7 +692,7 @@ components:
         desktop: 500px
         tablet: 500px
         mobile: 500px
-    columnAlign: left
+    columnAlign: right
     floatingText: true
   - type: Group
     id: _video4
