@@ -454,6 +454,34 @@ mapbox:
       title: ''
       notes: ''
       items: []
+    - id: map7_view6
+      centerLng: '-43.369'
+      centerLat: '-22.947'
+      zoom: '13'
+      mobileZoom: '13'
+      duration: '2000'
+      bearing: '5'
+      pitch: '0'
+      layers: |-
+        rotulos-bairros
+        op-policial
+        faccoes
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: square
+          colorIcon: '#3967dbff'
+          typeIcon: outlined
+          text: Milícia
+        - icon: square
+          colorIcon: '#f83535ff'
+          typeIcon: outlined
+          text: Comando Vermelho
+        - icon: circle
+          colorIcon: '#a09c9cff'
+          typeIcon: outlined
+          text: 20-42 casos
 components:
   - type: Group
     id: TERRITÓRIOS DE EXCEÇÃO
