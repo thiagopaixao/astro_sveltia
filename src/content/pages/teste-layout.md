@@ -545,7 +545,7 @@ components:
               mobile: '10'
             - type: Gallery
               description: 'Bloco: Gallery_Description_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.'
-              uniqid: 'Bloco: Gallery_Unique ID'
+              uniqid: Gallery_UniqueID2
               images:
                 - image: /uploads/arqueological-remains_03.jpg
                   caption: 'Bloco: Gallery_Image 1_Caption_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
