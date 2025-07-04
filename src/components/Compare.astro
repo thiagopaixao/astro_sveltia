@@ -38,6 +38,12 @@ const { caption, imageLeft, imageRight } = Astro.props;
     $self: &;
     position: relative;
 
+    &:not(:first-child),
+    :global(+ *),
+    :global(.animation-disabled >) & {
+      margin-top: var(--mt-m);
+    }
+
     :global(.group__content) > & {
       @extend %grrr--board;
     }

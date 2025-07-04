@@ -7,9 +7,7 @@ const hasByLine = Astro.slots.has('byline');
   <slot />
   {
     hasByLine && (
-      <Caption>
-        <slot name="byline" />
-      </Caption>
+      <Caption><slot name="byline" /></Caption>
     )
   }
  

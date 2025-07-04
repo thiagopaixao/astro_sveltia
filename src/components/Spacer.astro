@@ -17,8 +17,9 @@ const {desktop, tablet, mobile} = Astro.props;
       height: var(--spacer-d);
     }
 
+    &,
     :global(+ *) {
-      margin-top: 0;
+      margin-top: 0!important;
     }
   }
 </style>
