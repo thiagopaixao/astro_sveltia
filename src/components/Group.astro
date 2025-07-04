@@ -126,14 +126,11 @@ const imgBgVar = imgBg && `url(${imgBg})`;
     &__content {
       position: relative;
       z-index: 3;
-      //temp
-      // width: 100%;
-      // height: 100%;
-      // max-width: 600px;
-      // padding: 80px 20px;
-      // margin-inline: auto;
-      // position: relative;
-      // z-index: 3;
+
+      &:has(> *:not(.spacer):not(.column):not(.columns):not(.column-sticky):first-child:last-child) {
+        padding-block: var(--mt-m);
+      }
+      
     }
   }
 </style>

@@ -82,6 +82,12 @@ const {
     background-color: inherit;
     position: relative;
 
+    &:not(:first-child),
+    :global(+ *),
+    :global(.animation-disabled >) & {
+      margin-top: var(--mt-m);
+    }
+
     @include media-break-down(m) {
       padding-top: 20px;
     }

@@ -104,13 +104,22 @@ const { hasDropCap } = Astro.props
     :global(> ul) {
       @extend .atnl-ul;
 
+      :global(li::before) {
+        color: var(--clr-hl);
+      }
+
       :global(li + li) {
         margin-top: 8px;
       }
     }
 
     :global(> ol) {
+      --li-marker-sep-end: ".";
       @extend .atnl-ol;
+
+      :global(li::before) {
+        color: var(--clr-hl);
+      }
 
       :global(li + li) {
         margin-top: 8px;
@@ -147,6 +156,18 @@ const { hasDropCap } = Astro.props
       }
     }
     
+     :global(a) {
+      text-decoration: underline;
+      text-decoration-color: var(--clr-hl);
+      text-decoration-thickness: 2px;
+      text-decoration-skip-ink: none;
+      text-underline-offset: 0;
+      transition: ease color 0.5s;
+
+      &:hover {
+        color: var(--clr-hl);
+      }
+    }
 
   }
 </style>

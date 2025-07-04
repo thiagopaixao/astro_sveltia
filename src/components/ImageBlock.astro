@@ -15,9 +15,7 @@ const hasCaption = Astro.slots.has("default");
     {
       hasCaption && (
         <figcaption>
-          <Caption>
-            <slot />
-          </Caption>
+          <Caption><slot /></Caption>
         </figcaption>
       )
     }
@@ -36,6 +34,31 @@ const hasCaption = Astro.slots.has("default");
       margin-top: var(--mt-m);
     }
 
+
+    :global(.group__content >) & > div {
+      @extend %grrr--board;
+
+      img {
+        grid-column: content;
+      }
+
+      figcaption {
+        @include media-break-up(m) {
+          grid-column: content;
+        }
+        
+        @include media-break-up(x) {
+          grid-column: board-start 2/board-end 11;
+        }
+      }
+    }
+    
+    :global(.group__content >) &--wide div {
+      img {
+        grid-column: full;
+      }
+    }
+
     &--wide {
       @include media-break-down(m) {
         width: calc(100% + var(--atnl-margin) * 2);
@@ -51,45 +74,59 @@ const hasCaption = Astro.slots.has("default");
   :global(.columns:not(.columns--33-66) .columns__column-2 .image--wide) {
     :global(img) {
       @include media-break-up(m) {
+        width: calc(100% + var(--atnl-margin));
+      }
+      
+      @include media-break-up(x) {
         width: calc(100% + grrr-cols-size(1, 1) + var(--atnl-margin));
       }
     }
   }
 
-  :global(.columns--33-66 .columns__column-1 .image--wide) {
+  :global(.columns__column-1 .image--wide > div) {
     @include media-break-up(m) {
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-end;
+    }
+  }
+  
+  :global(.columns .image--wide img) {
+    @include media-break-up(m) {      
+      width: calc(100% + var(--atnl-margin));
+    }
 
-      :global(img) {
-        width: calc(100% + grrr-cols-size(1, 1) + var(--atnl-margin));
-      }
+    @include media-break-up(x) {
+      width: calc(100% + grrr-cols-size(1, 1) + var(--atnl-margin));
     }
   }
 
   :global(.column .image--wide) {
-    @include media-break-down(l) {
-      width: calc(100% + var(--atnl-margin) * 2);
-      transform: translateX(calc(-1 * var(--atnl-margin)));
-    }
-
-    @include media-break-up(l) {
-      width: grrr-cols-size(10);
-      transform: translateX(
-        calc(
-          -1 * ((100vw - 657px) / 2) + grrr-cols-size(1, 1) + var(--atnl-margin)
-        )
-      );
-    }
-
-    @include media-break-up(xl) {
-      transform: translateX(calc(-1 * grrr-cols-size(2, 1)));
-    }
-
-    &,
-    :global(+ *) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &:not(:first-child),
+    :global(+ *),
+    :global(.animation-disabled >) & {
       margin-top: var(--mt-l);
     }
+    
+    :global(> div) {
+      @include media-break-down(m) {
+        width: calc(100% + var(--atnl-margin) * 2);
+      }
+  
+      @include media-break-up(m) {
+        width: grrr-cols-size(12);
+      }
+      
+      @include media-break-up(x) {
+        width: grrr-cols-size(10);
+      }
+    }
   }
+
+
+
 </style>

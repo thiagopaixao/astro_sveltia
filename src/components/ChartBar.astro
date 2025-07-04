@@ -25,49 +25,51 @@ const chartValues = addNumberPercentToValues(values);
 ---
 
 <div class:list={["chart-bar reveal--fadeInUp", type && `chart-bar--${type}`]}>
-  <span class="chart-bar__title">{title}</span>
+  <div class="chart-bar__holder">
 
-  <div class="chart-bar__values">
-    <div class="chart-bar__bars">
-      {
-        chartValues &&
-          chartValues.map((data, index) => (
-            //valores:
-            //data.color
-            //data.number
-            //data.numberPercent
-            //data.label
-            <div
-              class="chart-bar__item"
-              style={`--clr-chart:${data.color}; --data-perc:${data.numberPercent}%; --index:${index};`}
-            >
-              <span class="chart-bar__label">{data.label}</span>
-              <div class="chart-bar__bar">
-                <span class="chart-bar__number">{data.number}</span>
+    <span class="chart-bar__title">{title}</span>
+  
+    <div class="chart-bar__values">
+      <div class="chart-bar__bars">
+        {
+          chartValues &&
+            chartValues.map((data, index) => (
+              //valores:
+              //data.color
+              //data.number
+              //data.numberPercent
+              //data.label
+              <div
+                class="chart-bar__item"
+                style={`--clr-chart:${data.color}; --data-perc:${data.numberPercent}%; --index:${index};`}
+              >
+                <span class="chart-bar__label">{data.label}</span>
+                <div class="chart-bar__bar">
+                  <span class="chart-bar__number">{data.number}</span>
+                </div>
               </div>
-            </div>
-          ))
-      }
+            ))
+        }
+      </div>
+      <div class="chart-bar__ghost-values">
+        {
+          chartValues &&
+            chartValues.map((data) => (
+              <span class="chart-bar__number">{data.number}</span>
+            ))
+        }
+      </div>
     </div>
-    <div class="chart-bar__ghost-values">
-      {
-        chartValues &&
-          chartValues.map((data) => (
-            <span class="chart-bar__number">{data.number}</span>
-          ))
-      }
+  
+    <div class="chart-bar__notes">
+      <Caption>{notes}</Caption>
     </div>
-  </div>
-
-  <div class="chart-bar__notes">
-    <Caption>
-      {notes}
-    </Caption>
   </div>
 </div>
 
 <style lang="scss">
   @use "../assets/styles/config/config" as *;
+  @use "../assets/styles/globals/grrr" as *;
 
   :global(.animation-disabled:has(.chart-bar) + *) {
     margin-top: var(--mt-m);
@@ -80,11 +82,26 @@ const chartValues = addNumberPercentToValues(values);
     :global(.animation-disabled > ) & {
       margin-top: var(--mt-m);
     }
+    
+    :global(.group__content >) & {
+      @extend %grrr--board;
+    }
+
+    &__holder {
+      :global(.group__content > .chart-bar) & {
+        grid-column: content;
+      }
+    }
 
     &__title {
       @include type("h-m");
       display: block;
       margin-bottom: 40px;
+
+      :global(.columns--33-66 .columns__column-1) &,
+      :global(.columns--66-33 .columns__column-2) & {
+        @include type("h-xs");
+      }
     }
 
     &__values {
@@ -139,6 +156,11 @@ const chartValues = addNumberPercentToValues(values);
       font-weight: 400;
       display: block;
       margin-bottom: 10px;
+
+      :global(.columns--33-66 .columns__column-1) &,
+      :global(.columns--66-33 .columns__column-2) & {
+        @include type("c-m");
+      }
     }
 
     &__bar {
@@ -185,5 +207,7 @@ const chartValues = addNumberPercentToValues(values);
       margin-top: 40px;
       display: block;
     }
+
   }
+  
 </style>

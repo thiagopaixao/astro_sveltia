@@ -1,6 +1,4 @@
-<span class="caption">
-  <slot />
-</span>
+<span class="caption"><slot /></span>
 
 <style lang="scss">
   @use "../assets/styles/config/config" as *;
@@ -9,5 +7,9 @@
     @include type("b-s");
     display: block;
     margin-top: 20px;
+
+    &:empty {
+      display: none;
+    }
   }
 </style>

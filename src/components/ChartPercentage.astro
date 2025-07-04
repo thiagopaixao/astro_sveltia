@@ -5,43 +5,45 @@ const { title, notes, values } = Astro.props;
 ---
 
 <div class="chart-percentage reveal--fadeInUp">
-  <span class="chart-percentage__title reveal--fadeInUp">{title}</span>
-  <div class="chart-percentage__bars">
-    {
-      values &&
-        values.map((data, index) => (
-          <div
-            class="chart-percentage__bar"
-            style={`--clr-chart:${data.color}; --data-perc:${data.number}%; --index:${index}`}
-          />
-        ))
-    }
-  </div>
-  <div class="chart-percentage__captions">
-    {
-      values &&
-        values.map((data, index) => (
-          <div
-            class="chart-percentage__caption"
-            style={`--clr-chart:${data.color}; --index:${index}`}
-          >
-            <span class="chart-percentage__label">
-              {data?.label ? data.label + " - " : ""}
-              <strong>{data.number + "%"}</strong>
-            </span>
-          </div>
-        ))
-    }
-  </div>
-  <div class="chart-percentage__notes reveal--fadeInUp">
-    <Caption>
-      {notes}
-    </Caption>
+  <div class="chart-percentage__holder">
+
+    <span class="chart-percentage__title reveal--fadeInUp">{title}</span>
+    <div class="chart-percentage__bars">
+      {
+        values &&
+          values.map((data, index) => (
+            <div
+              class="chart-percentage__bar"
+              style={`--clr-chart:${data.color}; --data-perc:${data.number}%; --index:${index}`}
+            />
+          ))
+      }
+    </div>
+    <div class="chart-percentage__captions">
+      {
+        values &&
+          values.map((data, index) => (
+            <div
+              class="chart-percentage__caption"
+              style={`--clr-chart:${data.color}; --index:${index}`}
+            >
+              <span class="chart-percentage__label">
+                {data?.label ? data.label + " - " : ""}
+                <strong>{data.number + "%"}</strong>
+              </span>
+            </div>
+          ))
+      }
+    </div>
+    <div class="chart-percentage__notes reveal--fadeInUp">
+      <Caption>{notes}</Caption>
+    </div>
   </div>
 </div>
 
 <style lang="scss">
   @use "../assets/styles/config/config" as *;
+  @use "../assets/styles/globals/grrr" as *;
 
   :global(.animation-disabled:has(.chart-percentage) + *) {
     margin-top: var(--mt-m);
@@ -53,6 +55,16 @@ const { title, notes, values } = Astro.props;
     & :global(+ *),
     :global(.animation-disabled > ) & {
       margin-top: var(--mt-m);
+    }
+
+    :global(.group__content >) & {
+      @extend %grrr--board;
+    }
+
+    &__holder {
+      :global(.group__content > .chart-percentage) & {
+        grid-column: content;
+      }
     }
 
     &__title {
@@ -79,13 +91,18 @@ const { title, notes, values } = Astro.props;
 
     &__captions {
       margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      row-gap: 10px;
+      column-gap: 32px;
     }
 
     &__caption {
       @include type("c-m");
-      margin-right: 32px;
-      display: inline-block;
-      vertical-align: middle;
+      width: fit-content;
+      display: grid;
+      grid-template-columns: 16px auto;
+      gap: 8px;
       opacity: 0;
       transform: translateY(30px);
       transition: 1s ease .5s;
@@ -102,7 +119,7 @@ const { title, notes, values } = Astro.props;
         height: 16px;
         display: inline-block;
         background-color: var(--clr-chart);
-        margin-right: 8px;
+        margin-top: 1px;
         transform: translateY(2px);
       }
     }
