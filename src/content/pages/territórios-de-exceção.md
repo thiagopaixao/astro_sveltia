@@ -879,19 +879,6 @@ components:
             wideVideo: true
             videoUrl: https://player.vimeo.com/video/1098008042?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
             videoCaption: ''
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/modelo3d.jpg
-            alt: ''
-            description: ''
-          - type: Text
-            hasDropCap: false
-            content: Analisando as imagens da operação, foi possível estimar a altura do helicóptero. Na foto abaixo, ele encontra-se a aproximadamente 35 metros do solo, o equivalente a um prédio de 11 pavimentos.
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/helicoptero_quadra.jpg
-            alt: ''
-            description: O cálculo da altura do helicóptero é aproximado.
     layout: default
   - type: Group
     id: _text3
@@ -959,17 +946,6 @@ components:
             videoUrl: https://www.youtube.com/embed/zVVD2s6A2RI?si=hz-22nuaGZsFejGy
             videoCaption: Em outra operação na Maré, no ano de 2019, observa-se o mesmo padrão de sobrevôo.
         mapView: map4_view1
-      - type: Spacer
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-      - type: Text
-        hasDropCap: false
-        content: No vídeo a seguir veremos imagens da Maré a partir desta perspectiva. Reconstruímos parcialmente a trajetória do helicóptero, onde é possível ver indícios do seu movimento de cerco. O ponto no mapa mostra o local aproximado onde seis jovens foram executados pelas forças policiais terrestres no dia 20 de junho.
-      - type: Spacer
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
     columnAlign: right
     floatingText: true
     layout: default
