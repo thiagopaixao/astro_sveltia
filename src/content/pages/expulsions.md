@@ -17,8 +17,8 @@ pageTheme:
   secondaryColor: '#ffffff'
   highlightColor: '#000000'
   auxiliaryColor: '#000000'
-  displayFont: https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap
-  textFont: https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap
+  displayFont: ''
+  textFont: ''
   spacingPatterns:
     - name: Padrão
       mobile: '10'
