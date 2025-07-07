@@ -1937,6 +1937,10 @@ components:
           - type: Text
             hasDropCap: false
             content: '# LANÇAMENTO DE BOMBAS'
+          - type: VideoEmbed
+            wideVideo: false
+            videoUrl: https://www.youtube.com/embed/3pM9YLI1gN0?si=5U7RLd26p70v3Zxh
+            videoCaption: Na Cidade de Deus, moradores registraram o lançamento de bombas a partir do helicóptero
     layout: default
   - type: Group
     id: _text11
