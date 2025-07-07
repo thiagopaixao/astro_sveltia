@@ -337,7 +337,7 @@ mapbox:
           typeIcon: outlined
           text: 30 ou mais
     - id: map7_view1
-      centerLng: '-43.60'
+      centerLng: '-43.40'
       centerLat: '-22.86'
       zoom: '10'
       mobileZoom: '10'
