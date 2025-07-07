@@ -1068,34 +1068,6 @@ components:
 
               O uso de helicópteros como plataforma de tiro é um dos elementos do uso extremo da força presente nesse tipo de operação. Nos anos de 2018 e 2019, identificamos pelo menos nove casos onde helicópteros foram utilizados como plataforma de disparo em áreas residenciais durante ações policiais com características evidentes de uma "operação vingança".
         mapView: map5_view1
-      - type: Spacer
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-      - type: Text
-        hasDropCap: false
-        content: Entre as vítimas do dia 20 de junho, estava Marcus Vinicius, que usava uniforme escolar e mochila quando foi baleado. Depois de se abrigar dos tiros disparados a partir dos helicópteros, ele contou à equipe médica que o socorreu que foi alvejado por um carro blindado da Polícia Civil. O caso evidencia um modus operandi das forças de segurança pública baseado no extermínio. O uniforme escolar furado e manchado de sangue virou um símbolo dessa violência contra moradores de favelas e gerou diversas reações, mas até hoje a morte não foi esclarecida e sua família segue lutando por justiça.
-      - type: ImageBlock
-        wideImage: false
-        src: /uploads/camisa-tiro-estudante-assassinado.jpg
-        alt: ''
-        description: ''
-      - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-      - type: Text
-        hasDropCap: false
-        content: 'Os disparos realizados a partir de helicópteros em horário escolar no dia 20 de junho não foram um caso isolado. De um total de 84 operações da Polícia Civil entre 2017 e 2019 com horário de início e término identificados, 49 delas (58%) ocorreram antes do meio-dia e 24 (29%) antes das 07h da manhã, coincidindo muitas vezes com o período em que estudantes estão indo ou voltando da escola. A arquitetura da favela inscreveu em seus telhados meios de se proteger dos tiros vindos do alto. Um sintoma claro de que esse tipo de violência se tornou rotina é a placa colocada no teto do Projeto Uerê, organização educacional da Maré, após ter sido atingida por balas vindas das aeronaves: "Escola. Não atire"'
-      - type: ImageBlock
-        wideImage: false
-        src: /uploads/placa-escola-nao-atire.jpg
-        alt: ''
-        description: ''
-      - type: Spacer
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
     columnAlign: right
     floatingText: true
     layout: default
