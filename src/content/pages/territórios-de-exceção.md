@@ -1707,7 +1707,9 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia: []
+    backgroundMedia:
+      - type: backgroundVideo
+        videoSrc: /uploads/perspectivahelicoptero_abertura.mp4
     overlay: dark
     components:
       - type: Columns
