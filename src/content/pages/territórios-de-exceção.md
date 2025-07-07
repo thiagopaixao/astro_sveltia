@@ -222,8 +222,8 @@ mapbox:
           typeIcon: outlined
           text: Local aprox. do registro dos disparos
     - id: map4_view1
-      centerLng: '-43.235424'
-      centerLat: '-22.869984'
+      centerLng: '-43.234919'
+      centerLat: '-22.868435'
       zoom: '16.27'
       mobileZoom: '16.27'
       duration: '2000'
