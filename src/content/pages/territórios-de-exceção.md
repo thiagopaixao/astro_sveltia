@@ -407,6 +407,7 @@ mapbox:
       layers: |-
         op-policial
         faccoes
+        mapbox-satellite
       title: ''
       notes: ''
       items:
