@@ -337,8 +337,8 @@ mapbox:
           typeIcon: outlined
           text: 30 ou mais
     - id: map7_view1
-      centerLng: '-43.24'
-      centerLat: '-22.867'
+      centerLng: '-43.27'
+      centerLat: '-22.80'
       zoom: '10'
       mobileZoom: '10'
       duration: '5000'
@@ -412,15 +412,15 @@ mapbox:
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#f50000ff'
+          colorIcon: '#f6f4f4ff'
           typeIcon: outlined
           text: 1-9 casos
         - icon: circle
-          colorIcon: '#f50000ff'
+          colorIcon: '#f6f4f4ff'
           typeIcon: outlined
           text: 10-19 casos
         - icon: circle
-          colorIcon: '#f50000ff'
+          colorIcon: '#f6f4f4ff'
           typeIcon: outlined
           text: 20-42 casos
         - icon: square
