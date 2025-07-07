@@ -306,7 +306,7 @@ mapbox:
           typeIcon: outlined
           text: 30 ou mais
     - id: map6_view2
-      centerLng: '-43.34'
+      centerLng: '-43.30'
       centerLat: '-22.95'
       zoom: '11'
       mobileZoom: '11'
