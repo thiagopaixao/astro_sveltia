@@ -1770,7 +1770,7 @@ components:
     animations: true
     txtColor: Secondary
     customTxtColor: ''
-    bgColor: Secundary
+    bgColor: Highlight
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
