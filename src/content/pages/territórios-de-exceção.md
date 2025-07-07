@@ -513,7 +513,7 @@ components:
         column2:
           components:
             - type: Spacer
-              desktop: 300px
+              desktop: 800px
               tablet: ''
               mobile: ''
             - type: Text
