@@ -1225,6 +1225,10 @@ components:
         desktop: 600px
         tablet: 600px
         mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map5_view2
       - type: Text
         hasDropCap: false
         content: 'Os disparos realizados a partir de helicópteros em horário escolar no dia 20 de junho não foram um caso isolado. De um total de 84 operações da Polícia Civil entre 2017 e 2019 com horário de início e término identificados, 49 delas (58%) ocorreram antes do meio-dia e 24 (29%) antes das 07h da manhã, coincidindo muitas vezes com o período em que estudantes estão indo ou voltando da escola. A arquitetura da favela inscreveu em seus telhados meios de se proteger dos tiros vindos do alto. Um sintoma claro de que esse tipo de violência se tornou rotina é a placa colocada no teto do Projeto Uerê, organização educacional da Maré, após ter sido atingida por balas vindas das aeronaves: "Escola. Não atire"'
