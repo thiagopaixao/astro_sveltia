@@ -258,7 +258,7 @@ mapbox:
           typeIcon: outlined
           text: Execução de Marcus Vinícius
     - id: map5_view2
-      centerLng: '-43.239079'
+      centerLng: '-43.239738'
       centerLat: '-22.860074'
       zoom: '18.5'
       mobileZoom: '18.5'
