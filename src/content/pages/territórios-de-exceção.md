@@ -1470,14 +1470,6 @@ components:
           - type: Text
             hasDropCap: false
             content: Curiosamente, porém, em julho de 2020, a Polícia Militar respondeu os pedidos de acesso à informação protocolados em agosto de 2019. Tais dados foram incoporados na pesquisa, que se valeu de levantamentos em outras fontes para preencher as lacunas das informações oficiais.
-      - type: ImageBlock
-        wideImage: true
-        src: /uploads/captura-de-tela-de-2020-12-02-01-13-10.png
-        alt: ''
-        description: ''
-      - type: Text
-        hasDropCap: false
-        content: Curiosamente, porém, em julho de 2020, a Polícia Militar respondeu os pedidos de acesso à informação protocolados em agosto de 2019. Tais dados foram incoporados na pesquisa, que se valeu de levantamentos em outras fontes para preencher as lacunas das informações oficiais.
   - type: Map
     id: _map6
     shortTitle: _map6
