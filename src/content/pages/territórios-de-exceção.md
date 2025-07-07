@@ -351,7 +351,7 @@ mapbox:
       notes: ''
       items: []
     - id: map7_view2
-      centerLng: '-43.245'
+      centerLng: '-43.445'
       centerLat: '-22.88'
       zoom: '10.2'
       mobileZoom: '10.2'
