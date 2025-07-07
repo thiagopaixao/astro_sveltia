@@ -276,7 +276,7 @@ mapbox:
           typeIcon: outlined
           text: Projeto Uerê
     - id: map6_view1
-      centerLng: '-43.235'
+      centerLng: '-43.26'
       centerLat: '-22.867'
       zoom: '13'
       mobileZoom: '13'
