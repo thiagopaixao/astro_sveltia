@@ -1499,6 +1499,10 @@ components:
         desktop: 500px
         tablet: 500px
         mobile: 500px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map6_view2
       - type: Text
         hasDropCap: false
         content: O uso das aeronaves não acontece de forma homogênea. Ela concentra-se em alguns bairros da cidade. No mapa, vemos que os bairros com mais casos registrados estão situados nas zonas norte e oeste da cidade.
