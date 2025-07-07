@@ -258,8 +258,8 @@ mapbox:
           typeIcon: outlined
           text: Execução de Marcus Vinícius
     - id: map5_view2
-      centerLng: '-43.2394604'
-      centerLat: '-22.8601087'
+      centerLng: '-43.239079'
+      centerLat: '-22.860074'
       zoom: '18.5'
       mobileZoom: '18.5'
       duration: '6000'
