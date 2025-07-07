@@ -204,8 +204,8 @@ mapbox:
           typeIcon: outlined
           text: Escolas do Amanhã
     - id: map3_view1
-      centerLng: '-43.235424'
-      centerLat: '-22.870295'
+      centerLng: '-43.235259'
+      centerLat: '-22.870211'
       zoom: '18'
       mobileZoom: '18'
       duration: '5000'
