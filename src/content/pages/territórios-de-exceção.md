@@ -382,7 +382,7 @@ mapbox:
           typeIcon: outlined
           text: ADA
     - id: map7_view3
-      centerLng: '-43.245'
+      centerLng: '-43.445'
       centerLat: '-22.88'
       zoom: '10'
       mobileZoom: '10'
@@ -397,7 +397,7 @@ mapbox:
       notes: ''
       items: []
     - id: map7_view4
-      centerLng: '-43.245'
+      centerLng: '-43.445'
       centerLat: '-22.88'
       zoom: '10.2'
       mobileZoom: '10.2'
@@ -440,7 +440,7 @@ mapbox:
           typeIcon: outlined
           text: Terceiro Comando Puro
     - id: map7_view5
-      centerLng: '-43.245'
+      centerLng: '-43.445'
       centerLat: '-22.88'
       zoom: '11'
       mobileZoom: '11'
