@@ -1012,10 +1012,6 @@ components:
             wideVideo: true
             videoUrl: https://player.vimeo.com/video/1098604017?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
             videoCaption: ''
-          - type: VideoEmbed
-            wideVideo: false
-            videoUrl: https://www.youtube.com/embed/5vhaEOJk-5U?si=Zt_cI0-5jh4u5L-N
-            videoCaption: Delegado da Polícia Civil anuncia "caça" a acusados de envolvimento na morte de um policial
     layout: default
   - type: Group
     id: _video5
