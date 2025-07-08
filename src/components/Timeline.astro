@@ -8,8 +8,8 @@
     position: relative;
     
     &:not(:first-child),
-    :global(+ *),
-    :global(.animation-disabled >) & {
+    :global(+ *:not(.column)),
+    :global(.animation-disabled:not(:first-child) >) & {
       margin-top: var(--mt-m);
     }
    

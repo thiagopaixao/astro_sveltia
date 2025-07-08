@@ -36,7 +36,7 @@ export default class MapBoxHandler {
         id ? `[data-map-view="${id}"]` : 'data-map-view',
     };
 
-    window.addEventListener('load', this.init.bind(this));
+    window.addEventListener('DOMContentLoaded', this.init.bind(this));
   }
 
   async init() {
@@ -94,10 +94,12 @@ export default class MapBoxHandler {
   async initViewAnchors() {
     await this.setMapWindowDisplacers();
     await this.setMapAnchors();
+      
     const resizeObserver = new ResizeObserver(
       this.setPosToMapAnchors.bind(this)
     );
     resizeObserver.observe(document.body);
+
     return true;
   }
 
@@ -167,7 +169,7 @@ export default class MapBoxHandler {
     const scrollPos = window.scrollY;
     document.documentElement.style.scrollBehavior = 'unset';
     window.scrollTo({ top: 0, behavior: 'instant' });
-
+        
     const getTopDistance = (el) => {
       let distance = 0;
       while (el) {
@@ -178,12 +180,13 @@ export default class MapBoxHandler {
     };
 
     const getMobileAdjustment = (parent, index, top = false) => {
+      
       const mobileAdjustment =
         !parent.classList.value.includes(
           this.sels.mapFloating.replace('.', '')
         ) &&
         this.isMobile() &&
-        !parent.previousElementSibling.closest(
+        !parent.previousElementSibling?.closest(
           `${this.sels.mapWindows}:not(${this.sels.mapFloating})`
         ) &&
         window.innerHeight;
@@ -201,6 +204,7 @@ export default class MapBoxHandler {
             const anchorRef = document.querySelector(
               this.refs.anchorId(el.getAttribute(this.refs.triggerRef()))
             );
+      
             anchorRef.style.top = `${
               getTopDistance(el) + getMobileAdjustment(parent, index, true)
             }px`;

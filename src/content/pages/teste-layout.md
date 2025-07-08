@@ -223,9 +223,15 @@ components:
           - type: Text
             hasDropCap: false
             content: '# BLOCO: COLUMN_BLOCO: TEXT_FONTE: HEADING 1'
+          - type: Spacer
+            desktop: 50px
+            tablet: ''
+            mobile: ''
           - type: Text
             hasDropCap: false
             content: |-
+              # BLOCO: COLUMN_BLOCO: TEXT_FONTE: HEADING 1
+
               Bloco: Text_Content_Fonte: Paragraph: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
 
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim **ipsam voluptatem** quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
@@ -441,6 +447,9 @@ components:
                     ###### Timeline Bullet 5_Content_Fonte: Heading 6
 
                     Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                - type: TimelineBullet
+                  text: ''
+                  content: ''
             - type: ImageBlock
               wideImage: true
               src: /uploads/arqueological-remains_07.jpg
@@ -452,7 +461,7 @@ components:
         alt: ''
         description: 'Bloco: Image Block_Description'
       - type: Column
-        paddingTop: false
+        paddingTop: true
         paddingBottom: false
         components:
           - type: ImageBlock
@@ -545,7 +554,7 @@ components:
               mobile: '10'
             - type: Gallery
               description: 'Bloco: Gallery_Description_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.'
-              uniqid: 'Bloco: Gallery_Unique ID'
+              uniqid: galeria-1
               images:
                 - image: /uploads/arqueological-remains_03.jpg
                   caption: 'Bloco: Gallery_Image 1_Caption_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
@@ -862,9 +871,9 @@ components:
     description: ''
     showInMenu: true
     animations: true
-    txtColor: Secondary
+    txtColor: Primary
     customTxtColor: ''
-    bgColor: Primary
+    bgColor: Secondary
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
@@ -1002,6 +1011,15 @@ components:
         src: /uploads/expulsion-tendetza-antun_16x9edit.jpg
         alt: Image Block_Alt Text
         description: 'Bloco: Image Block_Description'
+      - type: VideoEmbed
+        wideVideo: false
+        videoUrl: https://www.youtube.com/watch?v=u3TpsrmdcSE
+        videoCaption: ''
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: Ea incididunt sunt quis dolor cupidatat velit ipsum officia ullamco sunt id laboris fugiat pariatur sint. Voluptate anim id reprehenderit labore officia laborum enim ea nostrud in. Ullamco sit officia dolore cillum laborum adipisicing. Elit ex ex excepteur exercitation excepteur officia sunt incididunt irure nisi amet.
+            text: Lorem Ispmi
     columnAlign: right
     floatingText: true
   - type: Map
@@ -1145,7 +1163,7 @@ components:
     showInMenu: true
     animations: true
     txtColor: Secondary
-    bgColor: ''
+    bgColor: Primary
     imgBg: /uploads/arqueological-remains_03.jpg
     mediaType: ''
     media: ''
@@ -1263,5 +1281,77 @@ components:
               desktop: '10'
               tablet: ''
               mobile: ''
+  - type: Group
+    id: grupo-17
+    shortTitle: Grupo 17
+    longTitle: Grupo 17
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: VideoEmbed
+        wideVideo: false
+        videoUrl: https://www.youtube.com/watch?v=1HNkgkL7hDo
+        videoCaption: Lorem ipsum dolor sit
+      - type: VideoEmbed
+        wideVideo: true
+        videoUrl: https://www.youtube.com/watch?v=1HNkgkL7hDo
+        videoCaption: Lorem ipsum dolor sit
+      - type: LogosGroup
+        logos:
+          - image: /uploads/Captura de Tela-20241220083834-158x147.png
+            link:
+              url: '#'
+              customTarget: ''
+              title: ''
+          - image: /uploads/Captura de Tela-20241220084024-224x105.png
+            link:
+              url: '#'
+              customTarget: ''
+              title: ''
+          - image: /uploads/Captura de Tela-20241220084110-267x93.png
+            link:
+              url: '#'
+              customTarget: ''
+              title: ''
+      - type: CardsCall
+        cardsCallArr:
+          - link:
+              url: '#'
+              target: ''
+              customTarget: ''
+            img:
+              src: /uploads/arqueological-remains_01.jpg
+              alt: ''
+            title: Lorem I[sium
+            text: Minim sint in nostrud pariatur veniam amet mollit in ex duis fugiat adipisicing ea occaecat. In laboris mollit minim officia eiusmod dolore fugiat dolore pariatur fugiat enim aute est excepteur.
+          - link:
+              url: '#'
+              target: ''
+              customTarget: ''
+            img:
+              src: /uploads/arqueological-remains_05.jpg
+              alt: ''
+            title: Dolor sit amet
+            text: Minim sint in nostrud pariatur veniam amet mollit in ex duis fugiat adipisicing ea occaecat. In laboris mollit minim officia eiusmod dolore fugiat dolore pariatur fugiat enim aute est excepteur.
+      - type: BigNumbers
+        alignment: caption-bottom
+        items:
+          - number: '134234'
+            caption: Lorem Ispum dolor
+          - number: '7136'
+            caption: Dolor sit amter
+          - number: '76956'
+            caption: Sigm sod lort
+      - type: Spacer
+        desktop: 200px
+        tablet: 200px
+        mobile: 200px
 ---
 

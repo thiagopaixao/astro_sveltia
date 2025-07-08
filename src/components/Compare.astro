@@ -39,12 +39,13 @@ const { caption, imageLeft, imageRight } = Astro.props;
     position: relative;
 
     &:not(:first-child),
-    :global(+ *),
-    :global(.animation-disabled >) & {
+    :global(+ *:not(.column)),
+    :global(.animation-disabled:not(:first-child) >) & {
       margin-top: var(--mt-m);
     }
 
-    :global(.group__content) > & {
+    :global(.group__content) > &,
+    :global(.group__content > .animation-disabled >) & {
       @extend %grrr--board;
     }
 
@@ -52,7 +53,8 @@ const { caption, imageLeft, imageRight } = Astro.props;
       position: relative;
       overflow: hidden;
 
-      :global(.group__content) > #{$self} & {
+      :global(.group__content) > #{$self} &,
+      :global(.group__content > .animation-disabled) > #{$self} & {
         grid-column: board-start 2 / board-end 11;
 
         @include media-break-down(x) {
@@ -97,7 +99,8 @@ const { caption, imageLeft, imageRight } = Astro.props;
     }
 
     &__caption {
-      :global(.group__content) > #{$self} & {
+      :global(.group__content) > #{$self} &,
+      :global(.group__content > .animation-disabled) > #{$self} & {
         grid-column: board-start 2 / board-end 11;
 
         @include media-break-down(x) {
