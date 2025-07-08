@@ -29,8 +29,8 @@ const { cards } = Astro.props;
     width: 100%;
 
     &:not(:first-child),
-    & :global(+ *),
-    :global(.animation-disabled > ) & {
+    & :global(+ *:not(.column)),
+    :global(.animation-disabled:not(:first-child) > ) & {
       margin-top: var(--mt-m);
     }
 
@@ -42,7 +42,8 @@ const { cards } = Astro.props;
       margin-top: var(--mt-m);
     }
     
-    :global(.group__content >) & {
+    :global(.group__content >) &,
+    :global(.group__content > .animation-disabled >) & {
       padding-top: var(--mt-l);
     }
     
@@ -52,7 +53,8 @@ const { cards } = Astro.props;
       gap: var(--atnl-gutter);
     }
 
-    :global(.group__content >) & {
+    :global(.group__content >) &,
+    :global(.group__content > .animation-disabled >) & {
       @extend %grrr--board;
       #{$self}__holder {
         grid-column: board-full;

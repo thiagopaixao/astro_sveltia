@@ -13,9 +13,7 @@ const hasCaption = Astro.slots.has("caption");
     {
       hasCaption && (
         <figcaption>
-          <Caption>
-            <slot name="caption" />
-          </Caption>
+          <Caption><slot name="caption" /></Caption>
         </figcaption>
       )
     }
@@ -30,9 +28,33 @@ const hasCaption = Astro.slots.has("caption");
     position: relative;
     
     &:not(:first-child),
-    :global(+ *),
-    :global(.animation-disabled >) &  {
+    :global(+ *:not(.column)),
+    :global(.animation-disabled:not(:first-child) >) &  {
       margin-top: var(--mt-m);
+    }
+
+    :global(.group__content >) & > div,
+    :global(.group__content > .animation-disabled >) & > div {
+      @extend %grrr--board;
+
+      :global(> div) {
+        grid-column: content;
+      }
+
+      figcaption {
+        grid-column: content;
+        
+        @include media-break-up(x) {
+          grid-column: board-start 2/board-end 11;
+        }
+      }
+    }
+    
+    :global(.group__content >) &--wide div,
+    :global(.group__content > .animation-disabled >) &--wide div {
+      :global(> div) {
+        grid-column: full;
+      }
     }
 
     :global(iframe) {

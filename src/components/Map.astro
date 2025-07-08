@@ -146,7 +146,7 @@ const mapViewComponents = components ? components.filter(comp => comp.type === '
       position: relative;
 
       #{$self}--floating-text & {
-        :global(> *:not(div)),
+        :global(> *:not(div):not(.image)),
         :global(> .text > *) {
           display: inline;
           background-color: var(--clr-bg);
@@ -177,7 +177,7 @@ const mapViewComponents = components ? components.filter(comp => comp.type === '
           }
         }
 
-        :global(body:not(.is-safari)) & :global(> *:not(div)),
+        :global(body:not(.is-safari)) & :global(> *:not(div):not(figure)),
         :global(body:not(.is-safari)) & :global(> .text > *) {
           padding: 0.2em 5px;
           margin-left: -5px;
@@ -198,7 +198,9 @@ const mapViewComponents = components ? components.filter(comp => comp.type === '
       border-radius: 3px;
       transition: .3s ease;
 
-      &.hidden {
+      
+      &.hidden,
+      &:has(> button:first-child:last-child) {
         opacity: 0;
       }
 

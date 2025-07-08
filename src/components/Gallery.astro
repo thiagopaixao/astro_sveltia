@@ -129,8 +129,8 @@ const amountLabel = `${images.length} imagens`; // prever que o termo "imagens" 
     container-type: inline-size;
 
     &:not(:first-child),
-    & :global(+ *),
-    :global(.animation-disabled >) & {
+    & :global(+ *:not(.column)),
+    :global(.animation-disabled:not(:first-child) >) & {
       margin-top: var(--mt-m);
     }
 
@@ -191,12 +191,15 @@ const amountLabel = `${images.length} imagens`; // prever que o termo "imagens" 
         z-index: 2;
       }
 
-      &:nth-child(1) {
-        transform: rotate(-5deg) translate(-10px, -40px);
-      }
+      @include media-break-up(s) {
+        &:nth-child(1) {
+          transform: rotate(-5deg) translate(-10px, -40px);
+        }
+        
 
-      &:nth-child(2) {
-        transform: rotate(8deg) translate(15px, -40px);
+        &:nth-child(2) {
+          transform: rotate(8deg) translate(15px, -40px);
+        }
       }
 
       #{$self}.reveal & {
