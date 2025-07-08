@@ -21,7 +21,7 @@ const hasByLine = Astro.slots.has('byline');
     font-weight: 600;
     
     &:not(:first-child),
-    :global(+ *),
+    :global(+ *:not(.column)),
     :global(.animation-disabled >) & {
       margin-top: var(--mt-m);
     }

@@ -52,17 +52,19 @@ const { title, notes, values } = Astro.props;
   .chart-percentage {
     $self: &;
     &:not(:first-child),
-    & :global(+ *),
-    :global(.animation-disabled > ) & {
+    & :global(+ *:not(.column)),
+    :global(.animation-disabled:not(:first-child) > ) & {
       margin-top: var(--mt-m);
     }
 
-    :global(.group__content >) & {
+    :global(.group__content >) &,
+    :global(.group__content > .animation-disabled >) & {
       @extend %grrr--board;
     }
 
     &__holder {
-      :global(.group__content > .chart-percentage) & {
+      :global(.group__content > .chart-percentage) &,
+      :global(.group__content > .animation-disabled > .chart-percentage) & {
         grid-column: content;
       }
     }

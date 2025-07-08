@@ -77,18 +77,22 @@ const chartValues = addNumberPercentToValues(values);
 
   .chart-bar {
     $self: &;
+    overflow: hidden;
+    
     &:not(:first-child),
-    & :global(+ *),
-    :global(.animation-disabled > ) & {
+    & :global(+ *:not(.column)),
+    :global(.animation-disabled:not(:first-child) > ) & {
       margin-top: var(--mt-m);
     }
     
-    :global(.group__content >) & {
+    :global(.group__content >) &,
+    :global(.group__content > .animation-disabled >) & {
       @extend %grrr--board;
     }
 
     &__holder {
-      :global(.group__content > .chart-bar) & {
+      :global(.group__content > .chart-bar) &,
+      :global(.group__content > .animation-disabled > .chart-bar) & {
         grid-column: content;
       }
     }

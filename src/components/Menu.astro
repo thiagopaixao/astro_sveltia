@@ -48,6 +48,7 @@ const { languages, menu, sideLink, title } = Astro.props;
     height: 60px;
     z-index: 200;
     transition: background .3s ease;
+    pointer-events: none;
     
     :global(body:has(.gallery-modal[aria-hidden="false"])) & {
       opacity: 0;
@@ -108,6 +109,7 @@ const { languages, menu, sideLink, title } = Astro.props;
       border: none;
       padding: 0;
       margin: 0;
+      pointer-events: all;
 
       &:hover {
         &::before {
@@ -156,6 +158,7 @@ const { languages, menu, sideLink, title } = Astro.props;
     transform: translateX(100%);
     transition: .8s ease;
     text-transform: uppercase;
+    pointer-events: all;
 
     a, button {
       @media (hover: "hover") {

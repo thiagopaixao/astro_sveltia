@@ -7,7 +7,7 @@ const {desktop, tablet, mobile} = Astro.props;
   @use "../assets/styles/config/config" as *;
 
   .spacer {
-    height: var(--mt-m, var(--spacer-t, var(--spacer-d)));
+    height: var(--spacer-m, var(--spacer-t, var(--spacer-d)));
     
     @include media-break-up(m) {
       height: var(--spacer-t, var(--spacer-d));

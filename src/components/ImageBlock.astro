@@ -28,24 +28,24 @@ const hasCaption = Astro.slots.has("default");
 
   .image {
     width: 100%;
+
     &:not(:first-child),
-    :global(+ *),
-    :global(.animation-disabled >) & {
+    :global(+ *:not(.column)),
+    :global(.animation-disabled:not(:first-child) >) & {
       margin-top: var(--mt-m);
     }
 
 
-    :global(.group__content >) & > div {
+    :global(.group__content >) & > div,
+    :global(.group__content > .animation-disabled >) & > div {
       @extend %grrr--board;
-
+      
       img {
         grid-column: content;
       }
 
       figcaption {
-        @include media-break-up(m) {
-          grid-column: content;
-        }
+        grid-column: content;
         
         @include media-break-up(x) {
           grid-column: board-start 2/board-end 11;
@@ -53,7 +53,8 @@ const hasCaption = Astro.slots.has("default");
       }
     }
     
-    :global(.group__content >) &--wide div {
+    :global(.group__content >) &--wide div,
+    :global(.group__content > .animation-disabled >) &--wide div {
       img {
         grid-column: full;
       }
@@ -63,6 +64,7 @@ const hasCaption = Astro.slots.has("default");
       @include media-break-down(m) {
         width: calc(100% + var(--atnl-margin) * 2);
         transform: translateX(calc(-1 * var(--atnl-margin)));
+        padding-inline: 0;
 
         :global(.caption) {
           padding-inline: var(--atnl-margin);
@@ -107,15 +109,15 @@ const hasCaption = Astro.slots.has("default");
     align-items: center;
     
     &:not(:first-child),
-    :global(+ *),
+    :global(+ *:not(.column)),
     :global(.animation-disabled >) & {
       margin-top: var(--mt-l);
     }
     
     :global(> div) {
-      @include media-break-down(m) {
-        width: calc(100% + var(--atnl-margin) * 2);
-      }
+      // @include media-break-down(m) {
+      //   width: calc(100% + var(--atnl-margin) * 2);
+      // }
   
       @include media-break-up(m) {
         width: grrr-cols-size(12);
