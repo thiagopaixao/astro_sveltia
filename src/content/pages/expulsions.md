@@ -17,8 +17,8 @@ pageTheme:
   secondaryColor: '#ffffff'
   highlightColor: '#000000'
   auxiliaryColor: '#000000'
-  displayFont: https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap
-  textFont: https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap
+  displayFont: ''
+  textFont: ''
   spacingPatterns:
     - name: Padrão
       mobile: '10'
@@ -536,8 +536,8 @@ components:
     overlay: dark
     components:
       - type: Columns
-        paddingTop: false
-        paddingBottom: false
+        paddingTop: true
+        paddingBottom: true
         invertOnMobile: false
         columnsAlign: 33-66
         column1:
@@ -555,9 +555,9 @@ components:
 
                 enclosures and forced evictions caused by project Mirador
             - type: Spacer
-              desktop: 500px
-              tablet: 500px
-              mobile: 500px
+              desktop: 600px
+              tablet: 600px
+              mobile: 600px
             - type: Text
               hasDropCap: false
               content: 'In order to control the territory of the mining concession, the company Ecuacorriente used obscure procedures and intimidating tactics to divide communities and force them to leave their lands. This occurred with the connivance and direct support of the Ecuadorian State, which was instrumental to remove the population in two main ways: on the legal front, by making use of juridical mechanisms to expropriate land and persecute land and nature rights defenders; and on the territory, by deploying security forces to evict families that refused to abandon their land.'
@@ -1360,10 +1360,6 @@ components:
                 # DOWNLOAD REPORT
 
                 ###### [Expulsions Report in PDF](https://www.dropbox.com/s/t603x347361vs9n/20200302_Expulsion_Report_ENG.pdf?dl=0)
-            - type: Spacer
-              desktop: 200px
-              tablet: 200px
-              mobile: 100px
     layout: default
   - type: Group
     id: CREDITS
