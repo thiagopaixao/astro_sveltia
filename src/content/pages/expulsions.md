@@ -1360,10 +1360,6 @@ components:
                 # DOWNLOAD REPORT
 
                 ###### [Expulsions Report in PDF](https://www.dropbox.com/s/t603x347361vs9n/20200302_Expulsion_Report_ENG.pdf?dl=0)
-            - type: Spacer
-              desktop: 200px
-              tablet: 200px
-              mobile: 100px
     layout: default
   - type: Group
     id: CREDITS
