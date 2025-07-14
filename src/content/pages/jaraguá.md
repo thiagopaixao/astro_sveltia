@@ -69,7 +69,7 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        manifestacoes-guarani-linhas
+        manifestacoes-2013-09-26
         ti-jaragua-demarcacao
         ti-jaragua-aldeias
         mapbox-satellite
@@ -144,7 +144,7 @@ components:
       - type: VideoEmbed
         wideVideo: false
         videoUrl: https://www.youtube.com/embed/JCBOU4wQmR8?si=tfTqzA777ZSeDuKX
-        videoCaption: 'fonte: Comissão Guarani Yvyrupa'
+        videoCaption: 'Fonte: Comissão Guarani Yvyrupa'
       - type: Spacer
         desktop: 600px
         tablet: 600px
