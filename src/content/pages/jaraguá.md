@@ -80,6 +80,26 @@ mapbox:
           colorIcon: '#24e037ff'
           typeIcon: outlined
           text: Caminho percorrido
+    - id: map1_view3
+      centerLng: '-46.655'
+      centerLat: '-23.571'
+      zoom: '14.13'
+      mobileZoom: '14.13'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        manifestacoes-2013-10-01
+        ti-jaragua-demarcacao
+        ti-jaragua-aldeias
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Caminho percorrido
 components:
   - type: Group
     id: Teste
@@ -140,11 +160,27 @@ components:
               Local: Altura km 21 bandeirantes
 
               Fechamento de uma das pistas da rodovia dos Bandeirantes, na entrada de SP. Reivindicando o arquivamento da PEC n.o 215 e do PLP n.o 227. Publicação da portaria declaratória das atuais TI Jaraguá e Tenondé Porã. Fim dos processos judiciais movidos pelo Governo do Estado em relação às sobreposições das TI e dos parques estaduais.
-            text: 26/09/2023
+            text: 26/09/2013
       - type: VideoEmbed
         wideVideo: false
         videoUrl: https://www.youtube.com/embed/JCBOU4wQmR8?si=tfTqzA777ZSeDuKX
         videoCaption: 'Fonte: Comissão Guarani Yvyrupa'
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_view3
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: |-
+              Local: Avenida Paulista, na altura do MASP. Da Av. Brigadeiro Luís Antônio rumo ao parque do Ibirapuera, até o Monumento às Bandeiras
+
+              Manifestação na avenida Paulista denominada “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” (que fazia 25 anos), contra a PEC n.o 215 e o PLP n.o 227.
+            text: 01/10/2013
       - type: Spacer
         desktop: 600px
         tablet: 600px
