@@ -118,7 +118,7 @@ components:
         bgColor: ''
         mapView: map1_view1
     columnAlign: center
-    floatingText: false
+    floatingText: true
   - type: Map
     id: manifestações guarani_map 1
     shortTitle: manifestações guarani_map 1
