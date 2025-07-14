@@ -69,7 +69,7 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        manifestacoes-2013-09-26
+        manifestacao-2013-09-26
         ti-jaragua-demarcacao
         ti-jaragua-aldeias
         mapbox-satellite
@@ -89,7 +89,7 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        manifestacoes-2013-10-01
+        manifestacao-2013-10-01
         ti-jaragua-demarcacao
         ti-jaragua-aldeias
         mapbox-satellite
@@ -100,6 +100,27 @@ mapbox:
           colorIcon: '#24e037ff'
           typeIcon: outlined
           text: Caminho percorrido
+    - id: map1_view4
+      centerLng: '-46.661'
+      centerLat: '-23.580'
+      zoom: '16.03'
+      mobileZoom: '16.03'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        manifestacao-2013-10-01
+        manifestacao-2013-10-01-pt2
+        ti-jaragua-demarcacao
+        ti-jaragua-aldeias
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: square
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Ocupação do Monumento às Bandeiras
 components:
   - type: Group
     id: Teste
@@ -182,9 +203,17 @@ components:
               Manifestação na avenida Paulista denominada “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” (que fazia 25 anos), contra a PEC n.o 215 e o PLP n.o 227.
             text: 01/10/2013
       - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_view4
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
     columnAlign: right
     floatingText: false
 ---
