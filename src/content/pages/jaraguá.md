@@ -16,7 +16,7 @@ pageTheme:
   primaryColor: '#5e5e5e'
   secondaryColor: '#ffffff'
   highlightColor: '#000000'
-  auxiliaryColor: '#1b311d'
+  auxiliaryColor: '#376d3b'
   displayFont: ''
   textFont: ''
   spacingPatterns:
