@@ -37,6 +37,40 @@ mapbox:
   columnAlign: right
   floatingText: false
   views: []
-components: []
+components:
+  - type: Group
+    id: Teste
+    shortTitle: Teste
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: ColumnSticky
+        txtColor: ''
+        bgColor: ''
+        paddingTop: false
+        paddingBottom: false
+        layout: text-bigger
+        title: Título
+        components: []
+  - type: Map
+    id: manifestações guarani_map 1
+    shortTitle: Manifestações Guarani
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Secondary
+    bgColor: Highlight
+    components: []
+    columnAlign: right
+    floatingText: false
 ---
 
