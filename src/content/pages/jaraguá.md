@@ -34,9 +34,52 @@ mapbox:
   bearing: '0'
   pitch: '0'
   layers: ''
-  columnAlign: right
+  columnAlign: center
   floatingText: false
-  views: []
+  views:
+    - id: map1_view1
+      centerLng: '-46.763'
+      centerLat: '-23.459'
+      zoom: '12.6'
+      mobileZoom: '12.6'
+      duration: '2000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua-demarcacao
+        ti-jaragua-aldeias
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#976c20ff'
+          typeIcon: outlined
+          text: Aldeias
+        - icon: show_chart
+          colorIcon: '#597d5dff'
+          typeIcon: outlined
+          text: Terra indígena demarcada
+    - id: map1_view2
+      centerLng: '-46.748'
+      centerLat: '-23.468'
+      zoom: '14'
+      mobileZoom: '14'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        manifestacoes-guarani-linhas[Name==2013 [26/09]]
+        ti-jaragua-demarcacao
+        ti-jaragua-aldeias
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Caminho percorrido
 components:
   - type: Group
     id: Teste
@@ -61,15 +104,51 @@ components:
         title: Título
         components: []
   - type: Map
+    id: manifestações guarani_map 1_intro
+    shortTitle: manifestações guarani_map 1_intro
+    longTitle: Manifestações Guarani
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Secondary
+    bgColor: Highlight
+    components:
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_view1
+    columnAlign: center
+    floatingText: false
+  - type: Map
     id: manifestações guarani_map 1
-    shortTitle: Manifestações Guarani
+    shortTitle: manifestações guarani_map 1
     longTitle: ''
     description: ''
     showInMenu: false
     animations: true
     txtColor: Secondary
     bgColor: Highlight
-    components: []
+    components:
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_view2
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: |-
+              Local: Altura km 21 bandeirantes
+
+              Fechamento de uma das pistas da rodovia dos Bandeirantes, na entrada de SP. Reivindicando o arquivamento da PEC n.o 215 e do PLP n.o 227. Publicação da portaria declaratória das atuais TI Jaraguá e Tenondé Porã. Fim dos processos judiciais movidos pelo Governo do Estado em relação às sobreposições das TI e dos parques estaduais.
+            text: 26/09/2023
+      - type: VideoEmbed
+        wideVideo: false
+        videoUrl: https://www.youtube.com/embed/JCBOU4wQmR8?si=tfTqzA777ZSeDuKX
+        videoCaption: 'fonte: Comissão Guarani Yvyrupa'
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
     columnAlign: right
     floatingText: false
 ---
