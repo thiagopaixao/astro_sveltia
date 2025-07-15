@@ -56,7 +56,7 @@ mapbox:
           colorIcon: '#976c20ff'
           typeIcon: outlined
           text: Aldeias
-        - icon: show_chart
+        - icon: square
           colorIcon: '#597d5dff'
           typeIcon: outlined
           text: Terra indígena demarcada
@@ -101,25 +101,23 @@ mapbox:
           typeIcon: outlined
           text: Caminho percorrido
     - id: map1_view4
-      centerLng: '-46.661'
-      centerLat: '-23.580'
-      zoom: '16.03'
-      mobileZoom: '16.03'
+      centerLng: '-46.656'
+      centerLat: '-23.560'
+      zoom: '16.98'
+      mobileZoom: '16.98'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        manifestacoes-guarani-linhas-3
-        ti-jaragua-demarcacao
-        ti-jaragua-aldeias
+        manifestacoes-guarani-poligonos[Name==2016-05-05]
         mapbox-satellite
       title: ''
       notes: ''
       items:
         - icon: square
-          colorIcon: '#24e037ff'
+          colorIcon: '#6aee49ff'
           typeIcon: outlined
-          text: Ocupação do Monumento às Bandeiras
+          text: Ocupação no escritório da Secretaria da Presidência da República
 components:
   - type: Group
     id: Teste
