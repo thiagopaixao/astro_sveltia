@@ -69,7 +69,7 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        manifestacoes-guarani-linhas-2[Name==[2013 [01/10] - PARTE 1]
+        manifestacoes-guarani-linhas-2[Name==2013 [26/09]]
         ti-jaragua-demarcacao
         ti-jaragua-aldeias
         mapbox-satellite
@@ -89,7 +89,7 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        manifestacoes-guarani-linhas-2[Name==[2013 [26/09]]
+        manifestacoes-guarani-linhas-2[Name==2013 [01/10] - PARTE 1]
         ti-jaragua-demarcacao
         ti-jaragua-aldeias
         mapbox-satellite
