@@ -42,7 +42,7 @@ mapbox:
       centerLat: '-23.459'
       zoom: '12.6'
       mobileZoom: '12.6'
-      duration: '2000'
+      duration: '3000'
       bearing: '0'
       pitch: '0'
       layers: |-
