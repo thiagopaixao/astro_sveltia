@@ -37,7 +37,7 @@ mapbox:
   columnAlign: center
   floatingText: false
   views:
-    - id: map1_view1
+    - id: resistencia_intro
       centerLng: '-46.763'
       centerLat: '-23.459'
       zoom: '12.6'
@@ -57,16 +57,34 @@ mapbox:
           colorIcon: '#597d5dff'
           typeIcon: outlined
           text: Terra indígena demarcada
-    - id: map1_view2
-      centerLng: '-46.748'
-      centerLat: '-23.468'
-      zoom: '14'
-      mobileZoom: '14'
+    - id: resistencia_2013-26-09
+      centerLng: '-46.752'
+      centerLat: '-23.460'
+      zoom: '14.60'
+      mobileZoom: '14.60'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        manifestacao-linhas[Nome==2023-30-05]
+        manifestacao-pontos[Nome==2023-26-09]
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Local do protesto
+    - id: resistencia_2013-01-10-pt1
+      centerLng: '-46.655'
+      centerLat: '-23.571'
+      zoom: '14.13'
+      mobileZoom: '14.13'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        manifestacao-linhas[Nome==2013-01-10-pt1]
         mapbox-satellite
       title: ''
       notes: ''
@@ -75,23 +93,7 @@ mapbox:
           colorIcon: '#24e037ff'
           typeIcon: outlined
           text: Caminho percorrido
-    - id: map1_view3
-      centerLng: '-46.655'
-      centerLat: '-23.571'
-      zoom: '14.13'
-      mobileZoom: '14.13'
-      duration: '4000'
-      bearing: '0'
-      pitch: '0'
-      layers: mapbox-satellite
-      title: ''
-      notes: ''
-      items:
-        - icon: show_chart
-          colorIcon: '#24e037ff'
-          typeIcon: outlined
-          text: Caminho percorrido
-    - id: map1_view4
+    - id: resistencia_2013-01-10-pt2
       centerLng: '-46.656'
       centerLat: '-23.560'
       zoom: '16.98'
@@ -99,7 +101,9 @@ mapbox:
       duration: '4000'
       bearing: '0'
       pitch: '0'
-      layers: mapbox-satellite
+      layers: |-
+        manifestacao-poligonos[Nome==2013-01-10-pt2]
+        mapbox-satellite
       title: ''
       notes: ''
       items:
@@ -107,6 +111,20 @@ mapbox:
           colorIcon: '#6aee49ff'
           typeIcon: outlined
           text: Ocupação no escritório da Secretaria da Presidência da República
+    - id: resistencia_2014-16-04
+      centerLng: '-46.633'
+      centerLat: '-23.548'
+      zoom: '16.40'
+      mobileZoom: '16.40'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        manifestacao-poligonos[Nome==2014-16-04]
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items: []
 components:
   - type: Group
     id: Teste
@@ -135,9 +153,9 @@ components:
         tablet: 800px
         mobile: 800px
   - type: Map
-    id: manifestações guarani_map 1_intro
-    shortTitle: manifestações guarani_map 1_intro
-    longTitle: Manifestações Guarani
+    id: resistencia_map_intro
+    shortTitle: resistencia_map_intro
+    longTitle: Resistência
     description: ''
     showInMenu: false
     animations: true
@@ -151,8 +169,8 @@ components:
     columnAlign: center
     floatingText: true
   - type: Map
-    id: manifestações guarani_map 1
-    shortTitle: manifestações guarani_map 1
+    id: resistencia_map
+    shortTitle: resistencia_map
     longTitle: ''
     description: ''
     showInMenu: false
@@ -163,7 +181,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map1_view2
+        mapView: resistencia_2013-26-09
       - type: Timeline
         components:
           - type: TimelineBullet
@@ -183,7 +201,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map1_view3
+        mapView: resistencia_2013-01-10-pt1
       - type: Timeline
         components:
           - type: TimelineBullet
@@ -199,7 +217,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map1_view4
+        mapView: resistencia_2013-01-10-pt2
       - type: Spacer
         desktop: 500px
         tablet: 500px
