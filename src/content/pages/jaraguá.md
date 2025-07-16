@@ -94,10 +94,10 @@ mapbox:
           typeIcon: outlined
           text: Caminho percorrido
     - id: resistencia_2013-01-10-pt2
-      centerLng: '-46.656'
-      centerLat: '-23.560'
-      zoom: '16.98'
-      mobileZoom: '16.98'
+      centerLng: '-46.661'
+      centerLat: '-23.580'
+      zoom: '16'
+      mobileZoom: '16'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -107,10 +107,10 @@ mapbox:
       title: ''
       notes: ''
       items:
-        - icon: square
-          colorIcon: '#6aee49ff'
+        - icon: circle
+          colorIcon: '#36f924ff'
           typeIcon: outlined
-          text: Ocupação no escritório da Secretaria da Presidência da República
+          text: Ocupação no Monumento às Bandeiras
     - id: resistencia_2014-16-04
       centerLng: '-46.633'
       centerLat: '-23.548'
