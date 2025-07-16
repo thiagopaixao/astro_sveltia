@@ -45,10 +45,7 @@ mapbox:
       duration: '3000'
       bearing: '0'
       pitch: '0'
-      layers: |-
-        ti-jaragua-demarcacao
-        ti-jaragua-aldeias
-        mapbox-satellite
+      layers: mapbox-satellite
       title: ''
       notes: ''
       items:
@@ -69,9 +66,7 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        manifestacoes-guarani-linhas[Name==2013-26-09]
-        ti-jaragua-demarcacao
-        ti-jaragua-aldeias
+        manifestacao-linhas[Nome==2023-30-05]
         mapbox-satellite
       title: ''
       notes: ''
@@ -88,11 +83,7 @@ mapbox:
       duration: '4000'
       bearing: '0'
       pitch: '0'
-      layers: |-
-        manifestacoes-guarani-linhas[Name==2014-24-04]
-        ti-jaragua-demarcacao
-        ti-jaragua-aldeias
-        mapbox-satellite
+      layers: mapbox-satellite
       title: ''
       notes: ''
       items:
@@ -108,9 +99,7 @@ mapbox:
       duration: '4000'
       bearing: '0'
       pitch: '0'
-      layers: |-
-        manifestacoes-guarani-poligonos[Name==2016-05-05]
-        mapbox-satellite
+      layers: mapbox-satellite
       title: ''
       notes: ''
       items:
@@ -141,6 +130,10 @@ components:
         layout: text-bigger
         title: Título
         components: []
+      - type: Spacer
+        desktop: 800px
+        tablet: 800px
+        mobile: 800px
   - type: Map
     id: manifestações guarani_map 1_intro
     shortTitle: manifestações guarani_map 1_intro
