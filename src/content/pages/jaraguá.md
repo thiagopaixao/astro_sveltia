@@ -66,7 +66,7 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        manifestacao-pontos[Nome==2023-26-09]
+        manifestacao-pontos[Nome==2013-26-09]
         mapbox-satellite
       title: ''
       notes: ''
