@@ -222,6 +222,10 @@ components:
         desktop: 500px
         tablet: 500px
         mobile: 500px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_2014-16-04
     columnAlign: right
     floatingText: false
 ---
