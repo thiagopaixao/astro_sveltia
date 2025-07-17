@@ -187,9 +187,9 @@ components:
         components:
           - type: TimelineBullet
             content: |-
-              Local: Altura km 21 bandeirantes
+              26 de setembro: em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã.
 
-              Fechamento de uma das pistas da rodovia dos Bandeirantes, na entrada de SP. Reivindicando o arquivamento da PEC n.o 215 e do PLP n.o 227. Publicação da portaria declaratória das atuais TI Jaraguá e Tenondé Porã. Fim dos processos judiciais movidos pelo Governo do Estado em relação às sobreposições das TI e dos parques estaduais.
+              **Local:** Altura km 21 bandeirantes
             text: 26/09/2013
       - type: VideoEmbed
         wideVideo: false
@@ -207,9 +207,9 @@ components:
         components:
           - type: TimelineBullet
             content: |-
-              Local: Avenida Paulista, na altura do MASP. Da Av. Brigadeiro Luís Antônio rumo ao parque do Ibirapuera, até o Monumento às Bandeiras
+              01 de outubro: em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215
 
-              Manifestação na avenida Paulista denominada “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” (que fazia 25 anos), contra a PEC n.o 215 e o PLP n.o 227.
+              **Local/Trajeto:&#32;**Avenida Paulista na altura do MASP, rumo ao Monumento às Bandeiras
             text: 01/10/2013
       - type: Spacer
         desktop: 500px
