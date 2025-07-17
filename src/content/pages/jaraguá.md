@@ -102,6 +102,7 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
+        manifestacao-linhas[Nome==2013-01-10-pt1]
         manifestacao-poligonos[Nome==2013-01-10-pt2]
         mapbox-satellite
       title: ''
