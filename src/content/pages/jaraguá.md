@@ -163,8 +163,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-poligonos[Nome==2014-06-06]
         resistencia-poligonos[Nome==2014-06-06pt2]
+        resistencia-poligonos[Nome==2014-06-06]
         mapbox-satellite
       title: ''
       notes: ''
@@ -180,8 +180,8 @@ mapbox:
     - id: resistencia_2014-25-07
       centerLng: '-46.658'
       centerLat: '-23.560'
-      zoom: '16.54'
-      mobileZoom: '16.54'
+      zoom: '17'
+      mobileZoom: '17'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -197,7 +197,7 @@ mapbox:
           text: Manifestação no Tribunal Regional Federal em São Paulo
     - id: resistencia_2016-05-05
       centerLng: '-46.658'
-      centerLat: '-23.560'
+      centerLat: '-23.559'
       zoom: '17.87'
       mobileZoom: '17.87'
       duration: '2000'
@@ -387,6 +387,15 @@ components:
           - type: TimelineBullet
             content: Ativistas Guarani ocupam a sede da Secretaria da Presidência da República  em São Paulo, na Avenida Paulista, em protesto pela demarcação das T.I.s Jaraguá e Tenondé Porã.
             text: 05/05/2016
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: '##### Portaria "Des-Declaratória" da Terra Indígena Jaraguá'
+            text: '2017'
       - type: Spacer
         desktop: 600px
         tablet: 600px
