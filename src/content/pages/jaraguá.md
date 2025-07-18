@@ -90,6 +90,7 @@ mapbox:
       pitch: '0'
       layers: |-
         resistencia-linhas[Nome==2013-01-10-pt1]
+        resistencia-poligonos[Nome==2013-01-10-pt2]
         ti-jaragua-aldeias
         ti-jaragua-recorte
         mapbox-satellite
