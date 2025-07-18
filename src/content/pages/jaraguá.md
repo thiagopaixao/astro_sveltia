@@ -160,6 +160,29 @@ mapbox:
           colorIcon: '#24e037ff'
           typeIcon: outlined
           text: Caminho percorrido
+    - id: resistencia_2014-06-06
+      centerLng: '-46.659'
+      centerLat: '-23.580'
+      zoom: '16.77'
+      mobileZoom: '16.77'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-poligonos[Nome==2014-06-06]
+        resistencia-poligonos[Nome==2014-06-06pt2]
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: square
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Assembleia Legislativa
+        - icon: circle
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Monumento às Bandeiras
 components:
   - type: Group
     id: Teste
@@ -283,6 +306,23 @@ components:
           - type: TimelineBullet
             content: Protesto partindo do MASP até a praça Roosevelt, exigindo a demarcação das terras Jaraguá e Tenondé Porã.
             text: 24/04/2014
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_2014-06-06
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: Protesto na Assembleia Legislativa de São Paulo e no Monumento às Bandeiras pelo arquivamento da PEC 215 e pela demarcação das T.I.s Jaraguá e Tenondé Porã
+            text: 06/06/2014
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
     columnAlign: right
     floatingText: false
 ---
