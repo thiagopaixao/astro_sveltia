@@ -195,6 +195,24 @@ mapbox:
           colorIcon: '#24e037ff'
           typeIcon: outlined
           text: Manifestação no Tribunal Regional Federal em São Paulo
+    - id: resistencia_2016-05-05
+      centerLng: '-46.658'
+      centerLat: '-23.560'
+      zoom: '17.87'
+      mobileZoom: '17.87'
+      duration: '2000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-pontos[Nome==2016-05-05]
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Escritório da Secretaria da Presidência da República, Avenida Paulista
 components:
   - type: Group
     id: Teste
@@ -347,6 +365,28 @@ components:
 
               Local: Tribunal Regional Federal da Terceira Região (Av. Paulista)
             text: 25/07/2014
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: '##### Portaria declaratória Terra Indígena Jaraguá'
+            text: '2015'
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_2016-05-05
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: Ativistas Guarani ocupam a sede da Secretaria da Presidência da República  em São Paulo, na Avenida Paulista, em protesto pela demarcação das T.I.s Jaraguá e Tenondé Porã.
+            text: 05/05/2016
       - type: Spacer
         desktop: 600px
         tablet: 600px
