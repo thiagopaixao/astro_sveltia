@@ -181,7 +181,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map1_view1
+        mapView: resistencia_intro
       - type: Spacer
         desktop: 600px
         tablet: 600px
