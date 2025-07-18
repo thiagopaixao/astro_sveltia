@@ -213,6 +213,24 @@ mapbox:
           colorIcon: '#24e037ff'
           typeIcon: outlined
           text: Escritório da Secretaria da Presidência da República, Avenida Paulista
+    - id: resistencia_2017-30-08
+      centerLng: '-46.658'
+      centerLat: '-23.559'
+      zoom: '17.87'
+      mobileZoom: '17.87'
+      duration: '2000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-pontos[Nome==2017-30-08]
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Prédio da Presidência em São Paulo, Avenida Paulista
 components:
   - type: Group
     id: Teste
