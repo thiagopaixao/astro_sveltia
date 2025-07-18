@@ -142,6 +142,24 @@ mapbox:
           colorIcon: '#36f924ff'
           typeIcon: outlined
           text: Ato no Pátio do Colégio
+    - id: resistencia_2014-24-04
+      centerLng: '-46.655'
+      centerLat: '-23.556'
+      zoom: '14.40'
+      mobileZoom: '14.40'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-linhas[Nome==2014-24-04]
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Caminho percorrido
 components:
   - type: Group
     id: Teste
@@ -207,7 +225,7 @@ components:
         components:
           - type: TimelineBullet
             content: |-
-              26 de setembro: em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã.
+              Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã.
 
               Local: Altura km 21 bandeirantes
             text: 26/09/2013
@@ -227,7 +245,7 @@ components:
         components:
           - type: TimelineBullet
             content: |-
-              01 de outubro: em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215
+              Em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215
 
               Local/Trajeto: Avenida Paulista na altura do MASP, rumo ao Monumento às Bandeiras
             text: 01/10/2013
@@ -250,15 +268,21 @@ components:
       - type: Timeline
         components:
           - type: TimelineBullet
-            content: |-
-              16 de abril:**&#32;**lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta
-
-              Local: Pátio do Colégio
+            content: Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta
             text: 16/04/2014
       - type: Spacer
         desktop: 600px
         tablet: 600px
         mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_2014-24-04
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: Protesto partindo do MASP até a praça Roosevelt, exigindo a demarcação das terras Jaraguá e Tenondé Porã.
+            text: 24/04/2014
     columnAlign: right
     floatingText: false
 ---
