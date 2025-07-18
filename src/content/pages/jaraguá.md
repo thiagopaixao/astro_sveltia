@@ -231,6 +231,24 @@ mapbox:
           colorIcon: '#24e037ff'
           typeIcon: outlined
           text: Prédio da Presidência em São Paulo, Avenida Paulista
+    - id: resistencia_2017 de 14 a 16-09
+      centerLng: '-46.763'
+      centerLat: '-23.458'
+      zoom: '13.80'
+      mobileZoom: '13.80'
+      duration: '2000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-pontos[Nome==resistencia_2017 de 14 a 16-09]
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Antenas, Pico do Jaraguá
 components:
   - type: Group
     id: Teste
@@ -418,6 +436,43 @@ components:
         desktop: 600px
         tablet: 600px
         mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_2017-30-08
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá, lideranças, _xondaros e xondarias, xamois e xejarys kueri_ da TI Jaraguá realizam uma série de protestos em São Paulo. No dia 30 de agosto, uma ampla mobilização toma a Avenida Paulista.
+            text: 30/08/2017
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_2017 de 14 a 16-09
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: |-
+              Quinze dias depois, entre os dias 14 e 16 de setembro, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo
+
+              Local: Antenas do Pico do Jaraguá e bloqueio da entrada do parque
+            text: de 14 a 16/09/2017
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
     columnAlign: right
     floatingText: false
 ---
