@@ -45,7 +45,10 @@ mapbox:
       duration: '3000'
       bearing: '0'
       pitch: '0'
-      layers: mapbox-satellite
+      layers: |-
+        ti-jaragua-aldeias
+        ti-jaragua-recorte
+        mapbox-satellite
       title: ''
       notes: ''
       items:
@@ -66,7 +69,9 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        manifestacao-pontos[Nome==2013-26-09]
+        resistencia-pontos[Nome==2013-26-09]
+        ti-jaragua-aldeias
+        ti-jaragua-recorte
         mapbox-satellite
       title: ''
       notes: ''
@@ -84,7 +89,9 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        manifestacao-linhas[Nome==2013-01-10-pt1]
+        resistencia-linhas[Nome==2013-01-10-pt1]
+        ti-jaragua-aldeias
+        ti-jaragua-recorte
         mapbox-satellite
       title: ''
       notes: ''
@@ -102,8 +109,10 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        manifestacao-linhas[Nome==2013-01-10-pt1]
-        manifestacao-poligonos[Nome==2013-01-10-pt2]
+        resistencia-linhas[Nome==2013-01-10-pt1]
+        resistencia-poligonos[Nome==2013-01-10-pt2]
+        ti-jaragua-aldeias
+        ti-jaragua-recorte
         mapbox-satellite
       title: ''
       notes: ''
@@ -121,11 +130,17 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        manifestacao-poligonos[Nome==2014-16-04]
+        resistencia-poligonos[Nome==2014-16-04]
+        ti-jaragua-aldeias
+        ti-jaragua-recorte
         mapbox-satellite
       title: ''
       notes: ''
-      items: []
+      items:
+        - icon: square
+          colorIcon: '#36f924ff'
+          typeIcon: outlined
+          text: Ato no Pátio do Colégio
 components:
   - type: Group
     id: Teste
@@ -167,6 +182,10 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: map1_view1
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
     columnAlign: center
     floatingText: true
   - type: Map
@@ -189,7 +208,7 @@ components:
             content: |-
               26 de setembro: em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã.
 
-              **Local:** Altura km 21 bandeirantes
+              Local: Altura km 21 bandeirantes
             text: 26/09/2013
       - type: VideoEmbed
         wideVideo: false
@@ -209,7 +228,7 @@ components:
             content: |-
               01 de outubro: em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215
 
-              **Local/Trajeto:&#32;**Avenida Paulista na altura do MASP, rumo ao Monumento às Bandeiras
+              Local/Trajeto: Avenida Paulista na altura do MASP, rumo ao Monumento às Bandeiras
             text: 01/10/2013
       - type: Spacer
         desktop: 500px
@@ -220,13 +239,25 @@ components:
         bgColor: ''
         mapView: resistencia_2013-01-10-pt2
       - type: Spacer
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: resistencia_2014-16-04
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: |-
+              16 de abril:**&#32;**lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta
+
+              Local: Pátio do Colégio
+            text: 16/04/2014
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
     columnAlign: right
     floatingText: false
 ---
