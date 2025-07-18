@@ -241,6 +241,7 @@ mapbox:
       pitch: '0'
       layers: |-
         resistencia-pontos[Nome==resistencia_2017 de 14 a 16-09]
+        ti-jaragua-aldeias
         mapbox-satellite
       title: ''
       notes: ''
@@ -249,6 +250,24 @@ mapbox:
           colorIcon: '#24e037ff'
           typeIcon: outlined
           text: Antenas, Pico do Jaraguá
+    - id: resistencia_2019-27-03
+      centerLng: '-46.637'
+      centerLat: '-23.548'
+      zoom: '17.18'
+      mobileZoom: '17.18'
+      duration: '2000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-pontos[Nome==2019-27-03]
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Prefeitura de São Paulo, Viaduto do Chá
 components:
   - type: Group
     id: Teste
@@ -469,6 +488,23 @@ components:
 
               Local: Antenas do Pico do Jaraguá e bloqueio da entrada do parque
             text: de 14 a 16/09/2017
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_2019-27-03
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: Ocupação do saguão da Prefeitura de São Paulo contra a municipalização da saúde indígena
+            text: 27/03/2019
       - type: Spacer
         desktop: 500px
         tablet: 500px
