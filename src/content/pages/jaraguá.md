@@ -91,8 +91,6 @@ mapbox:
       layers: |-
         resistencia-linhas[Nome==2013-01-10-pt1]
         resistencia-poligonos[Nome==2013-01-10-pt2]
-        ti-jaragua-aldeias
-        ti-jaragua-recorte
         mapbox-satellite
       title: ''
       notes: ''
@@ -112,8 +110,6 @@ mapbox:
       layers: |-
         resistencia-linhas[Nome==2013-01-10-pt1]
         resistencia-poligonos[Nome==2013-01-10-pt2]
-        ti-jaragua-aldeias
-        ti-jaragua-recorte
         mapbox-satellite
       title: ''
       notes: ''
@@ -132,8 +128,6 @@ mapbox:
       pitch: '0'
       layers: |-
         resistencia-poligonos[Nome==2014-16-04]
-        ti-jaragua-aldeias
-        ti-jaragua-recorte
         mapbox-satellite
       title: ''
       notes: ''
@@ -183,6 +177,24 @@ mapbox:
           colorIcon: '#24e037ff'
           typeIcon: outlined
           text: Monumento às Bandeiras
+    - id: resistencia_2014-25-07
+      centerLng: '-46.658'
+      centerLat: '-23.560'
+      zoom: '16.54'
+      mobileZoom: '16.54'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-poligonos[Nome==2014-25-07]
+        mapbox-satellite
+      title: ''
+      notes: ''
+      items:
+        - icon: square
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Manifestação no Tribunal Regional Federal em São Paulo
 components:
   - type: Group
     id: Teste
@@ -319,6 +331,22 @@ components:
           - type: TimelineBullet
             content: Protesto na Assembleia Legislativa de São Paulo e no Monumento às Bandeiras pelo arquivamento da PEC 215 e pela demarcação das T.I.s Jaraguá e Tenondé Porã
             text: 06/06/2014
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_2014-25-07
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: |-
+              Manifestação em frente ao prédio do Tribunal Regional Federal em São Paulo contra reintegração de posse da Tekoa Pyau e pela demarcação das Terras Guarani no município.
+
+              Local: Tribunal Regional Federal da Terceira Região (Av. Paulista)
+            text: 25/07/2014
       - type: Spacer
         desktop: 600px
         tablet: 600px
