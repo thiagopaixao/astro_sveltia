@@ -1,0 +1,137 @@
+cta: &cta
+  label: 'CTA'
+  name: 'Cta'
+  widget: 'object'
+  summary: '{{fields.shortTitle}}'
+  collapsed: true
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Cta'
+      collapsed: true
+    - label: 'ID'
+      name: 'id'
+      widget: 'string'
+      required: true
+      collapsed: true
+    - label: 'Short Title'
+      name: 'shortTitle'
+      widget: 'string'
+      required: true
+      hint: 'Título curto (obrigatório) - será usado no futuro'
+      collapsed: true
+    - label: 'Long Title'
+      name: 'longTitle'
+      widget: 'string'
+      required: false
+      hint: 'Título longo usado como label no menu (opcional)'
+      collapsed: true
+    - label: 'Description'
+      name: 'description'
+      widget: 'text'
+      required: false
+      hint: 'Descrição do componente (opcional) - será usado no futuro'
+      collapsed: true
+    - label: 'Show in Menu'
+      name: 'showInMenu'
+      widget: 'boolean'
+      default: false
+      hint: 'Ativar para mostrar este componente no menu de navegação'
+      collapsed: true
+    - label: 'Animations'
+      name: 'animations'
+      widget: 'boolean'
+      default: true
+      required: true
+      hint: 'Enable/disable animations for this component'
+      collapsed: true
+    - label: 'Text Color'
+      name: 'txtColor'
+      widget: 'select'
+      options:
+        - { label: 'Primary', value: 'Primary' }
+        - { label: 'Secondary', value: 'Secondary' }
+        - { label: 'Highlight', value: 'Highlight' }
+      default: 'Primary'
+      required: false
+      collapsed: true
+    - label: 'Background Color'
+      name: 'bgColor'
+      widget: 'select'
+      options:
+        - { label: 'Primary', value: 'Primary' }
+        - { label: 'Secondary', value: 'Secondary' }
+        - { label: 'Highlight', value: 'Highlight' }
+      default: 'Secondary'
+      required: false
+      collapsed: true
+    - label: 'Background Image'
+      name: 'imgBg'
+      widget: 'image'
+      required: false
+      allow_multiple: false
+      collapsed: true
+    - label: 'Layout Type'
+      name: 'layout'
+      widget: 'select'
+      options: 
+        - { label: 'Text', value: 'text }
+        - { label: 'Media', value: 'media' }
+      required: true
+      default: text
+    - label: 'Media Type'
+      name: 'mediaType'
+      widget: 'select'
+      options: ['image']
+      default: 'image'
+      required: false
+      condition:
+        field: layout
+        value: media
+      collapsed: true
+    - label: 'Media'
+      name: 'media'
+      widget: 'image'
+      required: false
+      allow_multiple: false
+      condition:
+        field: layout
+        value: media
+      collapsed: true
+    - label: 'CTA Text'
+      name: 'ctaText'
+      widget: 'markdown'
+      required: false
+      collapsed: true
+    - label: 'Highlighted Text'
+      name: 'highlightedText'
+      widget: 'string'
+      required: false
+      condition:
+        field: layout
+        value: text
+      collapsed: true
+    - label: 'Link'
+      name: 'link'
+      widget: 'object'
+      required: false
+      collapsed: true
+      fields:
+        - label: 'URL'
+          name: 'url'
+          widget: 'string'
+          required: false
+          collapsed: true
+        - label: 'Target'
+          name: 'target'
+          widget: 'select'
+          options: ['_self', '_blank']
+          default: '_self'
+          required: false
+          collapsed: true
+        - label: 'Text'
+          name: 'text'
+          widget: 'string'
+          required: false
+          collapsed: true

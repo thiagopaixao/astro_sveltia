@@ -17,8 +17,8 @@ pageTheme:
   secondaryColor: '#ffffff'
   highlightColor: '#000000'
   auxiliaryColor: '#000000'
-  displayFont: https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap
-  textFont: https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap
+  displayFont: ''
+  textFont: ''
   spacingPatterns:
     - name: Padrão
       mobile: '10'
@@ -163,6 +163,11 @@ mapbox:
         desajolos-mirador[Tipo==Comunidad]
       title: ''
       notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#dbce48ff'
+          typeIcon: outlined
+          text: comunity centers
       captions:
         title: ''
         notes: ''
@@ -185,6 +190,11 @@ mapbox:
         sat-2013
       title: ''
       notes: ''
+      items:
+        - icon: close
+          colorIcon: '#d11515ff'
+          typeIcon: outlined
+          text: evicted families
       captions:
         title: ''
         notes: ''
@@ -197,6 +207,7 @@ mapbox:
       centerLng: '-78.465'
       centerLat: '-3.584'
       zoom: '12.2'
+      mobileZoom: ''
       duration: '2000'
       bearing: '0'
       pitch: '0'
@@ -204,6 +215,13 @@ mapbox:
         desajolos-mirador
         expulsion-regions
         sat-2018
+      title: ''
+      notes: ''
+      items:
+        - icon: close
+          colorIcon: '#d11515ff'
+          typeIcon: outlined
+          text: forced evictions
       captions:
         title: ''
         notes: ''
@@ -213,9 +231,10 @@ mapbox:
             typeIcon: outlined
             text: forced evictions
     - id: map2_view4
-      centerLng: '-78.47'
+      centerLng: '-78.470'
       centerLat: '-3.569'
-      zoom: '15'
+      zoom: '15.1'
+      mobileZoom: ''
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -223,10 +242,13 @@ mapbox:
         desajolos-mirador[Data<2015-10-01]
         expulsion-regions
         sat-2018
+      title: ''
+      notes: ''
     - id: map2_view5
       centerLng: '-78.465'
       centerLat: '-3.584'
       zoom: '12.5'
+      mobileZoom: ''
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -234,10 +256,13 @@ mapbox:
         desajolos-mirador[Data<2015-12-31]
         expulsion-regions
         sat-2018
+      title: ''
+      notes: ''
     - id: map2_view6
       centerLng: '-78.50685'
       centerLat: '-3.57468'
       zoom: '14'
+      mobileZoom: ''
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -245,6 +270,8 @@ mapbox:
         desajolos-mirador
         expulsion-regions
         sat-2018
+      title: ''
+      notes: ''
     - id: map3_view1
       centerLng: '-78.465'
       centerLat: '-3.584'
@@ -365,7 +392,7 @@ components:
             - type: Spacer
               desktop: 500px
               tablet: 500px
-              mobile: 500px
+              mobile: 200px
             - type: Text
               hasDropCap: false
               content: |-
@@ -391,9 +418,6 @@ components:
     txtColor: Secondary
     bgColor: Highlight
     components:
-      - type: Text
-        hasDropCap: false
-        content: Mining, illegal or legal, is widespread throughout Amazonia, happening at both small and large scales. It is estimated that mining concessions [covers 21% of the total surface of the Amazon basin.](https://issuu.com/darperu/docs/megaproyectos_ingles_final) This is equivalent of imagining a territory over twice larger than Spain, predominantly formed by primary forests and innumerable freshwater streams, completely zoned for extraction – a mega-mine operating on planetary scale.
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -404,33 +428,40 @@ components:
         mobile: ''
       - type: Text
         hasDropCap: false
-        content: Mining blocks often overlap with demarcated and non-demarcated indigenous territories, communal lands and ecological reserves, generating conflicts over land and water with local communities. According to the project [Environmental Justice Atlas](https://ejatlas.org/), there current exists at least 56 water and land conflicts related to mining in the Amazon basin.
+        content: Mining, illegal or legal, is widespread throughout Amazonia, happening at both small and large scales. It is estimated that mining concessions [covers 21% of the total surface of the Amazon basin.](https://issuu.com/darperu/docs/megaproyectos_ingles_final) This is equivalent of imagining a territory over twice larger than Spain, predominantly formed by primary forests and innumerable freshwater streams, completely zoned for extraction – a mega-mine operating on planetary scale.
+      - type: Spacer
+        desktop: 500px
+        tablet: ''
+        mobile: ''
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map1_view2
+      - type: Text
+        hasDropCap: false
+        content: Mining blocks often overlap with demarcated and non-demarcated indigenous territories, communal lands and ecological reserves, generating conflicts over land and water with local communities. According to the project [Environmental Justice Atlas](https://ejatlas.org/), there current exists at least 56 water and land conflicts related to mining in the Amazon basin.
       - type: Spacer
         desktop: 500px
         tablet: ''
         mobile: ''
-      - type: Text
-        hasDropCap: false
-        content: Mining concessions cover about 11% of the Ecuadorian territory. They are mainly concentrate in the southern flank of the Amazon region. These concessions are in conflict with indigenous territories and protected ecological reserves.
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map1_view3
+      - type: Text
+        hasDropCap: false
+        content: Mining concessions cover about 11% of the Ecuadorian territory. They are mainly concentrate in the southern flank of the Amazon region. These concessions are in conflict with indigenous territories and protected ecological reserves.
       - type: Spacer
         desktop: 500px
         tablet: ''
         mobile: ''
-      - type: Text
-        hasDropCap: false
-        content: This massive push in the mining frontier in Ecuador is driven by several projects of “mega-mining.” Three ofthem – Mirador, San Carlos-Panantza, and Frutal del Norte – are situated next to each other in region of the Cordillera del Cóndor mountain range in Shuar ancestral territory, south of the Ecuadorian Amazon.
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map1_view4
+      - type: Text
+        hasDropCap: false
+        content: This massive push in the mining frontier in Ecuador is driven by several projects of “mega-mining.” Three ofthem – Mirador, San Carlos-Panantza, and Frutal del Norte – are situated next to each other in region of the Cordillera del Cóndor mountain range in Shuar ancestral territory, south of the Ecuadorian Amazon.
       - type: Spacer
         desktop: 500px
         tablet: ''
@@ -505,8 +536,8 @@ components:
     overlay: dark
     components:
       - type: Columns
-        paddingTop: false
-        paddingBottom: false
+        paddingTop: true
+        paddingBottom: true
         invertOnMobile: false
         columnsAlign: 33-66
         column1:
@@ -524,9 +555,9 @@ components:
 
                 enclosures and forced evictions caused by project Mirador
             - type: Spacer
-              desktop: 500px
-              tablet: 500px
-              mobile: 500px
+              desktop: 600px
+              tablet: 600px
+              mobile: 600px
             - type: Text
               hasDropCap: false
               content: 'In order to control the territory of the mining concession, the company Ecuacorriente used obscure procedures and intimidating tactics to divide communities and force them to leave their lands. This occurred with the connivance and direct support of the Ecuadorian State, which was instrumental to remove the population in two main ways: on the legal front, by making use of juridical mechanisms to expropriate land and persecute land and nature rights defenders; and on the territory, by deploying security forces to evict families that refused to abandon their land.'
@@ -662,42 +693,53 @@ components:
     txtColor: Secondary
     bgColor: Highlight
     components:
-      - type: Text
-        hasDropCap: false
-        content: Sattelite image of the Mirador mining area in 2013, before the systematic evictions.
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map2_view1
       - type: Spacer
-        desktop: 500px
+        desktop: 600px
         tablet: ''
         mobile: ''
       - type: Text
         hasDropCap: false
-        content: Location of forced evictions between 2014 and 2018 (excluding processes of "servidumbre")
+        content: Sattelite image of the Mirador mining area in 2013, before the systematic evictions.
+      - type: Spacer
+        desktop: 600px
+        tablet: ''
+        mobile: ''
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map2_view2
+      - type: Text
+        hasDropCap: false
+        content: Location of forced evictions between 2014 and 2018 (excluding processes of "servidumbre")
       - type: Spacer
-        desktop: 500px
+        desktop: 600px
         tablet: ''
         mobile: ''
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_view3
       - type: Text
         hasDropCap: false
         content: |-
           Satellite image of Mirador mining area in 2019, showing the mining pit and extraction infrastructures over location of forced displacements.
 
           The destruction of San Marcos was the first of a series of violent evictions conducted by state and private forces between 2014 and 2017, which affected at least 27 families between shuar, kichwa and mestizos throughout the region.
+      - type: Spacer
+        desktop: 600px
+        tablet: ''
+        mobile: ''
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map2_view3
-      - type: Spacer
         desktop: 500px
         tablet: ''
         mobile: ''
+        mapView: map2_view4
       - type: Text
         hasDropCap: false
         content: On 30 September 2015, at dawn and without prior notice, police officers and security guards of the company Ecuacorriente carried out an eviction against 13 families in San Marcos and on the El Cóndor road, at the margins of the Tundayme River. Equipped with guns and bulldozers, they destroyed their homes, edible gardens and hen houses, forcing elderly, women and youth to flee without place to go.
@@ -708,25 +750,12 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: map2_view4
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        desktop: 500px
-        tablet: ''
-        mobile: ''
-        mapView: map2_view4
       - type: Spacer
         hasDropCap: false
         content: Weeks latter, on 16 December 2015, another violent land-clearing operation was conducted across the area. Once again at dawn and without prior notice and judicial order, state and private security forces and evicted more 14 families. Similar to the displacements of September, all the houses were destroyed in front of the families as a way of terrorizing them and preventing their return.
         desktop: 500px
         tablet: ''
         mobile: ''
-      - type: Text
-        hasDropCap: false
-        content: Weeks latter, on 16 December 2015, another violent land-clearing operation was conducted across the area. Once again at dawn and without prior notice and judicial order, state and private security forces and evicted more 14 families. Similar to the displacements of September, all the houses were destroyed in front of the families as a way of terrorizing them and preventing their return.
-        txtColor: ''
-        bgColor: ''
-        mapView: map2_view5
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -734,18 +763,18 @@ components:
         tablet: ''
         mobile: ''
         mapView: map2_view5
+      - type: Text
+        hasDropCap: false
+        content: Weeks latter, on 16 December 2015, another violent land-clearing operation was conducted across the area. Once again at dawn and without prior notice and judicial order, state and private security forces and evicted more 14 families. Similar to the displacements of September, all the houses were destroyed in front of the families as a way of terrorizing them and preventing their return.
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_view5
       - type: Spacer
         hasDropCap: false
         content: The last evictions took place on 13 May 2016 against the shuar family Tendetza-Antún in the community of Yanua Kim, and latter on 04 February 2017 against Rosario Wari and her son, by that time the last residents of the area.
         desktop: 500px
         tablet: ''
         mobile: ''
-      - type: Text
-        hasDropCap: false
-        content: The last evictions took place on 13 May 2016 against the shuar family Tendetza-Antún in the community of Yanua Kim, and latter on 04 February 2017 against Rosario Wari and her son, by that time the last residents of the area.
-        txtColor: ''
-        bgColor: ''
-        mapView: map2_view6
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -753,11 +782,17 @@ components:
         tablet: ''
         mobile: ''
         mapView: map2_view6
+      - type: Text
+        hasDropCap: false
+        content: The last evictions took place on 13 May 2016 against the shuar family Tendetza-Antún in the community of Yanua Kim, and latter on 04 February 2017 against Rosario Wari and her son, by that time the last residents of the area.
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_view6
       - type: Spacer
         desktop: 500px
         tablet: ''
         mobile: ''
-    columnAlign: left
+    columnAlign: right
     floatingText: true
   - type: Group
     id: _video3
@@ -903,28 +938,48 @@ components:
     txtColor: Secondary
     bgColor: Highlight
     components:
-      - type: Text
+      - type: MapView
         hasDropCap: false
         content: This satellite image shows the site of Project Mirador in 2013, after the destruction of the village of San Marcos and prior to the forced evictions of 2014-2017. At this moment the company Ecuacorriente was initiating the construction of the extraction complex, and few infrastructural works are visible. Most of the families alongside the Tundayme and Wawayme rivers still lived in the area.
-      - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map3_view1
       - type: Spacer
+        txtColor: ''
+        bgColor: ''
         desktop: 500px
         tablet: ''
         mobile: ''
+        mapView: map3_view1
       - type: Text
         hasDropCap: false
+        content: This satellite image shows the site of Project Mirador in 2013, after the destruction of the village of San Marcos and prior to the forced evictions of 2014-2017. At this moment the company Ecuacorriente was initiating the construction of the extraction complex, and few infrastructural works are visible. Most of the families alongside the Tundayme and Wawayme rivers still lived in the area.
+        desktop: 500px
+        tablet: ''
+        mobile: ''
+      - type: Spacer
+        hasDropCap: false
         content: This satellite image shows the mining site in 2018, after the violent evictions of 2014-2017 that depopulated the area. The territory changed dramatically as vast tracts of forests were completely destroyed. The mine infrastructure occupies a much larger space, the tailing dams and the crater are in advanced stages of construction.
+        desktop: 500px
+        tablet: ''
+        mobile: ''
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map3_view2
+      - type: Text
+        hasDropCap: false
+        content: This satellite image shows the mining site in 2018, after the violent evictions of 2014-2017 that depopulated the area. The territory changed dramatically as vast tracts of forests were completely destroyed. The mine infrastructure occupies a much larger space, the tailing dams and the crater are in advanced stages of construction.
+        wideVideo: false
+        videoUrl: https://www.youtube.com/embed/Fjw2gpkD6fc?si=kTkpYA8RpFDIfsBS
+        videoCaption: ''
       - type: VideoEmbed
         wideVideo: false
         videoUrl: https://www.youtube.com/embed/Fjw2gpkD6fc?si=kTkpYA8RpFDIfsBS
         videoCaption: ''
+        desktop: 500px
+        tablet: ''
+        mobile: ''
       - type: Spacer
         desktop: 500px
         tablet: ''
@@ -1076,17 +1131,25 @@ components:
     txtColor: Secondary
     bgColor: Highlight
     components:
-      - type: Text
-        hasDropCap: false
-        content: Several archaeological sites are located inside the mining concession area. The few sites that went through carbon tests show a concentration of dates between 800 and 1300 AD. According to one archaeological study, this allows to infer “a period of greater occupation” in this interval, just prior to the invasion of European colonizers. The communities that lived in this region were therefore the near ancestors of the Jivaroan peoples.
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map4_view1
       - type: Spacer
+        desktop: 600px
+        tablet: ''
+        mobile: ''
+      - type: Text
+        hasDropCap: false
+        content: Several archaeological sites are located inside the mining concession area. The few sites that went through carbon tests show a concentration of dates between 800 and 1300 AD. According to one archaeological study, this allows to infer “a period of greater occupation” in this interval, just prior to the invasion of European colonizers. The communities that lived in this region were therefore the near ancestors of the Jivaroan peoples.
+      - type: Spacer
         desktop: 500px
         tablet: ''
         mobile: ''
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map4_view2
       - type: Text
         hasDropCap: false
         content: Documentation of excavation of a terrace structure st an archaeological site located where the village of San Marcos was. (site Z6DIII-04T).
@@ -1110,14 +1173,14 @@ components:
         src: /uploads/arqueological-remains_04.jpg
         alt: ''
         description: ''
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map4_view2
       - type: Spacer
         desktop: 500px
         tablet: ''
         mobile: ''
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map4_view3
       - type: Text
         hasDropCap: false
         content: Documentation of funerary urn found during the excavation of a terraza structure in archaeological site Z6C4-010
@@ -1126,14 +1189,14 @@ components:
         src: /uploads/expulsion-arch-4.jpeg
         alt: ''
         description: ''
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map4_view3
       - type: Spacer
         desktop: 500px
         tablet: ''
         mobile: ''
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map4_view4
       - type: Text
         hasDropCap: false
         content: Documentation of the petroglyph found in archaeological site Z6DIII-020 before its destruction. An investigation commissioned by Ecuacorriente in 2006 identified a large petroglyph in this area. This study concludes by recommending a modification in the original project of the mine to “avoid the destruction” of the petroglyph and its adjacent archaeological structures, which included more than 30 terraced structures. These recommendations were ignored. In a field inspection conducted by the Ecuadorian National Institute of Cultural Heritage (INPC) in 2017, researchers found that the petroglyph had been “partially destroyed.”
@@ -1142,15 +1205,11 @@ components:
         src: /uploads/expulsion-arch-3.jpeg
         alt: ''
         description: ''
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map4_view4
       - type: Spacer
-        desktop: 500px
+        desktop: 600px
         tablet: ''
         mobile: ''
-    columnAlign: left
+    columnAlign: right
     floatingText: true
   - type: Group
     id: _video4
@@ -1301,10 +1360,6 @@ components:
                 # DOWNLOAD REPORT
 
                 ###### [Expulsions Report in PDF](https://www.dropbox.com/s/t603x347361vs9n/20200302_Expulsion_Report_ENG.pdf?dl=0)
-            - type: Spacer
-              desktop: 200px
-              tablet: 200px
-              mobile: 100px
     layout: default
   - type: Group
     id: CREDITS
