@@ -222,13 +222,6 @@ components:
         components:
           - type: Text
             hasDropCap: false
-            content: '# BLOCO: COLUMN_BLOCO: TEXT_FONTE: HEADING 1'
-          - type: Spacer
-            desktop: 50px
-            tablet: ''
-            mobile: ''
-          - type: Text
-            hasDropCap: false
             content: |-
               # BLOCO: COLUMN_BLOCO: TEXT_FONTE: HEADING 1
 
@@ -401,10 +394,10 @@ components:
           components:
             - type: Text
               hasDropCap: false
-              content: '##### Bloco: Columns _ Bigger Left _ Bloco: Text _ Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus'
-            - type: Text
-              hasDropCap: false
-              content: 'Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error sit'
+              content: |-
+                ##### Bloco: Columns _ Bigger Left _ Bloco: Text _ Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus
+
+                Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit
             - type: VideoEmbed
               wideVideo: true
               videoUrl: https://player.vimeo.com/video/350133875?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
