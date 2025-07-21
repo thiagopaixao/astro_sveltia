@@ -17,4 +17,11 @@ timeline: &timeline
       collapsed: true
       types:
         - *timelineBullet
+        - *text
+        - *button
+        - *imageBlock
+        - *videoEmbed
+        - *htmlEmbed
         - *spacer
+        - *pullquote
+        - *card

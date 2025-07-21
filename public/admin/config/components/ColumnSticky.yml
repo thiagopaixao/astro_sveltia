@@ -67,3 +67,4 @@ columnSticky: &columnSticky
         - *spacer
         - *slider
         - *cards
+        - *timeline

@@ -1,0 +1,49 @@
+button: &button
+  label: 'Button'
+  name: 'Button'
+  widget: 'object'
+  summary: '{{fields.link.text}}'
+  collapsed: true
+  fields:
+    - label: 'Type'
+      name: 'type'
+      widget: 'hidden'
+      default: 'Button'
+      collapsed: true
+    - label: 'Link'
+      name: 'link'
+      widget: 'object'
+      required: true
+      collapsed: true
+      fields:
+        - label: 'URL'
+          name: 'url'
+          widget: 'string'
+          required: true
+          collapsed: true
+        - label: 'Target'
+          name: 'target'
+          widget: 'select'
+          options: ['_self', '_blank']
+          default: '_self'
+          required: false
+          collapsed: true
+        - label: 'Text'
+          name: 'text'
+          widget: 'string'
+          required: true
+          collapsed: true
+    - label: 'Icon HTML'
+      name: 'icon'
+      widget: 'string'
+      required: false
+      hint: 'HTML do ícone Material Symbols, ex: <span class="material-symbols-outlined">arrow_right_alt</span>'
+      collapsed: true
+    - label: 'Size'
+      name: 'size'
+      widget: 'select'
+      options:
+        - { label: 'Normal', value: '' }
+        - { label: 'Wide', value: 'wide' }
+      required: false
+      collapsed: true

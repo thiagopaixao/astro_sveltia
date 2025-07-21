@@ -135,9 +135,9 @@ group: &group
         - *logosGroup
         - *column
         - *columns
-        - *timeline
         - *spacer
         - *compare
         - *gallery
         - *slider
         - *bigNumbers
+        - *timeline

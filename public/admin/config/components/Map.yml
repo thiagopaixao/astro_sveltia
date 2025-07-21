@@ -91,3 +91,4 @@ map: &map
         - *imageBlock
         - *videoEmbed
         - *timeline
+        - *button

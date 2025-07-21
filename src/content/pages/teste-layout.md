@@ -527,6 +527,9 @@ components:
                     hasDropCap: false
                     content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
             - type: Timeline
+              desktop: '10'
+              tablet: '10'
+              mobile: '10'
               components:
                 - type: TimelineBullet
                   text: 'Bloco: Timeline_Timeline Bullet 1_Text'
@@ -549,9 +552,6 @@ components:
                 - type: TimelineBullet
                   text: Timeline Bullet 5_Text
                   content: 'Timeline Bullet_Content_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
-              desktop: '10'
-              tablet: '10'
-              mobile: '10'
             - type: Gallery
               description: 'Bloco: Gallery_Description_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.'
               uniqid: BlocoGalleryUniqueID1
@@ -1353,5 +1353,43 @@ components:
         desktop: 200px
         tablet: 200px
         mobile: 200px
+  - type: Group
+    id: teste1
+    shortTitle: teste1
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: false
+        paddingBottom: false
+        components:
+          - type: Button
+            link:
+              url: https://google.com
+              target: _blank
+              text: Google
+            icon: <span class="material-symbols-outlined"> search </span>
+            size: ''
+          - type: Timeline
+            components:
+              - type: TimelineBullet
+                text: Teste 1
+                content: ''
+              - type: ImageBlock
+                wideImage: false
+                src: /uploads/arqueological-remains_01.jpg
+                alt: ''
+                description: ''
+              - type: TimelineBullet
+                text: Teste 2
+                content: ''
 ---
 

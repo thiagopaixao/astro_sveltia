@@ -40,5 +40,6 @@ column: &column
         - *slider
         - *cards
         - *bigNumbers
+        - *button
+        - *timeline
         - *innerColumns
-

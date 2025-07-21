@@ -29,7 +29,6 @@ innerColumns: &innerColumns
             - *imageBlock
             - *videoEmbed
             - *logosGroup
-            - *timeline
             - *bigNumbers
             - *pullquote
             - *spacer
@@ -55,7 +54,6 @@ innerColumns: &innerColumns
             - *htmlEmbed
             - *videoEmbed
             - *logosGroup
-            - *timeline
             - *bigNumbers
             - *pullquote
             - *spacer

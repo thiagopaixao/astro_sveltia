@@ -1,31 +1,36 @@
 components:
-  # Componentes base (sem dependências)
-  - components/Compare.yml
-  - components/BigNumbers.yml
+  # Nível 1 - Componentes base (sem dependências internas)
   - components/PageSettings.yml
   - components/PageTheme.yml
-  - components/MapBox.yml
   - components/Text.yml
+  - components/Button.yml
+  - components/ImageBlock.yml
   - components/VideoEmbed.yml
   - components/HtmlEmbed.yml
-  - components/ImageBlock.yml
   - components/ChartBar.yml
   - components/ChartPercentage.yml
-  - components/Card.yml
-  - components/CardsCall.yml
-  - components/LogosGroup.yml
+  - components/BigNumbers.yml
+  - components/Compare.yml
+  - components/MapBox.yml
   - components/MapView.yml
   - components/Spacer.yml
-  - components/TimelineBullet.yml
   - components/Pullquote.yml
   - components/Gallery.yml
   - components/Slider.yml
+  - components/LogosGroup.yml
+  - components/TimelineBullet.yml
+  - components/Card.yml
+  - components/CardsCall.yml
 
-  # Componentes que dependem dos anteriores
+  # Nível 2 - Componentes compostos (dependem apenas do Nível 1)
   - components/Timeline.yml
   - components/Cards.yml
+
+  # Nível 3 - Containers básicos (podem conter Níveis 1 e 2)
   - components/InnerColumns.yml
   - components/Column.yml
+
+  # Nível 4 - Containers avançados (podem conter todos os níveis anteriores)
   - components/Columns.yml
   - components/ColumnSticky.yml
   - components/Group.yml

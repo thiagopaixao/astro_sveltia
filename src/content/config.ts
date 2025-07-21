@@ -398,6 +398,11 @@ const componentSchema = z.object({
   tablet: z.string().optional(),
   mobile: z.string().optional(),
 
+  // Atributos do Button
+  //link: linkSchema.optional(),
+  icon: z.string().optional(),
+  size: z.string().optional(),
+
   // Atributos do Gallery
   uniqid: z.string().optional(),
   images: z
