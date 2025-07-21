@@ -591,39 +591,29 @@ components:
       - type: Timeline
         components:
           - type: TimelineBullet
-            content: '###### Local: Altura km 21 bandeirantes'
+            content: |-
+              ###### Local: Altura km 21 bandeirantes
+
+              Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã.
             text: 26/09/2013
-          - type: Spacer
-            desktop: 20px
-            tablet: 20px
-            mobile: 20px
-          - type: Text
-            hasDropCap: false
-            content: Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã.
           - type: VideoEmbed
             wideVideo: false
             videoUrl: https://www.youtube.com/embed/JCBOU4wQmR8?si=tfTqzA777ZSeDuKX
             videoCaption: 'Fonte: Comissão Guarani Yvyrupa'
-      - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: |-
+              ###### Local/Trajeto: Avenida Paulista na altura do MASP, rumo ao Monumento às Bandeiras
+
+              Em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215
+            text: 01/10/2013
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: resistencia_2013-01-10-pt1
-      - type: Timeline
-        components:
-          - type: TimelineBullet
-            content: |-
-              Em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215
-
-              Local/Trajeto: Avenida Paulista na altura do MASP, rumo ao Monumento às Bandeiras
-            text: 01/10/2013
-      - type: Spacer
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
       - type: MapView
         txtColor: ''
         bgColor: ''
