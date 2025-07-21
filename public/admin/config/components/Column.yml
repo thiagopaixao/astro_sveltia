@@ -40,4 +40,5 @@ column: &column
         - *slider
         - *cards
         - *bigNumbers
+        - *innerColumns
 

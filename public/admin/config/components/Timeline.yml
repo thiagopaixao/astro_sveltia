@@ -17,3 +17,4 @@ timeline: &timeline
       collapsed: true
       types:
         - *timelineBullet
+        - *spacer
