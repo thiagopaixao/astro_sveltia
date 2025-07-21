@@ -936,20 +936,20 @@ components:
         mapView: map1_view1
       - type: Text
         hasDropCap: false
-        content: '##### Bloco: Map_Column Align: Left_Bloco: MapView 1_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error'
-      - type: Text
-        hasDropCap: false
-        content: 'Fonte: Paragraph _ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+        content: |-
+          ##### Bloco: Map_Column Align: Left_Bloco: MapView 1_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error
+
+          Fonte: Paragraph _ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
       - type: Spacer
         desktop: 300px
         tablet: 300px
         mobile: 300px
       - type: Text
         hasDropCap: false
-        content: '###### Fonte: Heading 6 _ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium'
-      - type: Text
-        hasDropCap: false
-        content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        content: |-
+          ###### Fonte: Heading 6 _ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
     columnAlign: left
     floatingText: true
     layout: default
@@ -976,10 +976,10 @@ components:
         mapView: map1_view3
       - type: Text
         hasDropCap: false
-        content: '##### Bloco: Map_Column Align: Right_Bloco: MapView 3_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error sit voluptatem'
-      - type: Text
-        hasDropCap: false
-        content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+        content: |-
+          ##### Bloco: Map_Column Align: Right_Bloco: MapView 3_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+
+          Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
       - type: Spacer
         desktop: 300px
         tablet: 300px
@@ -1030,10 +1030,10 @@ components:
         mapView: map2_view1
       - type: Text
         hasDropCap: false
-        content: '##### Bloco: Map_Bloco: MapView 1_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error sit voluptatem'
-      - type: Text
-        hasDropCap: false
-        content: 'Bloco: Text_Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo'
+        content: |-
+          ##### Bloco: Map_Bloco: MapView 1_Bloco: Text_Fonte: Heading 5_Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+
+          Fonte: Paragraph_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
       - type: Spacer
         desktop: 300px
         tablet: 300px
