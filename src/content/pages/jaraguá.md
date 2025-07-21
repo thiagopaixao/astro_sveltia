@@ -596,10 +596,10 @@ components:
 
               Local: Altura km 21 bandeirantes
             text: 26/09/2013
-      - type: VideoEmbed
-        wideVideo: false
-        videoUrl: https://www.youtube.com/embed/JCBOU4wQmR8?si=tfTqzA777ZSeDuKX
-        videoCaption: 'Fonte: Comissão Guarani Yvyrupa'
+          - type: VideoEmbed
+            wideVideo: false
+            videoUrl: https://www.youtube.com/embed/JCBOU4wQmR8?si=tfTqzA777ZSeDuKX
+            videoCaption: 'Fonte: Comissão Guarani Yvyrupa'
       - type: Spacer
         desktop: 600px
         tablet: 600px
@@ -814,23 +814,17 @@ components:
           - type: TimelineBullet
             content: A volta da discussão no Congresso Nacional sobre o Marco Temporal desencadeia uma série de protestos indígenas. No dia 25 de junho, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes.
             text: 25/06/2021
-      - type: Spacer
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: resistencia_2021-30-06-pt1
-      - type: Spacer
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-      - type: Timeline
-        components:
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
       - type: Spacer
         desktop: 500px
         tablet: 500px
