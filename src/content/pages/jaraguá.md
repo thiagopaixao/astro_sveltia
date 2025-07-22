@@ -608,9 +608,9 @@ components:
       - type: Spacer
         txtColor: ''
         bgColor: ''
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
         mapView: resistencia_2013-01-10-pt1
       - type: MapView
         txtColor: ''
@@ -628,18 +628,25 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: |-
-              ###### Local/Trajeto: Avenida Paulista na altura do MASP, rumo ao Monumento às Bandeiras
-
-              Em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215
+            content: '###### Trajeto: Avenida Paulista na altura do MASP, rumo ao Monumento às Bandeiras'
             text: 01/10/2013
-        mapView: resistencia_2013-01-10-pt2
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
+          - type: Spacer
+            desktop: 20px
+            tablet: 20px
+            mobile: 20px
+          - type: Text
+            hasDropCap: false
+            content: Em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215.
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2013 [01_10]_01_ISA.jpg
+            alt: ''
+            description: 'Protesto no Monumento às Bandeiras. Fonte: Tiago Moreira dos Santos [ISA]'
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2013 [01_10]_02_ISA.jpg
+            alt: ''
+            description: 'Protesto no Monumento às Bandeiras. Fonte: Tiago Moreira dos Santos [ISA]'
         mapView: resistencia_2013-01-10-pt2
       - type: MapView
         txtColor: ''
