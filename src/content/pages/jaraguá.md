@@ -782,7 +782,7 @@ components:
             wideImage: false
             src: /uploads/2014 [06_06]_Beatriz Macruz.jpg
             alt: ''
-            description: Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Beatriz Macruz/Repórter Brasil
+            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Fonte: Beatriz Macruz/Repórter Brasil'
         desktop: 600px
         tablet: 600px
         mobile: 600px
