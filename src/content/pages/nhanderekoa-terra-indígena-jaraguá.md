@@ -37,6 +37,20 @@ mapbox:
   columnAlign: left
   floatingText: true
   views: []
-components: []
+components:
+  - type: Group
+    id: introdução
+    shortTitle: introdução
+    longTitle: introdução
+    description: ''
+    showInMenu: true
+    animations: true
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Primary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components: []
 ---
 
