@@ -53,6 +53,10 @@ components:
       - type: backgroundImage
         imgSrc: /uploads/2013 [01_10]_01_ISA.jpg
     overlay: ''
-    components: []
+    components:
+      - type: Spacer
+        desktop: '1'
+        tablet: '1'
+        mobile: '1'
 ---
 
