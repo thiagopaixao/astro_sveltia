@@ -21,9 +21,9 @@ pageTheme:
   textFont: ''
   spacingPatterns:
     - name: Padrão
-      mobile: '10'
-      tablet: '11'
-      desktop: '12'
+      mobile: 10px
+      tablet: 11px
+      desktop: 12px
 mapbox:
   type: MapBox
   style: mapbox://styles/marlus/cjyt3uyhf15mr1cthc2942wxz
