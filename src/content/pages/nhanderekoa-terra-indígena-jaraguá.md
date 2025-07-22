@@ -51,7 +51,7 @@ components:
     customBgColor: ''
     backgroundMedia:
       - type: backgroundImage
-        imgSrc: /uploads/2013 [01_10]_02_ISA.jpg
+        imgSrc: /uploads/expulsion-shuar-center.jpg
     overlay: dark
     components:
       - type: ColumnSticky
