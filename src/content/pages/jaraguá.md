@@ -16,9 +16,9 @@ pageTheme:
   primaryColor: '#5e5e5e'
   secondaryColor: '#ffffff'
   highlightColor: '#000000'
-  auxiliaryColor: '#376d3b'
+  auxiliaryColor: '#348138'
   displayFont: ''
-  textFont: ''
+  textFont: inter
   spacingPatterns:
     - name: Padrão
       mobile: '10'
@@ -529,18 +529,20 @@ mapbox:
           text: Borda do rio Tietê
 components:
   - type: Group
-    id: Teste
-    shortTitle: Teste
-    longTitle: ''
+    id: head
+    shortTitle: head title
+    longTitle: título
     description: ''
-    showInMenu: false
+    showInMenu: true
     animations: true
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia: []
-    overlay: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem jaragua_color edited.jpg
+    overlay: dark
     components:
       - type: ColumnSticky
         txtColor: ''
@@ -548,7 +550,7 @@ components:
         paddingTop: false
         paddingBottom: false
         layout: text-bigger
-        title: Título
+        title: 'Nhanderekoa: "onde a gente vive"'
         components: []
       - type: Spacer
         desktop: 800px
