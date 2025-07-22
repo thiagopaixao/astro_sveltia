@@ -89,5 +89,21 @@ components:
           _Ka’aguy_ – a mata, a floresta – é uma paisagem saturada de história e memória, o patrimônio vivo dos ancestrais (humanos e não-humanos) dos povos Guarani.
           **&#160;**
           Por décadas, as comunidades Guarani vêm resistindo e lutando pelo reconhecimento de suas terras ancestrais e pela preservação de suas florestas sagradas no Jaraguá. Após um ciclo de mobilizações históricas, que tomaram São Paulo entre 2013 e 2025, a T.I. Jaraguá foi finalmente reconhecida e está em processo de demarcação.
+  - type: Group
+    id: asd
+    shortTitle: asd
+    longTitle: asd
+    description: asd
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/2013 [26_09]_CGY.png
+    overlay: ''
+    components: []
 ---
 
