@@ -61,10 +61,7 @@ components:
         paddingBottom: true
         layout: text-bigger
         title: Nhanderekoa
-        components:
-          - type: Text
-            hasDropCap: false
-            content: lorem ipsum
+        components: []
       - type: Text
         hasDropCap: true
         content: |-
