@@ -70,5 +70,42 @@ components:
         layout: text-bigger
         title: – “onde a cultura vive”
         components: []
+      - type: Text
+        hasDropCap: true
+        content: |-
+          A Terra Indígena Guarani do Jaraguá preserva os últimos fragmentos de Mata Atlântica na cidade de São Paulo, um dos biomas brasileiros mais devastados desde a colonização europeia.  
+
+          Além de ser uma reserva florestal de fundamental importância ambiental e climática para a metrópole paulista, onde áreas verdes são notoriamente escassas, o Jaraguá é um território de imenso valor espiritual e cultural para as comunidades indígenas que ali habitam desde tempos imemoriais.
+
+          _Ka’aguy_ – a mata, a floresta – é uma paisagem saturada de história e memória, o patrimônio vivo dos ancestrais (humanos e não-humanos) dos povos Guarani.
+      - type: Text
+        hasDropCap: true
+        content: |-
+          Por décadas, as comunidades Guarani vêm resistindo e lutando pelo reconhecimento de suas terras ancestrais e pela preservação de suas florestas sagradas no Jaraguá. Após um ciclo de mobilizações históricas, que tomaram São Paulo entre 2013 e 2025, a T.I. Jaraguá foi finalmente reconhecida e está em processo de demarcação.
+
+          Desenvolvido junto com xamois e xejarys, xondaros e xondarias, professores, lideranças e ativistas Guarani, esta plataforma apresenta uma cartografia histórica configuração da T.I. Jaraguá no momento de sua demarcação em Julho-Setembro de 2025.  
+
+          Combinando análise de dados geo-espaciais, cartografias participativas, entrevistas, e documentação de arquivos históricos, o mapa traça um panorama das práticas espaciais dos Guarani para a defesa, cuidado, reparação e cultivo das florestas do Jaraguá, ao passo que identifica uma série de ameaças que atingem este território atualmente.
+  - type: Group
+    id: 'Parte I: Nhanderekoa'
+    shortTitle: parte I
+    longTitle: 'Parte I: Nhanderekoa'
+    description: ''
+    showInMenu: true
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Custom
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: true
+        paddingBottom: true
+        components:
+          - type: Text
+            hasDropCap: false
+            content: Conforme mostra o Mapa Etno-Histórico elaborado de Curt Nimuendajú (1944), o território ancestral Guarani se estende desde a fronteira do estado do Paraná com o Paraguai, a Argentina e a Bolívia, até o Espírito Santo, passando por Mato Grosso do Sul, São Paulo e Rio de Janeiro. Os ancestrais Guarani caminhavam, e os Guarani de hoje seguem caminhando, por todo este território, que chamam de Yvyrupa, “o leito da terra”
 ---
 
