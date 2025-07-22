@@ -51,7 +51,7 @@ components:
     customBgColor: ''
     backgroundMedia:
       - type: backgroundImage
-        imgSrc: /uploads/imagem jaragua_color edited.jpg
+        imgSrc: /uploads/2014 [16_04]_CGY.png
     overlay: dark
     components:
       - type: ColumnSticky
