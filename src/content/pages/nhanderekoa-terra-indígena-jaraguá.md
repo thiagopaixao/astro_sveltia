@@ -3,9 +3,9 @@ title: Nhanderekoa
 slug: Terra Indígena Jaraguá
 pageSettings:
   language: pt-BR
-  link_pt_br: '#'
-  link_en: '#'
-  link_es: '#'
+  link_pt_br: nhaderekoa
+  link_en: nhaderekoa-en
+  link_es: nhaderekoa-es
   animations: enable_all
   direction: left
   seoTitle: ''
@@ -37,22 +37,6 @@ mapbox:
   columnAlign: left
   floatingText: true
   views: []
-components:
-  - type: Group
-    id: introdução
-    shortTitle: introdução
-    longTitle: introdução
-    description: ''
-    showInMenu: true
-    animations: true
-    txtColor: Secondary
-    customTxtColor: ''
-    bgColor: Primary
-    customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem jaragua_color edited.jpg
-    overlay: ''
-    components: []
+components: []
 ---
 
