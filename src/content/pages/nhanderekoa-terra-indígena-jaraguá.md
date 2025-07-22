@@ -47,11 +47,11 @@ components:
     animations: true
     txtColor: Primary
     customTxtColor: ''
-    bgColor: ''
+    bgColor: Secondary
     customBgColor: ''
     backgroundMedia:
-      - type: backgroundVideo
-        videoSrc: https://www.documental.xyz/assets/main/expulsion/expulsiones-intro-low.mp4
+      - type: backgroundImage
+        imgSrc: /uploads/2013 [01_10]_01_ISA.jpg
     overlay: ''
     components:
       - type: ColumnSticky
