@@ -699,8 +699,18 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta
+            content: Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta.
             text: 16/04/2014
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [16_04]_Midia Ninja.jpg
+            alt: ''
+            description: 'Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta. Fonte: Mídia Ninja'
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [16_04]_CGY.png
+            alt: ''
+            description: Vídeo da campanha “Resistência Guarani SP” realizado por Comissão Guarani Yvyrupa
         desktop: 600px
         tablet: 600px
         mobile: 600px
