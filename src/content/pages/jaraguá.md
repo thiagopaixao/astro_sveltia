@@ -16,9 +16,9 @@ pageTheme:
   primaryColor: '#5e5e5e'
   secondaryColor: '#ffffff'
   highlightColor: '#000000'
-  auxiliaryColor: '#348138'
+  auxiliaryColor: '#376d3b'
   displayFont: ''
-  textFont: inter
+  textFont: ''
   spacingPatterns:
     - name: Padrão
       mobile: '10'
@@ -87,7 +87,7 @@ mapbox:
       mobileZoom: '14.13'
       duration: '4000'
       bearing: '0'
-      pitch: '30'
+      pitch: '0'
       layers: |-
         resistencia-linhas[Nome==2013-01-10-pt1]
         resistencia-poligonos[Nome==2013-01-10-pt2]
@@ -106,7 +106,7 @@ mapbox:
       mobileZoom: '16'
       duration: '4000'
       bearing: '0'
-      pitch: '0'
+      pitch: '30'
       layers: |-
         resistencia-linhas[Nome==2013-01-10-pt1]
         resistencia-poligonos[Nome==2013-01-10-pt2]
@@ -529,11 +529,11 @@ mapbox:
           text: Borda do rio Tietê
 components:
   - type: Group
-    id: head
-    shortTitle: head title
-    longTitle: título
+    id: Teste
+    shortTitle: Teste
+    longTitle: ''
     description: ''
-    showInMenu: true
+    showInMenu: false
     animations: true
     txtColor: Secondary
     customTxtColor: ''
@@ -550,7 +550,7 @@ components:
         paddingTop: false
         paddingBottom: false
         layout: text-bigger
-        title: 'Nhanderekoa: "onde a gente vive"'
+        title: Título
         components:
           - type: Text
             hasDropCap: true
