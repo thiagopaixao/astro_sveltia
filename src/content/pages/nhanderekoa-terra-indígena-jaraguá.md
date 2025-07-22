@@ -1,11 +1,11 @@
 ---
 title: Nhanderekoa
-slug: nhanderekoa
+slug: Terra Indígena Guarani Jaraguá
 pageSettings:
   language: pt-BR
-  link_pt_br: nhanderekoa-pt
-  link_en: nhanderekoa-en
-  link_es: nhanderekoa-es
+  link_pt_br: '#nhanderekoa'
+  link_en: '#nhanderekoa'
+  link_es: '#nhanderekoa'
   animations: enable_all
   direction: left
   seoTitle: ''
@@ -37,6 +37,22 @@ mapbox:
   columnAlign: left
   floatingText: true
   views: []
-components: []
+components:
+  - type: Group
+    id: introdução
+    shortTitle: introdução
+    longTitle: introdução
+    description: ''
+    showInMenu: true
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/2013 [01_10]_01_ISA.jpg
+    overlay: ''
+    components: []
 ---
 
