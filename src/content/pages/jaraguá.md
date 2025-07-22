@@ -125,7 +125,7 @@ mapbox:
       mobileZoom: '16.60'
       duration: '4000'
       bearing: '0'
-      pitch: '30'
+      pitch: '0'
       layers: |-
         resistencia-poligonos[Nome==2014-16-04]
         mapbox-satellite
