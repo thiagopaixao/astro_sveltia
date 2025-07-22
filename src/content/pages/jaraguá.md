@@ -79,7 +79,7 @@ mapbox:
         - icon: circle
           colorIcon: '#24e037ff'
           typeIcon: outlined
-          text: Local do protesto
+          text: 'Local do protesto: Altura do km 21 na Rodovia dos Bandeirantes'
     - id: resistencia_2013-01-10-pt1
       centerLng: '-46.655'
       centerLat: '-23.571'
@@ -608,15 +608,8 @@ components:
       - type: Timeline
         components:
           - type: TimelineBullet
-            content: '###### Local: Altura km 21 da Rodovia dos Bandeirantes'
-            text: 26/09/2013
-          - type: Spacer
-            desktop: 20px
-            tablet: 20px
-            mobile: 20px
-          - type: Text
-            hasDropCap: false
             content: Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã.
+            text: 26/09/2013
           - type: ImageBlock
             wideImage: false
             src: /uploads/2013 [26_09]_CGY.png
@@ -645,15 +638,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: '###### Trajeto: Avenida Paulista na altura do MASP, rumo ao Monumento às Bandeiras'
-            text: 01/10/2013
-          - type: Spacer
-            desktop: 20px
-            tablet: 20px
-            mobile: 20px
-          - type: Text
-            hasDropCap: false
             content: Em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215.
+            text: 01/10/2013
           - type: ImageBlock
             wideImage: false
             src: /uploads/2013 [01_10]_01_ISA.jpg
@@ -679,9 +665,9 @@ components:
           - type: TimelineBullet
             content: Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta
             text: 16/04/2014
-        desktop: 200px
-        tablet: 200px
-        mobile: 200px
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
         mapView: resistencia_2014-16-04
       - type: MapView
         txtColor: ''
@@ -722,9 +708,9 @@ components:
           - type: TimelineBullet
             content: Protesto partindo do MASP até a praça Roosevelt, exigindo a demarcação das terras Jaraguá e Tenondé Porã.
             text: 24/04/2014
-        desktop: 200px
-        tablet: 200px
-        mobile: 200px
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
         mapView: resistencia_2014-24-04
       - type: MapView
         txtColor: ''
@@ -765,9 +751,9 @@ components:
           - type: TimelineBullet
             content: Protesto na Assembleia Legislativa de São Paulo e no Monumento às Bandeiras pelo arquivamento da PEC 215 e pela demarcação das T.I.s Jaraguá e Tenondé Porã
             text: 06/06/2014
-        desktop: 200px
-        tablet: 200px
-        mobile: 200px
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
         mapView: resistencia_2014-06-06
       - type: MapView
         txtColor: ''
@@ -785,8 +771,18 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: Protesto na Assembleia Legislativa de São Paulo e no Monumento às Bandeiras pelo arquivamento da PEC 215 e pela demarcação das T.I.s Jaraguá e Tenondé Porã
+            content: Protesto na Assembleia Legislativa de São Paulo e no Monumento às Bandeiras pelo arquivamento da PEC 215 e pela demarcação das T.I.s Jaraguá e Tenondé Porã.
             text: 06/06/2014
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [06_06]_Guilherme Zocchio.jpg
+            alt: ''
+            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Fonte: Guilherme Zocchio/Repórter Brasil'
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [06_06]_Beatriz Macruz.jpg
+            alt: ''
+            description: Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Beatriz Macruz/Repórter Brasil
         desktop: 600px
         tablet: 600px
         mobile: 600px
@@ -801,9 +797,9 @@ components:
 
               Local: Tribunal Regional Federal da Terceira Região (Av. Paulista)
             text: 25/07/2014
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
         mapView: resistencia_2014-25-07
       - type: MapView
         txtColor: ''
