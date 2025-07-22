@@ -1,11 +1,11 @@
 ---
 title: Nhanderekoa
-slug: nhaderekoa
+slug: nhanderekoa
 pageSettings:
   language: pt-BR
-  link_pt_br: nhaderekoa-pt
-  link_en: nhaderekoa-en
-  link_es: nhaderekoa-es
+  link_pt_br: nhanderekoa
+  link_en: nhanderekoa-en
+  link_es: nhanderekoa-es
   animations: enable_all
   direction: left
   seoTitle: ''
