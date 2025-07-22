@@ -13,7 +13,7 @@ pageSettings:
   seoKeywords: []
   seoImage: ''
 pageTheme:
-  primaryColor: ''
+  primaryColor: '#000000'
   secondaryColor: '#ffffff'
   highlightColor: '#14882a'
   auxiliaryColor: '#484848'
@@ -58,6 +58,17 @@ components:
         desktop: '1'
         tablet: '1'
         mobile: '1'
+      - type: Text
+        hasDropCap: true
+        content: |-
+          A Terra Indígena Guarani do Jaraguá preserva os últimos fragmentos de Mata Atlântica na cidade de São Paulo, um dos biomas brasileiros mais devastados desde a colonização europeia.  
+
+
+          Além de ser uma reserva florestal de fundamental importância ambiental e climática para a metrópole paulista, onde áreas verdes são notoriamente escassas, o Jaraguá é um território de imenso valor espiritual e cultural para as comunidades indígenas que ali habitam desde tempos imemoriais.
+           
+          _Ka’aguy_ – a mata, a floresta – é uma paisagem saturada de história e memória, o patrimônio vivo dos ancestrais (humanos e não-humanos) dos povos Guarani.
+          **&#160;**
+          Por décadas, as comunidades Guarani vêm resistindo e lutando pelo reconhecimento de suas terras ancestrais e pela preservação de suas florestas sagradas no Jaraguá. Após um ciclo de mobilizações históricas, que tomaram São Paulo entre 2013 e 2025, a T.I. Jaraguá foi finalmente reconhecida e está em processo de demarcação.
   - type: Group
     id: img
     shortTitle: img
