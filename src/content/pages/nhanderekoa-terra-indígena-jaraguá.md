@@ -87,7 +87,7 @@ components:
     animations: true
     txtColor: Primary
     customTxtColor: ''
-    bgColor: Custom
+    bgColor: Highlight
     customBgColor: ''
     backgroundMedia:
       - type: backgroundImage
@@ -108,7 +108,17 @@ components:
 
                 # NHANDEREKOA
 
-                #### – "onde a cultura vive"
+                ###### – "onde a cultura vive"
+            - type: Spacer
+              desktop: '150'
+              tablet: '150'
+              mobile: '150'
+            - type: Text
+              hasDropCap: false
+              content: |-
+                Conforme mostra o Mapa Etno-Histórico elaborado de Curt Nimuendajú (1944), o território ancestral Guarani se estende desde a fronteira do estado do Paraná com o Paraguai, a Argentina e a Bolívia, até o Espírito Santo, passando por Mato Grosso do Sul, São Paulo e Rio de Janeiro. Os ancestrais Guarani caminhavam, e os Guarani de hoje seguem caminhando, por todo este território, que chamam de Yvyrupa, “o leito da terra”**&#160;&#160;&#160;&#160;**
+
+                Com a invasão Europeia,
         column2:
           components: []
 ---
