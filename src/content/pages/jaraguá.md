@@ -542,7 +542,7 @@ components:
     backgroundMedia:
       - type: backgroundImage
         imgSrc: /uploads/imagem jaragua_color edited.jpg
-    overlay: dark
+    overlay: ''
     components:
       - type: ColumnSticky
         txtColor: ''
