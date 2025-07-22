@@ -92,7 +92,7 @@ components:
     backgroundMedia:
       - type: backgroundImage
         imgSrc: /uploads/2013 [26_09]_CGY.png
-    overlay: ''
+    overlay: light
     components:
       - type: Columns
         paddingTop: false
@@ -120,6 +120,10 @@ components:
 
                 Com a invasão Europeia,
         column2:
-          components: []
+          components:
+            - type: Spacer
+              desktop: 10px
+              tablet: 10px
+              mobile: 10px
 ---
 
