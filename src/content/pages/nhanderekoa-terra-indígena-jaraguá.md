@@ -52,10 +52,10 @@ components:
     backgroundMedia:
       - type: backgroundImage
         imgSrc: /uploads/imagem jaragua_color edited.jpg
-    overlay: ''
+    overlay: dark
     components:
       - type: ColumnSticky
-        txtColor: '#ffffffff'
+        txtColor: ''
         bgColor: ''
         paddingTop: true
         paddingBottom: true
