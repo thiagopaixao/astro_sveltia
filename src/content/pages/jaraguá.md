@@ -1,5 +1,5 @@
 ---
-title: Jaraguá
+title: Jaraguá 2
 slug: jaragua
 pageSettings:
   language: pt-BR
@@ -16,9 +16,9 @@ pageTheme:
   primaryColor: '#5e5e5e'
   secondaryColor: '#ffffff'
   highlightColor: '#000000'
-  auxiliaryColor: '#376d3b'
+  auxiliaryColor: '#348138'
   displayFont: ''
-  textFont: ''
+  textFont: inter
   spacingPatterns:
     - name: Padrão
       mobile: '10'
@@ -87,7 +87,7 @@ mapbox:
       mobileZoom: '14.13'
       duration: '4000'
       bearing: '0'
-      pitch: '0'
+      pitch: '30'
       layers: |-
         resistencia-linhas[Nome==2013-01-10-pt1]
         resistencia-poligonos[Nome==2013-01-10-pt2]
@@ -106,7 +106,7 @@ mapbox:
       mobileZoom: '16'
       duration: '4000'
       bearing: '0'
-      pitch: '30'
+      pitch: '0'
       layers: |-
         resistencia-linhas[Nome==2013-01-10-pt1]
         resistencia-poligonos[Nome==2013-01-10-pt2]
@@ -529,17 +529,19 @@ mapbox:
           text: Borda do rio Tietê
 components:
   - type: Group
-    id: Teste
-    shortTitle: Teste
-    longTitle: ''
+    id: head
+    shortTitle: head title
+    longTitle: título
     description: ''
-    showInMenu: false
+    showInMenu: true
     animations: true
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia: []
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem jaragua_color edited.jpg
     overlay: ''
     components:
       - type: ColumnSticky
@@ -548,7 +550,7 @@ components:
         paddingTop: false
         paddingBottom: false
         layout: text-bigger
-        title: Título
+        title: 'Nhanderekoa: "onde a gente vive"'
         components: []
       - type: Spacer
         desktop: 800px
