@@ -54,10 +54,6 @@ components:
         videoSrc: https://www.documental.xyz/assets/main/expulsion/expulsiones-intro-low.mp4
     overlay: ''
     components:
-      - type: Spacer
-        desktop: '1'
-        tablet: '1'
-        mobile: '1'
       - type: ColumnSticky
         txtColor: ''
         bgColor: '#ffffffff'
