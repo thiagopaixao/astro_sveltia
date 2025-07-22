@@ -744,6 +744,16 @@ components:
           - type: TimelineBullet
             content: Protesto partindo do MASP até a praça Roosevelt, exigindo a demarcação das terras Jaraguá e Tenondé Porã.
             text: 24/04/2014
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [24_04]_01_FOLHA PRESS.png
+            alt: ''
+            description: 'Protesto pedindo a demarcação da Terra Indígena Jaraguá e da Terra Indígena Tenondé Porã. Fonte: Eduardo Anizelli/Folhapress'
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [24_04]_02_FOLHA PRESS.png
+            alt: ''
+            description: 'Protesto pedindo a demarcação da Terra Indígena Jaraguá e da Terra Indígena Tenondé Porã. Fonte: Eduardo Anizelli/Folhapress'
         desktop: 600px
         tablet: 600px
         mobile: 600px
