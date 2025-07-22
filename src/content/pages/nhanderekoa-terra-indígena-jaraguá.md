@@ -51,7 +51,7 @@ components:
     customBgColor: ''
     backgroundMedia:
       - type: backgroundImage
-        imgSrc: /uploads/2014 [16_04]_CGY.png
+        imgSrc: /uploads/2013 [01_10]_02_ISA.jpg
     overlay: dark
     components:
       - type: ColumnSticky
