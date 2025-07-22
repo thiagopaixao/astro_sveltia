@@ -121,11 +121,11 @@ mapbox:
     - id: resistencia_2014-16-04
       centerLng: '-46.633'
       centerLat: '-23.548'
-      zoom: '16.40'
-      mobileZoom: '16.40'
+      zoom: '16.60'
+      mobileZoom: '16.60'
       duration: '4000'
       bearing: '0'
-      pitch: '0'
+      pitch: '30'
       layers: |-
         resistencia-poligonos[Nome==2014-16-04]
         mapbox-satellite
