@@ -58,5 +58,21 @@ components:
         desktop: '1'
         tablet: '1'
         mobile: '1'
+  - type: Group
+    id: img
+    shortTitle: img
+    longTitle: img
+    description: img
+    showInMenu: true
+    animations: true
+    txtColor: Primary
+    customTxtColor: '#379a24ff'
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/2013 [01_10]_02_ISA.jpg
+    overlay: ''
+    components: []
 ---
 
