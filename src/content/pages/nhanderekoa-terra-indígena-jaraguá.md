@@ -47,7 +47,7 @@ components:
     animations: true
     txtColor: Primary
     customTxtColor: ''
-    bgColor: Highlight
+    bgColor: ''
     customBgColor: ''
     backgroundMedia:
       - type: backgroundImage
