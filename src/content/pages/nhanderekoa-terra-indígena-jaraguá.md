@@ -49,7 +49,9 @@ components:
     customTxtColor: ''
     bgColor: Primary
     customBgColor: ''
-    backgroundMedia: []
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem jaragua_color edited.jpg
     overlay: ''
     components: []
 ---
