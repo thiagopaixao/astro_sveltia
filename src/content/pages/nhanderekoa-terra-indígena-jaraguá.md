@@ -1,6 +1,6 @@
 ---
 title: Nhanderekoa
-slug: Terra Indígena Jaraguá
+slug: nhaderekoa
 pageSettings:
   language: pt-BR
   link_pt_br: nhaderekoa
