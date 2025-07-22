@@ -3,7 +3,7 @@ title: Nhanderekoa
 slug: nhaderekoa
 pageSettings:
   language: pt-BR
-  link_pt_br: nhaderekoa
+  link_pt_br: nhaderekoa-pt
   link_en: nhaderekoa-en
   link_es: nhaderekoa-es
   animations: enable_all
