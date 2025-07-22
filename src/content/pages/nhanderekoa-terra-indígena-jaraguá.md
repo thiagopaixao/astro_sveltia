@@ -37,6 +37,38 @@ mapbox:
   columnAlign: left
   floatingText: true
   views: []
-components: []
+components:
+  - type: Group
+    id: introdução
+    shortTitle: introdução
+    longTitle: ''
+    description: título + intro
+    showInMenu: true
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem jaragua_color edited.jpg
+    overlay: ''
+    components:
+      - type: ColumnSticky
+        txtColor: '#ffffffff'
+        bgColor: ''
+        paddingTop: true
+        paddingBottom: true
+        layout: text-bigger
+        title: Nhanderekoa
+        components: []
+      - type: ColumnSticky
+        txtColor: '#31ff2eff'
+        bgColor: ''
+        paddingTop: false
+        paddingBottom: false
+        layout: text-bigger
+        title: – “onde a cultura vive”
+        components: []
 ---
 
