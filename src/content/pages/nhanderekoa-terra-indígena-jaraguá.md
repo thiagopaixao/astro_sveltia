@@ -62,14 +62,6 @@ components:
         layout: text-bigger
         title: Nhanderekoa
         components: []
-      - type: ColumnSticky
-        txtColor: '#31ff2eff'
-        bgColor: ''
-        paddingTop: false
-        paddingBottom: false
-        layout: text-bigger
-        title: – “onde a cultura vive”
-        components: []
       - type: Text
         hasDropCap: true
         content: |-
@@ -97,15 +89,27 @@ components:
     customTxtColor: ''
     bgColor: Custom
     customBgColor: ''
-    backgroundMedia: []
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/2013 [26_09]_CGY.png
     overlay: ''
     components:
-      - type: Column
-        paddingTop: true
-        paddingBottom: true
-        components:
-          - type: Text
-            hasDropCap: false
-            content: Conforme mostra o Mapa Etno-Histórico elaborado de Curt Nimuendajú (1944), o território ancestral Guarani se estende desde a fronteira do estado do Paraná com o Paraguai, a Argentina e a Bolívia, até o Espírito Santo, passando por Mato Grosso do Sul, São Paulo e Rio de Janeiro. Os ancestrais Guarani caminhavam, e os Guarani de hoje seguem caminhando, por todo este território, que chamam de Yvyrupa, “o leito da terra”
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                ###### Parte I
+
+                # NHANDEREKOA
+
+                #### – "onde a cultura vive"
+        column2:
+          components: []
 ---
 
