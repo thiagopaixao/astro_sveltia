@@ -110,9 +110,9 @@ components:
 
                 ###### – "onde a cultura vive"
             - type: Spacer
-              desktop: '150'
-              tablet: '150'
-              mobile: '150'
+              desktop: 150px
+              tablet: 150px
+              mobile: 150px
             - type: Text
               hasDropCap: false
               content: |-
