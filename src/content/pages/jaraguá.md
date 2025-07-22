@@ -87,7 +87,7 @@ mapbox:
       mobileZoom: '14.13'
       duration: '4000'
       bearing: '0'
-      pitch: '0'
+      pitch: '30'
       layers: |-
         resistencia-linhas[Nome==2013-01-10-pt1]
         resistencia-poligonos[Nome==2013-01-10-pt2]
