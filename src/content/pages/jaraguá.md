@@ -121,7 +121,7 @@ mapbox:
         resistencia-pontos[Nome==2013-26-09]
         ti-jaragua-aldeias
         ti-jaragua-recorte
-        mapbox-satellite
+        satelite
       title: ''
       notes: ''
       items:
@@ -679,33 +679,20 @@ components:
             alt: ''
             description: 'Bloqueio da Rodovia dos Bandeirantes. Fonte: Comissão Guarani Yvyrupa [CGY]'
         mapView: resistencia_2013
-      - type: Text
-        hasDropCap: false
-        content: '###### 2013'
+      - type: Timeline
         txtColor: ''
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: |-
-              ###### Local/Trajeto: Avenida Paulista na altura do MASP, rumo ao Monumento às Bandeiras
-
-              Em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215
-            text: 01/10/2013
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2013 [01_10]_01_ISA.jpg
-            alt: ''
-            description: 'Protesto no Monumento às Bandeiras. Fonte: Tiago Moreira dos Santos [ISA]'
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2013 [01_10]_02_ISA.jpg
-            alt: ''
-            description: 'Protesto no Monumento às Bandeiras. Fonte: Tiago Moreira dos Santos [ISA]'
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: resistencia_2013-01-10-pt1
+            content: '###### 2013'
+            text: ''
+        desktop: 100px
+        tablet: 100px
+        mobile: 100px
+        mapView: resistencia_2013-01-10-pt2
       - type: Spacer
+        hasDropCap: false
+        content: '###### 2013'
         txtColor: ''
         bgColor: ''
         components:
