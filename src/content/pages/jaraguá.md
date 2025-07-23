@@ -26,14 +26,14 @@ pageTheme:
       desktop: '10'
 mapbox:
   type: MapBox
-  style: mapbox://styles/studio-autonoma/cmd3dacbf00f201qn33dpbfwn
+  style: mapbox://styles/studio-autonoma/cmdgctyq702ww01s4dyd42dyc
   token: pk.eyJ1Ijoic3R1ZGlvLWF1dG9ub21hIiwiYSI6ImNtY3V2d3dtMTA0ZXgycnB4OW01cjlqb2QifQ.3NMaRt1maLlqTv6nlVqVHA
   centerLng: '-33.0152'
   centerLat: '-11.622'
   zoom: '2.5'
   bearing: '0'
   pitch: '0'
-  layers: mapbox-satellite
+  layers: satelite
   columnAlign: center
   floatingText: false
   views:
@@ -48,7 +48,7 @@ mapbox:
       layers: |-
         ti-jaragua-aldeias
         ti-jaragua-recorte
-        mapbox-satellite
+        satelite
       title: ''
       notes: ''
       items:
