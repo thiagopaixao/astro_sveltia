@@ -85,8 +85,8 @@ mapbox:
     - id: resistencia_2013
       centerLng: '-46.763'
       centerLat: '-23.459'
-      zoom: '12.6'
-      mobileZoom: '12.6'
+      zoom: '13'
+      mobileZoom: '13'
       duration: '3000'
       bearing: '0'
       pitch: '0'
@@ -650,6 +650,10 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: resistencia_intro_map
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
     columnAlign: center
     floatingText: true
   - type: Map
@@ -693,9 +697,9 @@ components:
       - type: Spacer
         txtColor: ''
         bgColor: ''
-        desktop: 50px
-        tablet: 50px
-        mobile: 50px
+        desktop: 100px
+        tablet: 100px
+        mobile: 100px
         mapView: resistencia_2013-01-10-pt1
       - type: Timeline
         txtColor: ''
