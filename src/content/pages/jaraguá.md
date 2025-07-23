@@ -154,44 +154,66 @@ mapbox:
           colorIcon: '#597d5dff'
           typeIcon: outlined
           text: Terra indígena demarcada
-    - id: resistencia_2013-01-10-pt1
-      centerLng: '-46.655'
+    - id: resistencia_2013_4
+      centerLng: '-46.651'
       centerLat: '-23.571'
-      zoom: '14.13'
-      mobileZoom: '14.13'
+      zoom: '13.17'
+      mobileZoom: '13.17'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
         resistencia-linhas[Nome==2013-01-10-pt1]
         resistencia-poligonos[Nome==2013-01-10-pt2]
-        mapbox-satellite
       title: ''
       notes: ''
       items:
         - icon: show_chart
           colorIcon: '#24e037ff'
           typeIcon: outlined
-          text: Caminho percorrido
-    - id: resistencia_2013-01-10-pt2
+          text: Trajeto percorrido
+    - id: resistencia_2013_5
+      centerLng: '-46.656'
+      centerLat: '-23.562'
+      zoom: '16.60'
+      mobileZoom: '16.60'
+      duration: '2000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        satelite
+        resistencia-linhas[Nome==2013-01-10-pt1]
+        resistencia-poligonos[Nome==2013-01-10-pt2]
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Trajeto percorrido
+        - icon: circle
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Monumento às Bandeiras
+    - id: resistencia_2013_6
       centerLng: '-46.661'
       centerLat: '-23.580'
       zoom: '16'
       mobileZoom: '16'
-      duration: '4000'
+      duration: '3000'
       bearing: '0'
       pitch: '30'
       layers: |-
+        satelite
         resistencia-linhas[Nome==2013-01-10-pt1]
         resistencia-poligonos[Nome==2013-01-10-pt2]
-        mapbox-satellite
       title: ''
       notes: ''
       items:
-        - icon: circle
-          colorIcon: '#36f924ff'
+        - icon: show_chart
+          colorIcon: '#24e037ff'
           typeIcon: outlined
-          text: Ocupação no Monumento às Bandeiras
+          text: Trajeto percorrido
         - icon: circle
           colorIcon: '#24e037ff'
           typeIcon: outlined
@@ -846,7 +868,7 @@ components:
         desktop: 600px
         tablet: 600px
         mobile: 600px
-        mapView: resistencia_2013-01-10-pt1
+        mapView: resistencia_2013_4
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -888,29 +910,8 @@ components:
         desktop: 600px
         tablet: 600px
         mobile: 600px
-        mapView: resistencia_2013-01-10-pt2
+        mapView: resistencia_2013_5
       - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta
-            text: 16/04/2014
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2014 [16_04]_Midia Ninja.jpg
-            alt: ''
-            description: 'Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta. Fonte: Mídia Ninja'
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2014 [16_04]_CGY.png
-            alt: ''
-            description: Vídeo da campanha “Resistência Guarani SP” realizado por Comissão Guarani Yvyrupa
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
-        mapView: resistencia_2014-16-04
-      - type: MapView
         txtColor: ''
         bgColor: ''
         components:
@@ -931,7 +932,28 @@ components:
         tablet: 600px
         mobile: 600px
         mapView: resistencia_2014-16-04
-      - type: Timeline
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta
+            text: 16/04/2014
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [16_04]_Midia Ninja.jpg
+            alt: ''
+            description: 'Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta. Fonte: Mídia Ninja'
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [16_04]_CGY.png
+            alt: ''
+            description: Vídeo da campanha “Resistência Guarani SP” realizado por Comissão Guarani Yvyrupa
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
+        mapView: resistencia_2013_6
+      - type: Spacer
         txtColor: ''
         bgColor: ''
         components:
@@ -952,523 +974,6 @@ components:
         tablet: 600px
         mobile: 600px
         mapView: resistencia_2014-24-04
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Protesto partindo do MASP até a praça Roosevelt, exigindo a demarcação das terras Jaraguá e Tenondé Porã.
-            text: 24/04/2014
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2014 [24_04]_01_FOLHA PRESS.png
-            alt: ''
-            description: 'Protesto pedindo a demarcação da Terra Indígena Jaraguá e da Terra Indígena Tenondé Porã. Fonte: Eduardo Anizelli/Folhapress'
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2014 [24_04]_02_FOLHA PRESS.png
-            alt: ''
-            description: 'Protesto pedindo a demarcação da Terra Indígena Jaraguá e da Terra Indígena Tenondé Porã. Fonte: Eduardo Anizelli/Folhapress'
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
-        mapView: resistencia_2014-24-04
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Protesto partindo do MASP até a praça Roosevelt, exigindo a demarcação das terras Jaraguá e Tenondé Porã.
-            text: 24/04/2014
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2014 [24_04]_01_FOLHA PRESS.png
-            alt: ''
-            description: 'Protesto pedindo a demarcação da Terra Indígena Jaraguá e da Terra Indígena Tenondé Porã. Fonte: Eduardo Anizelli/Folhapress'
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2014 [24_04]_02_FOLHA PRESS.png
-            alt: ''
-            description: 'Protesto pedindo a demarcação da Terra Indígena Jaraguá e da Terra Indígena Tenondé Porã. Fonte: Eduardo Anizelli/Folhapress'
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: resistencia_2014-24-04
-      - type: Timeline
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Protesto partindo do MASP até a praça Roosevelt, exigindo a demarcação das terras Jaraguá e Tenondé Porã.
-            text: 24/04/2014
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2014 [24_04]_01_FOLHA PRESS.png
-            alt: ''
-            description: 'Protesto pedindo a demarcação da Terra Indígena Jaraguá e da Terra Indígena Tenondé Porã. Fonte: Eduardo Anizelli/Folhapress'
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2014 [24_04]_02_FOLHA PRESS.png
-            alt: ''
-            description: 'Protesto pedindo a demarcação da Terra Indígena Jaraguá e da Terra Indígena Tenondé Porã. Fonte: Eduardo Anizelli/Folhapress'
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: resistencia_2014-06-06
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Protesto na Assembleia Legislativa de São Paulo e no Monumento às Bandeiras pelo arquivamento da PEC 215 e pela demarcação das T.I.s Jaraguá e Tenondé Porã
-            text: 06/06/2014
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2014 [06_06]_Guilherme Zocchio.jpg
-            alt: ''
-            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Fonte: Guilherme Zocchio/Repórter Brasil'
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2014 [06_06]_Beatriz Macruz.jpg
-            alt: ''
-            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Fonte: Beatriz Macruz/Repórter Brasil'
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
-        mapView: resistencia_2014-06-06
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Protesto na Assembleia Legislativa de São Paulo e no Monumento às Bandeiras pelo arquivamento da PEC 215 e pela demarcação das T.I.s Jaraguá e Tenondé Porã
-            text: 06/06/2014
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2014 [06_06]_Guilherme Zocchio.jpg
-            alt: ''
-            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Fonte: Guilherme Zocchio/Repórter Brasil'
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2014 [06_06]_Beatriz Macruz.jpg
-            alt: ''
-            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Fonte: Beatriz Macruz/Repórter Brasil'
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: resistencia_2014-06-06
-      - type: Timeline
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Protesto na Assembleia Legislativa de São Paulo e no Monumento às Bandeiras pelo arquivamento da PEC 215 e pela demarcação das T.I.s Jaraguá e Tenondé Porã.
-            text: 06/06/2014
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2014 [06_06]_Guilherme Zocchio.jpg
-            alt: ''
-            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Fonte: Guilherme Zocchio/Repórter Brasil'
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2014 [06_06]_Beatriz Macruz.jpg
-            alt: ''
-            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Fonte: Beatriz Macruz/Repórter Brasil'
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: resistencia_2014-25-07
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: |-
-              Manifestação em frente ao prédio do Tribunal Regional Federal em São Paulo contra reintegração de posse da Tekoa Pyau e pela demarcação das Terras Guarani no município.
-
-              Local: Tribunal Regional Federal da Terceira Região (Av. Paulista)
-            text: 25/07/2014
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2014 [06_06]_Guilherme Zocchio.jpg
-            alt: ''
-            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Fonte: Guilherme Zocchio/Repórter Brasil'
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2014 [06_06]_Beatriz Macruz.jpg
-            alt: ''
-            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Fonte: Beatriz Macruz/Repórter Brasil'
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
-        mapView: resistencia_2014-25-07
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: |-
-              Manifestação em frente ao prédio do Tribunal Regional Federal em São Paulo contra reintegração de posse da Tekoa Pyau e pela demarcação das Terras Guarani no município.
-
-              Local: Tribunal Regional Federal da Terceira Região (Av. Paulista)
-            text: 25/07/2014
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2014 [06_06]_Guilherme Zocchio.jpg
-            alt: ''
-            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Fonte: Guilherme Zocchio/Repórter Brasil'
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2014 [06_06]_Beatriz Macruz.jpg
-            alt: ''
-            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Fonte: Beatriz Macruz/Repórter Brasil'
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: resistencia_2014-25-07
-      - type: Timeline
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: |-
-              Manifestação em frente ao prédio do Tribunal Regional Federal em São Paulo contra reintegração de posse da Tekoa Pyau e pela demarcação das Terras Guarani no município.
-
-              Local: Tribunal Regional Federal da Terceira Região (Av. Paulista)
-            text: 25/07/2014
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2014 [06_06]_Guilherme Zocchio.jpg
-            alt: ''
-            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Fonte: Guilherme Zocchio/Repórter Brasil'
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2014 [06_06]_Beatriz Macruz.jpg
-            alt: ''
-            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Fonte: Beatriz Macruz/Repórter Brasil'
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: resistencia_2016-05-05
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: '##### Portaria declaratória Terra Indígena Jaraguá'
-            text: '2015'
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: resistencia_2016-05-05
-      - type: Timeline
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: '##### Portaria declaratória Terra Indígena Jaraguá'
-            text: '2015'
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: resistencia_2016-05-05
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Ativistas Guarani ocupam a sede da Secretaria da Presidência da República  em São Paulo, na Avenida Paulista, em protesto pela demarcação das T.I.s Jaraguá e Tenondé Porã.
-            text: 05/05/2016
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: resistencia_2016-05-05
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Ativistas Guarani ocupam a sede da Secretaria da Presidência da República  em São Paulo, na Avenida Paulista, em protesto pela demarcação das T.I.s Jaraguá e Tenondé Porã.
-            text: 05/05/2016
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: resistencia_2016-05-05
-      - type: Timeline
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Ativistas Guarani ocupam a sede da Secretaria da Presidência da República  em São Paulo, na Avenida Paulista, em protesto pela demarcação das T.I.s Jaraguá e Tenondé Porã.
-            text: 05/05/2016
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: resistencia_2017-30-08
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: '##### Portaria "Des-Declaratória" da Terra Indígena Jaraguá'
-            text: '2017'
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: resistencia_2017-30-08
-      - type: Timeline
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: '##### Portaria "Des-Declaratória" da Terra Indígena Jaraguá'
-            text: '2017'
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: resistencia_2017-30-08
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá, lideranças, _xondaros e xondarias, xamois e xejarys kueri_ da TI Jaraguá realizam uma série de protestos em São Paulo. No dia 30 de agosto, uma ampla mobilização toma a Avenida Paulista.
-            text: 30/08/2017
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: resistencia_2017-30-08
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá, lideranças, _xondaros e xondarias, xamois e xejarys kueri_ da TI Jaraguá realizam uma série de protestos em São Paulo. No dia 30 de agosto, uma ampla mobilização toma a Avenida Paulista.
-            text: 30/08/2017
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2017-30-08
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá, lideranças, _xondaros e xondarias, xamois e xejarys kueri_ da TI Jaraguá realizam uma série de protestos em São Paulo. No dia 30 de agosto, uma ampla mobilização toma a Avenida Paulista.
-            text: 30/08/2017
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2017 de 14 a 16-09
-      - type: Timeline
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá, lideranças, _xondaros e xondarias, xamois e xejarys kueri_ da TI Jaraguá realizam uma série de protestos em São Paulo. No dia 30 de agosto, uma ampla mobilização toma a Avenida Paulista.
-            text: 30/08/2017
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2017 de 14 a 16-09
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: |-
-              Quinze dias depois, entre os dias 14 e 16 de setembro, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo
-
-              Local: Antenas do Pico do Jaraguá e bloqueio da entrada do parque
-            text: de 14 a 16/09/2017
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2017 de 14 a 16-09
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: |-
-              Quinze dias depois, entre os dias 14 e 16 de setembro, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo
-
-              Local: Antenas do Pico do Jaraguá e bloqueio da entrada do parque
-            text: de 14 a 16/09/2017
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2017 de 14 a 16-09
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: |-
-              Quinze dias depois, entre os dias 14 e 16 de setembro, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo
-
-              Local: Antenas do Pico do Jaraguá e bloqueio da entrada do parque
-            text: de 14 a 16/09/2017
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2019-27-03
-      - type: Timeline
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: |-
-              Quinze dias depois, entre os dias 14 e 16 de setembro, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo
-
-              Local: Antenas do Pico do Jaraguá e bloqueio da entrada do parque
-            text: de 14 a 16/09/2017
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2019-27-03
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Ocupação do saguão da Prefeitura de São Paulo contra a municipalização da saúde indígena
-            text: 27/03/2019
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2019-27-03
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Ocupação do saguão da Prefeitura de São Paulo contra a municipalização da saúde indígena
-            text: 27/03/2019
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2019-27-03
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Ocupação do saguão da Prefeitura de São Paulo contra a municipalização da saúde indígena
-            text: 27/03/2019
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2020-jan-mar
-      - type: Timeline
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Ocupação do saguão da Prefeitura de São Paulo contra a municipalização da saúde indígena
-            text: 27/03/2019
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2020-jan-mar
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: |-
-              Em janeiro de 2020, ativistas Guarani ocupam o terreno onde seria construído o condomínio residencial “Reserva Jaraguá-Carinás”, situado próximo à aldeia Pyau. Executado pela construtora Tenda, o empreendimento levou à derrubada de cerca de quatro mil árvores em uma área da Reserva da Biosfera do Cinturão Verde de São Paulo. Chamada de Yary Ty, a ocupação dura até o mês de março, quando é removida pela Polícia Militar
-
-              Local: Avenida Comendador José de Matos, 136
-            text: 30/01 a 10/03 de 2020
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2020-jan-mar
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: |-
-              Em janeiro de 2020, ativistas Guarani ocupam o terreno onde seria construído o condomínio residencial “Reserva Jaraguá-Carinás”, situado próximo à aldeia Pyau. Executado pela construtora Tenda, o empreendimento levou à derrubada de cerca de quatro mil árvores em uma área da Reserva da Biosfera do Cinturão Verde de São Paulo. Chamada de Yary Ty, a ocupação dura até o mês de março, quando é removida pela Polícia Militar
-
-              Local: Avenida Comendador José de Matos, 136
-            text: 30/01 a 10/03 de 2020
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2020-jan-mar
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: |-
-              Em janeiro de 2020, ativistas Guarani ocupam o terreno onde seria construído o condomínio residencial “Reserva Jaraguá-Carinás”, situado próximo à aldeia Pyau. Executado pela construtora Tenda, o empreendimento levou à derrubada de cerca de quatro mil árvores em uma área da Reserva da Biosfera do Cinturão Verde de São Paulo. Chamada de Yary Ty, a ocupação dura até o mês de março, quando é removida pela Polícia Militar
-
-              Local: Avenida Comendador José de Matos, 136
-            text: 30/01 a 10/03 de 2020
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2020-09-03
-      - type: Timeline
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: |-
-              Em janeiro de 2020, ativistas Guarani ocupam o terreno onde seria construído o condomínio residencial “Reserva Jaraguá-Carinás”, situado próximo à aldeia Pyau. Executado pela construtora Tenda, o empreendimento levou à derrubada de cerca de quatro mil árvores em uma área da Reserva da Biosfera do Cinturão Verde de São Paulo. Chamada de Yary Ty, a ocupação dura até o mês de março, quando é removida pela Polícia Militar
-
-              Local: Avenida Comendador José de Matos, 136
-            text: 30/01 a 10/03 de 2020
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2020-09-03
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1656,6 +1161,13 @@ components:
           - type: TimelineBullet
             content: No contexto da pandemia da COVID, ativistas Guarani participam da  grande manifestação contra o governo do presidente Jair Bolsonaro, trazendo a pauta do Marco Temporal.
             text: 03/07/2021
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1667,6 +1179,13 @@ components:
           - type: TimelineBullet
             content: No contexto da pandemia da COVID, ativistas Guarani participam da  grande manifestação contra o governo do presidente Jair Bolsonaro, trazendo a pauta do Marco Temporal.
             text: 03/07/2021
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1678,6 +1197,13 @@ components:
           - type: TimelineBullet
             content: Ativistas Guarani das T.I.s Jaraguá e Tenondé-Porã ocupam o vão do MASP em protesto pelo assassinato do sertanista Bruno Pereira e do jornalista ambientalista Dom Phillips.
             text: 18/06/2022
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1689,6 +1215,13 @@ components:
           - type: TimelineBullet
             content: Ativistas Guarani das T.I.s Jaraguá e Tenondé-Porã ocupam o vão do MASP em protesto pelo assassinato do sertanista Bruno Pereira e do jornalista ambientalista Dom Phillips.
             text: 18/06/2022
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1700,6 +1233,13 @@ components:
           - type: TimelineBullet
             content: Ativistas Guarani das T.I.s Jaraguá e Tenondé-Porã ocupam o vão do MASP em protesto pelo assassinato do sertanista Bruno Pereira e do jornalista ambientalista Dom Phillips.
             text: 18/06/2022
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1711,6 +1251,13 @@ components:
           - type: TimelineBullet
             content: Ativistas Guarani das T.I.s Jaraguá e Tenondé-Porã ocupam o vão do MASP em protesto pelo assassinato do sertanista Bruno Pereira e do jornalista ambientalista Dom Phillips.
             text: 18/06/2022
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1725,6 +1272,13 @@ components:
 
               Trajeto: Início no Monumento às Bandeiras rumo a Avenida Paulista
             text: 23/06/2022
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1739,6 +1293,13 @@ components:
 
               Trajeto: Início no Monumento às Bandeiras rumo a Avenida Paulista
             text: 23/06/2022
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1753,6 +1314,13 @@ components:
 
               Trajeto: Início no Monumento às Bandeiras rumo a Avenida Paulista
             text: 23/06/2022
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1767,6 +1335,13 @@ components:
 
               Trajeto: Início no Monumento às Bandeiras rumo a Avenida Paulista
             text: 23/06/2022
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1781,6 +1356,13 @@ components:
 
               Local: Início na Faculdade de Direito da USP, no Largo São Francisco. Caminha para o Pátio do Colégio parando no Theatro Municipal.
             text: 09/08/2022
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1955,6 +1537,127 @@ components:
           - type: TimelineBullet
             content: Desafiando a repressão estatal, no dia 07 de junho ativistas Guarani realizam novo ato contra o Marco Temporal, desta vez na escadaria do Teatro Municipal no centro de São Paulo.
             text: 07/06/2023
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+        mapView: resistencia_2024-04-08-pt1
+      - type: Spacer
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: Ativistas Guarani realizam manifestação nas margens do Rio Tietê contra o Marco Temporal e pela demarcação da T.I. Jaraguá. O protesto chama também atenção para os ataques sofridos pelos parentes Guarani Kaiowá no Mato Grosso do Sul
+            text: 04/08/2024
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+        mapView: resistencia_2024-04-08-pt1
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: Ativistas Guarani realizam manifestação nas margens do Rio Tietê contra o Marco Temporal e pela demarcação da T.I. Jaraguá. O protesto chama também atenção para os ataques sofridos pelos parentes Guarani Kaiowá no Mato Grosso do Sul
+            text: 04/08/2024
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+        mapView: resistencia_2024-04-08-pt1
+      - type: Spacer
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: Ativistas Guarani realizam manifestação nas margens do Rio Tietê contra o Marco Temporal e pela demarcação da T.I. Jaraguá. O protesto chama também atenção para os ataques sofridos pelos parentes Guarani Kaiowá no Mato Grosso do Sul
+            text: 04/08/2024
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+        mapView: resistencia_2024-04-08-pt2
+      - type: Timeline
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: Ativistas Guarani realizam manifestação nas margens do Rio Tietê contra o Marco Temporal e pela demarcação da T.I. Jaraguá. O protesto chama também atenção para os ataques sofridos pelos parentes Guarani Kaiowá no Mato Grosso do Sul
+            text: 04/08/2024
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+        mapView: resistencia_2024-04-08-pt2
+      - type: Spacer
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: '##### Portaria Declaratória de 2024, reestabelece efeitos da Portaria Declaratória de 2015'
+            text: '2024'
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+        mapView: resistencia_2024-04-08-pt2
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: '##### Portaria Declaratória de 2024, reestabelece efeitos da Portaria Declaratória de 2015'
+            text: '2024'
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+        mapView: resistencia_2024-04-08-pt2
+      - type: Spacer
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: '##### Portaria Declaratória de 2024, reestabelece efeitos da Portaria Declaratória de 2015'
+            text: '2024'
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+        mapView: resistencia_2024-04-08-pt2
+      - type: Timeline
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: '##### Portaria Declaratória de 2024, reestabelece efeitos da Portaria Declaratória de 2015'
+            text: '2024'
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+        mapView: resistencia_2024-04-08-pt2
+      - type: Spacer
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: '##### Portaria Declaratória de 2024, reestabelece efeitos da Portaria Declaratória de 2015'
+            text: '2024'
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+        mapView: resistencia_2024-04-08-pt2
+      - type: Spacer
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: '##### Portaria Declaratória de 2024, reestabelece efeitos da Portaria Declaratória de 2015'
+            text: '2024'
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+        mapView: resistencia_2024-04-08-pt1
+      - type: Spacer
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: '##### Portaria Declaratória de 2024, reestabelece efeitos da Portaria Declaratória de 2015'
+            text: '2024'
         desktop: 500px
         tablet: 500px
         mobile: 500px
