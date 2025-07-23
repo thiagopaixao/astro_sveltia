@@ -138,8 +138,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-pontos-label[Nome==2013-26-09]
-        resistencia-linhas-label[Nome==2013-01-10-pt1]
+        resistencia-pontos-label[id==1]
+        resistencia-linhas-label[id==2]
         resistencia-pontos[Nome==2013-26-09]
         resistencia-linhas[Nome==2013-01-10-pt1]
         resistencia-poligonos[Nome==2013-01-10-pt2]
@@ -193,10 +193,6 @@ mapbox:
           colorIcon: '#24e037ff'
           typeIcon: outlined
           text: Início do trajeto no MASP
-        - icon: circle
-          colorIcon: '#24e037ff'
-          typeIcon: outlined
-          text: Monumento às Bandeiras
     - id: resistencia_2013_6
       centerLng: '-46.661'
       centerLat: '-23.580'
