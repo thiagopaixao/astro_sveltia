@@ -82,7 +82,7 @@ mapbox:
           colorIcon: '#597d5dff'
           typeIcon: outlined
           text: Terra indígena demarcada
-    - id: resistencia_2013
+    - id: resistencia_2013_1
       centerLng: '-46.763'
       centerLat: '-23.459'
       zoom: '13'
@@ -109,7 +109,7 @@ mapbox:
           colorIcon: '#24e037ff'
           typeIcon: outlined
           text: Local do protesto
-    - id: resistencia_2013-26-09
+    - id: resistencia_2013_2
       centerLng: '-46.752'
       centerLat: '-23.460'
       zoom: '14.60'
@@ -129,6 +129,31 @@ mapbox:
           colorIcon: '#24e037ff'
           typeIcon: outlined
           text: Altura do km 21 da Rodovia dos Bandeirantes
+    - id: resistencia_2013_3
+      centerLng: '-46.710'
+      centerLat: '-23.516'
+      zoom: '11.39'
+      mobileZoom: '11.39'
+      duration: '3000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-pontos[Nome==2013-26-09]
+        resistencia-linhas[Nome==2013-01-10-pt1]
+        resistencia-poligonos[Nome==2013-01-10-pt2]
+        ti-jaragua-aldeias
+        ti-jaragua-recorte
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#f64141ff'
+          typeIcon: outlined
+          text: Aldeias
+        - icon: square
+          colorIcon: '#597d5dff'
+          typeIcon: outlined
+          text: Terra indígena demarcada
     - id: resistencia_2013-01-10-pt1
       centerLng: '-46.655'
       centerLat: '-23.571'
@@ -167,6 +192,10 @@ mapbox:
           colorIcon: '#36f924ff'
           typeIcon: outlined
           text: Ocupação no Monumento às Bandeiras
+        - icon: circle
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Monumento às Bandeiras
     - id: resistencia_2014-16-04
       centerLng: '-46.633'
       centerLat: '-23.548'
@@ -678,7 +707,7 @@ components:
             src: /uploads/2013 [26_09]_CGY.png
             alt: ''
             description: 'Bloqueio da Rodovia dos Bandeirantes. Fonte: Comissão Guarani Yvyrupa [CGY]'
-        mapView: resistencia_2013
+        mapView: resistencia_2013_1
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -724,7 +753,7 @@ components:
         desktop: 600px
         tablet: 600px
         mobile: 600px
-        mapView: resistencia_2013-26-09
+        mapView: resistencia_2013_2
       - type: Spacer
         txtColor: ''
         bgColor: ''
@@ -772,8 +801,8 @@ components:
         desktop: 600px
         tablet: 600px
         mobile: 600px
-        mapView: resistencia_2013-01-10-pt1
-      - type: Timeline
+        mapView: resistencia_2013_3
+      - type: Spacer
         txtColor: ''
         bgColor: ''
         components:
@@ -794,6 +823,51 @@ components:
         tablet: 600px
         mobile: 600px
         mapView: resistencia_2013-01-10-pt2
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: |-
+              ###### Local/Trajeto: Avenida Paulista na altura do MASP, rumo ao Monumento às Bandeiras
+
+              Em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215
+            text: 01/10/2013
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2013 [01_10]_01_ISA.jpg
+            alt: ''
+            description: 'Protesto no Monumento às Bandeiras. Fonte: Tiago Moreira dos Santos [ISA]'
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2013 [01_10]_02_ISA.jpg
+            alt: ''
+            description: 'Protesto no Monumento às Bandeiras. Fonte: Tiago Moreira dos Santos [ISA]'
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+        mapView: resistencia_2013-01-10-pt1
+      - type: Timeline
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: Em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215
+            text: 01/10
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2013 [01_10]_01_ISA.jpg
+            alt: ''
+            description: 'Protesto no Monumento às Bandeiras. Fonte: Tiago Moreira dos Santos [ISA]'
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2013 [01_10]_02_ISA.jpg
+            alt: ''
+            description: 'Protesto no Monumento às Bandeiras. Fonte: Tiago Moreira dos Santos [ISA]'
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+        mapView: resistencia_2013-01-10-pt1
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1282,6 +1356,13 @@ components:
           - type: TimelineBullet
             content: Ocupação do saguão da Prefeitura de São Paulo contra a municipalização da saúde indígena
             text: 27/03/2019
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1293,6 +1374,13 @@ components:
           - type: TimelineBullet
             content: Ocupação do saguão da Prefeitura de São Paulo contra a municipalização da saúde indígena
             text: 27/03/2019
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1307,6 +1395,13 @@ components:
 
               Local: Avenida Comendador José de Matos, 136
             text: 30/01 a 10/03 de 2020
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
         desktop: 500px
         tablet: 500px
         mobile: 500px
