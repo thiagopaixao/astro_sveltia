@@ -53,7 +53,7 @@ mapbox:
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#976c20ff'
+          colorIcon: '#f64141ff'
           typeIcon: outlined
           text: Aldeias
         - icon: square
@@ -75,7 +75,7 @@ mapbox:
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#976c20ff'
+          colorIcon: '#f64141ff'
           typeIcon: outlined
           text: Aldeias
         - icon: square
@@ -98,7 +98,7 @@ mapbox:
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#976c20ff'
+          colorIcon: '#f64141ff'
           typeIcon: outlined
           text: Aldeias
         - icon: square
@@ -679,6 +679,90 @@ components:
             alt: ''
             description: 'Bloqueio da Rodovia dos Bandeirantes. Fonte: Comissão Guarani Yvyrupa [CGY]'
         mapView: resistencia_2013
+      - type: Text
+        hasDropCap: false
+        content: '###### 2013'
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: |-
+              ###### Local/Trajeto: Avenida Paulista na altura do MASP, rumo ao Monumento às Bandeiras
+
+              Em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215
+            text: 01/10/2013
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2013 [01_10]_01_ISA.jpg
+            alt: ''
+            description: 'Protesto no Monumento às Bandeiras. Fonte: Tiago Moreira dos Santos [ISA]'
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2013 [01_10]_02_ISA.jpg
+            alt: ''
+            description: 'Protesto no Monumento às Bandeiras. Fonte: Tiago Moreira dos Santos [ISA]'
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+        mapView: resistencia_2013-01-10-pt1
+      - type: Spacer
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta
+            text: 16/04/2014
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [16_04]_Midia Ninja.jpg
+            alt: ''
+            description: 'Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta. Fonte: Mídia Ninja'
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [16_04]_CGY.png
+            alt: ''
+            description: Vídeo da campanha “Resistência Guarani SP” realizado por Comissão Guarani Yvyrupa
+        desktop: 100px
+        tablet: 100px
+        mobile: 100px
+        mapView: resistencia_2013-01-10-pt2
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: Em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215.
+            text: 01/10/2013
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2013 [01_10]_01_ISA.jpg
+            alt: ''
+            description: 'Protesto no Monumento às Bandeiras. Fonte: Tiago Moreira dos Santos [ISA]'
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2013 [01_10]_02_ISA.jpg
+            alt: ''
+            description: 'Protesto no Monumento às Bandeiras. Fonte: Tiago Moreira dos Santos [ISA]'
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+        mapView: resistencia_2013-26-09
+      - type: Timeline
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã.
+            text: 26/09
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2013 [26_09]_CGY.png
+            alt: ''
+            description: 'Bloqueio da Rodovia dos Bandeirantes. Fonte: Comissão Guarani Yvyrupa [CGY]'
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+        mapView: resistencia_2013-01-10-pt1
       - type: Spacer
         txtColor: ''
         bgColor: ''
@@ -1255,6 +1339,13 @@ components:
 
               Local: Avenida Comendador José de Matos, 136
             text: 30/01 a 10/03 de 2020
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1269,6 +1360,13 @@ components:
 
               Local: Avenida Comendador José de Matos, 136
             text: 30/01 a 10/03 de 2020
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1283,6 +1381,13 @@ components:
 
               Local: Avenida Comendador José de Matos, 136
             text: 30/01 a 10/03 de 2020
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1294,6 +1399,13 @@ components:
           - type: TimelineBullet
             content: Ocupação do escritório da construtora Tenda no centro de São Paulo.
             text: 09 e 10/03 de 2020
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
         desktop: 500px
         tablet: 500px
         mobile: 500px
