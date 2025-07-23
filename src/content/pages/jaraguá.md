@@ -684,36 +684,22 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: '###### 2013'
-            text: ''
-        desktop: 100px
-        tablet: 100px
-        mobile: 100px
-        mapView: resistencia_2013-01-10-pt2
-      - type: Spacer
-        hasDropCap: false
-        content: '###### 2013'
-        txtColor: ''
-        bgColor: ''
-        components:
+            content: ''
+            text: '2013'
+          - type: Spacer
+            desktop: 100px
+            tablet: 100px
+            mobile: 100px
           - type: TimelineBullet
-            content: Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta
-            text: 16/04/2014
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2014 [16_04]_Midia Ninja.jpg
-            alt: ''
-            description: 'Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta. Fonte: Mídia Ninja'
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2014 [16_04]_CGY.png
-            alt: ''
-            description: Vídeo da campanha “Resistência Guarani SP” realizado por Comissão Guarani Yvyrupa
+            content: Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã.
+            text: 26/09
         desktop: 100px
         tablet: 100px
         mobile: 100px
         mapView: resistencia_2013-01-10-pt2
       - type: MapView
+        hasDropCap: false
+        content: '###### 2013'
         txtColor: ''
         bgColor: ''
         components:
@@ -734,22 +720,6 @@ components:
         tablet: 600px
         mobile: 600px
         mapView: resistencia_2013-26-09
-      - type: Timeline
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã.
-            text: 26/09
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2013 [26_09]_CGY.png
-            alt: ''
-            description: 'Bloqueio da Rodovia dos Bandeirantes. Fonte: Comissão Guarani Yvyrupa [CGY]'
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: resistencia_2013-01-10-pt1
       - type: Spacer
         txtColor: ''
         bgColor: ''
@@ -1063,6 +1033,16 @@ components:
 
               Local: Tribunal Regional Federal da Terceira Região (Av. Paulista)
             text: 25/07/2014
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [06_06]_Guilherme Zocchio.jpg
+            alt: ''
+            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Fonte: Guilherme Zocchio/Repórter Brasil'
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [06_06]_Beatriz Macruz.jpg
+            alt: ''
+            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Fonte: Beatriz Macruz/Repórter Brasil'
         desktop: 600px
         tablet: 600px
         mobile: 600px
@@ -1077,6 +1057,16 @@ components:
 
               Local: Tribunal Regional Federal da Terceira Região (Av. Paulista)
             text: 25/07/2014
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [06_06]_Guilherme Zocchio.jpg
+            alt: ''
+            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Fonte: Guilherme Zocchio/Repórter Brasil'
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [06_06]_Beatriz Macruz.jpg
+            alt: ''
+            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Fonte: Beatriz Macruz/Repórter Brasil'
         desktop: 600px
         tablet: 600px
         mobile: 600px
@@ -1530,6 +1520,13 @@ components:
           - type: TimelineBullet
             content: No contexto da pandemia da COVID, ativistas Guarani participam da  grande manifestação contra o governo do presidente Jair Bolsonaro, trazendo a pauta do Marco Temporal.
             text: 03/07/2021
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1541,6 +1538,13 @@ components:
           - type: TimelineBullet
             content: No contexto da pandemia da COVID, ativistas Guarani participam da  grande manifestação contra o governo do presidente Jair Bolsonaro, trazendo a pauta do Marco Temporal.
             text: 03/07/2021
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1933,6 +1937,28 @@ components:
         mobile: 500px
         mapView: resistencia_2024-04-08-pt2
       - type: Timeline
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: '##### Portaria Declaratória de 2024, reestabelece efeitos da Portaria Declaratória de 2015'
+            text: '2024'
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+        mapView: resistencia_2024-04-08-pt2
+      - type: Spacer
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: '##### Portaria Declaratória de 2024, reestabelece efeitos da Portaria Declaratória de 2015'
+            text: '2024'
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+        mapView: resistencia_2024-04-08-pt2
+      - type: Spacer
         components:
           - type: TimelineBullet
             content: '##### Portaria Declaratória de 2024, reestabelece efeitos da Portaria Declaratória de 2015'
