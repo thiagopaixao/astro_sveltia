@@ -687,12 +687,17 @@ components:
             content: ''
             text: '2013'
           - type: Spacer
-            desktop: 100px
-            tablet: 100px
-            mobile: 100px
+            desktop: 70px
+            tablet: 70px
+            mobile: 70px
           - type: TimelineBullet
             content: Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã.
             text: 26/09
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2013 [26_09]_CGY.png
+            alt: ''
+            description: 'Bloqueio da Rodovia dos Bandeirantes. Fonte: Comissão Guarani Yvyrupa [CGY]'
         desktop: 100px
         tablet: 100px
         mobile: 100px
