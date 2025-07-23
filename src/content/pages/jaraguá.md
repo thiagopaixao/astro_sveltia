@@ -679,43 +679,6 @@ components:
             alt: ''
             description: 'Bloqueio da Rodovia dos Bandeirantes. Fonte: Comissão Guarani Yvyrupa [CGY]'
         mapView: resistencia_2013
-      - type: Timeline
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã.
-            text: 26/09
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2013 [26_09]_CGY.png
-            alt: ''
-            description: 'Bloqueio da Rodovia dos Bandeirantes. Fonte: Comissão Guarani Yvyrupa [CGY]'
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: resistencia_2013-01-10-pt1
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã.
-            text: 26/09/2013
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2013 [26_09]_CGY.png
-            alt: ''
-            description: 'Bloqueio da Rodovia dos Bandeirantes. Fonte: Comissão Guarani Yvyrupa [CGY]'
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/2013 [01_10]_02_ISA.jpg
-            alt: ''
-            description: 'Protesto no Monumento às Bandeiras. Fonte: Tiago Moreira dos Santos [ISA]'
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: resistencia_2013-26-09
       - type: Spacer
         txtColor: ''
         bgColor: ''
