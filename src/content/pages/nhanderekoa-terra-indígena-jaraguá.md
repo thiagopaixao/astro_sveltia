@@ -51,7 +51,7 @@ components:
     customBgColor: ''
     backgroundMedia:
       - type: backgroundImage
-        imgSrc: ''
+        imgSrc: /uploads/bandeira_do_brasil.jpg
     overlay: light
     components:
       - type: ColumnSticky
