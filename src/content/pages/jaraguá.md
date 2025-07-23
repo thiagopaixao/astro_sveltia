@@ -112,8 +112,8 @@ mapbox:
     - id: resistencia_2013_2
       centerLng: '-46.752'
       centerLat: '-23.460'
-      zoom: '14.60'
-      mobileZoom: '14.60'
+      zoom: '15'
+      mobileZoom: '15'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -138,6 +138,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
+        resistencia-pontos-label[Nome==2013-26-09]
+        resistencia-linhas-label[Nome==2013-01-10-pt1]
         resistencia-pontos[Nome==2013-26-09]
         resistencia-linhas[Nome==2013-01-10-pt1]
         resistencia-poligonos[Nome==2013-01-10-pt2]
@@ -205,10 +207,13 @@ mapbox:
       pitch: '30'
       layers: |-
         satelite
+        resistencia-linhas[id==1]
+        resistencia-linhas[id==2]
+      title: ''
+      notes: |-
+        satelite
         resistencia-linhas[Nome==2013-01-10-pt1]
         resistencia-poligonos[Nome==2013-01-10-pt2]
-      title: ''
-      notes: ''
       items:
         - icon: show_chart
           colorIcon: '#24e037ff'
