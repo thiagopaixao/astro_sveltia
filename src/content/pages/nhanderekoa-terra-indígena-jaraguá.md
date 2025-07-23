@@ -91,7 +91,7 @@ components:
     customBgColor: ''
     backgroundMedia:
       - type: backgroundImage
-        imgSrc: /uploads/2013 [26_09]_CGY.png
+        imgSrc: /uploads/arqueological-remains_03.jpg
     overlay: ''
     components:
       - type: Columns
