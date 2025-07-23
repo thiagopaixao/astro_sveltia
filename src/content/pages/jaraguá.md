@@ -83,7 +83,7 @@ mapbox:
           typeIcon: outlined
           text: Terra indígena demarcada
     - id: resistencia_2013_1
-      centerLng: '-46.763'
+      centerLng: '-46.765'
       centerLat: '-23.459'
       zoom: '13'
       mobileZoom: '13'
@@ -157,7 +157,7 @@ mapbox:
           typeIcon: outlined
           text: Terra indígena demarcada
     - id: resistencia_2013_4
-      centerLng: '-46.651'
+      centerLng: '-46.650'
       centerLat: '-23.571'
       zoom: '13.17'
       mobileZoom: '13.17'
@@ -192,7 +192,7 @@ mapbox:
         - icon: show_chart
           colorIcon: '#24e037ff'
           typeIcon: outlined
-          text: Trajeto percorrido
+          text: Início do trajeto no MASP
         - icon: circle
           colorIcon: '#24e037ff'
           typeIcon: outlined
@@ -207,13 +207,10 @@ mapbox:
       pitch: '30'
       layers: |-
         satelite
-        resistencia-linhas[id==1]
-        resistencia-linhas[id==2]
-      title: ''
-      notes: |-
-        satelite
         resistencia-linhas[Nome==2013-01-10-pt1]
         resistencia-poligonos[Nome==2013-01-10-pt2]
+      title: ''
+      notes: ''
       items:
         - icon: show_chart
           colorIcon: '#24e037ff'
