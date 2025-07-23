@@ -974,31 +974,13 @@ components:
         tablet: 600px
         mobile: 600px
         mapView: resistencia_2014-24-04
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Ocupação do escritório da construtora Tenda no centro de São Paulo.
-            text: 09 e 10/03 de 2020
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2020-09-03
       - type: Spacer
         txtColor: ''
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: Ocupação do escritório da construtora Tenda no centro de São Paulo.
-            text: 09 e 10/03 de 2020
+            content: '##### Portaria Declaratória de 2024, reestabelece efeitos da Portaria Declaratória de 2015'
+            text: '2024'
           - type: Spacer
             desktop: 300px
             tablet: 300px
@@ -1009,14 +991,14 @@ components:
         desktop: 500px
         tablet: 500px
         mobile: 500px
-        mapView: resistencia_2021-25-06
+        mapView: resistencia_2024-04-08-pt2
       - type: Timeline
         txtColor: ''
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: Ocupação do escritório da construtora Tenda no centro de São Paulo.
-            text: 09 e 10/03 de 2020
+            content: '##### Portaria Declaratória de 2024, reestabelece efeitos da Portaria Declaratória de 2015'
+            text: '2024'
           - type: Spacer
             desktop: 300px
             tablet: 300px
@@ -1027,14 +1009,14 @@ components:
         desktop: 500px
         tablet: 500px
         mobile: 500px
-        mapView: resistencia_2021-25-06
+        mapView: resistencia_2024-04-08-pt2
       - type: Spacer
         txtColor: ''
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: A volta da discussão no Congresso Nacional sobre o Marco Temporal desencadeia uma série de protestos indígenas. No dia 25 de junho, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes.
-            text: 25/06/2021
+            content: '##### Portaria Declaratória de 2024, reestabelece efeitos da Portaria Declaratória de 2015'
+            text: '2024'
           - type: Spacer
             desktop: 300px
             tablet: 300px
@@ -1045,410 +1027,156 @@ components:
         desktop: 500px
         tablet: 500px
         mobile: 500px
-        mapView: resistencia_2021-25-06
+        mapView: resistencia_2024-04-08-pt2
+      - type: Spacer
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: '##### Portaria Declaratória de 2024, reestabelece efeitos da Portaria Declaratória de 2015'
+            text: '2024'
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+        mapView: resistencia_2024-04-08-pt1
+      - type: Spacer
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: '##### Portaria Declaratória de 2024, reestabelece efeitos da Portaria Declaratória de 2015'
+            text: '2024'
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+        mapView: resistencia_2024-04-08-pt1
+      - type: Spacer
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: Ativistas Guarani realizam manifestação nas margens do Rio Tietê contra o Marco Temporal e pela demarcação da T.I. Jaraguá. O protesto chama também atenção para os ataques sofridos pelos parentes Guarani Kaiowá no Mato Grosso do Sul
+            text: 04/08/2024
+          - type: Spacer
+            desktop: 300px
+            tablet: 300px
+            mobile: 300px
+          - type: TimelineBullet
+            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
+            text: 30/06/2021
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+        mapView: resistencia_2024-04-08-pt1
       - type: MapView
         txtColor: ''
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: A volta da discussão no Congresso Nacional sobre o Marco Temporal desencadeia uma série de protestos indígenas. No dia 25 de junho, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes.
-            text: 25/06/2021
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
+            content: Ativistas Guarani realizam manifestação nas margens do Rio Tietê contra o Marco Temporal e pela demarcação da T.I. Jaraguá. O protesto chama também atenção para os ataques sofridos pelos parentes Guarani Kaiowá no Mato Grosso do Sul
+            text: 04/08/2024
         desktop: 500px
         tablet: 500px
         mobile: 500px
-        mapView: resistencia_2021-25-06
+        mapView: resistencia_2024-04-08-pt1
       - type: Spacer
         txtColor: ''
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: A volta da discussão no Congresso Nacional sobre o Marco Temporal desencadeia uma série de protestos indígenas. No dia 25 de junho, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes.
-            text: 25/06/2021
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
+            content: Ativistas Guarani realizam manifestação nas margens do Rio Tietê contra o Marco Temporal e pela demarcação da T.I. Jaraguá. O protesto chama também atenção para os ataques sofridos pelos parentes Guarani Kaiowá no Mato Grosso do Sul
+            text: 04/08/2024
         desktop: 500px
         tablet: 500px
         mobile: 500px
-        mapView: resistencia_2021-30-06-pt1
+        mapView: resistencia_2024-04-08-pt2
       - type: Timeline
         txtColor: ''
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: A volta da discussão no Congresso Nacional sobre o Marco Temporal desencadeia uma série de protestos indígenas. No dia 25 de junho, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes.
-            text: 25/06/2021
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
+            content: Ativistas Guarani realizam manifestação nas margens do Rio Tietê contra o Marco Temporal e pela demarcação da T.I. Jaraguá. O protesto chama também atenção para os ataques sofridos pelos parentes Guarani Kaiowá no Mato Grosso do Sul
+            text: 04/08/2024
         desktop: 500px
         tablet: 500px
         mobile: 500px
-        mapView: resistencia_2021-30-06-pt1
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: No contexto da pandemia da COVID, ativistas Guarani participam da  grande manifestação contra o governo do presidente Jair Bolsonaro, trazendo a pauta do Marco Temporal.
-            text: 03/07/2021
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2021-30-06-pt1
+        mapView: resistencia_2024-04-08-pt2
       - type: Spacer
         txtColor: ''
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: No contexto da pandemia da COVID, ativistas Guarani participam da  grande manifestação contra o governo do presidente Jair Bolsonaro, trazendo a pauta do Marco Temporal.
-            text: 03/07/2021
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
+            content: '##### Portaria Declaratória de 2024, reestabelece efeitos da Portaria Declaratória de 2015'
+            text: '2024'
         desktop: 500px
         tablet: 500px
         mobile: 500px
-        mapView: resistencia_2021-30-06-pt2
+        mapView: resistencia_2024-04-08-pt2
       - type: MapView
         txtColor: ''
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: No contexto da pandemia da COVID, ativistas Guarani participam da  grande manifestação contra o governo do presidente Jair Bolsonaro, trazendo a pauta do Marco Temporal.
-            text: 03/07/2021
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
+            content: '##### Portaria Declaratória de 2024, reestabelece efeitos da Portaria Declaratória de 2015'
+            text: '2024'
         desktop: 500px
         tablet: 500px
         mobile: 500px
-        mapView: resistencia_2021-30-06-pt2
+        mapView: resistencia_2024-04-08-pt2
       - type: Spacer
         txtColor: ''
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: No contexto da pandemia da COVID, ativistas Guarani participam da  grande manifestação contra o governo do presidente Jair Bolsonaro, trazendo a pauta do Marco Temporal.
-            text: 03/07/2021
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
+            content: '##### Portaria Declaratória de 2024, reestabelece efeitos da Portaria Declaratória de 2015'
+            text: '2024'
         desktop: 500px
         tablet: 500px
         mobile: 500px
-        mapView: resistencia_2022-18-06
+        mapView: resistencia_2024-04-08-pt2
       - type: Timeline
         txtColor: ''
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: No contexto da pandemia da COVID, ativistas Guarani participam da  grande manifestação contra o governo do presidente Jair Bolsonaro, trazendo a pauta do Marco Temporal.
-            text: 03/07/2021
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
+            content: '##### Portaria Declaratória de 2024, reestabelece efeitos da Portaria Declaratória de 2015'
+            text: '2024'
         desktop: 500px
         tablet: 500px
         mobile: 500px
-        mapView: resistencia_2022-18-06
+        mapView: resistencia_2024-04-08-pt2
       - type: Spacer
         txtColor: ''
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: Ativistas Guarani das T.I.s Jaraguá e Tenondé-Porã ocupam o vão do MASP em protesto pelo assassinato do sertanista Bruno Pereira e do jornalista ambientalista Dom Phillips.
-            text: 18/06/2022
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
+            content: '##### Portaria Declaratória de 2024, reestabelece efeitos da Portaria Declaratória de 2015'
+            text: '2024'
         desktop: 500px
         tablet: 500px
         mobile: 500px
-        mapView: resistencia_2022-18-06
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Ativistas Guarani das T.I.s Jaraguá e Tenondé-Porã ocupam o vão do MASP em protesto pelo assassinato do sertanista Bruno Pereira e do jornalista ambientalista Dom Phillips.
-            text: 18/06/2022
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2022-18-06
+        mapView: resistencia_2024-04-08-pt2
       - type: Spacer
         txtColor: ''
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: Ativistas Guarani das T.I.s Jaraguá e Tenondé-Porã ocupam o vão do MASP em protesto pelo assassinato do sertanista Bruno Pereira e do jornalista ambientalista Dom Phillips.
-            text: 18/06/2022
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2022-23-06
-      - type: Timeline
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Ativistas Guarani das T.I.s Jaraguá e Tenondé-Porã ocupam o vão do MASP em protesto pelo assassinato do sertanista Bruno Pereira e do jornalista ambientalista Dom Phillips.
-            text: 18/06/2022
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2022-23-06
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: |-
-              Ocupação do Monumento às Bandeiras em protesto contra a tramitação da lei do Marco Temporal
-
-              Trajeto: Início no Monumento às Bandeiras rumo a Avenida Paulista
-            text: 23/06/2022
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2022-23-06
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: |-
-              Ocupação do Monumento às Bandeiras em protesto contra a tramitação da lei do Marco Temporal
-
-              Trajeto: Início no Monumento às Bandeiras rumo a Avenida Paulista
-            text: 23/06/2022
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2022-23-06
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: |-
-              Ocupação do Monumento às Bandeiras em protesto contra a tramitação da lei do Marco Temporal
-
-              Trajeto: Início no Monumento às Bandeiras rumo a Avenida Paulista
-            text: 23/06/2022
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2022-09-08
-      - type: Timeline
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: |-
-              Ocupação do Monumento às Bandeiras em protesto contra a tramitação da lei do Marco Temporal
-
-              Trajeto: Início no Monumento às Bandeiras rumo a Avenida Paulista
-            text: 23/06/2022
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2022-09-08
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: |-
-              Ato organizado pela Comissão Yvyrupa na Faculdade de Direito da USP, no Largo São Francisco, contra o Marco Temporal.
-
-              Local: Início na Faculdade de Direito da USP, no Largo São Francisco. Caminha para o Pátio do Colégio parando no Theatro Municipal.
-            text: 09/08/2022
-          - type: Spacer
-            desktop: 300px
-            tablet: 300px
-            mobile: 300px
-          - type: TimelineBullet
-            content: Cinco dias depois, em 30 de junho, ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista
-            text: 30/06/2021
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2022-09-08
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: |-
-              Ato organizado pela Comissão Yvyrupa na Faculdade de Direito da USP, no Largo São Francisco, contra o Marco Temporal.
-
-              Local: Início na Faculdade de Direito da USP, no Largo São Francisco. Caminha para o Pátio do Colégio parando no Theatro Municipal.
-            text: 09/08/2022
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2022-09-08
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: |-
-              Ato organizado pela Comissão Yvyrupa na Faculdade de Direito da USP, no Largo São Francisco, contra o Marco Temporal.
-
-              Local: Início na Faculdade de Direito da USP, no Largo São Francisco. Caminha para o Pátio do Colégio parando no Theatro Municipal.
-            text: 09/08/2022
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2023-30-05
-      - type: Timeline
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: |-
-              Ato organizado pela Comissão Yvyrupa na Faculdade de Direito da USP, no Largo São Francisco, contra o Marco Temporal.
-
-              Local: Início na Faculdade de Direito da USP, no Largo São Francisco. Caminha para o Pátio do Colégio parando no Theatro Municipal.
-            text: 09/08/2022
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2023-30-05
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Em protesto contra a aprovação da PL490/2007 pelos deputados em Brasília, ativistas Guarani novamente bloqueiam a Rodovia dos Bandeirantes. A manifestação é duramente reprimida pela Polícia Militar.
-            text: 30/05/2023
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2023-30-05
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Em protesto contra a aprovação da PL490/2007 pelos deputados em Brasília, ativistas Guarani novamente bloqueiam a Rodovia dos Bandeirantes. A manifestação é duramente reprimida pela Polícia Militar.
-            text: 30/05/2023
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2023-30-05
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Em protesto contra a aprovação da PL490/2007 pelos deputados em Brasília, ativistas Guarani novamente bloqueiam a Rodovia dos Bandeirantes. A manifestação é duramente reprimida pela Polícia Militar.
-            text: 30/05/2023
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2023-04-06
-      - type: Timeline
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Em protesto contra a aprovação da PL490/2007 pelos deputados em Brasília, ativistas Guarani novamente bloqueiam a Rodovia dos Bandeirantes. A manifestação é duramente reprimida pela Polícia Militar.
-            text: 30/05/2023
+            content: '##### Portaria Declaratória de 2024, reestabelece efeitos da Portaria Declaratória de 2015'
+            text: '2024'
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1458,35 +1186,13 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: Dias depois, em 04 de junho, a comunidade Guarani realiza a “Caminhada pela Vida” na área da T.I. Jaraguá
-            text: 04/06/2023
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2023-04-06
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Dias depois, em 04 de junho, a comunidade Guarani realiza a “Caminhada pela Vida” na área da T.I. Jaraguá
-            text: 04/06/2023
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-        mapView: resistencia_2023-04-06
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: Dias depois, em 04 de junho, a comunidade Guarani realiza a “Caminhada pela Vida” na área da T.I. Jaraguá
-            text: 04/06/2023
+            content: '##### Portaria Declaratória de 2024, reestabelece efeitos da Portaria Declaratória de 2015'
+            text: '2024'
         desktop: 500px
         tablet: 500px
         mobile: 500px
         mapView: resistencia_2023-07-06
-      - type: Timeline
+      - type: Spacer
         txtColor: ''
         bgColor: ''
         components:
