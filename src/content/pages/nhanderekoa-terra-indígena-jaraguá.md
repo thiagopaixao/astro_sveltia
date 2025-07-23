@@ -52,7 +52,7 @@ components:
     backgroundMedia:
       - type: backgroundImage
         imgSrc: /uploads/imagem jaragua_color edited.jpg
-    overlay: dark
+    overlay: light
     components:
       - type: ColumnSticky
         txtColor: '#ffffffff'
