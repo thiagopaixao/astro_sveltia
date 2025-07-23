@@ -21,9 +21,9 @@ pageTheme:
   textFont: ''
   spacingPatterns:
     - name: Padrão
-      mobile: 10px
-      tablet: 11px
-      desktop: 12px
+      mobile: '10'
+      tablet: '11'
+      desktop: '12'
 mapbox:
   type: MapBox
   style: mapbox://styles/marlus/cjyt3uyhf15mr1cthc2942wxz
@@ -51,11 +51,11 @@ components:
     customBgColor: ''
     backgroundMedia:
       - type: backgroundImage
-        imgSrc: /uploads/expulsion-shuar-center.jpg
+        imgSrc: /uploads/imagem jaragua_color edited.jpg
     overlay: dark
     components:
       - type: ColumnSticky
-        txtColor: ''
+        txtColor: '#ffffffff'
         bgColor: ''
         paddingTop: true
         paddingBottom: true
@@ -92,7 +92,7 @@ components:
     backgroundMedia:
       - type: backgroundImage
         imgSrc: /uploads/2013 [26_09]_CGY.png
-    overlay: light
+    overlay: ''
     components:
       - type: Columns
         paddingTop: false
@@ -110,9 +110,9 @@ components:
 
                 ###### – "onde a cultura vive"
             - type: Spacer
-              desktop: 150px
-              tablet: 150px
-              mobile: 150px
+              desktop: '150'
+              tablet: '150'
+              mobile: '150'
             - type: Text
               hasDropCap: false
               content: |-
@@ -120,10 +120,6 @@ components:
 
                 Com a invasão Europeia,
         column2:
-          components:
-            - type: Spacer
-              desktop: 10px
-              tablet: 10px
-              mobile: 10px
+          components: []
 ---
 
