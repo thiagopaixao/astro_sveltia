@@ -51,7 +51,7 @@ components:
     customBgColor: ''
     backgroundMedia:
       - type: backgroundImage
-        imgSrc: /uploads/floresta_teste.jpg
+        imgSrc: ''
     overlay: light
     components:
       - type: ColumnSticky
