@@ -49,7 +49,9 @@ components:
     customTxtColor: ''
     bgColor: Secondary
     customBgColor: ''
-    backgroundMedia: []
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/2013 [01_10]_01_ISA.jpg
     overlay: light
     components:
       - type: ColumnSticky
