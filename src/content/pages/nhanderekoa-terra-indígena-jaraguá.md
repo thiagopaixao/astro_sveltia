@@ -306,14 +306,14 @@ components:
     overlay: ''
     components:
       - type: Columns
-        paddingTop: false
+        paddingTop: true
         paddingBottom: false
         invertOnMobile: false
         columnsAlign: 33-66
         column1:
           components:
             - type: ImageBlock
-              wideImage: true
+              wideImage: false
               src: /uploads/imagem_04_gravuraouro.jpg
               alt: Gravura retratando a extração de ouro no Jaraguá, circa séc. 18
               description: Gravura retratando a extração de ouro no Jaraguá, circa séc. 18
@@ -322,9 +322,7 @@ components:
             - type: Text
               hasDropCap: true
               content: |-
-                Com a exaustão do ouro em São Paulo e a descoberta das minas em Goiás e Minas Gerais, a área do Pico do Jaraguá transforma-se numa enorme propriedade agrícola.
-
-                Durante o século XIX, seguindo a expansão da economia cafeeira paulista, a chamada “Fazenda Jaraguá” torna-se uma grande produtora de café, e vastas áreas de Mata Atlântica são arrasadas.
+                Com a exaustão do ouro em São Paulo e a descoberta das minas em Goiás e Minas Gerais, a área do Pico do Jaraguá transforma-se numa enorme propriedade agrícola. Durante o século XIX, seguindo a expansão da economia cafeeira paulista, a chamada “Fazenda Jaraguá” torna-se uma grande produtora de café, e vastas áreas de Mata Atlântica são arrasadas.
 
                 Espécies de café remanescentes destas plantações são encontradas até hoje por toda a Terra Indígena Jaraguá.
             - type: Spacer
@@ -336,7 +334,7 @@ components:
               content: |-
                 #### A CRIAÇÃO DO PARQUE DO JARAGUÁ
 
-                ##### 1940 – 1960: 
+                ###### 1940 – 1960: 
 
                 Na década de 1940, com o declínio da atividade cafeeira, a Fazenda Jaraguá é adquirida pelo município de São Paulo e torna-se propriedade estatal. Em 1946, a propriedade passa a ser administrada pelo Serviço Florestal do município.   
 
