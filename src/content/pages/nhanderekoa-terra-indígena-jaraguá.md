@@ -26,17 +26,36 @@ pageTheme:
       desktop: '12'
 mapbox:
   type: MapBox
-  style: mapbox://styles/marlus/cjyt3uyhf15mr1cthc2942wxz
-  token: pk.eyJ1IjoibWFybHVzIiwiYSI6IjlmYlhtaEkifQ.vMxORYorRKnueDl3E5itEQ
-  centerLng: '-58.569363795'
-  centerLat: '-1.917321274'
-  zoom: '2'
+  style: mapbox://styles/studio-autonoma/cmdgctyq702ww01s4dyd42dyc
+  token: pk.eyJ1Ijoic3R1ZGlvLWF1dG9ub21hIiwiYSI6ImNtY3V2d3dtMTA0ZXgycnB4OW01cjlqb2QifQ.3NMaRt1maLlqTv6nlVqVHA
+  centerLng: '-33.0152'
+  centerLat: '-33.0152'
+  zoom: '2.5'
   bearing: '0'
   pitch: '0'
-  layers: ''
+  layers: satelite
   columnAlign: left
   floatingText: true
-  views: []
+  views:
+    - id: resistencia_intro
+      centerLng: '-23.459'
+      centerLat: '-23.459'
+      zoom: '12.6'
+      mobileZoom: '12.6'
+      duration: '3000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua-aldeias
+        ti-jaragua-recorte
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: aldeias
+          colorIcon: '#2ed650ff'
+          typeIcon: rounded
+          text: aldeias
 components:
   - type: Group
     id: home
@@ -162,6 +181,14 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: resistencia_intro
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_intro_map
     columnAlign: right
     floatingText: false
   - type: Group
