@@ -227,12 +227,16 @@ components:
                 Durante o século XIX, seguindo a expansão da economia cafeeira paulista, a chamada “Fazenda Jaraguá” torna-se uma grande produtora de café, e vastas áreas de Mata Atlântica são arrasadas.
 
                 Espécies de café remanescentes destas plantações são encontradas até hoje por toda a Terra Indígena Jaraguá.
+            - type: Spacer
+              desktop: 150px
+              tablet: 150px
+              mobile: 150px
             - type: Text
               hasDropCap: false
               content: |-
-                ## A CRIAÇÃO DO PARQUE DO JARAGUÁ
+                #### A CRIAÇÃO DO PARQUE DO JARAGUÁ
 
-                ## 1940 – 1960: 
+                ##### 1940 – 1960: 
 
                 Na década de 1940, com o declínio da atividade cafeeira, a Fazenda Jaraguá é adquirida pelo município de São Paulo e torna-se propriedade estatal. Em 1946, a propriedade passa a ser administrada pelo Serviço Florestal do município.   
 
