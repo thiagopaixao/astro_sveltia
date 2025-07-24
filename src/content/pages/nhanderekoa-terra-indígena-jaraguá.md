@@ -329,9 +329,9 @@ components:
               content: |-
                 ###### parte III
 
-                #### A Retomada do Jaraguá
+                ## A Retomada do Jaraguá
 
-                #### (1800 - 1961)
+                ## (1800 - 1961)
         column2:
           components: []
   - type: Group
@@ -343,7 +343,7 @@ components:
     animations: true
     txtColor: Primary
     customTxtColor: ''
-    bgColor: Secondary
+    bgColor: Highlight
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
