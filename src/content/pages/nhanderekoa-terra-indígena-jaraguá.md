@@ -562,7 +562,7 @@ components:
                 Ainda que representassem avanços democráticos, estas demarcações foram claramente insuficientes, especialmente no caso da T.I. Jaraguá, onde a área demarcada abrangia apenas os 1.8 hectares do núcleo habitacional da Tekoa Ytu. Deste modo, a demarcação ignorava a extensão territorial do uso tradicional das matas que mantém o _nhandereko_.
             - type: ImageBlock
               wideImage: false
-              src: /uploads/imagem_15_demarcacao_tekoa_ytu.jpg
+              src: /uploads/imagem_15_demarcacao_tekoa_ytu_02.jpg
               alt: ''
               description: mapa da demarcação da Tekoa Ytu em 1987 em comparação com a atual área da T.I. Jaraguá
         column2:
