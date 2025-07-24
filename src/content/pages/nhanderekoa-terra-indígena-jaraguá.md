@@ -372,6 +372,14 @@ components:
               src: /uploads/imagem_XX_mapa.jpg
               alt: 'Análise de fotografia aérea do Jaraguá de 1954, identificando o local de origem da Tekoa Ytu Fonte: Geosampa [Referência: FX02-159]'
               description: 'Análise de fotografia aérea do Jaraguá de 1954, identificando o local de origem da Tekoa Ytu Fonte: Geosampa [Referência: FX02-159]'
+            - type: Text
+              hasDropCap: true
+              content: |-
+                Nos anos 1950, expulso pelo SPI do aldeamento de Bananal, a família de André Samuel dos Santos inicia a retomada das florestas do Jaraguá. Entre 1960 e 1961, o casal de caciques Jandira e Joaquim migra para o Jaraguá e erguem uma tekoa ao lado de uma fonte de água ao pé do morro. 
+
+                A retomada recebe o nome de Tekoa Ytu, “aldeia da cachoeira”. 
+
+                Desde então, as florestas do Jaraguá passam a ser um grande refúgio, abrigando famílias Guarani vindas de várias regiões do Brasil.
         column2:
           components:
             - type: Spacer
@@ -383,5 +391,9 @@ components:
               src: /uploads/imagem_08_spi.jpg
               alt: ''
               description: Imagem histórica de um dos "aldeamentos" Guarani do Serviço de Proteção aos Índios na área de Itariri, no litoral Paulista.
+            - type: VideoEmbed
+              wideVideo: true
+              videoUrl: https://www.youtube.com/watch?v=80MJwqZdOss
+              videoCaption: Entrevista histórica com a Cacica Jandira, matriarca da Terra Indígena Jaraguá em São Paulo (realizado em 1992 pelo VideoFAU da Faculdade de Arquitetura e Urbanismo da USP).
 ---
 
