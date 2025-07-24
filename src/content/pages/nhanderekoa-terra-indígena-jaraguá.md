@@ -479,5 +479,14 @@ components:
               src: /uploads/imagem_10_bandeirantes.jpg
               alt: Inauguração da Rodovia dos Bandeirantes com a presença do ditador General Ernesto Geisel (Arquivo FGV CPDOC)
               description: Inauguração da Rodovia dos Bandeirantes com a presença do ditador General Ernesto Geisel (Arquivo FGV CPDOC)
+            - type: Spacer
+              desktop: 300px
+              tablet: 300px
+              mobile: 300px
+            - type: ImageBlock
+              wideImage: false
+              src: /uploads/imagem_12_mapaitaipu.jpg
+              alt: ''
+              description: Mapa das Tekoas inundadas e forçosamente removidas durante a construção da Usina Hidrelétrica de Itaipu.
 ---
 
