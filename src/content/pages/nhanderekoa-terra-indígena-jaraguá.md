@@ -598,9 +598,9 @@ components:
         column1:
           components:
             - type: Spacer
-              desktop: 150px
-              tablet: 150px
-              mobile: 150px
+              desktop: 50px
+              tablet: 50px
+              mobile: 50px
             - type: ImageBlock
               wideImage: false
               src: /uploads/imagem_16_logo_mata_atlantica_unesco.jpg
@@ -616,5 +616,10 @@ components:
                 Em 1994 o Parque Estadual do Jaraguá é reconhecido pela UNESCO como Patrimônio da Humanidade, na categoria de Reserva da Biosfera, passando a integrar o Cinturão Verde da Cidade de São Paulo.
 
                 Assim como na criação do Parque Estadual em 1961, tais medidas protetivas ambientalistas muitas vezes entram em conflito com o direito das comunidades Guarani ao seu território ancestral, impedindo-as de usufruir dos recursos naturais das florestas dentro do perímetro do Parque, que hoje encontra-se totalmente cercado.
+            - type: ImageBlock
+              wideImage: false
+              src: /uploads/imagem_15_demarcacao_tekoa_ytu.jpg
+              alt: Mapa do cinturão verde são Paulo
+              description: Mapa do cinturão verde são Paulo
 ---
 
