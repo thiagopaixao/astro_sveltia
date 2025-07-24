@@ -227,5 +227,23 @@ components:
                 Durante o século XIX, seguindo a expansão da economia cafeeira paulista, a chamada “Fazenda Jaraguá” torna-se uma grande produtora de café, e vastas áreas de Mata Atlântica são arrasadas.
 
                 Espécies de café remanescentes destas plantações são encontradas até hoje por toda a Terra Indígena Jaraguá.
+            - type: Text
+              hasDropCap: false
+              content: |-
+                ## A CRIAÇÃO DO PARQUE DO JARAGUÁ
+
+                ## 1940 – 1960: 
+
+                Na década de 1940, com o declínio da atividade cafeeira, a Fazenda Jaraguá é adquirida pelo município de São Paulo e torna-se propriedade estatal. Em 1946, a propriedade passa a ser administrada pelo Serviço Florestal do município.   
+
+                Por esta época, na primeira metade do século XX, o Jaraguá continuava sendo um lugar habitado pelos Guarani através dos caminhos que conectavam o Paraná e o Mato Grosso do Sul até o Vale do Ribeira e o litoral paulista.
+
+                Em 1961, no contexto do estabelecimento das primeiras reservas florestais nacionais, cria-se o Parque Estadual do Jaraguá, que pela primeira vez garante algum nível de proteção ambiental aos remanescentes de Mata Atlântica no Pico do Jaraguá. 
+
+                 Ao proteger as florestas dentro de enquadramentos ambientalistas, o Parque Estadual acabou não apenas cerceando o uso das matas pelos Guarani, mas também foi um modo de apagar a presença indígena da região, definindo a área como uma grande reserva florestal vazia.    
+
+                Em paralelo, São Paulo vive um rápido processo de urbanização. Entre 1940 e 1948 é construída a rodovia Anhanguera, nas margens do Território Guarani do Jaraguá, e em 1955 é construído o linhão de transmissão Anhangabaú-Jundiaí sobre o pico do morro. 
+
+                Estas grandes infraestruturas de transporte e energia inter-urbanas abrem caminho para a voraz especulação imobiliária que se daria nas décadas seguintes, principalmente com o regime militar depois do golpe de 1964.
 ---
 
