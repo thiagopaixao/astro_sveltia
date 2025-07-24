@@ -508,7 +508,7 @@ components:
     backgroundMedia:
       - type: backgroundImage
         imgSrc: /uploads/imagem_13_constituinte.jpg
-    overlay: light
+    overlay: dark
     components:
       - type: Columns
         paddingTop: false
