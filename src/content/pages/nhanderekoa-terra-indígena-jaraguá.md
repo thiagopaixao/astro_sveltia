@@ -86,11 +86,11 @@ components:
     shortTitle: asd
     longTitle: asd
     description: ''
-    showInMenu: false
+    showInMenu: true
     animations: true
     txtColor: Primary
     customTxtColor: ''
-    bgColor: Secondary
+    bgColor: Highlight
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
@@ -142,7 +142,7 @@ components:
     description: ''
     showInMenu: false
     animations: true
-    txtColor: Secondary
+    txtColor: Primary
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
@@ -193,9 +193,9 @@ components:
               mobile: 700px
             - type: ImageBlock
               wideImage: true
-              src: /uploads/imagem_02_pateodocolegio.jpg
-              alt: ''
-              description: Pateo do Colégio pintado por Jean-Baptiste Debret em 1827, quando servia como Palácio do Governo de São Paulo
+              src: /uploads/imagem_04_gravuraouro.jpg
+              alt: Gravura retratando a extração de ouro no Jaraguá, circa séc. 18
+              description: Gravura retratando a extração de ouro no Jaraguá, circa séc. 18
   - type: Map
     id: mapa 1 - colonizacao
     shortTitle: mapa 1 - colonizacao
