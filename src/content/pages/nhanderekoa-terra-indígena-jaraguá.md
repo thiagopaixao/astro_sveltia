@@ -94,7 +94,14 @@ components:
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
-    components: []
+    components:
+      - type: Text
+        hasDropCap: true
+        content: asdfsdf
+      - type: Spacer
+        desktop: 1000px
+        tablet: 1000px
+        mobile: 1000px
   - type: Group
     id: parte 2 - titulo
     shortTitle: parte 2 - titulo
