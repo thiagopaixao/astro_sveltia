@@ -315,7 +315,7 @@ components:
             - type: Text
               hasDropCap: false
               content: |-
-                #### A CRIAÇÃO DO PARQUE DO JARAGUÁ
+                ##### A CRIAÇÃO DO PARQUE DO JARAGUÁ
 
                 Na década de 1940, com o declínio da atividade cafeeira, a Fazenda Jaraguá é adquirida pelo município de São Paulo e torna-se propriedade estatal. Em 1946, a propriedade passa a ser administrada pelo Serviço Florestal do município.   
 
