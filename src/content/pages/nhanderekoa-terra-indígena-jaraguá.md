@@ -675,5 +675,56 @@ components:
           - type: Text
             hasDropCap: false
             content: asdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasdaasdasdasdasdasdasdasdasda
+  - type: Group
+    id: parte 8 - patrimonialização do colonialismo
+    shortTitle: parte 8 - patrimonialização do colonialismo
+    longTitle: 'parte 8: a patrimonialização do colonialismo'
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem_17_estatua_jaragua.jpg
+    overlay: light
+    components:
+      - type: Columns
+        paddingTop: true
+        paddingBottom: true
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                ###### **parte VIII:&#160;&#160;&#160;&#160;&#160;&#160;**
+
+                ## **A Patrimonialização do Colonialismo  & o Apagamento da Memória Indígena**
+
+                ## **(1983 – dias de hoje)**
+        column2:
+          components: []
+  - type: Group
+    id: parte 8 - texto 1
+    shortTitle: parte 8 - texto 1
+    longTitle: parte 8 - texto 1
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Spacer
+        desktop: 800px
+        tablet: 800px
+        mobile: 800px
 ---
 
