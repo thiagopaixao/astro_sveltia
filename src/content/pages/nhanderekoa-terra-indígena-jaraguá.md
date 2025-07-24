@@ -73,6 +73,10 @@ components:
         videoSrc: /uploads/video_01_picojaragua.mp4
     overlay: ''
     components:
+      - type: Spacer
+        desktop: 150px
+        tablet: 150px
+        mobile: 150px
       - type: ColumnSticky
         txtColor: '#d7931dff'
         bgColor: ''
