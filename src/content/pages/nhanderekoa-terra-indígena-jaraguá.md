@@ -455,6 +455,11 @@ components:
                 Na cidade de São Paulo, realizam-se grandes obras urbanas e rodoviárias, como a Rodovia dos Bandeirantes, que atinge diretamente o território ancestral Guarani do Jaraguá. O Pico do Jaraguá é designado para receber torres de antenas de comunicação, e são concedidas terras para o Grupo Bandeirantes, a TV Globo, a Fundação Padre Anchieta (TV Cultura) e o Exército. Em 1972 é construído um grande complexo turístico no parque. 
 
                 Na esteira destas obras, a especulação imobiliária e a urbanização expandem-se vertiginosamente nas margens de São Paulo, avançando sobre as florestas do Jaraguá. O período entre 1960 e 1980 registra altos índices de desmatamento na franja na zona norte da cidade, com a criação de bairros inteiros como Pirituba e o adensamento do bairro do Jaraguá.
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/imagem_11_bandeirantesconstrucao.jpg
+              alt: ''
+              description: 'construção da Rodovia dos Bandeirantes na região do Pico do Jaraguá (Fonte: CPDOC FGV)'
         column2:
           components:
             - type: Spacer
@@ -462,7 +467,7 @@ components:
               tablet: 100px
               mobile: 100px
             - type: ImageBlock
-              wideImage: false
+              wideImage: true
               src: /uploads/imagem_10_bandeirantes.jpg
               alt: Inauguração da Rodovia dos Bandeirantes com a presença do ditador General Ernesto Geisel (Arquivo FGV CPDOC)
               description: Inauguração da Rodovia dos Bandeirantes com a presença do ditador General Ernesto Geisel (Arquivo FGV CPDOC)
