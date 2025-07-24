@@ -140,9 +140,9 @@ components:
         column2:
           components:
             - type: Spacer
-              desktop: 500px
-              tablet: 500px
-              mobile: 500px
+              desktop: 700px
+              tablet: 700px
+              mobile: 700px
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_02_pateodocolegio.jpg
@@ -185,8 +185,6 @@ components:
           - type: Text
             hasDropCap: false
             content: |-
-              [![img corrigida](/uploads/imagem_04_gravuraouro.jpg "img corrigida")](/uploads/imagem_04_gravuraouro.jpg)
-
               Com a exaustão do ouro em São Paulo e a descoberta das minas em Goiás e Minas Gerais, a área do Pico do Jaraguá transforma-se numa enorme propriedade agrícola.  
 
               Durante o século XIX, seguindo a expansão da economia cafeeira paulista, a chamada “Fazenda Jaraguá” torna-se uma grande produtora de café, e vastas áreas de Mata Atlântica são arrasadas. 
