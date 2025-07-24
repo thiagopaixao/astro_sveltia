@@ -369,14 +369,14 @@ components:
                 Com sua resistência ancestral, fugindo dos aldeamentos, algumas famílias iniciam retomadas no Jaraguá e na região de Parelheiros, atuais Terra Indígena Jaraguá e Terra Indígena Tenondé Porã.
         column2:
           components:
+            - type: Spacer
+              desktop: 800px
+              tablet: 800px
+              mobile: 800px
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_08_spi.jpg
               alt: ''
               description: Imagem histórica de um dos "aldeamentos" Guarani do Serviço de Proteção aos Índios na área de Itariri, no litoral Paulista.
-            - type: Spacer
-              desktop: 800px
-              tablet: 800px
-              mobile: 800px
 ---
 
