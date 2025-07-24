@@ -71,8 +71,8 @@ components:
     overlay: light
     components:
       - type: Columns
-        paddingTop: true
-        paddingBottom: true
+        paddingTop: false
+        paddingBottom: false
         invertOnMobile: false
         columnsAlign: 66-33
         column1:
@@ -102,8 +102,8 @@ components:
     overlay: ''
     components:
       - type: Column
-        paddingTop: true
-        paddingBottom: true
+        paddingTop: false
+        paddingBottom: false
         components:
           - type: Text
             hasDropCap: true
