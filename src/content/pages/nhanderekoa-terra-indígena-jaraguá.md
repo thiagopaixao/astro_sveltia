@@ -154,7 +154,7 @@ components:
           - type: Text
             hasDropCap: false
             content: |-
-              [![img](/uploads/imagem_04_gravuraouro.jpg "img")](/uploads/imagem_04_gravuraouro.jpg)
+              [![img corrigida](/uploads/imagem_04_gravuraouro.jpg "img corrigida")](/uploads/imagem_04_gravuraouro.jpg)
 
               Com a exaustão do ouro em São Paulo e a descoberta das minas em Goiás e Minas Gerais, a área do Pico do Jaraguá transforma-se numa enorme propriedade agrícola.  
 
