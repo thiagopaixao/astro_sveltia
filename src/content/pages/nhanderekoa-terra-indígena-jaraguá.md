@@ -73,10 +73,6 @@ components:
         videoSrc: /uploads/video_01_picojaragua.mp4
     overlay: ''
     components:
-      - type: Spacer
-        desktop: 150px
-        tablet: 150px
-        mobile: 150px
       - type: ColumnSticky
         txtColor: '#d7931dff'
         bgColor: ''
@@ -85,6 +81,10 @@ components:
         layout: title-bottom
         title: NHANDEREKOA
         components:
+          - type: Spacer
+            desktop: 800px
+            tablet: 800px
+            mobile: 800px
           - type: Text
             hasDropCap: false
             content: |-
@@ -95,10 +95,6 @@ components:
               _Ka’aguy_ – a mata, a floresta – é uma paisagem saturada de história e memória, o patrimônio vivo dos ancestrais (humanos e não-humanos) dos povos Guarani.
 
               Por décadas, as comunidades Guarani vêm resistindo e lutando pelo reconhecimento de suas terras ancestrais e pela preservação de suas florestas sagradas no Jaraguá.
-          - type: Spacer
-            desktop: 800px
-            tablet: 800px
-            mobile: 800px
   - type: Group
     id: asd
     shortTitle: asd
