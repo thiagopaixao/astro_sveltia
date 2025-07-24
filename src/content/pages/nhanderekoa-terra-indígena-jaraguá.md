@@ -42,7 +42,7 @@ components:
     id: home
     shortTitle: home
     longTitle: home
-    description: título e reseumo
+    description: título e resumo
     showInMenu: true
     animations: true
     txtColor: Primary
@@ -65,7 +65,9 @@ components:
     customTxtColor: ''
     bgColor: Secondary
     customBgColor: ''
-    backgroundMedia: []
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem_02_pateodocolegio.jpg
     overlay: light
     components:
       - type: Columns
@@ -80,9 +82,9 @@ components:
               content: |-
                 ###### parte II
 
-                # Da Invasão ao Parque: a colonização do Jaraguá
+                ## Da Invasão ao Parque: a colonização do Jaraguá
 
-                ### (1554 – 1960)
+                ## (1554 – 1960)
         column2:
           components: []
 ---
