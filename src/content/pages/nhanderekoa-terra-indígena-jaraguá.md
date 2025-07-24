@@ -238,9 +238,16 @@ components:
 
                 Por esta época, na primeira metade do século XX, o Jaraguá continuava sendo um lugar habitado pelos Guarani através dos caminhos que conectavam o Paraná e o Mato Grosso do Sul até o Vale do Ribeira e o litoral paulista.
 
-                Em 1961, no contexto do estabelecimento das primeiras reservas florestais nacionais, cria-se o Parque Estadual do Jaraguá, que pela primeira vez garante algum nível de proteção ambiental aos remanescentes de Mata Atlântica no Pico do Jaraguá. 
-
-                 Ao proteger as florestas dentro de enquadramentos ambientalistas, o Parque Estadual acabou não apenas cerceando o uso das matas pelos Guarani, mas também foi um modo de apagar a presença indígena da região, definindo a área como uma grande reserva florestal vazia.    
+                Em 1961, no contexto do estabelecimento das primeiras reservas florestais nacionais, cria-se o Parque Estadual do Jaraguá, que pela primeira vez garante algum nível de proteção ambiental aos remanescentes de Mata Atlântica no Pico do Jaraguá.
+            - type: ImageBlock
+              wideImage: false
+              src: /uploads/imagem_05_mapadoPEJ.jpg
+              alt: Mapa dos limites do Parque Estadual do Jaraguá apresentado no Processo de Tombamento do CONDEPHAAT de 1978
+              description: Mapa dos limites do Parque Estadual do Jaraguá apresentado no Processo de Tombamento do CONDEPHAAT de 1978
+            - type: Text
+              hasDropCap: true
+              content: |-
+                Ao proteger as florestas dentro de enquadramentos ambientalistas, o Parque Estadual acabou não apenas cerceando o uso das matas pelos Guarani, mas também foi um modo de apagar a presença indígena da região, definindo a área como uma grande reserva florestal vazia.    
 
                 Em paralelo, São Paulo vive um rápido processo de urbanização. Entre 1940 e 1948 é construída a rodovia Anhanguera, nas margens do Território Guarani do Jaraguá, e em 1955 é construído o linhão de transmissão Anhangabaú-Jundiaí sobre o pico do morro. 
 
