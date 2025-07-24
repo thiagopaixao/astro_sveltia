@@ -110,7 +110,7 @@ components:
             content: |-
               Como mostra o Mapa Etno-Histórico de Curt Nimuendajú (1944), o território ancestral Guarani se estende desde a fronteira do estado do Paraná com o Paraguai, a Argentina e a Bolívia, até o Espírito Santo, passando por Mato Grosso do Sul, São Paulo e Rio de Janeiro. Os ancestrais Guarani caminhavam, e os Guarani de hoje seguem caminhando, por todo este território, que chamam de Yvyrupa, “o leito da terra”.	
 
-              [![](/uploads/imagem_03_mapacurt.jpg "Recorte do mapa Ethno Histórico desenhado por Curt Nimuendaju em 1944")](https://drive.google.com/file/d/1G_jFeiN5UNtLwPtVmbOX3GeRJWSYROy1/view)
+              ![](/uploads/imagem_03_mapacurt.jpg "Recorte do mapa Ethno Histórico desenhado por Curt Nimuendaju em 1944")
 
               Com a invasão Europeia, assim como aconteceu em outros territórios indígenas, os territórios Guarani foram brutalmente reconfigurados por deslocamentos forçados e extermínios. 
 
