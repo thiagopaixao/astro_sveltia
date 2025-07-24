@@ -29,16 +29,16 @@ mapbox:
   style: mapbox://styles/studio-autonoma/cmdgctyq702ww01s4dyd42dyc
   token: pk.eyJ1Ijoic3R1ZGlvLWF1dG9ub21hIiwiYSI6ImNtY3V2d3dtMTA0ZXgycnB4OW01cjlqb2QifQ.3NMaRt1maLlqTv6nlVqVHA
   centerLng: '-33.0152'
-  centerLat: '-33.0152'
+  centerLat: '-11.622'
   zoom: '2.5'
   bearing: '0'
   pitch: '0'
   layers: satelite
-  columnAlign: left
-  floatingText: true
+  columnAlign: center
+  floatingText: false
   views:
     - id: resistencia_intro
-      centerLng: '-23.459'
+      centerLng: '-46.763'
       centerLat: '-23.459'
       zoom: '12.6'
       mobileZoom: '12.6'
@@ -52,10 +52,14 @@ mapbox:
       title: ''
       notes: ''
       items:
-        - icon: aldeias
-          colorIcon: '#2ed650ff'
-          typeIcon: rounded
-          text: aldeias
+        - icon: circle
+          colorIcon: '#f64141ff'
+          typeIcon: outlined
+          text: Aldeias
+        - icon: square
+          colorIcon: '#597d5dff'
+          typeIcon: outlined
+          text: Terra Indígena demarcada
 components:
   - type: Group
     id: home
@@ -216,8 +220,8 @@ components:
           components:
             - type: Pullquote
               content: Yvyrupa seria “território”. Mas o “território”, para muitas pessoas, é somente a terra, o espaço. Para nós o território vai além. Ele nos lembra o leito, o leito do nosso corpo, o leito do nosso modo de viver
-              txtColor: '#f70202ff'
-              bgColor: '#1d590dff'
+              txtColor: ''
+              bgColor: ''
               byline: – Jurandir Tupã Jekupe Mirim.
             - type: Spacer
               desktop: 400px
