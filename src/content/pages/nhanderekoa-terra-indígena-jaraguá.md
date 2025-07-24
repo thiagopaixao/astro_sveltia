@@ -103,8 +103,8 @@ components:
         tablet: 1000px
         mobile: 1000px
   - type: Group
-    id: parte 2 - titulo
-    shortTitle: parte 2 - titulo
+    id: parte 2 - colonizacao do Jaragua
+    shortTitle: parte 2 - colonizacao do Jaragua
     longTitle: 'parte 2: Da Invasão ao Parque'
     description: ''
     showInMenu: true
@@ -335,8 +335,8 @@ components:
         column2:
           components: []
   - type: Group
-    id: parte 3 - texto 1
-    shortTitle: parte 3 - texto 1
+    id: parte 3 - retomada do jaragua
+    shortTitle: parte 3 - retomada do jaragua
     longTitle: ''
     description: ''
     showInMenu: false
@@ -391,12 +391,12 @@ components:
               description: Imagem histórica de um dos "aldeamentos" Guarani do Serviço de Proteção aos Índios na área de Itariri, no litoral Paulista.
             - type: VideoEmbed
               wideVideo: true
-              videoUrl: https://www.youtube.com/watch?v=80MJwqZdOss
+              videoUrl: <iframe width="560" height="315" src="https://www.youtube.com/embed/80MJwqZdOss?si=JsT4_kS02rbwy-qg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               videoCaption: Entrevista histórica com a Cacica Jandira, matriarca da Terra Indígena Jaraguá em São Paulo (realizado em 1992 pelo VideoFAU da Faculdade de Arquitetura e Urbanismo da USP).
   - type: Group
-    id: parte IV - titutlo
-    shortTitle: parte IV - titutlo
-    longTitle: 'parte IV: Ditadura, Deslocamentos & Desmatamento'
+    id: parte 4 - ditadura deslocamento desmatamento
+    shortTitle: parte 4 - ditadura deslocamento desmatamento
+    longTitle: 'parte 4: Ditadura, Deslocamentos & Desmatamento'
     description: ''
     showInMenu: true
     animations: true
@@ -427,8 +427,8 @@ components:
         column2:
           components: []
   - type: Group
-    id: parte IV - texto 01
-    shortTitle: parte IV - texto 01
+    id: parte 4 - texto 01
+    shortTitle: parte 4 - texto 01
     longTitle: ''
     description: ''
     showInMenu: false
