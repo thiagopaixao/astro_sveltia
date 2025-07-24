@@ -527,5 +527,36 @@ components:
                 ## (1984 – 1989)
         column2:
           components: []
+  - type: Group
+    id: parte 5 - texto 1
+    shortTitle: parte 5 - texto 1
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Text
+              hasDropCap: true
+              content: |-
+                A resistência dos povos indígenas desempenhou um papel protagonista na derrocada do regime militar e no retorno à democracia nos anos 1980.  
+
+                Sob pressão do movimento indígena, a Constituição de 1988 reconhece o direito dos povos originários a seus territórios ancestrais, sendo esses direitos anteriores à própria criação do Estado brasileiro. A Constituição também garante a proteção da organização social, costumes, línguas, crenças e tradições dos povos indígenas.
+
+                Neste contexto, assim como outros territórios e movimentos populares, o Jaraguá passa por um processo de crescente organização política e reclame de direitos.
+        column2:
+          components: []
 ---
 
