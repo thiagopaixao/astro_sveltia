@@ -69,8 +69,8 @@ components:
     bgColor: Highlight
     customBgColor: ''
     backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_01_pico.jpg
+      - type: backgroundVideo
+        videoSrc: /uploads/video_01_picojaragua.mp4
     overlay: ''
     components:
       - type: ColumnSticky
