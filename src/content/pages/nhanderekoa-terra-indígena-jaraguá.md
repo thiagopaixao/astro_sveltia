@@ -133,5 +133,33 @@ components:
         mapView: resistencia_intro
     columnAlign: right
     floatingText: false
+  - type: Group
+    id: parte 2 - texto 2
+    shortTitle: parte 2 - texto 2
+    longTitle: parte 2 - texto 2
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: false
+        paddingBottom: false
+        components:
+          - type: Text
+            hasDropCap: false
+            content: |-
+              ![img](/uploads/imagem_04_gravuraouro.jpg "img")
+
+              Com a exaustão do ouro em São Paulo e a descoberta das minas em Goiás e Minas Gerais, a área do Pico do Jaraguá transforma-se numa enorme propriedade agrícola.  
+
+              Durante o século XIX, seguindo a expansão da economia cafeeira paulista, a chamada “Fazenda Jaraguá” torna-se uma grande produtora de café, e vastas áreas de Mata Atlântica são arrasadas. 
+
+              Espécies de café remanescentes destas plantações são encontradas até hoje por toda a Terra Indígena Jaraguá.
 ---
 
