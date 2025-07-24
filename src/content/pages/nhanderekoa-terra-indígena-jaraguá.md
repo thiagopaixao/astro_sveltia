@@ -404,8 +404,27 @@ components:
     customTxtColor: ''
     bgColor: Secondary
     customBgColor: ''
-    backgroundMedia: []
-    overlay: ''
-    components: []
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem_09_itaipu.jpg
+    overlay: light
+    components:
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                ###### **parte IV**
+
+                ## **Ditadura, Deslocamentos Forçados & Desmatamento**
+
+                ## **(1964 – 1984)**
+        column2:
+          components: []
 ---
 
