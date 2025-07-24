@@ -168,52 +168,6 @@ components:
               alt: ''
               description: Pateo do Colégio pintado por Jean-Baptiste Debret em 1827, quando servia como Palácio do Governo de São Paulo
   - type: Group
-    id: parte 2 - titulo
-    shortTitle: parte 2 - titulo
-    longTitle: 'parte 2: Da Invasão ao Parque'
-    description: ''
-    showInMenu: true
-    animations: true
-    txtColor: Primary
-    customTxtColor: ''
-    bgColor: Secondary
-    customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_02_pateodocolegio.jpg
-    overlay: light
-    components:
-      - type: Columns
-        txtColor: ''
-        bgColor: ''
-        paddingTop: true
-        paddingBottom: true
-        invertOnMobile: false
-        columnsAlign: 33-66
-        column1:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: |-
-                ###### parte II
-
-                ## Da Invasão ao Parque: a colonização do Jaraguá
-
-                ## (1554 – 1960)
-        column2:
-          components: []
-        mapView: resistencia_intro
-      - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: resistencia_intro_map
-    columnAlign: right
-    floatingText: false
-  - type: Group
     id: parte 2 - texto 1
     shortTitle: parte 2 - texto 1
     longTitle: parte 2 - texto 1
