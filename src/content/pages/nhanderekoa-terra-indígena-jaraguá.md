@@ -37,6 +37,53 @@ mapbox:
   columnAlign: left
   floatingText: true
   views: []
-components: []
+components:
+  - type: Group
+    id: home
+    shortTitle: home
+    longTitle: home
+    description: título e reseumo
+    showInMenu: true
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem_01_pico.jpg
+    overlay: ''
+    components: []
+  - type: Group
+    id: parte 2
+    shortTitle: parte 2
+    longTitle: 'parte 2: Da Invasão ao Parque'
+    description: ''
+    showInMenu: true
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: light
+    components:
+      - type: Columns
+        paddingTop: true
+        paddingBottom: true
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                ###### parte II
+
+                # Da Invasão ao Parque: a colonização do Jaraguá
+
+                ### (1554 – 1960)
+        column2:
+          components: []
 ---
 
