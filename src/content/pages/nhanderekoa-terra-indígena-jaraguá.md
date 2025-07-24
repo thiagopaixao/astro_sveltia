@@ -561,7 +561,7 @@ components:
 
                 Ainda que representassem avanços democráticos, estas demarcações foram claramente insuficientes, especialmente no caso da T.I. Jaraguá, onde a área demarcada abrangia apenas os 1.8 hectares do núcleo habitacional da Tekoa Ytu. Deste modo, a demarcação ignorava a extensão territorial do uso tradicional das matas que mantém o _nhandereko_.
             - type: ImageBlock
-              wideImage: true
+              wideImage: false
               src: /uploads/imagem_15_demarcacao_tekoa_ytu.jpg
               alt: ''
               description: mapa da demarcação da Tekoa Ytu em 1987 em comparação com a atual área da T.I. Jaraguá
@@ -576,5 +576,45 @@ components:
               src: /uploads/imagem_14_constituinte_02.jpg
               alt: 'À frente na bancada, da esquerda para a direita: Teseya Panará, Kanhõc Kayapó, Raoni Mētyktire e Tutu Pombo Kayapó, dentre outros, ocupam auditório da liderança do PMDB nas negociações do capítulo dos indígenas na Constituinte em 1988 (Fonte: Beto Ricardo/ISA) Fonte: Beto Ricardo [Instituto Socioambiental]'
               description: 'À frente na bancada, da esquerda para a direita: Teseya Panará, Kanhõc Kayapó, Raoni Mētyktire e Tutu Pombo Kayapó, dentre outros, ocupam auditório da liderança do PMDB nas negociações do capítulo dos indígenas na Constituinte em 1988 (Fonte: Beto Ricardo/ISA) Fonte: Beto Ricardo [Instituto Socioambiental]'
+  - type: Group
+    id: parte 5 - texto 2
+    shortTitle: parte 5 - texto 2
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Spacer
+              desktop: 300px
+              tablet: 300px
+              mobile: 300px
+            - type: ImageBlock
+              wideImage: false
+              src: /uploads/imagem_16_logo_mata_atlantica_unesco.jpg
+              alt: Selo da Reserva da Biosfera - UNESCO
+              description: Selo da Reserva da Biosfera - UNESCO
+        column2:
+          components:
+            - type: Text
+              hasDropCap: true
+              content: |-
+                Em paralelo, no arco entre os assassinatos de Marçal de Souza e Chico Mendes em 1983-1984, e a realização do encontro internacional ECO-92 promovido pelas Nações Unidas no Rio de Janeiro em 1992, a pauta ambiental consolida-se no Brasil. 
+
+                Em 1994 o Parque Estadual do Jaraguá é reconhecido pela UNESCO como Patrimônio da Humanidade, na categoria de Reserva da Biosfera, passando a integrar o Cinturão Verde da Cidade de São Paulo.
+
+                Assim como na criação do Parque Estadual em 1961, tais medidas protetivas ambientalistas muitas vezes entram em conflito com o direito das comunidades Guarani ao seu território ancestral, impedindo-as de usufruir dos recursos naturais das florestas dentro do perímetro do Parque, que hoje encontra-se totalmente cercado.
 ---
 
