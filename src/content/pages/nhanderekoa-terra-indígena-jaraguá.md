@@ -65,7 +65,7 @@ components:
     showInMenu: true
     animations: true
     txtColor: Primary
-    customTxtColor: ''
+    customTxtColor: '#ecbd13ff'
     bgColor: Secondary
     customBgColor: ''
     backgroundMedia:
