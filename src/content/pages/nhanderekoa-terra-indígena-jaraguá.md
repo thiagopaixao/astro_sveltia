@@ -398,7 +398,7 @@ components:
     shortTitle: parte IV - titutlo
     longTitle: 'parte IV: Ditadura, Deslocamentos & Desmatamento'
     description: ''
-    showInMenu: false
+    showInMenu: true
     animations: true
     txtColor: Primary
     customTxtColor: ''
@@ -410,8 +410,8 @@ components:
     overlay: light
     components:
       - type: Columns
-        paddingTop: false
-        paddingBottom: false
+        paddingTop: true
+        paddingBottom: true
         invertOnMobile: false
         columnsAlign: 33-66
         column1:
@@ -426,5 +426,45 @@ components:
                 ## **(1964 – 1984)**
         column2:
           components: []
+  - type: Group
+    id: parte IV - texto 01
+    shortTitle: parte IV - texto 01
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Text
+              hasDropCap: true
+              content: |-
+                Seguindo a lógica desenvolvimentista dos anos 1960 e 1970, o período da ditadura militar é marcado por investimentos em mega infraestruturas e pelo planejamento autoritário.  
+
+                Na cidade de São Paulo, realizam-se grandes obras urbanas e rodoviárias, como a Rodovia dos Bandeirantes, que atinge diretamente o território ancestral Guarani do Jaraguá. O Pico do Jaraguá é designado para receber torres de antenas de comunicação, e são concedidas terras para o Grupo Bandeirantes, a TV Globo, a Fundação Padre Anchieta (TV Cultura) e o Exército. Em 1972 é construído um grande complexo turístico no parque. 
+
+                Na esteira destas obras, a especulação imobiliária e a urbanização expandem-se vertiginosamente nas margens de São Paulo, avançando sobre as florestas do Jaraguá. O período entre 1960 e 1980 registra altos índices de desmatamento na franja na zona norte da cidade, com a criação de bairros inteiros como Pirituba e o adensamento do bairro do Jaraguá.
+        column2:
+          components:
+            - type: Spacer
+              desktop: 100px
+              tablet: 100px
+              mobile: 100px
+            - type: ImageBlock
+              wideImage: false
+              src: /uploads/imagem_10_bandeirantes.jpg
+              alt: Inauguração da Rodovia dos Bandeirantes com a presença do ditador General Ernesto Geisel (Arquivo FGV CPDOC)
+              description: Inauguração da Rodovia dos Bandeirantes com a presença do ditador General Ernesto Geisel (Arquivo FGV CPDOC)
 ---
 
