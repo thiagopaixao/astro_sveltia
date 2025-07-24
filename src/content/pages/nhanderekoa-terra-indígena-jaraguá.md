@@ -568,9 +568,9 @@ components:
         column2:
           components:
             - type: Spacer
-              desktop: 300px
-              tablet: 300px
-              mobile: 300px
+              desktop: 100px
+              tablet: 100px
+              mobile: 100px
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_14_constituinte_02.jpg
