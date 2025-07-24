@@ -368,7 +368,7 @@ components:
 
                 Com sua resistência ancestral, fugindo dos aldeamentos, algumas famílias iniciam retomadas no Jaraguá e na região de Parelheiros, atuais Terra Indígena Jaraguá e Terra Indígena Tenondé Porã.
             - type: ImageBlock
-              wideImage: true
+              wideImage: false
               src: /uploads/imagem_XX_mapa.jpg
               alt: 'Análise de fotografia aérea do Jaraguá de 1954, identificando o local de origem da Tekoa Ytu Fonte: Geosampa [Referência: FX02-159]'
               description: 'Análise de fotografia aérea do Jaraguá de 1954, identificando o local de origem da Tekoa Ytu Fonte: Geosampa [Referência: FX02-159]'
@@ -381,9 +381,9 @@ components:
         column2:
           components:
             - type: Spacer
-              desktop: 400px
-              tablet: 400px
-              mobile: 400px
+              desktop: 200px
+              tablet: 200px
+              mobile: 200px
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_08_spi.jpg
@@ -393,5 +393,19 @@ components:
               wideVideo: true
               videoUrl: https://www.youtube.com/watch?v=80MJwqZdOss
               videoCaption: Entrevista histórica com a Cacica Jandira, matriarca da Terra Indígena Jaraguá em São Paulo (realizado em 1992 pelo VideoFAU da Faculdade de Arquitetura e Urbanismo da USP).
+  - type: Group
+    id: parte IV - titutlo
+    shortTitle: parte IV - titutlo
+    longTitle: 'parte IV: Ditadura, Deslocamentos & Desmatamento'
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components: []
 ---
 
