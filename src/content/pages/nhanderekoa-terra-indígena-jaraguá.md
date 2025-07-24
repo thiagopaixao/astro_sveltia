@@ -75,7 +75,7 @@ components:
     backgroundMedia:
       - type: backgroundVideo
         videoSrc: /uploads/video_01_picojaragua.mp4
-    overlay: ''
+    overlay: dark
     components:
       - type: ColumnSticky
         txtColor: '#ffffffff'
