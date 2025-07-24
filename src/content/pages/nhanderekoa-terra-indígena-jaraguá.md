@@ -132,7 +132,7 @@ components:
   - type: Group
     id: parte 2 - colonizacao do Jaragua
     shortTitle: parte 2 - colonizacao do Jaragua
-    longTitle: 'parte 2: Da Invasão ao Parque'
+    longTitle: Da Invasão ao Parque
     description: ''
     showInMenu: true
     animations: true
