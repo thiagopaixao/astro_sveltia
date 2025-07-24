@@ -460,6 +460,14 @@ components:
               src: /uploads/imagem_11_bandeirantesconstrucao.jpg
               alt: ''
               description: 'construção da Rodovia dos Bandeirantes na região do Pico do Jaraguá (Fonte: CPDOC FGV)'
+            - type: Text
+              hasDropCap: true
+              content: |-
+                Ao passo que os “grandes empreendimentos” avançavam no território, os povos indígenas eram sistematicamente violentados e reprimidos pelo regime militar.      
+
+                Como mostra o relatório da Comissão Nacional da Verdade, no contexto dos planos de desenvolvimento nacional dos anos 1960-1980, inúmeras comunidades Indígenas foram submetidas a transferências e remoções forçadas executadas por agentes de Estado para abrir terras para obras de infraestrutura.
+
+                É o caso da construção da Usina Hidrelétrica de Itaipú no centro do território ancestral Guarani no Oeste do Paraná. O imenso lago artificial de Itaipú inundou dezenas de tekoas, e várias famílias Guarani foram forçadas a deixar seu território, algumas migrando para São Paulo.
         column2:
           components:
             - type: Spacer
