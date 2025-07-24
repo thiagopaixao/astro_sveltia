@@ -555,7 +555,16 @@ components:
 
                 Sob pressão do movimento indígena, a Constituição de 1988 reconhece o direito dos povos originários a seus territórios ancestrais, sendo esses direitos anteriores à própria criação do Estado brasileiro. A Constituição também garante a proteção da organização social, costumes, línguas, crenças e tradições dos povos indígenas.
 
-                Neste contexto, assim como outros territórios e movimentos populares, o Jaraguá passa por um processo de crescente organização política e reclame de direitos.
+                Neste contexto, assim como outros territórios e movimentos populares, o Jaraguá passa por um processo de crescente organização política e reclame de direitos. 
+
+                Pressionada pelo movimento indígena, em 1984 – ano do movimento “Diretas Já” – a FUNAI procede a regularização de algumas Terras Indígenas no Estado de São Paulo, incluindo uma pequena parte da Terra Indígena Jaraguá correspondente à Tekoa Ytu. 
+
+                Ainda que representassem avanços democráticos, estas demarcações foram claramente insuficientes, especialmente no caso da T.I. Jaraguá, onde a área demarcada abrangia apenas os 1.8 hectares do núcleo habitacional da Tekoa Ytu. Deste modo, a demarcação ignorava a extensão territorial do uso tradicional das matas que mantém o _nhandereko_.
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/imagem_15_demarcacao_tekoa_ytu.jpg
+              alt: ''
+              description: mapa da demarcação da Tekoa Ytu em 1987 em comparação com a atual área da T.I. Jaraguá
         column2:
           components:
             - type: Spacer
