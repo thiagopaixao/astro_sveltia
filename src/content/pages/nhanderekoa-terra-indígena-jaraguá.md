@@ -96,7 +96,7 @@ components:
     animations: true
     txtColor: Primary
     customTxtColor: ''
-    bgColor: Secondary
+    bgColor: Highlight
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
@@ -117,5 +117,21 @@ components:
               Em São Paulo, após a criação do aldeamento do Pateo do Collegio em 1554, as populações tupi-guarani que habitavam a região foram submetidas a sistemáticas políticas de confinamento e escravização. 
 
               Marco fundante da cidade, o Pateo do Collegio irradiou a colonização sobre o Jaraguá, uma das primeiras regiões onde os Europeus exploraram ouro no Brasil Colônia. O Jaraguá passa então a ser alvo da exploração de bandeirantes, e assim é continuamente despovoado de seus habitantes nativos.
+  - type: Map
+    id: mapa 1 - colonizacao
+    shortTitle: mapa 1 - colonizacao
+    longTitle: mapa 1 - colonizacao
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    bgColor: Secundary
+    components:
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_intro
+    columnAlign: right
+    floatingText: false
 ---
 
