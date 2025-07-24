@@ -468,6 +468,8 @@ components:
                 Como mostra o relatório da Comissão Nacional da Verdade, no contexto dos planos de desenvolvimento nacional dos anos 1960-1980, inúmeras comunidades Indígenas foram submetidas a transferências e remoções forçadas executadas por agentes de Estado para abrir terras para obras de infraestrutura.
 
                 É o caso da construção da Usina Hidrelétrica de Itaipú no centro do território ancestral Guarani no Oeste do Paraná. O imenso lago artificial de Itaipú inundou dezenas de tekoas, e várias famílias Guarani foram forçadas a deixar seu território, algumas migrando para São Paulo.
+
+                Ao mesmo tempo, lideranças indígenas eram perseguidas pelo Estado por seu ativismo político pela defesa dos territórios, ou tornavam-se alvo de milícias ruralistas, como no caso do grande líder guarani-ñadeva Marçal de Souza. Um dos precursores das lutas guarani pela recuperação e reconhecimento de seus territórios ancestrais, Marçal de Souza, Tupã-Y, foi assassinado por pistoleiros no Mato Grosso do Sul em novembro de 1983.
         column2:
           components:
             - type: Spacer
@@ -480,11 +482,11 @@ components:
               alt: Inauguração da Rodovia dos Bandeirantes com a presença do ditador General Ernesto Geisel (Arquivo FGV CPDOC)
               description: Inauguração da Rodovia dos Bandeirantes com a presença do ditador General Ernesto Geisel (Arquivo FGV CPDOC)
             - type: Spacer
-              desktop: 300px
-              tablet: 300px
-              mobile: 300px
+              desktop: 500px
+              tablet: 500px
+              mobile: 500px
             - type: ImageBlock
-              wideImage: false
+              wideImage: true
               src: /uploads/imagem_12_mapaitaipu.jpg
               alt: ''
               description: Mapa das Tekoas inundadas e forçosamente removidas durante a construção da Usina Hidrelétrica de Itaipu.
