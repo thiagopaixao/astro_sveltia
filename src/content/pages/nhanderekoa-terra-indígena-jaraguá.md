@@ -64,7 +64,7 @@ components:
     description: título e resumo
     showInMenu: true
     animations: true
-    txtColor: ''
+    txtColor: Highlight
     customTxtColor: ''
     bgColor: Secondary
     customBgColor: ''
