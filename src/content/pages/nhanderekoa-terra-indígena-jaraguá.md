@@ -198,12 +198,12 @@ components:
           components:
             - type: Text
               hasDropCap: true
-              content: Como mostra o Mapa Etno-Histórico de Curt Nimuendajú (1944), o território ancestral Guarani se estende desde a fronteira do estado do Paraná com o Paraguai, a Argentina e a Bolívia, até o Espírito Santo, passando por Mato Grosso do Sul, São Paulo e Rio de Janeiro. Os ancestrais Guarani caminhavam, e os Guarani de hoje seguem caminhando, por todo este território, que chamam de Yvyrupa, “o leito da terra”.**&#160;&#160;**
+              content: Como mostra o Mapa Etno-Histórico de Curt Nimuendajú (1944), o território ancestral Guarani se estende desde a fronteira do estado do Paraná com o Paraguai, a Argentina e a Bolívia, até o Espírito Santo, passando por Mato Grosso do Sul, São Paulo e Rio de Janeiro. Os ancestrais Guarani caminhavam, e os Guarani de hoje seguem caminhando, por todo este território, que chamam de Yvyrupa – “o leito da terra”, nas palavras do professor Jurandir Tupã Jekupe Mirim.
             - type: ImageBlock
               wideImage: false
               src: /uploads/imagem_03_mapacurt.png
               alt: mapa curt
-              description: recorte do Mapa Etno-Histórico de Curt Nimuendajú (1944), mostrando a amplitude to território Guarani.
+              description: 'Recorte do Mapa Etno-Histórico de Curt Nimuendajú (1944), mostrando a amplitude do território Guarani, Yvurupa (Fonte: Bibloteca Digital Curt Nimuendaju)'
             - type: Text
               hasDropCap: true
               content: |-
@@ -214,10 +214,15 @@ components:
                 Marco fundante da cidade, o Pateo do Collegio irradiou a colonização sobre o Jaraguá, uma das primeiras regiões onde os Europeus exploraram ouro no Brasil Colônia. O Jaraguá passa então a ser alvo da exploração de bandeirantes, e assim é continuamente despovoado de seus habitantes nativos.
         column2:
           components:
+            - type: Pullquote
+              content: Yvyrupa seria “território”. Mas o “território”, para muitas pessoas, é somente a terra, o espaço. Para nós o território vai além. Ele nos lembra o leito, o leito do nosso corpo, o leito do nosso modo de vivee
+              txtColor: '#1db954ff'
+              bgColor: ''
+              byline: – Jurandir Tupã Jekupe Mirim.
             - type: Spacer
-              desktop: 800px
-              tablet: 700px
-              mobile: 700px
+              desktop: 200px
+              tablet: 200px
+              mobile: 200px
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_04_gravuraouro.jpg
