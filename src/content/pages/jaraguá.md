@@ -732,6 +732,9 @@ components:
         txtColor: ''
         bgColor: ''
         components:
+          - type: Text
+            hasDropCap: false
+            content: '###### 2013'
           - type: TimelineBullet
             content: ''
             text: '2013'
