@@ -235,17 +235,17 @@ components:
     overlay: ''
     components:
       - type: Columns
-        paddingTop: true
+        paddingTop: false
         paddingBottom: false
         invertOnMobile: false
         columnsAlign: 33-66
         column1:
           components:
             - type: ImageBlock
-              wideImage: false
-              src: /uploads/imagem_04_gravuraouro.jpg
-              alt: Gravura retratando a extração de ouro no Jaraguá, circa séc. 18
-              description: Gravura retratando a extração de ouro no Jaraguá, circa séc. 18
+              wideImage: true
+              src: /uploads/imagem_07_jurandircafe.jpg
+              alt: ''
+              description: O professor Jurandir aponda uma planta de café na floresta do Jaraguá.
         column2:
           components:
             - type: Text
