@@ -490,5 +490,40 @@ components:
               src: /uploads/imagem_12_mapaitaipu.jpg
               alt: ''
               description: Mapa das Tekoas inundadas e forçosamente removidas durante a construção da Usina Hidrelétrica de Itaipu.
+  - type: Group
+    id: parte 5 - titulo
+    shortTitle: parte 5 - titulo
+    longTitle: Retorno a Democracia & Demarcacao da Tekoa Ytu
+    description: ''
+    showInMenu: true
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem_13_constituinte.jpg
+    overlay: light
+    components:
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                ###### parte V
+
+                ## Retorno à Democracia
+
+                ## & Demarcação da Tekoa Ytu
+
+                ## (1984 – 1989)
+        column2:
+          components: []
 ---
 
