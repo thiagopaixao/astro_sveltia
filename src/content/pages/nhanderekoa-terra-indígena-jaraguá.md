@@ -621,5 +621,59 @@ components:
               src: /uploads/imagem_15_demarcacao_tekoa_ytu.jpg
               alt: Mapa do cinturão verde são Paulo
               description: Mapa do cinturão verde são Paulo
+  - type: Group
+    id: parte 5 - resistencia luta e demarcacao
+    shortTitle: parte 5 - resistencia luta e demarcacao
+    longTitle: parte 5 - resistencia luta e demarcacao
+    description: ''
+    showInMenu: true
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem_16_ocupacao_antena.jpg
+    overlay: light
+    components:
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                ###### parte VI
+
+                ## Resistência, Luta & Demarcação
+
+                ## (1990 - 2025)
+        column2:
+          components: []
+  - type: Group
+    id: asd
+    shortTitle: asd
+    longTitle: asd
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: false
+        paddingBottom: false
+        components:
+          - type: Text
+            hasDropCap: false
+            content: asdasdasdasdasdasdasdasda
 ---
 
