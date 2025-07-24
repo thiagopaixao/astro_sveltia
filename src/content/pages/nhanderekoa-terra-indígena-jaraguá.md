@@ -284,6 +284,46 @@ components:
 
                 Estas grandes infraestruturas de transporte e energia inter-urbanas abrem caminho para a voraz especulação imobiliária que se daria nas décadas seguintes, principalmente com o regime militar depois do golpe de 1964.
   - type: Group
+    id: parte 2 - texto 3
+    shortTitle: parte 2 - texto 3
+    longTitle: parte 2 - texto 3
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                ###### A CRIAÇÃO DO PARQUE DO JARAGUÁ
+
+                ###### 1940 – 1960: 
+
+                Na década de 1940, com o declínio da atividade cafeeira, a Fazenda Jaraguá é adquirida pelo município de São Paulo e torna-se propriedade estatal. Em 1946, a propriedade passa a ser administrada pelo Serviço Florestal do município.   
+
+                Por esta época, na primeira metade do século XX, o Jaraguá continuava sendo um lugar habitado pelos Guarani através dos caminhos que conectavam o Paraná e o Mato Grosso do Sul até o Vale do Ribeira e o litoral paulista.
+
+                Em 1961, no contexto do estabelecimento das primeiras reservas florestais nacionais, cria-se o Parque Estadual do Jaraguá, que pela primeira vez garante algum nível de proteção ambiental aos remanescentes de Mata Atlântica no Pico do Jaraguá.
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/imagem_05_mapadoPEJ.jpg
+              alt: Mapa dos limites do Parque Estadual do Jaraguá apresentado no Processo de Tombamento do CONDEPHAAT de 1978
+              description: Mapa dos limites do Parque Estadual do Jaraguá apresentado no Processo de Tombamento do CONDEPHAAT de 1978
+        column2:
+          components: []
+  - type: Group
     id: parte 3 - título
     shortTitle: parte 3 - título
     longTitle: A Retomada do Jaraguá
