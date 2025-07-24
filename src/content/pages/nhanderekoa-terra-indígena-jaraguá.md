@@ -79,7 +79,7 @@ components:
         paddingTop: true
         paddingBottom: true
         layout: text-bigger
-        title: NHANDEREKOA
+        title: 'NHANDEREKOA: "ONDE A CULTURA VIVE"'
         components:
           - type: Spacer
             desktop: 800px
