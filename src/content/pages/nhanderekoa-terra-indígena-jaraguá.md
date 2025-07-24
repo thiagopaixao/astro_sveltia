@@ -536,7 +536,7 @@ components:
     animations: true
     txtColor: Primary
     customTxtColor: ''
-    bgColor: Secondary
+    bgColor: Highlight
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
