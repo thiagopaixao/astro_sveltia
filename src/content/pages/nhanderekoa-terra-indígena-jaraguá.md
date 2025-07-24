@@ -367,6 +367,11 @@ components:
                 Após a criação do Serviço de Proteção aos Índios (SPI) em 1910, os povos Guarani são alvo de uma política sistemática de aldeamentos. No estado de São Paulo, o SPI busca concentrar famílias Guarani no Posto Indígena do Bananal no litoral, em Itanhaém, e no Posto Indígena de Araribá no interior, despovoando a cidade de São Paulo da presença Guarani.
 
                 Com sua resistência ancestral, fugindo dos aldeamentos, algumas famílias iniciam retomadas no Jaraguá e na região de Parelheiros, atuais Terra Indígena Jaraguá e Terra Indígena Tenondé Porã.
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/imagem_XX_mapa.jpg
+              alt: 'Análise de fotografia aérea do Jaraguá de 1954, identificando o local de origem da Tekoa Ytu Fonte: Geosampa [Referência: FX02-159]'
+              description: 'Análise de fotografia aérea do Jaraguá de 1954, identificando o local de origem da Tekoa Ytu Fonte: Geosampa [Referência: FX02-159]'
         column2:
           components:
             - type: Spacer
