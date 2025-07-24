@@ -64,7 +64,7 @@ components:
     description: título e resumo
     showInMenu: true
     animations: true
-    txtColor: Primary
+    txtColor: ''
     customTxtColor: '#ecbd13ff'
     bgColor: Secondary
     customBgColor: ''
@@ -74,7 +74,7 @@ components:
     overlay: ''
     components:
       - type: ColumnSticky
-        txtColor: '#d7931dff'
+        txtColor: '#ffffffff'
         bgColor: ''
         paddingTop: true
         paddingBottom: true
@@ -88,13 +88,13 @@ components:
           - type: Text
             hasDropCap: false
             content: |-
-              A Terra Indígena Guarani do Jaraguá preserva os últimos fragmentos de Mata Atlântica na cidade de São Paulo, um dos biomas brasileiros mais devastados desde a colonização europeia.  
+              **A Terra Indígena Guarani do Jaraguá preserva os últimos fragmentos de Mata Atlântica na cidade de São Paulo, um dos biomas brasileiros mais devastados desde a colonização europeia.&#160;&#160;**
 
-              Além de ser uma reserva florestal de fundamental importância ambiental e climática para a metrópole paulista, onde áreas verdes são notoriamente escassas, o Jaraguá é um território de imenso valor espiritual e cultural para as comunidades indígenas que ali habitam desde tempos imemoriais. 
+              **Além de ser uma reserva florestal de fundamental importância ambiental e climática para a metrópole paulista, onde áreas verdes são notoriamente escassas, o Jaraguá é um território de imenso valor espiritual e cultural para as comunidades indígenas que ali habitam desde tempos imemoriais.&#160;**
 
-              _Ka’aguy_ – a mata, a floresta – é uma paisagem saturada de história e memória, o patrimônio vivo dos ancestrais (humanos e não-humanos) dos povos Guarani.
+              **_Ka’aguy_&#160;– a mata, a floresta – é uma paisagem saturada de história e memória, o patrimônio vivo dos ancestrais (humanos e não-humanos) dos povos Guarani.**
 
-              Por décadas, as comunidades Guarani vêm resistindo e lutando pelo reconhecimento de suas terras ancestrais e pela preservação de suas florestas sagradas no Jaraguá.
+              **Por décadas, as comunidades Guarani vêm resistindo e lutando pelo reconhecimento de suas terras ancestrais e pela preservação de suas florestas sagradas no Jaraguá.**
   - type: Group
     id: asd
     shortTitle: asd
