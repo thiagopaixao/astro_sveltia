@@ -472,7 +472,7 @@ components:
                 Ao mesmo tempo, lideranças indígenas eram perseguidas pelo Estado por seu ativismo político pela defesa dos territórios, ou tornavam-se alvo de milícias ruralistas, como no caso do grande líder guarani-ñadeva Marçal de Souza. Um dos precursores das lutas guarani pela recuperação e reconhecimento de seus territórios ancestrais, Marçal de Souza, Tupã-Y, foi assassinado por pistoleiros no Mato Grosso do Sul em novembro de 1983.
             - type: VideoEmbed
               wideVideo: true
-              videoUrl: https://www.youtube.com/watch?v=Z3HS2j2acX4
+              videoUrl: https://www.youtube.com/embed/Z3HS2j2acX4?si=ZylorkTY5cZrXczI
               videoCaption: Entrevista histórica com Marçal de Souza, liderança Guarani assassinada em 1983.
         column2:
           components:
