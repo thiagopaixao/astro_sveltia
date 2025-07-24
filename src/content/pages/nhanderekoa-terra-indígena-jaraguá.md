@@ -128,7 +128,7 @@ components:
               wideImage: false
               src: /uploads/imagem_03_mapacurt.png
               alt: mapa curt
-              description: mapa curt
+              description: recorte do Mapa Etno-Histórico de Curt Nimuendajú (1944), mostrando a amplitude to território Guarani.
             - type: Text
               hasDropCap: true
               content: |-
@@ -139,11 +139,15 @@ components:
                 Marco fundante da cidade, o Pateo do Collegio irradiou a colonização sobre o Jaraguá, uma das primeiras regiões onde os Europeus exploraram ouro no Brasil Colônia. O Jaraguá passa então a ser alvo da exploração de bandeirantes, e assim é continuamente despovoado de seus habitantes nativos.
         column2:
           components:
+            - type: Spacer
+              desktop: 500px
+              tablet: 500px
+              mobile: 500px
             - type: ImageBlock
               wideImage: true
-              src: /uploads/bandeira_do_brasil.jpg
+              src: /uploads/imagem_02_pateodocolegio.jpg
               alt: ''
-              description: asdasdasdasd
+              description: Pateo do Colégio pintado por Jean-Baptiste Debret em 1827, quando servia como Palácio do Governo de São Paulo
   - type: Map
     id: mapa 1 - colonizacao
     shortTitle: mapa 1 - colonizacao
