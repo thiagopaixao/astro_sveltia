@@ -286,13 +286,13 @@ components:
   - type: Group
     id: parte 3 - título
     shortTitle: parte 3 - título
-    longTitle: parte 3 - título
+    longTitle: A Retomada do Jaraguá
     description: ''
-    showInMenu: false
+    showInMenu: true
     animations: true
     txtColor: Primary
     customTxtColor: ''
-    bgColor: Highlight
+    bgColor: Secondary
     customBgColor: ''
     backgroundMedia:
       - type: backgroundImage
@@ -314,6 +314,41 @@ components:
                 #### A Retomada do Jaraguá
 
                 #### (1800 - 1961)
+        column2:
+          components: []
+  - type: Group
+    id: parte 3 - texto 1
+    shortTitle: parte 3 - texto 1
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Text
+              hasDropCap: true
+              content: |-
+                No arco do século XIX ao início do século XX, ocorrem grandes migrações Guarani da região fronteiriça do Paraná e do Mato Grosso do Sul para o estado de São Paulo. Como identificado por Curt Nimuendajú, nos anos 1810, 1820 e 1870, e possivelmente em outros períodos do século XIX, registram-se migrações de grupos Guarani vindos da região do Iguatemi, na fronteira entre o Paraná e o Mato Grosso. 
+
+                 Em 1910, sabe-se da migração de outro grande grupo Guarani vindo da região fronteiriça Brasil-Paraguai-Argentina para a região de Itariri no Vale do Ribeira, atual Terra Indígena Itariri. Segundo os estudos do etnólogo Egon Schande, entre 1923 e 1946 registram-se sucessivas migrações de grupos Guarani vindos do sul do Brasil para o estado de São Paulo, assentando-se principalmente no litoral. 
+
+                 Estes últimos grupos formam a geração imediatamente anterior de vários moradores das T.I.s Jaraguá e Tenondé Porã na cidade de São Paulo. Entre eles está a cacica Jandira, fundadora da Tekoa Ytu no início dos anos 1960, primeira tekoa da retomada do Jaraguá. 
+
+                Após a criação do Serviço de Proteção aos Índios (SPI) em 1910, os povos Guarani são alvo de uma política sistemática de aldeamentos. No estado de São Paulo, o SPI busca concentrar famílias Guarani no Posto Indígena do Bananal no litoral, em Itanhaém, e no Posto Indígena de Araribá no interior, despovoando a cidade de São Paulo da presença Guarani.
+
+                Com sua resistência ancestral, fugindo dos aldeamentos, algumas famílias iniciam retomadas no Jaraguá e na região de Parelheiros, atuais Terra Indígena Jaraguá e Terra Indígena Tenondé Porã.
         column2:
           components: []
 ---
