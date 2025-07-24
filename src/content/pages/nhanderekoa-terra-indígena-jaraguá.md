@@ -82,6 +82,20 @@ components:
         title: NHANDEREKOA
         components: []
   - type: Group
+    id: asd
+    shortTitle: asd
+    longTitle: asd
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components: []
+  - type: Group
     id: parte 2 - titulo
     shortTitle: parte 2 - titulo
     longTitle: 'parte 2: Da Invasão ao Parque'
