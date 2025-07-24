@@ -107,9 +107,9 @@ components:
         column2:
           components: []
   - type: Group
-    id: parte 2 - texto
-    shortTitle: parte 2 - texto
-    longTitle: parte 2 - texto
+    id: parte 2 - texto 1
+    shortTitle: parte 2 - texto 1
+    longTitle: parte 2 - texto 1
     description: ''
     showInMenu: false
     animations: true
@@ -211,14 +211,14 @@ components:
         invertOnMobile: false
         columnsAlign: 33-66
         column1:
-          components: []
-        column2:
           components:
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_04_gravuraouro.jpg
               alt: Gravura retratando a extração de ouro no Jaraguá, circa séc. 18
               description: Gravura retratando a extração de ouro no Jaraguá, circa séc. 18
+        column2:
+          components:
             - type: Text
               hasDropCap: true
               content: |-
