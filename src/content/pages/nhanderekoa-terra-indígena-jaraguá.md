@@ -215,14 +215,14 @@ components:
         column2:
           components:
             - type: Pullquote
-              content: Yvyrupa seria “território”. Mas o “território”, para muitas pessoas, é somente a terra, o espaço. Para nós o território vai além. Ele nos lembra o leito, o leito do nosso corpo, o leito do nosso modo de vivee
-              txtColor: '#1db954ff'
-              bgColor: ''
+              content: Yvyrupa seria “território”. Mas o “território”, para muitas pessoas, é somente a terra, o espaço. Para nós o território vai além. Ele nos lembra o leito, o leito do nosso corpo, o leito do nosso modo de viver
+              txtColor: '#f70202ff'
+              bgColor: '#1d590dff'
               byline: – Jurandir Tupã Jekupe Mirim.
             - type: Spacer
-              desktop: 200px
-              tablet: 200px
-              mobile: 200px
+              desktop: 400px
+              tablet: 400px
+              mobile: 400px
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_04_gravuraouro.jpg
