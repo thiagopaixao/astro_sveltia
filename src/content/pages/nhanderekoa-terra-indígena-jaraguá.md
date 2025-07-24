@@ -624,13 +624,13 @@ components:
   - type: Group
     id: parte 5 - resistencia luta e demarcacao
     shortTitle: parte 5 - resistencia luta e demarcacao
-    longTitle: parte 5 - resistencia luta e demarcacao
+    longTitle: parte 5 - resistencia, luta e demarcação
     description: ''
     showInMenu: true
     animations: true
     txtColor: Primary
     customTxtColor: ''
-    bgColor: Highlight
+    bgColor: Secondary
     customBgColor: ''
     backgroundMedia:
       - type: backgroundImage
@@ -638,8 +638,8 @@ components:
     overlay: light
     components:
       - type: Columns
-        paddingTop: false
-        paddingBottom: false
+        paddingTop: true
+        paddingBottom: true
         invertOnMobile: false
         columnsAlign: 33-66
         column1:
