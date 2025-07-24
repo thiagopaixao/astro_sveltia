@@ -72,7 +72,15 @@ components:
       - type: backgroundImage
         imgSrc: /uploads/imagem_01_pico.jpg
     overlay: ''
-    components: []
+    components:
+      - type: ColumnSticky
+        txtColor: ''
+        bgColor: ''
+        paddingTop: true
+        paddingBottom: true
+        layout: text-bigger
+        title: NHANDEREKOA
+        components: []
   - type: Group
     id: parte 2 - titulo
     shortTitle: parte 2 - titulo
