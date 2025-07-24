@@ -598,9 +598,9 @@ components:
         column1:
           components:
             - type: Spacer
-              desktop: 300px
-              tablet: 300px
-              mobile: 300px
+              desktop: 150px
+              tablet: 150px
+              mobile: 150px
             - type: ImageBlock
               wideImage: false
               src: /uploads/imagem_16_logo_mata_atlantica_unesco.jpg
