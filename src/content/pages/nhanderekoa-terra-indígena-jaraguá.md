@@ -66,12 +66,12 @@ components:
     animations: true
     txtColor: Primary
     customTxtColor: ''
-    bgColor: Highlight
+    bgColor: Secondary
     customBgColor: ''
     backgroundMedia:
       - type: backgroundVideo
         videoSrc: /uploads/video_01_picojaragua.mp4
-    overlay: ''
+    overlay: light
     components:
       - type: ColumnSticky
         txtColor: ''
