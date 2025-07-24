@@ -71,10 +71,10 @@ components:
     overlay: light
     components:
       - type: Columns
-        paddingTop: false
-        paddingBottom: false
+        paddingTop: true
+        paddingBottom: true
         invertOnMobile: false
-        columnsAlign: 66-33
+        columnsAlign: 33-66
         column1:
           components:
             - type: Text
@@ -101,7 +101,7 @@ components:
     backgroundMedia: []
     overlay: ''
     components:
-      - type: Column
+      - type: Columns
         paddingTop: false
         paddingBottom: false
         components:
@@ -117,6 +117,33 @@ components:
               Em São Paulo, após a criação do aldeamento do Pateo do Collegio em 1554, as populações tupi-guarani que habitavam a região foram submetidas a sistemáticas políticas de confinamento e escravização. 
 
               Marco fundante da cidade, o Pateo do Collegio irradiou a colonização sobre o Jaraguá, uma das primeiras regiões onde os Europeus exploraram ouro no Brasil Colônia. O Jaraguá passa então a ser alvo da exploração de bandeirantes, e assim é continuamente despovoado de seus habitantes nativos.
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Text
+              hasDropCap: true
+              content: Como mostra o Mapa Etno-Histórico de Curt Nimuendajú (1944), o território ancestral Guarani se estende desde a fronteira do estado do Paraná com o Paraguai, a Argentina e a Bolívia, até o Espírito Santo, passando por Mato Grosso do Sul, São Paulo e Rio de Janeiro. Os ancestrais Guarani caminhavam, e os Guarani de hoje seguem caminhando, por todo este território, que chamam de Yvyrupa, “o leito da terra”.**&#160;&#160;**
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/imagem_03_mapacurt.png
+              alt: mapa curt
+              description: mapa curt
+            - type: Text
+              hasDropCap: true
+              content: |-
+                Com a invasão Europeia, assim como aconteceu em outros territórios indígenas, os territórios Guarani foram brutalmente reconfigurados por deslocamentos forçados e extermínios. 
+
+                Em São Paulo, após a criação do aldeamento do Pateo do Collegio em 1554, as populações tupi-guarani que habitavam a região foram submetidas a sistemáticas políticas de confinamento e escravização.  
+
+                Marco fundante da cidade, o Pateo do Collegio irradiou a colonização sobre o Jaraguá, uma das primeiras regiões onde os Europeus exploraram ouro no Brasil Colônia. O Jaraguá passa então a ser alvo da exploração de bandeirantes, e assim é continuamente despovoado de seus habitantes nativos.
+        column2:
+          components:
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/bandeira_do_brasil.jpg
+              alt: ''
+              description: asdasdasdasd
   - type: Map
     id: mapa 1 - colonizacao
     shortTitle: mapa 1 - colonizacao
