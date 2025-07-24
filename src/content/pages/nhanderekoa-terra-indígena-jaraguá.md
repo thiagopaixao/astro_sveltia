@@ -78,7 +78,7 @@ components:
         bgColor: ''
         paddingTop: true
         paddingBottom: true
-        layout: title-bottom
+        layout: text-bigger
         title: NHANDEREKOA
         components:
           - type: Spacer
