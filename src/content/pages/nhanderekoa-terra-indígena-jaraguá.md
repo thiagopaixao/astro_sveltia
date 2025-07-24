@@ -518,9 +518,7 @@ components:
               content: |-
                 ###### parte V
 
-                ## Retorno à Democracia
-
-                ## & Demarcação da Tekoa Ytu
+                ## Retorno à Democracia & Demarcação da Tekoa Ytu
 
                 ## (1984 – 1989)
         column2:
