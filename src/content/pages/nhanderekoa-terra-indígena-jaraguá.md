@@ -274,7 +274,7 @@ components:
         paddingTop: false
         paddingBottom: false
         invertOnMobile: false
-        columnsAlign: 33-66
+        columnsAlign: 66-33
         column1:
           components:
             - type: ImageBlock
