@@ -1123,7 +1123,7 @@ components:
               description: Imagem do arquivo do levantamento técnico do complexo Casa Grande-Senzala de Afonso Sardinha presente na proposta de tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978.
   - type: Group
     id: parte 9 - nhandereko praticas cuidado & reparacao
-    shortTitle: arte 9 - nhandereko praticas cuidado & reparacao
+    shortTitle: parte 9 - nhandereko praticas cuidado & reparacao
     longTitle: 'Nhandereko: práticas do cuidado & da reparação'
     description: ''
     showInMenu: true
@@ -1207,7 +1207,7 @@ components:
         paddingTop: true
         paddingBottom: true
         invertOnMobile: false
-        columnsAlign: 66-33
+        columnsAlign: 33-66
         column1:
           components:
             - type: Text
@@ -1216,6 +1216,84 @@ components:
                 ###### **parte X&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;**
 
                 ## **Ameaças ao Território e ao Patrimônio Florestal Guarani**
+        column2:
+          components: []
+  - type: Group
+    id: parte 10 - texto 1
+    shortTitle: parte 10 - texto 1
+    longTitle: parte 10 - texto 1
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Text
+        hasDropCap: true
+        content: Enquanto a metrópole se expande buscando os lucros do capital imobiliário, o território Guarani é cada vez mais cercado pela urbanização predatória de São Paulo. Mesmo demarcada, a T.I. segue sob crescente pressão espacial e política. Neste contexto, este mapa busca fornecer um instrumento de advocacia em apoio à luta dos Guarani pelos seus direitos territoriais e por reparações históricas e ambientais.
+  - type: Group
+    id: download da base de dados
+    shortTitle: download da base de dados
+    longTitle: download da base de dados
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Primary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                O mapa foi produzido pelo projeto**&#32;**_Arquiteturas da Reparação: São Paulo Terra Indígena_. Desenvolvido em parceria com lideranças e ativistas da T.I. Jaraguá, o projeto questiona visões tradicionais de cidade, território, memória, e patrimônio, buscando pensar como seres e elementos do mundo “mais-que-humano”, como as águas e as matas, podem ser incluídos como sujeitos patrimoniais dentro de um amplo processo de reparação histórica e socioambiental aos povos originários. O projeto foi realizado através de uma colaboração entre a T.I. Jaraguá, a agência autônoma, e o Chão Coletivo, por meio da plataforma Práticas Espaciais da Escola da Cidade. 
+
+                **T.I. Jaraguá**
+
+                pesquisadores: Antony Karaí Poty, Thiago Henrique Karai Djekupe, Felipe Silva, e Richard Wera Mirim
+
+                consultores e entrevistas: Jurandir Tupã Jekupe Mirim, Márcio Werã Mirim, Irene Mendonça (Jaxuka Mirim), Daniel Werã Mirim, Cacica Ara Poty (Maria), Natalício Karaí, Tamikuã Txihi…, Coletivo Arandu Mirim (Antony Karaí Poty, Ciara Martins, Samara Para Martins) 
+
+                participantes das oficinas: Antony Karaí Poty, Valdemir, Samara Para, Ciara Martins, Lenilson, Thiago Karaí Poty, Valdir, Felipe Silva, Osmar, Maria Ara Poty,  brigadistas Lucas, Paulino, Adriano, Vander, Danilo e Luciano, Natalício Karaí, Antônia, Lucas, Pedrinho, Txai Suruí, Miguel, Antônio, jovens e crianças. 
+
+                **agência autônonoma**
+
+                Paulo Tavares, Paula Marujo, Laura Pappalardo, Amanda Klajner e Julia Veras 
+
+                **Chão Coletivo**
+
+                Beatrice Perracini Padovan, Giulio Michelino, Glória Kok, Isabela de Castilho Moraes e Laura Pappalardo
+
+                **Plataforma Práticas Espaciais**
+
+                Carol Tonetti e Gilberto Mariotti
+
+                **design gráfico:** 
+
+                Cosmopolíticas Editoriais
+
+                **finalização gráfica dos mapas:** 
+
+                Carolina Passos
+
+                CAU/SP (Programa de Assistência Técnica para Preservação do Patrimônio Cultural 2024, Termo de Fomento 016/2024, Ref. Projeto 406165)
+
+                **APOIO** 
+
+                Design Museum, Future Observatory More-than-Human Fellowship
         column2:
           components: []
 ---
