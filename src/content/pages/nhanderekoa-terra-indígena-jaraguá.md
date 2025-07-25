@@ -1244,6 +1244,10 @@ components:
               content: Enquanto a metrópole se expande buscando os lucros do capital imobiliário, o território Guarani é cada vez mais cercado pela urbanização predatória de São Paulo. Mesmo demarcada, a T.I. segue sob crescente pressão espacial e política. Neste contexto, este mapa busca fornecer um instrumento de advocacia em apoio à luta dos Guarani pelos seus direitos territoriais e por reparações históricas e ambientais.
         column2:
           components: []
+      - type: Spacer
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
   - type: Group
     id: creditos
     shortTitle: creditos
@@ -1251,9 +1255,9 @@ components:
     description: ''
     showInMenu: false
     animations: true
-    txtColor: Secondary
+    txtColor: Highlight
     customTxtColor: ''
-    bgColor: Highlight
+    bgColor: Secondary
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
