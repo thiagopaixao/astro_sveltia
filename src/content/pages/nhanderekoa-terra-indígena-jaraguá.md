@@ -727,16 +727,6 @@ components:
               src: /uploads/imagem_19_ocupacao_antena.jpg
               alt: ''
               description: 'Ocupação das antenas no Parque Estadual do Jaraguá, 2017 ( Fonte: Comissão Guarani Yvyrupa)'
-            - type: Text
-              hasDropCap: true
-              content: |-
-                Dois anos depois, em 2015, sob pressão dos grandes protestos realizados por ativistas Guarani em São Paulo, o governo de Dilma Rousseff (Portaria 58) reconhece a posse indígena permanente do Jaraguá em ato histórico celebrado por toda Yvyrupa.Mas a justiça ao reconhecimento da posse ancestral Guarani do Jaraguá teve vida curta. Eventos políticos em Brasília trazem uma reviravolta ao processo. 
-
-                Em 2017, após o impeachment de Dilma Rousseff, o governo de Michel Temer anula a demarcação da Terra Indígena Jaraguá (Portaria 683). Ato contínuo, durante o governo de Jair Bolsonaro entre 2019 e 2022, o projeto da chamada “Lei do Marco Temporal”, que havia sido praticamente arquivado em 2018, volta a ser pauta no Congresso Nacional. 
-
-                Em maio de 2023 a Câmera dos Deputados aprova a “Lei do Marco Temporal”. Cinco meses depois, em setembro de 2023, o Supremo Tribunal Federal rejeita a tese como inconstitucional. Entretanto, a proposta segue em pauta no Congresso Nacional até os dias de hoje, ameaçando a integridade dos territórios indígenas. 
-
-                Em resposta a estas violações de seus direitos consagrados com a Constituição de 1988, entre 2013 e 2025, as comunidades Guarani do Jaraguá, junto com as comunidades de Tenondé Porã, realizam uma série de atos políticos e ações de advocacia, literalmente reocupando a cidade de São Paulo – Terra Indígena – durante uma década de sucessivas manifestações de grande amplitude política e cultural para a cidade e para todo o país.
         column2:
           components:
             - type: ImageBlock
@@ -798,21 +788,5 @@ components:
         desktop: 800px
         tablet: 800px
         mobile: 800px
-  - type: Map
-    id: mapa X
-    shortTitle: mapa X
-    longTitle: mapa X
-    description: ''
-    showInMenu: false
-    animations: true
-    txtColor: Primary
-    bgColor: Secundary
-    components:
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: resistencia_intro
-    columnAlign: left
-    floatingText: false
 ---
 
