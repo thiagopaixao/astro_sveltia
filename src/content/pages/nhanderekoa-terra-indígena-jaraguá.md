@@ -702,9 +702,7 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_17_estatua_jaragua.jpg
+    backgroundMedia: []
     overlay: ''
     components:
       - type: Columns
@@ -715,7 +713,7 @@ components:
         column1:
           components:
             - type: Text
-              hasDropCap: false
+              hasDropCap: true
               content: |-
                 Com a volta da democracia após vinte anos de ditadura militar, as comunidades Guarani passam a expandir as retomadas no Jaraguá. Na década de 1990, as lideranças Karaí Poty (José Fernandes) e Eunice, filha da cacica Jandira, fundam a Tekoa Pyau, chamada “aldeia nova”. Nas décadas seguintes ocorrem várias retomadas: em 2005, a Tekoa Itakupe; entre 2016-2017, a Tekoa Itaendy; em 2018, a Tekoa Yvy Porã; e em 2023, as tekoas Pindó Mirim, Mirim, e Ka’aguy Mirim. 
 
