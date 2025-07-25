@@ -797,6 +797,37 @@ components:
     columnAlign: left
     floatingText: false
   - type: Group
+    id: part 6 - texto 3
+    shortTitle: part 6 - texto 3
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: Após a eleição de Luiz Inácio Lula da Silva em 2023, e a criação do Ministério dos Povos Indígenas, retoma-se o processo de demarcação do território Guarani do Jaraguá em São Paulo. Através da Portaria 793 de 23 de Outubro de 2024, o Ministério da Justiça declara a nulidade da Portaria 683 de 2015, restabelecendo os efeitos da Portaria 581 de 2015 que reconhece a posse Guarani e a demarcação da Terra indígena Jaraguá
+            - type: ImageBlock
+              wideImage: false
+              src: /uploads/imagem_23_mapa_cerimonia.jpg
+              alt: asd
+              description: Celebração da demarcação da T.I. Jaraguá pelas lentes de Richard Wera Mirim
+        column2:
+          components: []
+  - type: Group
     id: parte 8 - patrimonialização do colonialismo
     shortTitle: parte 8 - patrimonialização do colonialismo
     longTitle: 'parte 8: a patrimonialização do colonialismo'
