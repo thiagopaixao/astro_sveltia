@@ -956,7 +956,24 @@ components:
       - type: backgroundImage
         imgSrc: /uploads/imagem_27_casa_abelhas_marcio.jpg
     overlay: light
-    components: []
+    components:
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                ###### **parte IX:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;**
+
+                ## **Outros Patrimônios:&#160;**
+
+                ## **Práticas Espaciais do Cuidado & da Reparação**
+        column2:
+          components: []
   - type: Group
     id: parte 9 - texto 1
     shortTitle: parte 9 - texto 1
@@ -980,7 +997,7 @@ components:
 
           Em todos os núcleos habitacionais identificam-se práticas de recuperação e cuidado da mata, combatendo a poluição urbana da água e do solo, e promovendo o reflorestamento através do plantio de espécies nativas, o cultivo de roças tradicionais e jardins medicinais, e o monitoramento de animais silvestres. 
 
-          É a partir da contínua manutenção do _nhandereko_,_&#160;_o “modo de habitar” Guarani, saber ancestral transmitido pelos anciãos e anciãs, que tais práticas se constituem no tempo e no espaço através de gerações.  
+          É a partir da contínua manutenção do _nhandereko_,_ _o “modo de habitar” Guarani, saber ancestral transmitido pelos anciãos e anciãs, que tais práticas se constituem no tempo e no espaço através de gerações.  
 
           Ao espacializar estes processos, o mapa joga luz em práticas muitas vezes invisibilizadas, principalmente o trabalho de cuidado cotidiano das mulheres que fincam raízes profundas para que Terra Indígena do Jaraguá cresça forte.
 ---
