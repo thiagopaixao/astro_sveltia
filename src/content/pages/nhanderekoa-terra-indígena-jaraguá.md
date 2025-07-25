@@ -493,7 +493,7 @@ components:
         paddingTop: true
         paddingBottom: true
         invertOnMobile: false
-        columnsAlign: 66-33
+        columnsAlign: 33-66
         column1:
           components:
             - type: Text
@@ -507,36 +507,34 @@ components:
         column2:
           components: []
   - type: Group
-    id: parte 4 - ditadura deslocamento desmatamento
-    shortTitle: parte 4 - ditadura deslocamento desmatamento
-    longTitle: Ditadura, Deslocamentos & Desmatamento
+    id: parte 4 - texto 01
+    shortTitle: parte 4 - texto 01
+    longTitle: ''
     description: ''
-    showInMenu: true
+    showInMenu: false
     animations: true
     txtColor: Primary
     customTxtColor: ''
-    bgColor: Secondary
+    bgColor: Highlight
     customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_09_itaipu.jpg
-    overlay: light
+    backgroundMedia: []
+    overlay: ''
     components:
       - type: Columns
-        paddingTop: true
-        paddingBottom: true
+        paddingTop: false
+        paddingBottom: false
         invertOnMobile: false
-        columnsAlign: 33-66
+        columnsAlign: 66-33
         column1:
           components:
             - type: Text
-              hasDropCap: false
+              hasDropCap: true
               content: |-
-                ###### **parte IV**
+                Seguindo a lógica desenvolvimentista dos anos 1960 e 1970, o período da ditadura militar é marcado por investimentos em mega infraestruturas e pelo planejamento autoritário. 
 
-                ## **Ditadura, Deslocamentos Forçados & Desmatamento**
+                Na cidade de São Paulo, realizam-se grandes obras urbanas e rodoviárias, como a Rodovia dos Bandeirantes, que atinge diretamente o território ancestral Guarani do Jaraguá. O Pico do Jaraguá é designado para receber torres de antenas de comunicação, e são concedidas terras para o Grupo Bandeirantes, a TV Globo, a Fundação Padre Anchieta (TV Cultura) e o Exército. Em 1972 é construído um grande complexo turístico no parque.
 
-                ## **(1964 – 1984)**
+                Na esteira destas obras, a especulação imobiliária e a urbanização expandem-se vertiginosamente nas margens de São Paulo, avançando sobre as florestas do Jaraguá. As décadas entre 1960 e 1980 registram altos índices de desmatamento na franja da zona norte da cidade, com a criação de bairros inteiros como Pirituba e o adensamento do bairro do Jaraguá.
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_11_bandeirantesconstrucao.jpg
@@ -577,36 +575,36 @@ components:
               alt: ''
               description: 'Mapa das tekoas inundadas e forçosamente removidas da região do lago artificial de Itaipu (Fonte: agência autônoma e CGY)'
   - type: Group
-    id: parte 4 - texto 01
-    shortTitle: parte 4 - texto 01
-    longTitle: ''
+    id: parte 4 - ditadura deslocamento desmatamento
+    shortTitle: parte 4 - ditadura deslocamento desmatamento
+    longTitle: Ditadura, Deslocamentos & Desmatamento
     description: ''
-    showInMenu: false
+    showInMenu: true
     animations: true
     txtColor: Primary
     customTxtColor: ''
-    bgColor: Highlight
+    bgColor: Secondary
     customBgColor: ''
     backgroundMedia:
       - type: backgroundImage
-        imgSrc: /uploads/imagem_13_constituinte.jpg
-    overlay: ''
+        imgSrc: /uploads/imagem_09_itaipu.jpg
+    overlay: light
     components:
       - type: Columns
-        paddingTop: false
-        paddingBottom: false
+        paddingTop: true
+        paddingBottom: true
         invertOnMobile: false
-        columnsAlign: 66-33
+        columnsAlign: 33-66
         column1:
           components:
             - type: Text
-              hasDropCap: true
+              hasDropCap: false
               content: |-
-                Seguindo a lógica desenvolvimentista dos anos 1960 e 1970, o período da ditadura militar é marcado por investimentos em mega infraestruturas e pelo planejamento autoritário. 
+                ###### **parte IV**
 
-                Na cidade de São Paulo, realizam-se grandes obras urbanas e rodoviárias, como a Rodovia dos Bandeirantes, que atinge diretamente o território ancestral Guarani do Jaraguá. O Pico do Jaraguá é designado para receber torres de antenas de comunicação, e são concedidas terras para o Grupo Bandeirantes, a TV Globo, a Fundação Padre Anchieta (TV Cultura) e o Exército. Em 1972 é construído um grande complexo turístico no parque.
+                ## **Ditadura, Deslocamentos Forçados & Desmatamento**
 
-                Na esteira destas obras, a especulação imobiliária e a urbanização expandem-se vertiginosamente nas margens de São Paulo, avançando sobre as florestas do Jaraguá. As décadas entre 1960 e 1980 registram altos índices de desmatamento na franja da zona norte da cidade, com a criação de bairros inteiros como Pirituba e o adensamento do bairro do Jaraguá.
+                ## **(1964 – 1984)**
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_11_bandeirantesconstrucao.jpg
