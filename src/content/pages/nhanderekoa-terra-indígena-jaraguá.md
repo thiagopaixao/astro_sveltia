@@ -730,7 +730,7 @@ components:
         column2:
           components:
             - type: ImageBlock
-              wideImage: false
+              wideImage: true
               src: /uploads/imagem_20_ocupacao_bandeirantes.jpg
               alt: ''
               description: 'Bloqueio da Rodovia dos Bandeirantes (Fonte: Comissão Guarani Yvyrupa)'
