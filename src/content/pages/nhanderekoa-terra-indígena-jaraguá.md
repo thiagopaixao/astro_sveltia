@@ -692,40 +692,6 @@ components:
         column2:
           components: []
   - type: Group
-    id: nhanderekoa
-    shortTitle: nhanderekoa
-    longTitle: 'Nhanderekoa: T.I. Jaraguá'
-    description: ''
-    showInMenu: false
-    animations: true
-    txtColor: Primary
-    customTxtColor: ''
-    bgColor: Secondary
-    customBgColor: ''
-    backgroundMedia: []
-    overlay: ''
-    components:
-      - type: Columns
-        paddingTop: false
-        paddingBottom: false
-        invertOnMobile: false
-        columnsAlign: 66-33
-        column1:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: A Terra Indígena Jaraguá, lar do povo Guarani, está localizada na cidade de São Paulo, Brasil, e é conhecida por ser a menor terra indígena do país. A área, que fica aos pés do Pico do Jaraguá, teve sua demarcação inicial em 1987 com apenas 1,7 hectare, mas após muita luta, foi reconhecida com 532 hectares. Essa área ampliada engloba oito aldeias e é fundamental para a preservação da cultura e modo de vida do povo Guarani.
-            - type: ImageBlock
-              wideImage: false
-              src: /uploads/imagem_XX_mata.jpg
-              alt: matas do Jaraguá
-              description: matas do Jaraguá
-            - type: Text
-              hasDropCap: true
-              content: A Terra Indígena Jaraguá, lar do povo Guarani, ==está localizada na cidade de São Paulo, no Brasil, e é conhecida por ser a menor terra indígena do país==. A área, que fica aos pés do Pico do Jaraguá, teve sua demarcação inicial em 1987 com apenas 1,7 hectare, mas após muita luta, foi reconhecida com 532 hectares. Essa área ampliada engloba oito aldeias e é fundamental para a preservação da cultura e modo de vida do povo Guarani.
-        column2:
-          components: []
-  - type: Group
     id: parte 8 - patrimonialização do colonialismo
     shortTitle: parte 8 - patrimonialização do colonialismo
     longTitle: 'parte 8: a patrimonialização do colonialismo'
