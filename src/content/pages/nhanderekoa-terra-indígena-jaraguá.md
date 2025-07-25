@@ -988,17 +988,26 @@ components:
     backgroundMedia: []
     overlay: ''
     components:
-      - type: Text
-        hasDropCap: false
-        content: |-
-          Por toda Yvyrupa, as retomadas de terras ancestrais dos povos Guarani carregam um sentido de reparar o território e a natureza. 
-           
-          Ao longo dos mais de 75 anos de retomadas em São Paulo, as comunidades da T.I. Jaraguá estabeleceram várias práticas de cuidado, proteção e manutenção da biodiversidade em seu território. Tekoas como Itawera, que recuperou uma grande área de lixão urbano, e Yvy Porã, com seu pioneiro projeto de recuperação de abelhas nativas, tornaram-se referência de restauração ambiental em tempos de urgência climática.  
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Text
+              hasDropCap: true
+              content: |-
+                Por toda Yvyrupa, as retomadas de terras ancestrais dos povos Guarani carregam um sentido de reparar o território e a natureza. 
+                 
+                Ao longo dos mais de 75 anos de retomadas em São Paulo, as comunidades da T.I. Jaraguá estabeleceram várias práticas de cuidado, proteção e manutenção da biodiversidade em seu território. Tekoas como Itawera, que recuperou uma grande área de lixão urbano, e Yvy Porã, com seu pioneiro projeto de recuperação de abelhas nativas, tornaram-se referência de restauração ambiental em tempos de urgência climática.  
 
-          Em todos os núcleos habitacionais identificam-se práticas de recuperação e cuidado da mata, combatendo a poluição urbana da água e do solo, e promovendo o reflorestamento através do plantio de espécies nativas, o cultivo de roças tradicionais e jardins medicinais, e o monitoramento de animais silvestres. 
+                Em todos os núcleos habitacionais identificam-se práticas de recuperação e cuidado da mata, combatendo a poluição urbana da água e do solo, e promovendo o reflorestamento através do plantio de espécies nativas, o cultivo de roças tradicionais e jardins medicinais, e o monitoramento de animais silvestres. 
 
-          É a partir da contínua manutenção do _nhandereko_,_ _o “modo de habitar” Guarani, saber ancestral transmitido pelos anciãos e anciãs, que tais práticas se constituem no tempo e no espaço através de gerações.  
+                É a partir da contínua manutenção do _nhandereko_,_ _o “modo de habitar” Guarani, saber ancestral transmitido pelos anciãos e anciãs, que tais práticas se constituem no tempo e no espaço através de gerações.  
 
-          Ao espacializar estes processos, o mapa joga luz em práticas muitas vezes invisibilizadas, principalmente o trabalho de cuidado cotidiano das mulheres que fincam raízes profundas para que Terra Indígena do Jaraguá cresça forte.
+                Ao espacializar estes processos, o mapa joga luz em práticas muitas vezes invisibilizadas, principalmente o trabalho de cuidado cotidiano das mulheres que fincam raízes profundas para que Terra Indígena do Jaraguá cresça forte.
+        column2:
+          components: []
 ---
 
