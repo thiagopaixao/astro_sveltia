@@ -754,7 +754,16 @@ components:
         invertOnMobile: false
         columnsAlign: 33-66
         column1:
-          components: []
+          components:
+            - type: Spacer
+              desktop: 300px
+              tablet: 300px
+              mobile: 300px
+            - type: ImageBlock
+              wideImage: false
+              src: /uploads/imagem_22_ocupacao_monumentobandeira_rafaelvilela.jpg
+              alt: asd
+              description: Ocupação do Monumento às Bandeiras em XXX de XXXX (Fotografia de Rafael Vilela)
         column2:
           components:
             - type: Text
