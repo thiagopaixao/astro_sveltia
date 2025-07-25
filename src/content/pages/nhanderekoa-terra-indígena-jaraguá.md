@@ -659,9 +659,9 @@ components:
               alt: Mapa do Cinturão Verde São Paulo, indicando a Terra Indígena Jaraguá
               description: Mapa do cinturão verde são Paulo
   - type: Group
-    id: parte 5 - resistencia luta e demarcacao
-    shortTitle: parte 5 - resistencia luta e demarcacao
-    longTitle: parte 5 - resistencia, luta e demarcação
+    id: parte 6 - resistencia luta e demarcacao
+    shortTitle: parte 6 - resistencia luta e demarcacao
+    longTitle: resistencia, luta e demarcação
     description: ''
     showInMenu: true
     animations: true
@@ -689,6 +689,49 @@ components:
                 ## Resistência, Luta & Demarcação
 
                 ## (1990 - 2025)
+        column2:
+          components: []
+  - type: Group
+    id: parte 6 - texto 1
+    shortTitle: parte 6 - texto 1
+    longTitle: parte 6 - texto 1
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem_17_estatua_jaragua.jpg
+    overlay: ''
+    components:
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                Com a volta da democracia após vinte anos de ditadura militar, as comunidades Guarani passam a expandir as retomadas no Jaraguá. Na década de 1990, as lideranças Karaí Poty (José Fernandes) e Eunice, filha da cacica Jandira, fundam a Tekoa Pyau, chamada “aldeia nova”. Nas décadas seguintes ocorrem várias retomadas: em 2005, a Tekoa Itakupe; entre 2016-2017, a Tekoa Itaendy; em 2018, a Tekoa Yvy Porã; e em 2023, as tekoas Pindó Mirim, Mirim, e Ka’aguy Mirim. 
+
+                Estas retomadas acontecem em um contexto de crescente organização política dos povos Guarani a nível nacional. Em 2006 é criada a Comissão Guarany Yvurupa (CGY), organização que congrega coletivos dos povos Guarani nas regiões Sul e Sudeste do Brasil na luta pela terra. 
+
+                A Terra Indígena Jaraguá cresce forte e fica cada vez mais populosa. Através da CGY e de suas bases, as lideranças Guarani pressionam pela demarcação de seus territórios. Em 2013, a FUNAI finalmente realiza o estudo de demarcação da T.I. Jaraguá – o chamado “Relatório Circunstanciado de Identificação e Delimitação” ou “RCID” – que identifica uma área de uso tradicional de 532 hectares. 
+
+                Dois anos depois, em 2015, sob pressão dos grandes protestos realizados por ativistas Guarani em São Paulo, o governo de Dilma Rousseff reconhece a posse indígena permanente do Jaraguá  em ato histórico celebrado por toda Yvyrupa (Portaria 58).   
+
+                Mas a conquista teve vida curta. Eventos políticos em Brasília trazem uma reviravolta ao processo. 
+
+                Em 2017, após o impeachment de Dilma Rousseff, o governo de Michel Temer anula a demarcação da Terra Indígena Jaraguá (Portaria 683). Ato contínuo, durante o governo de Jair Bolsonaro entre 2019 e 2022, o projeto da chamada “Lei do Marco Temporal”, que havia sido praticamente arquivado em 2018, volta a ser pauta no Congresso Nacional.  
+
+                Em maio de 2023 a Câmera dos Deputados aprova a “Lei do Marco Temporal”. Cinco meses depois, em setembro de 2023, o Supremo Tribunal Federal rejeita a tese como inconstitucional. Entretanto, a proposta segue em pauta no Congresso Nacional até os dias de hoje, ameaçando a integridade dos territórios indígenas. 
+
+                Em resposta a estas violências e violações de seus direitos consagrados com a Constituição de 1988, entre 2013 e 2025, as comunidades Guarani do Jaraguá, junto com as comunidades de Tenondé Porã, realizam uma série de atos políticos e ações de advocacia, literalmente reocupando a cidade de São Paulo – Terra Indígena – durante uma década de sucessivas manifestações de grande amplitude política e cultural para a cidade e para todo o país.
         column2:
           components: []
   - type: Group
@@ -724,6 +767,9 @@ components:
                 ## **(1983 – dias de hoje)**
         column2:
           components: []
+        desktop: 800px
+        tablet: 800px
+        mobile: 800px
   - type: Group
     id: parte 8 - texto 1
     shortTitle: parte 8 - texto 1
