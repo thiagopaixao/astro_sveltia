@@ -728,34 +728,7 @@ components:
       - type: backgroundImage
         imgSrc: /uploads/imagem_16_ocupacao_antena.jpg
     overlay: light
-    components:
-      - type: Columns
-        paddingTop: true
-        paddingBottom: true
-        invertOnMobile: false
-        columnsAlign: 33-66
-        column1:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: |-
-                ###### parte VI
-
-                ## Resistência, Luta & Demarcação
-
-                ## (1990 - 2025)
-            - type: ImageBlock
-              wideImage: true
-              src: /uploads/imagem_19_ocupacao_antena.jpg
-              alt: ''
-              description: 'Ocupação das antenas no Parque Estadual do Jaraguá, 2017 ( Fonte: Comissão Guarani Yvyrupa)'
-        column2:
-          components:
-            - type: ImageBlock
-              wideImage: true
-              src: /uploads/imagem_20_ocupacao_bandeirantes.jpg
-              alt: ''
-              description: 'Bloqueio da Rodovia dos Bandeirantes (Fonte: Comissão Guarani Yvyrupa)'
+    components: []
   - type: Group
     id: parte 6 - texto 1
     shortTitle: parte 6 - texto 1
@@ -963,27 +936,7 @@ components:
       - type: backgroundImage
         imgSrc: /uploads/imagem_17_estatua_jaragua.jpg
     overlay: light
-    components:
-      - type: Columns
-        paddingTop: true
-        paddingBottom: true
-        invertOnMobile: false
-        columnsAlign: 66-33
-        column1:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: |-
-                ###### **parte VIII:&#160;&#160;&#160;&#160;&#160;&#160;**
-
-                ## **A Patrimonialização do Colonialismo  & o Apagamento da Memória Indígena**
-
-                ## **(1983 – dias de hoje)**
-        column2:
-          components: []
-        desktop: 800px
-        tablet: 800px
-        mobile: 800px
+    components: []
   - type: Group
     id: parte 8 - texto 1
     shortTitle: parte 8 - texto 1
@@ -1112,24 +1065,7 @@ components:
       - type: backgroundImage
         imgSrc: /uploads/imagem_27_casa_abelhas_marcio.jpg
     overlay: light
-    components:
-      - type: Columns
-        paddingTop: false
-        paddingBottom: false
-        invertOnMobile: false
-        columnsAlign: 33-66
-        column1:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: |-
-                ###### **parte IX:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;**
-
-                ## **Outros Patrimônios:&#160;**
-
-                ## **Práticas Espaciais do Cuidado & da Reparação**
-        column2:
-          components: []
+    components: []
   - type: Group
     id: parte 9 - texto 1
     shortTitle: parte 9 - texto 1
