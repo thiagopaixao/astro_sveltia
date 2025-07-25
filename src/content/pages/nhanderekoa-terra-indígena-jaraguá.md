@@ -776,6 +776,26 @@ components:
                 Em maio de 2023 a Câmera dos Deputados aprova a “Lei do Marco Temporal”. Cinco meses depois, em setembro de 2023, o Supremo Tribunal Federal rejeita a tese como inconstitucional. Entretanto, a proposta segue em pauta no Congresso Nacional até os dias de hoje, ameaçando a integridade dos territórios indígenas. 
 
                 Em resposta a estas violações de seus direitos consagrados com a Constituição de 1988, entre 2013 e 2025, as comunidades Guarani do Jaraguá, junto com as comunidades de Tenondé Porã, realizam uma série de atos políticos e ações de advocacia, literalmente reocupando a cidade de São Paulo – Terra Indígena – durante uma década de sucessivas manifestações de grande amplitude política e cultural para a cidade e para todo o país.
+  - type: Map
+    id: mapa X - lutas
+    shortTitle: mapa X - lutas
+    longTitle: mapa X - lutas
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    bgColor: Secundary
+    components:
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_intro
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_intro_map
+    columnAlign: left
+    floatingText: false
   - type: Group
     id: parte 8 - patrimonialização do colonialismo
     shortTitle: parte 8 - patrimonialização do colonialismo
@@ -830,25 +850,5 @@ components:
         desktop: 800px
         tablet: 800px
         mobile: 800px
-  - type: Map
-    id: mapa X - lutas
-    shortTitle: mapa X - lutas
-    longTitle: mapa X - lutas
-    description: ''
-    showInMenu: false
-    animations: true
-    txtColor: Primary
-    bgColor: Secundary
-    components:
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: resistencia_intro
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: resistencia_intro_map
-    columnAlign: left
-    floatingText: false
 ---
 
