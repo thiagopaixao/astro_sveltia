@@ -947,7 +947,24 @@ components:
       - type: backgroundImage
         imgSrc: /uploads/imagem_17_estatua_jaragua.jpg
     overlay: light
-    components: []
+    components:
+      - type: Columns
+        paddingTop: true
+        paddingBottom: true
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                ###### **parte VIII:&#160;&#160;&#160;&#160;&#160;&#160;**
+
+                ## **A Patrimonialização do Colonialismo e o Apagamento da Memória Indígena**
+
+                ## **(1983 – dias de hoje)**
+        column2:
+          components: []
   - type: Group
     id: parte 8 - texto 1
     shortTitle: parte 8 - texto 1
