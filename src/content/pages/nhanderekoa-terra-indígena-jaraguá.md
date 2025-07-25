@@ -850,47 +850,6 @@ components:
               src: /uploads/imagem_20_ocupacao_bandeirantes.jpg
               alt: asd
               description: 'Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã (Fonte: XXXX)'
-  - type: Map
-    id: mapa X - lutas
-    shortTitle: mapa X - lutas
-    longTitle: mapa X - lutas
-    description: ''
-    showInMenu: false
-    animations: true
-    txtColor: Primary
-    customTxtColor: ''
-    bgColor: Secundary
-    customBgColor: ''
-    backgroundMedia: []
-    overlay: ''
-    components:
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        paddingTop: false
-        paddingBottom: false
-        invertOnMobile: false
-        columnsAlign: 66-33
-        column1:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: Após a eleição de Luiz Inácio Lula da Silva em 2023, e a criação do Ministério dos Povos Indígenas, retoma-se o processo de demarcação do território Guarani do Jaraguá em São Paulo. Através da Portaria 793 de 23 de Outubro de 2024, o Ministério da Justiça declara a nulidade da Portaria 683 de 2015, restabelecendo os efeitos da Portaria 581 de 2015 que reconhece a posse Guarani e a demarcação da Terra indígena Jaraguá
-            - type: ImageBlock
-              wideImage: false
-              src: /uploads/imagem_23_mapa_cerimonia.jpg
-              alt: asd
-              description: Celebração da demarcação da T.I. Jaraguá pelas lentes de Richard Wera Mirim
-        column2:
-          components:
-            - type: Pullquote
-              content: Como a gente sempre faz nas manifestações com outras faixas, o mapa estava presente, primeiro na mão dos jovens e das crianças, depois as mulheres ergueram o mapa, e aquilo foi uma celebração, foi a nossa forma de fazer desse processo da demarcação da terra uma cerimônia.
-              txtColor: ''
-              bgColor: ''
-              byline: – Thiago Henrique Karai Djekupe
-        mapView: resistencia_intro
-    columnAlign: left
-    floatingText: false
   - type: Group
     id: part 6 - texto 2
     shortTitle: part 6 - texto 2
@@ -940,6 +899,47 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: resistencia_intro_map
+    columnAlign: left
+    floatingText: false
+  - type: Map
+    id: mapa X - lutas
+    shortTitle: mapa X - lutas
+    longTitle: mapa X - lutas
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secundary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: Após a eleição de Luiz Inácio Lula da Silva em 2023, e a criação do Ministério dos Povos Indígenas, retoma-se o processo de demarcação do território Guarani do Jaraguá em São Paulo. Através da Portaria 793 de 23 de Outubro de 2024, o Ministério da Justiça declara a nulidade da Portaria 683 de 2015, restabelecendo os efeitos da Portaria 581 de 2015 que reconhece a posse Guarani e a demarcação da Terra indígena Jaraguá
+            - type: ImageBlock
+              wideImage: false
+              src: /uploads/imagem_23_mapa_cerimonia.jpg
+              alt: asd
+              description: Celebração da demarcação da T.I. Jaraguá pelas lentes de Richard Wera Mirim
+        column2:
+          components:
+            - type: Pullquote
+              content: Como a gente sempre faz nas manifestações com outras faixas, o mapa estava presente, primeiro na mão dos jovens e das crianças, depois as mulheres ergueram o mapa, e aquilo foi uma celebração, foi a nossa forma de fazer desse processo da demarcação da terra uma cerimônia.
+              txtColor: ''
+              bgColor: ''
+              byline: – Thiago Henrique Karai Djekupe
+        mapView: resistencia_intro
     columnAlign: left
     floatingText: false
   - type: Group
