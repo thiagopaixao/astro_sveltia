@@ -886,5 +886,21 @@ components:
         desktop: 800px
         tablet: 800px
         mobile: 800px
+  - type: Map
+    id: mapa X - monumentos coloniais
+    shortTitle: mapa X - monumentos coloniais
+    longTitle: mapa X - monumentos coloniais
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    bgColor: Secundary
+    components:
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_intro
+    columnAlign: left
+    floatingText: false
 ---
 
