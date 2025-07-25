@@ -1122,8 +1122,8 @@ components:
               alt: asd
               description: Imagem do arquivo do levantamento técnico do complexo Casa Grande-Senzala de Afonso Sardinha presente na proposta de tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978.
   - type: Group
-    id: parte 9 - praticas cuidado & reparacao
-    shortTitle: parte 9 - praticas cuidado & reparacao
+    id: parte 9 - nhandereko praticas cuidado & reparacao
+    shortTitle: arte 9 - nhandereko praticas cuidado & reparacao
     longTitle: 'Nhandereko: práticas do cuidado & da reparação'
     description: ''
     showInMenu: true
@@ -1185,6 +1185,37 @@ components:
                 É a partir da contínua manutenção do _nhandereko_,_ _o “modo de habitar” Guarani, saber ancestral transmitido pelos anciãos e anciãs, que tais práticas se constituem no tempo e no espaço através de gerações.  
 
                 Ao espacializar estes processos, o mapa joga luz em práticas muitas vezes invisibilizadas, principalmente o trabalho de cuidado cotidiano das mulheres que fincam raízes profundas para que Terra Indígena do Jaraguá cresça forte.
+        column2:
+          components: []
+  - type: Group
+    id: parte X - ameaças
+    shortTitle: parte X - ameaças
+    longTitle: Ameaças a T.I. Jaraguá
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem_32_urbanizacao_jaragua.jpg
+    overlay: light
+    components:
+      - type: Columns
+        paddingTop: true
+        paddingBottom: true
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                ###### **parte X&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;**
+
+                ## **Ameaças ao Território e ao Patrimônio Florestal Guarani**
         column2:
           components: []
 ---
