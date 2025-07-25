@@ -153,6 +153,35 @@ components:
     columnAlign: left
     floatingText: false
   - type: Group
+    id: parte 1 - texto 2
+    shortTitle: parte 1 - texto 2
+    longTitle: parte 1 - texto 2
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Text
+              hasDropCap: true
+              content: |-
+                A Terra Indígena Jaraguá é uma ==área localizada em São Paulo, Brasil, habitada pelo povo Guarani Mbya==. Inicialmente demarcada com apenas 1,7 hectare, sendo a menor do Brasil, de acordo com o Instituto Socioambiental, ela teve sua área ampliada para 532 hectares após anos de luta e reivindicação da comunidade indígena. A área demarcada agora inclui oito aldeias Guarani Mbya, reconhecidas pelo governo. 
+
+                A ampliação da Terra Indígena Jaraguá representa um avanço importante na luta por direitos territoriais dos povos indígenas, especialmente considerando a situação de vulnerabilidade enfrentada pelas comunidades devido à falta de espaço e à pressão urbana. A demarcação da área visa garantir a preservação do modo de vida Guarani Mbya, seus costumes e tradições, além de proteger a biodiversidade da Mata Atlântica presente na região.
+        column2:
+          components: []
+  - type: Group
     id: parte 2 - colonizacao do Jaragua
     shortTitle: parte 2 - colonizacao do Jaragua
     longTitle: Da Invasão ao Parque
