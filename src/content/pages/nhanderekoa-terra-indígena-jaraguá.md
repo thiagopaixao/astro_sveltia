@@ -439,7 +439,7 @@ components:
   - type: Group
     id: parte 4 - ditadura deslocamento desmatamento
     shortTitle: parte 4 - ditadura deslocamento desmatamento
-    longTitle: 'parte 4: Ditadura, Deslocamentos & Desmatamento'
+    longTitle: Ditadura, Deslocamentos & Desmatamento
     description: ''
     showInMenu: true
     animations: true
@@ -594,20 +594,18 @@ components:
             - type: Text
               hasDropCap: true
               content: |-
-                A resistência dos povos indígenas desempenhou um papel protagonista na derrocada do regime militar e no retorno à democracia nos anos 1980.  
+                A resistência dos povos indígenas desempenhou um papel protagonista na derrocada do regime militar e no retorno à democracia nos anos 1980.
 
                 Sob pressão do movimento indígena, a Constituição de 1988 reconhece o direito dos povos originários a seus territórios ancestrais, sendo esses direitos anteriores à própria criação do Estado brasileiro. A Constituição também garante a proteção da organização social, costumes, línguas, crenças e tradições dos povos indígenas.
 
-                Neste contexto, assim como outros territórios e movimentos populares, o Jaraguá passa por um processo de crescente organização política e reclame de direitos. 
+                Neste contexto, assim como outros territórios e movimentos populares, o Jaraguá passa por um processo de crescente organização política e reclame de direitos. Pressionada pelo movimento indígena, em 1984 – ano do movimento “Diretas Já” – a FUNAI procede com regularização de algumas terras indígenas no Estado de São Paulo, incluindo uma pequena parte da Terra Indígena Jaraguá correspondente à Tekoa Ytu, demarcada em 1987. 
 
-                Pressionada pelo movimento indígena, em 1984 – ano do movimento “Diretas Já” – a FUNAI procede a regularização de algumas Terras Indígenas no Estado de São Paulo, incluindo uma pequena parte da Terra Indígena Jaraguá correspondente à Tekoa Ytu. 
-
-                Ainda que representassem avanços democráticos, estas demarcações foram claramente insuficientes, especialmente no caso da T.I. Jaraguá, onde a área demarcada abrangia apenas os 1.8 hectares do núcleo habitacional da Tekoa Ytu. Deste modo, a demarcação ignorava a extensão territorial do uso tradicional das matas que mantém o _nhandereko_.
+                 Ainda que representassem avanços democráticos, estas demarcações eram claramente insuficientes, especialmente no caso da T.I. Jaraguá, onde a área demarcada abrangia apenas o perímetro de 1.8 hectares do núcleo habitacional da Tekoa Ytu. Deste modo, a demarcação ignorava a extensão territorial do uso tradicional das matas pelas comunidades Guarani que mantém o _nhandereko_.
             - type: ImageBlock
               wideImage: false
               src: /uploads/imagem_15_demarcacao_tekoa_ytu_02.jpg
-              alt: ''
-              description: mapa da demarcação da Tekoa Ytu em 1987 em comparação com a atual área da T.I. Jaraguá
+              alt: asd
+              description: Mapa assinalando a área demarcada em 1987, circunscrita a área do núcleo habitacional da Tekoa Ytu, em comparação com a área reconhecida da T.I.Jaraguá atualmente.
         column2:
           components:
             - type: Spacer
@@ -617,7 +615,7 @@ components:
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_14_constituinte_02.jpg
-              alt: 'À frente na bancada, da esquerda para a direita: Teseya Panará, Kanhõc Kayapó, Raoni Mētyktire e Tutu Pombo Kayapó, dentre outros, ocupam auditório da liderança do PMDB nas negociações do capítulo dos indígenas na Constituinte em 1988 (Fonte: Beto Ricardo/ISA) Fonte: Beto Ricardo [Instituto Socioambiental]'
+              alt: asd
               description: 'À frente na bancada, da esquerda para a direita: Teseya Panará, Kanhõc Kayapó, Raoni Mētyktire e Tutu Pombo Kayapó, dentre outros, ocupam auditório da liderança do PMDB nas negociações do capítulo dos indígenas na Constituinte em 1988 (Fonte: Beto Ricardo/ISA) Fonte: Beto Ricardo [Instituto Socioambiental]'
   - type: Group
     id: parte 5 - texto 2
@@ -640,10 +638,6 @@ components:
         columnsAlign: 33-66
         column1:
           components:
-            - type: Spacer
-              desktop: 50px
-              tablet: 50px
-              mobile: 50px
             - type: ImageBlock
               wideImage: false
               src: /uploads/imagem_16_logo_mata_atlantica_unesco.jpg
@@ -654,15 +648,15 @@ components:
             - type: Text
               hasDropCap: true
               content: |-
-                Em paralelo, no arco entre os assassinatos de Marçal de Souza e Chico Mendes em 1983-1984, e a realização do encontro internacional ECO-92 promovido pelas Nações Unidas no Rio de Janeiro em 1992, a pauta ambiental consolida-se no Brasil. 
+                Em paralelo, no arco entre os assassinatos de Marçal de Souza e Chico Mendes em 1983-1984, e a realização do encontro internacional ECO-92 promovido pelas Nações Unidas no Rio de Janeiro em 1992, a pauta ambiental consolida-se internacionalmente e no Brasil. 
 
                 Em 1994 o Parque Estadual do Jaraguá é reconhecido pela UNESCO como Patrimônio da Humanidade, na categoria de Reserva da Biosfera, passando a integrar o Cinturão Verde da Cidade de São Paulo.
 
-                Assim como na criação do Parque Estadual em 1961, tais medidas protetivas ambientalistas muitas vezes entram em conflito com o direito das comunidades Guarani ao seu território ancestral, impedindo-as de usufruir dos recursos naturais das florestas dentro do perímetro do Parque, que hoje encontra-se totalmente cercado.
+                 Assim como na criação do Parque Estadual em 1961, tais medidas protetivas ambientalistas muitas vezes entram em conflito com o direito das comunidades Guarani ao seu território ancestral, impedindo-as de usufruir dos recursos naturais das florestas dentro do perímetro do Parque, que hoje encontra-se totalmente cercado.
             - type: ImageBlock
               wideImage: false
               src: /uploads/imagem_15_demarcacao_tekoa_ytu.jpg
-              alt: Mapa do cinturão verde são Paulo
+              alt: Mapa do Cinturão Verde São Paulo, indicando a Terra Indígena Jaraguá
               description: Mapa do cinturão verde são Paulo
   - type: Group
     id: parte 5 - resistencia luta e demarcacao
