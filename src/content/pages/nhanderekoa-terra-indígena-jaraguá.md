@@ -437,6 +437,25 @@ components:
               alt: ''
               description: Imagem histórica do “aldeamentos” Guarani do Serviço de Proteção aos Índios (SPI) na região do Rio Itariri, no Vale do Ribeira (Imagem do acervo particular de João Emílio Gerodetti).
   - type: Group
+    id: asdasdasdasdasdasdasdasdasd
+    shortTitle: asd
+    longTitle: asd
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/imagem_28_analise_foto_aerea.jpg
+        alt: asd
+        description: asdasdasdasdasdasdasdasdasasdasdasdasdasdasadsasd
+  - type: Group
     id: parte 4 - ditadura deslocamento desmatamento
     shortTitle: parte 4 - ditadura deslocamento desmatamento
     longTitle: Ditadura, Deslocamentos & Desmatamento
