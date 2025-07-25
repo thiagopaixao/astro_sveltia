@@ -881,11 +881,7 @@ components:
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
-    components:
-      - type: Spacer
-        desktop: 800px
-        tablet: 800px
-        mobile: 800px
+    components: []
   - type: Map
     id: mapa X - monumentos coloniais
     shortTitle: mapa X - monumentos coloniais
