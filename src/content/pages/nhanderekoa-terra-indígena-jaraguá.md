@@ -437,7 +437,7 @@ components:
     components:
       - type: ImageBlock
         wideImage: false
-        src: /uploads/imagem_28_analise_foto_aerea.jpg
+        src: /uploads/imagem_31_analise_foto_aerea_verde.jpg
         alt: asd
         description: Análise de imagem aerofotogramétrica de 1954, onde é possível identificar a área onde foi estabelecida a Tekoa Ytu, próxima de fontes de água ao pé do morro do Jaraguá. Alterações na estrutura da mata indicam a possível presença de assentamentos Guarani na região anteriores a 1960-1961, quando a Tekoa Ytu, considerada a primeira retomada do Jaraguá, é estabelecida definitivamente.
   - type: Group
