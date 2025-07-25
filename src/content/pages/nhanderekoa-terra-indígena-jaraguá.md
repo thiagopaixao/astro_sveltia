@@ -919,6 +919,11 @@ components:
         columnsAlign: 66-33
         column1:
           components:
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/imagem_24_monumento_estatua_jaragua.jpg
+              alt: ''
+              description: 'Projeto da estátua-monumento do jesuíta José de Anchieta apresentado no Processo de tombamento do Parque Estadual do Jaraguá, 1978. Fonte: Processo de tombamento do Parque Estadual do Jaraguá, 1978'
             - type: Text
               hasDropCap: true
               content: |-
@@ -929,11 +934,6 @@ components:
                 Talvez o exemplo mais emblemático desta narrativa colonialista oficializada pelos órgãos patrimoniais paulistas seja o projeto de tombamento do Parque Estadual do Jaraguá elaborado pelo CONDEPHAAT em 1978.
 
                  O projeto original propunha a criação de um complexo turístico no Parque do Jaraguá celebrando a memória da conquista colonial, com a construção de uma estátua-monumento gigante do jesuíta José de Anchieta, fundador do aldeamento do Pateo do Collegio, no topo do Pico do Jaraguá. Como no monumento do Cristo Redentor no Rio de Janeiro, o projeto incluía um bonde para levar os turistas até a grande estátua-monumento.
-            - type: ImageBlock
-              wideImage: true
-              src: /uploads/imagem_24_monumento_estatua_jaragua.jpg
-              alt: ''
-              description: 'Projeto da estátua-monumento do jesuíta José de Anchieta apresentado no Processo de tombamento do Parque Estadual do Jaraguá, 1978. Fonte: Processo de tombamento do Parque Estadual do Jaraguá, 1978'
         column2:
           components: []
 ---
