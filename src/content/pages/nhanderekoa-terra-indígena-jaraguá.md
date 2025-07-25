@@ -335,15 +335,15 @@ components:
                 Em paralelo, São Paulo vive um rápido processo de urbanização. Entre 1940 e 1948 é construída a rodovia Anhanguera nas margens do Território Guarani do Jaraguá, e em 1955 é construído o linhão de transmissão Anhangabaú-Jundiaí sobre o pico do morro. Estas grandes infraestruturas de transporte e energia inter-urbanas abrem caminho para a voraz especulação imobiliária que se daria nas décadas seguintes, principalmente com o regime militar depois do golpe de 1964.
         column2:
           components:
+            - type: Spacer
+              desktop: 1000px
+              tablet: 500px
+              mobile: 500px
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_18_mapa_anhanguera.jpg
               alt: Planta da Via Anhanguera, década de 40 (Arquivo Biblioteca do Departamento de Estradas e Rodagens)
               description: Planta da Via Anhanguera, década de 40 (Arquivo Biblioteca do Departamento de Estradas e Rodagens)
-            - type: Spacer
-              desktop: 1000px
-              tablet: 500px
-              mobile: 500px
   - type: Group
     id: parte 3 - título
     shortTitle: parte 3 - título
