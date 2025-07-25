@@ -1245,15 +1245,15 @@ components:
         column2:
           components: []
   - type: Group
-    id: download da base de dados
-    shortTitle: download da base de dados
-    longTitle: download da base de dados
+    id: creditos
+    shortTitle: creditos
+    longTitle: creditos
     description: ''
     showInMenu: false
     animations: true
     txtColor: Secondary
     customTxtColor: ''
-    bgColor: Primary
+    bgColor: Highlight
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
