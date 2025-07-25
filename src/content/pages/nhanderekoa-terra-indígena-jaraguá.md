@@ -207,7 +207,7 @@ components:
               wideImage: false
               src: /uploads/imagem_03_mapacurt.png
               alt: mapa curt
-              description: 'Recorte do Mapa Etno-Histórico de Curt Nimuendajú (1944), mostrando a amplitude do território Guarani, Yvurupa (Fonte: Bibloteca Digital Curt Nimuendaju)'
+              description: 'Recorte do Mapa Etno-Histórico de Curt Nimuendajú (1944), mostrando a amplitude do território Guarani (Fonte: Bibloteca Digital Curt Nimuendaju)'
             - type: Text
               hasDropCap: true
               content: |-
