@@ -891,10 +891,6 @@ components:
               bgColor: ''
               byline: – Thiago Henrique Karai Djekupe
         mapView: resistencia_intro
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: resistencia_intro_map
     columnAlign: left
     floatingText: false
   - type: Group
