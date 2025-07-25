@@ -946,7 +946,7 @@ components:
     shortTitle: parte 9 - praticas cuidado & reparacao
     longTitle: 'Nhandereko: práticas do cuidado & da reparação'
     description: ''
-    showInMenu: false
+    showInMenu: true
     animations: true
     txtColor: Primary
     customTxtColor: ''
