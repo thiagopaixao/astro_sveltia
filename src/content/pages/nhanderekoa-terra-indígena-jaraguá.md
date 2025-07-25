@@ -844,6 +844,10 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: resistencia_intro
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_intro_map
     columnAlign: left
     floatingText: false
 ---
