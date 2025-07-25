@@ -1192,7 +1192,7 @@ components:
     shortTitle: parte X - ameaças
     longTitle: Ameaças a T.I. Jaraguá
     description: ''
-    showInMenu: false
+    showInMenu: true
     animations: true
     txtColor: Primary
     customTxtColor: ''
