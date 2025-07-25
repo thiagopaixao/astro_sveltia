@@ -186,11 +186,6 @@ components:
               description: ''
         column2:
           components: []
-      - type: ImageBlock
-        wideImage: true
-        src: /uploads/imagem jaragua_color edited.jpg
-        alt: ''
-        description: ''
   - type: Group
     id: parte 2 - colonizacao do Jaragua
     shortTitle: parte 2 - colonizacao do Jaragua
