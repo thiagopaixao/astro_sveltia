@@ -835,9 +835,9 @@ components:
   - type: Group
     id: parte 8 - patrimonialização do colonialismo
     shortTitle: parte 8 - patrimonialização do colonialismo
-    longTitle: 'parte 8: a patrimonialização do colonialismo'
+    longTitle: Patrimonialização do colonialismo & apagamento da memória Guarani
     description: ''
-    showInMenu: false
+    showInMenu: true
     animations: true
     txtColor: Primary
     customTxtColor: ''
