@@ -412,9 +412,9 @@ components:
                 Com sua resistência ancestral, fugindo dos aldeamentos, algumas famílias iniciam retomadas na cidade de São Paulo no Jaraguá e na região de Parelheiros, atuais Terra Indígena Jaraguá e Terra Indígena Tenondé Porã.
             - type: ImageBlock
               wideImage: false
-              src: /uploads/imagem_XX_mapa.jpg
+              src: /uploads/imagem_28_analise_foto_aerea.jpg
               alt: asd
-              description: Nesta análise espacial de uma imagem aerofotogramétrica de 1950, é possível identificar a área onde foi estabelecida a Tekoa Ytu, próxima de fontes de água ao pé do morro do Jaraguá. Marcado em verde, alterações na estrutura da mata indicam a possível presença de assentamentos Guarani na região anteriores a 1960-1961, quando a Tekoa Ytu, considerada a primeira retomada do Jaraguá, é estabelecida definitivamente.
+              description: Análise de imagem aerofotogramétrica de 1954, onde é possível identificar a área onde foi estabelecida a Tekoa Ytu, próxima de fontes de água ao pé do morro do Jaraguá. Alterações na estrutura da mata indicam a possível presença de assentamentos Guarani na região anteriores a 1960-1961, quando a Tekoa Ytu, considerada a primeira retomada do Jaraguá, é estabelecida definitivamente.
             - type: Text
               hasDropCap: true
               content: |-
