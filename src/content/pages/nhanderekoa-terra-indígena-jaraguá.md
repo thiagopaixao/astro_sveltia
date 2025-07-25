@@ -933,13 +933,13 @@ components:
               wideImage: true
               src: /uploads/imagem_24_monumento_estatua_jaragua.jpg
               alt: ''
-              description: 'Projeto da estátua-monumento do jesuíta José de Anchieta apresentado no Processo de tombamento do Parque Estadual do Jaraguá, 1978. Fonte: Processo de tombamento do Parque Estadual do Jaraguá, 1978'
+              description: IMG  Projeto da estátua-monumento do jesuíta José de Anchieta apresentado no Processo de tombamento do Parque Estadual do Jaraguá do CONDEPHAAT, 1978.
         column2:
           components:
             - type: ImageBlock
               wideImage: false
               src: /uploads/imagem_26_pagina_relatorio_tombamento.jpg
               alt: asd
-              description: Foto do levantamento técnico do complexo Casa Grande-Senzala de Afonso Sardinha (Processo de tombamento do Parque Estadual do Jaraguá, 1978.)
+              description: Imagem do arquivo do levantamento técnico do complexo Casa Grande-Senzala de Afonso Sardinha presente na proposta de tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978.
 ---
 
