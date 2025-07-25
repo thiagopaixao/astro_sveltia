@@ -831,7 +831,7 @@ components:
               content: Como a gente sempre faz nas manifestações com outras faixas, o mapa estava presente, primeiro na mão dos jovens e das crianças, depois as mulheres ergueram o mapa, e aquilo foi uma celebração, foi a nossa forma de fazer desse processo da demarcação da terra uma cerimônia.
               txtColor: ''
               bgColor: ''
-              byline: – Thiago XXXXX
+              byline: – Thiago Henrique Karai Djekupe
   - type: Group
     id: parte 8 - patrimonialização do colonialismo
     shortTitle: parte 8 - patrimonialização do colonialismo
