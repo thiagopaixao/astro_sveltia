@@ -978,11 +978,7 @@ components:
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
-    components:
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: resistencia_intro
+    components: []
     columnAlign: left
     floatingText: false
   - type: Map
