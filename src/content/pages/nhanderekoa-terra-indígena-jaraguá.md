@@ -605,11 +605,6 @@ components:
                 ## Retorno à Democracia & Demarcação da Tekoa Ytu
 
                 ## (1984 – 1989)
-            - type: ImageBlock
-              wideImage: false
-              src: /uploads/imagem_15_demarcacao_tekoa_ytu_02.jpg
-              alt: asd
-              description: Mapa assinalando a área demarcada em 1987, circunscrita a área do núcleo habitacional da Tekoa Ytu, em comparação com a área reconhecida da T.I.Jaraguá atualmente.
         column2:
           components:
             - type: Spacer
