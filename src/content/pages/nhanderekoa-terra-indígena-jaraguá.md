@@ -161,7 +161,7 @@ components:
     animations: true
     txtColor: Primary
     customTxtColor: ''
-    bgColor: Secondary
+    bgColor: Highlight
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
@@ -181,6 +181,11 @@ components:
                 A ampliação da Terra Indígena Jaraguá representa um avanço importante na luta por direitos territoriais dos povos indígenas, especialmente considerando a situação de vulnerabilidade enfrentada pelas comunidades devido à falta de espaço e à pressão urbana. A demarcação da área visa garantir a preservação do modo de vida Guarani Mbya, seus costumes e tradições, além de proteger a biodiversidade da Mata Atlântica presente na região.
         column2:
           components: []
+      - type: ImageBlock
+        wideImage: true
+        src: /uploads/imagem jaragua_color edited.jpg
+        alt: ''
+        description: ''
   - type: Group
     id: parte 2 - colonizacao do Jaragua
     shortTitle: parte 2 - colonizacao do Jaragua
