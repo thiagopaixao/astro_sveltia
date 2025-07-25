@@ -129,16 +129,16 @@ components:
                 Desenvolvido junto com xamois e xejarys, xondaros e xondarias, professores, lideranças e ativistas Guarani, esta plataforma apresenta uma cartografia histórica configuração da T.I. Jaraguá no momento de sua demarcação em Setembro de 2025.  
 
                 Combinando análise de dados geo-espaciais, cartografias participativas, entrevistas, e documentação de arquivos históricos, o mapa traça um panorama das práticas espaciais dos Guarani para a defesa, cuidado, reparação e cultivo das florestas do Jaraguá, ao passo que identifica uma série de ameaças que atingem este território atualmente.
-            - type: ImageBlock
-              wideImage: false
-              src: /uploads/imagem_XX_mata.jpg
-              alt: matas do Jaraguá
-              description: matas do Jaraguá
             - type: Text
               hasDropCap: false
               content: A Terra Indígena Jaraguá, lar do povo Guarani, ==está localizada na cidade de São Paulo, no Brasil, e é conhecida por ser a menor terra indígena do país==. A área, que fica aos pés do Pico do Jaraguá, teve sua demarcação inicial em 1987 com apenas 1,7 hectare, mas após muita luta, foi reconhecida com 532 hectares. Essa área ampliada engloba oito aldeias e é fundamental para a preservação da cultura e modo de vida do povo Guarani.
         column2:
-          components: []
+          components:
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/imagem_XX_mata.jpg
+              alt: ''
+              description: mata do jaraguá
   - type: Group
     id: parte 2 - colonizacao do Jaragua
     shortTitle: parte 2 - colonizacao do Jaragua
