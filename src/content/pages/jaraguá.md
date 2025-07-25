@@ -374,9 +374,6 @@ components:
         txtColor: ''
         bgColor: ''
         components:
-          - type: Text
-            hasDropCap: false
-            content: '###### 2013'
           - type: TimelineBullet
             content: ''
             text: '2013'
@@ -633,6 +630,42 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: resistencia_2014_1
+      - type: Spacer
+        desktop: 150px
+        tablet: 150px
+        mobile: 150px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_2014_2
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: ''
+            text: '2014'
+      - type: Spacer
+        desktop: 150px
+        tablet: 150px
+        mobile: 150px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_2014_3
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta
+            text: 16/04
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [16_04]_Midia Ninja.jpg
+            alt: ''
+            description: 'Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta. Fonte: Mídia Ninja'
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [16_04]_CGY.png
+            alt: ''
+            description: Vídeo da campanha “Resistência Guarani SP” realizado por Comissão Guarani Yvyrupa
     columnAlign: left
     floatingText: false
 ---
