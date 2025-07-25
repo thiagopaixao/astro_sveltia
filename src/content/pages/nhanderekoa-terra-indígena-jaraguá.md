@@ -319,9 +319,9 @@ components:
 
                 Na década de 1940, com o declínio da atividade cafeeira, a Fazenda Jaraguá é adquirida pelo município de São Paulo e torna-se propriedade estatal. Em 1946, a propriedade passa a ser administrada pelo Serviço Florestal do município.  
 
-                 Por esta época, na primeira metade do século XX, o Jaraguá continuava sendo um lugar habitado pelos Guarani através dos caminhos que conectavam o Paraná e o Mato Grosso do Sul até o Vale do Ribeira e o litoral paulista.
+                Por esta época, na primeira metade do século XX, o Jaraguá continuava sendo um lugar habitado pelos Guarani através dos caminhos que conectavam o Paraná e o Mato Grosso do Sul até o Vale do Ribeira e o litoral paulista.
 
-                 Em 1961, no contexto do estabelecimento das primeiras reservas florestais nacionais, cria-se o Parque Estadual do Jaraguá, que pela primeira vez garante algum nível de proteção ambiental aos remanescentes de Mata Atlântica no Pico do Jaraguá.
+                Em 1961, no contexto do estabelecimento das primeiras reservas florestais nacionais, cria-se o Parque Estadual do Jaraguá, que pela primeira vez garante algum nível de proteção ambiental aos remanescentes de Mata Atlântica no Pico do Jaraguá.
             - type: ImageBlock
               wideImage: false
               src: /uploads/imagem_05_mapadoPEJ.jpg
@@ -435,7 +435,7 @@ components:
               wideImage: true
               src: /uploads/imagem_08_spi.jpg
               alt: ''
-              description: Imagem histórica de um dos "aldeamentos" Guarani do Serviço de Proteção aos Índios na área de Itariri, no litoral Paulista.
+              description: Imagem histórica do “aldeamentos” Guarani do Serviço de Proteção aos Índios (SPI) na região do Rio Itariri, no Vale do Ribeira (Imagem do acervo particular de João Emílio Gerodetti).
   - type: Group
     id: parte 4 - ditadura deslocamento desmatamento
     shortTitle: parte 4 - ditadura deslocamento desmatamento
