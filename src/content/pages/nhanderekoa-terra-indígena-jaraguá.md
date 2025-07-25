@@ -774,17 +774,17 @@ components:
 
                 Estas retomadas acontecem em um contexto de crescente organização política dos povos Guarani a nível nacional. Em 2006 é criada a Comissão Guarany Yvurupa (CGY), organização que congrega coletivos dos povos Guarani nas regiões Sul e Sudeste do Brasil na luta pela terra. 
 
-                A Terra Indígena Jaraguá cresce forte e fica cada vez mais populosa. Através da CGY e de suas bases, as lideranças Guarani pressionam pela demarcação de seus territórios. Em 2013, a FUNAI finalmente realiza o estudo de demarcação da T.I. Jaraguá – o chamado “Relatório Circunstanciado de Identificação e Delimitação” ou “RCID” – que identifica uma área de uso tradicional de 532 hectares. 
+                 A Terra Indígena Jaraguá cresce forte e fica cada vez mais populosa. Através da CGY e de suas bases, as lideranças Guarani pressionam pela demarcação de seus territórios. Em 2013, a FUNAI finalmente realiza o estudo de demarcação da T.I. Jaraguá – o chamado “Relatório Circunstanciado de Identificação e Delimitação” ou “RCID” – que identifica uma área de uso tradicional de 532 hectares. 
 
-                Dois anos depois, em 2015, sob pressão dos grandes protestos realizados por ativistas Guarani em São Paulo, o governo de Dilma Rousseff (Portaria 58) reconhece a posse indígena permanente do Jaraguá em ato histórico celebrado por toda Yvyrupa.
+                Dois anos depois, em 2015, sob pressão dos grandes protestos realizados por ativistas Guarani em São Paulo, o governo de Dilma Rousseff (Portaria 581) reconhece a posse indígena permanente do Jaraguá em ato histórico celebrado por toda Yvyrupa.
               desktop: 300px
               tablet: 300px
               mobile: 300px
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_19_ocupacao_antena.jpg
-              alt: ''
-              description: 'Ocupação das antenas no Parque Estadual do Jaraguá, 2017 ( Fonte: Comissão Guarani Yvyrupa)'
+              alt: asd
+              description: Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá, entre os dias 14 e 16 de setembro, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo
         column2:
           components:
             - type: ImageBlock
@@ -799,8 +799,8 @@ components:
                 Em resposta a estas violações de seus direitos consagrados com a Constituição de 1988, entre 2013 e 2025, as comunidades Guarani do Jaraguá, junto com as comunidades de Tenondé Porã, realizam uma série de atos políticos e ações de advocacia, literalmente reocupando a cidade de São Paulo – Terra Indígena – durante uma década de sucessivas manifestações de grande amplitude política e cultural para a cidade e para todo o país.
               wideImage: true
               src: /uploads/imagem_20_ocupacao_bandeirantes.jpg
-              alt: ''
-              description: 'Bloqueio da Rodovia dos Bandeirantes (Fonte: Comissão Guarani Yvyrupa)'
+              alt: asd
+              description: 'Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã (Fonte: XXXX)'
   - type: Group
     id: part 6 - texto 2
     shortTitle: part 6 - texto 2
