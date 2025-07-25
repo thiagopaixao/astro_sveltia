@@ -606,16 +606,7 @@ components:
 
                 ## (1984 – 1989)
         column2:
-          components:
-            - type: Spacer
-              desktop: 100px
-              tablet: 100px
-              mobile: 100px
-            - type: ImageBlock
-              wideImage: true
-              src: /uploads/imagem_14_constituinte_02.jpg
-              alt: asd
-              description: 'À frente na bancada, da esquerda para a direita: Teseya Panará, Kanhõc Kayapó, Raoni Mētyktire e Tutu Pombo Kayapó, dentre outros, ocupam auditório da liderança do PMDB nas negociações do capítulo dos indígenas na Constituinte em 1988 (Fonte: Beto Ricardo/ISA) Fonte: Beto Ricardo [Instituto Socioambiental]'
+          components: []
   - type: Group
     id: parte 5 - texto 1
     shortTitle: parte 5 - texto 1
