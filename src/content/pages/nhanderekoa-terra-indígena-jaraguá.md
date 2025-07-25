@@ -91,7 +91,7 @@ components:
             mobile: 800px
           - type: Text
             hasDropCap: false
-            content: '## _cartografias da resistência territorial e da reparação ambiental Guarani_'
+            content: '##### **cartografias da resistência territorial e da reparação ambiental Guarani**'
   - type: Group
     id: parte 1 - nhanderekoa
     shortTitle: parte 1 - nhanderekoa
