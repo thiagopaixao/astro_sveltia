@@ -935,6 +935,11 @@ components:
 
                  O projeto original propunha a criação de um complexo turístico no Parque do Jaraguá celebrando a memória da conquista colonial, com a construção de uma estátua-monumento gigante do jesuíta José de Anchieta, fundador do aldeamento do Pateo do Collegio, no topo do Pico do Jaraguá. Como no monumento do Cristo Redentor no Rio de Janeiro, o projeto incluía um bonde para levar os turistas até a grande estátua-monumento.
         column2:
-          components: []
+          components:
+            - type: ImageBlock
+              wideImage: false
+              src: /uploads/imagem_26_pagina_relatorio_tombamento.jpg
+              alt: asd
+              description: Foto do levantamento técnico do complexo Casa Grande-Senzala de Afonso Sardinha (Processo de tombamento do Parque Estadual do Jaraguá, 1978.)
 ---
 
