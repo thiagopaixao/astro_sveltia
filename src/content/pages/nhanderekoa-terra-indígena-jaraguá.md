@@ -1040,9 +1040,7 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_27_casa_abelhas_marcio.jpg
+    backgroundMedia: []
     overlay: ''
     components:
       - type: Columns
