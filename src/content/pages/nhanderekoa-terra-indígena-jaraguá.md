@@ -805,7 +805,7 @@ components:
     animations: true
     txtColor: Primary
     customTxtColor: ''
-    bgColor: Secondary
+    bgColor: Highlight
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
@@ -826,7 +826,12 @@ components:
               alt: asd
               description: Celebração da demarcação da T.I. Jaraguá pelas lentes de Richard Wera Mirim
         column2:
-          components: []
+          components:
+            - type: Pullquote
+              content: Como a gente sempre faz nas manifestações com outras faixas, o mapa estava presente, primeiro na mão dos jovens e das crianças, depois as mulheres ergueram o mapa, e aquilo foi uma celebração, foi a nossa forma de fazer desse processo da demarcação da terra uma cerimônia.
+              txtColor: ''
+              bgColor: ''
+              byline: – Thiago XXXXX
   - type: Group
     id: parte 8 - patrimonialização do colonialismo
     shortTitle: parte 8 - patrimonialização do colonialismo
