@@ -908,9 +908,7 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_17_estatua_jaragua.jpg
+    backgroundMedia: []
     overlay: ''
     components:
       - type: Columns
