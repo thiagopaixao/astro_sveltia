@@ -728,7 +728,24 @@ components:
       - type: backgroundImage
         imgSrc: /uploads/imagem_16_ocupacao_antena.jpg
     overlay: light
-    components: []
+    components:
+      - type: Columns
+        paddingTop: true
+        paddingBottom: true
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                ###### **parte VI**
+
+                ## **Reconhecimento, Luta & Demarcação**
+
+                ## **(1990 – 2025)**
+        column2:
+          components: []
   - type: Group
     id: parte 6 - texto 1
     shortTitle: parte 6 - texto 1
