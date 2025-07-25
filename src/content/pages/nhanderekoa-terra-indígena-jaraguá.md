@@ -710,9 +710,9 @@ components:
                  Assim como na criação do Parque Estadual em 1961, tais medidas protetivas ambientalistas muitas vezes entram em conflito com o direito das comunidades Guarani ao seu território ancestral, impedindo-as de usufruir dos recursos naturais das florestas dentro do perímetro do Parque, que hoje encontra-se totalmente cercado.
             - type: ImageBlock
               wideImage: false
-              src: /uploads/imagem_15_demarcacao_tekoa_ytu.jpg
-              alt: Mapa do Cinturão Verde São Paulo, indicando a Terra Indígena Jaraguá
-              description: Mapa do cinturão verde são Paulo
+              src: /uploads/imagem_30_cinturao_verde.jpg
+              alt: asd
+              description: Mapa da área norte do Cinturão Verde da Cidade de São Paulo. As florestas da T.I. Jaraguá são as mais preservadas do cinturão.
   - type: Group
     id: parte 6 - resistencia luta e demarcacao
     shortTitle: parte 6 - resistencia luta e demarcacao
