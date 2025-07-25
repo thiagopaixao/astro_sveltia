@@ -474,6 +474,39 @@ components:
         column2:
           components: []
   - type: Group
+    id: parte 4 - Ditadura, Deslocamentos e Desmatamento
+    shortTitle: parte 4 - Ditadura, Deslocamentos e Desmatamento
+    longTitle: parte 4 - Ditadura, Deslocamentos e Desmatamento
+    description: bloco título
+    showInMenu: true
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem_09_itaipu.jpg
+    overlay: light
+    components:
+      - type: Columns
+        paddingTop: true
+        paddingBottom: true
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                ###### **parte IV**
+
+                ## **Ditadura, Deslocamentos Forçados & Desmatamento**
+
+                ## **(1964 – 1984)**
+        column2:
+          components: []
+  - type: Group
     id: parte 4 - ditadura deslocamento desmatamento
     shortTitle: parte 4 - ditadura deslocamento desmatamento
     longTitle: Ditadura, Deslocamentos & Desmatamento
