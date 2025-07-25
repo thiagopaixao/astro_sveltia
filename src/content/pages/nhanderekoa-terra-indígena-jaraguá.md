@@ -345,8 +345,8 @@ components:
               alt: Planta da Via Anhanguera, década de 40 (Arquivo Biblioteca do Departamento de Estradas e Rodagens)
               description: Planta da Via Anhanguera, década de 40 (Arquivo Biblioteca do Departamento de Estradas e Rodagens)
   - type: Group
-    id: parte 3 - título
-    shortTitle: parte 3 - título
+    id: parte 3 - retomada do jaragua
+    shortTitle: parte 3 - retomada do jaragua
     longTitle: A Retomada do Jaraguá
     description: ''
     showInMenu: true
@@ -378,8 +378,8 @@ components:
         column2:
           components: []
   - type: Group
-    id: parte 3 - retomada do jaragua
-    shortTitle: parte 3 - retomada do jaragua
+    id: parte 3 - texto 1
+    shortTitle: parte 3 - texto 1
     longTitle: ''
     description: ''
     showInMenu: false
@@ -401,26 +401,26 @@ components:
             - type: Text
               hasDropCap: true
               content: |-
-                No arco do século XIX ao início do século XX, ocorrem grandes migrações Guarani da região fronteiriça do Paraná e do Mato Grosso do Sul para o estado de São Paulo. Como identificado por Curt Nimuendajú, nos anos 1810, 1820 e 1870, e possivelmente em outros períodos do século XIX, registram-se migrações de grupos Guarani vindos da região do Iguatemi, na fronteira entre o Paraná e o Mato Grosso. 
+                No arco do século XIX ao início do século XX, ocorrem grandes migrações Guarani da região fronteiriça do Paraná e do Mato Grosso do Sul para o estado de São Paulo.
 
-                 Em 1910, sabe-se da migração de outro grande grupo Guarani vindo da região fronteiriça Brasil-Paraguai-Argentina para a região de Itariri no Vale do Ribeira, atual Terra Indígena Itariri. Segundo os estudos do etnólogo Egon Schande, entre 1923 e 1946 registram-se sucessivas migrações de grupos Guarani vindos do sul do Brasil para o estado de São Paulo, assentando-se principalmente no litoral. 
+                Como identificado por Curt Nimuendajú, nos anos 1810, 1820 e 1870, e possivelmente em outros períodos do século XIX, registram-se migrações de grupos Guarani vindos da região do Iguatemi, na fronteira entre o Paraná e o Mato Grosso. Em 1910, sabe-se da migração de outro grande grupo Guarani vindo da região fronteiriça Brasil-Paraguai-Argentina para a região de Itariri no Vale do Ribeira, atual Terra Indígena Itariri. Segundo os estudos do etnólogo Egon Schande, entre 1923 e 1946 registram-se sucessivas migrações de grupos Guarani vindos do sul do Brasil para o estado de São Paulo, assentando-se principalmente no litoral. 
 
-                 Estes últimos grupos formam a geração imediatamente anterior de vários moradores das T.I.s Jaraguá e Tenondé Porã na cidade de São Paulo. Entre eles está a cacica Jandira, fundadora da Tekoa Ytu no início dos anos 1960, primeira tekoa da retomada do Jaraguá. 
+                Estes últimos grupos formam a geração imediatamente anterior de vários moradores das T.I.s Jaraguá e Tenondé Porã na cidade de São Paulo. Entre eles está a cacica Jandira, fundadora da Tekoa Ytu no início dos anos 1960, primeira tekoa da retomada do Jaraguá. 
 
-                Após a criação do Serviço de Proteção aos Índios (SPI) em 1910, os povos Guarani são alvo de uma política sistemática de aldeamentos. No estado de São Paulo, o SPI busca concentrar famílias Guarani no Posto Indígena do Bananal no litoral, em Itanhaém, e no Posto Indígena de Araribá no interior, despovoando a cidade de São Paulo da presença Guarani.
+                Após a criação do Serviço de Proteção aos Índios (SPI) em 1910, os povos Guarani são alvo de uma política sistemática de aldeamentos. No estado de São Paulo, o SPI busca concentrar as famílias Guarani no Posto Indígena do Bananal em Itanhaém, no litoral, e no Posto Indígena de Araribá, no interior, despovoando a cidade de São Paulo da presença Guarani.  
 
-                Com sua resistência ancestral, fugindo dos aldeamentos, algumas famílias iniciam retomadas no Jaraguá e na região de Parelheiros, atuais Terra Indígena Jaraguá e Terra Indígena Tenondé Porã.
+                Com sua resistência ancestral, fugindo dos aldeamentos, algumas famílias iniciam retomadas na cidade de São Paulo no Jaraguá e na região de Parelheiros, atuais Terra Indígena Jaraguá e Terra Indígena Tenondé Porã.
             - type: ImageBlock
               wideImage: false
               src: /uploads/imagem_XX_mapa.jpg
-              alt: 'Análise de fotografia aérea do Jaraguá de 1954, identificando o local de origem da Tekoa Ytu Fonte: Geosampa [Referência: FX02-159]'
-              description: 'Análise de fotografia aérea do Jaraguá de 1954, identificando o local de origem da Tekoa Ytu Fonte: Geosampa [Referência: FX02-159]'
+              alt: asd
+              description: Nesta análise espacial de uma imagem aerofotogramétrica de 1950, é possível identificar a área onde foi estabelecida a Tekoa Ytu, próxima de fontes de água ao pé do morro do Jaraguá. Marcado em verde, alterações na estrutura da mata indicam a possível presença de assentamentos Guarani na região anteriores a 1960-1961, quando a Tekoa Ytu, considerada a primeira retomada do Jaraguá, é estabelecida definitivamente.
             - type: Text
               hasDropCap: true
               content: |-
-                Nos anos 1950, expulso pelo SPI do aldeamento de Bananal, a família de André Samuel dos Santos inicia a retomada das florestas do Jaraguá. Entre 1960 e 1961, o casal de caciques Jandira e Joaquim migra para o Jaraguá e erguem uma tekoa ao lado de uma fonte de água ao pé do morro. A retomada recebe o nome de Tekoa Ytu, “aldeia da cachoeira”. 
+                Nos anos 1950, expulso pelo SPI do aldeamento de Bananal, a família de André Samuel dos Santos, liderança Tupi-Guarani perseguida pelo Estado como “rebelde” conforme mostram documentos do SPI, inicia a retomada das florestas do Jaraguá. Entre 1960 e 1961, o casal de caciques Jandira e Joaquim migra do litoral para o Jaraguá, onde erguem uma tekoa ao lado de uma fonte de água ao pé do morro. 
 
-                Desde então, as florestas do Jaraguá passam a ser um grande refúgio, abrigando famílias Guarani vindas de várias regiões do Brasil.
+                A retomada recebe o nome de Tekoa Ytu, “aldeia da cachoeira”. Desde então, as florestas do Jaraguá passam a ser um grande refúgio, abrigando famílias Guarani vindas de várias regiões do Brasil.
             - type: VideoEmbed
               wideVideo: true
               videoUrl: https://www.youtube.com/embed/80MJwqZdOss?si=wQDvXQFFAxlw8f15
