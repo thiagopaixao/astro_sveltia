@@ -493,24 +493,24 @@ components:
             - type: Text
               hasDropCap: true
               content: |-
-                Seguindo a lógica desenvolvimentista dos anos 1960 e 1970, o período da ditadura militar é marcado por investimentos em mega infraestruturas e pelo planejamento autoritário.  
+                Seguindo a lógica desenvolvimentista dos anos 1960 e 1970, o período da ditadura militar é marcado por investimentos em mega infraestruturas e pelo planejamento autoritário. 
 
-                Na cidade de São Paulo, realizam-se grandes obras urbanas e rodoviárias, como a Rodovia dos Bandeirantes, que atinge diretamente o território ancestral Guarani do Jaraguá. O Pico do Jaraguá é designado para receber torres de antenas de comunicação, e são concedidas terras para o Grupo Bandeirantes, a TV Globo, a Fundação Padre Anchieta (TV Cultura) e o Exército. Em 1972 é construído um grande complexo turístico no parque. 
+                Na cidade de São Paulo, realizam-se grandes obras urbanas e rodoviárias, como a Rodovia dos Bandeirantes, que atinge diretamente o território ancestral Guarani do Jaraguá. O Pico do Jaraguá é designado para receber torres de antenas de comunicação, e são concedidas terras para o Grupo Bandeirantes, a TV Globo, a Fundação Padre Anchieta (TV Cultura) e o Exército. Em 1972 é construído um grande complexo turístico no parque.
 
-                Na esteira destas obras, a especulação imobiliária e a urbanização expandem-se vertiginosamente nas margens de São Paulo, avançando sobre as florestas do Jaraguá. O período entre 1960 e 1980 registra altos índices de desmatamento na franja na zona norte da cidade, com a criação de bairros inteiros como Pirituba e o adensamento do bairro do Jaraguá.
+                Na esteira destas obras, a especulação imobiliária e a urbanização expandem-se vertiginosamente nas margens de São Paulo, avançando sobre as florestas do Jaraguá. As décadas entre 1960 e 1980 registram altos índices de desmatamento na franja da zona norte da cidade, com a criação de bairros inteiros como Pirituba e o adensamento do bairro do Jaraguá.
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_11_bandeirantesconstrucao.jpg
               alt: ''
-              description: 'construção da Rodovia dos Bandeirantes na região do Pico do Jaraguá (Fonte: CPDOC FGV)'
+              description: 'construção Obras da construção da Rodovia dos Bandeirantes na região do Pico do Jaraguá ( Fonte: Arquivo FGV CPDOC) Rodovia dos Bandeirantes na região do Pico do Jaraguá (Fonte: CPDOC FGV)'
             - type: Text
               hasDropCap: true
               content: |-
-                Ao passo que os “grandes empreendimentos” avançavam no território, os povos indígenas eram sistematicamente violentados e reprimidos pelo regime militar.      
+                Ao passo que os “grandes empreendimentos” da ditadura militar avançavam Brasil afora, os povos indígenas eram sistematicamente violentados e reprimidos pelo regime.      
 
-                Como mostra o relatório da Comissão Nacional da Verdade, no contexto dos planos de desenvolvimento nacional dos anos 1960-1980, inúmeras comunidades Indígenas foram submetidas a transferências e remoções forçadas executadas por agentes de Estado para abrir terras para obras de infraestrutura.
+                Como mostra o relatório da Comissão Nacional da Verdade, no contexto dos planos de desenvolvimento nacional, inúmeras comunidades Indígenas foram submetidas a transferências e remoções forçadas executadas por agentes de estado para abrir terras para obras de infraestrutura.
 
-                É o caso da construção da Usina Hidrelétrica de Itaipú no centro do território ancestral Guarani no Oeste do Paraná. O imenso lago artificial de Itaipú inundou dezenas de tekoas, e várias famílias Guarani foram forçadas a deixar seu território, algumas migrando para São Paulo.
+                É o caso da construção da Usina Hidrelétrica de Itaipu no centro do território ancestral Guarani no Oeste do Paraná. O imenso lago artificial de Itaipu inundou dezenas de tekoas, e várias famílias Guarani foram forçadas a deixar suas terras, algumas migrando para São Paulo. 
 
                 Ao mesmo tempo, lideranças indígenas eram perseguidas pelo Estado por seu ativismo político pela defesa dos territórios, ou tornavam-se alvo de milícias ruralistas, como no caso do grande líder guarani-ñadeva Marçal de Souza. Um dos precursores das lutas guarani pela recuperação e reconhecimento de seus territórios ancestrais, Marçal de Souza, Tupã-Y, foi assassinado por pistoleiros no Mato Grosso do Sul em novembro de 1983.
             - type: VideoEmbed
@@ -536,7 +536,7 @@ components:
               wideImage: true
               src: /uploads/imagem_12_mapaitaipu.jpg
               alt: ''
-              description: Mapa das Tekoas inundadas e forçosamente removidas durante a construção da Usina Hidrelétrica de Itaipu.
+              description: 'Mapa das tekoas inundadas e forçosamente removidas da região do lago artificial de Itaipu (Fonte: agência autônoma e CGY)'
   - type: Group
     id: parte 5 - Retorno a Democracia & Demarcacao da Tekoa Ytu
     shortTitle: parte 5 - Retorno a Democracia & Demarcacao da Tekoa Ytu
