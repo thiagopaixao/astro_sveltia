@@ -137,15 +137,19 @@ components:
               alt: ''
               description: mata do jaraguá
   - type: Map
-    id: asdasdasdas
-    shortTitle: asdasdasd
-    longTitle: asdasdasda
+    id: mapa - ti jaragua
+    shortTitle: mapa - ti jaragua
+    longTitle: mapa - ti jaragua
     description: ''
     showInMenu: false
     animations: true
     txtColor: Primary
     bgColor: Secundary
-    components: []
+    components:
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_intro
     columnAlign: left
     floatingText: false
   - type: Group
@@ -265,10 +269,6 @@ components:
         desktop: 600px
         tablet: 600px
         mobile: 600px
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: resistencia_intro_map
     columnAlign: right
     floatingText: false
   - type: Group
