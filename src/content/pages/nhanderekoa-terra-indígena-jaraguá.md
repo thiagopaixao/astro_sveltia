@@ -323,7 +323,7 @@ components:
 
                 Em 1961, no contexto do estabelecimento das primeiras reservas florestais nacionais, cria-se o Parque Estadual do Jaraguá, que pela primeira vez garante algum nível de proteção ambiental aos remanescentes de Mata Atlântica no Pico do Jaraguá.
             - type: ImageBlock
-              wideImage: true
+              wideImage: false
               src: /uploads/imagem_05_mapadoPEJ.jpg
               alt: Mapa dos limites do Parque Estadual do Jaraguá apresentado no Processo de Tombamento do CONDEPHAAT de 1978
               description: Mapa dos limites do Parque Estadual do Jaraguá apresentado no Processo de Tombamento do CONDEPHAAT de 1978
@@ -336,7 +336,16 @@ components:
 
                 Estas grandes infraestruturas de transporte e energia inter-urbanas abrem caminho para a voraz especulação imobiliária que se daria nas décadas seguintes, principalmente com o regime militar depois do golpe de 1964.
         column2:
-          components: []
+          components:
+            - type: ImageBlock
+              wideImage: false
+              src: /uploads/imagem_18_mapa_anhanguera.jpg
+              alt: Planta da Via Anhanguera, década de 40 (Arquivo Biblioteca do Departamento de Estradas e Rodagens)
+              description: Planta da Via Anhanguera, década de 40 (Arquivo Biblioteca do Departamento de Estradas e Rodagens)
+            - type: Spacer
+              desktop: 500px
+              tablet: 500px
+              mobile: 500px
   - type: Group
     id: parte 3 - título
     shortTitle: parte 3 - título
