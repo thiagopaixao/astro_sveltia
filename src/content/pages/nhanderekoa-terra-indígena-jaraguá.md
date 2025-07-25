@@ -1087,7 +1087,22 @@ components:
       - type: backgroundImage
         imgSrc: /uploads/imagem_27_casa_abelhas_marcio.jpg
     overlay: light
-    components: []
+    components:
+      - type: Columns
+        paddingTop: true
+        paddingBottom: true
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                ###### **parte IX**
+
+                ## **Práticas Espaciais do Cuidado & da Reparação**
+        column2:
+          components: []
   - type: Group
     id: parte 9 - texto 1
     shortTitle: parte 9 - texto 1
