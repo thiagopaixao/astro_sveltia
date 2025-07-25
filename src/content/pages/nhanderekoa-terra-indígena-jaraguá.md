@@ -676,9 +676,7 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_16_ocupacao_antena.jpg
+    backgroundMedia: []
     overlay: ''
     components:
       - type: Columns
