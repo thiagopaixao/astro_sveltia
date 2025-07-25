@@ -723,12 +723,17 @@ components:
 
                 Dois anos depois, em 2015, sob pressão dos grandes protestos realizados por ativistas Guarani em São Paulo, o governo de Dilma Rousseff reconhece a posse indígena permanente do Jaraguá  em ato histórico celebrado por toda Yvyrupa (Portaria 58).
             - type: ImageBlock
-              wideImage: false
+              wideImage: true
               src: /uploads/imagem_19_ocupacao_antena.jpg
               alt: ''
               description: 'Ocupação das antenas no Parque Estadual do Jaraguá, 2017 ( Fonte: Comissão Guarani Yvyrupa)'
         column2:
-          components: []
+          components:
+            - type: ImageBlock
+              wideImage: false
+              src: /uploads/imagem_20_ocupacao_bandeirantes.jpg
+              alt: ''
+              description: 'Bloqueio da Rodovia dos Bandeirantes (Fonte: Comissão Guarani Yvyrupa)'
   - type: Group
     id: parte 8 - patrimonialização do colonialismo
     shortTitle: parte 8 - patrimonialização do colonialismo
