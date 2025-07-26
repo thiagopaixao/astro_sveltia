@@ -606,6 +606,6 @@ components:
             alt: ''
             description: Vídeo da campanha “Resistência Guarani SP” realizado por Comissão Guarani Yvyrupa
     columnAlign: right
-    floatingText: true
+    floatingText: false
 ---
 
