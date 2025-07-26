@@ -197,33 +197,6 @@ mapbox:
           colorIcon: '#597d5dff'
           typeIcon: outlined
           text: Terra indígena demarcada
-    - id: resistencia_2014_1
-      centerLng: '-46.640'
-      centerLat: '-23.545'
-      zoom: '12.90'
-      mobileZoom: '12.90'
-      duration: '3000'
-      bearing: '0'
-      pitch: '0'
-      layers: |-
-        resistencia-poligonos[Nome==2014-16-04]
-        ti-jaragua-aldeias
-        ti-jaragua-recorte
-      title: ''
-      notes: ''
-      items:
-        - icon: circle
-          colorIcon: '#f64141ff'
-          typeIcon: outlined
-          text: Aldeias
-        - icon: square
-          colorIcon: '#597d5dff'
-          typeIcon: outlined
-          text: Terra indígena demarcada
-        - icon: square
-          colorIcon: '#24e037ff'
-          typeIcon: outlined
-          text: Local do protesto
     - id: resistencia_2014_2
       centerLng: '-46.636'
       centerLat: '-23.548'
