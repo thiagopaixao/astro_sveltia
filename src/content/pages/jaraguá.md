@@ -60,28 +60,6 @@ mapbox:
           colorIcon: '#597d5dff'
           typeIcon: outlined
           text: Terra indígena demarcada
-    - id: resistencia_intro_map
-      centerLng: '-46.763'
-      centerLat: '-23.459'
-      zoom: '12.6'
-      mobileZoom: '12.6'
-      duration: '3000'
-      bearing: '0'
-      pitch: '0'
-      layers: |-
-        ti-jaragua-aldeias
-        ti-jaragua-recorte
-      title: ''
-      notes: ''
-      items:
-        - icon: circle
-          colorIcon: '#f64141ff'
-          typeIcon: outlined
-          text: Aldeias
-        - icon: square
-          colorIcon: '#597d5dff'
-          typeIcon: outlined
-          text: Terra indígena demarcada
     - id: resistencia_2013_1
       centerLng: '-46.765'
       centerLat: '-23.459'
@@ -110,10 +88,10 @@ mapbox:
           typeIcon: outlined
           text: Local do protesto
     - id: resistencia_2013_2
-      centerLng: '-46.752'
-      centerLat: '-23.460'
-      zoom: '15'
-      mobileZoom: '15'
+      centerLng: '-46.753'
+      centerLat: '-23.459'
+      zoom: '15.14'
+      mobileZoom: '15.14'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -157,10 +135,10 @@ mapbox:
           typeIcon: outlined
           text: Terra indígena demarcada
     - id: resistencia_2013_4
-      centerLng: '-46.650'
-      centerLat: '-23.571'
-      zoom: '13.17'
-      mobileZoom: '13.17'
+      centerLng: '-46.656'
+      centerLat: '-23.572'
+      zoom: '13.52'
+      mobileZoom: '13.52'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -318,14 +296,6 @@ components:
         desktop: 600px
         tablet: 600px
         mobile: 600px
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: resistencia_intro_map
-      - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
     columnAlign: center
     floatingText: true
   - type: Map
@@ -359,9 +329,9 @@ components:
             content: ''
             text: '2013'
           - type: Spacer
-            desktop: 70px
-            tablet: 70px
-            mobile: 70px
+            desktop: 150px
+            tablet: 150px
+            mobile: 150px
           - type: TimelineBullet
             content: Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã.
             text: 26/09
