@@ -175,6 +175,28 @@ mapbox:
           colorIcon: '#24e037ff'
           typeIcon: outlined
           text: Monumento às Bandeiras
+    - id: resistencia_2013_6
+      centerLng: '-46.710'
+      centerLat: '-23.516'
+      zoom: '11.39'
+      mobileZoom: '11.39'
+      duration: '3000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua-aldeias
+        ti-jaragua-recorte
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#f64141ff'
+          typeIcon: outlined
+          text: Aldeias
+        - icon: square
+          colorIcon: '#597d5dff'
+          typeIcon: outlined
+          text: Terra indígena demarcada
     - id: resistencia_2014_1
       centerLng: '-46.710'
       centerLat: '-23.516'
@@ -184,6 +206,7 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
+        resistencia-poligonos[Nome==2014-16-04]
         ti-jaragua-aldeias
         ti-jaragua-recorte
       title: ''
@@ -197,6 +220,10 @@ mapbox:
           colorIcon: '#597d5dff'
           typeIcon: outlined
           text: Terra indígena demarcada
+        - icon: square
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Local do protesto
     - id: resistencia_2014_2
       centerLng: '-46.710'
       centerLat: '-23.516'
@@ -206,7 +233,7 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-poligonos[id==4]
+        resistencia-poligonos[Nome==2014-16-04]
         ti-jaragua-aldeias
         ti-jaragua-recorte
       title: ''
@@ -220,6 +247,10 @@ mapbox:
           colorIcon: '#597d5dff'
           typeIcon: outlined
           text: Terra indígena demarcada
+        - icon: square
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Local do protesto
     - id: resistencia_2014_3
       centerLng: '-46.635'
       centerLat: '-23.548'
@@ -229,11 +260,15 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-poligonos[id==4]
+        resistencia-poligonos[Nome==2014-16-04]
         satelite
       title: ''
       notes: ''
-      items: []
+      items:
+        - icon: square
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Local do protesto
 components:
   - type: Group
     id: Teste
@@ -519,10 +554,14 @@ components:
             src: /uploads/2014 [16_04]_CGY.png
             alt: ''
             description: Vídeo da campanha “Resistência Guarani SP” realizado por Comissão Guarani Yvyrupa
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
         mapView: resistencia_2014-24-04
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_2013_6
     columnAlign: right
     floatingText: false
   - type: Map
@@ -539,10 +578,15 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: resistencia_2014_1
-      - type: Spacer
-        desktop: 150px
-        tablet: 150px
-        mobile: 150px
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: ''
+            text: '2014'
+          - type: Spacer
+            desktop: 200px
+            tablet: 200px
+            mobile: 200px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -550,20 +594,7 @@ components:
       - type: Timeline
         components:
           - type: TimelineBullet
-            content: ''
-            text: '2014'
-      - type: Spacer
-        desktop: 150px
-        tablet: 150px
-        mobile: 150px
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: resistencia_2014_3
-      - type: Timeline
-        components:
-          - type: TimelineBullet
-            content: Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta
+            content: Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta.
             text: 16/04
           - type: ImageBlock
             wideImage: false
@@ -575,6 +606,10 @@ components:
             src: /uploads/2014 [16_04]_CGY.png
             alt: ''
             description: Vídeo da campanha “Resistência Guarani SP” realizado por Comissão Guarani Yvyrupa
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_2014_3
     columnAlign: right
     floatingText: false
 ---
