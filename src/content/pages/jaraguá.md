@@ -547,10 +547,6 @@ components:
     txtColor: Secondary
     bgColor: Highlight
     components:
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: resistencia_2014_1
       - type: Timeline
         components:
           - type: TimelineBullet
