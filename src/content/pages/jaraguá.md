@@ -547,21 +547,19 @@ components:
     txtColor: Secondary
     bgColor: Highlight
     components:
-      - type: Timeline
-        components:
-          - type: TimelineBullet
-            content: ''
-            text: '2014'
-          - type: Spacer
-            desktop: 350px
-            tablet: 350px
-            mobile: 350px
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: resistencia_2014_2
       - type: Timeline
         components:
+          - type: TimelineBullet
+            content: ''
+            text: '2014'
+          - type: Spacer
+            desktop: 150px
+            tablet: 150px
+            mobile: 150px
           - type: TimelineBullet
             content: Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta.
             text: 16/04
