@@ -701,14 +701,6 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: resistencia_2014_4
-      - type: Spacer
-        desktop: 400px
-        tablet: 400px
-        mobile: 400px
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: resistencia_2014_5
       - type: Timeline
         components:
           - type: TimelineBullet
@@ -724,6 +716,14 @@ components:
             src: /uploads/2014 [06_06]_Beatriz Macruz.jpg
             alt: ''
             description: ''
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_2014_5
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
       - type: MapView
         txtColor: ''
         bgColor: ''
