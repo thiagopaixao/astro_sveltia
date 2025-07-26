@@ -198,10 +198,10 @@ mapbox:
           typeIcon: outlined
           text: Terra indígena demarcada
     - id: resistencia_2014_1
-      centerLng: '-46.710'
-      centerLat: '-23.516'
-      zoom: '11.39'
-      mobileZoom: '11.39'
+      centerLng: '-46.640'
+      centerLat: '-23.545'
+      zoom: '12.90'
+      mobileZoom: '12.90'
       duration: '3000'
       bearing: '0'
       pitch: '0'
@@ -225,10 +225,10 @@ mapbox:
           typeIcon: outlined
           text: Local do protesto
     - id: resistencia_2014_2
-      centerLng: '-46.710'
-      centerLat: '-23.516'
-      zoom: '11.39'
-      mobileZoom: '11.39'
+      centerLng: '-46.636'
+      centerLat: '-23.548'
+      zoom: '14.83'
+      mobileZoom: '14.83'
       duration: '3000'
       bearing: '0'
       pitch: '0'
@@ -254,8 +254,8 @@ mapbox:
     - id: resistencia_2014_3
       centerLng: '-46.635'
       centerLat: '-23.548'
-      zoom: '16.15'
-      mobileZoom: '16.15'
+      zoom: '16.04'
+      mobileZoom: '16.04'
       duration: '3000'
       bearing: '0'
       pitch: '0'
@@ -554,9 +554,9 @@ components:
             src: /uploads/2014 [16_04]_CGY.png
             alt: ''
             description: Vídeo da campanha “Resistência Guarani SP” realizado por Comissão Guarani Yvyrupa
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
         mapView: resistencia_2014-24-04
       - type: MapView
         txtColor: ''
