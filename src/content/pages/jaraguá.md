@@ -242,6 +242,61 @@ mapbox:
           colorIcon: '#24e037ff'
           typeIcon: outlined
           text: Local do protesto
+    - id: resistencia_2014_3
+      centerLng: '-46.644'
+      centerLat: '-23.557'
+      zoom: '13.57'
+      mobileZoom: '13.57'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-poligonos[Nome==2014-16-04]
+        resistencia-linhas[Nome==2014-24-04]
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Trajeto percorrido
+    - id: resistencia_2014_4
+      centerLng: '-46.642'
+      centerLat: '-23.566'
+      zoom: '13.14'
+      mobileZoom: '13.14'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-poligonos[Nome==2014-16-04]
+        resistencia-linhas[Nome==2014-24-04]
+        resistencia-pontos[Nome==2014-06-06]
+      title: ''
+      notes: ''
+      items:
+        - icon: square
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Local do protesto
+    - id: resistencia_2014_5
+      centerLng: '-46.659'
+      centerLat: '-23.581'
+      zoom: '15.96'
+      mobileZoom: '15.96'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        satelite
+        resistencia-poligonos[Nome==2014-06-06]
+      title: ''
+      notes: ''
+      items:
+        - icon: square
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Local do protesto
 components:
   - type: Group
     id: Teste
@@ -577,6 +632,33 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: resistencia_2014_2
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_2014_3
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: Protesto partindo do MASP até a praça Roosevelt, exigindo a demarcação das terras Jaraguá e Tenondé Porã.
+            text: 24/04
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [24_04]_01_FOLHA PRESS.png
+            alt: ''
+            description: 'Protesto pedindo a demarcação da Terra Indígena Jaraguá e da Terra Indígena Tenondé Porã. Fonte: Eduardo Anizelli/Folhapress'
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [24_04]_02_FOLHA PRESS.png
+            alt: ''
+            description: 'Protesto pedindo a demarcação da Terra Indígena Jaraguá e da Terra Indígena Tenondé Porã. Fonte: Eduardo Anizelli/Folhapress'
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_2014_4
       - type: Spacer
         desktop: 500px
         tablet: 500px
