@@ -197,7 +197,7 @@ mapbox:
           colorIcon: '#597d5dff'
           typeIcon: outlined
           text: Terra indígena demarcada
-    - id: resistencia_2014_2
+    - id: resistencia_2014_1
       centerLng: '-46.636'
       centerLat: '-23.548'
       zoom: '14.83'
@@ -224,11 +224,11 @@ mapbox:
           colorIcon: '#24e037ff'
           typeIcon: outlined
           text: Local do protesto
-    - id: resistencia_2014_3
+    - id: resistencia_2014_2
       centerLng: '-46.635'
       centerLat: '-23.548'
-      zoom: '16.04'
-      mobileZoom: '16.04'
+      zoom: '16.34'
+      mobileZoom: '16.34'
       duration: '3000'
       bearing: '0'
       pitch: '0'
@@ -550,7 +550,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: resistencia_2014_2
+        mapView: resistencia_2014_1
       - type: Timeline
         components:
           - type: TimelineBullet
@@ -576,7 +576,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: resistencia_2014_3
+        mapView: resistencia_2014_2
       - type: Spacer
         desktop: 500px
         tablet: 500px
