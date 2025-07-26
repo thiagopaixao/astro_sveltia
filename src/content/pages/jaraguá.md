@@ -261,10 +261,10 @@ mapbox:
           typeIcon: outlined
           text: Trajeto percorrido
     - id: resistencia_2014_4
-      centerLng: '-46.642'
-      centerLat: '-23.566'
-      zoom: '13.14'
-      mobileZoom: '13.14'
+      centerLng: '-46.647'
+      centerLat: '-23.567'
+      zoom: '13.11'
+      mobileZoom: '13.11'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -297,6 +297,48 @@ mapbox:
           colorIcon: '#24e037ff'
           typeIcon: outlined
           text: Local do protesto
+    - id: resistencia_2014_6
+      centerLng: '-46.658'
+      centerLat: '-23.560'
+      zoom: '15.61'
+      mobileZoom: '15.61'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-poligonos[Nome==2014-25-07]
+        resistencia-linhas[Nome==2014-24-04]
+      title: ''
+      notes: ''
+      items:
+        - icon: square
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Prédio do Tribunal Regional Federal em São Paulo
+    - id: resistencia_2014_7
+      centerLng: '-46.710'
+      centerLat: '-23.516'
+      zoom: '11.39'
+      mobileZoom: '11.39'
+      duration: '3000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-poligonos[Nome==2014-25-07]
+        resistencia-linhas[Nome==2014-24-04]
+        ti-jaragua-aldeias
+        ti-jaragua-recorte
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#f64141ff'
+          typeIcon: outlined
+          text: Aldeias
+        - icon: square
+          colorIcon: '#597d5dff'
+          typeIcon: outlined
+          text: Terra indígena demarcada
 components:
   - type: Group
     id: Teste
@@ -659,6 +701,62 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: resistencia_2014_4
+      - type: Spacer
+        desktop: 400px
+        tablet: 400px
+        mobile: 400px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_2014_5
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: Protesto na Assembleia Legislativa de São Paulo e no Monumento às Bandeiras pelo arquivamento da PEC 215 e pela demarcação das T.I.s Jaraguá e Tenondé Porã
+            text: 06/06
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [06_06]_Guilherme Zocchio.jpg
+            alt: ''
+            description: ''
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [06_06]_Beatriz Macruz.jpg
+            alt: ''
+            description: ''
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_2014_6
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: Manifestação em frente ao prédio do Tribunal Regional Federal em São Paulo contra reintegração de posse da Tekoa Pyau e pela demarcação das Terras Guarani no município
+            text: 25/07
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [25_07]_Reporter Brasil.png
+            alt: ''
+            description: 'Protesto para pressionar o Ministério da Justiça a emitir as portarias declaratórias das terras indígenas Jaraguá e Tenondé Porã e contra a decisão de reintegração de posse da Tekoa Pyau, na TI Jaraguá. Fonte: Repórter Brasil'
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [25_07]_01_Fabio Braga-Folha Press.png
+            alt: ''
+            description: 'Fonte: Fabio Braga/Folhapress'
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [25_07]_02_Fabio Braga-Folha Press.png
+            alt: ''
+            description: 'Fonte: Fabio Braga/Folhapress'
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_2014_7
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: '###### PORTARIA DECLARATÓRIA TI JARAGUÁ'
+            text: '2015'
       - type: Spacer
         desktop: 500px
         tablet: 500px
