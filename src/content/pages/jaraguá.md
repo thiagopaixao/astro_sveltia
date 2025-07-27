@@ -753,9 +753,9 @@ components:
         bgColor: ''
         mapView: resistencia_2014_7
       - type: Spacer
-        desktop: 350px
-        tablet: 350px
-        mobile: 350px
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
       - type: Timeline
         components:
           - type: TimelineBullet
