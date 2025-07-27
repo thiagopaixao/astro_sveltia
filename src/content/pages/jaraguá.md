@@ -854,6 +854,10 @@ components:
         desktop: 500px
         tablet: 500px
         mobile: 500px
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
     columnAlign: right
     floatingText: false
 ---
