@@ -842,15 +842,15 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: resistencia_2014_8
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
       - type: Timeline
         components:
           - type: TimelineBullet
             content: '###### PORTARIA DECLARATÓRIA TI JARAGUÁ'
             text: '2015'
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-      - type: Spacer
         desktop: 500px
         tablet: 500px
         mobile: 500px
