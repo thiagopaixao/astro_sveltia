@@ -697,19 +697,30 @@ components:
             src: /uploads/2014 [24_04]_02_FOLHA PRESS.png
             alt: ''
             description: 'Protesto pedindo a demarcação da Terra Indígena Jaraguá e da Terra Indígena Tenondé Porã. Fonte: Eduardo Anizelli/Folhapress'
+      - type: Spacer
+        txtColor: ''
+        bgColor: ''
+        desktop: 350px
+        tablet: 350px
+        mobile: 350px
+        mapView: resistencia_2014_4
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: resistencia_2014_4
-      - type: Spacer
         desktop: 600px
         tablet: 600px
         mobile: 600px
+        mapView: resistencia_2014_4
+      - type: Spacer
+        txtColor: ''
+        bgColor: ''
+        desktop: 350px
+        tablet: 350px
+        mobile: 350px
+        mapView: resistencia_2014_5
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: resistencia_2014_5
-      - type: Timeline
         components:
           - type: TimelineBullet
             content: Protesto na Assembleia Legislativa de São Paulo e no Monumento às Bandeiras pelo arquivamento da PEC 215 e pela demarcação das T.I.s Jaraguá e Tenondé Porã
@@ -724,11 +735,32 @@ components:
             src: /uploads/2014 [06_06]_Beatriz Macruz.jpg
             alt: ''
             description: ''
+        mapView: resistencia_2014_5
+      - type: Timeline
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: Protesto na Assembleia Legislativa de São Paulo e no Monumento às Bandeiras pelo arquivamento da PEC 215 e pela demarcação das T.I.s Jaraguá e Tenondé Porã
+            text: 06/06
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [06_06]_Guilherme Zocchio.jpg
+            alt: ''
+            description: ''
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [06_06]_Beatriz Macruz.jpg
+            alt: ''
+            description: ''
+        mapView: resistencia_2014_6
+      - type: Spacer
+        desktop: 350px
+        tablet: 350px
+        mobile: 350px
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: resistencia_2014_6
-      - type: Timeline
         components:
           - type: TimelineBullet
             content: Manifestação em frente ao prédio do Tribunal Regional Federal em São Paulo contra reintegração de posse da Tekoa Pyau e pela demarcação das Terras Guarani no município
@@ -748,11 +780,42 @@ components:
             src: /uploads/2014 [25_07]_02_Fabio Braga-Folha Press.png
             alt: ''
             description: 'Fonte: Fabio Braga/Folhapress'
+        mapView: resistencia_2014_6
+      - type: Timeline
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: Manifestação em frente ao prédio do Tribunal Regional Federal em São Paulo contra reintegração de posse da Tekoa Pyau e pela demarcação das Terras Guarani no município
+            text: 25/07
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [25_07]_Reporter Brasil.png
+            alt: ''
+            description: 'Protesto para pressionar o Ministério da Justiça a emitir as portarias declaratórias das terras indígenas Jaraguá e Tenondé Porã e contra a decisão de reintegração de posse da Tekoa Pyau, na TI Jaraguá. Fonte: Repórter Brasil'
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [25_07]_01_Fabio Braga-Folha Press.png
+            alt: ''
+            description: 'Fonte: Fabio Braga/Folhapress'
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [25_07]_02_Fabio Braga-Folha Press.png
+            alt: ''
+            description: 'Fonte: Fabio Braga/Folhapress'
+        mapView: resistencia_2014_7
       - type: MapView
         txtColor: ''
         bgColor: ''
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
         mapView: resistencia_2014_7
       - type: Spacer
+        components:
+          - type: TimelineBullet
+            content: '###### PORTARIA DECLARATÓRIA TI JARAGUÁ'
+            text: '2015'
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -761,6 +824,9 @@ components:
           - type: TimelineBullet
             content: '###### PORTARIA DECLARATÓRIA TI JARAGUÁ'
             text: '2015'
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
       - type: Spacer
         desktop: 500px
         tablet: 500px
