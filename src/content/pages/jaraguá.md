@@ -316,6 +316,25 @@ mapbox:
           typeIcon: outlined
           text: Prédio do Tribunal Regional Federal em São Paulo
     - id: resistencia_2014_7
+      centerLng: '-46.647'
+      centerLat: '-23.567'
+      zoom: '13.11'
+      mobileZoom: '13.11'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-poligonos[Nome==2014-16-04]
+        resistencia-linhas[Nome==2014-24-04]
+        resistencia-pontos[Nome==2014-06-06]
+      title: ''
+      notes: ''
+      items:
+        - icon: square
+          colorIcon: '#24e037ff'
+          typeIcon: outlined
+          text: Local do protesto
+    - id: resistencia_2014_8
       centerLng: '-46.710'
       centerLat: '-23.516'
       zoom: '11.39'
@@ -819,6 +838,10 @@ components:
         desktop: 500px
         tablet: 500px
         mobile: 500px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: resistencia_2014_8
       - type: Timeline
         components:
           - type: TimelineBullet
