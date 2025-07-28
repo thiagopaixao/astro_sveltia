@@ -40,8 +40,8 @@ mapbox:
     - id: map1_ti_map
       centerLng: '-46.763'
       centerLat: '-23.459'
-      zoom: '12.6'
-      mobileZoom: '12.6'
+      zoom: '13'
+      mobileZoom: '13'
       duration: '3000'
       bearing: '0'
       pitch: '0'
@@ -60,7 +60,7 @@ mapbox:
           typeIcon: outlined
           text: Aldeias
         - icon: circle
-          colorIcon: ''
+          colorIcon: '#1d4e29ff'
           typeIcon: outlined
           text: Pontos de Memória Indígena
         - icon: show_chart
@@ -69,7 +69,7 @@ mapbox:
           text: Limite do Parque Jaraguá
     - id: map1_ytu_map
       centerLng: '-46.754'
-      centerLat: '-23.465'
+      centerLat: '-23.464'
       zoom: '17.20'
       mobileZoom: '17.20'
       duration: '4000'
@@ -81,12 +81,16 @@ mapbox:
         ti-jaragua-recorte
       title: ''
       notes: ''
-      items: []
+      items:
+        - icon: circle
+          colorIcon: '#106013ff'
+          typeIcon: outlined
+          text: Aldeias
     - id: map1_ti_sat
       centerLng: '-46.763'
       centerLat: '-23.459'
-      zoom: '12.6'
-      mobileZoom: '12.6'
+      zoom: '13'
+      mobileZoom: '13'
       duration: '3000'
       bearing: '0'
       pitch: '0'
@@ -115,7 +119,7 @@ mapbox:
           text: Limite do Parque Jaraguá
     - id: map1_ytu_sat
       centerLng: '-46.754'
-      centerLat: '-23.465'
+      centerLat: '-23.464'
       zoom: '17.20'
       mobileZoom: '17.20'
       duration: '4000'
@@ -128,7 +132,11 @@ mapbox:
         satelite
       title: ''
       notes: ''
-      items: []
+      items:
+        - icon: circle
+          colorIcon: '#62df67ff'
+          typeIcon: outlined
+          text: Aldeias
 components:
   - type: Group
     id: home
@@ -220,9 +228,9 @@ components:
         bgColor: ''
         mapView: map1_ti_map
       - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
+        desktop: 800px
+        tablet: 800px
+        mobile: 800px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -248,13 +256,17 @@ components:
             src: /uploads/imagem jaragua_color edited.jpg
             alt: ''
             description: Description
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map1_ti_sat
       - type: Spacer
-        desktop: 600px
-        tablet: 600px
+        desktop: 800px
+        tablet: 800px
         mobile: 600px
       - type: MapView
         txtColor: ''
@@ -281,6 +293,10 @@ components:
             src: /uploads/imagem jaragua_color edited.jpg
             alt: ''
             description: Description
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
     columnAlign: right
     floatingText: false
   - type: Group
