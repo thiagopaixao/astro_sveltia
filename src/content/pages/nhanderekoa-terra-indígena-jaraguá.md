@@ -37,7 +37,7 @@ mapbox:
   columnAlign: center
   floatingText: false
   views:
-    - id: resistencia_intro
+    - id: map1_ti_map
       centerLng: '-46.763'
       centerLat: '-23.459'
       zoom: '12.6'
@@ -48,18 +48,87 @@ mapbox:
       layers: |-
         ti-jaragua-aldeias
         ti-jaragua-recorte
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0a710dff'
+          typeIcon: outlined
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#106013ff'
+          typeIcon: outlined
+          text: Aldeias
+        - icon: circle
+          colorIcon: ''
+          typeIcon: outlined
+          text: Pontos de Memória Indígena
+        - icon: show_chart
+          colorIcon: '#ad2525ff'
+          typeIcon: outlined
+          text: Limite do Parque Jaraguá
+    - id: map1_ytu_map
+      centerLng: '-46.754'
+      centerLat: '-23.465'
+      zoom: '17.20'
+      mobileZoom: '17.20'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua-aldeias-label[nome_aldei==Ytu]
+        ti-jaragua-aldeias
+        ti-jaragua-recorte
+      title: ''
+      notes: ''
+      items: []
+    - id: map1_ti_sat
+      centerLng: '-46.763'
+      centerLat: '-23.459'
+      zoom: '12.6'
+      mobileZoom: '12.6'
+      duration: '3000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua-aldeias-white
+        ti-jaragua-recorte
         satelite
       title: ''
       notes: ''
       items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Terra Indígena Jaraguá
         - icon: circle
-          colorIcon: '#f64141ff'
+          colorIcon: '#62df67ff'
           typeIcon: outlined
           text: Aldeias
-        - icon: square
-          colorIcon: '#597d5dff'
+        - icon: circle
+          colorIcon: ''
           typeIcon: outlined
-          text: Terra Indígena demarcada
+          text: Pontos de Memória Indígena
+        - icon: show_chart
+          colorIcon: '#ad2525ff'
+          typeIcon: outlined
+          text: Limite do Parque Jaraguá
+    - id: map1_ytu_sat
+      centerLng: '-46.754'
+      centerLat: '-23.465'
+      zoom: '17.20'
+      mobileZoom: '17.20'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua-aldeias-label[nome_aldei==Ytu]
+        ti-jaragua-aldeias-white
+        ti-jaragua-recorte
+        satelite
+      title: ''
+      notes: ''
+      items: []
 components:
   - type: Group
     id: home
@@ -149,7 +218,69 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: resistencia_intro
+        mapView: map1_ti_map
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_ytu_map
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: 'Retomada e fundação: década de 1960'
+            text: TEKOA YTU
+          - type: Spacer
+            desktop: 20px
+            tablet: 20px
+            mobile: 20px
+          - type: Text
+            hasDropCap: false
+            content: Uma das mais antigas tekoas, a tekoa Ytu, “aldeia da cachoeira”, foi fundada pela família de Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá, e Joaquim Augusto Martim. O nome se refere ao Ribeirão das Lavras que, por meio de uma pequena cachoeira, chega até a tekoa. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
+          - type: Spacer
+            desktop: 20px
+            tablet: 20px
+            mobile: 20px
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/imagem jaragua_color edited.jpg
+            alt: ''
+            description: Description
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_ti_sat
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_ytu_sat
+      - type: Timeline
+        components:
+          - type: TimelineBullet
+            content: 'Retomada e fundação: década de 1960'
+            text: TEKOA YTU
+          - type: Spacer
+            desktop: 20px
+            tablet: 20px
+            mobile: 20px
+          - type: Text
+            hasDropCap: false
+            content: Uma das mais antigas tekoas, a tekoa Ytu, “aldeia da cachoeira”, foi fundada pela família de Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá, e Joaquim Augusto Martim. O nome se refere ao Ribeirão das Lavras que, por meio de uma pequena cachoeira, chega até a tekoa. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
+          - type: Spacer
+            desktop: 20px
+            tablet: 20px
+            mobile: 20px
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/imagem jaragua_color edited.jpg
+            alt: ''
+            description: Description
     columnAlign: left
     floatingText: false
   - type: Group
