@@ -281,8 +281,8 @@ components:
             src: /uploads/imagem jaragua_color edited.jpg
             alt: ''
             description: Description
-    columnAlign: left
-    floatingText: false
+    columnAlign: right
+    floatingText: true
   - type: Group
     id: parte 1 - texto 2
     shortTitle: parte 1 - texto 2
