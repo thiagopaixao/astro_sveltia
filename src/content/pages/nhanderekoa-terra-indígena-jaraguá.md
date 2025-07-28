@@ -212,8 +212,8 @@ components:
     description: ''
     showInMenu: false
     animations: true
-    txtColor: Primary
-    bgColor: Secundary
+    txtColor: Highlight
+    bgColor: Primary
     components:
       - type: MapView
         txtColor: ''
@@ -282,7 +282,7 @@ components:
             alt: ''
             description: Description
     columnAlign: right
-    floatingText: true
+    floatingText: false
   - type: Group
     id: parte 1 - texto 2
     shortTitle: parte 1 - texto 2
