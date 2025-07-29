@@ -297,7 +297,7 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: map1_ytu_map
-      - type: Timeline
+      - type: Spacer
         components:
           - type: TimelineBullet
             content: 'Retomada e fundação: década de 1960'
@@ -318,10 +318,65 @@ components:
             src: /uploads/imagem jaragua_color edited.jpg
             alt: ''
             description: Description
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: Text
+        hasDropCap: false
+        content: |-
+          ##### TEKOA YTU
+
+          Retomada e fundação: década de 1960
+
+          Uma das mais antigas tekoas, a tekoa Ytu, “aldeia da cachoeira”, foi fundada pela família de Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá, e Joaquim Augusto Martim. O nome se refere ao Ribeirão das Lavras que, por meio de uma pequena cachoeira, chega até a tekoa. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: Spacer
+        desktop: 100px
+        tablet: 100px
+        mobile: 100px
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/imagem jaragua_color edited.jpg
+        alt: ''
+        description: ''
+      - type: Spacer
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_pyau
       - type: Spacer
         desktop: 500px
         tablet: 500px
         mobile: 500px
+      - type: Text
+        hasDropCap: false
+        content: |-
+          ##### TEKOA PYAU
+
+          Retomada e fundação: década de 1960
+
+          Uma das mais antigas tekoas, a tekoa Ytu, “aldeia da cachoeira”, foi fundada pela família de Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá, e Joaquim Augusto Martim. O nome se refere ao Ribeirão das Lavras que, por meio de uma pequena cachoeira, chega até a tekoa. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: Spacer
+        desktop: 100px
+        tablet: 100px
+        mobile: 100px
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/imagem jaragua_color edited.jpg
+        alt: ''
+        description: Legenda legenda legenda legenda
+      - type: Spacer
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
     columnAlign: right
     floatingText: true
   - type: Group
