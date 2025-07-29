@@ -275,18 +275,25 @@ components:
       - type: Timeline
         components:
           - type: TimelineBullet
-            content: 'Retomada e fundação: década de 1960'
-            text: TEKOA YTU
+            content: '###### TEKOA YTU'
+            text: ''
           - type: Spacer
-            desktop: 20px
-            tablet: 20px
-            mobile: 20px
+            desktop: 50px
+            tablet: 50px
+            mobile: 50px
+          - type: Text
+            hasDropCap: false
+            content: 'Retomada e fundação: década de 1960'
+          - type: Spacer
+            desktop: 30px
+            tablet: 30px
+            mobile: 30px
           - type: Text
             hasDropCap: false
             content: Uma das mais antigas tekoas, a tekoa Ytu, “aldeia da cachoeira”, foi fundada pela família de Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá, e Joaquim Augusto Martim. O nome se refere ao Ribeirão das Lavras que, por meio de uma pequena cachoeira, chega até a tekoa. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
           - type: Spacer
-            desktop: 20px
-            tablet: 20px
+            desktop: 50px
+            tablet: 50px
             mobile: 20px
           - type: ImageBlock
             wideImage: false
