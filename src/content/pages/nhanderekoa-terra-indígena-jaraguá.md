@@ -33,11 +33,11 @@ mapbox:
   zoom: '2.5'
   bearing: '0'
   pitch: '0'
-  layers: satelite
+  layers: ''
   columnAlign: center
   floatingText: false
   views:
-    - id: map1_ti_map
+    - id: map1_ti
       centerLng: '-46.763'
       centerLat: '-23.459'
       zoom: '13'
@@ -67,7 +67,7 @@ mapbox:
           colorIcon: '#ad2525ff'
           typeIcon: outlined
           text: Limite do Parque Jaraguá
-    - id: map1_ytu_map
+    - id: map1_ytu
       centerLng: '-46.754'
       centerLat: '-23.464'
       zoom: '17.20'
@@ -86,55 +86,117 @@ mapbox:
           colorIcon: '#106013ff'
           typeIcon: outlined
           text: Aldeias
-    - id: map1_ti_sat
-      centerLng: '-46.763'
-      centerLat: '-23.459'
-      zoom: '13'
-      mobileZoom: '13'
-      duration: '3000'
-      bearing: '0'
-      pitch: '0'
-      layers: |-
-        ti-jaragua-aldeias-white
-        ti-jaragua-recorte
-        satelite
-      title: ''
-      notes: ''
-      items:
-        - icon: show_chart
-          colorIcon: '#0e9013ff'
-          typeIcon: outlined
-          text: Terra Indígena Jaraguá
-        - icon: circle
-          colorIcon: '#62df67ff'
-          typeIcon: outlined
-          text: Aldeias
-        - icon: circle
-          colorIcon: ''
-          typeIcon: outlined
-          text: Pontos de Memória Indígena
-        - icon: show_chart
-          colorIcon: '#ad2525ff'
-          typeIcon: outlined
-          text: Limite do Parque Jaraguá
-    - id: map1_ytu_sat
-      centerLng: '-46.754'
+    - id: map1_pyau
+      centerLng: '-46.752'
       centerLat: '-23.464'
-      zoom: '17.20'
-      mobileZoom: '17.20'
+      zoom: '16.16'
+      mobileZoom: '16.16'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        ti-jaragua-aldeias-label[nome_aldei==Ytu]
-        ti-jaragua-aldeias-white
+        ti-jaragua-aldeias-label[nome_aldei==Tekoa Pyau]
+        ti-jaragua-aldeias
         ti-jaragua-recorte
-        satelite
       title: ''
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#62df67ff'
+          colorIcon: '#106013ff'
+          typeIcon: outlined
+          text: Aldeias
+    - id: map1_itakupe
+      centerLng: '-46.762'
+      centerLat: '-23.449'
+      zoom: '15.22'
+      mobileZoom: '15.22'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua-aldeias-label[nome_aldei==Itakupe]
+        ti-jaragua-aldeias
+        ti-jaragua-recorte
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#106013ff'
+          typeIcon: outlined
+          text: Aldeias
+    - id: map1_itawera
+      centerLng: '-46.754'
+      centerLat: '-23.464'
+      zoom: '16.75'
+      mobileZoom: '16.75'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua-aldeias-label[nome_aldei==Tekoa Itu]
+        ti-jaragua-aldeias
+        ti-jaragua-recorte
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#106013ff'
+          typeIcon: outlined
+          text: Aldeias
+    - id: map1_itaendy
+      centerLng: '-46.776'
+      centerLat: '-23.462'
+      zoom: '16.42'
+      mobileZoom: '16.42'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua-aldeias-label[nome_aldei==Ita Endy]
+        ti-jaragua-aldeias
+        ti-jaragua-recorte
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#106013ff'
+          typeIcon: outlined
+          text: Aldeias
+    - id: map1_yvypora
+      centerLng: '-46.756'
+      centerLat: '-23.466'
+      zoom: '16.86'
+      mobileZoom: '16.86'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua-aldeias
+        ti-jaragua-recorte
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#106013ff'
+          typeIcon: outlined
+          text: Aldeias
+    - id: map1_pindomirim
+      centerLng: '-46.781'
+      centerLat: '-23.450'
+      zoom: '15.81'
+      mobileZoom: '15.81'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua-aldeias-label[nome_aldei==Tekoa Pindo Mirim]
+        ti-jaragua-aldeias
+        ti-jaragua-recorte
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#106013ff'
           typeIcon: outlined
           text: Aldeias
 components:
@@ -260,52 +322,8 @@ components:
         desktop: 500px
         tablet: 500px
         mobile: 500px
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map1_ti_sat
-      - type: Spacer
-        desktop: 800px
-        tablet: 800px
-        mobile: 600px
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map1_ytu_sat
-      - type: Timeline
-        components:
-          - type: TimelineBullet
-            content: '###### TEKOA YTU'
-            text: ''
-          - type: Spacer
-            desktop: 50px
-            tablet: 50px
-            mobile: 50px
-          - type: Text
-            hasDropCap: false
-            content: 'Retomada e fundação: década de 1960'
-          - type: Spacer
-            desktop: 30px
-            tablet: 30px
-            mobile: 30px
-          - type: Text
-            hasDropCap: false
-            content: Uma das mais antigas tekoas, a tekoa Ytu, “aldeia da cachoeira”, foi fundada pela família de Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá, e Joaquim Augusto Martim. O nome se refere ao Ribeirão das Lavras que, por meio de uma pequena cachoeira, chega até a tekoa. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
-          - type: Spacer
-            desktop: 50px
-            tablet: 50px
-            mobile: 20px
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/imagem jaragua_color edited.jpg
-            alt: ''
-            description: Description
-      - type: Spacer
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
     columnAlign: right
-    floatingText: false
+    floatingText: true
   - type: Group
     id: parte 1 - texto 2
     shortTitle: parte 1 - texto 2
