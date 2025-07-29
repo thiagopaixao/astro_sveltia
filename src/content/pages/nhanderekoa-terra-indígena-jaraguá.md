@@ -1246,29 +1246,8 @@ components:
               src: /uploads/imagem_16_logo_mata_atlantica_unesco.jpg
               alt: Selo da Reserva da Biosfera - UNESCO
               description: Selo da Reserva da Biosfera - UNESCO
-            - type: ImageBlock
-              wideImage: false
-              src: /uploads/imagem_29_area_demarcada_1987.jpg
-              alt: asd
-              description: Mapa assinalando a área demarcada em 1987, circunscrita ao núcleo habitacional da Tekoa Ytu, em comparação com a área reconhecida da T.I.Jaraguá atualmente.
         column2:
-          components:
-            - type: Spacer
-              hasDropCap: true
-              content: |-
-                Em paralelo, no arco entre os assassinatos de Marçal de Souza e Chico Mendes em 1983-1984, e a realização do encontro internacional ECO-92 promovido pelas Nações Unidas no Rio de Janeiro em 1992, a pauta ambiental consolida-se internacionalmente e no Brasil. 
-
-                Em 1994 o Parque Estadual do Jaraguá é reconhecido pela UNESCO como Patrimônio da Humanidade, na categoria de Reserva da Biosfera, passando a integrar o Cinturão Verde da Cidade de São Paulo.
-
-                 Assim como na criação do Parque Estadual em 1961, tais medidas protetivas ambientalistas muitas vezes entram em conflito com o direito das comunidades Guarani ao seu território ancestral, impedindo-as de usufruir dos recursos naturais das florestas dentro do perímetro do Parque, que hoje encontra-se totalmente cercado.
-              desktop: 100px
-              tablet: 100px
-              mobile: 100px
-            - type: ImageBlock
-              wideImage: true
-              src: /uploads/imagem_14_constituinte_02.jpg
-              alt: asd
-              description: 'À frente na bancada, da esquerda para a direita: Teseya Panará, Kanhõc Kayapó, Raoni Mētyktire e Tutu Pombo Kayapó, dentre outros, ocupam auditório da liderança do PMDB nas negociações do capítulo dos indígenas na Constituinte em 1988 (Fonte: Beto Ricardo/ISA) Fonte: Beto Ricardo [Instituto Socioambiental]'
+          components: []
   - type: Group
     id: parte_5_texto_1
     shortTitle: parte 5 - texto 1
