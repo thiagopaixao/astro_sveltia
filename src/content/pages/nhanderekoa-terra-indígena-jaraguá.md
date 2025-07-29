@@ -28,12 +28,14 @@ mapbox:
   type: MapBox
   style: mapbox://styles/studio-autonoma/cmdgctyq702ww01s4dyd42dyc
   token: pk.eyJ1Ijoic3R1ZGlvLWF1dG9ub21hIiwiYSI6ImNtY3V2d3dtMTA0ZXgycnB4OW01cjlqb2QifQ.3NMaRt1maLlqTv6nlVqVHA
-  centerLng: '-33.0152'
-  centerLat: '-11.622'
-  zoom: '2.5'
+  centerLng: '-46.782'
+  centerLat: '-23.461'
+  zoom: '13.26'
   bearing: '0'
   pitch: '0'
-  layers: ''
+  layers: |-
+    ti-jaragua
+    aldeias-jaragua
   columnAlign: center
   floatingText: false
   views:
