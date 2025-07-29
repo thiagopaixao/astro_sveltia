@@ -288,7 +288,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map1_ti_map
+        mapView: map1_ti
       - type: Spacer
         desktop: 800px
         tablet: 800px
@@ -296,7 +296,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map1_ytu_map
+        mapView: map1_ytu
       - type: Spacer
         components:
           - type: TimelineBullet
