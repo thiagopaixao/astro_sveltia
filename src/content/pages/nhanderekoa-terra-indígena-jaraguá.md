@@ -1643,39 +1643,7 @@ components:
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
-    components:
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        paddingTop: false
-        paddingBottom: false
-        invertOnMobile: false
-        columnsAlign: 66-33
-        column1:
-          components:
-            - type: Text
-              hasDropCap: true
-              content: |-
-                O que se observa nesta trajetória de patrimonialização do Pico do Jaraguá é a ênfase dada pelos órgãos de salvaguarda de São Paulo no reconhecimento apenas do patrimônio colonial, buscando enfatizar uma narrativa bandeirante da origem e identidade da cidade, narrativa esta que apaga a presença indígena. 
-
-                Isto é o caso não apenas do patrimônio do Jaraguá, mas de toda a cidade de São Paulo, que através de monumentos como o Pateo do Colégio e o Monumento às Bandeiras constrói sua identidade sob o signo da conquista colonial. 
-
-                Talvez o exemplo mais emblemático desta narrativa colonialista oficializada pelos órgãos patrimoniais paulistas seja o projeto de tombamento do Parque Estadual do Jaraguá elaborado pelo CONDEPHAAT em 1978.
-
-                 O projeto original propunha a criação de um complexo turístico no Parque do Jaraguá celebrando a memória da conquista colonial, com a construção de uma estátua-monumento gigante do jesuíta José de Anchieta, fundador do aldeamento do Pateo do Collegio, no topo do Pico do Jaraguá. Como no monumento do Cristo Redentor no Rio de Janeiro, o projeto incluía um bonde para levar os turistas até a grande estátua-monumento.
-            - type: ImageBlock
-              wideImage: true
-              src: /uploads/imagem_24_monumento_estatua_jaragua.jpg
-              alt: ''
-              description: IMG  Projeto da estátua-monumento do jesuíta José de Anchieta apresentado no Processo de tombamento do Parque Estadual do Jaraguá do CONDEPHAAT, 1978.
-        column2:
-          components:
-            - type: ImageBlock
-              wideImage: false
-              src: /uploads/imagem_26_pagina_relatorio_tombamento.jpg
-              alt: asd
-              description: Imagem do arquivo do levantamento técnico do complexo Casa Grande-Senzala de Afonso Sardinha presente na proposta de tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978.
-        mapView: resistencia_intro
+    components: []
     columnAlign: left
     floatingText: false
   - type: Map
@@ -1737,9 +1705,7 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_27_casa_abelhas_marcio.jpg
+    backgroundMedia: []
     overlay: ''
     components:
       - type: Columns
