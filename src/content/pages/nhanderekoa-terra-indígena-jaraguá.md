@@ -890,17 +890,6 @@ components:
               src: /uploads/imagem_07_jurandircafe.jpg
               alt: ''
               description: O professor Jurandir Tupã Jekupe Mirim mostra uma planta de café nas florestas da T.I. Jaraguá, remanescente das plantações dos séculos XVIII e XIX, quando a região funcionava como uma grande propriedade agrícola.
-            - type: ImageBlock
-              wideImage: false
-              src: /uploads/imagem_05_mapadoPEJ.jpg
-              alt: Mapa dos limites do Parque Estadual do Jaraguá apresentado no Processo de Tombamento do CONDEPHAAT de 1978
-              description: 'Mapa dos limites do Parque Estadual do Jaraguá apresentado no Processo de Tombamento do CONDEPHAAT de 1978. A área hachurada em amarelo ao lado direito, destinada à criação do complexo turístico do parque, coincide com a área da Tekoa Ytu, estabelecida entre três lagoas ao pé do morro. (Fonte: CONDEPHAAT)'
-            - type: Text
-              hasDropCap: true
-              content: |-
-                Ao proteger as florestas do Jaraguá dentro dos parâmetros ambientalistas tradicionais, o Parque Estadual acabou não apenas cerceando o uso das matas pelas comunidades Guarani, mas também foi um modo de apagar a presença indígena da região, definindo a área como uma grande reserva ecológica homogênea, vazia e inabitada .   
-
-                Em paralelo, São Paulo vive um rápido processo de urbanização. Entre 1940 e 1948 é construída a rodovia Anhanguera nas margens do Território Guarani do Jaraguá, e em 1955 é construído o linhão de transmissão Anhangabaú-Jundiaí sobre o pico do morro. Estas grandes infraestruturas de transporte e energia inter-urbanas abrem caminho para a voraz especulação imobiliária que se daria nas décadas seguintes, principalmente com o regime militar depois do golpe de 1964.
         column2:
           components:
             - type: Text
@@ -928,9 +917,7 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_06_picojaragua.jpg
+    backgroundMedia: []
     overlay: ''
     components:
       - type: Columns
@@ -1004,16 +991,7 @@ components:
 
                 ## (1800 - 1961)
         column2:
-          components:
-            - type: Spacer
-              desktop: 200px
-              tablet: 200px
-              mobile: 200px
-            - type: ImageBlock
-              wideImage: true
-              src: /uploads/imagem_08_spi.jpg
-              alt: ''
-              description: Imagem histórica do “aldeamentos” Guarani do Serviço de Proteção aos Índios (SPI) na região do Rio Itariri, no Vale do Ribeira (Imagem do acervo particular de João Emílio Gerodetti).
+          components: []
   - type: Group
     id: parte_3_texto_1
     shortTitle: parte 3 - texto 1
