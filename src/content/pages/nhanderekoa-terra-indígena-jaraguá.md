@@ -38,47 +38,51 @@ mapbox:
   floatingText: false
   views:
     - id: map1_ti
-      centerLng: '-46.763'
-      centerLat: '-23.459'
-      zoom: '13'
-      mobileZoom: '13'
+      centerLng: '-46.782'
+      centerLat: '-23.461'
+      zoom: '13.27'
+      mobileZoom: '13.27'
       duration: '3000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        ti-jaragua-aldeias
-        ti-jaragua-recorte
+        ti-jaragua
+        aldeias-jaragua
+        pe-jaragua
+        memoria-guarani
       title: ''
       notes: ''
       items:
+        - icon: circle
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Aldeias
         - icon: show_chart
-          colorIcon: '#0a710dff'
+          colorIcon: '#0e9013ff'
           typeIcon: outlined
           text: Terra Indígena Jaraguá
         - icon: circle
-          colorIcon: '#106013ff'
-          typeIcon: outlined
-          text: Aldeias
-        - icon: circle
-          colorIcon: '#1d4e29ff'
+          colorIcon: '#a3f339ff'
           typeIcon: outlined
           text: Pontos de Memória Indígena
         - icon: show_chart
-          colorIcon: '#ad2525ff'
+          colorIcon: '#9d1b1bff'
           typeIcon: outlined
-          text: Limite do Parque Jaraguá
+          text: Limite do Parque Estadual Jaraguá
     - id: map1_ytu
       centerLng: '-46.754'
       centerLat: '-23.464'
-      zoom: '17.20'
-      mobileZoom: '17.20'
+      zoom: '16.95'
+      mobileZoom: '16.95'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        ti-jaragua-aldeias-label[nome_aldei==Ytu]
-        ti-jaragua-aldeias
-        ti-jaragua-recorte
+        ti-jaragua
+        aldeias-jaragua-label[nome_aldei==Ytu]
+        aldeias-jaragua
+        pe-jaragua
+        memoria-guarani
       title: ''
       notes: ''
       items:
@@ -88,16 +92,18 @@ mapbox:
           text: Aldeias
     - id: map1_pyau
       centerLng: '-46.752'
-      centerLat: '-23.464'
-      zoom: '16.16'
-      mobileZoom: '16.16'
+      centerLat: '-23.465'
+      zoom: '16.80'
+      mobileZoom: '16.80'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        ti-jaragua-aldeias-label[nome_aldei==Tekoa Pyau]
-        ti-jaragua-aldeias
-        ti-jaragua-recorte
+        ti-jaragua
+        aldeias-jaragua-label[nome_aldei==Pyau]
+        aldeias-jaragua
+        pe-jaragua
+        memoria-guarani
       title: ''
       notes: ''
       items:
@@ -106,17 +112,19 @@ mapbox:
           typeIcon: outlined
           text: Aldeias
     - id: map1_itakupe
-      centerLng: '-46.762'
-      centerLat: '-23.449'
-      zoom: '15.22'
-      mobileZoom: '15.22'
+      centerLng: '-46.763'
+      centerLat: '-23.446'
+      zoom: '15.60'
+      mobileZoom: '15.60'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        ti-jaragua-aldeias-label[nome_aldei==Itakupe]
-        ti-jaragua-aldeias
-        ti-jaragua-recorte
+        ti-jaragua
+        aldeias-jaragua-label[nome_aldei==Itakupe]
+        aldeias-jaragua
+        pe-jaragua
+        memoria-guarani
       title: ''
       notes: ''
       items:
@@ -126,16 +134,18 @@ mapbox:
           text: Aldeias
     - id: map1_itawera
       centerLng: '-46.754'
-      centerLat: '-23.464'
-      zoom: '16.75'
-      mobileZoom: '16.75'
+      centerLat: '-23.463'
+      zoom: '16.97'
+      mobileZoom: '16.97'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        ti-jaragua-aldeias-label[nome_aldei==Tekoa Itu]
-        ti-jaragua-aldeias
-        ti-jaragua-recorte
+        ti-jaragua
+        aldeias-jaragua-label[nome_aldei==Itawera]
+        aldeias-jaragua
+        pe-jaragua
+        memoria-guarani
       title: ''
       notes: ''
       items:
@@ -144,17 +154,19 @@ mapbox:
           typeIcon: outlined
           text: Aldeias
     - id: map1_itaendy
-      centerLng: '-46.776'
+      centerLng: '-46.777'
       centerLat: '-23.462'
-      zoom: '16.42'
-      mobileZoom: '16.42'
+      zoom: '15.94'
+      mobileZoom: '15.94'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        ti-jaragua-aldeias-label[nome_aldei==Ita Endy]
-        ti-jaragua-aldeias
-        ti-jaragua-recorte
+        ti-jaragua
+        aldeias-jaragua-label[nome_aldei==Ita Endy]
+        aldeias-jaragua
+        pe-jaragua
+        memoria-guarani
       title: ''
       notes: ''
       items:
@@ -163,16 +175,19 @@ mapbox:
           typeIcon: outlined
           text: Aldeias
     - id: map1_yvypora
-      centerLng: '-46.756'
-      centerLat: '-23.466'
-      zoom: '16.86'
-      mobileZoom: '16.86'
+      centerLng: '-46.757'
+      centerLat: '-23.465'
+      zoom: '16.40'
+      mobileZoom: '16.40'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        ti-jaragua-aldeias
-        ti-jaragua-recorte
+        ti-jaragua
+        aldeias-jaragua-label[nome_aldei==Yvy Porã]
+        aldeias-jaragua
+        pe-jaragua
+        memoria-guarani
       title: ''
       notes: ''
       items:
@@ -181,7 +196,7 @@ mapbox:
           typeIcon: outlined
           text: Aldeias
     - id: map1_pindomirim
-      centerLng: '-46.781'
+      centerLng: '-46.780'
       centerLat: '-23.450'
       zoom: '15.81'
       mobileZoom: '15.81'
@@ -189,9 +204,11 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        ti-jaragua-aldeias-label[nome_aldei==Tekoa Pindo Mirim]
-        ti-jaragua-aldeias
-        ti-jaragua-recorte
+        ti-jaragua
+        aldeias-jaragua-label[nome_aldei==Pindo Mirim]
+        aldeias-jaragua
+        pe-jaragua
+        memoria-guarani
       title: ''
       notes: ''
       items:
@@ -202,14 +219,17 @@ mapbox:
     - id: map1_mirim
       centerLng: '-46.753'
       centerLat: '-23.461'
-      zoom: '15.62'
-      mobileZoom: '15.62'
+      zoom: '16.38'
+      mobileZoom: '16.38'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        ti-jaragua-aldeias
-        ti-jaragua-recorte
+        ti-jaragua
+        aldeias-jaragua-label[nome_aldei==Tekoa mirim]
+        aldeias-jaragua
+        pe-jaragua
+        memoria-guarani
       title: ''
       notes: ''
       items:
@@ -218,16 +238,19 @@ mapbox:
           typeIcon: outlined
           text: Aldeias
     - id: map1_kaaguymirim
-      centerLng: '-46.754'
-      centerLat: '-23.459'
-      zoom: '15.62'
-      mobileZoom: '15.62'
+      centerLng: '-46.753'
+      centerLat: '-23.460'
+      zoom: '16.53'
+      mobileZoom: '16.53'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        ti-jaragua-aldeias
-        ti-jaragua-recorte
+        ti-jaragua
+        aldeias-jaragua-label[nome_aldei==Ka'aguy mirim]
+        aldeias-jaragua
+        pe-jaragua
+        memoria-guarani
       title: ''
       notes: ''
       items:
