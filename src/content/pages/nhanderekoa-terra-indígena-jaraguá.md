@@ -268,7 +268,7 @@ components:
             hasDropCap: false
             content: '##### **cartografias da resistência territorial e da reparação ambiental Guarani**'
   - type: Group
-    id: parte 1 - nhanderekoa
+    id: parte_1_nhanderekoa
     shortTitle: parte 1 - nhanderekoa
     longTitle: nhanderekoa
     description: ''
@@ -312,7 +312,7 @@ components:
               alt: ''
               description: mata do jaraguá
   - type: Map
-    id: mapa - ti jaragua
+    id: mapa_ti_jaragua
     shortTitle: mapa - ti jaragua
     longTitle: mapa - ti jaragua
     description: ''
@@ -503,9 +503,9 @@ components:
     columnAlign: right
     floatingText: true
   - type: Map
-    id: mapa - ti jaragua - 2
-    shortTitle: mapa - ti jaragua - 2
-    longTitle: mapa - ti jaragua - 2
+    id: mapa_ti_jaragua_2
+    shortTitle: mapa - ti jaragua 2
+    longTitle: mapa - ti jaragua 2
     description: ''
     showInMenu: false
     animations: true
@@ -659,7 +659,7 @@ components:
     columnAlign: left
     floatingText: true
   - type: Group
-    id: parte 1 - texto 2
+    id: parte_1_texto_2
     shortTitle: parte 1 - texto 2
     longTitle: parte 1 - texto 2
     description: ''
@@ -697,7 +697,7 @@ components:
         column2:
           components: []
   - type: Group
-    id: parte 2 - colonizacao do Jaragua
+    id: parte_2_colonizacao_do_jaragua
     shortTitle: parte 2 - colonizacao do Jaragua
     longTitle: Da Invasão ao Parque
     description: ''
@@ -770,7 +770,7 @@ components:
               alt: Gravura retratando a extração de ouro no Jaraguá, circa séc. 18
               description: Gravura retratando a extração de ouro no Jaraguá, circa séc. 18
   - type: Group
-    id: parte 2 - texto 1
+    id: parte_2_texto_1
     shortTitle: parte 2 - texto 1
     longTitle: parte 2 - texto 1
     description: ''
@@ -845,7 +845,7 @@ components:
     columnAlign: right
     floatingText: false
   - type: Map
-    id: mapa 1 - colonizacao
+    id: mapa_1_colonizacao
     shortTitle: mapa 1 - colonizacao
     longTitle: mapa 1 - colonizacao
     description: ''
@@ -889,7 +889,7 @@ components:
     columnAlign: right
     floatingText: false
   - type: Group
-    id: parte 2 - texto 2
+    id: parte_2_texto_2
     shortTitle: parte 2 - texto 2
     longTitle: parte 2 - texto 2
     description: ''
@@ -951,7 +951,7 @@ components:
               tablet: 150px
               mobile: 150px
   - type: Group
-    id: parte 2 - texto 3
+    id: parte_2_texto_3
     shortTitle: parte 2 - texto 3
     longTitle: parte 2 - texto 3
     description: ''
@@ -1006,7 +1006,7 @@ components:
               alt: Planta da Via Anhanguera, década de 40 (Arquivo Biblioteca do Departamento de Estradas e Rodagens)
               description: Planta da Via Anhanguera, década de 40 (Arquivo Biblioteca do Departamento de Estradas e Rodagens)
   - type: Group
-    id: parte 3 - retomada do jaragua
+    id: parte_3_retomada_do_jaragua
     shortTitle: parte 3 - retomada do jaragua
     longTitle: A Retomada do Jaraguá
     description: ''
@@ -1048,7 +1048,7 @@ components:
               alt: ''
               description: Imagem histórica do “aldeamentos” Guarani do Serviço de Proteção aos Índios (SPI) na região do Rio Itariri, no Vale do Ribeira (Imagem do acervo particular de João Emílio Gerodetti).
   - type: Group
-    id: parte 3 - texto 1
+    id: parte_3_texto_1
     shortTitle: parte 3 - texto 1
     longTitle: ''
     description: ''
@@ -1096,7 +1096,7 @@ components:
               alt: ''
               description: Imagem histórica do “aldeamentos” Guarani do Serviço de Proteção aos Índios (SPI) na região do Rio Itariri, no Vale do Ribeira (Imagem do acervo particular de João Emílio Gerodetti).
   - type: Group
-    id: parte 3 - analise foto aerea
+    id: parte_3_analise_foto_aerea
     shortTitle: parte 3 - analise foto aerea
     longTitle: parte 3 - analise foto aerea
     description: ''
@@ -1133,7 +1133,7 @@ components:
         column2:
           components: []
   - type: Group
-    id: parte 3 - texto 2
+    id: parte_3_texto_2
     shortTitle: parte 3 - texto 2
     longTitle: parte 3 - texto 2
     description: ''
@@ -1168,7 +1168,7 @@ components:
         column2:
           components: []
   - type: Group
-    id: parte 4 - Ditadura, Deslocamentos e Desmatamento
+    id: parte_4_ditadura_deslocamentos_e_desmatamento
     shortTitle: parte 4 - Ditadura, Deslocamentos e Desmatamento
     longTitle: parte 4 - Ditadura, Deslocamentos e Desmatamento
     description: bloco título
@@ -1238,7 +1238,7 @@ components:
               alt: ''
               description: 'Mapa das tekoas inundadas e forçosamente removidas da região do lago artificial de Itaipu (Fonte: agência autônoma e CGY)'
   - type: Group
-    id: parte 4 - texto 01
+    id: parte_4_texto_1
     shortTitle: parte 4 - texto 01
     longTitle: ''
     description: ''
@@ -1308,7 +1308,7 @@ components:
               alt: ''
               description: 'Mapa das tekoas inundadas e forçosamente removidas da região do lago artificial de Itaipu (Fonte: agência autônoma e CGY)'
   - type: Group
-    id: parte 5 - Retorno a Democracia & Demarcacao da Tekoa Ytu
+    id: parte_5_retorno_a_democracia_e_demarcacao_da_tekoa_ytu
     shortTitle: parte 5 - Retorno a Democracia & Demarcacao da Tekoa Ytu
     longTitle: Retorno a Democracia & Demarcacao da Tekoa Ytu
     description: ''
@@ -1366,7 +1366,7 @@ components:
               alt: asd
               description: 'À frente na bancada, da esquerda para a direita: Teseya Panará, Kanhõc Kayapó, Raoni Mētyktire e Tutu Pombo Kayapó, dentre outros, ocupam auditório da liderança do PMDB nas negociações do capítulo dos indígenas na Constituinte em 1988 (Fonte: Beto Ricardo/ISA) Fonte: Beto Ricardo [Instituto Socioambiental]'
   - type: Group
-    id: parte 5 - texto 1
+    id: parte_5_texto_1
     shortTitle: parte 5 - texto 1
     longTitle: ''
     description: ''
@@ -1424,7 +1424,7 @@ components:
               alt: asd
               description: 'À frente na bancada, da esquerda para a direita: Teseya Panará, Kanhõc Kayapó, Raoni Mētyktire e Tutu Pombo Kayapó, dentre outros, ocupam auditório da liderança do PMDB nas negociações do capítulo dos indígenas na Constituinte em 1988 (Fonte: Beto Ricardo/ISA) Fonte: Beto Ricardo [Instituto Socioambiental]'
   - type: Group
-    id: parte 5 - texto 2
+    id: parte_5_texto_2
     shortTitle: parte 5 - texto 2
     longTitle: ''
     description: ''
@@ -1474,7 +1474,7 @@ components:
               alt: asd
               description: Mapa da área norte do Cinturão Verde da Cidade de São Paulo. As florestas da T.I. Jaraguá são as mais preservadas do cinturão.
   - type: Group
-    id: parte 6 - resistencia luta e demarcacao
+    id: parte_6_resistencia_luta_e_demarcacao
     shortTitle: parte 6 - resistencia luta e demarcacao
     longTitle: resistencia, luta e demarcação
     description: ''
@@ -1529,7 +1529,7 @@ components:
               alt: asd
               description: 'Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã (Fonte: XXXX)'
   - type: Group
-    id: parte 6 - texto 1
+    id: parte_6_texto_1
     shortTitle: parte 6 - texto 1
     longTitle: parte 6 - texto 1
     description: ''
@@ -1593,7 +1593,7 @@ components:
     columnAlign: left
     floatingText: false
   - type: Group
-    id: part 6 - texto 2
+    id: parte_6_texto_2
     shortTitle: part 6 - texto 2
     longTitle: part 6 - texto 2
     description: ''
@@ -1649,7 +1649,7 @@ components:
     columnAlign: left
     floatingText: false
   - type: Map
-    id: mapa X - lutas
+    id: mapa_X_lutas
     shortTitle: mapa X - lutas
     longTitle: mapa X - lutas
     description: ''
@@ -1693,7 +1693,7 @@ components:
     columnAlign: left
     floatingText: false
   - type: Group
-    id: part 6 - texto 3
+    id: part_6_texto_3
     shortTitle: part 6 - texto 3
     longTitle: ''
     description: ''
@@ -1734,7 +1734,7 @@ components:
         tablet: 800px
         mobile: 800px
   - type: Group
-    id: parte 8 - patrimonialização do colonialismo
+    id: parte_8_patrimonializacao_do_colonialismo
     shortTitle: parte 8 - patrimonialização do colonialismo
     longTitle: Patrimonialização do colonialismo & apagamento da memória Guarani
     description: ''
@@ -1769,7 +1769,7 @@ components:
     columnAlign: left
     floatingText: false
   - type: Group
-    id: parte 8 - texto 1
+    id: parte_8_texto_1
     shortTitle: parte 8 - texto 1
     longTitle: parte 8 - texto 1
     description: ''
@@ -1817,7 +1817,7 @@ components:
     columnAlign: left
     floatingText: false
   - type: Map
-    id: mapa X - monumentos coloniais
+    id: mapa_X_monumentos_coloniais
     shortTitle: mapa X - monumentos coloniais
     longTitle: mapa X - monumentos coloniais
     description: ''
@@ -1865,7 +1865,7 @@ components:
     columnAlign: left
     floatingText: false
   - type: Group
-    id: parte 8 - texto 2
+    id: parte_8_texto_2
     shortTitle: parte 8 - texto 2
     longTitle: parte 8 - texto 2
     description: ''
@@ -1910,7 +1910,7 @@ components:
               alt: asd
               description: Imagem do arquivo do levantamento técnico do complexo Casa Grande-Senzala de Afonso Sardinha presente na proposta de tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978.
   - type: Group
-    id: parte 9 - nhandereko praticas cuidado & reparacao
+    id: parte_9_nhandereko_praticas_cuidado_e_reparacao
     shortTitle: parte 9 - nhandereko praticas cuidado & reparacao
     longTitle: 'Nhandereko: práticas do cuidado & da reparação'
     description: ''
@@ -1941,7 +1941,7 @@ components:
         column2:
           components: []
   - type: Group
-    id: parte 9 - texto 1
+    id: parte_9_texto_1
     shortTitle: parte 9 - texto 1
     longTitle: parte 9 - texto 1
     description: ''
@@ -1978,7 +1978,7 @@ components:
         column2:
           components: []
   - type: Group
-    id: parte X - ameaças
+    id: parte_X_ameacas
     shortTitle: parte X - ameaças
     longTitle: Ameaças a T.I. Jaraguá
     description: ''
@@ -2013,7 +2013,7 @@ components:
         tablet: 300px
         mobile: 300px
   - type: Group
-    id: parte 10 - texto 1
+    id: parte_10_texto_1
     shortTitle: parte 10 - texto 1
     longTitle: parte 10 - texto 1
     description: ''
