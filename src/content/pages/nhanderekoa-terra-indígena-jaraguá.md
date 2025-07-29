@@ -1088,9 +1088,7 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_09_itaipu.jpg
+    backgroundMedia: []
     overlay: ''
     components:
       - type: Columns
