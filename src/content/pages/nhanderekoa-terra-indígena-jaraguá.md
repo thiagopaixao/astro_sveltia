@@ -33,7 +33,7 @@ mapbox:
   zoom: '2.5'
   bearing: '0'
   pitch: '0'
-  layers: ti-jaragua-recorte
+  layers: ''
   columnAlign: center
   floatingText: false
   views:
@@ -358,9 +358,9 @@ components:
         content: |-
           ##### TEKOA PYAU
 
-          Retomada e fundação: década de 1960
+          Retomada e fundação: década de 1990.
 
-          Uma das mais antigas tekoas, a tekoa Ytu, “aldeia da cachoeira”, foi fundada pela família de Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá, e Joaquim Augusto Martim. O nome se refere ao Ribeirão das Lavras que, por meio de uma pequena cachoeira, chega até a tekoa. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
+          A tekoa Pyau, traduzido como “aldeia nova”, é a segunda aldeia do processo histórico de retomada da T.I. Jaraguá. Hoje é a comunidade com maior densidade populacional da terra indígena. A tekoa está cercada pela Rodovia dos Bandeirantes e pela Rua Comendador de Matos, infraestruturas que bloqueiam sua continuidade territorial e afetaram historicamente áreas de coleta, caça e cultivo.
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -373,6 +373,93 @@ components:
         src: /uploads/imagem jaragua_color edited.jpg
         alt: ''
         description: Legenda legenda legenda legenda
+      - type: Spacer
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_itakupe
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: Text
+        hasDropCap: false
+        content: |-
+          ##### TEKOA ITAKUPE
+
+          Retomada e fundação: 2005
+
+          Situada no extremo norte da T.I. Jaraguá, a área onde está a Tekoa Itakupe é utilizada pelas comunidades Guarani desde as primeiras retomadas nos anos 1950 e 1960. Fundada em 2014, hoje é formada por três núcleos: Sol nascente, Toka da Onça e (confirmar como querem chamar o terceiro núcleo). Por estar localizada do outro lado do Pico do Jaraguá, próxima de suas formações rochosas, foi nomeada de Itakupe, que pode ser traduzido como “atrás da pedra”.
+      - type: Spacer
+        desktop: 100px
+        tablet: 100px
+        mobile: 100px
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/arqueological-remains_03.jpg
+        alt: ''
+        description: ''
+      - type: Spacer
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_itawera
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: Text
+        hasDropCap: false
+        content: |-
+          ##### TEKOA ITAWERA
+
+          Retomada e fundação: 2014
+
+          Fundada pela Cacica Ara Poty (Maria) em 2014, a Tekoa Itawera recuperou uma área antes destinada ao descarte de lixo. Hoje, a comunidade se dedica à recuperação ambiental e cultural, com ações como o reflorestamento com espécies nativas, o cultivo de alimentos tradicionais como o milho Guarani, bem como um vasto trabalho de artesanato. O nome da aldeia pode ser traduzido como “pedra reluzente”.
+      - type: Spacer
+        desktop: 100px
+        tablet: 100px
+        mobile: 100px
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/arqueological-remains_03.jpg
+        alt: ''
+        description: ''
+      - type: Spacer
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_itaendy
+      - type: Spacer
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
+      - type: Text
+        hasDropCap: false
+        content: |-
+          ##### TEKOA ITAENDY
+
+          Retomada e fundação: 2017
+
+          Desde sua retomada em 2017, a Tekoa Itaendy, “aldeia da pedra amarela”, vem promovendo práticas de manutenção da biodiversidade como o reflorestamento com espécies nativas, plantio de roças com alimentos tradicionais, bem como a reintrodução e criação de espécies de abelhas nativas.
+      - type: Spacer
+        desktop: 100px
+        tablet: 100px
+        mobile: 100px
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/arqueological-remains_07.jpg
+        alt: ''
+        description: ''
       - type: Spacer
         desktop: 300px
         tablet: 300px
