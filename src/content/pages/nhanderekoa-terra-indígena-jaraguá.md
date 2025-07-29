@@ -40,8 +40,8 @@ mapbox:
     - id: map1_ti
       centerLng: '-46.782'
       centerLat: '-23.461'
-      zoom: '13.27'
-      mobileZoom: '13.27'
+      zoom: '13.26'
+      mobileZoom: '13.26'
       duration: '3000'
       bearing: '0'
       pitch: '0'
