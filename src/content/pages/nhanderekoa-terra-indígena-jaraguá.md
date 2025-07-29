@@ -45,9 +45,7 @@ mapbox:
       duration: '3000'
       bearing: '0'
       pitch: '0'
-      layers: |-
-        ti-jaragua-aldeias
-        ti-jaragua-recorte
+      layers: ti-jaragua
       title: ''
       notes: ''
       items:
