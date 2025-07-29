@@ -1894,9 +1894,7 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_32_urbanizacao_jaragua.jpg
+    backgroundMedia: []
     overlay: ''
     components:
       - type: Columns
@@ -1951,10 +1949,6 @@ components:
                 ## **Ameaças ao Território e ao Patrimônio Florestal Guarani**
         column2:
           components: []
-      - type: Spacer
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
   - type: Group
     id: parte_10_texto_1
     shortTitle: parte 10 - texto 1
