@@ -33,7 +33,7 @@ mapbox:
   zoom: '2.5'
   bearing: '0'
   pitch: '0'
-  layers: ''
+  layers: ti-jaragua-recorte
   columnAlign: center
   floatingText: false
   views:
