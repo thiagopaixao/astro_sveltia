@@ -369,9 +369,9 @@ components:
         tablet: 500px
         mobile: 500px
       - type: Spacer
-        desktop: 100px
-        tablet: 100px
-        mobile: 100px
+        desktop: 50px
+        tablet: 50px
+        mobile: 50px
       - type: ImageBlock
         wideImage: false
         src: /uploads/imagem jaragua_color edited.jpg
@@ -401,9 +401,9 @@ components:
         tablet: 500px
         mobile: 500px
       - type: Spacer
-        desktop: 100px
-        tablet: 100px
-        mobile: 100px
+        desktop: 50px
+        tablet: 50px
+        mobile: 50px
       - type: ImageBlock
         wideImage: false
         src: /uploads/imagem jaragua_color edited.jpg
@@ -430,9 +430,9 @@ components:
 
           Situada no extremo norte da T.I. Jaraguá, a área onde está a Tekoa Itakupe é utilizada pelas comunidades Guarani desde as primeiras retomadas nos anos 1950 e 1960. Fundada em 2014, hoje é formada por três núcleos: Sol nascente, Toka da Onça e (confirmar como querem chamar o terceiro núcleo). Por estar localizada do outro lado do Pico do Jaraguá, próxima de suas formações rochosas, foi nomeada de Itakupe, que pode ser traduzido como “atrás da pedra”.
       - type: Spacer
-        desktop: 100px
-        tablet: 100px
-        mobile: 100px
+        desktop: 50px
+        tablet: 50px
+        mobile: 50px
       - type: ImageBlock
         wideImage: false
         src: /uploads/arqueological-remains_03.jpg
@@ -459,9 +459,9 @@ components:
 
           Fundada pela Cacica Ara Poty (Maria) em 2014, a Tekoa Itawera recuperou uma área antes destinada ao descarte de lixo. Hoje, a comunidade se dedica à recuperação ambiental e cultural, com ações como o reflorestamento com espécies nativas, o cultivo de alimentos tradicionais como o milho Guarani, bem como um vasto trabalho de artesanato. O nome da aldeia pode ser traduzido como “pedra reluzente”.
       - type: Spacer
-        desktop: 100px
-        tablet: 100px
-        mobile: 100px
+        desktop: 50px
+        tablet: 50px
+        mobile: 50px
       - type: ImageBlock
         wideImage: false
         src: /uploads/arqueological-remains_03.jpg
@@ -488,9 +488,9 @@ components:
 
           Desde sua retomada em 2017, a Tekoa Itaendy, “aldeia da pedra amarela”, vem promovendo práticas de manutenção da biodiversidade como o reflorestamento com espécies nativas, plantio de roças com alimentos tradicionais, bem como a reintrodução e criação de espécies de abelhas nativas.
       - type: Spacer
-        desktop: 100px
-        tablet: 100px
-        mobile: 100px
+        desktop: 50px
+        tablet: 50px
+        mobile: 50px
       - type: ImageBlock
         wideImage: false
         src: /uploads/arqueological-remains_07.jpg
@@ -557,9 +557,9 @@ components:
         tablet: 500px
         mobile: 500px
       - type: Spacer
-        desktop: 100px
-        tablet: 100px
-        mobile: 100px
+        desktop: 50px
+        tablet: 50px
+        mobile: 50px
       - type: ImageBlock
         wideImage: false
         src: /uploads/imagem jaragua_color edited.jpg
@@ -586,9 +586,9 @@ components:
 
           Uma das tekoas mais recentes da T.I. Jaraguá, Pindó Mirim foi retomada em 2023. Situada no extremo noroeste da área demarcada, a comunidade vem desenvolvendo um forte trabalho de reparação ambiental, com foco na regeneração das áreas de Mata Atlântica afetadas pela construção do Rodoanel e plantações de eucaliptos. Destaca-se o reflorestamento com mais de 1500 mudas de árvores nativas e 300 mudas de árvores frutíferas.
       - type: Spacer
-        desktop: 100px
-        tablet: 100px
-        mobile: 100px
+        desktop: 50px
+        tablet: 50px
+        mobile: 50px
       - type: ImageBlock
         wideImage: false
         src: /uploads/arqueological-remains_03.jpg
@@ -615,9 +615,9 @@ components:
 
           Tekoa Mirim, chamada “pequena aldeia”, está localizada ao lado da Tekoa Pyau. Assim como outros núcleos habitacionais, seus moradores têm desenvolvido várias práticas de cuidado e reparação do território. Destaca-se o plantio de mudas nativas, frutíferas e hortaliças ao longo do caminho que beira a Rodovia dos Bandeirantes, conectando a Tekoa Pyau à Tekoa Mirim e à Ka’aguy Mirim.
       - type: Spacer
-        desktop: 100px
-        tablet: 100px
-        mobile: 100px
+        desktop: 50px
+        tablet: 50px
+        mobile: 50px
       - type: ImageBlock
         wideImage: false
         src: /uploads/arqueological-remains_03.jpg
@@ -644,8 +644,8 @@ components:
 
           A Tekoa Ka’aguy Mirim é outra retomada adjacente à Tekoa Pyau. Com o nome de “pequena floresta”, situa-se no limite da Terra Indígena, entre a Rodovia dos Bandeirantes e a Rua Antônio Cardoso Nogueira. A aldeia é considerada por seus moradores como um importante ponto de cuidado de espécies nativas medicinais presentes neste local, motivo que impulsionou a retomada da área.
       - type: Spacer
-        desktop: 100px
-        tablet: 100px
+        desktop: 50px
+        tablet: 50px
         mobile: 100px
       - type: ImageBlock
         wideImage: false
