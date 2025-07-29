@@ -1,6 +1,6 @@
 ---
-title: nhanderekoa
-slug: nhanderekoa
+title: nhanderekoa-studio-autonoma
+slug: nhanderekoa-studio-autonoma
 pageSettings:
   language: pt-BR
   link_pt_br: nhanderekoa
