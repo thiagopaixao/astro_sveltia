@@ -669,9 +669,7 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_02_pateodocolegio.jpg
+    backgroundMedia: []
     overlay: ''
     components:
       - type: Columns
@@ -740,35 +738,8 @@ components:
                 ## Da Invasão ao Parque: a colonização do Jaraguá
 
                 ## (1554 – 1960)
-            - type: ImageBlock
-              wideImage: false
-              src: /uploads/imagem_03_mapacurt.png
-              alt: mapa curt
-              description: 'Recorte do Mapa Etno-Histórico de Curt Nimuendajú (1944), mostrando a amplitude do território Guarani (Fonte: Bibloteca Digital Curt Nimuendaju)'
-            - type: Text
-              hasDropCap: true
-              content: |-
-                Com a invasão Europeia, assim como aconteceu em outros territórios indígenas, os territórios Guarani foram brutalmente reconfigurados por deslocamentos forçados e extermínios. 
-
-                Em São Paulo, após a criação do aldeamento do Pateo do Collegio em 1554, as populações tupi-guarani que habitavam a região foram submetidas a sistemáticas políticas de confinamento e escravização.  
-
-                Marco fundante da cidade, o Pateo do Collegio irradiou a colonização sobre o Jaraguá, uma das primeiras regiões onde os Europeus exploraram ouro no Brasil Colônia. O Jaraguá passa então a ser alvo da exploração de bandeirantes, e assim é continuamente despovoado de seus habitantes nativos.
         column2:
-          components:
-            - type: Pullquote
-              content: Yvyrupa seria “território”. Mas o território, para muitas pessoas, é somente a terra, o espaço. Para nós o território vai além. Ele nos lembra o leito, o leito do nosso corpo, o leito do nosso modo de viver
-              txtColor: ''
-              bgColor: ''
-              byline: – Jurandir Tupã Jekupe Mirim.
-            - type: Spacer
-              desktop: 400px
-              tablet: 400px
-              mobile: 400px
-            - type: ImageBlock
-              wideImage: true
-              src: /uploads/imagem_04_gravuraouro.jpg
-              alt: Gravura retratando a extração de ouro no Jaraguá, circa séc. 18
-              description: Gravura retratando a extração de ouro no Jaraguá, circa séc. 18
+          components: []
   - type: Group
     id: parte_2_texto_1
     shortTitle: parte 2 - texto 1
@@ -838,10 +809,6 @@ components:
               alt: Gravura retratando a extração de ouro no Jaraguá, circa séc. 18
               description: Gravura retratando a extração de ouro no Jaraguá, circa séc. 18
         mapView: resistencia_intro
-      - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
     columnAlign: right
     floatingText: false
   - type: Map
