@@ -1154,9 +1154,7 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_13_constituinte.jpg
+    backgroundMedia: []
     overlay: ''
     components:
       - type: Columns
