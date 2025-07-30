@@ -1956,7 +1956,7 @@ components:
     columnAlign: left
     floatingText: false
   - type: Map
-    id: mapa_X_lutas
+    id: mapa_x_lutas
     shortTitle: mapa X - lutas
     longTitle: mapa X - lutas
     description: ''
