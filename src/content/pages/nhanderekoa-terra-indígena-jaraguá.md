@@ -1961,9 +1961,9 @@ components:
     columnAlign: left
     floatingText: false
   - type: Map
-    id: mapa_X_monumentos_coloniais
-    shortTitle: mapa X - monumentos coloniais
-    longTitle: mapa X - monumentos coloniais
+    id: mapa_4_monumentos_coloniais
+    shortTitle: mapa 4 - monumentos coloniais
+    longTitle: mapa 4 - monumentos coloniais
     description: ''
     showInMenu: false
     animations: true
@@ -2088,9 +2088,9 @@ components:
               alt: asd
               description: Imagem do arquivo do levantamento técnico do complexo Casa Grande-Senzala de Afonso Sardinha presente na proposta de tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978.
   - type: Map
-    id: mapa_x_memoria_guarani
-    shortTitle: mapa X - memoria guarani
-    longTitle: mapa X - memoria guarani
+    id: mapa_5_memoria_guarani
+    shortTitle: mapa 5 - memoria guarani
+    longTitle: mapa 5 - memoria guarani
     description: ''
     showInMenu: false
     animations: true
