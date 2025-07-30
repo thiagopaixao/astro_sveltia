@@ -935,7 +935,7 @@ components:
 
           Retomada e fundação: década de 2018.
 
-          Assim como Itawera, Yvy Porã se estabeleceu em uma área antigamente destinada ao descarte de lixo urbano, situada no pé das matas do Pico do Jaraguá. Ao longo dos anos, a tekoa tornou-se importante referência de práticas ecológicas de des-poluição, recuperação e manutenção da Mata Atlântica. Yvy Porã, traduzido como “terra boa” ou “terra bela”, também é uma referência de práticas de recuperação de diversas espécies nativas de abelhas, como a jate’i (jatai), considerada sagrada.
+          A _Tekoa Yvy Porã_ (Aldeia da Terra Boa; Aldeia da Terra Bela), assim como a _Itawerá_, estabeleceu-se em uma área antes utilizada para descarte de lixo urbano, aos pés das matas do Pico do Jaraguá. Ao longo dos anos, tornou-se uma importante referência em práticas ecológicas de despoluição, recuperação e preservação da Mata Atlântica. Além disso, a _Tekoa&#32;_também é uma referência em práticas de recuperação de diversas espécies nativas de abelhas como a_&#32;jate’i&#32;_(jatai)_,_ considerada sagrada.
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -945,9 +945,9 @@ components:
         mobile: 50px
       - type: ImageBlock
         wideImage: false
-        src: /uploads/imagem jaragua_color edited.jpg
+        src: /uploads/img_tekoa_yvy_pora_marcioabelhas.jpg
         alt: ''
-        description: Legenda legenda legenda legenda
+        description: Márcio Werã Mirim, em meio ao enorme meliponário da Tekoa Yvy Porã
       - type: Spacer
         desktop: 300px
         tablet: 300px
@@ -967,16 +967,16 @@ components:
 
           Retomada e fundação: 2023
 
-          Uma das tekoas mais recentes da T.I. Jaraguá, Pindó Mirim foi retomada em 2023. Situada no extremo noroeste da área demarcada, a comunidade vem desenvolvendo um forte trabalho de reparação ambiental, com foco na regeneração das áreas de Mata Atlântica afetadas pela construção do Rodoanel e plantações de eucaliptos. Destaca-se o reflorestamento com mais de 1500 mudas de árvores nativas e 300 mudas de árvores frutíferas.
+          Uma das _Tekoas_ mais recentes da TI Jaraguá, a _Tekoa Pindó Mirim_ – que pode ser traduzida como “Aldeia da Palmeira Pequena” – _&#160;_foi retomada em 2023. Situada no extremo noroeste da área demarcada, a comunidade vem desenvolvendo um forte trabalho de reparação ambiental, com foco na regeneração das áreas de Mata Atlântica afetadas pela construção do Rodoanel Mário Covas e das plantaes de eucalipto. Entre as ações, destaca-se o reflorestamento com mais de 1500 mudas de árvores nativas e 300 mudas de árvores frutíferas.
       - type: Spacer
         desktop: 50px
         tablet: 50px
         mobile: 50px
       - type: ImageBlock
         wideImage: false
-        src: /uploads/arqueological-remains_03.jpg
+        src: /uploads/img_tekoa_pindo_mirim_daniel.jpg
         alt: ''
-        description: ''
+        description: Daniel Werã Mirim mostrando os remanescentes de plantações de eucalipito na Tekoa Pindó Mirim
       - type: Spacer
         desktop: 300px
         tablet: 300px
