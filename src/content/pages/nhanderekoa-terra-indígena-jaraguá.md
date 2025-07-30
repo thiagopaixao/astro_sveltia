@@ -322,6 +322,24 @@ mapbox:
           colorIcon: '#d03535ff'
           typeIcon: outlined
           text: Pateo do Collegio
+    - id: map2_jaraguaspzoom2
+      centerLng: '-46.760'
+      centerLat: '-23.511'
+      zoom: '11.36'
+      mobileZoom: '11.36'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+        patrimonio-colonial[fid==70]
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Terra Indígena Jaraguá
     - id: map2_barueri
       centerLng: '-46.859'
       centerLat: '-23.494'
@@ -1005,6 +1023,14 @@ components:
         desktop: 600px
         tablet: 600px
         mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_jaraguaspzoom2
+      - type: Spacer
+        desktop: 400px
+        tablet: 400px
+        mobile: 400px
       - type: MapView
         txtColor: ''
         bgColor: ''
