@@ -261,10 +261,10 @@ mapbox:
           typeIcon: outlined
           text: Aldeias
     - id: map2_jaraguasp
-      centerLng: '-46.589'
-      centerLat: '-23.603'
-      zoom: '9.18'
-      mobileZoom: '9.18'
+      centerLng: '-46.888'
+      centerLat: '-23.574'
+      zoom: '9.22'
+      mobileZoom: '9.22'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -323,11 +323,11 @@ mapbox:
           typeIcon: outlined
           text: Pateo do Collegio
     - id: map2_barueri
-      centerLng: '-46.816'
-      centerLat: '-23.499'
-      zoom: '11.54'
-      mobileZoom: '11.54'
-      duration: '2000'
+      centerLng: '-46.825'
+      centerLat: '-23.494'
+      zoom: '11.81'
+      mobileZoom: '11.81'
+      duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
@@ -344,23 +344,18 @@ mapbox:
           colorIcon: '#d03535ff'
           typeIcon: outlined
           text: Aldeamento de Barueri
-        - icon: circle
-          colorIcon: '#d03535ff'
-          typeIcon: outlined
-          text: Aldeamento de Barueri
     - id: map2_ourojaragua
-      centerLng: '-46.762'
-      centerLat: '-23.455'
-      zoom: '12.99'
-      mobileZoom: '12.99'
-      duration: '2000'
+      centerLng: '-46.778'
+      centerLat: '-23.458'
+      zoom: '13.25'
+      mobileZoom: '13.25'
+      duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
         ti-jaragua
         casa-afonso-sardinha
         patrimonio-colonial
-        exploracao-ouro-sp
       title: ''
       notes: ''
       items:
@@ -372,10 +367,6 @@ mapbox:
           colorIcon: '#3741f6ff'
           typeIcon: outlined
           text: Casa-Grande Senzala de Afonso Sardinha
-        - icon: circle
-          colorIcon: '#d0353586'
-          typeIcon: outlined
-          text: Áreas de exploração do ouro em São Paulo
         - icon: circle
           colorIcon: '#d03535ff'
           typeIcon: outlined
