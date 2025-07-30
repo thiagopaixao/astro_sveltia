@@ -488,6 +488,112 @@ mapbox:
           colorIcon: '#a3f339ff'
           typeIcon: outlined
           text: Lugares de memória Guarani
+    - id: map5_jaragua
+      centerLng: '-46.782'
+      centerLat: '-23.461'
+      zoom: '13.26'
+      mobileZoom: '13.26'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+        pe-jaragua
+        aldeias-jaragua
+        memoria-guarani
+        casa-afonso-sardinha
+        estacao-jaragua
+        patrimonio-colonial[fid==132]
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Aldeias
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Terra Indígena Jaraguá
+        - icon: show_chart
+          colorIcon: '#9d1b1bff'
+          typeIcon: outlined
+          text: Parque Estadual do Jaraguá
+        - icon: circle
+          colorIcon: '#9d1b1bff'
+          typeIcon: outlined
+          text: Patrimônio colonial
+        - icon: circle
+          colorIcon: '#a3f339ff'
+          typeIcon: outlined
+          text: Lugares de memória Guarani
+    - id: map5_cacicajandira
+      centerLng: '-46.754'
+      centerLat: '-23.464'
+      zoom: '17.23'
+      mobileZoom: '17.23'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+        pe-jaragua
+        aldeias-jaragua
+        memoria-guarani
+        cacica-jandira-label
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Aldeias
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Terra Indígena Jaraguá
+        - icon: show_chart
+          colorIcon: '#9d1b1bff'
+          typeIcon: outlined
+          text: Parque Estadual do Jaraguá
+        - icon: circle
+          colorIcon: '#a3f339ff'
+          typeIcon: outlined
+          text: Lugares de memória Guarani
+    - id: map5_memoria
+      centerLng: '-46.753'
+      centerLat: '-23.464'
+      zoom: '16.47'
+      mobileZoom: '16.47'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+        pe-jaragua
+        aldeias-jaragua
+        memoria-guarani
+        cacica-jandira-label
+        ato-label
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Aldeias
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Terra Indígena Jaraguá
+        - icon: show_chart
+          colorIcon: '#9d1b1bff'
+          typeIcon: outlined
+          text: Parque Estadual do Jaraguá
+        - icon: circle
+          colorIcon: '#a3f339ff'
+          typeIcon: outlined
+          text: Lugares de memória Guarani
 components:
   - type: Group
     id: home
