@@ -265,7 +265,7 @@ mapbox:
       centerLat: '-23.603'
       zoom: '9.18'
       mobileZoom: '9.18'
-      duration: '2000'
+      duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
@@ -283,11 +283,11 @@ mapbox:
           typeIcon: outlined
           text: Áreas de exploração do ouro em São Paulo
     - id: map2_jaraguaspzoom
-      centerLng: '-46.698'
-      centerLat: '-23.518'
-      zoom: '11.12'
-      mobileZoom: '11.12'
-      duration: '2000'
+      centerLng: '-46.760'
+      centerLat: '-23.511'
+      zoom: '11.36'
+      mobileZoom: '11.36'
+      duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
@@ -304,16 +304,12 @@ mapbox:
           colorIcon: '#d03535ff'
           typeIcon: outlined
           text: Pateo do Collegio
-        - icon: circle
-          colorIcon: '#d03535ff'
-          typeIcon: outlined
-          text: Pateo do Collegio
     - id: map2_pateo
-      centerLng: '-46.633'
+      centerLng: '-46.635'
       centerLat: '-23.548'
-      zoom: '16.25'
-      mobileZoom: '16.25'
-      duration: '2000'
+      zoom: '16.47'
+      mobileZoom: '16.47'
+      duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
@@ -1002,13 +998,24 @@ components:
         desktop: 600px
         tablet: 600px
         mobile: 600px
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map2_pateo
       - type: Text
         hasDropCap: false
         content: Em 1554 funda-se o povoado de São Paulo dos Campos de Piratininga, futura cidade de São Paulo, onde hoje encontra-se o Pateo do Collegio.
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_pateo
+      - type: Spacer
+        hasDropCap: false
+        content: Pouco depois, em 1597, o bandeirante Afonso Sardinha encontra ouro na região do Jaraguá. Estabelece uma grande propriedade na área com a construção de um complexo Casa Grande – Senzala ao pé do morro.
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
+      - type: MapView
+        hasDropCap: false
+        content: Em 1554 funda-se o povoado de São Paulo dos Campos de Piratininga, futura cidade de São Paulo, onde hoje encontra-se o Pateo do Collegio.
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_pateo
       - type: Spacer
         desktop: 600px
         tablet: 600px
@@ -1031,13 +1038,22 @@ components:
       - type: Text
         hasDropCap: false
         content: Pouco depois, em 1597, o bandeirante Afonso Sardinha encontra ouro na região do Jaraguá. Estabelece uma grande propriedade na área com a construção de um complexo Casa Grande – Senzala ao pé do morro.
-      - type: Spacer
         desktop: 600px
         tablet: 600px
         mobile: 600px
+      - type: Spacer
+        txtColor: ''
+        bgColor: ''
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+        mapView: map2_jaraguasp
       - type: MapView
         txtColor: ''
         bgColor: ''
+        desktop: 800px
+        tablet: 800px
+        mobile: 800px
         mapView: map2_jaraguasp
       - type: Spacer
         desktop: 800px
