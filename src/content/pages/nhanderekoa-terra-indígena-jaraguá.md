@@ -282,6 +282,7 @@ mapbox:
       layers: |-
         ti-jaragua
         exploracao-ouro-sp
+        satelite
       title: ''
       notes: ''
       items:
@@ -304,6 +305,7 @@ mapbox:
       layers: |-
         ti-jaragua
         patrimonio-colonial[fid==70]
+        satelite
       title: ''
       notes: ''
       items:
@@ -326,6 +328,7 @@ mapbox:
       layers: |-
         ti-jaragua
         patrimonio-colonial[fid==70]
+        satelite
       title: ''
       notes: ''
       items:
@@ -344,6 +347,7 @@ mapbox:
       layers: |-
         ti-jaragua
         patrimonio-colonial[fid==70]
+        satelite
       title: ''
       notes: ''
       items:
@@ -362,6 +366,7 @@ mapbox:
       layers: |-
         ti-jaragua
         capela-barueri
+        satelite
       title: ''
       notes: ''
       items:
@@ -385,6 +390,7 @@ mapbox:
         ti-jaragua
         casa-afonso-sardinha
         patrimonio-colonial
+        satelite
       title: ''
       notes: ''
       items:
@@ -416,6 +422,7 @@ mapbox:
         casa-afonso-sardinha
         estacao-jaragua
         patrimonio-colonial[fid==132]
+        satelite
       title: ''
       notes: ''
       items:
@@ -453,6 +460,7 @@ mapbox:
         aldeias-jaragua
         casa-afonso-sardinha
         casa-afonso-sardinha-label
+        satelite
       title: ''
       notes: ''
       items:
@@ -476,6 +484,7 @@ mapbox:
         casa-afonso-sardinha
         estacao-jaragua
         patrimonio-colonial[fid==132]
+        satelite
       title: ''
       notes: ''
       items:
@@ -515,6 +524,7 @@ mapbox:
         casa-afonso-sardinha
         estacao-jaragua
         patrimonio-colonial[fid==132]
+        satelite
       title: ''
       notes: ''
       items:
@@ -552,6 +562,7 @@ mapbox:
         aldeias-jaragua
         memoria-guarani
         cacica-jandira-label
+        satelite
       title: ''
       notes: ''
       items:
@@ -586,6 +597,7 @@ mapbox:
         memoria-guarani
         cacica-jandira-label
         ato-label
+        satelite
       title: ''
       notes: ''
       items:
