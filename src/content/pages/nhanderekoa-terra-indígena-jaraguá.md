@@ -788,9 +788,9 @@ components:
         mobile: 50px
       - type: ImageBlock
         wideImage: false
-        src: /uploads/imagem jaragua_color edited.jpg
+        src: /uploads/img_tekoa_pyau_natalicio.jpg
         alt: ''
-        description: Legenda legenda legenda legenda
+        description: O mestre dos saberes Natalício Karaí em frente do seu jardim medicinal
       - type: Spacer
         desktop: 300px
         tablet: 300px
