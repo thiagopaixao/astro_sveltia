@@ -260,6 +260,130 @@ mapbox:
           colorIcon: '#106013ff'
           typeIcon: outlined
           text: Aldeias
+    - id: map2_jaraguasp
+      centerLng: '-46.589'
+      centerLat: '-23.603'
+      zoom: '9.18'
+      mobileZoom: '9.18'
+      duration: '2000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+        exploracao-ouro-sp
+        patrimonio-colonial[fid==70]
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#d0353574'
+          typeIcon: outlined
+          text: Áreas de exploração do ouro em São Paulo
+    - id: map2_jaraguaspzoom
+      centerLng: '-46.698'
+      centerLat: '-23.518'
+      zoom: '11.12'
+      mobileZoom: '11.12'
+      duration: '2000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+        exploracao-ouro-sp
+        patrimonio-colonial[fid==70]
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#d0353574'
+          typeIcon: outlined
+          text: Áreas de exploração do ouro em São Paulo
+        - icon: circle
+          colorIcon: '#d03535ff'
+          typeIcon: outlined
+          text: Pateo do Collegio
+    - id: map2_pateo
+      centerLng: '-46.633'
+      centerLat: '-23.548'
+      zoom: '16.25'
+      mobileZoom: '16.25'
+      duration: '2000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+        exploracao-ouro-sp
+        patrimonio-colonial[fid==70]
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#d03535ff'
+          typeIcon: outlined
+          text: Pateo do Collegio
+    - id: map2_barueri
+      centerLng: '-46.816'
+      centerLat: '-23.499'
+      zoom: '11.54'
+      mobileZoom: '11.54'
+      duration: '2000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+        exploracao-ouro-sp
+        patrimonio-colonial[fid==70]
+        capela-barueri
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#d0353574'
+          typeIcon: outlined
+          text: Áreas de exploração do ouro em São Paulo
+        - icon: circle
+          colorIcon: '#d03535ff'
+          typeIcon: outlined
+          text: Aldeamento de Barueri
+    - id: map2_ourojaragua
+      centerLng: '-46.762'
+      centerLat: '-23.455'
+      zoom: '12.99'
+      mobileZoom: '12.99'
+      duration: '2000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+        casa-afonso-sardinha
+        patrimonio-colonial
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#3741f6ff'
+          typeIcon: outlined
+          text: Casa-Grande Senzala de Afonso Sardinha
+        - icon: circle
+          colorIcon: '#d03535ff'
+          typeIcon: outlined
+          text: Estruturas da exploração do ouro no Brasil Colônia
 components:
   - type: Group
     id: home
