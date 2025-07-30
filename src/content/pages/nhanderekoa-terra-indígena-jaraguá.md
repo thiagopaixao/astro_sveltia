@@ -996,16 +996,16 @@ components:
 
           Retomada e fundação: 2023
 
-          Tekoa Mirim, chamada “pequena aldeia”, está localizada ao lado da Tekoa Pyau. Assim como outros núcleos habitacionais, seus moradores têm desenvolvido várias práticas de cuidado e reparação do território. Destaca-se o plantio de mudas nativas, frutíferas e hortaliças ao longo do caminho que beira a Rodovia dos Bandeirantes, conectando a Tekoa Pyau à Tekoa Mirim e à Ka’aguy Mirim.
+          Assim como as demais _Tekoas_ da TI Jaraguá, a _Tekoa Mirim_ (“Pequena Aldeia”) tem desenvolvido várias práticas de cuidado e reparação do território. Destaca-se o plantio de mudas nativas, frutíferas e hortaliças ao longo do caminho que beira a Rodovia dos Bandeirantes, conectando-se às _Tekoas Pyau_ e _Ka’aguy Mirim_.
       - type: Spacer
         desktop: 50px
         tablet: 50px
         mobile: 50px
       - type: ImageBlock
         wideImage: false
-        src: /uploads/arqueological-remains_03.jpg
+        src: /uploads/img_tekoa_mirim_marcio.jpg
         alt: ''
-        description: ''
+        description: Marcio … e seu grande roçado em frente a Rodovia dos Bandeirantes ... melhorar
       - type: Spacer
         desktop: 300px
         tablet: 300px
