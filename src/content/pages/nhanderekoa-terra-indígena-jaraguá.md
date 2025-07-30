@@ -746,7 +746,7 @@ components:
 
           Retomada e fundação: década de 1960
 
-          Uma das mais antigas tekoas, a tekoa Ytu, “Aldeia da Cachoeira”, foi fundada pela família de Joaquim Augusto Martim e Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá. O nome se refere ao Ribeirão das Lavras que chega à _Tekoa&#32;_por meio de uma pequena cachoeira. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
+          Uma das mais antigas tekoas, a tekoa Ytu, “Aldeia da Cachoeira”, foi fundada pela família de Joaquim Augusto Martim e Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá. O nome se refere ao Ribeirão das Lavras que chega à _Tekoa _por meio de uma pequena cachoeira. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -2139,6 +2139,11 @@ components:
       - type: Text
         hasDropCap: false
         content: Desde a criação do Parque Estadual em 1961, o Pico do Jaraguá e suas matas tornaram-se objeto de iniciativas e leis de patrimonialização pelo estado e pelo município de São Paulo.
+      - type: ImageBlock
+        wideImage: true
+        src: /uploads/Casa_Grande_Afonso_Sardinha_Tombamento_PEJ_1978.jpg
+        alt: ''
+        description: 'Foto do levantamento técnico do complexo Casa-Grande e Senzala de Afonso Sardinha. Fonte: Processo de tombamento do Parque Estadual do Jaraguá, 1978'
       - type: Spacer
         desktop: 600px
         tablet: 600px
