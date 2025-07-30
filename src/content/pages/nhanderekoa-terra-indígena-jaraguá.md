@@ -746,7 +746,7 @@ components:
 
           Retomada e fundação: década de 1960
 
-          Uma das mais antigas tekoas, a tekoa Ytu, “aldeia da cachoeira”, foi fundada pela família de Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá, e Joaquim Augusto Martim. O nome se refere ao Ribeirão das Lavras que, por meio de uma pequena cachoeira, chega até a tekoa. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
+          Uma das mais antigas tekoas, a tekoa Ytu, “Aldeia da Cachoeira”, foi fundada pela família de Joaquim Augusto Martim e Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá. O nome se refere ao Ribeirão das Lavras que chega à _Tekoa&#32;_por meio de uma pequena cachoeira. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -778,7 +778,7 @@ components:
 
           Retomada e fundação: década de 1990.
 
-          A tekoa Pyau, traduzido como “aldeia nova”, é a segunda aldeia do processo histórico de retomada da T.I. Jaraguá. Hoje é a comunidade com maior densidade populacional da terra indígena. A tekoa está cercada pela Rodovia dos Bandeirantes e pela Rua Comendador de Matos, infraestruturas que bloqueiam sua continuidade territorial e afetaram historicamente áreas de coleta, caça e cultivo.
+          Segunda _Tekoa _a ser formada no processo histórico de retomada, a _Tekoa Pyau_ (Aldeia Nova) é, atualmente, a que tem maior densidade populacional na TI Jaraguá. Cercada pela Rodovia dos Bandeirantes e pela Rua Comendador de Matos, enfrenta barreiras físicas por essas infraestruturas que bloqueiam sua continuidade territorial e afetam, historicamente, áreas de coleta, caça e cultivo.
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -810,7 +810,7 @@ components:
 
           Retomada e fundação: 2005
 
-          Situada no extremo norte da T.I. Jaraguá, a área onde está a Tekoa Itakupe é utilizada pelas comunidades Guarani desde as primeiras retomadas nos anos 1950 e 1960. Fundada em 2014, hoje é formada por três núcleos: Sol nascente, Toka da Onça e (confirmar como querem chamar o terceiro núcleo). Por estar localizada do outro lado do Pico do Jaraguá, próxima de suas formações rochosas, foi nomeada de Itakupe, que pode ser traduzido como “atrás da pedra”.
+          Situada no extremo norte da TI, a _Tekoa Itakupe_, que pode ser traduzida como “Aldeia Atrás da Pedra”, recebe esse nome por estar do outro lado do Pico do Jaraguá, próxima de suas formações rochosas. Essa área é habitada por comunidades Guarani desde as primeiras retomadas, que aconteceram nas décadas de 1950 e 1960. Fundada em 2014, hoje é formada por três núcleos habitacionais.
       - type: Spacer
         desktop: 50px
         tablet: 50px
@@ -839,16 +839,16 @@ components:
 
           Retomada e fundação: 2014
 
-          Fundada pela Cacica Ara Poty (Maria) em 2014, a Tekoa Itawera recuperou uma área antes destinada ao descarte de lixo. Hoje, a comunidade se dedica à recuperação ambiental e cultural, com ações como o reflorestamento com espécies nativas, o cultivo de alimentos tradicionais como o milho Guarani, bem como um vasto trabalho de artesanato. O nome da aldeia pode ser traduzido como “pedra reluzente”.
+          Fundada pela cacica Ara Poty (Maria), a _Tekoa Itawerá_ (Aldeia da Pedra Reluzente) recuperou uma área antes utilizada para descarte de lixo. Atualmente, a comunidade se dedica à recuperação ambiental e cultural por meio de ações como o reflorestamento com espécies nativas e o cultivo de alimentos tradicionais, como o milho Guarani. Além disso, essa _Tekoa _desenvolve um vasto trabalho de artesanato.
       - type: Spacer
         desktop: 50px
         tablet: 50px
         mobile: 50px
       - type: ImageBlock
         wideImage: false
-        src: /uploads/arqueological-remains_03.jpg
+        src: /uploads/img_tekoa_itawera_cacica_maria.jpg
         alt: ''
-        description: ''
+        description: A cacica Maria Ara Poty confeccionando artesanato em sua casa na Tekoa Itawera, recuperada de um grande depósito de lixo
       - type: Spacer
         desktop: 300px
         tablet: 300px
@@ -868,7 +868,8 @@ components:
 
           Retomada e fundação: 2017
 
-          Desde sua retomada em 2017, a Tekoa Itaendy, “aldeia da pedra amarela”, vem promovendo práticas de manutenção da biodiversidade como o reflorestamento com espécies nativas, plantio de roças com alimentos tradicionais, bem como a reintrodução e criação de espécies de abelhas nativas.
+
+          Desde sua retomada em 2017, a _Tekoa Itaendy_ (Aldeia da Pedra Amarela) promove práticas de manutenção da biodiversidade, como o reflorestamento com espécies nativas, o plantio de roças com alimentos tradicionais e a reintrodução e criação de espécies de abelhas nativas.
       - type: Spacer
         desktop: 50px
         tablet: 50px
