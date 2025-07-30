@@ -2087,6 +2087,75 @@ components:
               src: /uploads/imagem_26_pagina_relatorio_tombamento.jpg
               alt: asd
               description: Imagem do arquivo do levantamento técnico do complexo Casa Grande-Senzala de Afonso Sardinha presente na proposta de tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978.
+  - type: Map
+    id: mapa_x_memoria_guarani
+    shortTitle: mapa X - memoria guarani
+    longTitle: mapa X - memoria guarani
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Highlight
+    customTxtColor: ''
+    bgColor: Primary
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem_27_casa_abelhas_marcio.jpg
+    overlay: light
+    components:
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        paddingTop: true
+        paddingBottom: true
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                ###### **parte IX**
+
+                ## **Práticas Espaciais do Cuidado & da Reparação**
+        column2:
+          components: []
+        mapView: map5_jaragua
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: Text
+        hasDropCap: false
+        content: Apenas em 2021, com o projeto “Memória Paulistana” do Departamento de Patrimônio Histórico da Prefeitura de São Paulo, é que espaços Guarani ganhariam algum grau de reconhecimento patrimonial oficial.
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map5_cacicajandira
+      - type: Text
+        hasDropCap: false
+        content: O lugar onde viveu a matriarca cacica Jandira, fundadora da Tekoa Ytu, a primeira retomada do Jaraguá, é incluído na lista de lugares da memória da cidade de São Paulo.
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map5_memoria
+      - type: Text
+        hasDropCap: false
+        content: Sob pressão dos movimentos guarani, o lugar onde foram realizados os protestos de 20XX, que bloqueou a bandeirantes, também entra na lista de lugares da memória da cidade de São Paulo.
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+    columnAlign: left
+    floatingText: true
   - type: Group
     id: parte_9_nhandereko_praticas_cuidado_e_reparacao
     shortTitle: parte 9 - nhandereko praticas cuidado & reparacao
@@ -2129,7 +2198,9 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia: []
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem_32_urbanizacao_jaragua.jpg
     overlay: ''
     components:
       - type: Columns
@@ -2184,6 +2255,10 @@ components:
                 ## **Ameaças ao Território e ao Patrimônio Florestal Guarani**
         column2:
           components: []
+      - type: Spacer
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
   - type: Group
     id: parte_10_texto_1
     shortTitle: parte 10 - texto 1
