@@ -36,6 +36,7 @@ mapbox:
   layers: |-
     ti-jaragua
     aldeias-jaragua
+    satelite
   columnAlign: center
   floatingText: false
   views:
@@ -52,6 +53,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         memoria-guarani
+        satelite
       title: ''
       notes: ''
       items:
@@ -85,6 +87,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         memoria-guarani
+        satelite
       title: ''
       notes: ''
       items:
@@ -106,6 +109,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         memoria-guarani
+        satelite
       title: ''
       notes: ''
       items:
@@ -127,6 +131,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         memoria-guarani
+        satelite
       title: ''
       notes: ''
       items:
@@ -148,6 +153,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         memoria-guarani
+        satelite
       title: ''
       notes: ''
       items:
@@ -169,6 +175,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         memoria-guarani
+        satelite
       title: ''
       notes: ''
       items:
@@ -190,6 +197,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         memoria-guarani
+        satelite
       title: ''
       notes: ''
       items:
@@ -211,6 +219,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         memoria-guarani
+        satelite
       title: ''
       notes: ''
       items:
@@ -232,6 +241,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         memoria-guarani
+        satelite
       title: ''
       notes: ''
       items:
@@ -253,6 +263,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         memoria-guarani
+        satelite
       title: ''
       notes: ''
       items:
