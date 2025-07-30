@@ -271,7 +271,6 @@ mapbox:
       layers: |-
         ti-jaragua
         exploracao-ouro-sp
-        patrimonio-colonial[fid==70]
       title: ''
       notes: ''
       items:
@@ -293,7 +292,6 @@ mapbox:
       pitch: '0'
       layers: |-
         ti-jaragua
-        exploracao-ouro-sp
         patrimonio-colonial[fid==70]
       title: ''
       notes: ''
@@ -303,9 +301,9 @@ mapbox:
           typeIcon: outlined
           text: Terra Indígena Jaraguá
         - icon: circle
-          colorIcon: '#d0353574'
+          colorIcon: '#d03535ff'
           typeIcon: outlined
-          text: Áreas de exploração do ouro em São Paulo
+          text: Pateo do Collegio
         - icon: circle
           colorIcon: '#d03535ff'
           typeIcon: outlined
@@ -320,7 +318,6 @@ mapbox:
       pitch: '0'
       layers: |-
         ti-jaragua
-        exploracao-ouro-sp
         patrimonio-colonial[fid==70]
       title: ''
       notes: ''
@@ -339,8 +336,6 @@ mapbox:
       pitch: '0'
       layers: |-
         ti-jaragua
-        exploracao-ouro-sp
-        patrimonio-colonial[fid==70]
         capela-barueri
       title: ''
       notes: ''
@@ -350,9 +345,9 @@ mapbox:
           typeIcon: outlined
           text: Terra Indígena Jaraguá
         - icon: circle
-          colorIcon: '#d0353574'
+          colorIcon: '#d03535ff'
           typeIcon: outlined
-          text: Áreas de exploração do ouro em São Paulo
+          text: Aldeamento de Barueri
         - icon: circle
           colorIcon: '#d03535ff'
           typeIcon: outlined
@@ -369,6 +364,7 @@ mapbox:
         ti-jaragua
         casa-afonso-sardinha
         patrimonio-colonial
+        exploracao-ouro-sp
       title: ''
       notes: ''
       items:
@@ -380,6 +376,10 @@ mapbox:
           colorIcon: '#3741f6ff'
           typeIcon: outlined
           text: Casa-Grande Senzala de Afonso Sardinha
+        - icon: circle
+          colorIcon: '#d0353586'
+          typeIcon: outlined
+          text: Áreas de exploração do ouro em São Paulo
         - icon: circle
           colorIcon: '#d03535ff'
           typeIcon: outlined
@@ -967,9 +967,9 @@ components:
     description: ''
     showInMenu: false
     animations: true
-    txtColor: Primary
+    txtColor: Highlight
     customTxtColor: ''
-    bgColor: Secundary
+    bgColor: Primary
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
@@ -997,13 +997,54 @@ components:
               desktop: 150px
               tablet: 150px
               mobile: 150px
-        mapView: resistencia_intro
+        mapView: map2_jaraguaspzoom
       - type: Spacer
         desktop: 600px
         tablet: 600px
         mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_pateo
+      - type: Text
+        hasDropCap: false
+        content: Em 1554 funda-se o povoado de São Paulo dos Campos de Piratininga, futura cidade de São Paulo, onde hoje encontra-se o Pateo do Collegio.
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_barueri
+      - type: Text
+        hasDropCap: false
+        content: Em 1560, ao sul do Pico do Jaraguá, na região de Barueri, José de Anchieta manda erguer outro aldeamento para concentração e catequização dos indígenas.
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_ourojaragua
+      - type: Text
+        hasDropCap: false
+        content: Pouco depois, em 1597, o bandeirante Afonso Sardinha encontra ouro na região do Jaraguá. Estabelece uma grande propriedade na área com a construção de um complexo Casa Grande – Senzala ao pé do morro.
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_jaraguasp
+      - type: Spacer
+        desktop: 800px
+        tablet: 800px
+        mobile: 800px
     columnAlign: right
-    floatingText: false
+    floatingText: true
   - type: Group
     id: parte_2_texto_2
     shortTitle: parte 2 - texto 2
