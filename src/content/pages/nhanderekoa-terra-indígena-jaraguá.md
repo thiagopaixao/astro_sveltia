@@ -1188,9 +1188,9 @@ components:
               mobile: 400px
             - type: ImageBlock
               wideImage: true
-              src: /uploads/imagem_04_gravuraouro.jpg
+              src: /uploads/gravura_exploracao_ouro_jaragua.jpg
               alt: Gravura retratando a extração de ouro no Jaraguá, circa séc. 18
-              description: Gravura retratando a extração de ouro no Jaraguá, circa séc. 18
+              description: 'Gravura retratando a extração de ouro no Jaraguá, circa século XVIII. Fonte: John Mawe, Travels in the interior of Brazil, 1812'
         mapView: resistencia_intro
     columnAlign: right
     floatingText: false
