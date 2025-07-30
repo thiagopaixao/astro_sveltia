@@ -389,6 +389,105 @@ mapbox:
           colorIcon: '#d03535ff'
           typeIcon: outlined
           text: Estruturas da exploração do ouro no Brasil Colônia
+    - id: map4_jaragua
+      centerLng: '-46.782'
+      centerLat: '-23.461'
+      zoom: '13.26'
+      mobileZoom: '13.26'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+        pe-jaragua
+        aldeias-jaragua
+        memoria-guarani
+        casa-afonso-sardinha
+        estacao-jaragua
+        patrimonio-colonial[fid==132]
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Aldeias
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Terra Indígena Jaraguá
+        - icon: show_chart
+          colorIcon: '#9d1b1bff'
+          typeIcon: outlined
+          text: Parque Estadual do Jaraguá
+        - icon: circle
+          colorIcon: '#9d1b1bff'
+          typeIcon: outlined
+          text: Patrimônio colonial
+        - icon: circle
+          colorIcon: '#a3f339ff'
+          typeIcon: outlined
+          text: Lugares de memória Guarani
+    - id: map4_afonsosardinha
+      centerLng: '-46.758'
+      centerLat: '-23.462'
+      zoom: '16.57'
+      mobileZoom: '16.57'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+        pe-jaragua
+        aldeias-jaragua
+        casa-afonso-sardinha
+        casa-afonso-sardinha-label
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#9d1b1bff'
+          typeIcon: outlined
+          text: Patrimônio colonial
+    - id: map4_jaraguaestacao
+      centerLng: '-46.760'
+      centerLat: '-23.458'
+      zoom: '13.45'
+      mobileZoom: '13.45'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+        pe-jaragua
+        aldeias-jaragua
+        memoria-guarani
+        casa-afonso-sardinha
+        estacao-jaragua
+        patrimonio-colonial[fid==132]
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Aldeias
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Terra Indígena Jaraguá
+        - icon: show_chart
+          colorIcon: '#9d1b1bff'
+          typeIcon: outlined
+          text: Parque Estadual do Jaraguá
+        - icon: circle
+          colorIcon: '#9d1b1bff'
+          typeIcon: outlined
+          text: Patrimônio colonial
+        - icon: circle
+          colorIcon: '#a3f339ff'
+          typeIcon: outlined
+          text: Lugares de memória Guarani
 components:
   - type: Group
     id: home
@@ -1004,9 +1103,9 @@ components:
               mobile: 150px
         mapView: map2_jaraguaspzoom
       - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
+        desktop: 800px
+        tablet: 800px
+        mobile: 800px
       - type: Text
         hasDropCap: false
         content: Em 1554 funda-se o povoado de São Paulo dos Campos de Piratininga, futura cidade de São Paulo, onde hoje encontra-se o Pateo do Collegio.
@@ -1868,9 +1967,9 @@ components:
     description: ''
     showInMenu: false
     animations: true
-    txtColor: Primary
+    txtColor: Highlight
     customTxtColor: ''
-    bgColor: Secundary
+    bgColor: Primary
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
@@ -1906,9 +2005,45 @@ components:
               src: /uploads/imagem_26_pagina_relatorio_tombamento.jpg
               alt: asd
               description: Imagem do arquivo do levantamento técnico do complexo Casa Grande-Senzala de Afonso Sardinha presente na proposta de tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978.
-        mapView: resistencia_intro
-    columnAlign: left
-    floatingText: false
+        mapView: map4_jaragua
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: Text
+        hasDropCap: false
+        content: Desde a criação do Parque Estadual em 1961, o Pico do Jaraguá e suas matas tornaram-se objeto de iniciativas e leis de patrimonialização pelo estado e pelo município de São Paulo.
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map4_afonsosardinha
+      - type: Text
+        hasDropCap: false
+        content: Em 1978, no contexto da construção do complexo turístico do Parque, o conjunto Casa Grande-Senzala construído pelo bandeirante Afonso Sardinha é tombado pelo CONDEPHAAT (Conselho de Defesa do Patrimônio Histórico, Arqueológico, Artístico e Turístico do Estado de São Paulo).
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map4_jaraguaestacao
+      - type: Text
+        hasDropCap: false
+        content: |-
+          Em 1983, toda a área do Parque é tombada pelo CONDEPHAAT, e em 1992 pelo CONPRESP (Conselho Municipal de Preservação do Patrimônio Histórico, Cultural e Ambiental da Cidade de São Paulo).
+
+          Em 2015, o CONPRESP tomba o Conjunto histórico da Estação Ferroviária do Jaraguá, e em 2019 tomba as estruturas remanescentes da Pedreira de Quartzito no Jaraguá, na proximidade da Tekoa Itakupé.
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+    columnAlign: right
+    floatingText: true
   - type: Group
     id: parte_8_texto_2
     shortTitle: parte 8 - texto 2
