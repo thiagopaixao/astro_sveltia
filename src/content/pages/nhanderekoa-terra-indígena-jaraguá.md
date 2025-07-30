@@ -489,7 +489,7 @@ mapbox:
           typeIcon: outlined
           text: Lugares de memória Guarani
     - id: map5_jaragua
-      centerLng: '-46.782'
+      centerLng: '-46.766'
       centerLat: '-23.461'
       zoom: '13.26'
       mobileZoom: '13.26'
@@ -528,7 +528,7 @@ mapbox:
           typeIcon: outlined
           text: Lugares de memória Guarani
     - id: map5_cacicajandira
-      centerLng: '-46.754'
+      centerLng: '-46.753'
       centerLat: '-23.464'
       zoom: '17.23'
       mobileZoom: '17.23'
@@ -561,7 +561,7 @@ mapbox:
           typeIcon: outlined
           text: Lugares de memória Guarani
     - id: map5_memoria
-      centerLng: '-46.753'
+      centerLng: '-46.752'
       centerLat: '-23.464'
       zoom: '16.47'
       mobileZoom: '16.47'
