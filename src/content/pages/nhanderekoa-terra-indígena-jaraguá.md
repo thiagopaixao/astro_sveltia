@@ -2112,10 +2112,6 @@ components:
               alt: asd
               description: Imagem do arquivo do levantamento técnico do complexo Casa Grande-Senzala de Afonso Sardinha presente na proposta de tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978.
         mapView: map4_jaragua
-      - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
       - type: Text
         hasDropCap: false
         content: Desde a criação do Parque Estadual em 1961, o Pico do Jaraguá e suas matas tornaram-se objeto de iniciativas e leis de patrimonialização pelo estado e pelo município de São Paulo.
@@ -2227,10 +2223,6 @@ components:
         column2:
           components: []
         mapView: map5_jaragua
-      - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
       - type: Text
         hasDropCap: false
         content: Apenas em 2021, com o projeto “Memória Paulistana” do Departamento de Patrimônio Histórico da Prefeitura de São Paulo, é que espaços Guarani ganhariam algum grau de reconhecimento patrimonial oficial.
