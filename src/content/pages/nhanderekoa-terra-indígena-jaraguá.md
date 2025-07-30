@@ -6,7 +6,7 @@ pageSettings:
   link_pt_br: nhanderekoa
   link_en: nhanderekoa-en
   link_es: nhanderekoa-es
-  animations: enable_all
+  animations: disable_all
   direction: left
   seoTitle: ''
   seoDescription: ''
@@ -2296,9 +2296,7 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_32_urbanizacao_jaragua.jpg
+    backgroundMedia: []
     overlay: ''
     components:
       - type: Columns
@@ -2323,7 +2321,7 @@ components:
         column2:
           components: []
   - type: Group
-    id: parte_X_ameacas
+    id: parte_x_ameacas
     shortTitle: parte X - ameaças
     longTitle: Ameaças a T.I. Jaraguá
     description: ''
