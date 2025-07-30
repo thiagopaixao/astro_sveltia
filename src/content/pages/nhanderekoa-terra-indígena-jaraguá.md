@@ -323,7 +323,7 @@ mapbox:
           typeIcon: outlined
           text: Pateo do Collegio
     - id: map2_barueri
-      centerLng: '-46.825'
+      centerLng: '-46.859'
       centerLat: '-23.494'
       zoom: '11.81'
       mobileZoom: '11.81'
@@ -345,10 +345,10 @@ mapbox:
           typeIcon: outlined
           text: Aldeamento de Barueri
     - id: map2_ourojaragua
-      centerLng: '-46.778'
+      centerLng: '-46.781'
       centerLat: '-23.458'
-      zoom: '13.25'
-      mobileZoom: '13.25'
+      zoom: '13.52'
+      mobileZoom: '13.52'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -995,12 +995,6 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: map2_pateo
-      - type: Spacer
-        hasDropCap: false
-        content: Pouco depois, em 1597, o bandeirante Afonso Sardinha encontra ouro na região do Jaraguá. Estabelece uma grande propriedade na área com a construção de um complexo Casa Grande – Senzala ao pé do morro.
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
       - type: MapView
         hasDropCap: false
         content: Em 1554 funda-se o povoado de São Paulo dos Campos de Piratininga, futura cidade de São Paulo, onde hoje encontra-se o Pateo do Collegio.
