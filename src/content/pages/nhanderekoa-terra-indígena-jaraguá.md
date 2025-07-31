@@ -1490,6 +1490,19 @@ components:
               src: /uploads/imagem_07_jurandircafe.jpg
               alt: ''
               description: O professor Jurandir Tupã Jekupe Mirim mostra uma planta de café nas florestas da T.I. Jaraguá, remanescente das plantações dos séculos XVIII e XIX, quando a região funcionava como uma grande propriedade agrícola.
+            - type: Spacer
+              hasDropCap: false
+              content: |-
+                ##### A CRIAÇÃO DO PARQUE DO JARAGUÁ
+
+                Na década de 1940, com o declínio da atividade cafeeira, a Fazenda Jaraguá é adquirida pelo município de São Paulo e torna-se propriedade estatal. Em 1946, a propriedade passa a ser administrada pelo Serviço Florestal do município.  
+
+                Por esta época, na primeira metade do século XX, o Jaraguá continuava sendo um lugar habitado pelos Guarani através dos caminhos que conectavam o Paraná e o Mato Grosso do Sul até o Vale do Ribeira e o litoral paulista.
+
+                Em 1961, no contexto do estabelecimento das primeiras reservas florestais nacionais, cria-se o Parque Estadual do Jaraguá, que pela primeira vez garante algum nível de proteção ambiental aos remanescentes de Mata Atlântica no Pico do Jaraguá.
+              desktop: 100px
+              tablet: 100px
+              mobile: 100px
             - type: Text
               hasDropCap: false
               content: |-
@@ -1500,7 +1513,16 @@ components:
                 Por esta época, na primeira metade do século XX, o Jaraguá continuava sendo um lugar habitado pelos Guarani através dos caminhos que conectavam o Paraná e o Mato Grosso do Sul até o Vale do Ribeira e o litoral paulista.
 
                 Em 1961, no contexto do estabelecimento das primeiras reservas florestais nacionais, cria-se o Parque Estadual do Jaraguá, que pela primeira vez garante algum nível de proteção ambiental aos remanescentes de Mata Atlântica no Pico do Jaraguá.
+              wideImage: false
+              src: /uploads/imagem_05_mapadoPEJ.jpg
+              alt: ''
+              description: 'Mapa dos limites do Parque Estadual do Jaraguá apresentado no Processo de Tombamento do CONDEPHAAT de 1978. A área hachurada em amarelo ao lado direito, destinada à criação do complexo turístico do parque, coincide com a área da Tekoa Ytu, estabelecida entre três lagoas ao pé do morro. (Fonte: CONDEPHAAT)'
             - type: ImageBlock
+              hasDropCap: false
+              content: |-
+                Ao proteger as florestas do Jaraguá dentro dos parâmetros ambientalistas tradicionais, o Parque Estadual acabou não apenas cerceando o uso das matas pelas comunidades Guarani, mas também foi um modo de apagar a presença indígena da região, definindo a área como uma grande reserva ecológica homogênea, vazia e inabitada .   
+
+                Em paralelo, São Paulo vive um rápido processo de urbanização. Entre 1940 e 1948 é construída a rodovia Anhanguera nas margens do Território Guarani do Jaraguá, e em 1955 é construído o linhão de transmissão Anhangabaú-Jundiaí sobre o pico do morro. Estas grandes infraestruturas de transporte e energia inter-urbanas abrem caminho para a voraz especulação imobiliária que se daria nas décadas seguintes, principalmente com o regime militar depois do golpe de 1964.
               wideImage: false
               src: /uploads/imagem_05_mapadoPEJ.jpg
               alt: ''
@@ -1521,63 +1543,14 @@ components:
               desktop: 150px
               tablet: 150px
               mobile: 150px
+            - type: Spacer
+              desktop: 600px
+              tablet: 600px
+              mobile: 600px
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_18_mapa_anhanguera.jpg
               alt: ''
-              description: Planta da Via Anhanguera, década de 40 (Arquivo Biblioteca do Departamento de Estradas e Rodagens)
-  - type: Group
-    id: parte_2_texto_3
-    shortTitle: parte 2 - texto 3
-    longTitle: parte 2 - texto 3
-    description: ''
-    showInMenu: false
-    animations: true
-    txtColor: Primary
-    customTxtColor: ''
-    bgColor: Highlight
-    customBgColor: ''
-    backgroundMedia: []
-    overlay: ''
-    components:
-      - type: Columns
-        paddingTop: false
-        paddingBottom: false
-        invertOnMobile: false
-        columnsAlign: 66-33
-        column1:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: |-
-                ##### A CRIAÇÃO DO PARQUE DO JARAGUÁ
-
-                Na década de 1940, com o declínio da atividade cafeeira, a Fazenda Jaraguá é adquirida pelo município de São Paulo e torna-se propriedade estatal. Em 1946, a propriedade passa a ser administrada pelo Serviço Florestal do município.  
-
-                Por esta época, na primeira metade do século XX, o Jaraguá continuava sendo um lugar habitado pelos Guarani através dos caminhos que conectavam o Paraná e o Mato Grosso do Sul até o Vale do Ribeira e o litoral paulista.
-
-                Em 1961, no contexto do estabelecimento das primeiras reservas florestais nacionais, cria-se o Parque Estadual do Jaraguá, que pela primeira vez garante algum nível de proteção ambiental aos remanescentes de Mata Atlântica no Pico do Jaraguá.
-            - type: ImageBlock
-              wideImage: false
-              src: /uploads/imagem_05_mapadoPEJ.jpg
-              alt: Mapa dos limites do Parque Estadual do Jaraguá apresentado no Processo de Tombamento do CONDEPHAAT de 1978
-              description: 'Mapa dos limites do Parque Estadual do Jaraguá apresentado no Processo de Tombamento do CONDEPHAAT de 1978. A área hachurada em amarelo ao lado direito, destinada à criação do complexo turístico do parque, coincide com a área da Tekoa Ytu, estabelecida entre três lagoas ao pé do morro. (Fonte: CONDEPHAAT)'
-            - type: Text
-              hasDropCap: true
-              content: |-
-                Ao proteger as florestas do Jaraguá dentro dos parâmetros ambientalistas tradicionais, o Parque Estadual acabou não apenas cerceando o uso das matas pelas comunidades Guarani, mas também foi um modo de apagar a presença indígena da região, definindo a área como uma grande reserva ecológica homogênea, vazia e inabitada .   
-
-                Em paralelo, São Paulo vive um rápido processo de urbanização. Entre 1940 e 1948 é construída a rodovia Anhanguera nas margens do Território Guarani do Jaraguá, e em 1955 é construído o linhão de transmissão Anhangabaú-Jundiaí sobre o pico do morro. Estas grandes infraestruturas de transporte e energia inter-urbanas abrem caminho para a voraz especulação imobiliária que se daria nas décadas seguintes, principalmente com o regime militar depois do golpe de 1964.
-        column2:
-          components:
-            - type: Spacer
-              desktop: 1000px
-              tablet: 500px
-              mobile: 500px
-            - type: ImageBlock
-              wideImage: true
-              src: /uploads/imagem_18_mapa_anhanguera.jpg
-              alt: Planta da Via Anhanguera, década de 40 (Arquivo Biblioteca do Departamento de Estradas e Rodagens)
               description: Planta da Via Anhanguera, década de 40 (Arquivo Biblioteca do Departamento de Estradas e Rodagens)
   - type: Group
     id: parte_3_retomada_do_jaragua
@@ -1610,8 +1583,28 @@ components:
                 ## A Retomada do Jaraguá
 
                 ## (1800 - 1961)
+            - type: ImageBlock
+              wideImage: false
+              src: /uploads/imagem_05_mapadoPEJ.jpg
+              alt: Mapa dos limites do Parque Estadual do Jaraguá apresentado no Processo de Tombamento do CONDEPHAAT de 1978
+              description: 'Mapa dos limites do Parque Estadual do Jaraguá apresentado no Processo de Tombamento do CONDEPHAAT de 1978. A área hachurada em amarelo ao lado direito, destinada à criação do complexo turístico do parque, coincide com a área da Tekoa Ytu, estabelecida entre três lagoas ao pé do morro. (Fonte: CONDEPHAAT)'
+            - type: Text
+              hasDropCap: true
+              content: |-
+                Ao proteger as florestas do Jaraguá dentro dos parâmetros ambientalistas tradicionais, o Parque Estadual acabou não apenas cerceando o uso das matas pelas comunidades Guarani, mas também foi um modo de apagar a presença indígena da região, definindo a área como uma grande reserva ecológica homogênea, vazia e inabitada .   
+
+                Em paralelo, São Paulo vive um rápido processo de urbanização. Entre 1940 e 1948 é construída a rodovia Anhanguera nas margens do Território Guarani do Jaraguá, e em 1955 é construído o linhão de transmissão Anhangabaú-Jundiaí sobre o pico do morro. Estas grandes infraestruturas de transporte e energia inter-urbanas abrem caminho para a voraz especulação imobiliária que se daria nas décadas seguintes, principalmente com o regime militar depois do golpe de 1964.
         column2:
-          components: []
+          components:
+            - type: Spacer
+              desktop: 1000px
+              tablet: 500px
+              mobile: 500px
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/imagem_18_mapa_anhanguera.jpg
+              alt: Planta da Via Anhanguera, década de 40 (Arquivo Biblioteca do Departamento de Estradas e Rodagens)
+              description: Planta da Via Anhanguera, década de 40 (Arquivo Biblioteca do Departamento de Estradas e Rodagens)
   - type: Group
     id: parte_3_texto_1
     shortTitle: parte 3 - texto 1
@@ -1623,7 +1616,9 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia: []
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem_06_picojaragua.jpg
     overlay: ''
     components:
       - type: Columns
@@ -1696,7 +1691,16 @@ components:
               videoUrl: https://www.youtube.com/embed/80MJwqZdOss?si=wQDvXQFFAxlw8f15
               videoCaption: Entrevista histórica com a Cacica Jandira, matriarca da Terra Indígena Jaraguá em São Paulo (realizado em 1992 pelo VideoFAU da Faculdade de Arquitetura e Urbanismo da USP).
         column2:
-          components: []
+          components:
+            - type: Spacer
+              desktop: 200px
+              tablet: 200px
+              mobile: 200px
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/imagem_08_spi.jpg
+              alt: ''
+              description: Imagem histórica do “aldeamentos” Guarani do Serviço de Proteção aos Índios (SPI) na região do Rio Itariri, no Vale do Ribeira (Imagem do acervo particular de João Emílio Gerodetti).
   - type: Group
     id: parte_3_texto_2
     shortTitle: parte 3 - texto 2
@@ -1712,6 +1716,10 @@ components:
     overlay: ''
     components:
       - type: Columns
+        wideImage: false
+        src: /uploads/imagem_31_analise_foto_aerea_verde.jpg
+        alt: asd
+        description: Análise de imagem aerofotogramétrica de 1954, onde é possível identificar a área onde foi estabelecida a Tekoa Ytu, próxima de fontes de água ao pé do morro do Jaraguá. Alterações na estrutura da mata indicam a possível presença de assentamentos Guarani na região anteriores a 1960-1961, quando a Tekoa Ytu, considerada a primeira retomada do Jaraguá, é estabelecida definitivamente.
         paddingTop: false
         paddingBottom: false
         invertOnMobile: false
@@ -1761,6 +1769,10 @@ components:
                 ## **Ditadura, Deslocamentos Forçados & Desmatamento**
 
                 ## **(1964 – 1984)**
+            - type: VideoEmbed
+              wideVideo: true
+              videoUrl: https://www.youtube.com/embed/80MJwqZdOss?si=wQDvXQFFAxlw8f15
+              videoCaption: Entrevista histórica com a Cacica Jandira, matriarca da Terra Indígena Jaraguá em São Paulo (realizado em 1992 pelo VideoFAU da Faculdade de Arquitetura e Urbanismo da USP).
         column2:
           components: []
   - type: Group
@@ -1774,7 +1786,9 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia: []
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem_09_itaipu.jpg
     overlay: ''
     components:
       - type: Columns
@@ -1866,8 +1880,45 @@ components:
               src: /uploads/imagem_16_logo_mata_atlantica_unesco.jpg
               alt: Selo da Reserva da Biosfera - UNESCO
               description: Selo da Reserva da Biosfera - UNESCO
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/imagem_11_bandeirantesconstrucao.jpg
+              alt: ''
+              description: 'construção Obras da construção da Rodovia dos Bandeirantes na região do Pico do Jaraguá ( Fonte: Arquivo FGV CPDOC) Rodovia dos Bandeirantes na região do Pico do Jaraguá (Fonte: CPDOC FGV)'
+            - type: Text
+              hasDropCap: true
+              content: |-
+                Ao passo que os “grandes empreendimentos” da ditadura militar avançavam Brasil afora, os povos indígenas eram sistematicamente violentados e reprimidos pelo regime.      
+
+                Como mostra o relatório da Comissão Nacional da Verdade, no contexto dos planos de desenvolvimento nacional, inúmeras comunidades Indígenas foram submetidas a transferências e remoções forçadas executadas por agentes de estado para abrir terras para obras de infraestrutura.
+
+                É o caso da construção da Usina Hidrelétrica de Itaipu no centro do território ancestral Guarani no Oeste do Paraná. O imenso lago artificial de Itaipu inundou dezenas de tekoas, e várias famílias Guarani foram forçadas a deixar suas terras, algumas migrando para São Paulo. 
+
+                Ao mesmo tempo, lideranças indígenas eram perseguidas pelo Estado por seu ativismo político pela defesa dos territórios, ou tornavam-se alvo de milícias ruralistas, como no caso do grande líder guarani-ñadeva Marçal de Souza. Um dos precursores das lutas guarani pela recuperação e reconhecimento de seus territórios ancestrais, Marçal de Souza, Tupã-Y, foi assassinado por pistoleiros no Mato Grosso do Sul em novembro de 1983.
+            - type: VideoEmbed
+              wideVideo: true
+              videoUrl: https://www.youtube.com/embed/Z3HS2j2acX4?si=ZylorkTY5cZrXczI
+              videoCaption: Entrevista histórica com Marçal de Souza, liderança Guarani assassinada em 1983.
         column2:
-          components: []
+          components:
+            - type: Spacer
+              desktop: 100px
+              tablet: 100px
+              mobile: 100px
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/imagem_10_bandeirantes.jpg
+              alt: Inauguração da Rodovia dos Bandeirantes com a presença do ditador General Ernesto Geisel (Arquivo FGV CPDOC)
+              description: Inauguração da Rodovia dos Bandeirantes com a presença do ditador General Ernesto Geisel (Arquivo FGV CPDOC)
+            - type: Spacer
+              desktop: 500px
+              tablet: 500px
+              mobile: 500px
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/imagem_12_mapaitaipu.jpg
+              alt: ''
+              description: 'Mapa das tekoas inundadas e forçosamente removidas da região do lago artificial de Itaipu (Fonte: agência autônoma e CGY)'
   - type: Group
     id: parte_5_texto_1
     shortTitle: parte 5 - texto 1
@@ -1879,7 +1930,9 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia: []
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem_13_constituinte.jpg
     overlay: ''
     components:
       - type: Columns
@@ -1959,6 +2012,11 @@ components:
               src: /uploads/imagem_16_logo_mata_atlantica_unesco.jpg
               alt: Selo da Reserva da Biosfera - UNESCO
               description: Selo da Reserva da Biosfera - UNESCO
+            - type: ImageBlock
+              wideImage: false
+              src: /uploads/imagem_29_area_demarcada_1987.jpg
+              alt: asd
+              description: Mapa assinalando a área demarcada em 1987, circunscrita ao núcleo habitacional da Tekoa Ytu, em comparação com a área reconhecida da T.I.Jaraguá atualmente.
         column2:
           components:
             - type: Text
@@ -1969,6 +2027,9 @@ components:
                 Em 1994 o Parque Estadual do Jaraguá é reconhecido pela UNESCO como Patrimônio da Humanidade, na categoria de Reserva da Biosfera, passando a integrar o Cinturão Verde da Cidade de São Paulo.
 
                  Assim como na criação do Parque Estadual em 1961, tais medidas protetivas ambientalistas muitas vezes entram em conflito com o direito das comunidades Guarani ao seu território ancestral, impedindo-as de usufruir dos recursos naturais das florestas dentro do perímetro do Parque, que hoje encontra-se totalmente cercado.
+              desktop: 100px
+              tablet: 100px
+              mobile: 100px
             - type: ImageBlock
               wideImage: false
               src: /uploads/imagem_30_cinturao_verde.jpg
@@ -2005,11 +2066,28 @@ components:
                 ## **Reconhecimento, Luta & Demarcação**
 
                 ## **(1990 – 2025)**
+              wideImage: false
+              src: /uploads/imagem_16_logo_mata_atlantica_unesco.jpg
+              alt: Selo da Reserva da Biosfera - UNESCO
+              description: Selo da Reserva da Biosfera - UNESCO
               desktop: 300px
               tablet: 300px
               mobile: 300px
         column2:
-          components: []
+          components:
+            - type: Text
+              hasDropCap: true
+              content: |-
+                Em paralelo, no arco entre os assassinatos de Marçal de Souza e Chico Mendes em 1983-1984, e a realização do encontro internacional ECO-92 promovido pelas Nações Unidas no Rio de Janeiro em 1992, a pauta ambiental consolida-se internacionalmente e no Brasil. 
+
+                Em 1994 o Parque Estadual do Jaraguá é reconhecido pela UNESCO como Patrimônio da Humanidade, na categoria de Reserva da Biosfera, passando a integrar o Cinturão Verde da Cidade de São Paulo.
+
+                 Assim como na criação do Parque Estadual em 1961, tais medidas protetivas ambientalistas muitas vezes entram em conflito com o direito das comunidades Guarani ao seu território ancestral, impedindo-as de usufruir dos recursos naturais das florestas dentro do perímetro do Parque, que hoje encontra-se totalmente cercado.
+            - type: ImageBlock
+              wideImage: false
+              src: /uploads/imagem_30_cinturao_verde.jpg
+              alt: asd
+              description: Mapa da área norte do Cinturão Verde da Cidade de São Paulo. As florestas da T.I. Jaraguá são as mais preservadas do cinturão.
   - type: Group
     id: parte_6_texto_1
     shortTitle: parte 6 - texto 1
@@ -2021,7 +2099,9 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia: []
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem_16_ocupacao_antena.jpg
     overlay: ''
     components:
       - type: Columns
@@ -2092,6 +2172,9 @@ components:
               src: /uploads/imagem_22_ocupacao_monumentobandeira_rafaelvilela.jpg
               alt: asd
               description: Ocupação do Monumento às Bandeiras em XXX de XXXX (Fotografia de Rafael Vilela)
+              wideVideo: false
+              videoUrl: https://www.youtube.com/embed/JCBOU4wQmR8?si=Ce5kuWAYhQyji6Wk
+              videoCaption: '"Rodovia Rojoko - O dia em que fechamos a Bandeirantes”.   Video realizado pela CGY documentando o fechamento da Rodovia dos Bandeirantes por ativistas Guarani em 26 de Setembro de 2013. O protesto pede a demarcação das T.I.s Jaraguá e Tenondé Porã, e o cancelamento   da Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes.  (Fonte: CGY)'
               txtColor: ''
               bgColor: ''
               byline: Antony Karaí Poty
@@ -2185,18 +2268,76 @@ components:
             - type: Text
               hasDropCap: false
               content: Após a eleição de Luiz Inácio Lula da Silva em 2023, e a criação do Ministério dos Povos Indígenas, retoma-se o processo de demarcação do território Guarani do Jaraguá em São Paulo. Através da Portaria 793 de 23 de Outubro de 2024, o Ministério da Justiça declara a nulidade da Portaria 683 de 2015, restabelecendo os efeitos da Portaria 581 de 2015 que reconhece a posse Guarani e a demarcação da Terra indígena Jaraguá
+              desktop: 400px
+              tablet: 100px
+              mobile: 100px
             - type: ImageBlock
+              content: Estando à frente tanto de uma manifestação simbólica ou de um enfrentamento, a gente vê que a nossa luta é diferente. A gente não tem somente uma luta de rua, mas também uma luta espiritual
               wideImage: false
               src: /uploads/imagem_23_mapa_cerimonia.jpg
               alt: asd
               description: Celebração da demarcação da T.I. Jaraguá pelas lentes de Richard Wera Mirim
+              txtColor: ''
+              bgColor: ''
+              byline: Antony Karaí Poty
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/2013 [01_10]_01_ISA.jpg
+              alt: ''
+              description: 'Protesto no Monumento às Bandeiras (Fonte: Tiago Moreira dos Santos - ISA)'
         column2:
           components:
             - type: Pullquote
+              hasDropCap: true
               content: Como a gente sempre faz nas manifestações com outras faixas, o mapa estava presente, primeiro na mão dos jovens e das crianças, depois as mulheres ergueram o mapa, e aquilo foi uma celebração, foi a nossa forma de fazer desse processo da demarcação da terra uma cerimônia.
               txtColor: ''
               bgColor: ''
               byline: – Thiago Henrique Karai Djekupe
+            - type: ImageBlock
+              hasDropCap: true
+              content: |-
+                Mas a justiça ao reconhecimento da posse ancestral Guarani do Jaraguá teve vida curta. Eventos políticos em Brasília trazem uma reviravolta ao processo. 
+
+                Em 2017, após o impeachment de Dilma Rousseff, o governo de Michel Temer anula a demarcação da Terra Indígena Jaraguá (Portaria 683). Ato contínuo, durante o governo de Jair Bolsonaro entre 2019 e 2022, o projeto da chamada “Lei do Marco Temporal”, que havia sido praticamente arquivado em 2018, volta a ser pauta no Congresso Nacional. 
+
+                Em maio de 2023 a Câmera dos Deputados aprova a “Lei do Marco Temporal”. Cinco meses depois, em setembro de 2023, o Supremo Tribunal Federal rejeita a tese como inconstitucional. Entretanto, a proposta segue em pauta no Congresso Nacional até os dias de hoje, ameaçando a integridade dos territórios indígenas.
+              wideImage: true
+              src: /uploads/imagem_16_ocupacao_antena.jpg
+              alt: ''
+              description: 'Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá, entre os dias 14 e 16 de setembro de 2017, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo (Fonte: Comissão Guarani Yvyrupa - CGY)'
+              wideVideo: true
+              videoUrl: https://player.vimeo.com/video/1106085328?
+              videoCaption: 'Luta & Diálogo: entrevista com Antony Karaí Poty sobre o papel da luta de rua e espiritual dos Guarani'
+              txtColor: ''
+              bgColor: ''
+              byline: – Thiago Henrique Karai Djekupe
+            - type: Text
+              hasDropCap: false
+              content: |-
+                Mas a justiça ao reconhecimento da posse ancestral Guarani do Jaraguá teve vida curta. Eventos políticos em Brasília trazem uma reviravolta ao processo. 
+
+                Em 2017, após o impeachment de Dilma Rousseff, o governo de Michel Temer anula a demarcação da Terra Indígena Jaraguá (Portaria 683). Ato contínuo, durante o governo de Jair Bolsonaro entre 2019 e 2022, o projeto da chamada “Lei do Marco Temporal”, que havia sido praticamente arquivado em 2018, volta a ser pauta no Congresso Nacional. 
+
+                Em maio de 2023 a Câmera dos Deputados aprova a “Lei do Marco Temporal”. Cinco meses depois, em setembro de 2023, o Supremo Tribunal Federal rejeita a tese como inconstitucional. Entretanto, a proposta segue em pauta no Congresso Nacional até os dias de hoje, ameaçando a integridade dos territórios indígenas.
+              wideVideo: true
+              videoUrl: https://player.vimeo.com/video/1106085328?
+              videoCaption: 'Luta & Diálogo: entrevista com Antony Karaí Poty sobre o papel da luta de rua e espiritual dos Guarani'
+              txtColor: ''
+              bgColor: ''
+              byline: – Thiago Henrique Karai Djekupe
+            - type: VideoEmbed
+              hasDropCap: false
+              content: Em resposta a estas violações de seus direitos consagrados com a Constituição de 1988, entre 2013 e 2025, as comunidades Guarani do Jaraguá, junto com as comunidades de Tenondé Porã, realizam uma série de atos políticos e ações de advocacia, literalmente reocupando a cidade de São Paulo – Terra Indígena – durante uma década de sucessivas manifestações de grande amplitude política e cultural para a cidade e para todo o país.
+              wideVideo: true
+              videoUrl: https://player.vimeo.com/video/1106085328?
+              videoCaption: 'Luta & Diálogo: entrevista com Antony Karaí Poty sobre o papel da luta de rua e espiritual dos Guarani'
+            - type: Text
+              hasDropCap: false
+              content: Em resposta a estas violações de seus direitos consagrados com a Constituição de 1988, entre 2013 e 2025, as comunidades Guarani do Jaraguá, junto com as comunidades de Tenondé Porã, realizam uma série de atos políticos e ações de advocacia, literalmente reocupando a cidade de São Paulo – Terra Indígena – durante uma década de sucessivas manifestações de grande amplitude política e cultural para a cidade e para todo o país.
+              wideImage: true
+              src: /uploads/imagem_16_ocupacao_antena.jpg
+              alt: ''
+              description: 'Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá, entre os dias 14 e 16 de setembro de 2017, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo (Fonte: Comissão Guarani Yvyrupa - CGY)'
         desktop: 800px
         tablet: 800px
         mobile: 800px
@@ -2218,6 +2359,8 @@ components:
     overlay: ''
     components:
       - type: Columns
+        txtColor: ''
+        bgColor: ''
         paddingTop: false
         paddingBottom: false
         invertOnMobile: false
@@ -2242,6 +2385,9 @@ components:
         desktop: 800px
         tablet: 800px
         mobile: 800px
+        mapView: resistencia_intro
+    columnAlign: left
+    floatingText: false
   - type: Group
     id: parte_8_patrimonializacao_do_colonialismo
     shortTitle: parte 8 - patrimonialização do colonialismo
@@ -2273,8 +2419,21 @@ components:
                 ## **A Patrimonialização do Colonialismo e o Apagamento da Memória Indígena**
 
                 ## **(1983 – dias de hoje)**
+            - type: ImageBlock
+              wideImage: false
+              src: /uploads/imagem_23_mapa_cerimonia.jpg
+              alt: asd
+              description: Celebração da demarcação da T.I. Jaraguá pelas lentes de Richard Wera Mirim
         column2:
-          components: []
+          components:
+            - type: Pullquote
+              content: Como a gente sempre faz nas manifestações com outras faixas, o mapa estava presente, primeiro na mão dos jovens e das crianças, depois as mulheres ergueram o mapa, e aquilo foi uma celebração, foi a nossa forma de fazer desse processo da demarcação da terra uma cerimônia.
+              txtColor: ''
+              bgColor: ''
+              byline: – Thiago Henrique Karai Djekupe
+        desktop: 800px
+        tablet: 800px
+        mobile: 800px
     columnAlign: left
     floatingText: false
   - type: Group
@@ -2288,9 +2447,28 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia: []
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem_17_estatua_jaragua.jpg
     overlay: ''
-    components: []
+    components:
+      - type: Columns
+        paddingTop: true
+        paddingBottom: true
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                ###### **parte VIII:&#160;&#160;&#160;&#160;&#160;&#160;**
+
+                ## **A Patrimonialização do Colonialismo e o Apagamento da Memória Indígena**
+
+                ## **(1983 – dias de hoje)**
+        column2:
+          components: []
     columnAlign: left
     floatingText: false
   - type: Map
@@ -2412,6 +2590,8 @@ components:
     overlay: ''
     components:
       - type: Columns
+        txtColor: ''
+        bgColor: ''
         paddingTop: false
         paddingBottom: false
         invertOnMobile: false
@@ -2440,6 +2620,65 @@ components:
               src: /uploads/imagem_26_pagina_relatorio_tombamento.jpg
               alt: asd
               description: Imagem do arquivo do levantamento técnico do complexo Casa Grande-Senzala de Afonso Sardinha presente na proposta de tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978.
+        mapView: map4_jaragua
+      - type: Text
+        hasDropCap: false
+        content: Desde a criação do Parque Estadual em 1961, o Pico do Jaraguá e suas matas tornaram-se objeto de iniciativas e leis de patrimonialização pelo estado e pelo município de São Paulo.
+      - type: ImageBlock
+        wideImage: true
+        src: ''
+        alt: ''
+        description: 'Foto do levantamento técnico do complexo Casa-Grande e Senzala de Afonso Sardinha. Fonte: Processo de tombamento do Parque Estadual do Jaraguá, 1978'
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map4_afonsosardinha
+      - type: Text
+        hasDropCap: false
+        content: Em 1978, no contexto da construção do complexo turístico do Parque, o conjunto Casa Grande-Senzala construído pelo bandeirante Afonso Sardinha é tombado pelo CONDEPHAAT (Conselho de Defesa do Patrimônio Histórico, Arqueológico, Artístico e Turístico do Estado de São Paulo).
+      - type: ImageBlock
+        wideImage: true
+        src: /uploads/Casa_Grande_Afonso_Sardinha_Tombamento_PEJ_1978.jpg
+        alt: ''
+        description: 'Foto do levantamento técnico do complexo Casa-Grande e Senzala de Afonso Sardinha. Fonte: Processo de tombamento do Parque Estadual do Jaraguá, 1978'
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: Spacer
+        txtColor: ''
+        bgColor: ''
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+        mapView: map4_jaraguaestacao
+      - type: MapView
+        hasDropCap: false
+        content: |-
+          Em 1983, toda a área do Parque é tombada pelo CONDEPHAAT, e em 1992 pelo CONPRESP (Conselho Municipal de Preservação do Patrimônio Histórico, Cultural e Ambiental da Cidade de São Paulo).
+
+          Em 2015, o CONPRESP tomba o Conjunto histórico da Estação Ferroviária do Jaraguá, e em 2019 tomba as estruturas remanescentes da Pedreira de Quartzito no Jaraguá, na proximidade da Tekoa Itakupé.
+        txtColor: ''
+        bgColor: ''
+        mapView: map4_jaraguaestacao
+      - type: Text
+        hasDropCap: false
+        content: |-
+          Em 1983, toda a área do Parque é tombada pelo CONDEPHAAT, e em 1992 pelo CONPRESP (Conselho Municipal de Preservação do Patrimônio Histórico, Cultural e Ambiental da Cidade de São Paulo).
+
+          Em 2015, o CONPRESP tomba o Conjunto histórico da Estação Ferroviária do Jaraguá, e em 2019 tomba as estruturas remanescentes da Pedreira de Quartzito no Jaraguá, na proximidade da Tekoa Itakupé.
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+    columnAlign: right
+    floatingText: true
   - type: Map
     id: mapa_5_memoria_guarani
     shortTitle: mapa 5 - memoria guarani
@@ -2471,8 +2710,18 @@ components:
                 ###### **parte IX**
 
                 ## **Práticas Espaciais do Cuidado & da Reparação**
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/imagem_24_monumento_estatua_jaragua.jpg
+              alt: ''
+              description: Projeto da estátua-monumento do jesuíta José de Anchieta apresentado no Processo de tombamento do Parque Estadual do Jaraguá do CONDEPHAAT, 1978.
         column2:
-          components: []
+          components:
+            - type: ImageBlock
+              wideImage: false
+              src: /uploads/imagem_26_pagina_relatorio_tombamento.jpg
+              alt: asd
+              description: Imagem do arquivo do levantamento técnico do complexo Casa Grande-Senzala de Afonso Sardinha presente na proposta de tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978.
         mapView: map5_jaragua
       - type: Text
         hasDropCap: false
@@ -2522,6 +2771,8 @@ components:
     overlay: light
     components:
       - type: Columns
+        txtColor: ''
+        bgColor: ''
         paddingTop: true
         paddingBottom: true
         invertOnMobile: false
@@ -2536,6 +2787,38 @@ components:
                 ## **Práticas Espaciais do Cuidado & da Reparação**
         column2:
           components: []
+        mapView: map5_jaragua
+      - type: Text
+        hasDropCap: false
+        content: Apenas em 2021, com o projeto “Memória Paulistana” do Departamento de Patrimônio Histórico da Prefeitura de São Paulo, é que espaços Guarani ganhariam algum grau de reconhecimento patrimonial oficial.
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map5_cacicajandira
+      - type: Text
+        hasDropCap: false
+        content: O lugar onde viveu a matriarca cacica Jandira, fundadora da Tekoa Ytu, a primeira retomada do Jaraguá, é incluído na lista de lugares da memória da cidade de São Paulo.
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map5_memoria
+      - type: Text
+        hasDropCap: false
+        content: Sob pressão dos movimentos guarani, o lugar onde foram realizados os protestos de 20XX, que bloqueou a bandeirantes, também entra na lista de lugares da memória da cidade de São Paulo.
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+    columnAlign: left
+    floatingText: true
   - type: Group
     id: parte_9_texto_1
     shortTitle: parte 9 - texto 1
@@ -2547,7 +2830,9 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia: []
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem_27_casa_abelhas_marcio.jpg
     overlay: ''
     components:
       - type: Columns
@@ -2617,7 +2902,9 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia: []
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem_32_urbanizacao_jaragua.jpg
     overlay: ''
     components:
       - type: Columns
@@ -2630,6 +2917,71 @@ components:
             - type: Text
               hasDropCap: false
               content: Enquanto a metrópole se expande buscando os lucros do capital imobiliário, o território Guarani é cada vez mais cercado pela urbanização predatória de São Paulo. Mesmo demarcada, a T.I. segue sob crescente pressão espacial e política. Neste contexto, este mapa busca fornecer um instrumento de advocacia em apoio à luta dos Guarani pelos seus direitos territoriais e por reparações históricas e ambientais.
+        column2:
+          components: []
+      - type: Spacer
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
+  - type: Group
+    id: creditos
+    shortTitle: creditos
+    longTitle: creditos
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Highlight
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                O mapa foi produzido pelo projeto**&#32;**_Arquiteturas da Reparação: São Paulo Terra Indígena_. Desenvolvido em parceria com lideranças e ativistas da T.I. Jaraguá, o projeto questiona visões tradicionais de cidade, território, memória, e patrimônio, buscando pensar como seres e elementos do mundo “mais-que-humano”, como as águas e as matas, podem ser incluídos como sujeitos patrimoniais dentro de um amplo processo de reparação histórica e socioambiental aos povos originários. O projeto foi realizado através de uma colaboração entre a T.I. Jaraguá, a agência autônoma, e o Chão Coletivo, por meio da plataforma Práticas Espaciais da Escola da Cidade. 
+
+                **T.I. Jaraguá**
+
+                pesquisadores: Antony Karaí Poty, Thiago Henrique Karai Djekupe, Felipe Silva, e Richard Wera Mirim
+
+                consultores e entrevistas: Jurandir Tupã Jekupe Mirim, Márcio Werã Mirim, Irene Mendonça (Jaxuka Mirim), Daniel Werã Mirim, Cacica Ara Poty (Maria), Natalício Karaí, Tamikuã Txihi…, Coletivo Arandu Mirim (Antony Karaí Poty, Ciara Martins, Samara Para Martins) 
+
+                participantes das oficinas: Antony Karaí Poty, Valdemir, Samara Para, Ciara Martins, Lenilson, Thiago Karaí Poty, Valdir, Felipe Silva, Osmar, Maria Ara Poty,  brigadistas Lucas, Paulino, Adriano, Vander, Danilo e Luciano, Natalício Karaí, Antônia, Lucas, Pedrinho, Txai Suruí, Miguel, Antônio, jovens e crianças. 
+
+                **agência autônonoma**
+
+                Paulo Tavares, Paula Marujo, Laura Pappalardo, Amanda Klajner e Julia Veras 
+
+                **Chão Coletivo**
+
+                Beatrice Perracini Padovan, Giulio Michelino, Glória Kok, Isabela de Castilho Moraes e Laura Pappalardo
+
+                **Plataforma Práticas Espaciais**
+
+                Carol Tonetti e Gilberto Mariotti
+
+                **design gráfico:** 
+
+                Cosmopolíticas Editoriais
+
+                **finalização gráfica dos mapas:** 
+
+                Carolina Passos
+
+                CAU/SP (Programa de Assistência Técnica para Preservação do Patrimônio Cultural 2024, Termo de Fomento 016/2024, Ref. Projeto 406165)
+
+                **APOIO** 
+
+                Design Museum, Future Observatory More-than-Human Fellowship
         column2:
           components: []
       - type: Spacer
