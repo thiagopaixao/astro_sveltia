@@ -2448,7 +2448,7 @@ components:
         mapView: map4_jaragua
       - type: Text
         hasDropCap: false
-        content: PATRIMONIALIZAÇÃO DO JARAGUÁ
+        content: '#### PATRIMONIALIZAÇÃO DO JARAGUÁ'
       - type: Spacer
         desktop: 300px
         tablet: 300px
@@ -2466,6 +2466,20 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: map4_jaraguaestacao
+      - type: Text
+        hasDropCap: false
+        content: Em 1978, no contexto da construção do complexo turístico do Parque Estadual do Jaraguá,, o conjunto Casa Grande-Senzala da propriedade do bandeirante Afonso Sardinha é tombado pelo CONDEPHAAT
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/Casa_Grande_Afonso_Sardinha_Tombamento_PEJ_1978.jpg
+        alt: ''
+        description: Imagem do arquivo do levantamento técnico do complexo Casa Grande-Senzala de Afonso Sardinha presente na proposta de tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978.
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
       - type: Text
         hasDropCap: false
         content: |-
