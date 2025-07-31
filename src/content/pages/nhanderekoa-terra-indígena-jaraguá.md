@@ -2476,6 +2476,143 @@ components:
         mobile: 600px
     columnAlign: right
     floatingText: true
+  - type: Map
+    id: mapa_5_memoria_guarani
+    shortTitle: mapa 5 - memoria guarani
+    longTitle: mapa 5 - memoria guarani
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Highlight
+    customTxtColor: ''
+    bgColor: Primary
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem_27_casa_abelhas_marcio.jpg
+    overlay: light
+    components:
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        paddingTop: true
+        paddingBottom: true
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                ###### **parte IX**
+
+                ## **Práticas Espaciais do Cuidado & da Reparação**
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/imagem_24_monumento_estatua_jaragua.jpg
+              alt: ''
+              description: Projeto da estátua-monumento do jesuíta José de Anchieta apresentado no Processo de tombamento do Parque Estadual do Jaraguá do CONDEPHAAT, 1978.
+        column2:
+          components:
+            - type: ImageBlock
+              wideImage: false
+              src: /uploads/imagem_26_pagina_relatorio_tombamento.jpg
+              alt: asd
+              description: Imagem do arquivo do levantamento técnico do complexo Casa Grande-Senzala de Afonso Sardinha presente na proposta de tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978.
+        mapView: map5_jaragua
+      - type: Text
+        hasDropCap: false
+        content: Apenas em 2021, com o projeto “Memória Paulistana” do Departamento de Patrimônio Histórico da Prefeitura de São Paulo, é que espaços Guarani ganhariam algum grau de reconhecimento patrimonial oficial.
+        txtColor: ''
+        bgColor: ''
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+        mapView: map5_cacicajandira
+      - type: Spacer
+        hasDropCap: false
+        content: O lugar onde viveu a matriarca cacica Jandira, fundadora da Tekoa Ytu, a primeira retomada do Jaraguá, é incluído na lista de lugares da memória da cidade de São Paulo.
+        wideImage: true
+        src: ''
+        alt: ''
+        description: 'Foto do levantamento técnico do complexo Casa-Grande e Senzala de Afonso Sardinha. Fonte: Processo de tombamento do Parque Estadual do Jaraguá, 1978'
+        txtColor: ''
+        bgColor: ''
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+        mapView: map4_afonsosardinha
+      - type: MapView
+        hasDropCap: false
+        content: |-
+          Em 1983, toda a área do Parque é tombada pelo CONDEPHAAT, e em 1992 pelo CONPRESP (Conselho Municipal de Preservação do Patrimônio Histórico, Cultural e Ambiental da Cidade de São Paulo).
+
+          Em 2015, o CONPRESP tomba o Conjunto histórico da Estação Ferroviária do Jaraguá, e em 2019 tomba as estruturas remanescentes da Pedreira de Quartzito no Jaraguá, na proximidade da Tekoa Itakupé.
+        txtColor: ''
+        bgColor: ''
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+        mapView: map5_cacicajandira
+      - type: Text
+        hasDropCap: false
+        content: O lugar onde viveu a matriarca cacica Jandira, fundadora da Tekoa Ytu, a primeira retomada do Jaraguá, é incluído na lista de lugares da memória da cidade de São Paulo.
+        txtColor: ''
+        bgColor: ''
+        mapView: map4_afonsosardinha
+      - type: Spacer
+        hasDropCap: false
+        content: Em 1978, no contexto da construção do complexo turístico do Parque, o conjunto Casa Grande-Senzala construído pelo bandeirante Afonso Sardinha é tombado pelo CONDEPHAAT (Conselho de Defesa do Patrimônio Histórico, Arqueológico, Artístico e Turístico do Estado de São Paulo).
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        wideImage: true
+        src: /uploads/Casa_Grande_Afonso_Sardinha_Tombamento_PEJ_1978.jpg
+        alt: ''
+        description: 'Foto do levantamento técnico do complexo Casa-Grande e Senzala de Afonso Sardinha. Fonte: Processo de tombamento do Parque Estadual do Jaraguá, 1978'
+        txtColor: ''
+        bgColor: ''
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+        mapView: map5_memoria
+      - type: Text
+        hasDropCap: false
+        content: Sob pressão dos movimentos guarani, o lugar onde foram realizados os protestos de 20XX, que bloqueou a bandeirantes, também entra na lista de lugares da memória da cidade de São Paulo.
+        txtColor: ''
+        bgColor: ''
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+        mapView: map4_jaraguaestacao
+      - type: Spacer
+        hasDropCap: false
+        content: |-
+          Em 1983, toda a área do Parque é tombada pelo CONDEPHAAT, e em 1992 pelo CONPRESP (Conselho Municipal de Preservação do Patrimônio Histórico, Cultural e Ambiental da Cidade de São Paulo).
+
+          Em 2015, o CONPRESP tomba o Conjunto histórico da Estação Ferroviária do Jaraguá, e em 2019 tomba as estruturas remanescentes da Pedreira de Quartzito no Jaraguá, na proximidade da Tekoa Itakupé.
+        txtColor: ''
+        bgColor: ''
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+        mapView: map4_jaraguaestacao
+      - type: Text
+        hasDropCap: false
+        content: |-
+          Em 1983, toda a área do Parque é tombada pelo CONDEPHAAT, e em 1992 pelo CONPRESP (Conselho Municipal de Preservação do Patrimônio Histórico, Cultural e Ambiental da Cidade de São Paulo).
+
+          Em 2015, o CONPRESP tomba o Conjunto histórico da Estação Ferroviária do Jaraguá, e em 2019 tomba as estruturas remanescentes da Pedreira de Quartzito no Jaraguá, na proximidade da Tekoa Itakupé.
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+    columnAlign: left
+    floatingText: true
   - type: Group
     id: parte_8_texto_2
     shortTitle: parte 8 - texto 2
@@ -2524,84 +2661,6 @@ components:
               alt: asd
               description: Imagem do arquivo do levantamento técnico do complexo Casa Grande-Senzala de Afonso Sardinha presente na proposta de tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978.
         mapView: map4_jaragua
-      - type: Spacer
-        hasDropCap: false
-        content: Desde a criação do Parque Estadual em 1961, o Pico do Jaraguá e suas matas tornaram-se objeto de iniciativas e leis de patrimonialização pelo estado e pelo município de São Paulo.
-        txtColor: ''
-        bgColor: ''
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: map5_cacicajandira
-      - type: MapView
-        hasDropCap: false
-        content: O lugar onde viveu a matriarca cacica Jandira, fundadora da Tekoa Ytu, a primeira retomada do Jaraguá, é incluído na lista de lugares da memória da cidade de São Paulo.
-        wideImage: true
-        src: ''
-        alt: ''
-        description: 'Foto do levantamento técnico do complexo Casa-Grande e Senzala de Afonso Sardinha. Fonte: Processo de tombamento do Parque Estadual do Jaraguá, 1978'
-        txtColor: ''
-        bgColor: ''
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: map4_afonsosardinha
-      - type: MapView
-        hasDropCap: false
-        content: |-
-          Em 1983, toda a área do Parque é tombada pelo CONDEPHAAT, e em 1992 pelo CONPRESP (Conselho Municipal de Preservação do Patrimônio Histórico, Cultural e Ambiental da Cidade de São Paulo).
-
-          Em 2015, o CONPRESP tomba o Conjunto histórico da Estação Ferroviária do Jaraguá, e em 2019 tomba as estruturas remanescentes da Pedreira de Quartzito no Jaraguá, na proximidade da Tekoa Itakupé.
-        txtColor: ''
-        bgColor: ''
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: map4_jaraguaestacao
-      - type: MapView
-        hasDropCap: false
-        content: O lugar onde viveu a matriarca cacica Jandira, fundadora da Tekoa Ytu, a primeira retomada do Jaraguá, é incluído na lista de lugares da memória da cidade de São Paulo.
-        txtColor: ''
-        bgColor: ''
-        mapView: map4_afonsosardinha
-      - type: Text
-        hasDropCap: false
-        content: Em 1978, no contexto da construção do complexo turístico do Parque, o conjunto Casa Grande-Senzala construído pelo bandeirante Afonso Sardinha é tombado pelo CONDEPHAAT (Conselho de Defesa do Patrimônio Histórico, Arqueológico, Artístico e Turístico do Estado de São Paulo).
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-      - type: ImageBlock
-        wideImage: true
-        src: /uploads/Casa_Grande_Afonso_Sardinha_Tombamento_PEJ_1978.jpg
-        alt: ''
-        description: 'Foto do levantamento técnico do complexo Casa-Grande e Senzala de Afonso Sardinha. Fonte: Processo de tombamento do Parque Estadual do Jaraguá, 1978'
-        txtColor: ''
-        bgColor: ''
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: map5_memoria
-      - type: Spacer
-        hasDropCap: false
-        content: Sob pressão dos movimentos guarani, o lugar onde foram realizados os protestos de 20XX, que bloqueou a bandeirantes, também entra na lista de lugares da memória da cidade de São Paulo.
-        txtColor: ''
-        bgColor: ''
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: map4_jaraguaestacao
-      - type: MapView
-        hasDropCap: false
-        content: |-
-          Em 1983, toda a área do Parque é tombada pelo CONDEPHAAT, e em 1992 pelo CONPRESP (Conselho Municipal de Preservação do Patrimônio Histórico, Cultural e Ambiental da Cidade de São Paulo).
-
-          Em 2015, o CONPRESP tomba o Conjunto histórico da Estação Ferroviária do Jaraguá, e em 2019 tomba as estruturas remanescentes da Pedreira de Quartzito no Jaraguá, na proximidade da Tekoa Itakupé.
-        txtColor: ''
-        bgColor: ''
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: map4_jaraguaestacao
       - type: Text
         hasDropCap: false
         content: |-
@@ -2616,127 +2675,6 @@ components:
         tablet: 600px
         mobile: 600px
     columnAlign: right
-    floatingText: true
-  - type: Map
-    id: mapa_5_memoria_guarani
-    shortTitle: mapa 5 - memoria guarani
-    longTitle: mapa 5 - memoria guarani
-    description: ''
-    showInMenu: false
-    animations: true
-    txtColor: Highlight
-    customTxtColor: ''
-    bgColor: Primary
-    customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_27_casa_abelhas_marcio.jpg
-    overlay: light
-    components:
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        paddingTop: true
-        paddingBottom: true
-        invertOnMobile: false
-        columnsAlign: 33-66
-        column1:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: |-
-                ###### **parte IX**
-
-                ## **Práticas Espaciais do Cuidado & da Reparação**
-            - type: ImageBlock
-              wideImage: true
-              src: /uploads/imagem_24_monumento_estatua_jaragua.jpg
-              alt: ''
-              description: Projeto da estátua-monumento do jesuíta José de Anchieta apresentado no Processo de tombamento do Parque Estadual do Jaraguá do CONDEPHAAT, 1978.
-        column2:
-          components:
-            - type: ImageBlock
-              wideImage: false
-              src: /uploads/imagem_26_pagina_relatorio_tombamento.jpg
-              alt: asd
-              description: Imagem do arquivo do levantamento técnico do complexo Casa Grande-Senzala de Afonso Sardinha presente na proposta de tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978.
-        mapView: map5_jaragua
-      - type: Text
-        hasDropCap: false
-        content: Apenas em 2021, com o projeto “Memória Paulistana” do Departamento de Patrimônio Histórico da Prefeitura de São Paulo, é que espaços Guarani ganhariam algum grau de reconhecimento patrimonial oficial.
-      - type: Spacer
-        wideImage: true
-        src: ''
-        alt: ''
-        description: 'Foto do levantamento técnico do complexo Casa-Grande e Senzala de Afonso Sardinha. Fonte: Processo de tombamento do Parque Estadual do Jaraguá, 1978'
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: map5_cacicajandira
-      - type: Text
-        hasDropCap: false
-        content: O lugar onde viveu a matriarca cacica Jandira, fundadora da Tekoa Ytu, a primeira retomada do Jaraguá, é incluído na lista de lugares da memória da cidade de São Paulo.
-        txtColor: ''
-        bgColor: ''
-        mapView: map4_afonsosardinha
-      - type: Spacer
-        hasDropCap: false
-        content: Em 1978, no contexto da construção do complexo turístico do Parque, o conjunto Casa Grande-Senzala construído pelo bandeirante Afonso Sardinha é tombado pelo CONDEPHAAT (Conselho de Defesa do Patrimônio Histórico, Arqueológico, Artístico e Turístico do Estado de São Paulo).
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-      - type: MapView
-        wideImage: true
-        src: /uploads/Casa_Grande_Afonso_Sardinha_Tombamento_PEJ_1978.jpg
-        alt: ''
-        description: 'Foto do levantamento técnico do complexo Casa-Grande e Senzala de Afonso Sardinha. Fonte: Processo de tombamento do Parque Estadual do Jaraguá, 1978'
-        txtColor: ''
-        bgColor: ''
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: map5_memoria
-      - type: Text
-        hasDropCap: false
-        content: Sob pressão dos movimentos guarani, o lugar onde foram realizados os protestos de 20XX, que bloqueou a bandeirantes, também entra na lista de lugares da memória da cidade de São Paulo.
-        txtColor: ''
-        bgColor: ''
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: map4_jaraguaestacao
-      - type: Spacer
-        hasDropCap: false
-        content: |-
-          Em 1983, toda a área do Parque é tombada pelo CONDEPHAAT, e em 1992 pelo CONPRESP (Conselho Municipal de Preservação do Patrimônio Histórico, Cultural e Ambiental da Cidade de São Paulo).
-
-          Em 2015, o CONPRESP tomba o Conjunto histórico da Estação Ferroviária do Jaraguá, e em 2019 tomba as estruturas remanescentes da Pedreira de Quartzito no Jaraguá, na proximidade da Tekoa Itakupé.
-        txtColor: ''
-        bgColor: ''
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: map4_jaraguaestacao
-      - type: Text
-        hasDropCap: false
-        content: |-
-          Em 1983, toda a área do Parque é tombada pelo CONDEPHAAT, e em 1992 pelo CONPRESP (Conselho Municipal de Preservação do Patrimônio Histórico, Cultural e Ambiental da Cidade de São Paulo).
-
-          Em 2015, o CONPRESP tomba o Conjunto histórico da Estação Ferroviária do Jaraguá, e em 2019 tomba as estruturas remanescentes da Pedreira de Quartzito no Jaraguá, na proximidade da Tekoa Itakupé.
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-      - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-    columnAlign: left
     floatingText: true
   - type: Group
     id: parte_9_nhandereko_praticas_cuidado_e_reparacao
@@ -2783,7 +2721,7 @@ components:
     animations: true
     txtColor: Primary
     customTxtColor: ''
-    bgColor: Secondary
+    bgColor: Highlight
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
