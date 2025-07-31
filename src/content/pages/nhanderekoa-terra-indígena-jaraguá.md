@@ -1480,33 +1480,33 @@ components:
         columnsAlign: 66-33
         column1:
           components:
-            - type: ImageBlock
-              hasDropCap: false
+            - type: Text
+              hasDropCap: true
               content: |-
-                ##### A CRIAÇÃO DO PARQUE DO JARAGUÁ
+                Com a exaustão do ouro em São Paulo e a descoberta das minas em Goiás e Minas Gerais, a área do Pico do Jaraguá transforma-se numa enorme propriedade agrícola. Durante o século XIX, seguindo a expansão da economia cafeeira paulista, a chamada “Fazenda Jaraguá” torna-se uma grande produtora de café, e vastas áreas de Mata Atlântica são arrasadas. 
 
-                Na década de 1940, com o declínio da atividade cafeeira, a Fazenda Jaraguá é adquirida pelo município de São Paulo e torna-se propriedade estatal. Em 1946, a propriedade passa a ser administrada pelo Serviço Florestal do município.  
-
-                Por esta época, na primeira metade do século XX, o Jaraguá continuava sendo um lugar habitado pelos Guarani através dos caminhos que conectavam o Paraná e o Mato Grosso do Sul até o Vale do Ribeira e o litoral paulista.
-
-                Em 1961, no contexto do estabelecimento das primeiras reservas florestais nacionais, cria-se o Parque Estadual do Jaraguá, que pela primeira vez garante algum nível de proteção ambiental aos remanescentes de Mata Atlântica no Pico do Jaraguá.
+                Espécies de café remanescentes destas plantações são encontradas até hoje por toda a Terra Indígena Jaraguá.
               wideImage: true
               src: /uploads/imagem_07_jurandircafe.jpg
               alt: ''
               description: O professor Jurandir Tupã Jekupe Mirim mostra uma planta de café nas florestas da T.I. Jaraguá, remanescente das plantações dos séculos XVIII e XIX, quando a região funcionava como uma grande propriedade agrícola.
         column2:
           components:
-            - type: Text
+            - type: Spacer
               hasDropCap: true
               content: Com a exaustão do ouro em São Paulo e a descoberta das minas em Goiás e Minas Gerais, a área do Pico do Jaraguá transforma-se numa enorme propriedade agrícola. Durante o século XIX, seguindo a expansão da economia cafeeira paulista, a chamada “Fazenda Jaraguá” torna-se uma grande produtora de café, e vastas áreas de Mata Atlântica são arrasadas. Espécies de café remanescentes destas plantações são encontradas até hoje por toda a Terra Indígena Jaraguá.
-              desktop: 1000px
-              tablet: 500px
-              mobile: 500px
-            - type: Spacer
               wideImage: true
               src: /uploads/imagem_18_mapa_anhanguera.jpg
               alt: Planta da Via Anhanguera, década de 40 (Arquivo Biblioteca do Departamento de Estradas e Rodagens)
               description: Planta da Via Anhanguera, década de 40 (Arquivo Biblioteca do Departamento de Estradas e Rodagens)
+              desktop: 150px
+              tablet: 150px
+              mobile: 150px
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/imagem_07_jurandircafe.jpg
+              alt: ''
+              description: O professor Jurandir Tupã Jekupe Mirim mostra uma planta de café nas florestas da T.I. Jaraguá, remanescente das plantações dos séculos XVIII e XIX, quando a região funcionava como uma grande propriedade agrícola.
               desktop: 150px
               tablet: 150px
               mobile: 150px
