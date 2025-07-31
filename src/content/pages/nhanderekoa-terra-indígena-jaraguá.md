@@ -1747,10 +1747,6 @@ components:
                 ## **Ditadura, Deslocamentos Forçados & Desmatamento**
 
                 ## **(1964 – 1984)**
-            - type: VideoEmbed
-              wideVideo: true
-              videoUrl: https://www.youtube.com/embed/80MJwqZdOss?si=wQDvXQFFAxlw8f15
-              videoCaption: Entrevista histórica com a Cacica Jandira, matriarca da Terra Indígena Jaraguá em São Paulo (realizado em 1992 pelo VideoFAU da Faculdade de Arquitetura e Urbanismo da USP).
         column2:
           components: []
   - type: Group
@@ -1764,9 +1760,7 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_09_itaipu.jpg
+    backgroundMedia: []
     overlay: ''
     components:
       - type: Columns
