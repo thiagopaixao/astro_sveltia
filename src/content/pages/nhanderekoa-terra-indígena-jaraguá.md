@@ -2335,41 +2335,6 @@ components:
         mobile: 800px
     columnAlign: left
     floatingText: false
-  - type: Group
-    id: parte_8_texto_1
-    shortTitle: parte 8 - texto 1
-    longTitle: parte 8 - texto 1
-    description: ''
-    showInMenu: false
-    animations: true
-    txtColor: Primary
-    customTxtColor: ''
-    bgColor: Highlight
-    customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_17_estatua_jaragua.jpg
-    overlay: ''
-    components:
-      - type: Columns
-        paddingTop: true
-        paddingBottom: true
-        invertOnMobile: false
-        columnsAlign: 33-66
-        column1:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: |-
-                ###### **parte VIII:&#160;&#160;&#160;&#160;&#160;&#160;**
-
-                ## **A Patrimonialização do Colonialismo e o Apagamento da Memória Indígena**
-
-                ## **(1983 – dias de hoje)**
-        column2:
-          components: []
-    columnAlign: left
-    floatingText: false
   - type: Map
     id: mapa_4_monumentos_coloniais
     shortTitle: mapa 4 - monumentos coloniais
@@ -2381,7 +2346,9 @@ components:
     customTxtColor: ''
     bgColor: Primary
     customBgColor: ''
-    backgroundMedia: []
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem_17_estatua_jaragua.jpg
     overlay: ''
     components:
       - type: MapView
@@ -2626,27 +2593,73 @@ components:
         hasDropCap: false
         content: Apenas em 2021, com o projeto “Memória Paulistana” do Departamento de Patrimônio Histórico da Prefeitura de São Paulo, é que espaços Guarani ganhariam algum grau de reconhecimento patrimonial oficial.
       - type: Spacer
+        wideImage: true
+        src: ''
+        alt: ''
+        description: 'Foto do levantamento técnico do complexo Casa-Grande e Senzala de Afonso Sardinha. Fonte: Processo de tombamento do Parque Estadual do Jaraguá, 1978'
         desktop: 600px
         tablet: 600px
         mobile: 600px
       - type: MapView
         txtColor: ''
         bgColor: ''
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
         mapView: map5_cacicajandira
       - type: Text
         hasDropCap: false
         content: O lugar onde viveu a matriarca cacica Jandira, fundadora da Tekoa Ytu, a primeira retomada do Jaraguá, é incluído na lista de lugares da memória da cidade de São Paulo.
+        txtColor: ''
+        bgColor: ''
+        mapView: map4_afonsosardinha
       - type: Spacer
+        hasDropCap: false
+        content: Em 1978, no contexto da construção do complexo turístico do Parque, o conjunto Casa Grande-Senzala construído pelo bandeirante Afonso Sardinha é tombado pelo CONDEPHAAT (Conselho de Defesa do Patrimônio Histórico, Arqueológico, Artístico e Turístico do Estado de São Paulo).
         desktop: 600px
         tablet: 600px
         mobile: 600px
       - type: MapView
+        wideImage: true
+        src: /uploads/Casa_Grande_Afonso_Sardinha_Tombamento_PEJ_1978.jpg
+        alt: ''
+        description: 'Foto do levantamento técnico do complexo Casa-Grande e Senzala de Afonso Sardinha. Fonte: Processo de tombamento do Parque Estadual do Jaraguá, 1978'
         txtColor: ''
         bgColor: ''
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
         mapView: map5_memoria
       - type: Text
         hasDropCap: false
         content: Sob pressão dos movimentos guarani, o lugar onde foram realizados os protestos de 20XX, que bloqueou a bandeirantes, também entra na lista de lugares da memória da cidade de São Paulo.
+        txtColor: ''
+        bgColor: ''
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+        mapView: map4_jaraguaestacao
+      - type: Spacer
+        hasDropCap: false
+        content: |-
+          Em 1983, toda a área do Parque é tombada pelo CONDEPHAAT, e em 1992 pelo CONPRESP (Conselho Municipal de Preservação do Patrimônio Histórico, Cultural e Ambiental da Cidade de São Paulo).
+
+          Em 2015, o CONPRESP tomba o Conjunto histórico da Estação Ferroviária do Jaraguá, e em 2019 tomba as estruturas remanescentes da Pedreira de Quartzito no Jaraguá, na proximidade da Tekoa Itakupé.
+        txtColor: ''
+        bgColor: ''
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+        mapView: map4_jaraguaestacao
+      - type: Text
+        hasDropCap: false
+        content: |-
+          Em 1983, toda a área do Parque é tombada pelo CONDEPHAAT, e em 1992 pelo CONPRESP (Conselho Municipal de Preservação do Patrimônio Histórico, Cultural e Ambiental da Cidade de São Paulo).
+
+          Em 2015, o CONPRESP tomba o Conjunto histórico da Estação Ferroviária do Jaraguá, e em 2019 tomba as estruturas remanescentes da Pedreira de Quartzito no Jaraguá, na proximidade da Tekoa Itakupé.
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
       - type: Spacer
         desktop: 600px
         tablet: 600px
@@ -2684,8 +2697,18 @@ components:
                 ###### **parte IX**
 
                 ## **Práticas Espaciais do Cuidado & da Reparação**
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/imagem_24_monumento_estatua_jaragua.jpg
+              alt: ''
+              description: Projeto da estátua-monumento do jesuíta José de Anchieta apresentado no Processo de tombamento do Parque Estadual do Jaraguá do CONDEPHAAT, 1978.
         column2:
-          components: []
+          components:
+            - type: ImageBlock
+              wideImage: false
+              src: /uploads/imagem_26_pagina_relatorio_tombamento.jpg
+              alt: asd
+              description: Imagem do arquivo do levantamento técnico do complexo Casa Grande-Senzala de Afonso Sardinha presente na proposta de tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978.
         mapView: map5_jaragua
       - type: Text
         hasDropCap: false
@@ -2735,6 +2758,8 @@ components:
     overlay: ''
     components:
       - type: Columns
+        txtColor: ''
+        bgColor: ''
         paddingTop: false
         paddingBottom: false
         invertOnMobile: false
@@ -2755,6 +2780,38 @@ components:
                 Ao espacializar estes processos, o mapa joga luz em práticas muitas vezes invisibilizadas, principalmente o trabalho de cuidado cotidiano das mulheres que fincam raízes profundas para que Terra Indígena do Jaraguá cresça forte.
         column2:
           components: []
+        mapView: map5_jaragua
+      - type: Text
+        hasDropCap: false
+        content: Apenas em 2021, com o projeto “Memória Paulistana” do Departamento de Patrimônio Histórico da Prefeitura de São Paulo, é que espaços Guarani ganhariam algum grau de reconhecimento patrimonial oficial.
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map5_cacicajandira
+      - type: Text
+        hasDropCap: false
+        content: O lugar onde viveu a matriarca cacica Jandira, fundadora da Tekoa Ytu, a primeira retomada do Jaraguá, é incluído na lista de lugares da memória da cidade de São Paulo.
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map5_memoria
+      - type: Text
+        hasDropCap: false
+        content: Sob pressão dos movimentos guarani, o lugar onde foram realizados os protestos de 20XX, que bloqueou a bandeirantes, também entra na lista de lugares da memória da cidade de São Paulo.
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+    columnAlign: left
+    floatingText: true
   - type: Group
     id: parte_x_ameacas
     shortTitle: parte X - ameaças
@@ -2816,6 +2873,73 @@ components:
             - type: Text
               hasDropCap: false
               content: Enquanto a metrópole se expande buscando os lucros do capital imobiliário, o território Guarani é cada vez mais cercado pela urbanização predatória de São Paulo. Mesmo demarcada, a T.I. segue sob crescente pressão espacial e política. Neste contexto, este mapa busca fornecer um instrumento de advocacia em apoio à luta dos Guarani pelos seus direitos territoriais e por reparações históricas e ambientais.
+        column2:
+          components: []
+      - type: Spacer
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
+  - type: Group
+    id: creditos
+    shortTitle: creditos
+    longTitle: creditos
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Highlight
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem_32_urbanizacao_jaragua.jpg
+    overlay: ''
+    components:
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                O mapa foi produzido pelo projeto**&#32;**_Arquiteturas da Reparação: São Paulo Terra Indígena_. Desenvolvido em parceria com lideranças e ativistas da T.I. Jaraguá, o projeto questiona visões tradicionais de cidade, território, memória, e patrimônio, buscando pensar como seres e elementos do mundo “mais-que-humano”, como as águas e as matas, podem ser incluídos como sujeitos patrimoniais dentro de um amplo processo de reparação histórica e socioambiental aos povos originários. O projeto foi realizado através de uma colaboração entre a T.I. Jaraguá, a agência autônoma, e o Chão Coletivo, por meio da plataforma Práticas Espaciais da Escola da Cidade. 
+
+                **T.I. Jaraguá**
+
+                pesquisadores: Antony Karaí Poty, Thiago Henrique Karai Djekupe, Felipe Silva, e Richard Wera Mirim
+
+                consultores e entrevistas: Jurandir Tupã Jekupe Mirim, Márcio Werã Mirim, Irene Mendonça (Jaxuka Mirim), Daniel Werã Mirim, Cacica Ara Poty (Maria), Natalício Karaí, Tamikuã Txihi…, Coletivo Arandu Mirim (Antony Karaí Poty, Ciara Martins, Samara Para Martins) 
+
+                participantes das oficinas: Antony Karaí Poty, Valdemir, Samara Para, Ciara Martins, Lenilson, Thiago Karaí Poty, Valdir, Felipe Silva, Osmar, Maria Ara Poty,  brigadistas Lucas, Paulino, Adriano, Vander, Danilo e Luciano, Natalício Karaí, Antônia, Lucas, Pedrinho, Txai Suruí, Miguel, Antônio, jovens e crianças. 
+
+                **agência autônonoma**
+
+                Paulo Tavares, Paula Marujo, Laura Pappalardo, Amanda Klajner e Julia Veras 
+
+                **Chão Coletivo**
+
+                Beatrice Perracini Padovan, Giulio Michelino, Glória Kok, Isabela de Castilho Moraes e Laura Pappalardo
+
+                **Plataforma Práticas Espaciais**
+
+                Carol Tonetti e Gilberto Mariotti
+
+                **design gráfico:** 
+
+                Cosmopolíticas Editoriais
+
+                **finalização gráfica dos mapas:** 
+
+                Carolina Passos
+
+                CAU/SP (Programa de Assistência Técnica para Preservação do Patrimônio Cultural 2024, Termo de Fomento 016/2024, Ref. Projeto 406165)
+
+                **APOIO** 
+
+                Design Museum, Future Observatory More-than-Human Fellowship
         column2:
           components: []
       - type: Spacer
