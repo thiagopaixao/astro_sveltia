@@ -687,24 +687,24 @@ components:
               content: |-
                 A Terra Indígena Guarani do Jaraguá preserva os últimos fragmentos de Mata Atlântica na cidade de São Paulo, um dos biomas brasileiros mais devastados desde a colonização europeia. 
 
-                Além de ser uma reserva florestal de fundamental importância ambiental e climática para a metrópole paulista, onde áreas verdes são notoriamente escassas, o Jaraguá é um território de imenso valor espiritual e cultural para as comunidades indígenas que ali habitam desde tempos imemoriais.
+                Além de ser uma reserva florestal de fundamental importância ambiental e climática para a metrópole paulista, onde áreas verdes são notoriamente escassas, o Jaraguá é um território de imenso valor espiritual e cultural para as comunidades indígenas que aí vivem desde tempos imemoriais. 
 
-                _Ka’aguy_ – a mata, a floresta – é uma paisagem saturada de história e memória, o patrimônio vivo dos ancestrais (humanos e não-humanos) dos povos Guarani.
-
-                Por décadas, as comunidades Guarani vêm resistindo e lutando pelo reconhecimento de suas terras ancestrais e pela preservação de suas florestas sagradas no Jaraguá. 
-
-                Após um ciclo de mobilizações históricas, que tomaram São Paulo entre 2013 e 2025, a T.I. Jaraguá foi finalmente reconhecida e está em processo de demarcação.
-
-                Desenvolvido junto com xamois e xejarys, xondaros e xondarias, professores, lideranças e ativistas Guarani, esta plataforma apresenta uma cartografia histórica configuração da T.I. Jaraguá no momento de sua demarcação em Setembro de 2025.  
-
-                Combinando análise de dados geo-espaciais, cartografias participativas, entrevistas, e documentação de arquivos históricos, o mapa traça um panorama das práticas espaciais dos Guarani para a defesa, cuidado, reparação e cultivo das florestas do Jaraguá, ao passo que identifica uma série de ameaças que atingem este território atualmente.
+                _Ka’aguy_ – a mata, a floresta – é uma paisagem saturada de história e memória, o patrimônio vivo dos ancestrais (humanos e não-humanos) dos povos Guarani.
         column2:
           components:
-            - type: ImageBlock
+            - type: Spacer
               wideImage: true
               src: /uploads/imagem_XX_mata.jpg
               alt: ''
               description: mata do jaraguá
+              desktop: 500px
+              tablet: 500px
+              mobile: 500px
+            - type: Pullquote
+              content: “Os xeramoi sempre dizem os elementos da cultura guarani estão inseridos justamente no _ka’aguy_, “a mata”, “a floresta”. Para nós o _ka’aguy_ é como se fosse o nosso irmão, como se fosse nosso irmão mais velho, por que a floresta faz com que o nosso modo de vida seja feita do jeito certo, porque todos os ensinamentos estão lá.”
+              txtColor: '#18af1aff'
+              bgColor: '#18af1aff'
+              byline: – Jurandir Tupã Jekupe Mirim
   - type: Map
     id: mapa_ti_jaragua
     shortTitle: mapa - ti jaragua
