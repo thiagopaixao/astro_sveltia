@@ -1140,7 +1140,7 @@ components:
         wideImage: false
         src: /uploads/img_tekoa_mirim_marcio.jpg
         alt: ''
-        description: Marcio … e seu grande roçado em frente a Rodovia dos Bandeirantes ... melhorar
+        description: Marcio SOBRENOME e seu grande roçado em frente a Rodovia dos Bandeirantes na nova aldeia Tekoa Mirim
       - type: Spacer
         desktop: 300px
         tablet: 300px
