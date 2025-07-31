@@ -648,7 +648,7 @@ components:
             mobile: 800px
           - type: Text
             hasDropCap: false
-            content: '#### **cartografias da resistência e da reparação territorial Guarani**'
+            content: '#### **cartografias da resistência e da reparação territorial Guarani em São Paulo**'
           - type: Spacer
             desktop: 500px
             tablet: 500px
