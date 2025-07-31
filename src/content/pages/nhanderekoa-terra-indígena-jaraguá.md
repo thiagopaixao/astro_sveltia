@@ -725,14 +725,54 @@ components:
         bgColor: ''
         mapView: map1_ti
       - type: Spacer
+        desktop: ''
+        tablet: ''
+        mobile: ''
+      - type: Text
+        hasDropCap: false
+        content: ''
+      - type: Spacer
+        txtColor: ''
+        bgColor: ''
         desktop: 800px
         tablet: 800px
         mobile: 800px
+        mapView: map1_ytu
       - type: MapView
         txtColor: ''
         bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: 'Retomada e fundação: década de 1960'
+            text: TEKOA YTU
+          - type: Spacer
+            desktop: 20px
+            tablet: 20px
+            mobile: 20px
+          - type: Text
+            hasDropCap: false
+            content: Uma das mais antigas tekoas, a tekoa Ytu, “aldeia da cachoeira”, foi fundada pela família de Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá, e Joaquim Augusto Martim. O nome se refere ao Ribeirão das Lavras que, por meio de uma pequena cachoeira, chega até a tekoa. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
+          - type: Spacer
+            desktop: 20px
+            tablet: 20px
+            mobile: 20px
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/imagem jaragua_color edited.jpg
+            alt: ''
+            description: Description
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
         mapView: map1_ytu
       - type: Spacer
+        hasDropCap: false
+        content: |-
+          ##### TEKOA YTU
+
+          Retomada e fundação: década de 1960
+
+          Uma das mais antigas tekoas, a tekoa Ytu, “Aldeia da Cachoeira”, foi fundada pela família de Joaquim Augusto Martim e Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá. O nome se refere ao Ribeirão das Lavras que chega à _Tekoa _por meio de uma pequena cachoeira. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
         components:
           - type: TimelineBullet
             content: 'Retomada e fundação: década de 1960'
@@ -768,6 +808,10 @@ components:
         tablet: 500px
         mobile: 500px
       - type: Spacer
+        wideImage: false
+        src: /uploads/imagem jaragua_color edited.jpg
+        alt: ''
+        description: ''
         desktop: 50px
         tablet: 50px
         mobile: 50px
@@ -776,15 +820,31 @@ components:
         src: /uploads/imagem jaragua_color edited.jpg
         alt: ''
         description: ''
-      - type: Spacer
         desktop: 300px
         tablet: 300px
         mobile: 300px
+      - type: Spacer
+        txtColor: ''
+        bgColor: ''
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
+        mapView: map1_pyau
       - type: MapView
         txtColor: ''
         bgColor: ''
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
         mapView: map1_pyau
       - type: Spacer
+        hasDropCap: false
+        content: |-
+          ##### TEKOA PYAU
+
+          Retomada e fundação: década de 1990.
+
+          Segunda _Tekoa _a ser formada no processo histórico de retomada, a _Tekoa Pyau_ (Aldeia Nova) é, atualmente, a que tem maior densidade populacional na TI Jaraguá. Cercada pela Rodovia dos Bandeirantes e pela Rua Comendador de Matos, enfrenta barreiras físicas por essas infraestruturas que bloqueiam sua continuidade territorial e afetam, historicamente, áreas de coleta, caça e cultivo.
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -800,6 +860,10 @@ components:
         tablet: 500px
         mobile: 500px
       - type: Spacer
+        wideImage: false
+        src: /uploads/img_tekoa_pyau_natalicio.jpg
+        alt: ''
+        description: O mestre dos saberes Natalício Karaí em frente do seu jardim medicinal
         desktop: 50px
         tablet: 50px
         mobile: 50px
@@ -808,15 +872,31 @@ components:
         src: /uploads/img_tekoa_pyau_natalicio.jpg
         alt: ''
         description: O mestre dos saberes Natalício Karaí em frente do seu jardim medicinal
-      - type: Spacer
         desktop: 300px
         tablet: 300px
         mobile: 300px
+      - type: Spacer
+        txtColor: ''
+        bgColor: ''
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
+        mapView: map1_itakupe
       - type: MapView
         txtColor: ''
         bgColor: ''
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
         mapView: map1_itakupe
       - type: Spacer
+        hasDropCap: false
+        content: |-
+          ##### TEKOA ITAKUPE
+
+          Retomada e fundação: 2005
+
+          Situada no extremo norte da TI, a _Tekoa Itakupe_, que pode ser traduzida como “Aldeia Atrás da Pedra”, recebe esse nome por estar do outro lado do Pico do Jaraguá, próxima de suas formações rochosas. Essa área é habitada por comunidades Guarani desde as primeiras retomadas, que aconteceram nas décadas de 1950 e 1960. Fundada em 2014, hoje é formada por três núcleos habitacionais.
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -828,7 +908,14 @@ components:
           Retomada e fundação: 2005
 
           Situada no extremo norte da TI, a _Tekoa Itakupe_, que pode ser traduzida como “Aldeia Atrás da Pedra”, recebe esse nome por estar do outro lado do Pico do Jaraguá, próxima de suas formações rochosas. Essa área é habitada por comunidades Guarani desde as primeiras retomadas, que aconteceram nas décadas de 1950 e 1960. Fundada em 2014, hoje é formada por três núcleos habitacionais.
+        desktop: 50px
+        tablet: 50px
+        mobile: 50px
       - type: Spacer
+        wideImage: false
+        src: /uploads/arqueological-remains_03.jpg
+        alt: ''
+        description: ''
         desktop: 50px
         tablet: 50px
         mobile: 50px
@@ -837,13 +924,22 @@ components:
         src: /uploads/arqueological-remains_03.jpg
         alt: ''
         description: ''
-      - type: Spacer
         desktop: 300px
         tablet: 300px
         mobile: 300px
+      - type: Spacer
+        txtColor: ''
+        bgColor: ''
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
+        mapView: map1_itawera
       - type: MapView
         txtColor: ''
         bgColor: ''
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
         mapView: map1_itawera
       - type: Spacer
         desktop: 500px
@@ -857,6 +953,10 @@ components:
           Retomada e fundação: 2014
 
           Fundada pela cacica Ara Poty (Maria), a _Tekoa Itawerá_ (Aldeia da Pedra Reluzente) recuperou uma área antes utilizada para descarte de lixo. Atualmente, a comunidade se dedica à recuperação ambiental e cultural por meio de ações como o reflorestamento com espécies nativas e o cultivo de alimentos tradicionais, como o milho Guarani. Além disso, essa _Tekoa _desenvolve um vasto trabalho de artesanato.
+        wideImage: false
+        src: /uploads/img_tekoa_itawera_cacica_maria.jpg
+        alt: ''
+        description: A cacica Maria Ara Poty confeccionando artesanato em sua casa na Tekoa Itawera, recuperada de um grande depósito de lixo
       - type: Spacer
         desktop: 50px
         tablet: 50px
@@ -866,11 +966,22 @@ components:
         src: /uploads/img_tekoa_itawera_cacica_maria.jpg
         alt: ''
         description: A cacica Maria Ara Poty confeccionando artesanato em sua casa na Tekoa Itawera, recuperada de um grande depósito de lixo
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_itaendy
       - type: Spacer
         desktop: 300px
         tablet: 300px
         mobile: 300px
       - type: MapView
+        hasDropCap: false
+        content: |-
+          ##### TEKOA ITAENDY
+
+          Retomada e fundação: 2017
+
+
+          Desde sua retomada em 2017, a _Tekoa Itaendy_ (Aldeia da Pedra Amarela) promove práticas de manutenção da biodiversidade, como o reflorestamento com espécies nativas, o plantio de roças com alimentos tradicionais e a reintrodução e criação de espécies de abelhas nativas.
         txtColor: ''
         bgColor: ''
         mapView: map1_itaendy
@@ -887,6 +998,10 @@ components:
 
 
           Desde sua retomada em 2017, a _Tekoa Itaendy_ (Aldeia da Pedra Amarela) promove práticas de manutenção da biodiversidade, como o reflorestamento com espécies nativas, o plantio de roças com alimentos tradicionais e a reintrodução e criação de espécies de abelhas nativas.
+        wideImage: false
+        src: /uploads/arqueological-remains_07.jpg
+        alt: ''
+        description: ''
       - type: Spacer
         desktop: 50px
         tablet: 50px
