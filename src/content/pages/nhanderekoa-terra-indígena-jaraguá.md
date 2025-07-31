@@ -1708,9 +1708,7 @@ components:
             - type: Text
               hasDropCap: false
               content: |-
-                Nos anos 1950, expulso pelo SPI do aldeamento de Bananal, a família de André Samuel dos Santos –  
-
-                liderança Tupi-Guarani perseguida pelo Estado como “rebelde”, conforme atestam documentos do SPI – inicia a retomada das florestas do Jaraguá. Entre 1960 e 1961, o casal de caciques Jandira e Joaquim migra do litoral para o Jaraguá, onde erguem uma tekoa ao lado de uma fonte de água ao pé do morro. 
+                Nos anos 1950, expulso pelo SPI do aldeamento de Bananal, a família de André Samuel dos Santos –  liderança Tupi-Guarani perseguida pelo Estado como “rebelde”, conforme atestam documentos do SPI – inicia a retomada das florestas do Jaraguá. Entre 1960 e 1961, o casal de caciques Jandira e Joaquim migra do litoral para o Jaraguá, onde erguem uma tekoa ao lado de uma fonte de água ao pé do morro. 
 
                 A retomada recebe o nome de Tekoa Ytu, “aldeia da cachoeira”. Desde então, as florestas do Jaraguá passam a ser um grande refúgio, abrigando famílias Guarani vindas de várias regiões do Brasil.
             - type: VideoEmbed
