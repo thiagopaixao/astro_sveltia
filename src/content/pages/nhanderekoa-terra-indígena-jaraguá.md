@@ -6,7 +6,7 @@ pageSettings:
   link_pt_br: nhanderekoa
   link_en: nhanderekoa-en
   link_es: nhanderekoa-es
-  animations: disable_all
+  animations: enable_all
   direction: left
   seoTitle: ''
   seoDescription: ''
