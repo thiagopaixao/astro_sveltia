@@ -1228,7 +1228,7 @@ components:
         column2:
           components:
             - type: Pullquote
-              content: A mata para nós tem uma inteligência, tudo funciona de uma forma que uma liga a outra, os animais são importante pro ka'aguy e para nós, as árvores, as ervas ... tudo tem uma conexão. Para nós não é simplesmente a mata. É o nosso irmão, é um membro do nosso povo. Como se fosse espírito conectados, um depende do outro.
+              content: A mata para nós tem uma inteligência, tudo funciona de uma forma que uma liga a outra, os animais são importante pro ka'aguy e para nós, as árvores, as ervas ... tudo tem uma conexão. Para nós não é simplesmente a mata. É o nosso irmão, é um membro do nosso povo. Como se fossem espíritos conectados, um depende do outro.
               txtColor: ''
               bgColor: ''
               byline: Jurandir Tupã Jekupe Mirim
