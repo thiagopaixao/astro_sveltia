@@ -1225,7 +1225,16 @@ components:
               alt: ''
               description: ''
         column2:
-          components: []
+          components:
+            - type: Pullquote
+              content: A mata para nós tem uma inteligência, tudo funciona de uma forma que uma liga a outra, os animais são importante pro ka'aguy e para nós, as árvores, as ervas ... tudo tem uma conexão. Para nós não é simplesmente a mata. É o nosso irmão, é um membro do nosso povo. Como se fosse espírito conectados, um depende do outro.
+              txtColor: ''
+              bgColor: ''
+              byline: Jurandir Tupã Jekupe Mirim
+            - type: Spacer
+              desktop: 300px
+              tablet: 300px
+              mobile: 300px
   - type: Group
     id: parte_2_colonizacao_do_jaragua
     shortTitle: parte 2 - colonizacao do Jaragua
