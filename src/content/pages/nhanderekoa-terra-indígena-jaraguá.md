@@ -690,6 +690,11 @@ components:
                 Além de ser uma reserva florestal de fundamental importância ambiental e climática para a metrópole paulista, onde áreas verdes são notoriamente escassas, o Jaraguá é um território de imenso valor espiritual e cultural para as comunidades indígenas que aí vivem desde tempos imemoriais. 
 
                 _Ka’aguy_ – a mata, a floresta – é uma paisagem saturada de história e memória, o patrimônio vivo dos ancestrais (humanos e não-humanos) dos povos Guarani.
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/imagem_pico_jaragua_stillvideo_small.jpg
+              alt: ''
+              description: Pico do Jaraguá, Terra Indigena Guarani
         column2:
           components:
             - type: Spacer
@@ -697,11 +702,11 @@ components:
               src: /uploads/imagem_XX_mata.jpg
               alt: ''
               description: mata do jaraguá
-              desktop: 500px
-              tablet: 500px
-              mobile: 500px
+              desktop: 100px
+              tablet: 100px
+              mobile: 100px
             - type: Pullquote
-              content: “Os xeramoi sempre dizem os elementos da cultura guarani estão inseridos justamente no _ka’aguy_, “a mata”, “a floresta”. Para nós o _ka’aguy_ é como se fosse o nosso irmão, como se fosse nosso irmão mais velho, por que a floresta faz com que o nosso modo de vida seja feita do jeito certo, porque todos os ensinamentos estão lá.”
+              content: “Os xeramoi sempre dizem os elementos da cultura guarani estão inseridos justamente no ka’aguy, “a mata”, “a floresta”. Para nós o ka’aguy é como se fosse o nosso irmão, como se fosse nosso irmão mais velho, por que a floresta faz com que o nosso modo de vida seja feita do jeito certo, porque todos os ensinamentos estão lá.”
               txtColor: '#18af1aff'
               bgColor: '#18af1aff'
               byline: – Jurandir Tupã Jekupe Mirim
