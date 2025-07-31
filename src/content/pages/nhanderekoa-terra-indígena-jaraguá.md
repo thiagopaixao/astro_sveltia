@@ -731,7 +731,7 @@ components:
       - type: Text
         hasDropCap: false
         content: |-
-          #### Terra Indígena Jaraguá
+          #### TERRA INDÍGENA JARAGUÁ
 
           A TI Jaraguá é um território localizado na cidade de São Paulo, tradicionalmente habitado pelo povo Guarani Mbya. A área reconhecida e demarcada pelo Estado Brasileiro abrange 532 hectares, a maior parte ainda cobertos de Mata Atlântica. Atualmente, a TI Jaraguá conta com nove Tekoas (aldeias).
       - type: Spacer
@@ -871,10 +871,10 @@ components:
         tablet: 50px
         mobile: 50px
       - type: ImageBlock
-        wideImage: false
+        wideImage: true
         src: /uploads/img_tekoa_pyau_natalicio.jpg
         alt: ''
-        description: O mestre dos saberes Natalício Karaí em frente do seu jardim medicinal
+        description: O mestre dos saberes Natalício Karaí em frente do seu jardim medicinal na Tekoa Pyau
         desktop: 300px
         tablet: 300px
         mobile: 300px
@@ -1082,7 +1082,7 @@ components:
         wideImage: false
         src: /uploads/img_tekoa_yvy_pora_marcioabelhas.jpg
         alt: ''
-        description: Márcio Werã Mirim, em meio ao enorme meliponário da Tekoa Yvy Porã
+        description: Márcio Werã Mirim, responsável por cuidar do enorme meliponário da Tekoa Yvy Porã
       - type: Spacer
         desktop: 300px
         tablet: 300px
