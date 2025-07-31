@@ -1596,9 +1596,7 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_06_picojaragua.jpg
+    backgroundMedia: []
     overlay: ''
     components:
       - type: Columns
