@@ -1941,11 +1941,6 @@ components:
               src: /uploads/imagem_16_logo_mata_atlantica_unesco.jpg
               alt: Selo da Reserva da Biosfera - UNESCO
               description: Selo da Reserva da Biosfera - UNESCO
-            - type: ImageBlock
-              wideImage: false
-              src: /uploads/imagem_29_area_demarcada_1987.jpg
-              alt: asd
-              description: Mapa assinalando a área demarcada em 1987, circunscrita ao núcleo habitacional da Tekoa Ytu, em comparação com a área reconhecida da T.I.Jaraguá atualmente.
         column2:
           components:
             - type: Text
