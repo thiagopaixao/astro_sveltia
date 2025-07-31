@@ -2814,46 +2814,40 @@ components:
     columnAlign: left
     floatingText: true
   - type: Group
-    id: parte_9_texto_1
-    shortTitle: parte 9 - texto 1
-    longTitle: parte 9 - texto 1
+    id: parte_x_ameacas
+    shortTitle: parte X - ameaças
+    longTitle: Ameaças a T.I. Jaraguá
     description: ''
-    showInMenu: false
+    showInMenu: true
     animations: true
     txtColor: Primary
     customTxtColor: ''
-    bgColor: Highlight
+    bgColor: Secondary
     customBgColor: ''
     backgroundMedia:
       - type: backgroundImage
-        imgSrc: /uploads/imagem_27_casa_abelhas_marcio.jpg
-    overlay: ''
+        imgSrc: /uploads/imagem_32_urbanizacao_jaragua.jpg
+    overlay: light
     components:
       - type: Columns
         txtColor: ''
         bgColor: ''
-        paddingTop: false
-        paddingBottom: false
+        paddingTop: true
+        paddingBottom: true
         invertOnMobile: false
-        columnsAlign: 66-33
+        columnsAlign: 33-66
         column1:
           components:
             - type: Text
-              hasDropCap: true
+              hasDropCap: false
               content: |-
-                Por toda Yvyrupa, as retomadas de terras ancestrais dos povos Guarani carregam um sentido de reparar o território e a natureza. 
-                 
-                Ao longo dos mais de 75 anos de retomadas em São Paulo, as comunidades da T.I. Jaraguá estabeleceram várias práticas de cuidado, proteção e manutenção da biodiversidade em seu território. Tekoas como Itawera, que recuperou uma grande área de lixão urbano, e Yvy Porã, com seu pioneiro projeto de recuperação de abelhas nativas, tornaram-se referência de restauração ambiental em tempos de urgência climática.  
+                ###### **parte X&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;**
 
-                Em todos os núcleos habitacionais identificam-se práticas de recuperação e cuidado da mata, combatendo a poluição urbana da água e do solo, e promovendo o reflorestamento através do plantio de espécies nativas, o cultivo de roças tradicionais e jardins medicinais, e o monitoramento de animais silvestres. 
-
-                É a partir da contínua manutenção do _nhandereko_,_ _o “modo de habitar” Guarani, saber ancestral transmitido pelos anciãos e anciãs, que tais práticas se constituem no tempo e no espaço através de gerações.  
-
-                Ao espacializar estes processos, o mapa joga luz em práticas muitas vezes invisibilizadas, principalmente o trabalho de cuidado cotidiano das mulheres que fincam raízes profundas para que Terra Indígena do Jaraguá cresça forte.
+                ## **Ameaças ao Território e ao Patrimônio Florestal Guarani**
         column2:
           components: []
         mapView: map5_jaragua
-      - type: Text
+      - type: Spacer
         hasDropCap: false
         content: Apenas em 2021, com o projeto “Memória Paulistana” do Departamento de Patrimônio Histórico da Prefeitura de São Paulo, é que espaços Guarani ganhariam algum grau de reconhecimento patrimonial oficial.
         desktop: 300px
@@ -2887,205 +2881,6 @@ components:
         mobile: 600px
     columnAlign: left
     floatingText: true
-  - type: Group
-    id: parte_x_ameacas
-    shortTitle: parte X - ameaças
-    longTitle: Ameaças a T.I. Jaraguá
-    description: ''
-    showInMenu: true
-    animations: true
-    txtColor: Primary
-    customTxtColor: ''
-    bgColor: Secondary
-    customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_32_urbanizacao_jaragua.jpg
-    overlay: light
-    components:
-      - type: Columns
-        paddingTop: true
-        paddingBottom: true
-        invertOnMobile: false
-        columnsAlign: 33-66
-        column1:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: |-
-                ###### **parte X&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;**
-
-                ## **Ameaças ao Território e ao Patrimônio Florestal Guarani**
-        column2:
-          components: []
-      - type: Spacer
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
-  - type: Group
-    id: parte_10_texto_1
-    shortTitle: parte 10 - texto 1
-    longTitle: parte 10 - texto 1
-    description: ''
-    showInMenu: false
-    animations: true
-    txtColor: Primary
-    customTxtColor: ''
-    bgColor: Highlight
-    customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_32_urbanizacao_jaragua.jpg
-    overlay: ''
-    components:
-      - type: Columns
-        paddingTop: false
-        paddingBottom: false
-        invertOnMobile: false
-        columnsAlign: 66-33
-        column1:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: Enquanto a metrópole se expande buscando os lucros do capital imobiliário, o território Guarani é cada vez mais cercado pela urbanização predatória de São Paulo. Mesmo demarcada, a T.I. segue sob crescente pressão espacial e política. Neste contexto, este mapa busca fornecer um instrumento de advocacia em apoio à luta dos Guarani pelos seus direitos territoriais e por reparações históricas e ambientais.
-        column2:
-          components: []
-      - type: Spacer
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
-  - type: Group
-    id: creditos
-    shortTitle: creditos
-    longTitle: creditos
-    description: ''
-    showInMenu: false
-    animations: true
-    txtColor: Highlight
-    customTxtColor: ''
-    bgColor: Secondary
-    customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_32_urbanizacao_jaragua.jpg
-    overlay: ''
-    components:
-      - type: Columns
-        paddingTop: false
-        paddingBottom: false
-        invertOnMobile: false
-        columnsAlign: 66-33
-        column1:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: |-
-                O mapa foi produzido pelo projeto**&#32;**_Arquiteturas da Reparação: São Paulo Terra Indígena_. Desenvolvido em parceria com lideranças e ativistas da T.I. Jaraguá, o projeto questiona visões tradicionais de cidade, território, memória, e patrimônio, buscando pensar como seres e elementos do mundo “mais-que-humano”, como as águas e as matas, podem ser incluídos como sujeitos patrimoniais dentro de um amplo processo de reparação histórica e socioambiental aos povos originários. O projeto foi realizado através de uma colaboração entre a T.I. Jaraguá, a agência autônoma, e o Chão Coletivo, por meio da plataforma Práticas Espaciais da Escola da Cidade. 
-
-                **T.I. Jaraguá**
-
-                pesquisadores: Antony Karaí Poty, Thiago Henrique Karai Djekupe, Felipe Silva, e Richard Wera Mirim
-
-                consultores e entrevistas: Jurandir Tupã Jekupe Mirim, Márcio Werã Mirim, Irene Mendonça (Jaxuka Mirim), Daniel Werã Mirim, Cacica Ara Poty (Maria), Natalício Karaí, Tamikuã Txihi…, Coletivo Arandu Mirim (Antony Karaí Poty, Ciara Martins, Samara Para Martins) 
-
-                participantes das oficinas: Antony Karaí Poty, Valdemir, Samara Para, Ciara Martins, Lenilson, Thiago Karaí Poty, Valdir, Felipe Silva, Osmar, Maria Ara Poty,  brigadistas Lucas, Paulino, Adriano, Vander, Danilo e Luciano, Natalício Karaí, Antônia, Lucas, Pedrinho, Txai Suruí, Miguel, Antônio, jovens e crianças. 
-
-                **agência autônonoma**
-
-                Paulo Tavares, Paula Marujo, Laura Pappalardo, Amanda Klajner e Julia Veras 
-
-                **Chão Coletivo**
-
-                Beatrice Perracini Padovan, Giulio Michelino, Glória Kok, Isabela de Castilho Moraes e Laura Pappalardo
-
-                **Plataforma Práticas Espaciais**
-
-                Carol Tonetti e Gilberto Mariotti
-
-                **design gráfico:** 
-
-                Cosmopolíticas Editoriais
-
-                **finalização gráfica dos mapas:** 
-
-                Carolina Passos
-
-                CAU/SP (Programa de Assistência Técnica para Preservação do Patrimônio Cultural 2024, Termo de Fomento 016/2024, Ref. Projeto 406165)
-
-                **APOIO** 
-
-                Design Museum, Future Observatory More-than-Human Fellowship
-        column2:
-          components: []
-      - type: Spacer
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
-  - type: Group
-    id: creditos
-    shortTitle: creditos
-    longTitle: creditos
-    description: ''
-    showInMenu: false
-    animations: true
-    txtColor: Highlight
-    customTxtColor: ''
-    bgColor: Secondary
-    customBgColor: ''
-    backgroundMedia: []
-    overlay: ''
-    components:
-      - type: Columns
-        paddingTop: false
-        paddingBottom: false
-        invertOnMobile: false
-        columnsAlign: 66-33
-        column1:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: |-
-                O mapa foi produzido pelo projeto**&#32;**_Arquiteturas da Reparação: São Paulo Terra Indígena_. Desenvolvido em parceria com lideranças e ativistas da T.I. Jaraguá, o projeto questiona visões tradicionais de cidade, território, memória, e patrimônio, buscando pensar como seres e elementos do mundo “mais-que-humano”, como as águas e as matas, podem ser incluídos como sujeitos patrimoniais dentro de um amplo processo de reparação histórica e socioambiental aos povos originários. O projeto foi realizado através de uma colaboração entre a T.I. Jaraguá, a agência autônoma, e o Chão Coletivo, por meio da plataforma Práticas Espaciais da Escola da Cidade. 
-
-                **T.I. Jaraguá**
-
-                pesquisadores: Antony Karaí Poty, Thiago Henrique Karai Djekupe, Felipe Silva, e Richard Wera Mirim
-
-                consultores e entrevistas: Jurandir Tupã Jekupe Mirim, Márcio Werã Mirim, Irene Mendonça (Jaxuka Mirim), Daniel Werã Mirim, Cacica Ara Poty (Maria), Natalício Karaí, Tamikuã Txihi…, Coletivo Arandu Mirim (Antony Karaí Poty, Ciara Martins, Samara Para Martins) 
-
-                participantes das oficinas: Antony Karaí Poty, Valdemir, Samara Para, Ciara Martins, Lenilson, Thiago Karaí Poty, Valdir, Felipe Silva, Osmar, Maria Ara Poty,  brigadistas Lucas, Paulino, Adriano, Vander, Danilo e Luciano, Natalício Karaí, Antônia, Lucas, Pedrinho, Txai Suruí, Miguel, Antônio, jovens e crianças. 
-
-                **agência autônonoma**
-
-                Paulo Tavares, Paula Marujo, Laura Pappalardo, Amanda Klajner e Julia Veras 
-
-                **Chão Coletivo**
-
-                Beatrice Perracini Padovan, Giulio Michelino, Glória Kok, Isabela de Castilho Moraes e Laura Pappalardo
-
-                **Plataforma Práticas Espaciais**
-
-                Carol Tonetti e Gilberto Mariotti
-
-                **design gráfico:** 
-
-                Cosmopolíticas Editoriais
-
-                **finalização gráfica dos mapas:** 
-
-                Carolina Passos
-
-                CAU/SP (Programa de Assistência Técnica para Preservação do Patrimônio Cultural 2024, Termo de Fomento 016/2024, Ref. Projeto 406165)
-
-                **APOIO** 
-
-                Design Museum, Future Observatory More-than-Human Fellowship
-        column2:
-          components: []
-      - type: Spacer
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
   - type: Group
     id: creditos
     shortTitle: creditos
