@@ -694,7 +694,7 @@ components:
               wideImage: true
               src: /uploads/imagem_pico_jaragua_stillvideo_small.jpg
               alt: ''
-              description: Pico do Jaraguá, Terra Indigena Guarani
+              description: Pico do Jaraguá em São Paulo, Terra Indígena Guarani
         column2:
           components:
             - type: Spacer
