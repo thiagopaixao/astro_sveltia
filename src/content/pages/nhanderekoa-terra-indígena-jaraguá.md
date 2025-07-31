@@ -2328,18 +2328,8 @@ components:
                 ## **A Patrimonialização do Colonialismo e o Apagamento da Memória Indígena**
 
                 ## **(1983 – dias de hoje)**
-            - type: ImageBlock
-              wideImage: false
-              src: /uploads/imagem_23_mapa_cerimonia.jpg
-              alt: asd
-              description: Celebração da demarcação da T.I. Jaraguá pelas lentes de Richard Wera Mirim
         column2:
-          components:
-            - type: Pullquote
-              content: Como a gente sempre faz nas manifestações com outras faixas, o mapa estava presente, primeiro na mão dos jovens e das crianças, depois as mulheres ergueram o mapa, e aquilo foi uma celebração, foi a nossa forma de fazer desse processo da demarcação da terra uma cerimônia.
-              txtColor: ''
-              bgColor: ''
-              byline: – Thiago Henrique Karai Djekupe
+          components: []
         desktop: 800px
         tablet: 800px
         mobile: 800px
