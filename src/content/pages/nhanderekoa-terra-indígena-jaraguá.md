@@ -1192,7 +1192,7 @@ components:
     components:
       - type: VideoEmbed
         wideVideo: true
-        videoUrl: https://vimeo.com/1106060903?share=copy#t=0
+        videoUrl: https://player.vimeo.com/video/1106060903?
         videoCaption: trecho da entrevista com Jurandir Tupã Jekupe Mirim
       - type: Columns
         paddingTop: false
