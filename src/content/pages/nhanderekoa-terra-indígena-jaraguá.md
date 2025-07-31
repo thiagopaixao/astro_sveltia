@@ -2524,24 +2524,40 @@ components:
               alt: asd
               description: Imagem do arquivo do levantamento técnico do complexo Casa Grande-Senzala de Afonso Sardinha presente na proposta de tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978.
         mapView: map4_jaragua
-      - type: Text
+      - type: Spacer
         hasDropCap: false
         content: Desde a criação do Parque Estadual em 1961, o Pico do Jaraguá e suas matas tornaram-se objeto de iniciativas e leis de patrimonialização pelo estado e pelo município de São Paulo.
-      - type: ImageBlock
-        wideImage: true
-        src: ''
-        alt: ''
-        description: 'Foto do levantamento técnico do complexo Casa-Grande e Senzala de Afonso Sardinha. Fonte: Processo de tombamento do Parque Estadual do Jaraguá, 1978'
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-      - type: Spacer
         txtColor: ''
         bgColor: ''
         desktop: 600px
         tablet: 600px
         mobile: 600px
         mapView: map5_cacicajandira
+      - type: MapView
+        hasDropCap: false
+        content: O lugar onde viveu a matriarca cacica Jandira, fundadora da Tekoa Ytu, a primeira retomada do Jaraguá, é incluído na lista de lugares da memória da cidade de São Paulo.
+        wideImage: true
+        src: ''
+        alt: ''
+        description: 'Foto do levantamento técnico do complexo Casa-Grande e Senzala de Afonso Sardinha. Fonte: Processo de tombamento do Parque Estadual do Jaraguá, 1978'
+        txtColor: ''
+        bgColor: ''
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+        mapView: map4_afonsosardinha
+      - type: MapView
+        hasDropCap: false
+        content: |-
+          Em 1983, toda a área do Parque é tombada pelo CONDEPHAAT, e em 1992 pelo CONPRESP (Conselho Municipal de Preservação do Patrimônio Histórico, Cultural e Ambiental da Cidade de São Paulo).
+
+          Em 2015, o CONPRESP tomba o Conjunto histórico da Estação Ferroviária do Jaraguá, e em 2019 tomba as estruturas remanescentes da Pedreira de Quartzito no Jaraguá, na proximidade da Tekoa Itakupé.
+        txtColor: ''
+        bgColor: ''
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+        mapView: map4_jaraguaestacao
       - type: MapView
         hasDropCap: false
         content: O lugar onde viveu a matriarca cacica Jandira, fundadora da Tekoa Ytu, a primeira retomada do Jaraguá, é incluído na lista de lugares da memória da cidade de São Paulo.
