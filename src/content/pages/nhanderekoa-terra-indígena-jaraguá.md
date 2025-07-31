@@ -1879,9 +1879,11 @@ components:
 
                 Sob pressão do movimento indígena, a Constituição de 1988 reconhece o direito dos povos originários a seus territórios ancestrais, sendo esses direitos anteriores à própria criação do Estado brasileiro. A Constituição também garante a proteção da organização social, costumes, línguas, crenças e tradições dos povos indígenas.
 
-                Neste contexto, assim como outros territórios e movimentos populares, o Jaraguá passa por um processo de crescente organização política e reclame de direitos. Pressionada pelo movimento indígena, em 1984 – ano do movimento “Diretas Já” – a FUNAI procede com regularização de algumas terras indígenas no Estado de São Paulo, incluindo uma pequena parte da Terra Indígena Jaraguá correspondente à Tekoa Ytu, demarcada em 1987. 
+                Neste contexto, assim como outros territórios e movimentos populares, o Jaraguá passa por um processo de crescente organização política e reclame de direitos. 
 
-                Ainda que representassem avanços democráticos, estas demarcações eram claramente insuficientes, especialmente no caso da T.I. Jaraguá, onde a área demarcada abrangia apenas o perímetro de 1.8 hectares do núcleo habitacional da Tekoa Ytu. Deste modo, a demarcação ignorava a extensão territorial do uso tradicional das matas pelas comunidades Guarani que mantém o _nhandereko_.
+                Pressionada pelo movimento indígena, em 1984 – ano do movimento “Diretas Já” – a FUNAI procede com regularização de algumas terras indígenas no Estado de São Paulo, incluindo uma pequena parte da Terra Indígena Jaraguá correspondente à Tekoa Ytu, demarcada em 1987. 
+
+                Ainda que representassem avanços democráticos, estas demarcações eram claramente insuficientes, especialmente no caso da TI Jaraguá, onde a área demarcada abrangia apenas o perímetro de 1.8 hectares do núcleo habitacional da Tekoa Ytu. Deste modo, a demarcação ignorava a extensão territorial do uso tradicional das matas pelas comunidades Guarani que mantém o _nhandereko_.
               wideImage: false
               src: /uploads/imagem_16_logo_mata_atlantica_unesco.jpg
               alt: Selo da Reserva da Biosfera - UNESCO
