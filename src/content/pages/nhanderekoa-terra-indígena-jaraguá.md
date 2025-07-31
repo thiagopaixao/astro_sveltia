@@ -2067,7 +2067,7 @@ components:
             - type: Spacer
               hasDropCap: false
               content: Após a eleição de Luiz Inácio Lula da Silva em 2023, e a criação do Ministério dos Povos Indígenas, retoma-se o processo de demarcação do território Guarani do Jaraguá em São Paulo. Através da Portaria 793 de 23 de Outubro de 2024, o Ministério da Justiça declara a nulidade da Portaria 683 de 2015, restabelecendo os efeitos da Portaria 581 de 2015 que reconhece a posse Guarani e a demarcação da Terra indígena Jaraguá
-              desktop: 100px
+              desktop: 400px
               tablet: 100px
               mobile: 100px
             - type: Pullquote
@@ -2079,6 +2079,11 @@ components:
               txtColor: ''
               bgColor: ''
               byline: Antony Karaí Poty
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/2013 [01_10]_01_ISA.jpg
+              alt: ''
+              description: 'Protesto no Monumento às Bandeiras (Fonte: Tiago Moreira dos Santos - ISA)'
         column2:
           components:
             - type: Text
