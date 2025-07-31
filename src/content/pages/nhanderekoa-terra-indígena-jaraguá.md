@@ -1787,7 +1787,7 @@ components:
             - type: Text
               hasDropCap: true
               content: |-
-                Ao passo que os “grandes empreendimentos” da ditadura militar avançavam Brasil afora, os povos indígenas eram sistematicamente violentados e reprimidos pelo regime.      
+                Ao passo que os “grandes empreendimentos” da ditadura militar avançavam Brasil afora, os povos indígenas eram reprimidos pelo regime e seus direitos sistematicamente violados. 
 
                 Como mostra o relatório da Comissão Nacional da Verdade, no contexto dos planos de desenvolvimento nacional, inúmeras comunidades Indígenas foram submetidas a transferências e remoções forçadas executadas por agentes de estado para abrir terras para obras de infraestrutura.
 
