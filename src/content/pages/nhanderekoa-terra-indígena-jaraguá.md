@@ -733,7 +733,11 @@ components:
         content: |-
           #### TERRA INDÍGENA JARAGUÁ
 
-          A TI Jaraguá é um território localizado na cidade de São Paulo, tradicionalmente habitado pelo povo Guarani Mbya. A área reconhecida e demarcada pelo Estado Brasileiro abrange 532 hectares, a maior parte ainda cobertos de Mata Atlântica. Atualmente, a TI Jaraguá conta com nove Tekoas (aldeias).
+          A TI Jaraguá é um território localizado na cidade de São Paulo, tradicionalmente habitado pelo povo Guarani Mbya. 
+
+          A área reconhecida e demarcada pelo Estado Brasileiro abrange 532 hectares, a maior parte ainda cobertos de Mata Atlântica. 
+
+          Atualmente, a TI Jaraguá conta com nove Tekoas (aldeias).
       - type: Spacer
         txtColor: ''
         bgColor: ''
