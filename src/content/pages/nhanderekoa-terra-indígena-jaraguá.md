@@ -2364,11 +2364,11 @@ components:
             - type: Text
               hasDropCap: true
               content: |-
-                Desde a criação do Parque Estadual em 1961, e principalmente no pós-ditadura militar, o Pico do Jaraguá e suas matas tornaram-se objeto de diversas iniciativas de patrimonialização pelo estado e pelo município de São Paulo. 
+                Desde a criação do Parque Estadual em 1961, e principalmente no pós-ditadura militar, o Pico do Jaraguá e suas matas tornaram-se objeto de diversas iniciativas de patrimonialização pelo estado e pelo município de São Paulo.
 
-                Este mapa mostra as áreas e bens que foram reconhecidos por órgãos governamentais como patrimônio e estão sob alguma lei de salvaguarda e proteção. Em sua maioria são sítios associados ao período colonial, particularmente ao período dos aldeamentos e da extração mineral no Jaraguá.
+                Este mapeamento  mostra as áreas e bens que foram reconhecidos por órgãos governamentais como patrimônio e estão sob alguma lei de salvaguarda e proteção. Em sua maioria são sítios associados ao período colonial, particularmente ao período dos aldeamentos e da extração mineral no Jaraguá.
             - type: ImageBlock
-              wideImage: true
+              wideImage: false
               src: /uploads/tanque_lavagem_ouro_jaragua.jpg
               alt: ''
               description: 'Tanque de lavagem de ouro da época colonial no Jaraguá (Fonte: Reprodução/TV Globo)'
@@ -2382,7 +2382,7 @@ components:
               src: /uploads/Placa Memória Paulistana-Cacica Jandira_2021.png
               alt: ''
               description: Placa do projeto Memória Paulistana do Departamento do Patrimônio Histórico de São Paulo, reconhecendo a residência da cacica Jandira como lugar de memória dos Guarani e da cidade
-              desktop: 400px
+              desktop: 900px
               tablet: 400px
               mobile: 400px
             - type: ImageBlock
