@@ -656,11 +656,13 @@ components:
           - type: Text
             hasDropCap: false
             content: |-
-              ###### Após um ciclo de mobilizações históricas, que tomaram São Paulo entre 2013 e 2025, a TI Jaraguá foi finalmente reconhecida como território de posse ancestral Guarani. 
+              ###### Após um ciclo de mobilizações históricas que tomaram São Paulo – Terra Indígena – entre 2013 e 2025, a TI Jaraguá foi finalmente reconhecida como território de posse ancestral Guarani. 
 
-              ###### Elaborada em colaboração com xeramõi e xejaryi, xondaros e xondarias, professores, lideranças e ativistas Guarani, esta plataforma apresenta uma cartografia da atual configuração da TI Jaraguá no momento de sua demarcação física, entre julho e setembro de 2025.  
+              ###### Elaborada em colaboração com xeramõi e xejaryi, xondaros e xondarias, professores, lideranças e ativistas Guarani, esta plataforma apresenta uma cartografia da atual configuração da TI Jaraguá no momento de sua demarcação física, em setembro de 2025.  
 
-              ###### Combinando análise de dados geoespaciais, cartografias participativas, entrevistas e documentação de arquivos históricos, traça um panorama das práticas espaciais das comunidades Guarani para a defesa, o cuidado, e a reparação das florestas do Jaraguá.
+              ###### Combinando análise de dados geoespaciais, cartografias participativas, entrevistas e documentação de arquivo, traça um panorama histórico das práticas espaciais das comunidades Guarani para a defesa, o cuidado, e a reparação das florestas do Jaraguá.
+
+              ######
           - type: Spacer
             desktop: 200px
             tablet: 200px
