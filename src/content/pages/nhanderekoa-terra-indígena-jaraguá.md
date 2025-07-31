@@ -1544,9 +1544,9 @@ components:
               tablet: 150px
               mobile: 150px
             - type: Spacer
-              desktop: 600px
-              tablet: 600px
-              mobile: 600px
+              desktop: 900px
+              tablet: 900px
+              mobile: 900px
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_18_mapa_anhanguera.jpg
