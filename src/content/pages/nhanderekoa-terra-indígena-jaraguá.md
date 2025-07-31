@@ -1998,20 +1998,7 @@ components:
               tablet: 300px
               mobile: 300px
         column2:
-          components:
-            - type: Text
-              hasDropCap: true
-              content: |-
-                Em paralelo, no arco entre os assassinatos de Marçal de Souza e Chico Mendes em 1983-1984, e a realização do encontro internacional ECO-92 promovido pelas Nações Unidas no Rio de Janeiro em 1992, a pauta ambiental consolida-se internacionalmente e no Brasil. 
-
-                Em 1994 o Parque Estadual do Jaraguá é reconhecido pela UNESCO como Patrimônio da Humanidade, na categoria de Reserva da Biosfera, passando a integrar o Cinturão Verde da Cidade de São Paulo.
-
-                 Assim como na criação do Parque Estadual em 1961, tais medidas protetivas ambientalistas muitas vezes entram em conflito com o direito das comunidades Guarani ao seu território ancestral, impedindo-as de usufruir dos recursos naturais das florestas dentro do perímetro do Parque, que hoje encontra-se totalmente cercado.
-            - type: ImageBlock
-              wideImage: false
-              src: /uploads/imagem_30_cinturao_verde.jpg
-              alt: asd
-              description: Mapa da área norte do Cinturão Verde da Cidade de São Paulo. As florestas da T.I. Jaraguá são as mais preservadas do cinturão.
+          components: []
   - type: Group
     id: parte_6_texto_1
     shortTitle: parte 6 - texto 1
