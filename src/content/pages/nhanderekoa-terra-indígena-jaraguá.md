@@ -2034,7 +2034,7 @@ components:
               wideImage: true
               src: /uploads/imagem_19_ocupacao_antena.jpg
               alt: asd
-              description: Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá, entre os dias 14 e 16 de setembro, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo
+              description: 'Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá, entre os dias 14 e 16 de setembro, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo (Fonte: Comissão Guarani Yvyrupa - CGY)'
         column2:
           components:
             - type: ImageBlock
@@ -2051,6 +2051,10 @@ components:
               src: /uploads/imagem_20_ocupacao_bandeirantes.jpg
               alt: asd
               description: 'Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã (Fonte: XXXX)'
+            - type: VideoEmbed
+              wideVideo: true
+              videoUrl: https://youtu.be/JCBOU4wQmR8?feature=shared
+              videoCaption: '"Rodovia Rojoko - O dia em que fechamos a Bandeirantes”.   Video realizado pela CGY documentando o fechamento da Rodovia dos Bandeirantes por ativistas Guarani em 26 de Setembro de 2013. O protesto pede a demarcação das T.I.s Jaraguá e Tenondé Porã, e o cancelamento   da Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes.  (Fonte: CGY)'
         mapView: resistencia_intro
       - type: MapView
         txtColor: ''
