@@ -2766,38 +2766,6 @@ components:
         column2:
           components: []
         mapView: map5_jaragua
-      - type: Spacer
-        hasDropCap: false
-        content: Apenas em 2021, com o projeto “Memória Paulistana” do Departamento de Patrimônio Histórico da Prefeitura de São Paulo, é que espaços Guarani ganhariam algum grau de reconhecimento patrimonial oficial.
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
-      - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map5_cacicajandira
-      - type: Text
-        hasDropCap: false
-        content: O lugar onde viveu a matriarca cacica Jandira, fundadora da Tekoa Ytu, a primeira retomada do Jaraguá, é incluído na lista de lugares da memória da cidade de São Paulo.
-      - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map5_memoria
-      - type: Text
-        hasDropCap: false
-        content: Sob pressão dos movimentos guarani, o lugar onde foram realizados os protestos de 20XX, que bloqueou a bandeirantes, também entra na lista de lugares da memória da cidade de São Paulo.
-      - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
     columnAlign: left
     floatingText: true
   - type: Group
