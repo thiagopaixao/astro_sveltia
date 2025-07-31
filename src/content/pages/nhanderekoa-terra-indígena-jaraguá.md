@@ -2325,9 +2325,9 @@ components:
               content: |-
                 ###### **parte VIII:&#160;&#160;&#160;&#160;&#160;&#160;**
 
-                ## **A Patrimonialização do Colonialismo e o Apagamento da Memória Indígena**
+                ### **Patrimonialização do Colonialismo e Apagamento da Memória Indígena**
 
-                ## **(1983 – dias de hoje)**
+                ### **(1983 – hoje)**
         column2:
           components: []
         desktop: 800px
