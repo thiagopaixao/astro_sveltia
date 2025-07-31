@@ -2051,18 +2051,10 @@ components:
               src: /uploads/imagem_20_ocupacao_bandeirantes.jpg
               alt: asd
               description: 'Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã (Fonte: XXXX)'
-              wideVideo: true
+              wideVideo: false
               videoUrl: https://www.youtube.com/embed/JCBOU4wQmR8?si=Ce5kuWAYhQyji6Wk
               videoCaption: '"Rodovia Rojoko - O dia em que fechamos a Bandeirantes”.   Video realizado pela CGY documentando o fechamento da Rodovia dos Bandeirantes por ativistas Guarani em 26 de Setembro de 2013. O protesto pede a demarcação das T.I.s Jaraguá e Tenondé Porã, e o cancelamento   da Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes.  (Fonte: CGY)'
-            - type: VideoEmbed
-              wideVideo: true
-              videoUrl: https://youtu.be/JCBOU4wQmR8?feature=shared
-              videoCaption: '"Rodovia Rojoko - O dia em que fechamos a Bandeirantes”.   Video realizado pela CGY documentando o fechamento da Rodovia dos Bandeirantes por ativistas Guarani em 26 de Setembro de 2013. O protesto pede a demarcação das T.I.s Jaraguá e Tenondé Porã, e o cancelamento   da Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes.  (Fonte: CGY)'
         mapView: resistencia_intro
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: resistencia_intro_map
     columnAlign: left
     floatingText: false
   - type: Group
