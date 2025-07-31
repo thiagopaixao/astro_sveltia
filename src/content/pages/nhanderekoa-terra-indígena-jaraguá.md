@@ -1003,7 +1003,6 @@ components:
 
           Retomada e fundação: 2017
 
-
           Desde sua retomada em 2017, a _Tekoa Itaendy_ (Aldeia da Pedra Amarela) promove práticas de manutenção da biodiversidade, como o reflorestamento com espécies nativas, o plantio de roças com alimentos tradicionais e a reintrodução e criação de espécies de abelhas nativas.
         wideImage: false
         src: /uploads/arqueological-remains_07.jpg
@@ -2829,5 +2828,30 @@ components:
                 Design Museum, Future Observatory More-than-Human Fellowship
         column2:
           components: []
+  - type: Group
+    id: downloads
+    shortTitle: downloads
+    longTitle: downloads
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Custom
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: true
+        paddingBottom: true
+        components:
+          - type: Button
+            link:
+              url: https://thiagopaixao.github.io/astro_sveltia/nhanderekoa/
+              target: _self
+              text: asd
+            icon: arrow_right_alt
+            size: ''
 ---
 
