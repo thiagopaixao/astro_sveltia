@@ -661,6 +661,10 @@ components:
               ###### Elaborada em colaboração com xeramõi e xejaryi, xondaros e xondarias, professores, lideranças e ativistas Guarani, esta plataforma apresenta uma cartografia da atual configuração da TI Jaraguá no momento de sua demarcação física, entre julho e setembro de 2025.  
 
               ###### Combinando análise de dados geoespaciais, cartografias participativas, entrevistas e documentação de arquivos históricos, traça um panorama das práticas espaciais das comunidades Guarani para a defesa, o cuidado, e a reparação das florestas do Jaraguá.
+          - type: Spacer
+            desktop: 200px
+            tablet: 200px
+            mobile: 200px
   - type: Group
     id: parte_1_nhanderekoa
     shortTitle: parte 1 - nhanderekoa
