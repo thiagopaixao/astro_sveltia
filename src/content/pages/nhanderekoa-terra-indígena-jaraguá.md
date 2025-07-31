@@ -710,7 +710,7 @@ components:
               tablet: 100px
               mobile: 100px
             - type: Pullquote
-              content: “Os xeramoi sempre dizem os elementos da cultura guarani estão inseridos justamente no ka’aguy, “a mata”, “a floresta”. Para nós o ka’aguy é como se fosse o nosso irmão, como se fosse nosso irmão mais velho, por que a floresta faz com que o nosso modo de vida seja feita do jeito certo, porque todos os ensinamentos estão lá.”
+              content: Os xeramoi sempre dizem que os elementos da cultura guarani estão inseridos justamente no ka’aguy, “a mata”, “a floresta”. Para nós ka’aguy é como se fosse o nosso irmão mais velho, por que a floresta faz com que o nosso modo de vida seja feita do jeito certo, porque todos os ensinamentos estão lá.
               txtColor: '#18af1aff'
               bgColor: '#18af1aff'
               byline: – Jurandir Tupã Jekupe Mirim
