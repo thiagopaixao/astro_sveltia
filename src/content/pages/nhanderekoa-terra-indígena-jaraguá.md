@@ -2769,48 +2769,9 @@ components:
                 ###### **parte IX**
 
                 ## **Práticas Espaciais do Cuidado & da Reparação**
-            - type: ImageBlock
-              wideImage: true
-              src: /uploads/imagem_24_monumento_estatua_jaragua.jpg
-              alt: ''
-              description: Projeto da estátua-monumento do jesuíta José de Anchieta apresentado no Processo de tombamento do Parque Estadual do Jaraguá do CONDEPHAAT, 1978.
         column2:
-          components:
-            - type: ImageBlock
-              wideImage: false
-              src: /uploads/imagem_26_pagina_relatorio_tombamento.jpg
-              alt: asd
-              description: Imagem do arquivo do levantamento técnico do complexo Casa Grande-Senzala de Afonso Sardinha presente na proposta de tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978.
+          components: []
         mapView: map5_jaragua
-      - type: Text
-        hasDropCap: false
-        content: Apenas em 2021, com o projeto “Memória Paulistana” do Departamento de Patrimônio Histórico da Prefeitura de São Paulo, é que espaços Guarani ganhariam algum grau de reconhecimento patrimonial oficial.
-      - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map5_cacicajandira
-      - type: Text
-        hasDropCap: false
-        content: O lugar onde viveu a matriarca cacica Jandira, fundadora da Tekoa Ytu, a primeira retomada do Jaraguá, é incluído na lista de lugares da memória da cidade de São Paulo.
-      - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map5_memoria
-      - type: Text
-        hasDropCap: false
-        content: Sob pressão dos movimentos guarani, o lugar onde foram realizados os protestos de 20XX, que bloqueou a bandeirantes, também entra na lista de lugares da memória da cidade de São Paulo.
-      - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
     columnAlign: left
     floatingText: true
   - type: Group
