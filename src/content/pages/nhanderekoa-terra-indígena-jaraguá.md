@@ -2374,12 +2374,19 @@ components:
               content: 'Apenas recentemente, em 2023, que dois lugares da memória Guarani entraram no inventário de lugares da memória da cidade de São Paulo através do projeto “Memória Paulistana”: o lugar da casa da Cacica Jandira; e o ponto da Rodovia dos Bandeirantes onde ocorreram as manifestações históricas pela demarcação da TI Jaraguá.'
         column2:
           components:
+            - type: Spacer
+              wideImage: false
+              src: /uploads/Placa Memória Paulistana-Cacica Jandira_2021.png
+              alt: ''
+              description: Placa do projeto Memória Paulistana do Departamento do Patrimônio Histórico de São Paulo, reconhecendo a residência da cacica Jandira como lugar de memória dos Guarani e da cidade
+              desktop: 400px
+              tablet: 400px
+              mobile: 400px
             - type: ImageBlock
               wideImage: false
               src: /uploads/Placa Memória Paulistana-Cacica Jandira_2021.png
               alt: ''
               description: Placa do projeto Memória Paulistana do Departamento do Patrimônio Histórico de São Paulo, reconhecendo a residência da cacica Jandira como lugar de memória dos Guarani e da cidade
-            - type: Spacer
               desktop: 400px
               tablet: 400px
               mobile: 400px
@@ -2436,38 +2443,15 @@ components:
         mapView: map4_jaragua
       - type: Text
         hasDropCap: false
-        content: Desde a criação do Parque Estadual em 1961, o Pico do Jaraguá e suas matas tornaram-se objeto de iniciativas e leis de patrimonialização pelo estado e pelo município de São Paulo.
-      - type: ImageBlock
-        wideImage: true
-        src: ''
-        alt: ''
-        description: 'Foto do levantamento técnico do complexo Casa-Grande e Senzala de Afonso Sardinha. Fonte: Processo de tombamento do Parque Estadual do Jaraguá, 1978'
+        content: PATRIMONIALIZAÇÃO DO JARAGUÁ
       - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map4_afonsosardinha
-      - type: Text
-        hasDropCap: false
-        content: Em 1978, no contexto da construção do complexo turístico do Parque, o conjunto Casa Grande-Senzala construído pelo bandeirante Afonso Sardinha é tombado pelo CONDEPHAAT (Conselho de Defesa do Patrimônio Histórico, Arqueológico, Artístico e Turístico do Estado de São Paulo).
-      - type: ImageBlock
-        wideImage: true
-        src: /uploads/Casa_Grande_Afonso_Sardinha_Tombamento_PEJ_1978.jpg
-        alt: ''
-        description: 'Foto do levantamento técnico do complexo Casa-Grande e Senzala de Afonso Sardinha. Fonte: Processo de tombamento do Parque Estadual do Jaraguá, 1978'
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-      - type: Spacer
-        txtColor: ''
-        bgColor: ''
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: map4_jaraguaestacao
       - type: MapView
         hasDropCap: false
         content: |-
