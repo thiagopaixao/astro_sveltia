@@ -2036,40 +2036,8 @@ components:
               wideVideo: false
               videoUrl: https://www.youtube.com/embed/JCBOU4wQmR8?si=Ce5kuWAYhQyji6Wk
               videoCaption: '"Rodovia Rojoko - O dia em que fechamos a Bandeirantes”.   Video realizado pela CGY documentando o fechamento da Rodovia dos Bandeirantes por ativistas Guarani em 26 de Setembro de 2013. O protesto pede a demarcação das T.I.s Jaraguá e Tenondé Porã, e o cancelamento   da Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes.  (Fonte: CGY)'
-            - type: ImageBlock
-              hasDropCap: true
-              content: |-
-                Em 2013, a FUNAI finalmente realiza o estudo de demarcação da T.I. Jaraguá – o chamado “Relatório Circunstanciado de Identificação e Delimitação” ou “RCID” – que identifica uma área de uso tradicional de 532 hectares. 
-
-                Dois anos depois, em 2015, sob pressão dos grandes protestos realizados por ativistas Guarani em São Paulo, o governo de Dilma Rousseff (Portaria 581) reconhece a posse indígena permanente do Jaraguá em ato histórico celebrado por toda Yvyrupa.
-              wideImage: true
-              src: /uploads/imagem_19_ocupacao_antena.jpg
-              alt: asd
-              description: 'Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá, entre os dias 14 e 16 de setembro, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo (Fonte: Comissão Guarani Yvyrupa - CGY)'
-            - type: ImageBlock
-              wideImage: true
-              src: /uploads/imagem_19_ocupacao_antena.jpg
-              alt: asd
-              description: 'Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá, entre os dias 14 e 16 de setembro, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo (Fonte: Comissão Guarani Yvyrupa - CGY)'
         column2:
-          components:
-            - type: VideoEmbed
-              hasDropCap: true
-              content: |-
-                Mas a justiça ao reconhecimento da posse ancestral Guarani do Jaraguá teve vida curta. Eventos políticos em Brasília trazem uma reviravolta ao processo. 
-
-                Em 2017, após o impeachment de Dilma Rousseff, o governo de Michel Temer anula a demarcação da Terra Indígena Jaraguá (Portaria 683). Ato contínuo, durante o governo de Jair Bolsonaro entre 2019 e 2022, o projeto da chamada “Lei do Marco Temporal”, que havia sido praticamente arquivado em 2018, volta a ser pauta no Congresso Nacional. 
-
-                Em maio de 2023 a Câmera dos Deputados aprova a “Lei do Marco Temporal”. Cinco meses depois, em setembro de 2023, o Supremo Tribunal Federal rejeita a tese como inconstitucional. Entretanto, a proposta segue em pauta no Congresso Nacional até os dias de hoje, ameaçando a integridade dos territórios indígenas. 
-
-                Em resposta a estas violações de seus direitos consagrados com a Constituição de 1988, entre 2013 e 2025, as comunidades Guarani do Jaraguá, junto com as comunidades de Tenondé Porã, realizam uma série de atos políticos e ações de advocacia, literalmente reocupando a cidade de São Paulo – Terra Indígena – durante uma década de sucessivas manifestações de grande amplitude política e cultural para a cidade e para todo o país.
-              wideImage: true
-              src: /uploads/imagem_20_ocupacao_bandeirantes.jpg
-              alt: asd
-              description: 'Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã (Fonte: XXXX)'
-              wideVideo: false
-              videoUrl: https://www.youtube.com/embed/JCBOU4wQmR8?si=Ce5kuWAYhQyji6Wk
-              videoCaption: '"Rodovia Rojoko - O dia em que fechamos a Bandeirantes”.   Video realizado pela CGY documentando o fechamento da Rodovia dos Bandeirantes por ativistas Guarani em 26 de Setembro de 2013. O protesto pede a demarcação das T.I.s Jaraguá e Tenondé Porã, e o cancelamento   da Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes.  (Fonte: CGY)'
+          components: []
         mapView: resistencia_intro
     columnAlign: left
     floatingText: false
