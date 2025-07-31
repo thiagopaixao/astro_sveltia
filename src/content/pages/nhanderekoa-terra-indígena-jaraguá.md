@@ -2091,11 +2091,11 @@ components:
             - type: Spacer
               hasDropCap: false
               content: Após a eleição de Luiz Inácio Lula da Silva em 2023, e a criação do Ministério dos Povos Indígenas, retoma-se o processo de demarcação do território Guarani do Jaraguá em São Paulo. Através da Portaria 793 de 23 de Outubro de 2024, o Ministério da Justiça declara a nulidade da Portaria 683 de 2015, restabelecendo os efeitos da Portaria 581 de 2015 que reconhece a posse Guarani e a demarcação da Terra indígena Jaraguá
-              desktop: 300px
-              tablet: 300px
-              mobile: 300px
+              desktop: 100px
+              tablet: 100px
+              mobile: 100px
             - type: Pullquote
-              content: Estando à frente tanto de uma manifestação simbólica ou de um enfrentamento, a gente vê que a nossa luta é diferente. A gente não tem somente uma luta de rua, mas também uma luta espiritual ... Nós sempre tivemos esse cuidado, de ouvir os mais velhos sobre como nos proteger e nos posicionar em relação às coisas que vem acontecendo, que tipo de manifestação deveríamos fazer
+              content: Estando à frente tanto de uma manifestação simbólica ou de um enfrentamento, a gente vê que a nossa luta é diferente. A gente não tem somente uma luta de rua, mas também uma luta espiritual
               wideImage: true
               src: /uploads/imagem_22_ocupacao_monumentobandeira_rafaelvilela.jpg
               alt: asd
@@ -2103,11 +2103,6 @@ components:
               txtColor: ''
               bgColor: ''
               byline: Antony Karaí Poty
-            - type: ImageBlock
-              wideImage: true
-              src: /uploads/imagem_22_ocupacao_monumentobandeira_rafaelvilela.jpg
-              alt: asd
-              description: Ocupação do Monumento às Bandeiras em XXX de XXXX (Fotografia de Rafael Vilela)
         column2:
           components:
             - type: Text
