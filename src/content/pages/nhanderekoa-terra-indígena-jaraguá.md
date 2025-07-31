@@ -2091,6 +2091,15 @@ components:
               desktop: 300px
               tablet: 300px
               mobile: 300px
+            - type: Pullquote
+              content: Estando à frente tanto de uma manifestação simbólica ou de um enfrentamento, a gente vê que a nossa luta é diferente. A gente não tem somente uma luta de rua, mas também uma luta espiritual ... Nós sempre tivemos esse cuidado, de ouvir os mais velhos sobre como nos proteger e nos posicionar em relação às coisas que vem acontecendo, que tipo de manifestação deveríamos fazer
+              wideImage: true
+              src: /uploads/imagem_22_ocupacao_monumentobandeira_rafaelvilela.jpg
+              alt: asd
+              description: Ocupação do Monumento às Bandeiras em XXX de XXXX (Fotografia de Rafael Vilela)
+              txtColor: ''
+              bgColor: ''
+              byline: Antony Karaí Poty
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_22_ocupacao_monumentobandeira_rafaelvilela.jpg
@@ -2105,17 +2114,18 @@ components:
 
                 Em 2017, após o impeachment de Dilma Rousseff, o governo de Michel Temer anula a demarcação da Terra Indígena Jaraguá (Portaria 683). Ato contínuo, durante o governo de Jair Bolsonaro entre 2019 e 2022, o projeto da chamada “Lei do Marco Temporal”, que havia sido praticamente arquivado em 2018, volta a ser pauta no Congresso Nacional. 
 
-                Em maio de 2023 a Câmera dos Deputados aprova a “Lei do Marco Temporal”. Cinco meses depois, em setembro de 2023, o Supremo Tribunal Federal rejeita a tese como inconstitucional. Entretanto, a proposta segue em pauta no Congresso Nacional até os dias de hoje, ameaçando a integridade dos territórios indígenas. 
-
-                Em resposta a estas violações de seus direitos consagrados com a Constituição de 1988, entre 2013 e 2025, as comunidades Guarani do Jaraguá, junto com as comunidades de Tenondé Porã, realizam uma série de atos políticos e ações de advocacia, literalmente reocupando a cidade de São Paulo – Terra Indígena – durante uma década de sucessivas manifestações de grande amplitude política e cultural para a cidade e para todo o país.
+                Em maio de 2023 a Câmera dos Deputados aprova a “Lei do Marco Temporal”. Cinco meses depois, em setembro de 2023, o Supremo Tribunal Federal rejeita a tese como inconstitucional. Entretanto, a proposta segue em pauta no Congresso Nacional até os dias de hoje, ameaçando a integridade dos territórios indígenas.
               txtColor: ''
               bgColor: ''
               byline: – Thiago Henrique Karai Djekupe
+            - type: VideoEmbed
+              wideVideo: true
+              videoUrl: https://player.vimeo.com/video/1106085328?
+              videoCaption: 'Luta & Diálogo: entrevista com Antony Karaí Poty sobre o papel da luta de rua e espiritual dos Guarani'
+            - type: Text
+              hasDropCap: false
+              content: Em resposta a estas violações de seus direitos consagrados com a Constituição de 1988, entre 2013 e 2025, as comunidades Guarani do Jaraguá, junto com as comunidades de Tenondé Porã, realizam uma série de atos políticos e ações de advocacia, literalmente reocupando a cidade de São Paulo – Terra Indígena – durante uma década de sucessivas manifestações de grande amplitude política e cultural para a cidade e para todo o país.
         mapView: resistencia_intro
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: resistencia_intro_map
     columnAlign: left
     floatingText: false
   - type: Map
