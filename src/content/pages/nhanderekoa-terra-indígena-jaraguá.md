@@ -2761,6 +2761,22 @@ components:
               src: /uploads/mapa_cuidado_teste.jpg
               alt: ''
               description: Práticas do Cuidado e da Reparação na TI Jaraguá
+      - type: Column
+        paddingTop: false
+        paddingBottom: false
+        components: []
+      - type: Slider
+        slides:
+          - image: /uploads/img_mapacanvas_04.jpg
+            caption: ''
+          - image: /uploads/img_mapacanvas_05.jpg
+            caption: ''
+          - image: /uploads/img_mapacanvas_02.jpg
+            caption: ''
+          - image: /uploads/img_mapacanvas_09.jpg
+            caption: ''
+          - image: /uploads/img_mapacanvas_11.jpg
+            caption: ''
   - type: Group
     id: parte_x_ameacas
     shortTitle: parte X - ameaças
