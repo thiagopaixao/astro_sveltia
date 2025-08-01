@@ -2995,5 +2995,29 @@ components:
                       customTarget: ''
                       text: link
                     icon: ''
+  - type: Group
+    id: parte_10_ameacas
+    shortTitle: parte_10_ameacas
+    longTitle: parte_10_ameacas
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/imagem_32_urbanizacao_jaragua.jpg
+    overlay: light
+    components:
+      - type: ColumnSticky
+        txtColor: ''
+        bgColor: ''
+        paddingTop: true
+        paddingBottom: true
+        layout: text-bigger
+        title: Ameaças ao Território  e ao Patrimônio Florestal Guarani
+        components: []
 ---
 
