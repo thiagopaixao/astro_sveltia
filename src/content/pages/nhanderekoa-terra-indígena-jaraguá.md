@@ -2792,10 +2792,14 @@ components:
                 Enquanto a metrópole se expande, buscando os lucros do capital imobiliário, o território Guarani é cada vez mais cercado por infraestruturas urbanas, empreendimentos imobiliários e invasões. Mesmo demarcada, a TI segue sob crescente pressão espacial e política. 
 
                 Durante as oficinas de mapeamento participativo, além das práticas espaciais do cuidado e da reparação da terra, foram identificados vários pontos de ameaça à integridade do território e das florestas do Jaraguá.
-
-                 Além da especulação imobiliária, ocorrências de violação de direitos territoriais da TI Jaraguá incluem desmatamento, fontes de águas obstruídas, caça illegal, expansão de plantações de eucalipto, poluição da água e do solo pelos bairros envoltórios, poluição sonora, queimadas ilegais, áreas com riscos de incêndio, entre outros.
-
-                 Neste contexto, esta plataforma e os mapeamentos que foram gerados buscam fornecer instrumentos de advocacia em apoio à luta dos Guarani pelos seus direitos territoriais e por reparações históricas e ambientais.
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/imagem_32_urbanizacao_jaragua.jpg
+              alt: ''
+              description: A urbanização predatória de São Paulo avança sobre as Terras Guarani do Jaraguá
+              wideVideo: false
+              videoUrl: https://player.vimeo.com/video/1106449928?
+              videoCaption: Trecho da entrevista com Daniel Wera, sobre as invasões de plantações de eucalipito na região da Tekoa Pindó Mirim
             - type: VideoEmbed
               wideVideo: false
               videoUrl: https://player.vimeo.com/video/1106449928?
