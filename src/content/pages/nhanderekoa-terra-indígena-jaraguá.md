@@ -2853,7 +2853,7 @@ components:
               wideImage: false
               src: /uploads/img_tekoa_pindo_mirim_daniel.jpg
               alt: ''
-              description: Daniel Wera, na Tekoa Pindó Mirim, mostrando o trabalho de recuperação florestal nas plantações de eucalipitos
+              description: Daniel Wera, Tekoa Pindó Mirim, mostrando o trabalho de recuperação florestal nas plantações de eucalipitos
         column2:
           components:
             - type: Text
