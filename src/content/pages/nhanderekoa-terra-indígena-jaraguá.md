@@ -2764,7 +2764,15 @@ components:
       - type: Column
         paddingTop: false
         paddingBottom: false
-        components: []
+        components:
+          - type: Slider
+            slides:
+              - image: /uploads/2013 [01_10]_01_ISA.jpg
+                caption: ''
+              - image: /uploads/2013 [01_10]_02_ISA.jpg
+                caption: ''
+              - image: /uploads/2013 [26_09]_CGY.png
+                caption: ''
       - type: Slider
         slides:
           - image: /uploads/img_mapacanvas_04.jpg
