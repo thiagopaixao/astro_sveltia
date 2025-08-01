@@ -2963,7 +2963,17 @@ components:
         column1:
           components: []
         column2:
-          components: []
+          components:
+            - type: Text
+              hasDropCap: true
+              content: |-
+                Além da especulação imobiliária, ocorrências de violação de direitos territoriais da TI Jaraguá incluem desmatamento, fontes de águas obstruídas, caça illegal, expansão de plantações de eucalipto, poluição da água e do solo pelos bairros envoltórios, poluição sonora, queimadas ilegais, áreas com riscos de incêndio, entre outros.
+
+                Neste contexto, os mapas apresentados nesta plataforma digital buscam fornecer instrumentos de advocacia em apoio à luta dos Guarani pelos seus direitos territoriais e por reparações históricas e ambientais.
+            - type: VideoEmbed
+              wideVideo: true
+              videoUrl: https://player.vimeo.com/video/1106449928?
+              videoCaption: Trecho da entrevista com Daniel Wera, sobre as invasões de plantações de eucalipito na região da Tekoa Pindó Mirim
       - type: Text
         hasDropCap: true
         content: |-
