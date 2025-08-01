@@ -2740,22 +2740,6 @@ components:
               description: Oficinas de mapeamento participativo na TI Jaraguá
               uniqid: galeria_mapa_canvas
               images:
-                - image: /uploads/img_mapacanvas_05.jpg
-                  caption: ''
-                - image: /uploads/img_mapacanvas_01.jpg
-                  caption: ''
-                - image: /uploads/img_mapacanvas_09.jpg
-                  caption: ''
-                - image: /uploads/img_mapacanvas_02.jpg
-                  caption: ''
-                - image: /uploads/img_mapacanvas_11.jpg
-                  caption: ''
-                - image: /uploads/img_mapacanvas_10.jpg
-                  caption: ''
-            - type: Gallery
-              description: Oficinas de mapeamento participativo na TI Jaraguá
-              uniqid: galeria_mapa_canvas
-              images:
                 - image: /uploads/img_mapacanvas_01.jpg
                   caption: ''
                 - image: /uploads/img_mapacanvas_05.jpg
@@ -2791,30 +2775,6 @@ components:
               src: /uploads/mapa_cuidado_teste.jpg
               alt: ''
               description: Práticas do Cuidado e da Reparação na TI Jaraguá
-      - type: Column
-        paddingTop: false
-        paddingBottom: false
-        components:
-          - type: Slider
-            slides:
-              - image: /uploads/2013 [01_10]_01_ISA.jpg
-                caption: ''
-              - image: /uploads/2013 [01_10]_02_ISA.jpg
-                caption: ''
-              - image: /uploads/2013 [26_09]_CGY.png
-                caption: ''
-      - type: Slider
-        slides:
-          - image: /uploads/img_mapacanvas_04.jpg
-            caption: ''
-          - image: /uploads/img_mapacanvas_05.jpg
-            caption: ''
-          - image: /uploads/img_mapacanvas_02.jpg
-            caption: ''
-          - image: /uploads/img_mapacanvas_09.jpg
-            caption: ''
-          - image: /uploads/img_mapacanvas_11.jpg
-            caption: ''
   - type: Group
     id: parte_x_ameacas
     shortTitle: parte X - ameaças
