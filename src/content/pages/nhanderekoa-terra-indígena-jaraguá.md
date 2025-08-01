@@ -1333,7 +1333,7 @@ components:
 
                 Em São Paulo, após a criação do aldeamento do Pateo do Collegio em 1554, as populações tupi-guarani que habitavam a região foram submetidas a sistemáticas políticas de confinamento e escravização.  
 
-                Marco fundante da cidade, o Pateo do Collegio irradiou a colonização sobre o Jaraguá, uma das primeiras regiões onde os Europeus exploraram ouro no Brasil Colônia. O Jaraguá passa então a ser alvo da exploração de bandeirantes, e assim é continuamente despovoado de seus habitantes nativos.
+                Marco fundante da cidade, o Pateo do Collegio irradiou a colonização sobre o Jaraguá, uma das primeiras regiões onde os europeus exploraram ouro no Brasil Colônia. O Jaraguá passa então a ser alvo da exploração de bandeirantes, e assim é continuamente despovoado de seus habitantes nativos.
         column2:
           components:
             - type: Pullquote
