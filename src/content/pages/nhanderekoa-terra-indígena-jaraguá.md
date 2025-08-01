@@ -2732,11 +2732,13 @@ components:
         column2:
           components:
             - type: Text
-              hasDropCap: false
-              content: |-
-                Para espacializar e visualizar essas práticas do cuidado e da reparação da terra, foram realizadas uma série de oficinas de mapeamento participativo na TI Jaraguá. Sobre uma grande tela de tecido, um mapa foi desenhado por muitas mãos, guiado por lideranças, ativistas e professores guaranis, xeramõi e xejaryi (líderes espirituais), xondaros e xondarias kuery (jovens líderes, guardiões do território).
-
-                Traçando conhecimentos e vivências concretas no território, o mapa identifica áreas de fundamental importância para o habitar Guarani – como locais sagrados, caminhos tradicionais, áreas de proteção, áreas de reparação florestal e recuperação de espécies nativas –  que não estão registradas em bases de dados oficiais e, por isso, tendem a ser invisibilizadas pelas políticas públicas.
+              hasDropCap: true
+              content: Para espacializar e visualizar essas práticas do cuidado e da reparação da terra, foram realizadas uma série de oficinas de mapeamento participativo na TI Jaraguá. Sobre uma grande tela de tecido, um mapa foi desenhado por muitas mãos, guiado por lideranças, ativistas e professores guaranis, xeramõi e xejaryi (líderes espirituais), xondaros e xondarias kuery (jovens líderes, guardiões do território).
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/img_mapacanvas_10.jpg
+              alt: ''
+              description: Cartografia participativa na TI Jaraguá
   - type: Group
     id: parte_x_ameacas
     shortTitle: parte X - ameaças
