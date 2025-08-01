@@ -2848,16 +2848,29 @@ components:
         invertOnMobile: false
         columnsAlign: 33-66
         column1:
-          components: []
+          components:
+            - type: ImageBlock
+              wideImage: false
+              src: /uploads/img_tekoa_pindo_mirim_daniel.jpg
+              alt: ''
+              description: Daniel Wera, na Tekoa Pindó Mirim, mostrando o trabalho de recuperação florestal nas plantações de eucalipitos
         column2:
           components:
+            - type: VideoEmbed
+              hasDropCap: true
+              content: |-
+                Além da especulação imobiliária, ocorrências de violação de direitos territoriais da TI Jaraguá incluem desmatamento, fontes de águas obstruídas, caça illegal, expansão de plantações de eucalipto, poluição da água e do solo pelos bairros envoltórios, poluição sonora, queimadas ilegais, áreas com riscos de incêndio, entre outros. 
+
+                Neste contexto, os mapas apresentados nesta plataforma digital buscam fornecer instrumentos de advocacia em apoio à luta dos Guarani pelos seus direitos territoriais e por reparações históricas e ambientais.
+              wideVideo: true
+              videoUrl: https://player.vimeo.com/video/1106449928?
+              videoCaption: Trecho da entrevista com Daniel Wera, sobre as invasões de plantações de eucalipito na região da Tekoa Pindó Mirim
             - type: Text
               hasDropCap: true
               content: |-
                 Além da especulação imobiliária, ocorrências de violação de direitos territoriais da TI Jaraguá incluem desmatamento, fontes de águas obstruídas, caça illegal, expansão de plantações de eucalipto, poluição da água e do solo pelos bairros envoltórios, poluição sonora, queimadas ilegais, áreas com riscos de incêndio, entre outros. 
 
                 Neste contexto, os mapas apresentados nesta plataforma digital buscam fornecer instrumentos de advocacia em apoio à luta dos Guarani pelos seus direitos territoriais e por reparações históricas e ambientais.
-            - type: VideoEmbed
               wideVideo: true
               videoUrl: https://player.vimeo.com/video/1106449928?
               videoCaption: Trecho da entrevista com Daniel Wera, sobre as invasões de plantações de eucalipito na região da Tekoa Pindó Mirim
