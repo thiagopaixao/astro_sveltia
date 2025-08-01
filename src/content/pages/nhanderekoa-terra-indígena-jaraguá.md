@@ -2902,7 +2902,7 @@ components:
         paddingBottom: false
         components:
           - type: Gallery
-            description: ''
+            description: Call card?
             uniqid: galeria_01
             images:
               - image: /uploads/img_mapacanvas_04.jpg
