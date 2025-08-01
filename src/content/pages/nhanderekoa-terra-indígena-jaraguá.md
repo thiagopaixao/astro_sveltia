@@ -2728,7 +2728,16 @@ components:
         invertOnMobile: false
         columnsAlign: 33-66
         column1:
-          components: []
+          components:
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/img_mapacanvas_01.jpg
+              alt: ''
+              description: Cartografia participativa na TI Jaraguá, com Thiago Henrique Karai Djekupe
+            - type: Spacer
+              desktop: 500px
+              tablet: 500px
+              mobile: 500px
         column2:
           components:
             - type: Text
