@@ -2806,6 +2806,25 @@ components:
               videoCaption: Trecho da entrevista com Daniel Wera, sobre as invasões de plantações de eucalipito na região da Tekoa Pindó Mirim
         column2:
           components: []
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components: []
+        column2:
+          components:
+            - type: Text
+              hasDropCap: true
+              content: |-
+                Durante as oficinas de mapeamento participativo, além das práticas espaciais do cuidado e da reparação da terra, foram identificados vários pontos de ameaça à integridade do território e das florestas do Jaraguá.
+
+                Além da especulação imobiliária, ocorrências de violação de direitos territoriais da TI Jaraguá incluem desmatamento, fontes de águas obstruídas, caça illegal, expansão de plantações de eucalipto, poluição da água e do solo pelos bairros envoltórios, poluição sonora, queimadas ilegais, áreas com riscos de incêndio, entre outros.
+            - type: VideoEmbed
+              wideVideo: true
+              videoUrl: https://player.vimeo.com/video/1106449928?
+              videoCaption: Trecho da entrevista com Daniel Wera, sobre as invasões de plantações de eucalipito na região da Tekoa Pindó Mirim
   - type: Group
     id: creditos
     shortTitle: creditos
