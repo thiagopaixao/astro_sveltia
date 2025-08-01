@@ -2729,15 +2729,15 @@ components:
         columnsAlign: 33-66
         column1:
           components:
+            - type: Spacer
+              desktop: 500px
+              tablet: 500px
+              mobile: 500px
             - type: ImageBlock
               wideImage: true
               src: /uploads/img_mapacanvas_01.jpg
               alt: ''
               description: Cartografia participativa na TI Jaraguá, com Thiago Henrique Karai Djekupe
-            - type: Spacer
-              desktop: 500px
-              tablet: 500px
-              mobile: 500px
         column2:
           components:
             - type: Text
@@ -2756,6 +2756,11 @@ components:
                 Diferente do que mostram os mapas de Estado, onde a TI Jaraguá aparece como um grande espaço verde e vazio, este mapa mostra uma terra densamente habitada através das práticas do nhandereko, o modo de habitar Guarani.  
 
                 Ao espacializar estes processos, o mapa joga luz em práticas muitas vezes invisibilizadas, principalmente o trabalho de cuidado cotidiano das mulheres que fincam raízes profundas para que Terra Indígena do Jaraguá cresça forte.
+            - type: ImageBlock
+              wideImage: false
+              src: /uploads/Cópia de 20250722_cuidado.jpg
+              alt: ''
+              description: asd
       - type: ImageBlock
         wideImage: false
         src: /uploads/Cópia de 20250722_cuidado.jpg
