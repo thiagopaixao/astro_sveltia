@@ -2909,20 +2909,5 @@ components:
                       customTarget: ''
                       text: link
                     icon: ''
-  - type: Cta
-    id: asd
-    shortTitle: asd
-    longTitle: asd
-    description: asdasdasdasd
-    showInMenu: false
-    animations: true
-    txtColor: Primary
-    bgColor: Secundary
-    imgBg: /uploads/2013 [26_09]_CGY.png
-    mediaType: image
-    media: /uploads/2013 [01_10]_02_ISA.jpg
-    ctaText: asdasdasdasdasdasdasd
-    highlightedText: asdasdasddasdppppppppppp
-    link: null
 ---
 
