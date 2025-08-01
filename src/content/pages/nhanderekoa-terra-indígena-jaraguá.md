@@ -2329,8 +2329,6 @@ components:
                 ###### **parte VIII:&#160;&#160;&#160;&#160;&#160;&#160;**
 
                 ### **Patrimonialização do Colonialismo e Apagamento da Memória Indígena**
-
-                ### **(1983 – hoje)**
         column2:
           components: []
         desktop: 800px
@@ -2366,7 +2364,7 @@ components:
               content: |-
                 Desde a criação do Parque Estadual em 1961, e principalmente no pós-ditadura militar, o Pico do Jaraguá e suas matas tornaram-se objeto de diversas iniciativas de patrimonialização pelo estado e pelo município de São Paulo. 
 
-                Este mapeamento mostra as áreas e bens que foram reconhecidos por órgãos governamentais como patrimônio e estão sob alguma lei de salvaguarda e proteção. 
+                Esta parte do mapeamento identifica as áreas e bens que foram reconhecidos por órgãos governamentais como patrimônio e estão sob alguma lei de salvaguarda e proteção. 
 
                 Em sua maioria são sítios associados ao período colonial, particularmente ao período dos aldeamentos e da extração mineral no Jaraguá.
             - type: ImageBlock
@@ -2376,7 +2374,7 @@ components:
               description: 'Tanque de lavagem de ouro da época colonial no Jaraguá (Fonte: Reprodução/TV Globo)'
             - type: Text
               hasDropCap: true
-              content: 'Apenas recentemente, em 2023, que dois lugares da memória Guarani entraram no inventário de lugares da memória da cidade de São Paulo através do projeto “Memória Paulistana”: o lugar da casa da Cacica Jandira; e o ponto da Rodovia dos Bandeirantes onde ocorreram as manifestações históricas pela demarcação da TI Jaraguá.'
+              content: 'Apenas recentemente, em 2019, através do projeto “Memória Paulistana”, que dois lugares da memória Guarani entraram no inventário de lugares da memória da cidade de São Paulo: o lugar da casa da Cacica Jandira; e o ponto da Rodovia dos Bandeirantes onde ocorreram as manifestações históricas pela demarcação da TI Jaraguá.'
         column2:
           components:
             - type: Spacer
