@@ -2157,6 +2157,10 @@ components:
               alt: ''
               description: 'Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá, entre os dias 14 e 16 de setembro de 2017, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo (Fonte: Comissão Guarani Yvyrupa - CGY)'
         mapView: resistencia_intro
+      - type: Spacer
+        desktop: 200px
+        tablet: 200px
+        mobile: 200px
     columnAlign: left
     floatingText: false
   - type: Map
