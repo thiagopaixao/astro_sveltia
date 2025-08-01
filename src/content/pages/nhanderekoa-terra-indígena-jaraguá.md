@@ -2756,7 +2756,7 @@ components:
               src: /uploads/img_mapacanvas_01.jpg
               alt: ''
               description: Oficinas de mapeamento participativo na TI Jaraguá
-              desktop: 1000px
+              desktop: 800px
               tablet: 500px
               mobile: 500px
               uniqid: galeria_mapa_canvas
