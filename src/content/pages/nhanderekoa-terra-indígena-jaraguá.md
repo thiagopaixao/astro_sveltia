@@ -1778,7 +1778,7 @@ components:
 
                 Na cidade de São Paulo, realizam-se grandes obras urbanas e rodoviárias, como a Rodovia dos Bandeirantes, que atinge diretamente o território ancestral Guarani do Jaraguá. O Pico do Jaraguá é designado para receber torres de antenas de comunicação, e são concedidas terras para o Grupo Bandeirantes, a TV Globo, a Fundação Padre Anchieta (TV Cultura) e o Exército. Em 1972 é construído um grande complexo turístico no parque.
 
-                Na esteira destas obras, a especulação imobiliária e a urbanização expandem-se vertiginosamente nas margens de São Paulo, avançando sobre as florestas do Jaraguá. As décadas entre 1960 e 1980 registram altos índices de desmatamento na franja da zona norte da cidade, com a criação de bairros inteiros como Pirituba e o adensamento do bairro do Jaraguá.
+                Na esteira destas obras, a especulação imobiliária e a urbanização expandem-se vertiginosamente nas margens de São Paulo, avançando sobre as florestas do Jaraguá. As décadas entre 1960 e 1980 registram altos índices de desmatamento na franja da zona norte da cidade, com o adensamento de bairros como Jaraguá e Pirituba.
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_11_bandeirantesconstrucao.jpg
@@ -1789,7 +1789,9 @@ components:
               content: |-
                 Ao passo que os “grandes empreendimentos” da ditadura militar avançavam Brasil afora, os povos indígenas eram reprimidos pelo regime e seus direitos sistematicamente violados. 
 
-                Como mostra o relatório da Comissão Nacional da Verdade, no contexto dos planos de desenvolvimento nacional, inúmeras comunidades Indígenas foram submetidas a transferências e remoções forçadas executadas por agentes de estado para abrir terras para obras de infraestrutura.
+                Como mostra o relatório da Comissão Nacional da Verdade, no contexto dos planos de desenvolvimento nacional, inúmeras comunidades indígenas foram submetidas a transferências e remoções forçadas executadas por agentes de estado para abrir terras para obras de infraestrutura.
+
+                [asd](https://thiagopaixao.github.io/astro_sveltia/nhanderekoa/#parte_2_colonizacao_do_jaragua)
 
                 É o caso da construção da Usina Hidrelétrica de Itaipu no centro do território ancestral Guarani no Oeste do Paraná. O imenso lago artificial de Itaipu inundou dezenas de tekoas, e várias famílias Guarani foram forçadas a deixar suas terras, algumas migrando para São Paulo. 
 
