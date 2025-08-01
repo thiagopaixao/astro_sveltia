@@ -2730,7 +2730,7 @@ components:
         column1:
           components:
             - type: Spacer
-              desktop: 500px
+              desktop: 1000px
               tablet: 500px
               mobile: 500px
             - type: ImageBlock
@@ -2760,7 +2760,7 @@ components:
               wideImage: false
               src: /uploads/mapa_cuidado_teste.jpg
               alt: ''
-              description: Práticas
+              description: Práticas do Cuidado e da Reparação na TI Jaraguá
   - type: Group
     id: parte_x_ameacas
     shortTitle: parte X - ameaças
