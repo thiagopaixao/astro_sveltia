@@ -2710,7 +2710,7 @@ components:
               content: |-
                 Em todos os núcleos habitacionais identificam-se práticas de recuperação e cuidado da mata, combatendo a poluição urbana da água e do solo, e promovendo o reflorestamento através do plantio de espécies nativas, o cultivo de roças tradicionais e jardins medicinais, e o monitoramento de animais silvestres. 
 
-                É a partir da contínua manutenção do _nhandereko_,_&#32;_o “modo de habitar” Guarani – saber ancestral transmitido pelos anciãos e anciãs – que tais práticas se constituem no tempo e no espaço através de gerações.
+                É a partir da contínua manutenção do _nhandereko,&#160;_o “modo de habitar” Guarani – saber ancestral transmitido pelos anciãos e anciãs – que tais práticas se constituem no tempo e no espaço através de gerações.
             - type: VideoEmbed
               wideVideo: false
               videoUrl: https://player.vimeo.com/video/1106387884?
@@ -2722,6 +2722,21 @@ components:
               txtColor: ''
               bgColor: ''
               byline: Maria Ara Poty
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components: []
+        column2:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                Para espacializar e visualizar essas práticas do cuidado e da reparação da terra, foram realizadas uma série de oficinas de mapeamento participativo na TI Jaraguá. Sobre uma grande tela de tecido, um mapa foi desenhado por muitas mãos, guiado por lideranças, ativistas e professores guaranis, xeramõi e xejaryi (líderes espirituais), xondaros e xondarias kuery (jovens líderes, guardiões do território).
+
+                Traçando conhecimentos e vivências concretas no território, o mapa identifica áreas de fundamental importância para o habitar Guarani – como locais sagrados, caminhos tradicionais, áreas de proteção, áreas de reparação florestal e recuperação de espécies nativas –  que não estão registradas em bases de dados oficiais e, por isso, tendem a ser invisibilizadas pelas políticas públicas.
   - type: Group
     id: parte_x_ameacas
     shortTitle: parte X - ameaças
