@@ -2825,7 +2825,7 @@ components:
             - type: Text
               hasDropCap: false
               content: |-
-                ##### **Ameaças ao Território e ao Patrimônio Florestal Guarani**
+                ##### AMEAÇAS AO TERRITÓRIO E AO PATRIMÔNIO FLORESTAL GUARANI
 
                 O nhandereko – as práticas espaciais e culturais do habitar e do cultivo da terra das comunidades Guarani – está em constante ameaça pela urbanização predatória de São Paulo, que segue devorando territórios, matas e rios em suas margens.
 
