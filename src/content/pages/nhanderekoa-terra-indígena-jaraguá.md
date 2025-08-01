@@ -2102,7 +2102,7 @@ components:
               content: |-
                 Em 2013, a FUNAI finalmente realiza o estudo de demarcação da T.I. Jaraguá – o chamado “Relatório Circunstanciado de Identificação e Delimitação” ou “RCID” – que identifica uma área de uso tradicional de 532 hectares. 
 
-                Dois anos depois, em 2015, sob pressão dos grandes protestos realizados por ativistas Guarani em São Paulo, o governo de Dilma Rousseff (Portaria 581) reconhece a posse indígena permanente do Jaraguá em ato histórico celebrado por toda Yvyrupa.
+                Dois anos depois, em 2015, sob pressão dos grandes protestos realizados por ativistas Guarani em São Paulo, o governo de Dilma Rousseff (Portaria 581) reconhece a posse indígena permanente do Jaraguá, um momento histórico celebrado por toda Yvyrupa.
               txtColor: ''
               bgColor: ''
               byline: – Thiago Henrique Karai Djekupe
@@ -2131,7 +2131,7 @@ components:
 
                 Em 2017, após o impeachment de Dilma Rousseff, o governo de Michel Temer anula a demarcação da Terra Indígena Jaraguá (Portaria 683). Ato contínuo, durante o governo de Jair Bolsonaro entre 2019 e 2022, o projeto da chamada “Lei do Marco Temporal”, que havia sido praticamente arquivado em 2018, volta a ser pauta no Congresso Nacional. 
 
-                Em maio de 2023 a Câmera dos Deputados aprova a “Lei do Marco Temporal”. Cinco meses depois, em setembro de 2023, o Supremo Tribunal Federal rejeita a tese como inconstitucional. Entretanto, a proposta segue em pauta no Congresso Nacional até os dias de hoje, ameaçando a integridade dos territórios indígenas.
+                Em maio de 2023 a Câmara dos Deputados aprova a “Lei do Marco Temporal”. Cinco meses depois, em setembro de 2023, o Supremo Tribunal Federal rejeita a tese como inconstitucional. Entretanto, a proposta segue em pauta no Congresso Nacional até os dias de hoje, ameaçando a integridade dos territórios indígenas.
               wideVideo: true
               videoUrl: https://player.vimeo.com/video/1106085328?
               videoCaption: 'Luta & Diálogo: entrevista com Antony Karaí Poty sobre o papel da luta de rua e espiritual dos Guarani'
