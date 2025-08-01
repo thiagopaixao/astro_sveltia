@@ -1215,16 +1215,21 @@ components:
               videoCaption: trecho da entrevista com Jurandir Tupã Jekupe Mirim sobre o significado da Ka'aguy (floresta) para a cultura Guarani
             - type: Text
               hasDropCap: true
-              content: _Nhanderekoa_ – “o lugar onde vivemos”, “o lugar onde o nosso modo de vida acontece”, “onde nossa cultura vive” – é o título atribuído ao mapa. Ele expressa como o território do Jaraguá e seus animais, plantas e espíritos são parte integrante da forma como os Guarani entendem seus modos de habitar e viver, tendo a floresta como extensão de uma moradia compartilhada entre seres humanos e não-humanos em redes de cuidado e reciprocidade.
+              content: |-
+                _Nhanderekoa_ – “o lugar onde vivemos”, “o lugar onde o nosso modo de vida acontece”, “onde nossa cultura vive” – é o título atribuído à estas cartografias e mapeamentos.
+
+                _Nhanderekoa_ expressa como o território do Jaraguá e seus animais, plantas e espíritos são parte integrante da forma como os Guarani entendem seus modos de habitar e viver, tendo a floresta como extensão de uma moradia compartilhada entre seres humanos e não-humanos em redes de cuidado e reciprocidade.
+
+                Por décadas, as comunidades Guarani vêm resistindo e lutando pelo reconhecimento de suas terras ancestrais e pela preservação de suas florestas sagradas no Jaraguá.
               wideImage: false
               src: /uploads/imagem jaragua_color edited.jpg
               alt: ''
               description: ''
             - type: ImageBlock
-              wideImage: false
-              src: /uploads/imagem jaragua_color edited.jpg
+              wideImage: true
+              src: /uploads/img_tekoa_yvy_pora_casa.jpg
               alt: ''
-              description: ''
+              description: naTekoa Yvy Porã, as casas se misturam com a floresta, formando parte do mesmo sistema ecológico
         column2:
           components:
             - type: Pullquote
