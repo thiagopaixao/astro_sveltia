@@ -2713,8 +2713,8 @@ components:
                 É a partir da contínua manutenção do _nhandereko,&#160;_o “modo de habitar” Guarani – saber ancestral transmitido pelos anciãos e anciãs – que tais práticas se constituem no tempo e no espaço através de gerações.
             - type: VideoEmbed
               wideVideo: false
-              videoUrl: https://player.vimeo.com/video/1106387884?
-              videoCaption: trecho da entrevista com a cacica Marcio, Yvy Porã,....  fundadora da Tekoa Itawera
+              videoUrl: https://player.vimeo.com/video/1106470193?
+              videoCaption: trecho da entrevista com  Marcio Wera sobre o projeto de revitaliza
         column2:
           components:
             - type: Pullquote
