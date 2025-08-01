@@ -2903,7 +2903,7 @@ components:
               videoCaption: Trecho da entrevista com Daniel Wera, sobre as invasões de plantações de eucalipito na região da Tekoa Pindó Mirim
             - type: ImageBlock
               wideImage: false
-              src: ''
+              src: /uploads/Cópia de 20250722_cuidado.jpg
               alt: ''
               description: Mapa dos pontos e tipologias de ameaças indentificadas nas oficinas de mapeamento coletivo participativo
   - type: Group
