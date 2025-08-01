@@ -2705,8 +2705,23 @@ components:
               wideVideo: true
               videoUrl: https://player.vimeo.com/video/1106387884?
               videoCaption: trecho da entrevista com a cacica Maria Ara Poty, fundadora da Tekoa Itawera
+            - type: Text
+              hasDropCap: false
+              content: |-
+                Em todos os núcleos habitacionais identificam-se práticas de recuperação e cuidado da mata, combatendo a poluição urbana da água e do solo, e promovendo o reflorestamento através do plantio de espécies nativas, o cultivo de roças tradicionais e jardins medicinais, e o monitoramento de animais silvestres. 
+
+                É a partir da contínua manutenção do _nhandereko_,_&#32;_o “modo de habitar” Guarani – saber ancestral transmitido pelos anciãos e anciãs – que tais práticas se constituem no tempo e no espaço através de gerações.
+            - type: VideoEmbed
+              wideVideo: false
+              videoUrl: https://player.vimeo.com/video/1106387884?
+              videoCaption: trecho da entrevista com a cacica Marcio, Yvy Porã,....  fundadora da Tekoa Itawera
         column2:
-          components: []
+          components:
+            - type: Pullquote
+              content: É um cuidado que todos os guarani têm. Se a gente não cuidar, acaba. Na destruição da mata, por exemplo, cada ser, cada árvore que a gente tem no meio da mata é um espírito indígena. Cada árvore antiga que cai, derruba e corta é um espírito indígena que tá indo embora ali
+              txtColor: ''
+              bgColor: ''
+              byline: Maria Ara Poty
   - type: Group
     id: parte_x_ameacas
     shortTitle: parte X - ameaças
