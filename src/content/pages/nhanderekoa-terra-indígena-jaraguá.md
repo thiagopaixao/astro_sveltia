@@ -2883,32 +2883,6 @@ components:
               text: asd
             icon: arrow_right_alt
             size: ''
-  - type: Group
-    id: galeria_mapa
-    shortTitle: galeria_mapa
-    longTitle: galeria_mapa
-    description: ''
-    showInMenu: false
-    animations: true
-    txtColor: Primary
-    customTxtColor: ''
-    bgColor: Highlight
-    customBgColor: ''
-    backgroundMedia: []
-    overlay: ''
-    components:
-      - type: Column
-        paddingTop: false
-        paddingBottom: false
-        components:
-          - type: Gallery
-            description: Call card? dont understand this
-            uniqid: galeria_01
-            images:
-              - image: /uploads/img_mapacanvas_04.jpg
-                caption: ''
-              - image: /uploads/img_mapacanvas_05.jpg
-                caption: ''
   - type: Cta
     id: asd
     shortTitle: asd
