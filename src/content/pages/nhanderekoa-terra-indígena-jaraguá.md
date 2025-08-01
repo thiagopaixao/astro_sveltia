@@ -1789,9 +1789,7 @@ components:
               content: |-
                 Ao passo que os “grandes empreendimentos” da ditadura militar avançavam Brasil afora, os povos indígenas eram reprimidos pelo regime e seus direitos sistematicamente violados. 
 
-                Como mostra o relatório da Comissão Nacional da Verdade, no contexto dos planos de desenvolvimento nacional, inúmeras comunidades indígenas foram submetidas a transferências e remoções forçadas executadas por agentes de estado para abrir terras para obras de infraestrutura.
-
-                [asd](https://thiagopaixao.github.io/astro_sveltia/nhanderekoa/#parte_2_colonizacao_do_jaragua)
+                Como mostra o relatório da [Comissão Nacional da Verdade](https://cnv.memoriasreveladas.gov.br/images/pdf/relatorio/Volume%202%20-%20Texto%205.pdf), no contexto dos planos de desenvolvimento nacional, inúmeras comunidades indígenas foram submetidas a transferências e remoções forçadas executadas por agentes de estado para abrir terras para obras de infraestrutura.
 
                 É o caso da construção da Usina Hidrelétrica de Itaipu no centro do território ancestral Guarani no Oeste do Paraná. O imenso lago artificial de Itaipu inundou dezenas de tekoas, e várias famílias Guarani foram forçadas a deixar suas terras, algumas migrando para São Paulo. 
 
