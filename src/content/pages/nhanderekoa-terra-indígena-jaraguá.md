@@ -2902,7 +2902,7 @@ components:
         paddingBottom: false
         components:
           - type: Gallery
-            description: Call card?
+            description: Call card? dont understand this
             uniqid: galeria_01
             images:
               - image: /uploads/img_mapacanvas_04.jpg
@@ -2913,7 +2913,7 @@ components:
     id: asd
     shortTitle: asd
     longTitle: asd
-    description: ''
+    description: asdasdasdasd
     showInMenu: false
     animations: true
     txtColor: Primary
@@ -2922,7 +2922,7 @@ components:
     mediaType: image
     media: /uploads/2013 [01_10]_02_ISA.jpg
     ctaText: asdasdasdasdasdasdasd
-    highlightedText: ''
+    highlightedText: asdasdasddasdppppppppppp
     link: null
 ---
 
