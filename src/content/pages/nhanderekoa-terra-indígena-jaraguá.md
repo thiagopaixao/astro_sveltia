@@ -1616,7 +1616,7 @@ components:
               content: |-
                 No arco do século XIX ao início do século XX, ocorrem grandes migrações Guarani da região fronteiriça do Paraná e do Mato Grosso do Sul para o estado de São Paulo.
 
-                Como identificado por Curt Nimuendajú, nos anos 1810, 1820 e 1870, e possivelmente em outros períodos do século XIX, registram-se migrações de grupos Guarani vindos da região do Iguatemi, na fronteira entre o Paraná e o Mato Grosso. Em 1910, sabe-se da migração de outro grande grupo Guarani vindo da região fronteiriça Brasil-Paraguai-Argentina para a região de Itariri no Vale do Ribeira, atual Terra Indígena Itariri. Entre 1923 e 1946 registram-se sucessivas migrações de grupos Guarani vindos do sul do Brasil para o estado de São Paulo, assentando-se principalmente no litoral ([fonte](link para RCID)).
+                Como identificado por Curt Nimuendajú, nos anos 1810, 1820 e 1870, e possivelmente em outros períodos do século XIX, registram-se migrações de grupos Guarani vindos da região do Iguatemi, na fronteira entre o Paraná e o Mato Grosso. Em 1910, sabe-se da migração de outro grande grupo Guarani vindo da região fronteiriça Brasil-Paraguai-Argentina para a região de Itariri no Vale do Ribeira, atual Terra Indígena Itariri. Entre 1923 e 1946 registram-se sucessivas migrações de grupos Guarani vindos do sul do Brasil para o estado de São Paulo, assentando-se principalmente no litoral ([fonte](https://documental.xyz/)).
 
                 Estes últimos grupos formam a geração imediatamente anterior de vários moradores das T.I.s Jaraguá e Tenondé Porã na cidade de São Paulo. Entre eles está a cacica Jandira, fundadora da Tekoa Ytu no início dos anos 1960, primeira tekoa da retomada do Jaraguá. 
 
