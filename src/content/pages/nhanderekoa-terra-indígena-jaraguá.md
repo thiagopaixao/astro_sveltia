@@ -2907,5 +2907,17 @@ components:
             caption: ''
           - image: /uploads/img_mapacanvas_09.jpg
             caption: ''
+      - type: Column
+        paddingTop: false
+        paddingBottom: false
+        components:
+          - type: Gallery
+            description: ''
+            uniqid: galeria_01
+            images:
+              - image: /uploads/img_mapacanvas_04.jpg
+                caption: ''
+              - image: /uploads/img_mapacanvas_05.jpg
+                caption: ''
 ---
 
