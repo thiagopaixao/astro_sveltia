@@ -2800,10 +2800,6 @@ components:
               wideVideo: false
               videoUrl: https://player.vimeo.com/video/1106449928?
               videoCaption: Trecho da entrevista com Daniel Wera, sobre as invasões de plantações de eucalipito na região da Tekoa Pindó Mirim
-            - type: VideoEmbed
-              wideVideo: false
-              videoUrl: https://player.vimeo.com/video/1106449928?
-              videoCaption: Trecho da entrevista com Daniel Wera, sobre as invasões de plantações de eucalipito na região da Tekoa Pindó Mirim
         column2:
           components: []
       - type: Columns
