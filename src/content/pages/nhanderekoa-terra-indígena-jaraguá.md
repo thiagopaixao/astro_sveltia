@@ -2758,14 +2758,9 @@ components:
                 Ao espacializar estes processos, o mapa joga luz em práticas muitas vezes invisibilizadas, principalmente o trabalho de cuidado cotidiano das mulheres que fincam raízes profundas para que Terra Indígena do Jaraguá cresça forte.
             - type: ImageBlock
               wideImage: false
-              src: /uploads/Cópia de 20250722_cuidado.jpg
+              src: /uploads/mapa_cuidado_teste.jpg
               alt: ''
-              description: asd
-      - type: ImageBlock
-        wideImage: false
-        src: /uploads/Cópia de 20250722_cuidado.jpg
-        alt: ''
-        description: Práticas Espaciais do Cuidado e da Reparação na TI Jaraguá
+              description: Práticas
   - type: Group
     id: parte_x_ameacas
     shortTitle: parte X - ameaças
