@@ -2303,6 +2303,11 @@ components:
               txtColor: ''
               bgColor: ''
               byline: – Thiago Henrique Karai Djekupe
+            - type: ImageBlock
+              wideImage: false
+              src: /uploads/20250205_163757.jpg
+              alt: ''
+              description: Conversa sobre o mapeamento na Tekoa Ytu com as lideranças Thiago Henrique Karai Djekupe e Felipe Silva
         desktop: 800px
         tablet: 800px
         mobile: 800px
