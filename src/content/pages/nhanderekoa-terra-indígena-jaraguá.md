@@ -2884,6 +2884,28 @@ components:
               alt: ''
               description: Pontos de ameaça identificados durante as oficinas de mapeamento par
   - type: Group
+    id: parte_10_texto_01
+    shortTitle: parte_10_texto_01
+    longTitle: parte_10_texto_01
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Text
+        hasDropCap: true
+        content: |-
+          O nhandereko – as práticas espaciais e culturais do habitar e do cultivo da terra das comunidades Guarani – está em constante ameaça pela urbanização predatória de São Paulo, que segue devorando territórios, matas e rios em suas margens.
+
+          Enquanto a metrópole se expande, buscando os lucros do capital imobiliário, o território Guarani é cada vez mais cercado por infraestruturas urbanas, empreendimentos imobiliários e invasões. Mesmo demarcada, a TI segue sob crescente pressão espacial e política. 
+
+          Durante as oficinas de mapeamento participativo, além das práticas espaciais do cuidado e da reparação da terra, foram identificados vários pontos de ameaça à integridade do território e das florestas do Jaraguá.
+  - type: Group
     id: parte_10_ameacas
     shortTitle: parte_10_ameacas
     longTitle: parte_10_ameacas
@@ -3062,27 +3084,5 @@ components:
                       customTarget: ''
                       text: link
                     icon: ''
-  - type: Group
-    id: parte_10_texto_01
-    shortTitle: parte_10_texto_01
-    longTitle: parte_10_texto_01
-    description: ''
-    showInMenu: false
-    animations: true
-    txtColor: Primary
-    customTxtColor: ''
-    bgColor: Secondary
-    customBgColor: ''
-    backgroundMedia: []
-    overlay: ''
-    components:
-      - type: Text
-        hasDropCap: true
-        content: |-
-          O nhandereko – as práticas espaciais e culturais do habitar e do cultivo da terra das comunidades Guarani – está em constante ameaça pela urbanização predatória de São Paulo, que segue devorando territórios, matas e rios em suas margens.
-
-          Enquanto a metrópole se expande, buscando os lucros do capital imobiliário, o território Guarani é cada vez mais cercado por infraestruturas urbanas, empreendimentos imobiliários e invasões. Mesmo demarcada, a TI segue sob crescente pressão espacial e política. 
-
-          Durante as oficinas de mapeamento participativo, além das práticas espaciais do cuidado e da reparação da terra, foram identificados vários pontos de ameaça à integridade do território e das florestas do Jaraguá.
 ---
 
