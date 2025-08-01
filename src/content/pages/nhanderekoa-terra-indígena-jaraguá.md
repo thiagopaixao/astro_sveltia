@@ -2792,6 +2792,11 @@ components:
                   caption: ''
                 - image: /uploads/img_mapacanvas_10.jpg
                   caption: ''
+            - type: Pullquote
+              content: É fazer da floresta a nossa própria casa ... quando desmata, é uma agressão que nós também sentimos, é uma agressão à nossa própria família. Eu faço este trabalho justamente para curar essas dores, é uma maneira de reparar a floresta
+              txtColor: ''
+              bgColor: ''
+              byline: Marcio Wera
         column2:
           components:
             - type: Text
@@ -2891,13 +2896,21 @@ components:
           components: []
         column2:
           components:
+            - type: VideoEmbed
+              hasDropCap: true
+              content: |-
+                Além da especulação imobiliária, ocorrências de violação de direitos territoriais da TI Jaraguá incluem desmatamento, fontes de águas obstruídas, caça illegal, expansão de plantações de eucalipto, poluição da água e do solo pelos bairros envoltórios, poluição sonora, queimadas ilegais, áreas com riscos de incêndio, entre outros.
+
+                Neste contexto, os mapas apresentados nesta plataforma digital buscam fornecer instrumentos de advocacia em apoio à luta dos Guarani pelos seus direitos territoriais e por reparações históricas e ambientais.
+              wideVideo: true
+              videoUrl: https://player.vimeo.com/video/1106449928?
+              videoCaption: Trecho da entrevista com Daniel Wera, sobre as invasões de plantações de eucalipito na região da Tekoa Pindó Mirim
             - type: Text
               hasDropCap: true
               content: |-
                 Além da especulação imobiliária, ocorrências de violação de direitos territoriais da TI Jaraguá incluem desmatamento, fontes de águas obstruídas, caça illegal, expansão de plantações de eucalipto, poluição da água e do solo pelos bairros envoltórios, poluição sonora, queimadas ilegais, áreas com riscos de incêndio, entre outros.
 
                 Neste contexto, os mapas apresentados nesta plataforma digital buscam fornecer instrumentos de advocacia em apoio à luta dos Guarani pelos seus direitos territoriais e por reparações históricas e ambientais.
-            - type: VideoEmbed
               wideVideo: true
               videoUrl: https://player.vimeo.com/video/1106449928?
               videoCaption: Trecho da entrevista com Daniel Wera, sobre as invasões de plantações de eucalipito na região da Tekoa Pindó Mirim
