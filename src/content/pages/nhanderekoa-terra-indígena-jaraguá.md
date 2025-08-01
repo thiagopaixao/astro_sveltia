@@ -2951,6 +2951,9 @@ components:
                 Design Museum, Future Observatory More-than-Human Fellowship
         column2:
           components: []
+      - type: Text
+        hasDropCap: false
+        content: asd
   - type: Group
     id: creditos
     shortTitle: creditos
