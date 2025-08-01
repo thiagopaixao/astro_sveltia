@@ -2739,6 +2739,22 @@ components:
               src: /uploads/img_mapacanvas_10.jpg
               alt: ''
               description: Cartografia participativa na TI Jaraguá
+            - type: Text
+              hasDropCap: false
+              content: Traçando conhecimentos e vivências concretas no território, o mapa identifica áreas de fundamental importância para o habitar Guarani – como locais sagrados, caminhos tradicionais, áreas de proteção, áreas de reparação florestal e recuperação de espécies nativas –  que não estão registradas em bases de dados oficiais e, por isso, tendem a ser invisibilizadas pelas políticas públicas.
+      - type: Text
+        hasDropCap: false
+        content: |-
+          Traçando conhecimentos e vivências concretas no território, o mapa identifica áreas de fundamental importância para o habitar Guarani – como locais sagrados, caminhos tradicionais, áreas de proteção, áreas de reparação florestal e recuperação de espécies nativas –  que não estão registradas em bases de dados oficiais e, por isso, tendem a ser invisibilizadas pelas políticas públicas.
+
+          Diferente do que mostram os mapas de Estado, onde a TI Jaraguá aparece como um grande espaço verde e vazio, este mapa mostra uma terra densamente habitada através das práticas do nhandereko, o modo de habitar Guarani.  
+
+          Ao espacializar estes processos, o mapa joga luz em práticas muitas vezes invisibilizadas, principalmente o trabalho de cuidado cotidiano das mulheres que fincam raízes profundas para que Terra Indígena do Jaraguá cresça forte.
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/Cópia de 20250722_cuidado.jpg
+        alt: ''
+        description: Práticas do Cuidado & da Reparação na TI Jaraguá
   - type: Group
     id: parte_x_ameacas
     shortTitle: parte X - ameaças
