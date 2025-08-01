@@ -4,6 +4,11 @@ backend:
   branch: main
   base_url: https://sveltia-cms-auth.tap-647.workers.dev
 
+media_libraries:
+  default:
+    config:
+      slugify_filename: true
+
 media_folder: 'public/uploads'
 public_folder: '/uploads'
 
