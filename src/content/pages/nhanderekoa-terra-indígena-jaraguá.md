@@ -2714,7 +2714,7 @@ components:
             - type: VideoEmbed
               wideVideo: false
               videoUrl: https://player.vimeo.com/video/1106470193?
-              videoCaption: trecho da entrevista com  Marcio Wera sobre o projeto de revitaliza
+              videoCaption: trecho da entrevista com  Marcio Wera sobre o projeto de revitalização de abelhas nativas na Tekoa Yvy Porã
         column2:
           components:
             - type: Pullquote
