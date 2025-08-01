@@ -2775,42 +2775,29 @@ components:
               src: /uploads/mapa_cuidado_teste.jpg
               alt: ''
               description: Práticas do Cuidado e da Reparação na TI Jaraguá
-  - type: Group
-    id: parte_x_ameacas
-    shortTitle: parte X - ameaças
-    longTitle: Ameaças a T.I. Jaraguá
-    description: ''
-    showInMenu: true
-    animations: true
-    txtColor: Primary
-    customTxtColor: ''
-    bgColor: Secondary
-    customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_32_urbanizacao_jaragua.jpg
-    overlay: light
-    components:
       - type: Columns
-        txtColor: ''
-        bgColor: ''
-        paddingTop: true
-        paddingBottom: true
+        paddingTop: false
+        paddingBottom: false
         invertOnMobile: false
-        columnsAlign: 33-66
+        columnsAlign: 66-33
         column1:
           components:
             - type: Text
               hasDropCap: false
               content: |-
-                ###### **parte X&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;**
+                ##### **Ameaças ao Território e ao Patrimônio Florestal Guarani**
 
-                ## **Ameaças ao Território e ao Patrimônio Florestal Guarani**
+                O nhandereko – as práticas espaciais e culturais do habitar e do cultivo da terra das comunidades Guarani – está em constante ameaça pela urbanização predatória de São Paulo, que segue devorando territórios, matas e rios em suas margens.
+
+                Enquanto a metrópole se expande, buscando os lucros do capital imobiliário, o território Guarani é cada vez mais cercado por infraestruturas urbanas, empreendimentos imobiliários e invasões. Mesmo demarcada, a TI segue sob crescente pressão espacial e política. 
+
+                Durante as oficinas de mapeamento participativo, além das práticas espaciais do cuidado e da reparação da terra, foram identificados vários pontos de ameaça à integridade do território e das florestas do Jaraguá.
+
+                 Além da especulação imobiliária, ocorrências de violação de direitos territoriais da TI Jaraguá incluem desmatamento, fontes de águas obstruídas, caça illegal, expansão de plantações de eucalipto, poluição da água e do solo pelos bairros envoltórios, poluição sonora, queimadas ilegais, áreas com riscos de incêndio, entre outros.
+
+                 Neste contexto, esta plataforma e os mapeamentos que foram gerados buscam fornecer instrumentos de advocacia em apoio à luta dos Guarani pelos seus direitos territoriais e por reparações históricas e ambientais.
         column2:
           components: []
-        mapView: map5_jaragua
-    columnAlign: left
-    floatingText: true
   - type: Group
     id: creditos
     shortTitle: creditos
