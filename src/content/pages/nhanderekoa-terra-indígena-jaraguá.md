@@ -2738,6 +2738,22 @@ components:
               src: /uploads/img_mapacanvas_01.jpg
               alt: ''
               description: Cartografia participativa na TI Jaraguá, com Thiago Henrique Karai Djekupe
+            - type: Gallery
+              description: Oficinas de mapeamento participativo na TI Jaraguá
+              uniqid: galeria_mapa_canvas
+              images:
+                - image: /uploads/img_mapacanvas_01.jpg
+                  caption: ''
+                - image: /uploads/img_mapacanvas_05.jpg
+                  caption: ''
+                - image: /uploads/img_mapacanvas_09.jpg
+                  caption: ''
+                - image: /uploads/img_mapacanvas_02.jpg
+                  caption: ''
+                - image: /uploads/img_mapacanvas_11.jpg
+                  caption: ''
+                - image: /uploads/img_mapacanvas_10.jpg
+                  caption: ''
         column2:
           components:
             - type: Text
