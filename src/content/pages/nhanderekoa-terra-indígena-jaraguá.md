@@ -2614,13 +2614,15 @@ components:
             - type: Text
               hasDropCap: true
               content: |-
-                O que se observa na trajetória de patrimonialização do Pico do Jaraguá é a ênfase dada pelos órgãos de salvaguarda de São Paulo no reconhecimento apenas do patrimônio colonial, buscando enfatizar uma narrativa bandeirante da origem e identidade da cidade, narrativa esta que apaga a presença indígena. 
+                O que se observa na trajetória de patrimonialização do Jaraguá é a ênfase dada pelos órgãos de salvaguarda de São Paulo no reconhecimento apenas do patrimônio colonial, buscando enfatizar uma narrativa bandeirante da origem e da identidade da cidade, narrativa esta que apaga a presença indígena. 
 
-                Isto é o caso não apenas do patrimônio do Jaraguá mas de toda a cidade de São Paulo – Terra Indígena – que através de monumentos como o Pateo do Colégio e o Monumento às Bandeiras constrói sua identidade sob o signo da conquista colonial. 
+                Esse é o caso não apenas do patrimônio do Jaraguá mas de toda a cidade de São Paulo – Terra Indígena –, que através de monumentos como o Pateo do Colégio e o Monumento às Bandeiras constrói sua identidade sob o signo da conquista colonial. 
 
-                Talvez o exemplo mais emblemático desta narrativa colonialista oficializada pelos órgãos patrimoniais paulistas seja o projeto de tombamento do Parque Estadual do Jaraguá elaborado pelo CONDEPHAAT em 1978.
+                Um dos exemplos mais emblemáticos desta narrativa colonialista oficializada pelos órgãos patrimoniais paulistas encontra-se no projeto de tombamento do Parque Estadual do Jaraguá, elaborado pelo CONDEPHAAT em 1978.
 
-                O projeto original propunha a criação de um complexo turístico no Parque do Jaraguá celebrando a memória da conquista colonial sobre as terras Guarani, com a construção de uma estátua-monumento gigante do jesuíta José de Anchieta, fundador do aldeamento do Pateo do Collegio, no topo do Pico do Jaraguá. Assim como no monumento do Cristo Redentor no Rio de Janeiro, o projeto incluía a instalação de uma linha de bonde para levar os turistas até a grande estátua-monumento.
+                O projeto original propunha a criação de um complexo turístico no Parque do Jaraguá celebrando a memória da conquista colonial sobre as terras Guarani, com a construção de uma estátua-monumento gigante do jesuíta José de Anchieta, fundador do aldeamento do Pateo do Collegio, no topo do Pico do Jaraguá. 
+
+                Assim como no monumento do Cristo Redentor no Rio de Janeiro, o projeto incluía a instalação de uma linha de bonde para levar os turistas até a grande estátua-monumento.
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_24_monumento_estatua_jaragua.jpg
