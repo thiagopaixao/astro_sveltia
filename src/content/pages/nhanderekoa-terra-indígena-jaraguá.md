@@ -2820,7 +2820,7 @@ components:
     shortTitle: parte_10_ameacas
     longTitle: parte_10_ameacas
     description: ''
-    showInMenu: false
+    showInMenu: true
     animations: true
     txtColor: Primary
     customTxtColor: ''
@@ -2843,7 +2843,7 @@ components:
               content: |-
                 ###### parte X
 
-                #### AMEAÇAS AO TERRITÓRIO E AO PATRIMÔNIO FLORESTAL GUARANI
+                ## AMEAÇAS AO TERRITÓRIO E AO PATRIMÔNIO FLORESTAL GUARANI
         column2:
           components: []
   - type: Group
