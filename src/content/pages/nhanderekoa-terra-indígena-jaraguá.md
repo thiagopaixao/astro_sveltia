@@ -2832,15 +2832,10 @@ components:
     overlay: light
     components:
       - type: Columns
-        txtColor: ''
-        bgColor: ''
         paddingTop: true
         paddingBottom: true
-        layout: text-bigger
-        title: Ameaças ao Território  e ao Patrimônio Florestal Guarani
-        components: []
-        invertOnMobile: true
-        columnsAlign: 33-66
+        invertOnMobile: false
+        columnsAlign: 66-33
         column1:
           components:
             - type: Text
@@ -2848,9 +2843,6 @@ components:
               content: '##### AMEAÇAS AO TERRITÓRIO E AO PATRIMÔNIO FLORESTAL GUARANI'
         column2:
           components: []
-      - type: Text
-        hasDropCap: false
-        content: asd
   - type: Group
     id: parte_10_texto_01
     shortTitle: parte_10_texto_01
