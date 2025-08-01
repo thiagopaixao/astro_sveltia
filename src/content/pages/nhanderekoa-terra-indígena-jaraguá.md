@@ -2747,7 +2747,7 @@ components:
               wideImage: true
               src: /uploads/img_natalicio_jardim_medicinal.jpg
               alt: O mestre dos saberes Natalício Karaí em frente ao jardim medicinal da Tekoa Pyau
-              description: ''
+              description: O mestre dos saberes Natalício Karaí em frente ao jardim medicinal da Tekoa Pyau
               desktop: 1000px
               tablet: 500px
               mobile: 500px
