@@ -2840,7 +2840,10 @@ components:
           components:
             - type: Text
               hasDropCap: false
-              content: '##### AMEAÇAS AO TERRITÓRIO E AO PATRIMÔNIO FLORESTAL GUARANI'
+              content: |-
+                ###### parte X
+
+                #### AMEAÇAS AO TERRITÓRIO E AO PATRIMÔNIO FLORESTAL GUARANI
         column2:
           components: []
   - type: Group
@@ -2898,6 +2901,11 @@ components:
               wideVideo: true
               videoUrl: https://player.vimeo.com/video/1106449928?
               videoCaption: Trecho da entrevista com Daniel Wera, sobre as invasões de plantações de eucalipito na região da Tekoa Pindó Mirim
+            - type: ImageBlock
+              wideImage: false
+              src: ''
+              alt: ''
+              description: Mapa dos pontos e tipologias de ameaças indentificadas nas oficinas de mapeamento coletivo participativo
   - type: Group
     id: creditos
     shortTitle: creditos
