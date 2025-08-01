@@ -2821,6 +2821,11 @@ components:
               wideVideo: true
               videoUrl: https://player.vimeo.com/video/1106449928?
               videoCaption: Trecho da entrevista com Daniel Wera, sobre as invasões de plantações de eucalipito na região da Tekoa Pindó Mirim
+            - type: ImageBlock
+              wideImage: false
+              src: /uploads/Cópia de 20250722_cuidado.jpg
+              alt: ''
+              description: Pontos de ameaça identificados durante as oficinas de mapeamento par
   - type: Group
     id: creditos
     shortTitle: creditos
