@@ -2867,14 +2867,14 @@ components:
     animations: true
     txtColor: Primary
     customTxtColor: ''
-    bgColor: Custom
+    bgColor: Highlight
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
     components:
-      - type: Column
-        paddingTop: true
-        paddingBottom: true
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
         components:
           - type: Button
             link:
@@ -2883,6 +2883,32 @@ components:
               text: asd
             icon: arrow_right_alt
             size: ''
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: '##### DOWNLOADS'
+        column2:
+          components:
+            - type: InnerColumns
+              column1:
+                components: []
+              column2:
+                components: []
+            - type: Cards
+              cardsArr:
+                - Card:
+                    type: Card
+                    title: CARD 01
+                    text: this is the card
+                    link:
+                      url: www.paulotavares.net
+                      target: ''
+                      customTarget: ''
+                      text: link
+                    icon: ''
   - type: Cta
     id: asd
     shortTitle: asd
