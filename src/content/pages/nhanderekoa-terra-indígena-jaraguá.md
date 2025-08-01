@@ -2743,10 +2743,36 @@ components:
         columnsAlign: 33-66
         column1:
           components:
-            - type: Spacer
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/img_natalicio_jardim_medicinal.jpg
+              alt: O mestre dos saberes Natalício Karaí em frente ao jardim medicinal da Tekoa Pyau
+              description: ''
               desktop: 1000px
               tablet: 500px
               mobile: 500px
+            - type: Spacer
+              wideImage: true
+              src: /uploads/img_mapacanvas_01.jpg
+              alt: ''
+              description: Oficinas de mapeamento participativo na TI Jaraguá
+              desktop: 1000px
+              tablet: 500px
+              mobile: 500px
+              uniqid: galeria_mapa_canvas
+              images:
+                - image: /uploads/img_mapacanvas_01.jpg
+                  caption: ''
+                - image: /uploads/img_mapacanvas_05.jpg
+                  caption: ''
+                - image: /uploads/img_mapacanvas_09.jpg
+                  caption: ''
+                - image: /uploads/img_mapacanvas_02.jpg
+                  caption: ''
+                - image: /uploads/img_mapacanvas_11.jpg
+                  caption: ''
+                - image: /uploads/img_mapacanvas_10.jpg
+                  caption: ''
             - type: Gallery
               wideImage: true
               src: /uploads/img_mapacanvas_01.jpg
