@@ -2730,7 +2730,7 @@ components:
         column1:
           components:
             - type: Spacer
-              desktop: 1200px
+              desktop: 1000px
               tablet: 500px
               mobile: 500px
             - type: Gallery
@@ -2923,27 +2923,5 @@ components:
                       customTarget: ''
                       text: link
                     icon: ''
-  - type: Group
-    id: '01'
-    shortTitle: '01'
-    longTitle: '01'
-    description: ''
-    showInMenu: false
-    animations: false
-    txtColor: Primary
-    customTxtColor: ''
-    bgColor: Highlight
-    customBgColor: ''
-    backgroundMedia: []
-    overlay: ''
-    components:
-      - type: Gallery
-        description: galeria de imagens dos mapas
-        uniqid: g1
-        images:
-          - image: /uploads/2013 [01_10]_01_ISA.jpg
-            caption: asd
-          - image: /uploads/2013 [01_10]_02_ISA.jpg
-            caption: asd
 ---
 
