@@ -1545,7 +1545,7 @@ components:
               wideImage: true
               src: /uploads/imagem_07_jurandircafe.jpg
               alt: ''
-              description: O professor Jurandir Tupã Jekupe Mirim mostra uma planta de café nas florestas da T.I. Jaraguá, remanescente das plantações dos séculos XVIII e XIX, quando a região funcionava como uma grande propriedade agrícola.
+              description: O professor Jurandir Tupã Jekupe Mirim mostra uma planta de café nas florestas da TI Jaraguá, remanescente das plantações do século e XIX, quando a região funcionava como uma grande propriedade agrícola.
               desktop: 150px
               tablet: 150px
               mobile: 150px
