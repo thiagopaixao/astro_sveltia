@@ -2897,16 +2897,6 @@ components:
     backgroundMedia: []
     overlay: ''
     components:
-      - type: Gallery
-        description: ''
-        uniqid: galeria_mapa_fotos
-        images:
-          - image: /uploads/img_mapacanvas_05.jpg
-            caption: ''
-          - image: /uploads/img_mapacanvas_04.jpg
-            caption: ''
-          - image: /uploads/img_mapacanvas_09.jpg
-            caption: ''
       - type: Column
         paddingTop: false
         paddingBottom: false
@@ -2919,5 +2909,20 @@ components:
                 caption: ''
               - image: /uploads/img_mapacanvas_05.jpg
                 caption: ''
+  - type: Cta
+    id: asd
+    shortTitle: asd
+    longTitle: asd
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    bgColor: Secundary
+    imgBg: /uploads/2013 [26_09]_CGY.png
+    mediaType: image
+    media: /uploads/2013 [01_10]_02_ISA.jpg
+    ctaText: asdasdasdasdasdasdasd
+    highlightedText: ''
+    link: null
 ---
 
