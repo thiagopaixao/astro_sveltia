@@ -738,7 +738,7 @@ components:
         content: |-
           #### TERRA INDÍGENA JARAGUÁ
 
-          A TI Jaraguá é um território localizado na cidade de São Paulo, tradicionalmente habitado pelo povo Guarani Mbya. A área reconhecida e demarcada pelo Estado Brasileiro abrange 532 hectares, a maior parte ainda cobertos de Mata Atlântica. Atualmente, a TI Jaraguá conta com nove Tekoas (aldeias).
+          A Terra Indígena Jaraguá é um território localizado na cidade de São Paulo, tradicionalmente habitado pelo povo Guarani Mbya. A área reconhecida e demarcada pelo Estado Brasileiro abrange 532 hectares, a maior parte ainda cobertos de Mata Atlântica. Atualmente, a TI Jaraguá conta com nove Tekoas (aldeias).
       - type: Spacer
         txtColor: ''
         bgColor: ''
@@ -811,7 +811,7 @@ components:
 
           Retomada e fundação: década de 1960
 
-          Uma das mais antigas tekoas, a tekoa Ytu, “Aldeia da Cachoeira”, foi fundada pela família de Joaquim Augusto Martim e Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá. O nome se refere ao Ribeirão das Lavras que chega à _Tekoa _por meio de uma pequena cachoeira. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
+          Uma das mais antigas tekoas, a tekoa Ytu, “Aldeia da Cachoeira”, foi fundada pela família de Joaquim Augusto Martim e Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá. O nome se refere ao Ribeirão das Lavras que chega à _Tekoa&#32;_por meio de uma pequena cachoeira. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -863,7 +863,7 @@ components:
 
           Retomada e fundação: década de 1990.
 
-          Segunda _Tekoa _a ser formada no processo histórico de retomada, a _Tekoa Pyau_ (Aldeia Nova) é, atualmente, a que tem maior densidade populacional na TI Jaraguá. Cercada pela Rodovia dos Bandeirantes e pela Rua Comendador de Matos, enfrenta barreiras físicas por essas infraestruturas que bloqueiam sua continuidade territorial e afetam, historicamente, áreas de coleta, caça e cultivo.
+          A tekoa Pyau, traduzido como “aldeia nova”, é a segunda aldeia do processo histórico de retomada da T.I. Jaraguá. Hoje é a comunidade com maior densidade populacional da terra indígena. A tekoa está cercada pela Rodovia dos Bandeirantes e pela Rua Comendador de Matos, infraestruturas que bloqueiam sua continuidade territorial e afetaram historicamente áreas de coleta, caça e cultivo.
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -915,7 +915,7 @@ components:
 
           Retomada e fundação: 2005
 
-          Situada no extremo norte da TI, a _Tekoa Itakupe_, que pode ser traduzida como “Aldeia Atrás da Pedra”, recebe esse nome por estar do outro lado do Pico do Jaraguá, próxima de suas formações rochosas. Essa área é habitada por comunidades Guarani desde as primeiras retomadas, que aconteceram nas décadas de 1950 e 1960. Fundada em 2014, hoje é formada por três núcleos habitacionais.
+          Situada no extremo norte da T.I. Jaraguá, a área onde está a Tekoa Itakupe é utilizada pelas comunidades Guarani desde as primeiras retomadas nos anos 1950 e 1960. Fundada em 2014, hoje é formada por três núcleos: Sol nascente, Toka da Onça e (confirmar como querem chamar o terceiro núcleo). Por estar localizada do outro lado do Pico do Jaraguá, próxima de suas formações rochosas, foi nomeada de Itakupe, que pode ser traduzido como “atrás da pedra”.
         desktop: 50px
         tablet: 50px
         mobile: 50px
@@ -960,7 +960,7 @@ components:
 
           Retomada e fundação: 2014
 
-          Fundada pela cacica Ara Poty (Maria), a _Tekoa Itawerá_ (Aldeia da Pedra Reluzente) recuperou uma área antes utilizada para descarte de lixo. Atualmente, a comunidade se dedica à recuperação ambiental e cultural por meio de ações como o reflorestamento com espécies nativas e o cultivo de alimentos tradicionais, como o milho Guarani. Além disso, essa _Tekoa _desenvolve um vasto trabalho de artesanato.
+          Fundada pela Cacica Ara Poty (Maria) em 2014, a Tekoa Itawera recuperou uma área antes destinada ao descarte de lixo. Hoje, a comunidade se dedica à recuperação ambiental e cultural, com ações como o reflorestamento com espécies nativas, o cultivo de alimentos tradicionais como o milho Guarani, bem como um vasto trabalho de artesanato. O nome da aldeia pode ser traduzido como “pedra reluzente”.
         wideImage: false
         src: /uploads/img_tekoa_itawera_cacica_maria.jpg
         alt: ''
@@ -1004,7 +1004,7 @@ components:
 
           Retomada e fundação: 2017
 
-          Desde sua retomada em 2017, a _Tekoa Itaendy_ (Aldeia da Pedra Amarela) promove práticas de manutenção da biodiversidade, como o reflorestamento com espécies nativas, o plantio de roças com alimentos tradicionais e a reintrodução e criação de espécies de abelhas nativas.
+          Desde sua retomada em 2017, a Tekoa Itaendy, “aldeia da pedra amarela”, vem promovendo práticas de manutenção da biodiversidade como o reflorestamento com espécies nativas, plantio de roças com alimentos tradicionais, bem como a reintrodução e criação de espécies de abelhas nativas.
         wideImage: false
         src: /uploads/arqueological-remains_07.jpg
         alt: ''
@@ -1074,7 +1074,7 @@ components:
 
           Retomada e fundação: década de 2018.
 
-          A _Tekoa Yvy Porã_ (Aldeia da Terra Boa; Aldeia da Terra Bela), assim como a _Itawerá_, estabeleceu-se em uma área antes utilizada para descarte de lixo urbano, aos pés das matas do Pico do Jaraguá. Ao longo dos anos, tornou-se uma importante referência em práticas ecológicas de despoluição, recuperação e preservação da Mata Atlântica. Além disso, a _Tekoa&#32;_também é uma referência em práticas de recuperação de diversas espécies nativas de abelhas como a_&#32;jate’i&#32;_(jatai)_,_ considerada sagrada.
+          Assim como Itawera, Yvy Porã se estabeleceu em uma área antigamente destinada ao descarte de lixo urbano, situada no pé das matas do Pico do Jaraguá. Ao longo dos anos, a tekoa tornou-se importante referência de práticas ecológicas de des-poluição, recuperação e manutenção da Mata Atlântica. Yvy Porã, traduzido como “terra boa” ou “terra bela”, também é uma referência de práticas de recuperação de diversas espécies nativas de abelhas, como a jate’i (jatai), considerada sagrada.
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1106,7 +1106,7 @@ components:
 
           Retomada e fundação: 2023
 
-          Uma das _Tekoas_ mais recentes da TI Jaraguá, a _Tekoa Pindó Mirim_ – que pode ser traduzida como “Aldeia da Palmeira Pequena” – _&#160;_foi retomada em 2023. Situada no extremo noroeste da área demarcada, a comunidade vem desenvolvendo um forte trabalho de reparação ambiental, com foco na regeneração das áreas de Mata Atlântica afetadas pela construção do Rodoanel Mário Covas e das plantaes de eucalipto. Entre as ações, destaca-se o reflorestamento com mais de 1500 mudas de árvores nativas e 300 mudas de árvores frutíferas.
+          Uma das tekoas mais recentes da T.I. Jaraguá, Pindó Mirim foi retomada em 2023. Situada no extremo noroeste da área demarcada, a comunidade vem desenvolvendo um forte trabalho de reparação ambiental, com foco na regeneração das áreas de Mata Atlântica afetadas pela construção do Rodoanel e plantações de eucaliptos. Destaca-se o reflorestamento com mais de 1500 mudas de árvores nativas e 300 mudas de árvores frutíferas.
       - type: Spacer
         desktop: 50px
         tablet: 50px
@@ -1135,7 +1135,7 @@ components:
 
           Retomada e fundação: 2023
 
-          Assim como as demais _Tekoas_ da TI Jaraguá, a _Tekoa Mirim_ (“Pequena Aldeia”) tem desenvolvido várias práticas de cuidado e reparação do território. Destaca-se o plantio de mudas nativas, frutíferas e hortaliças ao longo do caminho que beira a Rodovia dos Bandeirantes, conectando-se às _Tekoas Pyau_ e _Ka’aguy Mirim_.
+          Tekoa Mirim, chamada “pequena aldeia”, está localizada ao lado da Tekoa Pyau. Assim como outros núcleos habitacionais, seus moradores têm desenvolvido várias práticas de cuidado e reparação do território. Destaca-se o plantio de mudas nativas, frutíferas e hortaliças ao longo do caminho que beira a Rodovia dos Bandeirantes, conectando a Tekoa Pyau à Tekoa Mirim e à Ka’aguy Mirim.
       - type: Spacer
         desktop: 50px
         tablet: 50px
