@@ -303,14 +303,14 @@ mapbox:
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#d03535ff'
+          colorIcon: '#ff2e2eff'
           typeIcon: outlined
           text: Pateo do Collegio
     - id: map2_pateo
-      centerLng: '-46.635'
+      centerLng: '-46.632'
       centerLat: '-23.548'
-      zoom: '16.47'
-      mobileZoom: '16.47'
+      zoom: '17'
+      mobileZoom: '17'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -321,7 +321,7 @@ mapbox:
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#d03535ff'
+          colorIcon: '#ff2e2eff'
           typeIcon: outlined
           text: Pateo do Collegio
     - id: map2_barueri
@@ -339,7 +339,7 @@ mapbox:
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#d03535ff'
+          colorIcon: '#ff2e2eff'
           typeIcon: outlined
           text: Aldeamento de Barueri
     - id: map2_ourojaragua
@@ -358,11 +358,11 @@ mapbox:
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#3741f6ff'
+          colorIcon: '#ff2e2eff'
           typeIcon: outlined
           text: Casa-Grande Senzala de Afonso Sardinha
         - icon: circle
-          colorIcon: '#d03535ff'
+          colorIcon: '#ff2e2eff'
           typeIcon: outlined
           text: Remanescentes de estruturas da mineração do período colonial
     - id: map4_jaragua
@@ -1411,9 +1411,9 @@ components:
               mobile: 150px
         mapView: map2_jaraguaspzoom
       - type: Spacer
-        desktop: 800px
-        tablet: 800px
-        mobile: 800px
+        desktop: 1000px
+        tablet: 1000px
+        mobile: 1000px
       - type: Text
         hasDropCap: false
         content: Em 1554 funda-se o povoado de São Paulo dos Campos de Piratininga, futura cidade de São Paulo, onde hoje encontra-se o Pateo do Collegio.
@@ -1491,9 +1491,27 @@ components:
       - type: Spacer
         txtColor: ''
         bgColor: ''
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
+        desktop: 50px
+        tablet: 50px
+        mobile: 50px
+        mapView: map2_jaraguasp
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/casa_afonso_sardinha.jpg
+        alt: ''
+        description: O complexo Casa Grande-Senzala construído por Afonso Sardinha é hoje o principal patrimônio do Parque Estadual do Jaraguá.
+        txtColor: ''
+        bgColor: ''
+        desktop: 800px
+        tablet: 800px
+        mobile: 800px
+        mapView: map2_jaraguasp
+      - type: Spacer
+        txtColor: ''
+        bgColor: ''
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
         mapView: map2_jaraguasp
       - type: MapView
         txtColor: ''
