@@ -285,10 +285,10 @@ mapbox:
       title: ''
       notes: ''
       items:
-        - icon: show_chart
-          colorIcon: '#0e9013ff'
+        - icon: circle
+          colorIcon: '#d0353574'
           typeIcon: outlined
-          text: Terra Indígena Jaraguá
+          text: Áreas de exploração de ouro em São Paulo
         - icon: circle
           colorIcon: '#d0353574'
           typeIcon: outlined
@@ -308,10 +308,10 @@ mapbox:
       title: ''
       notes: ''
       items:
-        - icon: show_chart
-          colorIcon: '#0e9013ff'
+        - icon: circle
+          colorIcon: '#d03535ff'
           typeIcon: outlined
-          text: Terra Indígena Jaraguá
+          text: Pateo do Collegio
         - icon: circle
           colorIcon: '#d03535ff'
           typeIcon: outlined
@@ -335,27 +335,8 @@ mapbox:
           colorIcon: '#d03535ff'
           typeIcon: outlined
           text: Pateo do Collegio
-    - id: map2_jaraguaspzoom2
-      centerLng: '-46.760'
-      centerLat: '-23.511'
-      zoom: '11.36'
-      mobileZoom: '11.36'
-      duration: '4000'
-      bearing: '0'
-      pitch: '0'
-      layers: |-
-        ti-jaragua
-        patrimonio-colonial[fid==70]
-        satelite
-      title: ''
-      notes: ''
-      items:
-        - icon: show_chart
-          colorIcon: '#0e9013ff'
-          typeIcon: outlined
-          text: Terra Indígena Jaraguá
     - id: map2_barueri
-      centerLng: '-46.859'
+      centerLng: '-46.860'
       centerLat: '-23.494'
       zoom: '11.81'
       mobileZoom: '11.81'
@@ -369,10 +350,6 @@ mapbox:
       title: ''
       notes: ''
       items:
-        - icon: show_chart
-          colorIcon: '#0e9013ff'
-          typeIcon: outlined
-          text: Terra Indígena Jaraguá
         - icon: circle
           colorIcon: '#d03535ff'
           typeIcon: outlined
@@ -404,7 +381,7 @@ mapbox:
         - icon: circle
           colorIcon: '#d03535ff'
           typeIcon: outlined
-          text: Estruturas da exploração do ouro no Brasil Colônia
+          text: Remanescentes de estruturas da mineração do período colonial
     - id: map4_jaragua
       centerLng: '-46.782'
       centerLat: '-23.461'
@@ -467,6 +444,22 @@ mapbox:
           colorIcon: '#9d1b1bff'
           typeIcon: outlined
           text: Patrimônio colonial
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Terra Indígena Jaraguá
+        - icon: show_chart
+          colorIcon: '#9d1b1bff'
+          typeIcon: outlined
+          text: Parque Estadual do Jaraguá
+        - icon: circle
+          colorIcon: '#9d1b1bff'
+          typeIcon: outlined
+          text: Patrimônio colonial
+        - icon: circle
+          colorIcon: '#a3f339ff'
+          typeIcon: outlined
+          text: Lugares de memória Guarani
     - id: map4_jaraguaestacao
       centerLng: '-46.760'
       centerLat: '-23.458'
@@ -561,6 +554,45 @@ mapbox:
         aldeias-jaragua
         memoria-guarani
         cacica-jandira-label
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Aldeias
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Terra Indígena Jaraguá
+        - icon: show_chart
+          colorIcon: '#9d1b1bff'
+          typeIcon: outlined
+          text: Parque Estadual do Jaraguá
+        - icon: circle
+          colorIcon: '#a3f339ff'
+          typeIcon: outlined
+          text: Lugares de memória Guarani
+        - icon: circle
+          colorIcon: '#a3f339ff'
+          typeIcon: outlined
+          text: Lugares de memória Guarani
+    - id: map5_memoria
+      centerLng: '-46.752'
+      centerLat: '-23.464'
+      zoom: '16.47'
+      mobileZoom: '16.47'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+        pe-jaragua
+        aldeias-jaragua
+        memoria-guarani
+        cacica-jandira-label
+        ato-label
         satelite
       title: ''
       notes: ''
@@ -1405,6 +1437,23 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: map2_pateo
+      - type: Spacer
+        hasDropCap: false
+        content: Em 1554 funda-se o povoado de São Paulo dos Campos de Piratininga, futura cidade de São Paulo, onde hoje encontra-se o Pateo do Collegio.
+        txtColor: ''
+        bgColor: ''
+        desktop: 50px
+        tablet: 50px
+        mobile: 50px
+        mapView: map2_pateo
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/palácio-do-governo-de-são-paulo-debret_1827.jpg
+        alt: ''
+        description: Pintura do Pateo do Collegio, por Jean-Baptiste Debret, quando o edifício servia como Palácio do Governo de São Paulo em 1827
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
       - type: MapView
         hasDropCap: false
         content: Em 1554 funda-se o povoado de São Paulo dos Campos de Piratininga, futura cidade de São Paulo, onde hoje encontra-se o Pateo do Collegio.
@@ -1418,32 +1467,44 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map2_jaraguaspzoom2
-      - type: Spacer
-        desktop: 400px
-        tablet: 400px
-        mobile: 400px
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
         mapView: map2_barueri
       - type: Text
         hasDropCap: false
-        content: Em 1560, ao sul do Pico do Jaraguá, na região de Barueri, José de Anchieta manda erguer outro aldeamento para concentração e catequização dos indígenas.
+        content: Em 1560, ao sul do Pico do Jaraguá, na região de Barueri, José de Anchieta mandou erguer outro aldeamento para concentração e catequização dos indígenas.
       - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
+        desktop: 50px
+        tablet: 50px
+        mobile: 50px
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/2013 [01_10]_01_ISA.jpg
+        alt: ''
+        description: Capela de Nossa Senhora da Escada, ponto central do Aldeamento de Barueri. As ruínas da capela original, datada do século XVI, foram encontradas em 2003 e logo restauradas.
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_ourojaragua
+      - type: Spacer
+        hasDropCap: false
+        content: Pouco depois, em 1597, o bandeirante Afonso Sardinha encontra ouro na região do Jaraguá. Estabelece uma grande propriedade na área com a construção de um complexo Casa Grande – Senzala ao pé do morro.
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
         mapView: map2_ourojaragua
       - type: Text
         hasDropCap: false
         content: Pouco depois, em 1597, o bandeirante Afonso Sardinha encontra ouro na região do Jaraguá. Estabelece uma grande propriedade na área com a construção de um complexo Casa Grande – Senzala ao pé do morro.
+        txtColor: ''
+        bgColor: ''
         desktop: 600px
         tablet: 600px
         mobile: 600px
+        mapView: map2_jaraguasp
       - type: Spacer
         txtColor: ''
         bgColor: ''
