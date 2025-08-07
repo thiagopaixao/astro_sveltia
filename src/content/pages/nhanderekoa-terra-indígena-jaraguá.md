@@ -30,7 +30,7 @@ mapbox:
   token: pk.eyJ1Ijoic3R1ZGlvLWF1dG9ub21hIiwiYSI6ImNtY3V2d3dtMTA0ZXgycnB4OW01cjlqb2QifQ.3NMaRt1maLlqTv6nlVqVHA
   centerLng: '-46.782'
   centerLat: '-23.461'
-  zoom: '13.26'
+  zoom: '13.25'
   bearing: '0'
   pitch: '0'
   layers: |-
