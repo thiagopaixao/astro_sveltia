@@ -48,7 +48,6 @@ components:
       - type: backgroundImage
         imgSrc: /uploads/arqueological-remains_03.jpg
     overlay: ''
-    layout: media
     media: /uploads/arqueological-remains_01.jpg
     ctaText: fdsf gfrewc e rwgr ewgfg rgfgregreg
     highlightedText: TESTE!
@@ -56,5 +55,23 @@ components:
       url: '#'
       target: _self
       text: OK
+    layout: media
+  - type: Group
+    id: novo
+    shortTitle: novo
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Text
+        hasDropCap: false
+        content: teste
 ---
 
