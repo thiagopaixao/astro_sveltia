@@ -307,7 +307,7 @@ mapbox:
           typeIcon: outlined
           text: Pateo do Collegio
     - id: map2_pateo
-      centerLng: '-46.632'
+      centerLng: '-46.633'
       centerLat: '-23.548'
       zoom: '17'
       mobileZoom: '17'
@@ -325,7 +325,7 @@ mapbox:
           typeIcon: outlined
           text: Pateo do Collegio
     - id: map2_barueri
-      centerLng: '-46.860'
+      centerLng: '-46.840'
       centerLat: '-23.494'
       zoom: '11.81'
       mobileZoom: '11.81'
