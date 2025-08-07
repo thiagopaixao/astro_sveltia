@@ -35,7 +35,6 @@ mapbox:
   pitch: '0'
   layers: |-
     ti-jaragua
-    aldeias-jaragua
     satelite
   columnAlign: center
   floatingText: false
@@ -3050,3 +3049,4 @@ components:
                       text: link
                     icon: ''
 ---
+
