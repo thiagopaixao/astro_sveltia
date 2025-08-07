@@ -1460,7 +1460,7 @@ components:
         mobile: 50px
       - type: ImageBlock
         wideImage: false
-        src: /uploads/2013 [01_10]_01_ISA.jpg
+        src: /uploads/capela_nsra_da_escada_2.jpg
         alt: ''
         description: Capela de Nossa Senhora da Escada, ponto central do Aldeamento de Barueri. As ruínas da capela original, datada do século XVI, foram encontradas em 2003 e logo restauradas.
         txtColor: ''
