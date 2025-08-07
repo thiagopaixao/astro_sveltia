@@ -279,16 +279,11 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        ti-jaragua
         exploracao-ouro-sp
         satelite
       title: ''
       notes: ''
       items:
-        - icon: circle
-          colorIcon: '#d0353574'
-          typeIcon: outlined
-          text: Áreas de exploração de ouro em São Paulo
         - icon: circle
           colorIcon: '#d0353574'
           typeIcon: outlined
@@ -302,16 +297,11 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        ti-jaragua
         patrimonio-colonial[fid==70]
         satelite
       title: ''
       notes: ''
       items:
-        - icon: circle
-          colorIcon: '#d03535ff'
-          typeIcon: outlined
-          text: Pateo do Collegio
         - icon: circle
           colorIcon: '#d03535ff'
           typeIcon: outlined
@@ -325,7 +315,6 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        ti-jaragua
         patrimonio-colonial[fid==70]
         satelite
       title: ''
@@ -344,7 +333,6 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        ti-jaragua
         capela-barueri
         satelite
       title: ''
@@ -363,17 +351,12 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        ti-jaragua
         casa-afonso-sardinha
         patrimonio-colonial
         satelite
       title: ''
       notes: ''
       items:
-        - icon: show_chart
-          colorIcon: '#0e9013ff'
-          typeIcon: outlined
-          text: Terra Indígena Jaraguá
         - icon: circle
           colorIcon: '#3741f6ff'
           typeIcon: outlined
