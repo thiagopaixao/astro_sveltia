@@ -2536,6 +2536,10 @@ components:
         desktop: 600px
         tablet: 600px
         mobile: 600px
+      - type: Spacer
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
     columnAlign: right
     floatingText: true
   - type: Group
