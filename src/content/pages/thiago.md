@@ -72,6 +72,6 @@ components:
     components:
       - type: Text
         hasDropCap: false
-        content: NOVO
+        content: NOVO!
 ---
 
