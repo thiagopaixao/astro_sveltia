@@ -49,7 +49,7 @@ components:
         imgSrc: /uploads/arqueological-remains_03.jpg
     overlay: ''
     media: /uploads/arqueological-remains_01.jpg
-    ctaText: fdsf gfrewc e rwgr ewgfg rgfgregreg
+    ctaText: MUDANÇA DE CONTEÚDO!
     highlightedText: TESTE!
     link:
       url: '#'
@@ -72,6 +72,6 @@ components:
     components:
       - type: Text
         hasDropCap: false
-        content: teste
+        content: NOVO
 ---
 
