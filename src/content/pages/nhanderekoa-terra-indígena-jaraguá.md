@@ -2530,15 +2530,6 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: map4_afonsosardinha
-      - type: MapView
-        hasDropCap: false
-        content: |-
-          Em 1983, toda a área do Parque é tombada pelo CONDEPHAAT, e em 1992 pelo CONPRESP (Conselho Municipal de Preservação do Patrimônio Histórico, Cultural e Ambiental da Cidade de São Paulo).
-
-          Em 2015, o CONPRESP tomba o Conjunto histórico da Estação Ferroviária do Jaraguá, e em 2019 tomba as estruturas remanescentes da Pedreira de Quartzito no Jaraguá, na proximidade da Tekoa Itakupé.
-        txtColor: ''
-        bgColor: ''
-        mapView: map4_jaraguaestacao
       - type: Text
         hasDropCap: false
         content: Em 1978, no contexto da construção do complexo turístico do Parque Estadual do Jaraguá, o conjunto Casa Grande-Senzala da propriedade do bandeirante Afonso Sardinha é tombado pelo CONDEPHAAT
