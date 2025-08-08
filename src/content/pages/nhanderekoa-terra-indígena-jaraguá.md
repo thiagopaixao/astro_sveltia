@@ -2523,9 +2523,9 @@ components:
         hasDropCap: false
         content: '#### PATRIMONIALIZAÇÃO DO JARAGUÁ'
       - type: Spacer
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2549,10 +2549,6 @@ components:
       - type: Text
         hasDropCap: false
         content: Em 2019 o CONPRESP tomba as estruturas remanescentes da Pedreira de Quartzito no Jaraguá, nas proximidades da Tekoa Itakupé.
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-      - type: Spacer
         desktop: 600px
         tablet: 600px
         mobile: 600px
