@@ -2334,7 +2334,7 @@ components:
               byline: Antony Karaí Poty
             - type: ImageBlock
               wideImage: true
-              src: /uploads/2013_01_10.jpg
+              src: /uploads/2013_01_10_ISA.jpg
               alt: ''
               description: 'Protesto no Monumento às Bandeiras (Fonte: Tiago Moreira dos Santos - ISA)'
         column2:
@@ -2514,7 +2514,7 @@ components:
             mobile: 80px
           - type: ImageBlock
             wideImage: false
-            src: /uploads/2014 [16_04]_Midia Ninja.jpg
+            src: /uploads/2014_16_04_midia_ninja.jpg
             alt: ''
             description: 'Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta. Fonte: Mídia Ninja'
       - type: Spacer   
@@ -2537,7 +2537,7 @@ components:
             mobile: 80px
           - type: ImageBlock
             wideImage: false
-            src: /uploads/2014 [24_04]_01_FOLHA PRESS.png
+            src: /uploads/2014_24_04_01_FOLHA_PRESS.png
             alt: ''
             description: 'Protesto pedindo a demarcação da Terra Indígena Jaraguá e da Terra Indígena Tenondé Porã. Fonte: Eduardo Anizelli/Folhapress' 
       - type: Spacer   
@@ -2560,7 +2560,7 @@ components:
             mobile: 80px
           - type: ImageBlock
             wideImage: false
-            src: /uploads/2014 [06_06]_Beatriz Macruz.jpg
+            src: /uploads/2014_06_06_beatriz_macruz.jpg
             alt: ''
             description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Beatriz Macruz/Repórter Brasil'
       - type: Spacer   
@@ -2591,7 +2591,7 @@ components:
             mobile: 80px
           - type: ImageBlock
             wideImage: false
-            src: /uploads/2016_05_05_2016_CIMI.jpeg
+            src: /uploads/2016_05_05_CIMI.jpeg
             alt: ''
             description: 'Protesto exigindo a demarcação da Terra Indígena Tenondé Porã após a portaria declaratória da Terra Indígena Jaraguá. Fonte: CIMI'
       - type: Spacer   
