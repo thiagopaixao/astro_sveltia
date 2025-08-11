@@ -365,8 +365,6 @@ mapbox:
           colorIcon: '#ff2e2eff'
           typeIcon: outlined
           text: Remanescentes de estruturas da mineração do período colonial
-
-
     - id: map3_jaragua
       centerLng: '-46.782'
       centerLat: '-23.461'
@@ -609,8 +607,7 @@ mapbox:
         - icon: show_chart
           colorIcon: '#43ff10ff'
           typeIcon: outlined
-          text: Trajeto do protesto de 01-10-2013
-          
+          text: Trajeto do protesto de 01-10-2013   
     - id: map4_jaragua
       centerLng: '-46.782'
       centerLat: '-23.461'
@@ -2598,7 +2595,6 @@ components:
         desktop: 600px
         tablet: 600px
         mobile: 600px  
-
     columnAlign: right
     floatingText: false
   - type: Group
