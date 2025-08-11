@@ -2533,13 +2533,86 @@ components:
       - type: Text
         hasDropCap: false
         content: Em 1978, no contexto da construção do complexo turístico do Parque Estadual do Jaraguá, o conjunto Casa Grande-Senzala da propriedade do bandeirante Afonso Sardinha é tombado pelo CONDEPHAAT
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
+      - type: Spacer
+        desktop: 50px
+        tablet: 50px
+        mobile: 50px
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/imagem_26_pagina_relatorio_tombamento.jpg
+        alt: asd
+        description: Imagem do arquivo do levantamento técnico do complexo Casa Grande-Senzala de Afonso Sardinha presente na proposta de tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978.
+      - type: Spacer
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map4_jaraguaestacao
+      - type: Text
+        hasDropCap: false
+        content: Em 1983, toda a área do Parque é tombada pelo CONDEPHAAT, e em 1992 pelo CONPRESP. 
+      - type: Spacer
+        desktop: 50px
+        tablet: 50px
+        mobile: 50px
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/imagem_26_pagina_relatorio_tombamento.jpg
+        alt: asd
+        description: Fotografias do bem tombado para a publicação Patrimônio Cultural Paulista, no tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978
+      - type: Spacer
+        desktop: 150px
+        tablet: 150px
+        mobile: 150px
+      - type: Text
+        hasDropCap: false
+        content: Em 2019 o CONPRESP tomba as estruturas remanescentes da Pedreira de Quartzito no Jaraguá, nas proximidades da Tekoa Itakupé. 
+      - type: Spacer
+        desktop: 50px
+        tablet: 50px
+        mobile: 50px
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/imagem_26_pagina_relatorio_tombamento.jpg
+        alt: asd
+        description: Muro remanescente de antiga Pedreira de Quartzito no Jaraguá. Fonte Tiago Queiroz/Estadão
+      - type: Spacer
+        desktop: 300px
+        tablet: 300px
+        mobile: 300px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map5_jaragua
+      - type: Text
+        hasDropCap: false
+        content: Em 2019 o projeto “Memória Paulistana”, do Departamento de Patrimônio Histórico da Prefeitura de São Paulo, reconhece dois lugares de memória Guarani. 
       - type: Spacer
         desktop: 600px
         tablet: 600px
         mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map5_cacicajandira
+      - type: Text
+        hasDropCap: false
+        content: O lugar onde viveu a matriarca cacica Jandira, fundadora da Tekoa Ytu, a primeira retomada do Jaraguá; e o lugar onde foram realizados os protestos na Rodovia dos Bandeirantes. 
+      - type: Spacer
+        desktop: 50px
+        tablet: 50px
+        mobile: 50px
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/imagem_26_pagina_relatorio_tombamento.jpg
+        alt: asd
+        description: Bloqueio da Rodovia dos Bandeirantes em 26/05/2021. Fonte Rafael Vilela
+      - type: Spacer
+        desktop: 400px
+        tablet: 400px
+        mobile: 400px        
     columnAlign: right
     floatingText: true
   - type: Group
