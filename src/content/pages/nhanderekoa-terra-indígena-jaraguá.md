@@ -459,11 +459,11 @@ mapbox:
         - icon: circle
           colorIcon: '#43ff10ff'
           typeIcon: outlined
-          text: Ato de 26-09-2013
+          text: Local do ato
         - icon: show_chart
           colorIcon: '#43ff10ff'
           typeIcon: outlined
-          text: Trajeto do protesto de 01-10-2013
+          text: Trajeto do protesto
         - icon: show_chart
           colorIcon: '#0e9013ff'
           typeIcon: outlined
@@ -487,26 +487,129 @@ mapbox:
         - icon: show_chart
           colorIcon: '#43ff10ff'
           typeIcon: outlined
-          text: Trajeto do protesto de 01-10-2013
-    - id: map3_jaraguasp
-      centerLng: '-46.702'
-      centerLat: '-23.511'
-      zoom: '11.54'
-      mobileZoom: '11.54'
+          text: Trajeto do protesto
+    - id: map3_16-04-2014
+      centerLng: '-46.635'
+      centerLat: '-23.548'
+      zoom: '16.26'
+      mobileZoom: '16.26'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        ti-jaragua
+        resistencia-poligonos[fid==3]
+        resistencia-poligonos-label[fid==3]
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: square
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          text: Local do ato
+    - id: map3_24-04-2014
+      centerLng: '-46.646'
+      centerLat: '-23.555'
+      zoom: '14.14'
+      mobileZoom: '14.14'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-linhas[fid==2]
+        resistencia-linhas-label[fid==2]
+        resistencia-poligonos[fid==3]
+        resistencia-poligonos-label[fid==3]
         satelite
       title: ''
       notes: ''
       items:
         - icon: show_chart
-          colorIcon: '#0e9013ff'
+          colorIcon: '#43ff10ff'
           typeIcon: outlined
-          text: Terra Indígena Jaraguá
-
+          text: Trajeto do protesto
+        - icon: square
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          text: Local de ato
+    - id: map3_06-06-2014
+      centerLng: '-46.646'
+      centerLat: '-23.565'
+      zoom: '13.40'
+      mobileZoom: '13.40'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ato-06-06-2014-label
+        ato-06-06-2014
+        resistencia-linhas[fid==1]
+        resistencia-linhas-label[fid==1]
+        resistencia-poligonos[fid==1]
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          text: Trajeto do protesto
+        - icon: square
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          text: Local de ato
+    - id: map3_06-06-2014_zoom
+      centerLng: '-46.659'
+      centerLat: '-23.581'
+      zoom: '15.96'
+      mobileZoom: '15.96'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ato-06-06-2014-label
+        ato-06-06-2014
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: square
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          text: Local do ato
+    - id: map3_centrozoom
+      centerLng: '-46.646'
+      centerLat: '-23.565'
+      zoom: '13.40'
+      mobileZoom: '13.40'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        satelite
+      title: ''
+      notes: ''
+      items: ''
+    - id: map3_05-05-2016
+      centerLng: '-46.656'
+      centerLat: '-23.572'
+      zoom: '13.89'
+      mobileZoom: '13.89'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-linhas[fid==1]
+        resistencia-linhas-label[fid==1]
+        resistencia-poligonos[fid==1]
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          text: Trajeto do protesto de 01-10-2013
           
     - id: map4_jaragua
       centerLng: '-46.782'
@@ -2394,7 +2497,108 @@ components:
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px        
+        mobile: 600px 
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map3_16-04-2014  
+      - type: Timeline
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: '16 de abril de 2014: lançamento da campanha “Resistencia Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta'
+          - type: Spacer
+            desktop: 80px
+            tablet: 80px
+            mobile: 80px
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [16_04]_Midia Ninja.jpg
+            alt: ''
+            description: 'Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta. Fonte: Mídia Ninja'
+      - type: Spacer   
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map3_24-04-2014  
+      - type: Timeline
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: '24 de abril de 2014: protesto partindo do MASP até a praça Roosevelt, exigindo a demarcação das T.I.s Jaraguá e Tenondé Porãa'
+          - type: Spacer
+            desktop: 80px
+            tablet: 80px
+            mobile: 80px
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [24_04]_01_FOLHA PRESS.png
+            alt: ''
+            description: 'Protesto pedindo a demarcação da Terra Indígena Jaraguá e da Terra Indígena Tenondé Porã. Fonte: Eduardo Anizelli/Folhapress' 
+      - type: Spacer   
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px   
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map3_06-06-2014  
+      - type: Timeline
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: '06 de junho de 2014: protesto na Assembleia Legislativa de São Paulo e no Monumento às Bandeiras pelo arquivamento da PEC 215 e pela demarcação das T.I.s Jaraguá e Tenondé Porã'
+          - type: Spacer
+            desktop: 80px
+            tablet: 80px
+            mobile: 80px
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2014 [06_06]_Beatriz Macruz.jpg
+            alt: ''
+            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Beatriz Macruz/Repórter Brasil'
+      - type: Spacer   
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px   
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map3_centrozoom  
+      - type: Spacer   
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px  
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map3_05-05-2016  
+      - type: Timeline
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: '05 de maio de 2016: ativistas Guarani ocupam a sede da Secretaria da Presidência da República  em São Paulo, na Avenida Paulista, em protesto pela demarcação das T.I.s Jaraguá e Tenondé Porã'
+          - type: Spacer
+            desktop: 80px
+            tablet: 80px
+            mobile: 80px
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2016_05_05_2016_CIMI.jpeg
+            alt: ''
+            description: 'Protesto exigindo a demarcação da Terra Indígena Tenondé Porã após a portaria declaratória da Terra Indígena Jaraguá. Fonte: CIMI'
+      - type: Spacer   
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px  
+
     columnAlign: right
     floatingText: false
   - type: Group
