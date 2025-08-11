@@ -2231,7 +2231,7 @@ components:
               byline: Antony Karaí Poty
             - type: ImageBlock
               wideImage: true
-              src: /uploads/2013 [01_10]_01_ISA.jpg
+              src: /uploads/2013_01_10.jpg
               alt: ''
               description: 'Protesto no Monumento às Bandeiras (Fonte: Tiago Moreira dos Santos - ISA)'
         column2:
@@ -2314,9 +2314,25 @@ components:
         bgColor: ''
         mapView: map3_jaragua
       - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
+        desktop: 800px
+        tablet: 800px
+        mobile: 800px
+    columnAlign: left
+    floatingText: true
+  - type: Map
+    id: mapa_3_lutas
+    shortTitle: mapa 3 - lutas
+    longTitle: mapa 3 - lutas
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Highlight
+    customTxtColor: ''
+    bgColor: Primary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2366,11 +2382,19 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_jaraguasp 
+        mapView: map3_01-10-2013 
       - type: Spacer   
         desktop: 800px
         tablet: 800px
         mobile: 800px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map3_jaraguasp 
+      - type: Spacer   
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px        
     columnAlign: right
     floatingText: false
   - type: Group
