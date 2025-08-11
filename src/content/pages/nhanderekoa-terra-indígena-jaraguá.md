@@ -2394,9 +2394,6 @@ components:
         desktop: 800px
         tablet: 800px
         mobile: 800px
-        mapView: resistencia_intro
-    columnAlign: left
-    floatingText: false
   - type: Group
     id: part_6_texto_3
     shortTitle: part 6 - texto 3
