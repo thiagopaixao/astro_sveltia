@@ -2326,31 +2326,16 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: ''
-            text: '26 de setembro de 2013'
-          - type: Spacer
-            desktop: 50px
-            tablet: 50px
-            mobile: 50px
-          - type: TimelineBullet
-            content: Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã
+            content: '26 de setembro de 2013: Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã'
           - type: Spacer
             desktop: 80px
             tablet: 80px
             mobile: 80px
           - type: ImageBlock
             wideImage: false
-            src: /uploads/imagem_26_pagina_relatorio_tombamento.jpg 
+            src: /uploads/2013_26_09_CGY.png 
             alt: ''
             description: 'Bloqueio da Rodovia dos Bandeirantes. Fonte: Comissão Guarani Yvyrupa [CGY]'
-      - type: Spacer
-        desktop: 400px
-        tablet: 400px
-        mobile: 400px
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map3_jaraguasp2013
       - type: Spacer
         desktop: 600px
         tablet: 600px
@@ -2358,33 +2343,26 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_01-10-2013
+        mapView: map3_jaraguasp2013
       - type: Timeline
         txtColor: ''
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: ''
-            text: '01 de outubro de 2013'
-          - type: Spacer
-            desktop: 50px
-            tablet: 50px
-            mobile: 50px
-          - type: TimelineBullet
-            content: Em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215
+            content: '01 de outubro de 2013: Em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215'
           - type: Spacer
             desktop: 80px
             tablet: 80px
             mobile: 80px
           - type: ImageBlock
             wideImage: false
-            src: /uploads/imagem_26_pagina_relatorio_tombamento.jpg 
+            src: /uploads/2013_01_10_ISA.jpg 
             alt: ''
-            description: '---'
+            description: 'Protesto no Monumento às Bandeiras. Fonte: Tiago Moreira dos Santos [ISA]'
       - type: Spacer
-        desktop: 400px
-        tablet: 400px
-        mobile: 400px
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
       - type: MapView
         txtColor: ''
         bgColor: ''
