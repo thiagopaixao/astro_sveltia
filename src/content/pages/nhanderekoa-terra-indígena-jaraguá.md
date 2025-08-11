@@ -840,7 +840,7 @@ components:
         mobile: 50px
       - type: ImageBlock
         wideImage: false
-        src: /uploads/imagem jaragua_color edited.jpg
+        src: /uploads/ytu.jpg
         alt: ''
         description: ''
         desktop: 300px
@@ -944,7 +944,7 @@ components:
         mobile: 50px
       - type: ImageBlock
         wideImage: false
-        src: /uploads/arqueological-remains_03.jpg
+        src: /uploads/itakupe.jpg
         alt: ''
         description: ''
         desktop: 300px
@@ -1186,7 +1186,7 @@ components:
         mobile: 100px
       - type: ImageBlock
         wideImage: false
-        src: /uploads/arqueological-remains_07.jpg
+        src: /uploads/kaaguymirim.jpg
         alt: ''
         description: ''
       - type: Spacer
