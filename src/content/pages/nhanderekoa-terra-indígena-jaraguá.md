@@ -2628,7 +2628,7 @@ components:
         mobile: 50px
       - type: ImageBlock
         wideImage: false
-        src: /uploads/imagem_26_pagina_relatorio_tombamento.jpg
+        src: /uploads/area-tombamento-2.jpg
         alt: asd
         description: Fotografias do bem tombado para a publicação Patrimônio Cultural Paulista, no tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978
       - type: Spacer
@@ -2644,7 +2644,7 @@ components:
         mobile: 50px
       - type: ImageBlock
         wideImage: false
-        src: /uploads/imagem_26_pagina_relatorio_tombamento.jpg
+        src: /uploads/pedreira-quartzito.jpg
         alt: asd
         description: Muro remanescente de antiga Pedreira de Quartzito no Jaraguá. Fonte Tiago Queiroz/Estadão
       - type: Spacer
@@ -2675,7 +2675,7 @@ components:
         mobile: 50px
       - type: ImageBlock
         wideImage: false
-        src: /uploads/imagem_26_pagina_relatorio_tombamento.jpg
+        src: /uploads/bandeirantes.png
         alt: asd
         description: Bloqueio da Rodovia dos Bandeirantes em 26/05/2021. Fonte Rafael Vilela
       - type: Spacer
