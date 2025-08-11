@@ -365,6 +365,149 @@ mapbox:
           colorIcon: '#ff2e2eff'
           typeIcon: outlined
           text: Remanescentes de estruturas da mineração do período colonial
+
+
+    - id: map3_jaragua
+      centerLng: '-46.782'
+      centerLat: '-23.461'
+      zoom: '13.26'
+      mobileZoom: '13.26'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+        aldeias-jaragua
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Aldeias
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Terra Indígena Jaraguá
+    - id: map3_jaraguasp
+      centerLng: '-46.702'
+      centerLat: '-23.511'
+      zoom: '11.54'
+      mobileZoom: '11.54'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Terra Indígena Jaraguá
+    - id: map3_26-09-2013
+      centerLng: '-46.766'
+      centerLat: '-23.461'
+      zoom: '13.26'
+      mobileZoom: '13.26'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-pontos[fid==5]
+        resistencia-pontos-label[fid==5]
+        ti-jaragua
+        aldeias-jaragua
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          text: Local do ato
+        - icon: circle
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Aldeias
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Terra Indígena Jaraguá
+    - id: map3_jaraguasp2013
+      centerLng: '-46.702'
+      centerLat: '-23.511'
+      zoom: '11.54'
+      mobileZoom: '11.54'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-pontos[fid==5]
+        resistencia-pontos-label[fid==5]
+        resistencia-linhas[fid==1]
+        resistencia-linhas-label[fid==1]
+        resistencia-poligonos[fid==1]
+        ti-jaragua
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          text: Ato de 26-09-2013
+        - icon: show_chart
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          text: Trajeto do protesto de 01-10-2013
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Terra Indígena Jaraguá
+    - id: map3_01-10-2013
+      centerLng: '-46.656'
+      centerLat: '-23.572'
+      zoom: '13.89'
+      mobileZoom: '13.89'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-linhas[fid==1]
+        resistencia-linhas-label[fid==1]
+        resistencia-poligonos[fid==1]
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          text: Trajeto do protesto de 01-10-2013
+    - id: map3_jaraguasp
+      centerLng: '-46.702'
+      centerLat: '-23.511'
+      zoom: '11.54'
+      mobileZoom: '11.54'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          text: Terra Indígena Jaraguá
+
+          
     - id: map4_jaragua
       centerLng: '-46.782'
       centerLat: '-23.461'
@@ -557,76 +700,6 @@ mapbox:
           colorIcon: '#a3f339ff'
           typeIcon: outlined
           text: Lugares de memória Guarani
-        - icon: circle
-          colorIcon: '#a3f339ff'
-          typeIcon: outlined
-          text: Lugares de memória Guarani
-    - id: map5_memoria
-      centerLng: '-46.752'
-      centerLat: '-23.464'
-      zoom: '16.47'
-      mobileZoom: '16.47'
-      duration: '4000'
-      bearing: '0'
-      pitch: '0'
-      layers: |-
-        ti-jaragua
-        pe-jaragua
-        aldeias-jaragua
-        memoria-guarani
-        cacica-jandira-label
-        ato-label
-        satelite
-      title: ''
-      notes: ''
-      items:
-        - icon: circle
-          colorIcon: '#0e9013ff'
-          typeIcon: outlined
-          text: Aldeias
-        - icon: show_chart
-          colorIcon: '#0e9013ff'
-          typeIcon: outlined
-          text: Terra Indígena Jaraguá
-        - icon: show_chart
-          colorIcon: '#9d1b1bff'
-          typeIcon: outlined
-          text: Parque Estadual do Jaraguá
-        - icon: circle
-          colorIcon: '#a3f339ff'
-          typeIcon: outlined
-          text: Lugares de memória Guarani
-    - id: map5_memoria
-      centerLng: '-46.752'
-      centerLat: '-23.464'
-      zoom: '16.47'
-      mobileZoom: '16.47'
-      duration: '4000'
-      bearing: '0'
-      pitch: '0'
-      layers: |-
-        ti-jaragua
-        pe-jaragua
-        aldeias-jaragua
-        memoria-guarani
-        cacica-jandira-label
-        ato-label
-        satelite
-      title: ''
-      notes: ''
-      items:
-        - icon: circle
-          colorIcon: '#0e9013ff'
-          typeIcon: outlined
-          text: Aldeias
-        - icon: show_chart
-          colorIcon: '#0e9013ff'
-          typeIcon: outlined
-          text: Terra Indígena Jaraguá
-        - icon: show_chart
-          colorIcon: '#9d1b1bff'
-          typeIcon: outlined
-          text: Parque Estadual do Jaraguá
         - icon: circle
           colorIcon: '#a3f339ff'
           typeIcon: outlined
@@ -2222,18 +2295,18 @@ components:
         desktop: 200px
         tablet: 200px
         mobile: 200px
-    columnAlign: left
+    columnAlign: right
     floatingText: false
   - type: Map
-    id: mapa_x_lutas
-    shortTitle: mapa X - lutas
-    longTitle: mapa X - lutas
+    id: mapa_3_lutas
+    shortTitle: mapa 3 - lutas
+    longTitle: mapa 3 - lutas
     description: ''
     showInMenu: false
     animations: true
-    txtColor: Primary
+    txtColor: Highlight
     customTxtColor: ''
-    bgColor: Secundary
+    bgColor: Primary
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
@@ -2241,85 +2314,9 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        paddingTop: false
-        paddingBottom: false
-        invertOnMobile: false
-        columnsAlign: 66-33
-        column1:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: Após a eleição de Luiz Inácio Lula da Silva em 2023, e a criação do Ministério dos Povos Indígenas, retoma-se o processo de demarcação do território Guarani do Jaraguá em São Paulo. Através da Portaria 793 de 23 de Outubro de 2024, o Ministério da Justiça declara a nulidade da Portaria 683 de 2015, restabelecendo os efeitos da Portaria 581 de 2015 que reconhece a posse Guarani e a demarcação da Terra indígena Jaraguá
-              desktop: 400px
-              tablet: 100px
-              mobile: 100px
-            - type: ImageBlock
-              content: Estando à frente tanto de uma manifestação simbólica ou de um enfrentamento, a gente vê que a nossa luta é diferente. A gente não tem somente uma luta de rua, mas também uma luta espiritual
-              wideImage: false
-              src: /uploads/imagem_23_mapa_cerimonia.jpg
-              alt: asd
-              description: Celebração da demarcação da T.I. Jaraguá pelas lentes de Richard Wera Mirim
-              txtColor: ''
-              bgColor: ''
-              byline: Antony Karaí Poty
-            - type: ImageBlock
-              wideImage: true
-              src: /uploads/2013 [01_10]_01_ISA.jpg
-              alt: ''
-              description: 'Protesto no Monumento às Bandeiras (Fonte: Tiago Moreira dos Santos - ISA)'
-        column2:
-          components:
-            - type: Pullquote
-              hasDropCap: true
-              content: Como a gente sempre faz nas manifestações com outras faixas, o mapa estava presente, primeiro na mão dos jovens e das crianças, depois as mulheres ergueram o mapa, e aquilo foi uma celebração, foi a nossa forma de fazer desse processo da demarcação da terra uma cerimônia.
-              txtColor: ''
-              bgColor: ''
-              byline: – Thiago Henrique Karai Djekupe
-            - type: ImageBlock
-              hasDropCap: true
-              content: |-
-                Mas a justiça ao reconhecimento da posse ancestral Guarani do Jaraguá teve vida curta. Eventos políticos em Brasília trazem uma reviravolta ao processo. 
+        mapView: map3_jaragua
 
-                Em 2017, após o impeachment de Dilma Rousseff, o governo de Michel Temer anula a demarcação da Terra Indígena Jaraguá (Portaria 683). Ato contínuo, durante o governo de Jair Bolsonaro entre 2019 e 2022, o projeto da chamada “Lei do Marco Temporal”, que havia sido praticamente arquivado em 2018, volta a ser pauta no Congresso Nacional. 
-
-                Em maio de 2023 a Câmera dos Deputados aprova a “Lei do Marco Temporal”. Cinco meses depois, em setembro de 2023, o Supremo Tribunal Federal rejeita a tese como inconstitucional. Entretanto, a proposta segue em pauta no Congresso Nacional até os dias de hoje, ameaçando a integridade dos territórios indígenas.
-              wideImage: true
-              src: /uploads/imagem_16_ocupacao_antena.jpg
-              alt: ''
-              description: 'Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá, entre os dias 14 e 16 de setembro de 2017, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo (Fonte: Comissão Guarani Yvyrupa - CGY)'
-              wideVideo: true
-              videoUrl: https://player.vimeo.com/video/1106085328?
-              videoCaption: 'Luta & Diálogo: entrevista com Antony Karaí Poty sobre o papel da luta de rua e espiritual dos Guarani'
-              txtColor: ''
-              bgColor: ''
-              byline: – Thiago Henrique Karai Djekupe
-            - type: Text
-              hasDropCap: false
-              content: |-
-                Mas a justiça ao reconhecimento da posse ancestral Guarani do Jaraguá teve vida curta. Eventos políticos em Brasília trazem uma reviravolta ao processo. 
-
-                Em 2017, após o impeachment de Dilma Rousseff, o governo de Michel Temer anula a demarcação da Terra Indígena Jaraguá (Portaria 683). Ato contínuo, durante o governo de Jair Bolsonaro entre 2019 e 2022, o projeto da chamada “Lei do Marco Temporal”, que havia sido praticamente arquivado em 2018, volta a ser pauta no Congresso Nacional. 
-
-                Em maio de 2023 a Câmera dos Deputados aprova a “Lei do Marco Temporal”. Cinco meses depois, em setembro de 2023, o Supremo Tribunal Federal rejeita a tese como inconstitucional. Entretanto, a proposta segue em pauta no Congresso Nacional até os dias de hoje, ameaçando a integridade dos territórios indígenas.
-              wideVideo: true
-              videoUrl: https://player.vimeo.com/video/1106085328?
-              videoCaption: 'Luta & Diálogo: entrevista com Antony Karaí Poty sobre o papel da luta de rua e espiritual dos Guarani'
-              txtColor: ''
-              bgColor: ''
-              byline: – Thiago Henrique Karai Djekupe
-            - type: VideoEmbed
-              hasDropCap: false
-              content: Em resposta a estas violações de seus direitos consagrados com a Constituição de 1988, entre 2013 e 2025, as comunidades Guarani do Jaraguá, junto com as comunidades de Tenondé Porã, realizam uma série de atos políticos e ações de advocacia, literalmente reocupando a cidade de São Paulo – Terra Indígena – durante uma década de sucessivas manifestações de grande amplitude política e cultural para a cidade e para todo o país.
-              wideVideo: true
-              videoUrl: https://player.vimeo.com/video/1106085328?
-              videoCaption: 'Luta & Diálogo: entrevista com Antony Karaí Poty sobre o papel da luta de rua e espiritual dos Guarani'
-            - type: Text
-              hasDropCap: false
-              content: Em resposta a estas violações de seus direitos consagrados com a Constituição de 1988, entre 2013 e 2025, as comunidades Guarani do Jaraguá, junto com as comunidades de Tenondé Porã, realizam uma série de atos políticos e ações de advocacia, literalmente reocupando a cidade de São Paulo – Terra Indígena – durante uma década de sucessivas manifestações de grande amplitude política e cultural para a cidade e para todo o país.
-              wideImage: true
-              src: /uploads/imagem_16_ocupacao_antena.jpg
-              alt: ''
-              description: 'Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá, entre os dias 14 e 16 de setembro de 2017, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo (Fonte: Comissão Guarani Yvyrupa - CGY)'
+        
         desktop: 800px
         tablet: 800px
         mobile: 800px
