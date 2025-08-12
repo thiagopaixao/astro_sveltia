@@ -388,7 +388,7 @@ mapbox:
 
 
     - id: map3_jaragua
-      centerLng: '-46.782'
+      centerLng: '-46.766'
       centerLat: '-23.461'
       zoom: '13.26'
       mobileZoom: '13.26'
@@ -648,10 +648,10 @@ mapbox:
           iconFill: true
           text: Local do ato 
     - id: map3_30-08-2017
-      centerLng: '-46.702'
-      centerLat: '-23.511'
-      zoom: '11.54'
-      mobileZoom: '11.54'
+      centerLng: '-46.658'
+      centerLat: '-23.560'
+      zoom: '15.30'
+      mobileZoom: '15.30'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -702,10 +702,10 @@ mapbox:
           iconFill: true
           text: Locais dos atos 
     - id: map3_14-09-2017
-      centerLng: '-46.702'
-      centerLat: '-23.511'
-      zoom: '11.54'
-      mobileZoom: '11.54'
+      centerLng: '-46.765'
+      centerLat: '-23.459'
+      zoom: '13.54'
+      mobileZoom: '13.54'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -728,10 +728,10 @@ mapbox:
           iconFill: true
           text: Local do ato
     - id: map3_jan-2020
-      centerLng: '-46.702'
-      centerLat: '-23.511'
-      zoom: '11.54'
-      mobileZoom: '11.54'
+      centerLng: '-46.752'
+      centerLat: '-23.466'
+      zoom: '15.34'
+      mobileZoom: '15.34'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -754,16 +754,16 @@ mapbox:
           iconFill: true
           text: Local do ato 
     - id: map3_25-06-2021
-      centerLng: '-46.702'
-      centerLat: '-23.511'
-      zoom: '11.54'
-      mobileZoom: '11.54'
+      centerLng: '-46.750'
+      centerLat: '-23.465'
+      zoom: '14.58'
+      mobileZoom: '14.58'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |- 
-        resistencia-pontos[fid==4]
-        resistencia-pontos-label[fid==4]     
+        resistencia-pontos[fid==5]
+        resistencia-pontos-label[fid==5]     
         ti-jaragua
         satelite
       title: ''
@@ -2597,7 +2597,7 @@ components:
         tablet: 200px
         mobile: 200px
   - type: Map
-    id: mapa_3_lutas
+    id: mapa_3_lutas_1
     shortTitle: mapa 3 - lutas
     longTitle: mapa 3 - lutas
     description: ''
@@ -2621,7 +2621,7 @@ components:
     columnAlign: center
     floatingText: true
   - type: Map
-    id: mapa_3_lutas
+    id: mapa_3_lutas_2
     shortTitle: mapa 3 - lutas
     longTitle: mapa 3 - lutas
     description: ''
@@ -2787,8 +2787,105 @@ components:
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px  
+        mobile: 600px
     columnAlign: right
+    floatingText: false
+  - type: Map
+    id: mapa_3_lutas_3
+    shortTitle: mapa 3 - lutas
+    longTitle: mapa 3 - lutas
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Highlight
+    customTxtColor: ''
+    bgColor: Primary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map3_30-08-2017
+      - type: Spacer   
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px 
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map3_jaraguasp2017  
+      - type: Timeline
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: '14 – 16 de setembro 2017: em protesto contra a anulação da demarcação da Terra Indígena Jaraguá pelo governo de Michel Temer, lideranças Guarani realizam uma série de protestos em São Paulo. No dia 30 de agosto, uma ampla mobilização toma a Avenida Paulista. Quinze dias depois, entre os dias 14 e 16 de setembro, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo'
+          - type: Spacer
+            desktop: 80px
+            tablet: 80px
+            mobile: 80px
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2017-antenas_CGY.jpg
+            alt: ''
+            description: 'Ocupação das antenas no Parque Estadual do Jaraguá. Fonte: Comissão Guarani Yvyrupa [CGY]' 
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map3_14-09-2017  
+      - type: Spacer   
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map3_jan-2020 
+      - type: Timeline
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: 'Janeiro-Março de 2020: ativistas Guarani ocupam o terreno onde seria construído o condomínio residencial “Reserva Jaraguá-Carinás”, situado próximo à aldeia Pyau. Executado pela construtora Tenda, o empreendimento levou à derrubada de cerca de quatro mil árvores em uma área da Reserva da Biosfera do Cinturão Verde de São Paulo. Chamada de Yary Ty, a ocupação dura até o mês de março, quando é removida pela Polícia Militar'
+          - type: Spacer
+            desktop: 80px
+            tablet: 80px
+            mobile: 80px
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2020_09-10_03_Alejandro Silva_CIMI_regional_sul.jpeg
+            alt: ''
+            description: 'Fachada da ocupação Yary Ty. Fonte: Alejandro Silva/CIMI regional sul'  
+      - type: Spacer   
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map3_21-06-2021
+      - type: Timeline
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: 'Junho de 2021: a volta da discussão sobre o Marco Temporal no Congresso Nacional desencadeia uma série de protestos de organizações indígenas. No dia 25 de junho, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. Cinco dias depois ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista'
+          - type: Spacer
+            desktop: 80px
+            tablet: 80px
+            mobile: 80px
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2016_05_05_CIMI.jpeg
+            alt: ''
+            description: 'Protesto exigindo a demarcação da Terra Indígena Tenondé Porã após a portaria declaratória da Terra Indígena Jaraguá. Fonte: CIMI'
+      - type: Spacer   
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+    columnAlign: left
     floatingText: false
   - type: Group
     id: part_6_texto_3
