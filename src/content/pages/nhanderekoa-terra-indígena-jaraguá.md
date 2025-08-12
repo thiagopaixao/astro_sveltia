@@ -382,8 +382,10 @@ mapbox:
         - icon: circle
           colorIcon: '#ff2e2eff'
           typeIcon: outlined
-          iconFill: false
+          iconFill: true
           text: Remanescentes de estruturas da mineração do período colonial
+
+
 
     - id: map3_jaragua
       centerLng: '-46.782'
@@ -645,9 +647,143 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Local do ato 
+    - id: map3_30-08-2017
+      centerLng: '-46.702'
+      centerLat: '-23.511'
+      zoom: '11.54'
+      mobileZoom: '11.54'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-pontos[fid==2]
+        resistencia-pontos-label[fid==2]
+        ti-jaragua
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Local do ato 
+    - id: map3_jaraguasp2017
+      centerLng: '-46.702'
+      centerLat: '-23.511'
+      zoom: '11.54'
+      mobileZoom: '11.54'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ocupacao-antenas
+        ocupacao-antenas-label
+        resistencia-pontos[fid==2]
+        resistencia-pontos-label[fid==2]
+        ti-jaragua
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Locais dos atos 
+    - id: map3_14-09-2017
+      centerLng: '-46.702'
+      centerLat: '-23.511'
+      zoom: '11.54'
+      mobileZoom: '11.54'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-        
+        ocupacao-antenas
+        ocupacao-antenas-label
+        ti-jaragua
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Local do ato
+    - id: map3_jan-2020
+      centerLng: '-46.702'
+      centerLat: '-23.511'
+      zoom: '11.54'
+      mobileZoom: '11.54'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |- 
+        resistencia-pontos[fid==4]
+        resistencia-pontos-label[fid==4]     
+        ti-jaragua
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Local do ato 
+    - id: map3_25-06-2021
+      centerLng: '-46.702'
+      centerLat: '-23.511'
+      zoom: '11.54'
+      mobileZoom: '11.54'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |- 
+        resistencia-pontos[fid==4]
+        resistencia-pontos-label[fid==4]     
+        ti-jaragua
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Local do ato  
           
           
-          
+
+
+
     - id: map4_jaragua
       centerLng: '-46.782'
       centerLat: '-23.461'
