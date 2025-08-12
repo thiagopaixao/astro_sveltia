@@ -1966,38 +1966,25 @@ components:
               mobile: 150px
         mapView: map2_jaraguaspzoom
       - type: Spacer
-        desktop: 1000px
-        tablet: 1000px
-        mobile: 1000px
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map2_pateo
       - type: Text
         hasDropCap: false
         content: Em 1554 funda-se o povoado de São Paulo dos Campos de Piratininga, futura cidade de São Paulo, onde hoje encontra-se o Pateo do Collegio.
-        txtColor: ''
-        bgColor: ''
-        mapView: map2_pateo
       - type: Spacer
-        hasDropCap: false
-        content: Em 1554 funda-se o povoado de São Paulo dos Campos de Piratininga, futura cidade de São Paulo, onde hoje encontra-se o Pateo do Collegio.
-        txtColor: ''
-        bgColor: ''
         desktop: 50px
         tablet: 50px
         mobile: 50px
-        mapView: map2_pateo
       - type: ImageBlock
         wideImage: false
         src: /uploads/palácio-do-governo-de-são-paulo-debret_1827.jpg
         alt: ''
         description: Pintura do Pateo do Collegio, por Jean-Baptiste Debret, quando o edifício servia como Palácio do Governo de São Paulo em 1827
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-      - type: MapView
-        hasDropCap: false
-        content: Em 1554 funda-se o povoado de São Paulo dos Campos de Piratininga, futura cidade de São Paulo, onde hoje encontra-se o Pateo do Collegio.
-        txtColor: ''
-        bgColor: ''
-        mapView: map2_pateo
       - type: Spacer
         desktop: 600px
         tablet: 600px
@@ -2022,17 +2009,12 @@ components:
         bgColor: ''
         mapView: map2_ourojaragua
       - type: Spacer
-        hasDropCap: false
-        content: Pouco depois, em 1597, o bandeirante Afonso Sardinha encontra ouro na região do Jaraguá. Estabelece uma grande propriedade na área com a construção de um complexo Casa Grande – Senzala ao pé do morro.
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
         desktop: 600px
         tablet: 600px
         mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
         mapView: map2_ourojaragua
       - type: Text
         hasDropCap: false
@@ -2857,18 +2839,10 @@ components:
             src: /uploads/2013_01_10_ISA.jpg 
             alt: ''
             description: 'Protesto no Monumento às Bandeiras. Fonte: Tiago Moreira dos Santos [ISA]'
-      - type: Spacer
+      - type: Spacer   
         desktop: 600px
         tablet: 600px
         mobile: 600px
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map3_01-10-2013 
-      - type: Spacer   
-        desktop: 800px
-        tablet: 800px
-        mobile: 800px
       - type: MapView
         txtColor: ''
         bgColor: ''
