@@ -225,6 +225,7 @@ const mapboxSchema = z.object({
               icon: z.string().optional(),
               colorIcon: z.string().optional(),
               typeIcon: z.enum(['outlined', 'rounded', 'sharp']).optional(),
+              iconFill: z.boolean().optional(),
               text: z.string().optional(),
             })
           )
@@ -374,6 +375,7 @@ const componentSchema = z.object({
               icon: z.string().optional(),
               colorIcon: z.string().optional(),
               typeIcon: z.enum(['outlined', 'rounded', 'sharp']).optional(),
+              iconFill: z.boolean().optional(),
               text: z.string().optional(),
             })
           )

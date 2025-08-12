@@ -1,6 +1,6 @@
 ---
 title: nhanderekoa
-slug: nhanderekoa
+slug: nhanderekoa2
 pageSettings:
   language: pt-BR
   link_pt_br: nhanderekoa

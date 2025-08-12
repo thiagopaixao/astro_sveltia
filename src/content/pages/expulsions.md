@@ -53,10 +53,12 @@ mapbox:
         - icon: show_chart
           colorIcon: '#bffa80ff'
           typeIcon: outlined
+          iconFill: true
           text: Amazon limits
         - icon: square
           colorIcon: '#e31c1cff'
           typeIcon: outlined
+          iconFill: true
           text: Mining concessions
       captions:
         title: ''

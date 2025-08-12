@@ -163,6 +163,12 @@ mapBox: &mapBox
               options: ['outlined', 'rounded', 'sharp']
               default: 'outlined'
               required: true
+            - label: 'Icon Fill'
+              name: 'iconFill'
+              widget: 'boolean'
+              required: false
+              default: false
+              hint: 'Ativa o preenchimento do ícone (fill). Desativado = 0, Ativado = 1'
             - label: 'Text'
               name: 'text'
               widget: 'string'

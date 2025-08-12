@@ -190,8 +190,9 @@ if (hasMapboxData) {
             notes: view.notes,
             items: view.items ? view.items.map(item => {
               if (item.icon && item.colorIcon && item.typeIcon) {
-                // Gerar HTML do ícone usando os novos campos
-                const iconHtml = `<span class="material-symbols-${item.typeIcon}" style="color: ${item.colorIcon}">${item.icon}</span>`;
+                // Gerar HTML do ícone usando os novos campos, incluindo fill
+                const fillValue = item.iconFill ? 1 : 0;
+                const iconHtml = `<span class="material-symbols-${item.typeIcon}" style="color: ${item.colorIcon}; font-variation-settings: 'FILL' ${fillValue}">${item.icon}</span>`;
                 return {
                   ...item,
                   icon: iconHtml
