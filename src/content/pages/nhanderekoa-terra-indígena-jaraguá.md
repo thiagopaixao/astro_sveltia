@@ -3863,20 +3863,11 @@ components:
         invertOnMobile: false
         columnsAlign: 66-33
         column1:
-          components:
-            - type: InnerColumns
-              column1:
-                components:
-                - type: Text
-                  hasDropCap: false
-                  content: |-
-                    O mapa foi produzido pelo projeto **_Arquiteturas da Reparação: São Paulo Terra Indígena_**. Desenvolvido em parceria com lideranças e ativistas da T.I. Jaraguá, o projeto questiona visões tradicionais de cidade, território, memória, e patrimônio, buscando pensar como seres e elementos do mundo “mais-que-humano”,
-              column2:
-                components:
-                - type: Text
-                  hasDropCap: false
-                  content: |-
-                    como as águas e as matas, podem ser incluídos como sujeitos patrimoniais dentro de um amplo processo de reparação histórica e socioambiental aos povos originários. O projeto foi realizado através de uma colaboração entre a T.I. Jaraguá, a agência autônoma, e o Chão Coletivo, por meio da plataforma Práticas Espaciais da Escola da Cidade. 
+          components:                   
+            - type: Text
+              hasDropCap: false
+              content: |-
+                O mapa foi produzido pelo projeto _Arquiteturas da Reparação: São Paulo Terra Indígena_. Desenvolvido em parceria com lideranças e ativistas da T.I. Jaraguá, o projeto questiona visões tradicionais de cidade, território, memória, e patrimônio, buscando pensar como seres e elementos do mundo “mais-que-humano”, como as águas e as matas, podem ser incluídos como sujeitos patrimoniais dentro de um amplo processo de reparação histórica e socioambiental aos povos originários. O projeto foi realizado através de uma colaboração entre a T.I. Jaraguá, a agência autônoma, e o Chão Coletivo, por meio da plataforma Práticas Espaciais da Escola da Cidade. 
             - type: Spacer
               desktop: 50px
               tablet: 50px
@@ -3884,11 +3875,11 @@ components:
             - type: Text
               hasDropCap: false
               content: |-
-                **T.I. Jaraguá**
+                ##### **T.I. Jaraguá**
             - type: Spacer
-              desktop: 50px
-              tablet: 50px
-              mobile: 50px
+              desktop: 30px
+              tablet: 30px
+              mobile: 30px
             - type: InnerColumns
               column1:
                 components:
@@ -3932,6 +3923,10 @@ components:
                     Design Museum, Future Observatory More-than-Human Fellowship
         column2:
           components:
+            - Spacer:
+              desktop: 200px
+              tablet: 200px
+              mobile: 200px
             - type: InnerColumns
               column1:
                 components:
