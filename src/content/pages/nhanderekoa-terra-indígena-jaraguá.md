@@ -571,8 +571,6 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        ato-06-06-2014-label
-        ato-06-06-2014
         resistencia-linhas[fid==2]
         resistencia-linhas-label[fid==2]
         resistencia-poligonos[fid==3]
@@ -591,26 +589,6 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Local de ato
-    - id: map3_06-06-2014_zoom
-      centerLng: '-46.659'
-      centerLat: '-23.581'
-      zoom: '15.96'
-      mobileZoom: '15.96'
-      duration: '4000'
-      bearing: '0'
-      pitch: '0'
-      layers: |-
-        ato-06-06-2014-label
-        ato-06-06-2014
-        satelite
-      title: ''
-      notes: ''
-      items:
-        - icon: square
-          colorIcon: '#43ff10ff'
-          typeIcon: outlined
-          iconFill: true
-          text: Local do ato
     - id: map3_centrozoom
       centerLng: '-46.646'
       centerLat: '-23.565'
@@ -1179,7 +1157,6 @@ mapbox:
         pe-jaragua
         aldeias-jaragua
         memoria-guarani
-        cacica-jandira-label
         satelite
       title: ''
       notes: ''
@@ -3917,10 +3894,10 @@ components:
                     Design Museum, Future Observatory More-than-Human Fellowship
         column2:
           components:
-            - Spacer:
-              desktop: 400px
-              tablet: 400px
-              mobile: 400px
+            - type: Spacer
+              desktop: 150px
+              tablet: 150px
+              mobile: 150px
             - type: InnerColumns
               column1:
                 components:
