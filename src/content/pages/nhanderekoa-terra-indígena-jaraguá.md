@@ -657,10 +657,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        ocupacao-antenas
-        ocupacao-antenas-label
-        resistencia-pontos[fid==2]
-        resistencia-pontos-label[fid==2]
+        resistencia-pontos-2017
+        resistencia-pontos-2017-label
         ti-jaragua
         satelite
       title: ''
@@ -685,8 +683,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-        
-        ocupacao-antenas
-        ocupacao-antenas-label
+        resistencia-pontos-2017
+        resistencia-pontos-2017-label
         ti-jaragua
         satelite
       title: ''
