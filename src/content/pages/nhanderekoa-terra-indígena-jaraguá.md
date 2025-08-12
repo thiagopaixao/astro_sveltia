@@ -779,11 +779,62 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Local do ato  
-          
-          
-
-
-
+    - id: map3_jaraguasp2021
+      centerLng: '-46.702'
+      centerLat: '-23.511'
+      zoom: '11.54'
+      mobileZoom: '11.54'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        masp-2021
+        masp-2021-label
+        ocupacao-antenas-2021
+        ocupacao-antenas-2021-label
+        resistencia-pontos[fid==7]
+        resistencia-pontos-label[fid==7]
+        ti-jaragua
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Locais dos atos
+    - id: map3_03-07-2021
+      centerLng: '-46.659'
+      centerLat: '-23.559'
+      zoom: '14.55'
+      mobileZoom: '14.55'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-linhas[fid==3]
+        resistencia-linhas-label[fid==3]
+        ti-jaragua
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: show_chart
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Trajeto percorrido      
     - id: map4_jaragua
       centerLng: '-46.782'
       centerLat: '-23.461'
@@ -2865,7 +2916,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_21-06-2021
+        mapView: map3_25-06-2021
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2878,9 +2929,36 @@ components:
             mobile: 80px
           - type: ImageBlock
             wideImage: false
-            src: /uploads/2016_05_05_CIMI.jpeg
+            src: /uploads/bandeirantes.png
             alt: ''
-            description: 'Protesto exigindo a demarcação da Terra Indígena Tenondé Porã após a portaria declaratória da Terra Indígena Jaraguá. Fonte: CIMI'
+            description: 'Ocupação do Parque Estadual do Jaraguá e as antenas. Fonte: Rafael Vilela'
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map3_jaraguasp2021
+      - type: Spacer   
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map3_03-07-2021
+      - type: Timeline
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: '03 de julho de 2021: no contexto da pandemia da COVID, ativistas Guarani participam da  grande manifestação contra o governo do presidente Jair Bolsonaro, trazendo a pauta do Marco Temporal para a manifestação'
+          - type: Spacer
+            desktop: 80px
+            tablet: 80px
+            mobile: 80px
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2021_03_07_G1_globo.png
+            alt: ''
+            description: 'Grande manifestação contra o governo do presidente Jair Bolsonaro. Fonte: G1/Globo'
       - type: Spacer   
         desktop: 600px
         tablet: 600px
