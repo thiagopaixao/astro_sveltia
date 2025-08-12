@@ -1,6 +1,6 @@
 ---
 title: nhanderekoa
-slug: nhanderekoa2
+slug: nhanderekoa
 pageSettings:
   language: pt-BR
   link_pt_br: nhanderekoa
@@ -59,18 +59,22 @@ mapbox:
         - icon: circle
           colorIcon: '#0e9013ff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeias
         - icon: show_chart
           colorIcon: '#0e9013ff'
           typeIcon: outlined
+          iconFill: true
           text: Terra Indígena Jaraguá
         - icon: circle
           colorIcon: '#a3f339ff'
           typeIcon: outlined
+          iconFill: true
           text: Pontos de Memória Indígena
         - icon: show_chart
           colorIcon: '#9d1b1bff'
           typeIcon: outlined
+          iconFill: true
           text: Limite do Parque Estadual Jaraguá
     - id: map1_ytu
       centerLng: '-46.754'
@@ -93,6 +97,7 @@ mapbox:
         - icon: circle
           colorIcon: '#106013ff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeias
     - id: map1_pyau
       centerLng: '-46.752'
@@ -115,6 +120,7 @@ mapbox:
         - icon: circle
           colorIcon: '#106013ff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeias
     - id: map1_itakupe
       centerLng: '-46.763'
@@ -137,6 +143,7 @@ mapbox:
         - icon: circle
           colorIcon: '#106013ff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeias
     - id: map1_itawera
       centerLng: '-46.754'
@@ -159,6 +166,7 @@ mapbox:
         - icon: circle
           colorIcon: '#106013ff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeias
     - id: map1_itaendy
       centerLng: '-46.777'
@@ -181,6 +189,7 @@ mapbox:
         - icon: circle
           colorIcon: '#106013ff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeias
     - id: map1_yvypora
       centerLng: '-46.757'
@@ -203,6 +212,7 @@ mapbox:
         - icon: circle
           colorIcon: '#106013ff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeias
     - id: map1_pindomirim
       centerLng: '-46.780'
@@ -225,6 +235,7 @@ mapbox:
         - icon: circle
           colorIcon: '#106013ff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeias
     - id: map1_mirim
       centerLng: '-46.753'
@@ -247,6 +258,7 @@ mapbox:
         - icon: circle
           colorIcon: '#106013ff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeias
     - id: map1_kaaguymirim
       centerLng: '-46.753'
@@ -269,6 +281,7 @@ mapbox:
         - icon: circle
           colorIcon: '#106013ff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeias
     - id: map2_jaraguasp
       centerLng: '-46.888'
@@ -287,6 +300,7 @@ mapbox:
         - icon: circle
           colorIcon: '#d0353574'
           typeIcon: outlined
+          iconFill: true
           text: Áreas de exploração do ouro em São Paulo
     - id: map2_jaraguaspzoom
       centerLng: '-46.760'
@@ -305,6 +319,7 @@ mapbox:
         - icon: circle
           colorIcon: '#ff2e2eff'
           typeIcon: outlined
+          iconFill: true
           text: Pateo do Collegio
     - id: map2_pateo
       centerLng: '-46.633'
@@ -323,6 +338,7 @@ mapbox:
         - icon: circle
           colorIcon: '#ff2e2eff'
           typeIcon: outlined
+          iconFill: true
           text: Pateo do Collegio
     - id: map2_barueri
       centerLng: '-46.840'
@@ -341,6 +357,7 @@ mapbox:
         - icon: circle
           colorIcon: '#ff2e2eff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeamento de Barueri
     - id: map2_ourojaragua
       centerLng: '-46.781'
@@ -360,10 +377,12 @@ mapbox:
         - icon: circle
           colorIcon: '#ff2e2eff'
           typeIcon: outlined
+          iconFill: true
           text: Casa-Grande Senzala de Afonso Sardinha
         - icon: circle
           colorIcon: '#ff2e2eff'
           typeIcon: outlined
+          iconFill: true
           text: Remanescentes de estruturas da mineração do período colonial
     - id: map3_jaragua
       centerLng: '-46.782'
@@ -383,10 +402,12 @@ mapbox:
         - icon: circle
           colorIcon: '#0e9013ff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeias
         - icon: show_chart
           colorIcon: '#0e9013ff'
           typeIcon: outlined
+          iconFill: true
           text: Terra Indígena Jaraguá
     - id: map3_jaraguasp
       centerLng: '-46.702'
@@ -405,6 +426,7 @@ mapbox:
         - icon: show_chart
           colorIcon: '#0e9013ff'
           typeIcon: outlined
+          iconFill: true
           text: Terra Indígena Jaraguá
     - id: map3_26-09-2013
       centerLng: '-46.766'
@@ -426,14 +448,17 @@ mapbox:
         - icon: circle
           colorIcon: '#43ff10ff'
           typeIcon: outlined
+          iconFill: true
           text: Local do ato
         - icon: circle
           colorIcon: '#0e9013ff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeias
         - icon: show_chart
           colorIcon: '#0e9013ff'
           typeIcon: outlined
+          iconFill: true
           text: Terra Indígena Jaraguá
     - id: map3_jaraguasp2013
       centerLng: '-46.702'
@@ -457,14 +482,17 @@ mapbox:
         - icon: circle
           colorIcon: '#43ff10ff'
           typeIcon: outlined
+          iconFill: true
           text: Local do ato
         - icon: show_chart
           colorIcon: '#43ff10ff'
           typeIcon: outlined
+          iconFill: true
           text: Trajeto do protesto
         - icon: show_chart
           colorIcon: '#0e9013ff'
           typeIcon: outlined
+          iconFill: true
           text: Terra Indígena Jaraguá
     - id: map3_01-10-2013
       centerLng: '-46.656'
@@ -485,6 +513,7 @@ mapbox:
         - icon: show_chart
           colorIcon: '#43ff10ff'
           typeIcon: outlined
+          iconFill: true
           text: Trajeto do protesto
     - id: map3_16-04-2014
       centerLng: '-46.635'
@@ -504,6 +533,7 @@ mapbox:
         - icon: square
           colorIcon: '#43ff10ff'
           typeIcon: outlined
+          iconFill: true
           text: Local do ato
     - id: map3_24-04-2014
       centerLng: '-46.646'
@@ -525,10 +555,12 @@ mapbox:
         - icon: show_chart
           colorIcon: '#43ff10ff'
           typeIcon: outlined
+          iconFill: true
           text: Trajeto do protesto
         - icon: square
           colorIcon: '#43ff10ff'
           typeIcon: outlined
+          iconFill: true
           text: Local de ato
     - id: map3_06-06-2014
       centerLng: '-46.646'
@@ -551,10 +583,12 @@ mapbox:
         - icon: show_chart
           colorIcon: '#43ff10ff'
           typeIcon: outlined
+          iconFill: true
           text: Trajeto do protesto
         - icon: square
           colorIcon: '#43ff10ff'
           typeIcon: outlined
+          iconFill: true
           text: Local de ato
     - id: map3_06-06-2014_zoom
       centerLng: '-46.659'
@@ -574,6 +608,7 @@ mapbox:
         - icon: square
           colorIcon: '#43ff10ff'
           typeIcon: outlined
+          iconFill: true
           text: Local do ato
     - id: map3_centrozoom
       centerLng: '-46.646'
@@ -587,7 +622,7 @@ mapbox:
         satelite
       title: ''
       notes: ''
-      items: ''
+      items: []
     - id: map3_05-05-2016
       centerLng: '-46.656'
       centerLat: '-23.572'
@@ -607,6 +642,7 @@ mapbox:
         - icon: show_chart
           colorIcon: '#43ff10ff'
           typeIcon: outlined
+          iconFill: true
           text: Trajeto do protesto de 01-10-2013   
     - id: map4_jaragua
       centerLng: '-46.782'
@@ -631,22 +667,27 @@ mapbox:
         - icon: circle
           colorIcon: '#0e9013ff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeias
         - icon: show_chart
           colorIcon: '#0e9013ff'
           typeIcon: outlined
+          iconFill: true
           text: Terra Indígena Jaraguá
         - icon: show_chart
           colorIcon: '#9d1b1bff'
           typeIcon: outlined
+          iconFill: true
           text: Parque Estadual do Jaraguá
         - icon: circle
           colorIcon: '#9d1b1bff'
           typeIcon: outlined
+          iconFill: true
           text: Patrimônio colonial
         - icon: circle
           colorIcon: '#a3f339ff'
           typeIcon: outlined
+          iconFill: true
           text: Lugares de memória Guarani
     - id: map4_afonsosardinha
       centerLng: '-46.758'
@@ -669,22 +710,27 @@ mapbox:
         - icon: circle
           colorIcon: '#9d1b1bff'
           typeIcon: outlined
+          iconFill: true
           text: Patrimônio colonial
         - icon: show_chart
           colorIcon: '#0e9013ff'
           typeIcon: outlined
+          iconFill: true
           text: Terra Indígena Jaraguá
         - icon: show_chart
           colorIcon: '#9d1b1bff'
           typeIcon: outlined
+          iconFill: true
           text: Parque Estadual do Jaraguá
         - icon: circle
           colorIcon: '#9d1b1bff'
           typeIcon: outlined
+          iconFill: true
           text: Patrimônio colonial
         - icon: circle
           colorIcon: '#a3f339ff'
           typeIcon: outlined
+          iconFill: true
           text: Lugares de memória Guarani
     - id: map4_jaraguaestacao
       centerLng: '-46.760'
@@ -709,22 +755,27 @@ mapbox:
         - icon: circle
           colorIcon: '#0e9013ff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeias
         - icon: show_chart
           colorIcon: '#0e9013ff'
           typeIcon: outlined
+          iconFill: true
           text: Terra Indígena Jaraguá
         - icon: show_chart
           colorIcon: '#9d1b1bff'
           typeIcon: outlined
+          iconFill: true
           text: Parque Estadual do Jaraguá
         - icon: circle
           colorIcon: '#9d1b1bff'
           typeIcon: outlined
+          iconFill: true
           text: Patrimônio colonial
         - icon: circle
           colorIcon: '#a3f339ff'
           typeIcon: outlined
+          iconFill: true
           text: Lugares de memória Guarani
     - id: map5_jaragua
       centerLng: '-46.766'
@@ -749,22 +800,27 @@ mapbox:
         - icon: circle
           colorIcon: '#0e9013ff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeias
         - icon: show_chart
           colorIcon: '#0e9013ff'
           typeIcon: outlined
+          iconFill: true
           text: Terra Indígena Jaraguá
         - icon: show_chart
           colorIcon: '#9d1b1bff'
           typeIcon: outlined
+          iconFill: true
           text: Parque Estadual do Jaraguá
         - icon: circle
           colorIcon: '#9d1b1bff'
           typeIcon: outlined
+          iconFill: true
           text: Patrimônio colonial
         - icon: circle
           colorIcon: '#a3f339ff'
           typeIcon: outlined
+          iconFill: true
           text: Lugares de memória Guarani
     - id: map5_cacicajandira
       centerLng: '-46.753'
@@ -787,22 +843,27 @@ mapbox:
         - icon: circle
           colorIcon: '#0e9013ff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeias
         - icon: show_chart
           colorIcon: '#0e9013ff'
           typeIcon: outlined
+          iconFill: true
           text: Terra Indígena Jaraguá
         - icon: show_chart
           colorIcon: '#9d1b1bff'
           typeIcon: outlined
+          iconFill: true
           text: Parque Estadual do Jaraguá
         - icon: circle
           colorIcon: '#a3f339ff'
           typeIcon: outlined
+          iconFill: true
           text: Lugares de memória Guarani
         - icon: circle
           colorIcon: '#a3f339ff'
           typeIcon: outlined
+          iconFill: true
           text: Lugares de memória Guarani
 components:
   - type: Group

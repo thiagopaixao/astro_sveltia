@@ -67,6 +67,7 @@ mapbox:
         - icon: show_chart
           colorIcon: '#ffffffff'
           typeIcon: outlined
+          iconFill: true
           text: Cidade do Rio de Janeiro
     - id: map1_view3
       centerLng: '-43.4096'
@@ -85,10 +86,12 @@ mapbox:
         - icon: circle
           colorIcon: '#fc0303ff'
           typeIcon: outlined
+          iconFill: true
           text: 1 operação
         - icon: circle
           colorIcon: '#fc0303ff'
           typeIcon: outlined
+          iconFill: true
           text: 8 operações
     - id: map1_view4
       centerLng: '-43.281'
@@ -108,6 +111,7 @@ mapbox:
         - icon: show_chart
           colorIcon: '#ffffffff'
           typeIcon: outlined
+          iconFill: true
           text: Comunidades da Maré
     - id: map1_view5
       centerLng: '-43.281'
@@ -126,14 +130,17 @@ mapbox:
         - icon: show_chart
           colorIcon: '#ff0000ff'
           typeIcon: outlined
+          iconFill: true
           text: Rodovia Linha Vermelha
         - icon: show_chart
           colorIcon: '#fbff00ff'
           typeIcon: outlined
+          iconFill: true
           text: Rodovia Linha Amarela
         - icon: show_chart
           colorIcon: '#00ff2aff'
           typeIcon: outlined
+          iconFill: true
           text: Avenida Brasil
     - id: map1_view6
       centerLng: '-43.241'
@@ -152,14 +159,17 @@ mapbox:
         - icon: circle
           colorIcon: '#def278ff'
           typeIcon: outlined
+          iconFill: true
           text: Culturais e educacionais
         - icon: circle
           colorIcon: '#3f75fdff'
           typeIcon: outlined
+          iconFill: true
           text: Saúde
         - icon: circle
           colorIcon: '#33a02cff'
           typeIcon: outlined
+          iconFill: true
           text: Religiosos e lazer
     - id: map2_view1
       centerLng: '-43.241'
@@ -179,6 +189,7 @@ mapbox:
         - icon: show_chart
           colorIcon: '#fd1c1cff'
           typeIcon: outlined
+          iconFill: true
           text: Conjunto Salsa e Merengue
     - id: map2_view2
       centerLng: '-43.2345'
@@ -198,10 +209,12 @@ mapbox:
         - icon: circle
           colorIcon: '#f83f3fff'
           typeIcon: outlined
+          iconFill: true
           text: Localização aprox. das fotos
         - icon: circle
           colorIcon: '#def278ff'
           typeIcon: outlined
+          iconFill: true
           text: Escolas do Amanhã
     - id: map3_view1
       centerLng: '-43.235259'
@@ -220,6 +233,7 @@ mapbox:
         - icon: circle
           colorIcon: '#f90b0bff'
           typeIcon: outlined
+          iconFill: true
           text: Local aprox. do registro dos disparos
     - id: map4_view1
       centerLng: '-43.234919'
@@ -238,6 +252,7 @@ mapbox:
         - icon: circle
           colorIcon: '#f83f3fff'
           typeIcon: outlined
+          iconFill: true
           text: Local de execuções
     - id: map5_view1
       centerLng: '-43.235'
@@ -256,6 +271,7 @@ mapbox:
         - icon: circle
           colorIcon: '#f83f3fff'
           typeIcon: outlined
+          iconFill: true
           text: Execução de Marcus Vinícius
     - id: map5_view2
       centerLng: '-43.239738'
@@ -274,6 +290,7 @@ mapbox:
         - icon: circle
           colorIcon: '#def278ff'
           typeIcon: outlined
+          iconFill: true
           text: Projeto Uerê
     - id: map6_view1
       centerLng: '-43.25'
@@ -292,18 +309,22 @@ mapbox:
         - icon: square
           colorIcon: '#ffffd4ff'
           typeIcon: outlined
+          iconFill: true
           text: 1-10 operações
         - icon: square
           colorIcon: '#fed98eff'
           typeIcon: outlined
+          iconFill: true
           text: 11-20
         - icon: square
           colorIcon: '#fe9929ff'
           typeIcon: outlined
+          iconFill: true
           text: 21-30
         - icon: square
           colorIcon: '#cc4c02ff'
           typeIcon: outlined
+          iconFill: true
           text: 30 ou mais
     - id: map6_view2
       centerLng: '-43.50'
@@ -323,18 +344,22 @@ mapbox:
         - icon: square
           colorIcon: '#ffffd4ff'
           typeIcon: outlined
+          iconFill: true
           text: 1-10 operações
         - icon: square
           colorIcon: '#fed98eff'
           typeIcon: outlined
+          iconFill: true
           text: 11-20
         - icon: square
           colorIcon: '#fe9929ff'
           typeIcon: outlined
+          iconFill: true
           text: 21-30
         - icon: square
           colorIcon: '#cc4c02ff'
           typeIcon: outlined
+          iconFill: true
           text: 30 ou mais
     - id: map7_view1
       centerLng: '-43.445'
@@ -368,18 +393,22 @@ mapbox:
         - icon: square
           colorIcon: '#3967dbff'
           typeIcon: outlined
+          iconFill: true
           text: Milícia
         - icon: square
           colorIcon: '#f83535ff'
           typeIcon: outlined
+          iconFill: true
           text: Comando Vermelho
         - icon: square
           colorIcon: '#33c00cff'
           typeIcon: outlined
+          iconFill: true
           text: TCP
         - icon: square
           colorIcon: '#f8db72ff'
           typeIcon: outlined
+          iconFill: true
           text: ADA
     - id: map7_view3
       centerLng: '-43.445'
@@ -414,30 +443,37 @@ mapbox:
         - icon: circle
           colorIcon: '#f6f4f4ff'
           typeIcon: outlined
+          iconFill: true
           text: 1-9 casos
         - icon: circle
           colorIcon: '#f6f4f4ff'
           typeIcon: outlined
+          iconFill: true
           text: 10-19 casos
         - icon: circle
           colorIcon: '#f6f4f4ff'
           typeIcon: outlined
+          iconFill: true
           text: 20-42 casos
         - icon: square
           colorIcon: '#3967dbff'
           typeIcon: outlined
+          iconFill: true
           text: Milícias
         - icon: square
           colorIcon: '#f83535ff'
           typeIcon: outlined
+          iconFill: true
           text: Comando Vermelho
         - icon: square
           colorIcon: '#f8db72ff'
           typeIcon: outlined
+          iconFill: true
           text: Amigo dos Amigos
         - icon: square
           colorIcon: '#33c00cff'
           typeIcon: outlined
+          iconFill: true
           text: Terceiro Comando Puro
     - id: map7_view5
       centerLng: '-43.445'
@@ -474,14 +510,17 @@ mapbox:
         - icon: square
           colorIcon: '#3967dbff'
           typeIcon: outlined
+          iconFill: true
           text: Milícia
         - icon: square
           colorIcon: '#f83535ff'
           typeIcon: outlined
+          iconFill: true
           text: Comando Vermelho
         - icon: circle
           colorIcon: '#a09c9cff'
           typeIcon: outlined
+          iconFill: true
           text: 20-42 casos
 components:
   - type: Group

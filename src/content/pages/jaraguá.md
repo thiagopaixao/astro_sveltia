@@ -55,10 +55,12 @@ mapbox:
         - icon: circle
           colorIcon: '#f64141ff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeias
         - icon: square
           colorIcon: '#597d5dff'
           typeIcon: outlined
+          iconFill: true
           text: Terra indígena demarcada
     - id: resistencia_2013_1
       centerLng: '-46.765'
@@ -78,14 +80,17 @@ mapbox:
         - icon: circle
           colorIcon: '#f64141ff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeias
         - icon: square
           colorIcon: '#597d5dff'
           typeIcon: outlined
+          iconFill: true
           text: Terra indígena demarcada
         - icon: circle
           colorIcon: '#24e037ff'
           typeIcon: outlined
+          iconFill: true
           text: Local do protesto
     - id: resistencia_2013_2
       centerLng: '-46.753'
@@ -106,6 +111,7 @@ mapbox:
         - icon: circle
           colorIcon: '#24e037ff'
           typeIcon: outlined
+          iconFill: true
           text: Altura do km 21 da Rodovia dos Bandeirantes
     - id: resistencia_2013_3
       centerLng: '-46.710'
@@ -129,10 +135,12 @@ mapbox:
         - icon: circle
           colorIcon: '#f64141ff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeias
         - icon: square
           colorIcon: '#597d5dff'
           typeIcon: outlined
+          iconFill: true
           text: Terra indígena demarcada
     - id: resistencia_2013_4
       centerLng: '-46.656'
@@ -151,6 +159,7 @@ mapbox:
         - icon: show_chart
           colorIcon: '#24e037ff'
           typeIcon: outlined
+          iconFill: true
           text: Trajeto percorrido
     - id: resistencia_2013_5
       centerLng: '-46.661'
@@ -170,10 +179,12 @@ mapbox:
         - icon: show_chart
           colorIcon: '#24e037ff'
           typeIcon: outlined
+          iconFill: true
           text: Trajeto percorrido
         - icon: circle
           colorIcon: '#24e037ff'
           typeIcon: outlined
+          iconFill: true
           text: Monumento às Bandeiras
     - id: resistencia_2013_6
       centerLng: '-46.710'
@@ -192,10 +203,12 @@ mapbox:
         - icon: circle
           colorIcon: '#f64141ff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeias
         - icon: square
           colorIcon: '#597d5dff'
           typeIcon: outlined
+          iconFill: true
           text: Terra indígena demarcada
     - id: resistencia_2014_1
       centerLng: '-46.636'
@@ -215,14 +228,17 @@ mapbox:
         - icon: circle
           colorIcon: '#f64141ff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeias
         - icon: square
           colorIcon: '#597d5dff'
           typeIcon: outlined
+          iconFill: true
           text: Terra indígena demarcada
         - icon: square
           colorIcon: '#24e037ff'
           typeIcon: outlined
+          iconFill: true
           text: Local do protesto
     - id: resistencia_2014_2
       centerLng: '-46.635'
@@ -241,6 +257,7 @@ mapbox:
         - icon: square
           colorIcon: '#24e037ff'
           typeIcon: outlined
+          iconFill: true
           text: Local do protesto
     - id: resistencia_2014_3
       centerLng: '-46.644'
@@ -259,6 +276,7 @@ mapbox:
         - icon: show_chart
           colorIcon: '#24e037ff'
           typeIcon: outlined
+          iconFill: true
           text: Trajeto percorrido
     - id: resistencia_2014_4
       centerLng: '-46.647'
@@ -278,6 +296,7 @@ mapbox:
         - icon: square
           colorIcon: '#24e037ff'
           typeIcon: outlined
+          iconFill: true
           text: Local do protesto
     - id: resistencia_2014_5
       centerLng: '-46.659'
@@ -296,6 +315,7 @@ mapbox:
         - icon: square
           colorIcon: '#24e037ff'
           typeIcon: outlined
+          iconFill: true
           text: Local do protesto
     - id: resistencia_2014_6
       centerLng: '-46.658'
@@ -314,6 +334,7 @@ mapbox:
         - icon: square
           colorIcon: '#24e037ff'
           typeIcon: outlined
+          iconFill: true
           text: Prédio do Tribunal Regional Federal em São Paulo
     - id: resistencia_2014_7
       centerLng: '-46.647'
@@ -333,6 +354,7 @@ mapbox:
         - icon: square
           colorIcon: '#24e037ff'
           typeIcon: outlined
+          iconFill: true
           text: Local do protesto
     - id: resistencia_2014_8
       centerLng: '-46.710'
@@ -353,10 +375,12 @@ mapbox:
         - icon: circle
           colorIcon: '#f64141ff'
           typeIcon: outlined
+          iconFill: true
           text: Aldeias
         - icon: square
           colorIcon: '#597d5dff'
           typeIcon: outlined
+          iconFill: true
           text: Terra indígena demarcada
 components:
   - type: Group

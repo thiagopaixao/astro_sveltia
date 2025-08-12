@@ -54,10 +54,12 @@ mapbox:
         - icon: show_chart
           colorIcon: '#bffa80ff'
           typeIcon: outlined
+          iconFill: true
           text: Legend_Text_1
         - icon: square
           colorIcon: '#e31c1cff'
           typeIcon: outlined
+          iconFill: true
           text: Legend_Text_2
     - id: map1_view2
       centerLng: '-58.569363795000015'

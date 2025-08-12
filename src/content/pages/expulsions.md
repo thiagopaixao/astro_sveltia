@@ -54,10 +54,12 @@ mapbox:
           colorIcon: '#bffa80ff'
           typeIcon: outlined
           iconFill: true
+          iconFill: true
           text: Amazon limits
         - icon: square
           colorIcon: '#e31c1cff'
           typeIcon: outlined
+          iconFill: true
           iconFill: true
           text: Mining concessions
       captions:
@@ -67,10 +69,12 @@ mapbox:
           - icon: show_chart
             colorIcon: '#bffa80ff'
             typeIcon: outlined
+          iconFill: true
             text: Amazon limits
           - icon: square
             colorIcon: '#e21212ff'
             typeIcon: outlined
+          iconFill: true
             text: Mining concessions
     - id: map1_view2
       centerLng: '-58.569363795000015'
@@ -94,14 +98,17 @@ mapbox:
           - icon: square
             colorIcon: '#e21212ff'
             typeIcon: outlined
+          iconFill: true
             text: Mining concessions
           - icon: circle
             colorIcon: '#797429ff'
             typeIcon: outlined
+          iconFill: true
             text: Indigenous Territory
           - icon: circle
             colorIcon: '#b2b520ff'
             typeIcon: outlined
+          iconFill: true
             text: Ecological reserves
     - id: map1_view3
       centerLng: '-77.921'
@@ -126,14 +133,17 @@ mapbox:
           - icon: square
             colorIcon: '#e21212ff'
             typeIcon: outlined
+          iconFill: true
             text: Mining Concessions
           - icon: circle
             colorIcon: '#797429ff'
             typeIcon: outlined
+          iconFill: true
             text: Indigenous Territory
           - icon: circle
             colorIcon: '#b2b520ff'
             typeIcon: outlined
+          iconFill: true
             text: Ecological Reserves
     - id: map1_view4
       centerLng: '-78.195'
@@ -169,6 +179,7 @@ mapbox:
         - icon: circle
           colorIcon: '#dbce48ff'
           typeIcon: outlined
+          iconFill: true
           text: comunity centers
       captions:
         title: ''
@@ -177,6 +188,7 @@ mapbox:
           - icon: circle
             colorIcon: '#dbce48ff'
             typeIcon: outlined
+          iconFill: true
             text: comunity centers
     - id: map2_view2
       centerLng: '-78.465'
@@ -196,6 +208,7 @@ mapbox:
         - icon: close
           colorIcon: '#d11515ff'
           typeIcon: outlined
+          iconFill: true
           text: evicted families
       captions:
         title: ''
@@ -204,6 +217,7 @@ mapbox:
           - icon: close
             colorIcon: '#d81313ff'
             typeIcon: outlined
+          iconFill: true
             text: evicted families
     - id: map2_view3
       centerLng: '-78.465'
@@ -223,6 +237,7 @@ mapbox:
         - icon: close
           colorIcon: '#d11515ff'
           typeIcon: outlined
+          iconFill: true
           text: forced evictions
       captions:
         title: ''
@@ -231,6 +246,7 @@ mapbox:
           - icon: close
             colorIcon: '#dc1e1eff'
             typeIcon: outlined
+          iconFill: true
             text: forced evictions
     - id: map2_view4
       centerLng: '-78.470'
@@ -318,6 +334,7 @@ mapbox:
         - icon: circle
           colorIcon: '#d37c17ff'
           typeIcon: outlined
+          iconFill: true
           text: archaeologic sites
       captions: null
     - id: map4_view2
