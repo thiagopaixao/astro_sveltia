@@ -3864,63 +3864,110 @@ components:
         columnsAlign: 66-33
         column1:
           components:
+            - type: InnerColumns
+              column1:
+                components:
+                 - type: Text
+                hasDropCap: false
+                content: |-
+                  O mapa foi produzido pelo projeto **_Arquiteturas da Reparação: São Paulo Terra Indígena_**. Desenvolvido em parceria com lideranças e ativistas da T.I. Jaraguá, o projeto questiona visões tradicionais de cidade, território, memória, e patrimônio, buscando pensar como seres e elementos do mundo “mais-que-humano”,
+              column2:
+                components:
+                - type: Text
+                hasDropCap: false
+                content: |-
+                  como as águas e as matas, podem ser incluídos como sujeitos patrimoniais dentro de um amplo processo de reparação histórica e socioambiental aos povos originários. O projeto foi realizado através de uma colaboração entre a T.I. Jaraguá, a agência autônoma, e o Chão Coletivo, por meio da plataforma Práticas Espaciais da Escola da Cidade. 
+            - type: Spacer
+              desktop: 50px
+              tablet: 50px
+              mobile: 50px
             - type: Text
               hasDropCap: false
               content: |-
-                O mapa foi produzido pelo projeto**&#32;**_Arquiteturas da Reparação: São Paulo Terra Indígena_. Desenvolvido em parceria com lideranças e ativistas da T.I. Jaraguá, o projeto questiona visões tradicionais de cidade, território, memória, e patrimônio, buscando pensar como seres e elementos do mundo “mais-que-humano”, como as águas e as matas, podem ser incluídos como sujeitos patrimoniais dentro de um amplo processo de reparação histórica e socioambiental aos povos originários. O projeto foi realizado através de uma colaboração entre a T.I. Jaraguá, a agência autônoma, e o Chão Coletivo, por meio da plataforma Práticas Espaciais da Escola da Cidade. 
-
                 **T.I. Jaraguá**
-
-                pesquisadores: Antony Karaí Poty, Thiago Henrique Karai Djekupe, Felipe Silva, e Richard Wera Mirim
-
-                consultores e entrevistas: Jurandir Tupã Jekupe Mirim, Márcio Werã Mirim, Irene Mendonça (Jaxuka Mirim), Daniel Werã Mirim, Cacica Ara Poty (Maria), Natalício Karaí, Tamikuã Txihi…, Coletivo Arandu Mirim (Antony Karaí Poty, Ciara Martins, Samara Para Martins) 
-
-                participantes das oficinas: Antony Karaí Poty, Valdemir, Samara Para, Ciara Martins, Lenilson, Thiago Karaí Poty, Valdir, Felipe Silva, Osmar, Maria Ara Poty,  brigadistas Lucas, Paulino, Adriano, Vander, Danilo e Luciano, Natalício Karaí, Antônia, Lucas, Pedrinho, Txai Suruí, Miguel, Antônio, jovens e crianças. 
-
-                **agência autônonoma**
-
-                Paulo Tavares, Paula Marujo, Laura Pappalardo, Amanda Klajner e Julia Veras 
-
-                **Chão Coletivo**
-
-                Beatrice Perracini Padovan, Giulio Michelino, Glória Kok, Isabela de Castilho Moraes e Laura Pappalardo
-
-                **Plataforma Práticas Espaciais**
-
-                Carol Tonetti e Gilberto Mariotti
-
-                **design gráfico:** 
-
-                Cosmopolíticas Editoriais
-
-                **finalização gráfica dos mapas:** 
-
-                Carolina Passos
-
-                CAU/SP (Programa de Assistência Técnica para Preservação do Patrimônio Cultural 2024, Termo de Fomento 016/2024, Ref. Projeto 406165)
-
-                **APOIO** 
-
-                Design Museum, Future Observatory More-than-Human Fellowship
-        column2:
-          components:
+            - type: Spacer
+              desktop: 50px
+              tablet: 50px
+              mobile: 50px
             - type: InnerColumns
               column1:
-                components: []
+                components:
+                 - type: Text
+                hasDropCap: false
+                content: |-
+                  pesquisadores: Antony Karaí Poty, Thiago Henrique Karai Djekupe, Felipe Silva, e Richard Wera Mirim
+
+                  consultores e entrevistas: Jurandir Tupã Jekupe Mirim, Márcio Werã Mirim, Irene Mendonça (Jaxuka Mirim), Daniel Werã Mirim, Cacica Ara Poty (Maria), Natalício Karaí, Tamikuã Txihi…, Coletivo Arandu Mirim (Antony Karaí Poty, Ciara Martins, Samara Para Martins) 
+
+                  participantes das oficinas: Antony Karaí Poty, Valdemir, Samara Para, Ciara Martins, Lenilson, Thiago Karaí Poty, Valdir, Felipe Silva, Osmar, Maria Ara Poty,  brigadistas Lucas, Paulino, Adriano, Vander, Danilo e Luciano, Natalício Karaí, Antônia, Lucas, Pedrinho, Txai Suruí, Miguel, Antônio, jovens e crianças. 
               column2:
-                components: []
-            - type: Cards
-              cardsArr:
-                - Card:
-                    type: Card
-                    title: CARD 01
-                    text: this is the card
-                    link:
-                      url: www.paulotavares.net
-                      target: ''
-                      customTarget: ''
-                      text: link
-                    icon: ''
+                components:
+                - type: Text
+                hasDropCap: false
+                content: |-
+                 **agência autônonoma**
+
+                  Paulo Tavares, Paula Marujo, Laura Pappalardo, Amanda Klajner e Julia Veras 
+
+                  **Chão Coletivo**
+
+                  Beatrice Perracini Padovan, Giulio Michelino, Glória Kok, Isabela de Castilho Moraes e Laura Pappalardo
+
+                  **Plataforma Práticas Espaciais**
+
+                  Carol Tonetti e Gilberto Mariotti
+
+                  **design gráfico:** 
+
+                  Cosmopolíticas Editoriais
+
+                  **finalização gráfica dos mapas:** 
+
+                  Carolina Passos
+
+                  CAU/SP (Programa de Assistência Técnica para Preservação do Patrimônio Cultural 2024, Termo de Fomento 016/2024, Ref. Projeto 406165)
+
+                  **APOIO** 
+
+                  Design Museum, Future Observatory More-than-Human Fellowship
+        column2:
+          components:
+            - type: LogosGroup
+              logos:
+                - image: /uploads/logo_autonoma_advocacia_BLACK.png
+                  link:
+                    url: https://www.advocacia.autonoma.xyz/
+                    target: _blank
+                    customTarget: ''
+                    title: ''
+                - image: /uploads/chao_coletivo_4.png
+                  link:
+                    url: https://www.instagram.com/ochaocoletivo/
+                    target: _blank
+                    customTarget: ''
+                    title: ''
+            - type: LogosGroup
+              logos:
+                - image: /uploads/logo_plataforma_4.png
+                  link:
+                    url: ''
+                    target: _blank
+                    customTarget: ''
+                    title: ''
+                - image: /uploads/logo_ec.png
+                  link:
+                    url: https://escoladacidade.edu.br/
+                    target: _blank
+                    customTarget: ''
+                    title: ''
+            - type: LogosGroup
+              logos:
+                - image: /uploads/CAU-SP-logo-quadrada-preto.png
+                  link:
+                    url: ''
+                    target: _blank
+                    customTarget: ''
+                    title: ''
   - type: Group
     id: downloads
     shortTitle: downloads
@@ -3963,20 +4010,31 @@ components:
           components:
             - type: InnerColumns
               column1:
-                components: []
+                components:
+                - type: Cards
+                  cardsArr:
+                    - Card:
+                        type: Card
+                        title: Folder Mapa
+                        text: Download do Folder Mapa 
+                        link:
+                          url: https://www.advocacia.autonoma.xyz/
+                          target: ''
+                          customTarget: ''
+                          text: link
+                        icon: ''
               column2:
-                components: []
-            - type: Cards
-              cardsArr:
-                - Card:
-                    type: Card
-                    title: CARD 01
-                    text: this is the card
-                    link:
-                      url: www.paulotavares.net
-                      target: ''
-                      customTarget: ''
-                      text: link
-                    icon: ''
----
+                components:
+                  - type: Cards
+                    cardsArr:
+                      - Card:
+                          type: Card
+                          title: Repositório QGIS
+                          text: Download do repositório do QGIS com todas as camadas shapefile (.shp)
+                          link:
+                            url: https://www.advocacia.autonoma.xyz/
+                            target: ''
+                            customTarget: ''
+                            text: link
+                          icon: ''
 
