@@ -3869,9 +3869,9 @@ components:
               content: |-
                 O mapa foi produzido pelo projeto _Arquiteturas da Reparação: São Paulo Terra Indígena_. Desenvolvido em parceria com lideranças e ativistas da T.I. Jaraguá, o projeto questiona visões tradicionais de cidade, território, memória, e patrimônio, buscando pensar como seres e elementos do mundo “mais-que-humano”, como as águas e as matas, podem ser incluídos como sujeitos patrimoniais dentro de um amplo processo de reparação histórica e socioambiental aos povos originários. O projeto foi realizado através de uma colaboração entre a T.I. Jaraguá, a agência autônoma, e o Chão Coletivo, por meio da plataforma Práticas Espaciais da Escola da Cidade. 
             - type: Spacer
-              desktop: 50px
-              tablet: 50px
-              mobile: 50px
+              desktop: 80px
+              tablet: 80px
+              mobile: 80px
             - type: InnerColumns
               column1:
                 components:
@@ -3918,9 +3918,9 @@ components:
         column2:
           components:
             - Spacer:
-              desktop: 200px
-              tablet: 200px
-              mobile: 200px
+              desktop: 400px
+              tablet: 400px
+              mobile: 400px
             - type: InnerColumns
               column1:
                 components:
