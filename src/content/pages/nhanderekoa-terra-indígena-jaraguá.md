@@ -3872,20 +3872,14 @@ components:
               desktop: 50px
               tablet: 50px
               mobile: 50px
-            - type: Text
-              hasDropCap: false
-              content: |-
-                ##### **T.I. Jaraguá**
-            - type: Spacer
-              desktop: 30px
-              tablet: 30px
-              mobile: 30px
             - type: InnerColumns
               column1:
                 components:
                 - type: Text
                   hasDropCap: false
                   content: |-
+                    **T.I. Jaraguá**
+
                     pesquisadores: Antony Karaí Poty, Thiago Henrique Karai Djekupe, Felipe Silva, e Richard Wera Mirim
 
                     consultores e entrevistas: Jurandir Tupã Jekupe Mirim, Márcio Werã Mirim, Irene Mendonça (Jaxuka Mirim), Daniel Werã Mirim, Cacica Ara Poty (Maria), Natalício Karaí, Tamikuã Txihi…, Coletivo Arandu Mirim (Antony Karaí Poty, Ciara Martins, Samara Para Martins) 
