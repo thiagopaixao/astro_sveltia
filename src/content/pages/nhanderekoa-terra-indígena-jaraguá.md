@@ -377,13 +377,14 @@ mapbox:
         - icon: circle
           colorIcon: '#ff2e2eff'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Casa-Grande Senzala de Afonso Sardinha
         - icon: circle
           colorIcon: '#ff2e2eff'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Remanescentes de estruturas da mineração do período colonial
+
     - id: map3_jaragua
       centerLng: '-46.782'
       centerLat: '-23.461'
@@ -429,10 +430,10 @@ mapbox:
           iconFill: true
           text: Terra Indígena Jaraguá
     - id: map3_26-09-2013
-      centerLng: '-46.766'
-      centerLat: '-23.461'
-      zoom: '13.26'
-      mobileZoom: '13.26'
+      centerLng: '-46.750'
+      centerLat: '-23.466'
+      zoom: '13.96'
+      mobileZoom: '13.96'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -573,9 +574,10 @@ mapbox:
       layers: |-
         ato-06-06-2014-label
         ato-06-06-2014
-        resistencia-linhas[fid==1]
-        resistencia-linhas-label[fid==1]
-        resistencia-poligonos[fid==1]
+        resistencia-linhas[fid==2]
+        resistencia-linhas-label[fid==2]
+        resistencia-poligonos[fid==3]
+        resistencia-poligonos-label[fid==3]
         satelite
       title: ''
       notes: ''
@@ -624,26 +626,28 @@ mapbox:
       notes: ''
       items: []
     - id: map3_05-05-2016
-      centerLng: '-46.656'
-      centerLat: '-23.572'
-      zoom: '13.89'
-      mobileZoom: '13.89'
+      centerLng: '-46.658'
+      centerLat: '-23.560'
+      zoom: '15.30'
+      mobileZoom: '15.30'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-linhas[fid==1]
-        resistencia-linhas-label[fid==1]
-        resistencia-poligonos[fid==1]
+        resistencia-pontos[fid==2]
+        resistencia-pontos-label[fid==2]
         satelite
       title: ''
       notes: ''
       items:
-        - icon: show_chart
+        - icon: circle
           colorIcon: '#43ff10ff'
           typeIcon: outlined
           iconFill: true
-          text: Trajeto do protesto de 01-10-2013   
+          text: Local do ato 
+          
+          
+          
     - id: map4_jaragua
       centerLng: '-46.782'
       centerLat: '-23.461'
@@ -2478,7 +2482,7 @@ components:
         desktop: 800px
         tablet: 800px
         mobile: 800px
-    columnAlign: left
+    columnAlign: center
     floatingText: true
   - type: Map
     id: mapa_3_lutas
@@ -2551,14 +2555,6 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_jaraguasp 
-      - type: Spacer   
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px 
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
         mapView: map3_16-04-2014  
       - type: Timeline
         txtColor: ''
@@ -2624,11 +2620,11 @@ components:
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px   
+        mobile: 600px  
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_centrozoom  
+        mapView: map3_06-06-2014_zoom  
       - type: Spacer   
         desktop: 600px
         tablet: 600px
