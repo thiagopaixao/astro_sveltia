@@ -3867,9 +3867,9 @@ components:
         column2:
           components:
             - type: Spacer
-              desktop: 150px
-              tablet: 150px
-              mobile: 150px
+              desktop: 200px
+              tablet: 200px
+              mobile: 200px
             - type: InnerColumns
               column1:
                 components:
