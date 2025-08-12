@@ -2691,7 +2691,7 @@ components:
         column2:
           components: []
         mapView: resistencia_intro
-    columnAlign: left
+    columnAlign: right
     floatingText: false
   - type: Group
     id: parte_6_texto_2
@@ -3116,7 +3116,7 @@ components:
         desktop: 600px
         tablet: 600px
         mobile: 600px
-    columnAlign: left
+    columnAlign: right
     floatingText: false
   - type: Map
     id: mapa_3_lutas_4
@@ -3971,9 +3971,7 @@ components:
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/imagem_32_urbanizacao_jaragua.jpg
+    backgroundMedia: []
     overlay: ''
     components:
       - type: Columns
