@@ -54,7 +54,6 @@ mapbox:
           colorIcon: '#bffa80ff'
           typeIcon: outlined
           iconFill: true
-          iconFill: true
           text: Amazon limits
         - icon: square
           colorIcon: '#e31c1cff'
