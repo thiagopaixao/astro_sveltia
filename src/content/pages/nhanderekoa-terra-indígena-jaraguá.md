@@ -384,9 +384,6 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Remanescentes de estruturas da mineração do período colonial
-
-
-
     - id: map3_jaragua
       centerLng: '-46.766'
       centerLat: '-23.461'
@@ -834,7 +831,163 @@ mapbox:
           colorIcon: '#43ff10ff'
           typeIcon: outlined
           iconFill: true
-          text: Trajeto percorrido      
+          text: Trajeto percorrido
+    - id: map3_23-06-2022
+      centerLng: '-46.655'
+      centerLat: '-23.572'
+      zoom: '14.06'
+      mobileZoom: '14.06'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-linhas-2022[fid==4]
+        resistencia-linhas-2022-label[fid==4]
+        ti-jaragua
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: show_chart
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Trajeto percorrido
+    - id: map3_jaragua2022
+      centerLng: '-46.647'
+      centerLat: '-23.563'
+      zoom: '13.30'
+      mobileZoom: '13.30'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-linhas-2022
+        resistencia-linhas-2022-label
+        ti-jaragua
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: show_chart
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Trajetos percorridos
+    - id: map3_09-08-2022
+      centerLng: '-46.635'
+      centerLat: '-23.548'
+      zoom: '15.71'
+      mobileZoom: '15.71'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-linhas-2022
+        resistencia-linhas-2022-label
+        ti-jaragua
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: show_chart
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Trajeto percorrido
+    - id: map3_30-05-2023
+      centerLng: '-46.765'
+      centerLat: '-23.459'
+      zoom: '13.54'
+      mobileZoom: '13.54'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-        
+        resistencia-pontos-2023[fid==8]
+        resistencia-pontos-2023-label[fid==8]
+        ti-jaragua
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Local do ato
+    - id: map3_04-06-2023
+      centerLng: '-46.765'
+      centerLat: '-23.459'
+      zoom: '13.54'
+      mobileZoom: '13.54'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-        
+        resistencia-pontos-2023
+        resistencia-pontos-2023-label
+        ti-jaragua
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Locais dos atos
+    - id: map3_07-06-2023
+      centerLng: '-46.702'
+      centerLat: '-23.511'
+      zoom: '11.54'
+      mobileZoom: '11.54'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        resistencia-pontos-2023
+        resistencia-pontos-2023-label
+        ti-jaragua
+        satelite
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#43ff10ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Locais dos atos
     - id: map4_jaragua
       centerLng: '-46.782'
       centerLat: '-23.461'
@@ -2965,6 +3118,130 @@ components:
         mobile: 600px
     columnAlign: left
     floatingText: false
+  - type: Map
+    id: mapa_3_lutas_4
+    shortTitle: mapa 3 - lutas
+    longTitle: mapa 3 - lutas
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Highlight
+    customTxtColor: ''
+    bgColor: Primary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map3_23-06-2022
+      - type: Timeline
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: '23 de junho de 2022: ocupação do Monumento às Bandeiras em protesto contra a tramitação da lei do Marco Temporal'
+          - type: Spacer
+            desktop: 80px
+            tablet: 80px
+            mobile: 80px
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2022_23_06_rafael_vilela.jpeg
+            alt: ''
+            description: 'Ocupação no Monumento às Bandeiras contra a tramitação da lei do Marco Temporal. Fonte: Rafael Vilela'
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map3_jaragua2022
+      - type: Spacer   
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map3_09-08-2022
+      - type: Timeline
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: '09 de agosto de 2022: ato organizado pela Comissão Yvyrupa na Faculdade de Direito da USP, no Largo São Francisco, contra o Marco Temporal'
+          - type: Spacer
+            desktop: 80px
+            tablet: 80px
+            mobile: 80px
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2022-09-08_G1.png
+            alt: ''
+            description: 'Ato na Faculdade de Direito da USP. Fonte: Felipe Beltrame/G1'
+      - type: Spacer   
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map3_jaraguasp
+      - type: Spacer 
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map3_30-05-2023
+      - type: Timeline
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: 'Maio-Junho de 2023: em protesto contra a aprovação da PL490/2007 pelos deputados em Brasília, ativistas Guarani novamente bloqueiam a Rodovia dos Bandeirantes. A manifestação é duramente reprimida pela Polícia Militar. Dias depois, em 04 de junho, a comunidade Guarani realiza a “Caminhada pela Vida” na área da T.I. Jaraguá'
+          - type: Spacer
+            desktop: 80px
+            tablet: 80px
+            mobile: 80px
+          - type: ImageBlock
+            wideImage: false
+            src: /uploads/2023_30_05_01_richard_wera.jpg
+            alt: ''
+            description: 'Bloqueio da Rodovia dos Bandeirantes contra a aprovação da PL490/2007. Fonte: Richard Wera Mirim'
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map3_04-06-2023
+      - type: Spacer 
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map3_07-06-2023
+      - type: Timeline
+        txtColor: ''
+        bgColor: ''
+        components:
+          - type: TimelineBullet
+            content: '07 de junho de 2023: desafiando a repressão estatal, no dia 07 de junho ativistas Guarani realizam novo ato contra o Marco Temporal, desta vez na escadaria do Teatro Municipal no centro de São Paulo'
+          - type: Spacer
+            desktop: 80px
+            tablet: 80px
+            mobile: 80px
+          - type: ImageBlock
+            wideImage: false
+            src: 2023_07_06_julia_rez_G1.png
+            alt: ''
+            description: 'Ato contra o Marco Temporal na escadaria do Teatro Municipal. Fonte: Julia Rez'
+      - type: Spacer 
+        desktop: 600px
+        tablet: 600px
+        mobile: 600px
+    columnAlign: right
+    floatingText: false 
   - type: Group
     id: part_6_texto_3
     shortTitle: part 6 - texto 3
