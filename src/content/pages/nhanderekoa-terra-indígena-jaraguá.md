@@ -26,7 +26,7 @@ pageTheme:
       desktop: '12'
 mapbox:
   type: MapBox
-  style: mapbox://styles/studio-autonoma/cmdgctyq702ww01s4dyd42dyc
+  style: mapbox://styles/studio-autonoma/cmeh5enc900ni01s488ll9iq1
   token: pk.eyJ1Ijoic3R1ZGlvLWF1dG9ub21hIiwiYSI6ImNtY3V2d3dtMTA0ZXgycnB4OW01cjlqb2QifQ.3NMaRt1maLlqTv6nlVqVHA
   centerLng: '-46.782'
   centerLat: '-23.461'
@@ -57,22 +57,22 @@ mapbox:
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#0e9013ff'
+          colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
           text: Aldeias
         - icon: show_chart
-          colorIcon: '#0e9013ff'
+          colorIcon: '#1b9613'
           typeIcon: outlined
           iconFill: true
           text: Terra Indígena Jaraguá
         - icon: circle
-          colorIcon: '#a3f339ff'
+          colorIcon: '#fb8f13'
           typeIcon: outlined
           iconFill: true
           text: Pontos de Memória Indígena
         - icon: show_chart
-          colorIcon: '#9d1b1bff'
+          colorIcon: '#9b16d4'
           typeIcon: outlined
           iconFill: true
           text: Limite do Parque Estadual Jaraguá
@@ -95,7 +95,7 @@ mapbox:
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#106013ff'
+          colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
           text: Aldeias
@@ -118,7 +118,7 @@ mapbox:
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#106013ff'
+          colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
           text: Aldeias
@@ -141,7 +141,7 @@ mapbox:
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#106013ff'
+          colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
           text: Aldeias
@@ -164,7 +164,7 @@ mapbox:
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#106013ff'
+          colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
           text: Aldeias
@@ -187,7 +187,7 @@ mapbox:
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#106013ff'
+          colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
           text: Aldeias
@@ -210,7 +210,7 @@ mapbox:
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#106013ff'
+          colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
           text: Aldeias
@@ -233,7 +233,7 @@ mapbox:
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#106013ff'
+          colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
           text: Aldeias
@@ -256,7 +256,7 @@ mapbox:
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#106013ff'
+          colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
           text: Aldeias
@@ -279,7 +279,7 @@ mapbox:
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#106013ff'
+          colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
           text: Aldeias
@@ -293,12 +293,11 @@ mapbox:
       pitch: '0'
       layers: |-
         exploracao-ouro-sp
-        satelite
       title: ''
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#d0353574'
+          colorIcon: '#c15aed'
           typeIcon: outlined
           iconFill: true
           text: Áreas de exploração do ouro em São Paulo
@@ -312,12 +311,11 @@ mapbox:
       pitch: '0'
       layers: |-
         patrimonio-colonial[fid==70]
-        satelite
       title: ''
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#ff2e2eff'
+          colorIcon: '#c15aed'
           typeIcon: outlined
           iconFill: true
           text: Pateo do Collegio
@@ -331,12 +329,11 @@ mapbox:
       pitch: '0'
       layers: |-
         patrimonio-colonial[fid==70]
-        satelite
       title: ''
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#ff2e2eff'
+          colorIcon: '#c15aed'
           typeIcon: outlined
           iconFill: true
           text: Pateo do Collegio
@@ -350,12 +347,11 @@ mapbox:
       pitch: '0'
       layers: |-
         capela-barueri
-        satelite
       title: ''
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#ff2e2eff'
+          colorIcon: '#c15aed'
           typeIcon: outlined
           iconFill: true
           text: Aldeamento de Barueri
@@ -368,25 +364,24 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        casa-afonso-sardinha
+        afonso-sardinha
         patrimonio-colonial
-        satelite
       title: ''
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#ff2e2eff'
+          colorIcon: '#c15aed'
           typeIcon: outlined
           iconFill: false
           text: Casa-Grande Senzala de Afonso Sardinha
         - icon: circle
-          colorIcon: '#ff2e2eff'
+          colorIcon: '#c15aed'
           typeIcon: outlined
           iconFill: true
           text: Remanescentes de estruturas da mineração do período colonial
     - id: map3_jaragua
       centerLng: '-46.766'
-      centerLat: '-23.461'
+      centerLat: '-23.460'
       zoom: '13.26'
       mobileZoom: '13.26'
       duration: '4000'
@@ -395,17 +390,16 @@ mapbox:
       layers: |-
         ti-jaragua
         aldeias-jaragua
-        satelite
       title: ''
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#0e9013ff'
+          colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
           text: Aldeias
         - icon: show_chart
-          colorIcon: '#0e9013ff'
+          colorIcon: '#1b9613'
           typeIcon: outlined
           iconFill: true
           text: Terra Indígena Jaraguá
@@ -419,44 +413,36 @@ mapbox:
       pitch: '0'
       layers: |-
         ti-jaragua
-        satelite
       title: ''
       notes: ''
       items:
         - icon: show_chart
-          colorIcon: '#0e9013ff'
+          colorIcon: '#1b9613'
           typeIcon: outlined
           iconFill: true
           text: Terra Indígena Jaraguá
     - id: map3_26-09-2013
-      centerLng: '-46.750'
-      centerLat: '-23.466'
-      zoom: '13.96'
-      mobileZoom: '13.96'
+      centerLng: '-46.753'
+      centerLat: '-23.460'
+      zoom: '13.26'
+      mobileZoom: '13.26'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-pontos[fid==5]
-        resistencia-pontos-label[fid==5]
+        resistencia-2013-1
+        resistencia-2013-1-label
         ti-jaragua
-        aldeias-jaragua
-        satelite
       title: ''
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#43ff10ff'
+          colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
           text: Local do ato
-        - icon: circle
-          colorIcon: '#0e9013ff'
-          typeIcon: outlined
-          iconFill: true
-          text: Aldeias
         - icon: show_chart
-          colorIcon: '#0e9013ff'
+          colorIcon: '#1b9613'
           typeIcon: outlined
           iconFill: true
           text: Terra Indígena Jaraguá
@@ -469,182 +455,139 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-pontos[fid==5]
-        resistencia-pontos-label[fid==5]
-        resistencia-linhas[fid==1]
-        resistencia-linhas-label[fid==1]
-        resistencia-poligonos[fid==1]
+        resistencia-2013-2-l
+        resistencia-2013-2-p
+        resistencia-2013-2-label
+        resistencia-2013-1
+        resistencia-2013-1-label
         ti-jaragua
-        satelite
       title: ''
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#43ff10ff'
+          colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
           text: Local do ato
         - icon: show_chart
-          colorIcon: '#43ff10ff'
+          colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
           text: Trajeto do protesto
         - icon: show_chart
-          colorIcon: '#0e9013ff'
+          colorIcon: '#1b9613'
           typeIcon: outlined
           iconFill: true
           text: Terra Indígena Jaraguá
     - id: map3_01-10-2013
-      centerLng: '-46.656'
-      centerLat: '-23.572'
-      zoom: '13.89'
-      mobileZoom: '13.89'
+      centerLng: '-46.657'
+      centerLat: '-23.570'
+      zoom: '13.42'
+      mobileZoom: '13.42'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-linhas[fid==1]
-        resistencia-linhas-label[fid==1]
-        resistencia-poligonos[fid==1]
-        satelite
+        resistencia-2013-2-l
+        resistencia-2013-2-p
+        resistencia-2013-2-label
       title: ''
       notes: ''
       items:
         - icon: show_chart
-          colorIcon: '#43ff10ff'
+          colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
           text: Trajeto do protesto
     - id: map3_16-04-2014
-      centerLng: '-46.635'
-      centerLat: '-23.548'
-      zoom: '16.26'
-      mobileZoom: '16.26'
+      centerLng: '-46.646'
+      centerLat: '-23.565'
+      zoom: '13.27'
+      mobileZoom: '13.27'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-poligonos[fid==3]
-        resistencia-poligonos-label[fid==3]
-        satelite
+        resistencia-2014-1-label
+        resistencia-2014-1
       title: ''
       notes: ''
       items:
         - icon: square
-          colorIcon: '#43ff10ff'
+          colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
           text: Local do ato
     - id: map3_24-04-2014
       centerLng: '-46.646'
-      centerLat: '-23.555'
-      zoom: '14.14'
-      mobileZoom: '14.14'
+      centerLat: '-23.565'
+      zoom: '13.27'
+      mobileZoom: '13.27'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-linhas[fid==2]
-        resistencia-linhas-label[fid==2]
-        resistencia-poligonos[fid==3]
-        resistencia-poligonos-label[fid==3]
-        satelite
+        resistencia-2014-2-label
+        resistencia-2014-2
+        resistencia-2014-1-label
+        resistencia-2014-1
       title: ''
       notes: ''
       items:
         - icon: show_chart
-          colorIcon: '#43ff10ff'
+          colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
           text: Trajeto do protesto
         - icon: square
-          colorIcon: '#43ff10ff'
+          colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
-          text: Local de ato
+          text: Local do ato
     - id: map3_06-06-2014
       centerLng: '-46.646'
       centerLat: '-23.565'
-      zoom: '13.40'
-      mobileZoom: '13.40'
+      zoom: '13.27'
+      mobileZoom: '13.27'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-linhas[fid==2]
-        resistencia-linhas-label[fid==2]
-        resistencia-poligonos[fid==3]
-        resistencia-poligonos-label[fid==3]
-        satelite
+        resistencia-2014-3-label
+        resistencia-2014-3
+        resistencia-2014-2-label
+        resistencia-2014-2
+        resistencia-2014-1-label
+        resistencia-2014-1
       title: ''
       notes: ''
       items:
         - icon: show_chart
-          colorIcon: '#43ff10ff'
+          colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
           text: Trajeto do protesto
         - icon: square
-          colorIcon: '#43ff10ff'
+          colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
-          text: Local de ato
-    - id: map3_centrozoom
-      centerLng: '-46.646'
-      centerLat: '-23.565'
-      zoom: '13.40'
-      mobileZoom: '13.40'
-      duration: '4000'
-      bearing: '0'
-      pitch: '0'
-      layers: |-
-        satelite
-      title: ''
-      notes: ''
-      items: []
+          text: Local do ato
     - id: map3_05-05-2016
       centerLng: '-46.658'
       centerLat: '-23.560'
-      zoom: '15.30'
-      mobileZoom: '15.30'
+      zoom: '15.23'
+      mobileZoom: '15.23'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-pontos[fid==2]
-        resistencia-pontos-label[fid==2]
-        satelite
+        resistencia-2016-1
+        resistencia-2016-1-label
       title: ''
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#43ff10ff'
-          typeIcon: outlined
-          iconFill: true
-          text: Local do ato 
-    - id: map3_30-08-2017
-      centerLng: '-46.658'
-      centerLat: '-23.560'
-      zoom: '15.30'
-      mobileZoom: '15.30'
-      duration: '4000'
-      bearing: '0'
-      pitch: '0'
-      layers: |-
-        resistencia-pontos[fid==2]
-        resistencia-pontos-label[fid==2]
-        ti-jaragua
-        satelite
-      title: ''
-      notes: ''
-      items:
-        - icon: show_chart
-          colorIcon: '#0e9013ff'
-          typeIcon: outlined
-          iconFill: true
-          text: Terra Indígena Jaraguá
-        - icon: circle
-          colorIcon: '#43ff10ff'
+          colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
           text: Local do ato 
@@ -657,10 +600,11 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-pontos-2017
-        resistencia-pontos-2017-label
+        resistencia-2017-1
+        resistencia-2017-1-label
+        resistencia-2017-2
+        resistencia-2017-2-label
         ti-jaragua
-        satelite
       title: ''
       notes: ''
       items:
@@ -670,49 +614,22 @@ mapbox:
           iconFill: true
           text: Terra Indígena Jaraguá
         - icon: circle
-          colorIcon: '#43ff10ff'
+          colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
           text: Locais dos atos 
-    - id: map3_14-09-2017
-      centerLng: '-46.765'
-      centerLat: '-23.459'
-      zoom: '13.54'
-      mobileZoom: '13.54'
-      duration: '4000'
-      bearing: '0'
-      pitch: '0'
-      layers: |-        
-        resistencia-pontos-2017
-        resistencia-pontos-2017-label
-        ti-jaragua
-        satelite
-      title: ''
-      notes: ''
-      items:
-        - icon: show_chart
-          colorIcon: '#0e9013ff'
-          typeIcon: outlined
-          iconFill: true
-          text: Terra Indígena Jaraguá
-        - icon: circle
-          colorIcon: '#43ff10ff'
-          typeIcon: outlined
-          iconFill: true
-          text: Local do ato
     - id: map3_jan-2020
-      centerLng: '-46.752'
-      centerLat: '-23.466'
-      zoom: '15.34'
-      mobileZoom: '15.34'
+      centerLng: '-46.751'
+      centerLat: '-23.461'
+      zoom: '13.44'
+      mobileZoom: '13.44'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |- 
-        resistencia-pontos[fid==4]
-        resistencia-pontos-label[fid==4]     
+        resistencia-2020
+        resistencia-2020-label
         ti-jaragua
-        satelite
       title: ''
       notes: ''
       items:
@@ -722,23 +639,24 @@ mapbox:
           iconFill: true
           text: Terra Indígena Jaraguá
         - icon: circle
-          colorIcon: '#43ff10ff'
+          colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
           text: Local do ato 
     - id: map3_25-06-2021
-      centerLng: '-46.750'
-      centerLat: '-23.465'
-      zoom: '14.58'
-      mobileZoom: '14.58'
+      centerLng: '-46.702'
+      centerLat: '-23.507'
+      zoom: '11.69'
+      mobileZoom: '11.69'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |- 
-        resistencia-pontos[fid==5]
-        resistencia-pontos-label[fid==5]     
+        resistencia-2021-3-label
+        resistencia-2021-2-label
+        resistencia-2021-1-label
+        resistencia-2021
         ti-jaragua
-        satelite
       title: ''
       notes: ''
       items:
@@ -748,157 +666,80 @@ mapbox:
           iconFill: true
           text: Terra Indígena Jaraguá
         - icon: circle
-          colorIcon: '#43ff10ff'
+          colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
           text: Local do ato  
-    - id: map3_jaraguasp2021
-      centerLng: '-46.702'
-      centerLat: '-23.511'
-      zoom: '11.54'
-      mobileZoom: '11.54'
-      duration: '4000'
-      bearing: '0'
-      pitch: '0'
-      layers: |-
-        masp-2021
-        masp-2021-label
-        ocupacao-antenas-2021
-        ocupacao-antenas-2021-label
-        resistencia-pontos[fid==7]
-        resistencia-pontos-label[fid==7]
-        ti-jaragua
-        satelite
-      title: ''
-      notes: ''
-      items:
-        - icon: show_chart
-          colorIcon: '#0e9013ff'
-          typeIcon: outlined
-          iconFill: true
-          text: Terra Indígena Jaraguá
-        - icon: circle
-          colorIcon: '#43ff10ff'
-          typeIcon: outlined
-          iconFill: true
-          text: Locais dos atos
     - id: map3_03-07-2021
-      centerLng: '-46.659'
+      centerLng: '-46.658'
       centerLat: '-23.559'
-      zoom: '14.55'
-      mobileZoom: '14.55'
+      zoom: '14.11'
+      mobileZoom: '14.11'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-linhas[fid==3]
-        resistencia-linhas-label[fid==3]
-        ti-jaragua
-        satelite
+        resistencia-2021-4
+        resistencia-2021-4-label
       title: ''
       notes: ''
       items:
         - icon: show_chart
-          colorIcon: '#0e9013ff'
-          typeIcon: outlined
-          iconFill: true
-          text: Terra Indígena Jaraguá
-        - icon: show_chart
-          colorIcon: '#43ff10ff'
+          colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
           text: Trajeto percorrido
     - id: map3_23-06-2022
-      centerLng: '-46.655'
-      centerLat: '-23.572'
-      zoom: '14.06'
-      mobileZoom: '14.06'
+      centerLng: '-46.651'
+      centerLat: '-23.569'
+      zoom: '13.20'
+      mobileZoom: '13.20'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-linhas-2022[fid==4]
-        resistencia-linhas-2022-label[fid==4]
-        ti-jaragua
-        satelite
+        resistencia-2022-1
+        resistencia-2022-1-label
       title: ''
       notes: ''
       items:
         - icon: show_chart
-          colorIcon: '#0e9013ff'
-          typeIcon: outlined
-          iconFill: true
-          text: Terra Indígena Jaraguá
-        - icon: show_chart
-          colorIcon: '#43ff10ff'
+          colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
           text: Trajeto percorrido
-    - id: map3_jaragua2022
-      centerLng: '-46.647'
-      centerLat: '-23.563'
-      zoom: '13.30'
-      mobileZoom: '13.30'
-      duration: '4000'
-      bearing: '0'
-      pitch: '0'
-      layers: |-
-        resistencia-linhas-2022
-        resistencia-linhas-2022-label
-        ti-jaragua
-        satelite
-      title: ''
-      notes: ''
-      items:
-        - icon: show_chart
-          colorIcon: '#0e9013ff'
-          typeIcon: outlined
-          iconFill: true
-          text: Terra Indígena Jaraguá
-        - icon: show_chart
-          colorIcon: '#43ff10ff'
-          typeIcon: outlined
-          iconFill: true
-          text: Trajetos percorridos
     - id: map3_09-08-2022
-      centerLng: '-46.635'
-      centerLat: '-23.548'
-      zoom: '15.71'
-      mobileZoom: '15.71'
+      centerLng: '-46.636'
+      centerLat: '-23.549'
+      zoom: '14.97'
+      mobileZoom: '14.97'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-linhas-2022
-        resistencia-linhas-2022-label
-        ti-jaragua
-        satelite
+        resistencia-2022-2
+        resistencia-2022-2-label
       title: ''
       notes: ''
       items:
         - icon: show_chart
-          colorIcon: '#0e9013ff'
-          typeIcon: outlined
-          iconFill: true
-          text: Terra Indígena Jaraguá
-        - icon: show_chart
-          colorIcon: '#43ff10ff'
+          colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
           text: Trajeto percorrido
     - id: map3_30-05-2023
-      centerLng: '-46.765'
-      centerLat: '-23.459'
-      zoom: '13.54'
-      mobileZoom: '13.54'
+      centerLng: '-46.761'
+      centerLat: '-23.461'
+      zoom: '13.51'
+      mobileZoom: '13.51'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-        
-        resistencia-pontos-2023[fid==8]
-        resistencia-pontos-2023-label[fid==8]
+        resistencia-2023
+        resistencia-2023-1-label
+        resistencia-2023-2-label
         ti-jaragua
-        satelite
       title: ''
       notes: ''
       items:
@@ -908,62 +749,29 @@ mapbox:
           iconFill: true
           text: Terra Indígena Jaraguá
         - icon: circle
-          colorIcon: '#43ff10ff'
-          typeIcon: outlined
-          iconFill: true
-          text: Local do ato
-    - id: map3_04-06-2023
-      centerLng: '-46.765'
-      centerLat: '-23.459'
-      zoom: '13.54'
-      mobileZoom: '13.54'
-      duration: '4000'
-      bearing: '0'
-      pitch: '0'
-      layers: |-        
-        resistencia-pontos-2023
-        resistencia-pontos-2023-label
-        ti-jaragua
-        satelite
-      title: ''
-      notes: ''
-      items:
-        - icon: show_chart
-          colorIcon: '#0e9013ff'
-          typeIcon: outlined
-          iconFill: true
-          text: Terra Indígena Jaraguá
-        - icon: circle
-          colorIcon: '#43ff10ff'
+          colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
           text: Locais dos atos
     - id: map3_07-06-2023
-      centerLng: '-46.702'
-      centerLat: '-23.511'
-      zoom: '11.54'
-      mobileZoom: '11.54'
+      centerLng: '-46.638'
+      centerLat: '-23.546'
+      zoom: '14.88'
+      mobileZoom: '14.88'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-pontos-2023
-        resistencia-pontos-2023-label
-        ti-jaragua
-        satelite
+        resistencia-2023-3
+        resistencia-2023-3-label
       title: ''
       notes: ''
       items:
-        - icon: show_chart
-          colorIcon: '#0e9013ff'
-          typeIcon: outlined
-          iconFill: true
-          text: Terra Indígena Jaraguá
         - icon: circle
-          colorIcon: '#43ff10ff'
+          colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
-          text: Locais dos atos
+          text: Local do ato
     - id: map4_jaragua
       centerLng: '-46.782'
       centerLat: '-23.461'
@@ -977,35 +785,34 @@ mapbox:
         pe-jaragua
         aldeias-jaragua
         memoria-guarani
-        casa-afonso-sardinha
+        afonso-sardinha-fill
         estacao-jaragua
         patrimonio-colonial[fid==132]
-        satelite
       title: ''
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#0e9013ff'
+          colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
           text: Aldeias
         - icon: show_chart
-          colorIcon: '#0e9013ff'
+          colorIcon: '#1b9613'
           typeIcon: outlined
           iconFill: true
           text: Terra Indígena Jaraguá
         - icon: show_chart
-          colorIcon: '#9d1b1bff'
+          colorIcon: '#9b16d4'
           typeIcon: outlined
           iconFill: true
           text: Parque Estadual do Jaraguá
         - icon: circle
-          colorIcon: '#9d1b1bff'
+          colorIcon: '#c15aed'
           typeIcon: outlined
           iconFill: true
           text: Patrimônio colonial
         - icon: circle
-          colorIcon: '#a3f339ff'
+          colorIcon: '#fb8f13'
           typeIcon: outlined
           iconFill: true
           text: Lugares de memória Guarani
@@ -1021,34 +828,28 @@ mapbox:
         ti-jaragua
         pe-jaragua
         aldeias-jaragua
-        casa-afonso-sardinha
-        casa-afonso-sardinha-label
-        satelite
+        afonso-sardinha-fill
+        afonso-sardinha-label
       title: ''
       notes: ''
       items:
-        - icon: circle
-          colorIcon: '#9d1b1bff'
-          typeIcon: outlined
-          iconFill: true
-          text: Patrimônio colonial
         - icon: show_chart
-          colorIcon: '#0e9013ff'
+          colorIcon: '#1b9613'
           typeIcon: outlined
           iconFill: true
           text: Terra Indígena Jaraguá
         - icon: show_chart
-          colorIcon: '#9d1b1bff'
+          colorIcon: '#9b16d4'
           typeIcon: outlined
           iconFill: true
           text: Parque Estadual do Jaraguá
         - icon: circle
-          colorIcon: '#9d1b1bff'
+          colorIcon: '#c15aed'
           typeIcon: outlined
           iconFill: true
           text: Patrimônio colonial
         - icon: circle
-          colorIcon: '#a3f339ff'
+          colorIcon: '#fb8f13'
           typeIcon: outlined
           iconFill: true
           text: Lugares de memória Guarani
@@ -1065,35 +866,34 @@ mapbox:
         pe-jaragua
         aldeias-jaragua
         memoria-guarani
-        casa-afonso-sardinha
+        afonso-sardinha-fill
         estacao-jaragua
         patrimonio-colonial[fid==132]
-        satelite
       title: ''
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#0e9013ff'
+          colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
           text: Aldeias
         - icon: show_chart
-          colorIcon: '#0e9013ff'
+          colorIcon: '#1b9613'
           typeIcon: outlined
           iconFill: true
           text: Terra Indígena Jaraguá
         - icon: show_chart
-          colorIcon: '#9d1b1bff'
+          colorIcon: '#9b16d4'
           typeIcon: outlined
           iconFill: true
           text: Parque Estadual do Jaraguá
         - icon: circle
-          colorIcon: '#9d1b1bff'
+          colorIcon: '#c15aed'
           typeIcon: outlined
           iconFill: true
           text: Patrimônio colonial
         - icon: circle
-          colorIcon: '#a3f339ff'
+          colorIcon: '#fb8f13'
           typeIcon: outlined
           iconFill: true
           text: Lugares de memória Guarani
@@ -1110,35 +910,34 @@ mapbox:
         pe-jaragua
         aldeias-jaragua
         memoria-guarani
-        casa-afonso-sardinha
+        afonso-sardinha-fill
         estacao-jaragua
         patrimonio-colonial[fid==132]
-        satelite
       title: ''
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#0e9013ff'
+          colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
           text: Aldeias
         - icon: show_chart
-          colorIcon: '#0e9013ff'
+          colorIcon: '#1b9613'
           typeIcon: outlined
           iconFill: true
           text: Terra Indígena Jaraguá
         - icon: show_chart
-          colorIcon: '#9d1b1bff'
+          colorIcon: '#9b16d4'
           typeIcon: outlined
           iconFill: true
           text: Parque Estadual do Jaraguá
         - icon: circle
-          colorIcon: '#9d1b1bff'
+          colorIcon: '#c15aed'
           typeIcon: outlined
           iconFill: true
           text: Patrimônio colonial
         - icon: circle
-          colorIcon: '#a3f339ff'
+          colorIcon: '#fb8f13'
           typeIcon: outlined
           iconFill: true
           text: Lugares de memória Guarani
@@ -1155,32 +954,27 @@ mapbox:
         pe-jaragua
         aldeias-jaragua
         memoria-guarani
-        satelite
+        memoria-guarani-label
       title: ''
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#0e9013ff'
+          colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
           text: Aldeias
         - icon: show_chart
-          colorIcon: '#0e9013ff'
+          colorIcon: '#1b9613'
           typeIcon: outlined
           iconFill: true
           text: Terra Indígena Jaraguá
         - icon: show_chart
-          colorIcon: '#9d1b1bff'
+          colorIcon: '#9b16d4'
           typeIcon: outlined
           iconFill: true
           text: Parque Estadual do Jaraguá
         - icon: circle
-          colorIcon: '#a3f339ff'
-          typeIcon: outlined
-          iconFill: true
-          text: Lugares de memória Guarani
-        - icon: circle
-          colorIcon: '#a3f339ff'
+          colorIcon: '#fb8f13'
           typeIcon: outlined
           iconFill: true
           text: Lugares de memória Guarani
@@ -2837,6 +2631,10 @@ components:
             src: /uploads/2013_01_10_ISA.jpg 
             alt: ''
             description: 'Protesto no Monumento às Bandeiras. Fonte: Tiago Moreira dos Santos [ISA]'
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map3_01-10-2013
       - type: Spacer   
         desktop: 600px
         tablet: 600px
@@ -2913,14 +2711,6 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_06-06-2014_zoom  
-      - type: Spacer   
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px  
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
         mapView: map3_05-05-2016  
       - type: Timeline
         txtColor: ''
@@ -2941,30 +2731,6 @@ components:
         desktop: 600px
         tablet: 600px
         mobile: 600px
-    columnAlign: right
-    floatingText: false
-  - type: Map
-    id: mapa_3_lutas_3
-    shortTitle: mapa 3 - lutas
-    longTitle: mapa 3 - lutas
-    description: ''
-    showInMenu: false
-    animations: true
-    txtColor: Highlight
-    customTxtColor: ''
-    bgColor: Primary
-    customBgColor: ''
-    backgroundMedia: []
-    overlay: ''
-    components:
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map3_30-08-2017
-      - type: Spacer   
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px 
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2984,10 +2750,6 @@ components:
             src: /uploads/2017-antenas_CGY.jpg
             alt: ''
             description: 'Ocupação das antenas no Parque Estadual do Jaraguá. Fonte: Comissão Guarani Yvyrupa [CGY]' 
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map3_14-09-2017  
       - type: Spacer   
         desktop: 600px
         tablet: 600px
@@ -3034,10 +2796,6 @@ components:
             src: /uploads/bandeirantes.png
             alt: ''
             description: 'Ocupação do Parque Estadual do Jaraguá e as antenas. Fonte: Rafael Vilela'
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map3_jaraguasp2021
       - type: Spacer   
         desktop: 600px
         tablet: 600px
@@ -3065,22 +2823,6 @@ components:
         desktop: 600px
         tablet: 600px
         mobile: 600px
-    columnAlign: right
-    floatingText: false
-  - type: Map
-    id: mapa_3_lutas_4
-    shortTitle: mapa 3 - lutas
-    longTitle: mapa 3 - lutas
-    description: ''
-    showInMenu: false
-    animations: true
-    txtColor: Highlight
-    customTxtColor: ''
-    bgColor: Primary
-    customBgColor: ''
-    backgroundMedia: []
-    overlay: ''
-    components:
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -3100,10 +2842,6 @@ components:
             src: /uploads/2022_23_06_rafael_vilela.jpeg
             alt: ''
             description: 'Ocupação no Monumento às Bandeiras contra a tramitação da lei do Marco Temporal. Fonte: Rafael Vilela'
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map3_jaragua2022
       - type: Spacer   
         desktop: 600px
         tablet: 600px
@@ -3127,14 +2865,6 @@ components:
             src: /uploads/2022-09-08_G1.png
             alt: ''
             description: 'Ato na Faculdade de Direito da USP. Fonte: Felipe Beltrame/G1'
-      - type: Spacer   
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map3_jaraguasp
       - type: Spacer 
         desktop: 600px
         tablet: 600px
@@ -3158,10 +2888,6 @@ components:
             src: /uploads/2023_30_05_01_richard_wera.jpg
             alt: ''
             description: 'Bloqueio da Rodovia dos Bandeirantes contra a aprovação da PL490/2007. Fonte: Richard Wera Mirim'
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map3_04-06-2023
       - type: Spacer 
         desktop: 600px
         tablet: 600px
