@@ -89,7 +89,6 @@ mapbox:
         aldeias-jaragua-label[nome_aldei==Ytu]
         aldeias-jaragua
         pe-jaragua
-        memoria-guarani
         satelite
       title: ''
       notes: ''
@@ -112,7 +111,6 @@ mapbox:
         aldeias-jaragua-label[nome_aldei==Pyau]
         aldeias-jaragua
         pe-jaragua
-        memoria-guarani
         satelite
       title: ''
       notes: ''
@@ -135,7 +133,6 @@ mapbox:
         aldeias-jaragua-label[nome_aldei==Itakupe]
         aldeias-jaragua
         pe-jaragua
-        memoria-guarani
         satelite
       title: ''
       notes: ''
@@ -158,7 +155,6 @@ mapbox:
         aldeias-jaragua-label[nome_aldei==Itawera]
         aldeias-jaragua
         pe-jaragua
-        memoria-guarani
         satelite
       title: ''
       notes: ''
@@ -181,7 +177,6 @@ mapbox:
         aldeias-jaragua-label[nome_aldei==Ita Endy]
         aldeias-jaragua
         pe-jaragua
-        memoria-guarani
         satelite
       title: ''
       notes: ''
@@ -204,7 +199,6 @@ mapbox:
         aldeias-jaragua-label[nome_aldei==Yvy Porã]
         aldeias-jaragua
         pe-jaragua
-        memoria-guarani
         satelite
       title: ''
       notes: ''
@@ -227,7 +221,6 @@ mapbox:
         aldeias-jaragua-label[nome_aldei==Pindo Mirim]
         aldeias-jaragua
         pe-jaragua
-        memoria-guarani
         satelite
       title: ''
       notes: ''
@@ -250,7 +243,6 @@ mapbox:
         aldeias-jaragua-label[nome_aldei==Tekoa mirim]
         aldeias-jaragua
         pe-jaragua
-        memoria-guarani
         satelite
       title: ''
       notes: ''
@@ -273,7 +265,6 @@ mapbox:
         aldeias-jaragua-label[nome_aldei==Ka'aguy mirim]
         aldeias-jaragua
         pe-jaragua
-        memoria-guarani
         satelite
       title: ''
       notes: ''
@@ -412,8 +403,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-2013-1
-        resistencia-2013-1-label
+        label-bloqueio
+        bloqueio-teste
         ti-jaragua
       title: ''
       notes: ''
@@ -437,11 +428,11 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-2013-2-l
-        resistencia-2013-2-p
-        resistencia-2013-2-label
-        resistencia-2013-1
-        resistencia-2013-1-label
+        label-bloqueio
+        bloqueio-teste
+        dinamarca-label
+        ato-dinamarca
+        triangulo-ato-dinamarca
         ti-jaragua
       title: ''
       notes: ''
@@ -470,9 +461,9 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-2013-2-l
-        resistencia-2013-2-p
-        resistencia-2013-2-label
+        dinamarca-label
+        ato-dinamarca
+        triangulo-ato-dinamarca
       title: ''
       notes: ''
       items:
