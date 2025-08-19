@@ -403,25 +403,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Terra Indígena Jaraguá
-    - id: map3_jaraguasp
-      centerLng: '-46.702'
-      centerLat: '-23.511'
-      zoom: '11.54'
-      mobileZoom: '11.54'
-      duration: '4000'
-      bearing: '0'
-      pitch: '0'
-      layers: |-
-        ti-jaragua
-      title: ''
-      notes: ''
-      items:
-        - icon: show_chart
-          colorIcon: '#1b9613'
-          typeIcon: outlined
-          iconFill: true
-          text: Terra Indígena Jaraguá
-    - id: map3_26-09-2013
+    - id: map3_teste2013
       centerLng: '-46.753'
       centerLat: '-23.460'
       zoom: '13.26'
@@ -2592,7 +2574,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_26-09-2013
+        mapView: map3_teste2013
       - type: Timeline
         txtColor: ''
         bgColor: ''
