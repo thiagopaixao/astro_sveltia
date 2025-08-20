@@ -394,7 +394,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Terra Indígena Jaraguá
-    - id: map3_aurora
+    - id: map3_set2013
       centerLng: '-46.753'
       centerLat: '-23.460'
       zoom: '13.26'
@@ -403,8 +403,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        kwgv85
-        agct45
+        locais-manifestacoes[fid==1]
+        texto-locais[fid==1]
         ti-jaragua
       title: ''
       notes: ''
@@ -419,7 +419,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Terra Indígena Jaraguá
-    - id: map3_bruma
+    - id: map3_out2013
       centerLng: '-46.702'
       centerLat: '-23.511'
       zoom: '11.54'
@@ -428,11 +428,11 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        kwgv85
-        agct45
-        hecj99
-        vvuk92
-        cimt33
+        locais-manifestacoes[fid==1]
+        texto-locais[fid==1]
+        trajetos-atos[num==1]
+        marca-trajetos[num==1]
+        areas-protestos[tag==1]
         ti-jaragua
       title: ''
       notes: ''
@@ -452,7 +452,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Terra Indígena Jaraguá
-    - id: map3_caju
+    - id: map3_2013zoom
       centerLng: '-46.657'
       centerLat: '-23.570'
       zoom: '13.42'
@@ -461,9 +461,9 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        hecj99
-        vvuk92
-        cimt33
+        trajetos-atos[num==1]
+        marca-trajetos[num==1]
+        areas-protestos[tag==1]
       title: ''
       notes: ''
       items:
@@ -472,7 +472,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Trajeto do protesto
-    - id: map3_dunas
+    - id: map3_abr2014
       centerLng: '-46.646'
       centerLat: '-23.565'
       zoom: '13.27'
@@ -481,8 +481,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        bvvw73
-        jvdw31
+        areas-protestos[tag==2]
+        legenda-areas[tag==2]
       title: ''
       notes: ''
       items:
@@ -491,7 +491,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Local do ato
-    - id: map3_estiva
+    - id: map3_masp2014
       centerLng: '-46.646'
       centerLat: '-23.565'
       zoom: '13.27'
@@ -500,38 +500,10 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        qszf40
-        hvjg61
-        bvvw73
-        jvdw31
-      title: ''
-      notes: ''
-      items:
-        - icon: show_chart
-          colorIcon: '#c8094f'
-          typeIcon: outlined
-          iconFill: true
-          text: Trajeto do protesto
-        - icon: square
-          colorIcon: '#c8094f'
-          typeIcon: outlined
-          iconFill: true
-          text: Local do ato
-    - id: map3_faixa
-      centerLng: '-46.646'
-      centerLat: '-23.565'
-      zoom: '13.27'
-      mobileZoom: '13.27'
-      duration: '4000'
-      bearing: '0'
-      pitch: '0'
-      layers: |-
-        vmzy76
-        sqme66
-        qszf40
-        hvjg61
-        bvvw73
-        jvdw31
+        areas-protestos[tag==2]
+        legenda-areas[tag==2]
+        trajetos-atos[num==2]
+        marca-trajetos[num==2]
       title: ''
       notes: ''
       items:
@@ -545,7 +517,35 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Local do ato
-    - id: map3_guara
+    - id: map3_2014assembleia
+      centerLng: '-46.646'
+      centerLat: '-23.565'
+      zoom: '13.27'
+      mobileZoom: '13.27'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        areas-protestos[tag==2]
+        legenda-areas[tag==2]
+        trajetos-atos[num==2]
+        marca-trajetos[num==2]
+        assembleia
+        label-assembleia
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#c8094f'
+          typeIcon: outlined
+          iconFill: true
+          text: Trajeto do protesto
+        - icon: square
+          colorIcon: '#c8094f'
+          typeIcon: outlined
+          iconFill: true
+          text: Local do ato
+    - id: map3_2016
       centerLng: '-46.658'
       centerLat: '-23.560'
       zoom: '15.23'
@@ -554,8 +554,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        zcsa34
-        pjge02
+        locais-manifestacoes[fid==2]
+        texto-locais[fid==2]
       title: ''
       notes: ''
       items:
@@ -564,7 +564,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Local do ato 
-    - id: map3_ilhas
+    - id: map3_agosto2017
       centerLng: '-46.702'
       centerLat: '-23.511'
       zoom: '11.54'
@@ -573,10 +573,10 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        hfzz09
-        favf51
-        skbd74
-        tfcy18
+        locais-manifestacoes[fid==3]
+        texto-locais[fid==3]
+        ocupacao-pico
+        nome-ocupacao
         ti-jaragua
       title: ''
       notes: ''
@@ -591,7 +591,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Locais dos atos 
-    - id: map3_jacare
+    - id: map3_2020
       centerLng: '-46.751'
       centerLat: '-23.461'
       zoom: '13.44'
@@ -600,8 +600,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |- 
-        psqf59
-        sfjs19
+        locais-manifestacoes[fid==5]
+        texto-locais[fid==5]
         ti-jaragua
       title: ''
       notes: ''
@@ -616,7 +616,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Local do ato 
-    - id: map3_laguna
+    - id: map3_junho2021
       centerLng: '-46.702'
       centerLat: '-23.507'
       zoom: '11.69'
@@ -625,10 +625,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |- 
-        ferq06
-        kuhu39
-        mfft88
-        wbtj30
+        jun2021
+        descricao-jun2021
         ti-jaragua
       title: ''
       notes: ''
@@ -643,7 +641,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Local do ato  
-    - id: map3_mangue
+    - id: map3_julho2021
       centerLng: '-46.658'
       centerLat: '-23.559'
       zoom: '14.11'
@@ -652,8 +650,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        gwmv82
-        rxfy35
+        marca-trajetos[num==3]
+        trajetos-atos[num==3]
       title: ''
       notes: ''
       items:
@@ -662,7 +660,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Trajeto percorrido
-    - id: map3_nascente
+    - id: map3_junho22
       centerLng: '-46.651'
       centerLat: '-23.569'
       zoom: '13.20'
@@ -671,8 +669,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        zuzj67
-        jtzh43
+        trajetos-atos[num==7]
+        marca-trajetos[num==7]
       title: ''
       notes: ''
       items:
@@ -681,7 +679,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Trajeto percorrido
-    - id: map3_olaria
+    - id: map3_ago2022
       centerLng: '-46.636'
       centerLat: '-23.549'
       zoom: '14.97'
@@ -690,8 +688,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        skka89
-        ffua98
+        trajetos-atos[num==5]
+        marca-trajetos[num==5]
       title: ''
       notes: ''
       items:
@@ -700,7 +698,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Trajeto percorrido
-    - id: map3_praias
+    - id: map3_mai23
       centerLng: '-46.761'
       centerLat: '-23.461'
       zoom: '13.51'
@@ -709,10 +707,10 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-        
-        nfue48
-        hpxh70
-        zzhz57
-        ti-jaragua
+        locais-manifestacoes[fid==9]
+        texto-locais[fid==9]
+        caminhada-vida
+        texto-caminhada
       title: ''
       notes: ''
       items:
@@ -726,7 +724,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Locais dos atos
-    - id: map3_quilombo
+    - id: map3_teatro
       centerLng: '-46.638'
       centerLat: '-23.546'
       zoom: '14.88'
@@ -735,8 +733,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        nzdh41
-        qywr94
+        locais-manifestacoes[fid==9]
+        texto-locais[fid==9]
       title: ''
       notes: ''
       items:
