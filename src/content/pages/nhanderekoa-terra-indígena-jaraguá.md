@@ -2563,7 +2563,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_aurora
+        mapView: map3_set2013
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2586,7 +2586,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_bruma
+        mapView: map3_out2013
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2605,7 +2605,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_caju
+        mapView: map3_2013zoom
       - type: Spacer   
         desktop: 600px
         tablet: 600px
@@ -2613,7 +2613,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_dunas 
+        mapView: map3_abr2014 
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2636,7 +2636,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_estiva  
+        mapView: map3_masp2014  
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2659,7 +2659,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_faixa  
+        mapView: map3_2014assembleia  
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2682,7 +2682,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_guara  
+        mapView: map3_2016  
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2705,7 +2705,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_ilhas  
+        mapView: map3_agosto2017  
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2728,7 +2728,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_jacare 
+        mapView: map3_2020 
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2751,7 +2751,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_laguna
+        mapView: map3_junho2021
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2774,7 +2774,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_mangue
+        mapView: map3_julho2021
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2797,7 +2797,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_nascente
+        mapView: map3_junho22
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2820,7 +2820,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_olaria
+        mapView: map3_ago2022
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2843,7 +2843,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_praias
+        mapView: map3_mai23
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2866,7 +2866,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_quilombo
+        mapView: map3_teatro
       - type: Timeline
         txtColor: ''
         bgColor: ''
