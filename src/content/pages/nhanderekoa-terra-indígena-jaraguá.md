@@ -403,8 +403,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        label-bloqueio
-        bloqueio-teste
+        kwgv85
+        agct45
         ti-jaragua
       title: ''
       notes: ''
@@ -428,11 +428,11 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        label-bloqueio
-        bloqueio-teste
-        dinamarca-label
-        ato-dinamarca
-        triangulo-ato-dinamarca
+        kwgv85
+        agct45
+        hecj99
+        vvuk92
+        cimt33
         ti-jaragua
       title: ''
       notes: ''
@@ -461,9 +461,9 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        dinamarca-label
-        ato-dinamarca
-        triangulo-ato-dinamarca
+        hecj99
+        vvuk92
+        cimt33
       title: ''
       notes: ''
       items:
@@ -481,8 +481,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-2014-1-label
-        resistencia-2014-1
+        bvvw73
+        jvdw31
       title: ''
       notes: ''
       items:
@@ -500,10 +500,10 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-2014-2-label
-        resistencia-2014-2
-        resistencia-2014-1-label
-        resistencia-2014-1
+        qszf40
+        hvjg61
+        bvvw73
+        jvdw31
       title: ''
       notes: ''
       items:
@@ -526,12 +526,12 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-2014-3-label
-        resistencia-2014-3
-        resistencia-2014-2-label
-        resistencia-2014-2
-        resistencia-2014-1-label
-        resistencia-2014-1
+        vmzy76
+        sqme66
+        qszf40
+        hvjg61
+        bvvw73
+        jvdw31
       title: ''
       notes: ''
       items:
