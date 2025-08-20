@@ -573,8 +573,6 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        locais-manifestacoes[fid==3]
-        texto-locais[fid==3]
         ocupacao-pico
         nome-ocupacao
         ti-jaragua
@@ -733,8 +731,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        locais-manifestacoes[fid==9]
-        texto-locais[fid==9]
+        locais-manifestacoes[fid==11]
+        texto-locais[fid==11]
       title: ''
       notes: ''
       items:
