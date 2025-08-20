@@ -573,10 +573,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        ocupacao-pico
-        nome-ocupacao
-        locais-manifestacoes[fid==3]
-        texto-locais[fid==3]
+        newsource[ano==2017]
+        textos-newsource[ano==2017]
         ti-jaragua
       title: ''
       notes: ''
@@ -625,12 +623,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |- 
-        jun2021
-        descricao-jun2021
-        avpaulista2021
-        avpaulista-texto
-        locais-manifestacoes[fid==6]
-        texto-locais[fid==6]
+        newsource[ano==2021]
+        textos-newsource[ano==2021]
         ti-jaragua
       title: ''
       notes: ''
@@ -711,10 +705,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-        
-        locais-manifestacoes[fid==9]
-        texto-locais[fid==9]
-        caminhada-vida
-        texto-caminhada
+        newsource[ano==2023]
+        textos-newsource[ano==2023]
       title: ''
       notes: ''
       items:
