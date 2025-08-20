@@ -627,6 +627,10 @@ mapbox:
       layers: |- 
         jun2021
         descricao-jun2021
+        avpaulista2021
+        avpaulista-texto
+        locais-manifestacoes[fid==6]
+        texto-locais[fid==6]
         ti-jaragua
       title: ''
       notes: ''
