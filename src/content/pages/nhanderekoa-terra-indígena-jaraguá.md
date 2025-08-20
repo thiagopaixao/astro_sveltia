@@ -394,7 +394,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Terra Indígena Jaraguá
-    - id: map3_teste2013
+    - id: map3_aurora
       centerLng: '-46.753'
       centerLat: '-23.460'
       zoom: '13.26'
@@ -419,7 +419,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Terra Indígena Jaraguá
-    - id: map3_jaraguasp2013
+    - id: map3_bruma
       centerLng: '-46.702'
       centerLat: '-23.511'
       zoom: '11.54'
@@ -452,7 +452,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Terra Indígena Jaraguá
-    - id: map3_01-10-2013
+    - id: map3_caju
       centerLng: '-46.657'
       centerLat: '-23.570'
       zoom: '13.42'
@@ -472,7 +472,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Trajeto do protesto
-    - id: map3_16-04-2014
+    - id: map3_dunas
       centerLng: '-46.646'
       centerLat: '-23.565'
       zoom: '13.27'
@@ -491,7 +491,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Local do ato
-    - id: map3_24-04-2014
+    - id: map3_estiva
       centerLng: '-46.646'
       centerLat: '-23.565'
       zoom: '13.27'
@@ -517,7 +517,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Local do ato
-    - id: map3_06-06-2014
+    - id: map3_faixa
       centerLng: '-46.646'
       centerLat: '-23.565'
       zoom: '13.27'
@@ -545,7 +545,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Local do ato
-    - id: map3_05-05-2016
+    - id: map3_guara
       centerLng: '-46.658'
       centerLat: '-23.560'
       zoom: '15.23'
@@ -564,7 +564,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Local do ato 
-    - id: map3_jaraguasp2017
+    - id: map3_ilhas
       centerLng: '-46.702'
       centerLat: '-23.511'
       zoom: '11.54'
@@ -591,7 +591,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Locais dos atos 
-    - id: map3_jan-2020
+    - id: map3_jacare
       centerLng: '-46.751'
       centerLat: '-23.461'
       zoom: '13.44'
@@ -616,7 +616,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Local do ato 
-    - id: map3_25-06-2021
+    - id: map3_laguna
       centerLng: '-46.702'
       centerLat: '-23.507'
       zoom: '11.69'
@@ -643,7 +643,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Local do ato  
-    - id: map3_03-07-2021
+    - id: map3_mangue
       centerLng: '-46.658'
       centerLat: '-23.559'
       zoom: '14.11'
@@ -662,7 +662,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Trajeto percorrido
-    - id: map3_23-06-2022
+    - id: map3_nascente
       centerLng: '-46.651'
       centerLat: '-23.569'
       zoom: '13.20'
@@ -681,7 +681,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Trajeto percorrido
-    - id: map3_09-08-2022
+    - id: map3_olaria
       centerLng: '-46.636'
       centerLat: '-23.549'
       zoom: '14.97'
@@ -700,7 +700,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Trajeto percorrido
-    - id: map3_30-05-2023
+    - id: map3_praias
       centerLng: '-46.761'
       centerLat: '-23.461'
       zoom: '13.51'
@@ -726,7 +726,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Locais dos atos
-    - id: map3_07-06-2023
+    - id: map3_quilombo
       centerLng: '-46.638'
       centerLat: '-23.546'
       zoom: '14.88'
@@ -2565,7 +2565,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_teste2013
+        mapView: map3_aurora
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2588,7 +2588,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_jaraguasp2013
+        mapView: map3_bruma
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2607,7 +2607,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_01-10-2013
+        mapView: map3_caju
       - type: Spacer   
         desktop: 600px
         tablet: 600px
@@ -2615,7 +2615,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_16-04-2014  
+        mapView: map3_dunas 
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2638,7 +2638,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_24-04-2014  
+        mapView: map3_estiva  
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2661,7 +2661,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_06-06-2014  
+        mapView: map3_faixa  
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2684,7 +2684,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_05-05-2016  
+        mapView: map3_guara  
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2707,7 +2707,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_jaraguasp2017  
+        mapView: map3_ilhas  
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2730,7 +2730,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_jan-2020 
+        mapView: map3_jacare 
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2753,7 +2753,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_25-06-2021
+        mapView: map3_laguna
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2776,7 +2776,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_03-07-2021
+        mapView: map3_mangue
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2799,7 +2799,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_23-06-2022
+        mapView: map3_nascente
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2822,7 +2822,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_09-08-2022
+        mapView: map3_olaria
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2845,7 +2845,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_30-05-2023
+        mapView: map3_praias
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2868,7 +2868,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_07-06-2023
+        mapView: map3_quilombo
       - type: Timeline
         txtColor: ''
         bgColor: ''
