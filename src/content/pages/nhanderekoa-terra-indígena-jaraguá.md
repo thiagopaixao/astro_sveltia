@@ -564,7 +564,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Local do ato 
-    - id: map3_agosto2017
+    - id: map3_anulacao
       centerLng: '-46.702'
       centerLat: '-23.511'
       zoom: '11.54'
@@ -573,8 +573,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        newsource[ano==2017]
-        textos-newsource[ano==2017]
+        2017-locais
+        2017-descricoes
         ti-jaragua
       title: ''
       notes: ''
@@ -614,7 +614,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Local do ato 
-    - id: map3_junho2021
+    - id: map3_bloqueio
       centerLng: '-46.702'
       centerLat: '-23.507'
       zoom: '11.69'
@@ -623,8 +623,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |- 
-        newsource[ano==2021]
-        textos-newsource[ano==2021]
+        atos-2021
+        textos-2021
         ti-jaragua
       title: ''
       notes: ''
@@ -696,7 +696,7 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Trajeto percorrido
-    - id: map3_mai23
+    - id: map3_novomaio
       centerLng: '-46.761'
       centerLat: '-23.461'
       zoom: '13.51'
@@ -705,8 +705,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-        
-        newsource[ano==2023]
-        textos-newsource[ano==2023]
+        protestos-2023
+        descricao-2023
       title: ''
       notes: ''
       items:
@@ -2701,7 +2701,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_agosto2017  
+        mapView: map3_anulacao  
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2747,7 +2747,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_junho2021
+        mapView: map3_bloqueio
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2839,7 +2839,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_mai23
+        mapView: map3_novomaio
       - type: Timeline
         txtColor: ''
         bgColor: ''
