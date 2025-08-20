@@ -311,10 +311,10 @@ mapbox:
           iconFill: true
           text: Pateo do Collegio
     - id: map2_pateo
-      centerLng: '-46.633'
+      centerLng: '-46.634'
       centerLat: '-23.548'
-      zoom: '17'
-      mobileZoom: '17'
+      zoom: '16.20'
+      mobileZoom: '16.20'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -575,6 +575,8 @@ mapbox:
       layers: |-
         ocupacao-pico
         nome-ocupacao
+        locais-manifestacoes[fid==3]
+        texto-locais[fid==3]
         ti-jaragua
       title: ''
       notes: ''
@@ -911,10 +913,10 @@ mapbox:
           iconFill: true
           text: Lugares de memória Guarani
     - id: map5_cacicajandira
-      centerLng: '-46.753'
-      centerLat: '-23.464'
-      zoom: '17.23'
-      mobileZoom: '17.23'
+      centerLng: '-46.752'
+      centerLat: '-23.465'
+      zoom: '15.99'
+      mobileZoom: '15.99'
       duration: '4000'
       bearing: '0'
       pitch: '0'
