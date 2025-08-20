@@ -554,8 +554,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-2016-1
-        resistencia-2016-1-label
+        zcsa34
+        pjge02
       title: ''
       notes: ''
       items:
@@ -573,10 +573,10 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-2017-1
-        resistencia-2017-1-label
-        resistencia-2017-2
-        resistencia-2017-2-label
+        hfzz09
+        favf51
+        skbd74
+        tfcy18
         ti-jaragua
       title: ''
       notes: ''
@@ -600,8 +600,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |- 
-        resistencia-2020
-        resistencia-2020-label
+        psqf59
+        sfjs19
         ti-jaragua
       title: ''
       notes: ''
@@ -625,10 +625,10 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |- 
-        resistencia-2021-3-label
-        resistencia-2021-2-label
-        resistencia-2021-1-label
-        resistencia-2021
+        ferq06
+        kuhu39
+        mfft88
+        wbtj30
         ti-jaragua
       title: ''
       notes: ''
@@ -652,8 +652,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-2021-4
-        resistencia-2021-4-label
+        gwmv82
+        rxfy35
       title: ''
       notes: ''
       items:
@@ -671,8 +671,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-2022-1
-        resistencia-2022-1-label
+        zuzj67
+        jtzh43
       title: ''
       notes: ''
       items:
@@ -690,8 +690,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-2022-2
-        resistencia-2022-2-label
+        skka89
+        ffua98
       title: ''
       notes: ''
       items:
@@ -709,9 +709,9 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-        
-        resistencia-2023
-        resistencia-2023-1-label
-        resistencia-2023-2-label
+        nfue48
+        hpxh70
+        zzhz57
         ti-jaragua
       title: ''
       notes: ''
@@ -735,8 +735,8 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        resistencia-2023-3
-        resistencia-2023-3-label
+        nzdh41
+        qywr94
       title: ''
       notes: ''
       items:
