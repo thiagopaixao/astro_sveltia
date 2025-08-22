@@ -564,31 +564,33 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Local do ato 
-#    - id: map3_anulacao
-#      centerLng: '-46.702'
-#      centerLat: '-23.511'
-#      zoom: '11.54'
-#      mobileZoom: '11.54'
-#      duration: '4000'
-#      bearing: '0'
-#      pitch: '0'
-#      layers: |-
-#        2017-locais
-#        2017-descricoes
-#        ti-jaragua
-#      title: ''
-#      notes: ''
-#      items:
-#        - icon: show_chart
-#          colorIcon: '#0e9013ff'
-#          typeIcon: outlined
-#          iconFill: true
-#          text: Terra Indígena Jaraguá
-#        - icon: circle
-#          colorIcon: '#c8094f'
-#          typeIcon: outlined
-#          iconFill: true
-#          text: Locais dos atos 
+    - id: map3_anulacao
+      centerLng: '-46.702'
+      centerLat: '-23.511'
+      zoom: '11.54'
+      mobileZoom: '11.54'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        antenas-ocupacao
+        texto-ocupacao 
+        texto-locais[fid==3]
+        locais-manifestacoes[fid==3]
+        ti-jaragua
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#c8094f'
+          typeIcon: outlined
+          iconFill: true
+          text: Locais dos atos 
     - id: map3_2020
       centerLng: '-46.751'
       centerLat: '-23.461'
@@ -614,31 +616,33 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Local do ato 
-#    - id: map3_bloqueio
-#      centerLng: '-46.702'
-#      centerLat: '-23.507'
-#      zoom: '11.69'
-#      mobileZoom: '11.69'
-#      duration: '4000'
-#      bearing: '0'
-#      pitch: '0'
-#      layers: |- 
-#        atos-2021
-#        textos-2021
-#        ti-jaragua
-#      title: ''
-#      notes: ''
-#      items:
-#        - icon: show_chart
-#          colorIcon: '#0e9013ff'
-#          typeIcon: outlined
-#          iconFill: true
-#          text: Terra Indígena Jaraguá
-#        - icon: circle
-#          colorIcon: '#c8094f'
-#          typeIcon: outlined
-#          iconFill: true
-#          text: Local do ato  
+    - id: map3_bloqueio
+      centerLng: '-46.702'
+      centerLat: '-23.507'
+      zoom: '11.69'
+      mobileZoom: '11.69'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |- 
+        label-pejaragua-bloqueio
+        pejaragua-bloqueioband
+        locais-manifestacoes[fid==8]
+        texto-locais[fid==8]
+        ti-jaragua
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#c8094f'
+          typeIcon: outlined
+          iconFill: true
+          text: Local do ato  
     - id: map3_julho2021
       centerLng: '-46.658'
       centerLat: '-23.559'
@@ -696,29 +700,33 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Trajeto percorrido          
-#    - id: map3_novomaio
-#      centerLng: '-46.761'
-#      centerLat: '-23.461'
-#      zoom: '13.51'
-#      mobileZoom: '13.51'
-#      duration: '4000'
-#      bearing: '0'
-#      pitch: '0'
-#       protestos-2023
-#       descricao-2023
-#      title: ''
-#      notes: ''
-#      items:
-#        - icon: show_chart
-#          colorIcon: '#0e9013ff'
-#          typeIcon: outlined
-#          iconFill: true
-#          text: Terra Indígena Jaraguá
-#        - icon: circle
-#          colorIcon: '#c8094f'
-#          typeIcon: outlined
-#          iconFill: true
-#          text: Locais dos atos
+    - id: map3_novomaio
+      centerLng: '-46.761'
+      centerLat: '-23.461'
+      zoom: '13.51'
+      mobileZoom: '13.51'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+       leg-caminhada
+       caminhada-vida
+       locais-manifestacoes[fid==9]
+       texto-locais[fid==9]
+       ti-jaragua
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#0e9013ff'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#c8094f'
+          typeIcon: outlined
+          iconFill: true
+          text: Locais dos atos
     - id: map3_teatro
       centerLng: '-46.638'
       centerLat: '-23.546'
