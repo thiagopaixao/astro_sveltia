@@ -2708,7 +2708,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_jaragua  
+        mapView: map3_anulacao  
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2754,7 +2754,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_jaragua
+        mapView: map3_bloqueio
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2846,7 +2846,7 @@ components:
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_jaragua
+        mapView: map3_novomaio
       - type: Timeline
         txtColor: ''
         bgColor: ''
