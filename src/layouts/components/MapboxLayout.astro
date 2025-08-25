@@ -2,7 +2,6 @@
 const { Component, props } = Astro.props;
 const { style, center, zoom, bearing, pitch, layers, token, views } = props;
 
-// Configuração do MapBox quando usado como componente
 const hasComponentData = style && token;
 
 const mapConfig = hasComponentData ? {
@@ -37,13 +36,10 @@ const mapViews = hasComponentData && views ? views.reduce((acc, view) => {
 
 {hasComponentData && (
     <script is:inline define:vars={{ mapConfig, mapViews, token }}>
-        // Merge inteligente que preserva filtros existentes ao invés de sobrescrever
         if (window.mapConfig) {
-            // Preservar layers com filtros já processados
             const existingLayers = window.mapConfig.layers || [];
             const newLayers = mapConfig.layers || [];
             
-            // Combinar layers, priorizando os existentes (que já têm filtros processados)
             const mergedLayers = [...existingLayers];
             newLayers.forEach(newLayer => {
                 if (!existingLayers.find(existing => existing.name === newLayer.name)) {
@@ -60,10 +56,8 @@ const mapViews = hasComponentData && views ? views.reduce((acc, view) => {
             window.mapConfig = mapConfig;
         }
         
-        // Preservar token existente se já definido
         window.mapBoxToken = window.mapBoxToken || token;
         
-        // Merge das views preservando as existentes
         if (mapViews) {
             window.mapViews = { ...mapViews, ...(window.mapViews || {}) };
         }

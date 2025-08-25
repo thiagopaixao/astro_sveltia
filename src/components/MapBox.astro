@@ -1,8 +1,6 @@
 ---
 import Image from "astro/components/Image.astro";
 import img from "../assets/images/map.png";
-
-//coloquei a chamada para as funcões do mapa direto aqui no arquivo. Não sei qual a melhor forma de inserir os objetos com as opcões
 ---
 
 <div id="mapbox"></div>
@@ -78,10 +76,6 @@ import img from "../assets/images/map.png";
 </style>
 
 <script is:inline>
-  // As variáveis window.mapConfig, window.mapBoxToken e window.mapViews
-  // são definidas dinamicamente pelo PageLayout.astro baseadas nos dados da página
-  
-  // Verificação de segurança para garantir que as variáveis existem
   if (typeof window.mapConfig === 'undefined') {
     console.warn('MapBox: window.mapConfig não foi definido. Verifique se os dados do mapbox estão configurados na página.');
   }

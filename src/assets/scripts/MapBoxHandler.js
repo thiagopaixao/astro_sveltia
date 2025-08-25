@@ -1,12 +1,10 @@
 export default class MapBoxHandler {
   constructor() {
-    // config
-    this.transitionScreenPoint = 75; // percentage of screen
-    this.transitionScreenPointMobile = 65; // percentage of screen
-    this.mapMobileHeight = 52; // percentage of screen
-    this.mobileBreakPoint = 992; // below or equal is mobile
+    this.transitionScreenPoint = 75;
+    this.transitionScreenPointMobile = 65;
+    this.mapMobileHeight = 52;
+    this.mobileBreakPoint = 992;
 
-    // selectors
     this.sels = {
       triggers: '[data-map-view]',
       triggersClass: '.map-view',
@@ -19,12 +17,10 @@ export default class MapBoxHandler {
       cloneMap: '#mapbox-clone div',
       captions: '#captions',
     };
-    // labels
     this.labels = {
       displacer: '__displacer__',
       initView: '__initview__',
     };
-    // references
     this.refs = {
       anchorId: (id = false) =>
         id ? `[data-map-anchor-id="${id}"]` : 'data-map-anchor-id',
@@ -40,7 +36,6 @@ export default class MapBoxHandler {
   }
 
   async init() {
-    // map windows
     this.mapWindows = document.querySelectorAll(this.sels.mapWindows);
 
     if (
@@ -50,14 +45,12 @@ export default class MapBoxHandler {
     )
       return;
 
-    // transition points storage
     this.views = typeof window.mapViews === 'object' ? window.mapViews : false;
     this.views &&
       Object.keys(this.views).forEach((k) => (this.views[k].id = k));
     this.mapAnchors = [];
     this.definedLayers = [...window.mapConfig.layers];
 
-    // initial view setup
     const { style, ...initView } = window.mapConfig;
     this.initView = {
       ...initView,
@@ -66,26 +59,19 @@ export default class MapBoxHandler {
     };
     this.currentView = initView;
 
-    // mapbox areas
     this.mapHolder = document.querySelector(this.sels.mainMap);
     this.mapHolderClone = document.querySelector(this.sels.cloneMap);
 
-    // captions holder
     this.captionHolder = document.createElement('div');
-    this.captionHolder.setAttribute(
-      'id',
-      this.sels.captions.replace('#', '')
-    );
+    this.captionHolder.setAttribute('id', this.sels.captions.replace('#', ''));
 
-    // class storage
     this.viewObserver = null;
     this.map = null;
     this.mapClone = null;
+    this.originalFilters = {};
 
-    // handles confusions on layout shift and intersection interpolation
     this.countIntersectionEvents = 0;
 
-    // starts
     await this.initViewAnchors();
     await this.initMaps();
     this.map.on('load', this.mapsOnLoad.bind(this));
@@ -124,6 +110,7 @@ export default class MapBoxHandler {
   async mapsOnLoad() {
     this.mapHolder.style.opacity = 1;
     this.mapHolderClone && (this.mapHolderClone.style.opacity = 1);
+    this.storeOriginalFilters();
     this.defineLayers();
     this.displayLayers(this.initView.layers, true);
     this.adjustFirstViewOnLoad();
@@ -135,6 +122,19 @@ export default class MapBoxHandler {
       )
     );
     resizeObserverView.observe(document.body);
+  }
+
+  storeOriginalFilters() {
+    const style = this.map.getStyle();
+    style.layers.forEach(layer => {
+      if (layer.filter) {
+        this.originalFilters[layer.id] = layer.filter;
+      }
+    });
+  }
+
+  getOriginalLayerFilter(layerName) {
+    return this.originalFilters[layerName] || null;
   }
 
   /* Anchors & Observers */
@@ -345,7 +345,6 @@ export default class MapBoxHandler {
   applyLayerUpdates(updates) {
     updates.forEach((update) => {
       try {
-        // Atualizar visibilidade
         this.map.setLayoutProperty(
           update.name,
           'visibility',
@@ -358,14 +357,13 @@ export default class MapBoxHandler {
             update.visibility
           );
 
-        // Aplicar ou remover filtro
         if (update.filter) {
           this.map.setFilter(update.name, update.filter);
           this.mapClone && this.mapClone.setFilter(update.name, update.filter);
         } else {
-          // Remover filtro existente
-          this.map.setFilter(update.name, null);
-          this.mapClone && this.mapClone.setFilter(update.name, null);
+          const originalFilter = this.getOriginalLayerFilter(update.name);
+          this.map.setFilter(update.name, originalFilter);
+          this.mapClone && this.mapClone.setFilter(update.name, originalFilter);
         }
       } catch (e) {
         console.error(`Erro ao atualizar layer '${update.name}':`, e);

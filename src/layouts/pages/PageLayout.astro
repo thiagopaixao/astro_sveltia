@@ -33,7 +33,6 @@ import Menu from "../../components/Menu.astro";
 
 const { slug } = Astro.props;
 
-// Carregando dados e definindo variáveis no frontmatter
 const entry = await getEntryBySlug('pages', slug);
 if (!entry) {
   throw new Error(`Nenhuma entrada encontrada para "${slug}".`);
@@ -41,14 +40,11 @@ if (!entry) {
 
 const { title, components, mapbox, pageSettings } = entry.data;
 
-// Configuração do MapBox baseada nos dados da página
 const hasMapboxData = mapbox && mapbox.style && mapbox.token;
 
-// Função para processar string de filtro no formato "property==value"
 function parseFilterString(filterStr) {
   if (!filterStr) return null;
   
-  // Operadores suportados (ordem importa - operadores maiores primeiro)
   const operators = ['==', '!=', '<=', '>=', '<', '>', 'in', '!in', 'has', '!has'];
   
   for (const op of operators) {
@@ -58,22 +54,18 @@ function parseFilterString(filterStr) {
         const key = parts[0].trim();
         let value = parts[1].trim();
         
-        // Operadores que não precisam de valor
         if (op === 'has' || op === '!has') {
           return [op, key];
         }
         
-        // Operadores 'in' e '!in' esperam arrays
         if (op === 'in' || op === '!in') {
           const values = value.split(',').map(v => {
             v = v.trim();
-            // Converter para número se possível
             return !isNaN(v) && v !== '' ? parseFloat(v) : v;
           });
           return [op, ['get', key], values];
         }
         
-        // Converter valor para número se possível
         if (!isNaN(value) && value !== '') {
           value = parseFloat(value);
         }
@@ -86,10 +78,8 @@ function parseFilterString(filterStr) {
   return null;
 }
 
-// Função para processar layers com suporte a formato string e objeto
 function processLayerString(layerInput) {
   if (typeof layerInput === 'string') {
-    // Novo formato: "layerName[property==value]"
     if (layerInput.includes('[') && layerInput.includes(']')) {
       const bracketStart = layerInput.indexOf('[');
       const bracketEnd = layerInput.indexOf(']');
@@ -101,31 +91,25 @@ function processLayerString(layerInput) {
       return { name, filter };
     }
     
-    // Formato simples: "layerName"
     return { name: layerInput, filter: null };
   }
   
-  // Formato objeto (compatibilidade com versão anterior)
   if (typeof layerInput === 'object' && layerInput.name) {
     const processedLayer = {
       name: layerInput.name,
       filter: null
     };
     
-    // Gerar filtro se todos os campos necessários estão preenchidos
     if (layerInput.filterKey && layerInput.comparison && layerInput.filterValue !== undefined && layerInput.filterValue !== '') {
       let filterValue = layerInput.filterValue;
       
-      // Converter valor para número se possível
       if (!isNaN(filterValue) && filterValue !== '') {
         filterValue = parseFloat(filterValue);
       }
       
-      // Construir filtro baseado no tipo de comparação
       if (layerInput.comparison === 'has' || layerInput.comparison === '!has') {
         processedLayer.filter = [layerInput.comparison, layerInput.filterKey];
       } else if (layerInput.comparison === 'in' || layerInput.comparison === '!in') {
-        // Para 'in' e '!in', o valor deve ser um array
         const values = Array.isArray(filterValue) ? filterValue : [filterValue];
         processedLayer.filter = [layerInput.comparison, ['get', layerInput.filterKey], values];
       } else {
@@ -139,17 +123,14 @@ function processLayerString(layerInput) {
   return { name: layerInput, filter: null };
 }
 
-// Função para processar layers e seus filtros
 function processLayers(layers) {
   if (!layers) return [];
   
-  // Se layers é uma string (formato novo), converter para array
   if (typeof layers === 'string') {
     const layerLines = layers.split('\n').map(line => line.trim()).filter(line => line.length > 0);
     return layerLines.map(processLayerString).filter(layer => layer.name);
   }
   
-  // Se layers é um array (formato antigo), processar normalmente
   if (Array.isArray(layers)) {
     return layers.map(processLayerString).filter(layer => layer.name);
   }
@@ -157,12 +138,10 @@ function processLayers(layers) {
   return [];
 }
 
-// Processar dados do mapbox se existirem
 let mapboxConfig = null;
 let mapboxViews = {};
 
 if (hasMapboxData) {
-  // Suporte para ambos os formatos: novo (centerLng/centerLat) e antigo (center.lng/center.lat)
   const centerLng = mapbox.centerLng || mapbox.center?.lng || 0;
   const centerLat = mapbox.centerLat || mapbox.center?.lat || 0;
   
@@ -178,11 +157,9 @@ if (hasMapboxData) {
   if (mapbox.views && Array.isArray(mapbox.views)) {
     mapbox.views.forEach(view => {
       if (view.id) {
-        // Suporte para ambos os formatos nas views também
         const viewCenterLng = view.centerLng || view.center?.lng || 0;
         const viewCenterLat = view.centerLat || view.center?.lat || 0;
         
-        // Processar captions usando a nova estrutura simplificada
         let processedCaptions = {};
         if (view.title || view.notes || view.items) {
           processedCaptions = {
@@ -190,7 +167,6 @@ if (hasMapboxData) {
             notes: view.notes,
             items: view.items ? view.items.map(item => {
               if (item.icon && item.colorIcon && item.typeIcon) {
-                // Gerar HTML do ícone usando os novos campos, incluindo fill
                 const fillValue = item.iconFill ? 1 : 0;
                 const iconHtml = `<span class="material-symbols-${item.typeIcon}" style="color: ${item.colorIcon}; font-variation-settings: 'FILL' ${fillValue}">${item.icon}</span>`;
                 return {
@@ -203,7 +179,6 @@ if (hasMapboxData) {
           };
         }
 
-        // Processar mobile zoom usando a nova estrutura simplificada
         const mobileConfig = view.mobileZoom ? { zoom: parseFloat(String(view.mobileZoom)) } : {};
 
         mapboxViews[view.id] = {
@@ -379,7 +354,6 @@ const mainMenu = components
 
 {hasMapboxData && (
   <script is:inline define:vars={{ mapboxConfig, mapboxViews, mapbox }}>
-    // Configuração do MapBox baseada nos dados processados
     window.mapConfig = mapboxConfig;
     window.mapBoxToken = mapbox.token;
     window.mapViews = mapboxViews;
