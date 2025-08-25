@@ -1,10 +1,17 @@
 ---
 import Image from "astro/components/Image.astro";
 import img from "../assets/images/map.png";
+import MapboxLayout from "../layouts/components/MapboxLayout.astro";
+
+const { mapboxData } = Astro.props;
+
+const Fragment = 'div';
 ---
 
-<div id="mapbox"></div>
-<div id="mapbox-clone"><div></div></div>
+<MapboxLayout Component={Fragment} props={{ mapboxData }}>
+  <div id="mapbox"></div>
+  <div id="mapbox-clone"><div></div></div>
+</MapboxLayout>
 
 <style lang="scss">
   @use "../assets/styles/config/config" as *;
@@ -14,7 +21,6 @@ import img from "../assets/images/map.png";
     inset: 0;
     z-index: 0;
     pointer-events: none;
-    // opacity: 0;
     height: 100%;
     width: 100%;
     transition: opacity 1s ease;

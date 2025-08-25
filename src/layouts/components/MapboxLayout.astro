@@ -1,44 +1,227 @@
 ---
 const { Component, props } = Astro.props;
-const { style, center, zoom, bearing, pitch, layers, token, views } = props;
+const { style, center, zoom, bearing, pitch, layers, token, views, mapboxData } = props;
+
+function parseFilterString(filterStr) {
+  if (!filterStr) return null;
+  
+  const operators = ['==', '!=', '<=', '>=', '<', '>', 'in', '!in', 'has', '!has'];
+  
+  for (const op of operators) {
+    if (filterStr.includes(op)) {
+      const parts = filterStr.split(op);
+      if (parts.length === 2) {
+        const key = parts[0].trim();
+        let value = parts[1].trim();
+        
+        if (op === 'has' || op === '!has') {
+          return [op, key];
+        }
+        
+        if (op === 'in' || op === '!in') {
+          const values = value.split(',').map(v => {
+            v = v.trim();
+            return !isNaN(v) && v !== '' ? parseFloat(v) : v;
+          });
+          return [op, ['get', key], values];
+        }
+        
+        if (!isNaN(value) && value !== '') {
+          value = parseFloat(value);
+        }
+        
+        return [op, ['get', key], value];
+      }
+    }
+  }
+  
+  return null;
+}
+
+function processLayerString(layerInput) {
+  if (typeof layerInput === 'string') {
+    if (layerInput.includes('[') && layerInput.includes(']')) {
+      const bracketStart = layerInput.indexOf('[');
+      const bracketEnd = layerInput.indexOf(']');
+      
+      const name = layerInput.substring(0, bracketStart);
+      const filterStr = layerInput.substring(bracketStart + 1, bracketEnd);
+      const filter = parseFilterString(filterStr);
+      
+      return { name, filter };
+    }
+    
+    return { name: layerInput, filter: null };
+  }
+  
+  if (typeof layerInput === 'object' && layerInput.name) {
+    const processedLayer = {
+      name: layerInput.name,
+      filter: null
+    };
+    
+    if (layerInput.filterKey && layerInput.comparison && layerInput.filterValue !== undefined && layerInput.filterValue !== '') {
+      let filterValue = layerInput.filterValue;
+      
+      if (!isNaN(filterValue) && filterValue !== '') {
+        filterValue = parseFloat(filterValue);
+      }
+      
+      if (layerInput.comparison === 'has' || layerInput.comparison === '!has') {
+        processedLayer.filter = [layerInput.comparison, layerInput.filterKey];
+      } else if (layerInput.comparison === 'in' || layerInput.comparison === '!in') {
+        const values = Array.isArray(filterValue) ? filterValue : [filterValue];
+        processedLayer.filter = [layerInput.comparison, ['get', layerInput.filterKey], values];
+      } else {
+        processedLayer.filter = [layerInput.comparison, ['get', layerInput.filterKey], filterValue];
+      }
+    }
+    
+    return processedLayer;
+  }
+  
+  return { name: layerInput, filter: null };
+}
+
+function processLayers(layers) {
+  if (!layers) return [];
+  
+  if (typeof layers === 'string') {
+    const layerLines = layers.split('\n').map(line => line.trim()).filter(line => line.length > 0);
+    return layerLines.map(processLayerString).filter(layer => layer.name);
+  }
+  
+  if (Array.isArray(layers)) {
+    return layers.map(processLayerString).filter(layer => layer.name);
+  }
+  
+  return [];
+}
+
+let finalMapConfig = null;
+let finalMapViews = {};
 
 const hasComponentData = style && token;
+const hasPageData = mapboxData && mapboxData.style && mapboxData.token;
 
-const mapConfig = hasComponentData ? {
+if (hasComponentData) {
+  finalMapConfig = {
     style,
     center: center ? [center.lng, center.lat] : [0, 0],
     zoom: zoom || 2,
     bearing: bearing || 0,
     pitch: pitch || 0,
-    layers: layers || [],
-} : null;
+    layers: processLayers(layers),
+  };
 
-const mapViews = hasComponentData && views ? views.reduce((acc, view) => {
-    if (view.id) {
+  if (views) {
+    finalMapViews = views.reduce((acc, view) => {
+      if (view.id) {
         acc[view.id] = {
-            center: view.center ? [view.center.lng, view.center.lat] : [0, 0],
-            duration: view.duration || 4000,
-            zoom: view.zoom || 2,
-            bearing: view.bearing || 0,
-            pitch: view.pitch || 0,
-            layers: view.layers || [],
-            mobile: view.mobile || {},
-            captions: view.captions || {},
+          center: view.center ? [view.center.lng, view.center.lat] : [0, 0],
+          duration: view.duration || 4000,
+          zoom: view.zoom || 2,
+          bearing: view.bearing || 0,
+          pitch: view.pitch || 0,
+          layers: processLayers(view.layers),
+          mobile: view.mobile || {},
+          captions: view.captions || {},
         };
-    }
-    return acc;
-}, {}) : null;
+      }
+      return acc;
+    }, {});
+  }
+}
+
+if (hasPageData) {
+  const centerLng = mapboxData.centerLng || mapboxData.center?.lng || 0;
+  const centerLat = mapboxData.centerLat || mapboxData.center?.lat || 0;
+  
+  const pageMapConfig = {
+    style: mapboxData.style,
+    center: [parseFloat(String(centerLng)), parseFloat(String(centerLat))],
+    zoom: parseFloat(String(mapboxData.zoom || 2)),
+    bearing: parseFloat(String(mapboxData.bearing || 0)),
+    pitch: parseFloat(String(mapboxData.pitch || 0)),
+    layers: processLayers(mapboxData.layers),
+  };
+
+  let pageMapViews = {};
+  if (mapboxData.views && Array.isArray(mapboxData.views)) {
+    mapboxData.views.forEach(view => {
+      if (view.id) {
+        const viewCenterLng = view.centerLng || view.center?.lng || 0;
+        const viewCenterLat = view.centerLat || view.center?.lat || 0;
+        
+        let processedCaptions = {};
+        if (view.title || view.notes || view.items) {
+          processedCaptions = {
+            title: view.title,
+            notes: view.notes,
+            items: view.items ? view.items.map(item => {
+              if (item.icon && item.colorIcon && item.typeIcon) {
+                const fillValue = item.iconFill ? 1 : 0;
+                const iconHtml = `<span class="material-symbols-${item.typeIcon}" style="color: ${item.colorIcon}; font-variation-settings: 'FILL' ${fillValue}">${item.icon}</span>`;
+                return {
+                  ...item,
+                  icon: iconHtml
+                };
+              }
+              return item;
+            }) : []
+          };
+        }
+
+        const mobileConfig = view.mobileZoom ? { zoom: parseFloat(String(view.mobileZoom)) } : {};
+
+        pageMapViews[view.id] = {
+          center: [parseFloat(String(viewCenterLng)), parseFloat(String(viewCenterLat))],
+          duration: parseFloat(String(view.duration || 4000)),
+          zoom: parseFloat(String(view.zoom || 2)),
+          bearing: parseFloat(String(view.bearing || 0)),
+          pitch: parseFloat(String(view.pitch || 0)),
+          layers: processLayers(view.layers),
+          mobile: mobileConfig,
+          captions: processedCaptions,
+        };
+      }
+    });
+  }
+
+  if (hasComponentData) {
+    const existingLayers = finalMapConfig.layers || [];
+    const newLayers = pageMapConfig.layers || [];
+    
+    const mergedLayers = [...existingLayers];
+    newLayers.forEach(newLayer => {
+      if (!existingLayers.find(existing => existing.name === newLayer.name)) {
+        mergedLayers.push(newLayer);
+      }
+    });
+    
+    finalMapConfig = {
+      ...finalMapConfig,
+      ...pageMapConfig,
+      layers: mergedLayers
+    };
+    
+    finalMapViews = { ...finalMapViews, ...pageMapViews };
+  } else {
+    finalMapConfig = pageMapConfig;
+    finalMapViews = pageMapViews;
+  }
+}
 ---
 
 <Component {...props}>
     <slot />
 </Component>
 
-{hasComponentData && (
-    <script is:inline define:vars={{ mapConfig, mapViews, token }}>
+{(hasComponentData || hasPageData) && (
+    <script is:inline define:vars={{ finalMapConfig, finalMapViews, token: (token || mapboxData?.token) }}>
         if (window.mapConfig) {
             const existingLayers = window.mapConfig.layers || [];
-            const newLayers = mapConfig.layers || [];
+            const newLayers = finalMapConfig.layers || [];
             
             const mergedLayers = [...existingLayers];
             newLayers.forEach(newLayer => {
@@ -48,18 +231,18 @@ const mapViews = hasComponentData && views ? views.reduce((acc, view) => {
             });
             
             window.mapConfig = {
-                ...mapConfig,
+                ...finalMapConfig,
                 ...window.mapConfig,
                 layers: mergedLayers
             };
         } else {
-            window.mapConfig = mapConfig;
+            window.mapConfig = finalMapConfig;
         }
         
         window.mapBoxToken = window.mapBoxToken || token;
         
-        if (mapViews) {
-            window.mapViews = { ...mapViews, ...(window.mapViews || {}) };
+        if (finalMapViews && Object.keys(finalMapViews).length > 0) {
+            window.mapViews = { ...finalMapViews, ...(window.mapViews || {}) };
         }
     </script>
 )}
