@@ -1116,7 +1116,7 @@ components:
 
           Retomada e fundação: década de 1960
 
-          Uma das mais antigas tekoas, a tekoa Ytu, “Aldeia da Cachoeira”, foi fundada pela família de Joaquim Augusto Martim e Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá. O nome se refere ao Ribeirão das Lavras que chega à _Tekoa _por meio de uma pequena cachoeira. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
+          Uma das mais antigas tekoas, a tekoa Ytu, “Aldeia da Cachoeira”, foi fundada pela família de Joaquim Augusto Martim e Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá. O nome se refere ao Ribeirão das Lavras que chega à _Tekoa_ por meio de uma pequena cachoeira. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
         components:
           - type: TimelineBullet
             content: 'Retomada e fundação: década de 1960'
@@ -1147,7 +1147,7 @@ components:
 
           Retomada e fundação: década de 1960
 
-          Uma das mais antigas tekoas, a tekoa Ytu, “Aldeia da Cachoeira”, foi fundada pela família de Joaquim Augusto Martim e Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá. O nome se refere ao Ribeirão das Lavras que chega à _Tekoa&#32;_por meio de uma pequena cachoeira. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
+          Uma das mais antigas tekoas, a tekoa Ytu, “Aldeia da Cachoeira”, foi fundada pela família de Joaquim Augusto Martim e Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá. O nome se refere ao Ribeirão das Lavras que chega à _Tekoa_ por meio de uma pequena cachoeira. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1341,23 +1341,10 @@ components:
           Retomada e fundação: 2017
 
           Desde sua retomada em 2017, a Tekoa Itaendy, “aldeia da pedra amarela”, vem promovendo práticas de manutenção da biodiversidade como o reflorestamento com espécies nativas, plantio de roças com alimentos tradicionais, bem como a reintrodução e criação de espécies de abelhas nativas.
-        wideImage: false
-        src: /uploads/arqueological-remains_07.jpg
-        alt: ''
-        description: ''
       - type: Spacer
-        desktop: 50px
-        tablet: 50px
-        mobile: 50px
-      - type: ImageBlock
-        wideImage: false
-        src: /uploads/arqueological-remains_07.jpg
-        alt: ''
-        description: ''
-      - type: Spacer
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
     columnAlign: right
     floatingText: true
   - type: Map
@@ -1564,7 +1551,7 @@ components:
               wideImage: true
               src: /uploads/img_tekoa_yvy_pora_casa.jpg
               alt: ''
-              description: naTekoa Yvy Porã, as casas se misturam com a floresta, formando parte do mesmo sistema ecológico
+              description: na Tekoa Yvy Porã, as casas se misturam com a floresta, formando parte do mesmo sistema ecológico
         column2:
           components:
             - type: Pullquote
@@ -1665,7 +1652,7 @@ components:
               wideImage: false
               src: /uploads/imagem_03_mapacurt.png
               alt: mapa curt
-              description: 'Recorte do Mapa Etno-Histórico de Curt Nimuendajú (1944), mostrando a amplitude do território Guarani (Fonte: Bibloteca Digital Curt Nimuendaju)'
+              description: 'Recorte do Mapa Etno-Histórico de Curt Nimuendajú (1944), mostrando a amplitude do território Guarani (Fonte: Biblioteca Digital Curt Nimuendaju)'
             - type: Text
               hasDropCap: true
               content: |-
@@ -1761,7 +1748,7 @@ components:
         mapView: map2_barueri
       - type: Text
         hasDropCap: false
-        content: Em 1560, ao sul do Pico do Jaraguá, na região de Barueri, José de Anchieta mandou erguer outro aldeamento para concentração e catequização dos indígenas.
+        content: Em 1560, ao sul do Pico do Jaraguá, na região de Barueri, José de Anchieta mandou erguer outro aldeamento para concentração e catequização dos indígenas. 
       - type: Spacer
         desktop: 50px
         tablet: 50px
@@ -1770,7 +1757,7 @@ components:
         wideImage: false
         src: /uploads/capela_nsra_da_escada_2.jpg
         alt: ''
-        description: Capela de Nossa Senhora da Escada, ponto central do Aldeamento de Barueri. As ruínas da capela original, datada do século XVI, foram encontradas em 2003 e logo restauradas.
+        description: 'Capela de Nossa Senhora da Escada, ponto central do Aldeamento de Barueri. As ruínas da capela original, datada do século XVI, foram encontradas em 2003 e logo restauradas (Foto: Victor Hugo Mori/Vitruvius).'
         txtColor: ''
         bgColor: ''
         mapView: map2_ourojaragua
@@ -1985,7 +1972,7 @@ components:
               content: |-
                 No arco do século XIX ao início do século XX, ocorrem grandes migrações Guarani da região fronteiriça do Paraná e do Mato Grosso do Sul para o estado de São Paulo.
 
-                Como identificado por Curt Nimuendajú, nos anos 1810, 1820 e 1870, e possivelmente em outros períodos do século XIX, registram-se migrações de grupos Guarani vindos da região do Iguatemi, na fronteira entre o Paraná e o Mato Grosso. Em 1910, sabe-se da migração de outro grande grupo Guarani vindo da região fronteiriça Brasil-Paraguai-Argentina para a região de Itariri no Vale do Ribeira, atual Terra Indígena Itariri. Entre 1923 e 1946 registram-se sucessivas migrações de grupos Guarani vindos do sul do Brasil para o estado de São Paulo, assentando-se principalmente no litoral ([fonte](https://documental.xyz/)).
+                Como identificado por Curt Nimuendajú, nos anos 1810, 1820 e 1870, e possivelmente em outros períodos do século XIX, registram-se migrações de grupos Guarani vindos da região do Iguatemi, na fronteira entre o Paraná e o Mato Grosso. Em 1910, sabe-se da migração de outro grande grupo Guarani vindo da região fronteiriça Brasil-Paraguai-Argentina para a região de Itariri no Vale do Ribeira, atual Terra Indígena Itariri. Entre 1923 e 1946 registram-se sucessivas migrações de grupos Guarani vindos do sul do Brasil para o estado de São Paulo, assentando-se principalmente no litoral.
 
                 Estes últimos grupos formam a geração imediatamente anterior de vários moradores das T.I.s Jaraguá e Tenondé Porã na cidade de São Paulo. Entre eles está a cacica Jandira, fundadora da Tekoa Ytu no início dos anos 1960, primeira tekoa da retomada do Jaraguá. 
 
@@ -2279,7 +2266,7 @@ components:
               wideImage: true
               src: /uploads/imagem_14_constituinte_02.jpg
               alt: asd
-              description: 'À frente na bancada, da esquerda para a direita: Teseya Panará, Kanhõc Kayapó, Raoni Mētyktire e Tutu Pombo Kayapó, dentre outros, ocupam auditório da liderança do PMDB nas negociações do capítulo dos indígenas na Constituinte em 1988 (Fonte: Beto Ricardo/ISA) Fonte: Beto Ricardo [Instituto Socioambiental]'
+              description: 'À frente na bancada, da esquerda para a direita: Teseya Panará, Kanhõc Kayapó, Raoni Mētyktire e Tutu Pombo Kayapó, dentre outros, ocupam auditório da liderança do PMDB nas negociações do capítulo dos indígenas na Constituinte em 1988 (Fonte: Beto Ricardo/ISA)'
   - type: Group
     id: parte_5_texto_2
     shortTitle: parte 5 - texto 2
@@ -3421,7 +3408,7 @@ components:
               content: |-
                 ###### parte X
 
-                ## AMEAÇAS AO TERRITÓRIO E AO PATRIMÔNIO FLORESTAL GUARANI
+                ## Ameaças ao Território e ao Patrimônio Florestal Guarani
         column2:
           components: []
   - type: Group
@@ -3567,9 +3554,9 @@ components:
         column2:
           components:
             - type: Spacer
-              desktop: 200px
-              tablet: 200px
-              mobile: 200px
+              desktop: 250px
+              tablet: 250px
+              mobile: 250px
             - type: InnerColumns
               column1:
                 components:
