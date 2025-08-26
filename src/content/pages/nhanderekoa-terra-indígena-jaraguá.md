@@ -98,6 +98,16 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Aldeias
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: show_chart
+          colorIcon: '#9b16d4'
+          typeIcon: outlined
+          iconFill: true
+          text: Limite do Parque Estadual Jaraguá
     - id: map1_pyau
       centerLng: '-46.752'
       centerLat: '-23.465'
@@ -120,6 +130,16 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Aldeias
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: show_chart
+          colorIcon: '#9b16d4'
+          typeIcon: outlined
+          iconFill: true
+          text: Limite do Parque Estadual Jaraguá
     - id: map1_itakupe
       centerLng: '-46.763'
       centerLat: '-23.446'
@@ -142,6 +162,16 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Aldeias
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: show_chart
+          colorIcon: '#9b16d4'
+          typeIcon: outlined
+          iconFill: true
+          text: Limite do Parque Estadual Jaraguá
     - id: map1_itawera
       centerLng: '-46.754'
       centerLat: '-23.463'
@@ -164,6 +194,16 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Aldeias
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: show_chart
+          colorIcon: '#9b16d4'
+          typeIcon: outlined
+          iconFill: true
+          text: Limite do Parque Estadual Jaraguá
     - id: map1_itaendy
       centerLng: '-46.777'
       centerLat: '-23.462'
@@ -174,7 +214,7 @@ mapbox:
       pitch: '0'
       layers: |-
         ti-jaragua
-        aldeias-jaragua-label[nome_aldei==Ita Endy]
+        itaendy-label
         aldeias-jaragua
         pe-jaragua
         satelite
@@ -186,6 +226,16 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Aldeias
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: show_chart
+          colorIcon: '#9b16d4'
+          typeIcon: outlined
+          iconFill: true
+          text: Limite do Parque Estadual Jaraguá
     - id: map1_yvypora
       centerLng: '-46.757'
       centerLat: '-23.465'
@@ -208,6 +258,16 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Aldeias
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: show_chart
+          colorIcon: '#9b16d4'
+          typeIcon: outlined
+          iconFill: true
+          text: Limite do Parque Estadual Jaraguá
     - id: map1_pindomirim
       centerLng: '-46.780'
       centerLat: '-23.450'
@@ -218,7 +278,7 @@ mapbox:
       pitch: '0'
       layers: |-
         ti-jaragua
-        aldeias-jaragua-label[nome_aldei==Pindo Mirim]
+        pindomirim-label
         aldeias-jaragua
         pe-jaragua
         satelite
@@ -230,6 +290,16 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Aldeias
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: show_chart
+          colorIcon: '#9b16d4'
+          typeIcon: outlined
+          iconFill: true
+          text: Limite do Parque Estadual Jaraguá
     - id: map1_mirim
       centerLng: '-46.753'
       centerLat: '-23.461'
@@ -252,6 +322,16 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Aldeias
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: show_chart
+          colorIcon: '#9b16d4'
+          typeIcon: outlined
+          iconFill: true
+          text: Limite do Parque Estadual Jaraguá
     - id: map1_kaaguymirim
       centerLng: '-46.753'
       centerLat: '-23.460'
@@ -274,6 +354,16 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Aldeias
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: show_chart
+          colorIcon: '#9b16d4'
+          typeIcon: outlined
+          iconFill: true
+          text: Limite do Parque Estadual Jaraguá
     - id: map2_jaraguasp
       centerLng: '-46.888'
       centerLat: '-23.574'
@@ -288,7 +378,7 @@ mapbox:
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#c15aed'
+          colorIcon: '#9b16d4'
           typeIcon: outlined
           iconFill: true
           text: Áreas de exploração do ouro em São Paulo
@@ -301,12 +391,12 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        patrimonio-colonial[fid==70]
+        pateo-collegio
       title: ''
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#c15aed'
+          colorIcon: '#9b16d4'
           typeIcon: outlined
           iconFill: true
           text: Pateo do Collegio
@@ -319,12 +409,12 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        patrimonio-colonial[fid==70]
+        pateo-collegio
       title: ''
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#c15aed'
+          colorIcon: '#9b16d4'
           typeIcon: outlined
           iconFill: true
           text: Pateo do Collegio
@@ -342,7 +432,7 @@ mapbox:
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#c15aed'
+          colorIcon: '#9b16d4'
           typeIcon: outlined
           iconFill: true
           text: Aldeamento de Barueri
@@ -361,12 +451,12 @@ mapbox:
       notes: ''
       items:
         - icon: circle
-          colorIcon: '#c15aed'
+          colorIcon: '#9b16d4'
           typeIcon: outlined
           iconFill: false
           text: Casa-Grande Senzala de Afonso Sardinha
         - icon: circle
-          colorIcon: '#c15aed'
+          colorIcon: '#9b16d4'
           typeIcon: outlined
           iconFill: true
           text: Remanescentes de estruturas da mineração do período colonial
@@ -422,8 +512,8 @@ mapbox:
     - id: map3_out2013
       centerLng: '-46.702'
       centerLat: '-23.511'
-      zoom: '11.54'
-      mobileZoom: '11.54'
+      zoom: '11.40'
+      mobileZoom: '11.40'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -592,10 +682,10 @@ mapbox:
           iconFill: true
           text: Locais dos atos 
     - id: map3_2020
-      centerLng: '-46.751'
-      centerLat: '-23.461'
-      zoom: '13.44'
-      mobileZoom: '13.44'
+      centerLng: '-46.752'
+      centerLat: '-23.467'
+      zoom: '14.46'
+      mobileZoom: '14.46'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -625,6 +715,7 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |- 
+        label-pejaragua-antenas
         label-pejaragua-bloqueio
         pejaragua-bloqueioband
         locais-manifestacoes[fid==8]
@@ -770,26 +861,26 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Aldeias
-        - icon: show_chart
-          colorIcon: '#1b9613'
-          typeIcon: outlined
-          iconFill: true
-          text: Terra Indígena Jaraguá
-        - icon: show_chart
-          colorIcon: '#9b16d4'
-          typeIcon: outlined
-          iconFill: true
-          text: Parque Estadual do Jaraguá
-        - icon: circle
-          colorIcon: '#c15aed'
-          typeIcon: outlined
-          iconFill: true
-          text: Patrimônio colonial
         - icon: circle
           colorIcon: '#fb8f13'
           typeIcon: outlined
           iconFill: true
           text: Lugares de memória Guarani
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#c15aed'
+          typeIcon: outlined
+          iconFill: true
+          text: Patrimônio colonial
+        - icon: show_chart
+          colorIcon: '#9b16d4'
+          typeIcon: outlined
+          iconFill: true
+          text: Parque Estadual do Jaraguá
     - id: map4_afonsosardinha
       centerLng: '-46.758'
       centerLat: '-23.462'
@@ -807,31 +898,36 @@ mapbox:
       title: ''
       notes: ''
       items:
-        - icon: show_chart
-          colorIcon: '#1b9613'
-          typeIcon: outlined
-          iconFill: true
-          text: Terra Indígena Jaraguá
-        - icon: show_chart
-          colorIcon: '#9b16d4'
-          typeIcon: outlined
-          iconFill: true
-          text: Parque Estadual do Jaraguá
         - icon: circle
-          colorIcon: '#c15aed'
+          colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
-          text: Patrimônio colonial
+          text: Aldeias
         - icon: circle
           colorIcon: '#fb8f13'
           typeIcon: outlined
           iconFill: true
           text: Lugares de memória Guarani
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#c15aed'
+          typeIcon: outlined
+          iconFill: true
+          text: Patrimônio colonial
+        - icon: show_chart
+          colorIcon: '#9b16d4'
+          typeIcon: outlined
+          iconFill: true
+          text: Parque Estadual do Jaraguá
     - id: map4_jaraguaestacao
-      centerLng: '-46.760'
-      centerLat: '-23.458'
-      zoom: '13.45'
-      mobileZoom: '13.45'
+      centerLng: '-46.763'
+      centerLat: '-23.460'
+      zoom: '13.39'
+      mobileZoom: '13.39'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -840,8 +936,11 @@ mapbox:
         pe-jaragua
         aldeias-jaragua
         memoria-guarani
+        afonso-sardinha-label
         afonso-sardinha-fill
+        estacao-jaragua-label
         estacao-jaragua
+        muros-jaragua-label
         patrimonio-colonial[fid==132]
       title: ''
       notes: ''
@@ -851,31 +950,31 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Aldeias
-        - icon: show_chart
-          colorIcon: '#1b9613'
-          typeIcon: outlined
-          iconFill: true
-          text: Terra Indígena Jaraguá
-        - icon: show_chart
-          colorIcon: '#9b16d4'
-          typeIcon: outlined
-          iconFill: true
-          text: Parque Estadual do Jaraguá
-        - icon: circle
-          colorIcon: '#c15aed'
-          typeIcon: outlined
-          iconFill: true
-          text: Patrimônio colonial
         - icon: circle
           colorIcon: '#fb8f13'
           typeIcon: outlined
           iconFill: true
           text: Lugares de memória Guarani
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#c15aed'
+          typeIcon: outlined
+          iconFill: true
+          text: Patrimônio colonial
+        - icon: show_chart
+          colorIcon: '#9b16d4'
+          typeIcon: outlined
+          iconFill: true
+          text: Parque Estadual do Jaraguá
     - id: map5_jaragua
-      centerLng: '-46.766'
-      centerLat: '-23.461'
-      zoom: '13.26'
-      mobileZoom: '13.26'
+      centerLng: '-46.775'
+      centerLat: '-23.460'
+      zoom: '13.24'
+      mobileZoom: '13.24'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -895,31 +994,31 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Aldeias
-        - icon: show_chart
-          colorIcon: '#1b9613'
-          typeIcon: outlined
-          iconFill: true
-          text: Terra Indígena Jaraguá
-        - icon: show_chart
-          colorIcon: '#9b16d4'
-          typeIcon: outlined
-          iconFill: true
-          text: Parque Estadual do Jaraguá
-        - icon: circle
-          colorIcon: '#c15aed'
-          typeIcon: outlined
-          iconFill: true
-          text: Patrimônio colonial
         - icon: circle
           colorIcon: '#fb8f13'
           typeIcon: outlined
           iconFill: true
           text: Lugares de memória Guarani
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#c15aed'
+          typeIcon: outlined
+          iconFill: true
+          text: Patrimônio colonial
+        - icon: show_chart
+          colorIcon: '#9b16d4'
+          typeIcon: outlined
+          iconFill: true
+          text: Parque Estadual do Jaraguá
     - id: map5_cacicajandira
-      centerLng: '-46.752'
+      centerLng: '-46.753'
       centerLat: '-23.465'
-      zoom: '15.99'
-      mobileZoom: '15.99'
+      zoom: '16.30'
+      mobileZoom: '16.30'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -937,21 +1036,26 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Aldeias
-        - icon: show_chart
-          colorIcon: '#1b9613'
-          typeIcon: outlined
-          iconFill: true
-          text: Terra Indígena Jaraguá
-        - icon: show_chart
-          colorIcon: '#9b16d4'
-          typeIcon: outlined
-          iconFill: true
-          text: Parque Estadual do Jaraguá
         - icon: circle
           colorIcon: '#fb8f13'
           typeIcon: outlined
           iconFill: true
           text: Lugares de memória Guarani
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#c15aed'
+          typeIcon: outlined
+          iconFill: true
+          text: Patrimônio colonial
+        - icon: show_chart
+          colorIcon: '#9b16d4'
+          typeIcon: outlined
+          iconFill: true
+          text: Parque Estadual do Jaraguá
 components:
   - type: Group
     id: home
@@ -1555,7 +1659,7 @@ components:
         column2:
           components:
             - type: Pullquote
-              content: A mata para nós tem uma inteligência, tudo funciona de uma forma que uma liga a outra, os animais são importante pro ka'aguy e para nós, as árvores, as ervas ... tudo tem uma conexão. Para nós não é simplesmente a mata. É o nosso irmão, é um membro do nosso povo. Como se fossem espíritos conectados, um depende do outro.
+              content: A mata para nós tem uma inteligência, tudo funciona de uma forma que uma liga a outra, os animais são importante pro ka'aguy e para nós, as árvores, as ervas... tudo tem uma conexão. Para nós não é simplesmente a mata. É o nosso irmão, é um membro do nosso povo. Como se fossem espíritos conectados, um depende do outro.
               txtColor: ''
               bgColor: ''
               byline: Jurandir Tupã Jekupe Mirim
@@ -3075,16 +3179,16 @@ components:
         hasDropCap: false
         content: '#### PATRIMONIALIZAÇÃO DO JARAGUÁ'
       - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
+        desktop: 700px
+        tablet: 700px
+        mobile: 700px
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map4_afonsosardinha
       - type: Text
         hasDropCap: false
-        content: Em 1978, no contexto da construção do complexo turístico do Parque Estadual do Jaraguá, o conjunto Casa Grande-Senzala da propriedade do bandeirante Afonso Sardinha é tombado pelo CONDEPHAAT
+        content: Em 1978, no contexto da construção do complexo turístico do Parque Estadual do Jaraguá, o conjunto Casa Grande-Senzala da propriedade do bandeirante Afonso Sardinha é tombado pelo CONDEPHAAT. 
       - type: Spacer
         desktop: 50px
         tablet: 50px
@@ -3104,7 +3208,7 @@ components:
         mapView: map4_jaraguaestacao
       - type: Text
         hasDropCap: false
-        content: Em 1983, toda a área do Parque é tombada pelo CONDEPHAAT, e em 1992 pelo CONPRESP. 
+        content: Em 1983, toda a área do Parque é tombada pelo CONDEPHAAT, e em 1992 pelo CONPRESP. Em 2015, o CONPRESP tomba o Conjunto histórico da Estação Ferroviária do Jaraguá.
       - type: Spacer
         desktop: 50px
         tablet: 50px
@@ -3115,9 +3219,18 @@ components:
         alt: asd
         description: Fotografias do bem tombado para a publicação Patrimônio Cultural Paulista, no tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978
       - type: Spacer
-        desktop: 150px
-        tablet: 150px
-        mobile: 150px
+        desktop: 50px
+        tablet: 50px
+        mobile: 50px
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/estacao-jaragua.jpg
+        alt: asd
+        description: Imagem da Estação Jaraguá
+      - type: Spacer
+        desktop: 200px
+        tablet: 200px
+        mobile: 200px
       - type: Text
         hasDropCap: false
         content: Em 2019 o CONPRESP tomba as estruturas remanescentes da Pedreira de Quartzito no Jaraguá, nas proximidades da Tekoa Itakupé. 
@@ -3129,11 +3242,11 @@ components:
         wideImage: false
         src: /uploads/pedreira-quartzito.jpg
         alt: asd
-        description: Muro remanescente de antiga Pedreira de Quartzito no Jaraguá. Fonte Tiago Queiroz/Estadão
+        description: 'Muro remanescente de antiga Pedreira de Quartzito no Jaraguá (Foto: Tiago Queiroz/Estadão).'
       - type: Spacer
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
+        desktop: 400px
+        tablet: 400px
+        mobile: 400px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -3516,11 +3629,11 @@ components:
                   content: |-
                     **T.I. Jaraguá**
 
-                    pesquisadores: Antony Karaí Poty, Thiago Henrique Karai Djekupe, Felipe Silva, e Richard Wera Mirim
+                    pesquisadores: Anthony Karaí Poty, Thiago Henrique Karai Djekupe, Felipe da Silva e Richard Wera Mirim
 
-                    consultores e entrevistas: Jurandir Tupã Jekupe Mirim, Márcio Werã Mirim, Irene Mendonça (Jaxuka Mirim), Daniel Werã Mirim, Cacica Ara Poty (Maria), Natalício Karaí, Tamikuã Txihi…, Coletivo Arandu Mirim (Antony Karaí Poty, Ciara Martins, Samara Para Martins) 
+                    consultores e entrevistas: Jurandir Tupã Jekupe Mirim, Márcio Werã Mirim, Irene Mendonça Bolgarim, Daniel Werã Mirim, Neusa Poty, Cacica Ara Poty (Maria), Natalício Karaí, Tamikuã Txihi, Lucas Kuaray, Anderson, Coletivo Arandu Mirim (Anthony Karaí Poty, Ciara Martins, Samara Para Martins) 
 
-                    participantes das oficinas: Antony Karaí Poty, Valdemir, Samara Para, Ciara Martins, Lenilson, Thiago Karaí Poty, Valdir, Felipe Silva, Osmar, Maria Ara Poty,  brigadistas Lucas, Paulino, Adriano, Vander, Danilo e Luciano, Natalício Karaí, Antônia, Lucas, Pedrinho, Txai Suruí, Miguel, Antônio, jovens e crianças. 
+                    participantes das oficinas: Anthony Karaí Poty, Valdemir, Samara Para, Ciara Martins, Lenilson, Thiago Karaí Poty, Valdir, Felipe Silva, Osmar, Maria Ara Poty, brigadistas Lucas, Paulino, Adriano, Juca, Vander, Danilo e Luciano, Natalício Karaí, Antônia, Lucas, Pedrinho, Txai Suruí, Miguel, Antônio, jovens e crianças  
               column2:
                 components:
                 - type: Text
@@ -3532,7 +3645,7 @@ components:
 
                    **Chão Coletivo**
 
-                    Beatrice Perracini Padovan, Giulio Michelino, Glória Kok, Isabela de Castilho Moraes e Laura Pappalardo
+                    Glória Kok, Beatrice Perracini Padovan, Laura Pappalardo, Giulio Michelino, Isabela Fernandes de Castilho Moraes, Thiago Henrique Karai Djekupe, Anthony Karaí Poty, Felipe da Silva
 
                     **Plataforma Práticas Espaciais**
 
@@ -3540,7 +3653,7 @@ components:
 
                     **design gráfico:** 
 
-                    Cosmopolíticas Editoriais
+                    Cosmopolíticas Editoriais - Paula Lobato e Felipe Carnevalli
 
                     **finalização gráfica dos mapas:** 
 
@@ -3585,6 +3698,7 @@ components:
                   - type: LogosGroup
                     logos:
                       - image: /uploads/chao_coletivo_4.png
+                      
                         link:
                           url: https://www.instagram.com/ochaocoletivo/
                           target: _blank
