@@ -79,8 +79,8 @@ mapbox:
     - id: map1_ytu
       centerLng: '-46.754'
       centerLat: '-23.464'
-      zoom: '16.95'
-      mobileZoom: '16.95'
+      zoom: '16.96'
+      mobileZoom: '16.96'
       duration: '4000'
       bearing: '0'
       pitch: '0'
