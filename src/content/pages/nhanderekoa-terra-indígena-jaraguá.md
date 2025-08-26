@@ -973,8 +973,8 @@ mapbox:
     - id: map5_jaragua
       centerLng: '-46.775'
       centerLat: '-23.460'
-      zoom: '13.24'
-      mobileZoom: '13.24'
+      zoom: '13.23'
+      mobileZoom: '13.23'
       duration: '4000'
       bearing: '0'
       pitch: '0'
