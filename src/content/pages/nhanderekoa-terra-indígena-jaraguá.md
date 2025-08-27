@@ -971,10 +971,10 @@ mapbox:
           iconFill: true
           text: Parque Estadual do Jaraguá
     - id: map5_jaragua
-      centerLng: '-46.775'
+      centerLng: '-46.780'
       centerLat: '-23.460'
-      zoom: '13.23'
-      mobileZoom: '13.23'
+      zoom: '13.45'
+      mobileZoom: '13.45'
       duration: '4000'
       bearing: '0'
       pitch: '0'
