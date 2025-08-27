@@ -924,10 +924,10 @@ mapbox:
           iconFill: true
           text: Parque Estadual do Jaraguá
     - id: map4_jaraguaestacao
-      centerLng: '-46.763'
+      centerLng: '-46.769'
       centerLat: '-23.460'
-      zoom: '13.39'
-      mobileZoom: '13.39'
+      zoom: '13.15'
+      mobileZoom: '13.15'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -2950,7 +2950,7 @@ components:
             mobile: 80px
           - type: ImageBlock
             wideImage: false
-            src: /uploads/2023_30_05_01_richard_wera.jpg
+            src: /uploads/2023_30_05_01_richard_wera.JPG
             alt: ''
             description: 'Bloqueio da Rodovia dos Bandeirantes contra a aprovação da PL490/2007. Fonte: Richard Wera Mirim'
       - type: Spacer 
@@ -2973,7 +2973,7 @@ components:
             mobile: 80px
           - type: ImageBlock
             wideImage: false
-            src: 2023_07_06_julia_rez_G1.png
+            src: /uploads/2023_07_06_julia_rez_G1.png
             alt: ''
             description: 'Ato contra o Marco Temporal na escadaria do Teatro Municipal. Fonte: Julia Rez'
       - type: Spacer 
