@@ -1200,15 +1200,7 @@ components:
           - type: Text
             hasDropCap: false
             content: Uma das mais antigas tekoas, a tekoa Ytu, “aldeia da cachoeira”, foi fundada pela família de Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá, e Joaquim Augusto Martim. O nome se refere ao Ribeirão das Lavras que, por meio de uma pequena cachoeira, chega até a tekoa. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
-          - type: Spacer
-            desktop: 20px
-            tablet: 20px
-            mobile: 20px
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/imagem jaragua_color edited.jpg
-            alt: ''
-            description: Description
+      - type: Spacer
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1232,15 +1224,7 @@ components:
           - type: Text
             hasDropCap: false
             content: Uma das mais antigas tekoas, a tekoa Ytu, “aldeia da cachoeira”, foi fundada pela família de Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá, e Joaquim Augusto Martim. O nome se refere ao Ribeirão das Lavras que, por meio de uma pequena cachoeira, chega até a tekoa. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
-          - type: Spacer
-            desktop: 20px
-            tablet: 20px
-            mobile: 20px
-          - type: ImageBlock
-            wideImage: false
-            src: /uploads/imagem jaragua_color edited.jpg
-            alt: ''
-            description: Description
+      - Spacer: 
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1252,31 +1236,12 @@ components:
           Retomada e fundação: década de 1960
 
           Uma das mais antigas tekoas, a tekoa Ytu, “Aldeia da Cachoeira”, foi fundada pela família de Joaquim Augusto Martim e Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá. O nome se refere ao Ribeirão das Lavras que chega à _Tekoa_ por meio de uma pequena cachoeira. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
-      - type: Spacer
-        wideImage: false
-        src: /uploads/imagem jaragua_color edited.jpg
-        alt: ''
-        description: ''
-        desktop: 50px
-        tablet: 50px
-        mobile: 50px
-      - type: ImageBlock
-        wideImage: false
-        src: /uploads/ytu.jpg
-        alt: ''
-        description: ''
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
       - type: Spacer
         txtColor: ''
         bgColor: ''
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
         mapView: map1_pyau
       - type: MapView
         txtColor: ''
@@ -1356,31 +1321,12 @@ components:
           Retomada e fundação: 2005
 
           Situada no extremo norte da T.I. Jaraguá, a área onde está a Tekoa Itakupe é utilizada pelas comunidades Guarani desde as primeiras retomadas nos anos 1950 e 1960. Fundada em 2014, hoje é formada por três núcleos: Sol nascente, Toka da Onça e (confirmar como querem chamar o terceiro núcleo). Por estar localizada do outro lado do Pico do Jaraguá, próxima de suas formações rochosas, foi nomeada de Itakupe, que pode ser traduzido como “atrás da pedra”.
-        desktop: 50px
-        tablet: 50px
-        mobile: 50px
-      - type: Spacer
-        wideImage: false
-        src: /uploads/arqueological-remains_03.jpg
-        alt: ''
-        description: ''
-        desktop: 50px
-        tablet: 50px
-        mobile: 50px
-      - type: ImageBlock
-        wideImage: false
-        src: /uploads/itakupe.jpg
-        alt: ''
-        description: ''
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
       - type: Spacer
         txtColor: ''
         bgColor: ''
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
         mapView: map1_itawera
       - type: MapView
         txtColor: ''
@@ -1593,18 +1539,9 @@ components:
 
           A Tekoa Ka’aguy Mirim é outra retomada adjacente à Tekoa Pyau. Com o nome de “pequena floresta”, situa-se no limite da Terra Indígena, entre a Rodovia dos Bandeirantes e a Rua Antônio Cardoso Nogueira. A aldeia é considerada por seus moradores como um importante ponto de cuidado de espécies nativas medicinais presentes neste local, motivo que impulsionou a retomada da área.
       - type: Spacer
-        desktop: 50px
-        tablet: 50px
-        mobile: 100px
-      - type: ImageBlock
-        wideImage: false
-        src: /uploads/kaaguymirim.jpg
-        alt: ''
-        description: ''
-      - type: Spacer
-        desktop: 300px
-        tablet: 300px
-        mobile: 300px
+        desktop: 500px
+        tablet: 500px
+        mobile: 500px
     columnAlign: left
     floatingText: true
   - type: Group
