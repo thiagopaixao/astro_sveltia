@@ -3564,30 +3564,25 @@ components:
 
                    Paulo Tavares, Paula Marujo, Laura Pappalardo, Amanda Klajner e Julia Veras 
 
-
                    **Chão Coletivo**
 
                     Glória Kok, Beatrice Perracini Padovan, Laura Pappalardo, Giulio Michelino, Isabela Fernandes de Castilho Moraes, Thiago Henrique Karai Djekupe, Anthony Karaí Poty, Felipe da Silva
-
 
                     **Plataforma Práticas Espaciais**
 
                     Carol Tonetti e Gilberto Mariotti
 
-
                     **design gráfico:** 
 
                     Cosmopolíticas Editoriais - Paula Lobato e Felipe Carnevalli
-
 
                     **finalização gráfica dos mapas:**
                      
                     Carolina Passos
 
-
                     **APOIO** 
 
-                    CAU/SP (Programa de Assistência Técnica para Preservação do Patrimônio Cultural 2024, Termo de Fomento 016/2024, Ref. Projeto 406165)
+                    CAU/SP (Programa de Assistência Técnica para Preservação do Patrimônio Cultural 2024, Termo de Fomento 016/2024, Ref. Projeto 406165), 
                     Design Museum, Future Observatory More-than-Human Fellowship
         column2:
           components:
