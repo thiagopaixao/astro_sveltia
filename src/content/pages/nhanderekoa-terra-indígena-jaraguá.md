@@ -3576,7 +3576,7 @@ components:
 
                     Cosmopolíticas Editoriais - Paula Lobato e Felipe Carnevalli
 
-                    *finalização gráfica dos mapas:** 
+                    **finalização gráfica dos mapas:** 
 
                     Carolina Passos
 
