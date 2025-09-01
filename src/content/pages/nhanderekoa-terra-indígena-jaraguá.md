@@ -527,16 +527,6 @@ mapbox:
       title: ''
       notes: ''
       items:
-        - icon: circle
-          colorIcon: '#c8094f'
-          typeIcon: outlined
-          iconFill: true
-          text: Local do ato
-        - icon: show_chart
-          colorIcon: '#c8094f'
-          typeIcon: outlined
-          iconFill: true
-          text: Trajeto do protesto
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
@@ -561,7 +551,7 @@ mapbox:
           colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
-          text: Trajeto do protesto
+          text: Trajeto do ato
     - id: map3_abr2014
       centerLng: '-46.646'
       centerLat: '-23.565'
@@ -576,7 +566,7 @@ mapbox:
       title: ''
       notes: ''
       items:
-        - icon: square
+        - icon: circle
           colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
@@ -602,11 +592,6 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Trajeto do protesto
-        - icon: square
-          colorIcon: '#c8094f'
-          typeIcon: outlined
-          iconFill: true
-          text: Local do ato
     - id: map3_2014assembleia
       centerLng: '-46.646'
       centerLat: '-23.565'
@@ -625,12 +610,7 @@ mapbox:
       title: ''
       notes: ''
       items:
-        - icon: show_chart
-          colorIcon: '#c8094f'
-          typeIcon: outlined
-          iconFill: true
-          text: Trajeto do protesto
-        - icon: square
+        - icon: circle
           colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
@@ -680,7 +660,7 @@ mapbox:
           colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
-          text: Locais dos atos 
+          text: Local do ato 
     - id: map3_2020
       centerLng: '-46.752'
       centerLat: '-23.467'
@@ -817,7 +797,7 @@ mapbox:
           colorIcon: '#c8094f'
           typeIcon: outlined
           iconFill: true
-          text: Locais dos atos
+          text: Local do ato
     - id: map3_teatro
       centerLng: '-46.638'
       centerLat: '-23.546'
@@ -2572,9 +2552,9 @@ components:
         bgColor: ''
         mapView: map3_jaragua
       - type: Spacer
-        desktop: 800px
-        tablet: 800px
-        mobile: 800px
+        desktop: 1000px
+        tablet: 1000px
+        mobile: 1000px
     columnAlign: center
     floatingText: true
   - type: Map
@@ -2611,13 +2591,21 @@ components:
             alt: ''
             description: 'Bloqueio da Rodovia dos Bandeirantes. Fonte: Comissão Guarani Yvyrupa [CGY]'
       - type: Spacer
+        desktop: 100px
+        tablet: 100px
+        mobile: 100px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map3_out2013
+      - type: Spacer
         desktop: 600px
         tablet: 600px
         mobile: 600px
       - type: MapView
         txtColor: ''
         bgColor: ''
-        mapView: map3_out2013
+        mapView: map3_2013zoom
       - type: Timeline
         txtColor: ''
         bgColor: ''
@@ -2633,10 +2621,6 @@ components:
             src: /uploads/2013_01_10_ISA.jpg 
             alt: ''
             description: 'Protesto no Monumento às Bandeiras. Fonte: Tiago Moreira dos Santos [ISA]'
-      - type: MapView
-        txtColor: ''
-        bgColor: ''
-        mapView: map3_2013zoom
       - type: Spacer   
         desktop: 600px
         tablet: 600px
@@ -3576,30 +3560,23 @@ components:
                 - type: Text
                   hasDropCap: false
                   content: |-
-                   **agência autônonoma**
-
+                   **agência autônoma**
                    Paulo Tavares, Paula Marujo, Laura Pappalardo, Amanda Klajner e Julia Veras 
 
                    **Chão Coletivo**
-
                     Glória Kok, Beatrice Perracini Padovan, Laura Pappalardo, Giulio Michelino, Isabela Fernandes de Castilho Moraes, Thiago Henrique Karai Djekupe, Anthony Karaí Poty, Felipe da Silva
 
                     **Plataforma Práticas Espaciais**
-
                     Carol Tonetti e Gilberto Mariotti
 
                     **design gráfico:** 
-
                     Cosmopolíticas Editoriais - Paula Lobato e Felipe Carnevalli
 
                     **finalização gráfica dos mapas:** 
-
                     Carolina Passos
 
-                    CAU/SP (Programa de Assistência Técnica para Preservação do Patrimônio Cultural 2024, Termo de Fomento 016/2024, Ref. Projeto 406165)
-
                     **APOIO** 
-
+                    CAU/SP (Programa de Assistência Técnica para Preservação do Patrimônio Cultural 2024, Termo de Fomento 016/2024, Ref. Projeto 406165)
                     Design Museum, Future Observatory More-than-Human Fellowship
         column2:
           components:
