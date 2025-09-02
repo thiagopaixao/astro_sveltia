@@ -388,20 +388,57 @@ mapbox:
       notes: ''
       items:
     - id: map2_jaraguasp
-      centerLng: '-46.888'
-      centerLat: '-23.574'
-      zoom: '9.22'
-      mobileZoom: '9.22'
+      centerLng: '-46.683'
+      centerLat: '-23.500'
+      zoom: '9.92'
+      mobileZoom: '9.92'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
+        ti-jaragua
         exploracao-ouro-sp
       title: ''
       notes: ''
       items:
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#d28fef8e'
+          typeIcon: outlined
+          iconFill: true
+          text: Áreas de exploração do ouro em São Paulo
+    - id: map2_jaraguasptudo
+      centerLng: '-46.683'
+      centerLat: '-23.500'
+      zoom: '9.92'
+      mobileZoom: '9.92'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+        patteo-collegio
+        estacao-barueri
+        exploracao-ouro-sp
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
         - icon: circle
           colorIcon: '#9b16d4'
+          typeIcon: outlined
+          iconFill: true
+          text: Patrimônio colonial
+        - icon: circle
+          colorIcon: '#d28fef8e'
           typeIcon: outlined
           iconFill: true
           text: Áreas de exploração do ouro em São Paulo
@@ -414,6 +451,7 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
+        ti-jaragua
         pateo-collegio
       title: ''
       notes: ''
@@ -432,7 +470,9 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        pateo-collegio
+        ti-jaragua
+        pateo-collegio-area
+        pateo-collegio-label
       title: ''
       notes: ''
       items:
@@ -440,25 +480,34 @@ mapbox:
           colorIcon: '#9b16d4'
           typeIcon: outlined
           iconFill: true
-          text: Pateo do Collegio
+          text: Patrimônio colonial
     - id: map2_barueri
-      centerLng: '-46.840'
-      centerLat: '-23.494'
-      zoom: '11.81'
-      mobileZoom: '11.81'
+      centerLng: '-46.785'
+      centerLat: '-23.505'
+      zoom: '11.41'
+      mobileZoom: '11.41'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
+        ti-jaragua
+        pateo-collegio
+        pateo-collegio-label
         capela-barueri
+        capela-barueri-label
       title: ''
       notes: ''
       items:
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
         - icon: circle
           colorIcon: '#9b16d4'
           typeIcon: outlined
           iconFill: true
-          text: Aldeamento de Barueri
+          text: Patrimônio colonial
     - id: map2_ourojaragua
       centerLng: '-46.781'
       centerLat: '-23.458'
@@ -468,11 +517,17 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
+        ti-jaragua
         afonso-sardinha
         patrimonio-colonial
       title: ''
       notes: ''
       items:
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
         - icon: circle
           colorIcon: '#9b16d4'
           typeIcon: outlined
@@ -483,6 +538,19 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Remanescentes de estruturas da mineração do período colonial
+    - id: map2_fim
+      centerLng: '-46.781'
+      centerLat: '-23.458'
+      zoom: '13.52'
+      mobileZoom: '13.52'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+      title: ''
+      notes: ''
+      items:
     - id: map3_jaragua
       centerLng: '-46.766'
       centerLat: '-23.460'
@@ -1718,7 +1786,7 @@ components:
               desktop: 150px
               tablet: 150px
               mobile: 150px
-        mapView: map2_jaraguaspzoom
+        mapView: map2_jaraguasptudo
       - type: Spacer
         desktop: 600px
         tablet: 600px
@@ -1761,7 +1829,6 @@ components:
         description: 'Capela de Nossa Senhora da Escada, ponto central do Aldeamento de Barueri. As ruínas da capela original, datada do século XVI, foram encontradas em 2003 e logo restauradas (Foto: Victor Hugo Mori/Vitruvius).'
         txtColor: ''
         bgColor: ''
-        mapView: map2_ourojaragua
       - type: Spacer
         desktop: 600px
         tablet: 600px
@@ -1775,17 +1842,10 @@ components:
         content: Pouco depois, em 1597, o bandeirante Afonso Sardinha encontra ouro na região do Jaraguá. Estabelece uma grande propriedade na área com a construção de um complexo Casa Grande – Senzala ao pé do morro.
         txtColor: ''
         bgColor: ''
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: map2_jaraguasp
       - type: Spacer
-        txtColor: ''
-        bgColor: ''
         desktop: 50px
         tablet: 50px
         mobile: 50px
-        mapView: map2_jaraguasp
       - type: ImageBlock
         wideImage: false
         src: /uploads/casa_afonso_sardinha.jpg
@@ -1793,23 +1853,13 @@ components:
         description: O complexo Casa Grande-Senzala construído por Afonso Sardinha é hoje o principal patrimônio do Parque Estadual do Jaraguá.
         txtColor: ''
         bgColor: ''
-        desktop: 800px
-        tablet: 800px
-        mobile: 800px
-        mapView: map2_jaraguasp
       - type: Spacer
-        txtColor: ''
-        bgColor: ''
         desktop: 300px
         tablet: 300px
         mobile: 300px
-        mapView: map2_jaraguasp
       - type: MapView
         txtColor: ''
         bgColor: ''
-        desktop: 800px
-        tablet: 800px
-        mobile: 800px
         mapView: map2_jaraguasp
       - type: Spacer
         desktop: 800px
