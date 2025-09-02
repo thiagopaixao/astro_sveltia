@@ -28,6 +28,8 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}/
 
       - name: Deploy to GitHub Pages
         uses: actions/upload-pages-artifact@v3

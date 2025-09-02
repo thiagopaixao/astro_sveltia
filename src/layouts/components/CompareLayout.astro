@@ -8,11 +8,11 @@ let imageLeftSrc;
 let imageRightSrc;
 
 if (imageLeft) {
-    imageLeftSrc = imageLeft.startsWith('http') ? imageLeft : `${import.meta.env.BASE_URL}${imageLeft}`;
+    imageLeftSrc = /^https?:\/\//i.test(imageLeft) ? imageLeft : new URL(imageLeft.replace(/^\/+/, ''), new URL(import.meta.env.BASE_URL, 'http://local')).pathname;
 }
 
 if (imageRight) {
-    imageRightSrc = imageRight.startsWith('http') ? imageRight : `${import.meta.env.BASE_URL}${imageRight}`;
+    imageRightSrc = /^https?:\/\//i.test(imageRight) ? imageRight : new URL(imageRight.replace(/^\/+/, ''), new URL(import.meta.env.BASE_URL, 'http://local')).pathname;
 }
 ---
 <AnimationToggle>

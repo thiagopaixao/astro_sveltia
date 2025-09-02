@@ -8,7 +8,7 @@ const { slides = [] } = props;
 const updatedSlides = slides.map(slide => {
   let updatedSlide = { ...slide };
     if (updatedSlide.image) {
-        updatedSlide.image = slide.image.startsWith('http') ? slide.image : `${import.meta.env.BASE_URL}${slide.image}`;
+        updatedSlide.image = /^https?:\/\//i.test(slide.image) ? slide.image : new URL(slide.image.replace(/^\/+/, ''), new URL(import.meta.env.BASE_URL, 'http://local')).pathname;
     }
   return updatedSlide;
 });

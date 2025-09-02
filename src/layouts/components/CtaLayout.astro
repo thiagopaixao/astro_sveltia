@@ -41,12 +41,12 @@ switch (globalAnimationMode) {
 // Se `media` for uma imagem, importamos dinamicamente
 let img;
 if (media && mediaType === 'image' && media) {
-  img = `${import.meta.env.BASE_URL}${media}`;
+  img = /^https?:\/\//i.test(media) ? media : new URL(media.replace(/^\/+/, ''), new URL(import.meta.env.BASE_URL, 'http://local')).pathname;
 }
 
 let imgSrc;
 if (imgBg) {
-    imgSrc = `${import.meta.env.BASE_URL}${imgBg}`;
+    imgSrc = /^https?:\/\//i.test(imgBg) ? imgBg : new URL(imgBg.replace(/^\/+/, ''), new URL(import.meta.env.BASE_URL, 'http://local')).pathname;
 }
 
 

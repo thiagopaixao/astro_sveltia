@@ -10,6 +10,6 @@ media_libraries:
       slugify_filename: true
 
 media_folder: 'public/uploads'
-public_folder: '/uploads'
+public_folder: 'uploads'
 
 local_backend: true

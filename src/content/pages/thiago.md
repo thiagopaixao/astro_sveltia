@@ -73,5 +73,20 @@ components:
       - type: Text
         hasDropCap: false
         content: NOVO!
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/brazil-map.jpg
+        alt: ''
+        description: ''
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/mapa-do-brasil.jpg
+        alt: ''
+        description: ''
+      - type: ImageBlock
+        wideImage: false
+        src: /uploads/floresta_teste.jpg
+        alt: ''
+        description: ''
 ---
 
