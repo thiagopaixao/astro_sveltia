@@ -52,6 +52,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         memoria-guarani
+        camada-cor
         satelite
       title: ''
       notes: ''
@@ -60,7 +61,7 @@ mapbox:
           colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
-          text: Aldeias
+          text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
@@ -89,6 +90,7 @@ mapbox:
         aldeias-jaragua-label[nome_aldei==Ytu]
         aldeias-jaragua
         pe-jaragua
+        camada-cor
         satelite
       title: ''
       notes: ''
@@ -97,7 +99,7 @@ mapbox:
           colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
-          text: Aldeias
+          text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
@@ -122,6 +124,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         satelite
+        camada-cor
       title: ''
       notes: ''
       items:
@@ -129,7 +132,7 @@ mapbox:
           colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
-          text: Aldeias
+          text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
@@ -154,6 +157,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         satelite
+        camada-cor
       title: ''
       notes: ''
       items:
@@ -161,7 +165,7 @@ mapbox:
           colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
-          text: Aldeias
+          text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
@@ -186,6 +190,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         satelite
+        camada-cor
       title: ''
       notes: ''
       items:
@@ -193,7 +198,7 @@ mapbox:
           colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
-          text: Aldeias
+          text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
@@ -218,6 +223,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         satelite
+        camada-cor
       title: ''
       notes: ''
       items:
@@ -225,7 +231,7 @@ mapbox:
           colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
-          text: Aldeias
+          text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
@@ -250,6 +256,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         satelite
+        camada-cor
       title: ''
       notes: ''
       items:
@@ -257,7 +264,7 @@ mapbox:
           colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
-          text: Aldeias
+          text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
@@ -282,6 +289,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         satelite
+        camada-cor
       title: ''
       notes: ''
       items:
@@ -289,7 +297,7 @@ mapbox:
           colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
-          text: Aldeias
+          text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
@@ -314,6 +322,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         satelite
+        camada-cor
       title: ''
       notes: ''
       items:
@@ -321,7 +330,7 @@ mapbox:
           colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
-          text: Aldeias
+          text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
@@ -346,6 +355,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         satelite
+        camada-cor
       title: ''
       notes: ''
       items:
@@ -353,7 +363,7 @@ mapbox:
           colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
-          text: Aldeias
+          text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
@@ -364,6 +374,19 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Limite do Parque Estadual Jaraguá
+    - id: map1_fimti
+      centerLng: '-46.782'
+      centerLat: '-23.461'
+      zoom: '13.26'
+      mobileZoom: '13.26'
+      duration: '3000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+      title: ''
+      notes: ''
+      items:
     - id: map2_jaraguasp
       centerLng: '-46.888'
       centerLat: '-23.574'
@@ -1160,54 +1183,13 @@ components:
 
           A Terra Indígena Jaraguá é um território localizado na cidade de São Paulo, tradicionalmente habitado pelo povo Guarani Mbya. A área reconhecida e demarcada pelo Estado Brasileiro abrange 532 hectares, a maior parte ainda cobertos de Mata Atlântica. Atualmente, a TI Jaraguá conta com nove Tekoas (aldeias).
       - type: Spacer
-        txtColor: ''
-        bgColor: ''
         desktop: 800px
         tablet: 800px
         mobile: 800px
-        mapView: map1_ytu
       - type: MapView
         txtColor: ''
         bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: 'Retomada e fundação: década de 1960'
-            text: TEKOA YTU
-          - type: Spacer
-            desktop: 20px
-            tablet: 20px
-            mobile: 20px
-          - type: Text
-            hasDropCap: false
-            content: Uma das mais antigas tekoas, a tekoa Ytu, “aldeia da cachoeira”, foi fundada pela família de Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá, e Joaquim Augusto Martim. O nome se refere ao Ribeirão das Lavras que, por meio de uma pequena cachoeira, chega até a tekoa. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
-      - type: Spacer
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
         mapView: map1_ytu
-      - type: Spacer
-        hasDropCap: false
-        content: |-
-          ##### TEKOA YTU
-
-          Retomada e fundação: década de 1960
-
-          Uma das mais antigas tekoas, a tekoa Ytu, “Aldeia da Cachoeira”, foi fundada pela família de Joaquim Augusto Martim e Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá. O nome se refere ao Ribeirão das Lavras que chega à _Tekoa_ por meio de uma pequena cachoeira. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
-        components:
-          - type: TimelineBullet
-            content: 'Retomada e fundação: década de 1960'
-            text: TEKOA YTU
-          - type: Spacer
-            desktop: 20px
-            tablet: 20px
-            mobile: 20px
-          - type: Text
-            hasDropCap: false
-            content: Uma das mais antigas tekoas, a tekoa Ytu, “aldeia da cachoeira”, foi fundada pela família de Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá, e Joaquim Augusto Martim. O nome se refere ao Ribeirão das Lavras que, por meio de uma pequena cachoeira, chega até a tekoa. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
-      - Spacer: 
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
       - type: Text
         hasDropCap: false
         content: |-
@@ -1217,18 +1199,12 @@ components:
 
           Uma das mais antigas tekoas, a tekoa Ytu, “Aldeia da Cachoeira”, foi fundada pela família de Joaquim Augusto Martim e Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá. O nome se refere ao Ribeirão das Lavras que chega à _Tekoa_ por meio de uma pequena cachoeira. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
       - type: Spacer
-        txtColor: ''
-        bgColor: ''
         desktop: 500px
         tablet: 500px
         mobile: 500px
-        mapView: map1_pyau
       - type: MapView
         txtColor: ''
         bgColor: ''
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
         mapView: map1_pyau
       - type: Spacer
         hasDropCap: false
@@ -1522,6 +1498,10 @@ components:
         desktop: 500px
         tablet: 500px
         mobile: 500px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_fimti
     columnAlign: left
     floatingText: true
   - type: Group
