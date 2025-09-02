@@ -52,6 +52,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         memoria-guarani
+        camada-cor
         satelite
       title: ''
       notes: ''
@@ -60,7 +61,7 @@ mapbox:
           colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
-          text: Aldeias
+          text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
@@ -89,6 +90,7 @@ mapbox:
         aldeias-jaragua-label[nome_aldei==Ytu]
         aldeias-jaragua
         pe-jaragua
+        camada-cor
         satelite
       title: ''
       notes: ''
@@ -97,7 +99,7 @@ mapbox:
           colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
-          text: Aldeias
+          text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
@@ -122,6 +124,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         satelite
+        camada-cor
       title: ''
       notes: ''
       items:
@@ -129,7 +132,7 @@ mapbox:
           colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
-          text: Aldeias
+          text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
@@ -154,6 +157,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         satelite
+        camada-cor
       title: ''
       notes: ''
       items:
@@ -161,7 +165,7 @@ mapbox:
           colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
-          text: Aldeias
+          text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
@@ -186,6 +190,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         satelite
+        camada-cor
       title: ''
       notes: ''
       items:
@@ -193,7 +198,7 @@ mapbox:
           colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
-          text: Aldeias
+          text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
@@ -218,6 +223,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         satelite
+        camada-cor
       title: ''
       notes: ''
       items:
@@ -225,7 +231,7 @@ mapbox:
           colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
-          text: Aldeias
+          text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
@@ -250,6 +256,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         satelite
+        camada-cor
       title: ''
       notes: ''
       items:
@@ -257,7 +264,7 @@ mapbox:
           colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
-          text: Aldeias
+          text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
@@ -282,6 +289,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         satelite
+        camada-cor
       title: ''
       notes: ''
       items:
@@ -289,7 +297,7 @@ mapbox:
           colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
-          text: Aldeias
+          text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
@@ -314,6 +322,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         satelite
+        camada-cor
       title: ''
       notes: ''
       items:
@@ -321,7 +330,7 @@ mapbox:
           colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
-          text: Aldeias
+          text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
@@ -346,6 +355,7 @@ mapbox:
         aldeias-jaragua
         pe-jaragua
         satelite
+        camada-cor
       title: ''
       notes: ''
       items:
@@ -353,7 +363,7 @@ mapbox:
           colorIcon: '#66ea5d'
           typeIcon: outlined
           iconFill: true
-          text: Aldeias
+          text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
@@ -364,21 +374,71 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Limite do Parque Estadual Jaraguá
+    - id: map1_fimti
+      centerLng: '-46.782'
+      centerLat: '-23.461'
+      zoom: '13.26'
+      mobileZoom: '13.26'
+      duration: '3000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+      title: ''
+      notes: ''
+      items: []
     - id: map2_jaraguasp
-      centerLng: '-46.888'
-      centerLat: '-23.574'
-      zoom: '9.22'
-      mobileZoom: '9.22'
+      centerLng: '-46.683'
+      centerLat: '-23.500'
+      zoom: '9.92'
+      mobileZoom: '9.92'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
+        ti-jaragua
         exploracao-ouro-sp
       title: ''
       notes: ''
       items:
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#d28fef8e'
+          typeIcon: outlined
+          iconFill: true
+          text: Áreas de exploração do ouro em São Paulo
+    - id: map2_jaraguasptudo
+      centerLng: '-46.683'
+      centerLat: '-23.500'
+      zoom: '9.92'
+      mobileZoom: '9.92'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+        patteo-collegio
+        estacao-barueri
+        exploracao-ouro-sp
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
         - icon: circle
           colorIcon: '#9b16d4'
+          typeIcon: outlined
+          iconFill: true
+          text: Patrimônio colonial
+        - icon: circle
+          colorIcon: '#d28fef8e'
           typeIcon: outlined
           iconFill: true
           text: Áreas de exploração do ouro em São Paulo
@@ -391,6 +451,7 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
+        ti-jaragua
         pateo-collegio
       title: ''
       notes: ''
@@ -409,7 +470,9 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
-        pateo-collegio
+        ti-jaragua
+        pateo-collegio-area
+        pateo-collegio-label
       title: ''
       notes: ''
       items:
@@ -417,25 +480,34 @@ mapbox:
           colorIcon: '#9b16d4'
           typeIcon: outlined
           iconFill: true
-          text: Pateo do Collegio
+          text: Patrimônio colonial
     - id: map2_barueri
-      centerLng: '-46.840'
-      centerLat: '-23.494'
-      zoom: '11.81'
-      mobileZoom: '11.81'
+      centerLng: '-46.785'
+      centerLat: '-23.505'
+      zoom: '11.41'
+      mobileZoom: '11.41'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
+        ti-jaragua
+        pateo-collegio
+        pateo-collegio-label
         capela-barueri
+        capela-barueri-label
       title: ''
       notes: ''
       items:
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
         - icon: circle
           colorIcon: '#9b16d4'
           typeIcon: outlined
           iconFill: true
-          text: Aldeamento de Barueri
+          text: Patrimônio colonial
     - id: map2_ourojaragua
       centerLng: '-46.781'
       centerLat: '-23.458'
@@ -445,11 +517,17 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
+        ti-jaragua
         afonso-sardinha
         patrimonio-colonial
       title: ''
       notes: ''
       items:
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: true
+          text: Terra Indígena Jaraguá
         - icon: circle
           colorIcon: '#9b16d4'
           typeIcon: outlined
@@ -460,6 +538,19 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Remanescentes de estruturas da mineração do período colonial
+    - id: map2_fim
+      centerLng: '-46.781'
+      centerLat: '-23.458'
+      zoom: '13.52'
+      mobileZoom: '13.52'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+      title: ''
+      notes: ''
+      items: []
     - id: map3_jaragua
       centerLng: '-46.766'
       centerLat: '-23.460'
@@ -1160,54 +1251,13 @@ components:
 
           A Terra Indígena Jaraguá é um território localizado na cidade de São Paulo, tradicionalmente habitado pelo povo Guarani Mbya. A área reconhecida e demarcada pelo Estado Brasileiro abrange 532 hectares, a maior parte ainda cobertos de Mata Atlântica. Atualmente, a TI Jaraguá conta com nove Tekoas (aldeias).
       - type: Spacer
-        txtColor: ''
-        bgColor: ''
         desktop: 800px
         tablet: 800px
         mobile: 800px
-        mapView: map1_ytu
       - type: MapView
         txtColor: ''
         bgColor: ''
-        components:
-          - type: TimelineBullet
-            content: 'Retomada e fundação: década de 1960'
-            text: TEKOA YTU
-          - type: Spacer
-            desktop: 20px
-            tablet: 20px
-            mobile: 20px
-          - type: Text
-            hasDropCap: false
-            content: Uma das mais antigas tekoas, a tekoa Ytu, “aldeia da cachoeira”, foi fundada pela família de Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá, e Joaquim Augusto Martim. O nome se refere ao Ribeirão das Lavras que, por meio de uma pequena cachoeira, chega até a tekoa. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
-      - type: Spacer
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
         mapView: map1_ytu
-      - type: Spacer
-        hasDropCap: false
-        content: |-
-          ##### TEKOA YTU
-
-          Retomada e fundação: década de 1960
-
-          Uma das mais antigas tekoas, a tekoa Ytu, “Aldeia da Cachoeira”, foi fundada pela família de Joaquim Augusto Martim e Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá. O nome se refere ao Ribeirão das Lavras que chega à _Tekoa_ por meio de uma pequena cachoeira. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
-        components:
-          - type: TimelineBullet
-            content: 'Retomada e fundação: década de 1960'
-            text: TEKOA YTU
-          - type: Spacer
-            desktop: 20px
-            tablet: 20px
-            mobile: 20px
-          - type: Text
-            hasDropCap: false
-            content: Uma das mais antigas tekoas, a tekoa Ytu, “aldeia da cachoeira”, foi fundada pela família de Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá, e Joaquim Augusto Martim. O nome se refere ao Ribeirão das Lavras que, por meio de uma pequena cachoeira, chega até a tekoa. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
-      - Spacer: 
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
       - type: Text
         hasDropCap: false
         content: |-
@@ -1217,18 +1267,12 @@ components:
 
           Uma das mais antigas tekoas, a tekoa Ytu, “Aldeia da Cachoeira”, foi fundada pela família de Joaquim Augusto Martim e Jandira Augusto Martim, primeira Cacica da Terra Indígena Jaraguá. O nome se refere ao Ribeirão das Lavras que chega à _Tekoa_ por meio de uma pequena cachoeira. Cobrindo um perímetro de certa de 1.8 hectares, foi demarcada em 1987.
       - type: Spacer
-        txtColor: ''
-        bgColor: ''
         desktop: 500px
         tablet: 500px
         mobile: 500px
-        mapView: map1_pyau
       - type: MapView
         txtColor: ''
         bgColor: ''
-        desktop: 500px
-        tablet: 500px
-        mobile: 500px
         mapView: map1_pyau
       - type: Spacer
         hasDropCap: false
@@ -1522,6 +1566,10 @@ components:
         desktop: 500px
         tablet: 500px
         mobile: 500px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_fimti
     columnAlign: left
     floatingText: true
   - type: Group
@@ -1738,7 +1786,7 @@ components:
               desktop: 150px
               tablet: 150px
               mobile: 150px
-        mapView: map2_jaraguaspzoom
+        mapView: map2_jaraguasptudo
       - type: Spacer
         desktop: 600px
         tablet: 600px
@@ -1781,7 +1829,6 @@ components:
         description: 'Capela de Nossa Senhora da Escada, ponto central do Aldeamento de Barueri. As ruínas da capela original, datada do século XVI, foram encontradas em 2003 e logo restauradas (Foto: Victor Hugo Mori/Vitruvius).'
         txtColor: ''
         bgColor: ''
-        mapView: map2_ourojaragua
       - type: Spacer
         desktop: 600px
         tablet: 600px
@@ -1795,17 +1842,10 @@ components:
         content: Pouco depois, em 1597, o bandeirante Afonso Sardinha encontra ouro na região do Jaraguá. Estabelece uma grande propriedade na área com a construção de um complexo Casa Grande – Senzala ao pé do morro.
         txtColor: ''
         bgColor: ''
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
-        mapView: map2_jaraguasp
       - type: Spacer
-        txtColor: ''
-        bgColor: ''
         desktop: 50px
         tablet: 50px
         mobile: 50px
-        mapView: map2_jaraguasp
       - type: ImageBlock
         wideImage: false
         src: /uploads/casa_afonso_sardinha.jpg
@@ -1813,23 +1853,13 @@ components:
         description: O complexo Casa Grande-Senzala construído por Afonso Sardinha é hoje o principal patrimônio do Parque Estadual do Jaraguá.
         txtColor: ''
         bgColor: ''
-        desktop: 800px
-        tablet: 800px
-        mobile: 800px
-        mapView: map2_jaraguasp
       - type: Spacer
-        txtColor: ''
-        bgColor: ''
         desktop: 300px
         tablet: 300px
         mobile: 300px
-        mapView: map2_jaraguasp
       - type: MapView
         txtColor: ''
         bgColor: ''
-        desktop: 800px
-        tablet: 800px
-        mobile: 800px
         mapView: map2_jaraguasp
       - type: Spacer
         desktop: 800px
