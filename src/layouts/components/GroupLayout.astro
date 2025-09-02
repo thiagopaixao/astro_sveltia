@@ -30,10 +30,10 @@ if (backgroundMedia && backgroundMedia.length > 0) {
     const media = backgroundMedia[0];
     if (media.type === 'backgroundImage' && media.imgSrc) {
         imgBg = media.imgSrc;
-        imgBg = imgBg.startsWith('http') ? imgBg : `${import.meta.env.BASE_URL}${imgBg}`;
+        imgBg = /^https?:\/\//i.test(imgBg) ? imgBg : new URL(imgBg.replace(/^\/+/, ''), new URL(import.meta.env.BASE_URL, 'http://local')).pathname;
     } else if (media.type === 'backgroundVideo' && media.videoSrc) {
         videoBg = media.videoSrc;
-        videoBg = videoBg.startsWith('http') ? videoBg : `${import.meta.env.BASE_URL}${videoBg}`;
+        videoBg = /^https?:\/\//i.test(videoBg) ? videoBg : new URL(videoBg.replace(/^\/+/, ''), new URL(import.meta.env.BASE_URL, 'http://local')).pathname;
     }
 }
 ---
