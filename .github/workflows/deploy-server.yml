@@ -29,16 +29,16 @@ jobs:
         id: presence
         shell: bash
         env:
-          SSH_HOST:        ${{ secrets.SSH_HOST }}
-          SSH_USER:        ${{ secrets.SSH_USER }}
-          SSH_PORT:        ${{ secrets.SSH_PORT || '22' }}
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
-          SITE_URL_MAIN:   ${{ secrets.SITE_URL_MAIN }}
-          SITE_URL_PREVIEW:${{ secrets.SITE_URL_PREVIEW }}
-          DOCROOT_MAIN:    ${{ secrets.DEPLOY_MAIN_DOCROOT_PATH }}
-          DOCROOT_PREV:    ${{ secrets.DEPLOY_PREVIEW_DOCROOT_PATH }}
-          BACKUPS_DIR:     ${{ secrets.BACKUPS_DIR_PATH }}
+          SSH_HOST:         ${{ secrets.SSH_HOST }}
+          SSH_USER:         ${{ secrets.SSH_USER }}
+          SSH_PORT:         ${{ secrets.SSH_PORT || '22' }}
+          SSH_PRIVATE_KEY:  ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_KNOWN_HOSTS:  ${{ secrets.SSH_KNOWN_HOSTS }}
+          SITE_URL_MAIN:    ${{ secrets.SITE_URL_MAIN }}
+          SITE_URL_PREVIEW: ${{ secrets.SITE_URL_PREVIEW }}
+          DOCROOT_MAIN:     ${{ secrets.DEPLOY_MAIN_DOCROOT_PATH }}
+          DOCROOT_PREV:     ${{ secrets.DEPLOY_PREVIEW_DOCROOT_PATH }}
+          BACKUPS_DIR:      ${{ secrets.BACKUPS_DIR_PATH }}
         run: |
           set -euo pipefail
           missing=()
