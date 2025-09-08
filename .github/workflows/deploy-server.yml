@@ -1,3 +1,11 @@
+# Deploy to a Linux server via SSH/rsync with safety backup and branch-aware targets.
+# - Triggers on push to main/preview and manual dispatch.
+# - Precheck validates secrets, normalizes the private key and tests SSH connectivity.
+# - On main: deploy to PROD docroot and preserve excluded subfolders (CSV from EXCLUDE_PATHS).
+# - On preview: deploy to PREVIEW docroot (no exclusions).
+# - Creates a dated backup (YYYY-MM-DD) of the target docroot before replacing files.
+# - Enforces file/dir permissions via rsync --chmod; optional chown step guarded in-script.
+
 name: Deploy to Server (Astro)
 
 on:
@@ -52,41 +60,46 @@ jobs:
             echo "ok=true"    >> $GITHUB_OUTPUT
           fi
 
-      - name: "Check SSH key format & host connectivity"
+      - name: "Check SSH key (normalize) & connectivity"
         id: ssh
         if: ${{ steps.presence.outputs.ok == 'true' }}
         shell: bash
         env:
-          SSH_HOST:        ${{ secrets.SSH_HOST }}
-          SSH_USER:        ${{ secrets.SSH_USER }}
-          SSH_PORT:        ${{ secrets.SSH_PORT || '22' }}
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+          SSH_HOST:         ${{ secrets.SSH_HOST }}
+          SSH_USER:         ${{ secrets.SSH_USER }}
+          SSH_PORT:         ${{ secrets.SSH_PORT || '22' }}
+          SSH_PRIVATE_KEY:  ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_KNOWN_HOSTS:  ${{ secrets.SSH_KNOWN_HOSTS }}
         run: |
           set -euo pipefail
-          # Validate that the private key is loadable (no passphrase)
-          if ! ssh-keygen -y -f <(printf "%s" "$SSH_PRIVATE_KEY") >/dev/null 2>&1; then
+          install -m 700 -d ~/.ssh
+
+          # 1) Normalize CRLF -> LF and ensure trailing newline
+          printf "%s" "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_deploy
+          tail -c1 ~/.ssh/id_deploy | od -An -t x1 | grep -q '0a' || echo >> ~/.ssh/id_deploy
+          chmod 600 ~/.ssh/id_deploy
+
+          # 2) Validate private key can be loaded
+          if ! ssh-keygen -y -f ~/.ssh/id_deploy >/dev/null 2>&1; then
             echo "ok=false"   >> $GITHUB_OUTPUT
             echo "reason=Invalid SSH_PRIVATE_KEY (format or passphrase)" >> $GITHUB_OUTPUT
             exit 0
           fi
 
-          install -m 700 -d ~/.ssh
-          printf "%s" "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-
+          # 3) Prepare known_hosts (strict checking)
           if [ -n "${SSH_KNOWN_HOSTS:-}" ]; then
             printf "%s\n" "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
-            KH_OPT="-o StrictHostKeyChecking=yes"
           else
-            KH_OPT="-o StrictHostKeyChecking=accept-new"
+            ssh-keyscan -p "$SSH_PORT" "$SSH_HOST" > ~/.ssh/known_hosts
           fi
 
-          # Try a quick non-interactive remote command
-          if ssh -p "$SSH_PORT" -o BatchMode=yes -o ConnectTimeout=10 $KH_OPT "$SSH_USER@$SSH_HOST" "echo ok" >/dev/null 2>&1; then
-            echo "ok=true"    >> $GITHUB_OUTPUT
+          # 4) Connectivity test using ONLY this key
+          if ssh -p "$SSH_PORT" -o BatchMode=yes -o ConnectTimeout=10 \
+               -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes \
+               -i ~/.ssh/id_deploy "$SSH_USER@$SSH_HOST" "echo ok" >/dev/null 2>&1; then
+            echo "ok=true" >> $GITHUB_OUTPUT
           else
-            echo "ok=false"   >> $GITHUB_OUTPUT
+            echo "ok=false" >> $GITHUB_OUTPUT
             echo "reason=SSH connection failed (host/user/port/key/known_hosts)" >> $GITHUB_OUTPUT
           fi
 
@@ -154,7 +167,6 @@ jobs:
           node-version: '20'
 
       - name: "Install Dependencies"
-        # Keep same style as the Pages workflow for consistency
         run: npm install
 
       - name: "Build (Astro)"
@@ -184,6 +196,25 @@ jobs:
           name: site-dist
           path: ./dist
 
+      - name: "Prepare SSH (key + known_hosts)"
+        shell: bash
+        env:
+          SSH_HOST:         ${{ secrets.SSH_HOST }}
+          SSH_PORT:         ${{ secrets.SSH_PORT || '22' }}
+          SSH_PRIVATE_KEY:  ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_KNOWN_HOSTS:  ${{ secrets.SSH_KNOWN_HOSTS }}
+        run: |
+          set -euo pipefail
+          install -m 700 -d ~/.ssh
+          printf "%s" "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_deploy
+          tail -c1 ~/.ssh/id_deploy | od -An -t x1 | grep -q '0a' || echo >> ~/.ssh/id_deploy
+          chmod 600 ~/.ssh/id_deploy
+          if [ -n "${SSH_KNOWN_HOSTS:-}" ]; then
+            printf "%s\n" "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          else
+            ssh-keyscan -p "$SSH_PORT" "$SSH_HOST" > ~/.ssh/known_hosts
+          fi
+
       - name: "Safety backup on remote host (exact paths from Secrets)"
         # Creates BACKUPS_DIR/<basename(docroot)>_YYYY-MM-DD and copies the current docroot there
         shell: bash
@@ -191,28 +222,18 @@ jobs:
           SSH_HOST:        ${{ secrets.SSH_HOST }}
           SSH_USER:        ${{ secrets.SSH_USER }}
           SSH_PORT:        ${{ secrets.SSH_PORT || '22' }}
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
           BACKUPS_DIR:     ${{ secrets.BACKUPS_DIR_PATH }}
           DEPLOY_TARGET:   ${{ needs.build.outputs.deploy_target }}
         run: |
           set -euo pipefail
-          install -m 700 -d ~/.ssh
-          printf "%s" "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-          if [ -n "${SSH_KNOWN_HOSTS:-}" ]; then
-            printf "%s\n" "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
-            KH_OPT="-o StrictHostKeyChecking=yes"
-          else
-            KH_OPT="-o StrictHostKeyChecking=accept-new"
-          fi
           ts=$(date +%F)
           base=$(basename "$DEPLOY_TARGET")
-          ssh -p "$SSH_PORT" $KH_OPT "$SSH_USER@$SSH_HOST" "
-            set -euo pipefail
-            mkdir -p '${BACKUPS_DIR}/${base}_${ts}'
-            rsync -a --delete '${DEPLOY_TARGET}/' '${BACKUPS_DIR}/${base}_${ts}/'
-          "
+          ssh -i ~/.ssh/id_deploy -p "$SSH_PORT" -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes \
+            "$SSH_USER@$SSH_HOST" "
+              set -euo pipefail
+              mkdir -p '${BACKUPS_DIR}/${base}_${ts}'
+              rsync -a --delete '${DEPLOY_TARGET}/' '${BACKUPS_DIR}/${base}_${ts}/'
+            "
 
       - name: "Deploy via rsync (preserve EXCLUDE_PATHS only on main)"
         shell: bash
@@ -220,24 +241,12 @@ jobs:
           SSH_HOST:        ${{ secrets.SSH_HOST }}
           SSH_USER:        ${{ secrets.SSH_USER }}
           SSH_PORT:        ${{ secrets.SSH_PORT || '22' }}
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
           DEPLOY_TARGET:   ${{ needs.build.outputs.deploy_target }}
           IS_MAIN:         ${{ needs.build.outputs.is_main }}
           EXCLUDE_PATHS:   ${{ secrets.EXCLUDE_PATHS }}   # e.g. "beta, v1"
           RSYNC_PERMS:     ${{ env.RSYNC_PERMS }}
         run: |
           set -euo pipefail
-          install -m 700 -d ~/.ssh
-          printf "%s" "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-          if [ -n "${SSH_KNOWN_HOSTS:-}" ]; then
-            printf "%s\n" "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
-            KH_OPT="-o StrictHostKeyChecking=yes"
-          else
-            KH_OPT="-o StrictHostKeyChecking=accept-new"
-          fi
-
           RSYNC_OPTS="-az --delete --human-readable --progress --chmod=$RSYNC_PERMS"
           if [ "$IS_MAIN" = "true" ] && [ -n "${EXCLUDE_PATHS:-}" ]; then
             # Turn "beta, v1,logs" into --exclude=beta/ --exclude=v1/ --exclude=logs/
@@ -247,9 +256,8 @@ jobs:
               [ -n "$x" ] && RSYNC_OPTS="$RSYNC_OPTS --exclude=$x/"
             done
           fi
-
           rsync $RSYNC_OPTS \
-            -e "ssh -p $SSH_PORT $KH_OPT" \
+            -e "ssh -i ~/.ssh/id_deploy -p $SSH_PORT -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes" \
             ./dist/ "$SSH_USER@$SSH_HOST:${DEPLOY_TARGET}/"
 
       - name: "(Optional) chown owner/group on destination"
@@ -258,8 +266,6 @@ jobs:
           SSH_HOST:        ${{ secrets.SSH_HOST }}
           SSH_USER:        ${{ secrets.SSH_USER }}
           SSH_PORT:        ${{ secrets.SSH_PORT || '22' }}
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
           DEPLOY_TARGET:   ${{ needs.build.outputs.deploy_target }}
           DEPLOY_OWNER:    ${{ secrets.DEPLOY_OWNER }}
           DEPLOY_GROUP:    ${{ secrets.DEPLOY_GROUP }}
@@ -270,16 +276,5 @@ jobs:
             echo "No DEPLOY_OWNER/GROUP provided; skipping chown."
             exit 0
           fi
-
-          install -m 700 -d ~/.ssh
-          printf "%s" "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-          if [ -n "${SSH_KNOWN_HOSTS:-}" ]; then
-            printf "%s\n" "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
-            KH_OPT="-o StrictHostKeyChecking=yes"
-          else
-            KH_OPT="-o StrictHostKeyChecking=accept-new"
-          fi
-
-          ssh -p "$SSH_PORT" $KH_OPT "$SSH_USER@$SSH_HOST" \
-            "chown -R '${DEPLOY_OWNER}:${DEPLOY_GROUP}' '${DEPLOY_TARGET}'"
+          ssh -i ~/.ssh/id_deploy -p "$SSH_PORT" -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes \
+            "$SSH_USER@$SSH_HOST" "chown -R '${DEPLOY_OWNER}:${DEPLOY_GROUP}' '${DEPLOY_TARGET}'"
