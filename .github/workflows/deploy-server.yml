@@ -253,7 +253,6 @@ jobs:
             ./dist/ "$SSH_USER@$SSH_HOST:${DEPLOY_TARGET}/"
 
       - name: "(Optional) chown owner/group on destination"
-        if: ${{ secrets.DEPLOY_OWNER != '' && secrets.DEPLOY_GROUP != '' }}
         shell: bash
         env:
           SSH_HOST:        ${{ secrets.SSH_HOST }}
@@ -266,6 +265,12 @@ jobs:
           DEPLOY_GROUP:    ${{ secrets.DEPLOY_GROUP }}
         run: |
           set -euo pipefail
+          # Guard: skip if owner/group not provided
+          if [ -z "${DEPLOY_OWNER:-}" ] || [ -z "${DEPLOY_GROUP:-}" ]; then
+            echo "No DEPLOY_OWNER/GROUP provided; skipping chown."
+            exit 0
+          fi
+
           install -m 700 -d ~/.ssh
           printf "%s" "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
@@ -275,5 +280,6 @@ jobs:
           else
             KH_OPT="-o StrictHostKeyChecking=accept-new"
           fi
+
           ssh -p "$SSH_PORT" $KH_OPT "$SSH_USER@$SSH_HOST" \
             "chown -R '${DEPLOY_OWNER}:${DEPLOY_GROUP}' '${DEPLOY_TARGET}'"
