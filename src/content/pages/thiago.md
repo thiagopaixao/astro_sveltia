@@ -72,7 +72,7 @@ components:
     components:
       - type: Text
         hasDropCap: false
-        content: NOVO Deploy teste 5!
+        content: NOVO Deploy teste 6!
       - type: ImageBlock
         wideImage: false
         src: /uploads/brazil-map.jpg
