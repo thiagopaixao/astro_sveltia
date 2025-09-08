@@ -1,0 +1,285 @@
+# Deploy to a Linux server via SSH/rsync with safety backup and branch-aware targets.
+# - Triggers on push to main/preview and manual dispatch.
+# - Precheck validates required secrets AND SSH connectivity before build/deploy.
+# - On main: deploy to PROD docroot and preserve excluded subfolders (CSV from EXCLUDE_PATHS).
+# - On preview: deploy to PREVIEW docroot (no exclusions).
+# - Creates a dated backup (YYYY-MM-DD) of the target docroot before replacing files.
+# - Enforces file/dir permissions via rsync --chmod; optional chown step.
+
+name: Deploy to Server (Astro)
+
+on:
+  push:
+    branches: [main, preview]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  # Avoid concurrent runs per branch on server deploys
+  group: server-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # Permissions applied at destination: dirs=755, files=644
+  RSYNC_PERMS: "Du=rwx,Dgo=rx,Fu=rw,Fgo=r"
+
+jobs:
+  precheck_server:
+    name: Precheck: required secrets & SSH connectivity
+    runs-on: ubuntu-latest
+    outputs:
+      ready:  ${{ steps.final.outputs.ready }}
+      reason: ${{ steps.final.outputs.reason }}
+    steps:
+      - name: Check presence of required secrets
+        id: presence
+        shell: bash
+        env:
+          SSH_HOST:        ${{ secrets.SSH_HOST }}
+          SSH_USER:        ${{ secrets.SSH_USER }}
+          SSH_PORT:        ${{ secrets.SSH_PORT || '22' }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+          SITE_URL_MAIN:   ${{ secrets.SITE_URL_MAIN }}
+          SITE_URL_PREVIEW:${{ secrets.SITE_URL_PREVIEW }}
+          DOCROOT_MAIN:    ${{ secrets.DEPLOY_MAIN_DOCROOT_PATH }}
+          DOCROOT_PREV:    ${{ secrets.DEPLOY_PREVIEW_DOCROOT_PATH }}
+          BACKUPS_DIR:     ${{ secrets.BACKUPS_DIR_PATH }}
+        run: |
+          set -euo pipefail
+          missing=()
+          for v in SSH_HOST SSH_USER SSH_PRIVATE_KEY SITE_URL_MAIN SITE_URL_PREVIEW DOCROOT_MAIN DOCROOT_PREV BACKUPS_DIR; do
+            if [ -z "${!v:-}" ]; then missing+=("$v"); fi
+          done
+          if [ ${#missing[@]} -gt 0 ]; then
+            echo "ok=false"   >> $GITHUB_OUTPUT
+            echo "reason=Missing secrets: ${missing[*]}" >> $GITHUB_OUTPUT
+          else
+            echo "ok=true"    >> $GITHUB_OUTPUT
+          fi
+
+      - name: Check SSH key format & host connectivity
+        id: ssh
+        if: ${{ steps.presence.outputs.ok == 'true' }}
+        shell: bash
+        env:
+          SSH_HOST:        ${{ secrets.SSH_HOST }}
+          SSH_USER:        ${{ secrets.SSH_USER }}
+          SSH_PORT:        ${{ secrets.SSH_PORT || '22' }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+        run: |
+          set -euo pipefail
+          # Validate that the private key is loadable (no passphrase)
+          if ! ssh-keygen -y -f <(printf "%s" "$SSH_PRIVATE_KEY") >/dev/null 2>&1; then
+            echo "ok=false"   >> $GITHUB_OUTPUT
+            echo "reason=Invalid SSH_PRIVATE_KEY (format or passphrase)" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          install -m 700 -d ~/.ssh
+          printf "%s" "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+
+          if [ -n "${SSH_KNOWN_HOSTS:-}" ]; then
+            printf "%s\n" "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+            KH_OPT="-o StrictHostKeyChecking=yes"
+          else
+            KH_OPT="-o StrictHostKeyChecking=accept-new"
+          fi
+
+          # Try a quick non-interactive remote command
+          if ssh -p "$SSH_PORT" -o BatchMode=yes -o ConnectTimeout=10 $KH_OPT "$SSH_USER@$SSH_HOST" "echo ok" >/dev/null 2>&1; then
+            echo "ok=true"    >> $GITHUB_OUTPUT
+          else
+            echo "ok=false"   >> $GITHUB_OUTPUT
+            echo "reason=SSH connection failed (host/user/port/key/known_hosts)" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Finalize precheck result
+        id: final
+        shell: bash
+        env:
+          PRESENCE_OK:     ${{ steps.presence.outputs.ok }}
+          PRESENCE_REASON: ${{ steps.presence.outputs.reason }}
+          SSH_OK:          ${{ steps.ssh.outputs.ok }}
+          SSH_REASON:      ${{ steps.ssh.outputs.reason }}
+        run: |
+          set -euo pipefail
+          ready=true
+          reason=""
+          if [ "${PRESENCE_OK:-false}" != "true" ]; then
+            ready=false
+            reason="${PRESENCE_REASON:-missing secrets}"
+          elif [ "${SSH_OK:-false}" != "true" ]; then
+            ready=false
+            reason="${SSH_REASON:-ssh failed}"
+          fi
+          echo "ready=$ready"   >> $GITHUB_OUTPUT
+          echo "reason=$reason" >> $GITHUB_OUTPUT
+          if [ "$ready" != "true" ]; then
+            echo "::warning::Server deploy precheck failed: $reason"
+          fi
+
+  build:
+    # Only build if precheck passed
+    if: ${{ needs.precheck_server.outputs.ready == 'true' }}
+    needs: precheck_server
+    runs-on: ubuntu-latest
+    outputs:
+      site:          ${{ steps.vars.outputs.site }}
+      deploy_target: ${{ steps.vars.outputs.deploy_target }}
+      is_main:       ${{ steps.vars.outputs.is_main }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select SITE and target docroot by branch (from Secrets)
+        id: vars
+        shell: bash
+        env:
+          SITE_URL_MAIN:     ${{ secrets.SITE_URL_MAIN }}
+          SITE_URL_PREVIEW:  ${{ secrets.SITE_URL_PREVIEW }}
+          DOCROOT_MAIN:      ${{ secrets.DEPLOY_MAIN_DOCROOT_PATH }}
+          DOCROOT_PREVIEW:   ${{ secrets.DEPLOY_PREVIEW_DOCROOT_PATH }}
+        run: |
+          set -euo pipefail
+          if [ "${GITHUB_REF_NAME}" = "main" ]; then
+            echo "site=${SITE_URL_MAIN}"            >> "$GITHUB_OUTPUT"
+            echo "deploy_target=${DOCROOT_MAIN}"    >> "$GITHUB_OUTPUT"
+            echo "is_main=true"                     >> "$GITHUB_OUTPUT"
+          else
+            echo "site=${SITE_URL_PREVIEW}"         >> "$GITHUB_OUTPUT"
+            echo "deploy_target=${DOCROOT_PREVIEW}" >> "$GITHUB_OUTPUT"
+            echo "is_main=false"                    >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        # Keep same style as the Pages workflow for consistency
+        run: npm install
+
+      - name: Build (Astro)
+        # SITE from branch-specific secret; BASE_PATH is "/" for root/subdomain targets
+        run: npm run build
+        env:
+          BASE_PATH: /
+          SITE: ${{ steps.vars.outputs.site }}
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-dist
+          path: ./dist
+          if-no-files-found: error
+          retention-days: 7
+
+  deploy:
+    # Only deploy if precheck passed and build finished
+    if: ${{ needs.precheck_server.outputs.ready == 'true' }}
+    needs: [precheck_server, build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: site-dist
+          path: ./dist
+
+      - name: Safety backup on remote host (exact paths from Secrets)
+        # Creates BACKUPS_DIR/<basename(docroot)>_YYYY-MM-DD and copies the current docroot there
+        shell: bash
+        env:
+          SSH_HOST:        ${{ secrets.SSH_HOST }}
+          SSH_USER:        ${{ secrets.SSH_USER }}
+          SSH_PORT:        ${{ secrets.SSH_PORT || '22' }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+          BACKUPS_DIR:     ${{ secrets.BACKUPS_DIR_PATH }}
+          DEPLOY_TARGET:   ${{ needs.build.outputs.deploy_target }}
+        run: |
+          set -euo pipefail
+          install -m 700 -d ~/.ssh
+          printf "%s" "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          if [ -n "${SSH_KNOWN_HOSTS:-}" ]; then
+            printf "%s\n" "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+            KH_OPT="-o StrictHostKeyChecking=yes"
+          else
+            KH_OPT="-o StrictHostKeyChecking=accept-new"
+          fi
+          ts=$(date +%F)
+          base=$(basename "$DEPLOY_TARGET")
+          ssh -p "$SSH_PORT" $KH_OPT "$SSH_USER@$SSH_HOST" "
+            set -euo pipefail
+            mkdir -p '${BACKUPS_DIR}/${base}_${ts}'
+            rsync -a --delete '${DEPLOY_TARGET}/' '${BACKUPS_DIR}/${base}_${ts}/'
+          "
+
+      - name: Deploy via rsync (preserve EXCLUDE_PATHS only on main)
+        shell: bash
+        env:
+          SSH_HOST:        ${{ secrets.SSH_HOST }}
+          SSH_USER:        ${{ secrets.SSH_USER }}
+          SSH_PORT:        ${{ secrets.SSH_PORT || '22' }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+          DEPLOY_TARGET:   ${{ needs.build.outputs.deploy_target }}
+          IS_MAIN:         ${{ needs.build.outputs.is_main }}
+          EXCLUDE_PATHS:   ${{ secrets.EXCLUDE_PATHS }}   # e.g. "beta, v1"
+          RSYNC_PERMS:     ${{ env.RSYNC_PERMS }}
+        run: |
+          set -euo pipefail
+          install -m 700 -d ~/.ssh
+          printf "%s" "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          if [ -n "${SSH_KNOWN_HOSTS:-}" ]; then
+            printf "%s\n" "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+            KH_OPT="-o StrictHostKeyChecking=yes"
+          else
+            KH_OPT="-o StrictHostKeyChecking=accept-new"
+          fi
+
+          RSYNC_OPTS="-az --delete --human-readable --progress --chmod=$RSYNC_PERMS"
+          if [ "$IS_MAIN" = "true" ] && [ -n "${EXCLUDE_PATHS:-}" ]; then
+            # Turn "beta, v1,logs" into --exclude=beta/ --exclude=v1/ --exclude=logs/
+            IFS=',' read -ra EXS <<< "$EXCLUDE_PATHS"
+            for raw in "${EXS[@]}"; do
+              x="$(echo "$raw" | xargs)"  # trim spaces
+              [ -n "$x" ] && RSYNC_OPTS="$RSYNC_OPTS --exclude=$x/"
+            done
+          fi
+
+          rsync $RSYNC_OPTS \
+            -e "ssh -p $SSH_PORT $KH_OPT" \
+            ./dist/ "$SSH_USER@$SSH_HOST:${DEPLOY_TARGET}/"
+
+      - name: (Optional) chown owner/group on destination
+        if: ${{ secrets.DEPLOY_OWNER != '' && secrets.DEPLOY_GROUP != '' }}
+        shell: bash
+        env:
+          SSH_HOST:        ${{ secrets.SSH_HOST }}
+          SSH_USER:        ${{ secrets.SSH_USER }}
+          SSH_PORT:        ${{ secrets.SSH_PORT || '22' }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+          DEPLOY_TARGET:   ${{ needs.build.outputs.deploy_target }}
+          DEPLOY_OWNER:    ${{ secrets.DEPLOY_OWNER }}
+          DEPLOY_GROUP:    ${{ secrets.DEPLOY_GROUP }}
+        run: |
+          set -euo pipefail
+          install -m 700 -d ~/.ssh
+          printf "%s" "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          if [ -n "${SSH_KNOWN_HOSTS:-}" ]; then
+            printf "%s\n" "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+            KH_OPT="-o StrictHostKeyChecking=yes"
+          else
+            KH_OPT="-o StrictHostKeyChecking=accept-new"
+          fi
+          ssh -p "$SSH_PORT" $KH_OPT "$SSH_USER@$SSH_HOST" \
+            "chown -R '${DEPLOY_OWNER}:${DEPLOY_GROUP}' '${DEPLOY_TARGET}'"

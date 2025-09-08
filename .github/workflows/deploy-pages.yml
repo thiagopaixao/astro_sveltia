@@ -1,0 +1,90 @@
+# Deploy to GitHub Pages with a precheck to verify that Pages is enabled.
+# Uses dynamic SITE and BASE_PATH exactly like the original workflow:
+#   BASE_PATH: /${{ github.event.repository.name }}/
+#   SITE:      https://${{ github.repository_owner }}.github.io
+# If Pages is disabled, build/deploy steps are skipped gracefully.
+
+name: Deploy to GitHub Pages (Astro)
+
+on:
+  push:
+    branches: [main]  # default branch deployment
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  # Only one Pages deployment at a time
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  precheck_pages:
+    name: Precheck: Is GitHub Pages enabled?
+    runs-on: ubuntu-latest
+    outputs:
+      enabled: ${{ steps.chk.outputs.enabled }}
+    steps:
+      - name: Query GitHub API for Pages status
+        id: chk
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO:     ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          if gh api "repos/$REPO/pages" >/dev/null 2>&1; then
+            echo "enabled=true" >> $GITHUB_OUTPUT
+            echo "GitHub Pages is enabled for $REPO"
+          else
+            echo "enabled=false" >> $GITHUB_OUTPUT
+            echo "::warning::GitHub Pages is NOT enabled for $REPO. Skipping build/deploy."
+          fi
+
+  build:
+    name: Build Astro site
+    needs: precheck_pages
+    if: ${{ needs.precheck_pages.outputs.enabled == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        # Keep same style as original workflow
+        run: npm install
+
+      - name: Build (Astro)
+        # SITE and BASE_PATH are set exactly like in the original deploy.yml
+        run: npm run build
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}/
+          SITE: https://${{ github.repository_owner }}.github.io
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact for Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    if: ${{ needs.precheck_pages.outputs.enabled == 'true' }}
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
