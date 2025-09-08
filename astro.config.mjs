@@ -1,12 +1,20 @@
+import 'dotenv/config';
 import { defineConfig } from 'astro/config';
 
-// Use environment variable or default to empty string for local development
-const BASE_PATH = process.env.BASE_PATH || '';
+const SITE = process.env.SITE || 'http://localhost';
 
-// https://astro.build/config
+// Use environment variable or default to empty string for local development
+let BASE_PATH = process.env.BASE_PATH || '';
+if (BASE_PATH) {
+  if (!BASE_PATH.startsWith('/')) BASE_PATH = `/${BASE_PATH}`;
+  if (!BASE_PATH.endsWith('/')) BASE_PATH = `${BASE_PATH}/`;
+}
+
 export default defineConfig({
-  site: 'http://localhost',
+  site: SITE,
   base: BASE_PATH,
+  //trailingSlash: 'always',
+  output: 'static',
   //integrations: [svelte()],
   build: {
     assets: 'assets',
@@ -21,5 +29,4 @@ export default defineConfig({
       },
     },
   },
-  output: 'static',
 });

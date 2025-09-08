@@ -386,7 +386,7 @@ mapbox:
         ti-jaragua
       title: ''
       notes: ''
-      items:
+      items: []
     - id: map2_jaraguasp
       centerLng: '-46.683'
       centerLat: '-23.500'
@@ -550,7 +550,7 @@ mapbox:
         ti-jaragua
       title: ''
       notes: ''
-      items:
+      items: []
     - id: map3_jaragua
       centerLng: '-46.766'
       centerLat: '-23.460'
