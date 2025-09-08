@@ -1,11 +1,3 @@
-# Deploy to a Linux server via SSH/rsync with safety backup and branch-aware targets.
-# - Triggers on push to main/preview and manual dispatch.
-# - Precheck validates required secrets AND SSH connectivity before build/deploy.
-# - On main: deploy to PROD docroot and preserve excluded subfolders (CSV from EXCLUDE_PATHS).
-# - On preview: deploy to PREVIEW docroot (no exclusions).
-# - Creates a dated backup (YYYY-MM-DD) of the target docroot before replacing files.
-# - Enforces file/dir permissions via rsync --chmod; optional chown step.
-
 name: Deploy to Server (Astro)
 
 on:
@@ -27,13 +19,13 @@ env:
 
 jobs:
   precheck_server:
-    name: Precheck: required secrets & SSH connectivity
+    name: "Precheck: required secrets & SSH connectivity"
     runs-on: ubuntu-latest
     outputs:
       ready:  ${{ steps.final.outputs.ready }}
       reason: ${{ steps.final.outputs.reason }}
     steps:
-      - name: Check presence of required secrets
+      - name: "Check presence of required secrets"
         id: presence
         shell: bash
         env:
@@ -60,7 +52,7 @@ jobs:
             echo "ok=true"    >> $GITHUB_OUTPUT
           fi
 
-      - name: Check SSH key format & host connectivity
+      - name: "Check SSH key format & host connectivity"
         id: ssh
         if: ${{ steps.presence.outputs.ok == 'true' }}
         shell: bash
@@ -98,7 +90,7 @@ jobs:
             echo "reason=SSH connection failed (host/user/port/key/known_hosts)" >> $GITHUB_OUTPUT
           fi
 
-      - name: Finalize precheck result
+      - name: "Finalize precheck result"
         id: final
         shell: bash
         env:
@@ -133,9 +125,10 @@ jobs:
       deploy_target: ${{ steps.vars.outputs.deploy_target }}
       is_main:       ${{ steps.vars.outputs.is_main }}
     steps:
-      - uses: actions/checkout@v4
+      - name: "Checkout"
+        uses: actions/checkout@v4
 
-      - name: Select SITE and target docroot by branch (from Secrets)
+      - name: "Select SITE and target docroot by branch (from Secrets)"
         id: vars
         shell: bash
         env:
@@ -155,22 +148,23 @@ jobs:
             echo "is_main=false"                    >> "$GITHUB_OUTPUT"
           fi
 
-      - uses: actions/setup-node@v4
+      - name: "Setup Node.js"
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      - name: Install Dependencies
+      - name: "Install Dependencies"
         # Keep same style as the Pages workflow for consistency
         run: npm install
 
-      - name: Build (Astro)
+      - name: "Build (Astro)"
         # SITE from branch-specific secret; BASE_PATH is "/" for root/subdomain targets
         run: npm run build
         env:
           BASE_PATH: /
           SITE: ${{ steps.vars.outputs.site }}
 
-      - name: Upload build artifact
+      - name: "Upload build artifact"
         uses: actions/upload-artifact@v4
         with:
           name: site-dist
@@ -184,13 +178,13 @@ jobs:
     needs: [precheck_server, build]
     runs-on: ubuntu-latest
     steps:
-      - name: Download build artifact
+      - name: "Download build artifact"
         uses: actions/download-artifact@v4
         with:
           name: site-dist
           path: ./dist
 
-      - name: Safety backup on remote host (exact paths from Secrets)
+      - name: "Safety backup on remote host (exact paths from Secrets)"
         # Creates BACKUPS_DIR/<basename(docroot)>_YYYY-MM-DD and copies the current docroot there
         shell: bash
         env:
@@ -220,7 +214,7 @@ jobs:
             rsync -a --delete '${DEPLOY_TARGET}/' '${BACKUPS_DIR}/${base}_${ts}/'
           "
 
-      - name: Deploy via rsync (preserve EXCLUDE_PATHS only on main)
+      - name: "Deploy via rsync (preserve EXCLUDE_PATHS only on main)"
         shell: bash
         env:
           SSH_HOST:        ${{ secrets.SSH_HOST }}
@@ -258,7 +252,7 @@ jobs:
             -e "ssh -p $SSH_PORT $KH_OPT" \
             ./dist/ "$SSH_USER@$SSH_HOST:${DEPLOY_TARGET}/"
 
-      - name: (Optional) chown owner/group on destination
+      - name: "(Optional) chown owner/group on destination"
         if: ${{ secrets.DEPLOY_OWNER != '' && secrets.DEPLOY_GROUP != '' }}
         shell: bash
         env:

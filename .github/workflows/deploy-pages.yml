@@ -1,9 +1,3 @@
-# Deploy to GitHub Pages with a precheck to verify that Pages is enabled.
-# Uses dynamic SITE and BASE_PATH exactly like the original workflow:
-#   BASE_PATH: /${{ github.event.repository.name }}/
-#   SITE:      https://${{ github.repository_owner }}.github.io
-# If Pages is disabled, build/deploy steps are skipped gracefully.
-
 name: Deploy to GitHub Pages (Astro)
 
 on:
@@ -23,12 +17,12 @@ concurrency:
 
 jobs:
   precheck_pages:
-    name: Precheck: Is GitHub Pages enabled?
+    name: "Precheck: Is GitHub Pages enabled?"
     runs-on: ubuntu-latest
     outputs:
       enabled: ${{ steps.chk.outputs.enabled }}
     steps:
-      - name: Query GitHub API for Pages status
+      - name: "Query GitHub API for Pages status"
         id: chk
         shell: bash
         env:
@@ -45,39 +39,39 @@ jobs:
           fi
 
   build:
-    name: Build Astro site
+    name: "Build Astro site"
     needs: precheck_pages
     if: ${{ needs.precheck_pages.outputs.enabled == 'true' }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: "Checkout"
+        uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: "Setup Node.js"
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      - name: Install Dependencies
-        # Keep same style as original workflow
+      - name: "Install Dependencies"
         run: npm install
 
-      - name: Build (Astro)
+      - name: "Build (Astro)"
         # SITE and BASE_PATH are set exactly like in the original deploy.yml
         run: npm run build
         env:
           BASE_PATH: /${{ github.event.repository.name }}/
           SITE: https://${{ github.repository_owner }}.github.io
 
-      - name: Setup Pages
+      - name: "Setup Pages"
         uses: actions/configure-pages@v5
 
-      - name: Upload artifact for Pages
+      - name: "Upload artifact for Pages"
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
   deploy:
-    name: Deploy to GitHub Pages
+    name: "Deploy to GitHub Pages"
     needs: build
     if: ${{ needs.precheck_pages.outputs.enabled == 'true' }}
     runs-on: ubuntu-latest
@@ -85,6 +79,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy
+      - name: "Deploy"
         id: deployment
         uses: actions/deploy-pages@v4
