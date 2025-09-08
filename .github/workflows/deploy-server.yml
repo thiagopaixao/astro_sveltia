@@ -1,11 +1,3 @@
-# Deploy to a Linux server via SSH/rsync with safety backup and branch-aware targets.
-# - Triggers on push to main/preview and manual dispatch.
-# - Precheck validates secrets, normalizes the private key and tests SSH connectivity.
-# - On main: deploy to PROD docroot and preserve excluded subfolders (CSV from EXCLUDE_PATHS).
-# - On preview: deploy to PREVIEW docroot (no exclusions).
-# - Creates a dated backup (YYYY-MM-DD) of the target docroot before replacing files.
-# - Enforces file/dir permissions via rsync --chmod; optional chown step guarded in-script.
-
 name: Deploy to Server (Astro)
 
 on:
@@ -17,12 +9,10 @@ permissions:
   contents: read
 
 concurrency:
-  # Avoid concurrent runs per branch on server deploys
-  group: server-${{ github.ref }}
+  group: "server-${{ github.ref }}"
   cancel-in-progress: true
 
 env:
-  # Permissions applied at destination: dirs=755, files=644
   RSYNC_PERMS: "Du=rwx,Dgo=rx,Fu=rw,Fgo=r"
 
 jobs:
@@ -30,7 +20,7 @@ jobs:
     name: "Precheck: required secrets & SSH connectivity"
     runs-on: ubuntu-latest
     outputs:
-      ready:  ${{ steps.final.outputs.ready }}
+      ready: ${{ steps.final.outputs.ready }}
       reason: ${{ steps.final.outputs.reason }}
     steps:
       - name: "Check presence of required secrets"
@@ -54,10 +44,10 @@ jobs:
             if [ -z "${!v:-}" ]; then missing+=("$v"); fi
           done
           if [ ${#missing[@]} -gt 0 ]; then
-            echo "ok=false"   >> $GITHUB_OUTPUT
-            echo "reason=Missing secrets: ${missing[*]}" >> $GITHUB_OUTPUT
+            echo "ok=false"   >> "$GITHUB_OUTPUT"
+            echo "reason=Missing secrets: ${missing[*]}" >> "$GITHUB_OUTPUT"
           else
-            echo "ok=true"    >> $GITHUB_OUTPUT
+            echo "ok=true"    >> "$GITHUB_OUTPUT"
           fi
 
       - name: "Check SSH key (normalize) & connectivity"
@@ -74,33 +64,33 @@ jobs:
           set -euo pipefail
           install -m 700 -d ~/.ssh
 
-          # 1) Normalize CRLF -> LF and ensure trailing newline
+          # Normalize CRLF -> LF and ensure trailing newline
           printf "%s" "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_deploy
           tail -c1 ~/.ssh/id_deploy | od -An -t x1 | grep -q '0a' || echo >> ~/.ssh/id_deploy
           chmod 600 ~/.ssh/id_deploy
 
-          # 2) Validate private key can be loaded
+          # Validate private key can be loaded
           if ! ssh-keygen -y -f ~/.ssh/id_deploy >/dev/null 2>&1; then
-            echo "ok=false"   >> $GITHUB_OUTPUT
-            echo "reason=Invalid SSH_PRIVATE_KEY (format or passphrase)" >> $GITHUB_OUTPUT
+            echo "ok=false"   >> "$GITHUB_OUTPUT"
+            echo "reason=Invalid SSH_PRIVATE_KEY (format or passphrase)" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
-          # 3) Prepare known_hosts (strict checking)
+          # known_hosts (strict)
           if [ -n "${SSH_KNOWN_HOSTS:-}" ]; then
             printf "%s\n" "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
           else
             ssh-keyscan -p "$SSH_PORT" "$SSH_HOST" > ~/.ssh/known_hosts
           fi
 
-          # 4) Connectivity test using ONLY this key
+          # Connectivity using ONLY this key
           if ssh -p "$SSH_PORT" -o BatchMode=yes -o ConnectTimeout=10 \
                -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes \
                -i ~/.ssh/id_deploy "$SSH_USER@$SSH_HOST" "echo ok" >/dev/null 2>&1; then
-            echo "ok=true" >> $GITHUB_OUTPUT
+            echo "ok=true" >> "$GITHUB_OUTPUT"
           else
-            echo "ok=false" >> $GITHUB_OUTPUT
-            echo "reason=SSH connection failed (host/user/port/key/known_hosts)" >> $GITHUB_OUTPUT
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+            echo "reason=SSH connection failed (host/user/port/key/known_hosts)" >> "$GITHUB_OUTPUT"
           fi
 
       - name: "Finalize precheck result"
@@ -122,14 +112,13 @@ jobs:
             ready=false
             reason="${SSH_REASON:-ssh failed}"
           fi
-          echo "ready=$ready"   >> $GITHUB_OUTPUT
-          echo "reason=$reason" >> $GITHUB_OUTPUT
+          echo "ready=$ready"   >> "$GITHUB_OUTPUT"
+          echo "reason=$reason" >> "$GITHUB_OUTPUT"
           if [ "$ready" != "true" ]; then
             echo "::warning::Server deploy precheck failed: $reason"
           fi
 
   build:
-    # Only build if precheck passed
     if: ${{ needs.precheck_server.outputs.ready == 'true' }}
     needs: precheck_server
     runs-on: ubuntu-latest
@@ -170,7 +159,6 @@ jobs:
         run: npm install
 
       - name: "Build (Astro)"
-        # SITE from branch-specific secret; BASE_PATH is "/" for root/subdomain targets
         run: npm run build
         env:
           BASE_PATH: /
@@ -185,7 +173,6 @@ jobs:
           retention-days: 7
 
   deploy:
-    # Only deploy if precheck passed and build finished
     if: ${{ needs.precheck_server.outputs.ready == 'true' }}
     needs: [precheck_server, build]
     runs-on: ubuntu-latest
@@ -215,25 +202,55 @@ jobs:
             ssh-keyscan -p "$SSH_PORT" "$SSH_HOST" > ~/.ssh/known_hosts
           fi
 
-      - name: "Safety backup on remote host (exact paths from Secrets)"
-        # Creates BACKUPS_DIR/<basename(docroot)>_YYYY-MM-DD and copies the current docroot there
+      - name: "Ensure docroot exists (remote)"
         shell: bash
         env:
           SSH_HOST:        ${{ secrets.SSH_HOST }}
           SSH_USER:        ${{ secrets.SSH_USER }}
           SSH_PORT:        ${{ secrets.SSH_PORT || '22' }}
-          BACKUPS_DIR:     ${{ secrets.BACKUPS_DIR_PATH }}
           DEPLOY_TARGET:   ${{ needs.build.outputs.deploy_target }}
         run: |
           set -euo pipefail
-          ts=$(date +%F)
-          base=$(basename "$DEPLOY_TARGET")
           ssh -i ~/.ssh/id_deploy -p "$SSH_PORT" -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes \
-            "$SSH_USER@$SSH_HOST" "
+            "$SSH_USER@$SSH_HOST" "mkdir -p '${DEPLOY_TARGET}'"
+
+      - name: "Safety backup on remote host (guarded)"
+        shell: bash
+        env:
+          SSH_HOST:        ${{ secrets.SSH_HOST }}
+          SSH_USER:        ${{ secrets.SSH_USER }}
+          SSH_PORT:        ${{ secrets.SSH_PORT || '22' }}
+          DEPLOY_TARGET:   ${{ needs.build.outputs.deploy_target }}
+          BACKUPS_DIR:     ${{ secrets.BACKUPS_DIR_PATH }}
+        run: |
+          set -euo pipefail
+          ssh -i ~/.ssh/id_deploy -p "$SSH_PORT" -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes \
+            "$SSH_USER@$SSH_HOST" \
+            "DOCROOT='${DEPLOY_TARGET}' BACKUPS_DIR='${BACKUPS_DIR}' bash -lc '
               set -euo pipefail
-              mkdir -p '${BACKUPS_DIR}/${base}_${ts}'
-              rsync -a --delete '${DEPLOY_TARGET}/' '${BACKUPS_DIR}/${base}_${ts}/'
-            "
+              ts=\$(date +%F)
+
+              if [ -z \"\${DOCROOT:-}\" ] || [ -z \"\${BACKUPS_DIR:-}\" ]; then
+                echo \"ERROR: DOCROOT/BACKUPS_DIR cannot be empty\" >&2; exit 1
+              fi
+              case \"\$DOCROOT\" in /*) ;; *) echo \"ERROR: DOCROOT must be absolute\"; exit 1;; esac
+              case \"\$BACKUPS_DIR\" in /*) ;; *) echo \"ERROR: BACKUPS_DIR must be absolute\"; exit 1;; esac
+              if [ \"\$DOCROOT\" = \"/\" ]; then
+                echo \"ERROR: Refusing to backup \"/\"\"; exit 1
+              fi
+
+              base=\$(basename \"\$DOCROOT\")
+              DEST=\"\$BACKUPS_DIR/\${base}_\${ts}\"
+
+              case \"\$DEST/\" in
+                \"\$DOCROOT\"/*) echo \"ERROR: Backup destination \\\"\$DEST\\\" must NOT be inside docroot \\\"\$DOCROOT\\\"\"; exit 1;;
+              esac
+
+              mkdir -p \"\$DEST\"
+
+              rsync -a --delete --human-readable --one-file-system \
+                \"\$DOCROOT/\" \"\$DEST/\"
+            '"
 
       - name: "Deploy via rsync (preserve EXCLUDE_PATHS only on main)"
         shell: bash
@@ -243,16 +260,15 @@ jobs:
           SSH_PORT:        ${{ secrets.SSH_PORT || '22' }}
           DEPLOY_TARGET:   ${{ needs.build.outputs.deploy_target }}
           IS_MAIN:         ${{ needs.build.outputs.is_main }}
-          EXCLUDE_PATHS:   ${{ secrets.EXCLUDE_PATHS }}   # e.g. "beta, v1"
+          EXCLUDE_PATHS:   ${{ secrets.EXCLUDE_PATHS }}
           RSYNC_PERMS:     ${{ env.RSYNC_PERMS }}
         run: |
           set -euo pipefail
-          RSYNC_OPTS="-az --delete --human-readable --progress --chmod=$RSYNC_PERMS"
+          RSYNC_OPTS="-az --delete --human-readable --chmod=$RSYNC_PERMS"
           if [ "$IS_MAIN" = "true" ] && [ -n "${EXCLUDE_PATHS:-}" ]; then
-            # Turn "beta, v1,logs" into --exclude=beta/ --exclude=v1/ --exclude=logs/
             IFS=',' read -ra EXS <<< "$EXCLUDE_PATHS"
             for raw in "${EXS[@]}"; do
-              x="$(echo "$raw" | xargs)"  # trim spaces
+              x="$(echo "$raw" | xargs)"
               [ -n "$x" ] && RSYNC_OPTS="$RSYNC_OPTS --exclude=$x/"
             done
           fi
@@ -271,7 +287,6 @@ jobs:
           DEPLOY_GROUP:    ${{ secrets.DEPLOY_GROUP }}
         run: |
           set -euo pipefail
-          # Guard: skip if owner/group not provided
           if [ -z "${DEPLOY_OWNER:-}" ] || [ -z "${DEPLOY_GROUP:-}" ]; then
             echo "No DEPLOY_OWNER/GROUP provided; skipping chown."
             exit 0
