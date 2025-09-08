@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  RSYNC_PERMS: "Du=rwx,Dgo=rx,Fu=rw,Fgo=r"
+  RSYNC_PERMS: "Du=rwx,Dgo=rx,Fu=rw,Fgo=r"  # dirs=755, files=644
 
 jobs:
   precheck_server:
@@ -202,13 +202,36 @@ jobs:
             ssh-keyscan -p "$SSH_PORT" "$SSH_HOST" > ~/.ssh/known_hosts
           fi
 
+      - name: "Resolve deploy_target (fallback-safe)"
+        id: target
+        shell: bash
+        env:
+          FROM_OUTPUT:     ${{ needs.build.outputs.deploy_target }}
+          BRANCH:          ${{ github.ref_name }}
+          DOCROOT_MAIN:    ${{ secrets.DEPLOY_MAIN_DOCROOT_PATH }}
+          DOCROOT_PREVIEW: ${{ secrets.DEPLOY_PREVIEW_DOCROOT_PATH }}
+        run: |
+          set -euo pipefail
+          val="${FROM_OUTPUT:-}"
+          if [ -z "$val" ]; then
+            if [ "${BRANCH}" = "main" ]; then
+              val="${DOCROOT_MAIN:-}"
+            else
+              val="${DOCROOT_PREVIEW:-}"
+            fi
+          fi
+          if [ -z "$val" ]; then
+            echo "::error::Resolved deploy_target is empty (check DOCROOT secrets and branch)"; exit 1
+          fi
+          echo "deploy_target=$val" >> "$GITHUB_OUTPUT"
+
       - name: "Ensure docroot exists (remote)"
         shell: bash
         env:
-          SSH_HOST:        ${{ secrets.SSH_HOST }}
-          SSH_USER:        ${{ secrets.SSH_USER }}
-          SSH_PORT:        ${{ secrets.SSH_PORT || '22' }}
-          DEPLOY_TARGET:   ${{ needs.build.outputs.deploy_target }}
+          SSH_HOST:      ${{ secrets.SSH_HOST }}
+          SSH_USER:      ${{ secrets.SSH_USER }}
+          SSH_PORT:      ${{ secrets.SSH_PORT || '22' }}
+          DEPLOY_TARGET: ${{ steps.target.outputs.deploy_target }}
         run: |
           set -euo pipefail
           ssh -i ~/.ssh/id_deploy -p "$SSH_PORT" -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes \
@@ -217,11 +240,11 @@ jobs:
       - name: "Safety backup on remote host (guarded)"
         shell: bash
         env:
-          SSH_HOST:        ${{ secrets.SSH_HOST }}
-          SSH_USER:        ${{ secrets.SSH_USER }}
-          SSH_PORT:        ${{ secrets.SSH_PORT || '22' }}
-          DEPLOY_TARGET:   ${{ needs.build.outputs.deploy_target }}
-          BACKUPS_DIR:     ${{ secrets.BACKUPS_DIR_PATH }}
+          SSH_HOST:      ${{ secrets.SSH_HOST }}
+          SSH_USER:      ${{ secrets.SSH_USER }}
+          SSH_PORT:      ${{ secrets.SSH_PORT || '22' }}
+          DEPLOY_TARGET: ${{ steps.target.outputs.deploy_target }}
+          BACKUPS_DIR:   ${{ secrets.BACKUPS_DIR_PATH }}
         run: |
           set -euo pipefail
           ssh -i ~/.ssh/id_deploy -p "$SSH_PORT" -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes \
@@ -255,20 +278,20 @@ jobs:
       - name: "Deploy via rsync (preserve EXCLUDE_PATHS only on main)"
         shell: bash
         env:
-          SSH_HOST:        ${{ secrets.SSH_HOST }}
-          SSH_USER:        ${{ secrets.SSH_USER }}
-          SSH_PORT:        ${{ secrets.SSH_PORT || '22' }}
-          DEPLOY_TARGET:   ${{ needs.build.outputs.deploy_target }}
-          IS_MAIN:         ${{ needs.build.outputs.is_main }}
-          EXCLUDE_PATHS:   ${{ secrets.EXCLUDE_PATHS }}
-          RSYNC_PERMS:     ${{ env.RSYNC_PERMS }}
+          SSH_HOST:      ${{ secrets.SSH_HOST }}
+          SSH_USER:      ${{ secrets.SSH_USER }}
+          SSH_PORT:      ${{ secrets.SSH_PORT || '22' }}
+          DEPLOY_TARGET: ${{ steps.target.outputs.deploy_target }}
+          IS_MAIN:       ${{ needs.build.outputs.is_main }}
+          EXCLUDE_PATHS: ${{ secrets.EXCLUDE_PATHS }}   # e.g. "beta, v1"
+          RSYNC_PERMS:   ${{ env.RSYNC_PERMS }}
         run: |
           set -euo pipefail
           RSYNC_OPTS="-az --delete --human-readable --chmod=$RSYNC_PERMS"
           if [ "$IS_MAIN" = "true" ] && [ -n "${EXCLUDE_PATHS:-}" ]; then
             IFS=',' read -ra EXS <<< "$EXCLUDE_PATHS"
             for raw in "${EXS[@]}"; do
-              x="$(echo "$raw" | xargs)"
+              x="$(echo "$raw" | xargs)"  # trim
               [ -n "$x" ] && RSYNC_OPTS="$RSYNC_OPTS --exclude=$x/"
             done
           fi
@@ -279,12 +302,12 @@ jobs:
       - name: "(Optional) chown owner/group on destination"
         shell: bash
         env:
-          SSH_HOST:        ${{ secrets.SSH_HOST }}
-          SSH_USER:        ${{ secrets.SSH_USER }}
-          SSH_PORT:        ${{ secrets.SSH_PORT || '22' }}
-          DEPLOY_TARGET:   ${{ needs.build.outputs.deploy_target }}
-          DEPLOY_OWNER:    ${{ secrets.DEPLOY_OWNER }}
-          DEPLOY_GROUP:    ${{ secrets.DEPLOY_GROUP }}
+          SSH_HOST:      ${{ secrets.SSH_HOST }}
+          SSH_USER:      ${{ secrets.SSH_USER }}
+          SSH_PORT:      ${{ secrets.SSH_PORT || '22' }}
+          DEPLOY_TARGET: ${{ steps.target.outputs.deploy_target }}
+          DEPLOY_OWNER:  ${{ secrets.DEPLOY_OWNER }}
+          DEPLOY_GROUP:  ${{ secrets.DEPLOY_GROUP }}
         run: |
           set -euo pipefail
           if [ -z "${DEPLOY_OWNER:-}" ] || [ -z "${DEPLOY_GROUP:-}" ]; then
