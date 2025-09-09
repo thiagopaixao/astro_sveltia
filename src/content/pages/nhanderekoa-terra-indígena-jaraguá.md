@@ -2643,7 +2643,7 @@ components:
       - type: Text
         hasDropCap: false
         content: |-
-            ##### **26 de Setembro de 2013**
+            ###### 26 de Setembro de 2013
       - type: Timeline
         txtColor: ''
         bgColor: ''
