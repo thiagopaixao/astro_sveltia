@@ -534,7 +534,7 @@ mapbox:
       notes: ''
       items: []
     - id: map3_jaragua
-      centerLng: '-46.766'
+      centerLng: '-46.789'
       centerLat: '-23.460'
       zoom: '13.26'
       mobileZoom: '13.26'
@@ -2640,14 +2640,14 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: map3_set2013
+      - type: Text
+        hasDropCap: false
+        content: |-
+            ##### **26 de Setembro de 2013**
       - type: Timeline
         txtColor: ''
         bgColor: ''
         components:
-          - type: Text
-            hasDropCap: false
-            content: |-
-               26 de setembro de 2013
           - type: TimelineBullet
             content: 'Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã'
           - type: Spacer
@@ -3574,15 +3574,72 @@ components:
               alt: ''
               description: Mapa dos pontos e tipologias de ameaças indentificadas nas oficinas de mapeamento coletivo participativo
   - type: Group
-    id: creditos
-    shortTitle: creditos
-    longTitle: creditos
+    id: downloads
+    shortTitle: downloads
+    longTitle: downloads
     description: ''
     showInMenu: false
     animations: true
     txtColor: Highlight
     customTxtColor: ''
     bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Columns
+        txtColor: ''
+        bgColor: ''
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: '##### DOWNLOADS'
+        column2:
+          components:
+            - type: InnerColumns
+              column1:
+                components:
+                - type: Cards
+                  cardsArr:
+                    - Card:
+                        type: Card
+                        title: Download Mapa Nhanderekoa
+                        text: 
+                        link:
+                          url: https://www.advocacia.autonoma.xyz/
+                          target: ''
+                          customTarget: ''
+                          text: link
+                        icon: ''
+              column2:
+                components:
+                  - type: Cards
+                    cardsArr:
+                      - Card:
+                          type: Card
+                          title: Download Documentos Históricos
+                          text: 
+                          link:
+                            url: https://www.advocacia.autonoma.xyz/
+                            target: ''
+                            customTarget: ''
+                            text: link
+                          icon: ''  
+  - type: Group
+    id: creditos
+    shortTitle: creditos
+    longTitle: creditos
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Highlight
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
@@ -3698,71 +3755,4 @@ components:
                           target: _blank
                           customTarget: ''
                           title: ''
-  - type: Group
-    id: downloads
-    shortTitle: downloads
-    longTitle: downloads
-    description: ''
-    showInMenu: false
-    animations: true
-    txtColor: Primary
-    customTxtColor: ''
-    bgColor: Highlight
-    customBgColor: ''
-    backgroundMedia: []
-    overlay: ''
-    components:
-      - type: Columns
-        txtColor: ''
-        bgColor: ''
-        paddingTop: false
-        paddingBottom: false
-        layout: text-bigger
-        title: Ameaças ao Território  e ao Patrimônio Florestal Guarani
-        components:
-          - type: Button
-            link:
-              url: https://thiagopaixao.github.io/astro_sveltia/nhanderekoa/
-              target: _self
-              text: asd
-            icon: arrow_right_alt
-            size: ''
-        invertOnMobile: false
-        columnsAlign: 33-66
-        column1:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: '##### DOWNLOADS'
-        column2:
-          components:
-            - type: InnerColumns
-              column1:
-                components:
-                - type: Cards
-                  cardsArr:
-                    - Card:
-                        type: Card
-                        title: Folder Mapa
-                        text: 
-                        link:
-                          url: https://www.advocacia.autonoma.xyz/
-                          target: ''
-                          customTarget: ''
-                          text: link
-                        icon: ''
-              column2:
-                components:
-                  - type: Cards
-                    cardsArr:
-                      - Card:
-                          type: Card
-                          title: Repositório QGIS
-                          text: 
-                          link:
-                            url: https://www.advocacia.autonoma.xyz/
-                            target: ''
-                            customTarget: ''
-                            text: link
-                          icon: ''
 
