@@ -79,7 +79,7 @@ mapbox:
           text: Limite do Parque Estadual Jaraguá
     - id: map1_ytu
       centerLng: '-46.754'
-      centerLat: '-23.464'
+      centerLat: '-23.465'
       zoom: '16.96'
       mobileZoom: '16.96'
       duration: '4000'
@@ -111,7 +111,7 @@ mapbox:
           iconFill: false
           text: Limite do Parque Estadual Jaraguá
     - id: map1_pyau
-      centerLng: '-46.752'
+      centerLng: '-46.753'
       centerLat: '-23.465'
       zoom: '16.80'
       mobileZoom: '16.80'
@@ -177,8 +177,8 @@ mapbox:
           iconFill: false
           text: Limite do Parque Estadual Jaraguá
     - id: map1_itawera
-      centerLng: '-46.754'
-      centerLat: '-23.463'
+      centerLng: '-46.755'
+      centerLat: '-23.464'
       zoom: '16.97'
       mobileZoom: '16.97'
       duration: '4000'
@@ -210,7 +210,7 @@ mapbox:
           iconFill: false
           text: Limite do Parque Estadual Jaraguá
     - id: map1_itaendy
-      centerLng: '-46.777'
+      centerLng: '-46.778'
       centerLat: '-23.462'
       zoom: '15.94'
       mobileZoom: '15.94'
@@ -219,8 +219,7 @@ mapbox:
       pitch: '0'
       layers: |-
         ti-jaragua
-        itaendy-label
-        aldeias-jaragua
+        aldeias-jaragua-label[nome_aldei==Itaendy]
         pe-jaragua
         satelite
         camada-cor
@@ -243,8 +242,8 @@ mapbox:
           iconFill: false
           text: Limite do Parque Estadual Jaraguá
     - id: map1_yvypora
-      centerLng: '-46.757'
-      centerLat: '-23.465'
+      centerLng: '-46.756'
+      centerLat: '-23.466'
       zoom: '16.40'
       mobileZoom: '16.40'
       duration: '4000'
@@ -285,7 +284,7 @@ mapbox:
       pitch: '0'
       layers: |-
         ti-jaragua
-        aldeias-jaragua-label[nome_aldei==Pindo Mirim]
+        aldeias-jaragua-label[nome_aldei==Pindó Mirim]
         aldeias-jaragua
         pe-jaragua
         satelite
@@ -318,7 +317,7 @@ mapbox:
       pitch: '0'
       layers: |-
         ti-jaragua
-        aldeias-jaragua-label[nome_aldei==Tekoa mirim]
+        aldeias-jaragua-label[nome_aldei==Tekoa Mirim]
         aldeias-jaragua
         pe-jaragua
         satelite
@@ -415,12 +414,12 @@ mapbox:
         - icon: circle
           colorIcon: '#9b16d4'
           typeIcon: outlined
-          iconFill: false
+          iconFill: true
           text: Patrimônio colonial
         - icon: circle
           colorIcon: '#d28fef8e'
           typeIcon: outlined
-          iconFill: false
+          iconFill: true
           text: Áreas de exploração do ouro em São Paulo
     - id: map2_pateo
       centerLng: '-46.634'
@@ -439,7 +438,7 @@ mapbox:
         - icon: circle
           colorIcon: '#9b16d4'
           typeIcon: outlined
-          iconFill: false
+          iconFill: true
           text: Patrimônio colonial
     - id: map2_barueri
       centerLng: '-46.785'
@@ -466,7 +465,7 @@ mapbox:
         - icon: circle
           colorIcon: '#9b16d4'
           typeIcon: outlined
-          iconFill: false
+          iconFill: true
           text: Patrimônio colonial
     - id: map2_ourojaragua
       centerLng: '-46.769'
@@ -2621,7 +2620,7 @@ components:
         desktop: 1000px
         tablet: 1000px
         mobile: 1000px
-    columnAlign: center
+    columnAlign: right
     floatingText: true
   - type: Map
     id: mapa_3_lutas_2
@@ -2645,8 +2644,12 @@ components:
         txtColor: ''
         bgColor: ''
         components:
+          - type: Text
+            hasDropCap: false
+            content: |-
+               26 de setembro de 2013
           - type: TimelineBullet
-            content: '26 de setembro de 2013: Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã'
+            content: 'Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã'
           - type: Spacer
             desktop: 80px
             tablet: 80px
