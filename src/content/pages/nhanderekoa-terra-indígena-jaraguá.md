@@ -219,6 +219,7 @@ mapbox:
       pitch: '0'
       layers: |-
         ti-jaragua
+        aldeias-jaragua
         aldeias-jaragua-label[nome_aldei==Itaendy]
         pe-jaragua
         satelite
@@ -675,12 +676,12 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
+        assembleia
+        label-assembleia
         areas-protestos[tag==2]
         legenda-areas[tag==2]
         trajetos-atos[num==2]
         marca-trajetos[num==2]
-        assembleia
-        label-assembleia
       title: ''
       notes: ''
       items:
@@ -942,7 +943,7 @@ mapbox:
           iconFill: false
           text: Parque Estadual do Jaraguá
         - icon: circle
-          colorIcon: '#c23cfb'
+          colorIcon: '#d28fef8e'
           typeIcon: outlined
           iconFill: true
           text: Núcleo turístico do Jaraguá
@@ -980,7 +981,7 @@ mapbox:
           iconFill: false
           text: Parque Estadual do Jaraguá
         - icon: circle
-          colorIcon: '#c23cfb'
+          colorIcon: '#d28fef8e'
           typeIcon: outlined
           iconFill: true
           text: Núcleo turístico do Jaraguá
@@ -1027,7 +1028,7 @@ mapbox:
           iconFill: false
           text: Parque Estadual do Jaraguá
         - icon: circle
-          colorIcon: '#c23cfb'
+          colorIcon: '#d28fef8e'
           typeIcon: outlined
           iconFill: true
           text: Núcleo turístico do Jaraguá
@@ -1044,6 +1045,7 @@ mapbox:
         pe-jaragua
         complexo-turistico
         aldeias-jaragua
+        aldeias-jaragua-label[nome_aldei==Itakupe]
         muros-jaragua-label
         muros-jaragua
       title: ''
@@ -1107,7 +1109,7 @@ mapbox:
           iconFill: false
           text: Parque Estadual do Jaraguá
         - icon: circle
-          colorIcon: '#c23cfb'
+          colorIcon: '#d28fef8e'
           typeIcon: outlined
           iconFill: true
           text: Núcleo turístico do Jaraguá
@@ -1158,7 +1160,7 @@ mapbox:
           iconFill: false
           text: Parque Estadual do Jaraguá
         - icon: circle
-          colorIcon: '#c23cfb'
+          colorIcon: '#d28fef8e'
           typeIcon: outlined
           iconFill: true
           text: Núcleo turístico do Jaraguá
@@ -3250,17 +3252,21 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: map5_jaragua
-      - type: Text
-        hasDropCap: false
-        content: Em 2019 o projeto “Memória Paulistana”, do Departamento de Patrimônio Histórico da Prefeitura de São Paulo, reconhece dois lugares de memória Guarani. 
       - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
+        desktop: 700px
+        tablet: 700px
+        mobile: 700px
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map5_cacicajandira
+      - type: Text
+        hasDropCap: false
+        content: Em 2019 o projeto “Memória Paulistana”, do Departamento de Patrimônio Histórico da Prefeitura de São Paulo, reconhece dois lugares de memória Guarani. 
+      - type: Spacer
+        desktop: 150px
+        tablet: 150px
+        mobile: 150px
       - type: Text
         hasDropCap: false
         content: O lugar onde viveu a matriarca cacica Jandira, fundadora da Tekoa Ytu, a primeira retomada do Jaraguá; e o lugar onde foram realizados os protestos na Rodovia dos Bandeirantes. 
@@ -3624,7 +3630,7 @@ components:
                           url: https://www.advocacia.autonoma.xyz/
                           target: ''
                           customTarget: ''
-                          text: ''
+                          text: 'link'
                         icon: ''
               column2:
                 components:
@@ -3638,7 +3644,7 @@ components:
                             url: https://www.advocacia.autonoma.xyz/
                             target: ''
                             customTarget: ''
-                            text: ''
+                            text: 'link'
                           icon: ''  
   - type: Group
     id: creditos
