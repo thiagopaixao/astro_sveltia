@@ -3609,7 +3609,7 @@ components:
                     - Card:
                         type: Card
                         title: Download Mapa Nhanderekoa
-                        text:  ____________________________________________
+                        text:  ___________________________________________
                         link:
                           url: https://www.advocacia.autonoma.xyz/
                           target: ''
@@ -3623,7 +3623,7 @@ components:
                       - Card:
                           type: Card
                           title: Download Documentos Históricos
-                          text: ____________________________________________
+                          text: ___________________________________________
                           link:
                             url: https://www.advocacia.autonoma.xyz/
                             target: ''
