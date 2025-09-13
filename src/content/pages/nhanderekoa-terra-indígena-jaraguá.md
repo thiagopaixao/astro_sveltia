@@ -2162,7 +2162,7 @@ components:
   - type: Group
     id: parte_4_ditadura_deslocamentos_e_desmatamento
     shortTitle: parte 4 - Ditadura, Deslocamentos e Desmatamento
-    longTitle: parte 4 - Ditadura, Deslocamentos e Desmatamento
+    longTitle: Ditadura, Deslocamentos e Desmatamento
     description: bloco título
     showInMenu: true
     animations: true
@@ -2263,7 +2263,7 @@ components:
   - type: Group
     id: parte_5_retorno_a_democracia_e_demarcacao_da_tekoa_ytu
     shortTitle: parte 5 - Retorno a Democracia & Demarcacao da Tekoa Ytu
-    longTitle: Retorno a Democracia & Demarcacao da Tekoa Ytu
+    longTitle: Retorno a Democracia e Demarcacao da Tekoa Ytu
     description: ''
     showInMenu: true
     animations: true
@@ -2405,9 +2405,9 @@ components:
               alt: asd
               description: Mapa da área norte do Cinturão Verde da Cidade de São Paulo. As florestas da T.I. Jaraguá são as mais preservadas do cinturão.
   - type: Group
-    id: parte_6_resistencia_luta_e_demarcacao
-    shortTitle: parte 6 - resistencia luta e demarcacao
-    longTitle: resistencia, luta e demarcação
+    id: parte_6_reconhecimento_luta_e_demarcacao
+    shortTitle: parte 6 - reconhecimento luta e demarcacao
+    longTitle: Reconhecimento, luta e demarcação
     description: ''
     showInMenu: true
     animations: true
@@ -2680,6 +2680,7 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
+            text: '01 de outubro de 2013'
             content: '01 de outubro de 2013: Em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215'
           - type: Spacer
             desktop: 80px
@@ -3028,7 +3029,7 @@ components:
   - type: Group
     id: parte_8_patrimonializacao_do_colonialismo
     shortTitle: parte 8 - patrimonialização do colonialismo
-    longTitle: Patrimonialização do colonialismo & apagamento da memória Guarani
+    longTitle: Patrimonialização do colonialismo e apagamento da memória Guarani
     description: ''
     showInMenu: true
     animations: true
@@ -3322,7 +3323,7 @@ components:
   - type: Group
     id: parte_9_nhandereko_praticas_cuidado_e_reparacao
     shortTitle: parte 9 - nhandereko praticas cuidado & reparacao
-    longTitle: 'Nhandereko: práticas do cuidado & da reparação'
+    longTitle: 'Nhandereko: práticas do cuidado e da reparação'
     description: ''
     showInMenu: true
     animations: true
@@ -3485,7 +3486,7 @@ components:
   - type: Group
     id: parte_10_ameacas
     shortTitle: parte_10_ameacas
-    longTitle: parte_10_ameacas
+    longTitle: Ameaças ao Território e ao Patrimônio Florestal Guarani
     description: ''
     showInMenu: true
     animations: true
@@ -3614,7 +3615,7 @@ components:
                           url: https://www.advocacia.autonoma.xyz/
                           target: ''
                           customTarget: ''
-                          text: link
+                          text: ''
                         icon: ''
               column2:
                 components:
@@ -3628,7 +3629,7 @@ components:
                             url: https://www.advocacia.autonoma.xyz/
                             target: ''
                             customTarget: ''
-                            text: link
+                            text: ''
                           icon: ''  
   - type: Group
     id: creditos
