@@ -2640,15 +2640,12 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: map3_set2013
-      - type: Text
-        hasDropCap: false
-        content: |-
-            ###### 26 de Setembro de 2013
       - type: Timeline
         txtColor: ''
         bgColor: ''
         components:
           - type: TimelineBullet
+            text: '26 de setembro de 2013'
             content: 'Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã'
           - type: Spacer
             desktop: 80px
@@ -2681,7 +2678,7 @@ components:
         components:
           - type: TimelineBullet
             text: '01 de outubro de 2013'
-            content: '01 de outubro de 2013: Em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215'
+            content: 'Em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2704,7 +2701,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: '16 de abril de 2014: lançamento da campanha “Resistencia Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta'
+            text: 16 de abril de 2014
+            content: 'Lançamento da campanha “Resistencia Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2727,7 +2725,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: '24 de abril de 2014: protesto partindo do MASP até a praça Roosevelt, exigindo a demarcação das T.I.s Jaraguá e Tenondé Porãa'
+            text: '24 de abril de 2014'
+            content: 'Protesto partindo do MASP até a praça Roosevelt, exigindo a demarcação das T.I.s Jaraguá e Tenondé Porã'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2750,7 +2749,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: '06 de junho de 2014: protesto na Assembleia Legislativa de São Paulo e no Monumento às Bandeiras pelo arquivamento da PEC 215 e pela demarcação das T.I.s Jaraguá e Tenondé Porã'
+            text: '06 de junho de 2014'
+            content: 'Protesto na Assembleia Legislativa de São Paulo e no Monumento às Bandeiras pelo arquivamento da PEC 215 e pela demarcação das T.I.s Jaraguá e Tenondé Porã'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2773,7 +2773,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: '05 de maio de 2016: ativistas Guarani ocupam a sede da Secretaria da Presidência da República  em São Paulo, na Avenida Paulista, em protesto pela demarcação das T.I.s Jaraguá e Tenondé Porã'
+            text: '05 de maio de 2016'
+            content: 'Ativistas Guarani ocupam a sede da Secretaria da Presidência da República  em São Paulo, na Avenida Paulista, em protesto pela demarcação das T.I.s Jaraguá e Tenondé Porã'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2796,7 +2797,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: '14 – 16 de setembro 2017: em protesto contra a anulação da demarcação da Terra Indígena Jaraguá pelo governo de Michel Temer, lideranças Guarani realizam uma série de protestos em São Paulo. No dia 30 de agosto, uma ampla mobilização toma a Avenida Paulista. Quinze dias depois, entre os dias 14 e 16 de setembro, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo'
+            text: '14 a 16 de setembro de 2017'
+            content: 'Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá pelo governo de Michel Temer, lideranças Guarani realizam uma série de protestos em São Paulo. No dia 30 de agosto, uma ampla mobilização toma a Avenida Paulista. Quinze dias depois, entre os dias 14 e 16 de setembro, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2819,7 +2821,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: 'Janeiro-Março de 2020: ativistas Guarani ocupam o terreno onde seria construído o condomínio residencial “Reserva Jaraguá-Carinás”, situado próximo à aldeia Pyau. Executado pela construtora Tenda, o empreendimento levou à derrubada de cerca de quatro mil árvores em uma área da Reserva da Biosfera do Cinturão Verde de São Paulo. Chamada de Yary Ty, a ocupação dura até o mês de março, quando é removida pela Polícia Militar'
+            text: 'Janeiro-Março de 2020'
+            content: 'Ativistas Guarani ocupam o terreno onde seria construído o condomínio residencial “Reserva Jaraguá-Carinás”, situado próximo à aldeia Pyau. Executado pela construtora Tenda, o empreendimento levou à derrubada de cerca de quatro mil árvores em uma área da Reserva da Biosfera do Cinturão Verde de São Paulo. Chamada de Yary Ty, a ocupação dura até o mês de março, quando é removida pela Polícia Militar'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2842,7 +2845,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: 'Junho de 2021: a volta da discussão sobre o Marco Temporal no Congresso Nacional desencadeia uma série de protestos de organizações indígenas. No dia 25 de junho, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. Cinco dias depois ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista'
+            text: 'Junho de 2021'
+            content: 'A volta da discussão sobre o Marco Temporal no Congresso Nacional desencadeia uma série de protestos de organizações indígenas. No dia 25 de junho, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. Cinco dias depois ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2865,7 +2869,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: '03 de julho de 2021: no contexto da pandemia da COVID, ativistas Guarani participam da  grande manifestação contra o governo do presidente Jair Bolsonaro, trazendo a pauta do Marco Temporal para a manifestação'
+            text: '03 de julho de 2021'
+            content: 'No contexto da pandemia da COVID, ativistas Guarani participam da  grande manifestação contra o governo do presidente Jair Bolsonaro, trazendo a pauta do Marco Temporal para a manifestação'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2888,7 +2893,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: '23 de junho de 2022: ocupação do Monumento às Bandeiras em protesto contra a tramitação da lei do Marco Temporal'
+            text: '23 de junho de 2022'
+            content: 'Ocupação do Monumento às Bandeiras em protesto contra a tramitação da lei do Marco Temporal'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2911,7 +2917,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: '09 de agosto de 2022: ato organizado pela Comissão Yvyrupa na Faculdade de Direito da USP, no Largo São Francisco, contra o Marco Temporal'
+            text: '09 de agosto de 2022'
+            content: 'Ato organizado pela Comissão Yvyrupa na Faculdade de Direito da USP, no Largo São Francisco, contra o Marco Temporal'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2934,7 +2941,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: 'Maio-Junho de 2023: em protesto contra a aprovação da PL490/2007 pelos deputados em Brasília, ativistas Guarani novamente bloqueiam a Rodovia dos Bandeirantes. A manifestação é duramente reprimida pela Polícia Militar. Dias depois, em 04 de junho, a comunidade Guarani realiza a “Caminhada pela Vida” na área da T.I. Jaraguá'
+            text: 'Maio-Junho de 2023'
+            content: 'Em protesto contra a aprovação da PL490/2007 pelos deputados em Brasília, ativistas Guarani novamente bloqueiam a Rodovia dos Bandeirantes. A manifestação é duramente reprimida pela Polícia Militar. Dias depois, em 04 de junho, a comunidade Guarani realiza a “Caminhada pela Vida” na área da T.I. Jaraguá'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2957,7 +2965,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: '07 de junho de 2023: desafiando a repressão estatal, no dia 07 de junho ativistas Guarani realizam novo ato contra o Marco Temporal, desta vez na escadaria do Teatro Municipal no centro de São Paulo'
+            text: '07 de junho de 2023'
+            content: 'Desafiando a repressão estatal, no dia 07 de junho ativistas Guarani realizam novo ato contra o Marco Temporal, desta vez na escadaria do Teatro Municipal no centro de São Paulo'
           - type: Spacer
             desktop: 80px
             tablet: 80px
