@@ -35,6 +35,7 @@ mapbox:
   pitch: '0'
   layers: |-
     ti-jaragua
+    camada-cor
     satelite
   columnAlign: center
   floatingText: false
