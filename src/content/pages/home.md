@@ -68,12 +68,12 @@ components:
     layout: default
     txtColor: Secondary
     customTxtColor: ''
-    bgColor: Highlight
-    customBgColor: ''
+    bgColor: Custom
+    customBgColor: '#8d8d8da1'
     backgroundMedia:
       - type: backgroundImage
-        imageSrc: /uploads/group-bg.png
-    overlay: dark
+        imageSrc: /uploads/expulsion-san-marcos.jpg
+    overlay: ''
     components:
       - type: ColumnSticky
         hasDropCap: false
@@ -81,7 +81,7 @@ components:
         bgColor: ''
         paddingTop: true
         paddingBottom: true
-        layout: title-bottom
+        layout: text-bigger
         title: EM CONSTRUÇÃO
         components:
           - type: Text
@@ -203,7 +203,7 @@ components:
         paddingTop: false
         paddingBottom: false
         invertOnMobile: false
-        columnsAlign: 33-66
+        columnsAlign: 66-33
         column1:
           components:
             - type: Text
