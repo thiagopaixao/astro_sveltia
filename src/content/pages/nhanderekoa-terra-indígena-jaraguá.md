@@ -3265,9 +3265,9 @@ components:
         hasDropCap: false
         content: Em 2019 o projeto “Memória Paulistana”, do Departamento de Patrimônio Histórico da Prefeitura de São Paulo, reconhece dois lugares de memória Guarani. 
       - type: Spacer
-        desktop: 150px
-        tablet: 150px
-        mobile: 150px
+        desktop: 50px
+        tablet: 50px
+        mobile: 50px
       - type: Text
         hasDropCap: false
         content: O lugar onde viveu a matriarca cacica Jandira, fundadora da Tekoa Ytu, a primeira retomada do Jaraguá; e o lugar onde foram realizados os protestos na Rodovia dos Bandeirantes. 
@@ -3496,7 +3496,7 @@ components:
                 Ao espacializar estes processos, o mapa joga luz em práticas muitas vezes invisibilizadas, principalmente o trabalho de cuidado cotidiano das mulheres que fincam raízes profundas para que Terra Indígena do Jaraguá cresça forte.
             - type: ImageBlock
               wideImage: false
-              src: /uploads/mapa_cuidado_teste.jpg
+              src: /uploads/250815_cuidado_R17_crop.jpg
               alt: ''
               description: Práticas do Cuidado e da Reparação na TI Jaraguá
   - type: Group
