@@ -12,7 +12,7 @@ pageSettings:
   animations: enable_all
 pageTheme:
   primaryColor: '#000009'
-  secondaryColor: '#f0ead9'
+  secondaryColor: '#ffffffff'
   highlightColor: '#4c4c4cff'
   auxiliaryColor: '#0f7c77ff'
   displayFont: ''
@@ -72,7 +72,7 @@ components:
     customBgColor: ''
     backgroundMedia:
       - type: backgroundImage
-        imageSrc: /uploads/arqueological-remains_03.jpg
+        imageSrc: /uploads/group-bg.png
     overlay: dark
     components:
       - type: ColumnSticky
@@ -87,7 +87,7 @@ components:
           - type: Text
             hasDropCap: false
             content: |-
-                **Documental.xyz é uma plataforma digital de código aberto, voltada à construção de narrativas visuais e georreferenciadas.**
+                #### Documental.xyz é uma plataforma digital de código aberto, voltada à construção de narrativas visuais e georreferenciadas.
                 
                 Seu objetivo é apoiar investigações baseadas em dados sobre violações de direitos humanos, territoriais e ambientais, causadas pelo Estado e por corporações, para fins de advocacia e reparação histórica.
             txtColor: ''
@@ -193,9 +193,9 @@ components:
     animations: true
     id: group_4
     layout: default
-    txtColor: Secondary
+    txtColor: Primary
     customTxtColor: ''
-    bgColor: Highlight
+    bgColor: Secondary
     customBgColor: ''
     overlay: ''
     components:
@@ -216,14 +216,10 @@ components:
               customTxtColor: ''
         column2:
           components:
-            - type: Timeline
-              txtColor: ''
-              bgColor: ''
-              components:
-                - type: Spacer
-                  desktop: 100px
-                  tablet: 100px
-                  mobile: 100px
+            - type: Spacer
+              desktop: 100px
+              tablet: 100px
+              mobile: 100px
   - type: Group
     shortTitle: group_5
     longTitle: ''
@@ -258,6 +254,8 @@ components:
                 alt: Image2
               title: Territórios de Exceção
               text: 'Uma parceria entre a agência Autônoma e o MediaLab (UFRJ), o caso Territórios da Exceção investigou o uso de helicópteros como plataforma de disparos da polícia militar nas favelas do Rio de Janeiro para compreender a dinâmica e os impactos deste tipo de operação sobre os direitos fundamentais das populações e comunidades atingidas. Utilizando ciência de visualização de dados, dados governamentais e de mídias sociais, investigações de campo e técnicas de arquitetura forense, a pesquisa apresenta as evidências por meio de vídeos, animações, imagens em 3D e informações georreferenciadas, oferecendo uma experiência imersiva dentro dos mapas e localidades.'
+        - type: CardsCall
+          cardsCallArr:
             - link:
                 url: 'https://documental.xyz/expulsions/'
                 target: ''
