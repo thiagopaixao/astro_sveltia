@@ -49,8 +49,11 @@ mapbox:
         title: false
         notes: false
         items:
-          - icon: <span class="material-symbols-outlined fill" style="color:white">show_chart</span>
-            text: Brazil's Legal Amazon
+          - icon: circle
+            colorIcon: '#d37c17ff'
+            typeIcon: outlined
+            iconFill: true
+            text: archaeologic sites
       layers:
         - amazonialegal
   mapView: ''
@@ -167,7 +170,7 @@ components:
               components:
                 - type: TimelineBullet
                   text: ''
-                  content: 'Utilizando-se de ferramentas para visualização e geoespacialização de dados, Documental.xyz possibilita a combinação de conjuntos complexos de informação - texto, fotografias, vídeos, dados, imagens de satélite e mapas - em narrativas contextualizadas geograficamente.''
+                  content: 'Utilizando-se de ferramentas para visualização e geoespacialização de dados, Documental.xyz possibilita a combinação de conjuntos complexos de informação - texto, fotografias, vídeos, dados, imagens de satélite e mapas - em narrativas contextualizadas geograficamente.'
                 - type: Spacer
                   desktop: 100px
                   tablet: 100px
