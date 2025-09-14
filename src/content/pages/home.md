@@ -68,8 +68,8 @@ components:
     layout: default
     txtColor: Secondary
     customTxtColor: ''
-    bgColor: Custom
-    customBgColor: '#8d8d8da1'
+    bgColor: Highlight
+    customBgColor: ''
     backgroundMedia:
       - type: backgroundImage
         imageSrc: /uploads/expulsion-san-marcos.jpg
@@ -81,7 +81,7 @@ components:
         bgColor: ''
         paddingTop: true
         paddingBottom: true
-        layout: text-bigger
+        layout: title-bottom
         title: EM CONSTRUÇÃO
         components:
           - type: Text
@@ -203,7 +203,7 @@ components:
         paddingTop: false
         paddingBottom: false
         invertOnMobile: false
-        columnsAlign: 66-33
+        columnsAlign: 33-66
         column1:
           components:
             - type: Text
@@ -274,4 +274,8 @@ components:
                 alt: Image2
               title: Nhanderekoa
               text: ''
+        - type: Spacer
+          desktop: 150px
+          tablet: 150px
+          mobile: 150px
 ---
