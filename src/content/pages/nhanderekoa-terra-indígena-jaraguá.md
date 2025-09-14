@@ -3498,7 +3498,7 @@ components:
               wideImage: false
               src: /uploads/250815_cuidado_R17_crop.jpg
               alt: ''
-              description: Práticas do Cuidado e da Reparação na TI Jaraguá
+              description: Práticas do Cuidado e da Reparação na TI Jaragua
   - type: Group
     id: parte_10_ameacas
     shortTitle: parte_10_ameacas
