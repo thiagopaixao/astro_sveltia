@@ -87,7 +87,7 @@ components:
                 **Documental.xyz é uma plataforma digital de código aberto, voltada à construção de narrativas visuais e georreferenciadas.**
                 
                 Seu objetivo é apoiar investigações baseadas em dados sobre violações de direitos humanos, territoriais e ambientais, causadas pelo Estado e por corporações, para fins de advocacia e reparação histórica.
-            txtColor: '#000000ff'
+            txtColor: ''
             bgColor: ''
             customBgColor: ''
             customTxtColor: ''
