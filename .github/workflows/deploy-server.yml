@@ -50,7 +50,7 @@ jobs:
             echo "ok=true"    >> "$GITHUB_OUTPUT"
           fi
 
-      - name: "Check SSH key (normalize) & connectivity"
+      - name: "Check SSH key (normalize) & connectivity (3 tries)"
         id: ssh
         if: ${{ steps.presence.outputs.ok == 'true' }}
         shell: bash
@@ -83,14 +83,23 @@ jobs:
             ssh-keyscan -p "$SSH_PORT" "$SSH_HOST" > ~/.ssh/known_hosts
           fi
 
-          # Connectivity using ONLY this key
-          if ssh -p "$SSH_PORT" -o BatchMode=yes -o ConnectTimeout=10 \
-               -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes \
-               -i ~/.ssh/id_deploy "$SSH_USER@$SSH_HOST" "echo ok" >/dev/null 2>&1; then
+          # Connectivity using ONLY this key (3 tries)
+          success=false
+          for i in 1 2 3; do
+            if ssh -p "$SSH_PORT" -o BatchMode=yes -o ConnectTimeout=10 \
+                  -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes \
+                  -i ~/.ssh/id_deploy "$SSH_USER@$SSH_HOST" "echo ok" >/dev/null 2>&1; then
+              success=true; break
+            fi
+            echo "SSH attempt $i failed; retrying in 5s..." >&2
+            sleep 5
+          done
+
+          if $success; then
             echo "ok=true" >> "$GITHUB_OUTPUT"
           else
             echo "ok=false" >> "$GITHUB_OUTPUT"
-            echo "reason=SSH connection failed (host/user/port/key/known_hosts)" >> "$GITHUB_OUTPUT"
+            echo "reason=SSH connection failed after retries (host/user/port/key/known_hosts)" >> "$GITHUB_OUTPUT"
           fi
 
       - name: "Finalize precheck result"
@@ -225,7 +234,7 @@ jobs:
           fi
           echo "deploy_target=$val" >> "$GITHUB_OUTPUT"
 
-      - name: "Ensure docroot exists (remote)"
+      - name: "Ensure docroot exists (remote, 3 tries)"
         shell: bash
         env:
           SSH_HOST:      ${{ secrets.SSH_HOST }}
@@ -234,10 +243,20 @@ jobs:
           DEPLOY_TARGET: ${{ steps.target.outputs.deploy_target }}
         run: |
           set -euo pipefail
-          ssh -i ~/.ssh/id_deploy -p "$SSH_PORT" -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes \
-            "$SSH_USER@$SSH_HOST" "mkdir -p '${DEPLOY_TARGET}'"
+          ssh_retry() {
+            for i in 1 2 3; do
+              if ssh -i ~/.ssh/id_deploy -p "$SSH_PORT" -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes \
+                   "$SSH_USER@$SSH_HOST" "$1"; then
+                return 0
+              fi
+              echo "SSH attempt $i failed; retrying in 5s..." >&2
+              sleep 5
+            done
+            return 1
+          }
+          ssh_retry "mkdir -p '${DEPLOY_TARGET}'"
 
-      - name: "Safety backup on remote host (guarded)"
+      - name: "Safety backup on remote host (guarded, 3 tries + retention)"
         shell: bash
         env:
           SSH_HOST:      ${{ secrets.SSH_HOST }}
@@ -245,14 +264,27 @@ jobs:
           SSH_PORT:      ${{ secrets.SSH_PORT || '22' }}
           DEPLOY_TARGET: ${{ steps.target.outputs.deploy_target }}
           BACKUPS_DIR:   ${{ secrets.BACKUPS_DIR_PATH }}
+          BACKUPS_MAX:   ${{ secrets.BACKUPS_MAX }}
         run: |
           set -euo pipefail
-          ssh -i ~/.ssh/id_deploy -p "$SSH_PORT" -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes \
-            "$SSH_USER@$SSH_HOST" \
-            "DOCROOT='${DEPLOY_TARGET}' BACKUPS_DIR='${BACKUPS_DIR}' bash -lc '
+          ssh_retry() {
+            for i in 1 2 3; do
+              if ssh -i ~/.ssh/id_deploy -p "$SSH_PORT" -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes \
+                   "$SSH_USER@$SSH_HOST" "$1"; then
+                return 0
+              fi
+              echo "SSH attempt $i failed; retrying in 5s..." >&2
+              sleep 5
+            done
+            return 1
+          }
+
+          cmd="
+            DOCROOT='${DEPLOY_TARGET}' BACKUPS_DIR='${BACKUPS_DIR}' BACKUPS_MAX='${BACKUPS_MAX}' bash -lc '
               set -euo pipefail
               ts=\$(date +%F)
 
+              # Validate inputs
               if [ -z \"\${DOCROOT:-}\" ] || [ -z \"\${BACKUPS_DIR:-}\" ]; then
                 echo \"ERROR: DOCROOT/BACKUPS_DIR cannot be empty\" >&2; exit 1
               fi
@@ -265,17 +297,31 @@ jobs:
               base=\$(basename \"\$DOCROOT\")
               DEST=\"\$BACKUPS_DIR/\${base}_\${ts}\"
 
+              # Forbid destination inside docroot
               case \"\$DEST/\" in
                 \"\$DOCROOT\"/*) echo \"ERROR: Backup destination \\\"\$DEST\\\" must NOT be inside docroot \\\"\$DOCROOT\\\"\"; exit 1;;
               esac
 
               mkdir -p \"\$DEST\"
 
+              # Actual backup
               rsync -a --delete --human-readable --one-file-system \
                 \"\$DOCROOT/\" \"\$DEST/\"
-            '"
 
-      - name: "Deploy via rsync (preserve EXCLUDE_PATHS only on main)"
+              # Retention: keep only most recent BACKUPS_MAX (if >=1)
+              if [ -n \"\${BACKUPS_MAX:-}\" ] && [ \"\${BACKUPS_MAX}\" -ge 1 ] 2>/dev/null; then
+                all=\$(find \"\$BACKUPS_DIR\" -maxdepth 1 -mindepth 1 -type d -name \"\${base}_*\" | sort)
+                count=\$(printf \"%s\n\" \"\$all\" | sed \"/^\\s*$/d\" | wc -l || true)
+                if [ \"\$count\" -gt \"\$BACKUPS_MAX\" ]; then
+                  to_delete=\$((count - BACKUPS_MAX))
+                  printf \"%s\n\" \"\$all\" | head -n \"\$to_delete\" | xargs -r -I{} rm -rf -- \"{}\"
+                fi
+              fi
+            '
+          "
+          ssh_retry "$cmd"
+
+      - name: "Deploy via rsync (preserve EXCLUDE_PATHS only on main, 3 tries)"
         shell: bash
         env:
           SSH_HOST:      ${{ secrets.SSH_HOST }}
@@ -295,11 +341,22 @@ jobs:
               [ -n "$x" ] && RSYNC_OPTS="$RSYNC_OPTS --exclude=$x/"
             done
           fi
-          rsync $RSYNC_OPTS \
-            -e "ssh -i ~/.ssh/id_deploy -p $SSH_PORT -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes" \
-            ./dist/ "$SSH_USER@$SSH_HOST:${DEPLOY_TARGET}/"
 
-      - name: "(Optional) chown owner/group on destination"
+          rsync_retry() {
+            for i in 1 2 3; do
+              if rsync $RSYNC_OPTS \
+                   -e "ssh -i ~/.ssh/id_deploy -p $SSH_PORT -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes" \
+                   ./dist/ "$SSH_USER@$SSH_HOST:${DEPLOY_TARGET}/"; then
+                return 0
+              fi
+              echo "rsync attempt $i failed; retrying in 5s..." >&2
+              sleep 5
+            done
+            return 1
+          }
+          rsync_retry
+
+      - name: "(Optional) chown owner/group on destination (3 tries)"
         shell: bash
         env:
           SSH_HOST:      ${{ secrets.SSH_HOST }}
@@ -314,5 +371,15 @@ jobs:
             echo "No DEPLOY_OWNER/GROUP provided; skipping chown."
             exit 0
           fi
-          ssh -i ~/.ssh/id_deploy -p "$SSH_PORT" -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes \
-            "$SSH_USER@$SSH_HOST" "chown -R '${DEPLOY_OWNER}:${DEPLOY_GROUP}' '${DEPLOY_TARGET}'"
+          ssh_retry() {
+            for i in 1 2 3; do
+              if ssh -i ~/.ssh/id_deploy -p "$SSH_PORT" -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes \
+                   "$SSH_USER@$SSH_HOST" "chown -R '${DEPLOY_OWNER}:${DEPLOY_GROUP}' '${DEPLOY_TARGET}'"; then
+                return 0
+              fi
+              echo "SSH attempt $i failed; retrying in 5s..." >&2
+              sleep 5
+            done
+            return 1
+          }
+          ssh_retry
