@@ -380,7 +380,7 @@ components:
     customBgColor: ''
     backgroundMedia:
       - type: backgroundVideo
-        videoSrc: https://documental.xyz/assets/main/expulsion/expulsiones-intro-low.mp4
+        videoSrc: https://v1.documental.xyz/assets/main/expulsion/expulsiones-intro-low.mp4
     overlay: dark
     components:
       - type: Columns

@@ -12,9 +12,9 @@ pageSettings:
   animations: enable_all
 pageTheme:
   primaryColor: '#000009'
-  secondaryColor: '#f0ead9'
-  highlightColor: '#006949'
-  auxiliaryColor: '#6670ff'
+  secondaryColor: '#ffffffff'
+  highlightColor: '#4c4c4cff'
+  auxiliaryColor: '#0f7c77ff'
   displayFont: ''
   textFont: ''
   spacingPatterns:
@@ -49,111 +49,31 @@ mapbox:
         title: false
         notes: false
         items:
-          - icon: <span class="material-symbols-outlined fill" style="color:white">show_chart</span>
-            text: Brazil's Legal Amazon
+          - icon: circle
+            colorIcon: '#d37c17ff'
+            typeIcon: outlined
+            iconFill: true
+            text: archaeologic sites
       layers:
         - amazonialegal
-    - id: view_1
-      center:
-        lng: -54.708
-        lat: -2.625
-      duration: 4000
-      zoom: 8
-      bearing: 0
-      pitch: 0
-      mobile: {}
-      captions:
-        title: Meu título
-        notes: '* Minha nota'
-        items:
-          - icon: <span class="material-symbols-outlined fill" style="color:white">show_chart</span>
-            text: Municipality of Santarém (Pará)
-          - icon: <span class="material-symbols-outlined fill" style="color:#FFF8DC">circle</span>
-            text: Amazonas River
-          - icon: <span class="material-symbols-outlined fill" style="color:blue">circle</span>
-            text: Tapajós River
-      layers:
-        - municipios
-        - amazonas
-        - foztapajos
-    - id: view_2
-      center:
-        lng: -54.73
-        lat: -2.597
-      duration: 3000
-      zoom: 10
-      bearing: 0
-      pitch: 0
-      mobile: {}
-      captions:
-        title: false
-        notes: false
-        items:
-          - icon: <span class="material-symbols-outlined fill" style="color:white">show_chart</span>
-            text: Cuiabá-Santarém Highway (BR-163)
-          - icon: <span class="material-symbols-outlined fill" style="color:#FFF8DC">circle</span>
-            text: Amazonas River
-          - icon: <span class="material-symbols-outlined fill" style="color:blue">circle</span>
-            text: Tapajós River
-      layers:
-        - br163
-        - amazonas
-        - foztapajos
-    - id: view_3
-      center:
-        lng: -54.831
-        lat: -2.457
-      duration: 4000
-      zoom: 10.2
-      bearing: 0
-      pitch: 0
-      mobile: {}
-      captions:
-        title: false
-        notes: false
-        items:
-          - icon: <span class="material-symbols-outlined fill" style="color:orange">show_chart</span>
-            text: Everaldo Martins Highway (PA-457)
-          - icon: <span class="material-symbols-outlined" style="color:yellow">square</span>
-            text: Urban areas
-      layers:
-        - cidade-vila
-        - pa457
-    - id: view_4
-      center:
-        lng: -54.917
-        lat: -2.529
-      duration: 2000
-      zoom: 10
-      bearing: 0
-      pitch: 0
-      mobile: {}
-      captions:
-        title: false
-        notes: false
-        items:
-          - icon: <span class="material-symbols-outlined fill" style="color:red">square</span>
-            text: Borari Territory (preliminary demarcation)
-      layers:
-        - tiborari
   mapView: ''
 components:
   - type: Group
-    shortTitle: Introdução
-    longTitle: Uma breve introdução
+    shortTitle: group_1
+    longTitle: group_1
     description: ''
-    showInMenu: true
+    showInMenu: false
     animations: true
-    id: Introdução
+    id: group_1
     layout: default
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Highlight
     customBgColor: ''
     backgroundMedia:
-      - type: backgroundVideo
-        videoSrc: https://documental.xyz/themes/documental/video/expulsiones-intro-low.mp4
-    overlay: dark
+      - type: backgroundImage
+        imageSrc: /uploads/expulsion-san-marcos.jpg
+    overlay: ''
     components:
       - type: ColumnSticky
         hasDropCap: false
@@ -161,31 +81,69 @@ components:
         bgColor: ''
         paddingTop: true
         paddingBottom: true
-        layout: text-bigger
-        title: ALTER DO CHÃO ALSO NEEDS TO BE RECOGNIZED
+        layout: title-bottom
+        title: EM CONSTRUÇÃO
         components:
           - type: Text
             hasDropCap: false
-            content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-            txtColor: '#000000ff'
+            content: |-
+                #### Documental.xyz é uma plataforma digital de código aberto, voltada à construção de narrativas visuais e georreferenciadas.
+                
+                Seu objetivo é apoiar investigações baseadas em dados sobre violações de direitos humanos, territoriais e ambientais, causadas pelo Estado e por corporações, para fins de advocacia e reparação histórica.
+            txtColor: ''
             bgColor: ''
             customBgColor: ''
             customTxtColor: ''
         body: ''
         customBgColor: ''
         customTxtColor: ''
-    backgroundImage: /uploads/group-bg.png
   - type: Group
-    shortTitle: TextoIntrodução
+    shortTitle: group_2
     longTitle: ''
     description: ''
     showInMenu: false
     animations: true
-    id: TextoIntrodução
+    id: group_2
     layout: default
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
+    customBgColor: ''
+    overlay: ''
+    components:
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: |-
+                Combinando o potencial das mídias digitais - código, imagem e mapeamento -, a plataforma oferece ferramentas gratuitas para transformar conjuntos de dados complexos em "geo-histórias" visuais, tornando visíveis violações e repetições de padrões de violência, permitindo que organizações, ONGs, jornalistas e produtores de mídia documentem realidades locais para audiências globais de forma socialmente significativa e visualmente envolvente, ampliando o alcance de comunicação, engajamento público e advocacia institucional. 
+
+                Em um contexto de crescente proliferação midiática e novas tecnologias de produção e disseminação de fake news, a visibilização espacial da violência e a composição de fragmentos de informações em um conjunto verificado e referenciado de dados se torna cada vez mais importante para a compreensão de sua dimensão e consequências. Neste sentido, a plataforma Documental busca contribuir para a construção de uma capacidade civil de investigação, de resposta e de defesa de casos de violações de direitos, com o objetivo de promover o concernimento e o debate públicos sobre justiça social e ambiental.
+              txtColor: ''
+              bgColor: ''
+              customBgColor: ''
+              customTxtColor: ''
+        column2:
+          components:
+            - type: Spacer
+              desktop: 0px
+    backgroundImage: ''
+  - type: Group
+    shortTitle: group_3
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    id: group_3
+    layout: default
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Highlight
     customBgColor: ''
     overlay: ''
     components:
@@ -198,551 +156,46 @@ components:
           components:
             - type: Text
               hasDropCap: false
-              content: '##### SED UT PERSPICIATIS UNDE OMNIS ISTE NATUS ERROR SIT VOLUPTATEM ACCUSANTIUM DOLREMQUE LAUDANTIUM TOTAM REM APARIAM'
-              txtColor: ''
-              bgColor: ''
-              customBgColor: ''
-              customTxtColor: ''
-        column2:
-          components:
-            - type: Text
-              hasDropCap: true
               content: |-
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+                ### COMO FUNCIONA A DOCUMENTAL?
               txtColor: ''
-              bgColor: ''
-              customBgColor: ''
-              customTxtColor: ''
-    backgroundImage: ''
-  - type: Map
-    shortTitle: Mapas
-    longTitle: ''
-    description: ''
-    showInMenu: true
-    animations: true
-    id: Mapas
-    txtColor: Secondary
-    customTxtColor: ''
-    bgColor: Highlight
-    customBgColor: ''
-    components:
-      - type: Text
-        hasDropCap: false
-        content: |-
-          # Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-
-          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-        txtColor: '#f0ead9ff'
-        bgColor: '#006a49ff'
-        customBgColor: ''
-        customTxtColor: ''
-      - type: Spacer
-        desktop: 160px
-      - type: MapView
-        txtColor: '#f0ead9ff'
-        bgColor: '#006a49ff'
-        mapView: view_0
-      - type: Text
-        hasDropCap: false
-        content: |-
-          ###### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-
-          ###### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-        txtColor: ''
-        bgColor: ''
-        customBgColor: ''
-        customTxtColor: ''
-      - type: MapView
-        txtColor: '#f0ead9ff'
-        bgColor: '#59006bff'
-        mapView: view_1
-      - type: Text
-        hasDropCap: false
-        content: |-
-          ###### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-
-          ###### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-      - type: MapView
-        txtColor: '#f0ead9ff'
-        bgColor: '#006a49ff'
-        mapView: view_2
-      - type: Text
-        hasDropCap: false
-        content: |-
-          ###### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem
-
-          ###### Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-      - type: ImageBlock
-        wideImage: false
-        src: /uploads/arqueological-remains_01.jpg
-        alt: ''
-        description: ''
-    columnAlign: left
-    floatingText: true
-  - type: Group
-    shortTitle: Texto Principal
-    longTitle: ''
-    description: ''
-    showInMenu: false
-    animations: true
-    id: Texto Principal
-    layout: default
-    txtColor: Primary
-    customTxtColor: ''
-    bgColor: Secondary
-    customBgColor: ''
-    overlay: ''
-    components:
-      - type: Columns
-        paddingTop: false
-        paddingBottom: false
-        invertOnMobile: false
-        columnsAlign: 66-33
-        column1:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: |-
-                ## Lorem ipsum odor amet, consectetuer adipiscing elit. Mauris urna fusce laoreet vivamus dui ultricies egestas senectus .
-
-                Tellus rutrum a luctus eleifend dui tincidunt? Porta dolor pulvinar tellus feugiat finibus accumsan, vehicula quam. Posuere viverra erat litora semper pretium porta praesent nisi? Malesuada et nullam, cursus tempus platea purus pellentesque. Risus neque ultricies ex lorem cubilia. Augue eu montes ut consectetur conubia iaculis interdum vehicula eu. Suscipit maximus volutpat rhoncus lobortis sem eu porta fames.
-
-                Porta felis mollis aliquet rutrum, id dis diam. Tincidunt fringilla blandit, fames magnis commodo nisi. Fames erat morbi nostra sapien potenti. Quam sem erat curabitur ornare efficitur hendrerit porttitor sagittis. Accumsan placerat integer litora ipsum mollis hendrerit ac quis suspendisse. Taciti libero accumsan porta semper diam pharetra. At fermentum mauris ullamcorper inceptos sapien.
-
-                Leo hendrerit ultricies ultricies eros lorem feugiat. Vulputate torquent odio class ad curae sodales tincidunt efficitur. Eros elementum dolor adipiscing mauris, ipsum conubia. Luctus aenean bibendum fermentum adipiscing tempor maximus purus. Facilisis nascetur adipiscing pretium quisque molestie per. Conubia velit lacus pharetra cras netus. Ante velit diam, et senectus eu eleifend class tempor. Tellus etiam fusce sodales penatibus ac, id aenean.
-              txtColor: ''
-              bgColor: ''
-              customBgColor: ''
-              customTxtColor: ''
-        column2:
-          components:
-            - type: ImageBlock
-              wideImage: false
-              src: /uploads/thumb.png
-              alt: magem
-              description: Porta felis mollis aliquet rutrum, id dis diam. Tincidunt fringilla blandit, fames magnis commodo nisi. Fames erat morbi nostra sapien potenti.
-      - type: Slider
-        slides:
-          - image: /uploads/map-1.png
-            caption: Imagem 1
-          - image: /uploads/map.png
-            caption: Imagem 2
-          - image: /uploads/thumb.png
-            caption: Imagem 3
-    backgroundImage: ''
-  - type: Group
-    shortTitle: Timeline
-    longTitle: ''
-    description: ''
-    showInMenu: false
-    animations: true
-    id: Timeline
-    layout: default
-    txtColor: Secondary
-    customTxtColor: ''
-    bgColor: ''
-    customBgColor: ''
-    overlay: ''
-    components:
-      - type: Columns
-        paddingTop: false
-        paddingBottom: false
-        invertOnMobile: false
-        columnsAlign: 66-33
-        column1:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: ''
-              txtColor: Primary
               bgColor: ''
               customBgColor: ''
               customTxtColor: ''
         column2:
           components:
             - type: Timeline
+              txtColor: ''
+              bgColor: ''
               components:
                 - type: TimelineBullet
-                  text: Maio de 2022
-                  content: |-
-                    **Augue eu montes ut consectetur conubia iaculis interdum vehicula eu. Suscipit maximus volutpat rhoncus lobortis sem eu porta fames.**
-
-                    Porta felis mollis aliquet rutrum, id dis diam. Tincidunt fringilla blandit, fames magnis commodo nisi. Fames erat morbi nostra sapien potenti. Quam sem erat curabitur ornare efficitur hendrerit porttitor sagittis. Accumsan placerat integer litora ipsum mollis hendrerit ac quis suspendisse. Taciti libero accumsan porta semper diam pharetra. At fermentum mauris ullamcorper inceptos sapien.
+                  text: ''
+                  content: 'Utilizando-se de ferramentas para visualização e geoespacialização de dados, Documental.xyz possibilita a combinação de conjuntos complexos de informação - texto, fotografias, vídeos, dados, imagens de satélite e mapas - em narrativas contextualizadas geograficamente.'
+                - type: Spacer
+                  desktop: 100px
+                  tablet: 100px
+                  mobile: 100px
                 - type: TimelineBullet
-                  text: Maio de 2023
-                  content: |-
-                    **Augue eu montes ut consectetur conubia iaculis interdum vehicula eu. Suscipit maximus volutpat rhoncus lobortis sem eu porta fames.**
-
-                    Porta felis mollis aliquet rutrum, id dis diam. Tincidunt fringilla blandit, fames magnis commodo nisi. Fames erat morbi nostra sapien potenti. Quam sem erat curabitur ornare efficitur hendrerit porttitor sagittis. Accumsan placerat integer litora ipsum mollis hendrerit ac quis suspendisse. Taciti libero accumsan porta semper diam pharetra. At fermentum mauris ullamcorper inceptos sapien.
+                  text: ''
+                  content: 'Através de uma interface intuitiva, automatizada e de fácil manipulação, a plataforma funciona como um "Content Management System" (CMS), ou Sistema de Gerenciamneto de Conteúdo - um software que permite criar, editar, organizar e publicar conjunto de dados, sem a necessidade de conhecimentos avançados em programação.'
+                - type: Spacer
+                  desktop: 100px
+                  tablet: 100px
+                  mobile: 100px
                 - type: TimelineBullet
-                  text: Maio de 2024
-                  content: |-
-                    **Augue eu montes ut consectetur conubia iaculis interdum vehicula eu. Suscipit maximus volutpat rhoncus lobortis sem eu porta fames.**
-
-                    Porta felis mollis aliquet rutrum, id dis diam. Tincidunt fringilla blandit, fames magnis commodo nisi. Fames erat morbi nostra sapien potenti. Quam sem erat curabitur ornare efficitur hendrerit porttitor sagittis. Accumsan placerat integer litora ipsum mollis hendrerit ac quis suspendisse. Taciti libero accumsan porta semper diam pharetra. At fermentum mauris ullamcorper inceptos sapien.
-      - type: Spacer
-        desktop: '10'
-        mobile: '10'
-    backgroundImage: ''
+                  text: ''
+                  content: 'Documental possui uma estrutura pré-formada e customizável, através da qual o usuário pode gerar conteúdo multimídia e geolocalizado de maneira similar à produção de um blog, oferecendo um recurso simples, porém sofisticado, para a criação e publicação de narrativas em projetos jornalísticos e investigativos.'
   - type: Group
-    shortTitle: Dados
+    shortTitle: group_4
     longTitle: ''
     description: ''
     showInMenu: false
     animations: true
-    id: Dados
+    id: group_4
     layout: default
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
-    customBgColor: ''
-    overlay: ''
-    components:
-      - type: Column
-        paddingTop: false
-        paddingBottom: false
-        components:
-          - type: VideoEmbed
-            wideVideo: true
-            videoUrl: https://www.youtube.com/embed/TcJUSMiKQyY?si=hke7RMtO71mJ9wif
-            videoCaption: ''
-      - type: Columns
-        columnsAlign: 33-66
-        column1:
-          components:
-            - type: BigNumbers
-              alignment: caption-bottom
-              items:
-                - number: '300.000'
-                  caption: Sed ut perspiciatis unde omnis iste natus
-                - number: 100 KM
-                  caption: Sed ut perspiciatis unde omnis iste natus
-                - number: R$ 7.000.000
-                  caption: Sed ut perspiciatis unde omnis iste natus
-        column2:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: |-
-                ## Et voluptate dolor quis qui eiusmod fugiat in Lorem exercitation consequat ex labore quis laboris
-
-                Soluptate est labore sit tempor exercitation nisi eiusmod pariatur magna est aliqua. Magna laborum elit mollit ea occaecat incididunt Lorem Lorem incididunt nisi esse fugiat anim citation. Mollit velit laboris adipisicing enim ad eiusmod deserunt veniam nulla adipisicing amet pariatur nostrud exercitation. Velit laborum occaecat nulla ex nulla esse aborum ex duis duis magna. Ipsum laboris commodo do do eiusmod. Consectetur culpa fugiat ccaecat enim ullamco tempor amet velit duis culpa commodo dolor minim. Ea sunt culpa id ea amet.
-
-                oluptate est labore sit tempor exercitation nisi eiusmod pariatur magna est aliqua. Magna laborum elit mollit ea occaecat incididunt Lorem Lorem incididunt nisi esse fugiat anim citation. Mollit velit laboris adipisicing enim ad eiusmod deserunt veniam nulla adipisicing amet pariatur nostrud exercitation. Velit laborum occaecat nulla ex nulla esse aborum ex duis duis magna. Ipsum laboris commodo do do eiusmod. Consectetur culpa fugiat ccaecat enim ullamco tempor amet velit duis culpa commodo dolor minim. Ea sunt culpa id ea amet.
-
-                oluptate est labore sit tempor exercitation nisi eiusmod pariatur magna est aliqua. Magna laborum elit mollit ea occaecat incididunt Lorem Lorem incididunt nisi esse fugiat anim citation. Mollit velit laboris adipisicing enim ad eiusmod deserunt veniam nulla adipisicing amet pariatur nostrud exercitation. Velit laborum occaecat nulla ex nulla esse aborum ex duis duis magna. Ipsum laboris commodo do do eiusmod. Consectetur culpa fugiat ccaecat enim ullamco tempor amet velit duis culpa commodo dolor minim. Ea sunt culpa id ea amet.
-              txtColor: ''
-              bgColor: ''
-              customBgColor: ''
-              customTxtColor: ''
-            - type: ImageBlock
-              wideImage: false
-              src: /uploads/thumb.png
-              alt: Imagem
-              description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
-      - type: Compare
-        imageLeft: /uploads/map.png
-        imageRight: /uploads/map-1.png
-        caption: Imagem de comparação
-    backgroundImage: ''
-  - type: Group
-    shortTitle: Gráficos Destaque
-    longTitle: ''
-    description: ''
-    showInMenu: true
-    animations: true
-    id: Gráficos Destaque
-    layout: default
-    txtColor: Secondary
-    customTxtColor: ''
-    bgColor: Highlight
-    customBgColor: ''
-    overlay: ''
-    components:
-      - type: Column
-        paddingTop: true
-        paddingBottom: true
-        components:
-          - type: ChartBar
-            chartTitle: QUIS AUTEM VEL EUM IURE REPREHENDERT QUI IN EA VOLUPTATE
-            chartNotes: ''
-            chartBars:
-              - label: Sed ut perspiciatis
-                color: '#ff7967ff'
-                number: 100
-                numberPercent: 50
-              - label: Nemo enim ipsam voluptatem
-                color: '#ff7967ff'
-                number: 170
-                numberPercent: 35
-              - label: Totam rem aperiam
-                color: '#ff7967ff'
-                number: 200
-                numberPercent: 70
-              - label: Accusantium doloremque
-                color: '#ff7967ff'
-                number: 150
-                numberPercent: 15
-              - label: Omnis iste natus
-                color: '#ff7967ff'
-                number: 230
-                numberPercent: 90
-    backgroundImage: ''
-  - type: Group
-    shortTitle: Gráficos
-    longTitle: ''
-    description: ''
-    showInMenu: false
-    animations: true
-    id: Gráficos
-    layout: default
-    txtColor: Primary
-    customTxtColor: ''
-    bgColor: Secondary
-    customBgColor: ''
-    overlay: ''
-    components:
-      - type: Columns
-        paddingTop: false
-        paddingBottom: false
-        invertOnMobile: false
-        columnsAlign: 66-33
-        column1:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: |-
-                #### NEQUE PORRO QUISQUAM EST, QUI DOLOREM IPSUM QUIA DOLOR
-
-                Tellus rutrum a luctus eleifend dui tincidunt? Porta dolor pulvinar tellus feugiat finibus accumsan, vehicula quam. Posuere viverra erat litora semper pretium porta praesent nisi? Malesuada et nullam, cursus tempus platea purus pellentesque. Risus neque ultricies ex lorem cubilia. Augue eu montes ut consectetur conubia iaculis interdum vehicula eu. Suscipit maximus volutpat rhoncus lobortis sem eu porta fames.
-              txtColor: ''
-              bgColor: ''
-              customBgColor: ''
-              customTxtColor: ''
-            - type: ChartPercentage
-              chartPercentageTitle: AUTEM VEL EUM IURE REPREHENRERIT QUI IN EA
-              chartPercentageNotes: Augue eu montes ut consectetur conubia iaculis interdum vehicula eu.
-              chartPercentageValues:
-                - label: Governo
-                  color: '#ffff00ff'
-                  number: 25
-                - label: Empresa
-                  color: '#006949ff'
-                  number: 40
-                - label: Outros
-                  color: '#ff7967ff'
-                  number: 30
-            - type: ChartBar
-              chartTitle: QUIS AUTEM VEL EUM IURE REPREHENDERIT QUI IN EA
-              chartNotes: Augue eu montes ut consectetur conubia iaculis interdum vehicula eu.
-              chartBars:
-                - label: '2015'
-                  color: '#ff7967ff'
-                  number: 231
-                  numberPercent: 50
-                - label: '2016'
-                  color: '#ff7967ff'
-                  number: 512
-                  numberPercent: 100
-                - label: '2017'
-                  color: '#ff7967ff'
-                  number: 342
-                  numberPercent: 65
-        column2:
-          components:
-            - type: Gallery
-              description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-              uniqid: '01'
-              images:
-                - image: /uploads/map.png
-                  caption: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                - image: /uploads/map-1.png
-                  caption: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                - image: /uploads/thumb.png
-                  caption: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-    backgroundImage: ''
-  - type: Group
-    shortTitle: Destaque
-    longTitle: ''
-    description: ''
-    showInMenu: true
-    animations: true
-    id: Destaque
-    layout: default
-    txtColor: Secondary
-    customTxtColor: ''
-    bgColor: ''
-    customBgColor: ''
-    backgroundMedia:
-      - type: backgroundImage
-        imgSrc: /uploads/group-bg-2.png
-    overlay: light
-    components:
-      - type: ColumnSticky
-        txtColor: ''
-        bgColor: ''
-        paddingTop: true
-        paddingBottom: true
-        layout: text-bigger
-        title: ALTER DO CHÃO ALSO NEEDDS TO BE RECOGNIZED AS AN INDIGENOUS LAND (TI) WITH THE MILLENNIAL PRESENCE OF THE BORARI PEOPLE
-        components: []
-        customBgColor: ''
-        customTxtColor: ''
-    backgroundImage: /uploads/group-bg-2.png
-  - type: Group
-    shortTitle: Cards
-    longTitle: ''
-    description: ''
-    showInMenu: false
-    animations: true
-    id: Cards
-    layout: default
-    txtColor: Primary
-    customTxtColor: ''
-    bgColor: Secondary
-    customBgColor: ''
-    backgroundMedia: []
-    overlay: ''
-    components:
-      - type: Columns
-        paddingTop: false
-        paddingBottom: false
-        invertOnMobile: false
-        columnsAlign: 33-66
-        column1:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: '###### SED UT PERSPICIATIS UNDE OMNIS ISTE NATUS ERROR SIT VOLUPTATEM ACCUSANTIUM, DOLOREMQUE LAUDANTIUM, TOTAM REM APERIAM'
-              txtColor: ''
-              bgColor: ''
-              customBgColor: ''
-              customTxtColor: ''
-        column2:
-          components:
-            - type: Cards
-              cardsArr:
-                - Card:
-                    type: Card
-                    title: Open Source
-                    text: Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, cosectertur, adipisci velit, sed quia non numquam eius modi tempora incidunt.
-                    link:
-                      url: https://documental.xyz
-                      target: _blank
-                      customTarget: ''
-                      text: Link
-                    icon: <span class="material-symbols-outlined"> construction </span>
-                - Card:
-                    type: Card
-                    title: Open Source
-                    text: Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, cosectertur, adipisci velit, sed quia non numquam eius modi tempora incidunt.
-                    link:
-                      url: https://documental.xyz
-                      target: _blank
-                      customTarget: ''
-                      text: Link
-                    icon: <span class="material-symbols-outlined"> construction </span>
-                - Card:
-                    type: Card
-                    title: Open Source
-                    text: Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, cosectertur, adipisci velit, sed quia non numquam eius modi tempora incidunt.
-                    link:
-                      url: https://documental.xyz
-                      target: ''
-                      customTarget: ''
-                      text: Link
-                    icon: <span class="material-symbols-outlined"> construction </span>
-                - Card:
-                    type: Card
-                    title: Open Source
-                    text: Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, cosectertur, adipisci velit, sed quia non numquam eius modi tempora incidunt.
-                    link:
-                      url: https://documental.xyz
-                      target: ''
-                      customTarget: ''
-                      text: Link
-                    icon: <span class="material-symbols-outlined"> construction </span>
-  - type: Cta
-    shortTitle: CTAs
-    longTitle: ''
-    description: ''
-    showInMenu: true
-    animations: true
-    id: CTAs
-    layout: text
-    txtColor: Secondary
-    customTxtColor: ''
-    bgColor: Highlight
-    customBgColor: ''
-    imgBg: /uploads/group-bg.png
-    ctaText: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-    highlightedText: Alter do Chão Also Needs to Be Recognized
-    link:
-      url: '#'
-      target: _self
-      text: Botão
-  - type: Group
-    shortTitle: Citação
-    longTitle: ''
-    description: ''
-    showInMenu: false
-    animations: true
-    id: Citação
-    layout: default
-    txtColor: Primary
-    customTxtColor: ''
-    bgColor: Secondary
-    customBgColor: ''
-    overlay: ''
-    components:
-      - type: Columns
-        columnsAlign: 66-33
-        column1:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: |-
-                ## Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-              txtColor: ''
-              bgColor: ''
-              customBgColor: ''
-              customTxtColor: ''
-        column2:
-          components:
-            - type: Pullquote
-              content: NEQE PORRO QUISQUAM EST QUI DOLOREM IPSUM QUIA DOLOR SIT AMET, CONSECTETUR, ADIPISCI VELIT, SED QUIA NON NUMQUAM EIUS MODI TEMPORA
-              txtColor: ''
-              bgColor: ''
-              byline: Sed ut perspiciatis unde iste natus error sit voluptatem accusantium
-              hasByline: false
-              customBgColor: ''
-              customTxtColor: ''
-    backgroundImage: ''
-  - type: Group
-    shortTitle: ReferenciasCreditos
-    longTitle: ''
-    description: ''
-    showInMenu: false
-    animations: true
-    id: ReferenciasCreditos
-    layout: default
-    txtColor: Secondary
-    customTxtColor: ''
-    bgColor: Highlight
     customBgColor: ''
     overlay: ''
     components:
@@ -756,86 +209,24 @@ components:
             - type: Text
               hasDropCap: false
               content: |-
-                ### REFERENCES
-
-                Check out the project's repository - Github - in order to access the data and codes used.
+                ### ALGUMAS INVESTIGAÇÕES PUBLICADAS NA PLATAFORMA
               txtColor: ''
               bgColor: ''
               customBgColor: ''
               customTxtColor: ''
         column2:
           components:
-            - type: InnerColumns
-              column1:
-                components:
-                  - type: Text
-                    hasDropCap: false
-                    content: |-
-                      #### DATA SOURCES
-
-                      - Agência Nacional de Aviação Civil (ANAC)
-                      - Defezap
-                      - Fogo Cruzado
-                      - Redes da Maré
-                      - Núcleo de Defesa dos DIreitos Humanos da Defensoria Pública do Estado do Rio de Janeiro
-                    txtColor: ''
-                    bgColor: ''
-                    customBgColor: ''
-                    customTxtColor: ''
-              column2:
-                components:
-                  - type: Text
-                    hasDropCap: false
-                    content: |-
-                      - Instituto Brasileiro de Geografia e Estatística
-                      - Observatório de Intervenção
-                      - Pista News
-                      - Polícia Civil do Estado do Rio de Janeiro
-                      - Polícia Militar do Estado do Rio de Janeiro
-                    txtColor: ''
-                    bgColor: ''
-                    customBgColor: ''
-                    customTxtColor: ''
-      - type: Columns
-        paddingTop: false
-        paddingBottom: false
-        invertOnMobile: false
-        columnsAlign: 33-66
-        column1:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: |-
-                ### CREDITS
-
-                The report was produced by the Borari Indigenous Communication Front [comborari@gmail.com] and published in Amazônia Real. The Borari Indigenous Communication Front is formed by Borari women who write about issues involving indigenous rights, culture, and territory.
-              txtColor: ''
-              bgColor: ''
-              customBgColor: ''
-              customTxtColor: ''
-        column2:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: |-
-                Curried out by MediaLab.UFRJ and Agência Autonoma, in partnership with Redes da Maré, Fogo Cruzado, Pista News, Witness e Rede LAVITS.
-                **Cordinations:** Fernanda Bruno, Adriano Belisario e Paulo Tavares
-                **Data analysis and visualisation:** Adriano Belisario
-                **Research assistant:** Ingra Maciel e Debora Pio
-                **Web developer:** Marlus Araújo
-                contato@medialabufrj.net
-              txtColor: ''
-              bgColor: ''
-              customBgColor: ''
-              customTxtColor: ''
-    backgroundImage: ''
+            - type: Spacer
+              desktop: 100px
+              tablet: 100px
+              mobile: 100px
   - type: Group
-    shortTitle: Apoio
+    shortTitle: group_5
     longTitle: ''
     description: ''
     showInMenu: false
     animations: true
-    id: Apoio
+    id: group_5
     layout: default
     txtColor: Primary
     customTxtColor: ''
@@ -843,114 +234,48 @@ components:
     customBgColor: ''
     overlay: dark
     components:
-      - type: Column
-        paddingTop: false
-        paddingBottom: false
-        components:
-          - type: Text
-            content: |-
-              ### APOIO
-
-              ##
-            txtColor: ''
-            bgColor: ''
-            customBgColor: ''
-            customTxtColor: ''
-          - type: LogosGroup
-            logos:
-              - image: /uploads/logo-1.jpg
-                link:
-                  url: '#'
-                  target: ''
-                  customTarget: ''
-                  title: Autonoma
-              - image: /uploads/logo-2.png
-                link:
-                  url: '#'
-                  target: ''
-                  customTarget: ''
-                  title: Lavits
-              - image: /uploads/Captura de Tela-20241220083834-158x147.png
-                link:
-                  url: '#'
-                  target: ''
-                  customTarget: ''
-                  title: Ford Foundation
-      - type: Column
-        paddingTop: false
-        paddingBottom: false
-        components:
-          - type: Text
-            content: '### PARCEIROS'
-            txtColor: ''
-            bgColor: ''
-            customBgColor: ''
-            customTxtColor: ''
-          - type: LogosGroup
-            logos:
-              - image: /uploads/Captura de Tela-20241220084024-224x105.png
-                link:
-                  url: '#'
-                  target: ''
-                  customTarget: ''
-                  title: ''
-              - image: /uploads/Captura de Tela-20241220084110-267x93.png
-                link:
-                  url: '#'
-                  target: ''
-                  customTarget: ''
-                  title: ''
-    backgroundImage: ''
-  - type: Group
-    shortTitle: CardsCall
-    longTitle: ''
-    description: ''
-    showInMenu: false
-    animations: true
-    id: CardsCall
-    layout: default
-    txtColor: Secondary
-    customTxtColor: ''
-    bgColor: Primary
-    customBgColor: ''
-    overlay: dark
-    components:
-      - type: Column
-        paddingTop: true
-        paddingBottom: true
-        components:
-          - type: Text
-            hasDropCap: false
-            content: '### VEJA TAMBÉM'
-            txtColor: ''
-            bgColor: ''
-            customBgColor: ''
-            customTxtColor: ''
-          - type: CardsCall
-            cardsCallArr:
-              - link:
-                  url: '#'
-                  target: ''
-                  customTarget: ''
-                img:
-                  src: /uploads/thumb.png
-                  alt: Image
-                title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
-                text: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
-              - link:
-                  url: '#'
-                  target: ''
-                  customTarget: ''
-                img:
-                  src: /uploads/thumb.png
-                  alt: Image2
-                title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
-                text: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
-          - type: Text
-            hasDropCap: false
-            content: '###### DOCUMENTAL.XYZ - 2024'
-            txtColor: ''
-            bgColor: ''
-            customBgColor: ''
-            customTxtColor: ''
+        - type: CardsCall
+          cardsCallArr:
+            - link:
+                url: 'https://v1.documental.xyz/pt/alter-ameacada'
+                target: ''
+                customTarget: ''
+              img:
+                src: /uploads/vende-se-03.jpeg
+                alt: Image
+              title: Alter do Chão 
+              text: 'O projeto Alter do Chão Ameaçada, produzido pela Frente de Comunicação Indígena Borari e publicado na plataforma Documental com mentoria de Adriano Belisário (MediaLab/UFRJ), investiga a ameaça ao povo indígena Borari, em Santarém, no Pará, devido à especulação imobiliária e ocupação desordenada da região. Através da análise de mapas e imagens de satélite, a pesquisa mapeou o território Borari e seus sítios arqueológicos, assim como os danos ambientais causados aos igarapés e nascentes, como forma de visualizar a extensão das violações causadas e pleitear pela demarcação da Terra Indígena.'
+            - link:
+                url: 'https://documental.xyz/territorios-de-excecao/'
+                target: ''
+                customTarget: ''
+              img:
+                src: /uploads/territorios-de-excecao.jpg
+                alt: Image2
+              title: Territórios de Exceção
+              text: 'Uma parceria entre a agência Autônoma e o MediaLab (UFRJ), o caso Territórios da Exceção investigou o uso de helicópteros como plataforma de disparos da polícia militar nas favelas do Rio de Janeiro para compreender a dinâmica e os impactos deste tipo de operação sobre os direitos fundamentais das populações e comunidades atingidas. Utilizando ciência de visualização de dados, dados governamentais e de mídias sociais, investigações de campo e técnicas de arquitetura forense, a pesquisa apresenta as evidências por meio de vídeos, animações, imagens em 3D e informações georreferenciadas, oferecendo uma experiência imersiva dentro dos mapas e localidades.'
+        - type: CardsCall
+          cardsCallArr:
+            - link:
+                url: 'https://documental.xyz/expulsions/'
+                target: ''
+                customTarget: ''
+              img:
+                src: /uploads/expulsion-san-marcos.jpg
+                alt: Image2
+              title: Expulsões
+              text: 'O caso Expulsões, realizado através da parceria entre a agência Autonoma e o Forensic Architecture, investiga violações de direitos humanos e ambientais decorrentes da implantação de um megaprojeto de mineração na região da Cordilheira de Cóndor, na Amazônia Equatoriana. Através da análise de imagens de satélite e de testemunhos das vítimas, com o apoio de atores locais, a investigação mapeou processos de despossessão de comunidades e povos indígenas, desmatamento e destruição de sítios arqueológicos, demonstrando as dinâmicas espaciais de uma ação coordenada de violações sistemáticas.'
+            - link:
+                url: 'https://documental.xyz/nhanderekoa/'
+                target: ''
+                customTarget: ''
+              img:
+                src: /uploads/imagem_16_ocupacao_antena.jpg
+                alt: Image2
+              title: Nhanderekoa
+              text: ''
+        - type: Spacer
+          desktop: 150px
+          tablet: 150px
+          mobile: 150px
 ---

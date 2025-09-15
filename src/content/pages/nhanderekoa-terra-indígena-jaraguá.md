@@ -35,6 +35,7 @@ mapbox:
   pitch: '0'
   layers: |-
     ti-jaragua
+    camada-cor
     satelite
   columnAlign: center
   floatingText: false
@@ -60,26 +61,26 @@ mapbox:
         - icon: circle
           colorIcon: '#66ea5d'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Terra Indígena Jaraguá
         - icon: circle
           colorIcon: '#fb8f13'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Pontos de Memória Indígena
         - icon: show_chart
           colorIcon: '#9b16d4'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Limite do Parque Estadual Jaraguá
     - id: map1_ytu
       centerLng: '-46.754'
-      centerLat: '-23.464'
+      centerLat: '-23.465'
       zoom: '16.96'
       mobileZoom: '16.96'
       duration: '4000'
@@ -98,20 +99,20 @@ mapbox:
         - icon: circle
           colorIcon: '#66ea5d'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Terra Indígena Jaraguá
         - icon: show_chart
           colorIcon: '#9b16d4'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Limite do Parque Estadual Jaraguá
     - id: map1_pyau
-      centerLng: '-46.752'
+      centerLng: '-46.753'
       centerLat: '-23.465'
       zoom: '16.80'
       mobileZoom: '16.80'
@@ -131,17 +132,17 @@ mapbox:
         - icon: circle
           colorIcon: '#66ea5d'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Terra Indígena Jaraguá
         - icon: show_chart
           colorIcon: '#9b16d4'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Limite do Parque Estadual Jaraguá
     - id: map1_itakupe
       centerLng: '-46.763'
@@ -164,21 +165,21 @@ mapbox:
         - icon: circle
           colorIcon: '#66ea5d'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Terra Indígena Jaraguá
         - icon: show_chart
           colorIcon: '#9b16d4'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Limite do Parque Estadual Jaraguá
     - id: map1_itawera
-      centerLng: '-46.754'
-      centerLat: '-23.463'
+      centerLng: '-46.755'
+      centerLat: '-23.464'
       zoom: '16.97'
       mobileZoom: '16.97'
       duration: '4000'
@@ -197,20 +198,20 @@ mapbox:
         - icon: circle
           colorIcon: '#66ea5d'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Terra Indígena Jaraguá
         - icon: show_chart
           colorIcon: '#9b16d4'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Limite do Parque Estadual Jaraguá
     - id: map1_itaendy
-      centerLng: '-46.777'
+      centerLng: '-46.778'
       centerLat: '-23.462'
       zoom: '15.94'
       mobileZoom: '15.94'
@@ -219,8 +220,8 @@ mapbox:
       pitch: '0'
       layers: |-
         ti-jaragua
-        itaendy-label
         aldeias-jaragua
+        aldeias-jaragua-label[nome_aldei==Itaendy]
         pe-jaragua
         satelite
         camada-cor
@@ -230,21 +231,21 @@ mapbox:
         - icon: circle
           colorIcon: '#66ea5d'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Terra Indígena Jaraguá
         - icon: show_chart
           colorIcon: '#9b16d4'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Limite do Parque Estadual Jaraguá
     - id: map1_yvypora
-      centerLng: '-46.757'
-      centerLat: '-23.465'
+      centerLng: '-46.756'
+      centerLat: '-23.466'
       zoom: '16.40'
       mobileZoom: '16.40'
       duration: '4000'
@@ -263,17 +264,17 @@ mapbox:
         - icon: circle
           colorIcon: '#66ea5d'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Terra Indígena Jaraguá
         - icon: show_chart
           colorIcon: '#9b16d4'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Limite do Parque Estadual Jaraguá
     - id: map1_pindomirim
       centerLng: '-46.780'
@@ -285,7 +286,7 @@ mapbox:
       pitch: '0'
       layers: |-
         ti-jaragua
-        pindomirim-label
+        aldeias-jaragua-label[nome_aldei==Pindó Mirim]
         aldeias-jaragua
         pe-jaragua
         satelite
@@ -296,17 +297,17 @@ mapbox:
         - icon: circle
           colorIcon: '#66ea5d'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Terra Indígena Jaraguá
         - icon: show_chart
           colorIcon: '#9b16d4'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Limite do Parque Estadual Jaraguá
     - id: map1_mirim
       centerLng: '-46.753'
@@ -318,7 +319,7 @@ mapbox:
       pitch: '0'
       layers: |-
         ti-jaragua
-        aldeias-jaragua-label[nome_aldei==Tekoa mirim]
+        aldeias-jaragua-label[nome_aldei==Tekoa Mirim]
         aldeias-jaragua
         pe-jaragua
         satelite
@@ -329,17 +330,17 @@ mapbox:
         - icon: circle
           colorIcon: '#66ea5d'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Terra Indígena Jaraguá
         - icon: show_chart
           colorIcon: '#9b16d4'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Limite do Parque Estadual Jaraguá
     - id: map1_kaaguymirim
       centerLng: '-46.753'
@@ -351,7 +352,7 @@ mapbox:
       pitch: '0'
       layers: |-
         ti-jaragua
-        aldeias-jaragua-label[nome_aldei==Ka'aguy mirim]
+        aldeias-jaragua-label[nome_aldei==Ka'aguy Mirim]
         aldeias-jaragua
         pe-jaragua
         satelite
@@ -362,20 +363,20 @@ mapbox:
         - icon: circle
           colorIcon: '#66ea5d'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Terra Indígena Jaraguá
         - icon: show_chart
           colorIcon: '#9b16d4'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Limite do Parque Estadual Jaraguá
     - id: map1_fimti
-      centerLng: '-46.782'
+      centerLng: '-46.765'
       centerLat: '-23.461'
       zoom: '13.26'
       mobileZoom: '13.26'
@@ -387,32 +388,8 @@ mapbox:
       title: ''
       notes: ''
       items: []
-    - id: map2_jaraguasp
-      centerLng: '-46.683'
-      centerLat: '-23.500'
-      zoom: '9.92'
-      mobileZoom: '9.92'
-      duration: '4000'
-      bearing: '0'
-      pitch: '0'
-      layers: |-
-        ti-jaragua
-        exploracao-ouro-sp
-      title: ''
-      notes: ''
-      items:
-        - icon: show_chart
-          colorIcon: '#1b9613'
-          typeIcon: outlined
-          iconFill: true
-          text: Terra Indígena Jaraguá
-        - icon: circle
-          colorIcon: '#d28fef8e'
-          typeIcon: outlined
-          iconFill: true
-          text: Áreas de exploração do ouro em São Paulo
     - id: map2_jaraguasptudo
-      centerLng: '-46.683'
+      centerLng: '-46.850'
       centerLat: '-23.500'
       zoom: '9.92'
       mobileZoom: '9.92'
@@ -421,8 +398,12 @@ mapbox:
       pitch: '0'
       layers: |-
         ti-jaragua
-        patteo-collegio
-        estacao-barueri
+        pateo-collegio
+        capela-barueri
+        estacao-jaragua
+        afonso-sardinha
+        muros-jaragua
+        vestigios-mineracao
         exploracao-ouro-sp
       title: ''
       notes: ''
@@ -430,7 +411,7 @@ mapbox:
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Terra Indígena Jaraguá
         - icon: circle
           colorIcon: '#9b16d4'
@@ -442,25 +423,6 @@ mapbox:
           typeIcon: outlined
           iconFill: true
           text: Áreas de exploração do ouro em São Paulo
-    - id: map2_jaraguaspzoom
-      centerLng: '-46.760'
-      centerLat: '-23.511'
-      zoom: '11.36'
-      mobileZoom: '11.36'
-      duration: '4000'
-      bearing: '0'
-      pitch: '0'
-      layers: |-
-        ti-jaragua
-        pateo-collegio
-      title: ''
-      notes: ''
-      items:
-        - icon: circle
-          colorIcon: '#9b16d4'
-          typeIcon: outlined
-          iconFill: true
-          text: Pateo do Collegio
     - id: map2_pateo
       centerLng: '-46.634'
       centerLat: '-23.548'
@@ -472,7 +434,6 @@ mapbox:
       layers: |-
         ti-jaragua
         pateo-collegio-area
-        pateo-collegio-label
       title: ''
       notes: ''
       items:
@@ -501,7 +462,7 @@ mapbox:
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Terra Indígena Jaraguá
         - icon: circle
           colorIcon: '#9b16d4'
@@ -509,17 +470,45 @@ mapbox:
           iconFill: true
           text: Patrimônio colonial
     - id: map2_ourojaragua
-      centerLng: '-46.781'
-      centerLat: '-23.458'
-      zoom: '13.52'
-      mobileZoom: '13.52'
+      centerLng: '-46.769'
+      centerLat: '-23.456'
+      zoom: '13.04'
+      mobileZoom: '13.04'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
         ti-jaragua
         afonso-sardinha
-        patrimonio-colonial
+        afonso-sardinha-label
+        muros-jaragua
+        muros-jaragua-label
+        vestigios-mineracao
+        vestigios-label
+      title: ''
+      notes: ''
+      items:
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: false
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#9b16d4'
+          typeIcon: outlined
+          iconFill: false
+          text: Patrimônio colonial
+    - id: map2_jaraguasp
+      centerLng: '-46.850'
+      centerLat: '-23.500'
+      zoom: '9.92'
+      mobileZoom: '9.92'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+        exploracao-ouro-sp
       title: ''
       notes: ''
       items:
@@ -529,18 +518,13 @@ mapbox:
           iconFill: true
           text: Terra Indígena Jaraguá
         - icon: circle
-          colorIcon: '#9b16d4'
-          typeIcon: outlined
-          iconFill: false
-          text: Casa-Grande Senzala de Afonso Sardinha
-        - icon: circle
-          colorIcon: '#9b16d4'
+          colorIcon: '#d28fef8e'
           typeIcon: outlined
           iconFill: true
-          text: Remanescentes de estruturas da mineração do período colonial
+          text: Áreas de exploração do ouro em São Paulo
     - id: map2_fim
-      centerLng: '-46.781'
-      centerLat: '-23.458'
+      centerLng: '-46.765'
+      centerLat: '-23.461'
       zoom: '13.52'
       mobileZoom: '13.52'
       duration: '4000'
@@ -552,7 +536,7 @@ mapbox:
       notes: ''
       items: []
     - id: map3_jaragua
-      centerLng: '-46.766'
+      centerLng: '-46.789'
       centerLat: '-23.460'
       zoom: '13.26'
       mobileZoom: '13.26'
@@ -568,12 +552,12 @@ mapbox:
         - icon: circle
           colorIcon: '#66ea5d'
           typeIcon: outlined
-          iconFill: true
-          text: Aldeias
+          iconFill: false
+          text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Terra Indígena Jaraguá
     - id: map3_set2013
       centerLng: '-46.753'
@@ -593,12 +577,12 @@ mapbox:
         - icon: circle
           colorIcon: '#c8094f'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Local do ato
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Terra Indígena Jaraguá
     - id: map3_out2013
       centerLng: '-46.702'
@@ -624,24 +608,25 @@ mapbox:
           iconFill: true
           text: Terra Indígena Jaraguá
     - id: map3_2013zoom
-      centerLng: '-46.657'
-      centerLat: '-23.570'
-      zoom: '13.42'
-      mobileZoom: '13.42'
+      centerLng: '-46.656'
+      centerLat: '-23.573'
+      zoom: '13.74'
+      mobileZoom: '13.74'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
         trajetos-atos[num==1]
         marca-trajetos[num==1]
-        areas-protestos[tag==1]
+        adds-2013
+        adds-2013-label
       title: ''
       notes: ''
       items:
         - icon: show_chart
           colorIcon: '#c8094f'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Trajeto do ato
     - id: map3_abr2014
       centerLng: '-46.646'
@@ -660,7 +645,7 @@ mapbox:
         - icon: circle
           colorIcon: '#c8094f'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Local do ato
     - id: map3_masp2014
       centerLng: '-46.646'
@@ -681,7 +666,7 @@ mapbox:
         - icon: show_chart
           colorIcon: '#c8094f'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Trajeto do protesto
     - id: map3_2014assembleia
       centerLng: '-46.646'
@@ -692,19 +677,19 @@ mapbox:
       bearing: '0'
       pitch: '0'
       layers: |-
+        assembleia
+        label-assembleia
         areas-protestos[tag==2]
         legenda-areas[tag==2]
         trajetos-atos[num==2]
         marca-trajetos[num==2]
-        assembleia
-        label-assembleia
       title: ''
       notes: ''
       items:
         - icon: circle
           colorIcon: '#c8094f'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Local do ato
     - id: map3_2016
       centerLng: '-46.658'
@@ -723,7 +708,7 @@ mapbox:
         - icon: circle
           colorIcon: '#c8094f'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Local do ato 
     - id: map3_anulacao
       centerLng: '-46.702'
@@ -750,7 +735,7 @@ mapbox:
         - icon: circle
           colorIcon: '#c8094f'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Local do ato 
     - id: map3_2020
       centerLng: '-46.752'
@@ -775,7 +760,7 @@ mapbox:
         - icon: circle
           colorIcon: '#c8094f'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Local do ato 
     - id: map3_bloqueio
       centerLng: '-46.702'
@@ -803,7 +788,7 @@ mapbox:
         - icon: circle
           colorIcon: '#c8094f'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Local do ato  
     - id: map3_julho2021
       centerLng: '-46.658'
@@ -822,26 +807,28 @@ mapbox:
         - icon: show_chart
           colorIcon: '#c8094f'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Trajeto percorrido
     - id: map3_junho22
-      centerLng: '-46.651'
-      centerLat: '-23.569'
-      zoom: '13.20'
-      mobileZoom: '13.20'
+      centerLng: '-46.655'
+      centerLat: '-23.574'
+      zoom: '13.80'
+      mobileZoom: '13.80'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
         trajetos-atos[num==7]
         marca-trajetos[num==7]
+        adds-2013
+        adds-2013-label
       title: ''
       notes: ''
       items:
         - icon: show_chart
           colorIcon: '#c8094f'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Trajeto percorrido
     - id: map3_ago2022
       centerLng: '-46.636'
@@ -854,13 +841,15 @@ mapbox:
       layers: |-
         trajetos-atos[num==5]
         marca-trajetos[num==5]
+        adds-2022
+        adds-2022-label
       title: ''
       notes: ''
       items:
         - icon: show_chart
           colorIcon: '#c8094f'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Trajeto percorrido          
     - id: map3_novomaio
       centerLng: '-46.761'
@@ -887,7 +876,7 @@ mapbox:
         - icon: circle
           colorIcon: '#c8094f'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Local do ato
     - id: map3_teatro
       centerLng: '-46.638'
@@ -900,13 +889,14 @@ mapbox:
       layers: |-
         locais-manifestacoes[fid==11]
         texto-locais[fid==11]
+        adds-2022[label==Theatro Municipal]
       title: ''
       notes: ''
       items:
         - icon: circle
           colorIcon: '#c8094f'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Local do ato
     - id: map4_jaragua
       centerLng: '-46.782'
@@ -921,37 +911,43 @@ mapbox:
         pe-jaragua
         aldeias-jaragua
         memoria-guarani
-        afonso-sardinha-fill
+        afonso-sardinha
         estacao-jaragua
-        patrimonio-colonial[fid==132]
+        muros-jaragua
+        complexo-turistico
       title: ''
       notes: ''
       items:
         - icon: circle
           colorIcon: '#66ea5d'
           typeIcon: outlined
-          iconFill: true
-          text: Aldeias
+          iconFill: false
+          text: Tekoas
         - icon: circle
           colorIcon: '#fb8f13'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Lugares de memória Guarani
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Terra Indígena Jaraguá
         - icon: circle
           colorIcon: '#c15aed'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Patrimônio colonial
         - icon: show_chart
           colorIcon: '#9b16d4'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Parque Estadual do Jaraguá
+        - icon: circle
+          colorIcon: '#d28fef8e'
+          typeIcon: outlined
+          iconFill: true
+          text: Núcleo turístico do Jaraguá
     - id: map4_afonsosardinha
       centerLng: '-46.758'
       centerLat: '-23.462'
@@ -963,37 +959,33 @@ mapbox:
       layers: |-
         ti-jaragua
         pe-jaragua
+        complexo-turistico
         aldeias-jaragua
-        afonso-sardinha-fill
         afonso-sardinha-label
+        afonso-sardinha-zoom
       title: ''
       notes: ''
       items:
-        - icon: circle
-          colorIcon: '#66ea5d'
-          typeIcon: outlined
-          iconFill: true
-          text: Aldeias
-        - icon: circle
-          colorIcon: '#fb8f13'
-          typeIcon: outlined
-          iconFill: true
-          text: Lugares de memória Guarani
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Terra Indígena Jaraguá
         - icon: circle
           colorIcon: '#c15aed'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Patrimônio colonial
         - icon: show_chart
           colorIcon: '#9b16d4'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Parque Estadual do Jaraguá
+        - icon: circle
+          colorIcon: '#d28fef8e'
+          typeIcon: outlined
+          iconFill: true
+          text: Núcleo turístico do Jaraguá
     - id: map4_jaraguaestacao
       centerLng: '-46.769'
       centerLat: '-23.460'
@@ -1005,41 +997,80 @@ mapbox:
       layers: |-
         ti-jaragua
         pe-jaragua
+        complexo-turistico
         aldeias-jaragua
-        memoria-guarani
         afonso-sardinha-label
-        afonso-sardinha-fill
+        afonso-sardinha
         estacao-jaragua-label
         estacao-jaragua
         muros-jaragua-label
-        patrimonio-colonial[fid==132]
+        muros-jaragua
       title: ''
       notes: ''
       items:
         - icon: circle
           colorIcon: '#66ea5d'
           typeIcon: outlined
-          iconFill: true
-          text: Aldeias
-        - icon: circle
-          colorIcon: '#fb8f13'
-          typeIcon: outlined
-          iconFill: true
-          text: Lugares de memória Guarani
+          iconFill: false
+          text: Tekoas
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Terra Indígena Jaraguá
         - icon: circle
           colorIcon: '#c15aed'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Patrimônio colonial
         - icon: show_chart
           colorIcon: '#9b16d4'
           typeIcon: outlined
+          iconFill: false
+          text: Parque Estadual do Jaraguá
+        - icon: circle
+          colorIcon: '#d28fef8e'
+          typeIcon: outlined
           iconFill: true
+          text: Núcleo turístico do Jaraguá
+    - id: map4_pedreira
+      centerLng: '-46.765'
+      centerLat: '-23.447'
+      zoom: '15.50'
+      mobileZoom: '15.50'
+      duration: '4000'
+      bearing: '0'
+      pitch: '0'
+      layers: |-
+        ti-jaragua
+        pe-jaragua
+        complexo-turistico
+        aldeias-jaragua
+        aldeias-jaragua-label[nome_aldei==Itakupe]
+        muros-jaragua-label
+        muros-jaragua
+      title: ''
+      notes: ''
+      items:
+        - icon: circle
+          colorIcon: '#66ea5d'
+          typeIcon: outlined
+          iconFill: false
+          text: Tekoas
+        - icon: show_chart
+          colorIcon: '#1b9613'
+          typeIcon: outlined
+          iconFill: false
+          text: Terra Indígena Jaraguá
+        - icon: circle
+          colorIcon: '#c15aed'
+          typeIcon: outlined
+          iconFill: false
+          text: Patrimônio colonial
+        - icon: show_chart
+          colorIcon: '#9b16d4'
+          typeIcon: outlined
+          iconFill: false
           text: Parque Estadual do Jaraguá
     - id: map5_jaragua
       centerLng: '-46.780'
@@ -1052,39 +1083,37 @@ mapbox:
       layers: |-
         ti-jaragua
         pe-jaragua
+        complexo-turistico
         aldeias-jaragua
         memoria-guarani
-        afonso-sardinha-fill
-        estacao-jaragua
-        patrimonio-colonial[fid==132]
       title: ''
       notes: ''
       items:
         - icon: circle
           colorIcon: '#66ea5d'
           typeIcon: outlined
-          iconFill: true
-          text: Aldeias
+          iconFill: false
+          text: Tekoas
         - icon: circle
           colorIcon: '#fb8f13'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Lugares de memória Guarani
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Terra Indígena Jaraguá
-        - icon: circle
-          colorIcon: '#c15aed'
-          typeIcon: outlined
-          iconFill: true
-          text: Patrimônio colonial
         - icon: show_chart
           colorIcon: '#9b16d4'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Parque Estadual do Jaraguá
+        - icon: circle
+          colorIcon: '#d28fef8e'
+          typeIcon: outlined
+          iconFill: true
+          text: Núcleo turístico do Jaraguá
     - id: map5_cacicajandira
       centerLng: '-46.753'
       centerLat: '-23.465'
@@ -1099,34 +1128,43 @@ mapbox:
         aldeias-jaragua
         memoria-guarani
         memoria-guarani-label
+        complexo-turistico
+        afonso-sardinha
+        estacao-jaragua
+        muros-jaragua
       title: ''
       notes: ''
       items:
         - icon: circle
           colorIcon: '#66ea5d'
           typeIcon: outlined
-          iconFill: true
-          text: Aldeias
+          iconFill: false
+          text: Tekoas
         - icon: circle
           colorIcon: '#fb8f13'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Lugares de memória Guarani
         - icon: show_chart
           colorIcon: '#1b9613'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Terra Indígena Jaraguá
         - icon: circle
           colorIcon: '#c15aed'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Patrimônio colonial
         - icon: show_chart
           colorIcon: '#9b16d4'
           typeIcon: outlined
-          iconFill: true
+          iconFill: false
           text: Parque Estadual do Jaraguá
+        - icon: circle
+          colorIcon: '#d28fef8e'
+          typeIcon: outlined
+          iconFill: true
+          text: Núcleo turístico do Jaraguá
 components:
   - type: Group
     id: home
@@ -2127,7 +2165,7 @@ components:
   - type: Group
     id: parte_4_ditadura_deslocamentos_e_desmatamento
     shortTitle: parte 4 - Ditadura, Deslocamentos e Desmatamento
-    longTitle: parte 4 - Ditadura, Deslocamentos e Desmatamento
+    longTitle: Ditadura, Deslocamentos e Desmatamento
     description: bloco título
     showInMenu: true
     animations: true
@@ -2228,7 +2266,7 @@ components:
   - type: Group
     id: parte_5_retorno_a_democracia_e_demarcacao_da_tekoa_ytu
     shortTitle: parte 5 - Retorno a Democracia & Demarcacao da Tekoa Ytu
-    longTitle: Retorno a Democracia & Demarcacao da Tekoa Ytu
+    longTitle: Retorno a Democracia e Demarcacao da Tekoa Ytu
     description: ''
     showInMenu: true
     animations: true
@@ -2370,9 +2408,9 @@ components:
               alt: asd
               description: Mapa da área norte do Cinturão Verde da Cidade de São Paulo. As florestas da T.I. Jaraguá são as mais preservadas do cinturão.
   - type: Group
-    id: parte_6_resistencia_luta_e_demarcacao
-    shortTitle: parte 6 - resistencia luta e demarcacao
-    longTitle: resistencia, luta e demarcação
+    id: parte_6_reconhecimento_luta_e_demarcacao
+    shortTitle: parte 6 - reconhecimento luta e demarcacao
+    longTitle: Reconhecimento, luta e demarcação
     description: ''
     showInMenu: true
     animations: true
@@ -2585,7 +2623,7 @@ components:
         desktop: 1000px
         tablet: 1000px
         mobile: 1000px
-    columnAlign: center
+    columnAlign: right
     floatingText: true
   - type: Map
     id: mapa_3_lutas_2
@@ -2610,7 +2648,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: '26 de setembro de 2013: Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã'
+            text: '26 de setembro de 2013'
+            content: 'Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2641,7 +2680,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: '01 de outubro de 2013: Em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215'
+            text: '01 de outubro de 2013'
+            content: 'Em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2664,7 +2704,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: '16 de abril de 2014: lançamento da campanha “Resistencia Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta'
+            text: 16 de abril de 2014
+            content: 'Lançamento da campanha “Resistencia Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2687,7 +2728,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: '24 de abril de 2014: protesto partindo do MASP até a praça Roosevelt, exigindo a demarcação das T.I.s Jaraguá e Tenondé Porãa'
+            text: '24 de abril de 2014'
+            content: 'Protesto partindo do MASP até a praça Roosevelt, exigindo a demarcação das T.I.s Jaraguá e Tenondé Porã'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2710,7 +2752,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: '06 de junho de 2014: protesto na Assembleia Legislativa de São Paulo e no Monumento às Bandeiras pelo arquivamento da PEC 215 e pela demarcação das T.I.s Jaraguá e Tenondé Porã'
+            text: '06 de junho de 2014'
+            content: 'Protesto na Assembleia Legislativa de São Paulo e no Monumento às Bandeiras pelo arquivamento da PEC 215 e pela demarcação das T.I.s Jaraguá e Tenondé Porã'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2733,7 +2776,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: '05 de maio de 2016: ativistas Guarani ocupam a sede da Secretaria da Presidência da República  em São Paulo, na Avenida Paulista, em protesto pela demarcação das T.I.s Jaraguá e Tenondé Porã'
+            text: '05 de maio de 2016'
+            content: 'Ativistas Guarani ocupam a sede da Secretaria da Presidência da República  em São Paulo, na Avenida Paulista, em protesto pela demarcação das T.I.s Jaraguá e Tenondé Porã'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2756,7 +2800,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: '14 – 16 de setembro 2017: em protesto contra a anulação da demarcação da Terra Indígena Jaraguá pelo governo de Michel Temer, lideranças Guarani realizam uma série de protestos em São Paulo. No dia 30 de agosto, uma ampla mobilização toma a Avenida Paulista. Quinze dias depois, entre os dias 14 e 16 de setembro, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo'
+            text: '14 a 16 de setembro de 2017'
+            content: 'Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá pelo governo de Michel Temer, lideranças Guarani realizam uma série de protestos em São Paulo. No dia 30 de agosto, uma ampla mobilização toma a Avenida Paulista. Quinze dias depois, entre os dias 14 e 16 de setembro, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2779,7 +2824,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: 'Janeiro-Março de 2020: ativistas Guarani ocupam o terreno onde seria construído o condomínio residencial “Reserva Jaraguá-Carinás”, situado próximo à aldeia Pyau. Executado pela construtora Tenda, o empreendimento levou à derrubada de cerca de quatro mil árvores em uma área da Reserva da Biosfera do Cinturão Verde de São Paulo. Chamada de Yary Ty, a ocupação dura até o mês de março, quando é removida pela Polícia Militar'
+            text: 'Janeiro-Março de 2020'
+            content: 'Ativistas Guarani ocupam o terreno onde seria construído o condomínio residencial “Reserva Jaraguá-Carinás”, situado próximo à aldeia Pyau. Executado pela construtora Tenda, o empreendimento levou à derrubada de cerca de quatro mil árvores em uma área da Reserva da Biosfera do Cinturão Verde de São Paulo. Chamada de Yary Ty, a ocupação dura até o mês de março, quando é removida pela Polícia Militar'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2802,7 +2848,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: 'Junho de 2021: a volta da discussão sobre o Marco Temporal no Congresso Nacional desencadeia uma série de protestos de organizações indígenas. No dia 25 de junho, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. Cinco dias depois ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista'
+            text: 'Junho de 2021'
+            content: 'A volta da discussão sobre o Marco Temporal no Congresso Nacional desencadeia uma série de protestos de organizações indígenas. No dia 25 de junho, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. Cinco dias depois ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2825,7 +2872,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: '03 de julho de 2021: no contexto da pandemia da COVID, ativistas Guarani participam da  grande manifestação contra o governo do presidente Jair Bolsonaro, trazendo a pauta do Marco Temporal para a manifestação'
+            text: '03 de julho de 2021'
+            content: 'No contexto da pandemia da COVID, ativistas Guarani participam da  grande manifestação contra o governo do presidente Jair Bolsonaro, trazendo a pauta do Marco Temporal para a manifestação'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2848,7 +2896,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: '23 de junho de 2022: ocupação do Monumento às Bandeiras em protesto contra a tramitação da lei do Marco Temporal'
+            text: '23 de junho de 2022'
+            content: 'Ocupação do Monumento às Bandeiras em protesto contra a tramitação da lei do Marco Temporal'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2871,7 +2920,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: '09 de agosto de 2022: ato organizado pela Comissão Yvyrupa na Faculdade de Direito da USP, no Largo São Francisco, contra o Marco Temporal'
+            text: '09 de agosto de 2022'
+            content: 'Ato organizado pela Comissão Yvyrupa na Faculdade de Direito da USP, no Largo São Francisco, contra o Marco Temporal'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2894,7 +2944,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: 'Maio-Junho de 2023: em protesto contra a aprovação da PL490/2007 pelos deputados em Brasília, ativistas Guarani novamente bloqueiam a Rodovia dos Bandeirantes. A manifestação é duramente reprimida pela Polícia Militar. Dias depois, em 04 de junho, a comunidade Guarani realiza a “Caminhada pela Vida” na área da T.I. Jaraguá'
+            text: 'Maio-Junho de 2023'
+            content: 'Em protesto contra a aprovação da PL490/2007 pelos deputados em Brasília, ativistas Guarani novamente bloqueiam a Rodovia dos Bandeirantes. A manifestação é duramente reprimida pela Polícia Militar. Dias depois, em 04 de junho, a comunidade Guarani realiza a “Caminhada pela Vida” na área da T.I. Jaraguá'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2917,7 +2968,8 @@ components:
         bgColor: ''
         components:
           - type: TimelineBullet
-            content: '07 de junho de 2023: desafiando a repressão estatal, no dia 07 de junho ativistas Guarani realizam novo ato contra o Marco Temporal, desta vez na escadaria do Teatro Municipal no centro de São Paulo'
+            text: '07 de junho de 2023'
+            content: 'Desafiando a repressão estatal, no dia 07 de junho ativistas Guarani realizam novo ato contra o Marco Temporal, desta vez na escadaria do Teatro Municipal no centro de São Paulo'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2931,6 +2983,10 @@ components:
         desktop: 600px
         tablet: 600px
         mobile: 600px
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map1_fimti
     columnAlign: right
     floatingText: false 
   - type: Group
@@ -2985,7 +3041,7 @@ components:
   - type: Group
     id: parte_8_patrimonializacao_do_colonialismo
     shortTitle: parte 8 - patrimonialização do colonialismo
-    longTitle: Patrimonialização do colonialismo & apagamento da memória Guarani
+    longTitle: Patrimonialização do colonialismo e apagamento da memória Guarani
     description: ''
     showInMenu: true
     animations: true
@@ -3170,18 +3226,13 @@ components:
         alt: asd
         description: Fotografias do bem tombado para a publicação Patrimônio Cultural Paulista, no tombamento do Parque Estadual do Jaraguá pelo CONDEPHAAT, 1978
       - type: Spacer
-        desktop: 50px
-        tablet: 50px
-        mobile: 50px
-      - type: ImageBlock
-        wideImage: false
-        src: /uploads/estacao-jaragua.jpg
-        alt: asd
-        description: Imagem da Estação Jaraguá
-      - type: Spacer
-        desktop: 200px
-        tablet: 200px
-        mobile: 200px
+        desktop: 400px
+        tablet: 400px
+        mobile: 400px 
+      - type: MapView
+        txtColor: ''
+        bgColor: ''
+        mapView: map4_pedreira
       - type: Text
         hasDropCap: false
         content: Em 2019 o CONPRESP tomba as estruturas remanescentes da Pedreira de Quartzito no Jaraguá, nas proximidades da Tekoa Itakupé. 
@@ -3202,17 +3253,21 @@ components:
         txtColor: ''
         bgColor: ''
         mapView: map5_jaragua
-      - type: Text
-        hasDropCap: false
-        content: Em 2019 o projeto “Memória Paulistana”, do Departamento de Patrimônio Histórico da Prefeitura de São Paulo, reconhece dois lugares de memória Guarani. 
       - type: Spacer
-        desktop: 600px
-        tablet: 600px
-        mobile: 600px
+        desktop: 700px
+        tablet: 700px
+        mobile: 700px
       - type: MapView
         txtColor: ''
         bgColor: ''
         mapView: map5_cacicajandira
+      - type: Text
+        hasDropCap: false
+        content: Em 2019 o projeto “Memória Paulistana”, do Departamento de Patrimônio Histórico da Prefeitura de São Paulo, reconhece dois lugares de memória Guarani. 
+      - type: Spacer
+        desktop: 50px
+        tablet: 50px
+        mobile: 50px
       - type: Text
         hasDropCap: false
         content: O lugar onde viveu a matriarca cacica Jandira, fundadora da Tekoa Ytu, a primeira retomada do Jaraguá; e o lugar onde foram realizados os protestos na Rodovia dos Bandeirantes. 
@@ -3284,7 +3339,7 @@ components:
   - type: Group
     id: parte_9_nhandereko_praticas_cuidado_e_reparacao
     shortTitle: parte 9 - nhandereko praticas cuidado & reparacao
-    longTitle: 'Nhandereko: práticas do cuidado & da reparação'
+    longTitle: 'Nhandereko: práticas do cuidado e da reparação'
     description: ''
     showInMenu: true
     animations: true
@@ -3441,13 +3496,13 @@ components:
                 Ao espacializar estes processos, o mapa joga luz em práticas muitas vezes invisibilizadas, principalmente o trabalho de cuidado cotidiano das mulheres que fincam raízes profundas para que Terra Indígena do Jaraguá cresça forte.
             - type: ImageBlock
               wideImage: false
-              src: /uploads/mapa_cuidado_teste.jpg
+              src: /uploads/250815_cuidado_R17_crop.jpg
               alt: ''
-              description: Práticas do Cuidado e da Reparação na TI Jaraguá
+              description: Práticas do Cuidado e da Reparação na TI Jaragua
   - type: Group
     id: parte_10_ameacas
     shortTitle: parte_10_ameacas
-    longTitle: parte_10_ameacas
+    longTitle: Ameaças ao Território e ao Patrimônio Florestal Guarani
     description: ''
     showInMenu: true
     animations: true
@@ -3536,15 +3591,72 @@ components:
               alt: ''
               description: Mapa dos pontos e tipologias de ameaças indentificadas nas oficinas de mapeamento coletivo participativo
   - type: Group
-    id: creditos
-    shortTitle: creditos
-    longTitle: creditos
+    id: downloads
+    shortTitle: downloads
+    longTitle: downloads
     description: ''
     showInMenu: false
     animations: true
     txtColor: Highlight
     customTxtColor: ''
     bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Columns
+        txtColor: ''
+        bgColor: ''
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: '##### DOWNLOADS'
+        column2:
+          components:
+            - type: InnerColumns
+              column1:
+                components:
+                - type: Cards
+                  cardsArr:
+                    - Card:
+                        type: Card
+                        title: Download Mapa Nhanderekoa
+                        text:  __________________________________________
+                        link:
+                          url: https://www.advocacia.autonoma.xyz/
+                          target: ''
+                          customTarget: ''
+                          text: 'link'
+                        icon: ''
+              column2:
+                components:
+                  - type: Cards
+                    cardsArr:
+                      - Card:
+                          type: Card
+                          title: Download Documentos Históricos
+                          text: __________________________________________
+                          link:
+                            url: https://www.advocacia.autonoma.xyz/
+                            target: ''
+                            customTarget: ''
+                            text: 'link'
+                          icon: ''  
+  - type: Group
+    id: creditos
+    shortTitle: creditos
+    longTitle: creditos
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Highlight
     customBgColor: ''
     backgroundMedia: []
     overlay: ''
@@ -3660,71 +3772,3 @@ components:
                           target: _blank
                           customTarget: ''
                           title: ''
-  - type: Group
-    id: downloads
-    shortTitle: downloads
-    longTitle: downloads
-    description: ''
-    showInMenu: false
-    animations: true
-    txtColor: Primary
-    customTxtColor: ''
-    bgColor: Highlight
-    customBgColor: ''
-    backgroundMedia: []
-    overlay: ''
-    components:
-      - type: Columns
-        txtColor: ''
-        bgColor: ''
-        paddingTop: false
-        paddingBottom: false
-        layout: text-bigger
-        title: Ameaças ao Território  e ao Patrimônio Florestal Guarani
-        components:
-          - type: Button
-            link:
-              url: https://thiagopaixao.github.io/astro_sveltia/nhanderekoa/
-              target: _self
-              text: asd
-            icon: arrow_right_alt
-            size: ''
-        invertOnMobile: false
-        columnsAlign: 33-66
-        column1:
-          components:
-            - type: Text
-              hasDropCap: false
-              content: '##### DOWNLOADS'
-        column2:
-          components:
-            - type: InnerColumns
-              column1:
-                components:
-                - type: Cards
-                  cardsArr:
-                    - Card:
-                        type: Card
-                        title: Folder Mapa
-                        text: 
-                        link:
-                          url: https://www.advocacia.autonoma.xyz/
-                          target: ''
-                          customTarget: ''
-                          text: link
-                        icon: ''
-              column2:
-                components:
-                  - type: Cards
-                    cardsArr:
-                      - Card:
-                          type: Card
-                          title: Repositório QGIS
-                          text: 
-                          link:
-                            url: https://www.advocacia.autonoma.xyz/
-                            target: ''
-                            customTarget: ''
-                            text: link
-                          icon: ''
-
