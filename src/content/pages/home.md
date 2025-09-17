@@ -13,7 +13,7 @@ pageSettings:
 pageTheme:
   primaryColor: '#000009'
   secondaryColor: '#ffffffff'
-  highlightColor: '#323232ff'
+  highlightColor: '#313232ff'
   auxiliaryColor: '#0f7c77ff'
   displayFont: ''
   textFont: ''
@@ -69,7 +69,7 @@ components:
     txtColor: Secondary
     customTxtColor: ''
     bgColor: Custom
-    customBgColor: '#989898a1'
+    customBgColor: '#4d4d58a1'
     backgroundMedia:
       - type: backgroundImage
         imgSrc: /uploads/expulsion-san-marcos.jpg
@@ -320,7 +320,7 @@ components:
               - type: Text
                 hasDropCap: false
                 content: |-
-                  #####CRÉDITOS
+                  ###### **CRÉDITOS**
 
                   Coordenação
                   **Paulo Tavares e Fernanda Bruno**
