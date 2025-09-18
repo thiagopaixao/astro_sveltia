@@ -315,16 +315,12 @@ components:
                       target: _blank
                       customTarget: ''
                       title: ''
-              - type: LogosGroup
-                logos:
                   - image: /uploads/medialab-redim.png
                     link:
                       url: https://medialabufrj.net/
                       target: _blank
                       customTarget: ''
                       title: ''
-              - type: LogosGroup
-                logos:
                   - image: /uploads/logo-2.png
                     link:
                       url: https://lavits.org/
