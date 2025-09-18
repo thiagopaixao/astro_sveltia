@@ -3495,7 +3495,7 @@ components:
 
                 Ao espacializar estes processos, o mapa joga luz em práticas muitas vezes invisibilizadas, principalmente o trabalho de cuidado cotidiano das mulheres que fincam raízes profundas para que Terra Indígena do Jaraguá cresça forte.
             - type: ImageBlock
-              wideImage: false
+              wideImage: true
               src: /uploads/250815_cuidado_R17_crop.jpg
               alt: ''
               description: Práticas do Cuidado e da Reparação na TI Jaragua
@@ -3586,8 +3586,8 @@ components:
               videoUrl: https://player.vimeo.com/video/1106449928?
               videoCaption: Trecho da entrevista com Daniel Wera, sobre as invasões de plantações de eucalipito na região da Tekoa Pindó Mirim
             - type: ImageBlock
-              wideImage: false
-              src: /uploads/Cópia de 20250722_cuidado.jpg
+              wideImage: true
+              src: /uploads/mapa_ameacas_crop.png
               alt: ''
               description: Mapa dos pontos e tipologias de ameaças indentificadas nas oficinas de mapeamento coletivo participativo
   - type: Group
