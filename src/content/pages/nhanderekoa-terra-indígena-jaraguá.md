@@ -1669,7 +1669,7 @@ components:
             - type: Spacer
               desktop: 300px
               tablet: 300px
-              mobile: 300px
+              mobile: 100px
   - type: Group
     id: parte_2_colonizacao_do_jaragua
     shortTitle: parte 2 - colonizacao do Jaragua
@@ -1778,7 +1778,7 @@ components:
             - type: Spacer
               desktop: 400px
               tablet: 400px
-              mobile: 400px
+              mobile: 100px
             - type: ImageBlock
               wideImage: true
               src: /uploads/gravura_exploracao_ouro_jaragua.jpg
@@ -1992,7 +1992,7 @@ components:
             - type: Spacer
               desktop: 900px
               tablet: 900px
-              mobile: 900px
+              mobile: 100px
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_18_mapa_anhanguera.jpg
@@ -2073,7 +2073,7 @@ components:
             - type: Spacer
               desktop: 200px
               tablet: 200px
-              mobile: 200px
+              mobile: 100px
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_08_spi.jpg
@@ -2257,7 +2257,7 @@ components:
             - type: Spacer
               desktop: 500px
               tablet: 500px
-              mobile: 500px
+              mobile: 100px
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_12_mapaitaipu.jpg
@@ -3122,7 +3122,7 @@ components:
               description: Placa do projeto Memória Paulistana do Departamento do Patrimônio Histórico de São Paulo, reconhecendo a residência da cacica Jandira como lugar de memória dos Guarani e da cidade.
               desktop: 600px
               tablet: 600px
-              mobile: 600px
+              mobile: 100px
             - type: ImageBlock
               wideImage: false
               src: /uploads/Placa Memória Paulistana-Cacica Jandira_2021.png
@@ -3130,7 +3130,7 @@ components:
               description: Placa do projeto Memória Paulistana do Departamento do Patrimônio Histórico de São Paulo, reconhecendo a residência da cacica Jandira como lugar de memória dos Guarani e da cidade.
               desktop: 400px
               tablet: 400px
-              mobile: 400px
+              mobile: 100px
         mapView: map4_jaragua
     columnAlign: right
     floatingText: true
@@ -3434,7 +3434,7 @@ components:
               description: O mestre dos saberes Natalício Karaí em frente ao jardim medicinal da Tekoa Pyau.
               desktop: 1000px
               tablet: 500px
-              mobile: 500px
+              mobile: 100px
             - type: Spacer
               wideImage: true
               src: /uploads/img_mapacanvas_01.jpg
@@ -3731,7 +3731,7 @@ components:
             - type: Spacer
               desktop: 250px
               tablet: 250px
-              mobile: 250px
+              mobile: 100px
             - type: InnerColumns
               column1:
                 components:
