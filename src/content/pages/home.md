@@ -309,7 +309,7 @@ components:
                 customTxtColor: ''
               - type: LogosGroup
                 logos:
-                  - image: /uploads/logo_autonoma_advocacia_BLACK.png
+                  - image: /uploads/autonoma-black-redim.png
                     link:
                       url: https://www.advocacia.autonoma.xyz/
                       target: _blank
@@ -317,7 +317,7 @@ components:
                       title: ''
               - type: LogosGroup
                 logos:
-                  - image: /uploads/medialab.png
+                  - image: /uploads/medialab-redim.png
                     link:
                       url: https://medialabufrj.net/
                       target: _blank
