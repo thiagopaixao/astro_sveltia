@@ -105,10 +105,10 @@ components:
     animations: true
     id: group_2
     layout: default
-    txtColor: Primary
+    txtColor: Secondary
     customTxtColor: ''
-    bgColor: Secondary
-    customBgColor: ''
+    bgColor: Custom
+    customBgColor: '#606161ff'
     overlay: ''
     components:
       - type: Columns
@@ -141,10 +141,10 @@ components:
     animations: true
     id: group_3
     layout: default
-    txtColor: Secondary
+    txtColor: Primary
     customTxtColor: ''
-    bgColor: Custom
-    customBgColor: '#606161ff'
+    bgColor: Secondary
+    customBgColor: ''
     overlay: ''
     components:
       - type: Columns
