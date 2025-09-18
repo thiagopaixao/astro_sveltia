@@ -902,7 +902,7 @@ mapbox:
       centerLng: '-46.782'
       centerLat: '-23.461'
       zoom: '13.26'
-      mobileZoom: '10.30'
+      mobileZoom: '11.80'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -990,7 +990,7 @@ mapbox:
       centerLng: '-46.769'
       centerLat: '-23.460'
       zoom: '13.15'
-      mobileZoom: '11.30'
+      mobileZoom: '12.15'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -1076,7 +1076,7 @@ mapbox:
       centerLng: '-46.780'
       centerLat: '-23.460'
       zoom: '13.45'
-      mobileZoom: '10.30'
+      mobileZoom: '11.80'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -1128,6 +1128,7 @@ mapbox:
         aldeias-jaragua
         memoria-guarani
         memoria-guarani-label
+        ato-memoria-label
         complexo-turistico
         afonso-sardinha
         estacao-jaragua
