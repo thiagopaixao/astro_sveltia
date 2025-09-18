@@ -1193,14 +1193,14 @@ components:
           - type: Spacer
             desktop: 800px
             tablet: 800px
-            mobile: 800px
+            mobile: 200px
           - type: Text
             hasDropCap: false
             content: '#### **cartografias da resistência territorial e da reparação ambiental Guarani na Terra Indígena Jaraguá**'
           - type: Spacer
             desktop: 500px
             tablet: 500px
-            mobile: 500px
+            mobile: 100px
           - type: Text
             hasDropCap: false
             content: |-
@@ -1214,7 +1214,7 @@ components:
           - type: Spacer
             desktop: 200px
             tablet: 200px
-            mobile: 200px
+            mobile: 100px
   - type: Group
     id: parte_1_nhanderekoa
     shortTitle: parte 1 - nhanderekoa
