@@ -902,7 +902,7 @@ mapbox:
       centerLng: '-46.782'
       centerLat: '-23.461'
       zoom: '13.26'
-      mobileZoom: '13.26'
+      mobileZoom: '10.30'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -952,7 +952,7 @@ mapbox:
       centerLng: '-46.758'
       centerLat: '-23.462'
       zoom: '16.57'
-      mobileZoom: '16.57'
+      mobileZoom: '15.00'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -990,7 +990,7 @@ mapbox:
       centerLng: '-46.769'
       centerLat: '-23.460'
       zoom: '13.15'
-      mobileZoom: '13.15'
+      mobileZoom: '11.30'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -1037,7 +1037,7 @@ mapbox:
       centerLng: '-46.765'
       centerLat: '-23.447'
       zoom: '15.50'
-      mobileZoom: '15.50'
+      mobileZoom: '14.50'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -1076,7 +1076,7 @@ mapbox:
       centerLng: '-46.780'
       centerLat: '-23.460'
       zoom: '13.45'
-      mobileZoom: '13.45'
+      mobileZoom: '10.30'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -1118,7 +1118,7 @@ mapbox:
       centerLng: '-46.753'
       centerLat: '-23.465'
       zoom: '16.30'
-      mobileZoom: '16.30'
+      mobileZoom: '15.00'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -2899,8 +2899,8 @@ components:
             text: '23 de junho de 2022'
             content: ''
           - type: Spacer
-            desktop: 80px
-            tablet: 80px
+            desktop: 20px
+            tablet: 20px
             mobile: 20px
           - type: ImageBlock
             wideImage: false
@@ -3208,7 +3208,7 @@ components:
       - type: Spacer
         desktop: 300px
         tablet: 300px
-        mobile: 300px
+        mobile: 600px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -3228,7 +3228,7 @@ components:
       - type: Spacer
         desktop: 400px
         tablet: 400px
-        mobile: 400px 
+        mobile: 800px 
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -3248,7 +3248,7 @@ components:
       - type: Spacer
         desktop: 400px
         tablet: 400px
-        mobile: 400px
+        mobile: 800px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -3256,7 +3256,7 @@ components:
       - type: Spacer
         desktop: 700px
         tablet: 700px
-        mobile: 700px
+        mobile: 800px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -3283,7 +3283,7 @@ components:
       - type: Spacer
         desktop: 400px
         tablet: 400px
-        mobile: 400px        
+        mobile: 800px        
     columnAlign: right
     floatingText: true
   - type: Group
