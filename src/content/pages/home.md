@@ -195,8 +195,8 @@ components:
     layout: default
     txtColor: Primary
     customTxtColor: ''
-    bgColor: Secondary
-    customBgColor: ''
+    bgColor: Custom
+    customBgColor: '#606161ff'
     overlay: ''
     components:
       - type: Columns
@@ -228,9 +228,9 @@ components:
     animations: true
     id: group_5
     layout: default
-    txtColor: Primary
+    txtColor: Secondary
     customTxtColor: ''
-    bgColor: Secondary
+    bgColor: Primary
     customBgColor: ''
     overlay: dark
     components:
@@ -286,9 +286,9 @@ components:
     animations: true
     id: group_6
     layout: default
-    txtColor: Secondary
+    txtColor: Highlight
     customTxtColor: ''
-    bgColor: Highlight
+    bgColor: Secondary
     customBgColor: ''
     overlay: dark
     components:
@@ -309,9 +309,25 @@ components:
                 customTxtColor: ''
               - type: LogosGroup
                 logos:
-                  - image: /uploads/logo_autonoma_advocacia_WHITE.png
+                  - image: /uploads/logo_autonoma_advocacia_BLACK.png
                     link:
                       url: https://www.advocacia.autonoma.xyz/
+                      target: _blank
+                      customTarget: ''
+                      title: ''
+              - type: LogosGroup
+                logos:
+                  - image: /uploads/medialab.png
+                    link:
+                      url: https://medialabufrj.net/
+                      target: _blank
+                      customTarget: ''
+                      title: ''
+              - type: LogosGroup
+                logos:
+                  - image: /uploads/logo-2.png
+                    link:
+                      url: https://lavits.org/
                       target: _blank
                       customTarget: ''
                       title: ''
