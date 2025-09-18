@@ -539,7 +539,7 @@ mapbox:
       centerLng: '-46.789'
       centerLat: '-23.460'
       zoom: '13.26'
-      mobileZoom: '13.26'
+      mobileZoom: '12.00'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -563,7 +563,7 @@ mapbox:
       centerLng: '-46.753'
       centerLat: '-23.460'
       zoom: '13.26'
-      mobileZoom: '13.26'
+      mobileZoom: '12.26'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -588,7 +588,7 @@ mapbox:
       centerLng: '-46.702'
       centerLat: '-23.511'
       zoom: '11.40'
-      mobileZoom: '11.40'
+      mobileZoom: '10.00'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -611,7 +611,7 @@ mapbox:
       centerLng: '-46.656'
       centerLat: '-23.573'
       zoom: '13.74'
-      mobileZoom: '13.74'
+      mobileZoom: '12.74'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -632,7 +632,7 @@ mapbox:
       centerLng: '-46.646'
       centerLat: '-23.565'
       zoom: '13.27'
-      mobileZoom: '13.27'
+      mobileZoom: '12.00'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -651,7 +651,7 @@ mapbox:
       centerLng: '-46.646'
       centerLat: '-23.565'
       zoom: '13.27'
-      mobileZoom: '13.27'
+      mobileZoom: '12.00'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -672,7 +672,7 @@ mapbox:
       centerLng: '-46.646'
       centerLat: '-23.565'
       zoom: '13.27'
-      mobileZoom: '13.27'
+      mobileZoom: '12.00'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -695,7 +695,7 @@ mapbox:
       centerLng: '-46.658'
       centerLat: '-23.560'
       zoom: '15.23'
-      mobileZoom: '15.23'
+      mobileZoom: '14.20'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -714,7 +714,7 @@ mapbox:
       centerLng: '-46.702'
       centerLat: '-23.511'
       zoom: '11.54'
-      mobileZoom: '11.54'
+      mobileZoom: '10.00'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -741,7 +741,7 @@ mapbox:
       centerLng: '-46.752'
       centerLat: '-23.467'
       zoom: '14.46'
-      mobileZoom: '14.46'
+      mobileZoom: '13.46'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -766,7 +766,7 @@ mapbox:
       centerLng: '-46.702'
       centerLat: '-23.507'
       zoom: '11.69'
-      mobileZoom: '11.69'
+      mobileZoom: '10.00'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -794,7 +794,7 @@ mapbox:
       centerLng: '-46.658'
       centerLat: '-23.559'
       zoom: '14.11'
-      mobileZoom: '14.11'
+      mobileZoom: '13.11'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -813,7 +813,7 @@ mapbox:
       centerLng: '-46.655'
       centerLat: '-23.574'
       zoom: '13.80'
-      mobileZoom: '13.80'
+      mobileZoom: '12.80'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -834,7 +834,7 @@ mapbox:
       centerLng: '-46.636'
       centerLat: '-23.549'
       zoom: '14.97'
-      mobileZoom: '14.97'
+      mobileZoom: '13.97'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -855,7 +855,7 @@ mapbox:
       centerLng: '-46.761'
       centerLat: '-23.461'
       zoom: '13.51'
-      mobileZoom: '13.51'
+      mobileZoom: '14.00'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -882,7 +882,7 @@ mapbox:
       centerLng: '-46.638'
       centerLat: '-23.546'
       zoom: '14.88'
-      mobileZoom: '14.88'
+      mobileZoom: '13.88'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -2622,7 +2622,7 @@ components:
       - type: Spacer
         desktop: 1000px
         tablet: 1000px
-        mobile: 1000px
+        mobile: 500px
     columnAlign: right
     floatingText: true
   - type: Map
@@ -2653,7 +2653,7 @@ components:
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2013_26_09_CGY.png 
@@ -2670,7 +2670,7 @@ components:
       - type: Spacer
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2685,7 +2685,7 @@ components:
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2013_01_10_ISA.jpg 
@@ -2694,7 +2694,7 @@ components:
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2709,7 +2709,7 @@ components:
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2014_16_04_midia_ninja.jpg
@@ -2718,7 +2718,7 @@ components:
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2733,7 +2733,7 @@ components:
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2014_24_04_01_FOLHA_PRESS.png
@@ -2742,7 +2742,7 @@ components:
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px   
+        mobile: 300px   
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2757,7 +2757,7 @@ components:
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2014_06_06_beatriz_macruz.jpg
@@ -2766,7 +2766,7 @@ components:
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px  
+        mobile: 300px  
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2781,7 +2781,7 @@ components:
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2016_05_05_CIMI.jpeg
@@ -2790,7 +2790,7 @@ components:
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2805,7 +2805,7 @@ components:
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2017-antenas_CGY.jpg
@@ -2814,7 +2814,7 @@ components:
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2829,7 +2829,7 @@ components:
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2020_09-10_03_Alejandro Silva_CIMI_regional_sul.jpeg
@@ -2838,7 +2838,7 @@ components:
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2853,7 +2853,7 @@ components:
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/bandeirantes.png
@@ -2862,7 +2862,7 @@ components:
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2877,7 +2877,7 @@ components:
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2021_03_07_G1_globo.png
@@ -2886,7 +2886,7 @@ components:
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2901,7 +2901,7 @@ components:
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 20px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2022_23_06_rafael_vilela.jpeg
@@ -2910,7 +2910,7 @@ components:
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2925,7 +2925,7 @@ components:
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2022-09-08_G1.png
@@ -2934,7 +2934,7 @@ components:
       - type: Spacer 
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2949,7 +2949,7 @@ components:
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2023_30_05_01_richard_wera.JPG
@@ -2958,7 +2958,7 @@ components:
       - type: Spacer 
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2973,7 +2973,7 @@ components:
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2023_07_06_julia_rez_G1.png
@@ -2982,7 +2982,7 @@ components:
       - type: Spacer 
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
