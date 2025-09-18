@@ -3628,7 +3628,7 @@ components:
                         title: Download Mapa Nhanderekoa
                         text:  __________________________________________
                         link:
-                          url: https://www.advocacia.autonoma.xyz/
+                          url: https://drive.google.com/drive/folders/1sWAzHQfD4Zv-4N9HdIyBxdHxbeTFH92h?usp=drive_link
                           target: ''
                           customTarget: ''
                           text: 'link'
@@ -3642,7 +3642,7 @@ components:
                           title: Download Documentos Históricos
                           text: __________________________________________
                           link:
-                            url: https://www.advocacia.autonoma.xyz/
+                            url: https://drive.google.com/drive/folders/1vMGONmKx-Lr3C17RLWkTpNWliwKO1bx8?usp=drive_link
                             target: ''
                             customTarget: ''
                             text: 'link'
