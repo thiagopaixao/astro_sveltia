@@ -141,10 +141,10 @@ components:
     animations: true
     id: group_3
     layout: default
-    txtColor: Secondary
+    txtColor: Primary
     customTxtColor: ''
-    bgColor: Highlight
-    customBgColor: ''
+    bgColor: Custom
+    customBgColor: '#606161ff'
     overlay: ''
     components:
       - type: Columns
@@ -193,10 +193,10 @@ components:
     animations: true
     id: group_4
     layout: default
-    txtColor: Primary
+    txtColor: Highlight
     customTxtColor: ''
-    bgColor: Custom
-    customBgColor: '#606161ff'
+    bgColor: Secondary
+    customBgColor: ''
     overlay: ''
     components:
       - type: Columns
@@ -228,9 +228,9 @@ components:
     animations: true
     id: group_5
     layout: default
-    txtColor: Secondary
+    txtColor: Highlight
     customTxtColor: ''
-    bgColor: Primary
+    bgColor: Secondary
     customBgColor: ''
     overlay: dark
     components:
