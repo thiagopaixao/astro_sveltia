@@ -89,7 +89,7 @@ mapbox:
       layers: |-
         ti-jaragua
         aldeias-jaragua-label[nome_aldei==Ytu]
-        aldeias-jaragua
+        aldeias-jaragua[nome_aldei==Ytu]
         pe-jaragua
         camada-cor
         satelite
@@ -122,7 +122,7 @@ mapbox:
       layers: |-
         ti-jaragua
         aldeias-jaragua-label[nome_aldei==Pyau]
-        aldeias-jaragua
+        aldeias-jaragua[nome_aldei==Pyau]
         pe-jaragua
         satelite
         camada-cor
@@ -155,7 +155,7 @@ mapbox:
       layers: |-
         ti-jaragua
         aldeias-jaragua-label[nome_aldei==Itakupe]
-        aldeias-jaragua
+        aldeias-jaragua[nome_aldei==Itakupe]
         pe-jaragua
         satelite
         camada-cor
@@ -188,7 +188,7 @@ mapbox:
       layers: |-
         ti-jaragua
         aldeias-jaragua-label[nome_aldei==Itawera]
-        aldeias-jaragua
+        aldeias-jaragua[nome_aldei==Itawera]
         pe-jaragua
         satelite
         camada-cor
@@ -220,7 +220,7 @@ mapbox:
       pitch: '0'
       layers: |-
         ti-jaragua
-        aldeias-jaragua
+        aldeias-jaragua[nome_aldei==Itaendy]
         aldeias-jaragua-label[nome_aldei==Itaendy]
         pe-jaragua
         satelite
@@ -254,7 +254,7 @@ mapbox:
       layers: |-
         ti-jaragua
         aldeias-jaragua-label[nome_aldei==Yvy Porã]
-        aldeias-jaragua
+        aldeias-jaragua[nome_aldei==Yvy Porã]
         pe-jaragua
         satelite
         camada-cor
@@ -287,7 +287,7 @@ mapbox:
       layers: |-
         ti-jaragua
         aldeias-jaragua-label[nome_aldei==Pindó Mirim]
-        aldeias-jaragua
+        aldeias-jaragua[nome_aldei==Pindó Mirim]
         pe-jaragua
         satelite
         camada-cor
@@ -320,7 +320,7 @@ mapbox:
       layers: |-
         ti-jaragua
         aldeias-jaragua-label[nome_aldei==Tekoa Mirim]
-        aldeias-jaragua
+        aldeias-jaragua[nome_aldei==Tekoa Mirim]
         pe-jaragua
         satelite
         camada-cor
@@ -353,7 +353,7 @@ mapbox:
       layers: |-
         ti-jaragua
         aldeias-jaragua-label[nome_aldei==Ka'aguy Mirim]
-        aldeias-jaragua
+        aldeias-jaragua[nome_aldei==Ka'aguy Mirim]
         pe-jaragua
         satelite
         camada-cor
@@ -1180,7 +1180,7 @@ components:
     backgroundMedia:
       - type: backgroundVideo
         videoSrc: /uploads/video_01_picojaragua.mp4
-    overlay: ''
+    overlay: dark
     components:
       - type: ColumnSticky
         txtColor: '#ffffffff'
@@ -1188,7 +1188,7 @@ components:
         paddingTop: true
         paddingBottom: true
         layout: text-bigger
-        title: 'NHANDEREKOA: "ONDE A CULTURA VIVE"'
+        title: 'NHANDEREKOA'
         components:
           - type: Spacer
             desktop: 800px
@@ -1196,7 +1196,7 @@ components:
             mobile: 800px
           - type: Text
             hasDropCap: false
-            content: '#### **cartografias da resistência e da reparação territorial Guarani em São Paulo**'
+            content: '#### **cartografias da resistência territorial e da reparação ambiental Guarani na Terra Indígena Jaraguá**'
           - type: Spacer
             desktop: 500px
             tablet: 500px
@@ -1330,7 +1330,7 @@ components:
 
           Retomada e fundação: década de 1990.
 
-          A tekoa Pyau, traduzido como “aldeia nova”, é a segunda aldeia do processo histórico de retomada da T.I. Jaraguá. Hoje é a comunidade com maior densidade populacional da terra indígena. A tekoa está cercada pela Rodovia dos Bandeirantes e pela Rua Comendador de Matos, infraestruturas que bloqueiam sua continuidade territorial e afetaram historicamente áreas de coleta, caça e cultivo.
+          A tekoa Pyau, traduzido como “aldeia nova”, é a segunda tekoa do processo histórico de retomada da T.I. Jaraguá. Hoje é a comunidade com maior densidade populacional da terra indígena. A tekoa está cercada pela Rodovia dos Bandeirantes e pela Rua Comendador de Matos, infraestruturas que bloqueiam sua continuidade territorial e afetaram historicamente áreas de coleta, caça e cultivo.
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1408,7 +1408,7 @@ components:
 
           Retomada e fundação: 2014
 
-          Fundada pela Cacica Ara Poty (Maria) em 2014, a Tekoa Itawera recuperou uma área antes destinada ao descarte de lixo. Hoje, a comunidade se dedica à recuperação ambiental e cultural, com ações como o reflorestamento com espécies nativas, o cultivo de alimentos tradicionais como o milho Guarani, bem como um vasto trabalho de artesanato. O nome da aldeia pode ser traduzido como “pedra reluzente”.
+          Fundada pela Cacica Ara Poty (Maria) em 2014, a Tekoa Itawera recuperou uma área antes destinada ao descarte de lixo. Hoje, a comunidade se dedica à recuperação ambiental e cultural, com ações como o reflorestamento com espécies nativas, o cultivo de alimentos tradicionais como o milho Guarani, bem como um vasto trabalho de artesanato. O nome da tekoa pode ser traduzido como “pedra reluzente”.
         wideImage: false
         src: /uploads/img_tekoa_itawera_cacica_maria.jpg
         alt: ''
@@ -1487,7 +1487,7 @@ components:
               content: |-
                 _Nhanderekoa_ – “o lugar onde vivemos”, “o lugar onde o nosso modo de vida acontece”, “onde nossa cultura vive” – é o título atribuído ao mapa. Ele expressa como o território do Jaraguá e seus animais, plantas e espíritos são parte integrante da forma como os Guarani entendem seus modos de habitar e viver, tendo a floresta como extensão de uma moradia compartilhada entre seres humanos e não-humanos em redes de cuidado e reciprocidade.
 
-                A Terra Indígena Jaraguá é uma ==área localizada em São Paulo, Brasil, habitada pelo povo Guarani Mbya==. Inicialmente demarcada com apenas 1,7 hectare, sendo a menor do Brasil, de acordo com o Instituto Socioambiental, ela teve sua área ampliada para 532 hectares após anos de luta e reivindicação da comunidade indígena. A área demarcada agora inclui oito aldeias Guarani Mbya, reconhecidas pelo governo. 
+                A Terra Indígena Jaraguá é uma ==área localizada em São Paulo, Brasil, habitada pelo povo Guarani Mbya==. Inicialmente demarcada com apenas 1,7 hectare, sendo a menor do Brasil, de acordo com o Instituto Socioambiental, ela teve sua área ampliada para 532 hectares após anos de luta e reivindicação da comunidade indígena. A área demarcada agora inclui oito tekoas Guarani Mbya, reconhecidas pelo governo. 
 
                 A ampliação da Terra Indígena Jaraguá representa um avanço importante na luta por direitos territoriais dos povos indígenas, especialmente considerando a situação de vulnerabilidade enfrentada pelas comunidades devido à falta de espaço e à pressão urbana. A demarcação da área visa garantir a preservação do modo de vida Guarani Mbya, seus costumes e tradições, além de proteger a biodiversidade da Mata Atlântica presente na região.
             - type: ImageBlock
@@ -1521,7 +1521,7 @@ components:
         wideImage: false
         src: /uploads/img_tekoa_yvy_pora_marcioabelhas.jpg
         alt: ''
-        description: Márcio Werã Mirim, responsável por cuidar do enorme meliponário da Tekoa Yvy Porã
+        description: Márcio Wera Mirim, responsável por cuidar do enorme meliponário da Tekoa Yvy Porã
       - type: Spacer
         desktop: 300px
         tablet: 300px
@@ -1550,7 +1550,7 @@ components:
         wideImage: false
         src: /uploads/img_tekoa_pindo_mirim_daniel.jpg
         alt: ''
-        description: Daniel Werã Mirim mostrando os remanescentes de plantações de eucalipito na Tekoa Pindó Mirim
+        description: Daniel Wera Mirim mostrando os remanescentes de plantações de eucalipito na Tekoa Pindó Mirim
       - type: Spacer
         desktop: 300px
         tablet: 300px
@@ -1579,7 +1579,7 @@ components:
         wideImage: false
         src: /uploads/img_tekoa_mirim_marcio.jpg
         alt: ''
-        description: Marcio SOBRENOME e seu grande roçado em frente a Rodovia dos Bandeirantes na nova aldeia Tekoa Mirim
+        description: Marcio SOBRENOME e seu grande roçado em frente a Rodovia dos Bandeirantes na Tekoa Mirim
       - type: Spacer
         desktop: 300px
         tablet: 300px
@@ -1599,7 +1599,7 @@ components:
 
           Retomada e fundação: 2024
 
-          A Tekoa Ka’aguy Mirim é outra retomada adjacente à Tekoa Pyau. Com o nome de “pequena floresta”, situa-se no limite da Terra Indígena, entre a Rodovia dos Bandeirantes e a Rua Antônio Cardoso Nogueira. A aldeia é considerada por seus moradores como um importante ponto de cuidado de espécies nativas medicinais presentes neste local, motivo que impulsionou a retomada da área.
+          A Tekoa Ka’aguy Mirim é outra retomada adjacente à Tekoa Pyau. Com o nome de “pequena floresta”, situa-se no limite da Terra Indígena, entre a Rodovia dos Bandeirantes e a Rua Antônio Cardoso Nogueira. A tekoa é considerada por seus moradores como um importante ponto de cuidado de espécies nativas medicinais presentes neste local, motivo que impulsionou a retomada da área.
       - type: Spacer
         desktop: 500px
         tablet: 500px
@@ -1636,7 +1636,7 @@ components:
               content: |-
                 _Nhanderekoa_ – “o lugar onde vivemos”, “o lugar onde o nosso modo de vida acontece”, “onde nossa cultura vive” – é o título atribuído ao mapa. Ele expressa como o território do Jaraguá e seus animais, plantas e espíritos são parte integrante da forma como os Guarani entendem seus modos de habitar e viver, tendo a floresta como extensão de uma moradia compartilhada entre seres humanos e não-humanos em redes de cuidado e reciprocidade.
 
-                A Terra Indígena Jaraguá é uma ==área localizada em São Paulo, Brasil, habitada pelo povo Guarani Mbya==. Inicialmente demarcada com apenas 1,7 hectare, sendo a menor do Brasil, de acordo com o Instituto Socioambiental, ela teve sua área ampliada para 532 hectares após anos de luta e reivindicação da comunidade indígena. A área demarcada agora inclui oito aldeias Guarani Mbya, reconhecidas pelo governo. 
+                A Terra Indígena Jaraguá é uma ==área localizada em São Paulo, Brasil, habitada pelo povo Guarani Mbya==. Inicialmente demarcada com apenas 1,7 hectare, sendo a menor do Brasil, de acordo com o Instituto Socioambiental, ela teve sua área ampliada para 532 hectares após anos de luta e reivindicação da comunidade indígena. A área demarcada agora inclui oito tekoas Guarani Mbya, reconhecidas pelo governo. 
 
                 A ampliação da Terra Indígena Jaraguá representa um avanço importante na luta por direitos territoriais dos povos indígenas, especialmente considerando a situação de vulnerabilidade enfrentada pelas comunidades devido à falta de espaço e à pressão urbana. A demarcação da área visa garantir a preservação do modo de vida Guarani Mbya, seus costumes e tradições, além de proteger a biodiversidade da Mata Atlântica presente na região.
               wideVideo: true
@@ -2534,7 +2534,7 @@ components:
               videoCaption: '"Rodovia Rojoko - O dia em que fechamos a Bandeirantes”.   Video realizado pela CGY documentando o fechamento da Rodovia dos Bandeirantes por ativistas Guarani em 26 de Setembro de 2013. O protesto pede a demarcação das T.I.s Jaraguá e Tenondé Porã, e o cancelamento   da Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes.  (Fonte: CGY)'
               txtColor: ''
               bgColor: ''
-              byline: Antony Karaí Poty
+              byline: Anthony Karaí Poty
             - type: ImageBlock
               wideImage: true
               src: /uploads/2013_01_10_ISA.jpg
@@ -2565,7 +2565,7 @@ components:
               description: 'Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá, entre os dias 14 e 16 de setembro de 2017, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo (Fonte: Comissão Guarani Yvyrupa - CGY)'
               wideVideo: true
               videoUrl: https://player.vimeo.com/video/1106085328?
-              videoCaption: 'Luta & Diálogo: entrevista com Antony Karaí Poty sobre o papel da luta de rua e espiritual dos Guarani'
+              videoCaption: 'Luta & Diálogo: entrevista com Anthony Karaí Poty sobre o papel da luta de rua e espiritual dos Guarani'
               txtColor: ''
               bgColor: ''
               byline: – Thiago Henrique Karai Djekupe
@@ -2579,7 +2579,7 @@ components:
                 Em maio de 2023 a Câmara dos Deputados aprova a “Lei do Marco Temporal”. Cinco meses depois, em setembro de 2023, o Supremo Tribunal Federal rejeita a tese como inconstitucional. Entretanto, a proposta segue em pauta no Congresso Nacional até os dias de hoje, ameaçando a integridade dos territórios indígenas.
               wideVideo: true
               videoUrl: https://player.vimeo.com/video/1106085328?
-              videoCaption: 'Luta & Diálogo: entrevista com Antony Karaí Poty sobre o papel da luta de rua e espiritual dos Guarani'
+              videoCaption: 'Luta & Diálogo: entrevista com Anthony Karaí Poty sobre o papel da luta de rua e espiritual dos Guarani'
               txtColor: ''
               bgColor: ''
               byline: – Thiago Henrique Karai Djekupe
@@ -2588,7 +2588,7 @@ components:
               content: Em resposta a estas violações de seus direitos consagrados com a Constituição de 1988, entre 2013 e 2025, as comunidades Guarani do Jaraguá, junto com as comunidades de Tenondé Porã, realizam uma série de atos políticos e ações de advocacia, literalmente reocupando a cidade de São Paulo – Terra Indígena – durante uma década de sucessivas manifestações de grande amplitude política e cultural para a cidade e para todo o país.
               wideVideo: true
               videoUrl: https://player.vimeo.com/video/1106085328?
-              videoCaption: 'Luta & Diálogo: entrevista com Antony Karaí Poty sobre o papel da luta de rua e espiritual dos Guarani'
+              videoCaption: 'Luta & Diálogo: entrevista com Anthony Karaí Poty sobre o papel da luta de rua e espiritual dos Guarani'
             - type: Text
               hasDropCap: false
               content: Em resposta a estas violações de seus direitos consagrados com a Constituição de 1988, entre 2013 e 2025, as comunidades Guarani do Jaraguá, junto com as comunidades de Tenondé Porã, realizam uma série de atos políticos e ações de advocacia, literalmente reocupando a cidade de São Paulo – Terra Indígena – durante uma década de sucessivas manifestações de grande amplitude política e cultural para a cidade e para todo o país.
@@ -2825,7 +2825,7 @@ components:
         components:
           - type: TimelineBullet
             text: 'Janeiro-Março de 2020'
-            content: 'Ativistas Guarani ocupam o terreno onde seria construído o condomínio residencial “Reserva Jaraguá-Carinás”, situado próximo à aldeia Pyau. Executado pela construtora Tenda, o empreendimento levou à derrubada de cerca de quatro mil árvores em uma área da Reserva da Biosfera do Cinturão Verde de São Paulo. Chamada de Yary Ty, a ocupação dura até o mês de março, quando é removida pela Polícia Militar'
+            content: 'Ativistas Guarani ocupam o terreno onde seria construído o condomínio residencial “Reserva Jaraguá-Carinás”, situado próximo à tekoa Pyau. Executado pela construtora Tenda, o empreendimento levou à derrubada de cerca de quatro mil árvores em uma área da Reserva da Biosfera do Cinturão Verde de São Paulo. Chamada de Yary Ty, a ocupação dura até o mês de março, quando é removida pela Polícia Militar'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -3694,7 +3694,7 @@ components:
 
                     pesquisadores: Anthony Karaí Poty, Thiago Henrique Karai Djekupe, Felipe da Silva e Richard Wera Mirim
 
-                    consultores e entrevistas: Jurandir Tupã Jekupe Mirim, Márcio Werã Mirim, Irene Mendonça Bolgarim, Daniel Werã Mirim, Neusa Poty, Cacica Ara Poty (Maria), Natalício Karaí, Tamikuã Txihi, Lucas Kuaray, Anderson, Coletivo Arandu Mirim (Anthony Karaí Poty, Ciara Martins, Samara Para Martins) 
+                    consultores e entrevistas: Jurandir Tupã Jekupe Mirim, Márcio Wera Mirim, Irene Mendonça Bolgarim, Daniel Wera Mirim, Neusa Poty, Cacica Ara Poty (Maria), Natalício Karaí, Tamikuã Txihi, Lucas Kuaray, Anderson, Coletivo Arandu Mirim (Anthony Karaí Poty, Ciara Martins, Samara Para Martins) 
 
                     participantes das oficinas: Anthony Karaí Poty, Valdemir, Samara Para, Ciara Martins, Lenilson, Thiago Karaí Poty, Valdir, Felipe Silva, Osmar, Maria Ara Poty, brigadistas Lucas, Paulino, Adriano, Juca, Vander, Danilo e Luciano, Natalício Karaí, Antônia, Lucas, Pedrinho, Txai Suruí, Miguel, Antônio, jovens e crianças  
               column2:
