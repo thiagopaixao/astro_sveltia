@@ -82,7 +82,7 @@ mapbox:
       centerLng: '-46.754'
       centerLat: '-23.465'
       zoom: '16.96'
-      mobileZoom: '16.96'
+      mobileZoom: '16.50'
       duration: '4000'
       bearing: '0'
       pitch: '0'
