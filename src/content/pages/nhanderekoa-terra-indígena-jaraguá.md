@@ -944,10 +944,10 @@ mapbox:
           iconFill: false
           text: Parque Estadual do Jaraguá
         - icon: circle
-          colorIcon: '#d28fef8e'
+          colorIcon: '#d28fef60'
           typeIcon: outlined
           iconFill: true
-          text: Núcleo turístico do Jaraguá
+          text: Área do núcleo turístico do Jaraguá
     - id: map4_afonsosardinha
       centerLng: '-46.758'
       centerLat: '-23.462'
@@ -982,10 +982,10 @@ mapbox:
           iconFill: false
           text: Parque Estadual do Jaraguá
         - icon: circle
-          colorIcon: '#d28fef8e'
+          colorIcon: '#d28fef60'
           typeIcon: outlined
           iconFill: true
-          text: Núcleo turístico do Jaraguá
+          text: Área do núcleo turístico do Jaraguá
     - id: map4_jaraguaestacao
       centerLng: '-46.769'
       centerLat: '-23.460'
@@ -1029,10 +1029,10 @@ mapbox:
           iconFill: false
           text: Parque Estadual do Jaraguá
         - icon: circle
-          colorIcon: '#d28fef8e'
+          colorIcon: '#d28fef60'
           typeIcon: outlined
           iconFill: true
-          text: Núcleo turístico do Jaraguá
+          text: Área do núcleo turístico do Jaraguá
     - id: map4_pedreira
       centerLng: '-46.765'
       centerLat: '-23.447'
@@ -1110,10 +1110,10 @@ mapbox:
           iconFill: false
           text: Parque Estadual do Jaraguá
         - icon: circle
-          colorIcon: '#d28fef8e'
+          colorIcon: '#d28fef60'
           typeIcon: outlined
           iconFill: true
-          text: Núcleo turístico do Jaraguá
+          text: Área do núcleo turístico do Jaraguá
     - id: map5_cacicajandira
       centerLng: '-46.753'
       centerLat: '-23.465'
@@ -1161,10 +1161,10 @@ mapbox:
           iconFill: false
           text: Parque Estadual do Jaraguá
         - icon: circle
-          colorIcon: '#d28fef8e'
+          colorIcon: '#d28fef60'
           typeIcon: outlined
           iconFill: true
-          text: Núcleo turístico do Jaraguá
+          text: Área do núcleo turístico do Jaraguá
 components:
   - type: Group
     id: home
@@ -2242,7 +2242,7 @@ components:
             - type: VideoEmbed
               wideVideo: true
               videoUrl: https://www.youtube.com/embed/Z3HS2j2acX4?si=ZylorkTY5cZrXczI
-              videoCaption: 'Entrevista histórica com Marçal de Souza, liderança Guarani assassinada em 1983 (Fonte: Povos Indígenas no Brasil (Youtube).'
+              videoCaption: 'Entrevista histórica com Marçal de Souza, liderança Guarani assassinada em 1983 (Fonte: Povos Indígenas no Brasil - Youtube).'
         column2:
           components:
             - type: Spacer
@@ -2658,7 +2658,7 @@ components:
             wideImage: false
             src: /uploads/2013_26_09_CGY.png 
             alt: ''
-            description: 'Bloqueio da Rodovia dos Bandeirantes. Fonte: Comissão Guarani Yvyrupa [CGY]'
+            description: 'Bloqueio da Rodovia dos Bandeirantes. Fonte: Comissão Guarani Yvyrupa [CGY].'
       - type: Spacer
         desktop: 100px
         tablet: 100px
@@ -2681,7 +2681,7 @@ components:
         components:
           - type: TimelineBullet
             text: '01 de outubro de 2013'
-            content: 'Em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215'
+            content: 'Em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2690,7 +2690,7 @@ components:
             wideImage: false
             src: /uploads/2013_01_10_ISA.jpg 
             alt: ''
-            description: 'Protesto no Monumento às Bandeiras. Fonte: Tiago Moreira dos Santos [ISA]'
+            description: 'Protesto no Monumento às Bandeiras. Fonte: Tiago Moreira dos Santos [ISA].'
       - type: Spacer   
         desktop: 600px
         tablet: 600px
@@ -2705,7 +2705,7 @@ components:
         components:
           - type: TimelineBullet
             text: 16 de abril de 2014
-            content: 'Lançamento da campanha “Resistencia Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta'
+            content: 'Lançamento da campanha “Resistencia Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2714,7 +2714,7 @@ components:
             wideImage: false
             src: /uploads/2014_16_04_midia_ninja.jpg
             alt: ''
-            description: 'Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta. Fonte: Mídia Ninja'
+            description: 'Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta. Fonte: Mídia Ninja.'
       - type: Spacer   
         desktop: 600px
         tablet: 600px
@@ -2729,7 +2729,7 @@ components:
         components:
           - type: TimelineBullet
             text: '24 de abril de 2014'
-            content: 'Protesto partindo do MASP até a praça Roosevelt, exigindo a demarcação das T.I.s Jaraguá e Tenondé Porã'
+            content: 'Protesto partindo do MASP até a praça Roosevelt, exigindo a demarcação das TIs Jaraguá e Tenondé Porã.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2738,7 +2738,7 @@ components:
             wideImage: false
             src: /uploads/2014_24_04_01_FOLHA_PRESS.png
             alt: ''
-            description: 'Protesto pedindo a demarcação da Terra Indígena Jaraguá e da Terra Indígena Tenondé Porã. Fonte: Eduardo Anizelli/Folhapress' 
+            description: 'Protesto pedindo a demarcação da Terra Indígena Jaraguá e da Terra Indígena Tenondé Porã. Fonte: Eduardo Anizelli/Folhapress.' 
       - type: Spacer   
         desktop: 600px
         tablet: 600px
@@ -2753,7 +2753,7 @@ components:
         components:
           - type: TimelineBullet
             text: '06 de junho de 2014'
-            content: 'Protesto na Assembleia Legislativa de São Paulo e no Monumento às Bandeiras pelo arquivamento da PEC 215 e pela demarcação das T.I.s Jaraguá e Tenondé Porã'
+            content: 'Protesto na Assembleia Legislativa de São Paulo e no Monumento às Bandeiras pelo arquivamento da PEC 215 e pela demarcação das TIs Jaraguá e Tenondé Porã.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2762,7 +2762,7 @@ components:
             wideImage: false
             src: /uploads/2014_06_06_beatriz_macruz.jpg
             alt: ''
-            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Beatriz Macruz/Repórter Brasil'
+            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Beatriz Macruz/Repórter Brasil.'
       - type: Spacer   
         desktop: 600px
         tablet: 600px
@@ -2777,7 +2777,7 @@ components:
         components:
           - type: TimelineBullet
             text: '05 de maio de 2016'
-            content: 'Ativistas Guarani ocupam a sede da Secretaria da Presidência da República  em São Paulo, na Avenida Paulista, em protesto pela demarcação das T.I.s Jaraguá e Tenondé Porã'
+            content: 'Ativistas Guarani ocupam a sede da Secretaria da Presidência da República  em São Paulo, na Avenida Paulista, em protesto pela demarcação das TIs Jaraguá e Tenondé Porã.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2786,7 +2786,7 @@ components:
             wideImage: false
             src: /uploads/2016_05_05_CIMI.jpeg
             alt: ''
-            description: 'Protesto exigindo a demarcação da Terra Indígena Tenondé Porã após a portaria declaratória da Terra Indígena Jaraguá. Fonte: CIMI'
+            description: 'Protesto exigindo a demarcação da Terra Indígena Tenondé Porã após a portaria declaratória da Terra Indígena Jaraguá. Fonte: CIMI.'
       - type: Spacer   
         desktop: 600px
         tablet: 600px
@@ -2801,7 +2801,7 @@ components:
         components:
           - type: TimelineBullet
             text: '14 a 16 de setembro de 2017'
-            content: 'Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá pelo governo de Michel Temer, lideranças Guarani realizam uma série de protestos em São Paulo. No dia 30 de agosto, uma ampla mobilização toma a Avenida Paulista. Quinze dias depois, entre os dias 14 e 16 de setembro, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo'
+            content: 'Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá pelo governo de Michel Temer, lideranças Guarani realizam uma série de protestos em São Paulo. No dia 30 de agosto, uma ampla mobilização toma a Avenida Paulista. Quinze dias depois, entre os dias 14 e 16 de setembro, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2810,7 +2810,7 @@ components:
             wideImage: false
             src: /uploads/2017-antenas_CGY.jpg
             alt: ''
-            description: 'Ocupação das antenas no Parque Estadual do Jaraguá. Fonte: Comissão Guarani Yvyrupa [CGY]' 
+            description: 'Ocupação das antenas no Parque Estadual do Jaraguá. Fonte: Comissão Guarani Yvyrupa [CGY].' 
       - type: Spacer   
         desktop: 600px
         tablet: 600px
@@ -2825,7 +2825,7 @@ components:
         components:
           - type: TimelineBullet
             text: 'Janeiro-Março de 2020'
-            content: 'Ativistas Guarani ocupam o terreno onde seria construído o condomínio residencial “Reserva Jaraguá-Carinás”, situado próximo à tekoa Pyau. Executado pela construtora Tenda, o empreendimento levou à derrubada de cerca de quatro mil árvores em uma área da Reserva da Biosfera do Cinturão Verde de São Paulo. Chamada de Yary Ty, a ocupação dura até o mês de março, quando é removida pela Polícia Militar'
+            content: 'Ativistas Guarani ocupam o terreno onde seria construído o condomínio residencial “Reserva Jaraguá-Carinás”, situado próximo à tekoa Pyau. Executado pela construtora Tenda, o empreendimento levou à derrubada de cerca de quatro mil árvores em uma área da Reserva da Biosfera do Cinturão Verde de São Paulo. Chamada de Yary Ty, a ocupação dura até o mês de março, quando é removida pela Polícia Militar.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2834,7 +2834,7 @@ components:
             wideImage: false
             src: /uploads/2020_09-10_03_Alejandro Silva_CIMI_regional_sul.jpeg
             alt: ''
-            description: 'Fachada da ocupação Yary Ty. Fonte: Alejandro Silva/CIMI regional sul'  
+            description: 'Fachada da ocupação Yary Ty. Fonte: Alejandro Silva/CIMI regional sul.'  
       - type: Spacer   
         desktop: 600px
         tablet: 600px
@@ -2849,7 +2849,7 @@ components:
         components:
           - type: TimelineBullet
             text: 'Junho de 2021'
-            content: 'A volta da discussão sobre o Marco Temporal no Congresso Nacional desencadeia uma série de protestos de organizações indígenas. No dia 25 de junho, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. Cinco dias depois ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista'
+            content: 'A volta da discussão sobre o Marco Temporal no Congresso Nacional desencadeia uma série de protestos de organizações indígenas. No dia 25 de junho, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. Cinco dias depois ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2858,7 +2858,7 @@ components:
             wideImage: false
             src: /uploads/bandeirantes.png
             alt: ''
-            description: 'Ocupação do Parque Estadual do Jaraguá e as antenas. Fonte: Rafael Vilela'
+            description: 'Ocupação do Parque Estadual do Jaraguá e as antenas. Fonte: Rafael Vilela.'
       - type: Spacer   
         desktop: 600px
         tablet: 600px
@@ -2873,7 +2873,7 @@ components:
         components:
           - type: TimelineBullet
             text: '03 de julho de 2021'
-            content: 'No contexto da pandemia da COVID, ativistas Guarani participam da  grande manifestação contra o governo do presidente Jair Bolsonaro, trazendo a pauta do Marco Temporal para a manifestação'
+            content: 'No contexto da pandemia da COVID, ativistas Guarani participam da  grande manifestação contra o governo do presidente Jair Bolsonaro na Avenida Paulista, trazendo a pauta do Marco Temporal para a manifestação.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2882,7 +2882,7 @@ components:
             wideImage: false
             src: /uploads/2021_03_07_G1_globo.png
             alt: ''
-            description: 'Grande manifestação contra o governo do presidente Jair Bolsonaro. Fonte: G1/Globo'
+            description: 'Grande manifestação contra o governo do presidente Jair Bolsonaro. Fonte: G1/Globo.'
       - type: Spacer   
         desktop: 600px
         tablet: 600px
@@ -2897,7 +2897,7 @@ components:
         components:
           - type: TimelineBullet
             text: '23 de junho de 2022'
-            content: 'Ocupação do Monumento às Bandeiras em protesto contra a tramitação da lei do Marco Temporal'
+            content: ''
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2906,7 +2906,7 @@ components:
             wideImage: false
             src: /uploads/2022_23_06_rafael_vilela.jpeg
             alt: ''
-            description: 'Ocupação no Monumento às Bandeiras contra a tramitação da lei do Marco Temporal. Fonte: Rafael Vilela'
+            description: 'Ocupação no Monumento às Bandeiras contra a tramitação da lei do Marco Temporal. Fonte: Rafael Vilela.'
       - type: Spacer   
         desktop: 600px
         tablet: 600px
@@ -2921,7 +2921,7 @@ components:
         components:
           - type: TimelineBullet
             text: '09 de agosto de 2022'
-            content: 'Ato organizado pela Comissão Yvyrupa na Faculdade de Direito da USP, no Largo São Francisco, contra o Marco Temporal'
+            content: 'Ato organizado pela Comissão Yvyrupa na Faculdade de Direito da USP, no Largo São Francisco, contra o Marco Temporal.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2930,7 +2930,7 @@ components:
             wideImage: false
             src: /uploads/2022-09-08_G1.png
             alt: ''
-            description: 'Ato na Faculdade de Direito da USP. Fonte: Felipe Beltrame/G1'
+            description: 'Ato na Faculdade de Direito da USP. Fonte: Felipe Beltrame/G1.'
       - type: Spacer 
         desktop: 600px
         tablet: 600px
@@ -2945,7 +2945,7 @@ components:
         components:
           - type: TimelineBullet
             text: 'Maio-Junho de 2023'
-            content: 'Em protesto contra a aprovação da PL490/2007 pelos deputados em Brasília, ativistas Guarani novamente bloqueiam a Rodovia dos Bandeirantes. A manifestação é duramente reprimida pela Polícia Militar. Dias depois, em 04 de junho, a comunidade Guarani realiza a “Caminhada pela Vida” na área da T.I. Jaraguá'
+            content: 'Em protesto contra a aprovação da PL490/2007 pelos deputados em Brasília, ativistas Guarani novamente bloqueiam a Rodovia dos Bandeirantes. A manifestação é duramente reprimida pela Polícia Militar. Dias depois, em 04 de junho, a comunidade Guarani realiza a “Caminhada pela Vida” na área da TI.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2954,7 +2954,7 @@ components:
             wideImage: false
             src: /uploads/2023_30_05_01_richard_wera.JPG
             alt: ''
-            description: 'Bloqueio da Rodovia dos Bandeirantes contra a aprovação da PL490/2007. Fonte: Richard Wera Mirim'
+            description: 'Bloqueio da Rodovia dos Bandeirantes contra a aprovação da PL490/2007. Fonte: Richard Wera Mirim.'
       - type: Spacer 
         desktop: 600px
         tablet: 600px
@@ -2969,7 +2969,7 @@ components:
         components:
           - type: TimelineBullet
             text: '07 de junho de 2023'
-            content: 'Desafiando a repressão estatal, no dia 07 de junho ativistas Guarani realizam novo ato contra o Marco Temporal, desta vez na escadaria do Teatro Municipal no centro de São Paulo'
+            content: 'Desafiando a repressão estatal, no dia 07 de junho ativistas Guarani realizam novo ato contra o Marco Temporal, desta vez na escadaria do Teatro Municipal no centro de São Paulo.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
@@ -2978,7 +2978,7 @@ components:
             wideImage: false
             src: /uploads/2023_07_06_julia_rez_G1.png
             alt: ''
-            description: 'Ato contra o Marco Temporal na escadaria do Teatro Municipal. Fonte: Julia Rez'
+            description: 'Ato contra o Marco Temporal na escadaria do Teatro Municipal. Fonte: Julia Rez.'
       - type: Spacer 
         desktop: 600px
         tablet: 600px
