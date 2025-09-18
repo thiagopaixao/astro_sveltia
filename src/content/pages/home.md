@@ -141,7 +141,7 @@ components:
     animations: true
     id: group_3
     layout: default
-    txtColor: Primary
+    txtColor: Secondary
     customTxtColor: ''
     bgColor: Custom
     customBgColor: '#606161ff'
@@ -193,9 +193,9 @@ components:
     animations: true
     id: group_4
     layout: default
-    txtColor: Highlight
+    txtColor: Secondary
     customTxtColor: ''
-    bgColor: Secondary
+    bgColor: Highlight
     customBgColor: ''
     overlay: ''
     components:
@@ -228,9 +228,9 @@ components:
     animations: true
     id: group_5
     layout: default
-    txtColor: Highlight
+    txtColor: Secondary
     customTxtColor: ''
-    bgColor: Secondary
+    bgColor: Highlight
     customBgColor: ''
     overlay: dark
     components:
