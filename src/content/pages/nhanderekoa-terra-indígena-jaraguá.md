@@ -1176,7 +1176,7 @@ components:
     txtColor: Highlight
     customTxtColor: ''
     bgColor: Custom
-    customBgColor: '#00801c34'
+    customBgColor: '#56645926'
     backgroundMedia:
       - type: backgroundVideo
         videoSrc: /uploads/video_01_picojaragua.mp4
