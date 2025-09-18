@@ -419,7 +419,7 @@ mapbox:
           iconFill: true
           text: Patrimônio colonial
         - icon: circle
-          colorIcon: '#d28fef8e'
+          colorIcon: '#d28fef37'
           typeIcon: outlined
           iconFill: true
           text: Áreas de exploração do ouro em São Paulo
@@ -1638,10 +1638,10 @@ components:
 
                 A Terra Indígena Jaraguá é uma ==área localizada em São Paulo, Brasil, habitada pelo povo Guarani Mbya==. Inicialmente demarcada com apenas 1,7 hectare, sendo a menor do Brasil, de acordo com o Instituto Socioambiental, ela teve sua área ampliada para 532 hectares após anos de luta e reivindicação da comunidade indígena. A área demarcada agora inclui oito tekoas Guarani Mbya, reconhecidas pelo governo. 
 
-                A ampliação da Terra Indígena Jaraguá representa um avanço importante na luta por direitos territoriais dos povos indígenas, especialmente considerando a situação de vulnerabilidade enfrentada pelas comunidades devido à falta de espaço e à pressão urbana. A demarcação da área visa garantir a preservação do modo de vida Guarani Mbya, seus costumes e tradições, além de proteger a biodiversidade da Mata Atlântica presente na região.
+                A ampliação da TI representa um avanço importante na luta por direitos territoriais dos povos indígenas, especialmente considerando a situação de vulnerabilidade enfrentada pelas comunidades devido à falta de espaço e à pressão urbana. A demarcação da área visa garantir a preservação do modo de vida Guarani Mbya, seus costumes e tradições, além de proteger a biodiversidade da Mata Atlântica presente na região.
               wideVideo: true
               videoUrl: https://player.vimeo.com/video/1106060903?
-              videoCaption: trecho da entrevista com Jurandir Tupã Jekupe Mirim sobre o significado da Ka'aguy (floresta) para a cultura Guarani
+              videoCaption: Trecho da entrevista com Jurandir Tupã Jekupe Mirim sobre o significado da Ka'aguy (floresta) para a cultura Guarani.
             - type: Text
               hasDropCap: true
               content: |-
@@ -1658,7 +1658,7 @@ components:
               wideImage: true
               src: /uploads/img_tekoa_yvy_pora_casa.jpg
               alt: ''
-              description: na Tekoa Yvy Porã, as casas se misturam com a floresta, formando parte do mesmo sistema ecológico
+              description: Na Tekoa Yvy Porã, as casas se misturam com a floresta, formando parte do mesmo sistema ecológico.
         column2:
           components:
             - type: Pullquote
@@ -1697,7 +1697,7 @@ components:
 
               ![img curt](/uploads/arqueological-remains_07.jpg "Recorte do mapa Ethno Histórico desenhado por Curt Nimuendaju em 1944")
 
-              Com a invasão Europeia, assim como aconteceu em outros territórios indígenas, os territórios Guarani foram brutalmente reconfigurados por deslocamentos forçados e extermínios. 
+              Com a invasão europeia, assim como aconteceu em outros territórios indígenas, os territórios Guarani foram brutalmente reconfigurados por deslocamentos forçados e extermínios. 
 
               Em São Paulo, após a criação do aldeamento do Pateo do Collegio em 1554, as populações tupi-guarani que habitavam a região foram submetidas a sistemáticas políticas de confinamento e escravização. 
 
@@ -1743,7 +1743,7 @@ components:
 
               ![img curt](/uploads/arqueological-remains_07.jpg "Recorte do mapa Ethno Histórico desenhado por Curt Nimuendaju em 1944")
 
-              Com a invasão Europeia, assim como aconteceu em outros territórios indígenas, os territórios Guarani foram brutalmente reconfigurados por deslocamentos forçados e extermínios. 
+              Com a invasão europeia, assim como aconteceu em outros territórios indígenas, os territórios Guarani foram brutalmente reconfigurados por deslocamentos forçados e extermínios. 
 
               Em São Paulo, após a criação do aldeamento do Pateo do Collegio em 1554, as populações tupi-guarani que habitavam a região foram submetidas a sistemáticas políticas de confinamento e escravização. 
 
@@ -1759,11 +1759,11 @@ components:
               wideImage: false
               src: /uploads/imagem_03_mapacurt.png
               alt: mapa curt
-              description: 'Recorte do Mapa Etno-Histórico de Curt Nimuendajú (1944), mostrando a amplitude do território Guarani (Fonte: Biblioteca Digital Curt Nimuendaju)'
+              description: 'Recorte do Mapa Etno-Histórico de Curt Nimuendajú (1944), mostrando a amplitude do território Guarani (Fonte: Biblioteca Digital Curt Nimuendaju).'
             - type: Text
               hasDropCap: true
               content: |-
-                Com a invasão Europeia, assim como aconteceu em outros territórios indígenas, os territórios Guarani foram brutalmente reconfigurados por deslocamentos forçados e extermínios. 
+                Com a invasão europeia, assim como aconteceu em outros territórios indígenas, os territórios Guarani foram brutalmente reconfigurados por deslocamentos forçados e extermínios. 
 
                 Em São Paulo, após a criação do aldeamento do Pateo do Collegio em 1554, as populações tupi-guarani que habitavam a região foram submetidas a sistemáticas políticas de confinamento e escravização.  
 
@@ -1771,7 +1771,7 @@ components:
         column2:
           components:
             - type: Pullquote
-              content: Yvyrupa seria “território”. Mas o território, para muitas pessoas, é somente a terra, o espaço. Para nós o território vai além. Ele nos lembra o leito, o leito do nosso corpo, o leito do nosso modo de viver
+              content: Yvyrupa seria “território”. Mas o território, para muitas pessoas, é somente a terra, o espaço. Para nós o território vai além. Ele nos lembra o leito, o leito do nosso corpo, o leito do nosso modo de viver.
               txtColor: ''
               bgColor: ''
               byline: – Jurandir Tupã Jekupe Mirim.
@@ -1783,7 +1783,7 @@ components:
               wideImage: true
               src: /uploads/gravura_exploracao_ouro_jaragua.jpg
               alt: Gravura retratando a extração de ouro no Jaraguá, circa séc. 18
-              description: 'Gravura retratando a extração de ouro no Jaraguá, circa século XVIII. Fonte: John Mawe, Travels in the interior of Brazil, 1812'
+              description: 'Gravura retratando a extração de ouro no Jaraguá, circa século XVIII. Fonte: John Mawe, Travels in the interior of Brazil, 1812.'
         mapView: resistencia_intro
     columnAlign: right
     floatingText: false
@@ -1844,7 +1844,7 @@ components:
         wideImage: false
         src: /uploads/palácio-do-governo-de-são-paulo-debret_1827.jpg
         alt: ''
-        description: Pintura do Pateo do Collegio, por Jean-Baptiste Debret, quando o edifício servia como Palácio do Governo de São Paulo em 1827
+        description: Pintura do Pateo do Collegio, por Jean-Baptiste Debret, quando o edifício servia como Palácio do Governo de São Paulo em 1827.
       - type: Spacer
         desktop: 600px
         tablet: 600px
