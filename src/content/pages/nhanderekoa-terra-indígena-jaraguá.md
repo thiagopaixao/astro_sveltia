@@ -44,7 +44,7 @@ mapbox:
       centerLng: '-46.782'
       centerLat: '-23.461'
       zoom: '13.26'
-      mobileZoom: '13.26'
+      mobileZoom: '11.70'
       duration: '3000'
       bearing: '0'
       pitch: '0'
@@ -82,14 +82,14 @@ mapbox:
       centerLng: '-46.754'
       centerLat: '-23.465'
       zoom: '16.96'
-      mobileZoom: '16.96'
+      mobileZoom: '16.00'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
         ti-jaragua
         aldeias-jaragua-label[nome_aldei==Ytu]
-        aldeias-jaragua
+        aldeias-jaragua[nome_aldei==Ytu]
         pe-jaragua
         camada-cor
         satelite
@@ -115,14 +115,14 @@ mapbox:
       centerLng: '-46.753'
       centerLat: '-23.465'
       zoom: '16.80'
-      mobileZoom: '16.80'
+      mobileZoom: '15.80'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
         ti-jaragua
         aldeias-jaragua-label[nome_aldei==Pyau]
-        aldeias-jaragua
+        aldeias-jaragua[nome_aldei==Pyau]
         pe-jaragua
         satelite
         camada-cor
@@ -148,14 +148,14 @@ mapbox:
       centerLng: '-46.763'
       centerLat: '-23.446'
       zoom: '15.60'
-      mobileZoom: '15.60'
+      mobileZoom: '14.60'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
         ti-jaragua
         aldeias-jaragua-label[nome_aldei==Itakupe]
-        aldeias-jaragua
+        aldeias-jaragua[nome_aldei==Itakupe]
         pe-jaragua
         satelite
         camada-cor
@@ -181,14 +181,14 @@ mapbox:
       centerLng: '-46.755'
       centerLat: '-23.464'
       zoom: '16.97'
-      mobileZoom: '16.97'
+      mobileZoom: '15.60'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
         ti-jaragua
         aldeias-jaragua-label[nome_aldei==Itawera]
-        aldeias-jaragua
+        aldeias-jaragua[nome_aldei==Itawera]
         pe-jaragua
         satelite
         camada-cor
@@ -214,13 +214,13 @@ mapbox:
       centerLng: '-46.778'
       centerLat: '-23.462'
       zoom: '15.94'
-      mobileZoom: '15.94'
+      mobileZoom: '15.00'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
         ti-jaragua
-        aldeias-jaragua
+        aldeias-jaragua[nome_aldei==Itaendy]
         aldeias-jaragua-label[nome_aldei==Itaendy]
         pe-jaragua
         satelite
@@ -247,14 +247,14 @@ mapbox:
       centerLng: '-46.756'
       centerLat: '-23.466'
       zoom: '16.40'
-      mobileZoom: '16.40'
+      mobileZoom: '15.40'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
         ti-jaragua
         aldeias-jaragua-label[nome_aldei==Yvy Porã]
-        aldeias-jaragua
+        aldeias-jaragua[nome_aldei==Yvy Porã]
         pe-jaragua
         satelite
         camada-cor
@@ -280,14 +280,14 @@ mapbox:
       centerLng: '-46.780'
       centerLat: '-23.450'
       zoom: '15.81'
-      mobileZoom: '15.81'
+      mobileZoom: '14.80'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
         ti-jaragua
         aldeias-jaragua-label[nome_aldei==Pindó Mirim]
-        aldeias-jaragua
+        aldeias-jaragua[nome_aldei==Pindó Mirim]
         pe-jaragua
         satelite
         camada-cor
@@ -313,14 +313,14 @@ mapbox:
       centerLng: '-46.753'
       centerLat: '-23.461'
       zoom: '16.38'
-      mobileZoom: '16.38'
+      mobileZoom: '15.40'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
         ti-jaragua
         aldeias-jaragua-label[nome_aldei==Tekoa Mirim]
-        aldeias-jaragua
+        aldeias-jaragua[nome_aldei==Tekoa Mirim]
         pe-jaragua
         satelite
         camada-cor
@@ -346,14 +346,14 @@ mapbox:
       centerLng: '-46.753'
       centerLat: '-23.460'
       zoom: '16.53'
-      mobileZoom: '16.53'
+      mobileZoom: '15.50'
       duration: '4000'
       bearing: '0'
       pitch: '0'
       layers: |-
         ti-jaragua
         aldeias-jaragua-label[nome_aldei==Ka'aguy Mirim]
-        aldeias-jaragua
+        aldeias-jaragua[nome_aldei==Ka'aguy Mirim]
         pe-jaragua
         satelite
         camada-cor
@@ -392,7 +392,7 @@ mapbox:
       centerLng: '-46.850'
       centerLat: '-23.500'
       zoom: '9.92'
-      mobileZoom: '9.92'
+      mobileZoom: '7.70'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -419,7 +419,7 @@ mapbox:
           iconFill: true
           text: Patrimônio colonial
         - icon: circle
-          colorIcon: '#d28fef8e'
+          colorIcon: '#d28fef37'
           typeIcon: outlined
           iconFill: true
           text: Áreas de exploração do ouro em São Paulo
@@ -427,7 +427,7 @@ mapbox:
       centerLng: '-46.634'
       centerLat: '-23.548'
       zoom: '16.20'
-      mobileZoom: '16.20'
+      mobileZoom: '15.20'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -446,7 +446,7 @@ mapbox:
       centerLng: '-46.785'
       centerLat: '-23.505'
       zoom: '11.41'
-      mobileZoom: '11.41'
+      mobileZoom: '9.50'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -473,7 +473,7 @@ mapbox:
       centerLng: '-46.769'
       centerLat: '-23.456'
       zoom: '13.04'
-      mobileZoom: '13.04'
+      mobileZoom: '11.50'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -502,7 +502,7 @@ mapbox:
       centerLng: '-46.850'
       centerLat: '-23.500'
       zoom: '9.92'
-      mobileZoom: '9.92'
+      mobileZoom: '7.50'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -518,7 +518,7 @@ mapbox:
           iconFill: true
           text: Terra Indígena Jaraguá
         - icon: circle
-          colorIcon: '#d28fef8e'
+          colorIcon: '#d28fef37'
           typeIcon: outlined
           iconFill: true
           text: Áreas de exploração do ouro em São Paulo
@@ -539,7 +539,7 @@ mapbox:
       centerLng: '-46.789'
       centerLat: '-23.460'
       zoom: '13.26'
-      mobileZoom: '13.26'
+      mobileZoom: '11.50'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -563,7 +563,7 @@ mapbox:
       centerLng: '-46.753'
       centerLat: '-23.460'
       zoom: '13.26'
-      mobileZoom: '13.26'
+      mobileZoom: '12.26'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -588,7 +588,7 @@ mapbox:
       centerLng: '-46.702'
       centerLat: '-23.511'
       zoom: '11.40'
-      mobileZoom: '11.40'
+      mobileZoom: '9.50'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -611,7 +611,7 @@ mapbox:
       centerLng: '-46.656'
       centerLat: '-23.573'
       zoom: '13.74'
-      mobileZoom: '13.74'
+      mobileZoom: '12.74'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -632,7 +632,7 @@ mapbox:
       centerLng: '-46.646'
       centerLat: '-23.565'
       zoom: '13.27'
-      mobileZoom: '13.27'
+      mobileZoom: '11.50'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -651,7 +651,7 @@ mapbox:
       centerLng: '-46.646'
       centerLat: '-23.565'
       zoom: '13.27'
-      mobileZoom: '13.27'
+      mobileZoom: '11.50'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -672,7 +672,7 @@ mapbox:
       centerLng: '-46.646'
       centerLat: '-23.565'
       zoom: '13.27'
-      mobileZoom: '13.27'
+      mobileZoom: '11.50'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -695,7 +695,7 @@ mapbox:
       centerLng: '-46.658'
       centerLat: '-23.560'
       zoom: '15.23'
-      mobileZoom: '15.23'
+      mobileZoom: '14.20'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -714,7 +714,7 @@ mapbox:
       centerLng: '-46.702'
       centerLat: '-23.511'
       zoom: '11.54'
-      mobileZoom: '11.54'
+      mobileZoom: '9.30'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -741,7 +741,7 @@ mapbox:
       centerLng: '-46.752'
       centerLat: '-23.467'
       zoom: '14.46'
-      mobileZoom: '14.46'
+      mobileZoom: '12.46'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -766,7 +766,7 @@ mapbox:
       centerLng: '-46.702'
       centerLat: '-23.507'
       zoom: '11.69'
-      mobileZoom: '11.69'
+      mobileZoom: '9.20'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -794,7 +794,7 @@ mapbox:
       centerLng: '-46.658'
       centerLat: '-23.559'
       zoom: '14.11'
-      mobileZoom: '14.11'
+      mobileZoom: '13.11'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -813,7 +813,7 @@ mapbox:
       centerLng: '-46.655'
       centerLat: '-23.574'
       zoom: '13.80'
-      mobileZoom: '13.80'
+      mobileZoom: '12.00'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -834,7 +834,7 @@ mapbox:
       centerLng: '-46.636'
       centerLat: '-23.549'
       zoom: '14.97'
-      mobileZoom: '14.97'
+      mobileZoom: '13.97'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -855,7 +855,7 @@ mapbox:
       centerLng: '-46.761'
       centerLat: '-23.461'
       zoom: '13.51'
-      mobileZoom: '13.51'
+      mobileZoom: '12.00'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -882,7 +882,7 @@ mapbox:
       centerLng: '-46.638'
       centerLat: '-23.546'
       zoom: '14.88'
-      mobileZoom: '14.88'
+      mobileZoom: '13.88'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -944,10 +944,10 @@ mapbox:
           iconFill: false
           text: Parque Estadual do Jaraguá
         - icon: circle
-          colorIcon: '#d28fef8e'
+          colorIcon: '#d28fef60'
           typeIcon: outlined
           iconFill: true
-          text: Núcleo turístico do Jaraguá
+          text: Área do núcleo turístico do Jaraguá
     - id: map4_afonsosardinha
       centerLng: '-46.758'
       centerLat: '-23.462'
@@ -982,10 +982,10 @@ mapbox:
           iconFill: false
           text: Parque Estadual do Jaraguá
         - icon: circle
-          colorIcon: '#d28fef8e'
+          colorIcon: '#d28fef60'
           typeIcon: outlined
           iconFill: true
-          text: Núcleo turístico do Jaraguá
+          text: Área do núcleo turístico do Jaraguá
     - id: map4_jaraguaestacao
       centerLng: '-46.769'
       centerLat: '-23.460'
@@ -1029,10 +1029,10 @@ mapbox:
           iconFill: false
           text: Parque Estadual do Jaraguá
         - icon: circle
-          colorIcon: '#d28fef8e'
+          colorIcon: '#d28fef60'
           typeIcon: outlined
           iconFill: true
-          text: Núcleo turístico do Jaraguá
+          text: Área do núcleo turístico do Jaraguá
     - id: map4_pedreira
       centerLng: '-46.765'
       centerLat: '-23.447'
@@ -1110,10 +1110,10 @@ mapbox:
           iconFill: false
           text: Parque Estadual do Jaraguá
         - icon: circle
-          colorIcon: '#d28fef8e'
+          colorIcon: '#d28fef60'
           typeIcon: outlined
           iconFill: true
-          text: Núcleo turístico do Jaraguá
+          text: Área do núcleo turístico do Jaraguá
     - id: map5_cacicajandira
       centerLng: '-46.753'
       centerLat: '-23.465'
@@ -1161,10 +1161,10 @@ mapbox:
           iconFill: false
           text: Parque Estadual do Jaraguá
         - icon: circle
-          colorIcon: '#d28fef8e'
+          colorIcon: '#d28fef60'
           typeIcon: outlined
           iconFill: true
-          text: Núcleo turístico do Jaraguá
+          text: Área do núcleo turístico do Jaraguá
 components:
   - type: Group
     id: home
@@ -1188,19 +1188,19 @@ components:
         paddingTop: true
         paddingBottom: true
         layout: text-bigger
-        title: 'NHANDEREKOA: "ONDE A CULTURA VIVE"'
+        title: 'NHANDEREKOA'
         components:
           - type: Spacer
             desktop: 800px
             tablet: 800px
-            mobile: 800px
+            mobile: 200px
           - type: Text
             hasDropCap: false
-            content: '#### **cartografias da resistência e da reparação territorial Guarani em São Paulo**'
+            content: '#### **cartografias da resistência territorial e da reparação ambiental Guarani na Terra Indígena Jaraguá**'
           - type: Spacer
             desktop: 500px
             tablet: 500px
-            mobile: 500px
+            mobile: 100px
           - type: Text
             hasDropCap: false
             content: |-
@@ -1214,7 +1214,7 @@ components:
           - type: Spacer
             desktop: 200px
             tablet: 200px
-            mobile: 200px
+            mobile: 100px
   - type: Group
     id: parte_1_nhanderekoa
     shortTitle: parte 1 - nhanderekoa
@@ -1281,17 +1281,17 @@ components:
       - type: Spacer
         desktop: 200px
         tablet: 200px
-        mobile: 200px
+        mobile: 300px
       - type: Text
         hasDropCap: false
         content: |-
           #### TERRA INDÍGENA JARAGUÁ
 
-          A Terra Indígena Jaraguá é um território localizado na cidade de São Paulo, tradicionalmente habitado pelo povo Guarani Mbya. A área reconhecida e demarcada pelo Estado Brasileiro abrange 532 hectares, a maior parte ainda cobertos de Mata Atlântica. Atualmente, a TI Jaraguá conta com nove Tekoas (aldeias).
+          A Terra Indígena Jaraguá é um território localizado na cidade de São Paulo, tradicionalmente habitado pelo povo Guarani Mbya. A área reconhecida e demarcada pelo Estado Brasileiro abrange 532 hectares, a maior parte ainda cobertos de Mata Atlântica. Atualmente, a Terra Indígena Jaraguá conta com nove Tekoas (aldeias).
       - type: Spacer
         desktop: 800px
         tablet: 800px
-        mobile: 800px
+        mobile: 900px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1307,7 +1307,7 @@ components:
       - type: Spacer
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1317,28 +1317,28 @@ components:
         content: |-
           ##### TEKOA PYAU
 
-          Retomada e fundação: década de 1990.
+          Retomada e fundação: década de 1990
 
-          Segunda _Tekoa _a ser formada no processo histórico de retomada, a _Tekoa Pyau_ (Aldeia Nova) é, atualmente, a que tem maior densidade populacional na TI Jaraguá. Cercada pela Rodovia dos Bandeirantes e pela Rua Comendador de Matos, enfrenta barreiras físicas por essas infraestruturas que bloqueiam sua continuidade territorial e afetam, historicamente, áreas de coleta, caça e cultivo.
+          Segunda _Tekoa _a ser formada no processo histórico de retomada, a _Tekoa Pyau_ (Aldeia Nova) é, atualmente, a que tem maior densidade populacional na TI. Cercada pela Rodovia dos Bandeirantes e pela Rua Comendador de Matos, enfrenta barreiras físicas por essas infraestruturas que bloqueiam sua continuidade territorial e afetam, historicamente, áreas de coleta, caça e cultivo.
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
       - type: Text
         hasDropCap: false
         content: |-
           ##### TEKOA PYAU
 
-          Retomada e fundação: década de 1990.
+          Retomada e fundação: década de 1990
 
-          A tekoa Pyau, traduzido como “aldeia nova”, é a segunda aldeia do processo histórico de retomada da T.I. Jaraguá. Hoje é a comunidade com maior densidade populacional da terra indígena. A tekoa está cercada pela Rodovia dos Bandeirantes e pela Rua Comendador de Matos, infraestruturas que bloqueiam sua continuidade territorial e afetaram historicamente áreas de coleta, caça e cultivo.
+          A tekoa Pyau, traduzido como “aldeia nova”, é a segunda tekoa do processo histórico de retomada da TI. Hoje é a comunidade com maior densidade populacional da terra indígena. A tekoa está cercada pela Rodovia dos Bandeirantes e pela Rua Comendador de Matos, infraestruturas que bloqueiam sua continuidade territorial e afetaram historicamente áreas de coleta, caça e cultivo.
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
       - type: Spacer
         wideImage: false
         src: /uploads/img_tekoa_pyau_natalicio.jpg
         alt: ''
-        description: O mestre dos saberes Natalício Karaí em frente do seu jardim medicinal
+        description: O mestre dos saberes Natalício Karaí em frente do seu jardim medicinal.
         desktop: 50px
         tablet: 50px
         mobile: 50px
@@ -1346,23 +1346,23 @@ components:
         wideImage: true
         src: /uploads/img_tekoa_pyau_natalicio.jpg
         alt: ''
-        description: O mestre dos saberes Natalício Karaí em frente do seu jardim medicinal na Tekoa Pyau
+        description: O mestre dos saberes Natalício Karaí em frente do seu jardim medicinal na Tekoa Pyau.
         desktop: 300px
         tablet: 300px
-        mobile: 300px
+        mobile: 400px
       - type: Spacer
         txtColor: ''
         bgColor: ''
         desktop: 300px
         tablet: 300px
-        mobile: 300px
+        mobile: 400px
         mapView: map1_itakupe
       - type: MapView
         txtColor: ''
         bgColor: ''
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
         mapView: map1_itakupe
       - type: Spacer
         hasDropCap: false
@@ -1374,7 +1374,7 @@ components:
           Situada no extremo norte da TI, a _Tekoa Itakupe_, que pode ser traduzida como “Aldeia Atrás da Pedra”, recebe esse nome por estar do outro lado do Pico do Jaraguá, próxima de suas formações rochosas. Essa área é habitada por comunidades Guarani desde as primeiras retomadas, que aconteceram nas décadas de 1950 e 1960. Fundada em 2014, hoje é formada por três núcleos habitacionais.
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
       - type: Text
         hasDropCap: false
         content: |-
@@ -1382,25 +1382,25 @@ components:
 
           Retomada e fundação: 2005
 
-          Situada no extremo norte da T.I. Jaraguá, a área onde está a Tekoa Itakupe é utilizada pelas comunidades Guarani desde as primeiras retomadas nos anos 1950 e 1960. Fundada em 2014, hoje é formada por três núcleos: Sol nascente, Toka da Onça e (confirmar como querem chamar o terceiro núcleo). Por estar localizada do outro lado do Pico do Jaraguá, próxima de suas formações rochosas, foi nomeada de Itakupe, que pode ser traduzido como “atrás da pedra”.
+          Situada no extremo norte da TI Jaraguá, a área onde está a Tekoa Itakupe é utilizada pelas comunidades Guarani desde as primeiras retomadas nos anos 1950 e 1960. Fundada em 2014, hoje é formada por três núcleos. Por estar localizada do outro lado do Pico do Jaraguá, próxima de suas formações rochosas, foi nomeada de Itakupe, que pode ser traduzido como “atrás da pedra”.
       - type: Spacer
         txtColor: ''
         bgColor: ''
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
         mapView: map1_itawera
       - type: MapView
         txtColor: ''
         bgColor: ''
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
         mapView: map1_itawera
       - type: Spacer
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
       - type: Text
         hasDropCap: false
         content: |-
@@ -1408,11 +1408,11 @@ components:
 
           Retomada e fundação: 2014
 
-          Fundada pela Cacica Ara Poty (Maria) em 2014, a Tekoa Itawera recuperou uma área antes destinada ao descarte de lixo. Hoje, a comunidade se dedica à recuperação ambiental e cultural, com ações como o reflorestamento com espécies nativas, o cultivo de alimentos tradicionais como o milho Guarani, bem como um vasto trabalho de artesanato. O nome da aldeia pode ser traduzido como “pedra reluzente”.
+          Fundada pela Cacica Ara Poty (Maria) em 2014, a Tekoa Itawera recuperou uma área antes destinada ao descarte de lixo. Hoje, a comunidade se dedica à recuperação ambiental e cultural, com ações como o reflorestamento com espécies nativas, o cultivo de alimentos tradicionais como o milho Guarani, bem como um vasto trabalho de artesanato. O nome da tekoa pode ser traduzido como “pedra reluzente”.
         wideImage: false
         src: /uploads/img_tekoa_itawera_cacica_maria.jpg
         alt: ''
-        description: A cacica Maria Ara Poty confeccionando artesanato em sua casa na Tekoa Itawera, recuperada de um grande depósito de lixo
+        description: A cacica Maria Ara Poty confeccionando artesanato em sua casa na Tekoa Itawera, recuperada de um grande depósito de lixo.
       - type: Spacer
         desktop: 50px
         tablet: 50px
@@ -1421,14 +1421,14 @@ components:
         wideImage: false
         src: /uploads/img_tekoa_itawera_cacica_maria.jpg
         alt: ''
-        description: A cacica Maria Ara Poty confeccionando artesanato em sua casa na Tekoa Itawera, recuperada de um grande depósito de lixo
+        description: A cacica Maria Ara Poty confeccionando artesanato em sua casa na Tekoa Itawera, recuperada de um grande depósito de lixo.
         txtColor: ''
         bgColor: ''
         mapView: map1_itaendy
       - type: Spacer
         desktop: 300px
         tablet: 300px
-        mobile: 300px
+        mobile: 400px
       - type: MapView
         hasDropCap: false
         content: |-
@@ -1444,7 +1444,7 @@ components:
       - type: Spacer
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
       - type: Text
         hasDropCap: false
         content: |-
@@ -1456,7 +1456,7 @@ components:
       - type: Spacer
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
     columnAlign: right
     floatingText: true
   - type: Map
@@ -1487,7 +1487,7 @@ components:
               content: |-
                 _Nhanderekoa_ – “o lugar onde vivemos”, “o lugar onde o nosso modo de vida acontece”, “onde nossa cultura vive” – é o título atribuído ao mapa. Ele expressa como o território do Jaraguá e seus animais, plantas e espíritos são parte integrante da forma como os Guarani entendem seus modos de habitar e viver, tendo a floresta como extensão de uma moradia compartilhada entre seres humanos e não-humanos em redes de cuidado e reciprocidade.
 
-                A Terra Indígena Jaraguá é uma ==área localizada em São Paulo, Brasil, habitada pelo povo Guarani Mbya==. Inicialmente demarcada com apenas 1,7 hectare, sendo a menor do Brasil, de acordo com o Instituto Socioambiental, ela teve sua área ampliada para 532 hectares após anos de luta e reivindicação da comunidade indígena. A área demarcada agora inclui oito aldeias Guarani Mbya, reconhecidas pelo governo. 
+                A Terra Indígena Jaraguá é uma ==área localizada em São Paulo, Brasil, habitada pelo povo Guarani Mbya==. Inicialmente demarcada com apenas 1,7 hectare, sendo a menor do Brasil, de acordo com o Instituto Socioambiental, ela teve sua área ampliada para 532 hectares após anos de luta e reivindicação da comunidade indígena. A área demarcada agora inclui oito tekoas Guarani Mbya, reconhecidas pelo governo. 
 
                 A ampliação da Terra Indígena Jaraguá representa um avanço importante na luta por direitos territoriais dos povos indígenas, especialmente considerando a situação de vulnerabilidade enfrentada pelas comunidades devido à falta de espaço e à pressão urbana. A demarcação da área visa garantir a preservação do modo de vida Guarani Mbya, seus costumes e tradições, além de proteger a biodiversidade da Mata Atlântica presente na região.
             - type: ImageBlock
@@ -1501,18 +1501,18 @@ components:
       - type: Spacer
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
       - type: Text
         hasDropCap: false
         content: |-
           ##### TEKOA YVY PORÃ
 
-          Retomada e fundação: década de 2018.
+          Retomada e fundação: 2018
 
           Assim como Itawera, Yvy Porã se estabeleceu em uma área antigamente destinada ao descarte de lixo urbano, situada no pé das matas do Pico do Jaraguá. Ao longo dos anos, a tekoa tornou-se importante referência de práticas ecológicas de des-poluição, recuperação e manutenção da Mata Atlântica. Yvy Porã, traduzido como “terra boa” ou “terra bela”, também é uma referência de práticas de recuperação de diversas espécies nativas de abelhas, como a jate’i (jatai), considerada sagrada.
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
       - type: Spacer
         desktop: 50px
         tablet: 50px
@@ -1521,11 +1521,11 @@ components:
         wideImage: false
         src: /uploads/img_tekoa_yvy_pora_marcioabelhas.jpg
         alt: ''
-        description: Márcio Werã Mirim, responsável por cuidar do enorme meliponário da Tekoa Yvy Porã
+        description: Márcio Wera Mirim, responsável por cuidar do enorme meliponário da Tekoa Yvy Porã.
       - type: Spacer
         desktop: 300px
         tablet: 300px
-        mobile: 300px
+        mobile: 400px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1533,7 +1533,7 @@ components:
       - type: Spacer
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 400px
       - type: Text
         hasDropCap: false
         content: |-
@@ -1541,7 +1541,7 @@ components:
 
           Retomada e fundação: 2023
 
-          Uma das tekoas mais recentes da T.I. Jaraguá, Pindó Mirim foi retomada em 2023. Situada no extremo noroeste da área demarcada, a comunidade vem desenvolvendo um forte trabalho de reparação ambiental, com foco na regeneração das áreas de Mata Atlântica afetadas pela construção do Rodoanel e plantações de eucaliptos. Destaca-se o reflorestamento com mais de 1500 mudas de árvores nativas e 300 mudas de árvores frutíferas.
+          Uma das tekoas mais recentes da TI, Pindó Mirim foi retomada em 2023. Situada no extremo noroeste da área demarcada, a comunidade vem desenvolvendo um forte trabalho de reparação ambiental, com foco na regeneração das áreas de Mata Atlântica afetadas pela construção do Rodoanel e plantações de eucaliptos. Destaca-se o reflorestamento com mais de 1500 mudas de árvores nativas e 300 mudas de árvores frutíferas.
       - type: Spacer
         desktop: 50px
         tablet: 50px
@@ -1550,11 +1550,11 @@ components:
         wideImage: false
         src: /uploads/img_tekoa_pindo_mirim_daniel.jpg
         alt: ''
-        description: Daniel Werã Mirim mostrando os remanescentes de plantações de eucalipito na Tekoa Pindó Mirim
+        description: Daniel Wera Mirim mostrando os remanescentes de plantações de eucalipito na Tekoa Pindó Mirim.
       - type: Spacer
         desktop: 300px
         tablet: 300px
-        mobile: 300px
+        mobile: 400px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1562,7 +1562,7 @@ components:
       - type: Spacer
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 400px
       - type: Text
         hasDropCap: false
         content: |-
@@ -1579,11 +1579,11 @@ components:
         wideImage: false
         src: /uploads/img_tekoa_mirim_marcio.jpg
         alt: ''
-        description: Marcio SOBRENOME e seu grande roçado em frente a Rodovia dos Bandeirantes na nova aldeia Tekoa Mirim
+        description: Marcio Wera Mirim e seu grande roçado em frente a Rodovia dos Bandeirantes na Tekoa Mirim.
       - type: Spacer
         desktop: 300px
         tablet: 300px
-        mobile: 300px
+        mobile: 400px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1591,7 +1591,7 @@ components:
       - type: Spacer
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
       - type: Text
         hasDropCap: false
         content: |-
@@ -1599,11 +1599,11 @@ components:
 
           Retomada e fundação: 2024
 
-          A Tekoa Ka’aguy Mirim é outra retomada adjacente à Tekoa Pyau. Com o nome de “pequena floresta”, situa-se no limite da Terra Indígena, entre a Rodovia dos Bandeirantes e a Rua Antônio Cardoso Nogueira. A aldeia é considerada por seus moradores como um importante ponto de cuidado de espécies nativas medicinais presentes neste local, motivo que impulsionou a retomada da área.
+          A Tekoa Ka’aguy Mirim é outra retomada adjacente à Tekoa Pyau. Com o nome de “pequena floresta”, situa-se no limite da Terra Indígena, entre a Rodovia dos Bandeirantes e a Rua Antônio Cardoso Nogueira. A tekoa é considerada por seus moradores como um importante ponto de cuidado de espécies nativas medicinais presentes neste local, motivo que impulsionou a retomada da área.
       - type: Spacer
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1636,12 +1636,12 @@ components:
               content: |-
                 _Nhanderekoa_ – “o lugar onde vivemos”, “o lugar onde o nosso modo de vida acontece”, “onde nossa cultura vive” – é o título atribuído ao mapa. Ele expressa como o território do Jaraguá e seus animais, plantas e espíritos são parte integrante da forma como os Guarani entendem seus modos de habitar e viver, tendo a floresta como extensão de uma moradia compartilhada entre seres humanos e não-humanos em redes de cuidado e reciprocidade.
 
-                A Terra Indígena Jaraguá é uma ==área localizada em São Paulo, Brasil, habitada pelo povo Guarani Mbya==. Inicialmente demarcada com apenas 1,7 hectare, sendo a menor do Brasil, de acordo com o Instituto Socioambiental, ela teve sua área ampliada para 532 hectares após anos de luta e reivindicação da comunidade indígena. A área demarcada agora inclui oito aldeias Guarani Mbya, reconhecidas pelo governo. 
+                A Terra Indígena Jaraguá é uma ==área localizada em São Paulo, Brasil, habitada pelo povo Guarani Mbya==. Inicialmente demarcada com apenas 1,7 hectare, sendo a menor do Brasil, de acordo com o Instituto Socioambiental, ela teve sua área ampliada para 532 hectares após anos de luta e reivindicação da comunidade indígena. A área demarcada agora inclui oito tekoas Guarani Mbya, reconhecidas pelo governo. 
 
-                A ampliação da Terra Indígena Jaraguá representa um avanço importante na luta por direitos territoriais dos povos indígenas, especialmente considerando a situação de vulnerabilidade enfrentada pelas comunidades devido à falta de espaço e à pressão urbana. A demarcação da área visa garantir a preservação do modo de vida Guarani Mbya, seus costumes e tradições, além de proteger a biodiversidade da Mata Atlântica presente na região.
+                A ampliação da TI representa um avanço importante na luta por direitos territoriais dos povos indígenas, especialmente considerando a situação de vulnerabilidade enfrentada pelas comunidades devido à falta de espaço e à pressão urbana. A demarcação da área visa garantir a preservação do modo de vida Guarani Mbya, seus costumes e tradições, além de proteger a biodiversidade da Mata Atlântica presente na região.
               wideVideo: true
               videoUrl: https://player.vimeo.com/video/1106060903?
-              videoCaption: trecho da entrevista com Jurandir Tupã Jekupe Mirim sobre o significado da Ka'aguy (floresta) para a cultura Guarani
+              videoCaption: Trecho da entrevista com Jurandir Tupã Jekupe Mirim sobre o significado da Ka'aguy (floresta) para a cultura Guarani.
             - type: Text
               hasDropCap: true
               content: |-
@@ -1658,7 +1658,7 @@ components:
               wideImage: true
               src: /uploads/img_tekoa_yvy_pora_casa.jpg
               alt: ''
-              description: na Tekoa Yvy Porã, as casas se misturam com a floresta, formando parte do mesmo sistema ecológico
+              description: Na Tekoa Yvy Porã, as casas se misturam com a floresta, formando parte do mesmo sistema ecológico.
         column2:
           components:
             - type: Pullquote
@@ -1669,7 +1669,7 @@ components:
             - type: Spacer
               desktop: 300px
               tablet: 300px
-              mobile: 300px
+              mobile: 100px
   - type: Group
     id: parte_2_colonizacao_do_jaragua
     shortTitle: parte 2 - colonizacao do Jaragua
@@ -1697,7 +1697,7 @@ components:
 
               ![img curt](/uploads/arqueological-remains_07.jpg "Recorte do mapa Ethno Histórico desenhado por Curt Nimuendaju em 1944")
 
-              Com a invasão Europeia, assim como aconteceu em outros territórios indígenas, os territórios Guarani foram brutalmente reconfigurados por deslocamentos forçados e extermínios. 
+              Com a invasão europeia, assim como aconteceu em outros territórios indígenas, os territórios Guarani foram brutalmente reconfigurados por deslocamentos forçados e extermínios. 
 
               Em São Paulo, após a criação do aldeamento do Pateo do Collegio em 1554, as populações tupi-guarani que habitavam a região foram submetidas a sistemáticas políticas de confinamento e escravização. 
 
@@ -1743,7 +1743,7 @@ components:
 
               ![img curt](/uploads/arqueological-remains_07.jpg "Recorte do mapa Ethno Histórico desenhado por Curt Nimuendaju em 1944")
 
-              Com a invasão Europeia, assim como aconteceu em outros territórios indígenas, os territórios Guarani foram brutalmente reconfigurados por deslocamentos forçados e extermínios. 
+              Com a invasão europeia, assim como aconteceu em outros territórios indígenas, os territórios Guarani foram brutalmente reconfigurados por deslocamentos forçados e extermínios. 
 
               Em São Paulo, após a criação do aldeamento do Pateo do Collegio em 1554, as populações tupi-guarani que habitavam a região foram submetidas a sistemáticas políticas de confinamento e escravização. 
 
@@ -1759,11 +1759,11 @@ components:
               wideImage: false
               src: /uploads/imagem_03_mapacurt.png
               alt: mapa curt
-              description: 'Recorte do Mapa Etno-Histórico de Curt Nimuendajú (1944), mostrando a amplitude do território Guarani (Fonte: Biblioteca Digital Curt Nimuendaju)'
+              description: 'Recorte do Mapa Etno-Histórico de Curt Nimuendajú (1944), mostrando a amplitude do território Guarani (Fonte: Biblioteca Digital Curt Nimuendaju).'
             - type: Text
               hasDropCap: true
               content: |-
-                Com a invasão Europeia, assim como aconteceu em outros territórios indígenas, os territórios Guarani foram brutalmente reconfigurados por deslocamentos forçados e extermínios. 
+                Com a invasão europeia, assim como aconteceu em outros territórios indígenas, os territórios Guarani foram brutalmente reconfigurados por deslocamentos forçados e extermínios. 
 
                 Em São Paulo, após a criação do aldeamento do Pateo do Collegio em 1554, as populações tupi-guarani que habitavam a região foram submetidas a sistemáticas políticas de confinamento e escravização.  
 
@@ -1771,19 +1771,19 @@ components:
         column2:
           components:
             - type: Pullquote
-              content: Yvyrupa seria “território”. Mas o território, para muitas pessoas, é somente a terra, o espaço. Para nós o território vai além. Ele nos lembra o leito, o leito do nosso corpo, o leito do nosso modo de viver
+              content: Yvyrupa seria “território”. Mas o território, para muitas pessoas, é somente a terra, o espaço. Para nós o território vai além. Ele nos lembra o leito, o leito do nosso corpo, o leito do nosso modo de viver.
               txtColor: ''
               bgColor: ''
               byline: – Jurandir Tupã Jekupe Mirim.
             - type: Spacer
               desktop: 400px
               tablet: 400px
-              mobile: 400px
+              mobile: 100px
             - type: ImageBlock
               wideImage: true
               src: /uploads/gravura_exploracao_ouro_jaragua.jpg
               alt: Gravura retratando a extração de ouro no Jaraguá, circa séc. 18
-              description: 'Gravura retratando a extração de ouro no Jaraguá, circa século XVIII. Fonte: John Mawe, Travels in the interior of Brazil, 1812'
+              description: 'Gravura retratando a extração de ouro no Jaraguá, circa século XVIII. Fonte: John Mawe, Travels in the interior of Brazil, 1812.'
         mapView: resistencia_intro
     columnAlign: right
     floatingText: false
@@ -1819,7 +1819,7 @@ components:
           components:
             - type: Text
               hasDropCap: true
-              content: Com a exaustão do ouro em São Paulo e a descoberta das minas em Goiás e Minas Gerais, a área do Pico do Jaraguá transforma-se numa enorme propriedade agrícola. Durante o século XIX, seguindo a expansão da economia cafeeira paulista, a chamada “Fazenda Jaraguá” torna-se uma grande produtora de café, e vastas áreas de Mata Atlântica são arrasadas. Espécies de café remanescentes destas plantações são encontradas até hoje por toda a Terra Indígena Jaraguá.
+              content: Com a exaustão do ouro em São Paulo e a descoberta das minas em Goiás e Minas Gerais, a área do Pico do Jaraguá transforma-se numa enorme propriedade agrícola. Durante o século XIX, seguindo a expansão da economia cafeeira paulista, a chamada “Fazenda Jaraguá” torna-se uma grande produtora de café, e vastas áreas de Mata Atlântica são arrasadas. Espécies de café remanescentes destas plantações são encontradas até hoje por toda TI.
             - type: Spacer
               desktop: 150px
               tablet: 150px
@@ -1828,7 +1828,7 @@ components:
       - type: Spacer
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 700px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1844,11 +1844,11 @@ components:
         wideImage: false
         src: /uploads/palácio-do-governo-de-são-paulo-debret_1827.jpg
         alt: ''
-        description: Pintura do Pateo do Collegio, por Jean-Baptiste Debret, quando o edifício servia como Palácio do Governo de São Paulo em 1827
+        description: Pintura do Pateo do Collegio, por Jean-Baptiste Debret, quando o edifício servia como Palácio do Governo de São Paulo em 1827.
       - type: Spacer
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 700px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1870,7 +1870,7 @@ components:
       - type: Spacer
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 700px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1894,7 +1894,7 @@ components:
       - type: Spacer
         desktop: 300px
         tablet: 300px
-        mobile: 300px
+        mobile: 400px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1931,11 +1931,11 @@ components:
               content: |-
                 Com a exaustão do ouro em São Paulo e a descoberta das minas em Goiás e Minas Gerais, a área do Pico do Jaraguá transforma-se numa enorme propriedade agrícola. Durante o século XIX, seguindo a expansão da economia cafeeira paulista, a chamada “Fazenda Jaraguá” torna-se uma grande produtora de café, e vastas áreas de Mata Atlântica são arrasadas. 
 
-                Espécies de café remanescentes destas plantações são encontradas até hoje por toda a Terra Indígena Jaraguá.
+                Espécies de café remanescentes destas plantações são encontradas até hoje por toda TI.
               wideImage: true
               src: /uploads/imagem_07_jurandircafe.jpg
               alt: ''
-              description: O professor Jurandir Tupã Jekupe Mirim mostra uma planta de café nas florestas da T.I. Jaraguá, remanescente das plantações dos séculos XVIII e XIX, quando a região funcionava como uma grande propriedade agrícola.
+              description: O professor Jurandir Tupã Jekupe Mirim mostra uma planta de café nas florestas da TI, remanescente das plantações dos séculos XVIII e XIX, quando a região funcionava como uma grande propriedade agrícola.
             - type: Spacer
               hasDropCap: false
               content: |-
@@ -1962,21 +1962,21 @@ components:
               wideImage: false
               src: /uploads/imagem_05_mapadoPEJ.jpg
               alt: ''
-              description: 'Mapa dos limites do Parque Estadual do Jaraguá apresentado no Processo de Tombamento do CONDEPHAAT de 1978. A área hachurada em amarelo ao lado direito, destinada à criação do complexo turístico do parque, coincide com a área da Tekoa Ytu, estabelecida entre três lagoas ao pé do morro. (Fonte: CONDEPHAAT)'
+              description: 'Mapa dos limites do Parque Estadual do Jaraguá apresentado no Processo de Tombamento do CONDEPHAAT de 1978. A área hachurada em amarelo ao lado direito, destinada à criação do complexo turístico do parque, coincide com a área da Tekoa Ytu, estabelecida entre três lagoas ao pé do morro. (Fonte: CONDEPHAAT).'
             - type: ImageBlock
               hasDropCap: false
               content: |-
-                Ao proteger as florestas do Jaraguá dentro dos parâmetros ambientalistas tradicionais, o Parque Estadual acabou não apenas cerceando o uso das matas pelas comunidades Guarani, mas também foi um modo de apagar a presença indígena da região, definindo a área como uma grande reserva ecológica homogênea, vazia e inabitada .   
+                Ao proteger as florestas do Jaraguá dentro dos parâmetros ambientalistas tradicionais, o Parque Estadual acabou não apenas cerceando o uso das matas pelas comunidades Guarani, mas também foi um modo de apagar a presença indígena da região, definindo a área como uma grande reserva ecológica homogênea, vazia e inabitada.   
 
                 Em paralelo, São Paulo vive um rápido processo de urbanização. Entre 1940 e 1948 é construída a rodovia Anhanguera nas margens do Território Guarani do Jaraguá, e em 1955 é construído o linhão de transmissão Anhangabaú-Jundiaí sobre o pico do morro. Estas grandes infraestruturas de transporte e energia inter-urbanas abrem caminho para a voraz especulação imobiliária que se daria nas décadas seguintes, principalmente com o regime militar depois do golpe de 1964.
               wideImage: false
               src: /uploads/imagem_05_mapadoPEJ.jpg
               alt: ''
-              description: 'Mapa dos limites do Parque Estadual do Jaraguá apresentado no Processo de Tombamento do CONDEPHAAT de 1978. A área hachurada em amarelo ao lado direito, destinada à criação do complexo turístico do parque, coincide com a área da Tekoa Ytu, estabelecida entre três lagoas ao pé do morro. (Fonte: CONDEPHAAT)'
+              description: 'Mapa dos limites do Parque Estadual do Jaraguá apresentado no Processo de Tombamento do CONDEPHAAT de 1978. A área hachurada em amarelo ao lado direito, destinada à criação do complexo turístico do parque, coincide com a área da Tekoa Ytu, estabelecida entre três lagoas ao pé do morro. (Fonte: CONDEPHAAT).'
             - type: Text
               hasDropCap: false
               content: |-
-                Ao proteger as florestas do Jaraguá dentro dos parâmetros ambientalistas tradicionais, o Parque Estadual acabou não apenas cerceando o uso das matas pelas comunidades Guarani, mas também foi um modo de apagar a presença indígena da região, definindo a área como uma grande reserva ecológica homogênea, vazia e inabitada .   
+                Ao proteger as florestas do Jaraguá dentro dos parâmetros ambientalistas tradicionais, o Parque Estadual acabou não apenas cerceando o uso das matas pelas comunidades Guarani, mas também foi um modo de apagar a presença indígena da região, definindo a área como uma grande reserva ecológica homogênea, vazia e inabitada.   
 
                 Em paralelo, São Paulo vive um rápido processo de urbanização. Entre 1940 e 1948 é construída a rodovia Anhanguera nas margens do Território Guarani do Jaraguá, e em 1955 é construído o linhão de transmissão Anhangabaú-Jundiaí sobre o pico do morro. Estas grandes infraestruturas de transporte e energia inter-urbanas abrem caminho para a voraz especulação imobiliária que se daria nas décadas seguintes, principalmente com o regime militar depois do golpe de 1964.
         column2:
@@ -1992,12 +1992,12 @@ components:
             - type: Spacer
               desktop: 900px
               tablet: 900px
-              mobile: 900px
+              mobile: 100px
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_18_mapa_anhanguera.jpg
               alt: ''
-              description: Planta da Via Anhanguera, década de 40 (Arquivo Biblioteca do Departamento de Estradas e Rodagens)
+              description: 'Planta da Via Anhanguera, década de 40 (Fonte: Arquivo Biblioteca do Departamento de Estradas e Rodagens).'
   - type: Group
     id: parte_3_retomada_do_jaragua
     shortTitle: parte 3 - retomada do jaragua
@@ -2063,17 +2063,17 @@ components:
 
                 Como identificado por Curt Nimuendajú, nos anos 1810, 1820 e 1870, e possivelmente em outros períodos do século XIX, registram-se migrações de grupos Guarani vindos da região do Iguatemi, na fronteira entre o Paraná e o Mato Grosso. Em 1910, sabe-se da migração de outro grande grupo Guarani vindo da região fronteiriça Brasil-Paraguai-Argentina para a região de Itariri no Vale do Ribeira, atual Terra Indígena Itariri. Entre 1923 e 1946 registram-se sucessivas migrações de grupos Guarani vindos do sul do Brasil para o estado de São Paulo, assentando-se principalmente no litoral.
 
-                Estes últimos grupos formam a geração imediatamente anterior de vários moradores das T.I.s Jaraguá e Tenondé Porã na cidade de São Paulo. Entre eles está a cacica Jandira, fundadora da Tekoa Ytu no início dos anos 1960, primeira tekoa da retomada do Jaraguá. 
+                Estes últimos grupos formam a geração imediatamente anterior de vários moradores das TIs Jaraguá e Tenondé Porã na cidade de São Paulo. Entre eles está a cacica Jandira, fundadora da Tekoa Ytu no início dos anos 1960, primeira tekoa da retomada do Jaraguá. 
 
                 Após a criação do Serviço de Proteção aos Índios (SPI) em 1910, os povos Guarani são alvo de uma política sistemática de aldeamentos. No estado de São Paulo, o SPI busca concentrar as famílias Guarani no Posto Indígena do Bananal em Itanhaém, no litoral, e no Posto Indígena de Araribá, no interior, despovoando a cidade de São Paulo da presença Guarani.  
 
-                Com sua resistência ancestral, fugindo dos aldeamentos, algumas famílias iniciam retomadas na cidade de São Paulo no Jaraguá e na região de Parelheiros, atuais Terra Indígena Jaraguá e Terra Indígena Tenondé Porã.
+                Com sua resistência ancestral, fugindo dos aldeamentos, algumas famílias iniciam retomadas na cidade de São Paulo no Jaraguá e na região de Parelheiros, atuais TI Jaraguá e TI Tenondé Porã.
         column2:
           components:
             - type: Spacer
               desktop: 200px
               tablet: 200px
-              mobile: 200px
+              mobile: 100px
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_08_spi.jpg
@@ -2228,7 +2228,7 @@ components:
               wideImage: true
               src: /uploads/imagem_11_bandeirantesconstrucao.jpg
               alt: ''
-              description: 'construção Obras da construção da Rodovia dos Bandeirantes na região do Pico do Jaraguá ( Fonte: Arquivo FGV CPDOC) Rodovia dos Bandeirantes na região do Pico do Jaraguá (Fonte: CPDOC FGV)'
+              description: 'Obras da construção da Rodovia dos Bandeirantes na região do Pico do Jaraguá ( Fonte: Arquivo FGV CPDOC) Rodovia dos Bandeirantes na região do Pico do Jaraguá (Fonte: CPDOC FGV).'
             - type: Text
               hasDropCap: true
               content: |-
@@ -2242,7 +2242,7 @@ components:
             - type: VideoEmbed
               wideVideo: true
               videoUrl: https://www.youtube.com/embed/Z3HS2j2acX4?si=ZylorkTY5cZrXczI
-              videoCaption: Entrevista histórica com Marçal de Souza, liderança Guarani assassinada em 1983.
+              videoCaption: 'Entrevista histórica com Marçal de Souza, liderança Guarani assassinada em 1983 (Fonte: Povos Indígenas no Brasil - Youtube).'
         column2:
           components:
             - type: Spacer
@@ -2252,17 +2252,17 @@ components:
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_10_bandeirantes.jpg
-              alt: Inauguração da Rodovia dos Bandeirantes com a presença do ditador General Ernesto Geisel (Arquivo FGV CPDOC)
-              description: Inauguração da Rodovia dos Bandeirantes com a presença do ditador General Ernesto Geisel (Arquivo FGV CPDOC)
+              alt: Inauguração da Rodovia dos Bandeirantes com a presença do ditador General Ernesto Geisel (Arquivo FGV CPDOC).
+              description: Inauguração da Rodovia dos Bandeirantes com a presença do ditador General Ernesto Geisel (Arquivo FGV CPDOC).
             - type: Spacer
               desktop: 500px
               tablet: 500px
-              mobile: 500px
+              mobile: 100px
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_12_mapaitaipu.jpg
               alt: ''
-              description: 'Mapa das tekoas inundadas e forçosamente removidas da região do lago artificial de Itaipu (Fonte: agência autônoma e CGY)'
+              description: 'Mapa das tekoas inundadas e forçosamente removidas da região do lago artificial de Itaipu (Fonte: agência autônoma e CGY).'
   - type: Group
     id: parte_5_retorno_a_democracia_e_demarcacao_da_tekoa_ytu
     shortTitle: parte 5 - Retorno a Democracia & Demarcacao da Tekoa Ytu
@@ -2332,12 +2332,12 @@ components:
               wideImage: false
               src: /uploads/imagem_16_logo_mata_atlantica_unesco.jpg
               alt: Selo da Reserva da Biosfera - UNESCO
-              description: Selo da Reserva da Biosfera - UNESCO
+              description: Selo da Reserva da Biosfera - UNESCO.
             - type: ImageBlock
-              wideImage: false
+              wideImage: true
               src: /uploads/imagem_29_area_demarcada_1987.jpg
               alt: asd
-              description: Mapa assinalando a área demarcada em 1987, circunscrita ao núcleo habitacional da Tekoa Ytu, em comparação com a área reconhecida da T.I.Jaraguá atualmente.
+              description: Mapa assinalando a área demarcada em 1987, circunscrita ao núcleo habitacional da Tekoa Ytu, em comparação com a área reconhecida da TI Jaraguá atualmente.
         column2:
           components:
             - type: Spacer
@@ -2355,7 +2355,7 @@ components:
               wideImage: true
               src: /uploads/imagem_14_constituinte_02.jpg
               alt: asd
-              description: 'À frente na bancada, da esquerda para a direita: Teseya Panará, Kanhõc Kayapó, Raoni Mētyktire e Tutu Pombo Kayapó, dentre outros, ocupam auditório da liderança do PMDB nas negociações do capítulo dos indígenas na Constituinte em 1988 (Fonte: Beto Ricardo/ISA)'
+              description: 'À frente na bancada, da esquerda para a direita: Teseya Panará, Kanhõc Kayapó, Raoni Mētyktire e Tutu Pombo Kayapó, dentre outros, ocupam auditório da liderança do PMDB nas negociações do capítulo dos indígenas na Constituinte em 1988 (Fonte: Beto Ricardo/ISA).'
   - type: Group
     id: parte_5_texto_2
     shortTitle: parte 5 - texto 2
@@ -2403,10 +2403,10 @@ components:
               tablet: 100px
               mobile: 100px
             - type: ImageBlock
-              wideImage: false
+              wideImage: true
               src: /uploads/imagem_30_cinturao_verde.jpg
               alt: asd
-              description: Mapa da área norte do Cinturão Verde da Cidade de São Paulo. As florestas da T.I. Jaraguá são as mais preservadas do cinturão.
+              description: Mapa da área norte do Cinturão Verde da Cidade de São Paulo. As florestas da TI Jaraguá são as mais preservadas do cinturão.
   - type: Group
     id: parte_6_reconhecimento_luta_e_demarcacao
     shortTitle: parte 6 - reconhecimento luta e demarcacao
@@ -2441,7 +2441,7 @@ components:
               wideImage: false
               src: /uploads/imagem_16_logo_mata_atlantica_unesco.jpg
               alt: Selo da Reserva da Biosfera - UNESCO
-              description: Selo da Reserva da Biosfera - UNESCO
+              description: Selo da Reserva da Biosfera - UNESCO.
               desktop: 300px
               tablet: 300px
               mobile: 300px
@@ -2485,10 +2485,10 @@ components:
               wideImage: true
               src: /uploads/imagem_19_ocupacao_antena.jpg
               alt: asd
-              description: 'Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá, entre os dias 14 e 16 de setembro, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo (Fonte: Comissão Guarani Yvyrupa - CGY)'
+              description: 'Em protesto contra a anulação da demarcação da TI, entre os dias 14 e 16 de setembro, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo (Fonte: Comissão Guarani Yvyrupa - CGY).'
               wideVideo: false
               videoUrl: https://www.youtube.com/embed/JCBOU4wQmR8?si=Ce5kuWAYhQyji6Wk
-              videoCaption: '"Rodovia Rojoko - O dia em que fechamos a Bandeirantes”.   Video realizado pela CGY documentando o fechamento da Rodovia dos Bandeirantes por ativistas Guarani em 26 de Setembro de 2013. O protesto pede a demarcação das T.I.s Jaraguá e Tenondé Porã, e o cancelamento   da Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes.  (Fonte: CGY)'
+              videoCaption: '"Rodovia Rojoko - O dia em que fechamos a Bandeirantes”.   Video realizado pela CGY documentando o fechamento da Rodovia dos Bandeirantes por ativistas Guarani em 26 de Setembro de 2013. O protesto pede a demarcação das TIs Jaraguá e Tenondé Porã, e o cancelamento   da Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas (Fonte: CGY).'
         column2:
           components: []
         mapView: resistencia_intro
@@ -2519,33 +2519,33 @@ components:
           components:
             - type: Spacer
               hasDropCap: false
-              content: Após a eleição de Luiz Inácio Lula da Silva em 2023, e a criação do Ministério dos Povos Indígenas, retoma-se o processo de demarcação do território Guarani do Jaraguá em São Paulo. Através da Portaria 793 de 23 de Outubro de 2024, o Ministério da Justiça declara a nulidade da Portaria 683 de 2015, restabelecendo os efeitos da Portaria 581 de 2015 que reconhece a posse Guarani e a demarcação da Terra indígena Jaraguá
+              content: Após a eleição de Luiz Inácio Lula da Silva em 2023, e a criação do Ministério dos Povos Indígenas, retoma-se o processo de demarcação do território Guarani do Jaraguá em São Paulo. Através da Portaria 793 de 23 de Outubro de 2024, o Ministério da Justiça declara a nulidade da Portaria 683 de 2015, restabelecendo os efeitos da Portaria 581 de 2015 que reconhece a posse Guarani e a demarcação da Terra indígena Jaraguá.
               desktop: 400px
               tablet: 100px
               mobile: 100px
             - type: Pullquote
-              content: Estando à frente tanto de uma manifestação simbólica ou de um enfrentamento, a gente vê que a nossa luta é diferente. A gente não tem somente uma luta de rua, mas também uma luta espiritual
+              content: Estando à frente tanto de uma manifestação simbólica ou de um enfrentamento, a gente vê que a nossa luta é diferente. A gente não tem somente uma luta de rua, mas também uma luta espiritual.
               wideImage: true
               src: /uploads/imagem_22_ocupacao_monumentobandeira_rafaelvilela.jpg
               alt: asd
-              description: Ocupação do Monumento às Bandeiras em XXX de XXXX (Fotografia de Rafael Vilela)
+              description: Ocupação do Monumento às Bandeiras em XXX de XXXX (Fotografia de Rafael Vilela).
               wideVideo: false
               videoUrl: https://www.youtube.com/embed/JCBOU4wQmR8?si=Ce5kuWAYhQyji6Wk
-              videoCaption: '"Rodovia Rojoko - O dia em que fechamos a Bandeirantes”.   Video realizado pela CGY documentando o fechamento da Rodovia dos Bandeirantes por ativistas Guarani em 26 de Setembro de 2013. O protesto pede a demarcação das T.I.s Jaraguá e Tenondé Porã, e o cancelamento   da Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes.  (Fonte: CGY)'
+              videoCaption: '"Rodovia Rojoko - O dia em que fechamos a Bandeirantes”.   Video realizado pela CGY documentando o fechamento da Rodovia dos Bandeirantes por ativistas Guarani em 26 de Setembro de 2013. O protesto pede a demarcação das T.I.s Jaraguá e Tenondé Porã, e o cancelamento   da Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas (Fonte: CGY).'
               txtColor: ''
               bgColor: ''
-              byline: Antony Karaí Poty
+              byline: Anthony Karaí Poty
             - type: ImageBlock
               wideImage: true
               src: /uploads/2013_01_10_ISA.jpg
               alt: ''
-              description: 'Protesto no Monumento às Bandeiras (Fonte: Tiago Moreira dos Santos - ISA)'
+              description: 'Protesto no Monumento às Bandeiras (Fonte: Tiago Moreira dos Santos - ISA).'
         column2:
           components:
             - type: Text
               hasDropCap: true
               content: |-
-                Em 2013, a FUNAI finalmente realiza o estudo de demarcação da T.I. Jaraguá – o chamado “Relatório Circunstanciado de Identificação e Delimitação” ou “RCID” – que identifica uma área de uso tradicional de 532 hectares. 
+                Em 2013, a FUNAI finalmente realiza o estudo de demarcação da TI Jaraguá – o chamado “Relatório Circunstanciado de Identificação e Delimitação” ou “RCID” – que identifica uma área de uso tradicional de 532 hectares. 
 
                 Dois anos depois, em 2015, sob pressão dos grandes protestos realizados por ativistas Guarani em São Paulo, o governo de Dilma Rousseff (Portaria 581) reconhece a posse indígena permanente do Jaraguá, um momento histórico celebrado por toda Yvyrupa.
               txtColor: ''
@@ -2556,16 +2556,16 @@ components:
               content: |-
                 Mas a justiça ao reconhecimento da posse ancestral Guarani do Jaraguá teve vida curta. Eventos políticos em Brasília trazem uma reviravolta ao processo. 
 
-                Em 2017, após o impeachment de Dilma Rousseff, o governo de Michel Temer anula a demarcação da Terra Indígena Jaraguá (Portaria 683). Ato contínuo, durante o governo de Jair Bolsonaro entre 2019 e 2022, o projeto da chamada “Lei do Marco Temporal”, que havia sido praticamente arquivado em 2018, volta a ser pauta no Congresso Nacional. 
+                Em 2017, após o impeachment de Dilma Rousseff, o governo de Michel Temer anula a demarcação da TI (Portaria 683). Ato contínuo, durante o governo de Jair Bolsonaro entre 2019 e 2022, o projeto da chamada “Lei do Marco Temporal”, que havia sido praticamente arquivado em 2018, volta a ser pauta no Congresso Nacional. 
 
                 Em maio de 2023 a Câmera dos Deputados aprova a “Lei do Marco Temporal”. Cinco meses depois, em setembro de 2023, o Supremo Tribunal Federal rejeita a tese como inconstitucional. Entretanto, a proposta segue em pauta no Congresso Nacional até os dias de hoje, ameaçando a integridade dos territórios indígenas.
               wideImage: true
               src: /uploads/imagem_16_ocupacao_antena.jpg
               alt: ''
-              description: 'Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá, entre os dias 14 e 16 de setembro de 2017, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo (Fonte: Comissão Guarani Yvyrupa - CGY)'
+              description: 'Em protesto contra a anulação da demarcação da TI, entre os dias 14 e 16 de setembro de 2017, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo (Fonte: Comissão Guarani Yvyrupa - CGY).'
               wideVideo: true
               videoUrl: https://player.vimeo.com/video/1106085328?
-              videoCaption: 'Luta & Diálogo: entrevista com Antony Karaí Poty sobre o papel da luta de rua e espiritual dos Guarani'
+              videoCaption: 'Luta & Diálogo: entrevista com Anthony Karaí Poty sobre o papel da luta de rua e espiritual dos Guarani.'
               txtColor: ''
               bgColor: ''
               byline: – Thiago Henrique Karai Djekupe
@@ -2574,12 +2574,12 @@ components:
               content: |-
                 Mas a justiça ao reconhecimento da posse ancestral Guarani do Jaraguá teve vida curta. Eventos políticos em Brasília trazem uma reviravolta ao processo. 
 
-                Em 2017, após o impeachment de Dilma Rousseff, o governo de Michel Temer anula a demarcação da Terra Indígena Jaraguá (Portaria 683). Ato contínuo, durante o governo de Jair Bolsonaro entre 2019 e 2022, o projeto da chamada “Lei do Marco Temporal”, que havia sido praticamente arquivado em 2018, volta a ser pauta no Congresso Nacional. 
+                Em 2017, após o impeachment de Dilma Rousseff, o governo de Michel Temer anula a demarcação da TI (Portaria 683). Ato contínuo, durante o governo de Jair Bolsonaro entre 2019 e 2022, o projeto da chamada “Lei do Marco Temporal”, que havia sido praticamente arquivado em 2018, volta a ser pauta no Congresso Nacional. 
 
                 Em maio de 2023 a Câmara dos Deputados aprova a “Lei do Marco Temporal”. Cinco meses depois, em setembro de 2023, o Supremo Tribunal Federal rejeita a tese como inconstitucional. Entretanto, a proposta segue em pauta no Congresso Nacional até os dias de hoje, ameaçando a integridade dos territórios indígenas.
               wideVideo: true
               videoUrl: https://player.vimeo.com/video/1106085328?
-              videoCaption: 'Luta & Diálogo: entrevista com Antony Karaí Poty sobre o papel da luta de rua e espiritual dos Guarani'
+              videoCaption: 'Luta & Diálogo: entrevista com Anthony Karaí Poty sobre o papel da luta de rua e espiritual dos Guarani.'
               txtColor: ''
               bgColor: ''
               byline: – Thiago Henrique Karai Djekupe
@@ -2588,14 +2588,14 @@ components:
               content: Em resposta a estas violações de seus direitos consagrados com a Constituição de 1988, entre 2013 e 2025, as comunidades Guarani do Jaraguá, junto com as comunidades de Tenondé Porã, realizam uma série de atos políticos e ações de advocacia, literalmente reocupando a cidade de São Paulo – Terra Indígena – durante uma década de sucessivas manifestações de grande amplitude política e cultural para a cidade e para todo o país.
               wideVideo: true
               videoUrl: https://player.vimeo.com/video/1106085328?
-              videoCaption: 'Luta & Diálogo: entrevista com Antony Karaí Poty sobre o papel da luta de rua e espiritual dos Guarani'
+              videoCaption: 'Luta & Diálogo: entrevista com Anthony Karaí Poty sobre o papel da luta de rua e espiritual dos Guarani.'
             - type: Text
               hasDropCap: false
               content: Em resposta a estas violações de seus direitos consagrados com a Constituição de 1988, entre 2013 e 2025, as comunidades Guarani do Jaraguá, junto com as comunidades de Tenondé Porã, realizam uma série de atos políticos e ações de advocacia, literalmente reocupando a cidade de São Paulo – Terra Indígena – durante uma década de sucessivas manifestações de grande amplitude política e cultural para a cidade e para todo o país.
               wideImage: true
               src: /uploads/imagem_16_ocupacao_antena.jpg
               alt: ''
-              description: 'Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá, entre os dias 14 e 16 de setembro de 2017, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo (Fonte: Comissão Guarani Yvyrupa - CGY)'
+              description: 'Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá, entre os dias 14 e 16 de setembro de 2017, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo (Fonte: Comissão Guarani Yvyrupa - CGY).'
         mapView: resistencia_intro
       - type: Spacer
         desktop: 200px
@@ -2622,7 +2622,7 @@ components:
       - type: Spacer
         desktop: 1000px
         tablet: 1000px
-        mobile: 1000px
+        mobile: 500px
     columnAlign: right
     floatingText: true
   - type: Map
@@ -2649,16 +2649,16 @@ components:
         components:
           - type: TimelineBullet
             text: '26 de setembro de 2013'
-            content: 'Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das T.I.s Jaraguá e Tenondé Porã'
+            content: 'Em protesto contra a Proposta de Emenda a Constituição 215/2000, que visava transferir do Poder Executivo para o Congresso Nacional a competência para a demarcação de terras indígenas e quilombolas, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. O protesto também pede a demarcação das TIs Jaraguá e Tenondé Porã.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2013_26_09_CGY.png 
             alt: ''
-            description: 'Bloqueio da Rodovia dos Bandeirantes. Fonte: Comissão Guarani Yvyrupa [CGY]'
+            description: 'Bloqueio da Rodovia dos Bandeirantes. Fonte: Comissão Guarani Yvyrupa [CGY].'
       - type: Spacer
         desktop: 100px
         tablet: 100px
@@ -2670,7 +2670,7 @@ components:
       - type: Spacer
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2681,20 +2681,20 @@ components:
         components:
           - type: TimelineBullet
             text: '01 de outubro de 2013'
-            content: 'Em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215'
+            content: 'Em uma caminhada da Avenida Paulista até o Monumento às Bandeiras, ativistas Guarani realizam “Ato de Defesa dos Direitos Indígenas e da Constituição Federal” contra a PEC 215.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2013_01_10_ISA.jpg 
             alt: ''
-            description: 'Protesto no Monumento às Bandeiras. Fonte: Tiago Moreira dos Santos [ISA]'
+            description: 'Protesto no Monumento às Bandeiras. Fonte: Tiago Moreira dos Santos [ISA].'
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2705,20 +2705,20 @@ components:
         components:
           - type: TimelineBullet
             text: 16 de abril de 2014
-            content: 'Lançamento da campanha “Resistencia Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta'
+            content: 'Lançamento da campanha “Resistencia Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2014_16_04_midia_ninja.jpg
             alt: ''
-            description: 'Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta. Fonte: Mídia Ninja'
+            description: 'Lançamento da campanha “Resistência Guarani SP” com ato no Pateo do Colégio e ocupação do Museu Anchieta. Fonte: Mídia Ninja.'
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2729,20 +2729,20 @@ components:
         components:
           - type: TimelineBullet
             text: '24 de abril de 2014'
-            content: 'Protesto partindo do MASP até a praça Roosevelt, exigindo a demarcação das T.I.s Jaraguá e Tenondé Porã'
+            content: 'Protesto partindo do MASP até a praça Roosevelt, exigindo a demarcação das TIs Jaraguá e Tenondé Porã.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2014_24_04_01_FOLHA_PRESS.png
             alt: ''
-            description: 'Protesto pedindo a demarcação da Terra Indígena Jaraguá e da Terra Indígena Tenondé Porã. Fonte: Eduardo Anizelli/Folhapress' 
+            description: 'Protesto pedindo a demarcação da Terra Indígena Jaraguá e da Terra Indígena Tenondé Porã. Fonte: Eduardo Anizelli/Folhapress.' 
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px   
+        mobile: 300px   
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2753,20 +2753,20 @@ components:
         components:
           - type: TimelineBullet
             text: '06 de junho de 2014'
-            content: 'Protesto na Assembleia Legislativa de São Paulo e no Monumento às Bandeiras pelo arquivamento da PEC 215 e pela demarcação das T.I.s Jaraguá e Tenondé Porã'
+            content: 'Protesto na Assembleia Legislativa de São Paulo e no Monumento às Bandeiras pelo arquivamento da PEC 215 e pela demarcação das TIs Jaraguá e Tenondé Porã.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2014_06_06_beatriz_macruz.jpg
             alt: ''
-            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Beatriz Macruz/Repórter Brasil'
+            description: 'Protesto contra a Proposta de Emenda Constitucional (PEC) 215. Beatriz Macruz/Repórter Brasil.'
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px  
+        mobile: 300px  
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2777,20 +2777,20 @@ components:
         components:
           - type: TimelineBullet
             text: '05 de maio de 2016'
-            content: 'Ativistas Guarani ocupam a sede da Secretaria da Presidência da República  em São Paulo, na Avenida Paulista, em protesto pela demarcação das T.I.s Jaraguá e Tenondé Porã'
+            content: 'Ativistas Guarani ocupam a sede da Secretaria da Presidência da República  em São Paulo, na Avenida Paulista, em protesto pela demarcação das TIs Jaraguá e Tenondé Porã.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2016_05_05_CIMI.jpeg
             alt: ''
-            description: 'Protesto exigindo a demarcação da Terra Indígena Tenondé Porã após a portaria declaratória da Terra Indígena Jaraguá. Fonte: CIMI'
+            description: 'Protesto exigindo a demarcação da Terra Indígena Tenondé Porã após a portaria declaratória da Terra Indígena Jaraguá. Fonte: CIMI.'
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2801,20 +2801,20 @@ components:
         components:
           - type: TimelineBullet
             text: '14 a 16 de setembro de 2017'
-            content: 'Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá pelo governo de Michel Temer, lideranças Guarani realizam uma série de protestos em São Paulo. No dia 30 de agosto, uma ampla mobilização toma a Avenida Paulista. Quinze dias depois, entre os dias 14 e 16 de setembro, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo'
+            content: 'Em protesto contra a anulação da demarcação da Terra Indígena Jaraguá pelo governo de Michel Temer, lideranças Guarani realizam uma série de protestos em São Paulo. No dia 30 de agosto, uma ampla mobilização toma a Avenida Paulista. Quinze dias depois, entre os dias 14 e 16 de setembro, ativistas Guarani ocupam o Pico do Jaraguá e desativam as torres transmissoras, cortando o sinal de telefonia e televisão para uma vasta região da cidade de São Paulo.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2017-antenas_CGY.jpg
             alt: ''
-            description: 'Ocupação das antenas no Parque Estadual do Jaraguá. Fonte: Comissão Guarani Yvyrupa [CGY]' 
+            description: 'Ocupação das antenas no Parque Estadual do Jaraguá. Fonte: Comissão Guarani Yvyrupa [CGY].' 
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2825,20 +2825,20 @@ components:
         components:
           - type: TimelineBullet
             text: 'Janeiro-Março de 2020'
-            content: 'Ativistas Guarani ocupam o terreno onde seria construído o condomínio residencial “Reserva Jaraguá-Carinás”, situado próximo à aldeia Pyau. Executado pela construtora Tenda, o empreendimento levou à derrubada de cerca de quatro mil árvores em uma área da Reserva da Biosfera do Cinturão Verde de São Paulo. Chamada de Yary Ty, a ocupação dura até o mês de março, quando é removida pela Polícia Militar'
+            content: 'Ativistas Guarani ocupam o terreno onde seria construído o condomínio residencial “Reserva Jaraguá-Carinás”, situado próximo à tekoa Pyau. Executado pela construtora Tenda, o empreendimento levou à derrubada de cerca de quatro mil árvores em uma área da Reserva da Biosfera do Cinturão Verde de São Paulo. Chamada de Yary Ty, a ocupação dura até o mês de março, quando é removida pela Polícia Militar.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2020_09-10_03_Alejandro Silva_CIMI_regional_sul.jpeg
             alt: ''
-            description: 'Fachada da ocupação Yary Ty. Fonte: Alejandro Silva/CIMI regional sul'  
+            description: 'Fachada da ocupação Yary Ty. Fonte: Alejandro Silva/CIMI regional sul.'  
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2849,20 +2849,20 @@ components:
         components:
           - type: TimelineBullet
             text: 'Junho de 2021'
-            content: 'A volta da discussão sobre o Marco Temporal no Congresso Nacional desencadeia uma série de protestos de organizações indígenas. No dia 25 de junho, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. Cinco dias depois ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista'
+            content: 'A volta da discussão sobre o Marco Temporal no Congresso Nacional desencadeia uma série de protestos de organizações indígenas. No dia 25 de junho, ativistas Guarani bloqueiam a Rodovia dos Bandeirantes. Cinco dias depois ocupam o Parque Estadual do Jaraguá e as antenas. Simultaneamente ocorrem manifestações na Avenida Paulista.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/bandeirantes.png
             alt: ''
-            description: 'Ocupação do Parque Estadual do Jaraguá e as antenas. Fonte: Rafael Vilela'
+            description: 'Ocupação do Parque Estadual do Jaraguá e as antenas. Fonte: Rafael Vilela.'
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2873,20 +2873,20 @@ components:
         components:
           - type: TimelineBullet
             text: '03 de julho de 2021'
-            content: 'No contexto da pandemia da COVID, ativistas Guarani participam da  grande manifestação contra o governo do presidente Jair Bolsonaro, trazendo a pauta do Marco Temporal para a manifestação'
+            content: 'No contexto da pandemia da COVID, ativistas Guarani participam da  grande manifestação contra o governo do presidente Jair Bolsonaro na Avenida Paulista, trazendo a pauta do Marco Temporal para a manifestação.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2021_03_07_G1_globo.png
             alt: ''
-            description: 'Grande manifestação contra o governo do presidente Jair Bolsonaro. Fonte: G1/Globo'
+            description: 'Grande manifestação contra o governo do presidente Jair Bolsonaro. Fonte: G1/Globo.'
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2897,20 +2897,20 @@ components:
         components:
           - type: TimelineBullet
             text: '23 de junho de 2022'
-            content: 'Ocupação do Monumento às Bandeiras em protesto contra a tramitação da lei do Marco Temporal'
+            content: ''
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 20px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2022_23_06_rafael_vilela.jpeg
             alt: ''
-            description: 'Ocupação no Monumento às Bandeiras contra a tramitação da lei do Marco Temporal. Fonte: Rafael Vilela'
+            description: 'Ocupação no Monumento às Bandeiras contra a tramitação da lei do Marco Temporal. Fonte: Rafael Vilela.'
       - type: Spacer   
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2921,20 +2921,20 @@ components:
         components:
           - type: TimelineBullet
             text: '09 de agosto de 2022'
-            content: 'Ato organizado pela Comissão Yvyrupa na Faculdade de Direito da USP, no Largo São Francisco, contra o Marco Temporal'
+            content: 'Ato organizado pela Comissão Yvyrupa na Faculdade de Direito da USP, no Largo São Francisco, contra o Marco Temporal.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2022-09-08_G1.png
             alt: ''
-            description: 'Ato na Faculdade de Direito da USP. Fonte: Felipe Beltrame/G1'
+            description: 'Ato na Faculdade de Direito da USP. Fonte: Felipe Beltrame/G1.'
       - type: Spacer 
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2945,20 +2945,20 @@ components:
         components:
           - type: TimelineBullet
             text: 'Maio-Junho de 2023'
-            content: 'Em protesto contra a aprovação da PL490/2007 pelos deputados em Brasília, ativistas Guarani novamente bloqueiam a Rodovia dos Bandeirantes. A manifestação é duramente reprimida pela Polícia Militar. Dias depois, em 04 de junho, a comunidade Guarani realiza a “Caminhada pela Vida” na área da T.I. Jaraguá'
+            content: 'Em protesto contra a aprovação da PL490/2007 pelos deputados em Brasília, ativistas Guarani novamente bloqueiam a Rodovia dos Bandeirantes. A manifestação é duramente reprimida pela Polícia Militar. Dias depois, em 04 de junho, a comunidade Guarani realiza a “Caminhada pela Vida” na área da TI.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2023_30_05_01_richard_wera.JPG
             alt: ''
-            description: 'Bloqueio da Rodovia dos Bandeirantes contra a aprovação da PL490/2007. Fonte: Richard Wera Mirim'
+            description: 'Bloqueio da Rodovia dos Bandeirantes contra a aprovação da PL490/2007. Fonte: Richard Wera Mirim.'
       - type: Spacer 
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -2969,20 +2969,20 @@ components:
         components:
           - type: TimelineBullet
             text: '07 de junho de 2023'
-            content: 'Desafiando a repressão estatal, no dia 07 de junho ativistas Guarani realizam novo ato contra o Marco Temporal, desta vez na escadaria do Teatro Municipal no centro de São Paulo'
+            content: 'Desafiando a repressão estatal, no dia 07 de junho ativistas Guarani realizam novo ato contra o Marco Temporal, desta vez na escadaria do Teatro Municipal no centro de São Paulo.'
           - type: Spacer
             desktop: 80px
             tablet: 80px
-            mobile: 80px
+            mobile: 40px
           - type: ImageBlock
             wideImage: false
             src: /uploads/2023_07_06_julia_rez_G1.png
             alt: ''
-            description: 'Ato contra o Marco Temporal na escadaria do Teatro Municipal. Fonte: Julia Rez'
+            description: 'Ato contra o Marco Temporal na escadaria do Teatro Municipal. Fonte: Julia Rez.'
       - type: Spacer 
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 300px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -3014,12 +3014,12 @@ components:
           components:
             - type: Text
               hasDropCap: true
-              content: Após a eleição de Luiz Inácio Lula da Silva em 2023, e a criação do Ministério dos Povos Indígenas, retoma-se o processo de demarcação do território Guarani do Jaraguá em São Paulo. Através da Portaria 793 de 23 de Outubro de 2024, o Ministério da Justiça declara a nulidade da Portaria 683 de 2015, restabelecendo os efeitos da Portaria 581 de 2015 que reconhece a posse Guarani e a demarcação da Terra Indígena Jaraguá
+              content: Após a eleição de Luiz Inácio Lula da Silva em 2023, e a criação do Ministério dos Povos Indígenas, retoma-se o processo de demarcação do território Guarani do Jaraguá em São Paulo. Através da Portaria 793 de 23 de Outubro de 2024, o Ministério da Justiça declara a nulidade da Portaria 683 de 2015, restabelecendo os efeitos da Portaria 581 de 2015 que reconhece a posse Guarani e a demarcação da Terra Indígena Jaraguá.
             - type: ImageBlock
               wideImage: false
               src: /uploads/imagem_23_mapa_cerimonia.jpg
               alt: asd
-              description: Celebração da demarcação da T.I. Jaraguá pelas lentes de Richard Wera Mirim
+              description: Celebração da demarcação da TI Jaraguá pelas lentes de Richard Wera Mirim.
         column2:
           components:
             - type: Pullquote
@@ -3031,7 +3031,7 @@ components:
               wideImage: false
               src: /uploads/20250205_163757.jpg
               alt: ''
-              description: Conversa sobre o mapeamento na Tekoa Ytu com as lideranças Thiago Henrique Karai Djekupe e Felipe Silva
+              description: Conversa sobre o mapeamento na Tekoa Ytu com as lideranças Thiago Henrique Karai Djekupe e Felipe Silva.
         desktop: 800px
         tablet: 800px
         mobile: 800px
@@ -3109,28 +3109,28 @@ components:
               wideImage: false
               src: /uploads/tanque_lavagem_ouro_jaragua.jpg
               alt: ''
-              description: 'Tanque de lavagem de ouro da época colonial no Jaraguá (Fonte: Reprodução/TV Globo)'
+              description: 'Tanque de lavagem de ouro da época colonial no Jaraguá (Fonte: Reprodução/TV Globo).'
             - type: Text
               hasDropCap: true
-              content: 'Apenas recentemente, em 2019, através do projeto “Memória Paulistana”, que dois lugares da memória Guarani entraram no inventário de lugares da memória da cidade de São Paulo: o lugar da casa da Cacica Jandira; e o ponto da Rodovia dos Bandeirantes onde ocorreram as manifestações históricas pela demarcação da TI Jaraguá.'
+              content: 'Apenas recentemente, em 2019, através do projeto “Memória Paulistana”, dois lugares da memória Guarani entraram no inventário de lugares da memória da cidade de São Paulo: o lugar da casa da Cacica Jandira; e o ponto da Rodovia dos Bandeirantes onde ocorreram as manifestações históricas pela demarcação da TI.'
         column2:
           components:
             - type: Spacer
               wideImage: false
               src: /uploads/Placa Memória Paulistana-Cacica Jandira_2021.png
               alt: ''
-              description: Placa do projeto Memória Paulistana do Departamento do Patrimônio Histórico de São Paulo, reconhecendo a residência da cacica Jandira como lugar de memória dos Guarani e da cidade
+              description: Placa do projeto Memória Paulistana do Departamento do Patrimônio Histórico de São Paulo, reconhecendo a residência da cacica Jandira como lugar de memória dos Guarani e da cidade.
               desktop: 600px
               tablet: 600px
-              mobile: 600px
+              mobile: 100px
             - type: ImageBlock
               wideImage: false
               src: /uploads/Placa Memória Paulistana-Cacica Jandira_2021.png
               alt: ''
-              description: Placa do projeto Memória Paulistana do Departamento do Patrimônio Histórico de São Paulo, reconhecendo a residência da cacica Jandira como lugar de memória dos Guarani e da cidade
+              description: Placa do projeto Memória Paulistana do Departamento do Patrimônio Histórico de São Paulo, reconhecendo a residência da cacica Jandira como lugar de memória dos Guarani e da cidade.
               desktop: 400px
               tablet: 400px
-              mobile: 400px
+              mobile: 100px
         mapView: map4_jaragua
     columnAlign: right
     floatingText: true
@@ -3396,27 +3396,27 @@ components:
             - type: Text
               hasDropCap: true
               content: |-
-                Por toda Yvyrupa, as retomadas de terras ancestrais dos povos Guarani carregam um sentido de reparar o território e a natureza. Ao longo dos mais de 75 anos de retomadas em São Paulo, as comunidades da TI Jaraguá estabeleceram várias práticas de cuidado, proteção e manutenção da biodiversidade em seu território. 
+                Por toda Yvyrupa, as retomadas de terras ancestrais dos povos Guarani carregam um sentido de reparar o território e a natureza. Ao longo dos mais de 75 anos de retomadas em São Paulo, as comunidades da TI estabeleceram várias práticas de cuidado, proteção e manutenção da biodiversidade em seu território. 
 
                 Tekoas como Itawera, que recuperou uma grande área de lixão urbano, e Yvy Porã, com seu pioneiro projeto de recuperação de abelhas nativas, tornaram-se referência de restauração ambiental em tempos de urgência climática.
             - type: VideoEmbed
               wideVideo: true
               videoUrl: https://player.vimeo.com/video/1106387884?
-              videoCaption: trecho da entrevista com a cacica Maria Ara Poty, fundadora da Tekoa Itawera
+              videoCaption: Trecho da entrevista com a cacica Maria Ara Poty, fundadora da Tekoa Itawera.
             - type: Text
               hasDropCap: false
               content: |-
                 Em todos os núcleos habitacionais identificam-se práticas de recuperação e cuidado da mata, combatendo a poluição urbana da água e do solo, e promovendo o reflorestamento através do plantio de espécies nativas, o cultivo de roças tradicionais e jardins medicinais, e o monitoramento de animais silvestres. 
 
-                É a partir da contínua manutenção do _nhandereko,&#160;_o “modo de habitar” Guarani – saber ancestral transmitido pelos anciãos e anciãs – que tais práticas se constituem no tempo e no espaço através de gerações.
+                É a partir da contínua manutenção do _nhandereko_ o “modo de habitar” Guarani – saber ancestral transmitido pelos anciãos e anciãs – que tais práticas se constituem no tempo e no espaço através de gerações.
             - type: VideoEmbed
               wideVideo: false
               videoUrl: https://player.vimeo.com/video/1106470193?
-              videoCaption: trecho da entrevista com  Marcio Wera sobre o projeto de revitalização de abelhas nativas na Tekoa Yvy Porã
+              videoCaption: Trecho da entrevista com  Marcio Wera sobre o projeto de revitalização de abelhas nativas na Tekoa Yvy Porã.
         column2:
           components:
             - type: Pullquote
-              content: É um cuidado que todos os guarani têm. Se a gente não cuidar, acaba. Na destruição da mata, por exemplo, cada ser, cada árvore que a gente tem no meio da mata é um espírito indígena. Cada árvore antiga que cai, derruba e corta é um espírito indígena que tá indo embora ali
+              content: É um cuidado que todos os guarani têm. Se a gente não cuidar, acaba. Na destruição da mata, por exemplo, cada ser, cada árvore que a gente tem no meio da mata é um espírito indígena. Cada árvore antiga que cai, derruba e corta é um espírito indígena que tá indo embora ali.
               txtColor: ''
               bgColor: ''
               byline: Maria Ara Poty
@@ -3430,52 +3430,52 @@ components:
             - type: ImageBlock
               wideImage: true
               src: /uploads/img_natalicio_jardim_medicinal.jpg
-              alt: O mestre dos saberes Natalício Karaí em frente ao jardim medicinal da Tekoa Pyau
-              description: O mestre dos saberes Natalício Karaí em frente ao jardim medicinal da Tekoa Pyau
+              alt: O mestre dos saberes Natalício Karaí em frente ao jardim medicinal da Tekoa Pyau.
+              description: O mestre dos saberes Natalício Karaí em frente ao jardim medicinal da Tekoa Pyau.
               desktop: 1000px
               tablet: 500px
-              mobile: 500px
+              mobile: 100px
             - type: Spacer
               wideImage: true
               src: /uploads/img_mapacanvas_01.jpg
               alt: ''
-              description: Oficinas de mapeamento participativo na TI Jaraguá
+              description: Cartografia participativa na TI Jaraguá
               desktop: 800px
               tablet: 500px
               mobile: 500px
               uniqid: galeria_mapa_canvas
               images:
                 - image: /uploads/img_mapacanvas_01.jpg
-                  caption: ''
+                  caption: 'Foto: Laura Pappalardo'
                 - image: /uploads/img_mapacanvas_05.jpg
-                  caption: ''
+                  caption: 'Foto: Laura Pappalardo'
                 - image: /uploads/img_mapacanvas_09.jpg
-                  caption: ''
+                  caption: 'Foto: Laura Pappalardo'
                 - image: /uploads/img_mapacanvas_02.jpg
-                  caption: ''
+                  caption: 'Foto: Laura Pappalardo'
                 - image: /uploads/img_mapacanvas_11.jpg
-                  caption: ''
+                  caption: 'Foto: Laura Pappalardo'
                 - image: /uploads/img_mapacanvas_10.jpg
-                  caption: ''
+                  caption: 'Foto: Laura Pappalardo'
             - type: Gallery
               wideImage: true
               src: /uploads/img_mapacanvas_01.jpg
               alt: ''
-              description: Oficinas de mapeamento participativo na TI Jaraguá
+              description: Cartografia participativa na TI Jaraguá
               uniqid: galeria_mapa_canvas
               images:
                 - image: /uploads/img_mapacanvas_01.jpg
-                  caption: ''
+                  caption: 'Foto: Laura Pappalardo'
                 - image: /uploads/img_mapacanvas_05.jpg
-                  caption: ''
+                  caption: 'Foto: Laura Pappalardo'
                 - image: /uploads/img_mapacanvas_09.jpg
-                  caption: ''
+                  caption: 'Foto: Laura Pappalardo'
                 - image: /uploads/img_mapacanvas_02.jpg
-                  caption: ''
+                  caption: 'Foto: Laura Pappalardo'
                 - image: /uploads/img_mapacanvas_11.jpg
-                  caption: ''
+                  caption: 'Foto: Laura Pappalardo'
                 - image: /uploads/img_mapacanvas_10.jpg
-                  caption: ''
+                  caption: 'Foto: Laura Pappalardo'
         column2:
           components:
             - type: Text
@@ -3485,20 +3485,20 @@ components:
               wideImage: true
               src: /uploads/img_mapacanvas_10.jpg
               alt: ''
-              description: Cartografia participativa na TI Jaraguá
+              description: Cartografia participativa na TI Jaraguá.
             - type: Text
               hasDropCap: true
               content: |-
                 Traçando conhecimentos e vivências concretas no território, o mapa identifica áreas de fundamental importância para o habitar Guarani – como locais sagrados, caminhos tradicionais, áreas de proteção, áreas de reparação florestal e recuperação de espécies nativas –  que não estão registradas em bases de dados oficiais e, por isso, tendem a ser invisibilizadas pelas políticas públicas.
 
-                Diferente do que mostram os mapas de Estado, onde a TI Jaraguá aparece como um grande espaço verde e vazio, este mapa mostra uma terra densamente habitada através das práticas do nhandereko, o modo de habitar Guarani.  
+                Diferente do que mostram os mapas de Estado, onde a TI aparece como um grande espaço verde e vazio, este mapa mostra uma terra densamente habitada através das práticas do nhandereko, o modo de habitar Guarani.  
 
                 Ao espacializar estes processos, o mapa joga luz em práticas muitas vezes invisibilizadas, principalmente o trabalho de cuidado cotidiano das mulheres que fincam raízes profundas para que Terra Indígena do Jaraguá cresça forte.
             - type: ImageBlock
-              wideImage: false
+              wideImage: true
               src: /uploads/250815_cuidado_R17_crop.jpg
               alt: ''
-              description: Práticas do Cuidado e da Reparação na TI Jaragua
+              description: Práticas do Cuidado e da Reparação na TI Jaraguá.
   - type: Group
     id: parte_10_ameacas
     shortTitle: parte_10_ameacas
@@ -3558,12 +3558,12 @@ components:
 
                 Enquanto a metrópole se expande, buscando os lucros do capital imobiliário, o território Guarani é cada vez mais cercado por infraestruturas urbanas, empreendimentos imobiliários e invasões. Mesmo demarcada, a TI segue sob crescente pressão espacial e política. 
 
-                Durante as oficinas de mapeamento participativo, além das práticas espaciais do cuidado e da reparação da terra, foram identificados vários pontos de ameaça à integridade do território e das florestas do Jaraguá
+                Durante as oficinas de mapeamento participativo, além das práticas espaciais do cuidado e da reparação da terra, foram identificados vários pontos de ameaça à integridade do território e das florestas do Jaraguá.
             - type: ImageBlock
               wideImage: true
               src: /uploads/imagem_32_urbanizacao_jaragua.jpg
               alt: ''
-              description: A urbanização predatória de São Paulo avança sobre as Terras Guarani do Jaraguá
+              description: A urbanização predatória de São Paulo avança sobre as Terras Guarani do Jaraguá.
         column2:
           components: []
       - type: Columns
@@ -3578,18 +3578,18 @@ components:
             - type: Text
               hasDropCap: true
               content: |-
-                Além da especulação imobiliária, ocorrências de violação de direitos territoriais da TI Jaraguá incluem desmatamento, fontes de águas obstruídas, caça illegal, expansão de plantações de eucalipto, poluição da água e do solo pelos bairros envoltórios, poluição sonora, queimadas ilegais, áreas com riscos de incêndio, entre outros.
+                Além da especulação imobiliária, ocorrências de violação de direitos territoriais da TI incluem desmatamento, fontes de águas obstruídas, caça ilegal, expansão de plantações de eucalipto, poluição da água e do solo pelos bairros envoltórios, poluição sonora, queimadas ilegais, áreas com riscos de incêndio, entre outros.
 
                 Neste contexto, os mapas apresentados nesta plataforma digital buscam fornecer instrumentos de advocacia em apoio à luta dos Guarani pelos seus direitos territoriais e por reparações históricas e ambientais.
             - type: VideoEmbed
               wideVideo: true
               videoUrl: https://player.vimeo.com/video/1106449928?
-              videoCaption: Trecho da entrevista com Daniel Wera, sobre as invasões de plantações de eucalipito na região da Tekoa Pindó Mirim
+              videoCaption: Trecho da entrevista com Daniel Wera, sobre as invasões de plantações de eucalipito na região da Tekoa Pindó Mirim.
             - type: ImageBlock
-              wideImage: false
-              src: /uploads/Cópia de 20250722_cuidado.jpg
+              wideImage: true
+              src: /uploads/mapa_ameacas_crop.png
               alt: ''
-              description: Mapa dos pontos e tipologias de ameaças indentificadas nas oficinas de mapeamento coletivo participativo
+              description: Mapa dos pontos e tipologias de ameaças indentificadas nas oficinas de mapeamento coletivo participativo.
   - type: Group
     id: downloads
     shortTitle: downloads
@@ -3628,7 +3628,7 @@ components:
                         title: Download Mapa Nhanderekoa
                         text:  __________________________________________
                         link:
-                          url: https://www.advocacia.autonoma.xyz/
+                          url: https://drive.google.com/drive/folders/1sWAzHQfD4Zv-4N9HdIyBxdHxbeTFH92h?usp=drive_link
                           target: ''
                           customTarget: ''
                           text: 'link'
@@ -3642,7 +3642,7 @@ components:
                           title: Download Documentos Históricos
                           text: __________________________________________
                           link:
-                            url: https://www.advocacia.autonoma.xyz/
+                            url: https://drive.google.com/drive/folders/1vMGONmKx-Lr3C17RLWkTpNWliwKO1bx8?usp=drive_link
                             target: ''
                             customTarget: ''
                             text: 'link'
@@ -3679,7 +3679,7 @@ components:
             - type: Text
               hasDropCap: false
               content: |-
-                O mapa foi produzido pelo projeto _Arquiteturas da Reparação: São Paulo Terra Indígena_. Desenvolvido em parceria com lideranças e ativistas da T.I. Jaraguá, o projeto questiona visões tradicionais de cidade, território, memória, e patrimônio, buscando pensar como seres e elementos do mundo “mais-que-humano”, como as águas e as matas, podem ser incluídos como sujeitos patrimoniais dentro de um amplo processo de reparação histórica e socioambiental aos povos originários. O projeto foi realizado através de uma colaboração entre a T.I. Jaraguá, a agência autônoma, e o Chão Coletivo, por meio da plataforma Práticas Espaciais da Escola da Cidade. 
+                O mapa foi produzido pelo projeto _Arquiteturas da Reparação: São Paulo Terra Indígena_. Desenvolvido em parceria com lideranças e ativistas da TI Jaraguá, o projeto questiona visões tradicionais de cidade, território, memória, e patrimônio, buscando pensar como seres e elementos do mundo “mais-que-humano”, como as águas e as matas, podem ser incluídos como sujeitos patrimoniais dentro de um amplo processo de reparação histórica e socioambiental aos povos originários. O projeto foi realizado através de uma colaboração entre a TI Jaraguá, a agência autônoma, e o Chão Coletivo, por meio da plataforma Práticas Espaciais da Escola da Cidade. 
             - type: Spacer
               desktop: 80px
               tablet: 80px
@@ -3690,13 +3690,13 @@ components:
                 - type: Text
                   hasDropCap: false
                   content: |-
-                    **T.I. Jaraguá**
+                    **TI Jaraguá**
 
                     pesquisadores: Anthony Karaí Poty, Thiago Henrique Karai Djekupe, Felipe da Silva e Richard Wera Mirim
 
-                    consultores e entrevistas: Jurandir Tupã Jekupe Mirim, Márcio Werã Mirim, Irene Mendonça Bolgarim, Daniel Werã Mirim, Neusa Poty, Cacica Ara Poty (Maria), Natalício Karaí, Tamikuã Txihi, Lucas Kuaray, Anderson, Coletivo Arandu Mirim (Anthony Karaí Poty, Ciara Martins, Samara Para Martins) 
+                    consultores e entrevistas: Jurandir Tupã Jekupe Mirim, Márcio Wera Mirim, Irene Mendonça Bolgarim, Daniel Wera Mirim, Neusa Poty, Cacica Ara Poty (Maria), Natalício Karaí, Tamikuã Txihi, Lucas Kuaray, Anderson, Coletivo Arandu Mirim (Anthony Karaí Poty, Ciara Martins, Samara Para Martim)
 
-                    participantes das oficinas: Anthony Karaí Poty, Valdemir, Samara Para, Ciara Martins, Lenilson, Thiago Karaí Poty, Valdir, Felipe Silva, Osmar, Maria Ara Poty, brigadistas Lucas, Paulino, Adriano, Juca, Vander, Danilo e Luciano, Natalício Karaí, Antônia, Lucas, Pedrinho, Txai Suruí, Miguel, Antônio, jovens e crianças  
+                    participantes das oficinas: Anthony Karaí Poty, Valdemir, Samara Para Martim, Ciara Martins, Lenilson, Thiago Karaí Poty, Valdir, Felipe Silva, Osmar, Maria Ara Poty, brigadistas Lucas, Paulino, Adriano, Juca, Vander, Danilo e Luciano, Natalício Karaí, Antônia, Lucas, Pedrinho, Txai Suruí, Miguel, Antônio, jovens e crianças 
               column2:
                 components:
                 - type: Text
@@ -3731,7 +3731,7 @@ components:
             - type: Spacer
               desktop: 250px
               tablet: 250px
-              mobile: 250px
+              mobile: 100px
             - type: InnerColumns
               column1:
                 components:

@@ -13,7 +13,7 @@ pageSettings:
 pageTheme:
   primaryColor: '#000009'
   secondaryColor: '#ffffffff'
-  highlightColor: '#4c4c4cff'
+  highlightColor: '#313232ff'
   auxiliaryColor: '#0f7c77ff'
   displayFont: ''
   textFont: ''
@@ -68,11 +68,11 @@ components:
     layout: default
     txtColor: Secondary
     customTxtColor: ''
-    bgColor: Highlight
-    customBgColor: ''
+    bgColor: Custom
+    customBgColor: '#4d4d58a1'
     backgroundMedia:
       - type: backgroundImage
-        imageSrc: /uploads/expulsion-san-marcos.jpg
+        imgSrc: /uploads/expulsion-san-marcos.jpg
     overlay: ''
     components:
       - type: ColumnSticky
@@ -105,9 +105,9 @@ components:
     animations: true
     id: group_2
     layout: default
-    txtColor: Primary
+    txtColor: Secondary
     customTxtColor: ''
-    bgColor: Secondary
+    bgColor: Highlight
     customBgColor: ''
     overlay: ''
     components:
@@ -141,9 +141,9 @@ components:
     animations: true
     id: group_3
     layout: default
-    txtColor: Secondary
+    txtColor: Primary
     customTxtColor: ''
-    bgColor: Highlight
+    bgColor: Secondary
     customBgColor: ''
     overlay: ''
     components:
@@ -193,9 +193,9 @@ components:
     animations: true
     id: group_4
     layout: default
-    txtColor: Primary
+    txtColor: Secondary
     customTxtColor: ''
-    bgColor: Secondary
+    bgColor: Highlight
     customBgColor: ''
     overlay: ''
     components:
@@ -228,9 +228,9 @@ components:
     animations: true
     id: group_5
     layout: default
-    txtColor: Primary
+    txtColor: Secondary
     customTxtColor: ''
-    bgColor: Secondary
+    bgColor: Highlight
     customBgColor: ''
     overlay: dark
     components:
@@ -253,7 +253,7 @@ components:
                 src: /uploads/territorios-de-excecao.jpg
                 alt: Image2
               title: Territórios de Exceção
-              text: 'Uma parceria entre a agência Autônoma e o MediaLab (UFRJ), o caso Territórios da Exceção investigou o uso de helicópteros como plataforma de disparos da polícia militar nas favelas do Rio de Janeiro para compreender a dinâmica e os impactos deste tipo de operação sobre os direitos fundamentais das populações e comunidades atingidas. Utilizando ciência de visualização de dados, dados governamentais e de mídias sociais, investigações de campo e técnicas de arquitetura forense, a pesquisa apresenta as evidências por meio de vídeos, animações, imagens em 3D e informações georreferenciadas, oferecendo uma experiência imersiva dentro dos mapas e localidades.'
+              text: 'Uma parceria entre a agência autônoma e o MediaLab (UFRJ), o caso Territórios da Exceção investigou o uso de helicópteros como plataforma de disparos da polícia militar nas favelas do Rio de Janeiro para compreender a dinâmica e os impactos deste tipo de operação sobre os direitos fundamentais das populações e comunidades atingidas. Utilizando ciência de visualização de dados, dados governamentais e de mídias sociais, investigações de campo e técnicas de arquitetura forense, a pesquisa apresenta as evidências por meio de vídeos, animações, imagens em 3D e informações georreferenciadas, oferecendo uma experiência imersiva dentro dos mapas e localidades.'
         - type: CardsCall
           cardsCallArr:
             - link:
@@ -264,7 +264,7 @@ components:
                 src: /uploads/expulsion-san-marcos.jpg
                 alt: Image2
               title: Expulsões
-              text: 'O caso Expulsões, realizado através da parceria entre a agência Autonoma e o Forensic Architecture, investiga violações de direitos humanos e ambientais decorrentes da implantação de um megaprojeto de mineração na região da Cordilheira de Cóndor, na Amazônia Equatoriana. Através da análise de imagens de satélite e de testemunhos das vítimas, com o apoio de atores locais, a investigação mapeou processos de despossessão de comunidades e povos indígenas, desmatamento e destruição de sítios arqueológicos, demonstrando as dinâmicas espaciais de uma ação coordenada de violações sistemáticas.'
+              text: 'O caso Expulsões, realizado através da parceria entre a agência autônoma e o Forensic Architecture, investiga violações de direitos humanos e ambientais decorrentes da implantação de um megaprojeto de mineração na região da Cordilheira de Cóndor, na Amazônia Equatoriana. Através da análise de imagens de satélite e de testemunhos das vítimas, com o apoio de atores locais, a investigação mapeou processos de despossessão de comunidades e povos indígenas, desmatamento e destruição de sítios arqueológicos, demonstrando as dinâmicas espaciais de uma ação coordenada de violações sistemáticas.'
             - link:
                 url: 'https://documental.xyz/nhanderekoa/'
                 target: ''
@@ -273,9 +273,70 @@ components:
                 src: /uploads/imagem_16_ocupacao_antena.jpg
                 alt: Image2
               title: Nhanderekoa
-              text: ''
+              text: 'O projeto Arquiteturas da Reparação: São Paulo Terra Indígena foi desenvolvido no âmbito das instituições agência autônoma, Chão Coletivo e Plataforma Práticas Espaciais / Escola da Cidade, com apoio do CAU/SP. Ele apresenta uma cartografia da Terra Indígena Guarani do Jaraguá, em São Paulo, no momento de sua demarcação física entre julho e setembro de 2025. Esse território preserva um dos últimos fragmentos de Mata Atlântica na cidade, e carrega enorme importância ambiental, climática e espiritual para os povos Guarani, que habitam a região desde tempos imemoriais. Nhanderekoa – “onde nossa cultura vive”, nome dado ao conjunto de cartografias e análises mostradas aqui, combina análise de dados geoespaciais, cartografia participativa, entrevistas e arquivos históricos para traçar um panorama das práticas de defesa, cuidado e reparação das florestas do Jaraguá, ao mesmo tempo em que identifica ameaças atuais ao território. Nhanderekoa expressa o entendimento Guarani de que a floresta – com seus animais, plantas e espíritos – é parte inseparável do modo de vida, constituindo uma extensão de moradia compartilhada entre seres humanos e não humanos.'
         - type: Spacer
           desktop: 150px
           tablet: 150px
           mobile: 150px
+  - type: Group
+    shortTitle: group_6
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    id: group_6
+    layout: default
+    txtColor: Highlight
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    overlay: dark
+    components:
+        - type: Columns
+          paddingTop: false
+          paddingBottom: false
+          invertOnMobile: false
+          columnsAlign: 66-33
+          column1:
+            components:
+              - type: Text
+                hasDropCap: false
+                content: |-
+                  **Documental.xyz** foi originalmente desenvolvida em 2019 pela agência **Autônoma** e pelo **MediaLab UFRJ**, em colaboração com a **Rede LAVITS**.
+                txtColor: ''
+                bgColor: ''
+                customBgColor: ''
+                customTxtColor: ''
+              - type: LogosGroup
+                logos:
+                  - image: /uploads/autonoma-black-redim.png
+                    link:
+                      url: https://www.advocacia.autonoma.xyz/
+                      target: _blank
+                      customTarget: ''
+                      title: ''
+                  - image: /uploads/medialab-redim.png
+                    link:
+                      url: https://medialabufrj.net/
+                      target: _blank
+                      customTarget: ''
+                      title: ''
+                  - image: /uploads/logo-2.png
+                    link:
+                      url: https://lavits.org/
+                      target: _blank
+                      customTarget: ''
+                      title: ''
+          column2:
+            components:
+              - type: Text
+                hasDropCap: false
+                content: |-
+                  ###### **CRÉDITOS**
+
+                  Coordenação: **Paulo Tavares e Fernanda Bruno**
+
+                  Design e front end: **atonal.studio**
+
+                  Back end e documentação: **Thiago Paixão**
 ---
