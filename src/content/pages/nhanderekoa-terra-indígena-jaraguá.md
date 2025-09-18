@@ -44,7 +44,7 @@ mapbox:
       centerLng: '-46.782'
       centerLat: '-23.461'
       zoom: '13.26'
-      mobileZoom: '11.26'
+      mobileZoom: '13.00'
       duration: '3000'
       bearing: '0'
       pitch: '0'
