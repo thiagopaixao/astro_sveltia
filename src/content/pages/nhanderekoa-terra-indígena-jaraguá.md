@@ -1281,7 +1281,7 @@ components:
       - type: Spacer
         desktop: 200px
         tablet: 200px
-        mobile: 200px
+        mobile: 300px
       - type: Text
         hasDropCap: false
         content: |-
@@ -1291,7 +1291,7 @@ components:
       - type: Spacer
         desktop: 800px
         tablet: 800px
-        mobile: 800px
+        mobile: 900px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1307,7 +1307,7 @@ components:
       - type: Spacer
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1322,7 +1322,7 @@ components:
           Segunda _Tekoa _a ser formada no processo histórico de retomada, a _Tekoa Pyau_ (Aldeia Nova) é, atualmente, a que tem maior densidade populacional na TI. Cercada pela Rodovia dos Bandeirantes e pela Rua Comendador de Matos, enfrenta barreiras físicas por essas infraestruturas que bloqueiam sua continuidade territorial e afetam, historicamente, áreas de coleta, caça e cultivo.
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
       - type: Text
         hasDropCap: false
         content: |-
@@ -1333,7 +1333,7 @@ components:
           A tekoa Pyau, traduzido como “aldeia nova”, é a segunda tekoa do processo histórico de retomada da TI. Hoje é a comunidade com maior densidade populacional da terra indígena. A tekoa está cercada pela Rodovia dos Bandeirantes e pela Rua Comendador de Matos, infraestruturas que bloqueiam sua continuidade territorial e afetaram historicamente áreas de coleta, caça e cultivo.
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
       - type: Spacer
         wideImage: false
         src: /uploads/img_tekoa_pyau_natalicio.jpg
@@ -1349,20 +1349,20 @@ components:
         description: O mestre dos saberes Natalício Karaí em frente do seu jardim medicinal na Tekoa Pyau.
         desktop: 300px
         tablet: 300px
-        mobile: 300px
+        mobile: 400px
       - type: Spacer
         txtColor: ''
         bgColor: ''
         desktop: 300px
         tablet: 300px
-        mobile: 300px
+        mobile: 400px
         mapView: map1_itakupe
       - type: MapView
         txtColor: ''
         bgColor: ''
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
         mapView: map1_itakupe
       - type: Spacer
         hasDropCap: false
@@ -1374,7 +1374,7 @@ components:
           Situada no extremo norte da TI, a _Tekoa Itakupe_, que pode ser traduzida como “Aldeia Atrás da Pedra”, recebe esse nome por estar do outro lado do Pico do Jaraguá, próxima de suas formações rochosas. Essa área é habitada por comunidades Guarani desde as primeiras retomadas, que aconteceram nas décadas de 1950 e 1960. Fundada em 2014, hoje é formada por três núcleos habitacionais.
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
       - type: Text
         hasDropCap: false
         content: |-
@@ -1388,19 +1388,19 @@ components:
         bgColor: ''
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
         mapView: map1_itawera
       - type: MapView
         txtColor: ''
         bgColor: ''
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
         mapView: map1_itawera
       - type: Spacer
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
       - type: Text
         hasDropCap: false
         content: |-
@@ -1428,7 +1428,7 @@ components:
       - type: Spacer
         desktop: 300px
         tablet: 300px
-        mobile: 300px
+        mobile: 400px
       - type: MapView
         hasDropCap: false
         content: |-
@@ -1444,7 +1444,7 @@ components:
       - type: Spacer
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
       - type: Text
         hasDropCap: false
         content: |-
@@ -1456,7 +1456,7 @@ components:
       - type: Spacer
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
     columnAlign: right
     floatingText: true
   - type: Map
@@ -1501,7 +1501,7 @@ components:
       - type: Spacer
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
       - type: Text
         hasDropCap: false
         content: |-
@@ -1512,7 +1512,7 @@ components:
           Assim como Itawera, Yvy Porã se estabeleceu em uma área antigamente destinada ao descarte de lixo urbano, situada no pé das matas do Pico do Jaraguá. Ao longo dos anos, a tekoa tornou-se importante referência de práticas ecológicas de des-poluição, recuperação e manutenção da Mata Atlântica. Yvy Porã, traduzido como “terra boa” ou “terra bela”, também é uma referência de práticas de recuperação de diversas espécies nativas de abelhas, como a jate’i (jatai), considerada sagrada.
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
       - type: Spacer
         desktop: 50px
         tablet: 50px
@@ -1525,7 +1525,7 @@ components:
       - type: Spacer
         desktop: 300px
         tablet: 300px
-        mobile: 300px
+        mobile: 400px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1533,7 +1533,7 @@ components:
       - type: Spacer
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 400px
       - type: Text
         hasDropCap: false
         content: |-
@@ -1554,7 +1554,7 @@ components:
       - type: Spacer
         desktop: 300px
         tablet: 300px
-        mobile: 300px
+        mobile: 400px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1562,7 +1562,7 @@ components:
       - type: Spacer
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 400px
       - type: Text
         hasDropCap: false
         content: |-
@@ -1583,7 +1583,7 @@ components:
       - type: Spacer
         desktop: 300px
         tablet: 300px
-        mobile: 300px
+        mobile: 400px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1591,7 +1591,7 @@ components:
       - type: Spacer
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
       - type: Text
         hasDropCap: false
         content: |-
@@ -1603,7 +1603,7 @@ components:
       - type: Spacer
         desktop: 500px
         tablet: 500px
-        mobile: 500px
+        mobile: 600px
       - type: MapView
         txtColor: ''
         bgColor: ''
