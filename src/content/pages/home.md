@@ -68,8 +68,8 @@ components:
     layout: default
     txtColor: Secondary
     customTxtColor: ''
-    bgColor: Custom
-    customBgColor: '#4d4d58a1'
+    bgColor: Highlight
+    customBgColor: ''
     backgroundMedia:
       - type: backgroundImage
         imgSrc: /uploads/expulsion-san-marcos.jpg
