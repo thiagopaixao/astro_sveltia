@@ -518,7 +518,7 @@ mapbox:
           iconFill: true
           text: Terra Indígena Jaraguá
         - icon: circle
-          colorIcon: '#d28fef8e'
+          colorIcon: '#d28fef37'
           typeIcon: outlined
           iconFill: true
           text: Áreas de exploração do ouro em São Paulo
@@ -1175,8 +1175,8 @@ components:
     animations: true
     txtColor: Highlight
     customTxtColor: ''
-    bgColor: Custom
-    customBgColor: '#56645926'
+    bgColor: Secondary
+    customBgColor: ''
     backgroundMedia:
       - type: backgroundVideo
         videoSrc: /uploads/video_01_picojaragua.mp4
@@ -1196,7 +1196,7 @@ components:
             mobile: 800px
           - type: Text
             hasDropCap: false
-            content: '#### **cartografias da resistência territorial e da reparação ambiental Guarani na Terra Indígena Jaraguá**'
+            content: '#### **"Onde a cultura vive" - Cartografias da resistência territorial e da reparação ambiental Guarani na Terra Indígena Jaraguá**'
           - type: Spacer
             desktop: 500px
             tablet: 500px
