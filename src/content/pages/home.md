@@ -322,12 +322,9 @@ components:
                 content: |-
                   ###### **CRÉDITOS**
 
-                  Coordenação
-                  **Paulo Tavares e Fernanda Bruno**
+                  Coordenação: **Paulo Tavares e Fernanda Bruno**
 
-                  Design e front end
-                  **atonal.studio**
+                  Design e front end: **atonal.studio**
 
-                  Back end e documentação
-                  **Thiago Paixão**
+                  Back end e documentação: **Thiago Paixão**
 ---
