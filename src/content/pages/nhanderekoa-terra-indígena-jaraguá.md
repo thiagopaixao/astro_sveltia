@@ -1287,7 +1287,7 @@ components:
         content: |-
           #### TERRA INDÍGENA JARAGUÁ
 
-          A Terra Indígena Jaraguá é um território localizado na cidade de São Paulo, tradicionalmente habitado pelo povo Guarani Mbya. A área reconhecida e demarcada pelo Estado Brasileiro abrange 532 hectares, a maior parte ainda cobertos de Mata Atlântica. Atualmente, a TI Jaraguá conta com nove Tekoas (aldeias).
+          A Terra Indígena Jaraguá é um território localizado na cidade de São Paulo, tradicionalmente habitado pelo povo Guarani Mbya. A área reconhecida e demarcada pelo Estado Brasileiro abrange 532 hectares, a maior parte ainda cobertos de Mata Atlântica. Atualmente, a Terra Indígena Jaraguá conta com nove Tekoas (aldeias).
       - type: Spacer
         desktop: 800px
         tablet: 800px
@@ -1317,9 +1317,9 @@ components:
         content: |-
           ##### TEKOA PYAU
 
-          Retomada e fundação: década de 1990.
+          Retomada e fundação: década de 1990
 
-          Segunda _Tekoa _a ser formada no processo histórico de retomada, a _Tekoa Pyau_ (Aldeia Nova) é, atualmente, a que tem maior densidade populacional na TI Jaraguá. Cercada pela Rodovia dos Bandeirantes e pela Rua Comendador de Matos, enfrenta barreiras físicas por essas infraestruturas que bloqueiam sua continuidade territorial e afetam, historicamente, áreas de coleta, caça e cultivo.
+          Segunda _Tekoa _a ser formada no processo histórico de retomada, a _Tekoa Pyau_ (Aldeia Nova) é, atualmente, a que tem maior densidade populacional na TI. Cercada pela Rodovia dos Bandeirantes e pela Rua Comendador de Matos, enfrenta barreiras físicas por essas infraestruturas que bloqueiam sua continuidade territorial e afetam, historicamente, áreas de coleta, caça e cultivo.
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1328,9 +1328,9 @@ components:
         content: |-
           ##### TEKOA PYAU
 
-          Retomada e fundação: década de 1990.
+          Retomada e fundação: década de 1990
 
-          A tekoa Pyau, traduzido como “aldeia nova”, é a segunda tekoa do processo histórico de retomada da T.I. Jaraguá. Hoje é a comunidade com maior densidade populacional da terra indígena. A tekoa está cercada pela Rodovia dos Bandeirantes e pela Rua Comendador de Matos, infraestruturas que bloqueiam sua continuidade territorial e afetaram historicamente áreas de coleta, caça e cultivo.
+          A tekoa Pyau, traduzido como “aldeia nova”, é a segunda tekoa do processo histórico de retomada da TI. Hoje é a comunidade com maior densidade populacional da terra indígena. A tekoa está cercada pela Rodovia dos Bandeirantes e pela Rua Comendador de Matos, infraestruturas que bloqueiam sua continuidade territorial e afetaram historicamente áreas de coleta, caça e cultivo.
         desktop: 500px
         tablet: 500px
         mobile: 500px
@@ -1338,7 +1338,7 @@ components:
         wideImage: false
         src: /uploads/img_tekoa_pyau_natalicio.jpg
         alt: ''
-        description: O mestre dos saberes Natalício Karaí em frente do seu jardim medicinal
+        description: O mestre dos saberes Natalício Karaí em frente do seu jardim medicinal.
         desktop: 50px
         tablet: 50px
         mobile: 50px
@@ -1346,7 +1346,7 @@ components:
         wideImage: true
         src: /uploads/img_tekoa_pyau_natalicio.jpg
         alt: ''
-        description: O mestre dos saberes Natalício Karaí em frente do seu jardim medicinal na Tekoa Pyau
+        description: O mestre dos saberes Natalício Karaí em frente do seu jardim medicinal na Tekoa Pyau.
         desktop: 300px
         tablet: 300px
         mobile: 300px
@@ -1382,7 +1382,7 @@ components:
 
           Retomada e fundação: 2005
 
-          Situada no extremo norte da T.I. Jaraguá, a área onde está a Tekoa Itakupe é utilizada pelas comunidades Guarani desde as primeiras retomadas nos anos 1950 e 1960. Fundada em 2014, hoje é formada por três núcleos: Sol nascente, Toka da Onça e (confirmar como querem chamar o terceiro núcleo). Por estar localizada do outro lado do Pico do Jaraguá, próxima de suas formações rochosas, foi nomeada de Itakupe, que pode ser traduzido como “atrás da pedra”.
+          Situada no extremo norte da TI Jaraguá, a área onde está a Tekoa Itakupe é utilizada pelas comunidades Guarani desde as primeiras retomadas nos anos 1950 e 1960. Fundada em 2014, hoje é formada por três núcleos. Por estar localizada do outro lado do Pico do Jaraguá, próxima de suas formações rochosas, foi nomeada de Itakupe, que pode ser traduzido como “atrás da pedra”.
       - type: Spacer
         txtColor: ''
         bgColor: ''
@@ -1412,7 +1412,7 @@ components:
         wideImage: false
         src: /uploads/img_tekoa_itawera_cacica_maria.jpg
         alt: ''
-        description: A cacica Maria Ara Poty confeccionando artesanato em sua casa na Tekoa Itawera, recuperada de um grande depósito de lixo
+        description: A cacica Maria Ara Poty confeccionando artesanato em sua casa na Tekoa Itawera, recuperada de um grande depósito de lixo.
       - type: Spacer
         desktop: 50px
         tablet: 50px
@@ -1421,7 +1421,7 @@ components:
         wideImage: false
         src: /uploads/img_tekoa_itawera_cacica_maria.jpg
         alt: ''
-        description: A cacica Maria Ara Poty confeccionando artesanato em sua casa na Tekoa Itawera, recuperada de um grande depósito de lixo
+        description: A cacica Maria Ara Poty confeccionando artesanato em sua casa na Tekoa Itawera, recuperada de um grande depósito de lixo.
         txtColor: ''
         bgColor: ''
         mapView: map1_itaendy
@@ -1507,7 +1507,7 @@ components:
         content: |-
           ##### TEKOA YVY PORÃ
 
-          Retomada e fundação: década de 2018.
+          Retomada e fundação: 2018
 
           Assim como Itawera, Yvy Porã se estabeleceu em uma área antigamente destinada ao descarte de lixo urbano, situada no pé das matas do Pico do Jaraguá. Ao longo dos anos, a tekoa tornou-se importante referência de práticas ecológicas de des-poluição, recuperação e manutenção da Mata Atlântica. Yvy Porã, traduzido como “terra boa” ou “terra bela”, também é uma referência de práticas de recuperação de diversas espécies nativas de abelhas, como a jate’i (jatai), considerada sagrada.
         desktop: 500px
@@ -1521,7 +1521,7 @@ components:
         wideImage: false
         src: /uploads/img_tekoa_yvy_pora_marcioabelhas.jpg
         alt: ''
-        description: Márcio Wera Mirim, responsável por cuidar do enorme meliponário da Tekoa Yvy Porã
+        description: Márcio Wera Mirim, responsável por cuidar do enorme meliponário da Tekoa Yvy Porã.
       - type: Spacer
         desktop: 300px
         tablet: 300px
@@ -1541,7 +1541,7 @@ components:
 
           Retomada e fundação: 2023
 
-          Uma das tekoas mais recentes da T.I. Jaraguá, Pindó Mirim foi retomada em 2023. Situada no extremo noroeste da área demarcada, a comunidade vem desenvolvendo um forte trabalho de reparação ambiental, com foco na regeneração das áreas de Mata Atlântica afetadas pela construção do Rodoanel e plantações de eucaliptos. Destaca-se o reflorestamento com mais de 1500 mudas de árvores nativas e 300 mudas de árvores frutíferas.
+          Uma das tekoas mais recentes da TI, Pindó Mirim foi retomada em 2023. Situada no extremo noroeste da área demarcada, a comunidade vem desenvolvendo um forte trabalho de reparação ambiental, com foco na regeneração das áreas de Mata Atlântica afetadas pela construção do Rodoanel e plantações de eucaliptos. Destaca-se o reflorestamento com mais de 1500 mudas de árvores nativas e 300 mudas de árvores frutíferas.
       - type: Spacer
         desktop: 50px
         tablet: 50px
@@ -1550,7 +1550,7 @@ components:
         wideImage: false
         src: /uploads/img_tekoa_pindo_mirim_daniel.jpg
         alt: ''
-        description: Daniel Wera Mirim mostrando os remanescentes de plantações de eucalipito na Tekoa Pindó Mirim
+        description: Daniel Wera Mirim mostrando os remanescentes de plantações de eucalipito na Tekoa Pindó Mirim.
       - type: Spacer
         desktop: 300px
         tablet: 300px
@@ -1579,7 +1579,7 @@ components:
         wideImage: false
         src: /uploads/img_tekoa_mirim_marcio.jpg
         alt: ''
-        description: Marcio SOBRENOME e seu grande roçado em frente a Rodovia dos Bandeirantes na Tekoa Mirim
+        description: Marcio Wera Mirim e seu grande roçado em frente a Rodovia dos Bandeirantes na Tekoa Mirim.
       - type: Spacer
         desktop: 300px
         tablet: 300px
