@@ -392,7 +392,7 @@ mapbox:
       centerLng: '-46.850'
       centerLat: '-23.500'
       zoom: '9.92'
-      mobileZoom: '8.90'
+      mobileZoom: '8.00'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -473,7 +473,7 @@ mapbox:
       centerLng: '-46.769'
       centerLat: '-23.456'
       zoom: '13.04'
-      mobileZoom: '11.50'
+      mobileZoom: '11.00'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -502,7 +502,7 @@ mapbox:
       centerLng: '-46.850'
       centerLat: '-23.500'
       zoom: '9.92'
-      mobileZoom: '7.00'
+      mobileZoom: '7.50'
       duration: '4000'
       bearing: '0'
       pitch: '0'
@@ -1828,7 +1828,7 @@ components:
       - type: Spacer
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 700px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1848,7 +1848,7 @@ components:
       - type: Spacer
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 700px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1870,7 +1870,7 @@ components:
       - type: Spacer
         desktop: 600px
         tablet: 600px
-        mobile: 600px
+        mobile: 700px
       - type: MapView
         txtColor: ''
         bgColor: ''
@@ -1894,7 +1894,7 @@ components:
       - type: Spacer
         desktop: 300px
         tablet: 300px
-        mobile: 300px
+        mobile: 400px
       - type: MapView
         txtColor: ''
         bgColor: ''
