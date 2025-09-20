@@ -713,7 +713,7 @@ mapbox:
     - id: map3_anulacao
       centerLng: '-46.702'
       centerLat: '-23.511'
-      zoom: '11.54'
+      zoom: '11.40'
       mobileZoom: '9.30'
       duration: '4000'
       bearing: '0'
@@ -1828,7 +1828,7 @@ components:
         mapView: map2_jaraguasptudo
       - type: Spacer
         desktop: 600px
-        tablet: 600px
+        tablet: 900px
         mobile: 700px
       - type: MapView
         txtColor: ''
