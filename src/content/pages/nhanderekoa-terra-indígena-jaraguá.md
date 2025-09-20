@@ -765,7 +765,7 @@ mapbox:
     - id: map3_bloqueio
       centerLng: '-46.702'
       centerLat: '-23.507'
-      zoom: '11.69'
+      zoom: '11.40'
       mobileZoom: '9.20'
       duration: '4000'
       bearing: '0'
