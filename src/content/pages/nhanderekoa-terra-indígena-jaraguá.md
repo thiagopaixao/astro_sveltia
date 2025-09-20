@@ -2857,7 +2857,7 @@ components:
             mobile: 40px
           - type: ImageBlock
             wideImage: false
-            src: /uploads/bandeirantes.png
+            src: /uploads/bandeirantes_crop.png
             alt: ''
             description: 'Ocupação do Parque Estadual do Jaraguá e as antenas. Fonte: Rafael Vilela.'
       - type: Spacer   
@@ -3278,7 +3278,7 @@ components:
         mobile: 50px
       - type: ImageBlock
         wideImage: false
-        src: /uploads/bandeirantes.png
+        src: /uploads/bandeirantes_crop.png
         alt: asd
         description: Bloqueio da Rodovia dos Bandeirantes em 26/05/2021. Fonte Rafael Vilela
       - type: Spacer
