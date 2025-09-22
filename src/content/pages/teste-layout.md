@@ -1053,6 +1053,11 @@ components:
         mobile: 300px
       - type: Timeline
         components:
+          - type: Text
+            hasDropCap: false
+            content: |-
+              **Bloco: Timeline_Bloco: Text**
+
           - type: TimelineBullet
             content: |-
               ###### Bloco: Timeline_Content_Fonte: Heading 6_Sed ut perspiciatis unde omnis iste natus error 
