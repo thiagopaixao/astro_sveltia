@@ -2261,7 +2261,7 @@ components:
               mobile: 100px
             - type: ImageBlock
               wideImage: true
-              src: /uploads/imagem_12_mapaitaipu.jpg
+              src: /uploads/mapaitaipu_edit_documental.png
               alt: ''
               description: 'Mapa das tekoas inundadas e forçosamente removidas da região do lago artificial de Itaipu (Fonte: agência autônoma e CGY).'
   - type: Group
