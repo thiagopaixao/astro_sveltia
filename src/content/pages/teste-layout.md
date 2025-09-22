@@ -332,7 +332,7 @@ components:
               description: 'Bloco: Image Block_Wide: On_Description_Sed ut perspiciatis unde omnis iste natus error'
             - type: Pullquote
               content: 'Bloco: Pullquote _ Content_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.'
-              txtColor: ''
+              txtColor: '#660808ff'
               bgColor: ''
               byline: 'Bloco: Pullquote_Caption'
         column2:
