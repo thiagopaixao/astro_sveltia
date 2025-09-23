@@ -237,7 +237,7 @@ components:
         - type: CardsCall
           cardsCallArr:
             - link:
-                url: 'https://v1.documental.xyz/pt/alter-ameacada'
+                url: 'https://documental.xyz/alter-ameacada'
                 target: ''
                 customTarget: ''
               img:
