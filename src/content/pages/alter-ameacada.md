@@ -3,9 +3,9 @@ title: Alter do chao
 slug: alter-ameacada
 pageSettings:
   language: pt-BR
-  link_pt_br: /pt/alter-ameacada
-  link_en: /en/alter-ameacada
-  link_es: /es/alter-ameacada
+  link_pt_br: /alter-ameacada
+  link_en: /alter-ameacada-en
+  link_es: /alter-ameacada-es
   direction: left
   seoTitle: ''
   seoDescription: ''
