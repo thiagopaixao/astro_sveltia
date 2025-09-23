@@ -1,11 +1,11 @@
 ---
-title: Alter do Chão
-slug: alter-do-chao
+title: Alter do chao
+slug: teste-thiago
 pageSettings:
   language: pt-BR
-  link_pt_br: /alterdochao
-  link_en: /alterdochao-en
-  link_es: /alterdochao-es
+  link_pt_br: /testethiago
+  link_en: /testethiago-en
+  link_es: /testethiago-es
   direction: left
   seoTitle: ''
   seoDescription: ''
