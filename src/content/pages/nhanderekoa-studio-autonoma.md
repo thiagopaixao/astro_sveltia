@@ -688,7 +688,7 @@ components:
         paddingTop: true
         paddingBottom: true
         layout: text-bigger
-        title: teste
+        title: NHANDEREKOA
         components:
           - type: Spacer
             desktop: 800px
