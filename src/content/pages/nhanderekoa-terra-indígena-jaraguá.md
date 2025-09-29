@@ -2259,11 +2259,14 @@ components:
               desktop: 500px
               tablet: 500px
               mobile: 100px
-            - type: ImageBlock
+            - type: Gallery
               wideImage: true
               src: /uploads/mapaitaipu_edit_documental.png
               alt: ''
-              description: 'Mapa das tekoas inundadas e forçosamente removidas da região do lago artificial de Itaipu (Fonte: agência autônoma e CGY).'
+              description: ''
+              images:
+                - image: /uploads/mapaitaipu_edit_documental.png
+                  caption: 'Mapa das tekoas inundadas e forçosamente removidas da região do lago artificial de Itaipu (Fonte: agência autônoma e CGY).'
   - type: Group
     id: parte_5_retorno_a_democracia_e_demarcacao_da_tekoa_ytu
     shortTitle: parte 5 - Retorno a Democracia & Demarcacao da Tekoa Ytu
