@@ -2230,6 +2230,26 @@ components:
               src: /uploads/imagem_11_bandeirantesconstrucao.jpg
               alt: ''
               description: 'Obras da construção da Rodovia dos Bandeirantes na região do Pico do Jaraguá ( Fonte: Arquivo FGV CPDOC) Rodovia dos Bandeirantes na região do Pico do Jaraguá (Fonte: CPDOC FGV).'
+        column2:
+          components:
+            - type: Spacer
+              desktop: 100px
+              tablet: 100px
+              mobile: 100px
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/imagem_10_bandeirantes.jpg
+              alt: Inauguração da Rodovia dos Bandeirantes com a presença do ditador General Ernesto Geisel (Arquivo FGV CPDOC).
+              description: Inauguração da Rodovia dos Bandeirantes com a presença do ditador General Ernesto Geisel (Arquivo FGV CPDOC).
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components: []
+        column2:
+          components:
             - type: Text
               hasDropCap: true
               content: |-
@@ -2244,29 +2264,20 @@ components:
               wideVideo: true
               videoUrl: https://www.youtube.com/embed/Z3HS2j2acX4?si=ZylorkTY5cZrXczI
               videoCaption: 'Entrevista histórica com Marçal de Souza, liderança Guarani assassinada em 1983 (Fonte: Povos Indígenas no Brasil - Youtube).'
-        column2:
-          components:
-            - type: Spacer
-              desktop: 100px
-              tablet: 100px
-              mobile: 100px
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components: 
             - type: ImageBlock
-              wideImage: true
-              src: /uploads/imagem_10_bandeirantes.jpg
-              alt: Inauguração da Rodovia dos Bandeirantes com a presença do ditador General Ernesto Geisel (Arquivo FGV CPDOC).
-              description: Inauguração da Rodovia dos Bandeirantes com a presença do ditador General Ernesto Geisel (Arquivo FGV CPDOC).
-            - type: Spacer
-              desktop: 500px
-              tablet: 500px
-              mobile: 100px
-            - type: Gallery
               wideImage: true
               src: /uploads/mapaitaipu_edit_documental.png
               alt: ''
-              description: ''
-              images:
-                - image: /uploads/mapaitaipu_edit_documental.png
-                  caption: 'Mapa das tekoas inundadas e forçosamente removidas da região do lago artificial de Itaipu (Fonte: agência autônoma e CGY).'
+              description: 'Mapa das tekoas inundadas e forçosamente removidas da região do lago artificial de Itaipu (Fonte: agência autônoma e CGY).'
+        column2:
+          components: []
   - type: Group
     id: parte_5_retorno_a_democracia_e_demarcacao_da_tekoa_ytu
     shortTitle: parte 5 - Retorno a Democracia & Demarcacao da Tekoa Ytu
