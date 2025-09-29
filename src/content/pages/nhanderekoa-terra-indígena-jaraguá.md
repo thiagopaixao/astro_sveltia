@@ -3586,11 +3586,26 @@ components:
               wideVideo: true
               videoUrl: https://player.vimeo.com/video/1106449928?
               videoCaption: Trecho da entrevista com Daniel Wera, sobre as invasões de plantações de eucalipito na região da Tekoa Pindó Mirim.
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 66-33        
+        column1:
+          components:                    
             - type: ImageBlock
-              wideImage: true
+              wideImage: false
               src: /uploads/mapa_ameacas_crop.png
               alt: ''
               description: Mapa dos pontos e tipologias de ameaças indentificadas nas oficinas de mapeamento coletivo participativo.
+            - type: Spacer
+              desktop: 150px
+              tablet: 150px
+              mobile: 100px
+            - type: Text
+              hasDropCap: false
+              content: |-
+                A agência autônoma realizou todos os esforços para encontrar os detentores dos direitos autorais incidentes sobre as obras aqui publicadas. Caso identifique algum registro de sua autoria, solicitamos o contato pelo email autonoma@autonoma.xyz
   - type: Group
     id: downloads
     shortTitle: downloads
