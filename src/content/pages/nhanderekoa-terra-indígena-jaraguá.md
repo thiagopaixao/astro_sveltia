@@ -2245,18 +2245,9 @@ components:
         paddingTop: false
         paddingBottom: false
         invertOnMobile: false
-        columnsAlign: 66-33
+        columnsAlign: 33-66
         column1:
-          components: 
-            - type: Spacer
-              desktop: 250px
-              tablet: 250px
-              mobile: 100px
-            - type: ImageBlock
-              wideImage: true
-              src: /uploads/mapaitaipu_edit_documental.png
-              alt: ''
-              description: 'Mapa das tekoas inundadas e forçosamente removidas da região do lago artificial de Itaipu (Fonte: agência autônoma e CGY).'
+          components: []
         column2:
           components:
             - type: Text
@@ -2273,6 +2264,20 @@ components:
               wideVideo: true
               videoUrl: https://www.youtube.com/embed/Z3HS2j2acX4?si=ZylorkTY5cZrXczI
               videoCaption: 'Entrevista histórica com Marçal de Souza, liderança Guarani assassinada em 1983 (Fonte: Povos Indígenas no Brasil - Youtube).'
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 66-33
+        column1:
+          components: 
+            - type: ImageBlock
+              wideImage: true
+              src: /uploads/mapaitaipu_edit_documental.png
+              alt: ''
+              description: 'Mapa das tekoas inundadas e forçosamente removidas da região do lago artificial de Itaipu (Fonte: agência autônoma e CGY).'
+        column2:
+          components: []
   - type: Group
     id: parte_5_retorno_a_democracia_e_demarcacao_da_tekoa_ytu
     shortTitle: parte 5 - Retorno a Democracia & Demarcacao da Tekoa Ytu
