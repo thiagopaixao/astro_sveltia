@@ -2273,7 +2273,7 @@ components:
           components: 
             - type: ImageBlock
               wideImage: true
-              src: /uploads/edit_mapaguaranisul_documental.png
+              src: /uploads/edit_mapaguaranisul_documental_2.png
               alt: ''
               description: 'Mapa das tekoas inundadas e forçosamente removidas da região do lago artificial de Itaipu (Fonte: agência autônoma e CGY).'
         column2:
