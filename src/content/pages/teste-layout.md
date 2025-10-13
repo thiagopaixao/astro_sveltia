@@ -7,7 +7,7 @@ pageSettings:
   link_en: /layout-en
   link_es: /layout-es
   animations: enable_all
-  direction: left
+  direction: right
   seoTitle: ''
   seoDescription: ''
   seoKeywords: []
@@ -1055,9 +1055,7 @@ components:
         components:
           - type: Text
             hasDropCap: false
-            content: |-
-              **Bloco: Timeline_Bloco: Text**
-
+            content: '**Bloco: Timeline_Bloco: Text**'
           - type: TimelineBullet
             content: |-
               ###### Bloco: Timeline_Content_Fonte: Heading 6_Sed ut perspiciatis unde omnis iste natus error 
