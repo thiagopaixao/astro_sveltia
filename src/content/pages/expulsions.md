@@ -9,7 +9,7 @@ pageSettings:
   animations: disable_all
   direction: left
   seoTitle: ''
-  seoDescription: ''
+  seoDescription: OK
   seoKeywords: []
   seoImage: ''
 pageTheme:
