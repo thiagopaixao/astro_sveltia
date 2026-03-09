@@ -35,7 +35,7 @@ mapbox:
 components:
   - type: Cta
     id: teste
-    shortTitle: Teste
+    shortTitle: Teste!
     longTitle: ''
     description: ''
     showInMenu: false
