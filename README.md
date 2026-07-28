@@ -1,4 +1,4 @@
-# Documental 2.0
+# Plataforma Documental: Core
 
 ### Plataforma open-source para criação de sites estáticos focados em geo-narrativas e documentação de direitos humanos
 
@@ -26,9 +26,9 @@
 
 <p align="center">
 
-[![Use este modelo](https://img.shields.io/badge/Use%20este%20modelo-2ea44f?style=for-the-badge\&logo=github)](https://github.com/documental-xyz/template/generate)
-[![Desktop](https://img.shields.io/badge/Download-Desktop-0969da?style=for-the-badge\&logo=github)](https://github.com/documental-xyz/app-desktop)
-[![Deploy Cloudflare](https://img.shields.io/badge/Deploy-Cloudflare%20Pages-f38020?style=for-the-badge\&logo=cloudflare)](https://deploy.workers.cloudflare.com/)
+[![Use este modelo](https://img.shields.io/badge/Use%20este%20modelo-2ea44f?style=for-the-badge\&logo=github)](https://github.com/documental-xyz/Template/generate)
+[![Desktop](https://img.shields.io/badge/Download-Desktop-0969da?style=for-the-badge\&logo=github)](https://github.com/documental-xyz/Studio)
+
 
 </p>
 
