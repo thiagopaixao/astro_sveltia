@@ -32,11 +32,6 @@
 
 </p>
 
----
-
-> 📸 **Adicione aqui uma captura de tela ou GIF demonstrando uma narrativa criada com o Documental.**
-
----
 
 # O que é o Documental?
 
