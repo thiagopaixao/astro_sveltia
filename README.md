@@ -269,6 +269,421 @@ O **Documental Core** concentra todo o desenvolvimento da plataforma, incluindo 
 ---
 
 
+# Para Desenvolvedores e usuário avançados
+
+Esta seção é destinada a desenvolvedores, mantenedores e contribuidores do **Documental Core**.
+
+Se você deseja apenas criar um projeto utilizando a plataforma, recomendamos utilizar o **Documental Desktop** ou o **Documental Template**, apresentados na seção anterior.
+
+O **Core** contém toda a infraestrutura compartilhada do ecossistema Documental e é responsável por fornecer os componentes, layouts, integrações e funcionalidades utilizadas pelos demais projetos.
+
+---
+
+# Arquitetura
+
+O Documental segue uma arquitetura modular baseada em **JAMStack**, priorizando desempenho, simplicidade de hospedagem e baixo custo de manutenção.
+
+```
+                 ┌─────────────────────────┐
+                 │  Documental Desktop     │
+                 │ (Aplicação principal)   │
+                 └────────────┬────────────┘
+                              │
+                              │
+                 ┌────────────▼────────────┐
+                 │   Documental Template   │
+                 │ Projeto do usuário      │
+                 └────────────┬────────────┘
+                              │
+                    npm install @documental/core
+                              │
+                 ┌────────────▼────────────┐
+                 │    Documental Core      │
+                 │ Componentes e Engine    │
+                 └────────────┬────────────┘
+                              │
+               Astro • Svelte • Mapbox • CMS
+```
+
+O fluxo recomendado é:
+
+1. O usuário cria um projeto utilizando o **Template**.
+2. O Template instala automaticamente o **Documental Core** como dependência.
+3. O desenvolvimento do conteúdo acontece dentro do Template.
+4. O Core evolui independentemente e pode ser atualizado via NPM.
+5. O Desktop automatiza toda essa experiência.
+
+Essa separação permite que projetos sejam atualizados sem copiar código entre repositórios.
+
+---
+
+# Filosofia do projeto
+
+O Documental foi desenvolvido seguindo alguns princípios fundamentais.
+
+## Conteúdo separado da plataforma
+
+Projetos não precisam conter centenas de arquivos de infraestrutura.
+
+O objetivo é manter cada repositório focado apenas em:
+
+* conteúdo;
+* configuração;
+* identidade visual.
+
+Toda a lógica permanece no Core.
+
+---
+
+## Componentes reutilizáveis
+
+Toda funcionalidade deve ser implementada como um componente reutilizável.
+
+Isso reduz duplicação de código e facilita manutenção.
+
+---
+
+## Arquitetura baseada em arquivos
+
+O conteúdo é armazenado em arquivos versionáveis, facilitando:
+
+* Git;
+* revisão de alterações;
+* colaboração;
+* histórico;
+* backup.
+
+---
+
+## Open Source
+
+Toda a plataforma é construída como software livre.
+
+Novos componentes, melhorias e correções são sempre bem-vindos.
+
+---
+
+# Stack tecnológica
+
+O Core utiliza tecnologias modernas focadas em desempenho e experiência de desenvolvimento.
+
+| Tecnologia   | Finalidade                |
+| ------------ | ------------------------- |
+| Astro        | Framework principal       |
+| Svelte       | Componentes interativos   |
+| TypeScript   | Tipagem                   |
+| JavaScript   | Scripts                   |
+| SCSS         | Sistema de estilos        |
+| Vite         | Build                     |
+| Mapbox GL JS | Mapas                     |
+| Sveltia CMS  | Gerenciamento de conteúdo |
+
+---
+
+# Estrutura do projeto
+
+```
+src/
+│
+├── components/
+│   ├── content/
+│   ├── layout/
+│   ├── maps/
+│   ├── charts/
+│   ├── gallery/
+│   └── ...
+│
+├── layouts/
+│
+├── pages/
+│
+├── content/
+│
+├── assets/
+│
+├── lib/
+│
+└── styles/
+
+public/
+
+├── admin/
+├── uploads/
+└── assets/
+
+scripts/
+
+package.json
+astro.config.mjs
+vite.config.js
+```
+
+---
+
+# Instalação
+
+## Pré-requisitos
+
+* Node.js 20+
+* npm
+
+---
+
+## Clonando o projeto
+
+```bash
+git clone https://github.com/documental-xyz/core.git
+
+cd core
+```
+
+---
+
+## Instalando dependências
+
+```bash
+npm install
+```
+
+---
+
+## Ambiente de desenvolvimento
+
+Inicie o servidor local.
+
+```bash
+npm run dev
+```
+
+O projeto ficará disponível em:
+
+```
+http://localhost:4321
+```
+
+---
+
+## Build de produção
+
+```bash
+npm run build
+```
+
+Os arquivos serão gerados em:
+
+```
+dist/
+```
+
+---
+
+## Preview
+
+```bash
+npm run preview
+```
+
+---
+
+# Scripts disponíveis
+
+| Comando         | Descrição            |
+| --------------- | -------------------- |
+| npm install     | Instala dependências |
+| npm run dev     | Desenvolvimento      |
+| npm run build   | Build de produção    |
+| npm run preview | Preview local        |
+| npm run serve   | Servidor da build    |
+
+---
+
+# Desenvolvimento Online
+
+Caso não queira configurar um ambiente local, o projeto pode ser executado diretamente no navegador.
+
+## Gitpod
+
+[![Open in Gitpod](https://img.shields.io/badge/Open-Gitpod-orange?style=for-the-badge\&logo=gitpod)](https://gitpod.io/#https://github.com/documental-xyz/core)
+
+Ambiente completo de desenvolvimento em poucos segundos.
+
+---
+
+## StackBlitz
+
+[![Open in StackBlitz](https://img.shields.io/badge/Open-StackBlitz-1389FD?style=for-the-badge\&logo=stackblitz)](https://stackblitz.com/github/documental-xyz/core)
+
+Ideal para testes rápidos e exploração do código.
+
+---
+
+# Sistema de Componentes
+
+Toda a interface do Documental é construída a partir de componentes independentes.
+
+Os componentes são organizados por domínio de responsabilidade.
+
+Exemplos:
+
+* Conteúdo
+* Layout
+* Mapas
+* Gráficos
+* Galerias
+* Navegação
+* Utilidades
+
+Essa organização facilita:
+
+* manutenção;
+* testes;
+* reutilização;
+* evolução da plataforma.
+
+---
+
+# Sistema de Temas
+
+O Core possui um sistema completo de temas.
+
+Cada projeto pode definir sua própria identidade visual sem alterar componentes internos.
+
+É possível personalizar:
+
+* tipografia;
+* paleta de cores;
+* espaçamentos;
+* animações;
+* estilos globais.
+
+---
+
+# CMS
+
+O gerenciamento de conteúdo é realizado através do **Sveltia CMS**.
+
+Toda a configuração do CMS está localizada em:
+
+```
+public/admin/
+```
+
+Através dele é possível editar:
+
+* páginas;
+* componentes;
+* mapas;
+* imagens;
+* conteúdo multilíngue;
+* configurações do projeto.
+
+---
+
+# Mapas
+
+Os recursos de geonarrativa são implementados utilizando **Mapbox GL JS**.
+
+Entre as funcionalidades disponíveis:
+
+* múltiplas camadas;
+* filtros;
+* marcadores;
+* estilos customizados;
+* integração entre mapas e conteúdo;
+* parâmetros específicos para dispositivos móveis.
+
+---
+
+# Internacionalização
+
+O Core possui suporte nativo para múltiplos idiomas.
+
+Atualmente a plataforma oferece estrutura para:
+
+* Português
+* English
+* Español
+
+Novos idiomas podem ser adicionados facilmente.
+
+---
+
+# Publicação
+
+Os projetos gerados pelo Documental podem ser publicados em qualquer hospedagem compatível com sites estáticos.
+
+Entre elas:
+
+* GitHub Pages
+* Cloudflare Pages
+* Netlify
+* Vercel
+* servidores próprios
+
+---
+
+# Publicação do pacote NPM
+
+O Core é distribuído como pacote NPM e utilizado pelo **Documental Template**.
+
+Fluxo de publicação:
+
+1. Atualizar a versão no `package.json`.
+2. Criar uma tag Git.
+3. Enviar a tag para o GitHub.
+4. O GitHub Actions executará automaticamente:
+
+   * testes;
+   * build;
+   * publicação no NPM.
+
+```bash
+git tag v1.0.0
+
+git push --tags
+```
+
+---
+
+# Contribuindo
+
+Contribuições são muito bem-vindas.
+
+Você pode colaborar através de:
+
+* novos componentes;
+* melhorias de performance;
+* documentação;
+* correções de bugs;
+* testes;
+* internacionalização.
+
+Antes de abrir um Pull Request recomendamos:
+
+* verificar se já existe uma Issue relacionada;
+* seguir o padrão de código do projeto;
+* adicionar documentação para novos componentes;
+* manter compatibilidade com versões anteriores sempre que possível.
+
+---
+
+# Próximas seções
+
+As próximas partes do README apresentam:
+
+* Componentes disponíveis
+* Roadmap
+* Changelog
+* Créditos
+* Licença
+
+Essas informações complementam a documentação técnica e acompanham a evolução contínua do ecossistema Documental.
+
+
+
+---
+
+
 ## 📄 Licença
 
 Este projeto está licenciado sob a **GPL 2.0 License** - veja o arquivo [LICENSE](LICENSE) para detalhes.
