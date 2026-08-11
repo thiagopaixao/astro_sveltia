@@ -7,7 +7,7 @@
 [![Abrir no StackBlitz](https://img.shields.io/badge/Abrir%20no-StackBlitz-1269d3?style=for-the-badge&logo=stackblitz)](https://stackblitz.com/github/thiagopaixao/documentalxyz)
 [![Deploy no Cloudflare](https://img.shields.io/badge/Deploy-Cloudflare%20Pages-f38020?style=for-the-badge&logo=cloudflare)](https://deploy.workers.cloudflare.com/?url=https://github.com/thiagopaixao/documentalxyz)
 
-## 🚀 Tecnologias
+##  Tecnologias
 
 ![Astro](https://img.shields.io/badge/Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white)
 ![Sveltia CMS](https://img.shields.io/badge/Sveltia%20CMS-FF3E00?style=for-the-badge&logo=svelte&logoColor=white)
@@ -35,18 +35,17 @@
 
 # O que é o Documental?
 
-O Documental nasceu para resolver um problema comum entre jornalistas, pesquisadores, organizações da sociedade civil e instituições culturais: **como publicar narrativas digitais ricas, interativas e visualmente atraentes sem precisar desenvolver uma plataforma própria**.
+A Documental nasceu para resolver um problema comum entre jornalistas, pesquisadores, organizações da sociedade civil e instituições culturais: **como publicar narrativas digitais ricas, interativas e visualmente atraentes sem precisar desenvolver uma plataforma própria**.
 
 Ao invés de criar apenas páginas estáticas, o Documental permite combinar diferentes formas de conteúdo em uma única experiência:
-
-* 🗺️ mapas interativos;
-* 📝 textos e documentos;
-* 📷 imagens e galerias;
-* 🎥 vídeos incorporados;
-* 📊 visualizações de dados;
+* mapas interativos;
+* textos e documentos;
+* imagens e galerias;
+* vídeos incorporados;
+* visualizações de dados;
 * ⏳ linhas do tempo;
-* 📌 indicadores e destaques;
-* 🧩 componentes reutilizáveis.
+* indicadores e destaques;
+* componentes reutilizáveis.
 
 Tudo isso utilizando uma arquitetura moderna, aberta e baseada em arquivos, permitindo hospedar os projetos em qualquer serviço compatível com sites estáticos.
 
@@ -54,9 +53,9 @@ Tudo isso utilizando uma arquitetura moderna, aberta e baseada em arquivos, perm
 
 # O ecossistema Documental
 
-O Documental é composto por diferentes projetos que trabalham juntos para oferecer uma experiência completa, desde a criação até a publicação de um site.
+A Documental é composto por diferentes projetos que trabalham juntos para oferecer uma experiência completa, desde a criação até a publicação de um site.
 
-## 🖥️ Documental Desktop
+##  Documental Desktop
 
 [![Abrir repositório](https://img.shields.io/badge/GitHub-Documental%20Desktop-181717?style=for-the-badge\&logo=github)](https://github.com/documental-xyz/app-desktop)
 
@@ -65,7 +64,6 @@ A principal forma de utilizar a plataforma.
 O Desktop transforma o Documental em uma experiência semelhante a um aplicativo de edição, eliminando praticamente toda a complexidade técnica.
 
 Com ele é possível:
-
 * autenticar utilizando sua conta GitHub;
 * criar novos projetos em poucos cliques;
 * abrir projetos existentes;
@@ -79,7 +77,7 @@ Para a maioria dos usuários, esta será a única ferramenta necessária.
 
 ---
 
-## 📦 Documental Template
+##  Documental Template
 
 [![Abrir repositório](https://img.shields.io/badge/GitHub-Documental%20Template-181717?style=for-the-badge\&logo=github)](https://github.com/documental-xyz/template)
 
@@ -88,7 +86,6 @@ O Template é o ponto de partida para novos projetos.
 Ao criar um novo repositório a partir dele, você obtém uma estrutura pronta para começar a produzir conteúdo imediatamente.
 
 O Template abstrai praticamente todo o código da plataforma e utiliza o **Documental Core** como dependência NPM, mantendo o repositório do projeto focado apenas em:
-
 * conteúdo;
 * configurações;
 * identidade visual;
@@ -99,7 +96,7 @@ Dessa forma, atualizar a plataforma passa a ser tão simples quanto atualizar um
 
 ---
 
-## ⚙️ Documental Core
+##  Documental Core
 
 [![Abrir repositório](https://img.shields.io/badge/GitHub-Documental%20Core-181717?style=for-the-badge\&logo=github)](https://github.com/documental-xyz/core)
 
@@ -108,7 +105,6 @@ Dessa forma, atualizar a plataforma passa a ser tão simples quanto atualizar um
 Este repositório contém toda a infraestrutura compartilhada da plataforma.
 
 É nele que são desenvolvidos:
-
 * componentes visuais;
 * sistema de temas;
 * layouts;
@@ -125,30 +121,29 @@ Na maioria dos casos você **não precisará modificar este repositório diretam
 
 # O que você pode criar?
 
-O Documental foi projetado para qualquer projeto que combine narrativa, documentos e informação geográfica.
+A Documental foi projetado para qualquer projeto que combine narrativa, documentos e informação geográfica.
 
 Alguns exemplos:
-
-* 📰 Reportagens investigativas
-* ⚖️ Documentação de direitos humanos
-* 🗺️ Atlas digitais
-* 🏛 Projetos de memória
-* 🌎 Mapeamentos territoriais
-* 🌱 Projetos socioambientais
-* 📊 Relatórios institucionais
-* 📚 Pesquisas acadêmicas
-* 🏘 Diagnósticos urbanos
-* 📖 Exposições digitais
-* 🗂 Centros de documentação
-* 📈 Portais de transparência
-* 🎓 Projetos educacionais
-* 🧭 Observatórios temáticos
+* Reportagens investigativas
+* Documentação de direitos humanos
+* Atlas digitais
+* Projetos de memória
+* Mapeamentos territoriais
+* Projetos socioambientais
+* Relatórios institucionais
+* Pesquisas acadêmicas
+* Diagnósticos urbanos
+* Exposições digitais
+* Centros de documentação
+* Portais de transparência
+* Projetos educacionais
+* Observatórios temáticos
 
 ---
 
 # Principais recursos
 
-## ✨ Edição visual
+##  Edição visual
 
 Gerencie praticamente todo o conteúdo através de uma interface administrativa intuitiva.
 
@@ -156,12 +151,11 @@ Você pode editar páginas, textos, imagens, mapas e componentes sem precisar al
 
 ---
 
-## 🗺️ Mapas como parte da narrativa
+##  Mapas como parte da narrativa
 
-O Documental foi desenvolvido para que mapas não sejam apenas um elemento complementar, mas parte central da experiência.
+A Documental foi desenvolvido para que mapas não sejam apenas um elemento complementar, mas parte central da experiência.
 
 É possível criar narrativas geográficas utilizando:
-
 * múltiplas camadas;
 * filtros;
 * marcadores;
@@ -170,10 +164,9 @@ O Documental foi desenvolvido para que mapas não sejam apenas um elemento compl
 
 ---
 
-## 🧩 Biblioteca de componentes
+##  Biblioteca de componentes
 
 Monte páginas utilizando dezenas de componentes reutilizáveis, incluindo:
-
 * textos ricos;
 * galerias;
 * vídeos;
@@ -188,12 +181,11 @@ Monte páginas utilizando dezenas de componentes reutilizáveis, incluindo:
 
 ---
 
-## 🎨 Sistema de temas
+##  Sistema de temas
 
 Cada projeto possui sua própria identidade visual.
 
 Personalize facilmente:
-
 * cores;
 * tipografia;
 * espaçamentos;
@@ -202,16 +194,15 @@ Personalize facilmente:
 
 ---
 
-## 🌍 Multilíngue
+##  Multilíngue
 
 Estruture projetos em diferentes idiomas utilizando uma arquitetura preparada para internacionalização.
 
 ---
 
-## ⚡ Performance
+##  Performance
 
 Os projetos são publicados como sites estáticos modernos, oferecendo:
-
 * carregamento rápido;
 * excelente SEO;
 * alta segurança;
@@ -220,7 +211,7 @@ Os projetos são publicados como sites estáticos modernos, oferecendo:
 
 ---
 
-## 📱 Responsivo
+##  Responsivo
 
 Todos os componentes foram desenvolvidos para funcionar em computadores, tablets e dispositivos móveis.
 
@@ -228,10 +219,9 @@ Todos os componentes foram desenvolvidos para funcionar em computadores, tablets
 
 # Para quem é o Documental?
 
-O Documental foi pensado para equipes que precisam comunicar informações complexas de forma acessível.
+A Documental foi pensado para equipes que precisam comunicar informações complexas de forma acessível.
 
 Entre elas:
-
 * organizações da sociedade civil;
 * jornalistas;
 * pesquisadores;
@@ -254,7 +244,7 @@ Existem diferentes maneiras de utilizar o Documental, dependendo do seu perfil.
 
 ## Sou usuário
 
-➡️ **Utilize o Documental Desktop.**
+ **Utilize o Documental Desktop.**
 
 Ele oferece a experiência mais simples para criar, editar e publicar projetos, sem necessidade de configurar um ambiente de desenvolvimento.
 
@@ -262,7 +252,7 @@ Ele oferece a experiência mais simples para criar, editar e publicar projetos, 
 
 ## Quero contribuir com a plataforma
 
-➡️ **Você está no repositório correto.**
+ **Você está no repositório correto.**
 
 O **Documental Core** concentra todo o desenvolvimento da plataforma, incluindo componentes, arquitetura, integrações e funcionalidades compartilhadas.
 
@@ -281,7 +271,7 @@ O **Core** contém toda a infraestrutura compartilhada do ecossistema Documental
 
 # Arquitetura
 
-O Documental segue uma arquitetura modular baseada em **JAMStack**, priorizando desempenho, simplicidade de hospedagem e baixo custo de manutenção.
+A Documental segue uma arquitetura modular baseada em **JAMStack**, priorizando desempenho, simplicidade de hospedagem e baixo custo de manutenção.
 
 ```
                  ┌─────────────────────────┐
@@ -319,14 +309,13 @@ Essa separação permite que projetos sejam atualizados sem copiar código entre
 
 # Filosofia do projeto
 
-O Documental foi desenvolvido seguindo alguns princípios fundamentais.
+A Documental foi desenvolvido seguindo alguns princípios fundamentais.
 
 ## Conteúdo separado da plataforma
 
 Projetos não precisam conter centenas de arquivos de infraestrutura.
 
 O objetivo é manter cada repositório focado apenas em:
-
 * conteúdo;
 * configuração;
 * identidade visual.
@@ -346,7 +335,6 @@ Isso reduz duplicação de código e facilita manutenção.
 ## Arquitetura baseada em arquivos
 
 O conteúdo é armazenado em arquivos versionáveis, facilitando:
-
 * Git;
 * revisão de alterações;
 * colaboração;
@@ -423,7 +411,6 @@ vite.config.js
 # Instalação
 
 ## Pré-requisitos
-
 * Node.js 20+
 * npm
 
@@ -524,7 +511,6 @@ Toda a interface do Documental é construída a partir de componentes independen
 Os componentes são organizados por domínio de responsabilidade.
 
 Exemplos:
-
 * Conteúdo
 * Layout
 * Mapas
@@ -534,7 +520,6 @@ Exemplos:
 * Utilidades
 
 Essa organização facilita:
-
 * manutenção;
 * testes;
 * reutilização;
@@ -549,7 +534,6 @@ O Core possui um sistema completo de temas.
 Cada projeto pode definir sua própria identidade visual sem alterar componentes internos.
 
 É possível personalizar:
-
 * tipografia;
 * paleta de cores;
 * espaçamentos;
@@ -569,7 +553,6 @@ public/admin/
 ```
 
 Através dele é possível editar:
-
 * páginas;
 * componentes;
 * mapas;
@@ -584,7 +567,6 @@ Através dele é possível editar:
 Os recursos de geonarrativa são implementados utilizando **Mapbox GL JS**.
 
 Entre as funcionalidades disponíveis:
-
 * múltiplas camadas;
 * filtros;
 * marcadores;
@@ -599,7 +581,6 @@ Entre as funcionalidades disponíveis:
 O Core possui suporte nativo para múltiplos idiomas.
 
 Atualmente a plataforma oferece estrutura para:
-
 * Português
 * English
 * Español
@@ -613,7 +594,6 @@ Novos idiomas podem ser adicionados facilmente.
 Os projetos gerados pelo Documental podem ser publicados em qualquer hospedagem compatível com sites estáticos.
 
 Entre elas:
-
 * GitHub Pages
 * Cloudflare Pages
 * Netlify
@@ -632,10 +612,9 @@ Fluxo de publicação:
 2. Criar uma tag Git.
 3. Enviar a tag para o GitHub.
 4. O GitHub Actions executará automaticamente:
-
-   * testes;
-   * build;
-   * publicação no NPM.
+* testes;
+* build;
+* publicação no NPM.
 
 ```bash
 git tag v1.0.0
@@ -650,7 +629,6 @@ git push --tags
 Contribuições são muito bem-vindas.
 
 Você pode colaborar através de:
-
 * novos componentes;
 * melhorias de performance;
 * documentação;
@@ -659,7 +637,6 @@ Você pode colaborar através de:
 * internacionalização.
 
 Antes de abrir um Pull Request recomendamos:
-
 * verificar se já existe uma Issue relacionada;
 * seguir o padrão de código do projeto;
 * adicionar documentação para novos componentes;
@@ -670,7 +647,6 @@ Antes de abrir um Pull Request recomendamos:
 # Próximas seções
 
 As próximas partes do README apresentam:
-
 * Componentes disponíveis
 * Roadmap
 * Changelog
@@ -684,15 +660,15 @@ Essas informações complementam a documentação técnica e acompanham a evolu�
 ---
 
 
-## 📄 Licença
+##  Licença
 
 Este projeto está licenciado sob a **GPL 2.0 License** - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
 ### Uso Comercial
-✅ Permitido uso comercial  
-✅ Modificação e distribuição  
-✅ Uso privado  
-✅ Sem garantias  
+ Permitido uso comercial  
+ Modificação e distribuição  
+ Uso privado  
+ Sem garantias  
 
 ---
 
@@ -700,6 +676,6 @@ Este projeto está licenciado sob a **GPL 2.0 License** - veja o arquivo [LICENS
 
 **Documental 2.0** - Democratizando a criação de geo-narrativas para direitos humanos
 
-[🌐 Website](https://documental.xyz) • [📧 Contato](mailto:contato@autonoma.xyz)
+[ Website](https://documental.xyz) • [ Contato](mailto:contato@autonoma.xyz)
 
 </div>
