@@ -55,6 +55,7 @@ columns: &columns
             - *chartBar
             - *chartPercentage
             - *imageBlock
+            - *htmlEmbed
             - *videoEmbed
             - *logosGroup
             - *innerColumns
@@ -88,6 +89,7 @@ columns: &columns
             - *chartBar
             - *chartPercentage
             - *imageBlock
+            - *htmlEmbed
             - *videoEmbed
             - *logosGroup
             - *innerColumns
