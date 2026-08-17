@@ -1,6 +1,6 @@
 # Plataforma Documental: Core
 
-### Plataforma open-source para criação de sites estáticos focados em geo-narrativas e documentação de direitos humanos
+### Plataforma open-source para criação de sites focados em geo-narrativas e documentação de direitos humanos
 
 [![Use este modelo](https://img.shields.io/badge/Use%20este%20modelo-2ea44f?style=for-the-badge&logo=github)](https://github.com/thiagopaixao/documentalxyz/generate)
 [![Abrir no Gitpod](https://img.shields.io/badge/Abrir%20no-Gitpod-orange?style=for-the-badge&logo=gitpod)](https://gitpod.io/#https://github.com/thiagopaixao/documentalxyz)
@@ -22,7 +22,7 @@
 
 > **Crie narrativas digitais interativas com mapas, dados, documentos e multimídia.**
 >
-> O **Documental** é uma plataforma **open source** para criação de sites voltados à documentação, memória, pesquisa, jornalismo e direitos humanos. Ela reúne edição visual de conteúdo, mapas interativos e uma arquitetura moderna para que equipes possam publicar projetos complexos sem precisar desenvolver toda a infraestrutura do zero.
+> A **Documental** é uma plataforma **open source** para criação de sites voltados à documentação, memória, pesquisa e joralismo em casos de defesa de direitos humanos e ambientais. Ela reúne edição visual de conteúdo, mapas interativos e uma arquitetura moderna para que equipes possam publicar projetos complexos sem precisar desenvolver toda a infraestrutura do zero.
 
 <p align="center">
 
