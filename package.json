@@ -33,6 +33,7 @@
   "files": [
     "src/",
     "public/admin/",
+    "public/resources/",
     "public/favicon.svg",
     "integration.ts",
     "content.config.ts",

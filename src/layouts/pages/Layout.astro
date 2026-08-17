@@ -5,9 +5,11 @@ import '../../assets/styles/main.scss';
 interface Props {
 	title: string;
 	pageTheme?: any;
+	description?: string;
 }
-
-const { title, pageTheme = {} } = Astro.props;
+const DEFAULT_DESCRIPTION = 'Documental - o poder da visualização de dados nas mãos de ativistas, comunidades, e organizações de defesa de direitos';
+const { title, description = DEFAULT_DESCRIPTION, pageTheme = {} } = Astro.props;
+const ogImage = Astro.site ? new URL(`${import.meta.env.BASE_URL}resources/logo.jpeg`, Astro.site).href : '';
 
 const primaryColor = pageTheme?.primaryColor || '#000';
 const secondaryColor = pageTheme?.secondaryColor || '';
@@ -48,8 +50,14 @@ const styleString = spacingPatterns.map(pattern => `
 `}>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:type" content="website" />
+		{ogImage && <meta property="og:image" content={ogImage} />}
+		<meta name="twitter:card" content="summary" />
+		{ogImage && <meta name="twitter:image" content={ogImage} />}
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="stylesheet" href={displayFont} />
 		<link rel="stylesheet" href={textFont} />
