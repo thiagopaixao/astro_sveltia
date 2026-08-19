@@ -1359,6 +1359,7 @@ group: &group
       options:
         - { label: 'Dark', value: 'dark' }
         - { label: 'Light', value: 'light' }
+        - { label: 'None', value: 'none' }
       required: false
       collapsed: true
     - label: 'Components'
@@ -1506,7 +1507,7 @@ cta: &cta
     - label: 'Overlay'
       name: 'overlay'
       widget: 'select'
-      options: ['dark', 'light']
+      options: ['dark', 'light', 'none']
       required: false
       collapsed: true
     - label: 'Add media'

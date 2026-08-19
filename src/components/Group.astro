@@ -7,12 +7,19 @@ const { imgBg, videoBg, txtColor, bgColor, overlay } = Astro.props;
 // overlay recebe booleano
 
 const imgBgVar = imgBg && `url(${imgBg})`;
+
+// overlay: apenas 'dark'/'light' geram classe própria; qualquer valor
+// falsy/desconhecido (undefined, '', null, 'none') cai em group--overlay-none
+const overlayClass =
+  overlay === 'dark' || overlay === 'light'
+    ? `group--overlay-${overlay}`
+    : 'group--overlay-none';
 ---
 
 <section
   class:list={[
     "group",
-    `group--overlay-${overlay}`,
+    overlayClass,
     imgBg && `group--has-bg-image`,
   ]}
 >

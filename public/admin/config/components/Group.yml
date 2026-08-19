@@ -118,6 +118,7 @@ group: &group
       options:
         - { label: 'Dark', value: 'dark' }
         - { label: 'Light', value: 'light' }
+        - { label: 'None', value: 'none' }
       required: false
       collapsed: true
     - label: 'Components'
