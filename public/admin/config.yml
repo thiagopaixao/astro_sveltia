@@ -284,7 +284,7 @@ include: &include
       name: 'slug'
       widget: 'relation'
       collection: 'pages'
-      value_field: '{{slug}}'
+      value_field: 'slug'
       search_fields: ['title', 'slug']
       display_fields: ['title', 'slug']
       required: false
@@ -818,7 +818,7 @@ card: &card
       required: false
       collapsed: true
 cardsCall: &cardsCall
-  label: 'Action Cards'
+  label: 'Image Cards'
   name: 'CardsCall'
   widget: 'object'
   summary: '{{fields.cardsCallArr}}'
@@ -916,7 +916,7 @@ timeline: &timeline
         - *pullquote
         - *card
 cards: &cards
-  label: 'Image Cards'
+  label: 'Action Cards'
   name: 'Cards'
   widget: 'object'
   summary: '{{fields.cardsArr}}'

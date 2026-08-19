@@ -14,7 +14,7 @@ include: &include
       name: 'slug'
       widget: 'relation'
       collection: 'pages'
-      value_field: '{{slug}}'
+      value_field: 'slug'
       search_fields: ['title', 'slug']
       display_fields: ['title', 'slug']
       required: false
