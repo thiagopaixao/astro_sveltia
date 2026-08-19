@@ -1,5 +1,5 @@
 ---
-import { getEntry } from 'astro:content';
+import { getEntry, getCollection, render } from 'astro:content';
 import { PAGES_COLLECTION } from '../../lib/collections';
 import { mergeWithFallback } from '../../lib/config-merge';
 
@@ -57,7 +57,11 @@ const mainSlug = entry.data?.pageInclude?.mainSlug;
 if (mainSlug) {  // truthy check — '', null, undefined → no inheritance
   let parentEntry;
   try {
-    parentEntry = await getEntry(PAGES_COLLECTION, mainSlug);
+    // Precedence: frontmatter slug (data.slug) wins; entry id/filename is the
+    // fallback for pages without a frontmatter slug (backward compat).
+    const allPages = await getCollection(PAGES_COLLECTION);
+    parentEntry = allPages.find((p) => p.data.slug === mainSlug);
+    if (!parentEntry) parentEntry = await getEntry(PAGES_COLLECTION, mainSlug);
   } catch {
     parentEntry = undefined;  // slug not found — silently ignore
   }
@@ -104,18 +108,27 @@ const componentMap = {
   Button
 };
 
+// Language links are configured as page slugs in the CMS — build absolute
+// URLs (respect BASE_URL/BASE_PATH). Pass through '#', absolute and http(s) values untouched.
+const langUrl = (value?: string | null): string => {
+  if (!value) return '#';
+  if (value === '#' || value.startsWith('http') || value.startsWith('/')) return value;
+  const base = import.meta.env.BASE_URL.replace(/\/+$/, '');
+  return `${base}/${value}/`;
+};
+
 const languages = [
   {
     slug: "PT",
-    url: pageSettings?.link_pt_br || "#",
+    url: langUrl(pageSettings?.link_pt_br),
   },
   {
     slug: "EN",
-    url: pageSettings?.link_en || "#",
+    url: langUrl(pageSettings?.link_en),
   },
   {
     slug: "ES",
-    url: pageSettings?.link_es || "#",
+    url: langUrl(pageSettings?.link_es),
   },
 ];
 
@@ -216,7 +229,11 @@ const mainMenu = components
               }
 
               try {
-                const targetEntry = await getEntry(PAGES_COLLECTION, targetSlug);
+                // Precedence: frontmatter slug (data.slug) wins; entry id/filename is the
+                // fallback for pages without a frontmatter slug (backward compat).
+                const allPages = await getCollection(PAGES_COLLECTION);
+                let targetEntry = allPages.find((p) => p.data.slug === targetSlug);
+                if (!targetEntry) targetEntry = await getEntry(PAGES_COLLECTION, targetSlug);
                 if (!targetEntry) {
                   // Slug not found — render fallback inline
                   return <Include fallbackMessage={`Conteúdo de ${targetSlug} não encontrado.`} />;
@@ -239,7 +256,8 @@ const mainMenu = components
 
                 let renderedBody = null;
                 if (targetEntry.body && targetEntry.body.trim()) {
-                  const { Content } = await targetEntry.render();
+                  // getCollection entries lack entry.render(); use render() helper.
+                  const { Content } = await render(targetEntry);
                   renderedBody = <Content />;
                 }
 
