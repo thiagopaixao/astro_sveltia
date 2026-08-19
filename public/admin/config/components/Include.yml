@@ -12,15 +12,7 @@ include: &include
       collapsed: true
     - label: 'Target page slug'
       name: 'slug'
-      widget: 'relation'
-      collection: 'pages'
-      value_field: 'slug'
-      search_fields: ['title', 'slug']
-      display_fields: ['title', 'slug']
+      widget: 'string'
       required: false
-      hint: 'Select the page whose content will be included here.'
-      filters:
-        - field: slug
-          values: ['{{slug}}']
-          exclude: true
+      hint: 'Type the slug of the page whose content will be included here (the slug field of that page, not the file name).'
       collapsed: true
