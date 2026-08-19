@@ -19,7 +19,7 @@
         _showDirectoryPicker.call(window, { ...options, mode: 'readwrite' });
     </script>
 
-    <!-- Seed Sveltia CMS default preferences: closeOnSave = false (keep editor open after save) -->
+    <!-- Seed Sveltia CMS default preferences: closeOnSave = false (keep editor open after save), locale = en-US (pin UI to English) -->
     <script is:inline>
       (function () {
         const STORAGE_KEY = 'sveltia-cms.prefs';
@@ -27,8 +27,13 @@
           const prefs = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
           if (prefs.closeOnSave === undefined) {
             prefs.closeOnSave = false;
-            localStorage.setItem(STORAGE_KEY, JSON.stringify(prefs));
           }
+          if (prefs.locale === undefined) {
+            // Sveltia ignores the `locale` config option; UI language is stored in prefs.
+            // `en-US` is the canonical English locale (Sveltia migrates bare 'en' to it).
+            prefs.locale = 'en-US';
+          }
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(prefs));
         } catch (e) {
           // localStorage may be unavailable (private mode, etc.) — silently skip
         }

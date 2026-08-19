@@ -19,25 +19,25 @@ cta: &cta
       name: 'shortTitle'
       widget: 'string'
       required: true
-      hint: 'Título curto (obrigatório) - será usado no futuro'
+      hint: 'Short title (required) - will be used in the future'
       collapsed: true
     - label: 'Long Title'
       name: 'longTitle'
       widget: 'string'
       required: false
-      hint: 'Título longo usado como label no menu (opcional)'
+      hint: 'Long title used as the menu label (optional)'
       collapsed: true
     - label: 'Description'
       name: 'description'
       widget: 'text'
       required: false
-      hint: 'Descrição do componente (opcional) - será usado no futuro'
+      hint: 'Component description (optional) - will be used in the future'
       collapsed: true
     - label: 'Show in Menu'
       name: 'showInMenu'
       widget: 'boolean'
       default: false
-      hint: 'Ativar para mostrar este componente no menu de navegação'
+      hint: 'Enable to show this component in the navigation menu'
       collapsed: true
     - label: 'Animations'
       name: 'animations'
@@ -139,7 +139,7 @@ cta: &cta
               name: 'externalUrl'
               widget: 'string'
               required: false
-              hint: 'URL externa (opcional, substitui a imagem acima)'
+              hint: 'External URL (optional, replaces the image above)'
               collapsed: true
         - label: 'Video'
           name: 'ctaVideo'
@@ -156,7 +156,7 @@ cta: &cta
               name: 'externalUrl'
               widget: 'string'
               required: false
-              hint: 'URL externa (opcional, substitui o vídeo acima)'
+              hint: 'External URL (optional, replaces the video above)'
               collapsed: true
     - label: 'CTA Text'
       name: 'ctaText'

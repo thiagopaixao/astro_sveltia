@@ -224,7 +224,7 @@ button: &button
       name: 'icon'
       widget: 'string'
       required: false
-      hint: 'HTML do ícone Material Symbols, ex: <span class="material-symbols-outlined">arrow_right_alt</span>'
+      hint: 'Material Symbols icon HTML, e.g.: <span class="material-symbols-outlined">arrow_right_alt</span>'
       collapsed: true
     - label: 'Size'
       name: 'size'
@@ -280,7 +280,7 @@ include: &include
       widget: 'hidden'
       default: 'Include'
       collapsed: true
-    - label: 'Slug da página alvo'
+    - label: 'Target page slug'
       name: 'slug'
       widget: 'relation'
       collection: 'pages'
@@ -288,7 +288,7 @@ include: &include
       search_fields: ['title', 'slug']
       display_fields: ['title', 'slug']
       required: false
-      hint: 'Selecione a página cujo conteúdo será incluído aqui.'
+      hint: 'Select the page whose content will be included here.'
       filters:
         - field: slug
           values: ['{{slug}}']
@@ -973,6 +973,7 @@ innerColumns: &innerColumns
             - *chartBar
             - *chartPercentage
             - *imageBlock
+            - *htmlEmbed
             - *videoEmbed
             - *logosGroup
             - *bigNumbers
@@ -1112,6 +1113,7 @@ columns: &columns
             - *chartBar
             - *chartPercentage
             - *imageBlock
+            - *htmlEmbed
             - *videoEmbed
             - *logosGroup
             - *innerColumns
@@ -1145,6 +1147,7 @@ columns: &columns
             - *chartBar
             - *chartPercentage
             - *imageBlock
+            - *htmlEmbed
             - *videoEmbed
             - *logosGroup
             - *innerColumns
@@ -1270,7 +1273,7 @@ group: &group
       name: 'description'
       widget: 'text'
       required: false
-      hint: 'Descrição do grupo (opcional) - será usado no futuro'
+      hint: 'Group description (optional) - will be used in the future'
       collapsed: true
     - label: 'Show in Menu'
       name: 'showInMenu'
@@ -1408,25 +1411,25 @@ cta: &cta
       name: 'shortTitle'
       widget: 'string'
       required: true
-      hint: 'Título curto (obrigatório) - será usado no futuro'
+      hint: 'Short title (required) - will be used in the future'
       collapsed: true
     - label: 'Long Title'
       name: 'longTitle'
       widget: 'string'
       required: false
-      hint: 'Título longo usado como label no menu (opcional)'
+      hint: 'Long title used as the menu label (optional)'
       collapsed: true
     - label: 'Description'
       name: 'description'
       widget: 'text'
       required: false
-      hint: 'Descrição do componente (opcional) - será usado no futuro'
+      hint: 'Component description (optional) - will be used in the future'
       collapsed: true
     - label: 'Show in Menu'
       name: 'showInMenu'
       widget: 'boolean'
       default: false
-      hint: 'Ativar para mostrar este componente no menu de navegação'
+      hint: 'Enable to show this component in the navigation menu'
       collapsed: true
     - label: 'Animations'
       name: 'animations'
@@ -1528,7 +1531,7 @@ cta: &cta
               name: 'externalUrl'
               widget: 'string'
               required: false
-              hint: 'URL externa (opcional, substitui a imagem acima)'
+              hint: 'External URL (optional, replaces the image above)'
               collapsed: true
         - label: 'Video'
           name: 'ctaVideo'
@@ -1545,7 +1548,7 @@ cta: &cta
               name: 'externalUrl'
               widget: 'string'
               required: false
-              hint: 'URL externa (opcional, substitui o vídeo acima)'
+              hint: 'External URL (optional, replaces the video above)'
               collapsed: true
     - label: 'CTA Text'
       name: 'ctaText'
@@ -1602,25 +1605,25 @@ map: &map
       name: 'shortTitle'
       widget: 'string'
       required: true
-      hint: 'Título curto (obrigatório) - será usado no futuro'
+      hint: 'Short title (required) - will be used in the future'
       collapsed: true
     - label: 'Long Title'
       name: 'longTitle'
       widget: 'string'
       required: false
-      hint: 'Título longo usado como label no menu (opcional)'
+      hint: 'Long title used as the menu label (optional)'
       collapsed: true
     - label: 'Description'
       name: 'description'
       widget: 'text'
       required: false
-      hint: 'Descrição do componente (opcional) - será usado no futuro'
+      hint: 'Component description (optional) - will be used in the future'
       collapsed: true
     - label: 'Show in Menu'
       name: 'showInMenu'
       widget: 'boolean'
       default: false
-      hint: 'Ativar para mostrar este componente no menu de navegação'
+      hint: 'Enable to show this component in the navigation menu'
       collapsed: true
     - label: 'Animations'
       name: 'animations'
@@ -1868,7 +1871,7 @@ mapBox: &mapBox
               required: false
 collections:
   - name: 'pages'
-    label: 'Páginas'
+    label: 'Pages'
     folder: 'src/content/pages'
     create: true
     editor:
@@ -1878,14 +1881,14 @@ collections:
       default: by-projeto
       groups:
         - name: by-projeto
-          label: Projeto
+          label: Project
           field: projeto
     fields:
-      - { label: 'Preview', name: 'standalone', widget: 'boolean', default: true, required: false, hint: 'Desative se esta página só deve existir quando embutida via Include em outra.' }
+      - { label: 'Preview', name: 'standalone', widget: 'boolean', default: true, required: false, hint: 'Disable if this page should only exist when embedded via Include in another page.' }
 
       - { label: 'Title', name: 'title', widget: 'string', required: false }
       - { label: 'Slug', name: 'slug', widget: 'string', required: true, hint: 'final part of the URL that corresponds to this page (ex: documental.xyz/slug)' }
-      - { label: 'Project', name: 'projeto', widget: 'string', required: false, hint: 'Nome do projeto para agrupamento. Use o mesmo valor em páginas relacionadas.' }
+      - { label: 'Project', name: 'projeto', widget: 'string', required: false, hint: 'Project name for grouping. Use the same value in related pages.' }
 
       # Resources — all toggle sections.
       # `widget: object` + `required: false` makes Sveltia render a checkbox:
@@ -1906,7 +1909,7 @@ collections:
             search_fields: ['title', 'slug']
             display_fields: ['title', 'slug']
             required: false
-            hint: 'Slug da página principal desta cadeia.'
+            hint: 'Slug of the main page in this chain.'
             filters:
               - field: slug
                 values: ['{{slug}}']

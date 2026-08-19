@@ -37,7 +37,7 @@ button: &button
       name: 'icon'
       widget: 'string'
       required: false
-      hint: 'HTML do ícone Material Symbols, ex: <span class="material-symbols-outlined">arrow_right_alt</span>'
+      hint: 'Material Symbols icon HTML, e.g.: <span class="material-symbols-outlined">arrow_right_alt</span>'
       collapsed: true
     - label: 'Size'
       name: 'size'

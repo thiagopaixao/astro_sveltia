@@ -1,6 +1,6 @@
 collections:
   - name: 'pages'
-    label: 'Páginas'
+    label: 'Pages'
     folder: '${PAGES_FOLDER}'
     create: true
     editor:
@@ -10,14 +10,14 @@ collections:
       default: by-projeto
       groups:
         - name: by-projeto
-          label: Projeto
+          label: Project
           field: projeto
     fields:
-      - { label: 'Preview', name: 'standalone', widget: 'boolean', default: true, required: false, hint: 'Desative se esta página só deve existir quando embutida via Include em outra.' }
+      - { label: 'Preview', name: 'standalone', widget: 'boolean', default: true, required: false, hint: 'Disable if this page should only exist when embedded via Include in another page.' }
 
       - { label: 'Title', name: 'title', widget: 'string', required: false }
       - { label: 'Slug', name: 'slug', widget: 'string', required: true, hint: 'final part of the URL that corresponds to this page (ex: documental.xyz/slug)' }
-      - { label: 'Project', name: 'projeto', widget: 'string', required: false, hint: 'Nome do projeto para agrupamento. Use o mesmo valor em páginas relacionadas.' }
+      - { label: 'Project', name: 'projeto', widget: 'string', required: false, hint: 'Project name for grouping. Use the same value in related pages.' }
 
       # Resources — all toggle sections.
       # `widget: object` + `required: false` makes Sveltia render a checkbox:
@@ -38,7 +38,7 @@ collections:
             search_fields: ['title', 'slug']
             display_fields: ['title', 'slug']
             required: false
-            hint: 'Slug da página principal desta cadeia.'
+            hint: 'Slug of the main page in this chain.'
             filters:
               - field: slug
                 values: ['{{slug}}']
