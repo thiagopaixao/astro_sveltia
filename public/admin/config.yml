@@ -1360,6 +1360,7 @@ group: &group
         - { label: 'Dark', value: 'dark' }
         - { label: 'Light', value: 'light' }
       required: false
+      default: 'none'
       collapsed: true
     - label: 'Components'
       name: 'components'
@@ -1510,6 +1511,7 @@ cta: &cta
         - { label: 'Dark', value: 'dark' }
         - { label: 'Light', value: 'light' }
       required: false
+      default: 'none'
       collapsed: true
     - label: 'Add media'
       name: 'ctaMedia'

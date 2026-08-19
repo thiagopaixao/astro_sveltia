@@ -84,10 +84,8 @@ const overlayClass =
       }
 
       #{$self}--overlay-dark & {
-        color: var(--clr-black);
-
         &::after {
-          opacity: 0.5;
+          opacity: 0.6;
           mix-blend-mode: unset;
         }
 
@@ -97,10 +95,8 @@ const overlayClass =
       }
 
       #{$self}--overlay-light & {
-        color: var(--clr-white);
-
         &::after {
-          opacity: 0.5;
+          opacity: 0.25;
           mix-blend-mode: unset;
         }
 
