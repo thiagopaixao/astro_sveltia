@@ -1,6 +1,6 @@
 # Plataforma Documental: Core
 
-### Plataforma open-source para criação de sites focados em geo-narrativas e documentação de direitos humanos
+### Plataforma open source para criação de sites focados em geo-histórias e documentação de direitos humanos e ambientais
 
 [![Use este modelo](https://img.shields.io/badge/Use%20este%20modelo-2ea44f?style=for-the-badge&logo=github)](https://github.com/thiagopaixao/documentalxyz/generate)
 [![Abrir no Gitpod](https://img.shields.io/badge/Abrir%20no-Gitpod-orange?style=for-the-badge&logo=gitpod)](https://gitpod.io/#https://github.com/thiagopaixao/documentalxyz)
@@ -20,9 +20,9 @@
 
 # Documental
 
-> **Crie narrativas digitais interativas com mapas, dados, documentos e multimídia.**
+> **Crie histórias digitais interativas com mapas, dados, documentos e multimídia.**
 >
-> A **Documental** é uma plataforma **open source** para criação de sites voltados à documentação, memória, pesquisa e joralismo em casos de defesa de direitos humanos e ambientais. Ela reúne edição visual de conteúdo, mapas interativos e uma arquitetura moderna para que equipes possam publicar projetos complexos sem precisar desenvolver toda a infraestrutura do zero.
+> A **Documental** é uma plataforma **open source** para criação de sites voltados à documentação, memória, pesquisa e jornalismo em casos de defesa de direitos humanos e ambientais. Ela reúne edição visual de conteúdo, mapas interativos e uma arquitetura moderna para que equipes possam publicar projetos complexos sem precisar desenvolver toda a infraestrutura do zero.
 
 <p align="center">
 
@@ -33,17 +33,17 @@
 </p>
 
 
-# O que é o Documental?
+# O que é a Documental?
 
-A Documental nasceu para resolver um problema comum entre jornalistas, pesquisadores, organizações da sociedade civil e instituições culturais: **como publicar narrativas digitais ricas, interativas e visualmente atraentes sem precisar desenvolver uma plataforma própria**.
+A Documental nasceu para resolver um problema comum entre jornalistas, pesquisadores, organizações da sociedade civil e instituições culturais: **como publicar histórias digitais interativas e visualmente atraentes sem precisar desenvolver uma plataforma própria**.
 
-Ao invés de criar apenas páginas estáticas, o Documental permite combinar diferentes formas de conteúdo em uma única experiência:
+Ao invés de criar apenas páginas estáticas, a Documental permite combinar diferentes formas de conteúdo em uma única experiência:
 * mapas interativos;
 * textos e documentos;
 * imagens e galerias;
 * vídeos incorporados;
 * visualizações de dados;
-* ⏳ linhas do tempo;
+* linhas do tempo;
 * indicadores e destaques;
 * componentes reutilizáveis.
 
@@ -53,15 +53,15 @@ Tudo isso utilizando uma arquitetura moderna, aberta e baseada em arquivos, perm
 
 # O ecossistema Documental
 
-A Documental é composto por diferentes projetos que trabalham juntos para oferecer uma experiência completa, desde a criação até a publicação de um site.
+A Documental é composta por diferentes projetos que trabalham juntos para oferecer uma experiência completa, desde a criação até a publicação de um site.
 
-##  Documental Desktop
+## Aplicativo Documental para desktop
 
 [![Abrir repositório](https://img.shields.io/badge/GitHub-Documental%20Desktop-181717?style=for-the-badge\&logo=github)](https://github.com/documental-xyz/app-desktop)
 
 A principal forma de utilizar a plataforma.
 
-O Desktop transforma o Documental em uma experiência semelhante a um aplicativo de edição, eliminando praticamente toda a complexidade técnica.
+O aplicativo transforma a Documental em uma experiência semelhante a um aplicativo de edição, eliminando praticamente toda a complexidade técnica.
 
 Com ele é possível:
 * autenticar utilizando sua conta GitHub;
@@ -121,7 +121,7 @@ Na maioria dos casos você **não precisará modificar este repositório diretam
 
 # O que você pode criar?
 
-A Documental foi projetado para qualquer projeto que combine narrativa, documentos e informação geográfica.
+A Documental foi projetada para qualquer projeto que combine narrativa, textos, documentos e informação geográfica.
 
 Alguns exemplos:
 * Reportagens investigativas
@@ -153,7 +153,7 @@ Você pode editar páginas, textos, imagens, mapas e componentes sem precisar al
 
 ##  Mapas como parte da narrativa
 
-A Documental foi desenvolvido para que mapas não sejam apenas um elemento complementar, mas parte central da experiência.
+A Documental foi desenvolvida para que mapas não sejam apenas um elemento complementar, mas parte central da experiência.
 
 É possível criar narrativas geográficas utilizando:
 * múltiplas camadas;
@@ -167,8 +167,8 @@ A Documental foi desenvolvido para que mapas não sejam apenas um elemento compl
 ##  Biblioteca de componentes
 
 Monte páginas utilizando dezenas de componentes reutilizáveis, incluindo:
-* textos ricos;
-* galerias;
+* textos;
+* galerias de imagens;
 * vídeos;
 * linhas do tempo;
 * gráficos;
@@ -219,7 +219,7 @@ Todos os componentes foram desenvolvidos para funcionar em computadores, tablets
 
 # Para quem é o Documental?
 
-A Documental foi pensado para equipes que precisam comunicar informações complexas de forma acessível.
+A Documental foi pensada para equipes que precisam comunicar informações complexas de forma acessível.
 
 Entre elas:
 * organizações da sociedade civil;
@@ -244,7 +244,7 @@ Existem diferentes maneiras de utilizar o Documental, dependendo do seu perfil.
 
 ## Sou usuário
 
- **Utilize o Documental Desktop.**
+ **Utilize o Aplicativo Documental para desktop.**
 
 Ele oferece a experiência mais simples para criar, editar e publicar projetos, sem necessidade de configurar um ambiente de desenvolvimento.
 
@@ -263,7 +263,7 @@ O **Documental Core** concentra todo o desenvolvimento da plataforma, incluindo 
 
 Esta seção é destinada a desenvolvedores, mantenedores e contribuidores do **Documental Core**.
 
-Se você deseja apenas criar um projeto utilizando a plataforma, recomendamos utilizar o **Documental Desktop** ou o **Documental Template**, apresentados na seção anterior.
+Se você deseja apenas criar um projeto utilizando a plataforma, recomendamos utilizar o **Aplicativo Documental** ou o **Documental Template**, apresentados na seção anterior.
 
 O **Core** contém toda a infraestrutura compartilhada do ecossistema Documental e é responsável por fornecer os componentes, layouts, integrações e funcionalidades utilizadas pelos demais projetos.
 
@@ -275,21 +275,21 @@ A Documental segue uma arquitetura modular baseada em **JAMStack**, priorizando 
 
 ```
                  ┌─────────────────────────┐
-                 │  Documental Desktop     │
+                 │  Aplicativo Documental  │
                  │ (Aplicação principal)   │
                  └────────────┬────────────┘
                               │
                               │
                  ┌────────────▼────────────┐
                  │   Documental Template   │
-                 │ Projeto do usuário      │
+                 │   Projeto do usuário    │
                  └────────────┬────────────┘
                               │
                     npm install @documental/core
                               │
                  ┌────────────▼────────────┐
                  │    Documental Core      │
-                 │ Componentes e Engine    │
+                 │   Componentes e Engine  │
                  └────────────┬────────────┘
                               │
                Astro • Svelte • Mapbox • CMS
@@ -301,7 +301,7 @@ O fluxo recomendado é:
 2. O Template instala automaticamente o **Documental Core** como dependência.
 3. O desenvolvimento do conteúdo acontece dentro do Template.
 4. O Core evolui independentemente e pode ser atualizado via NPM.
-5. O Desktop automatiza toda essa experiência.
+5. O aplicativo automatiza toda essa experiência.
 
 Essa separação permite que projetos sejam atualizados sem copiar código entre repositórios.
 
@@ -309,7 +309,7 @@ Essa separação permite que projetos sejam atualizados sem copiar código entre
 
 # Filosofia do projeto
 
-A Documental foi desenvolvido seguindo alguns princípios fundamentais.
+A Documental foi desenvolvida seguindo alguns princípios fundamentais.
 
 ## Conteúdo separado da plataforma
 
@@ -506,7 +506,7 @@ Ideal para testes rápidos e exploração do código.
 
 # Sistema de Componentes
 
-Toda a interface do Documental é construída a partir de componentes independentes.
+Toda a interface da Documental é construída a partir de componentes independentes.
 
 Os componentes são organizados por domínio de responsabilidade.
 
@@ -591,7 +591,7 @@ Novos idiomas podem ser adicionados facilmente.
 
 # Publicação
 
-Os projetos gerados pelo Documental podem ser publicados em qualquer hospedagem compatível com sites estáticos.
+Os projetos gerados pela Documental podem ser publicados em qualquer hospedagem compatível com sites estáticos.
 
 Entre elas:
 * GitHub Pages
@@ -674,7 +674,7 @@ Este projeto está licenciado sob a **GPL 2.0 License** - veja o arquivo [LICENS
 
 <div align="center">
 
-**Documental 2.0** - Democratizando a criação de geo-narrativas para direitos humanos
+**Documental 2.0** - O poder da visualização de dados nas mãos de ativistas, comunidades e organizações civis para a defesa de direitos humanos e ambientais
 
 [ Website](https://documental.xyz) • [ Contato](mailto:contato@autonoma.xyz)
 
