@@ -114,7 +114,9 @@ cta: &cta
     - label: 'Overlay'
       name: 'overlay'
       widget: 'select'
-      options: ['dark', 'light', 'none']
+      options:
+        - { label: 'Dark', value: 'dark' }
+        - { label: 'Light', value: 'light' }
       required: false
       collapsed: true
     - label: 'Add media'
