@@ -455,7 +455,8 @@ export const pagesSchema = z.object({
       seoImage: z.string().optional(),
       animations: z.enum(['enable_all', 'disable_all', 'custom']).optional().default('enable_all'),
     })
-    .optional(),
+    .optional()
+    .nullable(),
   pageTheme: z
     .object({
       primaryColor: z.string().optional(),
@@ -475,7 +476,8 @@ export const pagesSchema = z.object({
         )
         .optional(),
     })
-    .optional(),
+    .optional()
+    .nullable(),
   pageInclude: z
     .object({
       mainSlug: z.string().optional(),
