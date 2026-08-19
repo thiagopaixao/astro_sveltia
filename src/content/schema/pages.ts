@@ -453,7 +453,10 @@ export const pagesSchema = z.object({
       seoDescription: z.string().optional(),
       seoKeywords: z.array(z.object({ keyword: z.string() })).optional(),
       seoImage: z.string().optional(),
-      animations: z.enum(['enable_all', 'disable_all', 'custom']).optional().default('enable_all'),
+      animations: z
+        .enum(['enable_all', 'disable_all', 'custom'])
+        .optional()
+        .default('enable_all'),
     })
     .optional()
     .nullable(),
