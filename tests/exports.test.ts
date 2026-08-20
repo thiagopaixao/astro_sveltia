@@ -6,7 +6,7 @@ import { globSync } from 'glob';
 // `import pkg from '../package.json' with { type: 'json' }` is not reliably
 // supported across vitest/vite/TS configs in this repo, so we parse manually.
 const pkg = JSON.parse(
-  fs.readFileSync(path.resolve(__dirname, '..', 'package.json'), 'utf8'),
+  fs.readFileSync(path.resolve(__dirname, '..', 'package.json'), 'utf8')
 );
 
 describe('package exports cover all .astro files (T10)', () => {
@@ -23,10 +23,6 @@ describe('package exports cover all .astro files (T10)', () => {
     expect(layouts.length).toBeGreaterThan(20);
     expect(pkg.exports['./layouts/*']).toBeDefined();
     expect(pkg.exports['./layouts/*']).toBe('./src/layouts/*');
-  });
-
-  it('has admin.astro exported', () => {
-    expect(pkg.exports['./admin.astro']).toBeDefined();
   });
 
   it('preserves required passthrough exports (Node 24 trySelf guard)', () => {
@@ -63,7 +59,9 @@ describe('package exports cover all .astro files (T10)', () => {
       const subpath = `./layouts/${rel.split(path.sep).join('/')}`;
       const target = pkg.exports['./layouts/*'] as string;
       const expectedTarget = target.replace('*', rel.split(path.sep).join('/'));
-      expect(expectedTarget).toBe(`./src/layouts/${rel.split(path.sep).join('/')}`);
+      expect(expectedTarget).toBe(
+        `./src/layouts/${rel.split(path.sep).join('/')}`
+      );
       expect(fs.existsSync(path.resolve(process.cwd(), file))).toBe(true);
     }
   });

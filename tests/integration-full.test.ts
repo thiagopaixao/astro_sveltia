@@ -6,7 +6,7 @@ import { createYamlMergePlugin } from '../src/vite/yaml-merge-plugin';
 /**
  * T13: full assembly of the `@documental-xyz/core` integration hook.
  * Validates that `astro:config:setup`:
- *   - injects /admin and /[slug] routes with bare specifiers
+ *   - injects / and /[slug] routes with absolute paths (admin is static)
  *   - injects global CSS via page-ssr script
  *   - calls updateConfig with the YAML merge Vite plugin
  *   - calls updateConfig with Vite resolve.alias overrides
@@ -37,12 +37,15 @@ describe('core() integration full assembly', () => {
     return { injectRoute, injectScript, updateConfig };
   }
 
-  it('hook injects /admin, /[slug], and / routes with absolute paths', async () => {
+  it('hook injects exactly / and /[slug] routes with absolute paths', async () => {
     const { injectRoute } = await runHook();
     const routes = injectRoute.mock.calls.map((c) => c[0]);
-    expect(routes.some((r) => r.pattern === '/admin')).toBe(true);
-    expect(routes.some((r) => r.pattern === '/[slug]')).toBe(true);
-    expect(routes.some((r) => r.pattern === '/')).toBe(true);
+    expect(routes).toHaveLength(2);
+    const patterns = routes.map((r) => r.pattern);
+    expect(patterns).toContain('/');
+    expect(patterns).toContain('/[slug]');
+    // The admin UI is a static public/admin/index.html — never an SSR route.
+    expect(patterns).not.toContain('/admin');
     // Entrypoints must be absolute paths (resolved via import.meta.url),
     // not bare specifiers — Astro requires this for self-referencing packages.
     for (const r of routes) {

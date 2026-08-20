@@ -5,8 +5,8 @@ slug: home
 projeto: Exemplo
 pageSettings:
   language: pt-BR
-  link_pt_br: /home3
-  link_en: /home-en
+  link_pt_br: /home
+  link_en: /teste
   link_es: /home-es
   animations: enable_all
   direction: right
@@ -643,8 +643,4 @@ components:
             imageRight: /uploads/toxicriver_after2.png
             caption: 'Bloco: Compare\_Caption\_Fonte: Paragraph'
     layout: default
-  - type: Include
-    id: id1
-    shortTitle: home22
-    slug: example2
 ---
