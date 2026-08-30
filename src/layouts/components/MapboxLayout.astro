@@ -1,4 +1,6 @@
 ---
+import { buildIconHtml } from '../../lib/caption-sanitize';
+
 const { Component, props } = Astro.props;
 const { style, center, zoom, bearing, pitch, layers, token, views, mapboxData } = props;
 
@@ -159,15 +161,11 @@ if (hasPageData) {
             title: view.title,
             notes: view.notes,
             items: view.items ? view.items.map(item => {
-              if (item.icon && item.colorIcon && item.typeIcon) {
-                const fillValue = item.iconFill ? 1 : 0;
-                const iconHtml = `<span class="material-symbols-${item.typeIcon}" style="color: ${item.colorIcon}; font-variation-settings: 'FILL' ${fillValue}">${item.icon}</span>`;
-                return {
-                  ...item,
-                  icon: iconHtml
-                };
-              }
-              return item;
+              const iconHtml = buildIconHtml(item);
+              return iconHtml ? {
+                ...item,
+                icon: iconHtml
+              } : item;
             }) : []
           };
         }

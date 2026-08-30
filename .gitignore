@@ -41,3 +41,5 @@ core
 .playwright-mcp/
 .serena
 .vscode
+
+src/content/pages/*
