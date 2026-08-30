@@ -451,9 +451,13 @@ export default class MapBoxHandler {
     const visibleLayerNames = normalizedLayers.map((layer) =>
       typeof layer === 'string' ? layer : layer.name
     );
-    const hideLayers = this.definedLayers.filter(
-      (entry) => !visibleLayerNames.includes(entry)
-    );
+    // definedLayers mistura objetos {name, filter} (mapConfig global) e strings
+    // (defineLayers) — normalizar para nome antes de comparar/esconder.
+    const hideLayers = this.definedLayers
+      .map((entry) =>
+        typeof entry === 'object' && entry !== null ? entry.name : entry
+      )
+      .filter((name) => !visibleLayerNames.includes(name));
 
     // Preparar atualizações para esconder layers
     const hideUpdates = hideLayers.map((layerName) => ({
