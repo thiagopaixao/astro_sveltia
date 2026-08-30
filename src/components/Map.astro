@@ -146,7 +146,11 @@ const mapViewComponents = components ? components.filter(comp => comp.type === '
       position: relative;
 
       #{$self}--floating-text & {
-        :global(> *:not(div):not(.image)),
+        // :not(script) — inline slot scripts (MapView) must keep the UA
+        // display:none; giving them a box overflows the viewport by ~33px
+        // (expands the mobile layout viewport) and reserves a phantom
+        // ~290px-tall line box inside the floating text.
+        :global(> *:not(div):not(.image):not(script)),
         :global(> .text > *) {
           display: inline;
           background-color: var(--clr-bg);
@@ -177,7 +181,7 @@ const mapViewComponents = components ? components.filter(comp => comp.type === '
           }
         }
 
-        :global(body:not(.is-safari)) & :global(> *:not(div):not(figure)),
+        :global(body:not(.is-safari)) & :global(> *:not(div):not(figure):not(script)),
         :global(body:not(.is-safari)) & :global(> .text > *) {
           padding: 0.2em 5px;
           margin-left: -5px;
