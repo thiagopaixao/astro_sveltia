@@ -1,3 +1,10 @@
+import { buildIconHtml } from '../../lib/caption-sanitize';
+
+// Exact shape produced server-side by buildIconHtml (MapboxLayout):
+// only this whitelist is inserted as HTML; anything else becomes text.
+const SAFE_ICON_HTML_RE =
+  /^<span class="material-symbols-(outlined|rounded|sharp)" style="color: [^;'"]+; font-variation-settings: 'FILL' [01]">[a-z0-9_-]+<\/span>$/i;
+
 export default class MapBoxHandler {
   constructor() {
     this.transitionScreenPoint = 75;
@@ -80,13 +87,51 @@ export default class MapBoxHandler {
   async initViewAnchors() {
     await this.setMapWindowDisplacers();
     await this.setMapAnchors();
-      
-    const resizeObserver = new ResizeObserver(
-      this.setPosToMapAnchors.bind(this)
-    );
+
+    this.lastAnchorGeometry = null;
+
+    const resizeObserver = new ResizeObserver(this.handleBodyResize.bind(this));
     resizeObserver.observe(document.body);
 
+    window.addEventListener(
+      'orientationchange',
+      this.handleOrientationChange.bind(this)
+    );
+
     return true;
+  }
+
+  handleBodyResize() {
+    // Coalesce resize bursts (mobile URL bar / dvh) trailing-edge: first run
+    // positions anchors immediately, later bursts never thrash layout mid-transition.
+    if (!this.lastAnchorGeometry) {
+      this.setPosToMapAnchors();
+      this.resizeMaps();
+      return;
+    }
+    clearTimeout(this.bodyResizeTimer);
+    this.bodyResizeTimer = setTimeout(() => {
+      this.bodyResizeTimer = null;
+      this.setPosToMapAnchors();
+      this.resizeMaps();
+    }, 120);
+  }
+
+  handleOrientationChange() {
+    // 250ms lets the new orientation's layout settle before syncing canvases.
+    setTimeout(() => this.resizeMaps(), 250);
+  }
+
+  resizeMaps() {
+    // No-op when maps are absent or failed to init (e.g. no WebGL headless).
+    [this.map, this.mapClone].forEach((map) => {
+      if (!map || typeof map.resize !== 'function') return;
+      try {
+        map.resize();
+      } catch {
+        // map not initialized — nothing to do
+      }
+    });
   }
 
   async initMaps() {
@@ -166,10 +211,8 @@ export default class MapBoxHandler {
   }
 
   async setPosToMapAnchors() {
-    const scrollPos = window.scrollY;
-    document.documentElement.style.scrollBehavior = 'unset';
-    window.scrollTo({ top: 0, behavior: 'instant' });
-        
+    if (!this.mapAnchors || !this.mapAnchors.length) return;
+
     const getTopDistance = (el) => {
       let distance = 0;
       while (el) {
@@ -180,7 +223,6 @@ export default class MapBoxHandler {
     };
 
     const getMobileAdjustment = (parent, index, top = false) => {
-      
       const mobileAdjustment =
         !parent.classList.value.includes(
           this.sels.mapFloating.replace('.', '')
@@ -195,6 +237,17 @@ export default class MapBoxHandler {
         : 0;
     };
 
+    // Sticky holders report scroll-dependent offsetTop: neutralize stickiness
+    // while measuring to get static positions without any synthetic scroll.
+    const savedPositions = [];
+    document.querySelectorAll(this.sels.mapContent).forEach((holder) => {
+      if (getComputedStyle(holder).position === 'sticky') {
+        savedPositions.push([holder, holder.style.position]);
+        holder.style.position = 'static';
+      }
+    });
+
+    const nextGeometry = [];
     this.mapWindows &&
       this.mapWindows.forEach((parent) => {
         let mapTriggers = parent.querySelectorAll(this.sels.triggers);
@@ -204,29 +257,48 @@ export default class MapBoxHandler {
             const anchorRef = document.querySelector(
               this.refs.anchorId(el.getAttribute(this.refs.triggerRef()))
             );
-      
-            anchorRef.style.top = `${
-              getTopDistance(el) + getMobileAdjustment(parent, index, true)
-            }px`;
+            const top =
+              getTopDistance(el) + getMobileAdjustment(parent, index, true);
+            let height;
             if (nextElement) {
-              const distanceToNext =
-                getTopDistance(nextElement) - getTopDistance(el);
-              anchorRef.style.height = `${
-                distanceToNext + getMobileAdjustment(parent, index)
-              }px`;
+              height =
+                getTopDistance(nextElement) -
+                getTopDistance(el) +
+                getMobileAdjustment(parent, index);
             } else {
               const parentBottomDistance =
                 getTopDistance(parent) + parent.offsetHeight;
-              const distanceToParentBottom =
+              height =
                 parentBottomDistance -
                 getTopDistance(el) -
                 getMobileAdjustment(parent, index, true);
-              anchorRef.style.height = `${distanceToParentBottom}px`;
             }
+            nextGeometry.push({ anchorRef, top, height });
           });
       });
-    window.scrollTo({ top: scrollPos, behavior: 'instant' });
-    document.documentElement.style.scrollBehavior = null;
+
+    savedPositions.forEach(([holder, position]) => {
+      holder.style.position = position;
+    });
+
+    // Resize churn (URL bar) that doesn't move anchors must not rewrite them.
+    const lastGeometry = this.lastAnchorGeometry;
+    const geometryChanged =
+      !lastGeometry ||
+      lastGeometry.length !== nextGeometry.length ||
+      nextGeometry.some(
+        (next, i) =>
+          next.anchorRef !== lastGeometry[i].anchorRef ||
+          Math.abs(next.top - lastGeometry[i].top) > 0.5 ||
+          Math.abs(next.height - lastGeometry[i].height) > 0.5
+      );
+    if (!geometryChanged) return;
+
+    nextGeometry.forEach(({ anchorRef, top, height }) => {
+      anchorRef.style.top = `${top}px`;
+      anchorRef.style.height = `${height}px`;
+    });
+    this.lastAnchorGeometry = nextGeometry;
   }
 
   async setMapWindowDisplacers() {
@@ -516,7 +588,17 @@ export default class MapBoxHandler {
         itemContainer.className = `${this.captionsId}__item`;
 
         let iconContainer = document.createElement('span');
-        iconContainer.innerHTML = item.icon;
+        const iconHtml = buildIconHtml(item);
+        if (iconHtml) {
+          iconContainer.innerHTML = iconHtml;
+        } else if (
+          typeof item.icon === 'string' &&
+          SAFE_ICON_HTML_RE.test(item.icon)
+        ) {
+          iconContainer.innerHTML = item.icon;
+        } else {
+          iconContainer.textContent = String(item.icon ?? '');
+        }
         itemContainer.appendChild(iconContainer);
 
         let textContainer = document.createElement('span');
@@ -531,7 +613,9 @@ export default class MapBoxHandler {
       notes.innerText = captions.notes;
       container.appendChild(notes);
     }
-    this.captionHolder.innerHTML += container.innerHTML;
+    const captionsFragment = document.createDocumentFragment();
+    captionsFragment.append(...container.childNodes);
+    this.captionHolder.appendChild(captionsFragment);
     holder.insertAdjacentElement('beforeend', this.captionHolder);
   }
 
@@ -575,9 +659,12 @@ export default class MapBoxHandler {
       return Object.values(offset);
 
     if (this.isMobile()) {
-      offset.y = this.isMobile()
-        ? window.innerHeight * ((1 - this.mapMobileHeight) * 0.005)
-        : 0;
+      // Shift the map center by half the MEASURED height of the mobile clone
+      // window (#mapbox-clone), so the point of interest centers in the strip
+      // visible below it. Clone hidden/height 0 → no Y displacement.
+      const cloneHolder = document.querySelector('#mapbox-clone');
+      const cloneHeight = cloneHolder ? cloneHolder.clientHeight : 0;
+      offset.y = cloneHeight > 0 ? -cloneHeight / 2 : 0;
     } else {
       offset.x = parent
         .querySelector(this.sels.mapContent)
