@@ -23,6 +23,12 @@ import yaml from 'js-yaml';
  *   column objects like `column1.components`).
  *
  * Pure functions are exported for reuse by Task 12 (resistencia_intro fix).
+ *
+ * PRINCIPLE (CI safety): no test in this repo may depend on pages other than
+ * the tracked `example.md`. Real-editorial censuses (the D1b debt gate) run
+ * ONLY when the local, gitignored `src/content/pages/nhanderekoa-*.md` exist;
+ * on a clean CI checkout they SKIP cleanly and never fail. Fixture-based
+ * meta-tests (mkdtemp) always run, tracked content or not.
  */
 
 // ---------------------------------------------------------------------------
@@ -263,7 +269,27 @@ const PAGES_DIR = fileURLToPath(
   new URL('../src/content/pages', import.meta.url)
 );
 
-describe('map-view-refs validator — real content', () => {
+/**
+ * Guard: the censuses below assert file:line against local editorial pages
+ * (`nhanderekoa-*.md` etc.) that are gitignored — only `example.md` is
+ * tracked, so a clean CI checkout (publish.yml runs `npm run test` after a
+ * fresh clone) does not have them and `findOrphanRefs` returns `[]`, which
+ * would fail the asserts. Skip the whole suite instead of failing; the
+ * mkdtemp fixture meta-tests below stay unconditional.
+ */
+const hasEditorial = fs.existsSync(
+  path.join(PAGES_DIR, 'nhanderekoa-studio-autonoma.md')
+);
+
+const describeRealContent = hasEditorial ? describe : describe.skip;
+
+describeRealContent('map-view-refs validator — real content', () => {
+  it('guard: local editorial pages are present — censuses below are the D1b debt gate (CI checkout skips this suite)', () => {
+    expect(
+      fs.existsSync(path.join(PAGES_DIR, 'nhanderekoa-studio-autonoma.md'))
+    ).toBe(true);
+  });
+
   it('resistencia_intro — exact census after Task 12 (D1): 5 orphan refs left, all in studio-autonoma (D1b debt)', () => {
     const orphans = findOrphanRefs(PAGES_DIR);
     const refs = orphans.filter((o) => o.view === 'resistencia_intro');
