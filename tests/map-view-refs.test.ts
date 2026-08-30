@@ -264,39 +264,33 @@ const PAGES_DIR = fileURLToPath(
 );
 
 describe('map-view-refs validator — real content', () => {
-  it('pending: resistencia_intro — exact census: 9 refs in 3 files (known bug, plan §Bug 3)', () => {
+  it('resistencia_intro — exact census after Task 12 (D1): 5 orphan refs left, all in studio-autonoma (D1b debt)', () => {
     const orphans = findOrphanRefs(PAGES_DIR);
     const refs = orphans.filter((o) => o.view === 'resistencia_intro');
-    // Census is the plan's ground truth — a divergent count means the
-    // validator itself is buggy (task acceptance: "census divergente").
+    // Task 12 added the view to nhanderekoa.md's MapBox module, so the 4 refs
+    // in nhanderekoa-2/-3 resolve via parent/includer. studio-autonoma has its
+    // own MapBox module without resistencia_intro → its 5 refs stay orphan by
+    // decision D1b (documented debt, not fixed in this round).
     expect(refs.map((r) => `${r.file}:${r.line}`)).toEqual([
-      'nhanderekoa-2.md:627',
-      'nhanderekoa-2.md:1348',
-      'nhanderekoa-3.md:111',
-      'nhanderekoa-3.md:550',
       'nhanderekoa-studio-autonoma.md:1406',
       'nhanderekoa-studio-autonoma.md:2102',
       'nhanderekoa-studio-autonoma.md:2207',
       'nhanderekoa-studio-autonoma.md:2313',
       'nhanderekoa-studio-autonoma.md:2362',
     ]);
-    expect(new Set(refs.map((r) => r.file)).size).toBe(3);
+    expect(new Set(refs.map((r) => r.file)).size).toBe(1);
   });
 
-  it.fails(
-    'pending: resistencia_intro — zero orphan refs in D1 scope (nhanderekoa.md/-2/-3) once Task 12 defines the view in the parent',
-    () => {
-      // Controlled failure documenting the bug. Task 12 (D1: add the view to
-      // nhanderekoa.md's MapBox module) makes this assertion pass — then drop
-      // the `.fails` marker there.
-      const inD1Scope = findOrphanRefs(PAGES_DIR).filter(
-        (o) =>
-          o.view === 'resistencia_intro' &&
-          o.file !== 'nhanderekoa-studio-autonoma.md'
-      );
-      expect(inD1Scope).toHaveLength(0);
-    }
-  );
+  it('resistencia_intro — zero orphan refs in D1 scope (nhanderekoa.md/-2/-3): view defined in the parent since Task 12', () => {
+    // Task 12 (D1: add the view to nhanderekoa.md's MapBox module) makes the
+    // 4 refs in nhanderekoa-2/-3 resolve via parent/includer semantics.
+    const inD1Scope = findOrphanRefs(PAGES_DIR).filter(
+      (o) =>
+        o.view === 'resistencia_intro' &&
+        o.file !== 'nhanderekoa-studio-autonoma.md'
+    );
+    expect(inD1Scope).toHaveLength(0);
+  });
 
   it('pending: D1b debt — the 5 studio-autonoma refs stay documented (own MapBox module, no parent, out of scope by decision)', () => {
     const refs = findOrphanRefs(PAGES_DIR).filter(
