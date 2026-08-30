@@ -8,7 +8,7 @@ import astroParser from 'astro-eslint-parser';
 export default [
   {
     // Ignorar pastas específicas
-    ignores: ['node_modules/**', 'dist/**', '.turbo/**'],
+    ignores: ['node_modules/**', 'dist/**', '.turbo/**', '.astro/**'],
   },
   {
     // Configuração para JavaScript e TypeScript
@@ -68,6 +68,9 @@ export default [
   {
     // Configuração específica para arquivos Node.js
     files: ['**/*.cjs', '**/*.mjs', '**/*.js'],
+    plugins: {
+      prettier: eslintPluginPrettier,
+    },
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
