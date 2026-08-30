@@ -1,7 +1,7 @@
 {
   "name": "@documental-xyz/core",
   "type": "module",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Documental Core \u2014 geo-narrative static sites with CMS",
   "license": "MIT",
   "repository": {
