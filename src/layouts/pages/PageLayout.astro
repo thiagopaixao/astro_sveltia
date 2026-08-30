@@ -49,6 +49,16 @@ let pageSettings = entry.data.pageSettings;
 let pageTheme = entry.data?.pageTheme;
 let mapbox = entry.data.modules?.find((m: any) => m.type === 'MapBox') || null;
 
+// Resolve a page entry by frontmatter slug (data.slug) first, entry id/filename
+// as fallback (backward compat). Shared precedence by pageInclude inheritance,
+// the Include renderer and the mainMenu walk below — keep them in sync.
+async function resolvePageEntry(pageSlug) {
+  const allPages = await getCollection(PAGES_COLLECTION);
+  let target = allPages.find((p) => p.data.slug === pageSlug);
+  if (!target) target = await getEntry(PAGES_COLLECTION, pageSlug);
+  return target || null;
+}
+
 // pageInclude.mainSlug inheritance — FALLBACK merge from parent page.
 // Activates only on sub-pages rendering on their own route (standalone:true).
 // Own configs always win; parent only fills gaps. See src/lib/config-merge.ts
@@ -57,11 +67,7 @@ const mainSlug = entry.data?.pageInclude?.mainSlug;
 if (mainSlug) {  // truthy check — '', null, undefined → no inheritance
   let parentEntry;
   try {
-    // Precedence: frontmatter slug (data.slug) wins; entry id/filename is the
-    // fallback for pages without a frontmatter slug (backward compat).
-    const allPages = await getCollection(PAGES_COLLECTION);
-    parentEntry = allPages.find((p) => p.data.slug === mainSlug);
-    if (!parentEntry) parentEntry = await getEntry(PAGES_COLLECTION, mainSlug);
+    parentEntry = await resolvePageEntry(mainSlug);
   } catch {
     parentEntry = undefined;  // slug not found — silently ignore
   }
@@ -134,14 +140,47 @@ const languages = [
   },
 ];
 
-const mainMenu = components
-  ? components
-      .filter(component => component.id && component.showInMenu === true)
-      .map(component => ({
+// Build the section menu walking components in array order and entering
+// Include targets depth-1 (mirrors renderComponents below), so pages composed
+// only of includes still get section links. Own components keep the original
+// id/showInMenu filter; duplicate ids are emitted once.
+async function collectMainMenu(componentList, depth = 0, seenIds = new Set()) {
+  if (!componentList) return [];
+
+  const items = [];
+  for (const component of componentList) {
+    if (component.type === 'Include') {
+      if (depth >= 1) continue;
+      const targetSlug = component.slug || component.targetSlug;
+      try {
+        const targetEntry = await resolvePageEntry(targetSlug);
+        if (targetEntry) {
+          items.push(
+            ...await collectMainMenu(
+              targetEntry.data.components || [],
+              depth + 1,
+              seenIds
+            )
+          );
+        }
+      } catch {
+        // slug not found — renderer shows its own fallback
+      }
+      continue;
+    }
+
+    if (component.id && component.showInMenu === true && !seenIds.has(component.id)) {
+      seenIds.add(component.id);
+      items.push({
         text: component.longTitle || component.shortTitle,
         url: `#${component.id}`,
-      }))
-  : [];
+      });
+    }
+  }
+  return items;
+}
+
+const mainMenu = await collectMainMenu(components);
 ---
 
 <Layout title={title} pageTheme={pageTheme}>
@@ -231,11 +270,9 @@ const mainMenu = components
               }
 
               try {
-                // Precedence: frontmatter slug (data.slug) wins; entry id/filename is the
-                // fallback for pages without a frontmatter slug (backward compat).
-                const allPages = await getCollection(PAGES_COLLECTION);
-                let targetEntry = allPages.find((p) => p.data.slug === targetSlug);
-                if (!targetEntry) targetEntry = await getEntry(PAGES_COLLECTION, targetSlug);
+                // Same resolution precedence as resolvePageEntry:
+                // frontmatter slug (data.slug) wins; entry id is the fallback.
+                const targetEntry = await resolvePageEntry(targetSlug);
                 if (!targetEntry) {
                   // Slug not found — render fallback inline
                   return <Include fallbackMessage={`Conteúdo de ${targetSlug} não encontrado.`} />;

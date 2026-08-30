@@ -245,32 +245,39 @@ const { languages, menu, sideLink, title } = Astro.props;
 
   function toggleFixedMenu() {
     let lastScroll = window.scrollY || document.documentElement.scrollTop;
-		const scrollUpThreshold = 5;
-		const offset = 100;
+    const scrollUpThreshold = 5;
+    // Synthetic churn (mobile URL bar / forced resize loops) nudges the
+    // viewport a few pixels back and forth. Hold the anchor position until a
+    // real gesture accumulates enough distance to cross the threshold.
+    const microDeltaThreshold = 8;
+    const offset = 100;
     const topBar = document.querySelector('.topbar');
+    const menu = document.querySelector('#menu');
 
-		window.addEventListener('scroll', e => {
-			const scrollTop = window.scrollY || document.documentElement.scrollTop;
-			
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-			if(scrollTop > offset) {
-				topBar.classList.add('-hidden');
+      if (Math.abs(scrollTop - lastScroll) < microDeltaThreshold) return;
 
-				if (lastScroll - scrollTop > scrollUpThreshold) {
-					topBar.classList.add('-fixed');
-				}
+      const menuOpen = menu && menu.getAttribute('aria-hidden') === 'false';
 
-				if(scrollTop - lastScroll > scrollUpThreshold) {
-					topBar.classList.remove('-fixed');
-				}
-			} else {
-				topBar.classList.remove('-hidden', '-fixed');
+      if (scrollTop <= offset) {
+        topBar.classList.remove('-hidden', '-fixed');
+      } else if (!menuOpen) {
+        // Never collapse the topbar while the menu is open.
+        topBar.classList.add('-hidden');
 
-				return;
-			}
+        if (lastScroll - scrollTop > scrollUpThreshold) {
+          topBar.classList.add('-fixed');
+        }
 
-			lastScroll = scrollTop <= 0 ? 0 : scrollTop;
-		});
+        if (scrollTop - lastScroll > scrollUpThreshold) {
+          topBar.classList.remove('-fixed');
+        }
+      }
+
+      lastScroll = scrollTop <= 0 ? 0 : scrollTop;
+    });
   }
 
   toggleFixedMenu();
