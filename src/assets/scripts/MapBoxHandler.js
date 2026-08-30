@@ -76,6 +76,8 @@ export default class MapBoxHandler {
     this.map = null;
     this.mapClone = null;
     this.originalFilters = {};
+    this.mapsReady = false;
+    this.activeMapWindow = false;
 
     this.countIntersectionEvents = 0;
 
@@ -107,6 +109,7 @@ export default class MapBoxHandler {
     if (!this.lastAnchorGeometry) {
       this.setPosToMapAnchors();
       this.resizeMaps();
+      this.syncMapVisibility();
       return;
     }
     clearTimeout(this.bodyResizeTimer);
@@ -114,6 +117,7 @@ export default class MapBoxHandler {
       this.bodyResizeTimer = null;
       this.setPosToMapAnchors();
       this.resizeMaps();
+      this.syncMapVisibility();
     }, 120);
   }
 
@@ -153,8 +157,11 @@ export default class MapBoxHandler {
   }
 
   async mapsOnLoad() {
-    this.mapHolder.style.opacity = 1;
-    this.mapHolderClone && (this.mapHolderClone.style.opacity = 1);
+    // Initial visibility follows the page's first map window: on mobile only
+    // ONE instance is ever visible (normal section → clone strip; floating
+    // section or floating-only page → main map). Desktop always shows main.
+    this.mapsReady = true;
+    this.syncMapVisibility(this.mapWindows[0]);
     this.storeOriginalFilters();
     this.defineLayers();
     this.displayLayers(this.initView.layers, true);
@@ -493,6 +500,8 @@ export default class MapBoxHandler {
       ? { ...viewParameters, offset: this.getDiplacedOffset(refEl) }
       : viewParameters;
 
+    refEl && this.syncMapVisibility(refEl.closest(this.sels.mapWindows));
+
     refEl &&
       setTimeout(() => {
         this.generateCaptionsHTML(
@@ -557,6 +566,7 @@ export default class MapBoxHandler {
       );
     };
     const isTopEl = isTop();
+    isTopEl && this.syncMapVisibility(this.mapWindows[0]);
     isTopEl && this.move(this.initView);
   }
 
@@ -624,6 +634,34 @@ export default class MapBoxHandler {
   }
 
   /* Helpers */
+
+  // Exactly ONE map instance may be visible at a time on mobile: normal
+  // sections render the 52vh clone strip; floating-text sections render the
+  // main map as a full-bleed backdrop. Two simultaneous instances produce a
+  // visible seam (independent canvases/timings). Desktop (>= 992px) always
+  // shows the main map — the clone is display:none via CSS.
+  syncMapVisibility(mapWindow = false) {
+    if (!this.mapsReady) return;
+    mapWindow && (this.activeMapWindow = mapWindow);
+
+    const floatingClass = this.sels.mapFloating.replace('.', '');
+    const isFloatingSection =
+      this.activeMapWindow &&
+      this.activeMapWindow.classList.value.includes(floatingClass);
+
+    let mainOpacity = 1;
+    let cloneOpacity = 0;
+
+    if (this.isMobile() && this.mapHolderClone) {
+      mainOpacity = isFloatingSection ? 1 : 0;
+      cloneOpacity = isFloatingSection ? 0 : 1;
+    }
+
+    this.mapHolder.style.opacity = mainOpacity;
+    if (this.mapHolderClone) {
+      this.mapHolderClone.style.opacity = cloneOpacity;
+    }
+  }
 
   isMobile() {
     return window.matchMedia(`(max-width:${this.mobileBreakPoint}px`).matches;
