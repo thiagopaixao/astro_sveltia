@@ -220,27 +220,33 @@ const { languages, menu, sideLink, title } = Astro.props;
 </style>
 
 <script>
+  function setMenuOpen(open) {
+    const menu = document.querySelector('#menu');
+    if (!menu) return;
+
+    menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+
+    if (open) {
+      document.body.setAttribute('menu-open', '');
+    } else {
+      document.body.removeAttribute('menu-open');
+    }
+  }
+
   //modal
   function toggleMenu() {
     const triggers = document.querySelectorAll('[aria-controls="menu"]');
 
-    triggers.forEach(trigger => {
-      trigger.addEventListener('click', e => {
+    triggers.forEach((trigger) => {
+      trigger.addEventListener('click', (e) => {
         e.preventDefault();
 
         const targetId = trigger.getAttribute('aria-controls');
         const target = document.querySelector(`#${targetId}`);
-        const targetState = target.getAttribute('aria-hidden')
-        
-        target.setAttribute('aria-hidden', targetState === "true" ? "false" : "true");
 
-        if(document.body.hasAttribute('menu-open')) {
-          document.body.removeAttribute('menu-open');
-        } else {
-          document.body.setAttribute('menu-open', '');
-        }
-      })
-    })
+        setMenuOpen(target.getAttribute('aria-hidden') === 'true');
+      });
+    });
   }
 
   function toggleFixedMenu() {
@@ -280,6 +286,29 @@ const { languages, menu, sideLink, title } = Astro.props;
     });
   }
 
+  function closeMenuOnLinkClick() {
+    const links = document.querySelectorAll('#menu a');
+
+    links.forEach((link) => {
+      link.addEventListener('click', (e) => {
+        if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0)
+          return;
+        setMenuOpen(false);
+      });
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+
+    const menu = document.querySelector('#menu');
+
+    if (menu && menu.getAttribute('aria-hidden') === 'false') {
+      setMenuOpen(false);
+    }
+  });
+
   toggleFixedMenu();
   toggleMenu();
+  closeMenuOnLinkClick();
 </script>
